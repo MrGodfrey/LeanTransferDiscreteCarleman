@@ -606,3 +606,16 @@ C031为AUXILIARY：13模块/45定理/51显式声明，逐项核对见`reviews/T0
 原 B1 的 a.e. 域/H弱导数/周期迹不加强为每时刻 D(A)；时间方程方向与冻结延拓方向可独立选择。一般关联 A 与 form 算子的域/算子等价已证；本阶段具体图定理以 form 算子陈述。三个图构造/伴随包装定理直接使用 T013 的 `exists_closure_weighted_trajectory`：`IsOpen S`、`Bornology.IsBounded S`、`SmoothOnClosure ρ.value S` 与原 A1/A2 即给所需轨迹，不要求存在更大的光滑开邻域。`SmoothOnClosure.of_neighborhood` 只证明邻域光滑 → 内禀闭包光滑；没有逆向桥，也没有使用 Whitney 延拓。先前本段所称“内在闭包到邻域接口”方向错误，已按 PR #18 独立审核纠正。
 
 B4 未清偿边界没有扩大或隐藏：原 Lipschitz 域同一高阶弱扩张的同时 L²/Hⁿ 界（或等价原域插值）、允许权空间交换子吸收、允许权 Euler 图界、闭合的加权时间 O(dt)/O(sqrt(dt)) 及空间误差仍待。全空间插值不能替代原域；带交换子余项的图界不能替代原文完整 R 图界。精确依赖与已试路线见 `governance/analysis/T015-weighted-time.md` 和 T014 检查点。原文完成仍为 1/26。
+
+
+## T016：一般阶 Euler 权余项、A3 低阶吸收与二阶闭合时间率
+
+完整接口与剩余依赖见 [T016 数学阶段](analysis/T016-weighted-graph-closure.md) 和 [逐声明核对](reviews/T016.md)。新增14模块、31定理、37显式声明，范围 AUXILIARY，不增加原文整项完成数。
+
+`weighted_euler_graph_remainder_uniform` 对任意 m>0 证明真实允许权 Euler 图常数6，保留且仅保留实际空间交换子；时间交换子已经统一吸收。`weighted_lowOrder_absorption` 对任意 m>0 证明 q^m N_m 与 q^m R_m 的任意小量吸收，明确只覆盖0至m阶。
+
+`secondOrder_commutator_small_shift` 在 m=1 用原A2/A3及内禀闭包共轭消去全部空间交换子；得到常数12的离散算子图、常数60的冻结连续算子图。`secondOrder_parameter_graph_uniform` 用正向A1控制最高阶，构造完整R₂；`secondOrder_weighted_euler_sobolev_uniform` 对全部周期D(A)序列证明真实导数字段L²范数之和的Euler图。阈值与常数先于T/网格/权/方向/τ/状态选定，profile只要求原域上的SmoothOnClosure，不要求邻域表示。
+
+`secondOrder_weighted_temporal_error_uniform` 构造实际Euler/连续/伴随解，在原周期弱图的a.e.域误差代表上证明 2160 dt 的真实加权L²率和 sqrt(466560/c) sqrt(dt) 的真实N₁率；声明包含弱jet的MemLp。Γ普通函数、已证B2和真实B3原接口不变。
+
+B4仅在m=1的**时间部分**获得闭合。一般阶m+1至2m−1导数的原域参数插值、空间比较及所有权族的最终组合实例仍待；不把二阶辅助结果登记为一般Theorem3.5完成。此路线绕过任意Sobolev扩张的需要只限当前二阶推导，不假设一般域扩张存在。

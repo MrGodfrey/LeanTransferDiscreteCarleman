@@ -1303,6 +1303,82 @@ set_option pp.maxSteps 1000000
 #check @Carleman.CoerciveForm.weighted_frozen_graph_remainder_uniform
 #print axioms Carleman.CoerciveForm.weighted_frozen_graph_remainder_uniform
 
+-- T016: every explicit declaration and its recursive dependency axioms.
+#check @Carleman.bochnerL2Norm_coe
+#print axioms Carleman.bochnerL2Norm_coe
+#check @Carleman.lp_norm_le_two
+#print axioms Carleman.lp_norm_le_two
+#check @Carleman.TimeGrid.l2Norm_le_two
+#print axioms Carleman.TimeGrid.l2Norm_le_two
+#check @Carleman.SpatialProfile.timeMap_bochnerNorm
+#print axioms Carleman.SpatialProfile.timeMap_bochnerNorm
+#check @Carleman.SpatialProfile.timeMap_extension_bochnerNorm
+#print axioms Carleman.SpatialProfile.timeMap_extension_bochnerNorm
+#check @Carleman.CoerciveForm.PeriodicGraph.frozenEulerPair
+#print axioms Carleman.CoerciveForm.PeriodicGraph.frozenEulerPair
+#check @Carleman.CoerciveForm.PeriodicGraph.weighted_derivative_bochnerNorm
+#print axioms Carleman.CoerciveForm.PeriodicGraph.weighted_derivative_bochnerNorm
+#check @Carleman.CoerciveForm.PeriodicGraph.weighted_error_bochnerNorm
+#print axioms Carleman.CoerciveForm.PeriodicGraph.weighted_error_bochnerNorm
+#check @Carleman.TimeGrid.l2Norm_add_le
+#print axioms Carleman.TimeGrid.l2Norm_add_le
+#check @Carleman.TimeGrid.l2Norm_neg
+#print axioms Carleman.TimeGrid.l2Norm_neg
+#check @Carleman.TimeGrid.l2Norm_sub_le
+#print axioms Carleman.TimeGrid.l2Norm_sub_le
+#check @Carleman.TimeGrid.l2Norm_comp_equiv
+#print axioms Carleman.TimeGrid.l2Norm_comp_equiv
+#check @Carleman.weighted_lowOrder_absorption
+#print axioms Carleman.weighted_lowOrder_absorption
+#check @Carleman.secondOrder_lower_sum_le
+#print axioms Carleman.secondOrder_lower_sum_le
+#check @Carleman.conjugatedCommutator_weighted_eq
+#print axioms Carleman.conjugatedCommutator_weighted_eq
+#check @Carleman.secondOrder_commutator_small_shift
+#print axioms Carleman.secondOrder_commutator_small_shift
+#check @Carleman.secondOrder_parameter_graph_uniform
+#print axioms Carleman.secondOrder_parameter_graph_uniform
+#check @Carleman.SecondOrderWeightData
+#print axioms Carleman.SecondOrderWeightData
+#check @Carleman.SpatialProfile.neg_neg_profile
+#print axioms Carleman.SpatialProfile.neg_neg_profile
+#check @Carleman.SpatialProfile.inverse_timeMap_left
+#print axioms Carleman.SpatialProfile.inverse_timeMap_left
+#check @Carleman.TimeWeightRegularity.weight_oriented_quotient
+#print axioms Carleman.TimeWeightRegularity.weight_oriented_quotient
+#check @Carleman.SpatialProfile.nodeMap
+#print axioms Carleman.SpatialProfile.nodeMap
+#check @Carleman.SpatialProfile.eulerTimeCommutator
+#print axioms Carleman.SpatialProfile.eulerTimeCommutator
+#check @Carleman.SpatialProfile.eulerTimeCommutator_eq
+#print axioms Carleman.SpatialProfile.eulerTimeCommutator_eq
+#check @Carleman.SpatialProfile.eulerTimeCommutator_node_le
+#print axioms Carleman.SpatialProfile.eulerTimeCommutator_node_le
+#check @Carleman.SpatialProfile.eulerTimeCommutator_small_uniform
+#print axioms Carleman.SpatialProfile.eulerTimeCommutator_small_uniform
+#check @Carleman.CoerciveForm.secondOrder_weighted_euler_graph_uniform
+#print axioms Carleman.CoerciveForm.secondOrder_weighted_euler_graph_uniform
+#check @Carleman.WeakSobolevJet.nodeParameterNorm
+#print axioms Carleman.WeakSobolevJet.nodeParameterNorm
+#check @Carleman.CoerciveForm.secondOrder_weighted_euler_sobolev_uniform
+#print axioms Carleman.CoerciveForm.secondOrder_weighted_euler_sobolev_uniform
+#check @Carleman.CoerciveForm.secondOrder_weighted_frozen_graph_uniform
+#print axioms Carleman.CoerciveForm.secondOrder_weighted_frozen_graph_uniform
+#check @Carleman.CoerciveForm.secondOrder_weighted_temporal_error_uniform
+#print axioms Carleman.CoerciveForm.secondOrder_weighted_temporal_error_uniform
+#check @Carleman.CoerciveForm.secondOrder_weighted_temporal_l2_uniform
+#print axioms Carleman.CoerciveForm.secondOrder_weighted_temporal_l2_uniform
+#check @Carleman.SpatialProfile.weightedNodes
+#print axioms Carleman.SpatialProfile.weightedNodes
+#check @Carleman.SpatialProfile.weightedNodes_value
+#print axioms Carleman.SpatialProfile.weightedNodes_value
+#check @Carleman.SpatialProfile.nodeMap_l2Norm
+#print axioms Carleman.SpatialProfile.nodeMap_l2Norm
+#check @Carleman.CoerciveForm.weighted_euler_identity
+#print axioms Carleman.CoerciveForm.weighted_euler_identity
+#check @Carleman.CoerciveForm.weighted_euler_graph_remainder_uniform
+#print axioms Carleman.CoerciveForm.weighted_euler_graph_remainder_uniform
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "REVIEW",
-    "current_task_id": "T015",
+    "current_task_id": "T016",
     "supervisor_checked_at": "2026-10-17T13:54:55.912702+00:00",
-    "next_action": "父监督者复核内禀闭包修正及27声明；同PR18保持draft待验收，原域插值/空间交换子吸收/允许权Euler图与闭合B4仍待",
+    "next_action": "父监督者独立验收37声明及PR19；一般阶中间高阶插值、空间B4与最终权族组合保留，优先复用二阶完整Euler图推进空间比较",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-17T22:43:43.081471+00:00"
+    "last_activity_at": "2026-10-17T23:30:29.990604+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "354594d0f7d070547f73fe9ade50ea300d11e9cd",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39075994783/attempts/1",
-      "finished_at": "2026-10-17T22:41:43.873454+00:00",
+      "checked_sha": "b6d1202fc1fad48bb7468b1d473e9fac70786d48",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39079012965/attempts/1",
+      "finished_at": "2026-10-17T23:28:41.466581+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "2daf966cbdac81db220651ea67f839375fc411d3"
+      "source_head_sha": "f88cbbc9089cea4ddd8b1bcddda14c47b65fb8e5"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "354594d0f7d070547f73fe9ade50ea300d11e9cd",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39075994783/attempts/1",
-      "finished_at": "2026-10-17T22:41:43.873454+00:00",
+      "checked_sha": "b6d1202fc1fad48bb7468b1d473e9fac70786d48",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39079012965/attempts/1",
+      "finished_at": "2026-10-17T23:28:41.466581+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "2daf966cbdac81db220651ea67f839375fc411d3"
+      "source_head_sha": "f88cbbc9089cea4ddd8b1bcddda14c47b65fb8e5"
     }
   },
   "milestones": [
@@ -3223,7 +3223,7 @@
       "paper_ref": "Theorem3.5加权时间误差自然依赖",
       "milestone": "M3",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [],
       "lean_declarations": [
@@ -3254,21 +3254,21 @@
         "Carleman.CoerciveForm.weighted_evolution_identity",
         "Carleman.CoerciveForm.weighted_frozen_graph_remainder_uniform"
       ],
-      "declaration_version": "354594d0f7d070547f73fe9ade50ea300d11e9cd",
+      "declaration_version": "87363270f74e4955f5afbb8ecc20ae2990d449f5",
       "build_evidence": {
         "status": "PASS",
-        "checked_sha": "354594d0f7d070547f73fe9ade50ea300d11e9cd",
-        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39075994783/attempts/1",
-        "finished_at": "2026-10-17T22:41:43.873454+00:00",
+        "checked_sha": "87363270f74e4955f5afbb8ecc20ae2990d449f5",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39076783540/attempts/1",
+        "finished_at": "2026-10-17T22:55:01.424068+00:00",
         "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "targets": [
           "Carleman"
         ],
-        "source_head_sha": "2daf966cbdac81db220651ea67f839375fc411d3"
+        "source_head_sha": "87363270f74e4955f5afbb8ecc20ae2990d449f5"
       },
       "semantic_review": {
-        "checked_sha": "354594d0f7d070547f73fe9ade50ea300d11e9cd",
+        "checked_sha": "87363270f74e4955f5afbb8ecc20ae2990d449f5",
         "declarations": [
           "Carleman.CoerciveForm.weighted_temporal_duality",
           "Carleman.CoerciveForm.weighted_temporal_duality_bound",
@@ -3299,9 +3299,9 @@
         ],
         "result": "PASS",
         "axiom_check": "PASS",
-        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2daf966cbdac81db220651ea67f839375fc411d3/governance/reviews/T015.md",
-        "reviewed_at": "2026-10-17T22:43:43.081471+00:00",
-        "reviewer": "T015 executor after parent scope correction; parent independent acceptance pending"
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/18",
+        "reviewed_at": "2026-10-17T22:59:34.401523+00:00",
+        "reviewer": "Parent supervisor independent statement/source/assumptions/dependency acceptance after intrinsic-closure correction; reported in continuation delegation"
       },
       "blocker": "原Lipschitz同时L²/Hⁿ扩张及允许权统一图界仍未清偿",
       "dependencies": [
@@ -3363,6 +3363,121 @@
           "reason": "Superseded: parent independent review found unsupported closure-to-neighborhood claim and stronger neighborhood hypotheses in three wrappers"
         }
       ]
+    },
+    {
+      "id": "C033",
+      "title": "一般阶Euler余项与二阶允许权时间误差闭合",
+      "paper_ref": "eq:weight-time-quotient、eq:eulerMR、lem:frozen、thm:timeerror 的一般阶依赖及m=1辅助结论",
+      "milestone": "M3",
+      "extra_hypotheses": [],
+      "verification_status": "BUILT",
+      "scope": "AUXILIARY",
+      "paper_labels": [],
+      "lean_declarations": [
+        "Carleman.bochnerL2Norm_coe",
+        "Carleman.lp_norm_le_two",
+        "Carleman.TimeGrid.l2Norm_le_two",
+        "Carleman.SpatialProfile.timeMap_bochnerNorm",
+        "Carleman.SpatialProfile.timeMap_extension_bochnerNorm",
+        "Carleman.CoerciveForm.PeriodicGraph.frozenEulerPair",
+        "Carleman.CoerciveForm.PeriodicGraph.weighted_derivative_bochnerNorm",
+        "Carleman.CoerciveForm.PeriodicGraph.weighted_error_bochnerNorm",
+        "Carleman.TimeGrid.l2Norm_add_le",
+        "Carleman.TimeGrid.l2Norm_neg",
+        "Carleman.TimeGrid.l2Norm_sub_le",
+        "Carleman.TimeGrid.l2Norm_comp_equiv",
+        "Carleman.weighted_lowOrder_absorption",
+        "Carleman.secondOrder_lower_sum_le",
+        "Carleman.conjugatedCommutator_weighted_eq",
+        "Carleman.secondOrder_commutator_small_shift",
+        "Carleman.secondOrder_parameter_graph_uniform",
+        "Carleman.SecondOrderWeightData",
+        "Carleman.SpatialProfile.neg_neg_profile",
+        "Carleman.SpatialProfile.inverse_timeMap_left",
+        "Carleman.TimeWeightRegularity.weight_oriented_quotient",
+        "Carleman.SpatialProfile.nodeMap",
+        "Carleman.SpatialProfile.eulerTimeCommutator",
+        "Carleman.SpatialProfile.eulerTimeCommutator_eq",
+        "Carleman.SpatialProfile.eulerTimeCommutator_node_le",
+        "Carleman.SpatialProfile.eulerTimeCommutator_small_uniform",
+        "Carleman.CoerciveForm.secondOrder_weighted_euler_graph_uniform",
+        "Carleman.WeakSobolevJet.nodeParameterNorm",
+        "Carleman.CoerciveForm.secondOrder_weighted_euler_sobolev_uniform",
+        "Carleman.CoerciveForm.secondOrder_weighted_frozen_graph_uniform",
+        "Carleman.CoerciveForm.secondOrder_weighted_temporal_error_uniform",
+        "Carleman.CoerciveForm.secondOrder_weighted_temporal_l2_uniform",
+        "Carleman.SpatialProfile.weightedNodes",
+        "Carleman.SpatialProfile.weightedNodes_value",
+        "Carleman.SpatialProfile.nodeMap_l2Norm",
+        "Carleman.CoerciveForm.weighted_euler_identity",
+        "Carleman.CoerciveForm.weighted_euler_graph_remainder_uniform"
+      ],
+      "declaration_version": "b6d1202fc1fad48bb7468b1d473e9fac70786d48",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "b6d1202fc1fad48bb7468b1d473e9fac70786d48",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39079012965/attempts/1",
+        "finished_at": "2026-10-17T23:28:41.466581+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "f88cbbc9089cea4ddd8b1bcddda14c47b65fb8e5"
+      },
+      "semantic_review": {
+        "checked_sha": "b6d1202fc1fad48bb7468b1d473e9fac70786d48",
+        "declarations": [
+          "Carleman.bochnerL2Norm_coe",
+          "Carleman.lp_norm_le_two",
+          "Carleman.TimeGrid.l2Norm_le_two",
+          "Carleman.SpatialProfile.timeMap_bochnerNorm",
+          "Carleman.SpatialProfile.timeMap_extension_bochnerNorm",
+          "Carleman.CoerciveForm.PeriodicGraph.frozenEulerPair",
+          "Carleman.CoerciveForm.PeriodicGraph.weighted_derivative_bochnerNorm",
+          "Carleman.CoerciveForm.PeriodicGraph.weighted_error_bochnerNorm",
+          "Carleman.TimeGrid.l2Norm_add_le",
+          "Carleman.TimeGrid.l2Norm_neg",
+          "Carleman.TimeGrid.l2Norm_sub_le",
+          "Carleman.TimeGrid.l2Norm_comp_equiv",
+          "Carleman.weighted_lowOrder_absorption",
+          "Carleman.secondOrder_lower_sum_le",
+          "Carleman.conjugatedCommutator_weighted_eq",
+          "Carleman.secondOrder_commutator_small_shift",
+          "Carleman.secondOrder_parameter_graph_uniform",
+          "Carleman.SecondOrderWeightData",
+          "Carleman.SpatialProfile.neg_neg_profile",
+          "Carleman.SpatialProfile.inverse_timeMap_left",
+          "Carleman.TimeWeightRegularity.weight_oriented_quotient",
+          "Carleman.SpatialProfile.nodeMap",
+          "Carleman.SpatialProfile.eulerTimeCommutator",
+          "Carleman.SpatialProfile.eulerTimeCommutator_eq",
+          "Carleman.SpatialProfile.eulerTimeCommutator_node_le",
+          "Carleman.SpatialProfile.eulerTimeCommutator_small_uniform",
+          "Carleman.CoerciveForm.secondOrder_weighted_euler_graph_uniform",
+          "Carleman.WeakSobolevJet.nodeParameterNorm",
+          "Carleman.CoerciveForm.secondOrder_weighted_euler_sobolev_uniform",
+          "Carleman.CoerciveForm.secondOrder_weighted_frozen_graph_uniform",
+          "Carleman.CoerciveForm.secondOrder_weighted_temporal_error_uniform",
+          "Carleman.CoerciveForm.secondOrder_weighted_temporal_l2_uniform",
+          "Carleman.SpatialProfile.weightedNodes",
+          "Carleman.SpatialProfile.weightedNodes_value",
+          "Carleman.SpatialProfile.nodeMap_l2Norm",
+          "Carleman.CoerciveForm.weighted_euler_identity",
+          "Carleman.CoerciveForm.weighted_euler_graph_remainder_uniform"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f88cbbc9089cea4ddd8b1bcddda14c47b65fb8e5/governance/reviews/T016.md",
+        "reviewed_at": "2026-10-17T23:30:29.990604+00:00",
+        "reviewer": "T016 executor; parent independent acceptance pending"
+      },
+      "blocker": null,
+      "dependencies": [
+        "C032"
+      ],
+      "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/19",
+      "scope_notes": "一般m仅Euler空间余项与0至m阶吸收；闭合加权Euler R₂及时间两种率明确m=1，不代替原文一般阶目标。"
     }
   ],
   "events": [
@@ -3482,11 +3597,21 @@
       "at": "2026-10-17T22:43:43.081471+00:00",
       "public_summary": "三个加权图/伴随包装已修正为内禀闭包光滑范围；新版本构建及递归审计通过，同PR待独立验收，原文1/26",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/18"
+    },
+    {
+      "at": "2026-10-17T22:59:34.401523+00:00",
+      "public_summary": "内禀闭包修正经独立验收并合并；继续真实Euler权交换子与A3低阶吸收，原文1/26",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/18"
+    },
+    {
+      "at": "2026-10-17T23:30:29.990604+00:00",
+      "public_summary": "一般阶Euler权余项与二阶完整加权Euler图、两种时间误差率通过构建和依赖检查；阶段待独立验收，原文1/26",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/19"
     }
   ],
   "snapshot": {
-    "synced_at": "2026-10-17T22:43:43.081471+00:00",
-    "source_commit": "354594d0f7d070547f73fe9ade50ea300d11e9cd",
+    "synced_at": "2026-10-17T23:30:29.990604+00:00",
+    "source_commit": "b6d1202fc1fad48bb7468b1d473e9fac70786d48",
     "mode": "LOCAL_SNAPSHOT"
   },
   "dashboard": {
@@ -3550,7 +3675,11 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39074965872/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c75db8643648531f48dc86a35c0adc9728f41768/governance/reviews/T015.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39075994783/attempts/1",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2daf966cbdac81db220651ea67f839375fc411d3/governance/reviews/T015.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2daf966cbdac81db220651ea67f839375fc411d3/governance/reviews/T015.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39076783540/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/19",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39079012965/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f88cbbc9089cea4ddd8b1bcddda14c47b65fb8e5/governance/reviews/T016.md"
     ]
   },
   "schedules": [
@@ -8087,10 +8216,10 @@
       ],
       "branch": "proof/t015-weighted-time-analysis",
       "base_commit": "9f8e351a71cbcd8943db0d9056afdd2bc0a1ffe7",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/18",
-      "checkpoint_commit": "2daf966cbdac81db220651ea67f839375fc411d3",
-      "merge_commit": null,
+      "checkpoint_commit": "87363270f74e4955f5afbb8ecc20ae2990d449f5",
+      "merge_commit": "87363270f74e4955f5afbb8ecc20ae2990d449f5",
       "lean_declarations": [
         "Carleman.CoerciveForm.weighted_temporal_duality",
         "Carleman.CoerciveForm.weighted_temporal_duality_bound",
@@ -8122,15 +8251,15 @@
       ],
       "build_evidence": {
         "status": "PASS",
-        "checked_sha": "354594d0f7d070547f73fe9ade50ea300d11e9cd",
-        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39075994783/attempts/1",
-        "finished_at": "2026-10-17T22:41:43.873454+00:00",
+        "checked_sha": "87363270f74e4955f5afbb8ecc20ae2990d449f5",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39076783540/attempts/1",
+        "finished_at": "2026-10-17T22:55:01.424068+00:00",
         "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "targets": [
           "Carleman"
         ],
-        "source_head_sha": "2daf966cbdac81db220651ea67f839375fc411d3"
+        "source_head_sha": "87363270f74e4955f5afbb8ecc20ae2990d449f5"
       },
       "blocker": null,
       "attempts": [
@@ -8140,10 +8269,10 @@
         "接入实际反向伴随的30常数导数余项估计；原域扩张/空间交换子吸收/允许权Euler图及闭合B4仍待",
         "父监督者指出旧邻域条件强于原内禀闭包，MATH_SPEC错误反用of_neighborhood；直接改用已证exists_closure_weighted_trajectory，无Whitney扩张，无关结论不变"
       ],
-      "next_action": "父监督者复核内禀闭包修正及27声明；同PR18保持draft待验收，原域插值/空间交换子吸收/允许权Euler图与闭合B4仍待",
-      "declaration_version": "354594d0f7d070547f73fe9ade50ea300d11e9cd",
+      "next_action": "已合并并独立验收；保留旧范围漏检及修复历史，后续T016复用",
+      "declaration_version": "87363270f74e4955f5afbb8ecc20ae2990d449f5",
       "semantic_review": {
-        "checked_sha": "354594d0f7d070547f73fe9ade50ea300d11e9cd",
+        "checked_sha": "87363270f74e4955f5afbb8ecc20ae2990d449f5",
         "declarations": [
           "Carleman.CoerciveForm.weighted_temporal_duality",
           "Carleman.CoerciveForm.weighted_temporal_duality_bound",
@@ -8175,9 +8304,9 @@
         ],
         "result": "PASS",
         "axiom_check": "PASS",
-        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2daf966cbdac81db220651ea67f839375fc411d3/governance/reviews/T015.md",
-        "reviewed_at": "2026-10-17T22:43:43.081471+00:00",
-        "reviewer": "T015 executor after parent scope correction; parent independent acceptance pending"
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/18",
+        "reviewed_at": "2026-10-17T22:59:34.401523+00:00",
+        "reviewer": "Parent supervisor independent statement/source/assumptions/dependency acceptance after intrinsic-closure correction; reported in continuation delegation"
       },
       "superseded_evidence": [
         {
@@ -8315,6 +8444,191 @@
         "progress-dashboard": {
           "id": 12117097118,
           "zip_sha256": "aeccb2a9802b7765621d80f81cc65957e0e57d94be484814926c7c94f1f2a1d9"
+        }
+      },
+      "main_ci_relationship": {
+        "merge_commit": "87363270f74e4955f5afbb8ecc20ae2990d449f5",
+        "source_head_sha": "91839ba3180be980cf31bfb4a3136e40c5a0312e",
+        "same_tree": "4241b1011867798d93594c1769a26b0dde349d72",
+        "run_id": 39076783540,
+        "all_jobs_and_steps": "3 jobs / 32 steps PASS",
+        "actual_build_jobs": 3360,
+        "recursive_axiom_audit": 2432,
+        "recompiled_new_modules": 9,
+        "declaration_artifact_sha256": "cf7850e5de98411ce6bd9a511bcd393c00c97e29b517ecd2adf5f078c319bdd4",
+        "progress-dashboard": {
+          "id": 12117481030,
+          "zip_sha256": "dda67053d00188d22b2f2f611308a27fba61619c8c3654ff798fd7049edec7f0"
+        },
+        "lean-ci-result": {
+          "id": 12117009123,
+          "zip_sha256": "0266021615b54cf726b25aae0fd058f9c45e0d81a02fa636aafabcdd98b82127"
+        },
+        "lean-declaration-evidence": {
+          "id": 12116954709,
+          "zip_sha256": "30b241d47f76b882fd2340be4ba72472790328d977ddbf239b1a65d3aaedf4f5"
+        }
+      }
+    },
+    {
+      "id": "T016",
+      "platform_task_id": "01a1498c-c483-77a5-8b91-14b593452001",
+      "task_url": null,
+      "continuation_of": "T015",
+      "title": "一般阶Euler余项与二阶允许权时间误差闭合",
+      "goal_ids": [
+        "C033"
+      ],
+      "acceptance": [
+        "真实两方向Euler权交换子及统一时间吸收；不改变全节点状态空间",
+        "验证A3对实际D(A)低阶项的吸收路线，A1只正向使用；保留一般阶原域插值缺口",
+        "使用intrinsic SmoothOnClosure，实际构建/递归审计/逐声明核对和同SHA CI；交付draft PR不自行合并"
+      ],
+      "dependencies": [
+        "C032"
+      ],
+      "branch": "proof/t016-weighted-graph-closure",
+      "base_commit": "87363270f74e4955f5afbb8ecc20ae2990d449f5",
+      "status": "REVIEW",
+      "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/19",
+      "checkpoint_commit": "f88cbbc9089cea4ddd8b1bcddda14c47b65fb8e5",
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.bochnerL2Norm_coe",
+        "Carleman.lp_norm_le_two",
+        "Carleman.TimeGrid.l2Norm_le_two",
+        "Carleman.SpatialProfile.timeMap_bochnerNorm",
+        "Carleman.SpatialProfile.timeMap_extension_bochnerNorm",
+        "Carleman.CoerciveForm.PeriodicGraph.frozenEulerPair",
+        "Carleman.CoerciveForm.PeriodicGraph.weighted_derivative_bochnerNorm",
+        "Carleman.CoerciveForm.PeriodicGraph.weighted_error_bochnerNorm",
+        "Carleman.TimeGrid.l2Norm_add_le",
+        "Carleman.TimeGrid.l2Norm_neg",
+        "Carleman.TimeGrid.l2Norm_sub_le",
+        "Carleman.TimeGrid.l2Norm_comp_equiv",
+        "Carleman.weighted_lowOrder_absorption",
+        "Carleman.secondOrder_lower_sum_le",
+        "Carleman.conjugatedCommutator_weighted_eq",
+        "Carleman.secondOrder_commutator_small_shift",
+        "Carleman.secondOrder_parameter_graph_uniform",
+        "Carleman.SecondOrderWeightData",
+        "Carleman.SpatialProfile.neg_neg_profile",
+        "Carleman.SpatialProfile.inverse_timeMap_left",
+        "Carleman.TimeWeightRegularity.weight_oriented_quotient",
+        "Carleman.SpatialProfile.nodeMap",
+        "Carleman.SpatialProfile.eulerTimeCommutator",
+        "Carleman.SpatialProfile.eulerTimeCommutator_eq",
+        "Carleman.SpatialProfile.eulerTimeCommutator_node_le",
+        "Carleman.SpatialProfile.eulerTimeCommutator_small_uniform",
+        "Carleman.CoerciveForm.secondOrder_weighted_euler_graph_uniform",
+        "Carleman.WeakSobolevJet.nodeParameterNorm",
+        "Carleman.CoerciveForm.secondOrder_weighted_euler_sobolev_uniform",
+        "Carleman.CoerciveForm.secondOrder_weighted_frozen_graph_uniform",
+        "Carleman.CoerciveForm.secondOrder_weighted_temporal_error_uniform",
+        "Carleman.CoerciveForm.secondOrder_weighted_temporal_l2_uniform",
+        "Carleman.SpatialProfile.weightedNodes",
+        "Carleman.SpatialProfile.weightedNodes_value",
+        "Carleman.SpatialProfile.nodeMap_l2Norm",
+        "Carleman.CoerciveForm.weighted_euler_identity",
+        "Carleman.CoerciveForm.weighted_euler_graph_remainder_uniform"
+      ],
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "b6d1202fc1fad48bb7468b1d473e9fac70786d48",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39079012965/attempts/1",
+        "finished_at": "2026-10-17T23:28:41.466581+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "f88cbbc9089cea4ddd8b1bcddda14c47b65fb8e5"
+      },
+      "blocker": null,
+      "attempts": [
+        "核实PR18合并main实际3jobs32steps/3360jobs2432审计，声明产物与修正版完全一致；基线本地构建复用PASS",
+        "A3直接控制≤m阶，A2包含≤2m−1阶；m=1全落在低阶范围，一般m高阶不能未经证明由A3消去",
+        "一般m真实Euler时间交换子已统一吸收，6常数图保留实际空间交换子；A3证明q^m N_m及R_m低阶任意小量吸收",
+        "m=1完整空间交换子已由A3吸收：Euler图12、冻结图60；实际构造正解/逆权伴随给L²误差2160dt、N₁误差sqrt(466560/c)sqrt(dt)",
+        "m=1用正向A1最高阶+A3低阶得到完整R₂，再逐字段真实离散L²求和得全状态Euler Sobolev图；无任意域扩张假设"
+      ],
+      "next_action": "父监督者独立验收37声明及PR19；一般阶中间高阶插值、空间B4与最终权族组合保留，优先复用二阶完整Euler图推进空间比较",
+      "declaration_version": "b6d1202fc1fad48bb7468b1d473e9fac70786d48",
+      "semantic_review": {
+        "checked_sha": "b6d1202fc1fad48bb7468b1d473e9fac70786d48",
+        "declarations": [
+          "Carleman.bochnerL2Norm_coe",
+          "Carleman.lp_norm_le_two",
+          "Carleman.TimeGrid.l2Norm_le_two",
+          "Carleman.SpatialProfile.timeMap_bochnerNorm",
+          "Carleman.SpatialProfile.timeMap_extension_bochnerNorm",
+          "Carleman.CoerciveForm.PeriodicGraph.frozenEulerPair",
+          "Carleman.CoerciveForm.PeriodicGraph.weighted_derivative_bochnerNorm",
+          "Carleman.CoerciveForm.PeriodicGraph.weighted_error_bochnerNorm",
+          "Carleman.TimeGrid.l2Norm_add_le",
+          "Carleman.TimeGrid.l2Norm_neg",
+          "Carleman.TimeGrid.l2Norm_sub_le",
+          "Carleman.TimeGrid.l2Norm_comp_equiv",
+          "Carleman.weighted_lowOrder_absorption",
+          "Carleman.secondOrder_lower_sum_le",
+          "Carleman.conjugatedCommutator_weighted_eq",
+          "Carleman.secondOrder_commutator_small_shift",
+          "Carleman.secondOrder_parameter_graph_uniform",
+          "Carleman.SecondOrderWeightData",
+          "Carleman.SpatialProfile.neg_neg_profile",
+          "Carleman.SpatialProfile.inverse_timeMap_left",
+          "Carleman.TimeWeightRegularity.weight_oriented_quotient",
+          "Carleman.SpatialProfile.nodeMap",
+          "Carleman.SpatialProfile.eulerTimeCommutator",
+          "Carleman.SpatialProfile.eulerTimeCommutator_eq",
+          "Carleman.SpatialProfile.eulerTimeCommutator_node_le",
+          "Carleman.SpatialProfile.eulerTimeCommutator_small_uniform",
+          "Carleman.CoerciveForm.secondOrder_weighted_euler_graph_uniform",
+          "Carleman.WeakSobolevJet.nodeParameterNorm",
+          "Carleman.CoerciveForm.secondOrder_weighted_euler_sobolev_uniform",
+          "Carleman.CoerciveForm.secondOrder_weighted_frozen_graph_uniform",
+          "Carleman.CoerciveForm.secondOrder_weighted_temporal_error_uniform",
+          "Carleman.CoerciveForm.secondOrder_weighted_temporal_l2_uniform",
+          "Carleman.SpatialProfile.weightedNodes",
+          "Carleman.SpatialProfile.weightedNodes_value",
+          "Carleman.SpatialProfile.nodeMap_l2Norm",
+          "Carleman.CoerciveForm.weighted_euler_identity",
+          "Carleman.CoerciveForm.weighted_euler_graph_remainder_uniform"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f88cbbc9089cea4ddd8b1bcddda14c47b65fb8e5/governance/reviews/T016.md",
+        "reviewed_at": "2026-10-17T23:30:29.990604+00:00",
+        "reviewer": "T016 executor; parent independent acceptance pending"
+      },
+      "ci_relationship": {
+        "proof_head": "f88cbbc9089cea4ddd8b1bcddda14c47b65fb8e5",
+        "checked_test_sha": "b6d1202fc1fad48bb7468b1d473e9fac70786d48",
+        "base_sha": "87363270f74e4955f5afbb8ecc20ae2990d449f5",
+        "proof_and_test_tree": "698e708b15ce15cdff8508712d246fecbd23481b",
+        "test_parents": [
+          "87363270f74e4955f5afbb8ecc20ae2990d449f5",
+          "f88cbbc9089cea4ddd8b1bcddda14c47b65fb8e5"
+        ],
+        "run_id": 39079012965,
+        "all_jobs_and_steps": "3 jobs / 32 steps PASS",
+        "actual_build_jobs": 3374,
+        "recursive_axiom_audit": 2520,
+        "recompiled_new_modules": 14,
+        "root_recompiled": true,
+        "declaration_artifact_sha256": "ba5d9ae83a896edd11810ffee22d70b4b119fbbfec4e3e3eacc7b9a1f4aeceeb",
+        "scope": "AUXILIARY: general-order Euler remainder/low-order A3; closed full Euler R2 and two temporal rates only for m=1",
+        "progress-dashboard": {
+          "id": 12117809440,
+          "zip_sha256": "033dc34829b64c747da7017c3899c547e41e2020444cc8bbb5a791c2655ba158"
+        },
+        "lean-declaration-evidence": {
+          "id": 12117727898,
+          "zip_sha256": "e081187d949642fe09447d1f54cb6cfb81211839a5e19693ce42de7b628aab75"
+        },
+        "lean-ci-result": {
+          "id": 12117488662,
+          "zip_sha256": "54d9557f60e55c18c8e0a644c720f899cab43153c579675c74a6b17ccd4c6561"
         }
       }
     }
