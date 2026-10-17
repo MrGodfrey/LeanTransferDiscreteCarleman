@@ -1,0 +1,45 @@
+(function(){'use strict';
+  const d=window.LEAN_TRANSFER_STATUS;
+  const $=id=>document.getElementById(id);
+  const set=(id,v)=>{const n=$(id);if(n)n.textContent=v===null||v===undefined?'—':String(v)};
+  const formatDate=s=>{if(!s)return '尚未记录';const date=new Date(s);return Number.isNaN(date.getTime())? '无效时间':date.toLocaleString('zh-CN',{year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false})};
+  const kNum=v=>v===null||v===undefined?'未取得':Number(v).toLocaleString('zh-CN');
+  const metaLabel={TODO:'待开始',IN_PROGRESS:'进行中',VERIFIED:'已验收',BLOCKED:'有阻塞'};
+  const claimLabel={PLANNED:'待处理',SPECIFIED:'规格已核对',CONDITIONAL:'条件性证明',PROVEN:'已编译待审',AUDITED:'完整已审核'};
+  const buildLabel={NOT_RUN:'未执行',PASS:'通过',FAIL:'失败',RUNNING:'执行中'};
+  const executionLabel={IDLE:'当前未运行任务',RUNNING:'云端任务正在执行',PAUSED_LIMIT:'因额度限制暂停',PAUSED_APPROVAL:'等待人工授权',PAUSED_BLOCKER:'存在工作阻塞',PAUSED_MANUAL:'已由用户暂停'};
+  if(!d){document.body.textContent='缺少数据，请在仓库运行 python3 tools/update_dashboard.py';return;}
+  const updated=d.project.updated_at;
+  const old=updated ? ((Date.now()-new Date(updated).getTime())/(1000*3600)>24):true;
+  const badge=$('syncBadge');badge.textContent=updated?(old?'超过 24 小时未更新':'状态已记录'):'尚未启动';badge.className='badge '+(updated?(old?'yellow':'green'):'gray');
+  set('lastUpdate',updated?'更新 '+formatDate(updated):'等待首轮提交');
+  set('footerTimestamp',updated?formatDate(updated):'INITIAL / NOT STARTED');
+  const audited=d.claims.filter(c=>c.status==='AUDITED');const conditional=d.claims.filter(c=>c.status==='CONDITIONAL');const done=d.milestones.filter(m=>m.status==='VERIFIED');
+  set('auditedCount',audited.length);set('auditedSub','/ '+d.claims.length+' 个已登记目标');set('conditionalCount',conditional.length);set('milestoneCount',done.length+' / '+d.milestones.length);
+  set('buildStatus',buildLabel[d.verification.build_status]||d.verification.build_status);
+  set('buildCommit',d.verification.last_green_commit?'成功提交 '+d.verification.last_green_commit.slice(0,9):'尚无成功构建');
+  const running=d.milestones.find(m=>m.status==='IN_PROGRESS');set('activePhase',running?running.id+' · '+running.title:'尚无进行中阶段');
+  const box=$('milestoneRows');d.milestones.forEach(m=>{
+    const item=document.createElement('div');item.className='milestone-row';
+    const s=m.status==='VERIFIED'?'done':m.status==='IN_PROGRESS'?'active':m.status==='BLOCKED'?'blocked':'';
+    const count=d.claims.filter(c=>c.milestone===m.id&&c.status==='AUDITED').length;
+    const total=d.claims.filter(c=>c.milestone===m.id).length;
+    item.innerHTML=`<div class="phase-num"></div><div class="phase-info"><b></b><small></small></div><span class="phase-status ${s}"></span>`;
+    item.querySelector('.phase-num').textContent=m.id;
+    item.querySelector('b').textContent=m.title;
+    item.querySelector('small').textContent=m.description+(total?' · '+count+'/'+total+' 已审核':'');
+    item.querySelector('.phase-status').textContent=metaLabel[m.status]||m.status;
+    box.appendChild(item);
+  });
+  set('executionState',executionLabel[d.execution.state]||d.execution.state);
+  const work=$('executionState');work.innerHTML='';const h=document.createElement('strong');h.textContent=executionLabel[d.execution.state]||d.execution.state;const p=document.createElement('p');p.textContent=d.execution.state==='IDLE'?'启动后将显示 Codex 当前任务与最近一次更新':'状态由 GitHub 中已核验的记录提供';work.append(h,p);
+  if(d.execution.state==='RUNNING')document.querySelector('.live-dot').classList.add('running');
+  set('taskName',d.execution.task_title||'未启动');set('lastCommit',d.verification.last_green_commit?d.verification.last_green_commit.slice(0,10):'—');set('supervisorChecked',formatDate(d.execution.supervisor_checked_at));set('nextAction',d.execution.next_action||'等待监督者下一轮检查');
+  const al=$('activityList');if(d.events.length===0){const x=document.createElement('div');x.className='empty';x.textContent='暂无正式运行记录，等待 M0 启动。';al.appendChild(x)}
+  else d.events.slice(0,7).forEach(e=>{const row=document.createElement('div');row.className='event';const h=document.createElement('b');h.textContent=e.summary;const p=document.createElement('small');p.textContent=formatDate(e.at)+(e.commit?' · '+e.commit.slice(0,9):'');row.append(h,p);al.appendChild(row)});
+  set('claimSummary',audited.length+' 项完成语义审核 · '+conditional.length+' 项条件性结果');
+  const cr=$('claimsRows');d.claims.forEach(c=>{const row=document.createElement('div');row.className='claim';const st=document.createElement('span');st.className='claim-status '+(c.status==='AUDITED'?'audit':c.status==='CONDITIONAL'?'conditional':'');st.textContent=claimLabel[c.status]||c.status;const main=document.createElement('div');const t=document.createElement('div');t.className='claim-title';t.textContent=c.title;const r=document.createElement('div');r.className='claim-ref';r.textContent=c.paper_ref+(c.lean_declaration?' · '+c.lean_declaration:'');main.append(t,r);const ph=document.createElement('span');ph.className='claim-phase';ph.textContent=c.milestone;row.append(main,ph,st);cr.appendChild(row)});
+  set('tokensTotal',kNum(d.usage.tokens_total));set('creditsUsed',kNum(d.usage.credits_used));set('billingState',({UNKNOWN:'未取得',NORMAL:'正常',NEAR_LIMIT:'接近额度',EXHAUSTED:'额度耗尽',PAUSED:'已暂停'})[d.usage.billing_state]||d.usage.billing_state);
+  const src={unavailable:'暂无可信计量来源',official_ui_manual:'来自官方用量页的人工记录',agent_api_report:'来自 API 返回数据',cli_status:'来自 CLI 状态'};
+  set('usageSource',src[d.usage.source]||d.usage.source);set('usageChecked',d.usage.last_checked_at?('核查 '+formatDate(d.usage.last_checked_at)):'未完成额度核查');
+})();
