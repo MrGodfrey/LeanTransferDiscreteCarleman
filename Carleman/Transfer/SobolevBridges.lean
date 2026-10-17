@@ -8,7 +8,8 @@ public import Carleman.Transfer.SobolevGeometry
 
 /-! Assemble the concrete B3 bridge. Every weighted finiteness field follows
 from A1 and the genuine B1 trajectory. Only the original nodal bounds, A4,
-and the still-unproved frozen solution remain as inputs. -/
+and a frozen trajectory remain as inputs here; FrozenExistence constructs
+that trajectory from A1. The full TransferBridges still requires B4 errors. -/
 @[expose] public noncomputable section
 open Set MeasureTheory
 namespace Carleman

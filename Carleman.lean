@@ -53,3 +53,19 @@ public import Carleman.Continuous.WeakTimeEnergy
 public import Carleman.Continuous.WeakTimeFTC
 public import Carleman.Continuous.WeakTimePrimitive
 public import Carleman.Transfer.FrozenExistence
+
+-- T010: full spatial weak Leibniz, uniform conjugation and original shifted forms.
+public import Carleman.Spatial.CommutatorPerturbation
+public import Carleman.Spatial.ComponentNorms
+public import Carleman.Spatial.CoordinateWords
+public import Carleman.Spatial.LeibnizBounds
+public import Carleman.Spatial.MultiplierAlgebra
+public import Carleman.Spatial.ParameterConjugation
+public import Carleman.Spatial.ShiftedFormBounds
+public import Carleman.Spatial.SmoothMultipliers
+public import Carleman.Spatial.WeakLeibniz
+public import Carleman.Spatial.WeightedSobolevNorm
+public import Carleman.Weights.AllowedFormBounds
+public import Carleman.Weights.ConformingConjugation
+public import Carleman.Weights.SmoothClosure
+public import Carleman.Weights.SobolevConjugation
