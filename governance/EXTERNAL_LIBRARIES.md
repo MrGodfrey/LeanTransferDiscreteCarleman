@@ -25,3 +25,18 @@
 最小模块调用及其前提由 `TimeGrid.lean` / `SummationByParts.lean` 的实际证明编译核实，
 并由 `tools/CheckAxioms.lean` 输出主要声明及检查传递公理。有限和重排复用本仓库
 `Carleman.sum_sub_perm`，没有另行证明该辅助引理。缓存只增加这些 import 的依赖闭包。
+
+## T002 实际采用
+
+继续仅用同一固定 mathlib4 commit、Apache-2.0 和 Lean 4.35.0，不新增依赖包。
+
+| 声明/import | 实际类型与前提（省略宇宙参数） | 匹配与编译证据 |
+| --- | --- | --- |
+| `LinearMap.compLeft` / `Mathlib.LinearAlgebra.Pi` | 实模 E/F、`L : E →ₗ[ℝ] F`、索引 I；得到 `(I→E) →ₗ[ℝ] (I→F)` | `TimeGrid.map` 在原 Index 上使用；`dPlus_map/dMinus_map`，审计文件对 R/J/Q/G 各两次真实应用 |
+| `LinearMap.toContinuousLinearMap` / `Topology.Algebra.Module.FiniteDimension`（由 Adjoint 引入） | 范数实空间、有限维域 X；将 `X →ₗ[ℝ] H` 升为连续线性映射，无需 H 有限维 | 对 `V.subtype.comp R` 使用，避免将 H/V 限成有限维 |
+| `ContinuousLinearMap.adjoint`、`adjoint_inner_left` / `Analysis.InnerProductSpace.Adjoint` | 两实 Hilbert 空间；`A : X →L[ℝ] H` 的伴随 `H →L[ℝ] X` 满足 `⟪A†v,z⟫=⟪v,Az⟫`；X 完备性由有限维得到 | `Reconstruction.ofLinearMap` 是最小真实构造；`existsUnique_mass_adjoint` 给出原文 eq:massinterface，且实际编译/公理审计 |
+| `Int.ceil_eq_iff`、`Int.floor_eq_iff`，`Fin.intCast` | 实数 floor ring，正 dt，N 非零 | `CellExtension` 两个 on_cell 定理直接证明原文半开单元取值及 0/T 端点；未另建周期索引 |
+
+`Carleman` 实际构建闭包从 T001 的 2019 增至 2510 个 Lake jobs；新增 adjoint
+缓存根已登记 `tools/setup_lean.sh`，其余版本和 manifest 不动。声明与传递基础公理
+输出在 `tools/CheckAxioms.lean` 的实际 CI 日志。未采用清单中的其它工程。

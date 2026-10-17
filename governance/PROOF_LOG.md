@@ -7,3 +7,5 @@
 | 日期 | 任务 | PR / commit | 成果或检查点 | 下一依赖 |
 | --- | --- | --- | --- | --- |
 | 2026-10-17 | BOOTSTRAP-001 | [PR #1](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/1) / `fc466e43e93ce2b8322c9abe6e54b785a04dec27` | AUX001：有限置换差分总和为零；构建、陈述及公理依赖已核对 | C001 周期差分与分部求和；发布后新任务接续 |
+| 2026-10-17 | T001 | [PR #4](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/4) / `8c002e37849fb476608cf4f636a9fa4187e33508` | C001：16 声明，双向周期分部求和已由监督者逐项验收；同 SHA main CI 通过 | T002 重构代数及辅助载荷消去 |
+| 2026-10-17 | T002（待验收） | [PR #5](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/5) / `ba7d860e237ccf30760c08f8fde2d5ae715047d3` | C002/C003（Γ 普通函数修正版）：重构伴随、双向交换、移位解唯一性及残差消去；62 公开定理、177 声明公理检查，CI 通过，尚未合并 | 父监督者验收；真实加权范数及有限 B1/B3/B4/B5 分析接口 |
