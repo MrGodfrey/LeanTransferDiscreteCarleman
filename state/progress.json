@@ -9,38 +9,38 @@
     "started_at": "2026-10-17T09:43:34.927869+00:00"
   },
   "execution": {
-    "state": "RUNNING",
+    "state": "REVIEW",
     "current_task_id": "T006",
     "supervisor_checked_at": "2026-10-17T13:54:55.912702+00:00",
-    "next_action": "先闭合弱Sobolev jet的图范数与真实L²时间乘法，再接坐标/弱乘积/时空扰动",
+    "next_action": "父监督者独立验收同一draft PR9；通过后合并并核实main CI，再接B1连续存在/参数图估计或B4实质误差",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-17T13:54:55.912702+00:00"
+    "last_activity_at": "2026-10-17T14:31:34.445649+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "a6c199412758d406be8c3f8d1e76587b9f820bc1",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39037987479/attempts/1",
-      "finished_at": "2026-10-17T13:48:51.869029+00:00",
+      "checked_sha": "a90098434050bd1b4511908ef26ea12958c37cad",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39040865432/attempts/1",
+      "finished_at": "2026-10-17T14:29:58.675896+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "a6c199412758d406be8c3f8d1e76587b9f820bc1"
+      "source_head_sha": "7c5e8137d41e53bc7a94e0a48e08b45a75169da0"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "a6c199412758d406be8c3f8d1e76587b9f820bc1",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39037987479/attempts/1",
-      "finished_at": "2026-10-17T13:48:51.869029+00:00",
+      "checked_sha": "a90098434050bd1b4511908ef26ea12958c37cad",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39040865432/attempts/1",
+      "finished_at": "2026-10-17T14:29:58.675896+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "a6c199412758d406be8c3f8d1e76587b9f820bc1"
+      "source_head_sha": "7c5e8137d41e53bc7a94e0a48e08b45a75169da0"
     }
   },
   "milestones": [
@@ -1443,7 +1443,7 @@
       "paper_ref": "Lemma3.1 辅助：allowed-weight-derivatives/9.26-eq4；Section5 B3/B4",
       "milestone": "M3",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [],
       "lean_declarations": [
@@ -1521,14 +1521,25 @@
         "Carleman.SpatialProfile.memLp_logDerivativeAction",
         "Carleman.SpatialProfile.logDerivative_spacetime_le"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "a90098434050bd1b4511908ef26ea12958c37cad",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "a90098434050bd1b4511908ef26ea12958c37cad",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39040865432/attempts/1",
+        "finished_at": "2026-10-17T14:29:58.675896+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "7c5e8137d41e53bc7a94e0a48e08b45a75169da0"
+      },
       "semantic_review": null,
       "blocker": null,
       "dependencies": [
         "C022"
       ],
-      "pr_url": null
+      "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/9"
     }
   ],
   "events": [
@@ -1598,11 +1609,16 @@
       "at": "2026-10-17T13:54:55.912702+00:00",
       "public_summary": "权导数与真实弱Sobolev阶段独立验收并合并；继续时空权分析，原文完成数仍1/26",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/8"
+    },
+    {
+      "at": "2026-10-17T14:31:34.445649+00:00",
+      "public_summary": "真实Sobolev与时空有限性阶段已构建并提交审核；B3完整构造，B4只余实质误差估计，原文仍1/26",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/9"
     }
   ],
   "snapshot": {
-    "synced_at": "2026-10-17T13:54:55.912702+00:00",
-    "source_commit": "a6c199412758d406be8c3f8d1e76587b9f820bc1",
+    "synced_at": "2026-10-17T14:31:34.445649+00:00",
+    "source_commit": "7c5e8137d41e53bc7a94e0a48e08b45a75169da0",
     "mode": "LOCAL_SNAPSHOT"
   },
   "dashboard": {
@@ -1628,7 +1644,10 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/8",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/72aff3cccabcb077bd13a1b1956caab5a3e1173a/governance/reviews/T005.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39036612338/attempts/1",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39037987479/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39037987479/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/9",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39040865432/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7c5e8137d41e53bc7a94e0a48e08b45a75169da0/governance/reviews/T006.md"
     ]
   },
   "schedules": [
@@ -3125,9 +3144,9 @@
       ],
       "branch": "proof/t006-weighted-spacetime",
       "base_commit": "a6c199412758d406be8c3f8d1e76587b9f820bc1",
-      "status": "RUNNING",
-      "pr_url": null,
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/9",
+      "checkpoint_commit": "7c5e8137d41e53bc7a94e0a48e08b45a75169da0",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.Orientation.aestronglyMeasurable_extension",
@@ -3204,7 +3223,18 @@
         "Carleman.SpatialProfile.memLp_logDerivativeAction",
         "Carleman.SpatialProfile.logDerivative_spacetime_le"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "a90098434050bd1b4511908ef26ea12958c37cad",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39040865432/attempts/1",
+        "finished_at": "2026-10-17T14:29:58.675896+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "7c5e8137d41e53bc7a94e0a48e08b45a75169da0"
+      },
       "blocker": null,
       "attempts": [
         "实际 fetch 核验 main/tree、main push CI三项通过、下载原始result及读取3163jobs/1010审计日志；固定工具链和依赖复用",
@@ -3213,14 +3243,117 @@
         "实际指数乘法算子连续推出时间强可测/加权有限性，12项 ComparisonBridge 有限性全部填入",
         "坐标导数由 Fréchet 递推识别；证明开域内部的真实弱空间乘积和实际Bochner L²时间扰动",
         "构造完整 ComparisonBridge，ErrorBridge只剩原实际energy/l2误差；不重复假设B2",
-        "本地全构建与1193声明递归标准公理审计通过；92显式声明逐项语义核对，确定SHA实际CI待推送核验"
+        "本地全构建与1193声明递归标准公理审计通过；92显式声明逐项语义核对，确定SHA实际CI待推送核验",
+        "实际PR CI39040865432日志3177jobs/1193递归审计；下载result/axioms产物核实test SHA，声明输出与本地逐字节一致；随后只作证据快照更新"
       ],
-      "next_action": "完整阶段构建/审计和逐声明核对已完成；创建同分支 draft PR 并核实实际 CI",
+      "next_action": "父监督者独立验收同一draft PR9；通过后合并并核实main CI，再接B1连续存在/参数图估计或B4实质误差",
       "remaining_dependencies": [
         "B1：周期 shifted/frozen 连续解存在、参数图估计、周期能量恒等式",
         "Lemma3.1：原 Lipschitz/smooth-closure 接入，高阶弱空间及时间乘积/共轭、域闭性与稠密核",
         "B4：Euler 适定及真实能量/L²时空误差、权族覆盖下统一阈值；B3及B4的有限性/阶数/shift已在规范实例证明"
-      ]
+      ],
+      "executor_semantic_review": {
+        "checked_sha": "a90098434050bd1b4511908ef26ea12958c37cad",
+        "declarations": [
+          "Carleman.Orientation.aestronglyMeasurable_extension",
+          "Carleman.Orientation.memLp_extension",
+          "Carleman.Orientation.memLp_smul_extension",
+          "Carleman.PeriodicWeakTrajectory.sobolevError_value_ae",
+          "Carleman.PeriodicWeakTrajectory.sobolevError_L2",
+          "Carleman.PeriodicWeakTrajectory.sobolevError_field_finite",
+          "Carleman.PeriodicWeakTrajectory.sobolevError_expression_finite",
+          "Carleman.domainSobolevJet_value",
+          "Carleman.injective_of_elliptic_bound",
+          "Carleman.memLp_domainSobolevJet_of_operator",
+          "Carleman.PeriodicWeakTrajectory.domainSobolev_L2",
+          "Carleman.PeriodicWeakTrajectory.weighted_domain_field_finite",
+          "Carleman.BoundedMultiplier.continuousLinearMap_apply",
+          "Carleman.SpatialProfile.expCLM_ae",
+          "Carleman.SpatialProfile.exp_profile_difference",
+          "Carleman.SpatialProfile.expCLM_sub_norm_le",
+          "Carleman.SpatialProfile.continuous_expCLM",
+          "Carleman.SpatialProfile.multiplier_map_eq_expCLM",
+          "Carleman.SpatialProfile.aestronglyMeasurable_map",
+          "Carleman.SpatialProfile.memLp_map",
+          "Carleman.derivativeComponentCLM_apply",
+          "Carleman.weakJetSubmodule_isClosed",
+          "Carleman.WeakSobolevJet.fieldCLM_apply",
+          "Carleman.WeakSobolevJet.valueCLM_apply",
+          "Carleman.WeakSobolevJet.norm_field_le",
+          "Carleman.WeakSobolevJet.norm_le_sum_fields",
+          "Carleman.WeakSobolevJet.sum_fields_le",
+          "Carleman.WeakSobolevJet.aestronglyMeasurable_field",
+          "Carleman.WeakSobolevJet.memLp_field",
+          "Carleman.WeakSobolevJet.truncate_value",
+          "Carleman.WeakSobolevJet.norm_truncate_le",
+          "Carleman.sobolevSubspace_mono",
+          "Carleman.domainSobolevJet_norm_mono",
+          "Carleman.elliptic_bound_lower_order",
+          "Carleman.BoundedMultiplier.inner_map_left",
+          "Carleman.SpatialTest.mulOn_toLp",
+          "Carleman.SpatialTest.mulOn_derivativeLp",
+          "Carleman.IsWeakSpatialDerivative.mul",
+          "Carleman.SpatialProfile.timeSquareIntegrable_of_memLp",
+          "Carleman.SpatialProfile.timeSq_eq_norm_toLp_sq",
+          "Carleman.SpatialProfile.timeNorm_eq_norm_toLp",
+          "Carleman.DifferentialExpression.memLp_apply",
+          "Carleman.DifferentialExpression.timeSquareIntegrable_apply",
+          "Carleman.WeakSobolevJet.timeSquareIntegrable_field",
+          "Carleman.sobolevGeometry_comparisonBridge",
+          "Carleman.sobolevGeometry_errorBridge",
+          "Carleman.sobolevGeometry_value_finite",
+          "Carleman.sobolevGeometry_observation_finite",
+          "Carleman.sobolevGeometry_derivative_finite",
+          "Carleman.sobolevGeometry_gradient_finite",
+          "Carleman.conforming_value_L2",
+          "Carleman.sobolevGeometry_trajectory_graph_L2",
+          "Carleman.sobolevGeometry_reconstruction_graph_L2",
+          "Carleman.sobolevGeometry_error_graph_L2",
+          "Carleman.coordinateDerivative_zero",
+          "Carleman.coordinateDerivative_cons",
+          "Carleman.abs_coordinateDerivative_le",
+          "Carleman.coordinateVector_represents",
+          "Carleman.norm_coordinateCollection_le",
+          "Carleman.iteratedFDerivWithin_eq_of_mem_nhds",
+          "Carleman.allowedWeight_coordinate_derivatives_uniform",
+          "Carleman.SpatialProfile.multiplier_smooth",
+          "Carleman.SpatialProfile.weightDirectionalMultiplier_value",
+          "Carleman.SpatialProfile.weightDirectionalMultiplier_map",
+          "Carleman.SpatialProfile.weak_derivative_weighted",
+          "Carleman.TimeGrid.ae_mem_period",
+          "Carleman.TimeWeightRegularity.derivative_ae",
+          "Carleman.TimeWeightRegularity.aestronglyMeasurable_derivative",
+          "Carleman.TimeWeightRegularity.memLp_shift",
+          "Carleman.SpatialProfile.logDerivativeAction_eq",
+          "Carleman.SpatialProfile.aestronglyMeasurable_logDerivativeAction",
+          "Carleman.SpatialProfile.memLp_logDerivativeAction",
+          "Carleman.SpatialProfile.logDerivative_spacetime_le"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7c5e8137d41e53bc7a94e0a48e08b45a75169da0/governance/reviews/T006.md",
+        "reviewed_at": "2026-10-17T14:31:34.445649+00:00",
+        "reviewer": "T006 executor; parent independent acceptance pending"
+      },
+      "checkpoint_ci_relation": {
+        "head_sha": "7c5e8137d41e53bc7a94e0a48e08b45a75169da0",
+        "test_sha": "a90098434050bd1b4511908ef26ea12958c37cad",
+        "base_sha": "a6c199412758d406be8c3f8d1e76587b9f820bc1",
+        "head_tree": "b8deec432f0473ebfb0a206384f1e63f74b18eb0",
+        "test_tree": "b8deec432f0473ebfb0a206384f1e63f74b18eb0",
+        "carleman_tree": "944a0b74c3d9237f48294c4957925b09bbc9239e",
+        "root_import_blob": "f8d0a6cdee7464a1fb345e6a549032c40f77e07b",
+        "audit_script_blob": "a1bb3b5f82ef3f654b69db9bb7a05a4a5025ca00",
+        "run_id": 39040865432,
+        "lean_job_id": 117419929279,
+        "declarations_sha256": "9cbdc1a1efe7500da44f0a359538bbe3ba5af9eed76f80705acd73f73649e778",
+        "build_jobs": 3177,
+        "audited_declarations": 1193,
+        "result_artifact_id": 12104465106,
+        "declaration_artifact_id": 12103499743,
+        "state_job_id": 117419929504,
+        "dashboard_job_id": 117420496464
+      }
     }
   ],
   "private_maintenance": {
