@@ -69,3 +69,19 @@ public import Carleman.Weights.AllowedFormBounds
 public import Carleman.Weights.ConformingConjugation
 public import Carleman.Weights.SmoothClosure
 public import Carleman.Weights.SobolevConjugation
+
+-- T011: genuine weak time products and Bochner graph conjugation.
+public import Carleman.Continuous.BochnerNorm
+public import Carleman.Continuous.GraphMeasurability
+public import Carleman.Continuous.WeakTimeProduct
+public import Carleman.Spatial.ExponentialDerivative
+public import Carleman.Spatial.SobolevMeasurability
+public import Carleman.Spatial.SobolevTimeGraph
+public import Carleman.Weights.SobolevGraphRegularity
+public import Carleman.Weights.SpacetimeCommutator
+public import Carleman.Weights.SpacetimeConjugation
+public import Carleman.Weights.TemporalMultiplier
+public import Carleman.Weights.WeakConjugationIdentity
+public import Carleman.Weights.WeakTemporalProduct
+public import Carleman.Weights.WeightedOperatorRegularity
+public import Carleman.Weights.WeightedWeakTrajectory

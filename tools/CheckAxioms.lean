@@ -859,6 +859,120 @@ set_option pp.maxSteps 1000000
 #check @Carleman.allowedWeight_parameterNorm_uniform
 #check @Carleman.allowedWeight_weightedNorm_uniform
 
+-- T011: every explicit declaration and its recursive dependency axioms.
+#check @Carleman.bochnerL2Norm
+#print axioms Carleman.bochnerL2Norm
+#check @Carleman.bochnerL2Norm_eq
+#print axioms Carleman.bochnerL2Norm_eq
+#check @Carleman.bochnerL2Norm_nonneg
+#print axioms Carleman.bochnerL2Norm_nonneg
+#check @Carleman.bochnerL2Norm_norm
+#print axioms Carleman.bochnerL2Norm_norm
+#check @Carleman.bochnerL2Norm_add
+#print axioms Carleman.bochnerL2Norm_add
+#check @Carleman.bochnerL2Norm_finsetSum
+#print axioms Carleman.bochnerL2Norm_finsetSum
+#check @Carleman.memLp_of_le_sum_norm
+#print axioms Carleman.memLp_of_le_sum_norm
+#check @Carleman.bochnerL2Norm_le_sum
+#print axioms Carleman.bochnerL2Norm_le_sum
+#check @Carleman.aestronglyMeasurable_of_injective_clm
+#print axioms Carleman.aestronglyMeasurable_of_injective_clm
+#check @Carleman.CoerciveForm.operator_aestronglyMeasurable
+#print axioms Carleman.CoerciveForm.operator_aestronglyMeasurable
+#check @Carleman.CoerciveForm.IsAssociated.operator_aestronglyMeasurable
+#print axioms Carleman.CoerciveForm.IsAssociated.operator_aestronglyMeasurable
+#check @Carleman.absolutelyContinuous_clm_apply
+#print axioms Carleman.absolutelyContinuous_clm_apply
+#check @Carleman.HasWeakTimeDerivative.of_ac_ae
+#print axioms Carleman.HasWeakTimeDerivative.of_ac_ae
+#check @Carleman.HasWeakTimeDerivative.clm_apply
+#print axioms Carleman.HasWeakTimeDerivative.clm_apply
+#check @Carleman.SpatialProfile.expDerivativeCLM
+#print axioms Carleman.SpatialProfile.expDerivativeCLM
+#check @Carleman.SpatialProfile.expDerivativeCLM_ae
+#print axioms Carleman.SpatialProfile.expDerivativeCLM_ae
+#check @Carleman.SpatialProfile.exp_scalar_remainder
+#print axioms Carleman.SpatialProfile.exp_scalar_remainder
+#check @Carleman.SpatialProfile.expCLM_remainder
+#print axioms Carleman.SpatialProfile.expCLM_remainder
+#check @Carleman.SpatialProfile.hasDerivAt_expCLM
+#print axioms Carleman.SpatialProfile.hasDerivAt_expCLM
+#check @Carleman.spatialLp_secondCountable
+#print axioms Carleman.spatialLp_secondCountable
+#check @Carleman.WeakSobolevJet.aestronglyMeasurable_of_value
+#print axioms Carleman.WeakSobolevJet.aestronglyMeasurable_of_value
+#check @Carleman.WeakSobolevJet.parameterTimeField
+#print axioms Carleman.WeakSobolevJet.parameterTimeField
+#check @Carleman.WeakSobolevJet.spacetimeParameterNorm
+#print axioms Carleman.WeakSobolevJet.spacetimeParameterNorm
+#check @Carleman.WeakSobolevJet.parameterTimeField_norm
+#print axioms Carleman.WeakSobolevJet.parameterTimeField_norm
+#check @Carleman.WeakSobolevJet.parameterNorm_eq_sum_timeField
+#print axioms Carleman.WeakSobolevJet.parameterNorm_eq_sum_timeField
+#check @Carleman.WeakSobolevJet.memLp_parameterTimeField
+#print axioms Carleman.WeakSobolevJet.memLp_parameterTimeField
+#check @Carleman.WeakSobolevJet.memLp_unweightedParameterTimeField
+#print axioms Carleman.WeakSobolevJet.memLp_unweightedParameterTimeField
+#check @Carleman.WeakSobolevJet.spacetimeParameterNorm_le
+#print axioms Carleman.WeakSobolevJet.spacetimeParameterNorm_le
+#check @Carleman.WeakSobolevJet.norm_le_parameterNorm
+#print axioms Carleman.WeakSobolevJet.norm_le_parameterNorm
+#check @Carleman.WeakSobolevJet.parameterNorm_global_le
+#print axioms Carleman.WeakSobolevJet.parameterNorm_global_le
+#check @Carleman.WeakSobolevJet.memLp_of_weighted_value
+#print axioms Carleman.WeakSobolevJet.memLp_of_weighted_value
+#check @Carleman.allowedCommutatorPath
+#print axioms Carleman.allowedCommutatorPath
+#check @Carleman.allowedCommutatorPath_eq
+#print axioms Carleman.allowedCommutatorPath_eq
+#check @Carleman.allowedCommutatorPath_aestronglyMeasurable
+#print axioms Carleman.allowedCommutatorPath_aestronglyMeasurable
+#check @Carleman.allowedCommutator_spacetime_le
+#print axioms Carleman.allowedCommutator_spacetime_le
+#check @Carleman.conforming_spacetime_conjugation_uniform
+#print axioms Carleman.conforming_spacetime_conjugation_uniform
+#check @Carleman.SpatialProfile.weightCLM
+#print axioms Carleman.SpatialProfile.weightCLM
+#check @Carleman.SpatialProfile.weightCLM_apply
+#print axioms Carleman.SpatialProfile.weightCLM_apply
+#check @Carleman.SpatialProfile.weightDerivativeCLM
+#print axioms Carleman.SpatialProfile.weightDerivativeCLM
+#check @Carleman.SpatialProfile.weightDerivativeCLM_apply
+#print axioms Carleman.SpatialProfile.weightDerivativeCLM_apply
+#check @Carleman.SpatialProfile.hasDerivWithinAt_weightCLM
+#print axioms Carleman.SpatialProfile.hasDerivWithinAt_weightCLM
+#check @Carleman.SpatialProfile.weightDerivativeCLM_norm_le
+#print axioms Carleman.SpatialProfile.weightDerivativeCLM_norm_le
+#check @Carleman.SpatialProfile.weightCLM_absolutelyContinuous
+#print axioms Carleman.SpatialProfile.weightCLM_absolutelyContinuous
+#check @Carleman.SpatialProfile.ae_hasDerivAt_weightCLM
+#print axioms Carleman.SpatialProfile.ae_hasDerivAt_weightCLM
+#check @Carleman.SpatialProfile.weightCLM_continuousOn
+#print axioms Carleman.SpatialProfile.weightCLM_continuousOn
+#check @Carleman.SpatialProfile.weightCLM_periodic_trace
+#print axioms Carleman.SpatialProfile.weightCLM_periodic_trace
+#check @Carleman.PeriodicWeakTrajectory.domainValue_of_weighted
+#print axioms Carleman.PeriodicWeakTrajectory.domainValue_of_weighted
+#check @Carleman.PeriodicWeakTrajectory.weighted_conjugation_identity
+#print axioms Carleman.PeriodicWeakTrajectory.weighted_conjugation_identity
+#check @Carleman.SpatialProfile.weightedTimeDerivative
+#print axioms Carleman.SpatialProfile.weightedTimeDerivative
+#check @Carleman.SpatialProfile.weightedTimeDerivative_L2
+#print axioms Carleman.SpatialProfile.weightedTimeDerivative_L2
+#check @Carleman.SpatialProfile.hasWeakTimeDerivative_map
+#print axioms Carleman.SpatialProfile.hasWeakTimeDerivative_map
+#check @Carleman.SpatialProfile.continuousOn_map
+#print axioms Carleman.SpatialProfile.continuousOn_map
+#check @Carleman.SpatialProfile.map_periodic_trace
+#print axioms Carleman.SpatialProfile.map_periodic_trace
+#check @Carleman.conformingWeight_inverse
+#print axioms Carleman.conformingWeight_inverse
+#check @Carleman.weightedOperator_L2
+#print axioms Carleman.weightedOperator_L2
+#check @Carleman.PeriodicWeakTrajectory.exists_weighted_trajectory
+#print axioms Carleman.PeriodicWeakTrajectory.exists_weighted_trajectory
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

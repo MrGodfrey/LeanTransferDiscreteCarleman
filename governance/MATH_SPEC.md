@@ -497,3 +497,42 @@ C027 为 AUXILIARY，14模块/67定理/85显式声明；逐项核对和表示边
    不等于各阶Bochner L²范数之和的原时空R结论。未声称已完成eq:primitivegraph。
 3. B1存在/一般弱唯一性/真实弱正规性/周期迹已由T009清偿；B2/B5、规范B3及B4-order/shift/finite继续复用。
    B4实际energy/l2时间与空间误差及统一阈值组合仍待，`TransferBridges.solutions`未整体清偿。
+
+## T011：真实弱时间乘积、Bochner 时空共轭与图正规性
+
+C028 为 AUXILIARY；14 模块/47 定理/56 显式声明，逐项边界见 `reviews/T011.md`。
+这是完整的弱共轭正规性阶段，不是完整 Lemma3.1/3.3；原文计数仍 1/26。
+
+`hasDerivAt_expCLM` 用真实 L² 乘子的二阶算子范数余项求导；
+`hasWeakTimeDerivative_map` 从原 H 值弱导数、连续代表及导数 L²，推出
+(σu)'=σu'+(∂t logσ)σu 的真实 Bochner 分布恒等式。系数 AC、a.e. 真导数和产品 L²均已证明，
+不再把一般乘积辅助引理的这些前提留给实际权调用方。闭区间连续和周期 H 端点迹也保留。
+
+`operator_aestronglyMeasurable` 从原 A1 关联算子的闭图可测逆推导 A 路径可测性，
+`WeakSobolevJet.aestronglyMeasurable_of_value` 对完整弱 jet 做同样提升；不是假设 A 在 H 中连续。
+实际空间 L² 的第二可数性由有限维空间及有限紧集测度条件证明，无新增空间可分假设。
+
+`spacetimeParameterNorm` 是原 sum_j ‖q^(n−j)σD^j u‖_(L²_t L²_x)，n=2m 对应 R。
+`conforming_spacetime_conjugation_uniform` 使用已证空间 Leibniz/共轭，先推得加权 jet 的 Bochner L²，
+再用 Minkowski 得实际时空 R 双向比较；C 在 T/q/qmax/tau/正负profile/路径之前固定。
+点态空间 R 的 L² 与各阶 L² 范数和仅使用不等式比较，固定损失 n+1；不将它们写成等式。
+定义的 eLpNorm.toReal 总化不被用于隐藏无穷范数：每条实质比较均要求或证明所有字段 MemLp。
+
+`allowedCommutator_spacetime_le` 将原 A2 的 [A,σ]σ⁻¹v 和 j=0…n−1 全字段直接接入，
+证明换位子强可测、L²及 C/L 倍 R_(Lq) 的原时空界。`weightedOperator_L2` 进一步由此推得 A(σu)∈L²。
+`exists_weighted_trajectory` 用原 A1 椭圆界、关联定义及 A2，构造原 PeriodicWeakTrajectory 的加权版本；
+仅要求 a.e. D(A) 值，实际 H 弱导数、A 项 L²、连续性和周期迹全部给出。
+`weighted_conjugation_identity` 证明原 9.26-eq2，两个 Orientation 均适用，μ任意；原 μ=(Lq)^(2m) 是其特例。
+T005 原时间扰动 C/L^(2m) 估计现在可应用于这条真实加权轨迹。
+
+### 尚未清偿且未改作结论前提的义务
+
+1. 原 bounded Lipschitz Ω 的参数 Sobolev 插值/扩张 eq:parametergraph：需要把测度专化到
+   volume.restrict Ω，建立原 Lipschitz 几何的弱 H^n 扩张及缩放插值，或等价局部差商证明。
+   固定库的全空间紧支撑 GNS/Bessel 分布及标量 Lipschitz 扩张不能直接填补此桥。
+   零延拓的额外边界条件与 A1 粗界的错误 q 幂均未采用。完整 eq:parameterparabolic、
+   eq:primitivegraph、Euler 加权最大正规性仍待，不能由本阶段正规性和共轭恒等式推称已证。
+2. 高阶空间共轭沿用明确的开邻域 C∞ 表示。未把任意闭集 ContDiffOn 当作该表示，
+   原 C∞(闭包) 的另一约定仍需表示接入；没有修改原目标或擅自增加边界/域限制。
+3. B1 存在及弱唯一性已由 T009 清偿；B2/B5、规范 B3、B4-order/shift/finite 继续复用。
+   B4 实际时间/空间 energy 与 L² 误差、统一阈值组合及 TransferBridges.solutions 尚未清偿。
