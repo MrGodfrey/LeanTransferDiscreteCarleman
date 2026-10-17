@@ -278,3 +278,73 @@ A 可在有限的上述指数集合上先取共同上界。扩大的是本单元
 - B4：Euler 适定与正则性、连续/离散时间空间误差、energy/l2/finite_energy/finite_l2、
   权族所需有限性及原阈值的统一选择仍待 Lemmas 3.1/3.3/3.4、Theorem 3.5、Section 4。
   不从本阶段辅助结果推断这些存在或误差估计。
+
+## T006：真正图空间、时空加权有限性及桥接包实例
+
+C023 为 AUXILIARY；12 个模块、73 个定理、92 个显式声明。原稿未修改，原文覆盖仍为 1/26。
+完整逐声明边界见 `governance/reviews/T006.md`。本节更新 T005 中的未清偿项。
+
+### 图空间与时间可测性
+
+`weakJetSubmodule_isClosed` 将所有弱导数测试恒等式写成连续 L² 配对的闭等式，
+证明有限乘积图范数中的 `WeakSobolevJet` 完备；同时证明此范数与各阶 L² 范数和等价。
+不把其 H 线性像的 H 诱导范数当成 Sobolev 能量范数。
+`truncate` 精确保留低阶场和零阶 H 类；`elliptic_bound_lower_order` 从原 A1 的 2m 阶界
+推出 transfer 所需 m 阶界，无需另加低阶椭圆假设。原文通常 Sobolev 范数控制此有限乘积范数。
+
+`memLp_domainSobolevJet_of_operator` 在 range(A) 上构造至真实图空间的有界逆，利用嵌入传递
+强可测性，再用 A1 控制积分。因此 B1 已有的 `A U ∈ L²` 推出规范 jet 属于 Bochner L²。
+不假设 A 满射、闭性或每时刻 D(A) 正规性。`PeriodicWeakTrajectory` 的 a.e. 域代表、H 弱导数和周期迹不变。
+任意有限节点 jet 的两方向分片延拓属于 L²；相减得到实际 `U−R bar(z)` 的图空间 L²。
+
+`continuous_expCLM` 证明 r→exp(rρ) 空间乘法在算子范数中连续，从而真实时变 L² 轨迹
+乘 σ 后强可测。`memLp_map`、`timeSquareIntegrable_of_memLp` 及表达式/导数场定理先证明
+平方可积性，再使用积分；`timeSq_eq_norm_toLp_sq`、`timeNorm_eq_norm_toLp` 识别为真正
+L²(0,T;L²(Ω)) 类的范数。没有从 totalized 积分比较倒推可积性。
+qmax 和任意冻结序列幅值只用于有限性，不用作统一估计常数。
+
+### 实际 ComparisonBridge / ErrorBridge
+
+`sobolevGeometry_comparisonBridge` 现在构造整份真实 B3 桥接包，包括全部 12 项有限性字段。
+输入为原 A1(2m)、真实 B1 frozen 解、原 A4 以及 N1/N2/N5 的逐节点界；
+单一时间阈值沿用 T005，K 统一控制 9、9C_N1、9C_N2、9C_N5。
+观测仍为同一空间的区域截断，微分表达式仍有依赖 j 的向量输出，lift/Γ 仍为普通函数。
+所有方向、所有离散状态都包括，未把最终离散 Carleman 估计作为输入。
+
+`sobolevGeometry_errorBridge` 构造 ErrorBridge 的 order、shift、finite_l2、finite_energy。
+它从原 A1(2m) 和 B1 正则性推出所有实际误差的加权有限性，继而调用已证明的有界系数阶数界
+和冻结 μ 比较。只留下能量、L² 两项实质误差估计；使用原真实误差、原 ε_E/ε₀、
+能量指数 max(0,c_j−2(m−j))，以及 c₀/o/4m 三个 L² 指数。
+误差估计仍以实际辅助离散方程为条件，后续 ErrorBridge.total_bound 用已证明 B2 供给该条件。
+K 同时支配 `differentialFamilyBound` 与 `(2L)^(4m)`；这些常数只依赖先固定的结构数据。
+应用原 `conditional_transfer_uniform` 时共同 K 仍须在所有 T/网格/权/方向/状态之前选择。
+
+### Lemma 3.1 的新增依赖
+
+`coordinateDerivative_cons` 将 Fréchet 张量坐标评估识别为真正重复坐标导数；
+`coordinateVector_represents` 保证每个多重指标一次。
+`allowedWeight_coordinate_derivatives_uniform` 将既有张量界转为真实 Euclidean 坐标集合界，
+仅增加固定维数/阶数因子，C 先于 q/τ/正反符号/阶数选择。
+原 Lipschitz 域与 C∞(closure Ω) 到 compact/UniqueDiffOn 输入的接入尚未证明。
+
+`IsWeakSpatialDerivative.mul` 通过真正紧支撑光滑测试函数证明弱空间乘积法则。
+权只需在开域内光滑；测试支撑在域内保证乘积全局光滑。
+`weak_derivative_weighted` 专用于原指数乘法，得到 d(σu)=σdu+q(dρ)σu，
+固定 profile 的方向导数界明确作为输入；负 profile/负指数适用于逆权。
+本阶段只完成一阶空间弱公式，未声称完成所有高阶弱 Leibniz 或时间弱共轭公式。
+
+`logDerivative_spacetime_le` 证明实际 Bochner L² 扰动界
+`‖(∂t log σ)u‖ ≤ β(|τ|+R)/L^(2m) ‖μu‖`，m≥1、L>0。
+导数先在 (0,T) a.e. 识别为真正 deriv q，再证明强可测、平方可积后比较范数。
+常数独立 T/qmax/mesh；这已超出固定时刻界，但不声称产品测度 L² 的等距同构已构造。
+
+### 本阶段后的精确剩余义务
+
+- B1：原 Lemmas 3.1/3.4 的连续周期 shifted/frozen 解存在、参数椭圆图估计、周期能量恒等式；
+  高阶弱乘积/共轭与时间弱乘积、算子域闭性及稠密核/逼近识别仍待。
+- B2/B5：已证明且继续复用，不重新假设。
+- B3：在规范 Sobolev 实例、原 A1/A4 与 N1/N2/N5 和已存在 B1 解下整份构造完成；
+  不再单独假设有限性。具体数值方案仍须满足原统一节点界，原抽象自由 TransferGeometry 不自动拥有这些识别。
+- B4：order、shift、finite_energy、finite_l2 在此实例中均已消去；剩下真实能量与 L² 误差估计，
+  包括 Euler 适定/时间与空间误差、原权族覆盖与统一阈值的完整应用。
+- 完整 `TransferBridges` 仍需 B1 每个载荷的存在量词和 B4 两项估计，不能从本构造推断原始 Theorem 2.1。

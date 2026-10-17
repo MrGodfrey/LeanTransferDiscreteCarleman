@@ -345,6 +345,106 @@ end OrdinaryLoadMaps
 #print axioms Carleman.sobolevGeometry_order
 #print axioms Carleman.sobolevGeometry_comparisons
 
+-- T006: concrete Bochner/Sobolev and remaining bridge constructors.
+#check @Carleman.Orientation.aestronglyMeasurable_extension
+#check @Carleman.Orientation.memLp_extension
+#check @Carleman.Orientation.memLp_smul_extension
+#check @Carleman.PeriodicWeakTrajectory.sobolevError
+#check @Carleman.PeriodicWeakTrajectory.sobolevError_value_ae
+#check @Carleman.PeriodicWeakTrajectory.sobolevError_L2
+#check @Carleman.PeriodicWeakTrajectory.sobolevError_field_finite
+#check @Carleman.PeriodicWeakTrajectory.sobolevError_expression_finite
+#check @Carleman.domainSobolevJet
+#check @Carleman.domainSobolevJet_value
+#check @Carleman.injective_of_elliptic_bound
+#check @Carleman.memLp_domainSobolevJet_of_operator
+#check @Carleman.PeriodicWeakTrajectory.domainSobolev_L2
+#check @Carleman.PeriodicWeakTrajectory.weighted_domain_field_finite
+#check @Carleman.BoundedMultiplier.continuousLinearMap
+#check @Carleman.BoundedMultiplier.continuousLinearMap_apply
+#check @Carleman.SpatialProfile.expMultiplier
+#check @Carleman.SpatialProfile.expCLM
+#check @Carleman.SpatialProfile.expCLM_ae
+#check @Carleman.SpatialProfile.exp_profile_difference
+#check @Carleman.SpatialProfile.expCLM_sub_norm_le
+#check @Carleman.SpatialProfile.continuous_expCLM
+#check @Carleman.SpatialProfile.multiplier_map_eq_expCLM
+#check @Carleman.SpatialProfile.aestronglyMeasurable_map
+#check @Carleman.SpatialProfile.memLp_map
+#check @Carleman.derivativeComponentCLM
+#check @Carleman.derivativeComponentCLM_apply
+#check @Carleman.weakJetSubmodule_isClosed
+#check @Carleman.weakSobolevJet_completeSpace
+#check @Carleman.WeakSobolevJet.fieldCLM
+#check @Carleman.WeakSobolevJet.fieldCLM_apply
+#check @Carleman.WeakSobolevJet.valueCLM
+#check @Carleman.WeakSobolevJet.valueCLM_apply
+#check @Carleman.WeakSobolevJet.norm_field_le
+#check @Carleman.WeakSobolevJet.norm_le_sum_fields
+#check @Carleman.WeakSobolevJet.sum_fields_le
+#check @Carleman.WeakSobolevJet.aestronglyMeasurable_field
+#check @Carleman.WeakSobolevJet.memLp_field
+#check @Carleman.WeakSobolevJet.truncate
+#check @Carleman.WeakSobolevJet.truncate_value
+#check @Carleman.WeakSobolevJet.norm_truncate_le
+#check @Carleman.sobolevSubspace_mono
+#check @Carleman.domainSobolevJet_norm_mono
+#check @Carleman.elliptic_bound_lower_order
+#check @Carleman.BoundedMultiplier.inner_map_left
+#check @Carleman.SpatialTest.mulOn
+#check @Carleman.SpatialTest.mulOn_toLp
+#check @Carleman.SpatialTest.mulOn_derivativeLp
+#check @Carleman.IsWeakSpatialDerivative.mul
+#check @Carleman.SpatialProfile.timeSquareIntegrable_of_memLp
+#check @Carleman.SpatialProfile.timeSq_eq_norm_toLp_sq
+#check @Carleman.SpatialProfile.timeNorm_eq_norm_toLp
+#check @Carleman.DifferentialExpression.memLp_apply
+#check @Carleman.DifferentialExpression.timeSquareIntegrable_apply
+#check @Carleman.WeakSobolevJet.timeSquareIntegrable_field
+#check @Carleman.sobolevGeometry_comparisonBridge
+#check @Carleman.sobolevGeometry_errorBridge
+#check @Carleman.sobolevGeometry_value_finite
+#check @Carleman.sobolevGeometry_observation_finite
+#check @Carleman.sobolevGeometry_derivative_finite
+#check @Carleman.sobolevGeometry_gradient_finite
+#check @Carleman.conforming_value_L2
+#check @Carleman.sobolevGeometry_trajectory_graph_L2
+#check @Carleman.sobolevGeometry_reconstruction_graph_L2
+#check @Carleman.sobolevGeometry_error_graph_L2
+#check @Carleman.coordinateTensorEval
+#check @Carleman.coordinateDerivative
+#check @Carleman.coordinateDerivative_zero
+#check @Carleman.coordinateDerivative_cons
+#check @Carleman.abs_coordinateDerivative_le
+#check @Carleman.coordinateVector
+#check @Carleman.coordinateVector_represents
+#check @Carleman.coordinateCollection
+#check @Carleman.norm_coordinateCollection_le
+#check @Carleman.iteratedFDerivWithin_eq_of_mem_nhds
+#check @Carleman.allowedWeight_coordinate_derivatives_uniform
+#check @Carleman.SpatialProfile.directionalMultiplier
+#check @Carleman.SpatialProfile.weightDirectionalMultiplier
+#check @Carleman.SpatialProfile.multiplier_smooth
+#check @Carleman.SpatialProfile.weightDirectionalMultiplier_value
+#check @Carleman.SpatialProfile.weightDirectionalMultiplier_map
+#check @Carleman.SpatialProfile.weak_derivative_weighted
+#check @Carleman.TimeGrid.ae_mem_period
+#check @Carleman.TimeWeightRegularity.derivative_ae
+#check @Carleman.TimeWeightRegularity.aestronglyMeasurable_derivative
+#check @Carleman.TimeWeightRegularity.memLp_shift
+#check @Carleman.SpatialProfile.valueMultiplier
+#check @Carleman.SpatialProfile.logDerivativeAction
+#check @Carleman.SpatialProfile.logDerivativeAction_eq
+#check @Carleman.SpatialProfile.aestronglyMeasurable_logDerivativeAction
+#check @Carleman.SpatialProfile.memLp_logDerivativeAction
+#check @Carleman.SpatialProfile.logDerivative_spacetime_le
+#print axioms Carleman.sobolevGeometry_comparisonBridge
+#print axioms Carleman.sobolevGeometry_errorBridge
+#print axioms Carleman.SpatialProfile.logDerivative_spacetime_le
+#print axioms Carleman.allowedWeight_coordinate_derivatives_uniform
+#print axioms Carleman.memLp_domainSobolevJet_of_operator
+#print axioms Carleman.IsWeakSpatialDerivative.mul
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

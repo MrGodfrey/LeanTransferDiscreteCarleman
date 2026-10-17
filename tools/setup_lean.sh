@@ -30,6 +30,7 @@ if [ "$#" -eq 0 ]; then
     Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff \
     Mathlib.Analysis.Normed.Lp.MeasurableSpace Mathlib.Data.Fintype.Vector \
     Mathlib.MeasureTheory.Function.StronglyMeasurable.Lemmas \
+    Mathlib.Analysis.Calculus.FDeriv.Measurable Mathlib.Data.Multiset.Sort \
     Mathlib.MeasureTheory.Function.LpSpace.Indicator
 fi
 lake exe cache get "$@"

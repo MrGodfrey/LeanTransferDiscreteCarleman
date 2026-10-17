@@ -13,3 +13,7 @@ public import Carleman.Transfer.ShiftNorm
 public import Carleman.Weights.SpatialDerivatives
 public import Carleman.Weights.TemporalDerivatives
 public import Carleman.Transfer.SobolevGeometry
+
+public import Carleman.Transfer.SobolevBridges
+public import Carleman.Weights.SpatialProduct
+public import Carleman.Weights.TemporalPerturbation
