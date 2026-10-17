@@ -20,7 +20,7 @@ def validate_project(root):
     mathlib = next((p for p in packages if p['name'] == 'mathlib'), None)
     if not mathlib or not re.fullmatch(r'[0-9a-f]{40}', mathlib.get('rev', '')):
         raise ValueError('Lock mathlib to a full commit in lake-manifest.json')
-    if not re.search(r'^\s*import\s+Carleman\.', (root / 'Carleman.lean').read_text(), re.M):
+    if not re.search(r'^\s*(?:public\s+)?import\s+Carleman\.', (root / 'Carleman.lean').read_text(), re.M):
         raise ValueError('Carleman.lean must import actual project proof modules')
     return mathlib['rev']
 
