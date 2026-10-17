@@ -223,6 +223,128 @@ end OrdinaryLoadMaps
 #print axioms Carleman.TransferGeometry.lifted_load_of_L2
 #print axioms Carleman.frozenShift_timeSq_le
 
+-- T005: every new public declaration, bound to the build SHA.
+#check @Carleman.DifferentialExpression
+#check @Carleman.DifferentialExpression.boundSq
+#check @Carleman.DifferentialExpression.boundSq_nonneg
+#check @Carleman.DifferentialExpression.orders
+#check @Carleman.DifferentialExpression.apply
+#check @Carleman.DifferentialExpression.apply_ae
+#check @Carleman.DifferentialExpression.linearMap
+#check @Carleman.DifferentialExpression.weighted_sq_le
+#check @Carleman.DifferentialExpression.weighted_density_le
+#check @Carleman.CarlemanExponents.order_exponent_le
+#check @Carleman.DifferentialExpression.onFields
+#check @Carleman.DifferentialExpression.onFields_apply
+#check @Carleman.DifferentialExpression.timeSq_le_graph
+#check @Carleman.DifferentialExpression.aestronglyMeasurable_apply
+#check @Carleman.OperatorMultiplier
+#check @Carleman.OperatorMultiplier.memLp_apply
+#check @Carleman.OperatorMultiplier.map
+#check @Carleman.OperatorMultiplier.map_ae
+#check @Carleman.OperatorMultiplier.map_add
+#check @Carleman.OperatorMultiplier.map_smul
+#check @Carleman.OperatorMultiplier.linearMap
+#check @Carleman.OperatorMultiplier.norm_map_le
+#check @Carleman.OperatorMultiplier.continuousLinearMap
+#check @Carleman.OperatorMultiplier.map_weight
+#check @Carleman.OperatorMultiplier.weighted_seminorm_le
+#check @Carleman.OperatorMultiplier.ofCoefficients
+#check @Carleman.OperatorMultiplier.ofCoefficients_apply
+#check @Carleman.OperatorMultiplier.ofCoefficients_map_ae
+#check @Carleman.OperatorMultiplier.const
+#check @Carleman.OperatorMultiplier.const_map_ae
+#check @Carleman.VectorCoefficient
+#check @Carleman.OperatorMultiplier.ofVectorCoefficients
+#check @Carleman.OperatorMultiplier.ofVectorCoefficients_apply
+#check @Carleman.OperatorMultiplier.ofVectorCoefficients_map_ae
+#check @Carleman.SpatialCoordinates
+#check @Carleman.DerivativeFiber
+#check @Carleman.JetFields
+#check @Carleman.derivativeComponent
+#check @Carleman.derivativeComponent_ae
+#check @Carleman.weakJetSubmodule
+#check @Carleman.WeakSobolevJet
+#check @Carleman.WeakSobolevJet.field
+#check @Carleman.WeakSobolevJet.field_weak_derivative
+#check @Carleman.WeakSobolevJet.field_weighted_sq
+#check @Carleman.WeakSobolevJet.expression
+#check @Carleman.WeakSobolevJet.expression_weighted_density_le
+#check @Carleman.WeakSobolevJet.vectorExpression
+#check @Carleman.WeakSobolevJet.vectorExpression_apply_ae
+#check @Carleman.derivativeComponent_ext
+#check @Carleman.derivativeFiber_zero_norm_sq
+#check @Carleman.WeakSobolevJet.value
+#check @Carleman.WeakSobolevJet.eq_zero_of_value_eq_zero
+#check @Carleman.WeakSobolevJet.value_injective
+#check @Carleman.sobolevSubspace
+#check @Carleman.sobolevJetEquiv
+#check @Carleman.sobolevDerivative
+#check @Carleman.sobolevDerivative_weak
+#check @Carleman.sobolevDerivative_zero_value
+#check @Carleman.sobolevDerivative_zero_seminorm
+#check @Carleman.SpatialTest
+#check @Carleman.SpatialTest.memLp
+#check @Carleman.SpatialTest.memLp_derivative
+#check @Carleman.SpatialTest.toLp
+#check @Carleman.SpatialTest.derivativeLp
+#check @Carleman.SpatialTest.toLp_ae
+#check @Carleman.SpatialTest.derivativeLp_ae
+#check @Carleman.IsWeakSpatialDerivative
+#check @Carleman.IsWeakSpatialDerivative.iff_integral
+#check @Carleman.IsWeakSpatialDerivative.zero
+#check @Carleman.IsWeakSpatialDerivative.add
+#check @Carleman.IsWeakSpatialDerivative.smul
+#check @Carleman.spatial_eq_zero_of_tests
+#check @Carleman.IsWeakSpatialDerivative.unique
+#check @Carleman.IsWeakSpatialDerivative.of_zero
+#check @Carleman.TransferGeometry.order_of_L2_expression
+#check @Carleman.TransferGeometry.order_of_L2_expressions_uniform
+#check @Carleman.CarlemanExponents.comparisonExponent
+#check @Carleman.CarlemanExponents.comparisonExponent_bounds
+#check @Carleman.conformingDerivative
+#check @Carleman.conformingExpression
+#check @Carleman.conformingDerivative_zero_seminorm
+#check @Carleman.conformingDerivative_weak
+#check @Carleman.conformingExpression_ae
+#check @Carleman.sobolevGeometry
+#check @Carleman.differentialFamilyBound
+#check @Carleman.differentialFamilyBound_ge_one
+#check @Carleman.sobolevGeometry_order
+#check @Carleman.sobolevGeometry_node_derivative
+#check @Carleman.sobolevGeometry_node_state
+#check @Carleman.sobolevGeometry_lifted_load
+#check @Carleman.sobolevGeometry_observation
+#check @Carleman.sobolevGeometry_comparisons
+#check @Carleman.norm_iteratedFDeriv_exp
+#check @Carleman.norm_iteratedFDerivWithin_exp_profile
+#check @Carleman.norm_iteratedFDerivWithin_allowedWeight
+#check @Carleman.exists_profile_derivative_bound
+#check @Carleman.allowedWeight_spatial_derivatives_uniform
+#check @Carleman.SpatialProfile.ofContinuousOn
+#check @Carleman.SpatialProfile.ofContinuousOn_value
+#check @Carleman.SpatialProfile.ofContinuousOn_multiplier
+#check @Carleman.TimeWeightRegularity.hasDerivWithinAt_logWeight
+#check @Carleman.TimeWeightRegularity.hasDerivWithinAt_allowedWeight
+#check @Carleman.TimeWeightRegularity.derivWithin_logWeight_bound
+#check @Carleman.TimeWeightRegularity.allowedWeight_inv
+#check @Carleman.SpatialProfile.logDerivative
+#check @Carleman.SpatialProfile.logDerivative_value
+#check @Carleman.SpatialProfile.logDerivative_seminorm_le
+#check @Carleman.SpatialProfile.logDerivative_shift_le
+#check @Carleman.TimeWeightRegularity.shifted_power_derivative_ratio
+#check @Carleman.TimeWeightRegularity.shift_derivative_ratio
+#print Carleman.OperatorMultiplier
+#print Carleman.VectorCoefficient
+#print Carleman.DifferentialExpression
+#print Carleman.SpatialTest
+#print Carleman.IsWeakSpatialDerivative
+#print axioms Carleman.allowedWeight_spatial_derivatives_uniform
+#print axioms Carleman.TimeWeightRegularity.shift_derivative_ratio
+#print axioms Carleman.WeakSobolevJet.value_injective
+#print axioms Carleman.sobolevGeometry_order
+#print axioms Carleman.sobolevGeometry_comparisons
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
