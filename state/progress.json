@@ -9,24 +9,38 @@
     "started_at": "2026-10-17T09:43:34.927869+00:00"
   },
   "execution": {
-    "state": "RUNNING",
-    "current_task_id": "BOOTSTRAP-001",
+    "state": "IDLE",
+    "current_task_id": null,
     "supervisor_checked_at": null,
-    "next_action": "完成工程准备及 CI 验收后交接 Dot；不启动长期主证明循环",
-    "blocker": null,
+    "next_action": "用户保存并 Publish 环境后，由 Dot 创建 C001 周期分部求和任务并验证恢复与接续",
+    "blocker": "新工程环境尚待 Publish；主分支 required checks 未配置（管理 API 权限不足）",
     "pause_reason": null
   },
   "verification": {
     "latest_build": {
-      "status": "NOT_RUN",
-      "checked_sha": null,
-      "ci_url": null,
-      "finished_at": null,
-      "lean_version": null,
-      "mathlib_commit": null,
-      "targets": []
+      "status": "PASS",
+      "checked_sha": "fc466e43e93ce2b8322c9abe6e54b785a04dec27",
+      "source_head_sha": "fc466e43e93ce2b8322c9abe6e54b785a04dec27",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39022672100/attempts/1",
+      "finished_at": "2026-10-17T09:52:56Z",
+      "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+      "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "targets": [
+        "Carleman"
+      ]
     },
-    "last_successful_build": null
+    "last_successful_build": {
+      "status": "PASS",
+      "checked_sha": "fc466e43e93ce2b8322c9abe6e54b785a04dec27",
+      "source_head_sha": "fc466e43e93ce2b8322c9abe6e54b785a04dec27",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39022672100/attempts/1",
+      "finished_at": "2026-10-17T09:52:56Z",
+      "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+      "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "targets": [
+        "Carleman"
+      ]
+    }
   },
   "milestones": [
     {
@@ -34,8 +48,8 @@
       "title": "工程与接续闭环",
       "description": "固定版本、小证明、CI 正负验证、PR 合并和下一任务",
       "status": "IN_PROGRESS",
-      "evidence_commit": null,
-      "blocker": "工程准备验收进行中；环境发布及 Dot 新任务接续尚待验证"
+      "evidence_commit": "fc466e43e93ce2b8322c9abe6e54b785a04dec27",
+      "blocker": "工程已合并；待发布环境、新云端任务恢复及 Dot 实际接续验证"
     },
     {
       "id": "M0b",
@@ -517,28 +531,58 @@
       "paper_ref": "Section 2.4 周期差分的代数基础（非完整分部求和）",
       "milestone": "M0a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [],
       "lean_declarations": [
         "Carleman.sum_sub_perm"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "592c13850de7de513c579f069a61cd945faacd97",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "592c13850de7de513c579f069a61cd945faacd97",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39022242419/attempts/1",
+        "finished_at": "2026-10-17T09:45:24.026129+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "5dabcb9775b60b548d5c15da53da26c5d78202b6"
+      },
+      "semantic_review": {
+        "checked_sha": "592c13850de7de513c579f069a61cd945faacd97",
+        "declarations": [
+          "Carleman.sum_sub_perm"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/1",
+        "reviewed_at": "2026-10-17T09:55:13.154394+00:00"
+      },
       "dependencies": [],
-      "blocker": "本地构建与公理依赖检查已通过；等待远端 CI 证据",
-      "pr_url": null
+      "blocker": null,
+      "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/1"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "at": "2026-10-17T09:55:13.154394+00:00",
+      "public_summary": "固定 Lean 工程与有限置换辅助引理已合并；原文结果仍待证明",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/1"
+    }
+  ],
   "snapshot": {
-    "synced_at": null,
+    "synced_at": "2026-10-17T09:55:13.154394+00:00",
     "source_commit": null,
     "mode": "LOCAL_SNAPSHOT"
   },
   "dashboard": {
-    "approved_urls": []
+    "approved_urls": [
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39022242419/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39022672100/attempts/1"
+    ]
   },
   "schedules": [],
   "tasks": [
@@ -559,17 +603,32 @@
       "dependencies": [],
       "branch": "bootstrap/lean-project",
       "base_commit": "8388272fceac1189a05ae1fb1ac3a59ec092d88b",
-      "status": "RUNNING",
-      "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "status": "MERGED",
+      "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/1",
+      "checkpoint_commit": "5dabcb9775b60b548d5c15da53da26c5d78202b6",
+      "merge_commit": "fc466e43e93ce2b8322c9abe6e54b785a04dec27",
       "lean_declarations": [
         "Carleman.sum_sub_perm"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "592c13850de7de513c579f069a61cd945faacd97",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39022242419/attempts/1",
+        "finished_at": "2026-10-17T09:45:24.026129+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "5dabcb9775b60b548d5c15da53da26c5d78202b6"
+      },
       "blocker": null,
-      "attempts": [],
-      "next_action": "验证远端 CI；汇总实际证据后交接 Dot"
+      "attempts": [
+        "GitHub 正向、隔离负向、修复检查均已核实；错误分支关闭且未合并",
+        "干净克隆与新工具链安装/构建通过",
+        "main 分支保护配置 API 返回 403 Resource not accessible by integration"
+      ],
+      "next_action": "用户发布环境后，由 Dot 创建 C001 任务并验证新云端任务恢复与接续"
     }
   ]
 }

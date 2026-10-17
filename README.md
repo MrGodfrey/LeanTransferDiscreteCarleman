@@ -48,6 +48,8 @@ CI 构建 `lake build Carleman`，检查已解析的 mathlib SHA，并用
 推荐 Dot 的第一个证明任务是 C001：在明确 `N > 0`、`δt > 0` 和 `T = N δt` 的接口下，
 建立论文符号约定的周期差分及分部求和，复用本次有限置换引理。
 
+工程合并、CI 正/负/修复记录和剩余配置见 [启动交接记录](governance/BOOTSTRAP_ACCEPTANCE.md)。
+
 ## 状态、网页与证据
 
 运行状态只有 `state/progress.json` 与 `state/paper_coverage.json`。

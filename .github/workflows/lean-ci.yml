@@ -77,7 +77,7 @@ jobs:
 
   dashboard:
     needs: [lean, state-check]
-    if: ${{ always() && !cancelled() && github.event_name != 'pull_request' && github.ref == 'refs/heads/main' }}
+    if: ${{ always() && !cancelled() }}
     uses: ./.github/workflows/dashboard.yml
     permissions:
       contents: read

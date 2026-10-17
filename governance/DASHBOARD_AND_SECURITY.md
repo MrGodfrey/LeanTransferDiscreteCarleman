@@ -6,7 +6,7 @@
 
 页面回答：当前目标；哪些原文结果完成；条件性成果和额外前提；阻塞/下一步；最近构建及上一稳定提交与证据；快照时间和任务核实时间。论文文本与 PDF 不进入部署目录。无账户指标。使用 textContent 输出文本，链接不能执行脚本。
 
-`lean-ci.yml` 在 PR 和 main 实际构建，在 always 步骤保存该次结果 artifact；同次运行调用 `dashboard.yml`，检出同一个 github.sha，使用该结果生成快照。成功与失败均发布快照 artifact，失败不抹掉台账中上次成功记录。PR 只生成证据，不发布网页；main 仅保存快照 artifact。没有 GITHUB_TOKEN 回写 push 或 workflow_run，避免触发循环和新旧 main/CI 混拼。状态提交的 SHA 可与其引用的历史证明 SHA 不同。
+`lean-ci.yml` 在 PR 和 main 实际构建，在 always 步骤保存该次结果 artifact；同次运行调用 `dashboard.yml`，检出同一个 github.sha，使用该结果生成快照。成功与失败均保存快照 artifact，失败不抹掉台账中上次成功记录。PR 和 main 都检查私有快照打包，均不部署网站。上传目录 `site-artifact/` 不是隐藏目录，只复制四个允许的页面文件，避免 upload-artifact 默认忽略隐藏目录。没有 GITHUB_TOKEN 回写 push 或 workflow_run，避免触发循环和新旧 main/CI 混拼。状态提交的 SHA 可与其引用的历史证明 SHA 不同。
 
 Dot 后续将 CI artifact 中经核实的事实写入台账（包括最近稳定记录），保留耐久证据，不能只依赖会过期的 artifact。若任务取消或基础设施失败未能上传产物，快照不伪造新结果，旧记录随时间显示待更新，Dot 兜底巡检核实。
 
