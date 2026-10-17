@@ -9,38 +9,38 @@
     "started_at": "2026-10-17T09:43:34.927869+00:00"
   },
   "execution": {
-    "state": "REVIEW",
-    "current_task_id": "T011",
+    "state": "RUNNING",
+    "current_task_id": "T012",
     "supervisor_checked_at": "2026-10-17T13:54:55.912702+00:00",
-    "next_action": "父监督者独立56声明验收；合并后继续原Lipschitz参数Sobolev与完整Lemma3.1/3.3，继而B4误差",
+    "next_action": "构造全状态真实周期仿射插值及弱对偶误差；保留原插值和完整加权缺口",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-17T19:43:57.462297+00:00"
+    "last_activity_at": "2026-10-17T20:02:56.674870+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "e79084225a4f5a1a2b9e856fbdd74184f3eb2020",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39063487125/attempts/1",
-      "finished_at": "2026-10-17T19:42:46.119955+00:00",
+      "checked_sha": "286d0c6856408310404af91128533938e8d603b7",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39064390829/attempts/1",
+      "finished_at": "2026-10-17T19:56:03.945659+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "63d3b332c848a63cd04949e5fd0b01e7e1fdd9e4"
+      "source_head_sha": "286d0c6856408310404af91128533938e8d603b7"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "e79084225a4f5a1a2b9e856fbdd74184f3eb2020",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39063487125/attempts/1",
-      "finished_at": "2026-10-17T19:42:46.119955+00:00",
+      "checked_sha": "286d0c6856408310404af91128533938e8d603b7",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39064390829/attempts/1",
+      "finished_at": "2026-10-17T19:56:03.945659+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "63d3b332c848a63cd04949e5fd0b01e7e1fdd9e4"
+      "source_head_sha": "286d0c6856408310404af91128533938e8d603b7"
     }
   },
   "milestones": [
@@ -2729,7 +2729,7 @@
       "paper_ref": "Lemma3.1 Step2真实弱共轭、9.26-eq2/eq3及时空R比较；不覆盖完整Lemma3.1/3.3",
       "milestone": "M3",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [],
       "lean_declarations": [
@@ -2781,21 +2781,21 @@
         "Carleman.weightedOperator_L2",
         "Carleman.PeriodicWeakTrajectory.exists_weighted_trajectory"
       ],
-      "declaration_version": "e79084225a4f5a1a2b9e856fbdd74184f3eb2020",
+      "declaration_version": "286d0c6856408310404af91128533938e8d603b7",
       "build_evidence": {
         "status": "PASS",
-        "checked_sha": "e79084225a4f5a1a2b9e856fbdd74184f3eb2020",
-        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39063487125/attempts/1",
-        "finished_at": "2026-10-17T19:42:46.119955+00:00",
+        "checked_sha": "286d0c6856408310404af91128533938e8d603b7",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39064390829/attempts/1",
+        "finished_at": "2026-10-17T19:56:03.945659+00:00",
         "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "targets": [
           "Carleman"
         ],
-        "source_head_sha": "63d3b332c848a63cd04949e5fd0b01e7e1fdd9e4"
+        "source_head_sha": "286d0c6856408310404af91128533938e8d603b7"
       },
       "semantic_review": {
-        "checked_sha": "e79084225a4f5a1a2b9e856fbdd74184f3eb2020",
+        "checked_sha": "286d0c6856408310404af91128533938e8d603b7",
         "declarations": [
           "Carleman.bochnerL2Norm_eq",
           "Carleman.bochnerL2Norm_nonneg",
@@ -2847,9 +2847,9 @@
         ],
         "result": "PASS",
         "axiom_check": "PASS",
-        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/63d3b332c848a63cd04949e5fd0b01e7e1fdd9e4/governance/reviews/T011.md",
-        "reviewed_at": "2026-10-17T19:43:57.462297+00:00",
-        "reviewer": "T011 executor; parent independent acceptance pending"
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/14",
+        "reviewed_at": "2026-10-17T20:02:56.674870+00:00",
+        "reviewer": "父监督者独立56声明语义/依赖PASS；执行者本轮整合"
       },
       "blocker": null,
       "dependencies": [
@@ -2859,6 +2859,64 @@
       "remaining_dependencies": [
         "原bounded Lipschitz域参数Sobolev扩张/插值和闭包光滑表示接入",
         "完整Lemma3.1/3.3加权图与Euler正规性；B4时间/空间实质误差及统一阈值"
+      ]
+    },
+    {
+      "id": "C029",
+      "title": "原域插值障碍核对与真实周期时间误差",
+      "paper_ref": "Theorem3.5 时间L²误差分析依赖；原域参数插值调查",
+      "milestone": "M3",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [],
+      "lean_declarations": [
+        "Carleman.TimeGrid.affineLp_ae",
+        "Carleman.TimeGrid.affineLp_defect_le",
+        "Carleman.TimeGrid.affine_bochner_defect_le",
+        "Carleman.CoerciveForm.timeEnergy_ae",
+        "Carleman.CoerciveForm.timeEnergy_embed",
+        "Carleman.CoerciveForm.timeEnergy_form_ae",
+        "Carleman.CoerciveForm.timeEnergy_coercive",
+        "Carleman.CoerciveForm.temporal_energy_error_uniform",
+        "Carleman.CoerciveForm.eulerExtension_equation",
+        "Carleman.CoerciveForm.eulerExtension_adjoint",
+        "Carleman.CoerciveForm.temporal_error_duality",
+        "Carleman.CoerciveForm.temporal_l2_error_uniform",
+        "Carleman.TimeGrid.error_bochner_eq",
+        "Carleman.CoerciveForm.IsAssociated.temporal_weak_error_uniform",
+        "Carleman.Orientation.opposite_sign",
+        "Carleman.TimeGrid.weak_pairing_L2",
+        "Carleman.TimeGrid.affine_weakTimeClass",
+        "Carleman.BoundedMultiplier.map_inner",
+        "Carleman.CoerciveForm.timeOperatorGraph_symmetric",
+        "Carleman.CoerciveForm.evolution_adjoint",
+        "Carleman.HasWeakTimeDerivative.periodic_pairing",
+        "Carleman.TimeGrid.intervalIntegrable_extensionMinus_vector_cell",
+        "Carleman.TimeGrid.affineReconstruction_node",
+        "Carleman.TimeGrid.affineReconstruction_cell",
+        "Carleman.TimeGrid.affineReconstruction_continuousOn",
+        "Carleman.TimeGrid.affineReconstruction_periodic_trace",
+        "Carleman.TimeGrid.affineReconstruction_weakDerivative",
+        "Carleman.TimeGrid.ae_open_cell",
+        "Carleman.TimeGrid.forwardSlope_step",
+        "Carleman.Orientation.signed_difference_on_open_cell",
+        "Carleman.Orientation.signed_difference_ae",
+        "Carleman.Orientation.affine_defect_on_open_cell",
+        "Carleman.Orientation.affine_defect_ae"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "blocker": null,
+      "dependencies": [
+        "C028"
+      ],
+      "pr_url": null,
+      "remaining_dependencies": [
+        "原bounded Lipschitz域参数Sobolev扩张/插值；C∞闭包到所需空间共轭表示或内侧导数证明",
+        "完整原允许权族Lemma3.1/3.3及frozen加权图；Theorem3.5加权L²/参数N误差",
+        "B4空间误差、准确全权族阈值组合；原Theorem2.1仍未完成"
       ]
     }
   ],
@@ -6751,10 +6809,10 @@
       ],
       "branch": "proof/t011-spacetime-analysis",
       "base_commit": "1445d536076eeb660a1abf9badef6231bd6d2872",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/14",
-      "checkpoint_commit": "63d3b332c848a63cd04949e5fd0b01e7e1fdd9e4",
-      "merge_commit": null,
+      "checkpoint_commit": "61d2e52fda148c341352b853320405b5462b0f02",
+      "merge_commit": "286d0c6856408310404af91128533938e8d603b7",
       "lean_declarations": [
         "Carleman.bochnerL2Norm",
         "Carleman.bochnerL2Norm_eq",
@@ -6815,15 +6873,15 @@
       ],
       "build_evidence": {
         "status": "PASS",
-        "checked_sha": "e79084225a4f5a1a2b9e856fbdd74184f3eb2020",
-        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39063487125/attempts/1",
-        "finished_at": "2026-10-17T19:42:46.119955+00:00",
+        "checked_sha": "286d0c6856408310404af91128533938e8d603b7",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39064390829/attempts/1",
+        "finished_at": "2026-10-17T19:56:03.945659+00:00",
         "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "targets": [
           "Carleman"
         ],
-        "source_head_sha": "63d3b332c848a63cd04949e5fd0b01e7e1fdd9e4"
+        "source_head_sha": "286d0c6856408310404af91128533938e8d603b7"
       },
       "blocker": null,
       "attempts": [
@@ -6833,14 +6891,14 @@
         "Minkowski接入真实时空R及原A2 C/L；构造完整加权弱图轨迹及双向共轭恒等式",
         "复查固定库：原Lipschitz弱Sobolev扩张/参数插值和闭包光滑表示仍缺；未采用零延拓或错误q幂粗界"
       ],
-      "next_action": "父监督者独立56声明验收；合并后继续原Lipschitz参数Sobolev与完整Lemma3.1/3.3，继而B4误差",
+      "next_action": "T012从已核实main继续原域参数插值调查和真实时间误差分析",
       "remaining_dependencies": [
         "原bounded Lipschitz域参数Sobolev扩张/插值和闭包光滑表示接入",
         "完整Lemma3.1/3.3加权图与Euler正规性；B4时间/空间实质误差及统一阈值"
       ],
-      "declaration_version": "e79084225a4f5a1a2b9e856fbdd74184f3eb2020",
+      "declaration_version": "286d0c6856408310404af91128533938e8d603b7",
       "semantic_review": {
-        "checked_sha": "e79084225a4f5a1a2b9e856fbdd74184f3eb2020",
+        "checked_sha": "286d0c6856408310404af91128533938e8d603b7",
         "declarations": [
           "Carleman.bochnerL2Norm",
           "Carleman.bochnerL2Norm_eq",
@@ -6901,9 +6959,9 @@
         ],
         "result": "PASS",
         "axiom_check": "PASS",
-        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/63d3b332c848a63cd04949e5fd0b01e7e1fdd9e4/governance/reviews/T011.md",
-        "reviewed_at": "2026-10-17T19:43:57.462297+00:00",
-        "reviewer": "T011 executor; parent independent acceptance pending"
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/14",
+        "reviewed_at": "2026-10-17T20:02:56.674870+00:00",
+        "reviewer": "父监督者独立56声明语义/依赖PASS；执行者本轮整合"
       },
       "ci_relationship": {
         "proof_head": "63d3b332c848a63cd04949e5fd0b01e7e1fdd9e4",
@@ -6921,8 +6979,103 @@
         "recompiled_new_modules": 14,
         "declaration_artifact_sha256": "58a3950e9bce00c0acc65db25f0fabd39d255a7943133497b958b6e7e2228cc5",
         "result_artifact_id": 12112236948,
-        "declaration_artifact_id": 12111579000
+        "declaration_artifact_id": 12111579000,
+        "merged_main": {
+          "sha": "286d0c6856408310404af91128533938e8d603b7",
+          "run_id": 39064390829,
+          "tree": "eaa69d37323912e08150a5d869af81f11c4cd873",
+          "parents": [
+            "1445d536076eeb660a1abf9badef6231bd6d2872",
+            "61d2e52fda148c341352b853320405b5462b0f02"
+          ],
+          "actual_jobs": 3308,
+          "recursive_axiom_audit": 2132,
+          "jobs_steps": "3 jobs / 32 steps PASS",
+          "result_artifact_id": 12112449126,
+          "declaration_artifact_id": 12112409231,
+          "declarations_identical_to_pr": true
+        }
       }
+    },
+    {
+      "id": "T012",
+      "platform_task_id": "01a1498c-c483-77a5-8b91-14b593452001",
+      "task_url": null,
+      "continuation_of": "T011",
+      "title": "原域插值障碍核对与真实周期时间误差",
+      "goal_ids": [
+        "C029"
+      ],
+      "acceptance": [
+        "核对原稿C∞闭包定义；不静默强化为邻域表示，不用零延拓增加边界条件",
+        "优先调查原Lipschitz参数Sobolev；精确记录核心障碍后完成独立实质时间误差分析",
+        "真实全状态、两方向、a.e.域/H弱导数/周期迹及T统一常数；完整构建/公理/逐声明清单/draft PR"
+      ],
+      "dependencies": [
+        "C028"
+      ],
+      "branch": "proof/t012-closure-interpolation-error",
+      "base_commit": "286d0c6856408310404af91128533938e8d603b7",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.TimeGrid.affinePath",
+        "Carleman.TimeGrid.affineLp",
+        "Carleman.TimeGrid.affineLp_ae",
+        "Carleman.TimeGrid.affineLp_defect_le",
+        "Carleman.TimeGrid.affine_bochner_defect_le",
+        "Carleman.CoerciveForm.timeEnergy",
+        "Carleman.CoerciveForm.timeEnergy_ae",
+        "Carleman.CoerciveForm.timeEnergy_embed",
+        "Carleman.CoerciveForm.timeEnergy_form_ae",
+        "Carleman.CoerciveForm.timeEnergy_coercive",
+        "Carleman.CoerciveForm.temporal_energy_error_uniform",
+        "Carleman.CoerciveForm.eulerExtension_equation",
+        "Carleman.CoerciveForm.eulerExtension_adjoint",
+        "Carleman.CoerciveForm.temporal_error_duality",
+        "Carleman.CoerciveForm.temporal_l2_error_uniform",
+        "Carleman.TimeGrid.error_bochner_eq",
+        "Carleman.CoerciveForm.IsAssociated.temporal_weak_error_uniform",
+        "Carleman.Orientation.opposite",
+        "Carleman.Orientation.opposite_sign",
+        "Carleman.TimeGrid.weak_pairing_L2",
+        "Carleman.TimeGrid.affine_weakTimeClass",
+        "Carleman.BoundedMultiplier.map_inner",
+        "Carleman.CoerciveForm.timeOperatorGraph_symmetric",
+        "Carleman.CoerciveForm.evolution_adjoint",
+        "Carleman.HasWeakTimeDerivative.periodic_pairing",
+        "Carleman.TimeGrid.forwardSlope",
+        "Carleman.TimeGrid.affineReconstruction",
+        "Carleman.TimeGrid.intervalIntegrable_extensionMinus_vector_cell",
+        "Carleman.TimeGrid.affineReconstruction_node",
+        "Carleman.TimeGrid.affineReconstruction_cell",
+        "Carleman.TimeGrid.affineReconstruction_continuousOn",
+        "Carleman.TimeGrid.affineReconstruction_periodic_trace",
+        "Carleman.TimeGrid.affineReconstruction_weakDerivative",
+        "Carleman.TimeGrid.ae_open_cell",
+        "Carleman.TimeGrid.forwardSlope_step",
+        "Carleman.Orientation.signed_difference_on_open_cell",
+        "Carleman.Orientation.signed_difference_ae",
+        "Carleman.Orientation.affine_defect_on_open_cell",
+        "Carleman.Orientation.affine_defect_ae"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "核实PR14合并、main3308jobs/2132审计与3jobs32steps；本地固定工具链完整复用PASS",
+        "原稿未定义C∞闭包约定；固定库缺原Lipschitz高阶弱Sobolev扩张/参数插值，零延拓和A1粗界仍不匹配；开始保留一般性的时间误差路线",
+        "构造真实周期H仿射Bochner原函数及δt缺陷界，配对弱轨迹和真实Euler/连续解导出对偶消去",
+        "直接调用已构造任意载荷正反向frozen解证明12δt未加权L²误差；A1 resolvent构造真实Lp(V)误差并证明84/c能量平方界",
+        "原D/A等价入口保持a.e.域/H弱导数/周期迹；未把无权成果计入加权B4或原文完成"
+      ],
+      "next_action": "构造全状态真实周期仿射插值及弱对偶误差；保留原插值和完整加权缺口",
+      "remaining_dependencies": [
+        "原bounded Lipschitz域参数Sobolev扩张/插值；C∞闭包到所需空间共轭表示或内侧导数证明",
+        "完整原允许权族Lemma3.1/3.3及frozen加权图；Theorem3.5加权L²/参数N误差",
+        "B4空间误差、准确全权族阈值组合；原Theorem2.1仍未完成"
+      ]
     }
   ],
   "private_maintenance": {

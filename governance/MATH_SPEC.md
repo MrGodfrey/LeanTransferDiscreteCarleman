@@ -536,3 +536,19 @@ T005 原时间扰动 C/L^(2m) 估计现在可应用于这条真实加权轨迹�
    原 C∞(闭包) 的另一约定仍需表示接入；没有修改原目标或擅自增加边界/域限制。
 3. B1 存在及弱唯一性已由 T009 清偿；B2/B5、规范 B3、B4-order/shift/finite 继续复用。
    B4 实际时间/空间 energy 与 L² 误差、统一阈值组合及 TransferBridges.solutions 尚未清偿。
+
+## T012：原域障碍核对与实质时间误差
+
+原稿 `paper/main.tex:291` 只写 `ρ∈C∞(Ω̄)`，没有定义为某个开邻域上的光滑函数限制；另一处闭包光滑系数也没有补充定义。因此 T010/T011 的 `U` 开、`K⊆U` 邻域表示仍是明确未接通的入口，不能自动计入原 Lemma3.1。未改写原稿，未将 `ContDiffOn ℝ ∞ ρ (closure Ω)` 与内侧导数连续或邻域表示混同。若采用内侧各阶导数连续到闭包的标准含义，可尝试直接从紧性取得内侧导数界，再将弱 Leibniz 限于 Ω 内的测试函数；这一调整可能绕过完整 Whitney 延拓，但本阶段没有把这种可能性计为证明。
+
+原 `eq:parametergraph` 的具体缺口是：对 `ν=volume.restrict Ω` 的完整弱 H^(2m)(Ω)，建立 `Σ_j r^(2m-j)‖D^jv‖ ≤ C(‖v‖H^(2m)+r^(2m)‖v‖L²)`，常数在 r≥1 前选定。固定 mathlib 的 `Analysis/FunctionalSpaces/SobolevInequality.lean` 是全空间紧支撑 C¹ 的 GNS；BesselPotential/Distribution Sobolev 库不提供原 Lipschitz 域的全阶弱扩张。零延拓会强加 V⊂H₀^m 或更高阶边界条件；把各阶范数都粗略压到 ‖Av‖ 会产生 r^(2m)‖Av‖，破坏所需统一性。一般 Lipschitz 图表的直接高阶反射也没有 H^(2m) 链式正规性，不能作为已证扩张使用。可行后续路线需要原域有限锥形覆盖、弱平移 FTC/密度及差商/Taylor 平均，或完整高阶扩张；这些尚未建立。
+
+按监督者允许的路线切换，本阶段完成独立的实际时间误差分析，而非再增加最终误差前提：
+
+- `affineReconstruction u := u₀ + ∫₀ᵗ extensionMinus(forwardSlope u)` 是真实 H-valued Bochner 原函数。证明所有节点值、闭周期连续性/端点迹、H 弱导数及 a.e. 单元公式。两方向均有 `∂t û = ε extension(D_ε u)`，并得到 `‖û−bar u‖L² ≤ δt‖D_εu‖ℓ²`。
+- 任意 H¹ 弱轨迹之间的周期分部积分由 AC 和实际导数得到。闭算子时间图的自伴配对、真实冻结乘子的自伴配对、连续反向 evolution 和实际 Euler 解给出 `⟨U−bar u, P_{−ε}Y⟩ = −ε⟨û−bar u,Y_t⟩`。此处没有假设重构误差方程或目标离散估计。
+- `temporal_l2_error_uniform` 直接调用 T009 构造的任意载荷冻结连续解/反向对偶解及 T007 全状态 Euler 解，得到 `‖U−bar u‖L² ≤ 12 δt‖f‖ℓ²`。L₀、δ 在 g/T/q/L/方向/f 之前选定；没有谱 CFL 限制，μ 始终是原 `(L q_i)^(2m)` 的对应方向冻结。
+- `timeEnergy(e,Ae)` 用原 form 的 `(A+1)⁻¹:H→V` 构造真实 L²(0,T;V) 类，嵌入恰为 e；其 form 密度为 `(e,Ae)_H`。原 A1 强制性、已证 L² 误差及两个真实图界给出 `‖e‖L²(V)^2 ≤ (84/c) δt‖f‖ℓ²²`。这不是含 q 权的参数 N 范数，也没有假设参数插值。
+- `IsAssociated.temporal_weak_error_uniform` 将 L² 结论转回原 D/A 和 Bochner 函数范数，明确证明误差 MemLp。连续解保留 a.e. D(A)、H 弱导数和周期 H 迹，不引入每时刻 D(A) 正规性。
+
+**范围仍是 AUXILIARY**：本阶段证明未加权时间 L² 和 form-energy 误差；它们不是原允许指数权族的 Theorem3.5，不能清偿 B4 的加权 energy/l2 字段。完整 Lemma3.1/3.3、加权冻结正规性、原参数插值及光滑表示、空间误差和统一 B4 权族组合继续保留。原文完成仍 1/26；原始 Theorem2.1 未完成。B2/B5 和规范 B3、B4 finite/order/shift 沿用既有证明，Γ仍是普通函数。

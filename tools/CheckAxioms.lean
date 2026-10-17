@@ -973,6 +973,86 @@ set_option pp.maxSteps 1000000
 #check @Carleman.PeriodicWeakTrajectory.exists_weighted_trajectory
 #print axioms Carleman.PeriodicWeakTrajectory.exists_weighted_trajectory
 
+-- T012: every explicit declaration and its recursive dependency axioms.
+#check @Carleman.TimeGrid.affinePath
+#print axioms Carleman.TimeGrid.affinePath
+#check @Carleman.TimeGrid.affineLp
+#print axioms Carleman.TimeGrid.affineLp
+#check @Carleman.TimeGrid.affineLp_ae
+#print axioms Carleman.TimeGrid.affineLp_ae
+#check @Carleman.TimeGrid.affineLp_defect_le
+#print axioms Carleman.TimeGrid.affineLp_defect_le
+#check @Carleman.TimeGrid.affine_bochner_defect_le
+#print axioms Carleman.TimeGrid.affine_bochner_defect_le
+#check @Carleman.CoerciveForm.timeEnergy
+#print axioms Carleman.CoerciveForm.timeEnergy
+#check @Carleman.CoerciveForm.timeEnergy_ae
+#print axioms Carleman.CoerciveForm.timeEnergy_ae
+#check @Carleman.CoerciveForm.timeEnergy_embed
+#print axioms Carleman.CoerciveForm.timeEnergy_embed
+#check @Carleman.CoerciveForm.timeEnergy_form_ae
+#print axioms Carleman.CoerciveForm.timeEnergy_form_ae
+#check @Carleman.CoerciveForm.timeEnergy_coercive
+#print axioms Carleman.CoerciveForm.timeEnergy_coercive
+#check @Carleman.CoerciveForm.temporal_energy_error_uniform
+#print axioms Carleman.CoerciveForm.temporal_energy_error_uniform
+#check @Carleman.CoerciveForm.eulerExtension_equation
+#print axioms Carleman.CoerciveForm.eulerExtension_equation
+#check @Carleman.CoerciveForm.eulerExtension_adjoint
+#print axioms Carleman.CoerciveForm.eulerExtension_adjoint
+#check @Carleman.CoerciveForm.temporal_error_duality
+#print axioms Carleman.CoerciveForm.temporal_error_duality
+#check @Carleman.CoerciveForm.temporal_l2_error_uniform
+#print axioms Carleman.CoerciveForm.temporal_l2_error_uniform
+#check @Carleman.TimeGrid.error_bochner_eq
+#print axioms Carleman.TimeGrid.error_bochner_eq
+#check @Carleman.CoerciveForm.IsAssociated.temporal_weak_error_uniform
+#print axioms Carleman.CoerciveForm.IsAssociated.temporal_weak_error_uniform
+#check @Carleman.Orientation.opposite
+#print axioms Carleman.Orientation.opposite
+#check @Carleman.Orientation.opposite_sign
+#print axioms Carleman.Orientation.opposite_sign
+#check @Carleman.TimeGrid.weak_pairing_L2
+#print axioms Carleman.TimeGrid.weak_pairing_L2
+#check @Carleman.TimeGrid.affine_weakTimeClass
+#print axioms Carleman.TimeGrid.affine_weakTimeClass
+#check @Carleman.BoundedMultiplier.map_inner
+#print axioms Carleman.BoundedMultiplier.map_inner
+#check @Carleman.CoerciveForm.timeOperatorGraph_symmetric
+#print axioms Carleman.CoerciveForm.timeOperatorGraph_symmetric
+#check @Carleman.CoerciveForm.evolution_adjoint
+#print axioms Carleman.CoerciveForm.evolution_adjoint
+#check @Carleman.HasWeakTimeDerivative.periodic_pairing
+#print axioms Carleman.HasWeakTimeDerivative.periodic_pairing
+#check @Carleman.TimeGrid.forwardSlope
+#print axioms Carleman.TimeGrid.forwardSlope
+#check @Carleman.TimeGrid.affineReconstruction
+#print axioms Carleman.TimeGrid.affineReconstruction
+#check @Carleman.TimeGrid.intervalIntegrable_extensionMinus_vector_cell
+#print axioms Carleman.TimeGrid.intervalIntegrable_extensionMinus_vector_cell
+#check @Carleman.TimeGrid.affineReconstruction_node
+#print axioms Carleman.TimeGrid.affineReconstruction_node
+#check @Carleman.TimeGrid.affineReconstruction_cell
+#print axioms Carleman.TimeGrid.affineReconstruction_cell
+#check @Carleman.TimeGrid.affineReconstruction_continuousOn
+#print axioms Carleman.TimeGrid.affineReconstruction_continuousOn
+#check @Carleman.TimeGrid.affineReconstruction_periodic_trace
+#print axioms Carleman.TimeGrid.affineReconstruction_periodic_trace
+#check @Carleman.TimeGrid.affineReconstruction_weakDerivative
+#print axioms Carleman.TimeGrid.affineReconstruction_weakDerivative
+#check @Carleman.TimeGrid.ae_open_cell
+#print axioms Carleman.TimeGrid.ae_open_cell
+#check @Carleman.TimeGrid.forwardSlope_step
+#print axioms Carleman.TimeGrid.forwardSlope_step
+#check @Carleman.Orientation.signed_difference_on_open_cell
+#print axioms Carleman.Orientation.signed_difference_on_open_cell
+#check @Carleman.Orientation.signed_difference_ae
+#print axioms Carleman.Orientation.signed_difference_ae
+#check @Carleman.Orientation.affine_defect_on_open_cell
+#print axioms Carleman.Orientation.affine_defect_on_open_cell
+#check @Carleman.Orientation.affine_defect_ae
+#print axioms Carleman.Orientation.affine_defect_ae
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
