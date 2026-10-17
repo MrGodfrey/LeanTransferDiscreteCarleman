@@ -9,6 +9,7 @@ import update_dashboard as dashboard
 from validate_lean_project import validate_project
 
 ROOT = Path(__file__).resolve().parents[1]
+FIXTURES = Path(__file__).resolve().parent / 'fixtures'
 SHA = 'a' * 40
 OTHER = 'b' * 40
 URL = 'https://github.com/example/project/actions/runs/1'
@@ -26,16 +27,37 @@ def reviewed(row):
 
 class StatusRegression(unittest.TestCase):
     def setUp(self):
-        self.x = json.loads((ROOT / 'state/progress.json').read_text())
-        self.cov = json.loads((ROOT / 'state/paper_coverage.json').read_text())
+        # Frozen inputs, never the live project ledger: progress is allowed.
+        self.x = json.loads((FIXTURES / 'initial_progress.json').read_text())
+        self.cov = json.loads((FIXTURES / 'initial_paper_coverage.json').read_text())
 
     def test_initial_state_and_full_paper_coverage(self):
         dashboard.validate(self.x, self.cov)
-        dashboard.validate_source(self.x, self.cov)
         self.assertEqual(len(self.x['claims']), 19)
         self.assertEqual(len(self.cov['results']), 26)
         self.assertEqual(sum(bool(r['claim_ids']) for r in self.cov['results']), 15)
         self.assertEqual(sum(dashboard.complete(c) for c in self.cov['results']), 0)
+
+    def test_progress_can_add_claims_complete_results_and_run_tasks(self):
+        row = copy.deepcopy(self.x['claims'][0])
+        row.update(id='AUX001', title='Additional auxiliary result')
+        self.x['claims'].append(reviewed(row))
+        reviewed(self.cov['results'][0])
+        task = dict(id='T001', platform_task_id='fixture', task_url=None,
+                    title='Next task', goal_ids=['AUX001'], acceptance=['Build'],
+                    dependencies=[], branch='proof/next', base_commit=SHA,
+                    status='RUNNING', pr_url=None, checkpoint_commit=None,
+                    merge_commit=None, lean_declarations=[], build_evidence=None,
+                    blocker=None, attempts=[], next_action='Continue')
+        self.x['tasks'] = [task]
+        self.x['execution'].update(state='RUNNING', current_task_id='T001')
+        self.x['snapshot']['synced_at'] = WHEN
+        dashboard.validate(self.x, self.cov)
+        shown = dashboard.public_status(self.x, self.cov)
+        self.assertEqual(len(shown['claims']), 20)
+        self.assertEqual(sum(c['paper_complete'] for c in shown['coverage']), 1)
+        self.assertFalse(shown['claims'][-1]['paper_complete'])
+        self.assertEqual(shown['execution']['state'], 'RUNNING')
 
     def test_reviewed_conditional_is_never_original_complete(self):
         row = reviewed(self.x['claims'][3])
@@ -147,6 +169,14 @@ class StatusRegression(unittest.TestCase):
             self.assertEqual(validate_project(root), SHA)
             (root/'lean-toolchain').write_text('leanprover/lean4:stable')
             with self.assertRaisesRegex(ValueError, 'concrete Lean release'): validate_project(root)
+
+
+class CurrentStateValidation(unittest.TestCase):
+    def test_live_records_match_the_actual_manuscript(self):
+        x = json.loads((ROOT / 'state/progress.json').read_text())
+        coverage = json.loads((ROOT / 'state/paper_coverage.json').read_text())
+        dashboard.validate(x, coverage)
+        dashboard.validate_source(x, coverage)
 
 
 if __name__ == '__main__': unittest.main()

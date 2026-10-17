@@ -88,7 +88,7 @@
     row.append(node('div', m.id, 'phase-num'), info, node('span', phaseLabel[m.status], 'phase-status'));
     $('milestoneRows').append(row);
   });
-  set('claimSummary', d.claims.length + ' 个初始工作目标 · 不作为全文完成率');
+  set('claimSummary', d.claims.length + ' 个工作目标 · 不作为全文完成率');
   d.claims.forEach(c => renderProof($('claimsRows'), c, c.title, c.paper_ref + (c.paper_labels.length ? ' · ' + c.paper_labels.join(', ') : '')));
   d.coverage.forEach(c => renderProof($('coverageRows'), c, c.paper_result, `${c.paper_label} · PDF p.${c.pdf_page}`));
   renderBuild($('buildEvidence'), d.verification.latest_build, '最近一次构建');
