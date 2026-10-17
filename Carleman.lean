@@ -136,3 +136,19 @@ public import Carleman.Weights.WeightedAffineDefect
 public import Carleman.Weights.WeightedGraphCommutator
 public import Carleman.Weights.WeightedGraphConstruction
 public import Carleman.Weights.WeightedGraphRemainder
+
+-- T016: actual weighted Euler graphs and closed second-order temporal rates.
+public import Carleman.Continuous.NormDomination
+public import Carleman.Continuous.WeightedGraphErrorNorm
+public import Carleman.Periodic.L2Algebra
+public import Carleman.Spatial.EnergyLowOrderAbsorption
+public import Carleman.Spatial.SecondOrderCommutatorEnergy
+public import Carleman.Spatial.SecondOrderParameterGraph
+public import Carleman.Spatial.SecondOrderWeightData
+public import Carleman.Weights.EulerTemporalPerturbation
+public import Carleman.Weights.SecondOrderEulerGraph
+public import Carleman.Weights.SecondOrderEulerSobolev
+public import Carleman.Weights.SecondOrderFrozenGraph
+public import Carleman.Weights.SecondOrderTemporalError
+public import Carleman.Weights.SecondOrderTemporalL2
+public import Carleman.Weights.WeightedEulerRemainder
