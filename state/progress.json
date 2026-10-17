@@ -256,7 +256,9 @@
         "Carleman.Reconstruction.pairing_J",
         "Carleman.Reconstruction.pairing_RH",
         "Carleman.Reconstruction.pairing_RH_dPlus",
-        "Carleman.Reconstruction.pairing_RH_dMinus"
+        "Carleman.Reconstruction.pairing_RH_dMinus",
+        "Carleman.Reconstruction.ofLinearMap_R",
+        "Carleman.Reconstruction.existsUnique_mass_adjoint"
       ],
       "declaration_version": null,
       "build_evidence": null,
@@ -265,7 +267,7 @@
         "C001"
       ],
       "blocker": "本地构建与公理检查已通过；等待绑定提交的 CI 和父监督者验收",
-      "pr_url": null
+      "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/5"
     },
     {
       "id": "C003",
@@ -323,7 +325,7 @@
         "C002"
       ],
       "blocker": "本地构建与公理检查已通过；等待绑定提交的 CI 和父监督者验收",
-      "pr_url": null,
+      "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/5",
       "scope_note": "辅助代数与所选载荷离散对应。残差消去以实际冻结方程为前提；不声称连续解存在、弱导数识别、误差或完整 Section 5。"
     },
     {
@@ -733,7 +735,7 @@
     }
   ],
   "snapshot": {
-    "synced_at": "2026-10-17T10:44:25.628508+00:00",
+    "synced_at": "2026-10-17T10:47:34.560546+00:00",
     "source_commit": "3aff03ad0ea1cf1f33e928a8e479932133d10d7d",
     "mode": "LOCAL_SNAPSHOT"
   },
@@ -745,7 +747,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39023145509/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/4",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39024525975/attempts/1",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39025058019/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39025058019/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/5"
     ]
   },
   "schedules": [
@@ -939,7 +942,7 @@
       "branch": "proof/t002-transfer-differences",
       "base_commit": "8c002e37849fb476608cf4f636a9fa4187e33508",
       "status": "REVIEW",
-      "pr_url": null,
+      "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/5",
       "checkpoint_commit": "3aff03ad0ea1cf1f33e928a8e479932133d10d7d",
       "merge_commit": null,
       "lean_declarations": [
@@ -1002,7 +1005,9 @@
         "Carleman.LoadInterface.residualPlus_eq",
         "Carleman.LoadInterface.residualMinus_eq",
         "Carleman.LoadInterface.residualPlus_eventuallyEq",
-        "Carleman.LoadInterface.residualMinus_eventuallyEq"
+        "Carleman.LoadInterface.residualMinus_eventuallyEq",
+        "Carleman.Reconstruction.ofLinearMap_R",
+        "Carleman.Reconstruction.existsUnique_mass_adjoint"
       ],
       "build_evidence": null,
       "blocker": null,
@@ -1015,7 +1020,8 @@
         "C003 用两种时间能量非负性证明移位离散唯一性；给定状态直接构造选定载荷解，无额外唯一性假设",
         "用原 Fin N 的整数转换和 ceil/floor 实现两种原文半开时间单元；单元公式和0/T端点均证明",
         "连续残差保持 A 的真域 D⊆H，dU 为给定 H 值导数；filter 版本允许几乎处处冻结方程",
-        "收到环境断连报告后实际 shell/Git/Lean 均可用；未报告或推断额度限制；检查点 3aff03ad0ea1cf1f33e928a8e479932133d10d7d 已推送"
+        "收到环境断连报告后实际 shell/Git/Lean 均可用；未报告或推断额度限制；检查点 3aff03ad0ea1cf1f33e928a8e479932133d10d7d 已推送",
+        "在同一阶段补齐真实 J 构造：原文 Hilbert H 和有限维 X 下，以 LinearMap.toContinuousLinearMap 和 ContinuousLinearMap.adjoint 构造质量伴随并证明存在唯一；H/V 不限有限维"
       ],
       "next_action": "完成绑定提交 CI 和原文语义报告后，请父监督者验收阶段 PR；后续进入真实范数与有限 B1/B3/B4/B5 条件性 transfer",
       "environment": {

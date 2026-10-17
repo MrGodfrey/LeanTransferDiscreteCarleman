@@ -17,7 +17,8 @@ lean --version
 # Additional mathlib cache roots may be passed as arguments during development.
 if [ "$#" -eq 0 ]; then
   set -- Mathlib.Algebra.BigOperators.Group.Finset.Basic \
-    Mathlib.Analysis.InnerProductSpace.Basic Mathlib.Logic.Equiv.Fin.Rotate
+    Mathlib.Analysis.InnerProductSpace.Basic Mathlib.Logic.Equiv.Fin.Rotate \
+    Mathlib.Analysis.InnerProductSpace.Adjoint
 fi
 lake exe cache get "$@"
 test "$task_manifest_hash" = "$(sha256sum lake-manifest.json)"

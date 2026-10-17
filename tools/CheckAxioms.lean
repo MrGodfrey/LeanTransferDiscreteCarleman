@@ -54,6 +54,11 @@ import Lean.Util.CollectAxioms
 #print axioms Carleman.LoadInterface.residualPlus_eventuallyEq
 #print axioms Carleman.LoadInterface.residualMinus_eventuallyEq
 
+#check @Carleman.Reconstruction.ofLinearMap
+#check @Carleman.Reconstruction.existsUnique_mass_adjoint
+#print axioms Carleman.Reconstruction.ofLinearMap
+#print axioms Carleman.Reconstruction.existsUnique_mass_adjoint
+
 -- Real uses of the shared commutation theorem at all four paper maps.
 section ReconstructionUses
 variable {H X : Type*} [NormedAddCommGroup H] [InnerProductSpace ℝ H]
