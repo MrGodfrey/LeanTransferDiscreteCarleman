@@ -18,7 +18,10 @@ lean --version
 if [ "$#" -eq 0 ]; then
   set -- Mathlib.Algebra.BigOperators.Group.Finset.Basic \
     Mathlib.Analysis.InnerProductSpace.Basic Mathlib.Logic.Equiv.Fin.Rotate \
-    Mathlib.Analysis.InnerProductSpace.Adjoint
+    Mathlib.Analysis.InnerProductSpace.Adjoint \
+    Mathlib.MeasureTheory.Function.L2Space Mathlib.MeasureTheory.Measure.Lebesgue.Basic \
+    Mathlib.Analysis.Calculus.ContDiff.Basic Mathlib.Analysis.Calculus.Deriv.Basic \
+    Mathlib.Analysis.SpecialFunctions.Pow.Real Mathlib.Analysis.Normed.Module.Seminorm.Basic
 fi
 lake exe cache get "$@"
 test "$task_manifest_hash" = "$(sha256sum lake-manifest.json)"

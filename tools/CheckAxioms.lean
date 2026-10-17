@@ -98,6 +98,24 @@ example (I : X → F) (hI : ∀ z, Γ (I z) = z) (v : g.Sequence X) :
   (Carleman.LoadInterface.mk Γ lift h).rightInverse_load g I hI v
 end OrdinaryLoadMaps
 
+-- T003: actual norm objects, genuine weak trajectory, and the uniform conditional conclusion.
+#print Carleman.PeriodicWeakTrajectory
+#print Carleman.TransferGeometry
+#print Carleman.ComparisonBridge
+#print Carleman.ErrorBridge
+#print Carleman.TransferBridges
+#check @Carleman.TimeGrid.weightedNorm_sq
+#check @Carleman.TimeGrid.powerSq_eq_weightedSq
+#check @Carleman.PeriodicWeakTrajectory.domainValue_L2
+#check @Carleman.PeriodicWeakTrajectory.domainValue_weakDerivative
+#check @Carleman.PeriodicWeakTrajectory.residual_ae
+#check @Carleman.LoadInterface.transferLoad_powerSq_le
+#check @Carleman.ComparisonBridge.comparison
+#check @Carleman.ErrorBridge.total_bound
+#check @Carleman.conditional_transfer_uniform
+#print axioms Carleman.conditional_transfer_uniform
+#print axioms Carleman.PeriodicWeakTrajectory.residual_ae
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
