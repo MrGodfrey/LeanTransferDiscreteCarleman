@@ -110,3 +110,18 @@ public import Carleman.Weights.ClosureWeakTrajectory
 public import Carleman.Weights.IntrinsicConjugation
 public import Carleman.Weights.IntrinsicDerivatives
 public import Carleman.Weights.IntrinsicSmoothClosure
+
+-- T014: frozen error energy and full-space weak parameter interpolation.
+public import Carleman.Continuous.BochnerNormAlgebra
+public import Carleman.Continuous.FrozenErrorResidual
+public import Carleman.Spatial.ConvolutionL2
+public import Carleman.Spatial.DiscreteMaximum
+public import Carleman.Spatial.FullSpaceInterpolation
+public import Carleman.Spatial.FullSpaceJetInterpolation
+public import Carleman.Spatial.LowerShiftEnergy
+public import Carleman.Spatial.MollifiedInterpolation
+public import Carleman.Spatial.RealL2Integral
+public import Carleman.Spatial.WeakConvolution
+public import Carleman.Weights.FrozenErrorEnergy
+public import Carleman.Weights.FrozenOperatorEnergy
+public import Carleman.Weights.FrozenShiftLower

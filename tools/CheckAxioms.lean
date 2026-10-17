@@ -1143,6 +1143,110 @@ set_option pp.maxSteps 1000000
 #check @Carleman.SmoothOnClosure.boundedSmoothOn
 #print axioms Carleman.SmoothOnClosure.boundedSmoothOn
 
+-- T014: every explicit declaration and its recursive dependency axioms.
+#check @Carleman.bochnerL2Norm_congr_ae
+#print axioms Carleman.bochnerL2Norm_congr_ae
+#check @Carleman.bochnerL2Norm_neg
+#print axioms Carleman.bochnerL2Norm_neg
+#check @Carleman.bochnerL2Norm_sub
+#print axioms Carleman.bochnerL2Norm_sub
+#check @Carleman.bochnerL2Norm_const_smul
+#print axioms Carleman.bochnerL2Norm_const_smul
+#check @Carleman.PeriodicWeakTrajectory.domainError
+#print axioms Carleman.PeriodicWeakTrajectory.domainError
+#check @Carleman.PeriodicWeakTrajectory.domainError_value_ae
+#print axioms Carleman.PeriodicWeakTrajectory.domainError_value_ae
+#check @Carleman.PeriodicWeakTrajectory.domainError_L2
+#print axioms Carleman.PeriodicWeakTrajectory.domainError_L2
+#check @Carleman.PeriodicWeakTrajectory.domainError_operator_L2
+#print axioms Carleman.PeriodicWeakTrajectory.domainError_operator_L2
+#check @Carleman.PeriodicWeakTrajectory.domainError_residual_ae
+#print axioms Carleman.PeriodicWeakTrajectory.domainError_residual_ae
+#check @Carleman.FrozenEulerPair
+#print axioms Carleman.FrozenEulerPair
+#check @Carleman.CoerciveForm.IsAssociated.nonempty_frozenEulerPair
+#print axioms Carleman.CoerciveForm.IsAssociated.nonempty_frozenEulerPair
+#check @Carleman.SpatialTest.convolution_square_le
+#print axioms Carleman.SpatialTest.convolution_square_le
+#check @Carleman.SpatialTest.convolution_memLp_norm_le
+#print axioms Carleman.SpatialTest.convolution_memLp_norm_le
+#check @Carleman.discrete_convex_maximum
+#print axioms Carleman.discrete_convex_maximum
+#check @Carleman.discrete_logConvex_maximum
+#print axioms Carleman.discrete_logConvex_maximum
+#check @Carleman.shrinkingBump
+#print axioms Carleman.shrinkingBump
+#check @Carleman.spatialMollifier
+#print axioms Carleman.spatialMollifier
+#check @Carleman.spatialMollifier_nonneg
+#print axioms Carleman.spatialMollifier_nonneg
+#check @Carleman.spatialMollifier_integral
+#print axioms Carleman.spatialMollifier_integral
+#check @Carleman.spatialMollifier_converges
+#print axioms Carleman.spatialMollifier_converges
+#check @Carleman.weak_spatial_chain_norm_sq_le
+#print axioms Carleman.weak_spatial_chain_norm_sq_le
+#check @Carleman.WeakSobolevJet.componentMaximum
+#print axioms Carleman.WeakSobolevJet.componentMaximum
+#check @Carleman.WeakSobolevJet.component_le_maximum
+#print axioms Carleman.WeakSobolevJet.component_le_maximum
+#check @Carleman.WeakSobolevJet.componentMaximum_le_field
+#print axioms Carleman.WeakSobolevJet.componentMaximum_le_field
+#check @Carleman.WeakSobolevJet.componentMaximum_zero
+#print axioms Carleman.WeakSobolevJet.componentMaximum_zero
+#check @Carleman.WeakSobolevJet.component_neighbor_sq_le
+#print axioms Carleman.WeakSobolevJet.component_neighbor_sq_le
+#check @Carleman.WeakSobolevJet.componentMaximum_logConvex
+#print axioms Carleman.WeakSobolevJet.componentMaximum_logConvex
+#check @Carleman.WeakSobolevJet.scaled_componentMaximum_le
+#print axioms Carleman.WeakSobolevJet.scaled_componentMaximum_le
+#check @Carleman.WeakSobolevJet.fullSpace_parameter_interpolation
+#print axioms Carleman.WeakSobolevJet.fullSpace_parameter_interpolation
+#check @Carleman.WeakSobolevJet.fullSpace_parameter_interpolation_uniform
+#print axioms Carleman.WeakSobolevJet.fullSpace_parameter_interpolation_uniform
+#check @Carleman.shiftedForm_coercive_of_lower
+#print axioms Carleman.shiftedForm_coercive_of_lower
+#check @Carleman.shiftedOperator_weighted_energy_of_lower
+#print axioms Carleman.shiftedOperator_weighted_energy_of_lower
+#check @Carleman.shiftedOperator_spacetime_energy_of_lower
+#print axioms Carleman.shiftedOperator_spacetime_energy_of_lower
+#check @Carleman.real_convolution_comm
+#print axioms Carleman.real_convolution_comm
+#check @Carleman.SpatialTest.convolution_right_memLp_norm_le
+#print axioms Carleman.SpatialTest.convolution_right_memLp_norm_le
+#check @Carleman.SpatialTest.weak_chain_convolution_sq_le
+#print axioms Carleman.SpatialTest.weak_chain_convolution_sq_le
+#check @Carleman.integral_mul_eq_L2_inner
+#print axioms Carleman.integral_mul_eq_L2_inner
+#check @Carleman.integral_sq_eq_bochnerL2Norm_sq
+#print axioms Carleman.integral_sq_eq_bochnerL2Norm_sq
+#check @Carleman.integral_mul_sq_le
+#print axioms Carleman.integral_mul_sq_le
+#check @Carleman.abs_integral_mul_le
+#print axioms Carleman.abs_integral_mul_le
+#check @Carleman.SpatialTest.reflected
+#print axioms Carleman.SpatialTest.reflected
+#check @Carleman.SpatialTest.reflected_derivative
+#print axioms Carleman.SpatialTest.reflected_derivative
+#check @Carleman.IsWeakSpatialDerivative.convolution_exchange
+#print axioms Carleman.IsWeakSpatialDerivative.convolution_exchange
+#check @Carleman.IsWeakSpatialDerivative.fderiv_convolution
+#print axioms Carleman.IsWeakSpatialDerivative.fderiv_convolution
+#check @Carleman.SpatialTest.smooth_convolution
+#print axioms Carleman.SpatialTest.smooth_convolution
+#check @Carleman.PeriodicWeakTrajectory.domainError_conforming_L2
+#print axioms Carleman.PeriodicWeakTrajectory.domainError_conforming_L2
+#check @Carleman.frozen_error_energy_uniform
+#print axioms Carleman.frozen_error_energy_uniform
+#check @Carleman.frozen_spacetime_operator_energy_uniform
+#print axioms Carleman.frozen_spacetime_operator_energy_uniform
+#check @Carleman.TimeWeightRegularity.frozen_shift_lower
+#print axioms Carleman.TimeWeightRegularity.frozen_shift_lower
+#check @Carleman.TimeWeightRegularity.frozen_shift_lower_ae
+#print axioms Carleman.TimeWeightRegularity.frozen_shift_lower_ae
+#check @Carleman.frozen_shift_margin_uniform
+#print axioms Carleman.frozen_shift_margin_uniform
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
