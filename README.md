@@ -7,14 +7,14 @@
 
 首个核心目标是原文 Theorem 2.1；条件性 Section 5 是中间目标，长期覆盖全部
 26 个具名结果。工程辅助引理不计为原文结果完成。协议见 [AGENTS.md](AGENTS.md)
-和 [完整启动说明](README_首先阅读.md)。本次准备不启动长期证明循环。
+和 [完整启动说明](README_首先阅读.md)。持续接续和验收由唯一 Dot 监督者负责。
 
 ## 固定工程与构建
 
 - Lean **4.35.0**，由 `lean-toolchain` 指定。
 - mathlib **v4.35.0**，提交 `56a005855ea17e0b0958f73ec801ae140b0a1679`。
 - `lake-manifest.json` 锁定全部传递依赖；日常恢复不运行 `lake update`。
-- 工程目标 `Carleman`；聚合模块导入 `Carleman.Periodic.Telescoping`。
+- 工程目标 `Carleman`；聚合模块导入有限置换引理和 `Carleman.Periodic.SummationByParts`。
 
 从仓库根目录执行（需要 Git、curl、tar、zstd、C 编译器、Python 3.12+、Node 22+）：
 
@@ -32,9 +32,9 @@ manifest 恢复 mathlib，并下载当前基础模块的缓存。新模块需要
 Lake 正常构建。更改工具链或依赖版本需作为明确的代码变更提交。
 
 CI 构建 `lake build Carleman`，检查已解析的 mathlib SHA，并用
-`tools/CheckAxioms.lean` 检查基础成果；`sorryAx` 或新增数学公理会导致失败。
+`tools/CheckAxioms.lean` 检查 `Carleman` 命名空间全部声明的公理依赖；`sorryAx` 或新增数学公理会导致失败。
 正常基础公理 `propext`、`Classical.choice`、`Quot.sound` 允许使用。
-新增已完成模块须加入 `Carleman.lean`，重要成果增加对应公理依赖检查。
+新增已完成模块须加入 `Carleman.lean`，重要成果输出对应声明类型和公理依赖。
 
 云端激活和恢复步骤见 [governance/ENVIRONMENT.md](governance/ENVIRONMENT.md)。
 保存环境配置不等于发布，后续新任务还需验证其恢复能力。
@@ -43,10 +43,12 @@ CI 构建 `lake build Carleman`，检查已解析的 mathlib SHA，并用
 
 `Carleman.sum_sub_perm` 对任意有限索引类型、交换加法群、置换 `σ` 及函数 `f` 证明
 `∑ i, (f i - f (σ i)) = 0`。这是周期差分总和为零的代数基础，范围为 **AUXILIARY**；
-尚未定义论文中的时间步长、两种周期差分、加权范数或证明周期分部求和。
+它被 C001 的周期分部求和复用。
 
-推荐 Dot 的第一个证明任务是 C001：在明确 `N > 0`、`δt > 0` 和 `T = N δt` 的接口下，
-建立论文符号约定的周期差分及分部求和，复用本次有限置换引理。
+T001/C001 建立共享 `TimeGrid`（`N > 0`、`δt > 0`、`T = N δt`）、全部 `Fin N → H`
+周期状态和论文符号的 `dPlus/dMinus`。`pairing_dPlus/pairing_dMinus` 在任意实内积空间的
+`δt * ∑ inner ℝ` 配对中证明双向伴随关系。空间权、加权范数与重构算子仍待实现；
+成果仅属 **AUXILIARY**，验收状态及版本以台账和 PR 为准，不计 Section 5 或 Theorem 2.1 完成。
 
 工程合并、CI 正/负/修复记录和剩余配置见 [启动交接记录](governance/BOOTSTRAP_ACCEPTANCE.md)。
 
@@ -58,7 +60,7 @@ CI 构建 `lake build Carleman`，检查已解析的 mathlib SHA，并用
 
 GitHub Actions 只生成仓库权限范围内的构建证据和静态网页 artifact；
 本次配置移除了 Pages 部署步骤及写权限，任何仓库变量都不会启用 Pages。
-未来公开发布需要单独授权并修改 workflow。当前不增加付费服务或调度。
+未来公开发布需要单独授权并修改 workflow。不增加付费服务；已由监督者保存的私人巡检／摘要调度仅在台账登记，不进入公开展示。
 
 `MarkdownNote/启动包原始清单_SHA256.txt` 保存原始修订包的历史校验值，
 不作为后续代码版本的文件校验清单。论文校验值仍见 `paper/SOURCE_MANIFEST.md`。

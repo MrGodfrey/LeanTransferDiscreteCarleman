@@ -9,37 +9,37 @@
     "started_at": "2026-10-17T09:43:34.927869+00:00"
   },
   "execution": {
-    "state": "IDLE",
-    "current_task_id": null,
+    "state": "REVIEW",
+    "current_task_id": "T001",
     "supervisor_checked_at": null,
-    "next_action": "用户保存并 Publish 环境后，由 Dot 创建 C001 周期分部求和任务并验证恢复与接续",
-    "blocker": "新工程环境尚待 Publish；主分支 required checks 未配置（管理 API 权限不足）",
+    "next_action": "监督者核对 PR 当前 HEAD、CI 与声明；验收后转为 ready 并合并，核实 main 后再接续",
+    "blocker": null,
     "pause_reason": null
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "fc466e43e93ce2b8322c9abe6e54b785a04dec27",
-      "source_head_sha": "fc466e43e93ce2b8322c9abe6e54b785a04dec27",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39022672100/attempts/1",
-      "finished_at": "2026-10-17T09:52:56Z",
+      "checked_sha": "4b2999614d85f10eb8f0eb37365cadff89ff4c69",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39024525975/attempts/1",
+      "finished_at": "2026-10-17T10:21:26.393531+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
-      ]
+      ],
+      "source_head_sha": "62196e723e9e631c4d5a53c115dc948429fec67a"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "fc466e43e93ce2b8322c9abe6e54b785a04dec27",
-      "source_head_sha": "fc466e43e93ce2b8322c9abe6e54b785a04dec27",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39022672100/attempts/1",
-      "finished_at": "2026-10-17T09:52:56Z",
+      "checked_sha": "4b2999614d85f10eb8f0eb37365cadff89ff4c69",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39024525975/attempts/1",
+      "finished_at": "2026-10-17T10:21:26.393531+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
-      ]
+      ],
+      "source_head_sha": "62196e723e9e631c4d5a53c115dc948429fec67a"
     }
   },
   "milestones": [
@@ -49,7 +49,7 @@
       "description": "固定版本、小证明、CI 正负验证、PR 合并和下一任务",
       "status": "IN_PROGRESS",
       "evidence_commit": "fc466e43e93ce2b8322c9abe6e54b785a04dec27",
-      "blocker": "工程已合并；待发布环境、新云端任务恢复及 Dot 实际接续验证"
+      "blocker": "已验证新环境恢复、同任务接续及复用已合并成果；M0a 最终验收待监督者"
     },
     {
       "id": "M0b",
@@ -63,7 +63,7 @@
       "id": "M1",
       "title": "抽象空间与周期时间",
       "description": "周期差分、加权范数、重构与载荷",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "evidence_commit": null,
       "blocker": null
     },
@@ -131,16 +131,46 @@
       "paper_ref": "Section 2.4, p.10",
       "milestone": "M1",
       "extra_hypotheses": [],
-      "verification_status": "PLANNED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [],
-      "lean_declarations": [],
-      "declaration_version": null,
-      "build_evidence": null,
+      "lean_declarations": [
+        "Carleman.TimeGrid.period_pos",
+        "Carleman.TimeGrid.dt_eq_period_div_steps",
+        "Carleman.TimeGrid.next_eq_add_one",
+        "Carleman.TimeGrid.prev_eq_sub_one",
+        "Carleman.TimeGrid.prev_next",
+        "Carleman.TimeGrid.next_prev",
+        "Carleman.TimeGrid.dPlus_apply",
+        "Carleman.TimeGrid.dMinus_apply",
+        "Carleman.TimeGrid.sum_dPlus_eq_zero",
+        "Carleman.TimeGrid.sum_dMinus_eq_zero",
+        "Carleman.TimeGrid.pairing_comm",
+        "Carleman.TimeGrid.pairing_self_nonneg",
+        "Carleman.TimeGrid.pairing_self_eq_zero",
+        "Carleman.TimeGrid.sum_inner_prev",
+        "Carleman.TimeGrid.pairing_dPlus",
+        "Carleman.TimeGrid.pairing_dMinus"
+      ],
+      "declaration_version": "4b2999614d85f10eb8f0eb37365cadff89ff4c69",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "4b2999614d85f10eb8f0eb37365cadff89ff4c69",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39024525975/attempts/1",
+        "finished_at": "2026-10-17T10:21:26.393531+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "62196e723e9e631c4d5a53c115dc948429fec67a"
+      },
       "semantic_review": null,
-      "dependencies": [],
+      "dependencies": [
+        "AUX001"
+      ],
       "blocker": null,
-      "pr_url": null
+      "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/4"
     },
     {
       "id": "C002",
@@ -570,10 +600,15 @@
       "at": "2026-10-17T09:55:13.154394+00:00",
       "public_summary": "固定 Lean 工程与有限置换辅助引理已合并；原文结果仍待证明",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/1"
+    },
+    {
+      "at": "2026-10-17T10:23:12.543514+00:00",
+      "public_summary": "周期离散分部求和辅助接口通过构建与公理检查，待监督者验收；原文完成数不变",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/4"
     }
   ],
   "snapshot": {
-    "synced_at": "2026-10-17T09:55:13.154394+00:00",
+    "synced_at": "2026-10-17T10:23:12.543514+00:00",
     "source_commit": null,
     "mode": "LOCAL_SNAPSHOT"
   },
@@ -581,10 +616,36 @@
     "approved_urls": [
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39022242419/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/1",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39022672100/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39022672100/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39023145509/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/4",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39024525975/attempts/1"
     ]
   },
-  "schedules": [],
+  "schedules": [
+    {
+      "id": "6ad34a06fe3481919ce948ce5cc28cb3",
+      "timezone": "Asia/Shanghai",
+      "destination": "本 Dot ChatGPT 对话",
+      "purpose": "六小时兜底巡检",
+      "status": "ENABLED",
+      "enabled": true,
+      "first_run_at": "2026-10-18T00:15:00+08:00",
+      "cadence": "每六小时",
+      "confirmation_source": "父监督者：已成功保存且 enabled=true"
+    },
+    {
+      "id": "6ad34a114b488191a3d0221672409903",
+      "timezone": "Asia/Shanghai",
+      "destination": "本 Dot ChatGPT 对话",
+      "purpose": "每日中文摘要",
+      "status": "ENABLED",
+      "enabled": true,
+      "first_run_at": "2026-10-18T09:00:00+08:00",
+      "cadence": "每日 09:00",
+      "confirmation_source": "父监督者：已成功保存且 enabled=true"
+    }
+  ],
   "tasks": [
     {
       "id": "BOOTSTRAP-001",
@@ -628,7 +689,93 @@
         "干净克隆与新工具链安装/构建通过",
         "main 分支保护配置 API 返回 403 Resource not accessible by integration"
       ],
-      "next_action": "用户发布环境后，由 Dot 创建 C001 任务并验证新云端任务恢复与接续"
+      "next_action": "T001 已使用已合并 sum_sub_perm 并验证新环境恢复；M0a 接续终验收交监督者"
+    },
+    {
+      "id": "T001",
+      "platform_task_id": "01a14958-e416-758e-9e93-39de73e8101b",
+      "initial_turn_id": "01a14958-ec9f-73c5-bf74-84d1ae0ca083",
+      "task_url": null,
+      "title": "周期离散分部求和",
+      "goal_ids": [
+        "C001"
+      ],
+      "acceptance": [
+        "N>0、δt>0、T=Nδt 的共享周期索引与全部离散状态",
+        "两种差分符号符合 paper/main.tex:477–500",
+        "任意实内积空间中 δt 加权配对的双向分部求和",
+        "Carleman 聚合目标构建及声明传递公理检查；无 sorryAx 或新增数学公理",
+        "逐项核对声明并交付 draft PR；仅计 AUXILIARY"
+      ],
+      "dependencies": [
+        "AUX001"
+      ],
+      "branch": "proof/t001-periodic-sbp",
+      "base_commit": "d7b1bed39b3820a6cf7ee1ec76dc3d4c616ad410",
+      "status": "REVIEW",
+      "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/4",
+      "checkpoint_commit": "62196e723e9e631c4d5a53c115dc948429fec67a",
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.TimeGrid.period_pos",
+        "Carleman.TimeGrid.dt_eq_period_div_steps",
+        "Carleman.TimeGrid.next_eq_add_one",
+        "Carleman.TimeGrid.prev_eq_sub_one",
+        "Carleman.TimeGrid.prev_next",
+        "Carleman.TimeGrid.next_prev",
+        "Carleman.TimeGrid.dPlus_apply",
+        "Carleman.TimeGrid.dMinus_apply",
+        "Carleman.TimeGrid.sum_dPlus_eq_zero",
+        "Carleman.TimeGrid.sum_dMinus_eq_zero",
+        "Carleman.TimeGrid.pairing_comm",
+        "Carleman.TimeGrid.pairing_self_nonneg",
+        "Carleman.TimeGrid.pairing_self_eq_zero",
+        "Carleman.TimeGrid.sum_inner_prev",
+        "Carleman.TimeGrid.pairing_dPlus",
+        "Carleman.TimeGrid.pairing_dMinus"
+      ],
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "4b2999614d85f10eb8f0eb37365cadff89ff4c69",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39024525975/attempts/1",
+        "finished_at": "2026-10-17T10:21:26.393531+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "62196e723e9e631c4d5a53c115dc948429fec67a"
+      },
+      "blocker": null,
+      "attempts": [
+        "按指定 ELAN_HOME 在现有 checkout 运行 setup_lean.sh、lean_ci.sh；恢复基线通过，九个锁定包的 HEAD 全部匹配 manifest",
+        "复用 sum_sub_perm 与 finRotate；通用实内积空间的两种伴随恒等式已本地编译，等待绑定提交的 CI",
+        "首轮公理检查器扩展出现 Lean 名称引用解析错误，修正为带括号的 Name 并显式标注计数器类型后通过",
+        "公理门禁负向探针发现默认私有声明需先归一化名称；使用 Lean.privateToUserName 修复后，新增公理与 sorryAx 均被正确拒绝",
+        "CI 39024525975 的 state-check、lean、dashboard/snapshot 全部成功；原始 result.json 和 job 日志已读取，48 个项目声明通过公理检查",
+        "合并测试提交 4b2999614d85f10eb8f0eb37365cadff89ff4c69 的双亲为已核实基线与 62196e723e9e631c4d5a53c115dc948429fec67a；两者源码树完全一致",
+        "直接下载 Actions artifact 返回 Forbidden，改用 GitHub 连接器成功读取原始 artifact；没有遗留证据访问阻塞"
+      ],
+      "next_action": "监督者核对 PR 当前 HEAD、CI 与声明；验收后转为 ready 并合并，核实 main 后再接续",
+      "environment": {
+        "configuration_id": "0763a884-b245-444d-8fdd-eb3f7eb5366f~asenvcfg_e2f88939fdc08191910567b0be743fa6",
+        "published_version_id": "5d68d26a-89c6-4b59-b6f1-45215efa1a91~cecfgver_6ad348395250819f9c42cc18fb2837b4",
+        "identity_source": "父监督者已核实并在同任务接续消息中提供",
+        "restoration_status": "PASS",
+        "restoration_checked_at": "2026-10-17T10:18:41.702422+00:00",
+        "restoration_base_commit": "d7b1bed39b3820a6cf7ee1ec76dc3d4c616ad410",
+        "initial_branch": "main",
+        "elan_home": "/workspace/.carleman-environment/elan",
+        "commands": [
+          "bash tools/setup_lean.sh",
+          "bash tools/lean_ci.sh"
+        ],
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "locked_packages_checked": 9,
+        "continuation_message_received": true,
+        "local_task_skills": "checkout 未发现 .agents/skills/SKILL.md；未应用本地技能"
+      }
     }
   ]
 }
