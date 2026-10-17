@@ -14,3 +14,14 @@
 每次复用必须记录：代码仓库及 commit、license、Lean toolchain、目标命题具体声明、Lean 型别和所用前提、与论文接口匹配结论、引入包的后续维护成本。禁止单凭 README 声称某引理可直接调用。
 
 采用记录只针对实际需要的声明：仓库/commit、许可、工具链、声明与前提、最小 import + example 兼容构建、接口对应和依赖成本。未采用项目保留为候选，不必因清单存在就全部导入。
+
+## T001 实际采用
+
+仅使用已锁定 mathlib4 `56a005855ea17e0b0958f73ec801ae140b0a1679`（Apache-2.0，Lean 4.35.0），不新增包。
+`Mathlib.Logic.Equiv.Fin.Rotate` 的 `finRotate : (n : ℕ) → Equiv.Perm (Fin n)`、
+`finRotate_apply`、`finRotate_symm_apply` 给出模 N 的 ±1 移位；
+`Mathlib.Analysis.InnerProductSpace.Basic` 的 `real_inner_smul_left/right`、`inner_sub_left/right`
+用于任意实内积空间的双线性展开，`real_inner_comm` 用于反向伴随。
+最小模块调用及其前提由 `TimeGrid.lean` / `SummationByParts.lean` 的实际证明编译核实，
+并由 `tools/CheckAxioms.lean` 输出主要声明及检查传递公理。有限和重排复用本仓库
+`Carleman.sum_sub_perm`，没有另行证明该辅助引理。缓存只增加这些 import 的依赖闭包。

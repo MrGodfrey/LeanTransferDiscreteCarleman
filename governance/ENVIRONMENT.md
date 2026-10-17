@@ -23,7 +23,8 @@ Lean is pinned to `leanprover/lean4:v4.35.0`; mathlib is pinned to
 `56a005855ea17e0b0958f73ec801ae140b0a1679`. Preserve the checked-in manifest.
 The setup script accepts additional mathlib cache roots as arguments.
 Only the required import closure is fetched; the initial build used 719 Lake
-jobs with prebuilt mathlib outputs. Inspect CPU, memory, and disk before deciding
+jobs and the periodic inner-product interface uses 2019 jobs, with prebuilt mathlib outputs.
+Inspect CPU, memory, and disk before deciding
 to build much larger uncached dependency trees.
 
 Required network destinations are GitHub and its source/release asset hosts,

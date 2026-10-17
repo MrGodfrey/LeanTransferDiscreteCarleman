@@ -13,10 +13,11 @@ if ! command -v elan >/dev/null 2>&1; then
 fi
 task_manifest_hash="$(sha256sum lake-manifest.json)"
 lean --version
-# Fetch the bootstrap module's mathlib imports and their dependencies.
+# Fetch the completed modules' mathlib imports and their dependencies.
 # Additional mathlib cache roots may be passed as arguments during development.
 if [ "$#" -eq 0 ]; then
-  set -- Mathlib.Algebra.BigOperators.Group.Finset.Basic
+  set -- Mathlib.Algebra.BigOperators.Group.Finset.Basic \
+    Mathlib.Analysis.InnerProductSpace.Basic Mathlib.Logic.Equiv.Fin.Rotate
 fi
 lake exe cache get "$@"
 test "$task_manifest_hash" = "$(sha256sum lake-manifest.json)"

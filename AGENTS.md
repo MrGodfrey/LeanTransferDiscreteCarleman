@@ -6,7 +6,7 @@ The first core delivery is the faithful Theorem 2.1 in `paper/main.tex`. Conditi
 
 Read the relevant canonical files: `governance/MATH_SPEC.md` for mathematical interfaces; `governance/PROJECT_OPERATIONS.md` for task continuation, merge and pause rules; `state/README.md` for evidence/status; `governance/MILESTONES.md` and `governance/PAPER_COVERAGE.md` for scope. Keep this file as a concise pointer rather than duplicating those protocols.
 
-Preserve the manuscript, quantifiers and uniformity (including T), both time directions, full discrete state space and original assumptions. Do not silently weaken a goal. Conditional results retain their mathematical scope after review. A scalar absorption helper is not Section 5 formalization.
+Preserve the original final conclusions, quantifiers and uniformity (including T), both time directions, full discrete state space and original assumptions. Manuscript corrections, equivalent restatements and proof-route changes are authorized: preserve the original version and a clear diff, and update the specification and coverage mapping. If a conclusion cannot be preserved without substantive weakening or added restrictions, report the obstacle, attempted routes and smallest proposed change to the supervisor for the user's decision. Conditional results retain their mathematical scope after review. A scalar absorption helper is not Section 5 formalization.
 
 Pin Lean and mathlib. Reuse shared periodic sequence, norm, reconstruction and error interfaces. Interface improvements may be made autonomously with affected callers updated in the same PR. Search mathlib first; validate only needed external declarations before adopting dependencies.
 
