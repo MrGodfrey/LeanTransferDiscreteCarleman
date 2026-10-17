@@ -21,6 +21,23 @@ import Lean.Util.CollectAxioms
 #print axioms Carleman.TimeGrid.pairing_dPlus
 #print axioms Carleman.TimeGrid.pairing_dMinus
 
+#check @Carleman.TimeGrid.map
+#check @Carleman.TimeGrid.dPlus_map
+#check @Carleman.TimeGrid.dMinus_map
+#check @Carleman.Reconstruction
+#check @Carleman.Reconstruction.Q
+#check @Carleman.Reconstruction.G
+#check @Carleman.Reconstruction.pairing_RH_dPlus
+#check @Carleman.Reconstruction.pairing_RH_dMinus
+#check @Carleman.Reconstruction.shifted_dPlus_unique
+#check @Carleman.Reconstruction.shifted_dMinus_unique
+#check @Carleman.LoadInterface
+#check @Carleman.LoadInterface.J_transferLoad
+#check @Carleman.LoadInterface.auxiliary_dPlus_eq_state
+#check @Carleman.LoadInterface.auxiliary_dMinus_eq_state
+#print axioms Carleman.LoadInterface.auxiliary_dPlus_eq_state
+#print axioms Carleman.LoadInterface.auxiliary_dMinus_eq_state
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
