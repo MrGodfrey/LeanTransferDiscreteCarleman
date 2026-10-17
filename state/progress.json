@@ -9,37 +9,37 @@
     "started_at": "2026-10-17T09:43:34.927869+00:00"
   },
   "execution": {
-    "state": "RUNNING",
+    "state": "REVIEW",
     "current_task_id": "T001",
     "supervisor_checked_at": null,
-    "next_action": "完成周期差分分部求和与同分支 CI；提交 draft PR 供监督者验收",
+    "next_action": "监督者核对 PR 当前 HEAD、CI 与声明；验收后转为 ready 并合并，核实 main 后再接续",
     "blocker": null,
     "pause_reason": null
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "d7b1bed39b3820a6cf7ee1ec76dc3d4c616ad410",
-      "source_head_sha": "d7b1bed39b3820a6cf7ee1ec76dc3d4c616ad410",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39023145509/attempts/1",
-      "finished_at": "2026-10-17T09:59:55.641228+00:00",
+      "checked_sha": "4b2999614d85f10eb8f0eb37365cadff89ff4c69",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39024525975/attempts/1",
+      "finished_at": "2026-10-17T10:21:26.393531+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
-      ]
+      ],
+      "source_head_sha": "62196e723e9e631c4d5a53c115dc948429fec67a"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "d7b1bed39b3820a6cf7ee1ec76dc3d4c616ad410",
-      "source_head_sha": "d7b1bed39b3820a6cf7ee1ec76dc3d4c616ad410",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39023145509/attempts/1",
-      "finished_at": "2026-10-17T09:59:55.641228+00:00",
+      "checked_sha": "4b2999614d85f10eb8f0eb37365cadff89ff4c69",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39024525975/attempts/1",
+      "finished_at": "2026-10-17T10:21:26.393531+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
-      ]
+      ],
+      "source_head_sha": "62196e723e9e631c4d5a53c115dc948429fec67a"
     }
   },
   "milestones": [
@@ -49,7 +49,7 @@
       "description": "固定版本、小证明、CI 正负验证、PR 合并和下一任务",
       "status": "IN_PROGRESS",
       "evidence_commit": "fc466e43e93ce2b8322c9abe6e54b785a04dec27",
-      "blocker": "新环境恢复及同任务接续消息已验证；T001 与 M0a 的最终验收由监督者处理"
+      "blocker": "已验证新环境恢复、同任务接续及复用已合并成果；M0a 最终验收待监督者"
     },
     {
       "id": "M0b",
@@ -131,7 +131,7 @@
       "paper_ref": "Section 2.4, p.10",
       "milestone": "M1",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [],
       "lean_declarations": [
@@ -152,14 +152,25 @@
         "Carleman.TimeGrid.pairing_dPlus",
         "Carleman.TimeGrid.pairing_dMinus"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "4b2999614d85f10eb8f0eb37365cadff89ff4c69",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "4b2999614d85f10eb8f0eb37365cadff89ff4c69",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39024525975/attempts/1",
+        "finished_at": "2026-10-17T10:21:26.393531+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "62196e723e9e631c4d5a53c115dc948429fec67a"
+      },
       "semantic_review": null,
       "dependencies": [
         "AUX001"
       ],
       "blocker": null,
-      "pr_url": null
+      "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/4"
     },
     {
       "id": "C002",
@@ -589,11 +600,16 @@
       "at": "2026-10-17T09:55:13.154394+00:00",
       "public_summary": "固定 Lean 工程与有限置换辅助引理已合并；原文结果仍待证明",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/1"
+    },
+    {
+      "at": "2026-10-17T10:23:12.543514+00:00",
+      "public_summary": "周期离散分部求和辅助接口通过构建与公理检查，待监督者验收；原文完成数不变",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/4"
     }
   ],
   "snapshot": {
-    "synced_at": "2026-10-17T10:18:41.702422+00:00",
-    "source_commit": "d7b1bed39b3820a6cf7ee1ec76dc3d4c616ad410",
+    "synced_at": "2026-10-17T10:23:12.543514+00:00",
+    "source_commit": null,
     "mode": "LOCAL_SNAPSHOT"
   },
   "dashboard": {
@@ -601,7 +617,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39022242419/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39022672100/attempts/1",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39023145509/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39023145509/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/4",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39024525975/attempts/1"
     ]
   },
   "schedules": [
@@ -671,7 +689,7 @@
         "干净克隆与新工具链安装/构建通过",
         "main 分支保护配置 API 返回 403 Resource not accessible by integration"
       ],
-      "next_action": "用户发布环境后，由 Dot 创建 C001 任务并验证新云端任务恢复与接续"
+      "next_action": "T001 已使用已合并 sum_sub_perm 并验证新环境恢复；M0a 接续终验收交监督者"
     },
     {
       "id": "T001",
@@ -694,9 +712,9 @@
       ],
       "branch": "proof/t001-periodic-sbp",
       "base_commit": "d7b1bed39b3820a6cf7ee1ec76dc3d4c616ad410",
-      "status": "RUNNING",
-      "pr_url": null,
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/4",
+      "checkpoint_commit": "62196e723e9e631c4d5a53c115dc948429fec67a",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.TimeGrid.period_pos",
@@ -716,15 +734,29 @@
         "Carleman.TimeGrid.pairing_dPlus",
         "Carleman.TimeGrid.pairing_dMinus"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "4b2999614d85f10eb8f0eb37365cadff89ff4c69",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39024525975/attempts/1",
+        "finished_at": "2026-10-17T10:21:26.393531+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "62196e723e9e631c4d5a53c115dc948429fec67a"
+      },
       "blocker": null,
       "attempts": [
         "按指定 ELAN_HOME 在现有 checkout 运行 setup_lean.sh、lean_ci.sh；恢复基线通过，九个锁定包的 HEAD 全部匹配 manifest",
         "复用 sum_sub_perm 与 finRotate；通用实内积空间的两种伴随恒等式已本地编译，等待绑定提交的 CI",
         "首轮公理检查器扩展出现 Lean 名称引用解析错误，修正为带括号的 Name 并显式标注计数器类型后通过",
-        "公理门禁负向探针发现默认私有声明需先归一化名称；使用 Lean.privateToUserName 修复，公理与 sorryAx 探针均须被拒绝"
+        "公理门禁负向探针发现默认私有声明需先归一化名称；使用 Lean.privateToUserName 修复后，新增公理与 sorryAx 均被正确拒绝",
+        "CI 39024525975 的 state-check、lean、dashboard/snapshot 全部成功；原始 result.json 和 job 日志已读取，48 个项目声明通过公理检查",
+        "合并测试提交 4b2999614d85f10eb8f0eb37365cadff89ff4c69 的双亲为已核实基线与 62196e723e9e631c4d5a53c115dc948429fec67a；两者源码树完全一致",
+        "直接下载 Actions artifact 返回 Forbidden，改用 GitHub 连接器成功读取原始 artifact；没有遗留证据访问阻塞"
       ],
-      "next_action": "创建唯一 draft PR，核实实际 checked_sha 与分支 HEAD 的关系后交监督者验收",
+      "next_action": "监督者核对 PR 当前 HEAD、CI 与声明；验收后转为 ready 并合并，核实 main 后再接续",
       "environment": {
         "configuration_id": "0763a884-b245-444d-8fdd-eb3f7eb5366f~asenvcfg_e2f88939fdc08191910567b0be743fa6",
         "published_version_id": "5d68d26a-89c6-4b59-b6f1-45215efa1a91~cecfgver_6ad348395250819f9c42cc18fb2837b4",
