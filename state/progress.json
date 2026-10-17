@@ -9,38 +9,38 @@
     "started_at": "2026-10-17T09:43:34.927869+00:00"
   },
   "execution": {
-    "state": "REVIEW",
-    "current_task_id": "T013",
+    "state": "RUNNING",
+    "current_task_id": "T014",
     "supervisor_checked_at": "2026-10-17T13:54:55.912702+00:00",
-    "next_action": "父监督者独立44声明验收；接续原Lipschitz参数Sobolev/完整允许权图及B4，复用已证内在闭包和A3能量路线",
+    "next_action": "整阶段根目标构建、递归公理审计、51声明逐项核对及draft PR实际CI",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-17T21:01:30.247912+00:00"
+    "last_activity_at": "2026-10-17T21:18:09.864026+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "afbc3dd302688155594abf25fa8c16c12fe5d7a2",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39068899496/attempts/1",
-      "finished_at": "2026-10-17T20:59:24.914602+00:00",
+      "checked_sha": "bed432f9ab0eebd8a31163608ff72c422299e93d",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39069920982/attempts/1",
+      "finished_at": "2026-10-17T21:14:12.617152+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "565b95ef6c7721eb69d4e20c224e87c8c5cea2c4"
+      "source_head_sha": "bed432f9ab0eebd8a31163608ff72c422299e93d"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "afbc3dd302688155594abf25fa8c16c12fe5d7a2",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39068899496/attempts/1",
-      "finished_at": "2026-10-17T20:59:24.914602+00:00",
+      "checked_sha": "bed432f9ab0eebd8a31163608ff72c422299e93d",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39069920982/attempts/1",
+      "finished_at": "2026-10-17T21:14:12.617152+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "565b95ef6c7721eb69d4e20c224e87c8c5cea2c4"
+      "source_head_sha": "bed432f9ab0eebd8a31163608ff72c422299e93d"
     }
   },
   "milestones": [
@@ -2978,7 +2978,7 @@
       "paper_ref": "Lemma3.1内在闭包光滑/允许权共轭；Theorem3.5参数能量依赖",
       "milestone": "M3",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [],
       "lean_declarations": [
@@ -3018,21 +3018,21 @@
         "Carleman.SmoothOnClosure.congr",
         "Carleman.SmoothOnClosure.boundedSmoothOn"
       ],
-      "declaration_version": "afbc3dd302688155594abf25fa8c16c12fe5d7a2",
+      "declaration_version": "bed432f9ab0eebd8a31163608ff72c422299e93d",
       "build_evidence": {
         "status": "PASS",
-        "checked_sha": "afbc3dd302688155594abf25fa8c16c12fe5d7a2",
-        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39068899496/attempts/1",
-        "finished_at": "2026-10-17T20:59:24.914602+00:00",
+        "checked_sha": "bed432f9ab0eebd8a31163608ff72c422299e93d",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39069920982/attempts/1",
+        "finished_at": "2026-10-17T21:14:12.617152+00:00",
         "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "targets": [
           "Carleman"
         ],
-        "source_head_sha": "565b95ef6c7721eb69d4e20c224e87c8c5cea2c4"
+        "source_head_sha": "bed432f9ab0eebd8a31163608ff72c422299e93d"
       },
       "semantic_review": {
-        "checked_sha": "afbc3dd302688155594abf25fa8c16c12fe5d7a2",
+        "checked_sha": "bed432f9ab0eebd8a31163608ff72c422299e93d",
         "declarations": [
           "Carleman.intrinsicWordMultiplier_smooth",
           "Carleman.intrinsicWordMultiplier_derivative",
@@ -3072,9 +3072,9 @@
         ],
         "result": "PASS",
         "axiom_check": "PASS",
-        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/565b95ef6c7721eb69d4e20c224e87c8c5cea2c4/governance/reviews/T013.md",
-        "reviewed_at": "2026-10-17T21:01:30.247912+00:00",
-        "reviewer": "T013 executor; parent independent acceptance pending"
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/16",
+        "reviewed_at": "2026-10-17T21:18:09.864026+00:00",
+        "reviewer": "父监督者独立44声明语义/依赖PASS；本轮整合"
       },
       "blocker": null,
       "dependencies": [
@@ -3086,6 +3086,71 @@
         "原连续/Euler/frozen统一允许权R图界与加权对偶/仿射缺陷，时间加权L²误差；新A3参数能量右端仍待",
         "N1–N5空间误差、全权族统一B4阈值及TransferBridges.solutions；原Theorem2.1未完成"
       ]
+    },
+    {
+      "id": "C031",
+      "title": "冻结移位能量与全空间弱参数插值",
+      "paper_ref": "Theorem3.5冻结时间误差；Lemma3.1全空间参数插值依赖",
+      "milestone": "M3",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [],
+      "lean_declarations": [
+        "Carleman.bochnerL2Norm_congr_ae",
+        "Carleman.bochnerL2Norm_neg",
+        "Carleman.bochnerL2Norm_sub",
+        "Carleman.bochnerL2Norm_const_smul",
+        "Carleman.PeriodicWeakTrajectory.domainError_value_ae",
+        "Carleman.PeriodicWeakTrajectory.domainError_L2",
+        "Carleman.PeriodicWeakTrajectory.domainError_operator_L2",
+        "Carleman.PeriodicWeakTrajectory.domainError_residual_ae",
+        "Carleman.CoerciveForm.IsAssociated.nonempty_frozenEulerPair",
+        "Carleman.SpatialTest.convolution_square_le",
+        "Carleman.SpatialTest.convolution_memLp_norm_le",
+        "Carleman.discrete_convex_maximum",
+        "Carleman.discrete_logConvex_maximum",
+        "Carleman.spatialMollifier_nonneg",
+        "Carleman.spatialMollifier_integral",
+        "Carleman.spatialMollifier_converges",
+        "Carleman.weak_spatial_chain_norm_sq_le",
+        "Carleman.WeakSobolevJet.component_le_maximum",
+        "Carleman.WeakSobolevJet.componentMaximum_le_field",
+        "Carleman.WeakSobolevJet.componentMaximum_zero",
+        "Carleman.WeakSobolevJet.component_neighbor_sq_le",
+        "Carleman.WeakSobolevJet.componentMaximum_logConvex",
+        "Carleman.WeakSobolevJet.scaled_componentMaximum_le",
+        "Carleman.WeakSobolevJet.fullSpace_parameter_interpolation",
+        "Carleman.WeakSobolevJet.fullSpace_parameter_interpolation_uniform",
+        "Carleman.shiftedForm_coercive_of_lower",
+        "Carleman.shiftedOperator_weighted_energy_of_lower",
+        "Carleman.shiftedOperator_spacetime_energy_of_lower",
+        "Carleman.real_convolution_comm",
+        "Carleman.SpatialTest.convolution_right_memLp_norm_le",
+        "Carleman.SpatialTest.weak_chain_convolution_sq_le",
+        "Carleman.integral_mul_eq_L2_inner",
+        "Carleman.integral_sq_eq_bochnerL2Norm_sq",
+        "Carleman.integral_mul_sq_le",
+        "Carleman.abs_integral_mul_le",
+        "Carleman.SpatialTest.reflected_derivative",
+        "Carleman.IsWeakSpatialDerivative.convolution_exchange",
+        "Carleman.IsWeakSpatialDerivative.fderiv_convolution",
+        "Carleman.SpatialTest.smooth_convolution",
+        "Carleman.PeriodicWeakTrajectory.domainError_conforming_L2",
+        "Carleman.frozen_error_energy_uniform",
+        "Carleman.frozen_spacetime_operator_energy_uniform",
+        "Carleman.TimeWeightRegularity.frozen_shift_lower",
+        "Carleman.TimeWeightRegularity.frozen_shift_lower_ae",
+        "Carleman.frozen_shift_margin_uniform"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "blocker": "原Lipschitz域同时L²/Hⁿ有界扩张、统一允许权图界与完整加权时间/空间B4仍待；本阶段辅助结论已完成",
+      "dependencies": [
+        "C030"
+      ],
+      "pr_url": null
     }
   ],
   "events": [
@@ -7377,10 +7442,10 @@
       ],
       "branch": "proof/t013-intrinsic-closure-sobolev",
       "base_commit": "13b774fecc0ad449d8ae9a0b958069e095c24e59",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/16",
-      "checkpoint_commit": "565b95ef6c7721eb69d4e20c224e87c8c5cea2c4",
-      "merge_commit": null,
+      "checkpoint_commit": "11f3e8b3792db52f5f1532703354057535d9d2db",
+      "merge_commit": "bed432f9ab0eebd8a31163608ff72c422299e93d",
       "lean_declarations": [
         "Carleman.intrinsicWordMultiplier",
         "Carleman.intrinsicWordMultiplier_smooth",
@@ -7429,15 +7494,15 @@
       ],
       "build_evidence": {
         "status": "PASS",
-        "checked_sha": "afbc3dd302688155594abf25fa8c16c12fe5d7a2",
-        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39068899496/attempts/1",
-        "finished_at": "2026-10-17T20:59:24.914602+00:00",
+        "checked_sha": "bed432f9ab0eebd8a31163608ff72c422299e93d",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39069920982/attempts/1",
+        "finished_at": "2026-10-17T21:14:12.617152+00:00",
         "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "targets": [
           "Carleman"
         ],
-        "source_head_sha": "565b95ef6c7721eb69d4e20c224e87c8c5cea2c4"
+        "source_head_sha": "bed432f9ab0eebd8a31163608ff72c422299e93d"
       },
       "blocker": null,
       "attempts": [
@@ -7448,15 +7513,15 @@
         "原域参数插值重新核对同时L²/Hⁿ扩张、全空间Fourier弱jet桥和内锥弱平移路线；未找到可直接接入API，精确缺定理和禁用替代已保存",
         "本地完整根构建3329jobs及2276递归公理审计PASS；12模块/35定理/44显式声明执行者逐项核对；准备draft PR及真实CI"
       ],
-      "next_action": "父监督者独立44声明验收；接续原Lipschitz参数Sobolev/完整允许权图及B4，复用已证内在闭包和A3能量路线",
+      "next_action": "T014冻结移位能量、真实时间误差残差及全空间弱插值",
       "remaining_dependencies": [
         "原bounded Lipschitz域同时L²/Hⁿ有界的弱扩张及全空间弱jet参数插值；详见governance/analysis/T013-interpolation.md",
         "原连续/Euler/frozen统一允许权R图界与加权对偶/仿射缺陷，时间加权L²误差；新A3参数能量右端仍待",
         "N1–N5空间误差、全权族统一B4阈值及TransferBridges.solutions；原Theorem2.1未完成"
       ],
-      "declaration_version": "afbc3dd302688155594abf25fa8c16c12fe5d7a2",
+      "declaration_version": "bed432f9ab0eebd8a31163608ff72c422299e93d",
       "semantic_review": {
-        "checked_sha": "afbc3dd302688155594abf25fa8c16c12fe5d7a2",
+        "checked_sha": "bed432f9ab0eebd8a31163608ff72c422299e93d",
         "declarations": [
           "Carleman.intrinsicWordMultiplier",
           "Carleman.intrinsicWordMultiplier_smooth",
@@ -7505,9 +7570,9 @@
         ],
         "result": "PASS",
         "axiom_check": "PASS",
-        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/565b95ef6c7721eb69d4e20c224e87c8c5cea2c4/governance/reviews/T013.md",
-        "reviewed_at": "2026-10-17T21:01:30.247912+00:00",
-        "reviewer": "T013 executor; parent independent acceptance pending"
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/16",
+        "reviewed_at": "2026-10-17T21:18:09.864026+00:00",
+        "reviewer": "父监督者独立44声明语义/依赖PASS；本轮整合"
       },
       "ci_relationship": {
         "proof_head": "565b95ef6c7721eb69d4e20c224e87c8c5cea2c4",
@@ -7528,8 +7593,108 @@
         "declaration_artifact_id": 12114054254,
         "lean_job_id": 117502211057,
         "state_job_id": 117502211154,
-        "dashboard_job_id": 117502758924
+        "dashboard_job_id": 117502758924,
+        "merged_main": {
+          "sha": "bed432f9ab0eebd8a31163608ff72c422299e93d",
+          "run_id": 39069920982,
+          "tree": "35e29892c561707d2b074b9c9d19153d068c5694",
+          "parents": [
+            "13b774fecc0ad449d8ae9a0b958069e095c24e59",
+            "11f3e8b3792db52f5f1532703354057535d9d2db"
+          ],
+          "actual_build_jobs": 3329,
+          "recursive_axiom_audit": 2276,
+          "jobs_steps": "3 jobs / 32 steps PASS",
+          "result_artifact_id": 12114552323,
+          "declaration_artifact_id": 12114990783
+        }
       }
+    },
+    {
+      "id": "T014",
+      "platform_task_id": "01a1498c-c483-77a5-8b91-14b593452001",
+      "task_url": null,
+      "continuation_of": "T013",
+      "title": "冻结移位能量与全空间弱参数插值",
+      "goal_ids": [
+        "C031"
+      ],
+      "acceptance": [
+        "任意μ≥Cq^(2m)能量及双方向frozenMultiplier，实际e=U−bar u残差；不使用A1反向图界或产生L^(2m)损失",
+        "核对并实际证明弱卷积交换/L²收缩及全空间同方向弱导数插值的自然依赖；不把它当原Lipschitz域扩张",
+        "保留全状态、两方向、a.e.域/H弱导数/周期迹与T统一量词；整阶段构建审计语义及draft PR"
+      ],
+      "dependencies": [
+        "C030"
+      ],
+      "branch": "proof/t014-frozen-energy-interpolation",
+      "base_commit": "bed432f9ab0eebd8a31163608ff72c422299e93d",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.bochnerL2Norm_congr_ae",
+        "Carleman.bochnerL2Norm_neg",
+        "Carleman.bochnerL2Norm_sub",
+        "Carleman.bochnerL2Norm_const_smul",
+        "Carleman.PeriodicWeakTrajectory.domainError",
+        "Carleman.PeriodicWeakTrajectory.domainError_value_ae",
+        "Carleman.PeriodicWeakTrajectory.domainError_L2",
+        "Carleman.PeriodicWeakTrajectory.domainError_operator_L2",
+        "Carleman.PeriodicWeakTrajectory.domainError_residual_ae",
+        "Carleman.FrozenEulerPair",
+        "Carleman.CoerciveForm.IsAssociated.nonempty_frozenEulerPair",
+        "Carleman.SpatialTest.convolution_square_le",
+        "Carleman.SpatialTest.convolution_memLp_norm_le",
+        "Carleman.discrete_convex_maximum",
+        "Carleman.discrete_logConvex_maximum",
+        "Carleman.shrinkingBump",
+        "Carleman.spatialMollifier",
+        "Carleman.spatialMollifier_nonneg",
+        "Carleman.spatialMollifier_integral",
+        "Carleman.spatialMollifier_converges",
+        "Carleman.weak_spatial_chain_norm_sq_le",
+        "Carleman.WeakSobolevJet.componentMaximum",
+        "Carleman.WeakSobolevJet.component_le_maximum",
+        "Carleman.WeakSobolevJet.componentMaximum_le_field",
+        "Carleman.WeakSobolevJet.componentMaximum_zero",
+        "Carleman.WeakSobolevJet.component_neighbor_sq_le",
+        "Carleman.WeakSobolevJet.componentMaximum_logConvex",
+        "Carleman.WeakSobolevJet.scaled_componentMaximum_le",
+        "Carleman.WeakSobolevJet.fullSpace_parameter_interpolation",
+        "Carleman.WeakSobolevJet.fullSpace_parameter_interpolation_uniform",
+        "Carleman.shiftedForm_coercive_of_lower",
+        "Carleman.shiftedOperator_weighted_energy_of_lower",
+        "Carleman.shiftedOperator_spacetime_energy_of_lower",
+        "Carleman.real_convolution_comm",
+        "Carleman.SpatialTest.convolution_right_memLp_norm_le",
+        "Carleman.SpatialTest.weak_chain_convolution_sq_le",
+        "Carleman.integral_mul_eq_L2_inner",
+        "Carleman.integral_sq_eq_bochnerL2Norm_sq",
+        "Carleman.integral_mul_sq_le",
+        "Carleman.abs_integral_mul_le",
+        "Carleman.SpatialTest.reflected",
+        "Carleman.SpatialTest.reflected_derivative",
+        "Carleman.IsWeakSpatialDerivative.convolution_exchange",
+        "Carleman.IsWeakSpatialDerivative.fderiv_convolution",
+        "Carleman.SpatialTest.smooth_convolution",
+        "Carleman.PeriodicWeakTrajectory.domainError_conforming_L2",
+        "Carleman.frozen_error_energy_uniform",
+        "Carleman.frozen_spacetime_operator_energy_uniform",
+        "Carleman.TimeWeightRegularity.frozen_shift_lower",
+        "Carleman.TimeWeightRegularity.frozen_shift_lower_ae",
+        "Carleman.frozen_shift_margin_uniform"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "已核实PR16合并main、实际3job32steps及12模块/root重编译3329jobs/2276审计；固定Lean/mathlib保持",
+        "优先任意下界移位→实际冻结移位→真实误差残差，再推进全空间弱导数卷积路线",
+        "已证任意下界μ、双向真实冻结系数与实际误差残差/能量；A1仅单向使用，无L^(2m)损失",
+        "已证反射测试弱卷积交换、实际常数1 L²收缩、光滑卷积IBP、具体bump a.e.极限/Fatou、Sym邻阶递推及有限最大值原理；完整全空间参数插值"
+      ],
+      "next_action": "整阶段根目标构建、递归公理审计、51声明逐项核对及draft PR实际CI"
     }
   ],
   "private_maintenance": {

@@ -572,3 +572,27 @@ C030为AUXILIARY：12模块/35定理/44显式声明，逐项核对见`reviews/T0
 1. 原`eq:parametergraph`仍未证明。所需同一个弱Hⁿ扩张须同时L²有界、Hⁿ有界且真实弱字段限制回原域；Hⁿ有界本身不够。全空间弱jet与Fourier/Bessel描述也未建立等价。内锥差商替代路线仍缺原Lipschitz有限锥覆盖和弱平移FTC/全阶密度。具体声明、库源检查和失败替代路线保存在`analysis/T013-interpolation.md`，没有把缺口改写成论文假设。
 2. 原连续/Euler/frozen的统一允许权R图界、加权仿射缺陷/对偶导数界和时间加权L²仍待。新A3能量估计右端的这两个加权界未清偿，因此T012的12δt、84/c无权估计仍不能填写B4加权energy/l2。
 3. B1存在/弱唯一性/周期迹、B2/B5、规范B3及B4 finite/order/shift继续复用；N1–N5空间误差、完整权族阈值组合及`TransferBridges.solutions`实质误差仍待。原Theorem2.1没有宣称完成。
+
+## T014：实际冻结误差能量与完整全空间弱参数插值
+
+C031为AUXILIARY：13模块/45定理/51显式声明，逐项核对见`reviews/T014.md`。原稿和最终目标不改，原文仍1/26。
+
+`shiftedForm_coercive_of_lower`把原A3能量推广到任意实μ≥(C+B)q^(2m)，保留B≥0的margin；空间及真实Bochner时空版本不要求μ连续或可微。已证单元q(t)≤2q_anchor给实际两方向`frozenMultiplier`的下界。取L₀=2max(1,C)、δ=cellThreshold β 0 0，阈值在T/grid/s/q/L/state之前，得到Cq(t)^(2m)≤barμ(t)。
+
+`FrozenEulerPair`由原A1完整关联等价及既有求解器构造任意同载荷的连续/Euler解对。连续轨迹仍只要求a.e.D(A)、真实H弱导数与周期H迹。实际域代表误差e=U.domainValue−bar u与U−bar u几乎处处一致，真实图L²及H^m有限性由原A1单向椭圆界/截断推出。逐项相减证明
+`(A+barμ)e = extension(Dεu) − εU_t`。
+`frozen_error_energy_uniform`直接得到
+`c Nσ(e)^2 ≤ (‖σ extension(Dεu)‖L² + ‖σU_t‖L²) ‖σ(U−bar u)‖L²`。
+没有μ−barμ扰动、反向A1界或L^(2m)载荷损失；两个加权导数和误差L²的统一载荷估计仍待，不宣称完整Theorem3.5。
+
+全空间路线不再需要未证Fourier识别：用真实反射测试κ(x−y)证明分布弱导数的卷积交换；sqrtκ加权Cauchy–Schwarz和真实卷积积分证明非负单位质量核的L²收缩。原L²状态无需紧支撑。光滑卷积的完整可积性及全空间IBP给弱链估计，具体半径1/(n+1)、2/(n+1)的归一bump通过Lebesgue微分定理a.e.收敛，再用Fatou得到同一任意方向弱链u→v→z的`‖v‖²≤‖u‖‖z‖`。未假设交换、收缩、稠密性或目标插值。
+
+真实Sym多重指标相邻阶分量满足上述弱链；有限分量最大值的log-convex递推及已证有限离散最大值原理控制缩放r^(n−k)序列，再由完整Euclidean分量平方和还原字段。`fullSpace_parameter_interpolation_uniform`给∃C≥1（仅依赖d,n），随后∀r≥0及所有全空间弱Hⁿ jet：
+`Σ_k r^(n−k)‖D^ku‖L² ≤ C(‖u‖jet+r^n‖value u‖L²)`。
+最大值仅是内部证明工具，最终结论仍是真实全部导数字段，含n=0/d=0。
+
+### 精确剩余依赖
+
+1. 原bounded Lipschitz Ω上的同一个高阶弱扩张须同时L²有界、Hⁿ有界，并使每个实际弱导数字段限制回Ω等于原字段；本阶段没有构造该扩张。因此原`eq:parametergraph`尚未完成，全空间结论不能计为原Lemma3.1。已试路线及下一接口见`analysis/T014-interpolation.md`。
+2. 原允许权连续/Euler/frozen的统一R图界、加权仿射缺陷及对偶导数界、加权时间L²误差仍待。新冻结能量可以直接用于实际误差，但右端的加权载荷界仍需证明。
+3. B1存在/弱正规性/周期迹、B2/B5、规范B3及B4 finite/order/shift继续复用；N1–N5空间误差、完整权族阈值和B4实际energy/l2尚未清偿。原Theorem2.1未完成，未增加最终离散估计假设。
