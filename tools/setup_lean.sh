@@ -36,7 +36,12 @@ if [ "$#" -eq 0 ]; then
     Mathlib.MeasureTheory.Function.LpSpace.ContinuousFunctions Mathlib.Topology.Order.ProjIcc \
     Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap \
     Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts \
-    Mathlib.Analysis.Calculus.ContDiff.Deriv Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
+    Mathlib.Analysis.Calculus.ContDiff.Deriv Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv \
+    Mathlib.Analysis.Calculus.BumpFunction.Normed \
+    Mathlib.MeasureTheory.Integral.IntervalIntegral.AbsolutelyContinuousFun \
+    Mathlib.MeasureTheory.Integral.IntervalIntegral.LebesgueDifferentiationThm \
+    Mathlib.Analysis.Fourier.AddCircle Mathlib.Topology.MetricSpace.Contracting \
+    Mathlib.Analysis.InnerProductSpace.Calculus
 fi
 lake exe cache get "$@"
 test "$task_manifest_hash" = "$(sha256sum lake-manifest.json)"
