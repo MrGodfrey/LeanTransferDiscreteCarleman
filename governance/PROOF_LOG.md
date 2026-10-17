@@ -9,3 +9,4 @@
 | 2026-10-17 | BOOTSTRAP-001 | [PR #1](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/1) / `fc466e43e93ce2b8322c9abe6e54b785a04dec27` | AUX001：有限置换差分总和为零；构建、陈述及公理依赖已核对 | C001 周期差分与分部求和；发布后新任务接续 |
 | 2026-10-17 | T001 | [PR #4](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/4) / `8c002e37849fb476608cf4f636a9fa4187e33508` | C001：16 声明，双向周期分部求和已由监督者逐项验收；同 SHA main CI 通过 | T002 重构代数及辅助载荷消去 |
 | 2026-10-17 | T002 | [PR #5](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/5) / `c954f5133a2a32d5e6abd8894c5c6ebee0d651b7` | C002/C003：Γ 普通函数修正版；父监督者独立语义/依赖 PASS，同 SHA main CI39027405359 通过；62 辅助定理 | T003 真实加权范数及 B1/B3/B4 分析接口 |
+| 2026-10-17 | T003（待验收） | [PR #6](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/6) / `cbad1c2d6405906e9072f547043a8c7d3e990f68` | 59 新定理：真实加权范数、弱轨迹代表、准确权族及统一条件性 transfer；475 声明审计 PASS；原文 0/26 | 父监督者验收；从原文假设关闭 B1/B3/B4 |
