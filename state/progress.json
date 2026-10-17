@@ -9,10 +9,10 @@
     "started_at": "2026-10-17T09:43:34.927869+00:00"
   },
   "execution": {
-    "state": "RUNNING",
+    "state": "REVIEW",
     "current_task_id": "T002",
     "supervisor_checked_at": "2026-10-17T10:37:24.371967+00:00",
-    "next_action": "同一任务完成 C002 重构代数并接续 C003 辅助载荷消去，再交付阶段 draft PR",
+    "next_action": "完成绑定提交 CI 和原文语义报告后，请父监督者验收阶段 PR；后续进入真实范数与有限 B1/B3/B4/B5 条件性 transfer",
     "blocker": null,
     "pause_reason": null
   },
@@ -222,42 +222,109 @@
     {
       "id": "C002",
       "title": "重构算子与伴随等式",
-      "paper_ref": "(2.9)–(2.10), p.8",
+      "paper_ref": "eq:massinterface / eq:transfer-compositions，TeX 392–406；时间差分 TeX 495–500",
       "milestone": "M1",
       "extra_hypotheses": [],
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "AUXILIARY",
       "paper_labels": [
+        "eq:massinterface",
         "eq:transfer-compositions"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.TimeGrid.map_apply",
+        "Carleman.TimeGrid.map_comp",
+        "Carleman.TimeGrid.map_node_smul",
+        "Carleman.TimeGrid.dPlus_map",
+        "Carleman.TimeGrid.dMinus_map",
+        "Carleman.Reconstruction.RH_apply",
+        "Carleman.Reconstruction.Q_apply",
+        "Carleman.Reconstruction.QH_apply",
+        "Carleman.Reconstruction.G_apply",
+        "Carleman.Reconstruction.R_comp_G",
+        "Carleman.Reconstruction.J_comp_QH",
+        "Carleman.Reconstruction.inner_RH",
+        "Carleman.Reconstruction.inner_G",
+        "Carleman.Reconstruction.G_symmetric",
+        "Carleman.Reconstruction.G_nonneg",
+        "Carleman.Reconstruction.inner_G_self_eq_zero",
+        "Carleman.Reconstruction.G_positive",
+        "Carleman.Reconstruction.inner_QH",
+        "Carleman.Reconstruction.QH_symmetric",
+        "Carleman.Reconstruction.QH_nonneg",
+        "Carleman.Reconstruction.J_unique",
+        "Carleman.Reconstruction.pairing_J",
+        "Carleman.Reconstruction.pairing_RH",
+        "Carleman.Reconstruction.pairing_RH_dPlus",
+        "Carleman.Reconstruction.pairing_RH_dMinus"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
-      "dependencies": [],
-      "blocker": null,
+      "dependencies": [
+        "C001"
+      ],
+      "blocker": "本地构建与公理检查已通过；等待绑定提交的 CI 和父监督者验收",
       "pr_url": null
     },
     {
       "id": "C003",
       "title": "Section 5 的辅助载荷消去",
-      "paper_ref": "(5.1)–(5.2), p.19",
+      "paper_ref": "Section 5 Step 1，TeX 1314–1340；eq:auxEuler、eq:cellwise-extension",
       "milestone": "M2",
       "extra_hypotheses": [],
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "AUXILIARY",
       "paper_labels": [
-        "eq:transfer-load"
+        "eq:transfer-load",
+        "eq:transfer-residual"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.TimeGrid.pairing_dPlus_self",
+        "Carleman.TimeGrid.pairing_dPlus_self_nonneg",
+        "Carleman.TimeGrid.pairing_dMinus_self_nonneg",
+        "Carleman.TimeGrid.dPlus_sub",
+        "Carleman.TimeGrid.dMinus_sub",
+        "Carleman.TimeGrid.extensionPlus_on_cell",
+        "Carleman.TimeGrid.extensionMinus_on_cell",
+        "Carleman.TimeGrid.extensionPlus_zero",
+        "Carleman.TimeGrid.extensionMinus_zero",
+        "Carleman.TimeGrid.extensionPlus_period",
+        "Carleman.TimeGrid.extensionMinus_period",
+        "Carleman.TimeGrid.extensionPlus_map",
+        "Carleman.TimeGrid.extensionMinus_map",
+        "Carleman.TimeGrid.extensionPlus_add",
+        "Carleman.TimeGrid.extensionMinus_add",
+        "Carleman.TimeGrid.extensionPlus_node_smul",
+        "Carleman.TimeGrid.extensionMinus_node_smul",
+        "Carleman.Reconstruction.shiftedSpatial_sub",
+        "Carleman.Reconstruction.eq_zero_of_pairing_shiftedSpatial_nonpos",
+        "Carleman.Reconstruction.shifted_dPlus_unique",
+        "Carleman.Reconstruction.shifted_dMinus_unique",
+        "Carleman.LoadInterface.J_transferLoad",
+        "Carleman.LoadInterface.state_solves_shifted_dPlus",
+        "Carleman.LoadInterface.state_solves_shifted_dMinus",
+        "Carleman.LoadInterface.auxiliary_dPlus_eq_state",
+        "Carleman.LoadInterface.auxiliary_dMinus_eq_state",
+        "Carleman.LoadInterface.existsUnique_auxiliary_dPlus",
+        "Carleman.LoadInterface.existsUnique_auxiliary_dMinus",
+        "Carleman.LoadInterface.rightInverse_load",
+        "Carleman.LoadInterface.extensionPlus_transferLoad",
+        "Carleman.LoadInterface.extensionMinus_transferLoad",
+        "Carleman.LoadInterface.residualPlus_eq",
+        "Carleman.LoadInterface.residualMinus_eq",
+        "Carleman.LoadInterface.residualPlus_eventuallyEq",
+        "Carleman.LoadInterface.residualMinus_eventuallyEq"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
       "dependencies": [
         "C002"
       ],
-      "blocker": null,
-      "pr_url": null
+      "blocker": "本地构建与公理检查已通过；等待绑定提交的 CI 和父监督者验收",
+      "pr_url": null,
+      "scope_note": "辅助代数与所选载荷离散对应。残差消去以实际冻结方程为前提；不声称连续解存在、弱导数识别、误差或完整 Section 5。"
     },
     {
       "id": "C004",
@@ -266,7 +333,6 @@
       "milestone": "M2",
       "extra_hypotheses": [
         "B1 冻结连续辅助解与正规性：待 lem:frozen",
-        "B2 给定离散状态与辅助方程对应：待适定性或直接误差接口",
         "B3 节点权、连续权与延拓统一比较：待 lem:cell",
         "B4 所需权族的统一误差：待 thm:combined",
         "B5 真实状态误差的统一吸收常数：待 Section 5 接口推导"
@@ -285,7 +351,14 @@
         "C003"
       ],
       "blocker": null,
-      "pr_url": null
+      "pr_url": null,
+      "discharged_bridges": [
+        {
+          "id": "B2",
+          "via": "C003: existsUnique_auxiliary_dPlus/dMinus",
+          "scope": "所选 transfer load 的离散存在唯一解等于给定状态；待 T002 父监督者合并验收"
+        }
+      ]
     },
     {
       "id": "C005",
@@ -660,8 +733,8 @@
     }
   ],
   "snapshot": {
-    "synced_at": "2026-10-17T10:37:24.371967+00:00",
-    "source_commit": "8c002e37849fb476608cf4f636a9fa4187e33508",
+    "synced_at": "2026-10-17T10:44:25.628508+00:00",
+    "source_commit": "3aff03ad0ea1cf1f33e928a8e479932133d10d7d",
     "mode": "LOCAL_SNAPSHOT"
   },
   "dashboard": {
@@ -865,20 +938,86 @@
       ],
       "branch": "proof/t002-transfer-differences",
       "base_commit": "8c002e37849fb476608cf4f636a9fa4187e33508",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "3aff03ad0ea1cf1f33e928a8e479932133d10d7d",
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.TimeGrid.map_apply",
+        "Carleman.TimeGrid.map_comp",
+        "Carleman.TimeGrid.map_node_smul",
+        "Carleman.TimeGrid.dPlus_map",
+        "Carleman.TimeGrid.dMinus_map",
+        "Carleman.Reconstruction.RH_apply",
+        "Carleman.Reconstruction.Q_apply",
+        "Carleman.Reconstruction.QH_apply",
+        "Carleman.Reconstruction.G_apply",
+        "Carleman.Reconstruction.R_comp_G",
+        "Carleman.Reconstruction.J_comp_QH",
+        "Carleman.Reconstruction.inner_RH",
+        "Carleman.Reconstruction.inner_G",
+        "Carleman.Reconstruction.G_symmetric",
+        "Carleman.Reconstruction.G_nonneg",
+        "Carleman.Reconstruction.inner_G_self_eq_zero",
+        "Carleman.Reconstruction.G_positive",
+        "Carleman.Reconstruction.inner_QH",
+        "Carleman.Reconstruction.QH_symmetric",
+        "Carleman.Reconstruction.QH_nonneg",
+        "Carleman.Reconstruction.J_unique",
+        "Carleman.Reconstruction.pairing_J",
+        "Carleman.Reconstruction.pairing_RH",
+        "Carleman.Reconstruction.pairing_RH_dPlus",
+        "Carleman.Reconstruction.pairing_RH_dMinus",
+        "Carleman.TimeGrid.pairing_dPlus_self",
+        "Carleman.TimeGrid.pairing_dPlus_self_nonneg",
+        "Carleman.TimeGrid.pairing_dMinus_self_nonneg",
+        "Carleman.TimeGrid.dPlus_sub",
+        "Carleman.TimeGrid.dMinus_sub",
+        "Carleman.TimeGrid.extensionPlus_on_cell",
+        "Carleman.TimeGrid.extensionMinus_on_cell",
+        "Carleman.TimeGrid.extensionPlus_zero",
+        "Carleman.TimeGrid.extensionMinus_zero",
+        "Carleman.TimeGrid.extensionPlus_period",
+        "Carleman.TimeGrid.extensionMinus_period",
+        "Carleman.TimeGrid.extensionPlus_map",
+        "Carleman.TimeGrid.extensionMinus_map",
+        "Carleman.TimeGrid.extensionPlus_add",
+        "Carleman.TimeGrid.extensionMinus_add",
+        "Carleman.TimeGrid.extensionPlus_node_smul",
+        "Carleman.TimeGrid.extensionMinus_node_smul",
+        "Carleman.Reconstruction.shiftedSpatial_sub",
+        "Carleman.Reconstruction.eq_zero_of_pairing_shiftedSpatial_nonpos",
+        "Carleman.Reconstruction.shifted_dPlus_unique",
+        "Carleman.Reconstruction.shifted_dMinus_unique",
+        "Carleman.LoadInterface.J_transferLoad",
+        "Carleman.LoadInterface.state_solves_shifted_dPlus",
+        "Carleman.LoadInterface.state_solves_shifted_dMinus",
+        "Carleman.LoadInterface.auxiliary_dPlus_eq_state",
+        "Carleman.LoadInterface.auxiliary_dMinus_eq_state",
+        "Carleman.LoadInterface.existsUnique_auxiliary_dPlus",
+        "Carleman.LoadInterface.existsUnique_auxiliary_dMinus",
+        "Carleman.LoadInterface.rightInverse_load",
+        "Carleman.LoadInterface.extensionPlus_transferLoad",
+        "Carleman.LoadInterface.extensionMinus_transferLoad",
+        "Carleman.LoadInterface.residualPlus_eq",
+        "Carleman.LoadInterface.residualMinus_eq",
+        "Carleman.LoadInterface.residualPlus_eventuallyEq",
+        "Carleman.LoadInterface.residualMinus_eventuallyEq"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
         "fetch 核实 PR #4/main 与固定 Lean 4.35.0、mathlib 56a005855ea17e0b0958f73ec801ae140b0a1679；未建 worktree、未 lake update",
         "镜像缺少 T001 的部分依赖缓存，停止无谓源码全量构建后用项目 setup_lean.sh 补齐官方缓存，再实际 build/axiom audit/reuse 均通过",
         "独立 probe 实际调用 pairing_dPlus、pairing_dMinus 并以既有 dPlus 证明任意实线性映射交换",
-        "核实两个原调度：巡检已更新为 Slack 私信重要里程碑/额度警报；09:00摘要仍父 Dot ChatGPT，未创建新调度"
+        "核实两个原调度：巡检已更新为 Slack 私信重要里程碑/额度警报；09:00摘要仍父 Dot ChatGPT，未创建新调度",
+        "C002 重构与质量伴随完整代数接口构建成功；通用交换律实际实例化于 R/J/Q/G 共八个方向",
+        "C003 用两种时间能量非负性证明移位离散唯一性；给定状态直接构造选定载荷解，无额外唯一性假设",
+        "用原 Fin N 的整数转换和 ceil/floor 实现两种原文半开时间单元；单元公式和0/T端点均证明",
+        "连续残差保持 A 的真域 D⊆H，dU 为给定 H 值导数；filter 版本允许几乎处处冻结方程",
+        "收到环境断连报告后实际 shell/Git/Lean 均可用；未报告或推断额度限制；检查点 3aff03ad0ea1cf1f33e928a8e479932133d10d7d 已推送"
       ],
-      "next_action": "构建 C002 重构与组合接口，直接推进 C003；不按单个引理交接",
+      "next_action": "完成绑定提交 CI 和原文语义报告后，请父监督者验收阶段 PR；后续进入真实范数与有限 B1/B3/B4/B5 条件性 transfer",
       "environment": {
         "restoration_status": "PASS",
         "restoration_base_commit": "8c002e37849fb476608cf4f636a9fa4187e33508",
@@ -893,5 +1032,16 @@
         ]
       }
     }
-  ]
+  ],
+  "private_maintenance": {
+    "progress_site": {
+      "url": "https://lean-transfer-progress.sassykrill65.chatgpt.site",
+      "project_id": "appgprj_6ad34f1f13f0819189b6de10791212e2",
+      "owner_task_id": "01a1496a-c7e5-7382-9d25-241c3ecbf009",
+      "access": "owner-only",
+      "source": "父监督者已核实并委托 T002 记录",
+      "update_mode": "manual snapshot; refresh by parent continuing page task",
+      "public_allowlist": false
+    }
+  }
 }

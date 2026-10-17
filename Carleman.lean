@@ -2,4 +2,4 @@ module
 
 public import Carleman.Periodic.Telescoping
 public import Carleman.Periodic.SummationByParts
-public import Carleman.Transfer.Load
+public import Carleman.Transfer.Residual

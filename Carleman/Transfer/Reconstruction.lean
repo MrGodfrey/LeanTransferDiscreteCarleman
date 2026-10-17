@@ -94,6 +94,16 @@ theorem QH_nonneg (v : H) : 0 ≤ inner ℝ (r.QH v) v := by
   rw [r.inner_QH]
   exact real_inner_self_nonneg
 
+/-- The original mass equality determines the adjoint uniquely. -/
+theorem J_unique (J' : H →ₗ[ℝ] X)
+    (hJ : ∀ (v : H) (z : X), inner ℝ (J' v) z = inner ℝ v (r.R z : H)) :
+    J' = r.J := by
+  apply LinearMap.ext
+  intro v
+  apply ext_inner_right ℝ
+  intro z
+  exact (hJ v z).trans (r.mass_adjoint v z).symm
+
 variable (g : TimeGrid)
 
 /-- The mass interface on the actual time-step weighted sequence pairing. -/

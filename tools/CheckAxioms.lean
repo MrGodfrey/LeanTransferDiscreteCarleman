@@ -38,6 +38,45 @@ import Lean.Util.CollectAxioms
 #print axioms Carleman.LoadInterface.auxiliary_dPlus_eq_state
 #print axioms Carleman.LoadInterface.auxiliary_dMinus_eq_state
 
+#print Carleman.Reconstruction
+#print Carleman.LoadInterface
+#check @Carleman.Reconstruction.J_unique
+#check @Carleman.TimeGrid.extensionPlus_on_cell
+#check @Carleman.TimeGrid.extensionMinus_on_cell
+#check @Carleman.TimeGrid.extensionPlus_period
+#check @Carleman.TimeGrid.extensionMinus_period
+#check @Carleman.LoadInterface.existsUnique_auxiliary_dPlus
+#check @Carleman.LoadInterface.existsUnique_auxiliary_dMinus
+#check @Carleman.LoadInterface.residualPlus_eventuallyEq
+#check @Carleman.LoadInterface.residualMinus_eventuallyEq
+#print axioms Carleman.LoadInterface.existsUnique_auxiliary_dPlus
+#print axioms Carleman.LoadInterface.existsUnique_auxiliary_dMinus
+#print axioms Carleman.LoadInterface.residualPlus_eventuallyEq
+#print axioms Carleman.LoadInterface.residualMinus_eventuallyEq
+
+-- Real uses of the shared commutation theorem at all four paper maps.
+section ReconstructionUses
+variable {H X : Type*} [NormedAddCommGroup H] [InnerProductSpace ℝ H]
+  [NormedAddCommGroup X] [InnerProductSpace ℝ X]
+  {V : Submodule ℝ H} (r : Carleman.Reconstruction V X) (g : Carleman.TimeGrid)
+example (z : g.Sequence X) : g.dPlus (g.map r.R z) = g.map r.R (g.dPlus z) :=
+  g.dPlus_map r.R z
+example (z : g.Sequence X) : g.dMinus (g.map r.R z) = g.map r.R (g.dMinus z) :=
+  g.dMinus_map r.R z
+example (v : g.Sequence H) : g.dPlus (g.map r.J v) = g.map r.J (g.dPlus v) :=
+  g.dPlus_map r.J v
+example (v : g.Sequence H) : g.dMinus (g.map r.J v) = g.map r.J (g.dMinus v) :=
+  g.dMinus_map r.J v
+example (v : g.Sequence H) : g.dPlus (g.map r.Q v) = g.map r.Q (g.dPlus v) :=
+  g.dPlus_map r.Q v
+example (v : g.Sequence H) : g.dMinus (g.map r.Q v) = g.map r.Q (g.dMinus v) :=
+  g.dMinus_map r.Q v
+example (z : g.Sequence X) : g.dPlus (g.map r.G z) = g.map r.G (g.dPlus z) :=
+  g.dPlus_map r.G z
+example (z : g.Sequence X) : g.dMinus (g.map r.G z) = g.map r.G (g.dMinus z) :=
+  g.dMinus_map r.G z
+end ReconstructionUses
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

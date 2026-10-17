@@ -90,6 +90,27 @@ theorem auxiliary_dMinus_eq_state (hR : Function.Injective r.R)
   r.shifted_dMinus_unique g hR A hA μ hμ u z
     (hu.trans (l.state_solves_shifted_dMinus g A μ f z hz).symm)
 
+/-- For the chosen transfer load, existence and uniqueness need no extra bridge axiom. -/
+theorem existsUnique_auxiliary_dPlus (hR : Function.Injective r.R)
+    (A : X →ₗ[ℝ] X) (hA : ∀ z, 0 ≤ inner ℝ (A z) z)
+    (μ : g.Sequence ℝ) (hμ : ∀ i, 0 < μ i)
+    (f : g.Sequence F) (z : g.Sequence X)
+    (hz : g.dPlus z + g.map A z = g.map l.Γ f) :
+    ∃! u : g.Sequence X, g.dPlus u + r.shiftedSpatial g A μ u =
+      g.map r.J (l.transferLoad g μ f z) :=
+  ⟨z, l.state_solves_shifted_dPlus g A μ f z hz,
+    fun u hu => l.auxiliary_dPlus_eq_state g hR A hA μ hμ f z u hz hu⟩
+
+theorem existsUnique_auxiliary_dMinus (hR : Function.Injective r.R)
+    (A : X →ₗ[ℝ] X) (hA : ∀ z, 0 ≤ inner ℝ (A z) z)
+    (μ : g.Sequence ℝ) (hμ : ∀ i, 0 < μ i)
+    (f : g.Sequence F) (z : g.Sequence X)
+    (hz : g.dMinus z + g.map A z = g.map l.Γ f) :
+    ∃! u : g.Sequence X, g.dMinus u + r.shiftedSpatial g A μ u =
+      g.map r.J (l.transferLoad g μ f z) :=
+  ⟨z, l.state_solves_shifted_dMinus g A μ f z hz,
+    fun u hu => l.auxiliary_dMinus_eq_state g hR A hA μ hμ f z u hz hu⟩
+
 /-- (N2)'s right inverse supplies a load for every full discrete residual. -/
 theorem rightInverse_load (I : X → F) (hI : ∀ z, l.Γ (I z) = z)
     (v : g.Sequence X) : g.map l.Γ (fun i => I (v i)) = v := by
