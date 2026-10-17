@@ -346,7 +346,7 @@ end OrdinaryLoadMaps
 #print axioms Carleman.sobolevGeometry_comparisons
 
 -- T006: concrete Bochner/Sobolev and remaining bridge constructors.
-set_option pp.maxDepth 10000
+set_option pp.deepTerms true
 set_option pp.maxSteps 1000000
 #check @Carleman.Orientation.aestronglyMeasurable_extension
 #check @Carleman.Orientation.memLp_extension
