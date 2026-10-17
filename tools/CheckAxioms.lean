@@ -447,6 +447,119 @@ set_option pp.maxSteps 1000000
 #print axioms Carleman.memLp_domainSobolevJet_of_operator
 #print axioms Carleman.IsWeakSpatialDerivative.mul
 
+-- T007: every explicit declaration, including actual objects and existence results.
+#check @Carleman.CoerciveForm
+#check @Carleman.CoerciveForm.form_nonneg
+#check @Carleman.CoerciveForm.eq_of_tests
+#check @Carleman.CoerciveForm.domainV
+#check @Carleman.CoerciveForm.domain
+#check @Carleman.CoerciveForm.energyRaw
+#check @Carleman.CoerciveForm.energyRaw_mem
+#check @Carleman.CoerciveForm.embed_energyRaw
+#check @Carleman.CoerciveForm.energy
+#check @Carleman.CoerciveForm.embed_energy
+#check @Carleman.CoerciveForm.operatorRaw
+#check @Carleman.CoerciveForm.operatorRaw_test
+#check @Carleman.CoerciveForm.operator
+#check @Carleman.CoerciveForm.operator_test
+#check @Carleman.CoerciveForm.domainElement
+#check @Carleman.CoerciveForm.energy_domainElement
+#check @Carleman.CoerciveForm.operator_domainElement
+#check @Carleman.CoerciveForm.operator_symmetric
+#check @Carleman.CoerciveForm.operator_nonneg
+#check @Carleman.CoerciveForm.IsAssociated
+#check @Carleman.CoerciveForm.operator_isAssociated
+#check @Carleman.CoerciveForm.IsAssociated.domain_eq
+#check @Carleman.CoerciveForm.IsAssociated.operator_eq
+#check @Carleman.CoerciveForm.IsAssociated.existsUnique_periodicEuler
+#check @Carleman.CoerciveForm.IsAssociated.euler_unweighted_graph
+#check @Carleman.CoerciveForm.resolventH
+#check @Carleman.CoerciveForm.resolventH_eq
+#check @Carleman.CoerciveForm.operatorGraph
+#check @Carleman.CoerciveForm.operatorGraph_mem
+#check @Carleman.CoerciveForm.operatorGraph_eq
+#check @Carleman.CoerciveForm.operatorGraph_isClosed
+#check @Carleman.CoerciveForm.operatorGraph_completeSpace
+#check @Carleman.CoerciveForm.domain_dense
+#check @Carleman.variationalSolve
+#check @Carleman.variationalSolve_spec
+#check @Carleman.variationalSolve_unique
+#check @Carleman.CoerciveForm.shiftedForm
+#check @Carleman.CoerciveForm.shiftedForm_apply
+#check @Carleman.CoerciveForm.shiftedForm_coercive
+#check @Carleman.CoerciveForm.loadFunctional
+#check @Carleman.CoerciveForm.loadFunctional_apply
+#check @Carleman.CoerciveForm.resolventEnergy
+#check @Carleman.CoerciveForm.resolventEnergy_test
+#check @Carleman.CoerciveForm.resolvent
+#check @Carleman.CoerciveForm.resolvent_equation
+#check @Carleman.CoerciveForm.resolvent_unique
+#check @Carleman.CoerciveForm.existsUnique_shifted
+#check @Carleman.sum_bilinear_increment
+#check @Carleman.sum_weighted_increment
+#check @Carleman.TimeGrid.l2Sq
+#check @Carleman.TimeGrid.l2Norm
+#check @Carleman.TimeGrid.l2Sq_eq
+#check @Carleman.TimeGrid.l2Sq_nonneg
+#check @Carleman.TimeGrid.l2Norm_sq
+#check @Carleman.TimeGrid.l2Norm_nonneg
+#check @Carleman.CoerciveForm.eulerResidual
+#check @Carleman.CoerciveForm.euler_energy_identity
+#check @Carleman.CoerciveForm.euler_graph_sq
+#check @Carleman.CoerciveForm.euler_graph_norm
+#check @Carleman.TimeGrid.l2Norm_le_of_bound
+#check @Carleman.TimeWeightRegularity.shift_node_decrement
+#check @Carleman.TimeWeightRegularity.shift_oriented_increment
+#check @Carleman.TimeWeightRegularity.shift_increment_absorb
+#check @Carleman.eulerShiftThreshold
+#check @Carleman.eulerShiftThreshold_large
+#check @Carleman.CoerciveForm.euler_unweighted_graph
+#check @Carleman.CoerciveForm.periodicEuler_wellposed
+#check @Carleman.CoerciveForm.eulerSolution
+#check @Carleman.CoerciveForm.eulerSolution_coe
+#check @Carleman.CoerciveForm.eulerSolution_equation
+#check @Carleman.CoerciveForm.eulerSolution_unique
+#check @Carleman.CoerciveForm.existsUnique_periodicEuler
+#check @Carleman.Orientation.neighbor
+#check @Carleman.Orientation.difference_neighbor
+#check @Carleman.Orientation.pairing_difference_self_nonneg
+#check @Carleman.CoerciveForm.EulerSpace
+#check @Carleman.CoerciveForm.eulerForm
+#check @Carleman.CoerciveForm.eulerForm_apply
+#check @Carleman.CoerciveForm.eulerForm_coercive
+#check @Carleman.CoerciveForm.eulerLoad
+#check @Carleman.CoerciveForm.eulerLoad_apply
+#check @Carleman.CoerciveForm.eulerEnergy
+#check @Carleman.CoerciveForm.eulerEnergy_test
+#check @Carleman.conformingEuler_existsUnique
+#check @Carleman.euler_sobolev_fields_bound
+#check @Carleman.conformingHilbert
+#check @Carleman.conformingEmbed
+#check @Carleman.conformingHilbert_isClosed
+#check @Carleman.conformingHilbert_completeSpace
+#check @Carleman.conformingEmbed_range
+#check @Carleman.conformingEmbed_dense
+#check @Carleman.conformingEmbed_injective
+#check @Carleman.conformingCoerciveForm
+#check @Carleman.HilbertJetFields
+#check @Carleman.hilbertJetSubmodule
+#check @Carleman.SobolevHilbert
+#check @Carleman.hilbertJetSubmodule_isClosed
+#check @Carleman.sobolevHilbert_completeSpace
+#check @Carleman.SobolevHilbert.toJet
+#check @Carleman.SobolevHilbert.ofJet
+#check @Carleman.SobolevHilbert.jetEquiv
+#check @Carleman.SobolevHilbert.norm_sq
+#check @Carleman.SobolevHilbert.value
+#check @Carleman.SobolevHilbert.value_injective
+#print axioms Carleman.CoerciveForm.periodicEuler_wellposed
+#print axioms Carleman.CoerciveForm.euler_energy_identity
+#print axioms Carleman.CoerciveForm.euler_unweighted_graph
+#print axioms Carleman.CoerciveForm.operatorGraph_isClosed
+#print axioms Carleman.CoerciveForm.domain_dense
+#print axioms Carleman.conformingEuler_existsUnique
+#print axioms Carleman.euler_sobolev_fields_bound
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

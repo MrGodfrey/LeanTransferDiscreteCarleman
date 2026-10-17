@@ -17,3 +17,5 @@ public import Carleman.Transfer.SobolevGeometry
 public import Carleman.Transfer.SobolevBridges
 public import Carleman.Weights.SpatialProduct
 public import Carleman.Weights.TemporalPerturbation
+
+public import Carleman.Periodic.SobolevEuler
