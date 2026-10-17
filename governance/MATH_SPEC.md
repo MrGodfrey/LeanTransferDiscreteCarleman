@@ -552,3 +552,23 @@ T005 原时间扰动 C/L^(2m) 估计现在可应用于这条真实加权轨迹�
 - `IsAssociated.temporal_weak_error_uniform` 将 L² 结论转回原 D/A 和 Bochner 函数范数，明确证明误差 MemLp。连续解保留 a.e. D(A)、H 弱导数和周期 H 迹，不引入每时刻 D(A) 正规性。
 
 **范围仍是 AUXILIARY**：本阶段证明未加权时间 L² 和 form-energy 误差；它们不是原允许指数权族的 Theorem3.5，不能清偿 B4 的加权 energy/l2 字段。完整 Lemma3.1/3.3、加权冻结正规性、原参数插值及光滑表示、空间误差和统一 B4 权族组合继续保留。原文完成仍 1/26；原始 Theorem2.1 未完成。B2/B5 和规范 B3、B4 finite/order/shift 沿用既有证明，Γ仍是普通函数。
+
+## T013：内在闭包光滑、真实时空 N 与 A3 加权算子能量
+
+C030为AUXILIARY：12模块/35定理/44显式声明，逐项核对见`reviews/T013.md`。原文仍1/26，原稿/最终结论不改。
+
+`SmoothOnClosure ρ Ω` 精确表示ρ在闭包连续、在Ω内C∞、每阶实际Fréchet导数有连续闭包延拓；`smoothOnClosure_iff_coordinate`证明它与全部实际坐标词导数的连续延拓描述等价。有限张量坐标恢复CLM由基的多线性外延、代数左逆及有限维连续性构造。已证明邻域C∞表示蕴含此内在条件、任意域外代表改变不影响条件、各阶连续延拓在闭包唯一及负profile保持条件。没有宣称Whitney邻域扩张，也没有把任意闭集ContDiffOn当成上述条件。
+
+有界Ω的闭包紧性给全部实际内侧导数统一界；实际允许权q^τexp(±qρ)及其逆权全阶相对导数界的C先于q、τ和符号。原`ν=volume.restrict Ω`的profile直接构造且value等于ρ。全部弱Leibniz、空间R/N四方向比较、真实Bochner时空R及原PeriodicWeakTrajectory加权正规性通过新`intrinsic_*`/`closure_*`入口接通，调用方不再提供开邻域光滑前提。旧入口保持兼容。轨迹只要求a.e.D(A)、真实H弱导数和周期H迹；已有弱共轭恒等式直接用于新构造轨迹。
+
+`spacetimeWeightedNorm`定义原各阶q^(m−j)σD^j的Bochner L²范数平方和的平方根，已证明N²恰为空间N²的时间积分。所有比较有明确MemLp，空间N比较提升时保持同一个C。`closure_spacetime_energy_conjugation_uniform`给真正时空N双向比较，常数在T、q、τ、符号和轨迹之前选定。
+
+本阶段另实际证明保留原误差结论的能量路线：对原D(A)⊂V状态，由A1测试恒等式和A3，L^(2m)≥C时
+`c Nσ(u)² ≤ ‖σ(A+(Lq)^(2m))u‖L² ‖σu‖L²`。
+`allowed_spacetime_operator_energy_uniform`证明时空版本，并在g/T、q、profile、τ、状态前选L₀；所有加权字段和算子L²有限性由无权图正规性推导，适用profile及其负号、τ及−τ。没有输入目标误差或图估计。这可替换原时间误差证明对D(A)误差使用的单独能量插值步骤；不冒称对任意H²ᵐ状态的原`eq:weighted-interpolation`已经完成。
+
+### 精确的剩余依赖
+
+1. 原`eq:parametergraph`仍未证明。所需同一个弱Hⁿ扩张须同时L²有界、Hⁿ有界且真实弱字段限制回原域；Hⁿ有界本身不够。全空间弱jet与Fourier/Bessel描述也未建立等价。内锥差商替代路线仍缺原Lipschitz有限锥覆盖和弱平移FTC/全阶密度。具体声明、库源检查和失败替代路线保存在`analysis/T013-interpolation.md`，没有把缺口改写成论文假设。
+2. 原连续/Euler/frozen的统一允许权R图界、加权仿射缺陷/对偶导数界和时间加权L²仍待。新A3能量估计右端的这两个加权界未清偿，因此T012的12δt、84/c无权估计仍不能填写B4加权energy/l2。
+3. B1存在/弱唯一性/周期迹、B2/B5、规范B3及B4 finite/order/shift继续复用；N1–N5空间误差、完整权族阈值组合及`TransferBridges.solutions`实质误差仍待。原Theorem2.1没有宣称完成。

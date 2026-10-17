@@ -96,3 +96,17 @@ public import Carleman.Continuous.TemporalWeakError
 public import Carleman.Continuous.TimeAdjoint
 public import Carleman.Continuous.WeakTimePairing
 public import Carleman.Periodic.AffineReconstruction
+
+-- T013: intrinsic closure smoothness, actual space-time N and weighted operator energy.
+public import Carleman.Spatial.IntrinsicMultipliers
+public import Carleman.Spatial.SpacetimeWeightedNorm
+public import Carleman.Spatial.WeightedOperatorEnergy
+public import Carleman.Weights.AllowedOperatorEnergy
+public import Carleman.Weights.ClosureConforming
+public import Carleman.Weights.ClosureProfile
+public import Carleman.Weights.ClosureSpacetime
+public import Carleman.Weights.ClosureSpacetimeEnergy
+public import Carleman.Weights.ClosureWeakTrajectory
+public import Carleman.Weights.IntrinsicConjugation
+public import Carleman.Weights.IntrinsicDerivatives
+public import Carleman.Weights.IntrinsicSmoothClosure
