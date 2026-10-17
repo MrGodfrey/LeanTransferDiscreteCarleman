@@ -1053,6 +1053,96 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Orientation.affine_defect_ae
 #print axioms Carleman.Orientation.affine_defect_ae
 
+-- T013: every explicit declaration and its recursive dependency axioms.
+#check @Carleman.intrinsicWordMultiplier
+#print axioms Carleman.intrinsicWordMultiplier
+#check @Carleman.intrinsicWordMultiplier_smooth
+#print axioms Carleman.intrinsicWordMultiplier_smooth
+#check @Carleman.intrinsicWordMultiplier_derivative
+#print axioms Carleman.intrinsicWordMultiplier_derivative
+#check @Carleman.intrinsicWordMultiplier_nil
+#print axioms Carleman.intrinsicWordMultiplier_nil
+#check @Carleman.weak_leibniz_intrinsic
+#print axioms Carleman.weak_leibniz_intrinsic
+#check @Carleman.bochnerL2Norm_sq_integral
+#print axioms Carleman.bochnerL2Norm_sq_integral
+#check @Carleman.WeakSobolevJet.spacetimeWeightedSq
+#print axioms Carleman.WeakSobolevJet.spacetimeWeightedSq
+#check @Carleman.WeakSobolevJet.spacetimeWeightedNorm
+#print axioms Carleman.WeakSobolevJet.spacetimeWeightedNorm
+#check @Carleman.WeakSobolevJet.spacetimeWeightedNorm_nonneg
+#print axioms Carleman.WeakSobolevJet.spacetimeWeightedNorm_nonneg
+#check @Carleman.WeakSobolevJet.spacetimeWeightedNorm_sq
+#print axioms Carleman.WeakSobolevJet.spacetimeWeightedNorm_sq
+#check @Carleman.WeakSobolevJet.weightedSq_eq_timeFields
+#print axioms Carleman.WeakSobolevJet.weightedSq_eq_timeFields
+#check @Carleman.WeakSobolevJet.weightedSq_integrable
+#print axioms Carleman.WeakSobolevJet.weightedSq_integrable
+#check @Carleman.WeakSobolevJet.spacetimeWeightedSq_integral
+#print axioms Carleman.WeakSobolevJet.spacetimeWeightedSq_integral
+#check @Carleman.WeakSobolevJet.spacetimeWeightedNorm_le
+#print axioms Carleman.WeakSobolevJet.spacetimeWeightedNorm_le
+#check @Carleman.BoundedMultiplier.inner_map_pair
+#print axioms Carleman.BoundedMultiplier.inner_map_pair
+#check @Carleman.shiftedOperator_weighted_pair
+#print axioms Carleman.shiftedOperator_weighted_pair
+#check @Carleman.shiftedOperator_weighted_energy
+#print axioms Carleman.shiftedOperator_weighted_energy
+#check @Carleman.shiftedOperator_spacetime_energy
+#print axioms Carleman.shiftedOperator_spacetime_energy
+#check @Carleman.allowed_spacetime_operator_energy_uniform
+#print axioms Carleman.allowed_spacetime_operator_energy_uniform
+#check @Carleman.closure_conforming_conjugation_uniform
+#print axioms Carleman.closure_conforming_conjugation_uniform
+#check @Carleman.closureDerivative_extension_unique
+#print axioms Carleman.closureDerivative_extension_unique
+#check @Carleman.SpatialProfile.ofSmoothOnClosure
+#print axioms Carleman.SpatialProfile.ofSmoothOnClosure
+#check @Carleman.SpatialProfile.ofSmoothOnClosure_value
+#print axioms Carleman.SpatialProfile.ofSmoothOnClosure_value
+#check @Carleman.closure_spacetime_conjugation_uniform
+#print axioms Carleman.closure_spacetime_conjugation_uniform
+#check @Carleman.closure_spacetime_energy_conjugation_uniform
+#print axioms Carleman.closure_spacetime_energy_conjugation_uniform
+#check @Carleman.PeriodicWeakTrajectory.exists_closure_weighted_trajectory
+#print axioms Carleman.PeriodicWeakTrajectory.exists_closure_weighted_trajectory
+#check @Carleman.intrinsic_parameterNorm_bound
+#print axioms Carleman.intrinsic_parameterNorm_bound
+#check @Carleman.intrinsic_allowedWeight_parameterNorm_uniform
+#print axioms Carleman.intrinsic_allowedWeight_parameterNorm_uniform
+#check @Carleman.intrinsic_allowedWeight_weightedNorm_uniform
+#print axioms Carleman.intrinsic_allowedWeight_weightedNorm_uniform
+#check @Carleman.BoundedSmoothOn.allowedWeight_actual_uniform
+#print axioms Carleman.BoundedSmoothOn.allowedWeight_actual_uniform
+#check @Carleman.BoundedSmoothOn.allowedWeight_word_uniform
+#print axioms Carleman.BoundedSmoothOn.allowedWeight_word_uniform
+#check @Carleman.BoundedSmoothOn.allowedWeight
+#print axioms Carleman.BoundedSmoothOn.allowedWeight
+#check @Carleman.tensorCoordinates
+#print axioms Carleman.tensorCoordinates
+#check @Carleman.tensorCoordinates_injective
+#print axioms Carleman.tensorCoordinates_injective
+#check @Carleman.tensorReconstruction
+#print axioms Carleman.tensorReconstruction
+#check @Carleman.tensorReconstruction_coordinates
+#print axioms Carleman.tensorReconstruction_coordinates
+#check @Carleman.SmoothOnClosure
+#print axioms Carleman.SmoothOnClosure
+#check @Carleman.CoordinateSmoothOnClosure
+#print axioms Carleman.CoordinateSmoothOnClosure
+#check @Carleman.smoothOnClosure_iff_coordinate
+#print axioms Carleman.smoothOnClosure_iff_coordinate
+#check @Carleman.SmoothOnClosure.of_neighborhood
+#print axioms Carleman.SmoothOnClosure.of_neighborhood
+#check @Carleman.SmoothOnClosure.neg
+#print axioms Carleman.SmoothOnClosure.neg
+#check @Carleman.SmoothOnClosure.congr
+#print axioms Carleman.SmoothOnClosure.congr
+#check @Carleman.BoundedSmoothOn
+#print axioms Carleman.BoundedSmoothOn
+#check @Carleman.SmoothOnClosure.boundedSmoothOn
+#print axioms Carleman.SmoothOnClosure.boundedSmoothOn
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
