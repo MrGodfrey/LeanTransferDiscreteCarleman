@@ -9,38 +9,38 @@
     "started_at": "2026-10-17T09:43:34.927869+00:00"
   },
   "execution": {
-    "state": "RUNNING",
+    "state": "REVIEW",
     "current_task_id": "T004",
     "supervisor_checked_at": "2026-10-17T10:37:24.371967+00:00",
-    "next_action": "完整阶段已本地核验；创建 draft PR 并读取实际 CI/声明/公理证据后交父监督者独立验收",
+    "next_action": "父监督者独立核对 Lemma 3.2 与具体范数/B3 构造及最终 PR CI；验收后合并，再从新 main 继续 M3 图估计/Euler 正则性与连续辅助解，不逐引理派单",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-17T12:27:00.111891+00:00"
+    "last_activity_at": "2026-10-17T12:32:37.549574+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "8d8eff6fea256fc81d232b8b10b5f989364a6b4d",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39029702520/attempts/1",
-      "finished_at": "2026-10-17T11:43:34.598081+00:00",
+      "checked_sha": "4a51c158b63bff188ca53625b56d2de94f8f91f8",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39032650217/attempts/1",
+      "finished_at": "2026-10-17T12:30:27.764337+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "8d8eff6fea256fc81d232b8b10b5f989364a6b4d"
+      "source_head_sha": "2d0523a1ad31b165fe5e9f26829b0f8ae317f95f"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "8d8eff6fea256fc81d232b8b10b5f989364a6b4d",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39029702520/attempts/1",
-      "finished_at": "2026-10-17T11:43:34.598081+00:00",
+      "checked_sha": "4a51c158b63bff188ca53625b56d2de94f8f91f8",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39032650217/attempts/1",
+      "finished_at": "2026-10-17T12:30:27.764337+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "8d8eff6fea256fc81d232b8b10b5f989364a6b4d"
+      "source_head_sha": "2d0523a1ad31b165fe5e9f26829b0f8ae317f95f"
     }
   },
   "milestones": [
@@ -980,7 +980,7 @@
       "paper_ref": "Lemma 3.2 / eq:cellwise-extension / B3",
       "milestone": "M3",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "PAPER",
       "paper_labels": [
         "lem:cell"
@@ -990,14 +990,39 @@
         "Carleman.CellEstimates.weight_quotient_essSup",
         "Carleman.CellEstimates.global_cell_bounds"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "4a51c158b63bff188ca53625b56d2de94f8f91f8",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "4a51c158b63bff188ca53625b56d2de94f8f91f8",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39032650217/attempts/1",
+        "finished_at": "2026-10-17T12:30:27.764337+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "2d0523a1ad31b165fe5e9f26829b0f8ae317f95f"
+      },
+      "semantic_review": {
+        "checked_sha": "4a51c158b63bff188ca53625b56d2de94f8f91f8",
+        "declarations": [
+          "Carleman.cell_estimates_uniform",
+          "Carleman.CellEstimates.weight_quotient_essSup",
+          "Carleman.CellEstimates.global_cell_bounds"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2d0523a1ad31b165fe5e9f26829b0f8ae317f95f/governance/reviews/T004.md",
+        "reviewed_at": "2026-10-17T12:32:37.549574+00:00",
+        "reviewer": "T004 executor; parent independent acceptance pending"
+      },
       "dependencies": [
-        "C001"
+        "C001",
+        "C004"
       ],
-      "blocker": "证明已在本地构建；待同版本 CI 与父监督者独立验收",
-      "pr_url": null
+      "blocker": "父监督者独立语义/依赖验收待完成；不计入已完成原文结果",
+      "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/7",
+      "independent_review_status": "PENDING"
     },
     {
       "id": "C021",
@@ -1005,7 +1030,7 @@
       "paper_ref": "eq:cellwise-extension / eq:graphnorms / eq:spacetimegraphnorms / B3",
       "milestone": "M3",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [],
       "lean_declarations": [
@@ -1102,15 +1127,128 @@
         "Carleman.frozenShift_extension_sq_le",
         "Carleman.frozenShift_timeSq_le"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "4a51c158b63bff188ca53625b56d2de94f8f91f8",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "4a51c158b63bff188ca53625b56d2de94f8f91f8",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39032650217/attempts/1",
+        "finished_at": "2026-10-17T12:30:27.764337+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "2d0523a1ad31b165fe5e9f26829b0f8ae317f95f"
+      },
+      "semantic_review": {
+        "checked_sha": "4a51c158b63bff188ca53625b56d2de94f8f91f8",
+        "declarations": [
+          "Carleman.TimeGrid.cellTime_succ_sub",
+          "Carleman.TimeGrid.cellTime_lt_succ",
+          "Carleman.TimeGrid.extensionPlus_on_open_cell",
+          "Carleman.TimeGrid.extensionMinus_on_open_cell",
+          "Carleman.TimeGrid.intervalIntegrable_extensionPlus_cell",
+          "Carleman.TimeGrid.intervalIntegrable_extensionMinus_cell",
+          "Carleman.TimeGrid.integral_extensionPlus_cell",
+          "Carleman.TimeGrid.integral_extensionMinus_cell",
+          "Carleman.TimeGrid.integrable_extensionPlus",
+          "Carleman.TimeGrid.integrable_extensionMinus",
+          "Carleman.TimeGrid.integral_extensionPlus",
+          "Carleman.TimeGrid.integral_extensionMinus",
+          "Carleman.Orientation.measurable_cell_index",
+          "Carleman.Orientation.aestronglyMeasurable_cell_select",
+          "Carleman.Orientation.integral_extension",
+          "Carleman.Orientation.integrable_extension",
+          "Carleman.Orientation.integral_frozen_weightedSq",
+          "Carleman.Orientation.integrable_frozen_density",
+          "Carleman.Orientation.timeSq_frozen_eq_powerSq",
+          "Carleman.TimeGrid.node_value_of_periodic_endpoints",
+          "Carleman.TimeGrid.cellTime_mem",
+          "Carleman.TimeGrid.next_node_value",
+          "Carleman.Orientation.extension_eq_cellNumber",
+          "Carleman.Orientation.cellNumber_nonneg",
+          "Carleman.Orientation.cellNumber_le_steps",
+          "Carleman.Orientation.anchor_mem",
+          "Carleman.Orientation.anchor_distance",
+          "Carleman.Orientation.anchor_value_eq_extension",
+          "Carleman.Orientation.extension_periodic",
+          "Carleman.cellThreshold_pos",
+          "Carleman.cellThreshold_bounds",
+          "Carleman.TimeWeightRegularity.mesh_bounds",
+          "Carleman.TimeWeightRegularity.relative_q_extension",
+          "Carleman.TimeWeightRegularity.relative_weight_extension",
+          "Carleman.TimeWeightRegularity.shift_extension",
+          "Carleman.TimeWeightRegularity.weight_time_quotient",
+          "Carleman.TimeWeightRegularity.weight_time_quotient_essSup",
+          "Carleman.TimeWeightRegularity.shift_node_increment",
+          "Carleman.TimeWeightRegularity.weight_node_quotient",
+          "Carleman.TimeWeightRegularity.continuousOn",
+          "Carleman.TimeWeightRegularity.aestronglyMeasurable",
+          "Carleman.TimeWeightRegularity.reciprocal_lipschitz",
+          "Carleman.TimeWeightRegularity.difference_le",
+          "Carleman.TimeWeightRegularity.small_node",
+          "Carleman.TimeWeightRegularity.comparable",
+          "Carleman.TimeWeightRegularity.relative_q",
+          "Carleman.TimeWeightRegularity.allowedWeight_pos",
+          "Carleman.TimeWeightRegularity.allowedWeight_eq_exp",
+          "Carleman.TimeWeightRegularity.cell_distance",
+          "Carleman.TimeWeightRegularity.logWeight_derivative_bound",
+          "Carleman.TimeWeightRegularity.logWeight_difference",
+          "Carleman.TimeWeightRegularity.relative_weight",
+          "Carleman.TimeWeightRegularity.weight_le",
+          "Carleman.TimeWeightRegularity.power_difference",
+          "Carleman.TimeWeightRegularity.shift_difference",
+          "Carleman.SpatialProfile.multiplier_value",
+          "Carleman.SpatialProfile.multiplier_neg_value",
+          "Carleman.SpatialProfile.seminorm_definite",
+          "Carleman.SpatialProfile.seminorm_cell_le",
+          "Carleman.SpatialProfile.multiplier_map_add_exponent",
+          "Carleman.SpatialProfile.seminorm_add_exponent",
+          "Carleman.SpatialProfile.density_eq_shifted_seminorm_sq",
+          "Carleman.SpatialProfile.seminorm_global_le",
+          "Carleman.SpatialProfile.aestronglyMeasurable_seminorm_sq",
+          "Carleman.SpatialProfile.aestronglyMeasurable_extended_sq",
+          "Carleman.SpatialProfile.extended_sq_comparable",
+          "Carleman.SpatialProfile.extended_sq_integral_comparison",
+          "Carleman.SpatialProfile.powerSq_timeSq_comparison",
+          "Carleman.SpatialProfile.powerSq_timeSq_comparison_comp",
+          "Carleman.SpatialProfile.lifted_timeSq_le",
+          "Carleman.SpatialProfile.node_powerSq_le_reconstruction",
+          "Carleman.SpatialProfile.powerSq_timeSq_uniform",
+          "Carleman.SpatialProfile.powerSq_timeSq_uniform_bounded_exponents",
+          "Carleman.BoundedMultiplier.observation_le",
+          "Carleman.BoundedMultiplier.observation_sq_integral",
+          "Carleman.SpatialProfile.observation_time_comparison",
+          "Carleman.BoundedMultiplier.memLp_smul",
+          "Carleman.BoundedMultiplier.map_ae",
+          "Carleman.BoundedMultiplier.map_add",
+          "Carleman.BoundedMultiplier.map_smul",
+          "Carleman.BoundedMultiplier.seminorm_apply",
+          "Carleman.BoundedMultiplier.seminorm_le",
+          "Carleman.BoundedMultiplier.seminorm_le_of_weight_le",
+          "Carleman.BoundedMultiplier.seminorm_eq_zero_iff",
+          "Carleman.BoundedMultiplier.seminorm_sq_integral",
+          "Carleman.BoundedMultiplier.integrable_density",
+          "Carleman.TransferGeometry.node_derivative_of_L2",
+          "Carleman.TransferGeometry.node_state_of_L2",
+          "Carleman.TransferGeometry.lifted_load_of_L2",
+          "Carleman.TransferGeometry.observed_reconstruction_of_L2",
+          "Carleman.frozenShift_extension_sq_le",
+          "Carleman.frozenShift_timeSq_le"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2d0523a1ad31b165fe5e9f26829b0f8ae317f95f/governance/reviews/T004.md",
+        "reviewed_at": "2026-10-17T12:32:37.549574+00:00",
+        "reviewer": "T004 executor; parent independent acceptance pending"
+      },
       "dependencies": [
         "C004",
         "C020"
       ],
-      "blocker": "待同版本 CI；B1/B4 与具体 Sobolev/数值空间实例仍属后续任务",
-      "pr_url": null
+      "blocker": "父监督者独立语义/依赖验收待完成；不计入已完成原文结果",
+      "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/7",
+      "independent_review_status": "PENDING"
     }
   ],
   "events": [
@@ -1160,11 +1298,16 @@
       "task_id": "T004",
       "summary": "本地完成 95 个公开定理：Lemma 3.2 全分量、真实 L²/观测与 B3 时间比较；待 CI 和独立验收",
       "public_summary": "统一单元权与具体范数比较已完成本地核验，等待版本化构建与独立审核"
+    },
+    {
+      "at": "2026-10-17T12:32:37.549574+00:00",
+      "public_summary": "95 个新定理通过实际 CI：统一单元权、真实 L²/观测及时间比较；等待独立验收，原文仍为 0/26",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/7"
     }
   ],
   "snapshot": {
-    "synced_at": "2026-10-17T12:27:00.111891+00:00",
-    "source_commit": "8d8eff6fea256fc81d232b8b10b5f989364a6b4d",
+    "synced_at": "2026-10-17T12:32:37.549574+00:00",
+    "source_commit": "2d0523a1ad31b165fe5e9f26829b0f8ae317f95f",
     "mode": "LOCAL_SNAPSHOT"
   },
   "dashboard": {
@@ -1182,7 +1325,10 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39027405359/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/6",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39029082620/attempts/1",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39029702520/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39029702520/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/7",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2d0523a1ad31b165fe5e9f26829b0f8ae317f95f/governance/reviews/T004.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39032650217/attempts/1"
     ]
   },
   "schedules": [
@@ -2026,9 +2172,9 @@
       ],
       "branch": "proof/t004-weighted-l2-cell-comparison",
       "base_commit": "8d8eff6fea256fc81d232b8b10b5f989364a6b4d",
-      "status": "RUNNING",
-      "pr_url": null,
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/7",
+      "checkpoint_commit": "2d0523a1ad31b165fe5e9f26829b0f8ae317f95f",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.TimeGrid.cellTime_succ_sub",
@@ -2127,7 +2273,18 @@
         "Carleman.frozenShift_extension_sq_le",
         "Carleman.frozenShift_timeSq_le"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "4a51c158b63bff188ca53625b56d2de94f8f91f8",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39032650217/attempts/1",
+        "finished_at": "2026-10-17T12:30:27.764337+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "2d0523a1ad31b165fe5e9f26829b0f8ae317f95f"
+      },
       "blocker": null,
       "attempts": [
         "同一 Codex Web 平台任务接续；fetch 核实新 main 与整树，锁定工具链和 mathlib 保持，无 worktree/lake update",
@@ -2138,12 +2295,176 @@
         "审查发现 τ+a/2 若直接套原 τ_* 可造成额外覆盖限制；改为固定 |a|≤A 的统一单元分析阈值，原数值权族不变",
         "把普通 lift、实际重构/观测字段直接接回 ComparisonBridge；冻结 shift 的 (2L)^(4m) 界及有限性另行证明"
       ],
-      "next_action": "冻结完整数学阶段，创建同一 draft PR；读取实际构建/公理 artifact 与 SHA 关系后交父监督者独立验收",
+      "next_action": "父监督者独立核对 Lemma 3.2 与具体范数/B3 构造及最终 PR CI；验收后合并，再从新 main 继续 M3 图估计/Euler 正则性与连续辅助解，不逐引理派单",
       "remaining_dependencies": [
         "B1：周期连续辅助解存在、真实弱导数/图估计（Lemmas 3.1/3.4）",
         "B4：Euler 适定/正则性、时间空间误差、微分表达式阶数比较（3.3–3.5/4.1–4.2）",
         "B3 空间部分：具体 Sobolev/微分场与 TransferGeometry 的等式、原 N1/N2/N5 数值空间比较；任意抽象几何的完整桥接包尚未构造"
-      ]
+      ],
+      "executor_semantic_review": {
+        "checked_sha": "4a51c158b63bff188ca53625b56d2de94f8f91f8",
+        "declarations": [
+          "Carleman.TimeGrid.cellTime_succ_sub",
+          "Carleman.TimeGrid.cellTime_lt_succ",
+          "Carleman.TimeGrid.extensionPlus_on_open_cell",
+          "Carleman.TimeGrid.extensionMinus_on_open_cell",
+          "Carleman.TimeGrid.intervalIntegrable_extensionPlus_cell",
+          "Carleman.TimeGrid.intervalIntegrable_extensionMinus_cell",
+          "Carleman.TimeGrid.integral_extensionPlus_cell",
+          "Carleman.TimeGrid.integral_extensionMinus_cell",
+          "Carleman.TimeGrid.integrable_extensionPlus",
+          "Carleman.TimeGrid.integrable_extensionMinus",
+          "Carleman.TimeGrid.integral_extensionPlus",
+          "Carleman.TimeGrid.integral_extensionMinus",
+          "Carleman.Orientation.measurable_cell_index",
+          "Carleman.Orientation.aestronglyMeasurable_cell_select",
+          "Carleman.Orientation.integral_extension",
+          "Carleman.Orientation.integrable_extension",
+          "Carleman.Orientation.integral_frozen_weightedSq",
+          "Carleman.Orientation.integrable_frozen_density",
+          "Carleman.Orientation.timeSq_frozen_eq_powerSq",
+          "Carleman.TimeGrid.node_value_of_periodic_endpoints",
+          "Carleman.TimeGrid.cellTime_mem",
+          "Carleman.TimeGrid.next_node_value",
+          "Carleman.Orientation.extension_eq_cellNumber",
+          "Carleman.Orientation.cellNumber_nonneg",
+          "Carleman.Orientation.cellNumber_le_steps",
+          "Carleman.Orientation.anchor_mem",
+          "Carleman.Orientation.anchor_distance",
+          "Carleman.Orientation.anchor_value_eq_extension",
+          "Carleman.Orientation.extension_periodic",
+          "Carleman.cellThreshold_pos",
+          "Carleman.cellThreshold_bounds",
+          "Carleman.TimeWeightRegularity.mesh_bounds",
+          "Carleman.TimeWeightRegularity.relative_q_extension",
+          "Carleman.TimeWeightRegularity.relative_weight_extension",
+          "Carleman.TimeWeightRegularity.shift_extension",
+          "Carleman.TimeWeightRegularity.weight_time_quotient",
+          "Carleman.TimeWeightRegularity.weight_time_quotient_essSup",
+          "Carleman.TimeWeightRegularity.shift_node_increment",
+          "Carleman.TimeWeightRegularity.weight_node_quotient",
+          "Carleman.cell_estimates_uniform",
+          "Carleman.CellEstimates.weight_quotient_essSup",
+          "Carleman.CellEstimates.global_cell_bounds",
+          "Carleman.TimeWeightRegularity.continuousOn",
+          "Carleman.TimeWeightRegularity.aestronglyMeasurable",
+          "Carleman.TimeWeightRegularity.reciprocal_lipschitz",
+          "Carleman.TimeWeightRegularity.difference_le",
+          "Carleman.TimeWeightRegularity.small_node",
+          "Carleman.TimeWeightRegularity.comparable",
+          "Carleman.TimeWeightRegularity.relative_q",
+          "Carleman.TimeWeightRegularity.allowedWeight_pos",
+          "Carleman.TimeWeightRegularity.allowedWeight_eq_exp",
+          "Carleman.TimeWeightRegularity.cell_distance",
+          "Carleman.TimeWeightRegularity.logWeight_derivative_bound",
+          "Carleman.TimeWeightRegularity.logWeight_difference",
+          "Carleman.TimeWeightRegularity.relative_weight",
+          "Carleman.TimeWeightRegularity.weight_le",
+          "Carleman.TimeWeightRegularity.power_difference",
+          "Carleman.TimeWeightRegularity.shift_difference",
+          "Carleman.SpatialProfile.multiplier_value",
+          "Carleman.SpatialProfile.multiplier_neg_value",
+          "Carleman.SpatialProfile.seminorm_definite",
+          "Carleman.SpatialProfile.seminorm_cell_le",
+          "Carleman.SpatialProfile.multiplier_map_add_exponent",
+          "Carleman.SpatialProfile.seminorm_add_exponent",
+          "Carleman.SpatialProfile.density_eq_shifted_seminorm_sq",
+          "Carleman.SpatialProfile.seminorm_global_le",
+          "Carleman.SpatialProfile.aestronglyMeasurable_seminorm_sq",
+          "Carleman.SpatialProfile.aestronglyMeasurable_extended_sq",
+          "Carleman.SpatialProfile.extended_sq_comparable",
+          "Carleman.SpatialProfile.extended_sq_integral_comparison",
+          "Carleman.SpatialProfile.powerSq_timeSq_comparison",
+          "Carleman.SpatialProfile.powerSq_timeSq_comparison_comp",
+          "Carleman.SpatialProfile.lifted_timeSq_le",
+          "Carleman.SpatialProfile.node_powerSq_le_reconstruction",
+          "Carleman.SpatialProfile.powerSq_timeSq_uniform",
+          "Carleman.SpatialProfile.powerSq_timeSq_uniform_bounded_exponents",
+          "Carleman.BoundedMultiplier.observation_le",
+          "Carleman.BoundedMultiplier.observation_sq_integral",
+          "Carleman.SpatialProfile.observation_time_comparison",
+          "Carleman.BoundedMultiplier.memLp_smul",
+          "Carleman.BoundedMultiplier.map_ae",
+          "Carleman.BoundedMultiplier.map_add",
+          "Carleman.BoundedMultiplier.map_smul",
+          "Carleman.BoundedMultiplier.seminorm_apply",
+          "Carleman.BoundedMultiplier.seminorm_le",
+          "Carleman.BoundedMultiplier.seminorm_le_of_weight_le",
+          "Carleman.BoundedMultiplier.seminorm_eq_zero_iff",
+          "Carleman.BoundedMultiplier.seminorm_sq_integral",
+          "Carleman.BoundedMultiplier.integrable_density",
+          "Carleman.TransferGeometry.node_derivative_of_L2",
+          "Carleman.TransferGeometry.node_state_of_L2",
+          "Carleman.TransferGeometry.lifted_load_of_L2",
+          "Carleman.TransferGeometry.observed_reconstruction_of_L2",
+          "Carleman.frozenShift_extension_sq_le",
+          "Carleman.frozenShift_timeSq_le"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2d0523a1ad31b165fe5e9f26829b0f8ae317f95f/governance/reviews/T004.md",
+        "reviewed_at": "2026-10-17T12:32:37.549574+00:00",
+        "reviewer": "T004 executor; parent independent acceptance pending",
+        "declaration_inventory": "governance/reviews/T004.md",
+        "checks": [
+          "95 new public theorem types individually matched to manuscript and real norm objects; 113 explicit new declarations including data/definitions inventoried",
+          "Both half-open extensions, exact cell integrals, all N>0 states, endpoint T before cyclic reduction, whole-real-line periodic corollary",
+          "Actual Lp equivalence classes, weighted spatial integral, observed-region indicator and parameter measurability; derived finite continuous norms",
+          "Original q/sigma/shift powers, H_n direction, theta inverse, cyclic increments and common threshold/C before arbitrary T/grid/q/L/state",
+          "Bounded norm exponents enlarge only analytic cell threshold; no added numerical weight-family assumption",
+          "Four original ComparisonBridge fields directly constructed; ordinary lift preserved; frozen shift q^(4m) bound and finiteness derived",
+          "B1/B4 and concrete Sobolev/numerical spatial realization remain explicit; original Theorem 2.1 not claimed"
+        ]
+      },
+      "environment": {
+        "restoration_status": "PASS",
+        "restoration_base_commit": "8d8eff6fea256fc81d232b8b10b5f989364a6b4d",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "local_task_skills": "/workspace/.agents 为空；仓库未发现 .agents/skills",
+        "actual_reuse": [
+          "Carleman.TimeGrid.extensionPlus",
+          "Carleman.TimeGrid.extensionMinus",
+          "Carleman.TimeGrid.powerSq",
+          "Carleman.timeSq",
+          "Carleman.TransferGeometry",
+          "Carleman.ComparisonBridge",
+          "Carleman.frozenShift"
+        ],
+        "local_build": "3052 jobs PASS; 693 declarations recursively audited; pinned environment only"
+      },
+      "integration_evidence": {
+        "proof_head_sha": "2d0523a1ad31b165fe5e9f26829b0f8ae317f95f",
+        "pr_test_sha": "4a51c158b63bff188ca53625b56d2de94f8f91f8",
+        "base_commit": "8d8eff6fea256fc81d232b8b10b5f989364a6b4d",
+        "equal_source_tree": "5f8c318ca976b176ce6f9ed01b5d17d557d45284",
+        "test_parents": [
+          "8d8eff6fea256fc81d232b8b10b5f989364a6b4d",
+          "2d0523a1ad31b165fe5e9f26829b0f8ae317f95f"
+        ],
+        "workflow_run_id": 39032650217,
+        "lean_job_id": 117396077439,
+        "raw_artifact_id": 12100524780,
+        "raw_artifact_sha256": "23a78b80b15267091440de74ca9416a3fa9b62d7170ea76e527723293fceed1b",
+        "declaration_artifact_id": 12100579607,
+        "declaration_text_sha256": "50b2c159feea13400c7eacc61c1aba3807d60dcb141a228df5f48533bfca205d",
+        "proof_tree": "a3b4182e5fcd78856b1b1900a4af815b5a1e4d14",
+        "aggregate_blob": "a0532ab6c97222392a206c0482ebbf7b5a6ea1bc",
+        "axiom_check_blob": "00fc77807b40d86009c1a47097a342003d8056a2",
+        "checked_log_facts": [
+          "actual checkout 4a51c158b63bff188ca53625b56d2de94f8f91f8",
+          "Build completed successfully (3052 jobs)",
+          "Axiom audit passed for all 693 Carleman declarations.",
+          "Recorded PASS for 4a51c158b63bff188ca53625b56d2de94f8f91f8",
+          "All 95 new public theorem types occur in actual CI artifact; artifact text byte-identical to local .ci/axioms.txt"
+        ],
+        "artifact_access": "Authenticated GitHub connector read-only ZIP retrieval, downloaded and opened in this same Codex Web workspace; actual gh job logs also inspected",
+        "jobs": [
+          "lean: PASS",
+          "state-check: PASS",
+          "dashboard / snapshot: PASS"
+        ]
+      }
     }
   ],
   "private_maintenance": {
