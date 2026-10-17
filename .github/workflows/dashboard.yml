@@ -19,7 +19,8 @@ jobs:
       - name: Generate snapshot from this run only
         env:
           EXPECTED_SHA: ${{ github.sha }}
-        run: python3 tools/update_dashboard.py --ci-result .ci/result.json --expected-sha "$EXPECTED_SHA"
+          EXPECTED_CI_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}/attempts/${{ github.run_attempt }}
+        run: python3 tools/update_dashboard.py --ci-result .ci/result.json --expected-sha "$EXPECTED_SHA" --expected-ci-url "$EXPECTED_CI_URL"
       - name: Package only display assets
         run: |
           mkdir -p site-artifact

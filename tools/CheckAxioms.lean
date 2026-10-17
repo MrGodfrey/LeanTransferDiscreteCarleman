@@ -1247,6 +1247,62 @@ set_option pp.maxSteps 1000000
 #check @Carleman.frozen_shift_margin_uniform
 #print axioms Carleman.frozen_shift_margin_uniform
 
+-- T015: every explicit declaration and its recursive dependency axioms.
+#check @Carleman.CoerciveForm.weighted_temporal_duality
+#print axioms Carleman.CoerciveForm.weighted_temporal_duality
+#check @Carleman.CoerciveForm.weighted_temporal_duality_bound
+#print axioms Carleman.CoerciveForm.weighted_temporal_duality_bound
+#check @Carleman.CoerciveForm.weighted_temporal_duality_uniform
+#print axioms Carleman.CoerciveForm.weighted_temporal_duality_uniform
+#check @Carleman.Orientation.affine_defect_scalar_ae
+#print axioms Carleman.Orientation.affine_defect_scalar_ae
+#check @Carleman.Orientation.affine_defect_seminorm_ae
+#print axioms Carleman.Orientation.affine_defect_seminorm_ae
+#check @Carleman.SpatialProfile.logDerivative_frozen_small_uniform
+#print axioms Carleman.SpatialProfile.logDerivative_frozen_small_uniform
+#check @Carleman.SpatialProfile.timeMap
+#print axioms Carleman.SpatialProfile.timeMap
+#check @Carleman.SpatialProfile.timeMap_ae
+#print axioms Carleman.SpatialProfile.timeMap_ae
+#check @Carleman.SpatialProfile.timeMap_toLp
+#print axioms Carleman.SpatialProfile.timeMap_toLp
+#check @Carleman.SpatialProfile.timeMap_norm_le
+#print axioms Carleman.SpatialProfile.timeMap_norm_le
+#check @Carleman.SpatialProfile.timeMap_inverse
+#print axioms Carleman.SpatialProfile.timeMap_inverse
+#check @Carleman.SpatialProfile.timeMap_inner_inverse
+#print axioms Carleman.SpatialProfile.timeMap_inner_inverse
+#check @Carleman.SpatialProfile.timeMap_inner_twice
+#print axioms Carleman.SpatialProfile.timeMap_inner_twice
+#check @Carleman.CoerciveForm.weighted_adjoint_remainder_uniform
+#print axioms Carleman.CoerciveForm.weighted_adjoint_remainder_uniform
+#check @Carleman.SpatialProfile.timeMap_extension_norm_sq
+#print axioms Carleman.SpatialProfile.timeMap_extension_norm_sq
+#check @Carleman.SpatialProfile.timeMap_extension_norm_comparison
+#print axioms Carleman.SpatialProfile.timeMap_extension_norm_comparison
+#check @Carleman.SpatialProfile.timeMap_affine_defect_le
+#print axioms Carleman.SpatialProfile.timeMap_affine_defect_le
+#check @Carleman.SpatialProfile.weighted_affine_bochner_defect
+#print axioms Carleman.SpatialProfile.weighted_affine_bochner_defect
+#check @Carleman.SpatialProfile.weighted_affine_defect_uniform
+#print axioms Carleman.SpatialProfile.weighted_affine_defect_uniform
+#check @Carleman.CoerciveForm.weighted_graph_domain_ae
+#print axioms Carleman.CoerciveForm.weighted_graph_domain_ae
+#check @Carleman.CoerciveForm.weighted_graph_commutator_ae
+#print axioms Carleman.CoerciveForm.weighted_graph_commutator_ae
+#check @Carleman.CoerciveForm.exists_weighted_graph
+#print axioms Carleman.CoerciveForm.exists_weighted_graph
+#check @Carleman.CoerciveForm.exists_weighted_frozen_graph_remainder_uniform
+#print axioms Carleman.CoerciveForm.exists_weighted_frozen_graph_remainder_uniform
+#check @Carleman.SpatialProfile.timeMap_commute_multiplier
+#print axioms Carleman.SpatialProfile.timeMap_commute_multiplier
+#check @Carleman.linear_evolution_residual
+#print axioms Carleman.linear_evolution_residual
+#check @Carleman.CoerciveForm.weighted_evolution_identity
+#print axioms Carleman.CoerciveForm.weighted_evolution_identity
+#check @Carleman.CoerciveForm.weighted_frozen_graph_remainder_uniform
+#print axioms Carleman.CoerciveForm.weighted_frozen_graph_remainder_uniform
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

@@ -596,3 +596,13 @@ C031为AUXILIARY：13模块/45定理/51显式声明，逐项核对见`reviews/T0
 1. 原bounded Lipschitz Ω上的同一个高阶弱扩张须同时L²有界、Hⁿ有界，并使每个实际弱导数字段限制回Ω等于原字段；本阶段没有构造该扩张。因此原`eq:parametergraph`尚未完成，全空间结论不能计为原Lemma3.1。已试路线及下一接口见`analysis/T014-interpolation.md`。
 2. 原允许权连续/Euler/frozen的统一R图界、加权仿射缺陷及对偶导数界、加权时间L²误差仍待。新冻结能量可以直接用于实际误差，但右端的加权载荷界仍需证明。
 3. B1存在/弱正规性/周期迹、B2/B5、规范B3及B4 finite/order/shift继续复用；N1–N5空间误差、完整权族阈值和B4实际energy/l2尚未清偿。原Theorem2.1未完成，未增加最终离散估计假设。
+
+## T015：真实加权时间L²、仿射缺陷与冻结图余项
+
+本阶段 C032 为 AUXILIARY。`TimeL2Multiplier` 以实际 σ=q^τ exp(qρ) 作用于 Bochner 时间 L² 类；空间/时间代表只 a.e. 比较，逆权取同一ρ的负与−τ，σ²载荷取两次映射。`weighted_affine_defect_uniform` 在 δ 先于 g/w/T/τ/sign/全节点状态的次序下给真实范数 `3 dt · gridNorm(σ_nodes Dεu)`；`weighted_temporal_duality_uniform` 构造原连续、Euler及反向伴随解，并保留真实逆权伴随导数因子。对应原文 eq:timedelta 第一段、eq:temporal-dual-equation、eq:timecancellation，不宣称 eq:temporal-l2-error。
+
+`logDerivative_frozen_small_uniform` 对任意预先给定 η>0，选择统一 L₀/δ 后，将实际 log 时间导数作用控制为 η 倍真实冻结移位范数。`exists_weighted_frozen_graph_remainder_uniform` 由原 A1 单向椭圆界、A2 及已有弱乘积/图转换构造加权轨迹，吸收时间项后得到常数30的加权时间导数/A/冻结移位界，右端为实际加权残差与实际 `A(σU)−σAU`。`weighted_graph_commutator_ae` 将该余项与原 A2 的 `[A,σ]σ⁻¹` 完全匹配。`weighted_adjoint_remainder_uniform` 构造 W²e 的反向伴随，M=W⁻¹，得到 `‖MY_t‖≤30(‖We‖+‖AZ−MAY‖)`，Z=MY为构造出的弱图，不作为存在/估计假设。
+
+原 B1 的 a.e. 域/H弱导数/周期迹不加强为每时刻 D(A)；时间方程方向与冻结延拓方向可独立选择。一般关联 A 与 form 算子的域/算子等价已证；本阶段具体图定理以 form 算子陈述。平滑邻域输入沿 T013 的内在闭包到邻域接口衔接。
+
+B4 未清偿边界没有扩大或隐藏：原 Lipschitz 域同一高阶弱扩张的同时 L²/Hⁿ 界（或等价原域插值）、允许权空间交换子吸收、允许权 Euler 图界、闭合的加权时间 O(dt)/O(sqrt(dt)) 及空间误差仍待。全空间插值不能替代原域；带交换子余项的图界不能替代原文完整 R 图界。精确依赖与已试路线见 `governance/analysis/T015-weighted-time.md` 和 T014 检查点。原文完成仍为 1/26。

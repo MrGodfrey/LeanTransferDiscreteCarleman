@@ -9,38 +9,38 @@
     "started_at": "2026-10-17T09:43:34.927869+00:00"
   },
   "execution": {
-    "state": "REVIEW",
-    "current_task_id": "T014",
+    "state": "RUNNING",
+    "current_task_id": "T015",
     "supervisor_checked_at": "2026-10-17T13:54:55.912702+00:00",
-    "next_action": "父监督者独立51声明验收；接续原Lipschitz同时L²/Hⁿ扩张及完整允许权图/B4，复用已证全空间插值与冻结实际误差能量",
+    "next_action": "完整构建、27声明实际类型及递归公理核对，draft PR和当前CI快照验证",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-17T21:45:50.198368+00:00"
+    "last_activity_at": "2026-10-17T22:22:19.007999+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "3134cd89da60344e6dbbe48a4eda77d5ef3892d6",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39071995463/attempts/1",
-      "finished_at": "2026-10-17T21:43:56.116811+00:00",
+      "checked_sha": "9f8e351a71cbcd8943db0d9056afdd2bc0a1ffe7",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39073223285/attempts/1",
+      "finished_at": "2026-10-17T22:02:33.726641+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "4fe831e59f6a7a1f4bbc5e7ce560fc9938902ad7"
+      "source_head_sha": "9f8e351a71cbcd8943db0d9056afdd2bc0a1ffe7"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "3134cd89da60344e6dbbe48a4eda77d5ef3892d6",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39071995463/attempts/1",
-      "finished_at": "2026-10-17T21:43:56.116811+00:00",
+      "checked_sha": "9f8e351a71cbcd8943db0d9056afdd2bc0a1ffe7",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39073223285/attempts/1",
+      "finished_at": "2026-10-17T22:02:33.726641+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "4fe831e59f6a7a1f4bbc5e7ce560fc9938902ad7"
+      "source_head_sha": "9f8e351a71cbcd8943db0d9056afdd2bc0a1ffe7"
     }
   },
   "milestones": [
@@ -3093,7 +3093,7 @@
       "paper_ref": "Theorem3.5冻结时间误差；Lemma3.1全空间参数插值依赖",
       "milestone": "M3",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [],
       "lean_declarations": [
@@ -3143,21 +3143,21 @@
         "Carleman.TimeWeightRegularity.frozen_shift_lower_ae",
         "Carleman.frozen_shift_margin_uniform"
       ],
-      "declaration_version": "3134cd89da60344e6dbbe48a4eda77d5ef3892d6",
+      "declaration_version": "9f8e351a71cbcd8943db0d9056afdd2bc0a1ffe7",
       "build_evidence": {
         "status": "PASS",
-        "checked_sha": "3134cd89da60344e6dbbe48a4eda77d5ef3892d6",
-        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39071995463/attempts/1",
-        "finished_at": "2026-10-17T21:43:56.116811+00:00",
+        "checked_sha": "9f8e351a71cbcd8943db0d9056afdd2bc0a1ffe7",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39073223285/attempts/1",
+        "finished_at": "2026-10-17T22:02:33.726641+00:00",
         "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "targets": [
           "Carleman"
         ],
-        "source_head_sha": "4fe831e59f6a7a1f4bbc5e7ce560fc9938902ad7"
+        "source_head_sha": "9f8e351a71cbcd8943db0d9056afdd2bc0a1ffe7"
       },
       "semantic_review": {
-        "checked_sha": "3134cd89da60344e6dbbe48a4eda77d5ef3892d6",
+        "checked_sha": "9f8e351a71cbcd8943db0d9056afdd2bc0a1ffe7",
         "declarations": [
           "Carleman.bochnerL2Norm_congr_ae",
           "Carleman.bochnerL2Norm_neg",
@@ -3207,15 +3207,61 @@
         ],
         "result": "PASS",
         "axiom_check": "PASS",
-        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4fe831e59f6a7a1f4bbc5e7ce560fc9938902ad7/governance/reviews/T014.md",
-        "reviewed_at": "2026-10-17T21:45:50.198368+00:00",
-        "reviewer": "T014 executor; parent independent acceptance pending"
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/17",
+        "reviewed_at": "2026-10-17T22:09:23.429930+00:00",
+        "reviewer": "Parent supervisor independent 51-declaration semantic and dependency PASS; main tree identical"
       },
       "blocker": "原Lipschitz域同时L²/Hⁿ有界扩张、统一允许权图界与完整加权时间/空间B4仍待；本阶段辅助结论已完成",
       "dependencies": [
         "C030"
       ],
       "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/17"
+    },
+    {
+      "id": "C032",
+      "title": "真实加权时间L²与仿射缺陷、伴随误差配对",
+      "paper_ref": "Theorem3.5加权时间误差自然依赖",
+      "milestone": "M3",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [],
+      "lean_declarations": [
+        "Carleman.CoerciveForm.weighted_temporal_duality",
+        "Carleman.CoerciveForm.weighted_temporal_duality_bound",
+        "Carleman.CoerciveForm.weighted_temporal_duality_uniform",
+        "Carleman.Orientation.affine_defect_scalar_ae",
+        "Carleman.Orientation.affine_defect_seminorm_ae",
+        "Carleman.SpatialProfile.logDerivative_frozen_small_uniform",
+        "Carleman.SpatialProfile.timeMap_ae",
+        "Carleman.SpatialProfile.timeMap_toLp",
+        "Carleman.SpatialProfile.timeMap_norm_le",
+        "Carleman.SpatialProfile.timeMap_inverse",
+        "Carleman.SpatialProfile.timeMap_inner_inverse",
+        "Carleman.SpatialProfile.timeMap_inner_twice",
+        "Carleman.CoerciveForm.weighted_adjoint_remainder_uniform",
+        "Carleman.SpatialProfile.timeMap_extension_norm_sq",
+        "Carleman.SpatialProfile.timeMap_extension_norm_comparison",
+        "Carleman.SpatialProfile.timeMap_affine_defect_le",
+        "Carleman.SpatialProfile.weighted_affine_bochner_defect",
+        "Carleman.SpatialProfile.weighted_affine_defect_uniform",
+        "Carleman.CoerciveForm.weighted_graph_domain_ae",
+        "Carleman.CoerciveForm.weighted_graph_commutator_ae",
+        "Carleman.CoerciveForm.exists_weighted_graph",
+        "Carleman.CoerciveForm.exists_weighted_frozen_graph_remainder_uniform",
+        "Carleman.SpatialProfile.timeMap_commute_multiplier",
+        "Carleman.linear_evolution_residual",
+        "Carleman.CoerciveForm.weighted_evolution_identity",
+        "Carleman.CoerciveForm.weighted_frozen_graph_remainder_uniform"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "blocker": "原Lipschitz同时L²/Hⁿ扩张及允许权统一图界仍未清偿",
+      "dependencies": [
+        "C031"
+      ],
+      "pr_url": null
     }
   ],
   "events": [
@@ -3328,8 +3374,8 @@
     }
   ],
   "snapshot": {
-    "synced_at": "2026-10-17T21:45:50.198368+00:00",
-    "source_commit": "3134cd89da60344e6dbbe48a4eda77d5ef3892d6",
+    "synced_at": "2026-10-17T22:09:23.429930+00:00",
+    "source_commit": "9f8e351a71cbcd8943db0d9056afdd2bc0a1ffe7",
     "mode": "LOCAL_SNAPSHOT"
   },
   "dashboard": {
@@ -3387,7 +3433,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/565b95ef6c7721eb69d4e20c224e87c8c5cea2c4/governance/reviews/T013.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/17",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39071995463/attempts/1",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4fe831e59f6a7a1f4bbc5e7ce560fc9938902ad7/governance/reviews/T014.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4fe831e59f6a7a1f4bbc5e7ce560fc9938902ad7/governance/reviews/T014.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39073223285/attempts/1"
     ]
   },
   "schedules": [
@@ -7703,10 +7750,10 @@
       ],
       "branch": "proof/t014-frozen-energy-interpolation",
       "base_commit": "bed432f9ab0eebd8a31163608ff72c422299e93d",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/17",
-      "checkpoint_commit": "4fe831e59f6a7a1f4bbc5e7ce560fc9938902ad7",
-      "merge_commit": null,
+      "checkpoint_commit": "71229b5e2aa0e3aba2b949103f2e43979f65251a",
+      "merge_commit": "9f8e351a71cbcd8943db0d9056afdd2bc0a1ffe7",
       "lean_declarations": [
         "Carleman.bochnerL2Norm_congr_ae",
         "Carleman.bochnerL2Norm_neg",
@@ -7762,15 +7809,15 @@
       ],
       "build_evidence": {
         "status": "PASS",
-        "checked_sha": "3134cd89da60344e6dbbe48a4eda77d5ef3892d6",
-        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39071995463/attempts/1",
-        "finished_at": "2026-10-17T21:43:56.116811+00:00",
+        "checked_sha": "9f8e351a71cbcd8943db0d9056afdd2bc0a1ffe7",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39073223285/attempts/1",
+        "finished_at": "2026-10-17T22:02:33.726641+00:00",
         "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "targets": [
           "Carleman"
         ],
-        "source_head_sha": "4fe831e59f6a7a1f4bbc5e7ce560fc9938902ad7"
+        "source_head_sha": "9f8e351a71cbcd8943db0d9056afdd2bc0a1ffe7"
       },
       "blocker": null,
       "attempts": [
@@ -7779,10 +7826,10 @@
         "已证任意下界μ、双向真实冻结系数与实际误差残差/能量；A1仅单向使用，无L^(2m)损失",
         "已证反射测试弱卷积交换、实际常数1 L²收缩、光滑卷积IBP、具体bump a.e.极限/Fatou、Sym邻阶递推及有限最大值原理；完整全空间参数插值"
       ],
-      "next_action": "父监督者独立51声明验收；接续原Lipschitz同时L²/Hⁿ扩张及完整允许权图/B4，复用已证全空间插值与冻结实际误差能量",
-      "declaration_version": "3134cd89da60344e6dbbe48a4eda77d5ef3892d6",
+      "next_action": "T015接续实际加权时间分析",
+      "declaration_version": "9f8e351a71cbcd8943db0d9056afdd2bc0a1ffe7",
       "semantic_review": {
-        "checked_sha": "3134cd89da60344e6dbbe48a4eda77d5ef3892d6",
+        "checked_sha": "9f8e351a71cbcd8943db0d9056afdd2bc0a1ffe7",
         "declarations": [
           "Carleman.bochnerL2Norm_congr_ae",
           "Carleman.bochnerL2Norm_neg",
@@ -7838,9 +7885,9 @@
         ],
         "result": "PASS",
         "axiom_check": "PASS",
-        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4fe831e59f6a7a1f4bbc5e7ce560fc9938902ad7/governance/reviews/T014.md",
-        "reviewed_at": "2026-10-17T21:45:50.198368+00:00",
-        "reviewer": "T014 executor; parent independent acceptance pending"
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/17",
+        "reviewed_at": "2026-10-17T22:09:23.429930+00:00",
+        "reviewer": "Parent supervisor independent 51-declaration semantic and dependency PASS; main tree identical"
       },
       "ci_relationship": {
         "proof_head": "4fe831e59f6a7a1f4bbc5e7ce560fc9938902ad7",
@@ -7892,8 +7939,80 @@
           117511336830,
           117512022295
         ],
-        "dashboard_checked_sha": "3134cd89da60344e6dbbe48a4eda77d5ef3892d6"
+        "dashboard_checked_sha": "3134cd89da60344e6dbbe48a4eda77d5ef3892d6",
+        "merged_baseline": {
+          "main_sha": "9f8e351a71cbcd8943db0d9056afdd2bc0a1ffe7",
+          "main_run_id": 39073223285,
+          "final_head": "71229b5e2aa0e3aba2b949103f2e43979f65251a",
+          "final_test_sha": "6ed023673789908f81f5609e6db604e1d7a8e450",
+          "tree": "bf48aa5f007a9377d286db6ec772b60c079925e1",
+          "actual_build_jobs": 3351,
+          "recursive_axiom_audit": 2392,
+          "all_jobs_and_steps": "3 jobs / 32 steps PASS"
+        }
       }
+    },
+    {
+      "id": "T015",
+      "platform_task_id": "01a1498c-c483-77a5-8b91-14b593452001",
+      "task_url": null,
+      "continuation_of": "T014",
+      "title": "真实加权时间L²与仿射缺陷、伴随误差配对",
+      "goal_ids": [
+        "C032"
+      ],
+      "acceptance": [
+        "真实Bochner时间L²的允许权/逆权、双向全状态仿射缺陷、实际冻结解伴随误差配对",
+        "保持T/网格统一阈值；不假设最终误差或目标图界，不反向使用A1；明确剩余原域扩张依赖",
+        "修复当前CI已核实运行链接精确展示；构建审计逐声明核对并交付同一draft PR"
+      ],
+      "dependencies": [
+        "C031"
+      ],
+      "branch": "proof/t015-weighted-time-analysis",
+      "base_commit": "9f8e351a71cbcd8943db0d9056afdd2bc0a1ffe7",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.CoerciveForm.weighted_temporal_duality",
+        "Carleman.CoerciveForm.weighted_temporal_duality_bound",
+        "Carleman.CoerciveForm.weighted_temporal_duality_uniform",
+        "Carleman.Orientation.affine_defect_scalar_ae",
+        "Carleman.Orientation.affine_defect_seminorm_ae",
+        "Carleman.SpatialProfile.logDerivative_frozen_small_uniform",
+        "Carleman.SpatialProfile.timeMap",
+        "Carleman.SpatialProfile.timeMap_ae",
+        "Carleman.SpatialProfile.timeMap_toLp",
+        "Carleman.SpatialProfile.timeMap_norm_le",
+        "Carleman.SpatialProfile.timeMap_inverse",
+        "Carleman.SpatialProfile.timeMap_inner_inverse",
+        "Carleman.SpatialProfile.timeMap_inner_twice",
+        "Carleman.CoerciveForm.weighted_adjoint_remainder_uniform",
+        "Carleman.SpatialProfile.timeMap_extension_norm_sq",
+        "Carleman.SpatialProfile.timeMap_extension_norm_comparison",
+        "Carleman.SpatialProfile.timeMap_affine_defect_le",
+        "Carleman.SpatialProfile.weighted_affine_bochner_defect",
+        "Carleman.SpatialProfile.weighted_affine_defect_uniform",
+        "Carleman.CoerciveForm.weighted_graph_domain_ae",
+        "Carleman.CoerciveForm.weighted_graph_commutator_ae",
+        "Carleman.CoerciveForm.exists_weighted_graph",
+        "Carleman.CoerciveForm.exists_weighted_frozen_graph_remainder_uniform",
+        "Carleman.SpatialProfile.timeMap_commute_multiplier",
+        "Carleman.linear_evolution_residual",
+        "Carleman.CoerciveForm.weighted_evolution_identity",
+        "Carleman.CoerciveForm.weighted_frozen_graph_remainder_uniform"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "已fetch核实PR17合并、main实际3jobs32steps及3351buildjobs/2392审计；固定工具链依赖，复验基线PASS",
+        "完成真实时间L²乘子及逆权、双向全状态3dt加权仿射缺陷、构造实际伴随的精确加权对偶",
+        "从真实冻结移位下界证明任意η时间扰动控制；构造A1/A2加权弱图并吸收时间项，留下原A2实际空间交换子；未假设目标图估计",
+        "接入实际反向伴随的30常数导数余项估计；原域扩张/空间交换子吸收/允许权Euler图及闭合B4仍待"
+      ],
+      "next_action": "完整构建、27声明实际类型及递归公理核对，draft PR和当前CI快照验证"
     }
   ],
   "private_maintenance": {

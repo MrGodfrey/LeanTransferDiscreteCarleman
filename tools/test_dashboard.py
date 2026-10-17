@@ -137,6 +137,35 @@ class StatusRegression(unittest.TestCase):
     def test_ci_source_mismatch_rejected(self):
         with self.assertRaises(ValueError): dashboard.overlay_ci(self.x, build(), OTHER)
 
+    def test_current_run_url_displayed_without_changing_source_or_task_freshness(self):
+        self.x['project']['repository_url'] = 'https://github.com/example/project'
+        url = self.x['project']['repository_url'] + '/actions/runs/123/attempts/2'
+        result = build(); result['ci_url'] = url
+        before = copy.deepcopy(self.x)
+        newer = dashboard.overlay_ci(self.x, result, SHA, url)
+        shown = dashboard.public_status(newer, self.cov)
+        self.assertEqual(shown['verification']['latest_build']['ci_url'], url)
+        self.assertEqual(newer['execution'], before['execution'])
+        self.assertEqual(self.x, before)
+        self.assertEqual(newer['snapshot']['source_commit'], SHA)
+        self.assertEqual(newer['snapshot']['mode'], 'CI_SNAPSHOT')
+        self.assertEqual(newer['dashboard']['approved_urls'], before['dashboard']['approved_urls'] + [url])
+
+    def test_ci_run_mismatch_and_unrelated_urls_rejected(self):
+        self.x['project']['repository_url'] = 'https://github.com/example/project'
+        prefix = self.x['project']['repository_url'] + '/actions/runs/'
+        for url in [prefix + '123/attempts/1', URL, prefix + '123/attempts/1?redirect=1',
+                    prefix + '../issues/1', prefix + '123/attempts/0']:
+            with self.subTest(url=url):
+                result = build(); result['ci_url'] = prefix + '124/attempts/1'
+                with self.assertRaises(ValueError): dashboard.overlay_ci(self.x, result, SHA, url)
+
+    def test_result_url_cannot_approve_itself(self):
+        result = build()
+        newer = dashboard.overlay_ci(self.x, result, SHA)
+        self.assertIsNone(dashboard.public_status(newer, self.cov)['verification']['latest_build']['ci_url'])
+        self.assertEqual(newer['dashboard']['approved_urls'], self.x['dashboard']['approved_urls'])
+
     def test_account_object_removed(self):
         self.assertNotIn('usage', dashboard.public_status(self.x, self.cov))
         self.x['usage'] = {}

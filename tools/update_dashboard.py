@@ -202,11 +202,23 @@ def public_status(x, coverage):
     }
 
 
-def overlay_ci(x, result, expected_sha):
+def overlay_ci(x, result, expected_sha, expected_ci_url=None):
     require(sha(expected_sha) and result['checked_sha'] == expected_sha, 'CI result does not match checked-out snapshot source')
     validate_build(result)
     require(result['status'] in {'PASS', 'FAIL', 'CANCELLED'}, 'CI overlay must be completed')
     x = copy.deepcopy(x)
+    if expected_ci_url is not None:
+        # Only the exact current run supplied by the workflow is authorized.
+        # A result file cannot approve its own URL or arbitrary nested links.
+        repository_url = x['project']['repository_url']
+        require(https_url(repository_url), 'Current CI URL requires a configured HTTPS repository')
+        prefix = repository_url + '/actions/runs/'
+        require(https_url(expected_ci_url) and expected_ci_url.startswith(prefix)
+                and re.fullmatch(r'[1-9][0-9]*/attempts/[1-9][0-9]*', expected_ci_url[len(prefix):]),
+                'Expected CI URL must identify a run attempt in this repository')
+        require(result['ci_url'] == expected_ci_url, 'CI result does not match current workflow run URL')
+        if expected_ci_url not in x['dashboard']['approved_urls']:
+            x['dashboard']['approved_urls'].append(expected_ci_url)
     x['verification']['latest_build'] = result
     if result['status'] == 'PASS':
         x['verification']['last_successful_build'] = result
@@ -226,11 +238,12 @@ def main():
     parser.add_argument('--check', action='store_true')
     parser.add_argument('--ci-result', type=Path)
     parser.add_argument('--expected-sha')
+    parser.add_argument('--expected-ci-url')
     args = parser.parse_args()
     x = json.loads((ROOT / 'state/progress.json').read_text())
     coverage = json.loads((ROOT / 'state/paper_coverage.json').read_text())
     if args.ci_result:
-        x = overlay_ci(x, json.loads(args.ci_result.read_text()), args.expected_sha)
+        x = overlay_ci(x, json.loads(args.ci_result.read_text()), args.expected_sha, args.expected_ci_url)
     validate(x, coverage)
     validate_source(x, coverage)
     payload = json.dumps(public_status(x, coverage), ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c').replace('\u2028', '\\u2028').replace('\u2029', '\\u2029')
