@@ -52,7 +52,7 @@ Section 3 保留 L² 的 δt 阶和能量 √δt 阶；Section 4 保留 a_E+η_A
 - `extensionPlus/Minus` 用原有 Fin N 节点的整数转换及 ceil/floor 实现论文 `(t_{n-1},t_n]` / `[t_n,t_{n+1})`；单元取值与 0/T 端点已证明。
 - `residualPlus/Minus_eq` 在 `D : Submodule ℝ H` 的域上取 `A : D →ₗ[ℝ] H`，对给定 H 值时间导数 `dU`，从冻结方程推出 `ε dU + A U = bar(L f) - bar(μ)(U-R bar(z))`。filter 版本保留几乎处处等式，未改成处处 PDE 假设。dU 与真实 Sobolev 弱导数的识别、连续解存在/正则性以及原文 μ=(Lq)^(2m) 的权族分析仍属 B1/B3/B4。当前 `U : ℝ→D(A)` 是代数用代表：B1 必须提供或转移几乎处处 D(A) 值代表，并保持真实 H 值 Sobolev 弱导数及端点迹；不能据此假设原 Sobolev 解每个时刻都属于 D(A)。
 
-C002 是重构代数接口，C003 是上述载荷/残差消去及所选载荷的离散对应，二者均为 AUXILIARY。它们不等于完整 Section 5：T003 已完成并验收条件性 M2，B5 在该真实范数框架内关闭；B1/B3/B4 仍是原始定理的剩余义务，原文覆盖计数仍为 0/26。
+C002 是重构代数接口，C003 是上述载荷/残差消去及所选载荷的离散对应，二者均为 AUXILIARY。它们不等于完整 Section 5：T003 已完成并验收条件性 M2，B5 在该真实范数框架内关闭；B1/B3/B4 仍是原始定理的剩余义务；T004 后原文覆盖计数为 1/26（Lemma 3.2）。
 
 ## T003 的条件性接口与未清偿清单
 
@@ -94,7 +94,7 @@ C002 是重构代数接口，C003 是上述载荷/残差消去及所选载荷的
    `ErrorBridge.shift` 另列冻结 μ 的实际乘积误差到 `q^(2m)θe` 的界。
    T003 当时尚待从 N1/N2/N5 与 Lemma 3.2 导出共同 K；T004 已证明时间及移位部分并提供字段构造器，剩余空间实例详见下节；未把 `eq:transfer-comparison` 当作前提。
 3. **B4-order / `ErrorBridge.order`**：对真实 e 和每个 j，`‖q^(c_j/2)θ𝒟_j e‖²`
-   受相应完整 `graphSq` 控制。此处原文使用“阶数至多 j、系数有界”；实例化该微分表达式并由阶数证明此条仍待完成。
+   受相应完整 `graphSq` 控制。此处原文使用“阶数至多 j、系数有界”；T003 当时尚待实例化；T005 已在真实弱 Sobolev 实例中证明该阶数条款，详见后节。
 4. **B4 / `ErrorBridge.energy,l2,finite_energy,finite_l2`**：在已推导的辅助离散方程下，
    能量族取 `σ_j=q^(max(0,c_j−2(m−j))/2)θ`，L² 族逐一取
    `q^(c₀/2)θ`、`q^(o/2)θ`、`q^(2m)θ`，误差严格使用
@@ -120,7 +120,7 @@ C002 是重构代数接口，C003 是上述载荷/残差消去及所选载荷的
 ## T004：原文 Lemma 3.2 与具体 L² 单元比较
 
 原稿未修改（`paper/main.tex` SHA256 仍为 `492d3a5ece01681b2440b1481e75937a1daa7214d0e582901566b1a144555cef`）。
-C020 对应 Lemma 3.2 的完整候选声明；C021 是具体范数及 transfer 接口的辅助成果。原文计数仅在独立验收后更新。
+C020/P005 的 Lemma 3.2 全七项已由父监督者独立验收；C021 为已核对的辅助成果。PR7 合并 main `3dff0be3a1eaecbbfeb153e55219b9019bd1549b`，同 SHA main CI39033650091 实际通过，原文计数 1/26。
 
 ### 权类、量词和全部单元结论
 
@@ -188,7 +188,7 @@ A 可在有限的上述指数集合上先取共同上界。扩大的是本单元
 `‖bar μ u‖²_(time,σ) ≤ (2L)^(4m) ‖q^(2m)σu‖²_(time)`，并从右侧有限性推出左侧有限性。
 该常数只含先固定的 m,L，供共同 K 吸收；从而该实例的 `ErrorBridge.shift` 无须重复假设。
 
-### 阶段后的未清偿边界
+### T004 阶段后的未清偿边界（后续更新见 T005）
 
 - B1：周期连续辅助解的存在、真实 H 值弱导数/图估计仍待 Lemmas 3.1/3.4；本阶段未把 a.e. D(A) 正规性加强为每时刻 D(A)。
 - B2：保持已合并证明与实际调用；不重复假设。
@@ -196,4 +196,85 @@ A 可在有限的上述指数集合上先取共同上界。扩大的是本单元
   仍必须给出实际空间/Sobolev 场、p.space/p.derivative/p.observation 的等式以及原文数值空间比较。
   未自动给所有抽象半范数族填充 ComparisonBridge，也未构造整份 TransferBridges。
 - B4：连续/离散正则性、时间与空间误差估计及微分表达式的阶数界仍未证明；连续解/误差的所需加权有限性仍随这些估计处理。
-- B5：保持已验收的条件性组合和吸收。本轮没有声称原始 Theorem 2.1 完成，原文计数等待独立逐项验收。
+- B5：保持已验收的条件性组合和吸收。本轮没有声称原始 Theorem 2.1 完成，原文 Lemma 3.2 已独立验收，计数 1/26。
+
+## T005：权导数、真实弱 Sobolev 场与规范 transfer 几何
+
+本阶段 C022 为 AUXILIARY，72 个新定理、110 个显式声明；原文完成数保持 1/26。
+原文依据为 TeX 294–320、374、681–746、1348–1373，另核对 TeX 2675 的 `𝒟₁=∇`。
+逐声明及全部边界见 `governance/reviews/T005.md`。
+
+### 权导数与真实空间乘法
+
+- `allowedWeight_spatial_derivatives_uniform` 使用实际 `iteratedFDerivWithin`：对固定紧集 S、
+  `ContDiffOn n rho S` 及 `UniqueDiffOn ℝ S`，先取 C>0，再对所有 q≥1、任意实 tau、
+  |eta|=1、j≤n、x∈S，证明 `‖D^j(q^tau exp(q eta rho))‖ ≤ C q^j q^tau exp(q eta rho)`。
+  这里 D^j 为 Fréchet 多线性算子的算子范数。固定 rho 的有限阶界由紧性推导，
+  不直接假设权导数结论。正反权及其倒数均覆盖，常数独立 T/qmax/tau/网格。
+- `SpatialProfile.ofContinuousOn` 从固定紧域上的连续 rho 和 ν a.e. 支持于该域构造
+  真正的 L² 权乘法；乘法函数与上式精确相同，不要求 rho 域外有界。
+- `hasDerivWithinAt_logWeight/allowedWeight` 及 `derivWithin_logWeight_bound` 使用闭时间区间的
+  实际导数。`SpatialProfile.logDerivative` 是 `∂t log sigma` 的真正 L² 乘法算子，
+  `logDerivative_shift_le` 给出 `‖(∂t log sigma)v‖ ≤ β(|tau|+R)/L^(2m) ‖mu v‖`。
+- `shift_derivative_ratio` 对实际 `mu=(Lq)^(2m)` 证明
+  `|mu'|/mu² ≤ 2m beta / (L^(2m) qc^(2m−1))`，保留原 qc 依赖。
+  原文 C²/q'' 假设对这些一阶时间结论不必使用，未增加时间每点 D(A) 假设。
+
+这些是 Lemma 3.1 的依赖。原文 Lipschitz 域及 `C∞(closure Ω)` 的具体表示与上述 within
+导数输入、Fréchet 张量与坐标高阶导数集合的表示、空间弱乘积法则/共轭图范数、
+参数椭圆图估计、周期能量恒等式和存在论尚未全部建立，不能将 Lemma 3.1 标完成。
+
+### 真正的弱 Sobolev 实现
+
+`SpatialTest S` 包括所有全空间 C∞、紧支撑且支撑包含于 S 的实测试函数。
+其本身及真实 Fréchet 方向导数均已证明属于 L²。
+`IsWeakSpatialDerivative` 的 L² 内积式与实际积分式
+`∫ (∂e phi)u = −∫ phi v` 等价。对开域及 a.e. 域内支持的测度证明弱导数唯一性；
+`ν=volume.restrict Ω` 已实际复用构建，无新增的测试函数成员性前提。
+
+`DerivativeFiber d k = EuclideanSpace ℝ (Sym (Fin d) k)`，每个多重指标出现一次。
+`WeakSobolevJet` 由 0..m 阶真实 L² 集合和相邻阶弱导数关系构成线性空间；
+零阶映射的单射性来自逐阶弱导数唯一性。
+`sobolevSubspace` 是它在 H=L² 中的线性像；`sobolevJetEquiv` 和 `sobolevDerivative`
+恢复唯一导数集合。零阶类及加权范数与原 H 类精确相等，无额外范数等价常数。
+这不声称该子空间在 H 拓扑中闭或完备，也不把其 H 诱导范数冒充 H^m 能量拓扑。
+
+`OperatorMultiplier` 用实际有界可测点态线性系数作用于向量值 L² 场。
+标量 `ofCoefficients` 与向量 `ofVectorCoefficients` 从普通有界系数构造它，
+后者的作用精确为 `sum_i v_i • a_i(x)`。`DifferentialExpression` 只求和 k≤j 的系数项，
+其阶数由定义保证。`VectorCoefficient/vectorExpression` 保留梯度等向量值表达式。
+最终 `sobolevGeometry` 允许每个 j 有不同实内积输出空间 Z_j；未限制所有 𝒟_j 为标量。
+
+### B4-order 与 B3 的实际构造
+
+`weighted_density_le` 由真实 L² 三角不等式、Cauchy–Schwarz 和 q≥1 推出有限阶表达式界。
+`CarlemanExponents.order_exponent_le` 对所有 k≤j 证明
+`c_j ≤ 2(m−k)+max(0,c_j−2(m−j))`（Lean j 编号为 j−1），保留原 clipped 能量权。
+`sobolevGeometry_order` 直接得到原 `ErrorBridge.order` 的界，取
+`K=1+sum_j sum_k coefficientBound(j,k)^2`；K 只依赖固定空间系数和阶数，
+与 T/h/dt/q/qmax/方向/状态无关。右侧图项的可积性保持为 B4 `finite_energy` 的既有义务。
+本积分比较不单凭非负积分不等式声称左侧可积；真实解/误差的时间加权有限性仍待解析正则性。
+
+`sobolevGeometry` 在任意 conforming V≤sobolevSubspace 上构造 H、观测、每阶规范弱导数和
+各 𝒟_j 的真实范数，离散 state/load/control 仍取原数值范数数据。
+`conformingDerivative_weak/conformingExpression_ae` 明确真实弱导数和点态表达式，
+无需再假设这些字段仅凭名称代表微分。
+`sobolevGeometry_comparisons` 在单一
+`dt*qmax² ≤ cellThreshold(beta, c0/2+o/2+sum_j c_j/2, rho.bound)` 下，同时给出
+节点重构导数比较及其有限性、状态比较、普通 lift 的载荷比较和实际区域观测比较。
+相应常数为 9、9C_N1、9C_N2、9C_N5，单元分析阈值先于 T/网格/权/状态，
+且不扩大原 N1–N5 的允许权假设。所有周期离散状态和两种 Orientation 均保留。
+
+### 阶段后尚未清偿
+
+- B1：连续周期 shifted/frozen 解存在、真实 H 值 Sobolev 弱导数及图估计仍待；原 a.e. D(A)
+  代表和 H 端点迹完全沿用 T003，未强化为每时刻 D(A)。
+- B2、B5：已证明并复用，不重新假设。
+- B3：T005 的规范 Sobolev 实例已导出各比较字段。实际数值空间必须满足原 N1/N2/N5
+  的统一节点界；连续解/误差/残差的可积性、所有允许参数下的整份 ComparisonBridge/
+  TransferBridges 尚待构造。任意自由给出的抽象 TransferGeometry 不自动满足这些识别。
+- B4-order：在上述真实 Sobolev 实例中由有界系数阶数定理导出，不再是独立估计前提。
+  通用条件性定理的 ErrorBridge.order 字段仍保留以兼容其它实现；调用该实例时由本定理填充。
+- B4：Euler 适定与正则性、连续/离散时间空间误差、energy/l2/finite_energy/finite_l2、
+  权族所需有限性及原阈值的统一选择仍待 Lemmas 3.1/3.3/3.4、Theorem 3.5、Section 4。
+  不从本阶段辅助结果推断这些存在或误差估计。

@@ -93,24 +93,24 @@
         "Carleman.CellEstimates.weight_quotient_essSup",
         "Carleman.CellEstimates.global_cell_bounds"
       ],
-      "declaration_version": "4a51c158b63bff188ca53625b56d2de94f8f91f8",
-      "verification_status": "BUILT",
+      "declaration_version": "3dff0be3a1eaecbbfeb153e55219b9019bd1549b",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": {
         "status": "PASS",
-        "checked_sha": "4a51c158b63bff188ca53625b56d2de94f8f91f8",
-        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39032650217/attempts/1",
-        "finished_at": "2026-10-17T12:30:27.764337+00:00",
+        "checked_sha": "3dff0be3a1eaecbbfeb153e55219b9019bd1549b",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39033650091/attempts/1",
+        "finished_at": "2026-10-17T12:45:18.010167+00:00",
         "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "targets": [
           "Carleman"
         ],
-        "source_head_sha": "2d0523a1ad31b165fe5e9f26829b0f8ae317f95f"
+        "source_head_sha": "3dff0be3a1eaecbbfeb153e55219b9019bd1549b"
       },
       "semantic_review": {
-        "checked_sha": "4a51c158b63bff188ca53625b56d2de94f8f91f8",
+        "checked_sha": "3dff0be3a1eaecbbfeb153e55219b9019bd1549b",
         "declarations": [
           "Carleman.cell_estimates_uniform",
           "Carleman.CellEstimates.weight_quotient_essSup",
@@ -118,11 +118,12 @@
         ],
         "result": "PASS",
         "axiom_check": "PASS",
-        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2d0523a1ad31b165fe5e9f26829b0f8ae317f95f/governance/reviews/T004.md",
-        "reviewed_at": "2026-10-17T12:32:37.549574+00:00",
-        "reviewer": "T004 executor; parent independent acceptance pending"
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/7",
+        "reviewed_at": "2026-10-17T12:52:31.342266+00:00",
+        "reviewer": "parent supervisor; independent acceptance delivered to executor; recorded_at equals ledger integration time"
       },
-      "blocker": "父监督者独立语义/依赖验收待完成；不计入已完成原文结果"
+      "blocker": null,
+      "independent_review_status": "PASS"
     },
     {
       "id": "P006",

@@ -9,3 +9,7 @@ public import Carleman.Transfer.Conditional
 public import Carleman.Weights.CellLemma
 public import Carleman.Transfer.ConcreteNorms
 public import Carleman.Transfer.ShiftNorm
+
+public import Carleman.Weights.SpatialDerivatives
+public import Carleman.Weights.TemporalDerivatives
+public import Carleman.Transfer.SobolevGeometry
