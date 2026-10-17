@@ -9,7 +9,7 @@
     "started_at": "2026-10-17T09:43:34.927869+00:00"
   },
   "execution": {
-    "state": "RUNNING",
+    "state": "REVIEW",
     "current_task_id": "T010",
     "supervisor_checked_at": "2026-10-17T13:54:55.912702+00:00",
     "next_action": "父监督者独立验收PR13的85显式声明；原参数Sobolev/时间弱共轭及B4保持未完成，验收后从合并基线接续",
