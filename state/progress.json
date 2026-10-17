@@ -9,38 +9,38 @@
     "started_at": "2026-10-17T09:43:34.927869+00:00"
   },
   "execution": {
-    "state": "RUNNING",
+    "state": "REVIEW",
     "current_task_id": "T014",
     "supervisor_checked_at": "2026-10-17T13:54:55.912702+00:00",
-    "next_action": "整阶段根目标构建、递归公理审计、51声明逐项核对及draft PR实际CI",
+    "next_action": "父监督者独立51声明验收；接续原Lipschitz同时L²/Hⁿ扩张及完整允许权图/B4，复用已证全空间插值与冻结实际误差能量",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-17T21:18:09.864026+00:00"
+    "last_activity_at": "2026-10-17T21:45:50.198368+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "bed432f9ab0eebd8a31163608ff72c422299e93d",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39069920982/attempts/1",
-      "finished_at": "2026-10-17T21:14:12.617152+00:00",
+      "checked_sha": "3134cd89da60344e6dbbe48a4eda77d5ef3892d6",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39071995463/attempts/1",
+      "finished_at": "2026-10-17T21:43:56.116811+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "bed432f9ab0eebd8a31163608ff72c422299e93d"
+      "source_head_sha": "4fe831e59f6a7a1f4bbc5e7ce560fc9938902ad7"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "bed432f9ab0eebd8a31163608ff72c422299e93d",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39069920982/attempts/1",
-      "finished_at": "2026-10-17T21:14:12.617152+00:00",
+      "checked_sha": "3134cd89da60344e6dbbe48a4eda77d5ef3892d6",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39071995463/attempts/1",
+      "finished_at": "2026-10-17T21:43:56.116811+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "bed432f9ab0eebd8a31163608ff72c422299e93d"
+      "source_head_sha": "4fe831e59f6a7a1f4bbc5e7ce560fc9938902ad7"
     }
   },
   "milestones": [
@@ -3093,7 +3093,7 @@
       "paper_ref": "Theorem3.5冻结时间误差；Lemma3.1全空间参数插值依赖",
       "milestone": "M3",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [],
       "lean_declarations": [
@@ -3143,14 +3143,79 @@
         "Carleman.TimeWeightRegularity.frozen_shift_lower_ae",
         "Carleman.frozen_shift_margin_uniform"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "3134cd89da60344e6dbbe48a4eda77d5ef3892d6",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "3134cd89da60344e6dbbe48a4eda77d5ef3892d6",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39071995463/attempts/1",
+        "finished_at": "2026-10-17T21:43:56.116811+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "4fe831e59f6a7a1f4bbc5e7ce560fc9938902ad7"
+      },
+      "semantic_review": {
+        "checked_sha": "3134cd89da60344e6dbbe48a4eda77d5ef3892d6",
+        "declarations": [
+          "Carleman.bochnerL2Norm_congr_ae",
+          "Carleman.bochnerL2Norm_neg",
+          "Carleman.bochnerL2Norm_sub",
+          "Carleman.bochnerL2Norm_const_smul",
+          "Carleman.PeriodicWeakTrajectory.domainError_value_ae",
+          "Carleman.PeriodicWeakTrajectory.domainError_L2",
+          "Carleman.PeriodicWeakTrajectory.domainError_operator_L2",
+          "Carleman.PeriodicWeakTrajectory.domainError_residual_ae",
+          "Carleman.CoerciveForm.IsAssociated.nonempty_frozenEulerPair",
+          "Carleman.SpatialTest.convolution_square_le",
+          "Carleman.SpatialTest.convolution_memLp_norm_le",
+          "Carleman.discrete_convex_maximum",
+          "Carleman.discrete_logConvex_maximum",
+          "Carleman.spatialMollifier_nonneg",
+          "Carleman.spatialMollifier_integral",
+          "Carleman.spatialMollifier_converges",
+          "Carleman.weak_spatial_chain_norm_sq_le",
+          "Carleman.WeakSobolevJet.component_le_maximum",
+          "Carleman.WeakSobolevJet.componentMaximum_le_field",
+          "Carleman.WeakSobolevJet.componentMaximum_zero",
+          "Carleman.WeakSobolevJet.component_neighbor_sq_le",
+          "Carleman.WeakSobolevJet.componentMaximum_logConvex",
+          "Carleman.WeakSobolevJet.scaled_componentMaximum_le",
+          "Carleman.WeakSobolevJet.fullSpace_parameter_interpolation",
+          "Carleman.WeakSobolevJet.fullSpace_parameter_interpolation_uniform",
+          "Carleman.shiftedForm_coercive_of_lower",
+          "Carleman.shiftedOperator_weighted_energy_of_lower",
+          "Carleman.shiftedOperator_spacetime_energy_of_lower",
+          "Carleman.real_convolution_comm",
+          "Carleman.SpatialTest.convolution_right_memLp_norm_le",
+          "Carleman.SpatialTest.weak_chain_convolution_sq_le",
+          "Carleman.integral_mul_eq_L2_inner",
+          "Carleman.integral_sq_eq_bochnerL2Norm_sq",
+          "Carleman.integral_mul_sq_le",
+          "Carleman.abs_integral_mul_le",
+          "Carleman.SpatialTest.reflected_derivative",
+          "Carleman.IsWeakSpatialDerivative.convolution_exchange",
+          "Carleman.IsWeakSpatialDerivative.fderiv_convolution",
+          "Carleman.SpatialTest.smooth_convolution",
+          "Carleman.PeriodicWeakTrajectory.domainError_conforming_L2",
+          "Carleman.frozen_error_energy_uniform",
+          "Carleman.frozen_spacetime_operator_energy_uniform",
+          "Carleman.TimeWeightRegularity.frozen_shift_lower",
+          "Carleman.TimeWeightRegularity.frozen_shift_lower_ae",
+          "Carleman.frozen_shift_margin_uniform"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4fe831e59f6a7a1f4bbc5e7ce560fc9938902ad7/governance/reviews/T014.md",
+        "reviewed_at": "2026-10-17T21:45:50.198368+00:00",
+        "reviewer": "T014 executor; parent independent acceptance pending"
+      },
       "blocker": "原Lipschitz域同时L²/Hⁿ有界扩张、统一允许权图界与完整加权时间/空间B4仍待；本阶段辅助结论已完成",
       "dependencies": [
         "C030"
       ],
-      "pr_url": null
+      "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/17"
     }
   ],
   "events": [
@@ -3255,11 +3320,16 @@
       "at": "2026-10-17T21:01:30.247912+00:00",
       "public_summary": "闭包光滑域内共轭及真实时空参数能量已构建；阶段PR待独立验收，原参数插值与完整加权B4仍待，原文1/26",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/16"
+    },
+    {
+      "at": "2026-10-17T21:45:50.198368+00:00",
+      "public_summary": "真实冻结误差能量与全空间弱参数插值已构建；阶段PR待独立验收，原域扩张与完整加权B4仍待，原文1/26",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/17"
     }
   ],
   "snapshot": {
-    "synced_at": "2026-10-17T21:01:30.247912+00:00",
-    "source_commit": "afbc3dd302688155594abf25fa8c16c12fe5d7a2",
+    "synced_at": "2026-10-17T21:45:50.198368+00:00",
+    "source_commit": "3134cd89da60344e6dbbe48a4eda77d5ef3892d6",
     "mode": "LOCAL_SNAPSHOT"
   },
   "dashboard": {
@@ -3314,7 +3384,10 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f863835397270d94f2c9b5a33f6cc2fa5de38a6e/governance/reviews/T012.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/16",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39068899496/attempts/1",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/565b95ef6c7721eb69d4e20c224e87c8c5cea2c4/governance/reviews/T013.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/565b95ef6c7721eb69d4e20c224e87c8c5cea2c4/governance/reviews/T013.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/17",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39071995463/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4fe831e59f6a7a1f4bbc5e7ce560fc9938902ad7/governance/reviews/T014.md"
     ]
   },
   "schedules": [
@@ -3885,7 +3958,8 @@
         "proof_tree": "1ed763ac86186a70678a7b6900fd8e05bba8aa37",
         "aggregate_blob": "80878d7d5a43a6da0fd8c1b6721589835396c450",
         "axiom_check_blob": "732ba4106e77363794eaf067f20c79e0fd349dd3"
-      }
+      },
+      "declaration_version": "c954f5133a2a32d5e6abd8894c5c6ebee0d651b7"
     },
     {
       "id": "T003",
@@ -7629,9 +7703,9 @@
       ],
       "branch": "proof/t014-frozen-energy-interpolation",
       "base_commit": "bed432f9ab0eebd8a31163608ff72c422299e93d",
-      "status": "RUNNING",
-      "pr_url": null,
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/17",
+      "checkpoint_commit": "4fe831e59f6a7a1f4bbc5e7ce560fc9938902ad7",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.bochnerL2Norm_congr_ae",
@@ -7686,7 +7760,18 @@
         "Carleman.TimeWeightRegularity.frozen_shift_lower_ae",
         "Carleman.frozen_shift_margin_uniform"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "3134cd89da60344e6dbbe48a4eda77d5ef3892d6",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39071995463/attempts/1",
+        "finished_at": "2026-10-17T21:43:56.116811+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "4fe831e59f6a7a1f4bbc5e7ce560fc9938902ad7"
+      },
       "blocker": null,
       "attempts": [
         "已核实PR16合并main、实际3job32steps及12模块/root重编译3329jobs/2276审计；固定Lean/mathlib保持",
@@ -7694,7 +7779,121 @@
         "已证任意下界μ、双向真实冻结系数与实际误差残差/能量；A1仅单向使用，无L^(2m)损失",
         "已证反射测试弱卷积交换、实际常数1 L²收缩、光滑卷积IBP、具体bump a.e.极限/Fatou、Sym邻阶递推及有限最大值原理；完整全空间参数插值"
       ],
-      "next_action": "整阶段根目标构建、递归公理审计、51声明逐项核对及draft PR实际CI"
+      "next_action": "父监督者独立51声明验收；接续原Lipschitz同时L²/Hⁿ扩张及完整允许权图/B4，复用已证全空间插值与冻结实际误差能量",
+      "declaration_version": "3134cd89da60344e6dbbe48a4eda77d5ef3892d6",
+      "semantic_review": {
+        "checked_sha": "3134cd89da60344e6dbbe48a4eda77d5ef3892d6",
+        "declarations": [
+          "Carleman.bochnerL2Norm_congr_ae",
+          "Carleman.bochnerL2Norm_neg",
+          "Carleman.bochnerL2Norm_sub",
+          "Carleman.bochnerL2Norm_const_smul",
+          "Carleman.PeriodicWeakTrajectory.domainError",
+          "Carleman.PeriodicWeakTrajectory.domainError_value_ae",
+          "Carleman.PeriodicWeakTrajectory.domainError_L2",
+          "Carleman.PeriodicWeakTrajectory.domainError_operator_L2",
+          "Carleman.PeriodicWeakTrajectory.domainError_residual_ae",
+          "Carleman.FrozenEulerPair",
+          "Carleman.CoerciveForm.IsAssociated.nonempty_frozenEulerPair",
+          "Carleman.SpatialTest.convolution_square_le",
+          "Carleman.SpatialTest.convolution_memLp_norm_le",
+          "Carleman.discrete_convex_maximum",
+          "Carleman.discrete_logConvex_maximum",
+          "Carleman.shrinkingBump",
+          "Carleman.spatialMollifier",
+          "Carleman.spatialMollifier_nonneg",
+          "Carleman.spatialMollifier_integral",
+          "Carleman.spatialMollifier_converges",
+          "Carleman.weak_spatial_chain_norm_sq_le",
+          "Carleman.WeakSobolevJet.componentMaximum",
+          "Carleman.WeakSobolevJet.component_le_maximum",
+          "Carleman.WeakSobolevJet.componentMaximum_le_field",
+          "Carleman.WeakSobolevJet.componentMaximum_zero",
+          "Carleman.WeakSobolevJet.component_neighbor_sq_le",
+          "Carleman.WeakSobolevJet.componentMaximum_logConvex",
+          "Carleman.WeakSobolevJet.scaled_componentMaximum_le",
+          "Carleman.WeakSobolevJet.fullSpace_parameter_interpolation",
+          "Carleman.WeakSobolevJet.fullSpace_parameter_interpolation_uniform",
+          "Carleman.shiftedForm_coercive_of_lower",
+          "Carleman.shiftedOperator_weighted_energy_of_lower",
+          "Carleman.shiftedOperator_spacetime_energy_of_lower",
+          "Carleman.real_convolution_comm",
+          "Carleman.SpatialTest.convolution_right_memLp_norm_le",
+          "Carleman.SpatialTest.weak_chain_convolution_sq_le",
+          "Carleman.integral_mul_eq_L2_inner",
+          "Carleman.integral_sq_eq_bochnerL2Norm_sq",
+          "Carleman.integral_mul_sq_le",
+          "Carleman.abs_integral_mul_le",
+          "Carleman.SpatialTest.reflected",
+          "Carleman.SpatialTest.reflected_derivative",
+          "Carleman.IsWeakSpatialDerivative.convolution_exchange",
+          "Carleman.IsWeakSpatialDerivative.fderiv_convolution",
+          "Carleman.SpatialTest.smooth_convolution",
+          "Carleman.PeriodicWeakTrajectory.domainError_conforming_L2",
+          "Carleman.frozen_error_energy_uniform",
+          "Carleman.frozen_spacetime_operator_energy_uniform",
+          "Carleman.TimeWeightRegularity.frozen_shift_lower",
+          "Carleman.TimeWeightRegularity.frozen_shift_lower_ae",
+          "Carleman.frozen_shift_margin_uniform"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4fe831e59f6a7a1f4bbc5e7ce560fc9938902ad7/governance/reviews/T014.md",
+        "reviewed_at": "2026-10-17T21:45:50.198368+00:00",
+        "reviewer": "T014 executor; parent independent acceptance pending"
+      },
+      "ci_relationship": {
+        "proof_head": "4fe831e59f6a7a1f4bbc5e7ce560fc9938902ad7",
+        "checked_test_sha": "3134cd89da60344e6dbbe48a4eda77d5ef3892d6",
+        "base_sha": "bed432f9ab0eebd8a31163608ff72c422299e93d",
+        "proof_and_test_tree": "a939477bd14465e1d1762e773b3d8e8bcf04ab8e",
+        "test_parents": [
+          "bed432f9ab0eebd8a31163608ff72c422299e93d",
+          "4fe831e59f6a7a1f4bbc5e7ce560fc9938902ad7"
+        ],
+        "run_id": 39071995463,
+        "all_jobs_and_steps": "3 jobs / 32 steps PASS",
+        "actual_build_jobs": 3351,
+        "recursive_axiom_audit": 2392,
+        "recompiled_new_modules": 13,
+        "declaration_artifact_sha256": "d2d97175edca79e3ac5ee6da6472711c1c6943e1da7b4cd1a8ef730cee7a392c",
+        "artifacts": [
+          {
+            "artifact_id": 12115740859,
+            "name": "lean-ci-result",
+            "archive_sha256": "488b43c03138acc1f2282c8de6aff0957111f487b82ab4273dcf962555275c92",
+            "members": [
+              "result.json"
+            ]
+          },
+          {
+            "artifact_id": 12114634728,
+            "name": "lean-declaration-evidence",
+            "archive_sha256": "b175ac650b874a370533a15479eb648072761b22f676f3189193859c34f82889",
+            "members": [
+              "axioms.txt"
+            ]
+          },
+          {
+            "artifact_id": 12114659856,
+            "name": "progress-dashboard",
+            "archive_sha256": "0931efc4633b587c1a2f90cc0fcbd78ba0416a0faba5fbf9fb30916a42e53237",
+            "members": [
+              "app.js",
+              "data.js",
+              "index.html",
+              "style.css"
+            ]
+          }
+        ],
+        "lean_job_id": 117511336830,
+        "jobs": [
+          117511336598,
+          117511336830,
+          117512022295
+        ],
+        "dashboard_checked_sha": "3134cd89da60344e6dbbe48a4eda77d5ef3892d6"
+      }
     }
   ],
   "private_maintenance": {
