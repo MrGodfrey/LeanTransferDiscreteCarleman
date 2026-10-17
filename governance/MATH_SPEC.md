@@ -467,3 +467,33 @@ L≥L₀、dt qmax²≤δ 即给出唯一解和该常数16图界。
 3. B2/B5 继续复用；规范 B3 的所有比较和有限性继续复用，现可输入本阶段构造的真实 B1 解。
    B4 的 order/shift/finite 条款已证；实际 energy/l2 时间与空间误差、统一阈值组合仍待。
    `TransferBridges` 的剩余实质误差未消去，原 Theorem2.1 仍未完成。
+
+## T010：全阶弱空间乘积、双向加权共轭与原移位 form
+
+C027 为 AUXILIARY，14模块/67定理/85显式声明；逐项核对和表示边界见 `reviews/T010.md`。
+完整 Lemmas3.1/3.3/3.4 未完成；原稿/原目标不改，原文计数仍1/26。
+
+`WeakSobolevJet.weightedNorm` 是原 N 的真实有限平方和平方根，`parameterNorm` 是原 R 的
+真实各阶L²范数之和。阶数分别取m和2m，字段沿用原Sym多重指标与Euclidean范数。
+通过有序word递推证明真实分布Leibniz公式，再由分量范数平方恒等式还原全字段；没有重新假设高阶弱乘积。
+`conforming_conjugation_uniform` 在A2的实际域保持性下，先选一个C，再对所有TimeWeight、
+时间、tau和正/负profile、原子空间全部状态给R与N的双向空间比较。逆向实际使用逆权导数展开。
+空间C不依赖T/L/qmax/网格/tau/符号/状态；n!/有限profile导数界和固定card(Sym)损失均可见。
+入口明确使用rho在包含紧集K的开邻域U上C∞，而非擅自将任意闭集ContDiffOn识别为光滑延拓；
+若原rho采用另一种C∞(闭包)约定，表示等价仍需接入。form和A2扰动不需要此入口。
+
+`allowed_shiftedForm_bound` 与 `allowed_shiftedForm_coercive_uniform` 完成原A3推出的
+两个空间form结论：C(L)=C+L^(2m)；给定B≥0先选L₀=max(1,C+B)，保留cN²+B‖qσv‖²。
+σ²v使用同一允许权作用两次，未扩大原允许指数族。配对是实际L²，原V的能量拓扑未换为H诱导范数。
+`conjugatedCommutator_parameter_le` 使用原A2的实际[A,σ]σ⁻¹v，给C/L倍R_(Lq)的空间扰动界。
+没有将目标图估计或最终离散估计作为这些结论的前提。
+
+### 继续未清偿的义务
+
+1. 原bounded Lipschitz域上的参数Sobolev插值/扩张：固定mathlib现有全空间紧支撑GNS及
+   Bessel-potential分布不能直接覆盖一般原状态。零延拓会添加边界条件；只用A1粗界会产生
+   错误q幂；均未采用。需实际Lipschitz扩张+缩放插值或等价局部差商证明，保持原域一般性。
+2. 真正时间弱乘积、允许权的完整时空图估计及Euler加权最大正规性尚缺；本阶段空间R比较
+   不等于各阶Bochner L²范数之和的原时空R结论。未声称已完成eq:primitivegraph。
+3. B1存在/一般弱唯一性/真实弱正规性/周期迹已由T009清偿；B2/B5、规范B3及B4-order/shift/finite继续复用。
+   B4实际energy/l2时间与空间误差及统一阈值组合仍待，`TransferBridges.solutions`未整体清偿。
