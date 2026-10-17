@@ -85,15 +85,44 @@
       "pdf_page": 13,
       "tex_line": 789,
       "milestone": "M3",
-      "claim_ids": [],
-      "lean_declarations": [],
-      "declaration_version": null,
-      "verification_status": "PLANNED",
+      "claim_ids": [
+        "C020"
+      ],
+      "lean_declarations": [
+        "Carleman.cell_estimates_uniform",
+        "Carleman.CellEstimates.weight_quotient_essSup",
+        "Carleman.CellEstimates.global_cell_bounds"
+      ],
+      "declaration_version": "4a51c158b63bff188ca53625b56d2de94f8f91f8",
+      "verification_status": "BUILT",
       "scope": "PAPER",
       "extra_hypotheses": [],
-      "build_evidence": null,
-      "semantic_review": null,
-      "blocker": null
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "4a51c158b63bff188ca53625b56d2de94f8f91f8",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39032650217/attempts/1",
+        "finished_at": "2026-10-17T12:30:27.764337+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "2d0523a1ad31b165fe5e9f26829b0f8ae317f95f"
+      },
+      "semantic_review": {
+        "checked_sha": "4a51c158b63bff188ca53625b56d2de94f8f91f8",
+        "declarations": [
+          "Carleman.cell_estimates_uniform",
+          "Carleman.CellEstimates.weight_quotient_essSup",
+          "Carleman.CellEstimates.global_cell_bounds"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2d0523a1ad31b165fe5e9f26829b0f8ae317f95f/governance/reviews/T004.md",
+        "reviewed_at": "2026-10-17T12:32:37.549574+00:00",
+        "reviewer": "T004 executor; parent independent acceptance pending"
+      },
+      "blocker": "父监督者独立语义/依赖验收待完成；不计入已完成原文结果"
     },
     {
       "id": "P006",
