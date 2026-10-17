@@ -348,3 +348,44 @@ K 同时支配 `differentialFamilyBound` 与 `(2L)^(4m)`；这些常数只依赖
 - B4：order、shift、finite_energy、finite_l2 在此实例中均已消去；剩下真实能量与 L² 误差估计，
   包括 Euler 适定/时间与空间误差、原权族覆盖与统一阈值的完整应用。
 - 完整 `TransferBridges` 仍需 B1 每个载荷的存在量词和 B4 两项估计，不能从本构造推断原始 Theorem 2.1。
+
+## T007：原 form 的关联算子与周期 Euler 适定
+
+C024 为 AUXILIARY：12 模块、66 定理、104 显式声明，完整逐项清单见 `reviews/T007.md`。
+本阶段改变证明路线，直接在有限个原无限维能量空间的 Hilbert 直积上用 Lax–Milgram；
+不需要先构造无界谱分解或预设周期解。原稿及最终结论未改，原文计数仍 1/26。
+
+`SobolevHilbert` 的范数平方恰为每阶实际弱导数 L² 范数平方和，且与既有弱 jet 图拓扑
+连续线性等价。`conformingHilbert` 的零阶嵌入范围严格等于原 V；原 V 在 Sobolev 拓扑闭
+给出能量空间完备，原 H 稠密性给出稠密嵌入。没有将 V 的 H 诱导范数冒充能量范数。
+`conformingCoerciveForm` 接入原连续有界对称 coercive form；`IsAssociated` 是原 A 的完整
+变分域/作用定义。`domain_eq` 和 `operator_eq` 证明既有 D/A 与构造完全一致。
+
+由 A1 推出每个 r≥0 的 (A+r) 逆、真正 H×H 图闭性及 D 在 H 稠密。
+`existsUnique_periodicEuler` / `conformingEuler_existsUnique` 对任意非负节点 μ、任意实际 H
+节点载荷、所有网格和两个方向证明整个周期 Euler 存在唯一；无空间有限维或低频限制。
+
+`euler_energy_identity` 证明原周期能量恒等式的 form 写法：A 半阶能量项写为
+Σa(Δu,Δu)=dt²Σa(Du,Du)，按原 A1 等于对应 A^(1/2) 能量，不额外构造分数幂算子。
+移位缺陷为 −Σ(μ(τ⁻¹i)−μ(i))‖uᵢ‖²，τ 分别为 prev/next。
+直接反向使用已证单元分析得两方向同常数的 μ=(Lq)²ᵐ 增量界，并消去半吸收前提。
+令 S=2·(2m)·2^(2m−1)·β，L≥max(1,2S)，dt·qmax²≤cellThreshold(β,0,0)，
+`euler_unweighted_graph` 得到真实 dt 加权离散范数
+‖D±u‖+‖Au‖+‖μu‖≤3‖D±u+Au+μu‖。
+`periodicEuler_wellposed` 同时给出实际唯一解与 prescribed 载荷范数界。
+这些阈值/常数先于 T、网格、权、方向、载荷、状态；qmax 没有进入图估计常数。
+原 A1 椭圆界进一步给出实际每阶未缩放弱导数序列的 L² 范数和界。
+
+### 更新后的未清偿义务
+
+- B1：连续周期 shifted/frozen 解存在、真正 H 时间弱导数与周期迹构造、连续周期能量、
+  参数 Sobolev 图估计仍待。关联算子的图闭性和定义域稠密已证明，光滑稠密核未证明。
+  `PeriodicWeakTrajectory` 的 a.e. 域代表没有改成每时刻域正规性。
+- Lemma 3.1 / 3.3：原 Lipschitz 域上的参数插值与 smooth-closure 接入、高阶弱乘积/共轭、
+  时间弱乘积及允许权族统一加权估计仍待。上述未缩放导数界不含 (Lq)^(2m−j)，
+  不声称完成 eq:euler-unweighted-graph 或完整加权 Lemma 3.3。
+- B2/B5 已证明；B3 在规范 Sobolev 实例和已存在 B1 下沿用 T006 完整构造。
+- B4：Euler 存在和未加权算子估计已导出；原实际能量/L²时间及空间误差、允许权族的
+  加权正则性和统一阈值组合仍待。order/shift/finite_energy/finite_l2 沿用 T006。
+- 完整 TransferBridges 的 B1 存在量词和 B4 两项误差没有被本阶段结果替代；原 Theorem 2.1
+  仍未完成，无新增最终离散估计假设。

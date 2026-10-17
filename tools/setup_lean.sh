@@ -31,7 +31,8 @@ if [ "$#" -eq 0 ]; then
     Mathlib.Analysis.Normed.Lp.MeasurableSpace Mathlib.Data.Fintype.Vector \
     Mathlib.MeasureTheory.Function.StronglyMeasurable.Lemmas \
     Mathlib.Analysis.Calculus.FDeriv.Measurable Mathlib.Data.Multiset.Sort \
-    Mathlib.MeasureTheory.Function.LpSpace.Indicator
+    Mathlib.MeasureTheory.Function.LpSpace.Indicator \
+    Mathlib.Analysis.InnerProductSpace.LaxMilgram Mathlib.Analysis.InnerProductSpace.PiL2
 fi
 lake exe cache get "$@"
 test "$task_manifest_hash" = "$(sha256sum lake-manifest.json)"
