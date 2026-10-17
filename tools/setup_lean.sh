@@ -25,7 +25,12 @@ if [ "$#" -eq 0 ]; then
     Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic Mathlib.MeasureTheory.Function.Floor \
     Mathlib.MeasureTheory.Integral.Prod Mathlib.Analysis.Calculus.MeanValue \
     Mathlib.Analysis.SpecialFunctions.Log.Deriv Mathlib.Analysis.SpecialFunctions.ExpDeriv \
-    Mathlib.Analysis.Normed.Module.Seminorm.Norm Mathlib.Algebra.Field.Periodic
+    Mathlib.Analysis.Normed.Module.Seminorm.Norm Mathlib.Algebra.Field.Periodic \
+    Mathlib.Analysis.Calculus.ContDiff.Bounds \
+    Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff \
+    Mathlib.Analysis.Normed.Lp.MeasurableSpace Mathlib.Data.Fintype.Vector \
+    Mathlib.MeasureTheory.Function.StronglyMeasurable.Lemmas \
+    Mathlib.MeasureTheory.Function.LpSpace.Indicator
 fi
 lake exe cache get "$@"
 test "$task_manifest_hash" = "$(sha256sum lake-manifest.json)"

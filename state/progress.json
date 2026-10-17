@@ -9,38 +9,38 @@
     "started_at": "2026-10-17T09:43:34.927869+00:00"
   },
   "execution": {
-    "state": "RUNNING",
+    "state": "REVIEW",
     "current_task_id": "T005",
     "supervisor_checked_at": "2026-10-17T12:52:31.342266+00:00",
-    "next_action": "完成实际 PR CI、公理审计及同 SHA 声明绑定，交父监督者独立验收；随后从已合并基线推进连续 shifted graph/Euler 完整阶段",
+    "next_action": "父监督者独立核对 PR8 的72定理、向量值范围、真实弱Sobolev/B3/B4-order及最终CI；验收合并后同一平台任务继续连续 shifted graph/Euler 完整阶段，不逐引理交接",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-17T13:26:19.479271+00:00"
+    "last_activity_at": "2026-10-17T13:37:23.501085+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "3dff0be3a1eaecbbfeb153e55219b9019bd1549b",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39033650091/attempts/1",
-      "finished_at": "2026-10-17T12:45:18.010167+00:00",
+      "checked_sha": "aef1e1d9b4a56d48157d68bec543a1b6c88cd9d9",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39036612338/attempts/1",
+      "finished_at": "2026-10-17T13:36:05.922042+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "3dff0be3a1eaecbbfeb153e55219b9019bd1549b"
+      "source_head_sha": "72aff3cccabcb077bd13a1b1956caab5a3e1173a"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "3dff0be3a1eaecbbfeb153e55219b9019bd1549b",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39033650091/attempts/1",
-      "finished_at": "2026-10-17T12:45:18.010167+00:00",
+      "checked_sha": "aef1e1d9b4a56d48157d68bec543a1b6c88cd9d9",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39036612338/attempts/1",
+      "finished_at": "2026-10-17T13:36:05.922042+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "3dff0be3a1eaecbbfeb153e55219b9019bd1549b"
+      "source_head_sha": "72aff3cccabcb077bd13a1b1956caab5a3e1173a"
     }
   },
   "milestones": [
@@ -1257,7 +1257,7 @@
       "paper_ref": "eq:allowed-weight-derivatives / Section 5 B4-order",
       "milestone": "M3",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [],
       "lean_declarations": [
@@ -1334,14 +1334,107 @@
         "Carleman.TimeWeightRegularity.shifted_power_derivative_ratio",
         "Carleman.TimeWeightRegularity.shift_derivative_ratio"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "aef1e1d9b4a56d48157d68bec543a1b6c88cd9d9",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "aef1e1d9b4a56d48157d68bec543a1b6c88cd9d9",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39036612338/attempts/1",
+        "finished_at": "2026-10-17T13:36:05.922042+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "72aff3cccabcb077bd13a1b1956caab5a3e1173a"
+      },
+      "semantic_review": {
+        "checked_sha": "aef1e1d9b4a56d48157d68bec543a1b6c88cd9d9",
+        "declarations": [
+          "Carleman.DifferentialExpression.boundSq_nonneg",
+          "Carleman.DifferentialExpression.apply_ae",
+          "Carleman.DifferentialExpression.weighted_sq_le",
+          "Carleman.DifferentialExpression.weighted_density_le",
+          "Carleman.CarlemanExponents.order_exponent_le",
+          "Carleman.DifferentialExpression.onFields_apply",
+          "Carleman.DifferentialExpression.timeSq_le_graph",
+          "Carleman.DifferentialExpression.aestronglyMeasurable_apply",
+          "Carleman.OperatorMultiplier.memLp_apply",
+          "Carleman.OperatorMultiplier.map_ae",
+          "Carleman.OperatorMultiplier.map_add",
+          "Carleman.OperatorMultiplier.map_smul",
+          "Carleman.OperatorMultiplier.norm_map_le",
+          "Carleman.OperatorMultiplier.map_weight",
+          "Carleman.OperatorMultiplier.weighted_seminorm_le",
+          "Carleman.OperatorMultiplier.ofCoefficients_apply",
+          "Carleman.OperatorMultiplier.ofCoefficients_map_ae",
+          "Carleman.OperatorMultiplier.const_map_ae",
+          "Carleman.OperatorMultiplier.ofVectorCoefficients_apply",
+          "Carleman.OperatorMultiplier.ofVectorCoefficients_map_ae",
+          "Carleman.derivativeComponent_ae",
+          "Carleman.WeakSobolevJet.field_weak_derivative",
+          "Carleman.WeakSobolevJet.field_weighted_sq",
+          "Carleman.WeakSobolevJet.expression_weighted_density_le",
+          "Carleman.WeakSobolevJet.vectorExpression_apply_ae",
+          "Carleman.derivativeComponent_ext",
+          "Carleman.derivativeFiber_zero_norm_sq",
+          "Carleman.WeakSobolevJet.eq_zero_of_value_eq_zero",
+          "Carleman.WeakSobolevJet.value_injective",
+          "Carleman.sobolevDerivative_weak",
+          "Carleman.sobolevDerivative_zero_value",
+          "Carleman.sobolevDerivative_zero_seminorm",
+          "Carleman.SpatialTest.memLp",
+          "Carleman.SpatialTest.memLp_derivative",
+          "Carleman.SpatialTest.toLp_ae",
+          "Carleman.SpatialTest.derivativeLp_ae",
+          "Carleman.IsWeakSpatialDerivative.iff_integral",
+          "Carleman.IsWeakSpatialDerivative.zero",
+          "Carleman.IsWeakSpatialDerivative.add",
+          "Carleman.IsWeakSpatialDerivative.smul",
+          "Carleman.spatial_eq_zero_of_tests",
+          "Carleman.IsWeakSpatialDerivative.unique",
+          "Carleman.IsWeakSpatialDerivative.of_zero",
+          "Carleman.TransferGeometry.order_of_L2_expression",
+          "Carleman.TransferGeometry.order_of_L2_expressions_uniform",
+          "Carleman.CarlemanExponents.comparisonExponent_bounds",
+          "Carleman.conformingDerivative_zero_seminorm",
+          "Carleman.conformingDerivative_weak",
+          "Carleman.conformingExpression_ae",
+          "Carleman.differentialFamilyBound_ge_one",
+          "Carleman.sobolevGeometry_order",
+          "Carleman.sobolevGeometry_node_derivative",
+          "Carleman.sobolevGeometry_node_state",
+          "Carleman.sobolevGeometry_lifted_load",
+          "Carleman.sobolevGeometry_observation",
+          "Carleman.sobolevGeometry_comparisons",
+          "Carleman.norm_iteratedFDeriv_exp",
+          "Carleman.norm_iteratedFDerivWithin_exp_profile",
+          "Carleman.norm_iteratedFDerivWithin_allowedWeight",
+          "Carleman.exists_profile_derivative_bound",
+          "Carleman.allowedWeight_spatial_derivatives_uniform",
+          "Carleman.SpatialProfile.ofContinuousOn_value",
+          "Carleman.SpatialProfile.ofContinuousOn_multiplier",
+          "Carleman.TimeWeightRegularity.hasDerivWithinAt_logWeight",
+          "Carleman.TimeWeightRegularity.hasDerivWithinAt_allowedWeight",
+          "Carleman.TimeWeightRegularity.derivWithin_logWeight_bound",
+          "Carleman.TimeWeightRegularity.allowedWeight_inv",
+          "Carleman.SpatialProfile.logDerivative_value",
+          "Carleman.SpatialProfile.logDerivative_seminorm_le",
+          "Carleman.SpatialProfile.logDerivative_shift_le",
+          "Carleman.TimeWeightRegularity.shifted_power_derivative_ratio",
+          "Carleman.TimeWeightRegularity.shift_derivative_ratio"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/72aff3cccabcb077bd13a1b1956caab5a3e1173a/governance/reviews/T005.md",
+        "reviewed_at": "2026-10-17T13:37:23.501085+00:00",
+        "reviewer": "T005 executor; parent independent acceptance pending"
+      },
       "dependencies": [
         "C021"
       ],
-      "blocker": null,
-      "pr_url": null
+      "blocker": "父监督者独立语义/依赖验收待完成；不增加原文完成数",
+      "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/8",
+      "independent_review_status": "PENDING"
     }
   ],
   "events": [
@@ -1401,11 +1494,16 @@
       "at": "2026-10-17T12:52:31.342266+00:00",
       "public_summary": "Lemma 3.2 全七项独立验收并合并，原文完成 1/26；继续权导数和微分阶数估计",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/7"
+    },
+    {
+      "at": "2026-10-17T13:37:23.501085+00:00",
+      "public_summary": "72个新定理通过实际CI：权导数、真实弱Sobolev空间、向量值微分表达式及B3/B4阶数构造；原文保持1/26",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/8"
     }
   ],
   "snapshot": {
-    "synced_at": "2026-10-17T13:26:19.479271+00:00",
-    "source_commit": "3dff0be3a1eaecbbfeb153e55219b9019bd1549b",
+    "synced_at": "2026-10-17T13:37:23.501085+00:00",
+    "source_commit": "72aff3cccabcb077bd13a1b1956caab5a3e1173a",
     "mode": "LOCAL_SNAPSHOT"
   },
   "dashboard": {
@@ -1427,7 +1525,10 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/7",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2d0523a1ad31b165fe5e9f26829b0f8ae317f95f/governance/reviews/T004.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39032650217/attempts/1",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39033650091/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39033650091/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/8",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/72aff3cccabcb077bd13a1b1956caab5a3e1173a/governance/reviews/T005.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39036612338/attempts/1"
     ]
   },
   "schedules": [
@@ -2600,9 +2701,9 @@
       ],
       "branch": "proof/t005-differential-order",
       "base_commit": "3dff0be3a1eaecbbfeb153e55219b9019bd1549b",
-      "status": "RUNNING",
-      "pr_url": null,
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/8",
+      "checkpoint_commit": "72aff3cccabcb077bd13a1b1956caab5a3e1173a",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.DifferentialExpression.boundSq_nonneg",
@@ -2678,7 +2779,18 @@
         "Carleman.TimeWeightRegularity.shifted_power_derivative_ratio",
         "Carleman.TimeWeightRegularity.shift_derivative_ratio"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "aef1e1d9b4a56d48157d68bec543a1b6c88cd9d9",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39036612338/attempts/1",
+        "finished_at": "2026-10-17T13:36:05.922042+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "72aff3cccabcb077bd13a1b1956caab5a3e1173a"
+      },
       "blocker": null,
       "attempts": [
         "fetch/PR7/main push CI 与原始 artifact 实际核实；本地3052 jobs复用构建通过；固定 Lean/mathlib，无 lake update/worktree",
@@ -2688,15 +2800,117 @@
         "有界空间系数作用于实际 L² 导数集合，经 Cauchy–Schwarz 和原 clipped 指数导出 B4-order",
         "独立源码逐项核对发现原文 TeX2675 的 D1=gradient；将规范几何推广为各 j 可不同的向量输出 Z_j，并加入普通有界向量系数工厂，保留原应用范围",
         "同一明确时间阈值接完真实 Sobolev 规范几何的 B3 四类比较；只保留原 N1/N2/N5 节点界",
-        "本地完整 Carleman 构建3163 jobs、1010声明递归公理审计通过；72新定理/110显式声明均已检查，实际CI证据待本提交推送后回填"
+        "本地完整 Carleman 构建3163 jobs、1010声明递归公理审计通过；72新定理/110显式声明均已检查，实际CI证据待本提交推送后回填",
+        "完成后补全新模块对应 mathlib cache roots；setup_lean.sh 本地通过，Lean/mathlib/manifest 固定未变。首轮真实 CI 3163 jobs/1010 审计，下载产物与本地逐字节一致；GitHub CLI 凭据过期后使用已连接 GitHub 工具核验，git 通道正常。"
       ],
-      "next_action": "完成实际 PR CI、公理审计及同 SHA 声明绑定，交父监督者独立验收；随后从已合并基线推进连续 shifted graph/Euler 完整阶段",
+      "next_action": "父监督者独立核对 PR8 的72定理、向量值范围、真实弱Sobolev/B3/B4-order及最终CI；验收合并后同一平台任务继续连续 shifted graph/Euler 完整阶段，不逐引理交接",
       "remaining_dependencies": [
         "B1：周期 shifted/frozen 连续解存在、参数图估计、真实弱导数及周期迹正则性",
         "M3：空间权弱乘积法则/共轭图范数、原 Lipschitz/smooth-closure 表示、周期能量恒等式、Euler 正则性与时间误差",
         "B4：Theorem4.2 能量/L²误差及全部权族有限性，原阈值统一选择",
         "B3 实际数值空间 N1/N2/N5 的统一节点界及真实解/误差/残差可积性；完整 TransferBridges 构造"
-      ]
+      ],
+      "executor_semantic_review": {
+        "checked_sha": "aef1e1d9b4a56d48157d68bec543a1b6c88cd9d9",
+        "declarations": [
+          "Carleman.DifferentialExpression.boundSq_nonneg",
+          "Carleman.DifferentialExpression.apply_ae",
+          "Carleman.DifferentialExpression.weighted_sq_le",
+          "Carleman.DifferentialExpression.weighted_density_le",
+          "Carleman.CarlemanExponents.order_exponent_le",
+          "Carleman.DifferentialExpression.onFields_apply",
+          "Carleman.DifferentialExpression.timeSq_le_graph",
+          "Carleman.DifferentialExpression.aestronglyMeasurable_apply",
+          "Carleman.OperatorMultiplier.memLp_apply",
+          "Carleman.OperatorMultiplier.map_ae",
+          "Carleman.OperatorMultiplier.map_add",
+          "Carleman.OperatorMultiplier.map_smul",
+          "Carleman.OperatorMultiplier.norm_map_le",
+          "Carleman.OperatorMultiplier.map_weight",
+          "Carleman.OperatorMultiplier.weighted_seminorm_le",
+          "Carleman.OperatorMultiplier.ofCoefficients_apply",
+          "Carleman.OperatorMultiplier.ofCoefficients_map_ae",
+          "Carleman.OperatorMultiplier.const_map_ae",
+          "Carleman.OperatorMultiplier.ofVectorCoefficients_apply",
+          "Carleman.OperatorMultiplier.ofVectorCoefficients_map_ae",
+          "Carleman.derivativeComponent_ae",
+          "Carleman.WeakSobolevJet.field_weak_derivative",
+          "Carleman.WeakSobolevJet.field_weighted_sq",
+          "Carleman.WeakSobolevJet.expression_weighted_density_le",
+          "Carleman.WeakSobolevJet.vectorExpression_apply_ae",
+          "Carleman.derivativeComponent_ext",
+          "Carleman.derivativeFiber_zero_norm_sq",
+          "Carleman.WeakSobolevJet.eq_zero_of_value_eq_zero",
+          "Carleman.WeakSobolevJet.value_injective",
+          "Carleman.sobolevDerivative_weak",
+          "Carleman.sobolevDerivative_zero_value",
+          "Carleman.sobolevDerivative_zero_seminorm",
+          "Carleman.SpatialTest.memLp",
+          "Carleman.SpatialTest.memLp_derivative",
+          "Carleman.SpatialTest.toLp_ae",
+          "Carleman.SpatialTest.derivativeLp_ae",
+          "Carleman.IsWeakSpatialDerivative.iff_integral",
+          "Carleman.IsWeakSpatialDerivative.zero",
+          "Carleman.IsWeakSpatialDerivative.add",
+          "Carleman.IsWeakSpatialDerivative.smul",
+          "Carleman.spatial_eq_zero_of_tests",
+          "Carleman.IsWeakSpatialDerivative.unique",
+          "Carleman.IsWeakSpatialDerivative.of_zero",
+          "Carleman.TransferGeometry.order_of_L2_expression",
+          "Carleman.TransferGeometry.order_of_L2_expressions_uniform",
+          "Carleman.CarlemanExponents.comparisonExponent_bounds",
+          "Carleman.conformingDerivative_zero_seminorm",
+          "Carleman.conformingDerivative_weak",
+          "Carleman.conformingExpression_ae",
+          "Carleman.differentialFamilyBound_ge_one",
+          "Carleman.sobolevGeometry_order",
+          "Carleman.sobolevGeometry_node_derivative",
+          "Carleman.sobolevGeometry_node_state",
+          "Carleman.sobolevGeometry_lifted_load",
+          "Carleman.sobolevGeometry_observation",
+          "Carleman.sobolevGeometry_comparisons",
+          "Carleman.norm_iteratedFDeriv_exp",
+          "Carleman.norm_iteratedFDerivWithin_exp_profile",
+          "Carleman.norm_iteratedFDerivWithin_allowedWeight",
+          "Carleman.exists_profile_derivative_bound",
+          "Carleman.allowedWeight_spatial_derivatives_uniform",
+          "Carleman.SpatialProfile.ofContinuousOn_value",
+          "Carleman.SpatialProfile.ofContinuousOn_multiplier",
+          "Carleman.TimeWeightRegularity.hasDerivWithinAt_logWeight",
+          "Carleman.TimeWeightRegularity.hasDerivWithinAt_allowedWeight",
+          "Carleman.TimeWeightRegularity.derivWithin_logWeight_bound",
+          "Carleman.TimeWeightRegularity.allowedWeight_inv",
+          "Carleman.SpatialProfile.logDerivative_value",
+          "Carleman.SpatialProfile.logDerivative_seminorm_le",
+          "Carleman.SpatialProfile.logDerivative_shift_le",
+          "Carleman.TimeWeightRegularity.shifted_power_derivative_ratio",
+          "Carleman.TimeWeightRegularity.shift_derivative_ratio"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/72aff3cccabcb077bd13a1b1956caab5a3e1173a/governance/reviews/T005.md",
+        "reviewed_at": "2026-10-17T13:37:23.501085+00:00",
+        "reviewer": "T005 executor; parent independent acceptance pending"
+      },
+      "checkpoint_ci_relation": {
+        "head_sha": "72aff3cccabcb077bd13a1b1956caab5a3e1173a",
+        "test_sha": "aef1e1d9b4a56d48157d68bec543a1b6c88cd9d9",
+        "base_sha": "3dff0be3a1eaecbbfeb153e55219b9019bd1549b",
+        "head_tree": "43400a81a529fa517f35188dc201a3182ed0d7bd",
+        "test_tree": "43400a81a529fa517f35188dc201a3182ed0d7bd",
+        "carleman_tree": "bbc2c5a9ae464123d108a0be9e1a59a405a98ae8",
+        "root_import_blob": "bc83a9eb2f7d486649841b589b0f71708deeeb4e",
+        "audit_script_blob": "6636a413a91af17c6703a15b366955b5f1463af2",
+        "run_id": 39036612338,
+        "lean_job_id": 117407655497,
+        "declarations_sha256": "0db5a163a730f44a9b7b471b3ef5eff07f2658d69f0be4d71f29f64e800629f6",
+        "build_jobs": 3163,
+        "audited_declarations": 1010,
+        "result_artifact_id": 12102682301,
+        "declaration_artifact_id": 12102552727,
+        "state_job_id": 117407655129,
+        "dashboard_job_id": 117409566525
+      }
     }
   ],
   "private_maintenance": {
