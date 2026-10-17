@@ -85,3 +85,14 @@ public import Carleman.Weights.WeakConjugationIdentity
 public import Carleman.Weights.WeakTemporalProduct
 public import Carleman.Weights.WeightedOperatorRegularity
 public import Carleman.Weights.WeightedWeakTrajectory
+
+-- T012: actual affine reconstruction and uniform temporal errors.
+public import Carleman.Continuous.AffineTimeClass
+public import Carleman.Continuous.FormEnergyClass
+public import Carleman.Continuous.TemporalEnergyError
+public import Carleman.Continuous.TemporalErrorIdentity
+public import Carleman.Continuous.TemporalL2Error
+public import Carleman.Continuous.TemporalWeakError
+public import Carleman.Continuous.TimeAdjoint
+public import Carleman.Continuous.WeakTimePairing
+public import Carleman.Periodic.AffineReconstruction
