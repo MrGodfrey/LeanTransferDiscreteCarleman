@@ -9,3 +9,5 @@ __pycache__/
 private/
 secrets/
 *.token
+.ci/
+.site/

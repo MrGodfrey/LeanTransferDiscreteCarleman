@@ -3,37 +3,37 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Continuous to Fully Discrete Carleman Estimates — Lean formalization monitoring dashboard" />
-  <title>Lean Transfer · Formalization Monitor</title>
+  <meta name="description" content="Carleman 估计 Lean 形式化进度快照" />
+  <title>Lean Transfer · 研究进度快照</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="layout">
     <aside class="sidebar">
-      <div class="brand"><span class="brand-mark">∴</span><div><b>LEAN TRANSFER</b><small>RESEARCH MONITOR</small></div></div>
+      <div class="brand"><span class="brand-mark">∴</span><div><b>LEAN TRANSFER</b><small>RESEARCH SNAPSHOT</small></div></div>
       <div class="sidebar-section">形式化工程</div>
-      <nav aria-label="页面导航"><a href="#overview" class="selected">总览</a><a href="#milestones">研究阶段</a><a href="#claims">定理验证</a><a href="#activities">执行日志</a><a href="#usage">额度与用量</a></nav>
-      <div class="sidebar-footer">Manuscript · 44 pages<br /><span>Theorem 2.1 first</span></div>
+      <nav aria-label="页面导航"><a href="#overview" class="selected">总览</a><a href="#milestones">研究阶段</a><a href="#claims">工作目标</a><a href="#coverage">全文覆盖</a><a href="#evidence">构建证据</a></nav>
+      <div class="sidebar-footer">Dots + Codex Web<br /><span>Theorem 2.1 first</span></div>
     </aside>
     <main class="content" id="overview">
-      <header class="top-bar"><div class="eyebrow">MATHEMATICAL FORMALIZATION / LIVE STATUS VIEW</div><div class="toolbar"><span id="syncBadge" class="badge gray">尚未同步</span><span class="clock" id="lastUpdate">—</span></div></header>
-      <div class="intro"><div><h1>从连续到全离散 <em>Carleman</em> 估计</h1><p>长期 Lean 形式化监控 · 当前目标：Theorem 2.1 / Section 5 transfer principle</p></div><div class="header-chip">RESEARCH TRACKER <span>2026</span></div></div>
+      <header class="top-bar"><div class="eyebrow">MATHEMATICAL FORMALIZATION / SNAPSHOT</div><div class="toolbar"><span id="syncBadge" class="badge gray">尚未同步</span><span class="clock" id="lastUpdate">—</span></div></header>
+      <div class="intro"><div><h1>从连续到全离散 <em>Carleman</em> 估计</h1><p>首个核心目标：Theorem 2.1 · 中间交付：Section 5 条件性 transfer</p></div><div class="header-chip">RESEARCH TRACKER <span>2026</span></div></div>
       <section class="stats" aria-label="关键指标">
-        <article class="stat"><span class="stat-label">已审核的证明目标</span><strong id="auditedCount">—</strong><span class="stat-detail" id="auditedSub">/ — 个已登记目标</span></article>
-        <article class="stat"><span class="stat-label">条件性形式化</span><strong id="conditionalCount">—</strong><span class="stat-detail">尚需消去附加数学假设</span></article>
-        <article class="stat"><span class="stat-label">阶段里程碑</span><strong id="milestoneCount">—</strong><span class="stat-detail">已验证完成 / 全部阶段</span></article>
+        <article class="stat"><span class="stat-label">已完成的原文结果</span><strong id="auditedCount">—</strong><span class="stat-detail" id="auditedSub">/ 26 个原文具名结果</span></article>
+        <article class="stat"><span class="stat-label">已构建的条件性成果</span><strong id="conditionalCount">—</strong><span class="stat-detail">核验状态另列 · 不计入原文完成</span></article>
+        <article class="stat"><span class="stat-label">阶段里程碑</span><strong id="milestoneCount">—</strong><span class="stat-detail">已验收 / 全部阶段</span></article>
         <article class="stat"><span class="stat-label">最近 Lean 构建</span><strong id="buildStatus">—</strong><span class="stat-detail" id="buildCommit">尚未运行</span></article>
       </section>
       <div class="panels-grid">
-        <section class="panel" id="milestones"><div class="section-head"><div><span class="overline">WORK BREAKDOWN</span><h2>形式化阶段</h2></div><span id="activePhase" class="muted">未启动</span></div><p class="section-note">阶段按数学依赖组织。已完成只统计经过验收的真实结果。</p><div id="milestoneRows" class="milestone-list"></div></section>
-        <section class="panel" id="activities"><div class="section-head"><div><span class="overline">TASK CONTROL</span><h2>当前执行状态</h2></div><span class="live-dot"></span></div><div id="executionState" class="work-status"></div><div class="meta-rows"><div><span>当前任务</span><b id="taskName">未启动</b></div><div><span>最近核验提交</span><b id="lastCommit">—</b></div><div><span>最近监督检查</span><b id="supervisorChecked">—</b></div></div><div class="next-step"><span>下一步建议</span><p id="nextAction">—</p></div><h3 class="miniheading">最近活动</h3><div id="activityList" class="activity"></div></section>
+        <section class="panel" id="milestones"><div class="section-head"><div><span class="overline">WORK BREAKDOWN</span><h2>形式化阶段</h2></div><span id="activePhase" class="muted">未启动</span></div><p class="section-note">阶段按数学依赖组织；辅助成果与条件性成果各自保留范围。</p><div id="milestoneRows" class="milestone-list"></div></section>
+        <section class="panel" id="activities"><div class="section-head"><div><span class="overline">TASK CONTROL</span><h2>当前执行记录</h2></div><span class="live-dot" aria-hidden="true"></span></div><div class="work-status"><strong id="executionState">尚未核实</strong><p id="executionNote"></p></div><div class="meta-rows"><div><span>当前任务</span><b id="taskName">未启动</b></div><div><span>最近稳定提交</span><b id="lastCommit">—</b></div><div><span>最近监督核实</span><b id="supervisorChecked">—</b></div></div><div id="taskLinks"></div><div class="next-step"><span>当前阻塞</span><p id="currentBlocker">—</p></div><div class="next-step"><span>下一步</span><p id="nextAction">—</p></div><h3 class="miniheading">最近成果与活动</h3><div id="activityList" class="activity"></div></section>
       </div>
-      <section class="panel full" id="claims"><div class="section-head"><div><span class="overline">PROOF REGISTRY</span><h2>定理与引理验证记录</h2></div><span id="claimSummary" class="muted">—</span></div><div class="legend"><span><i class="marker unstarted"></i>待处理</span><span><i class="marker specified"></i>规格已核对</span><span><i class="marker conditional"></i>条件性证明</span><span><i class="marker audit"></i>完整已审核</span></div><div class="claims-header"><span>证明目标 / 论文定位</span><span>所属阶段</span><span>验证状态</span></div><div id="claimsRows" class="claim-list"></div></section>
-      <section class="panel full" id="usage"><div class="section-head"><div><span class="overline">RESOURCE MONITOR</span><h2>计算资源与额度</h2></div><a class="subtle-link" href="https://chatgpt.com/codex/settings/usage" target="_blank" rel="noopener noreferrer">打开官方 Codex 用量页 ↗</a></div><div class="usage-grid"><div><span>已核验 token 总量</span><strong id="tokensTotal">—</strong><small>不支持时显示“未取得”，不估算为 0</small></div><div><span>已消耗 credits</span><strong id="creditsUsed">—</strong><small id="usageSource">无可核验来源</small></div><div><span>当前额度状态</span><strong id="billingState">—</strong><small id="usageChecked">尚无数据</small></div></div><p class="policy-tip">额度耗尽可能暂停新任务，但正在执行的一轮任务未必立刻中止。默认不开启自动充值；计算量和购买费用以账户官方显示为准。</p></section>
-      <footer>DATA SOURCE: VERSIONED PROJECT STATUS · <span id="footerTimestamp">INITIAL / NOT STARTED</span><span class="footer-right">Lean 4 + mathlib · Research-first</span></footer>
+      <section class="panel full" id="evidence"><div class="section-head"><div><span class="overline">BUILD EVIDENCE</span><h2>构建与稳定成果</h2></div></div><p class="section-note">最近失败与上次成功分别保留。证据链接仅显示已批准展示的地址；构建不替代语义核对。</p><div id="buildEvidence"></div></section>
+      <section class="panel full" id="claims"><div class="section-head"><div><span class="overline">WORK REGISTRY</span><h2>初始工作目标</h2></div><span id="claimSummary" class="muted">—</span></div><p class="section-note">数学范围：原文命题 / 条件性命题 / 辅助引理。核验状态：计划中 → 陈述完成 → 构建通过 → 语义核对完成。</p><div id="claimsRows"></div></section>
+      <section class="panel full" id="coverage"><div class="section-head"><div><span class="overline">PAPER COVERAGE</span><h2>原文结果覆盖表</h2></div></div><p class="section-note">共 26 个具名结果；完成要求声明版本、构建和语义核对相符，且无额外前提。数值实验复现另计。</p><details><summary>展开全部原文结果及声明记录</summary><div id="coverageRows"></div></details></section>
+      <footer>VERSIONED PROJECT SNAPSHOT · <span id="footerTimestamp">INITIAL / NOT STARTED</span><span class="footer-right">Lean 4 + mathlib</span></footer>
     </main>
   </div>
-  <script src="data.js"></script>
-  <script src="app.js"></script>
+  <script src="data.js"></script><script src="app.js"></script>
 </body>
 </html>

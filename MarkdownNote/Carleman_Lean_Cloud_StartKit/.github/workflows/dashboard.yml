@@ -1,40 +1,52 @@
-name: Publish proof progress dashboard
+name: Progress snapshot
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'state/progress.json'
-      - 'tools/update_dashboard.py'
-      - 'docs/**'
-      - '.github/workflows/dashboard.yml'
-  workflow_dispatch:
+  workflow_call:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages-dashboard
-  cancel-in-progress: true
 
 jobs:
-  deploy:
+  snapshot:
     runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: lean-ci-result
+          path: .ci
+      - name: Generate snapshot from this run only
+        env:
+          EXPECTED_SHA: ${{ github.sha }}
+        run: python3 tools/update_dashboard.py --ci-result .ci/result.json --expected-sha "$EXPECTED_SHA"
+      - name: Package only display assets
+        run: |
+          mkdir -p .site
+          cp docs/index.html docs/style.css docs/app.js docs/data.js .site/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: progress-dashboard
+          path: .site
+          if-no-files-found: error
+      - name: Prepare optional Pages artifact
+        if: ${{ vars.PUBLISH_PROGRESS_PAGES == 'true' }}
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .site
+
+  deploy:
+    needs: snapshot
+    if: ${{ vars.PUBLISH_PROGRESS_PAGES == 'true' }}
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Generate dashboard snapshot
-        run: python3 tools/update_dashboard.py
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-      - name: Upload static dashboard
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs
-      - name: Publish site
+      - uses: actions/configure-pages@v5
+      - name: Publish authorized progress snapshot
         id: deploy
         uses: actions/deploy-pages@v4

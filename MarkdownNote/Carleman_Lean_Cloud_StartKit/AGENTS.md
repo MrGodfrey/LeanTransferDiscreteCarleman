@@ -1,15 +1,17 @@
 # Project agent instructions
 
-This repository is a long-running Lean 4/mathlib formalization project for the manuscript in `paper/main.tex` and `paper/paper.pdf`.
+Use **Dots + Codex Web**. One Dot supervises; Codex Web tasks in the published cloud environment implement and review bounded work. GitHub stores durable results and CI evidence.
 
-**Main goal:** Verify the mathematical content of Theorem 2.1. First formalize a faithful conditional Section 5 transfer theorem with the weighted space-time approximation theorem explicitly assumed; then discharge that auxiliary assumption by formalizing Sections 3 and 4; then formalize Corollaries 2.2–2.3 and downstream applications.
+The first core delivery is the faithful Theorem 2.1 in `paper/main.tex`. Conditional Section 5 transfer is intermediate: expose every bridge assumption in `governance/MATH_SPEC.md`, then discharge Sections 3–4 dependencies. The long-term target includes downstream results and all named results in `state/paper_coverage.json`, not merely the 19 initial work items.
 
-Treat the manuscript as the authoritative specification for mathematical statements, including quantifiers, uniformity of constants, both signs of time differentiation, full discrete state space and the original assumptions. You may redesign proof architecture and generalize helper results; never silently weaken the target or add assumptions and still label it as the original theorem.
+Read the relevant canonical files: `governance/MATH_SPEC.md` for mathematical interfaces; `governance/PROJECT_OPERATIONS.md` for task continuation, merge and pause rules; `state/README.md` for evidence/status; `governance/MILESTONES.md` and `governance/PAPER_COVERAGE.md` for scope. Keep this file as a concise pointer rather than duplicating those protocols.
 
-Use mathlib first. Search existing reputable formalizations before implementing major infrastructure. Verify license, theorem statement, toolchain compatibility and dependency cost before adopting an external package.
+Preserve the manuscript, quantifiers and uniformity (including T), both time directions, full discrete state space and original assumptions. Do not silently weaken a goal. Conditional results retain their mathematical scope after review. A scalar absorption helper is not Section 5 formalization.
 
-For each completed unit: build with Lean; audit the declaration and its assumptions against the manuscript; check its axioms and proof dependencies; record concrete Lean declaration names, commit SHA and manuscript references. An explicitly stated conditional theorem may be marked *conditional*, not *paper theorem complete*. Development placeholders must never appear in verified release artifacts. Do not use new unjustified axioms or hidden definitions of the conclusion.
+Pin Lean and mathlib. Reuse shared periodic sequence, norm, reconstruction and error interfaces. Interface improvements may be made autonomously with affected callers updated in the same PR. Search mathlib first; validate only needed external declarations before adopting dependencies.
 
-Maintain `state/progress.json`, `governance/PROOF_LOG.md` and the dependency map. Work autonomously, submitting small reviewable commits or PRs. If blocked, state the exact missing lemma and switch to the most valuable independent task. Never make unsupported claims of completion or usage metrics. Do not purchase credits or change external billing settings without user approval.
+Each task records its actual branch and base_commit. Continue the same task/branch for unmerged work or corrections; start new work from a verified merged baseline. Executors deliver a PR and a compact result record; the supervisor merges evidence into the canonical task ledger. Do not have several executors overwrite overall progress.
 
-After every coherent work unit, report: what was proven; exact Lean declarations; which manuscript claims were audited; what remains conditional; successful checks; source commit; and the next most valuable step.
+Build the relevant declarations. For paper-level results and major interfaces, review the statement, quantifiers, extra hypotheses and dependency axioms at the same declaration version. Completed results may not depend on sorry or unjustified mathematical axioms. Interpret normal foundational axioms correctly. `Carleman.lean` must import every announced completed module; merge checks build this target. Incremental development does not require rebuilding all dependencies or replaying the entire kernel after each helper.
+
+Work autonomously within the activated startup agreement. Save useful checkpoints and precise blockers, change strategy after repeated failures, and continue independent goals. Record results once in PR/ledger; keep the proof log as an index. Never infer mathematical completion from dashboard validation or fabricate CI success. Follow the four operational spending rules in PROJECT_OPERATIONS.

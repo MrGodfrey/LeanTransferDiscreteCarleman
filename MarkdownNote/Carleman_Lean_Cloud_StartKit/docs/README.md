@@ -1,9 +1,7 @@
-# Website prototype
+# 静态进度快照
 
-This is an actual self-contained HTML/CSS/JS dashboard, **not a deployed URL**. Open `docs/index.html` locally for preview. No browser authentication, network APIs, or JavaScript framework are needed.
+直接打开 index.html。页面读取同目录 data.js，无网络 API、登录或 CDN。运行 `python3 tools/update_dashboard.py` 更新，`--check` 核对同步。不要手改生成文件。
 
-Data are generated from `state/progress.json` with `python3 tools/update_dashboard.py`. Do not manually edit `docs/data.js`. GitHub Actions can redeploy this snapshot whenever the main branch changes (after manually enabling Pages and ensuring the source is safe to publish).
+默认本地或私有仓库 artifact 查看。Pages 仅在明确授权且设置 PUBLISH_PROGRESS_PAGES=true 后发布；私有仓库不保证站点私密。部署只包含四个页面资产，不含本说明或其它内嵌旧数据副本。
 
-The default state records zero verified proofs because the project has not started, but does **not** record zero token expenditure: token usage is explicitly unknown.
-
-Before changing a private research repository to a public dashboard, inspect the generated JavaScript for potential metadata leakage. A private GitHub source repo **does not by itself guarantee a private Pages website**.
+页面区分原文/条件性/辅助范围与核验状态，显示额外前提、阻塞、证据、工具链及两个时钟。超过 24 小时的快照或超过 12 小时未核实的运行状态标记待更新。初始空时间表示尚未核实，绝不伪装在线。

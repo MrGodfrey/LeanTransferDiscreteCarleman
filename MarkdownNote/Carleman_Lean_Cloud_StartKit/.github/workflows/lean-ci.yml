@@ -1,0 +1,76 @@
+name: Lean CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# One snapshot source per ref; no status write-back or workflow_run chain.
+concurrency:
+  group: lean-progress-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  state-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python3 -m unittest discover -s tools -p 'test_*.py'
+      - run: node --test tools/test_dashboard.js
+      - run: python3 tools/update_dashboard.py --check
+
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.elan
+            .lake
+          key: lean-${{ runner.os }}-${{ hashFiles('lean-toolchain', 'lake-manifest.json', 'lakefile.*') }}-${{ github.sha }}
+          restore-keys: |
+            lean-${{ runner.os }}-${{ hashFiles('lean-toolchain', 'lake-manifest.json', 'lakefile.*') }}-
+      - name: Prepare pinned toolchain
+        id: setup
+        run: bash tools/setup_lean.sh
+      - name: Build proof target
+        id: build
+        run: bash tools/lean_ci.sh
+      - name: Record checked source and result
+        if: ${{ always() }}
+        env:
+          BUILD_OUTCOME: ${{ steps.build.outcome }}
+          SETUP_OUTCOME: ${{ steps.setup.outcome }}
+          SOURCE_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: python3 tools/record_ci_result.py
+      - name: Save Lean evidence even on failure
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: lean-ci-result
+          path: .ci/result.json
+          if-no-files-found: error
+
+  dashboard:
+    needs: [lean, state-check]
+    if: ${{ always() && !cancelled() && github.event_name != 'pull_request' && github.ref == 'refs/heads/main' }}
+    uses: ./.github/workflows/dashboard.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
