@@ -9,37 +9,37 @@
     "started_at": "2026-10-17T09:43:34.927869+00:00"
   },
   "execution": {
-    "state": "RUNNING",
+    "state": "REVIEW",
     "current_task_id": "T002",
     "supervisor_checked_at": "2026-10-17T10:37:24.371967+00:00",
-    "next_action": "同一分支/PR #5 修复 Γ 线性误加前提，重新构建、公理/语义与 CI 核实后交父监督者",
+    "next_action": "父监督者复核 Γ 普通函数修正的新 HEAD/test CI 后验收同一 PR #5；B1 后续处理 a.e. D(A) 值代表、真实弱导数及端点迹",
     "blocker": null,
     "pause_reason": null
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "182b109748b13018ab7e31160bc098dd0e330196",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39026254501/attempts/1",
-      "finished_at": "2026-10-17T10:48:47.679448+00:00",
+      "checked_sha": "4a18f08e884aeb7905bd9f114b80d44047eaba6b",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39026908640/attempts/1",
+      "finished_at": "2026-10-17T11:00:04.067939+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "178fa4150e7491203dd8719750569d8af0eab74c"
+      "source_head_sha": "ba7d860e237ccf30760c08f8fde2d5ae715047d3"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "182b109748b13018ab7e31160bc098dd0e330196",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39026254501/attempts/1",
-      "finished_at": "2026-10-17T10:48:47.679448+00:00",
+      "checked_sha": "4a18f08e884aeb7905bd9f114b80d44047eaba6b",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39026908640/attempts/1",
+      "finished_at": "2026-10-17T11:00:04.067939+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "178fa4150e7491203dd8719750569d8af0eab74c"
+      "source_head_sha": "ba7d860e237ccf30760c08f8fde2d5ae715047d3"
     }
   },
   "milestones": [
@@ -260,18 +260,18 @@
         "Carleman.Reconstruction.ofLinearMap_R",
         "Carleman.Reconstruction.existsUnique_mass_adjoint"
       ],
-      "declaration_version": "182b109748b13018ab7e31160bc098dd0e330196",
+      "declaration_version": "4a18f08e884aeb7905bd9f114b80d44047eaba6b",
       "build_evidence": {
         "status": "PASS",
-        "checked_sha": "182b109748b13018ab7e31160bc098dd0e330196",
-        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39026254501/attempts/1",
-        "finished_at": "2026-10-17T10:48:47.679448+00:00",
+        "checked_sha": "4a18f08e884aeb7905bd9f114b80d44047eaba6b",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39026908640/attempts/1",
+        "finished_at": "2026-10-17T11:00:04.067939+00:00",
         "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "targets": [
           "Carleman"
         ],
-        "source_head_sha": "178fa4150e7491203dd8719750569d8af0eab74c"
+        "source_head_sha": "ba7d860e237ccf30760c08f8fde2d5ae715047d3"
       },
       "semantic_review": null,
       "dependencies": [
@@ -286,7 +286,7 @@
       "paper_ref": "Section 5 Step 1，TeX 1314–1340；eq:auxEuler、eq:cellwise-extension",
       "milestone": "M2",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "eq:transfer-load",
@@ -329,13 +329,24 @@
         "Carleman.LoadInterface.residualPlus_eventuallyEq",
         "Carleman.LoadInterface.residualMinus_eventuallyEq"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "4a18f08e884aeb7905bd9f114b80d44047eaba6b",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "4a18f08e884aeb7905bd9f114b80d44047eaba6b",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39026908640/attempts/1",
+        "finished_at": "2026-10-17T11:00:04.067939+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "ba7d860e237ccf30760c08f8fde2d5ae715047d3"
+      },
       "semantic_review": null,
       "dependencies": [
         "C002"
       ],
-      "blocker": "Γ 改普通函数后重新核实构建/语义/CI，旧声明证据不沿用",
+      "blocker": null,
       "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/5",
       "scope_note": "Γ/lift/right inverse 均为普通函数，仅用相容性。辅助代数与所选载荷离散对应；残差消去以冻结方程为前提。B1 待提供/转移几乎处处 D(A) 值代表并保持 H 值 Sobolev 弱导数与端点迹。"
     },
@@ -748,11 +759,16 @@
       "at": "2026-10-17T10:50:31.429702+00:00",
       "public_summary": "重构、质量伴随与辅助载荷消去通过构建及依赖检查，阶段 PR 待监督者验收；原文结果仍为 0/26",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/5"
+    },
+    {
+      "at": "2026-10-17T11:01:25.359672+00:00",
+      "public_summary": "按独立审核移除载荷映射的额外线性前提；修正版重新构建和检查通过，待复核；原文仍0/26",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/5"
     }
   ],
   "snapshot": {
-    "synced_at": "2026-10-17T10:58:08.660922+00:00",
-    "source_commit": "4bef232a59e68bfb8fc20410b818e2a4d74b8ce3",
+    "synced_at": "2026-10-17T11:01:25.359672+00:00",
+    "source_commit": "ba7d860e237ccf30760c08f8fde2d5ae715047d3",
     "mode": "LOCAL_SNAPSHOT"
   },
   "dashboard": {
@@ -765,7 +781,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39024525975/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39025058019/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/5",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39026254501/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39026254501/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39026908640/attempts/1"
     ]
   },
   "schedules": [
@@ -958,9 +975,9 @@
       ],
       "branch": "proof/t002-transfer-differences",
       "base_commit": "8c002e37849fb476608cf4f636a9fa4187e33508",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/5",
-      "checkpoint_commit": "178fa4150e7491203dd8719750569d8af0eab74c",
+      "checkpoint_commit": "ba7d860e237ccf30760c08f8fde2d5ae715047d3",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.TimeGrid.map_apply",
@@ -1026,7 +1043,18 @@
         "Carleman.Reconstruction.ofLinearMap_R",
         "Carleman.Reconstruction.existsUnique_mass_adjoint"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "4a18f08e884aeb7905bd9f114b80d44047eaba6b",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39026908640/attempts/1",
+        "finished_at": "2026-10-17T11:00:04.067939+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "ba7d860e237ccf30760c08f8fde2d5ae715047d3"
+      },
       "blocker": null,
       "attempts": [
         "fetch 核实 PR #4/main 与固定 Lean 4.35.0、mathlib 56a005855ea17e0b0958f73ec801ae140b0a1679；未建 worktree、未 lake update",
@@ -1042,9 +1070,10 @@
         "最终数学提交178fa4150e7491203dd8719750569d8af0eab74c及测试提交182b109748b13018ab7e31160bc098dd0e330196已 fetch，双亲/整源码树一致性已核实",
         "实际读取 CI 39026254501 的 Lean job 日志与原始 result.json；2510 build jobs、177公理声明及三项 CI 全 PASS",
         "gh pr edit 遇到旧 Projects GraphQL 弃用错误，改用 GitHub REST PATCH 成功更新同一 draft PR；无遗留操作阻塞",
-        "父监督者确认 TeX392/N2 未假定 Γ 线性；改为 F→X、直接逐节点作用，并删除载荷类型不必要的代数实例；Load/Residual 已本地重建"
+        "父监督者确认 TeX392/N2 未假定 Γ 线性；改为 F→X、直接逐节点作用，并删除载荷类型不必要的代数实例；Load/Residual 已本地重建",
+        "修正版数学 HEAD ba7d860e237ccf30760c08f8fde2d5ae715047d3、测试 SHA 4a18f08e884aeb7905bd9f114b80d44047eaba6b 已 fetch，双亲与整树一致；新 CI 39026908640 的原始 result.json 和实际日志重新核实，旧 C003 审核未复用"
       ],
-      "next_action": "同一分支/PR #5 修复 Γ 线性误加前提，重新构建、公理/语义与 CI 核实后交父监督者",
+      "next_action": "父监督者复核 Γ 普通函数修正的新 HEAD/test CI 后验收同一 PR #5；B1 后续处理 a.e. D(A) 值代表、真实弱导数及端点迹",
       "environment": {
         "restoration_status": "PASS",
         "restoration_base_commit": "8c002e37849fb476608cf4f636a9fa4187e33508",
@@ -1193,6 +1222,114 @@
         "C002": "27 定理 PASS；源代码未改",
         "C003": "能量、唯一性、双向单元延拓和条件残差代数无其它阻塞；仅 Γ 线性需修复并重核版本",
         "B1_boundary": "U:ℝ→D(A) 只是代数代表；后续须提供或转移几乎处处 D(A) 值代表并保持 H 值 Sobolev 弱导数与端点迹"
+      },
+      "integration_evidence": {
+        "proof_head_sha": "ba7d860e237ccf30760c08f8fde2d5ae715047d3",
+        "pr_test_sha": "4a18f08e884aeb7905bd9f114b80d44047eaba6b",
+        "base_commit": "8c002e37849fb476608cf4f636a9fa4187e33508",
+        "equal_source_tree": "519fcf23a0229624b5664eec65b5dfc815c4eeae",
+        "test_parents": [
+          "8c002e37849fb476608cf4f636a9fa4187e33508",
+          "ba7d860e237ccf30760c08f8fde2d5ae715047d3"
+        ],
+        "workflow_run_id": 39026908640,
+        "jobs": [
+          "state-check: PASS",
+          "lean: PASS",
+          "dashboard / snapshot: PASS"
+        ],
+        "lean_job_id": 117379601054,
+        "checked_log_facts": [
+          "actual checkout 4a18f08e884aeb7905bd9f114b80d44047eaba6b",
+          "Build completed successfully (2510 jobs)",
+          "Axiom audit passed for all 177 Carleman declarations.",
+          "Carleman.LoadInterface.Γ : F → X"
+        ],
+        "proof_tree": "1ed763ac86186a70678a7b6900fd8e05bba8aa37",
+        "aggregate_blob": "80878d7d5a43a6da0fd8c1b6721589835396c450",
+        "axiom_check_blob": "732ba4106e77363794eaf067f20c79e0fd349dd3"
+      },
+      "executor_semantic_review": {
+        "checked_sha": "4a18f08e884aeb7905bd9f114b80d44047eaba6b",
+        "declarations": [
+          "Carleman.TimeGrid.map_apply",
+          "Carleman.TimeGrid.map_comp",
+          "Carleman.TimeGrid.map_node_smul",
+          "Carleman.TimeGrid.dPlus_map",
+          "Carleman.TimeGrid.dMinus_map",
+          "Carleman.Reconstruction.RH_apply",
+          "Carleman.Reconstruction.Q_apply",
+          "Carleman.Reconstruction.QH_apply",
+          "Carleman.Reconstruction.G_apply",
+          "Carleman.Reconstruction.R_comp_G",
+          "Carleman.Reconstruction.J_comp_QH",
+          "Carleman.Reconstruction.inner_RH",
+          "Carleman.Reconstruction.inner_G",
+          "Carleman.Reconstruction.G_symmetric",
+          "Carleman.Reconstruction.G_nonneg",
+          "Carleman.Reconstruction.inner_G_self_eq_zero",
+          "Carleman.Reconstruction.G_positive",
+          "Carleman.Reconstruction.inner_QH",
+          "Carleman.Reconstruction.QH_symmetric",
+          "Carleman.Reconstruction.QH_nonneg",
+          "Carleman.Reconstruction.J_unique",
+          "Carleman.Reconstruction.pairing_J",
+          "Carleman.Reconstruction.pairing_RH",
+          "Carleman.Reconstruction.pairing_RH_dPlus",
+          "Carleman.Reconstruction.pairing_RH_dMinus",
+          "Carleman.TimeGrid.pairing_dPlus_self",
+          "Carleman.TimeGrid.pairing_dPlus_self_nonneg",
+          "Carleman.TimeGrid.pairing_dMinus_self_nonneg",
+          "Carleman.TimeGrid.dPlus_sub",
+          "Carleman.TimeGrid.dMinus_sub",
+          "Carleman.TimeGrid.extensionPlus_on_cell",
+          "Carleman.TimeGrid.extensionMinus_on_cell",
+          "Carleman.TimeGrid.extensionPlus_zero",
+          "Carleman.TimeGrid.extensionMinus_zero",
+          "Carleman.TimeGrid.extensionPlus_period",
+          "Carleman.TimeGrid.extensionMinus_period",
+          "Carleman.TimeGrid.extensionPlus_map",
+          "Carleman.TimeGrid.extensionMinus_map",
+          "Carleman.TimeGrid.extensionPlus_add",
+          "Carleman.TimeGrid.extensionMinus_add",
+          "Carleman.TimeGrid.extensionPlus_node_smul",
+          "Carleman.TimeGrid.extensionMinus_node_smul",
+          "Carleman.Reconstruction.shiftedSpatial_sub",
+          "Carleman.Reconstruction.eq_zero_of_pairing_shiftedSpatial_nonpos",
+          "Carleman.Reconstruction.shifted_dPlus_unique",
+          "Carleman.Reconstruction.shifted_dMinus_unique",
+          "Carleman.LoadInterface.J_transferLoad",
+          "Carleman.LoadInterface.state_solves_shifted_dPlus",
+          "Carleman.LoadInterface.state_solves_shifted_dMinus",
+          "Carleman.LoadInterface.auxiliary_dPlus_eq_state",
+          "Carleman.LoadInterface.auxiliary_dMinus_eq_state",
+          "Carleman.LoadInterface.existsUnique_auxiliary_dPlus",
+          "Carleman.LoadInterface.existsUnique_auxiliary_dMinus",
+          "Carleman.LoadInterface.rightInverse_load",
+          "Carleman.LoadInterface.extensionPlus_transferLoad",
+          "Carleman.LoadInterface.extensionMinus_transferLoad",
+          "Carleman.LoadInterface.residualPlus_eq",
+          "Carleman.LoadInterface.residualMinus_eq",
+          "Carleman.LoadInterface.residualPlus_eventuallyEq",
+          "Carleman.LoadInterface.residualMinus_eventuallyEq",
+          "Carleman.Reconstruction.ofLinearMap_R",
+          "Carleman.Reconstruction.existsUnique_mass_adjoint"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/5",
+        "reviewed_at": "2026-10-17T11:01:25.359672+00:00",
+        "reviewer": "T002 executor after independent supervisor correction; pending parent recheck",
+        "scope": "C002/C003 AUXILIARY; no paper result claimed",
+        "checks": [
+          "Fresh audit of 62 theorem types and all 177 project declarations at the corrected SHA; old C003 review explicitly superseded",
+          "TeX392 and N2 437–443 do not assume Gamma linearity; Gamma/lift/right inverse are ordinary functions, using only compatibility",
+          "All eight load proofs recompiled with ordinary nodewise Gamma and no algebraic typeclasses on F; arbitrary-function regression examples pass",
+          "C002 reconstruction/adjoint/difference declarations and C003 energy/uniqueness/cell definitions are unchanged, as verified by source diff and rebuilt aggregate",
+          "Both orientation residual statements recompiled for arbitrary load type; hFrozen remains a filter/a.e. premise",
+          "B1 must supply or transfer an a.e. D(A)-valued representative preserving actual H-valued Sobolev weak derivative and endpoint traces; no every-time domain membership is asserted",
+          "Original manuscript hashes, pinned Lean/mathlib, full discrete state space, quantifiers and uniformity unchanged; no unproved mathematical axioms"
+        ]
       }
     }
   ],
