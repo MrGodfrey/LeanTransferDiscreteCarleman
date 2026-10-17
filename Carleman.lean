@@ -125,3 +125,14 @@ public import Carleman.Spatial.WeakConvolution
 public import Carleman.Weights.FrozenErrorEnergy
 public import Carleman.Weights.FrozenOperatorEnergy
 public import Carleman.Weights.FrozenShiftLower
+
+-- T015: actual weighted temporal duality and frozen graph remainders.
+public import Carleman.Continuous.WeightedTemporalDuality
+public import Carleman.Periodic.AffineSeminorm
+public import Carleman.Weights.FrozenTemporalPerturbation
+public import Carleman.Weights.TimeL2Multiplier
+public import Carleman.Weights.WeightedAdjointRemainder
+public import Carleman.Weights.WeightedAffineDefect
+public import Carleman.Weights.WeightedGraphCommutator
+public import Carleman.Weights.WeightedGraphConstruction
+public import Carleman.Weights.WeightedGraphRemainder

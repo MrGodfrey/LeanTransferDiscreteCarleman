@@ -42,4 +42,4 @@ BUILT/REVIEWED 必须记录 `lean_declarations`、完整 40 位 `declaration_ver
 
 展示文字使用登记的 title/blocker/next_action，写入前检查受众。事件使用独立的 `public_summary`；未提供则不展示。展示链接必须 HTTPS 且精确列入 `dashboard.approved_urls`。内部 task URL、平台身份、私人暂停理由、未知嵌套备注不会输出；白名单不会自动批准 URL 或文字中的敏感信息。
 
-运行 `python3 tools/update_dashboard.py` 同步 `docs/data.js` 和覆盖表 Markdown；`--check` 检查同步。CI 用 `--ci-result … --expected-sha …`，拒绝拼接另一次提交的结果。构建与页面失败分别报告；不抹掉此前可恢复成果。
+运行 `python3 tools/update_dashboard.py` 同步 `docs/data.js` 和覆盖表 Markdown；`--check` 检查同步。CI 用 `--ci-result … --expected-sha … --expected-ci-url …`，拒绝拼接另一次提交或运行的结果。工作流从自身上下文传入精确的仓库/run/attempt URL；只有与同次下载结果完全匹配的该地址临时加入本次展示白名单，源台账和任务核查时间不变。结果文件不能自行批准地址；普通本地投影仍只使用源白名单。此关联检查不替代监督者读取真实运行。构建与页面失败分别报告；不抹掉此前可恢复成果。
