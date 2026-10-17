@@ -11,3 +11,4 @@ secrets/
 *.token
 .ci/
 .site/
+site-artifact/

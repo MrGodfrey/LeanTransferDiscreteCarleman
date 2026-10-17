@@ -22,10 +22,10 @@ jobs:
         run: python3 tools/update_dashboard.py --ci-result .ci/result.json --expected-sha "$EXPECTED_SHA"
       - name: Package only display assets
         run: |
-          mkdir -p .site
-          cp docs/index.html docs/style.css docs/app.js docs/data.js .site/
+          mkdir -p site-artifact
+          cp docs/index.html docs/style.css docs/app.js docs/data.js site-artifact/
       - uses: actions/upload-artifact@v4
         with:
           name: progress-dashboard
-          path: .site
+          path: site-artifact
           if-no-files-found: error
