@@ -116,6 +116,113 @@ end OrdinaryLoadMaps
 #print axioms Carleman.conditional_transfer_uniform
 #print axioms Carleman.PeriodicWeakTrajectory.residual_ae
 
+-- T004: exact cell integrals, actual L² objects, full Lemma 3.2 and B3 constructors.
+#print Carleman.TimeWeightRegularity
+#print Carleman.CellEstimates
+#print Carleman.BoundedMultiplier
+#print Carleman.SpatialProfile
+#check @Carleman.TimeGrid.cellTime_succ_sub
+#check @Carleman.TimeGrid.cellTime_lt_succ
+#check @Carleman.TimeGrid.extensionPlus_on_open_cell
+#check @Carleman.TimeGrid.extensionMinus_on_open_cell
+#check @Carleman.TimeGrid.intervalIntegrable_extensionPlus_cell
+#check @Carleman.TimeGrid.intervalIntegrable_extensionMinus_cell
+#check @Carleman.TimeGrid.integral_extensionPlus_cell
+#check @Carleman.TimeGrid.integral_extensionMinus_cell
+#check @Carleman.TimeGrid.integrable_extensionPlus
+#check @Carleman.TimeGrid.integrable_extensionMinus
+#check @Carleman.TimeGrid.integral_extensionPlus
+#check @Carleman.TimeGrid.integral_extensionMinus
+#check @Carleman.Orientation.measurable_cell_index
+#check @Carleman.Orientation.aestronglyMeasurable_cell_select
+#check @Carleman.Orientation.integral_extension
+#check @Carleman.Orientation.integrable_extension
+#check @Carleman.Orientation.integral_frozen_weightedSq
+#check @Carleman.Orientation.integrable_frozen_density
+#check @Carleman.Orientation.timeSq_frozen_eq_powerSq
+#check @Carleman.TimeGrid.node_value_of_periodic_endpoints
+#check @Carleman.TimeGrid.cellTime_mem
+#check @Carleman.TimeGrid.next_node_value
+#check @Carleman.Orientation.extension_eq_cellNumber
+#check @Carleman.Orientation.cellNumber_nonneg
+#check @Carleman.Orientation.cellNumber_le_steps
+#check @Carleman.Orientation.anchor_mem
+#check @Carleman.Orientation.anchor_distance
+#check @Carleman.Orientation.anchor_value_eq_extension
+#check @Carleman.Orientation.extension_periodic
+#check @Carleman.cellThreshold_pos
+#check @Carleman.cellThreshold_bounds
+#check @Carleman.TimeWeightRegularity.mesh_bounds
+#check @Carleman.TimeWeightRegularity.relative_q_extension
+#check @Carleman.TimeWeightRegularity.relative_weight_extension
+#check @Carleman.TimeWeightRegularity.shift_extension
+#check @Carleman.TimeWeightRegularity.weight_time_quotient
+#check @Carleman.TimeWeightRegularity.weight_time_quotient_essSup
+#check @Carleman.TimeWeightRegularity.shift_node_increment
+#check @Carleman.TimeWeightRegularity.weight_node_quotient
+#check @Carleman.cell_estimates_uniform
+#check @Carleman.CellEstimates.weight_quotient_essSup
+#check @Carleman.CellEstimates.global_cell_bounds
+#check @Carleman.TimeWeightRegularity.continuousOn
+#check @Carleman.TimeWeightRegularity.aestronglyMeasurable
+#check @Carleman.TimeWeightRegularity.reciprocal_lipschitz
+#check @Carleman.TimeWeightRegularity.difference_le
+#check @Carleman.TimeWeightRegularity.small_node
+#check @Carleman.TimeWeightRegularity.comparable
+#check @Carleman.TimeWeightRegularity.relative_q
+#check @Carleman.TimeWeightRegularity.allowedWeight_pos
+#check @Carleman.TimeWeightRegularity.allowedWeight_eq_exp
+#check @Carleman.TimeWeightRegularity.cell_distance
+#check @Carleman.TimeWeightRegularity.logWeight_derivative_bound
+#check @Carleman.TimeWeightRegularity.logWeight_difference
+#check @Carleman.TimeWeightRegularity.relative_weight
+#check @Carleman.TimeWeightRegularity.weight_le
+#check @Carleman.TimeWeightRegularity.power_difference
+#check @Carleman.TimeWeightRegularity.shift_difference
+#check @Carleman.SpatialProfile.multiplier_value
+#check @Carleman.SpatialProfile.multiplier_neg_value
+#check @Carleman.SpatialProfile.seminorm_definite
+#check @Carleman.SpatialProfile.seminorm_cell_le
+#check @Carleman.SpatialProfile.multiplier_map_add_exponent
+#check @Carleman.SpatialProfile.seminorm_add_exponent
+#check @Carleman.SpatialProfile.density_eq_shifted_seminorm_sq
+#check @Carleman.SpatialProfile.seminorm_global_le
+#check @Carleman.SpatialProfile.aestronglyMeasurable_seminorm_sq
+#check @Carleman.SpatialProfile.aestronglyMeasurable_extended_sq
+#check @Carleman.SpatialProfile.extended_sq_comparable
+#check @Carleman.SpatialProfile.extended_sq_integral_comparison
+#check @Carleman.SpatialProfile.powerSq_timeSq_comparison
+#check @Carleman.SpatialProfile.powerSq_timeSq_comparison_comp
+#check @Carleman.SpatialProfile.lifted_timeSq_le
+#check @Carleman.SpatialProfile.node_powerSq_le_reconstruction
+#check @Carleman.SpatialProfile.powerSq_timeSq_uniform
+#check @Carleman.SpatialProfile.powerSq_timeSq_uniform_bounded_exponents
+#check @Carleman.BoundedMultiplier.observation_le
+#check @Carleman.BoundedMultiplier.observation_sq_integral
+#check @Carleman.SpatialProfile.observation_time_comparison
+#check @Carleman.BoundedMultiplier.memLp_smul
+#check @Carleman.BoundedMultiplier.map_ae
+#check @Carleman.BoundedMultiplier.map_add
+#check @Carleman.BoundedMultiplier.map_smul
+#check @Carleman.BoundedMultiplier.seminorm_apply
+#check @Carleman.BoundedMultiplier.seminorm_le
+#check @Carleman.BoundedMultiplier.seminorm_le_of_weight_le
+#check @Carleman.BoundedMultiplier.seminorm_eq_zero_iff
+#check @Carleman.BoundedMultiplier.seminorm_sq_integral
+#check @Carleman.BoundedMultiplier.integrable_density
+#check @Carleman.TransferGeometry.node_derivative_of_L2
+#check @Carleman.TransferGeometry.node_state_of_L2
+#check @Carleman.TransferGeometry.lifted_load_of_L2
+#check @Carleman.TransferGeometry.observed_reconstruction_of_L2
+#check @Carleman.frozenShift_extension_sq_le
+#check @Carleman.frozenShift_timeSq_le
+#check @Carleman.TimeWeightRegularity.ofContDiffOn
+#print axioms Carleman.cell_estimates_uniform
+#print axioms Carleman.CellEstimates.global_cell_bounds
+#print axioms Carleman.SpatialProfile.powerSq_timeSq_uniform_bounded_exponents
+#print axioms Carleman.TransferGeometry.lifted_load_of_L2
+#print axioms Carleman.frozenShift_timeSq_le
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

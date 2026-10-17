@@ -85,15 +85,21 @@
       "pdf_page": 13,
       "tex_line": 789,
       "milestone": "M3",
-      "claim_ids": [],
-      "lean_declarations": [],
+      "claim_ids": [
+        "C020"
+      ],
+      "lean_declarations": [
+        "Carleman.cell_estimates_uniform",
+        "Carleman.CellEstimates.weight_quotient_essSup",
+        "Carleman.CellEstimates.global_cell_bounds"
+      ],
       "declaration_version": null,
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": null,
       "semantic_review": null,
-      "blocker": null
+      "blocker": "候选完整证明待实际 CI 与父监督者独立验收；当前不计原文完成"
     },
     {
       "id": "P006",
