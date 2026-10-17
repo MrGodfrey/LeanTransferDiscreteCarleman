@@ -24,9 +24,3 @@ theorem sum_sub_perm {ι α : Type*} [Fintype ι] [AddCommGroup α]
   rw [Finset.sum_sub_distrib, Equiv.sum_comp σ f, sub_self]
 
 end Carleman
-
--- Controlled CI probe. This branch must never be merged into main.
-namespace Carleman
-theorem ci_negative_probe : False := by
-  exact True.intro
-end Carleman
