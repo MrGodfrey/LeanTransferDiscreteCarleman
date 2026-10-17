@@ -1,7 +1,7 @@
 module
 
 public import Carleman.Weights.WeightedGraphRemainder
-public import Carleman.Weights.WeightedWeakTrajectory
+public import Carleman.Weights.ClosureWeakTrajectory
 public import Carleman.Continuous.PeriodicGraphEquivalence
 
 /-! The weighted graph representative required by the remainder estimate is
@@ -9,18 +9,16 @@ constructed from the original one-way elliptic regularity and A2. Neither a
 weighted graph estimate nor all-time operator-domain membership is assumed. -/
 @[expose] public noncomputable section
 open MeasureTheory Set
-open scoped ContDiff
 namespace Carleman.CoerciveForm
 variable {d n : ℕ} {ν : Measure (SpatialCoordinates d)}
   [IsFiniteMeasureOnCompacts ν] [IsLocallyFiniteMeasure ν]
-  {S U K : Set (SpatialCoordinates d)} (hS : IsOpen S) (hU : IsOpen U)
-  (hK : IsCompact K) (hKU : K ⊆ U) (hSU : S ⊆ U)
-  (hνS : ∀ᵐ x ∂ν, x ∈ S) (hνK : ∀ᵐ x ∂ν, x ∈ K)
+  {S : Set (SpatialCoordinates d)} (hS : IsOpen S) (hbounded : Bornology.IsBounded S)
+  (hνS : ∀ᵐ x ∂ν, x ∈ S)
   {V : Type*} [NormedAddCommGroup V] [InnerProductSpace ℝ V] [CompleteSpace V]
   (b : CoerciveForm (Lp ℝ 2 ν) V) (hD : b.domain ≤ sobolevSubspace d n ν S)
-  (ρ : SpatialProfile ν) (hρ : ContDiffOn ℝ ∞ ρ.value U)
+  (ρ : SpatialProfile ν) (hρ : SmoothOnClosure ρ.value S)
 
-include hU hK hKU hSU hνK hρ in
+include hbounded hρ in
 /-- Actual weak multiplication followed by the proved periodic graph equivalence. -/
 theorem exists_weighted_graph {g : TimeGrid} {w : TimeWeight} {β : ℝ}
     (h : TimeWeightRegularity w g β) (τ : ℝ)
@@ -37,8 +35,8 @@ theorem exists_weighted_graph {g : TimeGrid} {w : TimeWeight} {β : ℝ}
       let B := (ρ.memLp_logDerivativeAction h τ (Lp.memLp (g.pathL2 q.val.1))).toLp
         (fun t => ρ.logDerivativeAction h τ t (g.pathL2 q.val.1 t))
       g.pathL2 q.val.1 = M (g.pathL2 p.val.1) ∧ q.val.2.1 = B + M p.val.2.1 := by
-  obtain ⟨v,hv,hd,_⟩ := PeriodicWeakTrajectory.exists_weighted_trajectory
-    hS hU hK hKU hSU hνS hνK hD b b.operator b.operator_isAssociated ρ hρ h τ hw hξ
+  obtain ⟨v,hv,hd,_⟩ := PeriodicWeakTrajectory.exists_closure_weighted_trajectory
+    hS hbounded hνS hD b b.operator b.operator_isAssociated ρ hρ h τ hw hξ
     hC hell hA2 p.toTrajectory
   let q := v.toPeriodicGraph
   refine ⟨q,?_,?_⟩
@@ -63,7 +61,7 @@ theorem exists_weighted_graph {g : TimeGrid} {w : TimeWeight} {β : ℝ}
     rw [h1,h5,h3,h4,h2,hd,hv]
     rfl
 
-include hU hK hKU hSU hνK hρ in
+include hbounded hρ in
 set_option maxHeartbeats 800000 in
 /-- The weighted frozen graph bound with its real spatial commutator remainder.
 The weighted weak graph and its domain regularity are constructed, not assumed. -/
@@ -89,7 +87,7 @@ theorem exists_weighted_frozen_graph_remainder_uniform (m : ℕ) (hm : 0 < m)
   obtain ⟨L₀,δ,hL,hδ,hgraph⟩ := b.weighted_frozen_graph_remainder_uniform ρ m hm β τStar hβ hτStar
   refine ⟨L₀,δ,hL,hδ,?_⟩
   intro g s extension w h L τ hLL hmesh hτ hw hξ C Creg hC hell hA2 p
-  obtain ⟨q,hv,hd⟩ := b.exists_weighted_graph hS hU hK hKU hSU hνS hνK hD ρ hρ
+  obtain ⟨q,hv,hd⟩ := b.exists_weighted_graph hS hbounded hνS hD ρ hρ
     h τ hw hξ hC hell hA2 p
   exact ⟨q,hv,hgraph g s extension w h L τ hLL hmesh hτ p q hv hd⟩
 

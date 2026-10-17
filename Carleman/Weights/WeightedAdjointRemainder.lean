@@ -8,18 +8,16 @@ weighted derivative is estimated uniformly, retaining only the genuine spatial
 commutator. This is not the closed weighted graph or time-error theorem. -/
 @[expose] public noncomputable section
 open MeasureTheory Set
-open scoped ContDiff
 namespace Carleman.CoerciveForm
 variable {d n : ℕ} {ν : Measure (SpatialCoordinates d)}
   [IsFiniteMeasureOnCompacts ν] [IsLocallyFiniteMeasure ν]
-  {S U K : Set (SpatialCoordinates d)} (hS : IsOpen S) (hU : IsOpen U)
-  (hK : IsCompact K) (hKU : K ⊆ U) (hSU : S ⊆ U)
-  (hνS : ∀ᵐ x ∂ν, x ∈ S) (hνK : ∀ᵐ x ∂ν, x ∈ K)
+  {S : Set (SpatialCoordinates d)} (hS : IsOpen S) (hbounded : Bornology.IsBounded S)
+  (hνS : ∀ᵐ x ∂ν, x ∈ S)
   {V : Type*} [NormedAddCommGroup V] [InnerProductSpace ℝ V] [CompleteSpace V]
   (b : CoerciveForm (Lp ℝ 2 ν) V) (hD : b.domain ≤ sobolevSubspace d n ν S)
-  (ρ : SpatialProfile ν) (hρ : ContDiffOn ℝ ∞ ρ.value U)
+  (ρ : SpatialProfile ν) (hρ : SmoothOnClosure ρ.value S)
 
-include hU hK hKU hSU hνK hρ in
+include hbounded hρ in
 set_option maxHeartbeats 800000 in
 /-- Here M is the inverse weight and W its reciprocal. The load is W(W e),
 and M cancels one W exactly. Every adjoint and weighted graph is constructed. -/
@@ -46,7 +44,7 @@ theorem weighted_adjoint_remainder_uniform (m : ℕ) (hm : 0 < m)
             (Z.val.2.2 - M Y.val.2.2) =ᵐ[g.timeMeasure]
               allowedCommutatorPath b.operator ρ w τ hw hξ Z.toTrajectory.domainValue := by
   obtain ⟨L₀,δ,hL,hδ,hgraph⟩ := b.exists_weighted_frozen_graph_remainder_uniform
-    hS hU hK hKU hSU hνS hνK hD ρ hρ m hm β τStar hβ hτStar
+    hS hbounded hνS hD ρ hρ m hm β τStar hβ hτStar
   refine ⟨L₀,δ,hL,hδ,?_⟩
   intro g s extension w h L τ hLL hmesh hτ hw hξ C Creg hC hell hA2 e
   let M := ρ.timeMap (E := ℝ) g w τ h.aestronglyMeasurable

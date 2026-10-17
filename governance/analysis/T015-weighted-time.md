@@ -21,8 +21,12 @@
 3. 完整允许权 Euler 图估计及其真实节点权时间交换子控制。无权 Euler 结果和加权仿射缺陷不足以代替 `eq:eulerMR`。
 4. 上述两项闭合后，才能将实际对偶界闭合为 Theorem 3.5 的 O(dt) 加权 L²。T014 冻结误差能量可复用以得 O(sqrt(dt)) N 误差；空间 Theorem 4.2/B4 仍待。
 
-本阶段保留原论文、最终结论、两方向、全状态和 T 统一性；范围 AUXILIARY，原文完成仍 1/26。几何输入沿既有光滑邻域/内在闭包接口衔接，不将其作为新的原定理限制。
+本阶段保留原论文、最终结论、两方向、全状态和 T 统一性；范围 AUXILIARY，原文完成仍 1/26。三个图构造/伴随包装定理已改接 `exists_closure_weighted_trajectory`，直接采用原域开、有界及 `SmoothOnClosure`；没有光滑开邻域前提。`SmoothOnClosure.of_neighborhood` 的方向仅为邻域 → 内禀闭包，先前反向桥接的表述错误。
 
 ## 工程验证范围
 
 CI 快照新增 workflow-context 的精确 expected-ci-url 核对；仅该地址临时进入展示白名单，checked SHA 仍须一致，台账源数据及 supervisor_checked_at 不变。回归覆盖当前 run/attempt 展示、错 run/外域/路径/查询拒绝、自授权拒绝、输入不变和任务时间不变。该检查只绑定同一运行，不自行宣称 GitHub 实际成功；交付另读运行、日志和产物。
+
+## PR #18 独立审核后的范围修正
+
+旧版三个包装声明使用 U/K 和邻域 ContDiffOn，与原内禀闭包权族范围不符。现移除 U、K、hU、hK、hKU、hSU、hνK，以 IsOpen S、IsBounded S、SmoothOnClosure 直接调用已证闭包轨迹构造。加权轨迹的后续 toPeriodicGraph/a.e.识别、阈值次序、常数30、两方向和全部状态保持；不涉及 Whitney 延拓或新的数学前提。此前构建和执行者审核只属于旧声明版本，当前版本重新构建并审计。
