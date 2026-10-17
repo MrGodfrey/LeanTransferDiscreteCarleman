@@ -15,7 +15,12 @@ existence, differentiability, or a graph estimate is made by this interface.
 The exact frozen equation is a premise of the cancellation identity. A filter
 version preserves its almost-everywhere interpretation: the future Sobolev
 interface can instantiate the filter by volume restricted to `(0,T)` without
-strengthening the PDE to an everywhere equation. Both half-open cell choices
+strengthening the PDE to an everywhere equation. The type `U : ℝ → D` here
+is a chosen domain-valued representative for this algebra. The future B1
+interface must construct or transfer an almost-everywhere `D(A)`-valued
+representative of the actual Sobolev solution, preserving its `H`-valued weak
+derivative and endpoint traces; this interface does not show that its original
+representative belongs to `D(A)` at every time. Both half-open cell choices
 are concrete and share the extensions of the shift, load, and state.
 -/
 
@@ -27,7 +32,7 @@ variable {H X : Type*}
 variable [NormedAddCommGroup H] [InnerProductSpace ℝ H]
 variable [NormedAddCommGroup X] [InnerProductSpace ℝ X]
 variable {V : Submodule ℝ H} {r : Reconstruction V X}
-variable {F : Type*} [AddCommGroup F] [Module ℝ F]
+variable {F : Type*}
 variable (l : LoadInterface r F) (g : TimeGrid)
 
 /-- Extend the transfer load on the positive-orientation cells. -/

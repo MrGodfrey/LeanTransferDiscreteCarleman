@@ -82,6 +82,22 @@ example (z : g.Sequence X) : g.dMinus (g.map r.G z) = g.map r.G (g.dMinus z) :=
   g.dMinus_map r.G z
 end ReconstructionUses
 
+-- Regression for the manuscript's unrestricted load maps: F has no typeclasses,
+-- and Γ/lift are arbitrary functions satisfying only the original compatibility.
+section OrdinaryLoadMaps
+variable {H X F : Type*} [NormedAddCommGroup H] [InnerProductSpace ℝ H]
+  [NormedAddCommGroup X] [InnerProductSpace ℝ X]
+  {V : Submodule ℝ H} (r : Carleman.Reconstruction V X) (g : Carleman.TimeGrid)
+  (Γ : F → X) (lift : F → H) (h : ∀ f, r.J (lift f) = Γ f)
+example (μ : g.Sequence ℝ) (f : g.Sequence F) (z : g.Sequence X) :
+    g.map r.J ((Carleman.LoadInterface.mk Γ lift h).transferLoad g μ f z) =
+      (fun i => Γ (f i)) + fun i => μ i • r.G (z i) :=
+  (Carleman.LoadInterface.mk Γ lift h).J_transferLoad g μ f z
+example (I : X → F) (hI : ∀ z, Γ (I z) = z) (v : g.Sequence X) :
+    (fun i => Γ (I (v i))) = v :=
+  (Carleman.LoadInterface.mk Γ lift h).rightInverse_load g I hI v
+end OrdinaryLoadMaps
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
