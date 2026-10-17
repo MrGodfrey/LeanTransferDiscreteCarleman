@@ -9,38 +9,38 @@
     "started_at": "2026-10-17T09:43:34.927869+00:00"
   },
   "execution": {
-    "state": "RUNNING",
+    "state": "REVIEW",
     "current_task_id": "T015",
     "supervisor_checked_at": "2026-10-17T13:54:55.912702+00:00",
-    "next_action": "同PR18修正三项包装为内禀闭包范围，重新构建审计及同SHA CI证据",
+    "next_action": "父监督者复核内禀闭包修正及27声明；同PR18保持draft待验收，原域插值/空间交换子吸收/允许权Euler图与闭合B4仍待",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-17T22:39:02.822034+00:00"
+    "last_activity_at": "2026-10-17T22:43:43.081471+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "7fda73ec3d836fff650e2ac01428c44ae26aef9e",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39074965872/attempts/1",
-      "finished_at": "2026-10-17T22:27:44.292368+00:00",
+      "checked_sha": "354594d0f7d070547f73fe9ade50ea300d11e9cd",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39075994783/attempts/1",
+      "finished_at": "2026-10-17T22:41:43.873454+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "c75db8643648531f48dc86a35c0adc9728f41768"
+      "source_head_sha": "2daf966cbdac81db220651ea67f839375fc411d3"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "7fda73ec3d836fff650e2ac01428c44ae26aef9e",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39074965872/attempts/1",
-      "finished_at": "2026-10-17T22:27:44.292368+00:00",
+      "checked_sha": "354594d0f7d070547f73fe9ade50ea300d11e9cd",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39075994783/attempts/1",
+      "finished_at": "2026-10-17T22:41:43.873454+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "c75db8643648531f48dc86a35c0adc9728f41768"
+      "source_head_sha": "2daf966cbdac81db220651ea67f839375fc411d3"
     }
   },
   "milestones": [
@@ -3223,7 +3223,7 @@
       "paper_ref": "Theorem3.5加权时间误差自然依赖",
       "milestone": "M3",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [],
       "lean_declarations": [
@@ -3254,9 +3254,55 @@
         "Carleman.CoerciveForm.weighted_evolution_identity",
         "Carleman.CoerciveForm.weighted_frozen_graph_remainder_uniform"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "354594d0f7d070547f73fe9ade50ea300d11e9cd",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "354594d0f7d070547f73fe9ade50ea300d11e9cd",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39075994783/attempts/1",
+        "finished_at": "2026-10-17T22:41:43.873454+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "2daf966cbdac81db220651ea67f839375fc411d3"
+      },
+      "semantic_review": {
+        "checked_sha": "354594d0f7d070547f73fe9ade50ea300d11e9cd",
+        "declarations": [
+          "Carleman.CoerciveForm.weighted_temporal_duality",
+          "Carleman.CoerciveForm.weighted_temporal_duality_bound",
+          "Carleman.CoerciveForm.weighted_temporal_duality_uniform",
+          "Carleman.Orientation.affine_defect_scalar_ae",
+          "Carleman.Orientation.affine_defect_seminorm_ae",
+          "Carleman.SpatialProfile.logDerivative_frozen_small_uniform",
+          "Carleman.SpatialProfile.timeMap_ae",
+          "Carleman.SpatialProfile.timeMap_toLp",
+          "Carleman.SpatialProfile.timeMap_norm_le",
+          "Carleman.SpatialProfile.timeMap_inverse",
+          "Carleman.SpatialProfile.timeMap_inner_inverse",
+          "Carleman.SpatialProfile.timeMap_inner_twice",
+          "Carleman.CoerciveForm.weighted_adjoint_remainder_uniform",
+          "Carleman.SpatialProfile.timeMap_extension_norm_sq",
+          "Carleman.SpatialProfile.timeMap_extension_norm_comparison",
+          "Carleman.SpatialProfile.timeMap_affine_defect_le",
+          "Carleman.SpatialProfile.weighted_affine_bochner_defect",
+          "Carleman.SpatialProfile.weighted_affine_defect_uniform",
+          "Carleman.CoerciveForm.weighted_graph_domain_ae",
+          "Carleman.CoerciveForm.weighted_graph_commutator_ae",
+          "Carleman.CoerciveForm.exists_weighted_graph",
+          "Carleman.CoerciveForm.exists_weighted_frozen_graph_remainder_uniform",
+          "Carleman.SpatialProfile.timeMap_commute_multiplier",
+          "Carleman.linear_evolution_residual",
+          "Carleman.CoerciveForm.weighted_evolution_identity",
+          "Carleman.CoerciveForm.weighted_frozen_graph_remainder_uniform"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2daf966cbdac81db220651ea67f839375fc411d3/governance/reviews/T015.md",
+        "reviewed_at": "2026-10-17T22:43:43.081471+00:00",
+        "reviewer": "T015 executor after parent scope correction; parent independent acceptance pending"
+      },
       "blocker": "原Lipschitz同时L²/Hⁿ扩张及允许权统一图界仍未清偿",
       "dependencies": [
         "C031"
@@ -3431,11 +3477,16 @@
       "at": "2026-10-17T22:29:33.756792+00:00",
       "public_summary": "真实加权仿射缺陷、对偶及冻结伴随余项已构建；阶段PR待独立验收，原域插值与闭合B4仍待，原文1/26",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/18"
+    },
+    {
+      "at": "2026-10-17T22:43:43.081471+00:00",
+      "public_summary": "三个加权图/伴随包装已修正为内禀闭包光滑范围；新版本构建及递归审计通过，同PR待独立验收，原文1/26",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/18"
     }
   ],
   "snapshot": {
-    "synced_at": "2026-10-17T22:29:33.756792+00:00",
-    "source_commit": "7fda73ec3d836fff650e2ac01428c44ae26aef9e",
+    "synced_at": "2026-10-17T22:43:43.081471+00:00",
+    "source_commit": "354594d0f7d070547f73fe9ade50ea300d11e9cd",
     "mode": "LOCAL_SNAPSHOT"
   },
   "dashboard": {
@@ -3497,7 +3548,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39073223285/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/18",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39074965872/attempts/1",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c75db8643648531f48dc86a35c0adc9728f41768/governance/reviews/T015.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c75db8643648531f48dc86a35c0adc9728f41768/governance/reviews/T015.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39075994783/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2daf966cbdac81db220651ea67f839375fc411d3/governance/reviews/T015.md"
     ]
   },
   "schedules": [
@@ -8034,9 +8087,9 @@
       ],
       "branch": "proof/t015-weighted-time-analysis",
       "base_commit": "9f8e351a71cbcd8943db0d9056afdd2bc0a1ffe7",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/18",
-      "checkpoint_commit": "c75db8643648531f48dc86a35c0adc9728f41768",
+      "checkpoint_commit": "2daf966cbdac81db220651ea67f839375fc411d3",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.CoerciveForm.weighted_temporal_duality",
@@ -8067,7 +8120,18 @@
         "Carleman.CoerciveForm.weighted_evolution_identity",
         "Carleman.CoerciveForm.weighted_frozen_graph_remainder_uniform"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "354594d0f7d070547f73fe9ade50ea300d11e9cd",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39075994783/attempts/1",
+        "finished_at": "2026-10-17T22:41:43.873454+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "2daf966cbdac81db220651ea67f839375fc411d3"
+      },
       "blocker": null,
       "attempts": [
         "已fetch核实PR17合并、main实际3jobs32steps及3351buildjobs/2392审计；固定工具链依赖，复验基线PASS",
@@ -8076,9 +8140,45 @@
         "接入实际反向伴随的30常数导数余项估计；原域扩张/空间交换子吸收/允许权Euler图及闭合B4仍待",
         "父监督者指出旧邻域条件强于原内禀闭包，MATH_SPEC错误反用of_neighborhood；直接改用已证exists_closure_weighted_trajectory，无Whitney扩张，无关结论不变"
       ],
-      "next_action": "同PR18修正三项包装为内禀闭包范围，重新构建审计及同SHA CI证据",
-      "declaration_version": null,
-      "semantic_review": null,
+      "next_action": "父监督者复核内禀闭包修正及27声明；同PR18保持draft待验收，原域插值/空间交换子吸收/允许权Euler图与闭合B4仍待",
+      "declaration_version": "354594d0f7d070547f73fe9ade50ea300d11e9cd",
+      "semantic_review": {
+        "checked_sha": "354594d0f7d070547f73fe9ade50ea300d11e9cd",
+        "declarations": [
+          "Carleman.CoerciveForm.weighted_temporal_duality",
+          "Carleman.CoerciveForm.weighted_temporal_duality_bound",
+          "Carleman.CoerciveForm.weighted_temporal_duality_uniform",
+          "Carleman.Orientation.affine_defect_scalar_ae",
+          "Carleman.Orientation.affine_defect_seminorm_ae",
+          "Carleman.SpatialProfile.logDerivative_frozen_small_uniform",
+          "Carleman.SpatialProfile.timeMap",
+          "Carleman.SpatialProfile.timeMap_ae",
+          "Carleman.SpatialProfile.timeMap_toLp",
+          "Carleman.SpatialProfile.timeMap_norm_le",
+          "Carleman.SpatialProfile.timeMap_inverse",
+          "Carleman.SpatialProfile.timeMap_inner_inverse",
+          "Carleman.SpatialProfile.timeMap_inner_twice",
+          "Carleman.CoerciveForm.weighted_adjoint_remainder_uniform",
+          "Carleman.SpatialProfile.timeMap_extension_norm_sq",
+          "Carleman.SpatialProfile.timeMap_extension_norm_comparison",
+          "Carleman.SpatialProfile.timeMap_affine_defect_le",
+          "Carleman.SpatialProfile.weighted_affine_bochner_defect",
+          "Carleman.SpatialProfile.weighted_affine_defect_uniform",
+          "Carleman.CoerciveForm.weighted_graph_domain_ae",
+          "Carleman.CoerciveForm.weighted_graph_commutator_ae",
+          "Carleman.CoerciveForm.exists_weighted_graph",
+          "Carleman.CoerciveForm.exists_weighted_frozen_graph_remainder_uniform",
+          "Carleman.SpatialProfile.timeMap_commute_multiplier",
+          "Carleman.linear_evolution_residual",
+          "Carleman.CoerciveForm.weighted_evolution_identity",
+          "Carleman.CoerciveForm.weighted_frozen_graph_remainder_uniform"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2daf966cbdac81db220651ea67f839375fc411d3/governance/reviews/T015.md",
+        "reviewed_at": "2026-10-17T22:43:43.081471+00:00",
+        "reviewer": "T015 executor after parent scope correction; parent independent acceptance pending"
+      },
       "superseded_evidence": [
         {
           "declaration_version": "7fda73ec3d836fff650e2ac01428c44ae26aef9e",
@@ -8186,7 +8286,37 @@
           },
           "reason": "Superseded: parent independent review found unsupported closure-to-neighborhood claim and stronger neighborhood hypotheses in three wrappers"
         }
-      ]
+      ],
+      "ci_relationship": {
+        "proof_head": "2daf966cbdac81db220651ea67f839375fc411d3",
+        "checked_test_sha": "354594d0f7d070547f73fe9ade50ea300d11e9cd",
+        "base_sha": "9f8e351a71cbcd8943db0d9056afdd2bc0a1ffe7",
+        "proof_and_test_tree": "52970a0a9fc93598e46d533df867c4ca3352a733",
+        "test_parents": [
+          "9f8e351a71cbcd8943db0d9056afdd2bc0a1ffe7",
+          "2daf966cbdac81db220651ea67f839375fc411d3"
+        ],
+        "run_id": 39075994783,
+        "all_jobs_and_steps": "3 jobs / 32 steps PASS",
+        "actual_build_jobs": 3360,
+        "recursive_axiom_audit": 2432,
+        "recompiled_affected_modules": 3,
+        "root_recompiled": true,
+        "declaration_artifact_sha256": "cf7850e5de98411ce6bd9a511bcd393c00c97e29b517ecd2adf5f078c319bdd4",
+        "scope_correction": "Three wrappers directly use IsOpen/IsBounded/SmoothOnClosure via exists_closure_weighted_trajectory; no neighborhood extension premise",
+        "lean-ci-result": {
+          "id": 12117435495,
+          "zip_sha256": "807dd9231d9a407257474abd997c484120fd63644773255b0ddc1211c933ee93"
+        },
+        "lean-declaration-evidence": {
+          "id": 12116838869,
+          "zip_sha256": "84be57f41ee30f0c81d52ed2239ebb93d5cec803e1e15ee87ea9b20b6ec907f7"
+        },
+        "progress-dashboard": {
+          "id": 12117097118,
+          "zip_sha256": "aeccb2a9802b7765621d80f81cc65957e0e57d94be484814926c7c94f1f2a1d9"
+        }
+      }
     }
   ],
   "private_maintenance": {
