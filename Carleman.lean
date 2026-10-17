@@ -33,3 +33,23 @@ public import Carleman.Continuous.PeriodicGraphEquivalence
 public import Carleman.Continuous.PeriodicGraphSpace
 public import Carleman.Continuous.TimeInterval
 public import Carleman.Continuous.WeakTimeSpace
+
+-- T009: genuine arbitrary-load periodic well-posedness and time graph estimates.
+public import Carleman.Continuous.ConstantPeriodicExistence
+public import Carleman.Continuous.FrozenContinuousGraph
+public import Carleman.Continuous.HarmonicDensity
+public import Carleman.Continuous.PeriodicSolutionOperator
+public import Carleman.Continuous.RegularTimeCore
+public import Carleman.Continuous.ShiftedContinuousGraph
+public import Carleman.Continuous.TimeGraphBound
+public import Carleman.Continuous.TimeGraphEnergy
+public import Carleman.Continuous.TimeTestPrimitive
+public import Carleman.Continuous.TimeTraceBound
+public import Carleman.Continuous.VariablePeriodicExistence
+public import Carleman.Continuous.VariableTimeEnergy
+public import Carleman.Continuous.WeakPeriodicUnique
+public import Carleman.Continuous.WeakTimeConstant
+public import Carleman.Continuous.WeakTimeEnergy
+public import Carleman.Continuous.WeakTimeFTC
+public import Carleman.Continuous.WeakTimePrimitive
+public import Carleman.Transfer.FrozenExistence
