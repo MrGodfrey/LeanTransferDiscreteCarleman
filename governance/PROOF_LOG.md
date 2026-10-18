@@ -79,3 +79,5 @@
 - T041 / C057：真实负Laplacian与完整分布算子图独立验收PASS；20声明、4465项公理审计及同SHA CI。固定证明 `3d5aa9cec281974bef7da9d37ffa11a8f9f75670`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bf05d4537979f4633df72a3aa2d0569fee155328/governance/reviews/T041-local-acceptance.md)。反向H2正则性仍待，原文12/26；T042继续凸域内缩与实际H1构造。
 
 - T042 / C058：凸域内缩、正支撑缓冲与实际H1构造独立验收PASS；24声明、4504项公理审计及同SHA CI。固定证明 `0df65a77f4a13fdab4641c30a3843f02bd8b1af8`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/54b9925eafd013ef9517a01ea975560d42cd0e60/governance/reviews/T042-local-acceptance.md)。原文12/26，T043继续实际节点内缩的强H1收敛。
+
+- T043 / C059：实际节点内缩强H1极限独立验收PASS；18声明、4527项公理审计及同SHA CI。固定证明 `28e1f4df08f31b4337f32bd20b61dbe566762f15`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5acfb618de5bc22d07b251ef133fa5da2b5d88e7/governance/reviews/T043-local-acceptance.md)。原文12/26，T044继续真实光滑逼近和最终节点H01成员。
