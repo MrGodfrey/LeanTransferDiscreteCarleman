@@ -152,3 +152,15 @@ public import Carleman.Weights.SecondOrderFrozenGraph
 public import Carleman.Weights.SecondOrderTemporalError
 public import Carleman.Weights.SecondOrderTemporalL2
 public import Carleman.Weights.WeightedEulerRemainder
+
+-- T017: explicit higher-order interpolation chain and Lipschitz inward-cone geometry.
+public import Carleman.Geometry.LipschitzInwardCone
+public import Carleman.Spatial.AllowedWeightData
+public import Carleman.Spatial.DomainParameterInterpolation
+public import Carleman.Spatial.InterpolatedCommutator
+public import Carleman.Spatial.InterpolatedParameterGraph
+public import Carleman.Weights.InterpolatedEulerGraph
+public import Carleman.Weights.InterpolatedEulerSobolev
+public import Carleman.Weights.InterpolatedFrozenGraph
+public import Carleman.Weights.InterpolatedTemporalError
+public import Carleman.Weights.InterpolatedTemporalL2

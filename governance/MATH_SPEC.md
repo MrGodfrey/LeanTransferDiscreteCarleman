@@ -619,3 +619,14 @@ B4 未清偿边界没有扩大或隐藏：原 Lipschitz 域同一高阶弱扩张
 `secondOrder_weighted_temporal_error_uniform` 构造实际Euler/连续/伴随解，在原周期弱图的a.e.域误差代表上证明 2160 dt 的真实加权L²率和 sqrt(466560/c) sqrt(dt) 的真实N₁率；声明包含弱jet的MemLp。Γ普通函数、已证B2和真实B3原接口不变。
 
 B4仅在m=1的**时间部分**获得闭合。一般阶m+1至2m−1导数的原域参数插值、空间比较及所有权族的最终组合实例仍待；不把二阶辅助结果登记为一般Theorem3.5完成。此路线绕过任意Sobolev扩张的需要只限当前二阶推导，不假设一般域扩张存在。
+
+
+## T017：一般阶时间条件链与原域内锥几何
+
+详细陈述、常数和B1–B5余额见 [T017数学阶段](analysis/T017-higher-order-analysis.md)，逐声明核对见 [T017核对](reviews/T017.md)。新增10模块、11定理、17显式声明。C034为CONDITIONAL，C035为AUXILIARY，原文仍1/26。
+
+唯一新增分析前提是实际D(A)上的 `DomainParameterInterpolation`：同一Cinterp对所有r≥1、u∈D(A)，控制Σ r^(n−j)‖D^ju‖为Cinterp(‖jet_n u‖+rⁿ‖u‖)。原A1只正向将jet控制为Au；没有反向A1或导数域保持。全空间实例已由既有弱插值证明，原bounded Lipschitz域实例尚待，所有一般阶调用均显式保留hI。
+
+在该前提下，真实A2交换子已统一吸收；一般m的Euler算子图12、完整离散R₂ₘ图、冻结连续算子图60已证。真实Euler/连续/逆权伴随构造给2160dt的L²率及sqrt(466560/c)sqrt(dt)的N_m率，同时证明误差弱jet的MemLp。阈值先于T/网格/两方向/权/τ/所有状态和载荷，ρ保持内禀SmoothOnClosure；连续值只要求a.e.属于D(A)，不加强为每时刻正规性。冻结连续完整R₂ₘ图尚未另行包装。
+
+原域几何新证明从明确Lipschitz图表构造实际内移闭球，再用开有界域闭包紧性得到有限覆盖和统一正高度。它不是Sobolev扩张，也没有证明hI；局部图函数到全局Lipschitz图表的定义等价亦不冒称已证。原域弱Taylor/平均估计仍缺。空间B4误差两系数、最终权族实例仍待；已证B2及普通Γ、原文全离散/两方向/T统一目标均不变。

@@ -9,38 +9,38 @@
     "started_at": "2026-10-17T09:43:34.927869+00:00"
   },
   "execution": {
-    "state": "REVIEW",
-    "current_task_id": "T016",
+    "state": "RUNNING",
+    "current_task_id": "T017",
     "supervisor_checked_at": "2026-10-17T13:54:55.912702+00:00",
-    "next_action": "父监督者独立验收37声明及PR19；一般阶中间高阶插值、空间B4与最终权族组合保留，优先复用二阶完整Euler图推进空间比较",
+    "next_action": "完成同SHA远端CI与draft PR交付；接续原域弱Taylor/平均插值及Section4空间比较",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-17T23:30:29.990604+00:00"
+    "last_activity_at": "2026-10-17T23:49:41.427762+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "b6d1202fc1fad48bb7468b1d473e9fac70786d48",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39079012965/attempts/1",
-      "finished_at": "2026-10-17T23:28:41.466581+00:00",
+      "checked_sha": "9b61edb8f2f5ad8ceec4ab9cadc0d9aadaacd491",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39079981845/attempts/1",
+      "finished_at": "2026-10-17T23:44:14.057885+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "f88cbbc9089cea4ddd8b1bcddda14c47b65fb8e5"
+      "source_head_sha": "9b61edb8f2f5ad8ceec4ab9cadc0d9aadaacd491"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "b6d1202fc1fad48bb7468b1d473e9fac70786d48",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39079012965/attempts/1",
-      "finished_at": "2026-10-17T23:28:41.466581+00:00",
+      "checked_sha": "9b61edb8f2f5ad8ceec4ab9cadc0d9aadaacd491",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39079981845/attempts/1",
+      "finished_at": "2026-10-17T23:44:14.057885+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "f88cbbc9089cea4ddd8b1bcddda14c47b65fb8e5"
+      "source_head_sha": "9b61edb8f2f5ad8ceec4ab9cadc0d9aadaacd491"
     }
   },
   "milestones": [
@@ -3370,7 +3370,7 @@
       "paper_ref": "eq:weight-time-quotient、eq:eulerMR、lem:frozen、thm:timeerror 的一般阶依赖及m=1辅助结论",
       "milestone": "M3",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [],
       "lean_declarations": [
@@ -3412,21 +3412,21 @@
         "Carleman.CoerciveForm.weighted_euler_identity",
         "Carleman.CoerciveForm.weighted_euler_graph_remainder_uniform"
       ],
-      "declaration_version": "b6d1202fc1fad48bb7468b1d473e9fac70786d48",
+      "declaration_version": "9b61edb8f2f5ad8ceec4ab9cadc0d9aadaacd491",
       "build_evidence": {
         "status": "PASS",
-        "checked_sha": "b6d1202fc1fad48bb7468b1d473e9fac70786d48",
-        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39079012965/attempts/1",
-        "finished_at": "2026-10-17T23:28:41.466581+00:00",
+        "checked_sha": "9b61edb8f2f5ad8ceec4ab9cadc0d9aadaacd491",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39079981845/attempts/1",
+        "finished_at": "2026-10-17T23:44:14.057885+00:00",
         "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "targets": [
           "Carleman"
         ],
-        "source_head_sha": "f88cbbc9089cea4ddd8b1bcddda14c47b65fb8e5"
+        "source_head_sha": "9b61edb8f2f5ad8ceec4ab9cadc0d9aadaacd491"
       },
       "semantic_review": {
-        "checked_sha": "b6d1202fc1fad48bb7468b1d473e9fac70786d48",
+        "checked_sha": "9b61edb8f2f5ad8ceec4ab9cadc0d9aadaacd491",
         "declarations": [
           "Carleman.bochnerL2Norm_coe",
           "Carleman.lp_norm_le_two",
@@ -3468,9 +3468,9 @@
         ],
         "result": "PASS",
         "axiom_check": "PASS",
-        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f88cbbc9089cea4ddd8b1bcddda14c47b65fb8e5/governance/reviews/T016.md",
-        "reviewed_at": "2026-10-17T23:30:29.990604+00:00",
-        "reviewer": "T016 executor; parent independent acceptance pending"
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/19",
+        "reviewed_at": "2026-10-17T23:49:41.427762+00:00",
+        "reviewer": "Parent supervisor independent declaration/source/assumptions/dependency acceptance; reported in continuation delegation"
       },
       "blocker": null,
       "dependencies": [
@@ -3478,6 +3478,65 @@
       ],
       "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/19",
       "scope_notes": "一般m仅Euler空间余项与0至m阶吸收；闭合加权Euler R₂及时间两种率明确m=1，不代替原文一般阶目标。"
+    },
+    {
+      "id": "C034",
+      "title": "一般阶真实时间误差与完整节点R图条件链",
+      "paper_ref": "eq:parametergraph、Lemmas3.3–3.4、Theorem3.5及独立空间依赖",
+      "milestone": "M3",
+      "extra_hypotheses": [
+        "原域实际D(A)状态的统一参数插值尚待几何证明；任何条件性接入均显式标明此剩余前提"
+      ],
+      "verification_status": "SPECIFIED",
+      "scope": "CONDITIONAL",
+      "paper_labels": [],
+      "lean_declarations": [
+        "Carleman.AllowedWeightData",
+        "Carleman.DomainParameterInterpolation",
+        "Carleman.fullSpace_domain_parameter_interpolation",
+        "Carleman.interpolated_commutator_small_shift",
+        "Carleman.interpolated_parameter_graph_uniform",
+        "Carleman.CoerciveForm.interpolated_weighted_euler_graph_uniform",
+        "Carleman.CoerciveForm.interpolated_weighted_euler_sobolev_uniform",
+        "Carleman.CoerciveForm.interpolated_weighted_frozen_graph_uniform",
+        "Carleman.CoerciveForm.interpolated_weighted_temporal_error_uniform",
+        "Carleman.CoerciveForm.interpolated_weighted_temporal_l2_uniform"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "blocker": "原bounded Lipschitz域的统一参数插值hI尚待弱Taylor/平均估计或同一扩张构造；空间B4及最终权族实例仍待",
+      "dependencies": [
+        "C033"
+      ],
+      "pr_url": null,
+      "scope_notes": "一般m的真实Euler/冻结算子图、完整节点R₂ₘ和两种时间率均已证明条件蕴含；不称一般Theorem3.5/2.1完成。"
+    },
+    {
+      "id": "C035",
+      "title": "Lipschitz图表实际内移球与有限统一内锥覆盖",
+      "paper_ref": "原bounded Lipschitz域参数插值的几何依赖",
+      "milestone": "M1",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [],
+      "lean_declarations": [
+        "Carleman.InwardConePatch",
+        "Carleman.lipschitz_graph_inward_ball",
+        "Carleman.InwardConePatch.ofGraph",
+        "Carleman.InwardConePatch.ofInterior",
+        "Carleman.HasLipschitzGraphCharts",
+        "Carleman.exists_inwardConePatch_of_mem_closure",
+        "Carleman.finite_uniform_inwardCone_cover"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "blocker": null,
+      "dependencies": [],
+      "pr_url": null,
+      "scope_notes": "明确Lipschitz图表条件下的真实几何；不宣称Sobolev扩张或域参数插值已证，也不声称尚未形式化的域定义等价。"
     }
   ],
   "events": [
@@ -3607,11 +3666,16 @@
       "at": "2026-10-17T23:30:29.990604+00:00",
       "public_summary": "一般阶Euler权余项与二阶完整加权Euler图、两种时间误差率通过构建和依赖检查；阶段待独立验收，原文1/26",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/19"
+    },
+    {
+      "at": "2026-10-17T23:49:41.427762+00:00",
+      "public_summary": "二阶加权Euler图及时间误差阶段已独立验收合并；继续一般高阶参数插值和误差分析，原文1/26",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/19"
     }
   ],
   "snapshot": {
-    "synced_at": "2026-10-17T23:30:29.990604+00:00",
-    "source_commit": "b6d1202fc1fad48bb7468b1d473e9fac70786d48",
+    "synced_at": "2026-10-17T23:49:41.427762+00:00",
+    "source_commit": "9b61edb8f2f5ad8ceec4ab9cadc0d9aadaacd491",
     "mode": "LOCAL_SNAPSHOT"
   },
   "dashboard": {
@@ -3679,7 +3743,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39076783540/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/19",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39079012965/attempts/1",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f88cbbc9089cea4ddd8b1bcddda14c47b65fb8e5/governance/reviews/T016.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f88cbbc9089cea4ddd8b1bcddda14c47b65fb8e5/governance/reviews/T016.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39079981845/attempts/1"
     ]
   },
   "schedules": [
@@ -8489,10 +8554,10 @@
       ],
       "branch": "proof/t016-weighted-graph-closure",
       "base_commit": "87363270f74e4955f5afbb8ecc20ae2990d449f5",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/19",
-      "checkpoint_commit": "f88cbbc9089cea4ddd8b1bcddda14c47b65fb8e5",
-      "merge_commit": null,
+      "checkpoint_commit": "9b61edb8f2f5ad8ceec4ab9cadc0d9aadaacd491",
+      "merge_commit": "9b61edb8f2f5ad8ceec4ab9cadc0d9aadaacd491",
       "lean_declarations": [
         "Carleman.bochnerL2Norm_coe",
         "Carleman.lp_norm_le_two",
@@ -8534,15 +8599,15 @@
       ],
       "build_evidence": {
         "status": "PASS",
-        "checked_sha": "b6d1202fc1fad48bb7468b1d473e9fac70786d48",
-        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39079012965/attempts/1",
-        "finished_at": "2026-10-17T23:28:41.466581+00:00",
+        "checked_sha": "9b61edb8f2f5ad8ceec4ab9cadc0d9aadaacd491",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39079981845/attempts/1",
+        "finished_at": "2026-10-17T23:44:14.057885+00:00",
         "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "targets": [
           "Carleman"
         ],
-        "source_head_sha": "f88cbbc9089cea4ddd8b1bcddda14c47b65fb8e5"
+        "source_head_sha": "9b61edb8f2f5ad8ceec4ab9cadc0d9aadaacd491"
       },
       "blocker": null,
       "attempts": [
@@ -8552,10 +8617,10 @@
         "m=1完整空间交换子已由A3吸收：Euler图12、冻结图60；实际构造正解/逆权伴随给L²误差2160dt、N₁误差sqrt(466560/c)sqrt(dt)",
         "m=1用正向A1最高阶+A3低阶得到完整R₂，再逐字段真实离散L²求和得全状态Euler Sobolev图；无任意域扩张假设"
       ],
-      "next_action": "父监督者独立验收37声明及PR19；一般阶中间高阶插值、空间B4与最终权族组合保留，优先复用二阶完整Euler图推进空间比较",
-      "declaration_version": "b6d1202fc1fad48bb7468b1d473e9fac70786d48",
+      "next_action": "已独立验收合并；T017继续一般高阶原域参数插值/真实时间误差及自然空间依赖",
+      "declaration_version": "9b61edb8f2f5ad8ceec4ab9cadc0d9aadaacd491",
       "semantic_review": {
-        "checked_sha": "b6d1202fc1fad48bb7468b1d473e9fac70786d48",
+        "checked_sha": "9b61edb8f2f5ad8ceec4ab9cadc0d9aadaacd491",
         "declarations": [
           "Carleman.bochnerL2Norm_coe",
           "Carleman.lp_norm_le_two",
@@ -8597,9 +8662,9 @@
         ],
         "result": "PASS",
         "axiom_check": "PASS",
-        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f88cbbc9089cea4ddd8b1bcddda14c47b65fb8e5/governance/reviews/T016.md",
-        "reviewed_at": "2026-10-17T23:30:29.990604+00:00",
-        "reviewer": "T016 executor; parent independent acceptance pending"
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/19",
+        "reviewed_at": "2026-10-17T23:49:41.427762+00:00",
+        "reviewer": "Parent supervisor independent declaration/source/assumptions/dependency acceptance; reported in continuation delegation"
       },
       "ci_relationship": {
         "proof_head": "f88cbbc9089cea4ddd8b1bcddda14c47b65fb8e5",
@@ -8630,7 +8695,85 @@
           "id": 12117488662,
           "zip_sha256": "54d9557f60e55c18c8e0a644c720f899cab43153c579675c74a6b17ccd4c6561"
         }
+      },
+      "main_ci_relationship": {
+        "merge_commit": "9b61edb8f2f5ad8ceec4ab9cadc0d9aadaacd491",
+        "source_head": "826c244374c19d7d508250f1b89298f4a730a7ed",
+        "same_tree": "9f422453362184d1a8cbd23b473ff74f4e4bb346",
+        "run_id": 39079981845,
+        "jobs_and_steps": "3 jobs / 32 steps PASS",
+        "actual_build_jobs": 3374,
+        "recursive_axiom_audit": 2520,
+        "recompiled_modules": 14,
+        "root_recompiled": true,
+        "declaration_artifact_sha256": "ba5d9ae83a896edd11810ffee22d70b4b119fbbfec4e3e3eacc7b9a1f4aeceeb",
+        "lean-ci-result": {
+          "id": 12118985018,
+          "zip_sha256": "1cddf045c8ef081b662bfa47cb95a073d42e9e3fa7b3c3c9ed71e1c6e4469e45"
+        },
+        "progress-dashboard": {
+          "id": 12118064553,
+          "zip_sha256": "760f137d1298f9ca3c24572f43e0c6a3c42a1cc726e9d18fc6b02062c1e4b531"
+        },
+        "lean-declaration-evidence": {
+          "id": 12117973394,
+          "zip_sha256": "7e6ce34b514b93b5d8db1a824e875d8402ecbd569224577817c4c12bc0586b89"
+        }
       }
+    },
+    {
+      "id": "T017",
+      "platform_task_id": "01a1498c-c483-77a5-8b91-14b593452001",
+      "task_url": null,
+      "continuation_of": "T016",
+      "title": "一般高阶原域参数插值与真实时间误差阶段",
+      "goal_ids": [
+        "C034",
+        "C035"
+      ],
+      "acceptance": [
+        "保留原域Lipschitz、一般阶、全部状态、双方向和T/网格统一阈值；不以二阶结果替代目标",
+        "推进真实高阶参数插值接入及一般阶时间误差；几何扩张/插值未证时明确保留前提，继续独立空间依赖",
+        "完整阶段实际构建/递归公理审计/逐声明类型核对与同SHA CI，draft PR不自行合并"
+      ],
+      "dependencies": [
+        "C033"
+      ],
+      "branch": "proof/t017-higher-order-analysis",
+      "base_commit": "9b61edb8f2f5ad8ceec4ab9cadc0d9aadaacd491",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": "9b61edb8f2f5ad8ceec4ab9cadc0d9aadaacd491",
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.InwardConePatch",
+        "Carleman.lipschitz_graph_inward_ball",
+        "Carleman.InwardConePatch.ofGraph",
+        "Carleman.InwardConePatch.ofInterior",
+        "Carleman.HasLipschitzGraphCharts",
+        "Carleman.exists_inwardConePatch_of_mem_closure",
+        "Carleman.finite_uniform_inwardCone_cover",
+        "Carleman.AllowedWeightData",
+        "Carleman.DomainParameterInterpolation",
+        "Carleman.fullSpace_domain_parameter_interpolation",
+        "Carleman.interpolated_commutator_small_shift",
+        "Carleman.interpolated_parameter_graph_uniform",
+        "Carleman.CoerciveForm.interpolated_weighted_euler_graph_uniform",
+        "Carleman.CoerciveForm.interpolated_weighted_euler_sobolev_uniform",
+        "Carleman.CoerciveForm.interpolated_weighted_frozen_graph_uniform",
+        "Carleman.CoerciveForm.interpolated_weighted_temporal_error_uniform",
+        "Carleman.CoerciveForm.interpolated_weighted_temporal_l2_uniform"
+      ],
+      "build_evidence": null,
+      "blocker": "原bounded Lipschitz域的统一参数插值hI尚待弱Taylor/平均估计或同一扩张构造；空间B4及最终权族实例仍待",
+      "attempts": [
+        "核实PR19合并树/实际main CI三项32步，14模块+root重编3374jobs/2520审计，声明字节与验收版本一致",
+        "A1粗界产生错误q幂；A3对D^j u要求未给定的域保持。原域几何不能由二阶闭合外推",
+        "以真实D(A)统一hI显式接入：一般阶空间交换子、完整节点R₂ₘ、Euler12/冻结60及实际时间2160dt与sqrt(466560/c)sqrt(dt)链全部编译通过",
+        "从Lipschitz图函数真正构造内移闭球、原坐标patch、内点patch及有限统一高度覆盖；未用高阶反射，不伪称扩张/插值已完成",
+        "本地根目标3384jobs/2592递归公理审计PASS，17显式声明实际类型及原文语义逐项核对"
+      ],
+      "next_action": "完成同SHA远端CI与draft PR交付；接续原域弱Taylor/平均插值及Section4空间比较"
     }
   ],
   "private_maintenance": {
