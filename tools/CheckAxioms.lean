@@ -1379,6 +1379,42 @@ set_option pp.maxSteps 1000000
 #check @Carleman.CoerciveForm.weighted_euler_graph_remainder_uniform
 #print axioms Carleman.CoerciveForm.weighted_euler_graph_remainder_uniform
 
+-- T017: actual declarations, followed by the recursive project-wide audit.
+#check @Carleman.InwardConePatch
+#print axioms Carleman.InwardConePatch
+#check @Carleman.lipschitz_graph_inward_ball
+#print axioms Carleman.lipschitz_graph_inward_ball
+#check @Carleman.InwardConePatch.ofGraph
+#print axioms Carleman.InwardConePatch.ofGraph
+#check @Carleman.InwardConePatch.ofInterior
+#print axioms Carleman.InwardConePatch.ofInterior
+#check @Carleman.HasLipschitzGraphCharts
+#print axioms Carleman.HasLipschitzGraphCharts
+#check @Carleman.exists_inwardConePatch_of_mem_closure
+#print axioms Carleman.exists_inwardConePatch_of_mem_closure
+#check @Carleman.finite_uniform_inwardCone_cover
+#print axioms Carleman.finite_uniform_inwardCone_cover
+#check @Carleman.AllowedWeightData
+#print axioms Carleman.AllowedWeightData
+#check @Carleman.DomainParameterInterpolation
+#print axioms Carleman.DomainParameterInterpolation
+#check @Carleman.fullSpace_domain_parameter_interpolation
+#print axioms Carleman.fullSpace_domain_parameter_interpolation
+#check @Carleman.interpolated_commutator_small_shift
+#print axioms Carleman.interpolated_commutator_small_shift
+#check @Carleman.interpolated_parameter_graph_uniform
+#print axioms Carleman.interpolated_parameter_graph_uniform
+#check @Carleman.CoerciveForm.interpolated_weighted_euler_graph_uniform
+#print axioms Carleman.CoerciveForm.interpolated_weighted_euler_graph_uniform
+#check @Carleman.CoerciveForm.interpolated_weighted_euler_sobolev_uniform
+#print axioms Carleman.CoerciveForm.interpolated_weighted_euler_sobolev_uniform
+#check @Carleman.CoerciveForm.interpolated_weighted_frozen_graph_uniform
+#print axioms Carleman.CoerciveForm.interpolated_weighted_frozen_graph_uniform
+#check @Carleman.CoerciveForm.interpolated_weighted_temporal_error_uniform
+#print axioms Carleman.CoerciveForm.interpolated_weighted_temporal_error_uniform
+#check @Carleman.CoerciveForm.interpolated_weighted_temporal_l2_uniform
+#print axioms Carleman.CoerciveForm.interpolated_weighted_temporal_l2_uniform
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
