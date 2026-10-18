@@ -414,3 +414,10 @@ public import Carleman.Spatial.NodalWeightMinimum
 public import Carleman.Spatial.AllowedCellWeight
 public import Carleman.Spatial.UniformNodalWeight
 public import Carleman.Spatial.NodalWeightedTest
+
+public import Carleman.Spatial.WeightedSimplexMassBound
+public import Carleman.Spatial.NodalWeightedNorm
+public import Carleman.Spatial.WeightedMassAbsorption
+public import Carleman.Spatial.NodalProjectionEstimate
+public import Carleman.Spatial.AllowedReciprocalWeight
+public import Carleman.Spatial.UniformNodalProjection

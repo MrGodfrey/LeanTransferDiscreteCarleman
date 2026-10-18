@@ -3479,6 +3479,43 @@ set_option pp.maxSteps 1000000
 #check @Carleman.SimplicialPartition.nodal_weighted_pairing_coercive
 #print axioms Carleman.SimplicialPartition.nodal_weighted_pairing_coercive
 
+#check @Carleman.weighted_simplexNodal_integrable
+#print axioms Carleman.weighted_simplexNodal_integrable
+#check @Carleman.weighted_simplexNodal_coefficient_bound
+#print axioms Carleman.weighted_simplexNodal_coefficient_bound
+#check @Carleman.weighted_simplex_state_bound
+#print axioms Carleman.weighted_simplex_state_bound
+#check @Carleman.weighted_simplex_test_bound
+#print axioms Carleman.weighted_simplex_test_bound
+#check @Carleman.SimplicialPartition.nodalCoefficientEnergy
+#print axioms Carleman.SimplicialPartition.nodalCoefficientEnergy
+#check @Carleman.SimplicialPartition.nodalCoefficientEnergy_nonneg
+#print axioms Carleman.SimplicialPartition.nodalCoefficientEnergy_nonneg
+#check @Carleman.SimplicialPartition.ae_of_cells
+#print axioms Carleman.SimplicialPartition.ae_of_cells
+#check @Carleman.SimplicialPartition.nodal_weighted_norm_sq_sum
+#print axioms Carleman.SimplicialPartition.nodal_weighted_norm_sq_sum
+#check @Carleman.SimplicialPartition.nodal_weighted_state_bound
+#print axioms Carleman.SimplicialPartition.nodal_weighted_state_bound
+#check @Carleman.SimplicialPartition.nodal_weighted_test_bound
+#print axioms Carleman.SimplicialPartition.nodal_weighted_test_bound
+#check @Carleman.BoundedMultiplier.inner_le_weighted_pair
+#print axioms Carleman.BoundedMultiplier.inner_le_weighted_pair
+#check @Carleman.weighted_mass_norm_absorption
+#print axioms Carleman.weighted_mass_norm_absorption
+#check @Carleman.SimplicialPartition.weighted_projection_bound_of_nodal_representation
+#print axioms Carleman.SimplicialPartition.weighted_projection_bound_of_nodal_representation
+#check @Carleman.SimplicialPartition.gradedReciprocalWeight
+#print axioms Carleman.SimplicialPartition.gradedReciprocalWeight
+#check @Carleman.SimplicialPartition.gradedReciprocalWeight_product_cell
+#print axioms Carleman.SimplicialPartition.gradedReciprocalWeight_product_cell
+#check @Carleman.SimplicialPartition.gradedReciprocalWeight_product
+#print axioms Carleman.SimplicialPartition.gradedReciprocalWeight_product
+#check @Carleman.SimplicialPartition.gradedReciprocalWeight_cell_bound
+#print axioms Carleman.SimplicialPartition.gradedReciprocalWeight_cell_bound
+#check @Carleman.allowed_weight_projection_of_nodal_representation
+#print axioms Carleman.allowed_weight_projection_of_nodal_representation
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
