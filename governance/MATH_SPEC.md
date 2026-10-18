@@ -640,3 +640,14 @@ B4仅在m=1的**时间部分**获得闭合。一般阶m+1至2m−1导数的原�
 一般m的原域入口现已不要求hI：完整允许权Euler R₂ₘ、完整冻结连续Bochner R₂ₘ、实际时间误差2160δt的L²率和sqrt(466560/c)sqrt(δt)的N_m率。每阶字段先取真实ℓ²/Bochner L²范数再求和；连续jet及误差jet的MemLp均证明。两方向、全状态/任意载荷、T/网格/允许权/τ之前的统一阈值、内禀SmoothOnClosure、a.e.D(A)/H弱导数/周期迹均保留。AllowedWeightData没有插值或目标估计字段。
 
 剩余重点转到Section4：N1–N5下真实空间误差a_E+η_A和a_0+a_E²+η_A、与时间误差的统一权族组合及最终TransferBridges实例。原连续非冻结图及shifted-form完整论文声明仍需整体验收。B2/B3/B5不重复假设，Γ仍是普通函数；原Theorem2.1不宣称完成。
+
+
+## T019：完整原Section3结论及原假设转移
+
+本段更新T018仍将一般阶时间结果列为组成部分的边界。详见[数学阶段](analysis/T019-section3-closure.md)和[逐声明核对](reviews/T019.md)。新增真正非冻结μ(t)=(Lq(t))²ᵐ的完整加权连续R₂ₘ估计，无网格条件；原域hI由既有几何证明内部给出。实际时间权导数和A2空间交换子分别吸收，无目标估计假设。
+
+原V闭Hilbert实现、原有界双线性形式、完整原D(A)/A识别、原区间q代表和C²正则性、原内禀光滑ρ的有界可测profile均有显式桥。`section3_original_operator`从原D/A及完整变分定义输入，经`domain_eq/operator_eq`转移所有状态；`graph_equation_iff`对任意a.e.D(A)弱代表识别实际方程。不增加逐时刻D(A)、零迹、导数域保持、反向椭圆界或核限制。
+
+`Conclusions`同时包括Lemma3.1任意B的连续适定性、完整R、形式上界与B‖qσv‖²下界，以及Lemma3.3/3.4全解空间适定性和完整R，Theorem3.5任意实际解的δt L²率、sqrt(δt) Nm率和弱误差jet MemLp。两profile及指数范围、两时间方向统一选max阈值/min正δ；冻结方向与演化方向独立，误差使用同向真实延拓与bar g。K在B/L/T/网格/权/状态/载荷之前选择；共同L₀(B)已扩大使L₀(1)支配冻结阈值，可取L₁=L₀(1)、δ_time(L)=δ。`primitive_on_interval`显式以任意T>0陈述，不需要网格限制。
+
+P004/P006/P007/P008在完整同SHA实际构建与审计后登记BUILT/PAPER，等待父监督者独立验收；不会仅因执行者组装而记REVIEWED。B1、B2/B5、规范B3及B4 finite/order/shift继续复用，Γ为普通函数；B4时间部分已按原权族闭合。Section4/N1–N5的空间误差和两误差系数、最终统一transfer实例及原Theorem2.1仍待；原最终全离散/两方向/T统一结论不变。

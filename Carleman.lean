@@ -189,3 +189,20 @@ public import Carleman.Weights.LipschitzEulerSobolev
 public import Carleman.Weights.LipschitzFrozenSobolev
 public import Carleman.Weights.LipschitzTemporalError
 public import Carleman.Weights.InterpolatedFrozenSobolev
+
+public import Carleman.Section3.AllowedFamily
+public import Carleman.Section3.Complete
+public import Carleman.Section3.ContinuousInterval
+public import Carleman.Section3.OriginalBilinear
+public import Carleman.Section3.OriginalForm
+public import Carleman.Section3.OriginalOperator
+public import Carleman.Section3.OriginalWeights
+public import Carleman.Section3.ProfileUniform
+public import Carleman.Section3.SignedUniform
+public import Carleman.Section3.SolvedProfiles
+public import Carleman.Section3.Statements
+public import Carleman.Section3.WeakSolutions
+public import Carleman.Weights.InterpolatedShiftGraph
+public import Carleman.Weights.InterpolatedShiftSobolev
+public import Carleman.Weights.LipschitzShiftSobolev
+public import Carleman.Weights.ShiftedGraphRemainder

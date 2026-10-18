@@ -68,16 +68,24 @@
       "milestone": "M3",
       "claim_ids": [
         "C005",
-        "C036"
+        "C036",
+        "C037"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.OriginalForm.section3_original_operator",
+        "Carleman.OriginalForm.ofBilinear_scalarForm",
+        "Carleman.PeriodicWeakTrajectory.graph_equation_iff",
+        "Carleman.Section3.Conclusions.primitive_on_interval",
+        "Carleman.Section3.Conclusions.form_bound",
+        "Carleman.Section3.Conclusions.form_coercive"
+      ],
       "declaration_version": null,
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": null,
       "semantic_review": null,
-      "blocker": "T018/C036提供原域参数插值及一般阶真实时间估计支持；完整原文声明与关联算子接口整体验收待完成，不自动增加原文完成数"
+      "blocker": "T019完整原结论已组装；待同SHA完整构建、公理审计及父监督者独立验收"
     },
     {
       "id": "P005",
@@ -135,16 +143,23 @@
       "milestone": "M3",
       "claim_ids": [
         "C006",
-        "C036"
+        "C036",
+        "C037"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.OriginalForm.section3_original_operator",
+        "Carleman.OriginalForm.ofBilinear_scalarForm",
+        "Carleman.PeriodicWeakTrajectory.graph_equation_iff",
+        "Carleman.Section3.Conclusions.euler",
+        "Carleman.Section3.EulerEstimate"
+      ],
       "declaration_version": null,
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": null,
       "semantic_review": null,
-      "blocker": "T018/C036提供原域参数插值及一般阶真实时间估计支持；完整原文声明与关联算子接口整体验收待完成，不自动增加原文完成数"
+      "blocker": "T019完整原结论已组装；待同SHA完整构建、公理审计及父监督者独立验收"
     },
     {
       "id": "P007",
@@ -154,16 +169,23 @@
       "tex_line": 964,
       "milestone": "M3",
       "claim_ids": [
-        "C036"
+        "C036",
+        "C037"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.OriginalForm.section3_original_operator",
+        "Carleman.OriginalForm.ofBilinear_scalarForm",
+        "Carleman.PeriodicWeakTrajectory.graph_equation_iff",
+        "Carleman.Section3.Conclusions.frozen",
+        "Carleman.Section3.ContinuousEstimate"
+      ],
       "declaration_version": null,
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": null,
       "semantic_review": null,
-      "blocker": "T018/C036提供原域参数插值及一般阶真实时间估计支持；完整原文声明与关联算子接口整体验收待完成，不自动增加原文完成数"
+      "blocker": "T019完整原结论已组装；待同SHA完整构建、公理审计及父监督者独立验收"
     },
     {
       "id": "P008",
@@ -174,16 +196,24 @@
       "milestone": "M3",
       "claim_ids": [
         "C007",
-        "C036"
+        "C036",
+        "C037"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.OriginalForm.section3_original_operator",
+        "Carleman.OriginalForm.ofBilinear_scalarForm",
+        "Carleman.PeriodicWeakTrajectory.graph_equation_iff",
+        "Carleman.Section3.Conclusions.temporal",
+        "Carleman.Section3.TemporalEstimate",
+        "Carleman.Section3.temporal_arbitrary_uniform"
+      ],
       "declaration_version": null,
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": null,
       "semantic_review": null,
-      "blocker": "T018/C036提供原域参数插值及一般阶真实时间估计支持；完整原文声明与关联算子接口整体验收待完成，不自动增加原文完成数"
+      "blocker": "T019完整原结论已组装；待同SHA完整构建、公理审计及父监督者独立验收"
     },
     {
       "id": "P009",
