@@ -61,3 +61,5 @@
 - T032 / C048：实际Galerkin刚度及数值接口独立验收PASS；16声明、3766项审计及同SHA CI。固定证明 `1cf3071913d460625411022e4ea16c8336399bf8`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/12368d07ad12763fd690b02ab7431ab8ce63490e/governance/reviews/T032-local-acceptance.md)。原文12/26，T033构造真实加权测试。
 
 - T033 / C049：原投影加权测试及统一时间界独立验收PASS；20声明、3848项审计及同SHA CI。固定证明 `d999e5b3779aa82efee2da8e162b86148dc1f715`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/37ec86ba022eae77efffca02fbd5c1d10ac1e621/governance/reviews/T033-local-acceptance.md)。原文12/26，T034推导投影近似和超逼近。
+
+- T034 / C050：插值到原投影误差及超逼近独立验收PASS；25声明、3964项审计及同SHA CI。固定证明 `27c5e0e5a60b860f08e4c74c5d7de81f7498781f`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a2d8700ab6cc43f2eca5e9dc85a9274c5de378cd/governance/reviews/T034-local-acceptance.md)。原文12/26，T035构造实际分片仿射空间。

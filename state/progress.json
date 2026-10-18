@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T034",
-    "supervisor_checked_at": "2026-10-18T17:14:24.414513+00:00",
-    "next_action": "固定提交后独立验收实际投影误差/N3/超逼近和数值数据组装，核实同SHA远端CI。",
+    "current_task_id": "T035",
+    "supervisor_checked_at": "2026-10-18T17:27:00.540408+00:00",
+    "next_action": "完成实际分片仿射L2生成、有限维性、分区上的准确成员刻画与原形式Galerkin刚度；定向编译后全库验证并独立验收。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T17:20:03.502020+00:00"
+    "last_activity_at": "2026-10-18T17:27:00.540408+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "d999e5b3779aa82efee2da8e162b86148dc1f715",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39148036906/attempts/1",
-      "finished_at": "2026-10-18T17:08:30.389992+00:00",
+      "checked_sha": "27c5e0e5a60b860f08e4c74c5d7de81f7498781f",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39149104207/attempts/1",
+      "finished_at": "2026-10-18T17:22:03.805694+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "d999e5b3779aa82efee2da8e162b86148dc1f715"
+      "source_head_sha": "27c5e0e5a60b860f08e4c74c5d7de81f7498781f"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "d999e5b3779aa82efee2da8e162b86148dc1f715",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39148036906/attempts/1",
-      "finished_at": "2026-10-18T17:08:30.389992+00:00",
+      "checked_sha": "27c5e0e5a60b860f08e4c74c5d7de81f7498781f",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39149104207/attempts/1",
+      "finished_at": "2026-10-18T17:22:03.805694+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "d999e5b3779aa82efee2da8e162b86148dc1f715"
+      "source_head_sha": "27c5e0e5a60b860f08e4c74c5d7de81f7498781f"
     }
   },
   "milestones": [
@@ -5606,7 +5606,7 @@
       "extra_hypotheses": [
         "具体P1网格、辅助ell权、加权投影稳定性、实际插值及局部梯度/超逼近和逆估计仍为输入；Dirichlet连续热CE仍待。"
       ],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "CONDITIONAL",
       "paper_labels": [
         "prop:p1",
@@ -5640,15 +5640,109 @@
         "Carleman.Physical.heatInterpolationErrors_orders",
         "Carleman.Physical.interpolatedHeatNumericalData"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "27c5e0e5a60b860f08e4c74c5d7de81f7498781f",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "27c5e0e5a60b860f08e4c74c5d7de81f7498781f",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39149104207/attempts/1",
+        "finished_at": "2026-10-18T17:22:03.805694+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "27c5e0e5a60b860f08e4c74c5d7de81f7498781f"
+      },
+      "semantic_review": {
+        "checked_sha": "27c5e0e5a60b860f08e4c74c5d7de81f7498781f",
+        "declarations": [
+          "Carleman.Physical.conformingProjector",
+          "Carleman.Physical.conformingProjector_eq_Q",
+          "Carleman.Physical.conformingProjector_inclusion",
+          "Carleman.Physical.conformingProjector_error_decomposition",
+          "Carleman.Physical.conformingProjector_l2_error",
+          "Carleman.Physical.conformingProjector_energy_error",
+          "Carleman.Physical.ConformingInterpolationBounds",
+          "Carleman.Physical.conformingWeightedApproximation_of_interpolation",
+          "Carleman.Physical.GalerkinSuperapproxInterpolation",
+          "Carleman.Physical.galerkinSuperapprox_of_interpolation",
+          "Carleman.Physical.conformingHeatGradient",
+          "Carleman.Physical.conformingHeatGradient_nonneg",
+          "Carleman.Physical.conformingHeatNorm_le",
+          "Carleman.Physical.scaled_seminorm_le_auxiliary",
+          "Carleman.Physical.conformingHeatNorm_le_auxiliary",
+          "Carleman.Physical.conformingHeatInverse_of_gradient",
+          "Carleman.Physical.HeatInterpolationData",
+          "Carleman.Physical.HeatInterpolationData.toBounds",
+          "Carleman.Physical.HeatInterpolationData.approximation",
+          "Carleman.Physical.HeatSuperapproxData",
+          "Carleman.Physical.HeatSuperapproxData.toBounds",
+          "Carleman.Physical.HeatSuperapproxData.superapprox",
+          "Carleman.Physical.heatInterpolationErrors",
+          "Carleman.Physical.heatInterpolationErrors_orders",
+          "Carleman.Physical.interpolatedHeatNumericalData"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a2d8700ab6cc43f2eca5e9dc85a9274c5de378cd/governance/reviews/T034-local-acceptance.md",
+        "reviewed_at": "2026-10-18T17:25:25+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent conditional acceptance"
+      },
       "dependencies": [
         "C049"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "从实际插值误差和加权投影/逆估计推导原正交投影误差及特定测试超逼近；不假称已证明具体网格局部估计。"
+      "scope_notes": "从实际插值误差和加权投影/逆估计推导原正交投影误差及特定测试超逼近；不假称已证明具体网格局部估计。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C051",
+      "title": "实际分片仿射L2空间与Galerkin刚度",
+      "paper_ref": "Section6 P1/FD piecewise affine state-space construction",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:p1",
+        "prop:fd"
+      ],
+      "lean_declarations": [
+        "Carleman.affineCoordinate",
+        "Carleman.affineCoordinate_continuous",
+        "Carleman.affineCoordinate_bound",
+        "Carleman.affineCellGenerator",
+        "Carleman.affineCellGenerator_ae",
+        "Carleman.piecewiseAffineMap",
+        "Carleman.piecewiseAffineMap_ae",
+        "Carleman.piecewiseAffineSpace",
+        "Carleman.mem_piecewiseAffineSpace_iff",
+        "Carleman.piecewiseAffineSpace_bound_independent",
+        "Carleman.piecewiseAffineSpace_finiteDimensional",
+        "Carleman.conformingPiecewiseAffineSpace",
+        "Carleman.conformingPiecewiseAffineSpace_finiteDimensional",
+        "Carleman.conformingPiecewiseAffineSpace_le",
+        "Carleman.affineCoordinate_sum",
+        "Carleman.piecewiseAffine_formula_on_cell",
+        "Carleman.mem_piecewiseAffineSpace_iff_on_cells",
+        "Carleman.mem_conformingPiecewiseAffineSpace_iff",
+        "Carleman.Physical.affineGalerkinSpace",
+        "Carleman.Physical.affineGalerkinStiffness",
+        "Carleman.Physical.affineGalerkinStiffness_pairing",
+        "Carleman.Physical.affineGalerkinStiffness_symmetric",
+        "Carleman.Physical.affineGalerkinStiffness_nonneg",
+        "Carleman.Physical.affineGalerkinSpace_membership"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C048"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "有限可测有界单元的实际L2仿射生成和有限维性；在a.e.分区上准确等于逐单元仿射函数，与原V相交给一致空间并构造实际刚度。具体单纯形网格、Dirichlet V、局部估计尚待，不提升P011/P012。"
     }
   ],
   "events": [
@@ -5899,6 +5993,11 @@
       "at": "2026-10-18T17:14:24.414513+00:00",
       "public_summary": "实际Galerkin刚度及N1/N2/N5的16声明通过独立Agent与同SHA CI验收；原文仍12/26，验收队列清空。继续插值误差到原投影近似和超逼近。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/37ec86ba022eae77efffca02fbd5c1d10ac1e621/governance/reviews/T033-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T17:27:00.540408+00:00",
+      "public_summary": "插值到实际N3/空间超逼近及数值数据组装的25声明通过独立Agent与同SHA CI验收；原文仍12/26，队列清空。继续实际分片仿射空间。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a2d8700ab6cc43f2eca5e9dc85a9274c5de378cd/governance/reviews/T034-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -6018,7 +6117,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/12368d07ad12763fd690b02ab7431ab8ce63490e/governance/reviews/T032-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39147219355/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/37ec86ba022eae77efffca02fbd5c1d10ac1e621/governance/reviews/T033-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39148036906/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39148036906/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a2d8700ab6cc43f2eca5e9dc85a9274c5de378cd/governance/reviews/T034-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39149104207/attempts/1"
     ]
   },
   "schedules": [
@@ -13298,10 +13399,10 @@
       ],
       "branch": "main",
       "base_commit": "d999e5b3779aa82efee2da8e162b86148dc1f715",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "27c5e0e5a60b860f08e4c74c5d7de81f7498781f",
+      "merge_commit": "27c5e0e5a60b860f08e4c74c5d7de81f7498781f",
       "lean_declarations": [
         "Carleman.Physical.conformingProjector",
         "Carleman.Physical.conformingProjector_eq_Q",
@@ -13329,12 +13430,23 @@
         "Carleman.Physical.heatInterpolationErrors_orders",
         "Carleman.Physical.interpolatedHeatNumericalData"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "27c5e0e5a60b860f08e4c74c5d7de81f7498781f",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39149104207/attempts/1",
+        "finished_at": "2026-10-18T17:22:03.805694+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "27c5e0e5a60b860f08e4c74c5d7de81f7498781f"
+      },
       "blocker": null,
       "attempts": [
         "六模块25显式声明定向编译与全库构建通过；实际N3/特定测试超逼近由真实插值、加权投影稳定性和梯度逆估计推导，完整N1–N5内部组装；具体网格估计仍待。"
       ],
-      "next_action": "固定提交后独立验收实际投影误差/N3/超逼近和数值数据组装，核实同SHA远端CI。",
+      "next_action": "投影误差/N3/超逼近及数值数据组装已验收；T035构造实际分片仿射L2空间。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -13348,8 +13460,89 @@
         "declaration_artifact_sha256": "6f6b15415444a46ed9af8cc56428cca56470cf1a4eb28ee8f7e699f2036a09ac",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING; fixed SHA will be supplied after commit"
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "27c5e0e5a60b860f08e4c74c5d7de81f7498781f",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C050"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "27c5e0e5a60b860f08e4c74c5d7de81f7498781f",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T17:25:25+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a2d8700ab6cc43f2eca5e9dc85a9274c5de378cd/governance/reviews/T034-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "27c5e0e5a60b860f08e4c74c5d7de81f7498781f",
+        "checked_sha": "27c5e0e5a60b860f08e4c74c5d7de81f7498781f",
+        "run_id": 39149104207,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3524,
+        "recursive_axiom_audit": 3964,
+        "new_explicit_declarations": 25,
+        "declaration_artifact_sha256": "6f6b15415444a46ed9af8cc56428cca56470cf1a4eb28ee8f7e699f2036a09ac",
+        "local_remote_artifacts_identical": true
       }
+    },
+    {
+      "id": "T035",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "实际分片仿射L2空间与Galerkin刚度",
+      "goal_ids": [
+        "C051"
+      ],
+      "acceptance": [
+        "实际常数/坐标乘单元indicator生成Lp类，a.e.公式准确",
+        "证明有限维性及在a.e.分区上与逐单元仿射函数完全等价",
+        "与实际V相交并以内部有限维实例构造Galerkin刚度；不声称已实例化P1网格/Dirichlet边界/近似"
+      ],
+      "dependencies": [
+        "C048"
+      ],
+      "branch": "main",
+      "base_commit": "27c5e0e5a60b860f08e4c74c5d7de81f7498781f",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.affineCoordinate",
+        "Carleman.affineCoordinate_continuous",
+        "Carleman.affineCoordinate_bound",
+        "Carleman.affineCellGenerator",
+        "Carleman.affineCellGenerator_ae",
+        "Carleman.piecewiseAffineMap",
+        "Carleman.piecewiseAffineMap_ae",
+        "Carleman.piecewiseAffineSpace",
+        "Carleman.mem_piecewiseAffineSpace_iff",
+        "Carleman.piecewiseAffineSpace_bound_independent",
+        "Carleman.piecewiseAffineSpace_finiteDimensional",
+        "Carleman.conformingPiecewiseAffineSpace",
+        "Carleman.conformingPiecewiseAffineSpace_finiteDimensional",
+        "Carleman.conformingPiecewiseAffineSpace_le",
+        "Carleman.affineCoordinate_sum",
+        "Carleman.piecewiseAffine_formula_on_cell",
+        "Carleman.mem_piecewiseAffineSpace_iff_on_cells",
+        "Carleman.mem_conformingPiecewiseAffineSpace_iff",
+        "Carleman.Physical.affineGalerkinSpace",
+        "Carleman.Physical.affineGalerkinStiffness",
+        "Carleman.Physical.affineGalerkinStiffness_pairing",
+        "Carleman.Physical.affineGalerkinStiffness_symmetric",
+        "Carleman.Physical.affineGalerkinStiffness_nonneg",
+        "Carleman.Physical.affineGalerkinSpace_membership"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "分片仿射L2生成/有限维/分区成员刻画已定向编译，继续真实Galerkin实例与验收。"
+      ],
+      "next_action": "完成实际分片仿射L2生成、有限维性、分区上的准确成员刻画与原形式Galerkin刚度；定向编译后全库验证并独立验收。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
