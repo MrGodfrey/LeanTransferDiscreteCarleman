@@ -95,3 +95,5 @@
 - T049 / C065：完整Vh全域加权逆界9声明独立验收PASS；真实单元积分求和和逆尺度乘子，4733项递归审计及同SHA CI。 固定证明 `99694c20834ac8d3b712f5e2d071a4e4ccfc308b`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c114cef2c53f50d8197f2541f87f4f80e7e8d0cd/governance/reviews/T049-local-acceptance.md)。原文12/26，T050继续原允许权族的完整一致P1逆估计。
 
 - T050 / C066：原具体allowed权的单元比较及完整P1逆界20声明独立验收PASS，4757递归审计及同SHA CI；原ℓ尺度与真实内球形状条件已接入。 固定证明 `9ea552502177ccffb3f50593567578fc207c2568`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/cfb7a45a840b101b42067295773f7a08af9737e2/governance/reviews/T050-local-acceptance.md)。原文12/26，T051继续原四类权的统一邻接分级。
+
+- T051 / C067：四类实际权的统一邻接分级16声明独立验收PASS，原Γd严格余量，4777项递归审计及同SHA CI。 固定证明 `51e67cf2b206b1e754d90a53ccd03c6e80e570fc`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/46dace69d7a27941b444499ad4a4f6be101cc9aa/governance/reviews/T051-local-acceptance.md)。原文12/26，T052继续P1加权系数二次型的强制性。
