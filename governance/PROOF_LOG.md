@@ -131,3 +131,5 @@
 - T067 / C083：原H01允许权保持15声明独立验收PASS，5062项递归审计及同SHA三项CI通过。 固定证明 `604328efce1cc28e4d6fe6cadcdaa039ee0e76a3`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/39f19225dff2c3956b4a483355a5f56a7069302b/governance/reviews/T067-local-acceptance.md)。原文12/26，T068继续原Dirichlet算子域的真实乘积与权保持。
 
 - T068 / C084：原完整Dirichlet算子域乘积及权保持10声明独立验收PASS，5099声明递归审计、同SHA三项CI及逐字节相同远端产物。 固定证明 `3eeba97f7b274bd8ffd473d2f57aad2b4e722845`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/cc992e25ca39df7b9357a28a2db8a8716e0b86f6/governance/reviews/T068-local-acceptance.md)。原文12/26，T069继续原Dirichlet允许权统一交换子。
+
+- T069 / C085：原Dirichlet统一交换子12声明独立验收PASS，5131声明递归审计、同SHA三项CI及逐字节相同远端产物。 固定证明 `d13e4bc8af28b91a2c2d65091a911baa174950c4`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/befd19f4dd5c5815ed00ea663a5c8392f15e1570/governance/reviews/T069-local-acceptance.md)。原文12/26，T070继续原Dirichlet形式的A3加权估计。
