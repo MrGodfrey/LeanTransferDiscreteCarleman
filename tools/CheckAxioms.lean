@@ -1894,6 +1894,44 @@ set_option pp.maxSteps 1000000
 #check @Carleman.OriginalForm.combined_uniform
 #print axioms Carleman.OriginalForm.combined_uniform
 
+-- Original Theorem 2.1: all actual bridges constructed internally.
+#check @Carleman.SpatialProfile.timeSq_eq_bochnerL2Norm_sq
+#print axioms Carleman.SpatialProfile.timeSq_eq_bochnerL2Norm_sq
+#check @Carleman.SpatialProfile.nodeMap_l2Norm_sq_powerSq
+#print axioms Carleman.SpatialProfile.nodeMap_l2Norm_sq_powerSq
+#check @Carleman.WeakSobolevJet.spacetimeWeightedNorm_sq_powerSum
+#print axioms Carleman.WeakSobolevJet.spacetimeWeightedNorm_sq_powerSum
+#check @Carleman.sobolevGeometry_graphSq_eq
+#print axioms Carleman.sobolevGeometry_graphSq_eq
+#check @Carleman.sobolevGeometry_errorBridge_of_combined
+#print axioms Carleman.sobolevGeometry_errorBridge_of_combined
+#check @Carleman.sobolevGeometry_transferBridges
+#print axioms Carleman.sobolevGeometry_transferBridges
+#check @Carleman.Section5.NumericalData
+#print axioms Carleman.Section5.NumericalData
+#check @Carleman.Section5.NumericalData.stiffness
+#print axioms Carleman.Section5.NumericalData.stiffness
+#check @Carleman.Section5.NumericalData.approximation
+#print axioms Carleman.Section5.NumericalData.approximation
+#check @Carleman.Section5.NumericalData.test
+#print axioms Carleman.Section5.NumericalData.test
+#check @Carleman.Section5.NumericalData.defect
+#print axioms Carleman.Section5.NumericalData.defect
+#check @Carleman.Section5.NumericalData.reconstruction_upper
+#print axioms Carleman.Section5.NumericalData.reconstruction_upper
+#check @Carleman.Section5.NumericalData.reconstruction_lower
+#print axioms Carleman.Section5.NumericalData.reconstruction_lower
+#check @Carleman.Section5.NumericalData.lift_bound
+#print axioms Carleman.Section5.NumericalData.lift_bound
+#check @Carleman.Section5.NumericalData.observation_bound
+#print axioms Carleman.Section5.NumericalData.observation_bound
+#check @Carleman.Section5.TransferUniform
+#print axioms Carleman.Section5.TransferUniform
+#check @Carleman.Section5.transfer_uniform_of_combined
+#print axioms Carleman.Section5.transfer_uniform_of_combined
+#check @Carleman.OriginalForm.transfer_uniform
+#print axioms Carleman.OriginalForm.transfer_uniform
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

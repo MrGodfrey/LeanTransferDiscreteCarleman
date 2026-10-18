@@ -12,9 +12,13 @@
       "claim_ids": [
         "C010"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Section5.NumericalData",
+        "Carleman.Section5.TransferUniform",
+        "Carleman.OriginalForm.transfer_uniform"
+      ],
       "declaration_version": null,
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": null,

@@ -11,11 +11,11 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T022",
-    "supervisor_checked_at": "2026-10-18T14:45:05.694729+00:00",
-    "next_action": "从统一CombinedEstimate供应B4权族，再组合A4与N1/N2/N5及真实冻结解构造TransferBridges。",
+    "supervisor_checked_at": "2026-10-18T14:52:32.052117+00:00",
+    "next_action": "固定版本push main，核实同SHA CI并启动独立Agent验收完整原Theorem2.1。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T14:45:49.045534+00:00"
+    "last_activity_at": "2026-10-18T14:52:32.052117+00:00"
   },
   "verification": {
     "latest_build": {
@@ -109,7 +109,7 @@
       "id": "M5",
       "title": "原始 transfer 与尺度",
       "description": "Theorem 2.1 与 Corollaries 2.2–2.3",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "evidence_commit": null,
       "blocker": null
     },
@@ -897,12 +897,31 @@
       "paper_ref": "Theorem 2.1, p.10",
       "milestone": "M5",
       "extra_hypotheses": [],
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "paper_labels": [
         "thm:main"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.SpatialProfile.timeSq_eq_bochnerL2Norm_sq",
+        "Carleman.SpatialProfile.nodeMap_l2Norm_sq_powerSq",
+        "Carleman.WeakSobolevJet.spacetimeWeightedNorm_sq_powerSum",
+        "Carleman.sobolevGeometry_graphSq_eq",
+        "Carleman.sobolevGeometry_errorBridge_of_combined",
+        "Carleman.sobolevGeometry_transferBridges",
+        "Carleman.Section5.NumericalData",
+        "Carleman.Section5.NumericalData.stiffness",
+        "Carleman.Section5.NumericalData.approximation",
+        "Carleman.Section5.NumericalData.test",
+        "Carleman.Section5.NumericalData.defect",
+        "Carleman.Section5.NumericalData.reconstruction_upper",
+        "Carleman.Section5.NumericalData.reconstruction_lower",
+        "Carleman.Section5.NumericalData.lift_bound",
+        "Carleman.Section5.NumericalData.observation_bound",
+        "Carleman.Section5.TransferUniform",
+        "Carleman.Section5.transfer_uniform_of_combined",
+        "Carleman.OriginalForm.transfer_uniform"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -911,7 +930,8 @@
         "C009"
       ],
       "blocker": null,
-      "pr_url": null
+      "pr_url": null,
+      "scope_notes": "完整原Theorem2.1候选；所有桥接内部构造，原假设与两版结论不变，等待同SHA CI及独立Agent验收。"
     },
     {
       "id": "C011",
@@ -10727,14 +10747,43 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.SpatialProfile.timeSq_eq_bochnerL2Norm_sq",
+        "Carleman.SpatialProfile.nodeMap_l2Norm_sq_powerSq",
+        "Carleman.WeakSobolevJet.spacetimeWeightedNorm_sq_powerSum",
+        "Carleman.sobolevGeometry_graphSq_eq",
+        "Carleman.sobolevGeometry_errorBridge_of_combined",
+        "Carleman.sobolevGeometry_transferBridges",
+        "Carleman.Section5.NumericalData",
+        "Carleman.Section5.NumericalData.stiffness",
+        "Carleman.Section5.NumericalData.approximation",
+        "Carleman.Section5.NumericalData.test",
+        "Carleman.Section5.NumericalData.defect",
+        "Carleman.Section5.NumericalData.reconstruction_upper",
+        "Carleman.Section5.NumericalData.reconstruction_lower",
+        "Carleman.Section5.NumericalData.lift_bound",
+        "Carleman.Section5.NumericalData.observation_bound",
+        "Carleman.Section5.TransferUniform",
+        "Carleman.Section5.transfer_uniform_of_combined",
+        "Carleman.OriginalForm.transfer_uniform"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "已证明Section5平方量与Section4真实Bochner/弱Sobolev范数的精确识别，正在编译B4实质误差字段构造。"
+        "已证明Section5平方量与Section4真实Bochner/弱Sobolev范数的精确识别，正在编译B4实质误差字段构造。",
+        "五模块18声明完整原Theorem2.1本机全库通过；3454jobs/3170声明递归公理审计，仅基础公理。"
       ],
-      "next_action": "从统一CombinedEstimate供应B4权族，再组合A4与N1/N2/N5及真实冻结解构造TransferBridges。",
-      "integration_mode": "direct-main"
+      "next_action": "固定版本push main，核实同SHA CI并启动独立Agent验收完整原Theorem2.1。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "checked_at": "2026-10-18T14:52:32.052117+00:00",
+        "result": "PASS",
+        "build_jobs": 3454,
+        "recursive_axiom_audit": 3170,
+        "new_explicit_declarations": 18,
+        "audit_sha256": "230919fb64b2d861fac74c586ba40f073332eac5581556a0e7d5004dbb27e24e",
+        "note": "working tree precommit, not remote CI"
+      }
     }
   ],
   "private_maintenance": {

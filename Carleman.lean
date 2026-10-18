@@ -235,3 +235,9 @@ public import Carleman.Spatial.SpacetimeNormAlgebra
 public import Carleman.Spatial.SpacetimeCellEnergy
 public import Carleman.Section4.CombinedEstimate
 public import Carleman.Section4.CombinedUniform
+
+public import Carleman.Transfer.CombinedNorms
+public import Carleman.Transfer.CombinedErrors
+public import Carleman.Transfer.CompleteBridges
+public import Carleman.Transfer.OriginalData
+public import Carleman.Transfer.OriginalUniform

@@ -6,7 +6,7 @@
 
 | ID | 原文结果 | 标签 | PDF 页 / TeX 行 | 阶段 | 初始目标 | Lean 声明 |
 | --- | --- | --- | --- | --- | --- | --- |
-| P001 | Theorem 2.1 | `thm:main` | 10 / 525 | M5 | C010 | 待建立 |
+| P001 | Theorem 2.1 | `thm:main` | 10 / 525 | M5 | C010 | Carleman.Section5.NumericalData, Carleman.Section5.TransferUniform, Carleman.OriginalForm.transfer_uniform |
 | P002 | Corollary 2.2 | `cor:general-scales` | 11 / 599 | M5 | C011 | 待建立 |
 | P003 | Corollary 2.3 | `cor:scales` | 11 / 617 | M5 | C012 | 待建立 |
 | P004 | Lemma 3.1 | `lem:graph` | 11 / 647 | M3 | C005, C036, C037 | Carleman.OriginalForm.section3_original_operator, Carleman.OriginalForm.ofBilinear_scalarForm, Carleman.PeriodicWeakTrajectory.graph_equation_iff, Carleman.Section3.Conclusions.primitive_on_interval, Carleman.Section3.Conclusions.form_bound, Carleman.Section3.Conclusions.form_coercive |
