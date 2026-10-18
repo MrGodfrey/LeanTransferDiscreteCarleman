@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T027",
-    "supervisor_checked_at": "2026-10-18T15:47:09.240182+00:00",
-    "next_action": "推送固定提交；独立Agent核对原权、截断路线及真实计数/能量和范围；同SHA CI核验后保持AUXILIARY。",
+    "current_task_id": "T028",
+    "supervisor_checked_at": "2026-10-18T16:05:40.626324+00:00",
+    "next_action": "由原qb公式统一选Cb，补齐完整qclass并构造实际空间加权预算；随后连接势载荷、CE及最终吸收。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T15:56:34.601471+00:00"
+    "last_activity_at": "2026-10-18T16:05:40.626324+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "549cde718bcf26f00b24f4a1493ee92b839f30b4",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39141525842/attempts/1",
-      "finished_at": "2026-10-18T15:41:58.029847+00:00",
+      "checked_sha": "c3ab9aaef14a4f5beca82505cdfd325e507c653e",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39142758460/attempts/1",
+      "finished_at": "2026-10-18T15:58:53.251430+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "549cde718bcf26f00b24f4a1493ee92b839f30b4"
+      "source_head_sha": "c3ab9aaef14a4f5beca82505cdfd325e507c653e"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "549cde718bcf26f00b24f4a1493ee92b839f30b4",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39141525842/attempts/1",
-      "finished_at": "2026-10-18T15:41:58.029847+00:00",
+      "checked_sha": "c3ab9aaef14a4f5beca82505cdfd325e507c653e",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39142758460/attempts/1",
+      "finished_at": "2026-10-18T15:58:53.251430+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "549cde718bcf26f00b24f4a1493ee92b839f30b4"
+      "source_head_sha": "c3ab9aaef14a4f5beca82505cdfd325e507c653e"
     }
   },
   "milestones": [
@@ -4886,7 +4886,7 @@
       "paper_ref": "Theorem7.2 proof, Steps1–3 foundations",
       "milestone": "M6b",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:physicalO"
@@ -4963,16 +4963,129 @@
         "Carleman.Physical.physical_transition_weight",
         "Carleman.Physical.physical_weight_endpoint_decay"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "c3ab9aaef14a4f5beca82505cdfd325e507c653e",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "c3ab9aaef14a4f5beca82505cdfd325e507c653e",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39142758460/attempts/1",
+        "finished_at": "2026-10-18T15:58:53.251430+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "c3ab9aaef14a4f5beca82505cdfd325e507c653e"
+      },
+      "semantic_review": {
+        "checked_sha": "c3ab9aaef14a4f5beca82505cdfd325e507c653e",
+        "declarations": [
+          "Carleman.Physical.periodic_next_of_endpoints",
+          "Carleman.Physical.cutoffState",
+          "Carleman.Physical.cutoffRemainder",
+          "Carleman.Physical.cutoff_next",
+          "Carleman.Physical.cutoff_difference",
+          "Carleman.Physical.cutoff_residual",
+          "Carleman.Physical.physicalWeightDenom",
+          "Carleman.Physical.physicalWeight",
+          "Carleman.Physical.physicalWeightDenom_pos",
+          "Carleman.Physical.physicalWeightDenom_sq",
+          "Carleman.Physical.physicalWeightDenom_bounds",
+          "Carleman.Physical.physicalWeight_bounds",
+          "Carleman.Physical.physicalWeight_zero",
+          "Carleman.Physical.physicalWeight_periodic",
+          "Carleman.Physical.physicalWeightDenom_hasDerivAt",
+          "Carleman.Physical.physicalWeightDerivative",
+          "Carleman.Physical.physicalWeight_hasDerivAt",
+          "Carleman.Physical.physicalWeight_smooth",
+          "Carleman.Physical.physicalWeight_derivative_bound",
+          "Carleman.Physical.physicalTimeWeight",
+          "Carleman.Physical.physicalTimeWeightRegularity",
+          "Carleman.Physical.physicalWeightSecondDerivative",
+          "Carleman.Physical.physicalWeightDerivative_hasDerivAt",
+          "Carleman.Physical.physicalWeight_second_derivative_bound",
+          "Carleman.Physical.physicalWeight_deriv",
+          "Carleman.Physical.physicalWeight_second_deriv",
+          "Carleman.Physical.physicalWeightDerivative_zero",
+          "Carleman.Physical.physicalWeightDerivative_periodic",
+          "Carleman.Physical.clipUnit",
+          "Carleman.Physical.clipUnit_bounds",
+          "Carleman.Physical.clipUnit_zero",
+          "Carleman.Physical.clipUnit_one",
+          "Carleman.Physical.clipUnit_lipschitz",
+          "Carleman.Physical.endpointDistance",
+          "Carleman.Physical.endpointDistance_lipschitz",
+          "Carleman.Physical.physicalCutoff",
+          "Carleman.Physical.physicalCutoff_bounds",
+          "Carleman.Physical.physicalCutoff_zero",
+          "Carleman.Physical.physicalCutoff_one",
+          "Carleman.Physical.physicalCutoff_endpoints",
+          "Carleman.Physical.physicalCutoff_lipschitz",
+          "Carleman.Physical.cutoffNodes",
+          "Carleman.Physical.cutoffNodes_endpoints",
+          "Carleman.Physical.cutoffNodes_difference",
+          "Carleman.Physical.cutoffNodes_transition_location",
+          "Carleman.Physical.leftNodes",
+          "Carleman.Physical.rightNodes",
+          "Carleman.Physical.leftNodes_measure",
+          "Carleman.Physical.rightNodes_measure",
+          "Carleman.Physical.middleNodes",
+          "Carleman.Physical.middleNodes_measure",
+          "Carleman.Physical.transitionNodes",
+          "Carleman.Physical.transitionNodes_measure",
+          "Carleman.Physical.sine_reflect",
+          "Carleman.Physical.sine_endpoint_bound",
+          "Carleman.Physical.physicalWeight_near_endpoint",
+          "Carleman.Physical.sine_middle_lower",
+          "Carleman.Physical.physicalWeight_middle_upper",
+          "Carleman.Physical.concrete_cutoff_residual",
+          "Carleman.Physical.cutoffNodes_one_middle",
+          "Carleman.Physical.cutoff_remainder_zero",
+          "Carleman.Physical.cutoff_remainder_norm_bound",
+          "Carleman.Physical.cutoff_remainder_energy_bound",
+          "Carleman.Physical.physical_adjoint_terminal_bound",
+          "Carleman.Physical.physical_cutoff_remainder_energy",
+          "Carleman.Physical.physical_adjoint_initial_lower",
+          "Carleman.Physical.physical_middle_energy",
+          "Carleman.Physical.physical_delta_conditions",
+          "Carleman.Physical.physical_transition_weight",
+          "Carleman.Physical.physical_weight_endpoint_decay"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/feb190b9e3a528204835c491a647af37a61439ac/governance/reviews/T027-local-acceptance.md",
+        "reviewed_at": "2026-10-18T16:04:16+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C040",
         "C006"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "原正则化正弦权及一二阶真实导数、实际Lipschitz截断、物理周期余项、节点计数、真实伴随能量及端点指数衰减已接通；空间权比较/势载荷/实际CE供应仍待，不计原Theorem7.2完成。"
+      "scope_notes": "原正则化正弦权及一二阶真实导数、实际Lipschitz截断、物理周期余项、节点计数、真实伴随能量及端点指数衰减已接通；空间权比较/势载荷/实际CE供应仍待，不计原Theorem7.2完成。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C044",
+      "title": "原物理权完整允许性与空间加权预算",
+      "paper_ref": "Theorem7.2 proof, Steps1–3 weighted foundations",
+      "milestone": "M6b",
+      "extra_hypotheses": [],
+      "verification_status": "PLANNED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:physicalO"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C043"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "统一Cb及完整两阶qclass、真实Lp空间权与端点/中部预算；完整观测仍待CE供应与吸收。"
     }
   ],
   "events": [
@@ -5188,6 +5301,11 @@
       "at": "2026-10-18T15:47:09.240182+00:00",
       "public_summary": "真实物理HUM条件桥23声明经独立Agent及同SHA CI验收；保留观测假设，原文仍12/26。队列清空，继续原观测的权与截断。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/797a0d993d78aa667efee705d6886636a9750012/governance/reviews/T026-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T16:05:40.626324+00:00",
+      "public_summary": "原权与具体截断70声明经独立Agent及同SHA CI验收；C043为辅助结果，原文仍12/26。验收积压清空，继续完整qclass和空间权。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/feb190b9e3a528204835c491a647af37a61439ac/governance/reviews/T027-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -5293,7 +5411,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3fbcf7955e4186d3b7892d0d713ea782145814d9/governance/reviews/T025-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39140648544/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/797a0d993d78aa667efee705d6886636a9750012/governance/reviews/T026-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39141525842/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39141525842/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/feb190b9e3a528204835c491a647af37a61439ac/governance/reviews/T027-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39142758460/attempts/1"
     ]
   },
   "schedules": [
@@ -11810,10 +11930,10 @@
       ],
       "branch": "main",
       "base_commit": "549cde718bcf26f00b24f4a1493ee92b839f30b4",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "c3ab9aaef14a4f5beca82505cdfd325e507c653e",
+      "merge_commit": "c3ab9aaef14a4f5beca82505cdfd325e507c653e",
       "lean_declarations": [
         "Carleman.Physical.periodic_next_of_endpoints",
         "Carleman.Physical.cutoffState",
@@ -11886,13 +12006,24 @@
         "Carleman.Physical.physical_transition_weight",
         "Carleman.Physical.physical_weight_endpoint_decay"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "c3ab9aaef14a4f5beca82505cdfd325e507c653e",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39142758460/attempts/1",
+        "finished_at": "2026-10-18T15:58:53.251430+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "c3ab9aaef14a4f5beca82505cdfd325e507c653e"
+      },
       "blocker": null,
       "attempts": [
         "物理到周期截断及原余项恒等式已定向编译；原正弦权及一阶允许性已编译，继续二阶导数与实际截断。",
         "八模块完成真实原权与具体截断；全局光滑/周期导数、5δT过渡测度、T/6中部测度、真实伴随余项和初值恢复、δ=qb/S网格后果及原端点指数已定向编译。"
       ],
-      "next_action": "推送固定提交；独立Agent核对原权、截断路线及真实计数/能量和范围；同SHA CI核验后保持AUXILIARY。",
+      "next_action": "原权与具体截断基础已验收；T028完成统一Cb与完整qclass、真实空间加权预算。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -11906,7 +12037,63 @@
         "axioms_sha256": "774557b39badad5efa4d0eaed0dab9f72622868e4e187b4633c7b3727cd777bd",
         "log": "/tmp/carleman-observation-foundations-full.log",
         "note": "本机检查；真实同SHA CI与独立验收仍待。"
+      },
+      "declaration_version": "c3ab9aaef14a4f5beca82505cdfd325e507c653e",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C043"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "c3ab9aaef14a4f5beca82505cdfd325e507c653e",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T16:04:16+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/feb190b9e3a528204835c491a647af37a61439ac/governance/reviews/T027-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "c3ab9aaef14a4f5beca82505cdfd325e507c653e",
+        "checked_sha": "c3ab9aaef14a4f5beca82505cdfd325e507c653e",
+        "run_id": 39142758460,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3490,
+        "recursive_axiom_audit": 3436,
+        "new_explicit_declarations": 70,
+        "declaration_artifact_sha256": "774557b39badad5efa4d0eaed0dab9f72622868e4e187b4633c7b3727cd777bd",
+        "local_remote_artifacts_identical": true
       }
+    },
+    {
+      "id": "T028",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原物理权完整允许性与空间加权预算",
+      "goal_ids": [
+        "C044"
+      ],
+      "acceptance": [
+        "Cb先于T/M/网格选择，原qb公式及两阶qclass全部证明",
+        "实际Lp加权范数的端点衰减、中部下界与真实伴随预算",
+        "同SHA独立Agent验收AUXILIARY，完整观测仍待CE供应及吸收"
+      ],
+      "dependencies": [
+        "C043"
+      ],
+      "branch": "main",
+      "base_commit": "c3ab9aaef14a4f5beca82505cdfd325e507c653e",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "实际空间Lp权端点/中部比较已定向编译；正在从原qb公式证明统一参数选择。"
+      ],
+      "next_action": "由原qb公式统一选Cb，补齐完整qclass并构造实际空间加权预算；随后连接势载荷、CE及最终吸收。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
