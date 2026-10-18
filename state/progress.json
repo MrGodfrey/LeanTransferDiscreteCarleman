@@ -9,38 +9,38 @@
     "started_at": "2026-10-17T09:43:34.927869+00:00"
   },
   "execution": {
-    "state": "REVIEW",
-    "current_task_id": "T017",
+    "state": "RUNNING",
+    "current_task_id": "T018",
     "supervisor_checked_at": "2026-10-17T13:54:55.912702+00:00",
-    "next_action": "父监督者独立验收17声明及PR20；接续原域hI的弱Taylor/平均估计或同一扩张构造，以及Section4空间比较；一般目标不弱化",
+    "next_action": "本阶段完整构建/递归公理与69声明核对，交同一draft PR供父监督者独立验收；随后推进Section4实际空间误差与统一权族组合",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T00:09:59.648319+00:00"
+    "last_activity_at": "2026-10-18T00:58:05.435438+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "d06afe4d97b740977d1a363a41c6ac2bcd43233f",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39081486968/attempts/1",
-      "finished_at": "2026-10-18T00:08:20.872690+00:00",
+      "checked_sha": "f90a891faf5c2a421f863a9f6a687cc7bd800912",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39082351052/attempts/1",
+      "finished_at": "2026-10-18T00:22:23.901692+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "5e56cd1991f7693683335534398e61ffdd338424"
+      "source_head_sha": "f90a891faf5c2a421f863a9f6a687cc7bd800912"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "d06afe4d97b740977d1a363a41c6ac2bcd43233f",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39081486968/attempts/1",
-      "finished_at": "2026-10-18T00:08:20.872690+00:00",
+      "checked_sha": "f90a891faf5c2a421f863a9f6a687cc7bd800912",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39082351052/attempts/1",
+      "finished_at": "2026-10-18T00:22:23.901692+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "5e56cd1991f7693683335534398e61ffdd338424"
+      "source_head_sha": "f90a891faf5c2a421f863a9f6a687cc7bd800912"
     }
   },
   "milestones": [
@@ -3487,7 +3487,7 @@
       "extra_hypotheses": [
         "原域实际D(A)状态的统一参数插值尚待几何证明；任何条件性接入均显式标明此剩余前提"
       ],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "CONDITIONAL",
       "paper_labels": [],
       "lean_declarations": [
@@ -3502,21 +3502,21 @@
         "Carleman.CoerciveForm.interpolated_weighted_temporal_error_uniform",
         "Carleman.CoerciveForm.interpolated_weighted_temporal_l2_uniform"
       ],
-      "declaration_version": "d06afe4d97b740977d1a363a41c6ac2bcd43233f",
+      "declaration_version": "f90a891faf5c2a421f863a9f6a687cc7bd800912",
       "build_evidence": {
         "status": "PASS",
-        "checked_sha": "d06afe4d97b740977d1a363a41c6ac2bcd43233f",
-        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39081486968/attempts/1",
-        "finished_at": "2026-10-18T00:08:20.872690+00:00",
+        "checked_sha": "f90a891faf5c2a421f863a9f6a687cc7bd800912",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39082351052/attempts/1",
+        "finished_at": "2026-10-18T00:22:23.901692+00:00",
         "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "targets": [
           "Carleman"
         ],
-        "source_head_sha": "5e56cd1991f7693683335534398e61ffdd338424"
+        "source_head_sha": "f90a891faf5c2a421f863a9f6a687cc7bd800912"
       },
       "semantic_review": {
-        "checked_sha": "d06afe4d97b740977d1a363a41c6ac2bcd43233f",
+        "checked_sha": "f90a891faf5c2a421f863a9f6a687cc7bd800912",
         "declarations": [
           "Carleman.AllowedWeightData",
           "Carleman.DomainParameterInterpolation",
@@ -3531,11 +3531,11 @@
         ],
         "result": "PASS",
         "axiom_check": "PASS",
-        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5e56cd1991f7693683335534398e61ffdd338424/governance/reviews/T017.md",
-        "reviewed_at": "2026-10-18T00:09:59.648319+00:00",
-        "reviewer": "T017 executor; parent independent acceptance pending"
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/20",
+        "reviewed_at": "2026-10-18T00:27:24.709762+00:00",
+        "reviewer": "Parent supervisor independent declaration/source/assumptions/dependency acceptance; reported in continuation delegation"
       },
-      "blocker": "原bounded Lipschitz域的统一参数插值hI尚待弱Taylor/平均估计或同一扩张构造；空间B4及最终权族实例仍待",
+      "blocker": "历史已验收条件声明保留hI；原域实例已由T018/C036证明并待本轮独立验收；Section4空间B4及最终权族组合仍待",
       "dependencies": [
         "C033"
       ],
@@ -3548,7 +3548,7 @@
       "paper_ref": "原bounded Lipschitz域参数插值的几何依赖",
       "milestone": "M1",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [],
       "lean_declarations": [
@@ -3560,21 +3560,21 @@
         "Carleman.exists_inwardConePatch_of_mem_closure",
         "Carleman.finite_uniform_inwardCone_cover"
       ],
-      "declaration_version": "d06afe4d97b740977d1a363a41c6ac2bcd43233f",
+      "declaration_version": "f90a891faf5c2a421f863a9f6a687cc7bd800912",
       "build_evidence": {
         "status": "PASS",
-        "checked_sha": "d06afe4d97b740977d1a363a41c6ac2bcd43233f",
-        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39081486968/attempts/1",
-        "finished_at": "2026-10-18T00:08:20.872690+00:00",
+        "checked_sha": "f90a891faf5c2a421f863a9f6a687cc7bd800912",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39082351052/attempts/1",
+        "finished_at": "2026-10-18T00:22:23.901692+00:00",
         "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "targets": [
           "Carleman"
         ],
-        "source_head_sha": "5e56cd1991f7693683335534398e61ffdd338424"
+        "source_head_sha": "f90a891faf5c2a421f863a9f6a687cc7bd800912"
       },
       "semantic_review": {
-        "checked_sha": "d06afe4d97b740977d1a363a41c6ac2bcd43233f",
+        "checked_sha": "f90a891faf5c2a421f863a9f6a687cc7bd800912",
         "declarations": [
           "Carleman.InwardConePatch",
           "Carleman.lipschitz_graph_inward_ball",
@@ -3586,14 +3586,110 @@
         ],
         "result": "PASS",
         "axiom_check": "PASS",
-        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5e56cd1991f7693683335534398e61ffdd338424/governance/reviews/T017.md",
-        "reviewed_at": "2026-10-18T00:09:59.648319+00:00",
-        "reviewer": "T017 executor; parent independent acceptance pending"
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/20",
+        "reviewed_at": "2026-10-18T00:27:24.709762+00:00",
+        "reviewer": "Parent supervisor independent declaration/source/assumptions/dependency acceptance; reported in continuation delegation"
       },
       "blocker": null,
       "dependencies": [],
       "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/20",
       "scope_notes": "明确Lipschitz图表条件下的真实几何；不宣称Sobolev扩张或域参数插值已证，也不声称尚未形式化的域定义等价。"
+    },
+    {
+      "id": "C036",
+      "title": "原域全阶参数插值及一般阶加权时间闭合",
+      "paper_ref": "eq:parametergraph；eq:eulerMR/eq:frozengraph及eq:temporal-errors/eq:temporal-energy-error的分析组成部分",
+      "milestone": "M3",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "eq:parametergraph",
+        "eq:eulerMR",
+        "eq:frozengraph",
+        "eq:temporal-errors",
+        "eq:temporal-energy-error"
+      ],
+      "lean_declarations": [
+        "Carleman.interiorRegion",
+        "Carleman.isOpen_interiorRegion",
+        "Carleman.interiorRegion_subset",
+        "Carleman.interiorRegion_closedBall_subset",
+        "Carleman.eventually_mem_interiorRegion",
+        "Carleman.InwardConePatch.tube_subset",
+        "Carleman.LocalLipschitzGraphChart",
+        "Carleman.IsBoundedLipschitzDomain",
+        "Carleman.LocalLipschitzGraphChart.exists_global_graph",
+        "Carleman.IsBoundedLipschitzDomain.global_graph_charts",
+        "Carleman.HasLipschitzGraphCharts.local_charts",
+        "Carleman.boundedLipschitz_iff_global_graph_charts",
+        "Carleman.IsBoundedLipschitzDomain.finite_uniform_cones",
+        "Carleman.coneCoordinateConstant",
+        "Carleman.coneCoordinateConstant_nonneg",
+        "Carleman.weak_cone_coordinate_interpolation",
+        "Carleman.discrete_interpolation_maximum",
+        "Carleman.IsWeakSpatialDerivative.zeroExtend",
+        "Carleman.SpatialTest.reflectedWithin",
+        "Carleman.SpatialTest.fderiv_convolution_integral",
+        "Carleman.IsWeakSpatialDerivative.convolution_exchange_local",
+        "Carleman.IsWeakSpatialDerivative.fderiv_convolution_local",
+        "Carleman.finite_cones_common_height",
+        "Carleman.finite_cones_coordinate_interpolation",
+        "Carleman.WeakSobolevJet.boundedLipschitz_scaled_components",
+        "Carleman.WeakSobolevJet.boundedLipschitz_parameter_interpolation",
+        "Carleman.boundedLipschitz_jet_neighbor",
+        "Carleman.coordinateCombination",
+        "Carleman.coordinateSize",
+        "Carleman.coordinateSize_nonneg",
+        "Carleman.coordinateCombination_add",
+        "Carleman.coordinateCombination_basis",
+        "Carleman.coordinateCombination_norm_le",
+        "Carleman.weak_coordinateCombination",
+        "Carleman.weak_coordinateCombination_second",
+        "Carleman.bochnerL2Norm_restrict_le",
+        "Carleman.l2_average_square_le",
+        "Carleman.integrable_square_of_slice_bound",
+        "Carleman.l2_average_le_of_slice_bound",
+        "Carleman.bochnerL2Norm_finite_cover",
+        "Carleman.boundedLipschitz_domain_parameter_interpolation",
+        "Carleman.local_mollifier_norm_bound",
+        "Carleman.mollified_cone_ftc",
+        "Carleman.mollified_cone_interpolation",
+        "Carleman.mollified_cone_translation_l2",
+        "Carleman.weak_cone_interpolation_fullLp",
+        "Carleman.weak_cone_interpolation",
+        "Carleman.SpatialTest.derivativeLp_zero",
+        "Carleman.SpatialTest.derivativeLp_add",
+        "Carleman.SpatialTest.derivativeLp_smul",
+        "Carleman.IsWeakSpatialDerivative.direction_zero",
+        "Carleman.IsWeakSpatialDerivative.direction_add",
+        "Carleman.IsWeakSpatialDerivative.direction_smul",
+        "Carleman.IsWeakSpatialDerivative.direction_sum",
+        "Carleman.IsWeakSpatialDerivative.sum_states",
+        "Carleman.zeroExtendLp",
+        "Carleman.zeroExtendLp_ae",
+        "Carleman.zeroExtendLp_ae_restrict",
+        "Carleman.zeroExtendLp_norm",
+        "Carleman.integral_mul_zeroExtendLp",
+        "Carleman.CoerciveForm.lipschitz_weighted_euler_sobolev_uniform",
+        "Carleman.CoerciveForm.lipschitz_weighted_frozen_sobolev_uniform",
+        "Carleman.CoerciveForm.lipschitz_weighted_temporal_error_uniform",
+        "Carleman.WeakSobolevJet.componentMaximum",
+        "Carleman.WeakSobolevJet.component_le_maximum",
+        "Carleman.WeakSobolevJet.componentMaximum_le_field",
+        "Carleman.WeakSobolevJet.componentMaximum_zero",
+        "Carleman.boundedLipschitz_operator_parameter_graph",
+        "Carleman.CoerciveForm.interpolated_weighted_frozen_sobolev_uniform"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "blocker": "原域hI已由本阶段实际证明；完整原文声明整体验收、Section4空间误差和最终权族实例仍待",
+      "dependencies": [
+        "C034",
+        "C035"
+      ],
+      "pr_url": null
     }
   ],
   "events": [
@@ -3733,11 +3829,16 @@
       "at": "2026-10-18T00:09:59.648319+00:00",
       "public_summary": "一般阶真实时间误差条件链与Lipschitz统一内锥几何通过构建和依赖检查；原域插值前提仍明示，原文1/26",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/20"
+    },
+    {
+      "at": "2026-10-18T00:27:24.709762+00:00",
+      "public_summary": "一般阶真实时间条件链及Lipschitz内锥几何已独立验收合并；继续原域弱参数插值，原文1/26",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/20"
     }
   ],
   "snapshot": {
-    "synced_at": "2026-10-18T00:09:59.648319+00:00",
-    "source_commit": "d06afe4d97b740977d1a363a41c6ac2bcd43233f",
+    "synced_at": "2026-10-18T00:27:24.709762+00:00",
+    "source_commit": "f90a891faf5c2a421f863a9f6a687cc7bd800912",
     "mode": "LOCAL_SNAPSHOT"
   },
   "dashboard": {
@@ -3809,7 +3910,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39079981845/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/20",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39081486968/attempts/1",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5e56cd1991f7693683335534398e61ffdd338424/governance/reviews/T017.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5e56cd1991f7693683335534398e61ffdd338424/governance/reviews/T017.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39082351052/attempts/1"
     ]
   },
   "schedules": [
@@ -8806,10 +8908,10 @@
       ],
       "branch": "proof/t017-higher-order-analysis",
       "base_commit": "9b61edb8f2f5ad8ceec4ab9cadc0d9aadaacd491",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/20",
-      "checkpoint_commit": "5e56cd1991f7693683335534398e61ffdd338424",
-      "merge_commit": null,
+      "checkpoint_commit": "f90a891faf5c2a421f863a9f6a687cc7bd800912",
+      "merge_commit": "f90a891faf5c2a421f863a9f6a687cc7bd800912",
       "lean_declarations": [
         "Carleman.InwardConePatch",
         "Carleman.lipschitz_graph_inward_ball",
@@ -8831,17 +8933,17 @@
       ],
       "build_evidence": {
         "status": "PASS",
-        "checked_sha": "d06afe4d97b740977d1a363a41c6ac2bcd43233f",
-        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39081486968/attempts/1",
-        "finished_at": "2026-10-18T00:08:20.872690+00:00",
+        "checked_sha": "f90a891faf5c2a421f863a9f6a687cc7bd800912",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39082351052/attempts/1",
+        "finished_at": "2026-10-18T00:22:23.901692+00:00",
         "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "targets": [
           "Carleman"
         ],
-        "source_head_sha": "5e56cd1991f7693683335534398e61ffdd338424"
+        "source_head_sha": "f90a891faf5c2a421f863a9f6a687cc7bd800912"
       },
-      "blocker": "原bounded Lipschitz域的统一参数插值hI尚待弱Taylor/平均估计或同一扩张构造；空间B4及最终权族实例仍待",
+      "blocker": "历史已验收条件声明保留hI；原域实例已由T018/C036证明并待本轮独立验收；Section4空间B4及最终权族组合仍待",
       "attempts": [
         "核实PR19合并树/实际main CI三项32步，14模块+root重编3374jobs/2520审计，声明字节与验收版本一致",
         "A1粗界产生错误q幂；A3对D^j u要求未给定的域保持。原域几何不能由二阶闭合外推",
@@ -8849,10 +8951,10 @@
         "从Lipschitz图函数真正构造内移闭球、原坐标patch、内点patch及有限统一高度覆盖；未用高阶反射，不伪称扩张/插值已完成",
         "本地根目标3384jobs/2592递归公理审计PASS，17显式声明实际类型及原文语义逐项核对"
       ],
-      "next_action": "父监督者独立验收17声明及PR20；接续原域hI的弱Taylor/平均估计或同一扩张构造，以及Section4空间比较；一般目标不弱化",
-      "declaration_version": "d06afe4d97b740977d1a363a41c6ac2bcd43233f",
+      "next_action": "T018接续原域参数插值hI清偿及局部Lipschitz图表桥",
+      "declaration_version": "f90a891faf5c2a421f863a9f6a687cc7bd800912",
       "semantic_review": {
-        "checked_sha": "d06afe4d97b740977d1a363a41c6ac2bcd43233f",
+        "checked_sha": "f90a891faf5c2a421f863a9f6a687cc7bd800912",
         "declarations": [
           "Carleman.InwardConePatch",
           "Carleman.lipschitz_graph_inward_ball",
@@ -8874,9 +8976,9 @@
         ],
         "result": "PASS",
         "axiom_check": "PASS",
-        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5e56cd1991f7693683335534398e61ffdd338424/governance/reviews/T017.md",
-        "reviewed_at": "2026-10-18T00:09:59.648319+00:00",
-        "reviewer": "T017 executor; parent independent acceptance pending"
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/20",
+        "reviewed_at": "2026-10-18T00:27:24.709762+00:00",
+        "reviewer": "Parent supervisor independent declaration/source/assumptions/dependency acceptance; reported in continuation delegation"
       },
       "ci_relationship": {
         "proof_head": "5e56cd1991f7693683335534398e61ffdd338424",
@@ -8907,7 +9009,137 @@
           "id": 12118074836,
           "zip_sha256": "72aadd568a7a4dde74e7d9f1c6efb875db6b852e4ed0292350b837fe54eee9ad"
         }
+      },
+      "main_ci_relationship": {
+        "merge_commit": "f90a891faf5c2a421f863a9f6a687cc7bd800912",
+        "source_head": "71745139867c2de2ca70c6a5ad502e9881867e90",
+        "same_tree": "4b36b1b024a9dd0db700a4b279535ef667577000",
+        "run_id": 39082351052,
+        "jobs_and_steps": "3 jobs / 32 steps PASS",
+        "actual_build_jobs": 3384,
+        "recursive_axiom_audit": 2592,
+        "recompiled_modules": 10,
+        "root_recompiled": true,
+        "declaration_artifact_sha256": "28ace32001f5cf2e165507ae665579a6ca631c2740985cffe59ccafaa56ef2eb",
+        "lean-ci-result": {
+          "id": 12119661466,
+          "zip_sha256": "92e75bf2c3b83aa92ff360e1b15568273af3a4bf636fbd7e274e6d2cb1fc858c"
+        },
+        "lean-declaration-evidence": {
+          "id": 12119332754,
+          "zip_sha256": "bf901069cec8a2573da3e639ef24bafcd6163a13a02ab8730f90902a5d11b277"
+        },
+        "progress-dashboard": {
+          "id": 12119313002,
+          "zip_sha256": "4b1b4c4ef6863c8ba0c8f3560972a69da21e7d718ea5d7048a02856cb889c56b"
+        }
       }
+    },
+    {
+      "id": "T018",
+      "platform_task_id": "01a1498c-c483-77a5-8b91-14b593452001",
+      "task_url": null,
+      "continuation_of": "T017",
+      "title": "原域全阶弱参数插值与一般阶实际时间图和误差",
+      "goal_ids": [
+        "C036"
+      ],
+      "acceptance": [
+        "证明局部Lipschitz图函数到现有图表接口的桥，不将新谓词当原假设自动满足",
+        "证明原域全部实际弱Sobolev jet的参数插值，有限cover拼接并真正消去hI；原eq:parametergraph及一般阶Euler/冻结完整R和真实时间率接通",
+        "保留原域、一般阶、允许权族、所有状态和T/网格统一性；同SHA构建/逐声明审计/自有Lean行数统计，draft PR不合并"
+      ],
+      "dependencies": [
+        "C034",
+        "C035"
+      ],
+      "branch": "proof/t018-domain-interpolation",
+      "base_commit": "f90a891faf5c2a421f863a9f6a687cc7bd800912",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": "f90a891faf5c2a421f863a9f6a687cc7bd800912",
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.interiorRegion",
+        "Carleman.isOpen_interiorRegion",
+        "Carleman.interiorRegion_subset",
+        "Carleman.interiorRegion_closedBall_subset",
+        "Carleman.eventually_mem_interiorRegion",
+        "Carleman.InwardConePatch.tube_subset",
+        "Carleman.LocalLipschitzGraphChart",
+        "Carleman.IsBoundedLipschitzDomain",
+        "Carleman.LocalLipschitzGraphChart.exists_global_graph",
+        "Carleman.IsBoundedLipschitzDomain.global_graph_charts",
+        "Carleman.HasLipschitzGraphCharts.local_charts",
+        "Carleman.boundedLipschitz_iff_global_graph_charts",
+        "Carleman.IsBoundedLipschitzDomain.finite_uniform_cones",
+        "Carleman.coneCoordinateConstant",
+        "Carleman.coneCoordinateConstant_nonneg",
+        "Carleman.weak_cone_coordinate_interpolation",
+        "Carleman.discrete_interpolation_maximum",
+        "Carleman.IsWeakSpatialDerivative.zeroExtend",
+        "Carleman.SpatialTest.reflectedWithin",
+        "Carleman.SpatialTest.fderiv_convolution_integral",
+        "Carleman.IsWeakSpatialDerivative.convolution_exchange_local",
+        "Carleman.IsWeakSpatialDerivative.fderiv_convolution_local",
+        "Carleman.finite_cones_common_height",
+        "Carleman.finite_cones_coordinate_interpolation",
+        "Carleman.WeakSobolevJet.boundedLipschitz_scaled_components",
+        "Carleman.WeakSobolevJet.boundedLipschitz_parameter_interpolation",
+        "Carleman.boundedLipschitz_jet_neighbor",
+        "Carleman.coordinateCombination",
+        "Carleman.coordinateSize",
+        "Carleman.coordinateSize_nonneg",
+        "Carleman.coordinateCombination_add",
+        "Carleman.coordinateCombination_basis",
+        "Carleman.coordinateCombination_norm_le",
+        "Carleman.weak_coordinateCombination",
+        "Carleman.weak_coordinateCombination_second",
+        "Carleman.bochnerL2Norm_restrict_le",
+        "Carleman.l2_average_square_le",
+        "Carleman.integrable_square_of_slice_bound",
+        "Carleman.l2_average_le_of_slice_bound",
+        "Carleman.bochnerL2Norm_finite_cover",
+        "Carleman.boundedLipschitz_domain_parameter_interpolation",
+        "Carleman.local_mollifier_norm_bound",
+        "Carleman.mollified_cone_ftc",
+        "Carleman.mollified_cone_interpolation",
+        "Carleman.mollified_cone_translation_l2",
+        "Carleman.weak_cone_interpolation_fullLp",
+        "Carleman.weak_cone_interpolation",
+        "Carleman.SpatialTest.derivativeLp_zero",
+        "Carleman.SpatialTest.derivativeLp_add",
+        "Carleman.SpatialTest.derivativeLp_smul",
+        "Carleman.IsWeakSpatialDerivative.direction_zero",
+        "Carleman.IsWeakSpatialDerivative.direction_add",
+        "Carleman.IsWeakSpatialDerivative.direction_smul",
+        "Carleman.IsWeakSpatialDerivative.direction_sum",
+        "Carleman.IsWeakSpatialDerivative.sum_states",
+        "Carleman.zeroExtendLp",
+        "Carleman.zeroExtendLp_ae",
+        "Carleman.zeroExtendLp_ae_restrict",
+        "Carleman.zeroExtendLp_norm",
+        "Carleman.integral_mul_zeroExtendLp",
+        "Carleman.CoerciveForm.lipschitz_weighted_euler_sobolev_uniform",
+        "Carleman.CoerciveForm.lipschitz_weighted_frozen_sobolev_uniform",
+        "Carleman.CoerciveForm.lipschitz_weighted_temporal_error_uniform",
+        "Carleman.WeakSobolevJet.componentMaximum",
+        "Carleman.WeakSobolevJet.component_le_maximum",
+        "Carleman.WeakSobolevJet.componentMaximum_le_field",
+        "Carleman.WeakSobolevJet.componentMaximum_zero",
+        "Carleman.boundedLipschitz_operator_parameter_graph",
+        "Carleman.CoerciveForm.interpolated_weighted_frozen_sobolev_uniform"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "核实PR20 main实际三项32步PASS、10新模块+root重编3384jobs/2592审计、同树和声明字节",
+        "局部图经McShane扩张与反向边界/逆坐标证明，完成local/global图表双向桥",
+        "原域内弱卷积交换、内锥管、真实L²平均与Fatou；零延拓仅作L²等距",
+        "从高阶核缩放路线改为二阶方向链/有限cover/加权离散最大值，保留任意阶和所有弱状态，真正清偿hI",
+        "完整冻结R提升先分离到一般测度解析定理，再从已证原域hI调用，消除具体限制测度展开造成的elaboration超时；结论不变"
+      ],
+      "next_action": "本阶段完整构建/递归公理与69声明核对，交同一draft PR供父监督者独立验收；随后推进Section4实际空间误差与统一权族组合"
     }
   ],
   "private_maintenance": {
