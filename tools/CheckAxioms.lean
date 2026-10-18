@@ -4015,6 +4015,39 @@ set_option pp.maxSteps 1000000
 #check @Carleman.weak_slices_actual_endpoint_traces
 #print axioms Carleman.weak_slices_actual_endpoint_traces
 
+#check @Carleman.ae_forall_continuous_zero_on
+#print axioms Carleman.ae_forall_continuous_zero_on
+#check @Carleman.scalar_weak_interval_iff
+#print axioms Carleman.scalar_weak_interval_iff
+#check @Carleman.ae_weak_interval_of_ae_tests
+#print axioms Carleman.ae_weak_interval_of_ae_tests
+#check @Carleman.SpatialTest.tensor_tsupport_subset
+#print axioms Carleman.SpatialTest.tensor_tsupport_subset
+#check @Carleman.SpatialTest.tensor
+#print axioms Carleman.SpatialTest.tensor
+#check @Carleman.SpatialTest.tensor_interval_derivative
+#print axioms Carleman.SpatialTest.tensor_interval_derivative
+#check @Carleman.product_weak_marginal
+#print axioms Carleman.product_weak_marginal
+#check @Carleman.intervalSliceLp
+#print axioms Carleman.intervalSliceLp
+#check @Carleman.intervalSliceLp_ae
+#print axioms Carleman.intervalSliceLp_ae
+#check @Carleman.scalar_interval_test_pairing
+#print axioms Carleman.scalar_interval_test_pairing
+#check @Carleman.product_weak_slices
+#print axioms Carleman.product_weak_slices
+#check @Carleman.product_weak_endpoint_representatives
+#print axioms Carleman.product_weak_endpoint_representatives
+#check @Carleman.fiberEndpointLp
+#print axioms Carleman.fiberEndpointLp
+#check @Carleman.fiberEndpointLp_ae
+#print axioms Carleman.fiberEndpointLp_ae
+#check @Carleman.fiberEndpointLp_norm_sq
+#print axioms Carleman.fiberEndpointLp_norm_sq
+#check @Carleman.product_weak_face_trace_representatives
+#print axioms Carleman.product_weak_face_trace_representatives
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

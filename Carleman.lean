@@ -501,3 +501,8 @@ public import Carleman.Continuous.WeakIntervalTrace
 public import Carleman.Continuous.ScalarIntervalTrace
 public import Carleman.Spatial.FiberEndpointIntegral
 public import Carleman.Spatial.WeakSliceEndpointTrace
+public import Carleman.Spatial.CountableWeakTests
+public import Carleman.Spatial.TensorSpatialTest
+public import Carleman.Spatial.ProductWeakMarginal
+public import Carleman.Spatial.ProductWeakSlices
+public import Carleman.Spatial.ProductFaceTrace
