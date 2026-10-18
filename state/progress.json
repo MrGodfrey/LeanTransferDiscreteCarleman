@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T049",
-    "supervisor_checked_at": "2026-10-18T19:48:11.973428+00:00",
-    "next_action": "全域加权逆界9声明提交固定SHA独立验收；继续原allowed权族的统一单元比较和原ℓ尺度对应。",
+    "current_task_id": "T050",
+    "supervisor_checked_at": "2026-10-18T19:55:23.019366+00:00",
+    "next_action": "原allowed权及ℓ尺度的完整P1逆界20声明提交固定SHA独立验收；继续四类权的邻接分级及统一小参数阈值。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T19:48:11.973428+00:00"
+    "last_activity_at": "2026-10-18T19:55:23.019366+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "2ccd0e5f1ae783f69c70d18593e09c79dfe7d7bd",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39159881586/attempts/1",
-      "finished_at": "2026-10-18T19:42:41.915169+00:00",
+      "checked_sha": "99694c20834ac8d3b712f5e2d071a4e4ccfc308b",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39160438454/attempts/1",
+      "finished_at": "2026-10-18T19:50:10.312679+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "2ccd0e5f1ae783f69c70d18593e09c79dfe7d7bd"
+      "source_head_sha": "99694c20834ac8d3b712f5e2d071a4e4ccfc308b"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "2ccd0e5f1ae783f69c70d18593e09c79dfe7d7bd",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39159881586/attempts/1",
-      "finished_at": "2026-10-18T19:42:41.915169+00:00",
+      "checked_sha": "99694c20834ac8d3b712f5e2d071a4e4ccfc308b",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39160438454/attempts/1",
+      "finished_at": "2026-10-18T19:50:10.312679+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "2ccd0e5f1ae783f69c70d18593e09c79dfe7d7bd"
+      "source_head_sha": "99694c20834ac8d3b712f5e2d071a4e4ccfc308b"
     }
   },
   "milestones": [
@@ -7010,7 +7010,7 @@
       "paper_ref": "Section6 weighted inverse estimate: genuine global summation and inverse cell-scale multiplier",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:p1"
@@ -7026,16 +7026,89 @@
         "Carleman.SimplicialPartition.inverseWeight_sq_sum",
         "Carleman.conforming_weighted_inverse"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "99694c20834ac8d3b712f5e2d071a4e4ccfc308b",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "99694c20834ac8d3b712f5e2d071a4e4ccfc308b",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39160438454/attempts/1",
+        "finished_at": "2026-10-18T19:50:10.312679+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "99694c20834ac8d3b712f5e2d071a4e4ccfc308b"
+      },
+      "semantic_review": {
+        "checked_sha": "99694c20834ac8d3b712f5e2d071a4e4ccfc308b",
+        "declarations": [
+          "Carleman.SimplicialPartition.cell_restrict_domain",
+          "Carleman.SimplicialPartition.integral_eq_sum_cells",
+          "Carleman.BoundedMultiplier.restrictMeasure",
+          "Carleman.SimplicialPartition.inverseScale",
+          "Carleman.SimplicialPartition.inverseScale_on_cell",
+          "Carleman.SimplicialPartition.inverseWeight",
+          "Carleman.SimplicialPartition.inverseWeight_on_cell",
+          "Carleman.SimplicialPartition.inverseWeight_sq_sum",
+          "Carleman.conforming_weighted_inverse"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c114cef2c53f50d8197f2541f87f4f80e7e8d0cd/governance/reviews/T049-local-acceptance.md",
+        "reviewed_at": "2026-10-18T19:53:37+00:00",
+        "reviewer": "/root/accept_section3; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C063",
         "C064"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "有限真实单纯形分区的闭单元积分精确求和，实际分片逆尺度乘子及其加权L2平方身份；完整H1一致P1状态的全域加权逆界C(d,κ,W)，常数先于全部域/网格/权/状态。仍显式要求内球形状控制和单元权比较；原allowed权比较与ℓ/几何尺度对应待补，原文12/26。"
+      "scope_notes": "有限真实单纯形分区的闭单元积分精确求和，实际分片逆尺度乘子及其加权L2平方身份；完整H1一致P1状态的全域加权逆界C(d,κ,W)，常数先于全部域/网格/权/状态。仍显式要求内球形状控制和单元权比较；原allowed权比较与ℓ/几何尺度对应待补，原文12/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C066",
+      "title": "原允许权族的完整一致P1逆估计",
+      "paper_ref": "Section6 eq:element-weight-comparison and eq:p1-weighted-inverse for actual allowed weights and cell scales",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:p1"
+      ],
+      "lean_declarations": [
+        "Carleman.uniqueDiffOn_closure_open_convex",
+        "Carleman.smooth_profile_lipschitz",
+        "Carleman.allowedWeight_spatial_ratio",
+        "Carleman.allowedWeight_spatial_comparison",
+        "Carleman.SpatialProfile.scaled",
+        "Carleman.SpatialProfile.scaled_multiplier_value",
+        "Carleman.SpatialProfile.scaled_one",
+        "Carleman.SpatialProfile.scaled_neg_one",
+        "Carleman.SpatialProfile.scaled_multiplier_pos",
+        "Carleman.SpatialProfile.scaled_multiplier_spatial_le",
+        "Carleman.SimplicialPartition.cellDiameter",
+        "Carleman.SimplicialPartition.cellDiameter_nonneg",
+        "Carleman.SimplicialPartition.dist_le_cellDiameter",
+        "Carleman.SimplicialPartition.maxDiameter",
+        "Carleman.SimplicialPartition.maxDiameter_nonneg",
+        "Carleman.SimplicialPartition.cellDiameter_le_max",
+        "Carleman.SimplicialPartition.cellScale_le_inball",
+        "Carleman.SimplicialPartition.maxDiameter_mul_q_le",
+        "Carleman.SimplicialPartition.allowedWeight_cell_comparison",
+        "Carleman.conforming_allowed_weight_inverse"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C065"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "固定C1 profile在紧凸闭域的实际导数界供应空间Lipschitz界；两符号所有τ的实际指数比值消去q^τ。实际单元/最大直径及hq≤1供应统一权比较，原ℓ≤B diam及真实内球形状比供应逆尺度。完整H1一致P1状态的原allowed加权逆界，C先于所有网格/权/时刻/符号/τ/状态。尚未完成加权投影、H2插值/超逼近及其余P1义务，12/26。"
     }
   ],
   "events": [
@@ -7361,6 +7434,11 @@
       "at": "2026-10-18T19:48:11.973428+00:00",
       "public_summary": "完整Vh局部弱梯度20声明独立验收及同SHA CI PASS；全域真实加权逆界9声明全库通过。旧队列清空，原文12/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/00d6704a5090ea604d887b9a56e27c13964d9026/governance/reviews/T048-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T19:55:23.019366+00:00",
+      "public_summary": "完整Vh全域加权逆界9声明经独立Agent及同SHA CI验收PASS；原具体allowed权和ℓ尺度对应20声明全库通过，原文12/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c114cef2c53f50d8197f2541f87f4f80e7e8d0cd/governance/reviews/T049-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -7510,7 +7588,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c295f96861f597585e3b984574604a0c665f15cd/governance/reviews/T047-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39159308167/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/00d6704a5090ea604d887b9a56e27c13964d9026/governance/reviews/T048-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39159881586/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39159881586/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c114cef2c53f50d8197f2541f87f4f80e7e8d0cd/governance/reviews/T049-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39160438454/attempts/1"
     ]
   },
   "schedules": [
@@ -16393,10 +16473,10 @@
       ],
       "branch": "main",
       "base_commit": "2ccd0e5f1ae783f69c70d18593e09c79dfe7d7bd",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "99694c20834ac8d3b712f5e2d071a4e4ccfc308b",
+      "merge_commit": "99694c20834ac8d3b712f5e2d071a4e4ccfc308b",
       "lean_declarations": [
         "Carleman.SimplicialPartition.cell_restrict_domain",
         "Carleman.SimplicialPartition.integral_eq_sum_cells",
@@ -16408,12 +16488,23 @@
         "Carleman.SimplicialPartition.inverseWeight_sq_sum",
         "Carleman.conforming_weighted_inverse"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "99694c20834ac8d3b712f5e2d071a4e4ccfc308b",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39160438454/attempts/1",
+        "finished_at": "2026-10-18T19:50:10.312679+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "99694c20834ac8d3b712f5e2d071a4e4ccfc308b"
+      },
       "blocker": null,
       "attempts": [
         "三模块9声明定向3235 jobs及全库3592 jobs通过，4733声明递归审计PASS。"
       ],
-      "next_action": "全域加权逆界9声明提交固定SHA独立验收；继续原allowed权族的统一单元比较和原ℓ尺度对应。",
+      "next_action": "完整Vh全域加权逆界已验收；原allowed权比较与实际ℓ尺度对应已完成本机验证并待独立验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -16425,6 +16516,97 @@
         "recursive_axiom_audit": 4733,
         "new_explicit_declarations": 9,
         "declaration_artifact_sha256": "2384a7eac07fcf000a13e495cd17a5038dbd4ea911b072e3a5088351faf7399f",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "99694c20834ac8d3b712f5e2d071a4e4ccfc308b",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_section3",
+          "claim_ids": [
+            "C065"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "99694c20834ac8d3b712f5e2d071a4e4ccfc308b",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T19:53:37+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c114cef2c53f50d8197f2541f87f4f80e7e8d0cd/governance/reviews/T049-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "99694c20834ac8d3b712f5e2d071a4e4ccfc308b",
+        "checked_sha": "99694c20834ac8d3b712f5e2d071a4e4ccfc308b",
+        "run_id": 39160438454,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3592,
+        "recursive_axiom_audit": 4733,
+        "new_explicit_declarations": 9,
+        "declaration_artifact_sha256": "2384a7eac07fcf000a13e495cd17a5038dbd4ea911b072e3a5088351faf7399f",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T050",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原允许权族的完整一致P1逆估计",
+      "goal_ids": [
+        "C066"
+      ],
+      "acceptance": [
+        "固定ρ的C1紧性与凸域均值定理供应真实Lipschitz界，原指数权比值/双符号对应及无τ依赖",
+        "实际单元直径/最大值和hqmax→hq，ℓ/diam内球尺度对应",
+        "原允许权族在完整H1一致P1空间的真实加权逆界，常数先于所有网格/时刻/权/状态"
+      ],
+      "dependencies": [
+        "C065"
+      ],
+      "branch": "main",
+      "base_commit": "99694c20834ac8d3b712f5e2d071a4e4ccfc308b",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.uniqueDiffOn_closure_open_convex",
+        "Carleman.smooth_profile_lipschitz",
+        "Carleman.allowedWeight_spatial_ratio",
+        "Carleman.allowedWeight_spatial_comparison",
+        "Carleman.SpatialProfile.scaled",
+        "Carleman.SpatialProfile.scaled_multiplier_value",
+        "Carleman.SpatialProfile.scaled_one",
+        "Carleman.SpatialProfile.scaled_neg_one",
+        "Carleman.SpatialProfile.scaled_multiplier_pos",
+        "Carleman.SpatialProfile.scaled_multiplier_spatial_le",
+        "Carleman.SimplicialPartition.cellDiameter",
+        "Carleman.SimplicialPartition.cellDiameter_nonneg",
+        "Carleman.SimplicialPartition.dist_le_cellDiameter",
+        "Carleman.SimplicialPartition.maxDiameter",
+        "Carleman.SimplicialPartition.maxDiameter_nonneg",
+        "Carleman.SimplicialPartition.cellDiameter_le_max",
+        "Carleman.SimplicialPartition.cellScale_le_inball",
+        "Carleman.SimplicialPartition.maxDiameter_mul_q_le",
+        "Carleman.SimplicialPartition.allowedWeight_cell_comparison",
+        "Carleman.conforming_allowed_weight_inverse"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "四模块20声明定向3245 jobs及全库3596 jobs通过，4757项递归审计PASS。"
+      ],
+      "next_action": "原allowed权及ℓ尺度的完整P1逆界20声明提交固定SHA独立验收；继续四类权的邻接分级及统一小参数阈值。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3596,
+        "recursive_axiom_audit": 4757,
+        "new_explicit_declarations": 20,
+        "declaration_artifact_sha256": "52fc8b474e148cff082d91556b5a09fb1e4fe588216373a532b9ec25815d2a73",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
