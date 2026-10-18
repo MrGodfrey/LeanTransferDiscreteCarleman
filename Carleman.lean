@@ -241,3 +241,11 @@ public import Carleman.Transfer.CombinedErrors
 public import Carleman.Transfer.CompleteBridges
 public import Carleman.Transfer.OriginalData
 public import Carleman.Transfer.OriginalUniform
+
+public import Carleman.Transfer.ScaleExponents
+public import Carleman.Transfer.ScalePowers
+public import Carleman.Transfer.ScaleRates
+public import Carleman.Transfer.ScaleBudgets
+public import Carleman.Transfer.ScaleSmallness
+public import Carleman.Transfer.ScaleUniform
+public import Carleman.Transfer.HeatScaleUniform

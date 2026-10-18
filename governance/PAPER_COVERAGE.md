@@ -7,8 +7,8 @@
 | ID | 原文结果 | 标签 | PDF 页 / TeX 行 | 阶段 | 初始目标 | Lean 声明 |
 | --- | --- | --- | --- | --- | --- | --- |
 | P001 | Theorem 2.1 | `thm:main` | 10 / 525 | M5 | C010 | Carleman.Section5.NumericalData, Carleman.Section5.TransferUniform, Carleman.OriginalForm.transfer_uniform |
-| P002 | Corollary 2.2 | `cor:general-scales` | 11 / 599 | M5 | C011 | 待建立 |
-| P003 | Corollary 2.3 | `cor:scales` | 11 / 617 | M5 | C012 | 待建立 |
+| P002 | Corollary 2.2 | `cor:general-scales` | 11 / 599 | M5 | C011 | Carleman.CarlemanExponents.alphaX, Carleman.CarlemanExponents.alphaT, Carleman.Section5.ScaleUniform, Carleman.OriginalForm.scale_uniform |
+| P003 | Corollary 2.3 | `cor:scales` | 11 / 617 | M5 | C012 | Carleman.CarlemanExponents.heat, Carleman.CarlemanExponents.heat_scale_exponents, Carleman.OriginalForm.heat_scale_uniform |
 | P004 | Lemma 3.1 | `lem:graph` | 11 / 647 | M3 | C005, C036, C037 | Carleman.OriginalForm.section3_original_operator, Carleman.OriginalForm.ofBilinear_scalarForm, Carleman.PeriodicWeakTrajectory.graph_equation_iff, Carleman.Section3.Conclusions.primitive_on_interval, Carleman.Section3.Conclusions.form_bound, Carleman.Section3.Conclusions.form_coercive |
 | P005 | Lemma 3.2 | `lem:cell` | 13 / 789 | M3 | C020 | Carleman.cell_estimates_uniform, Carleman.CellEstimates.weight_quotient_essSup, Carleman.CellEstimates.global_cell_bounds |
 | P006 | Lemma 3.3 | `lem:eulerMR` | 14 / 863 | M3 | C006, C036, C037 | Carleman.OriginalForm.section3_original_operator, Carleman.OriginalForm.ofBilinear_scalarForm, Carleman.PeriodicWeakTrajectory.graph_equation_iff, Carleman.Section3.Conclusions.euler, Carleman.Section3.EulerEstimate |

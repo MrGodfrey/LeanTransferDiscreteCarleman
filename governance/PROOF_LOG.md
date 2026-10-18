@@ -1,6 +1,6 @@
 # Proof log
 
-原文 Lemmas 3.1–3.4、Theorem 3.5 、Lemma 4.1 和 Theorem 4.2 已独立验收；当前原文完成 7/26。完整证据见唯一任务台账及对应独立验收报告。
+原文 Theorem 2.1、Lemmas 3.1–3.4、Theorem 3.5、Lemma 4.1 和 Theorem 4.2 已独立验收；当前原文完成 8/26。完整证据见唯一任务台账及对应独立验收报告。
 
 每个合并工作单元只新增一行索引：日期、任务 ID、PR/提交、成果一句话和下一依赖。声明、原文定位、额外前提、构建及语义证据以任务/claim/coverage 记录和 PR 为准，不复制成数份报告。失败但有价值的检查点也可索引，明确标为未完成。
 
@@ -37,3 +37,5 @@
 | 2026-10-18 | T020完整空间误差 | main `a315bdc449c58a705a982f0d009f1dde24d6af66` / [阶段记录](analysis/T020-spatial-complete.md) | 原Lemma4.1能量/状态稳定性及L2率；八模块36声明，CI39135593975三项PASS，3445 jobs/3080声明审计；C008/P009 BUILT，独立本机Agent验收进行中 | T021真实时空合成与B4；清理独立验收队列 |
 | 2026-10-18 | T019/T020独立验收 | main `a315bdc449c58a705a982f0d009f1dde24d6af66` / [Section3](reviews/T019-local-acceptance.md)、[基础层](reviews/T020-foundations-local-acceptance.md)、[Lemma4.1](reviews/T020-lemma-local-acceptance.md) | 三名独立本机Agent逐项通过149项声明，实际同SHA CI和3080声明公理审计；五项原命题升REVIEWED/PAPER，原文6/26，积压队列清空 | T021 Theorem4.2同SHA CI和独立验收；原Theorem2.1桥接 |
 | 2026-10-18 | T021 | main `9d8230090dad2c5b5a2efa74f5d085728866d139` / [独立验收](reviews/T021-local-acceptance.md) | 完整原Theorem4.2两种真实时空误差率，无额外前提；4模块13声明独立PASS，同SHA CI39136913051三项PASS，3449jobs/3125公理审计；原文7/26 | T022原Theorem2.1完整权族桥接及统一transfer |
+
+| 2026-10-18 | T022 | `5fbbfa1714af4a34facdf933a0f37736a4b7e6cd` | 原Theorem2.1完整两版估计独立验收PASS；同SHA main三项CI/3170声明公理审计PASS；全部B1–B5清偿，原文8/26 | T023原两条尺度推论 |

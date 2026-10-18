@@ -17,12 +17,35 @@
         "Carleman.Section5.TransferUniform",
         "Carleman.OriginalForm.transfer_uniform"
       ],
-      "declaration_version": null,
-      "verification_status": "SPECIFIED",
+      "declaration_version": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "extra_hypotheses": [],
-      "build_evidence": null,
-      "semantic_review": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39137974197/attempts/1",
+        "finished_at": "2026-10-18T14:56:05.110784+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd"
+      },
+      "semantic_review": {
+        "checked_sha": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd",
+        "declarations": [
+          "Carleman.Section5.NumericalData",
+          "Carleman.Section5.TransferUniform",
+          "Carleman.OriginalForm.transfer_uniform"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/01040759ab3f6a9ab33d5886b06773e541be7954/governance/reviews/T022-local-acceptance.md",
+        "reviewed_at": "2026-10-18T15:03:30Z",
+        "reviewer": "/root/accept_section3; independent original statement/source/dependency acceptance"
+      },
       "blocker": null
     },
     {
@@ -35,9 +58,14 @@
       "claim_ids": [
         "C011"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.CarlemanExponents.alphaX",
+        "Carleman.CarlemanExponents.alphaT",
+        "Carleman.Section5.ScaleUniform",
+        "Carleman.OriginalForm.scale_uniform"
+      ],
       "declaration_version": null,
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": null,
@@ -54,9 +82,13 @@
       "claim_ids": [
         "C012"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.CarlemanExponents.heat",
+        "Carleman.CarlemanExponents.heat_scale_exponents",
+        "Carleman.OriginalForm.heat_scale_uniform"
+      ],
       "declaration_version": null,
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": null,

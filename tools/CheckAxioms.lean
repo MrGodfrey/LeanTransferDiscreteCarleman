@@ -1932,6 +1932,53 @@ set_option pp.maxSteps 1000000
 #check @Carleman.OriginalForm.transfer_uniform
 #print axioms Carleman.OriginalForm.transfer_uniform
 
+#check @Carleman.CarlemanExponents.nuEnergy
+#print axioms Carleman.CarlemanExponents.nuEnergy
+#check @Carleman.CarlemanExponents.nuL2
+#print axioms Carleman.CarlemanExponents.nuL2
+#check @Carleman.CarlemanExponents.omittedRatio
+#print axioms Carleman.CarlemanExponents.omittedRatio
+#check @Carleman.CarlemanExponents.alphaX
+#print axioms Carleman.CarlemanExponents.alphaX
+#check @Carleman.CarlemanExponents.alphaT
+#print axioms Carleman.CarlemanExponents.alphaT
+#check @Carleman.CarlemanExponents.nuEnergy_nonneg
+#print axioms Carleman.CarlemanExponents.nuEnergy_nonneg
+#check @Carleman.CarlemanExponents.nuL2_pos
+#print axioms Carleman.CarlemanExponents.nuL2_pos
+#check @Carleman.CarlemanExponents.omittedRatio_pos
+#print axioms Carleman.CarlemanExponents.omittedRatio_pos
+#check @Carleman.CarlemanExponents.mul_le_of_le_omittedRatio
+#print axioms Carleman.CarlemanExponents.mul_le_of_le_omittedRatio
+#check @Carleman.CarlemanExponents.scale_bounds
+#print axioms Carleman.CarlemanExponents.scale_bounds
+#check @Carleman.CarlemanExponents.heat
+#print axioms Carleman.CarlemanExponents.heat
+#check @Carleman.CarlemanExponents.heat_scale_exponents
+#print axioms Carleman.CarlemanExponents.heat_scale_exponents
+#check @Carleman.exists_small_rpow
+#print axioms Carleman.exists_small_rpow
+#check @Carleman.scale_monomial_le
+#print axioms Carleman.scale_monomial_le
+#check @Carleman.ErrorScales.approximationConstant
+#print axioms Carleman.ErrorScales.approximationConstant
+#check @Carleman.ErrorScales.approximationConstant_pos
+#print axioms Carleman.ErrorScales.approximationConstant_pos
+#check @Carleman.ErrorScales.approximation_rates
+#print axioms Carleman.ErrorScales.approximation_rates
+#check @Carleman.ErrorScales.defects_le_budget
+#print axioms Carleman.ErrorScales.defects_le_budget
+#check @Carleman.exists_scale_smallness
+#print axioms Carleman.exists_scale_smallness
+#check @Carleman.Section5.ScaleUniform
+#print axioms Carleman.Section5.ScaleUniform
+#check @Carleman.Section5.scale_uniform_of_transfer
+#print axioms Carleman.Section5.scale_uniform_of_transfer
+#check @Carleman.OriginalForm.scale_uniform
+#print axioms Carleman.OriginalForm.scale_uniform
+#check @Carleman.OriginalForm.heat_scale_uniform
+#print axioms Carleman.OriginalForm.heat_scale_uniform
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

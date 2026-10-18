@@ -688,3 +688,7 @@ C008/P009 是完整 Lemma4.1 候选，精确 main CI 核实后登记 BUILT/PAPER
 `OriginalForm.transfer_uniform` / `Section5.TransferUniform` 是完整原 Theorem2.1 候选：原 A1 从 OriginalForm 及正向域正则界供应；A2/A3 是原 AllowedFamily；A4 是同一真实弱周期轨迹上的连续 Carleman 估计；N1–N5 是原 NumericalData、质量伴随、普通载荷兼容与稳定右逆。所有原数值类型、T/网格/q/qmax、全状态和两方向后置于共同阈值和常数。
 
 五模块18显式声明完成真实 timeSq/powerSq/graphSq 与 Theorem4.2 范数的精确识别，并从已证原权族 combined 估计构造 ErrorBridge、从真实非负冻结连续解构造全部 TransferBridges。最终入口内部调用 Section4 全部结论，不再输入任何 B1–B5 桥接、误差、插值或有限性假设；原 Λf/Λz、εE/ε0 和载荷/残差两版结论不变。详见 `analysis/T022-original-transfer.md`。C010/P001 仍需同 SHA CI 与独立本机 Agent 验收后才计入原文完成；历史条件性接口 C004 继续保留其范围作可复用定理，不冒称其单独证明原 Theorem2.1。
+
+## T023：原尺度推论入口（等待固定版本独立验收）
+
+`OriginalForm.scale_uniform` 和 `OriginalForm.heat_scale_uniform` 返回原两版完整估计，内部从原近似阶与 qmax 尺度推出全部小量和缺陷条件，并调用原 Theorem 2.1。零分母用省略规则；正指数由 κ、零指数由 h0/Δ0 控制。热方程最终尺度是 h^(−4/5)、dt^(−2/5)。参数和原文逐项映射见 `analysis/T023-original-scales.md`；未引入新的误差或桥接前提。

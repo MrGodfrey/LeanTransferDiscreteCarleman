@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T022",
-    "supervisor_checked_at": "2026-10-18T14:52:32.052117+00:00",
-    "next_action": "固定版本push main，核实同SHA CI并启动独立Agent验收完整原Theorem2.1。",
+    "current_task_id": "T023",
+    "supervisor_checked_at": "2026-10-18T15:05:23.676642+00:00",
+    "next_action": "固定提交推送main，核实同SHA CI并启动独立Agent逐项验收两条原尺度推论。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T14:52:32.052117+00:00"
+    "last_activity_at": "2026-10-18T15:06:41.937630+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "9d8230090dad2c5b5a2efa74f5d085728866d139",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39136913051/attempts/1",
-      "finished_at": "2026-10-18T14:40:56.301724+00:00",
+      "checked_sha": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39137974197/attempts/1",
+      "finished_at": "2026-10-18T14:56:05.110784+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "9d8230090dad2c5b5a2efa74f5d085728866d139"
+      "source_head_sha": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "9d8230090dad2c5b5a2efa74f5d085728866d139",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39136913051/attempts/1",
-      "finished_at": "2026-10-18T14:40:56.301724+00:00",
+      "checked_sha": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39137974197/attempts/1",
+      "finished_at": "2026-10-18T14:56:05.110784+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "9d8230090dad2c5b5a2efa74f5d085728866d139"
+      "source_head_sha": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd"
     }
   },
   "milestones": [
@@ -69,17 +69,19 @@
       "id": "M0b",
       "title": "规格与共享接口",
       "description": "书面规格、有限桥接前提；主定理类型逐步落实",
-      "status": "TODO",
-      "evidence_commit": null,
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence_commit": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd",
+      "blocker": null,
+      "acceptance_evidence": "T001–T022独立验收；原Theorem2.1实际使用完整共享时间/空间/载荷接口，无未清偿桥接。"
     },
     {
       "id": "M1",
       "title": "抽象空间与周期时间",
       "description": "周期差分、加权范数、重构与载荷",
-      "status": "IN_PROGRESS",
-      "evidence_commit": null,
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence_commit": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd",
+      "blocker": null,
+      "acceptance_evidence": "T001–T022独立验收；原Theorem2.1实际使用完整共享时间/空间/载荷接口，无未清偿桥接。"
     },
     {
       "id": "M2",
@@ -887,8 +889,8 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "next_action": "核实完整Theorem4.2同SHA main CI并启动独立本机Agent验收。",
-      "scope_notes": "真实时空两种率及完整弱jet MemLp已本机构建；统一原假设入口，无新增误差前提。原Theorem2.1实例仍待。",
+      "next_action": "完整Theorem4.2已验收并用于原Theorem2.1。",
+      "scope_notes": "真实时空两种率及完整弱jet MemLp已验收；统一原假设入口，无新增误差前提。",
       "independent_review_status": "PASS"
     },
     {
@@ -897,7 +899,7 @@
       "paper_ref": "Theorem 2.1, p.10",
       "milestone": "M5",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "paper_labels": [
         "thm:main"
@@ -922,16 +924,56 @@
         "Carleman.Section5.transfer_uniform_of_combined",
         "Carleman.OriginalForm.transfer_uniform"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39137974197/attempts/1",
+        "finished_at": "2026-10-18T14:56:05.110784+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd"
+      },
+      "semantic_review": {
+        "checked_sha": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd",
+        "declarations": [
+          "Carleman.SpatialProfile.timeSq_eq_bochnerL2Norm_sq",
+          "Carleman.SpatialProfile.nodeMap_l2Norm_sq_powerSq",
+          "Carleman.WeakSobolevJet.spacetimeWeightedNorm_sq_powerSum",
+          "Carleman.sobolevGeometry_graphSq_eq",
+          "Carleman.sobolevGeometry_errorBridge_of_combined",
+          "Carleman.sobolevGeometry_transferBridges",
+          "Carleman.Section5.NumericalData",
+          "Carleman.Section5.NumericalData.stiffness",
+          "Carleman.Section5.NumericalData.approximation",
+          "Carleman.Section5.NumericalData.test",
+          "Carleman.Section5.NumericalData.defect",
+          "Carleman.Section5.NumericalData.reconstruction_upper",
+          "Carleman.Section5.NumericalData.reconstruction_lower",
+          "Carleman.Section5.NumericalData.lift_bound",
+          "Carleman.Section5.NumericalData.observation_bound",
+          "Carleman.Section5.TransferUniform",
+          "Carleman.Section5.transfer_uniform_of_combined",
+          "Carleman.OriginalForm.transfer_uniform"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/01040759ab3f6a9ab33d5886b06773e541be7954/governance/reviews/T022-local-acceptance.md",
+        "reviewed_at": "2026-10-18T15:03:30Z",
+        "reviewer": "/root/accept_section3; independent original statement/source/dependency acceptance"
+      },
       "dependencies": [
         "C004",
         "C009"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "完整原Theorem2.1候选；所有桥接内部构造，原假设与两版结论不变，等待同SHA CI及独立Agent验收。"
+      "scope_notes": "原Theorem2.1已独立验收；原A1–A4/N1–N5内部清偿所有桥接，两版全状态估计及T统一常数保留。",
+      "independent_review_status": "PASS",
+      "next_action": "接续Corollaries2.2–2.3尺度推论。"
     },
     {
       "id": "C011",
@@ -939,12 +981,36 @@
       "paper_ref": "Corollary 2.2, p.11",
       "milestone": "M5",
       "extra_hypotheses": [],
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "paper_labels": [
         "cor:general-scales"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.CarlemanExponents.nuEnergy",
+        "Carleman.CarlemanExponents.nuL2",
+        "Carleman.CarlemanExponents.omittedRatio",
+        "Carleman.CarlemanExponents.alphaX",
+        "Carleman.CarlemanExponents.alphaT",
+        "Carleman.CarlemanExponents.nuEnergy_nonneg",
+        "Carleman.CarlemanExponents.nuL2_pos",
+        "Carleman.CarlemanExponents.omittedRatio_pos",
+        "Carleman.CarlemanExponents.mul_le_of_le_omittedRatio",
+        "Carleman.CarlemanExponents.scale_bounds",
+        "Carleman.CarlemanExponents.heat",
+        "Carleman.CarlemanExponents.heat_scale_exponents",
+        "Carleman.exists_small_rpow",
+        "Carleman.scale_monomial_le",
+        "Carleman.ErrorScales.approximationConstant",
+        "Carleman.ErrorScales.approximationConstant_pos",
+        "Carleman.ErrorScales.approximation_rates",
+        "Carleman.ErrorScales.defects_le_budget",
+        "Carleman.exists_scale_smallness",
+        "Carleman.Section5.ScaleUniform",
+        "Carleman.Section5.scale_uniform_of_transfer",
+        "Carleman.OriginalForm.scale_uniform",
+        "Carleman.OriginalForm.heat_scale_uniform"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -952,7 +1018,8 @@
         "C010"
       ],
       "blocker": null,
-      "pr_url": null
+      "pr_url": null,
+      "scope_notes": "完整原尺度推论候选已定向编译；同SHA全库CI与独立Agent验收仍待。"
     },
     {
       "id": "C012",
@@ -960,12 +1027,16 @@
       "paper_ref": "Corollary 2.3, p.11",
       "milestone": "M5",
       "extra_hypotheses": [],
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "paper_labels": [
         "cor:scales"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.CarlemanExponents.heat",
+        "Carleman.CarlemanExponents.heat_scale_exponents",
+        "Carleman.OriginalForm.heat_scale_uniform"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -973,7 +1044,8 @@
         "C011"
       ],
       "blocker": null,
-      "pr_url": null
+      "pr_url": null,
+      "scope_notes": "完整原尺度推论候选已定向编译；同SHA全库CI与独立Agent验收仍待。"
     },
     {
       "id": "C013",
@@ -4650,6 +4722,11 @@
       "at": "2026-10-18T14:45:49.045534+00:00",
       "public_summary": "完整Theorem4.2经独立本机Agent验收通过；Section3–4全部具名结果已验收，原文完成7/26，旧队列和新增验收均清空。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b5972cc01dc6adb897244da9a8f0c5a130977d89/governance/reviews/T021-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T15:05:23.676642+00:00",
+      "public_summary": "原Theorem2.1通过独立本机Agent及同SHA main CI验收；全部桥接清偿，原文完成8/26，继续两条尺度推论。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/01040759ab3f6a9ab33d5886b06773e541be7954/governance/reviews/T022-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -4745,7 +4822,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/415c8ca2e98df80d17ffec353335fa345b65eb55/governance/reviews/T020-foundations-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/415c8ca2e98df80d17ffec353335fa345b65eb55/governance/reviews/T020-lemma-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39136913051/attempts/1",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b5972cc01dc6adb897244da9a8f0c5a130977d89/governance/reviews/T021-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b5972cc01dc6adb897244da9a8f0c5a130977d89/governance/reviews/T021-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/01040759ab3f6a9ab33d5886b06773e541be7954/governance/reviews/T022-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39137974197/attempts/1"
     ]
   },
   "schedules": [
@@ -10743,10 +10822,10 @@
       ],
       "branch": "main",
       "base_commit": "9d8230090dad2c5b5a2efa74f5d085728866d139",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd",
+      "merge_commit": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd",
       "lean_declarations": [
         "Carleman.SpatialProfile.timeSq_eq_bochnerL2Norm_sq",
         "Carleman.SpatialProfile.nodeMap_l2Norm_sq_powerSq",
@@ -10767,13 +10846,24 @@
         "Carleman.Section5.transfer_uniform_of_combined",
         "Carleman.OriginalForm.transfer_uniform"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39137974197/attempts/1",
+        "finished_at": "2026-10-18T14:56:05.110784+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd"
+      },
       "blocker": null,
       "attempts": [
         "已证明Section5平方量与Section4真实Bochner/弱Sobolev范数的精确识别，正在编译B4实质误差字段构造。",
         "五模块18声明完整原Theorem2.1本机全库通过；3454jobs/3170声明递归公理审计，仅基础公理。"
       ],
-      "next_action": "固定版本push main，核实同SHA CI并启动独立Agent验收完整原Theorem2.1。",
+      "next_action": "原Theorem2.1已独立验收；T023接续两条尺度推论。",
       "integration_mode": "direct-main",
       "local_validation": {
         "checked_at": "2026-10-18T14:52:32.052117+00:00",
@@ -10782,6 +10872,99 @@
         "recursive_axiom_audit": 3170,
         "new_explicit_declarations": 18,
         "audit_sha256": "230919fb64b2d861fac74c586ba40f073332eac5581556a0e7d5004dbb27e24e",
+        "note": "working tree precommit, not remote CI"
+      },
+      "declaration_version": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_section3",
+          "claim_ids": [
+            "C010"
+          ],
+          "paper_result_ids": [
+            "P001"
+          ],
+          "checked_sha": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T15:03:30Z",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/01040759ab3f6a9ab33d5886b06773e541be7954/governance/reviews/T022-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd",
+        "checked_sha": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd",
+        "run_id": 39137974197,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3454,
+        "recursive_axiom_audit": 3170,
+        "new_explicit_declarations": 18,
+        "declaration_artifact_sha256": "230919fb64b2d861fac74c586ba40f073332eac5581556a0e7d5004dbb27e24e",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T023",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原Corollaries2.2–2.3的完整尺度推论",
+      "goal_ids": [
+        "C011",
+        "C012"
+      ],
+      "acceptance": [
+        "原νE/ν0及零分母省略，四个小量和全部缺陷由尺度条件清偿",
+        "原载荷/稳定右逆残差两版、全状态/两方向/T统一，热方程指数4/5、2/5",
+        "固定SHA全库构建、公理审计及独立Agent原命题验收"
+      ],
+      "dependencies": [
+        "C010"
+      ],
+      "branch": "main",
+      "base_commit": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.CarlemanExponents.nuEnergy",
+        "Carleman.CarlemanExponents.nuL2",
+        "Carleman.CarlemanExponents.omittedRatio",
+        "Carleman.CarlemanExponents.alphaX",
+        "Carleman.CarlemanExponents.alphaT",
+        "Carleman.CarlemanExponents.nuEnergy_nonneg",
+        "Carleman.CarlemanExponents.nuL2_pos",
+        "Carleman.CarlemanExponents.omittedRatio_pos",
+        "Carleman.CarlemanExponents.mul_le_of_le_omittedRatio",
+        "Carleman.CarlemanExponents.scale_bounds",
+        "Carleman.CarlemanExponents.heat",
+        "Carleman.CarlemanExponents.heat_scale_exponents",
+        "Carleman.exists_small_rpow",
+        "Carleman.scale_monomial_le",
+        "Carleman.ErrorScales.approximationConstant",
+        "Carleman.ErrorScales.approximationConstant_pos",
+        "Carleman.ErrorScales.approximation_rates",
+        "Carleman.ErrorScales.defects_le_budget",
+        "Carleman.exists_scale_smallness",
+        "Carleman.Section5.ScaleUniform",
+        "Carleman.Section5.scale_uniform_of_transfer",
+        "Carleman.OriginalForm.scale_uniform",
+        "Carleman.OriginalForm.heat_scale_uniform"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "七模块已定向编译，完整ScaleUniform及热方程原估计均已接通；正在全库审计及原文映射。",
+        "完整两条尺度推论七模块23声明全库构建通过；3461jobs/3224声明递归公理审计，仅标准基础公理。"
+      ],
+      "next_action": "固定提交推送main，核实同SHA CI并启动独立Agent逐项验收两条原尺度推论。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "checked_at": "2026-10-18T15:06:41.937630+00:00",
+        "result": "PASS",
+        "build_jobs": 3461,
+        "recursive_axiom_audit": 3224,
+        "new_explicit_declarations": 23,
+        "audit_sha256": "8ae1c19c08a7052e0249209f5f6261821ffe24eb5b918a5cb6e7a5772305357c",
         "note": "working tree precommit, not remote CI"
       }
     }
