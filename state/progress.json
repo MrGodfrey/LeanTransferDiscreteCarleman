@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T064",
-    "supervisor_checked_at": "2026-10-18T21:36:35.529726+00:00",
-    "next_action": "真实弱残差及乘子范数9声明固定SHA独立验收；继续ell^-1尺度残差、H01资格和投影/逆估计组合。",
+    "current_task_id": "T065",
+    "supervisor_checked_at": "2026-10-18T21:44:50.588222+00:00",
+    "next_action": "固定SHA独立验收7声明；继续实际正交投影和逆估计组合成原eq:testsuper。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T21:36:35.529726+00:00"
+    "last_activity_at": "2026-10-18T21:44:50.588222+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "36278e60193f3453a60bcdf33ef089ace1398350",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39168240151/attempts/1",
-      "finished_at": "2026-10-18T21:33:33.764593+00:00",
+      "checked_sha": "7d5b98f23e305b99c69543c953bb545fefc42cb7",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39168606941/attempts/1",
+      "finished_at": "2026-10-18T21:38:38.182005+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "36278e60193f3453a60bcdf33ef089ace1398350"
+      "source_head_sha": "7d5b98f23e305b99c69543c953bb545fefc42cb7"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "36278e60193f3453a60bcdf33ef089ace1398350",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39168240151/attempts/1",
-      "finished_at": "2026-10-18T21:33:33.764593+00:00",
+      "checked_sha": "7d5b98f23e305b99c69543c953bb545fefc42cb7",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39168606941/attempts/1",
+      "finished_at": "2026-10-18T21:38:38.182005+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "36278e60193f3453a60bcdf33ef089ace1398350"
+      "source_head_sha": "7d5b98f23e305b99c69543c953bb545fefc42cb7"
     }
   },
   "milestones": [
@@ -8065,7 +8065,7 @@
       "paper_ref": "Auxiliary genuine weak H1 residual and original allowed multiplier norms toward Section 6 Step 3",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:p1"
@@ -8081,15 +8081,75 @@
         "Carleman.allowed_inverse_weight_sq_integral",
         "Carleman.allowed_full_nodal_weak_norms"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "7d5b98f23e305b99c69543c953bb545fefc42cb7",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "7d5b98f23e305b99c69543c953bb545fefc42cb7",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39168606941/attempts/1",
+        "finished_at": "2026-10-18T21:38:38.182005+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "7d5b98f23e305b99c69543c953bb545fefc42cb7"
+      },
+      "semantic_review": {
+        "checked_sha": "7d5b98f23e305b99c69543c953bb545fefc42cb7",
+        "declarations": [
+          "Carleman.supported_lipschitz_product",
+          "Carleman.SimplicialPartition.squared_nodal_product_lipschitz",
+          "Carleman.compactLipschitz_restricted_jet_exists",
+          "Carleman.SimplicialPartition.squared_nodal_residual_weak_jet",
+          "Carleman.allowedSquaredWeight_full_weak_residual",
+          "Carleman.SimplicialPartition.nodalProductResidual_lp",
+          "Carleman.allowed_weight_sq_integral",
+          "Carleman.allowed_inverse_weight_sq_integral",
+          "Carleman.allowed_full_nodal_weak_norms"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c4c1b2b68d1a4056a82362c5d20dada06493fdf4/governance/reviews/T064-local-acceptance.md",
+        "reviewed_at": "2026-10-18T21:43:01+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C079"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "支持集内有界Lipschitz系数乘零延拓节点状态给真实紧支撑全局Lipschitz残差，无域外正则前提。真实弱H1 jet及Lp乘子差值/σ与倒数seminorm恒等式，使完整Vh任意状态内部产生I∈Vh和e，value(e)=σ²u−I，值/梯度加权平方界h^4/h²乘q^4状态和q²弱梯度能量。成员资格常数不进入统一C。ell^-1项、投影组合与e的H01资格尚待，原文12/26。"
+      "scope_notes": "支持集内有界Lipschitz系数乘零延拓节点状态给真实紧支撑全局Lipschitz残差，无域外正则前提。真实弱H1 jet及Lp乘子差值/σ与倒数seminorm恒等式，使完整Vh任意状态内部产生I∈Vh和e，value(e)=σ²u−I，值/梯度加权平方界h^4/h²乘q^4状态和q²弱梯度能量。成员资格常数不进入统一C。ell^-1项、投影组合与e的H01资格尚待，原文12/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C081",
+      "title": "原尺度残差与节点超逼近",
+      "paper_ref": "Auxiliary original nodal residual bounds 9.26-eq10 and 9.26-eq11 in Section 6 Step 3",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:p1"
+      ],
+      "lean_declarations": [
+        "Carleman.inverseScale_diameter_four_bound",
+        "Carleman.SimplicialPartition.inverseWeight_residual_sq_sum",
+        "Carleman.allowed_scaled_nodal_residual",
+        "Carleman.allowed_full_nodal_scaled_norms",
+        "Carleman.WeakSobolevJet.heat_weightedNorm_sq",
+        "Carleman.nonneg_le_sqrt_mul_of_sq_le",
+        "Carleman.allowed_full_nodal_superapproximation"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C080"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "原尺度下界c h_K≤ell_K和实际单元积分给ell^-1平方残差界；同一I∈完整Vh和真实H1 e满足三平方范数界，实际m=1弱N平方恒等式及非负开方得到原9.26-eq10/11，C先于所有网格/权/状态。无准均匀或节点表示额外前提。投影eq:testsuper、e的H01及一般H²插值尚待，原文12/26。"
     }
   ],
   "events": [
@@ -8490,6 +8550,11 @@
       "at": "2026-10-18T21:36:35.529726+00:00",
       "public_summary": "完整状态全域节点残差13声明独立Agent及同SHA CI验收PASS；真实弱残差及原允许乘子范数9声明全库通过，原文12/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6de5c935a9f4449166ca658bfcf1cd9ccfc04411/governance/reviews/T063-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T21:44:50.588222+00:00",
+      "public_summary": "真实弱残差及乘子范数9声明独立验收PASS；原尺度残差与原9.26-eq10/11七声明全库通过，原文12/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c4c1b2b68d1a4056a82362c5d20dada06493fdf4/governance/reviews/T064-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -8669,7 +8734,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/040fca454111b09868c9587162f64a6bf4423615/governance/reviews/T062-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39167621125/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6de5c935a9f4449166ca658bfcf1cd9ccfc04411/governance/reviews/T063-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39168240151/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39168240151/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c4c1b2b68d1a4056a82362c5d20dada06493fdf4/governance/reviews/T064-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39168606941/attempts/1"
     ]
   },
   "schedules": [
@@ -18997,10 +19064,10 @@
       ],
       "branch": "main",
       "base_commit": "36278e60193f3453a60bcdf33ef089ace1398350",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "7d5b98f23e305b99c69543c953bb545fefc42cb7",
+      "merge_commit": "7d5b98f23e305b99c69543c953bb545fefc42cb7",
       "lean_declarations": [
         "Carleman.supported_lipschitz_product",
         "Carleman.SimplicialPartition.squared_nodal_product_lipschitz",
@@ -19012,12 +19079,23 @@
         "Carleman.allowed_inverse_weight_sq_integral",
         "Carleman.allowed_full_nodal_weak_norms"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "7d5b98f23e305b99c69543c953bb545fefc42cb7",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39168606941/attempts/1",
+        "finished_at": "2026-10-18T21:38:38.182005+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "7d5b98f23e305b99c69543c953bb545fefc42cb7"
+      },
       "blocker": null,
       "attempts": [
         "六模块9声明定向3357 jobs及全库3653 jobs通过，4974项递归审计PASS。"
       ],
-      "next_action": "真实弱残差及乘子范数9声明固定SHA独立验收；继续ell^-1尺度残差、H01资格和投影/逆估计组合。",
+      "next_action": "真实弱残差和原允许乘子范数已验收；继续原尺度项与节点超逼近。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -19029,6 +19107,85 @@
         "recursive_axiom_audit": 4974,
         "new_explicit_declarations": 9,
         "declaration_artifact_sha256": "57dbfd126401431327a3ae50f04a2b5c4678a93c16104ef3cf68445415be9fee",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "7d5b98f23e305b99c69543c953bb545fefc42cb7",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C080"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "7d5b98f23e305b99c69543c953bb545fefc42cb7",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T21:43:01+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c4c1b2b68d1a4056a82362c5d20dada06493fdf4/governance/reviews/T064-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "7d5b98f23e305b99c69543c953bb545fefc42cb7",
+        "checked_sha": "7d5b98f23e305b99c69543c953bb545fefc42cb7",
+        "run_id": 39168606941,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3653,
+        "recursive_axiom_audit": 4974,
+        "new_explicit_declarations": 9,
+        "declaration_artifact_sha256": "57dbfd126401431327a3ae50f04a2b5c4678a93c16104ef3cf68445415be9fee",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T065",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原尺度残差与节点超逼近",
+      "goal_ids": [
+        "C081"
+      ],
+      "acceptance": [
+        "原尺度下界实际导出ell^-2 h_K^4≤c^-2 h²，不加入准均匀或除以零",
+        "真实逆尺度平方积分和有限单元求和保留原残差及能量",
+        "同一I/e三项界，完整Vh状态内部节点表示",
+        "原m=1 N准确展开、非负开方及qmax幂次准确；统一常数且不宣称投影测试完成"
+      ],
+      "dependencies": [
+        "C080"
+      ],
+      "branch": "main",
+      "base_commit": "7d5b98f23e305b99c69543c953bb545fefc42cb7",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.inverseScale_diameter_four_bound",
+        "Carleman.SimplicialPartition.inverseWeight_residual_sq_sum",
+        "Carleman.allowed_scaled_nodal_residual",
+        "Carleman.allowed_full_nodal_scaled_norms",
+        "Carleman.WeakSobolevJet.heat_weightedNorm_sq",
+        "Carleman.nonneg_le_sqrt_mul_of_sq_le",
+        "Carleman.allowed_full_nodal_superapproximation"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "五模块7声明全库3658 jobs构建与4981声明递归公理审计通过。"
+      ],
+      "next_action": "固定SHA独立验收7声明；继续实际正交投影和逆估计组合成原eq:testsuper。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3658,
+        "recursive_axiom_audit": 4981,
+        "new_explicit_declarations": 7,
+        "declaration_artifact_sha256": "8a80935a08fc131baf3ff91a1f9947dc428f8b7abb4ce1082a4baf0a4a63226e",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

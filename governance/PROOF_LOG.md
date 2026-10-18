@@ -121,3 +121,5 @@
 - T062 / C078：实际加权单元残差10声明独立验收PASS，4951项递归审计及同SHA CI。 固定证明 `699fd4292136039b671d27e09f6e5758a1083f2a`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/040fca454111b09868c9587162f64a6bf4423615/governance/reviews/T062-local-acceptance.md)。原文12/26，T063继续完整状态的全域节点残差及实际积分求和。
 
 - T063 / C079：完整状态全域节点残差13声明独立验收PASS，4965项递归审计及同SHA CI。 固定证明 `36278e60193f3453a60bcdf33ef089ace1398350`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6de5c935a9f4449166ca658bfcf1cd9ccfc04411/governance/reviews/T063-local-acceptance.md)。原文12/26，T064继续真实弱残差与原允许乘子范数。
+
+- T064 / C080：真实弱残差和乘子范数9声明独立验收PASS，4974项递归审计及同SHA CI。 固定证明 `7d5b98f23e305b99c69543c953bb545fefc42cb7`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c4c1b2b68d1a4056a82362c5d20dada06493fdf4/governance/reviews/T064-local-acceptance.md)。原文12/26，T065继续原尺度残差与节点超逼近。
