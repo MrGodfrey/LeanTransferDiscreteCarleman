@@ -698,9 +698,13 @@
       "claim_ids": [
         "C040"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.ForwardEquation",
+        "Carleman.Physical.AdjointEquation",
+        "Carleman.Physical.physical_duality_lemma"
+      ],
       "declaration_version": null,
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": null,

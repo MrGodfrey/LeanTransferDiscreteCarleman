@@ -1979,6 +1979,69 @@ set_option pp.maxSteps 1000000
 #check @Carleman.OriginalForm.heat_scale_uniform
 #print axioms Carleman.OriginalForm.heat_scale_uniform
 
+#check @Carleman.Physical.step
+#print axioms Carleman.Physical.step
+#check @Carleman.Physical.step_apply
+#print axioms Carleman.Physical.step_apply
+#check @Carleman.Physical.one_sub_mul_exp_ge_one
+#print axioms Carleman.Physical.one_sub_mul_exp_ge_one
+#check @Carleman.Physical.step_norm_lower
+#print axioms Carleman.Physical.step_norm_lower
+#check @Carleman.Physical.step_inverse_bound
+#print axioms Carleman.Physical.step_inverse_bound
+#check @Carleman.Physical.step_bijective
+#print axioms Carleman.Physical.step_bijective
+#check @Carleman.Physical.stiffness_potential_lower
+#print axioms Carleman.Physical.stiffness_potential_lower
+#check @Carleman.Physical.Forward
+#print axioms Carleman.Physical.Forward
+#check @Carleman.Physical.Adjoint
+#print axioms Carleman.Physical.Adjoint
+#check @Carleman.Physical.existsUnique_forward
+#print axioms Carleman.Physical.existsUnique_forward
+#check @Carleman.Physical.existsUnique_adjoint
+#print axioms Carleman.Physical.existsUnique_adjoint
+#check @Carleman.Physical.duality_increment
+#print axioms Carleman.Physical.duality_increment
+#check @Carleman.Physical.physical_duality
+#print axioms Carleman.Physical.physical_duality
+#check @Carleman.Physical.control_duality
+#print axioms Carleman.Physical.control_duality
+#check @Carleman.Physical.adjoint_energy
+#print axioms Carleman.Physical.adjoint_energy
+#check @Carleman.Physical.partialSum
+#print axioms Carleman.Physical.partialSum
+#check @Carleman.Physical.partialSum_zero
+#print axioms Carleman.Physical.partialSum_zero
+#check @Carleman.Physical.partialSum_succ
+#print axioms Carleman.Physical.partialSum_succ
+#check @Carleman.Physical.partialSum_le_sum
+#print axioms Carleman.Physical.partialSum_le_sum
+#check @Carleman.Physical.forward_recurrence_bound
+#print axioms Carleman.Physical.forward_recurrence_bound
+#check @Carleman.Physical.controlNorm
+#print axioms Carleman.Physical.controlNorm
+#check @Carleman.Physical.time_l1_le_l2
+#print axioms Carleman.Physical.time_l1_le_l2
+#check @Carleman.Physical.energyConstant
+#print axioms Carleman.Physical.energyConstant
+#check @Carleman.Physical.energyConstant_pos
+#print axioms Carleman.Physical.energyConstant_pos
+#check @Carleman.Physical.forward_energy
+#print axioms Carleman.Physical.forward_energy
+#check @Carleman.Physical.step_equation_iff
+#print axioms Carleman.Physical.step_equation_iff
+#check @Carleman.Physical.ForwardEquation
+#print axioms Carleman.Physical.ForwardEquation
+#check @Carleman.Physical.AdjointEquation
+#print axioms Carleman.Physical.AdjointEquation
+#check @Carleman.Physical.forward_equation_iff
+#print axioms Carleman.Physical.forward_equation_iff
+#check @Carleman.Physical.adjoint_equation_iff
+#print axioms Carleman.Physical.adjoint_equation_iff
+#check @Carleman.Physical.physical_duality_lemma
+#print axioms Carleman.Physical.physical_duality_lemma
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

@@ -249,3 +249,10 @@ public import Carleman.Transfer.ScaleBudgets
 public import Carleman.Transfer.ScaleSmallness
 public import Carleman.Transfer.ScaleUniform
 public import Carleman.Transfer.HeatScaleUniform
+
+public import Carleman.Control.FiniteResolvent
+public import Carleman.Control.PhysicalSolutions
+public import Carleman.Control.PhysicalDuality
+public import Carleman.Control.PhysicalEnergy
+public import Carleman.Control.PhysicalEquations
+public import Carleman.Control.PhysicalLemma

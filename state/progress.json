@@ -12,10 +12,10 @@
     "state": "RUNNING",
     "current_task_id": "T024",
     "supervisor_checked_at": "2026-10-18T15:15:52.145748+00:00",
-    "next_action": "完成原Lemma7.1的物理时间方程接口与完整统一结论，再固定版本独立验收。",
+    "next_action": "推送固定版本main，核实真实同SHA CI并独立Agent验收完整原Lemma7.1。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T15:15:52.145748+00:00"
+    "last_activity_at": "2026-10-18T15:18:46.699801+00:00"
   },
   "verification": {
     "latest_build": {
@@ -4613,13 +4613,46 @@
       "paper_labels": [
         "lem:physicalduality"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.step",
+        "Carleman.Physical.step_apply",
+        "Carleman.Physical.one_sub_mul_exp_ge_one",
+        "Carleman.Physical.step_norm_lower",
+        "Carleman.Physical.step_inverse_bound",
+        "Carleman.Physical.step_bijective",
+        "Carleman.Physical.stiffness_potential_lower",
+        "Carleman.Physical.Forward",
+        "Carleman.Physical.Adjoint",
+        "Carleman.Physical.existsUnique_forward",
+        "Carleman.Physical.existsUnique_adjoint",
+        "Carleman.Physical.duality_increment",
+        "Carleman.Physical.physical_duality",
+        "Carleman.Physical.control_duality",
+        "Carleman.Physical.adjoint_energy",
+        "Carleman.Physical.partialSum",
+        "Carleman.Physical.partialSum_zero",
+        "Carleman.Physical.partialSum_succ",
+        "Carleman.Physical.partialSum_le_sum",
+        "Carleman.Physical.forward_recurrence_bound",
+        "Carleman.Physical.controlNorm",
+        "Carleman.Physical.time_l1_le_l2",
+        "Carleman.Physical.energyConstant",
+        "Carleman.Physical.energyConstant_pos",
+        "Carleman.Physical.forward_energy",
+        "Carleman.Physical.step_equation_iff",
+        "Carleman.Physical.ForwardEquation",
+        "Carleman.Physical.AdjointEquation",
+        "Carleman.Physical.forward_equation_iff",
+        "Carleman.Physical.adjoint_equation_iff",
+        "Carleman.Physical.physical_duality_lemma"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
       "dependencies": [],
       "blocker": null,
-      "pr_url": null
+      "pr_url": null,
+      "scope_notes": "完整原Lemma7.1候选；统一常数先于数值空间和时间网格，实际前向/伴随方程与控制L2范数。待同SHA CI与独立验收。"
     }
   ],
   "events": [
@@ -11123,14 +11156,56 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.step",
+        "Carleman.Physical.step_apply",
+        "Carleman.Physical.one_sub_mul_exp_ge_one",
+        "Carleman.Physical.step_norm_lower",
+        "Carleman.Physical.step_inverse_bound",
+        "Carleman.Physical.step_bijective",
+        "Carleman.Physical.stiffness_potential_lower",
+        "Carleman.Physical.Forward",
+        "Carleman.Physical.Adjoint",
+        "Carleman.Physical.existsUnique_forward",
+        "Carleman.Physical.existsUnique_adjoint",
+        "Carleman.Physical.duality_increment",
+        "Carleman.Physical.physical_duality",
+        "Carleman.Physical.control_duality",
+        "Carleman.Physical.adjoint_energy",
+        "Carleman.Physical.partialSum",
+        "Carleman.Physical.partialSum_zero",
+        "Carleman.Physical.partialSum_succ",
+        "Carleman.Physical.partialSum_le_sum",
+        "Carleman.Physical.forward_recurrence_bound",
+        "Carleman.Physical.controlNorm",
+        "Carleman.Physical.time_l1_le_l2",
+        "Carleman.Physical.energyConstant",
+        "Carleman.Physical.energyConstant_pos",
+        "Carleman.Physical.forward_energy",
+        "Carleman.Physical.step_equation_iff",
+        "Carleman.Physical.ForwardEquation",
+        "Carleman.Physical.AdjointEquation",
+        "Carleman.Physical.forward_equation_iff",
+        "Carleman.Physical.adjoint_equation_iff",
+        "Carleman.Physical.physical_duality_lemma"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "独立准备的四模块已定向编译；有限维全状态可逆、初末值唯一解、实际对偶及完整能量界均已接通，正在连接原除dt方程与最终统一入口。"
+        "独立准备的四模块已定向编译；有限维全状态可逆、初末值唯一解、实际对偶及完整能量界均已接通，正在连接原除dt方程与最终统一入口。",
+        "完整原Lemma7.1六模块31声明本机全库构建通过；3467jobs/3265声明递归公理审计，仅基础公理。"
       ],
-      "next_action": "完成原Lemma7.1的物理时间方程接口与完整统一结论，再固定版本独立验收。",
-      "integration_mode": "direct-main"
+      "next_action": "推送固定版本main，核实真实同SHA CI并独立Agent验收完整原Lemma7.1。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "checked_at": "2026-10-18T15:18:46.699801+00:00",
+        "result": "PASS",
+        "build_jobs": 3467,
+        "recursive_axiom_audit": 3265,
+        "new_explicit_declarations": 31,
+        "audit_sha256": "0e519a9cfe5cc7b745f140f9a163e2ff3adc5ee6ea13f1ba8751cce913762e2c",
+        "note": "working tree precommit, not remote CI"
+      }
     }
   ],
   "private_maintenance": {

@@ -18,7 +18,7 @@
 | P010 | Theorem 4.2 | `thm:combined` | 19 / 1287 | M4 | C009 | Carleman.Section4.reconstructedError_value_ae, Carleman.Section4.CombinedEstimate, Carleman.Section4.CombinedUniform, Carleman.OriginalForm.combined_uniform |
 | P011 | Proposition 6.1 | `prop:p1` | 21 / 1499 | M6a | C014 | 待建立 |
 | P012 | Proposition 6.2 | `prop:fd` | 23 / 1672 | M6a | C015 | 待建立 |
-| P013 | Lemma 7.1 | `lem:physicalduality` | 24 / 1753 | M6b | C040 | 待建立 |
+| P013 | Lemma 7.1 | `lem:physicalduality` | 24 / 1753 | M6b | C040 | Carleman.Physical.ForwardEquation, Carleman.Physical.AdjointEquation, Carleman.Physical.physical_duality_lemma |
 | P014 | Theorem 7.2 | `prop:physicalO` | 25 / 1827 | M6b | C016 | 待建立 |
 | P015 | Theorem 7.3 | `prop:physicalC` | 27 / 2032 | M6b | C017 | 待建立 |
 | P016 | Lemma 7.4 | `lem:filter-reverse` | 29 / 2164 | M6b | 待分解 | 待建立 |

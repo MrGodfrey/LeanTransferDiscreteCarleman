@@ -692,3 +692,7 @@ C008/P009 是完整 Lemma4.1 候选，精确 main CI 核实后登记 BUILT/PAPER
 ## T023：原尺度推论入口（等待固定版本独立验收）
 
 `OriginalForm.scale_uniform` 和 `OriginalForm.heat_scale_uniform` 返回原两版完整估计，内部从原近似阶与 qmax 尺度推出全部小量和缺陷条件，并调用原 Theorem 2.1。零分母用省略规则；正指数由 κ、零指数由 h0/Δ0 控制。热方程最终尺度是 h^(−4/5)、dt^(−2/5)。参数和原文逐项映射见 `analysis/T023-original-scales.md`；未引入新的误差或桥接前提。
+
+## T024：原物理时间基础引理（等待固定版本独立验收）
+
+`Physical.physical_duality_lemma` 对原N+1物理节点和N控制步，从Section7的有限维非负自伴刚度、范数≤M的自伴势、范数≤1的控制算子给出完整初末值唯一解、精确反向指数界、统一C(T,M)控制L2能量界及原p^(n−1)对偶。最终方程保留真实Hilbert伴随；不存在周期回绕或状态限制。具体有限元/差分实例仍须各自验收。映射见 `analysis/T024-physical-duality.md`。
