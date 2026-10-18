@@ -429,3 +429,7 @@ public import Carleman.Spatial.BoundedWeakGradient
 public import Carleman.Spatial.ConformingLipschitzRepresentative
 public import Carleman.Spatial.FullConformingNodal
 public import Carleman.Spatial.FullWeightedProjection
+
+public import Carleman.Spatial.SimplexNodalRemainder
+public import Carleman.Spatial.SimplexTaylorInterpolation
+public import Carleman.Spatial.SimplexInterpolationIntegral

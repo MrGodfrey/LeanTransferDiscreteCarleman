@@ -928,3 +928,9 @@ T052强制性因此提升为真实单元积分估计，原阈值内非零c给∫
 四模块10声明，AUXILIARY。真实有界全空间弱梯度经光滑卷积、统一Lipschitz界及实际a.e.极限供应连续代表。完整H¹₀分片仿射状态的局部真实常梯度及零延拓满足该条件；连续代表在所有闭单元等于其仿射多项式，在域补集及边界为零。因此任意完整conformingSpace成员都有真实nodalLp表示及零边界节点数据，清偿T056显式前提。
 
 allowed_weight_full_projection对原完整空间的实际L²正交投影成立，覆盖全部四类真实权和任意输入；δ/C先于网格、尺度、时间权、幂、时刻与输入，代表构造的网格/状态相关Lipschitz常数不进入统一估计。原eq:p1-weighted-projection已证明；完整prop:p1仍需H²插值及超逼近等义务，原文12/26。见`analysis/T058-full-weighted-projection.md`。
+
+## T059：经典导数控制下的真实节点插值误差
+
+三模块13声明，AUXILIARY。实际仿射内球导数界和节点插值仿射再现给误差2R及G+4R/r。真实一阶Taylor仿射多项式与凸集均值定理，在Df为L-Lipschitz时给单元节点函数误差2Lh²、梯度误差(1+4κ)Lh；真实内球与h≤κr显式保留。积分通过实际连续性/可积性得到带真实单元体积的平方误差界，并使用项目真实Euclidean一阶fiber。
+
+真实二阶Fréchet导数的点态界可供应Df的Lipschitz性。此阶段只对经典导数满足这些条件的函数成立，未以此代替一般H²弱状态的原插值结论。允许权平方乘P1状态的导数控制及加权超逼近仍待；原文12/26。见`analysis/T059-classical-nodal-errors.md`。

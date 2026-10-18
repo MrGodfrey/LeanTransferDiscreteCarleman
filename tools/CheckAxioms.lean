@@ -3554,6 +3554,33 @@ set_option pp.maxSteps 1000000
 #check @Carleman.allowed_weight_full_projection
 #print axioms Carleman.allowed_weight_full_projection
 
+#check @Carleman.affineScalarDerivative_inball_bound
+#print axioms Carleman.affineScalarDerivative_inball_bound
+#check @Carleman.simplexNodalInterpolant_sub_affine
+#print axioms Carleman.simplexNodalInterpolant_sub_affine
+#check @Carleman.simplexNodal_error_of_affine_approximation
+#print axioms Carleman.simplexNodal_error_of_affine_approximation
+#check @Carleman.simplexNodal_derivative_error_of_affine_approximation
+#print axioms Carleman.simplexNodal_derivative_error_of_affine_approximation
+#check @Carleman.affineFirstOrder
+#print axioms Carleman.affineFirstOrder
+#check @Carleman.affineFirstOrder_apply
+#print axioms Carleman.affineFirstOrder_apply
+#check @Carleman.affineFirstOrder_derivative
+#print axioms Carleman.affineFirstOrder_derivative
+#check @Carleman.affineFirstOrder_remainder
+#print axioms Carleman.affineFirstOrder_remainder
+#check @Carleman.simplexNodal_error_of_lipschitz_derivative
+#print axioms Carleman.simplexNodal_error_of_lipschitz_derivative
+#check @Carleman.simplexNodal_gradient_error_of_lipschitz_derivative
+#print axioms Carleman.simplexNodal_gradient_error_of_lipschitz_derivative
+#check @Carleman.simplexNodal_error_sq_integral
+#print axioms Carleman.simplexNodal_error_sq_integral
+#check @Carleman.simplexNodal_gradient_error_sq_integral
+#print axioms Carleman.simplexNodal_gradient_error_sq_integral
+#check @Carleman.derivative_lipschitzOn_of_second_derivative_bound
+#print axioms Carleman.derivative_lipschitzOn_of_second_derivative_bound
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
