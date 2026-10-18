@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T047",
-    "supervisor_checked_at": "2026-10-18T19:33:14.501094+00:00",
-    "next_action": "所有单纯形局部加权逆估计提交固定SHA独立验收；继续完整Vh的局部弱梯度识别及全网格求和。",
+    "current_task_id": "T048",
+    "supervisor_checked_at": "2026-10-18T19:40:51.616429+00:00",
+    "next_action": "完整Vh局部弱梯度20声明提交固定SHA独立验收；继续真实单元积分求和与全域加权逆界。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T19:33:14.501094+00:00"
+    "last_activity_at": "2026-10-18T19:40:51.616429+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "0c632f37eadbcece6459555fef22a2bb4b3ca688",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39158766072/attempts/1",
-      "finished_at": "2026-10-18T19:29:06.480984+00:00",
+      "checked_sha": "ce719d2683c7509827e457ea2e15e0ce5451b487",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39159308167/attempts/1",
+      "finished_at": "2026-10-18T19:35:01.827299+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "0c632f37eadbcece6459555fef22a2bb4b3ca688"
+      "source_head_sha": "ce719d2683c7509827e457ea2e15e0ce5451b487"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "0c632f37eadbcece6459555fef22a2bb4b3ca688",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39158766072/attempts/1",
-      "finished_at": "2026-10-18T19:29:06.480984+00:00",
+      "checked_sha": "ce719d2683c7509827e457ea2e15e0ce5451b487",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39159308167/attempts/1",
+      "finished_at": "2026-10-18T19:35:01.827299+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "0c632f37eadbcece6459555fef22a2bb4b3ca688"
+      "source_head_sha": "ce719d2683c7509827e457ea2e15e0ce5451b487"
     }
   },
   "milestones": [
@@ -6859,7 +6859,7 @@
       "paper_ref": "Section6 P1 inverse: arbitrary physical simplex and explicit local weight comparison",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:p1"
@@ -6877,15 +6877,91 @@
         "Carleman.simplexNodalGradientLp_weighted_sq",
         "Carleman.simplex_weighted_inverse_integral"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "ce719d2683c7509827e457ea2e15e0ce5451b487",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "ce719d2683c7509827e457ea2e15e0ce5451b487",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39159308167/attempts/1",
+        "finished_at": "2026-10-18T19:35:01.827299+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "ce719d2683c7509827e457ea2e15e0ce5451b487"
+      },
+      "semantic_review": {
+        "checked_sha": "ce719d2683c7509827e457ea2e15e0ce5451b487",
+        "declarations": [
+          "Carleman.simplexCoordinateLinearEquiv",
+          "Carleman.simplexCoordinateLinearEquiv_sub",
+          "Carleman.simplexCoordinateShift",
+          "Carleman.affineSimplex_coordinate_eq",
+          "Carleman.referenceSimplex",
+          "Carleman.simplex_shape_inverse",
+          "Carleman.simplex_weighted_shape_inverse",
+          "Carleman.simplex_local_weighted_inverse",
+          "Carleman.simplexNodalLp_weighted_sq",
+          "Carleman.simplexNodalGradientLp_weighted_sq",
+          "Carleman.simplex_weighted_inverse_integral"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c295f96861f597585e3b984574604a0c665f15cd/governance/reviews/T047-local-acceptance.md",
+        "reviewed_at": "2026-10-18T19:38:33+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C062"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "内部构造任意单纯形之间的真实仿射映射及仅依赖维数的参考单元，清偿统一参数化。实际乘子比较消去单元权归一化，C(n,κ,W)先于全部物理单元/尺度/权/多项式，给真实L2及积分局部加权逆界。完整Vh弱梯度的局部识别、全网格求和和原allowed权比较仍待，原文12/26。"
+      "scope_notes": "内部构造任意单纯形之间的真实仿射映射及仅依赖维数的参考单元，清偿统一参数化。实际乘子比较消去单元权归一化，C(n,κ,W)先于全部物理单元/尺度/权/多项式，给真实L2及积分局部加权逆界。完整Vh弱梯度的局部识别、全网格求和和原allowed权比较仍待，原文12/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C064",
+      "title": "完整一致P1状态的真实局部弱梯度",
+      "paper_ref": "Section6 full conforming P1 states: actual weak gradient equals local affine derivative",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:p1"
+      ],
+      "lean_declarations": [
+        "Carleman.subdomainLp",
+        "Carleman.subdomainLp_ae",
+        "Carleman.SpatialTest.monoDomain",
+        "Carleman.IsWeakSpatialDerivative.restrictSubdomain",
+        "Carleman.derivativeComponent_subdomain",
+        "Carleman.WeakSobolevJet.restrictSubdomain",
+        "Carleman.WeakSobolevJet.restrictSubdomain_value",
+        "Carleman.affineScalarDerivative",
+        "Carleman.affineScalar_hasFDerivAt",
+        "Carleman.affineScalar_lipschitz",
+        "Carleman.weakDerivative_eq_affine",
+        "Carleman.WeakSobolevJet.gradient_eq_affine",
+        "Carleman.simplexCell_ae_interior",
+        "Carleman.simplexInterior_finiteMeasure",
+        "Carleman.SimplicialPartition.cell_interior_subset",
+        "Carleman.SimplicialPartition.cell_measure_le_domain",
+        "Carleman.SimplicialPartition.gradient_on_cell",
+        "Carleman.affinePolynomialOfCoefficients",
+        "Carleman.affinePolynomialOfCoefficients_apply",
+        "Carleman.SimplicialPartition.conforming_local_polynomial"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C060",
+        "C063"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "任意子域全部弱jet真实限制；仿射代表的实际CLM导数及完整测试唯一性给全梯度身份。开凸域中单元内部包含于域，零测边界使闭单元和内部测度相同；任意真实H1且属于原conformingSpace的状态逐单元有同一实际p/梯度，不假定节点表示。全网格加权求和与原allowed权比较仍待，原文12/26。"
     }
   ],
   "events": [
@@ -7201,6 +7277,11 @@
       "at": "2026-10-18T19:33:14.501094+00:00",
       "public_summary": "真实仿射缩放与内球形状局部逆界28声明经独立Agent及同SHA CI验收PASS；旧队列清空。所有单纯形统一局部加权逆估计11声明全库通过，原文12/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/09cfe5b5ede08d7ba065b47138896eecc16c15ed/governance/reviews/T046-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T19:40:51.616429+00:00",
+      "public_summary": "所有物理单纯形统一局部加权逆界11声明经独立Agent及同SHA CI验收PASS；旧队列清空。原完整一致P1状态的局部弱梯度20声明全库通过，原文12/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c295f96861f597585e3b984574604a0c665f15cd/governance/reviews/T047-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -7346,7 +7427,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/af934ca12138ca43a9a1337be2e49770814f7055/governance/reviews/T045-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39158171521/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/09cfe5b5ede08d7ba065b47138896eecc16c15ed/governance/reviews/T046-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39158766072/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39158766072/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c295f96861f597585e3b984574604a0c665f15cd/governance/reviews/T047-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39159308167/attempts/1"
     ]
   },
   "schedules": [
@@ -16032,10 +16115,10 @@
       ],
       "branch": "main",
       "base_commit": "0c632f37eadbcece6459555fef22a2bb4b3ca688",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "ce719d2683c7509827e457ea2e15e0ce5451b487",
+      "merge_commit": "ce719d2683c7509827e457ea2e15e0ce5451b487",
       "lean_declarations": [
         "Carleman.simplexCoordinateLinearEquiv",
         "Carleman.simplexCoordinateLinearEquiv_sub",
@@ -16049,12 +16132,23 @@
         "Carleman.simplexNodalGradientLp_weighted_sq",
         "Carleman.simplex_weighted_inverse_integral"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "ce719d2683c7509827e457ea2e15e0ce5451b487",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39159308167/attempts/1",
+        "finished_at": "2026-10-18T19:35:01.827299+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "ce719d2683c7509827e457ea2e15e0ce5451b487"
+      },
       "blocker": null,
       "attempts": [
         "两模块11声明定向3186 jobs及全库3585 jobs通过，4671声明递归审计PASS。"
       ],
-      "next_action": "所有单纯形局部加权逆估计提交固定SHA独立验收；继续完整Vh的局部弱梯度识别及全网格求和。",
+      "next_action": "所有单纯形局部加权逆界已验收；继续完整Vh局部弱梯度及全网格求和。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -16066,6 +16160,98 @@
         "recursive_axiom_audit": 4671,
         "new_explicit_declarations": 11,
         "declaration_artifact_sha256": "7087394d06358bea67b90c32d38167f6aa64a89e8804d0dddcd376eed9fe6c5e",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "ce719d2683c7509827e457ea2e15e0ce5451b487",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C063"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "ce719d2683c7509827e457ea2e15e0ce5451b487",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T19:38:33+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c295f96861f597585e3b984574604a0c665f15cd/governance/reviews/T047-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "ce719d2683c7509827e457ea2e15e0ce5451b487",
+        "checked_sha": "ce719d2683c7509827e457ea2e15e0ce5451b487",
+        "run_id": 39159308167,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3585,
+        "recursive_axiom_audit": 4671,
+        "new_explicit_declarations": 11,
+        "declaration_artifact_sha256": "7087394d06358bea67b90c32d38167f6aa64a89e8804d0dddcd376eed9fe6c5e",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T048",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "完整一致P1状态的真实局部弱梯度",
+      "goal_ids": [
+        "C064"
+      ],
+      "acceptance": [
+        "任意阶完整弱jet在子域的真实L2限制，保留所有测试",
+        "真实仿射代表的全坐标弱梯度经完整唯一性识别",
+        "原完整一致P1空间的每个H1状态在闭单元上的value/梯度身份，正确处理内部包含和零测边界"
+      ],
+      "dependencies": [
+        "C060",
+        "C063"
+      ],
+      "branch": "main",
+      "base_commit": "ce719d2683c7509827e457ea2e15e0ce5451b487",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.subdomainLp",
+        "Carleman.subdomainLp_ae",
+        "Carleman.SpatialTest.monoDomain",
+        "Carleman.IsWeakSpatialDerivative.restrictSubdomain",
+        "Carleman.derivativeComponent_subdomain",
+        "Carleman.WeakSobolevJet.restrictSubdomain",
+        "Carleman.WeakSobolevJet.restrictSubdomain_value",
+        "Carleman.affineScalarDerivative",
+        "Carleman.affineScalar_hasFDerivAt",
+        "Carleman.affineScalar_lipschitz",
+        "Carleman.weakDerivative_eq_affine",
+        "Carleman.WeakSobolevJet.gradient_eq_affine",
+        "Carleman.simplexCell_ae_interior",
+        "Carleman.simplexInterior_finiteMeasure",
+        "Carleman.SimplicialPartition.cell_interior_subset",
+        "Carleman.SimplicialPartition.cell_measure_le_domain",
+        "Carleman.SimplicialPartition.gradient_on_cell",
+        "Carleman.affinePolynomialOfCoefficients",
+        "Carleman.affinePolynomialOfCoefficients_apply",
+        "Carleman.SimplicialPartition.conforming_local_polynomial"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "四模块20声明定向3232 jobs及全库3589 jobs通过，4715声明递归审计PASS。"
+      ],
+      "next_action": "完整Vh局部弱梯度20声明提交固定SHA独立验收；继续真实单元积分求和与全域加权逆界。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3589,
+        "recursive_axiom_audit": 4715,
+        "new_explicit_declarations": 20,
+        "declaration_artifact_sha256": "0e619a89152b8167d3e1e10ef2c97f8606660e52fa2614d6ca85bb6012a054e2",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
