@@ -324,3 +324,7 @@ public import Carleman.Control.PiecewiseAffineGalerkin
 public import Carleman.Spatial.SimplicialCells
 public import Carleman.Spatial.SimplicialPartition
 public import Carleman.Spatial.SimplexNodalInterpolation
+
+public import Carleman.Spatial.SimplicialNodalGluing
+public import Carleman.Spatial.SimplicialNodalLp
+public import Carleman.Spatial.SimplicialNodalOperator

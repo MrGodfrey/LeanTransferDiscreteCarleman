@@ -2686,6 +2686,67 @@ set_option pp.maxSteps 1000000
 #check @Carleman.simplexNodalInterpolant_abs_le
 #print axioms Carleman.simplexNodalInterpolant_abs_le
 
+#check @Carleman.SimplicialPartition.FaceMatching
+#print axioms Carleman.SimplicialPartition.FaceMatching
+#check @Carleman.SimplicialPartition.localNodal
+#print axioms Carleman.SimplicialPartition.localNodal
+#check @Carleman.SimplicialPartition.localNodal_vertex
+#print axioms Carleman.SimplicialPartition.localNodal_vertex
+#check @Carleman.SimplicialPartition.localNodal_agree
+#print axioms Carleman.SimplicialPartition.localNodal_agree
+#check @Carleman.SimplicialPartition.nodalFunction
+#print axioms Carleman.SimplicialPartition.nodalFunction
+#check @Carleman.SimplicialPartition.nodalFunction_on_cell
+#print axioms Carleman.SimplicialPartition.nodalFunction_on_cell
+#check @Carleman.SimplicialPartition.nodalFunction_vertex
+#print axioms Carleman.SimplicialPartition.nodalFunction_vertex
+#check @Carleman.SimplicialPartition.nodalFunction_continuousOn
+#print axioms Carleman.SimplicialPartition.nodalFunction_continuousOn
+#check @Carleman.SimplicialPartition.nodalFunction_reproduces
+#print axioms Carleman.SimplicialPartition.nodalFunction_reproduces
+#check @Carleman.affinePolynomialCoefficients
+#print axioms Carleman.affinePolynomialCoefficients
+#check @Carleman.affinePolynomialCoefficients_apply
+#print axioms Carleman.affinePolynomialCoefficients_apply
+#check @Carleman.SimplicialPartition.nodalBound
+#print axioms Carleman.SimplicialPartition.nodalBound
+#check @Carleman.SimplicialPartition.nodalBound_nonneg
+#print axioms Carleman.SimplicialPartition.nodalBound_nonneg
+#check @Carleman.SimplicialPartition.nodalBound_vertex
+#print axioms Carleman.SimplicialPartition.nodalBound_vertex
+#check @Carleman.SimplicialPartition.nodalFunction_bound
+#print axioms Carleman.SimplicialPartition.nodalFunction_bound
+#check @Carleman.SimplicialPartition.nodalFunction_memLp
+#print axioms Carleman.SimplicialPartition.nodalFunction_memLp
+#check @Carleman.SimplicialPartition.nodalLp
+#print axioms Carleman.SimplicialPartition.nodalLp
+#check @Carleman.SimplicialPartition.nodalLp_ae
+#print axioms Carleman.SimplicialPartition.nodalLp_ae
+#check @Carleman.SimplicialPartition.nodalLp_piecewise_affine
+#print axioms Carleman.SimplicialPartition.nodalLp_piecewise_affine
+#check @Carleman.SimplicialPartition.nodalFunction_congr
+#print axioms Carleman.SimplicialPartition.nodalFunction_congr
+#check @Carleman.SimplicialPartition.nodalFunction_add
+#print axioms Carleman.SimplicialPartition.nodalFunction_add
+#check @Carleman.SimplicialPartition.nodalFunction_smul
+#print axioms Carleman.SimplicialPartition.nodalFunction_smul
+#check @Carleman.SimplicialPartition.nodalFunctionLinearMap
+#print axioms Carleman.SimplicialPartition.nodalFunctionLinearMap
+#check @Carleman.SimplicialPartition.nodalFunction_unique
+#print axioms Carleman.SimplicialPartition.nodalFunction_unique
+#check @Carleman.SimplicialPartition.nodalFunction_idempotent
+#print axioms Carleman.SimplicialPartition.nodalFunction_idempotent
+#check @Carleman.SimplicialPartition.nodalFunction_abs_le
+#print axioms Carleman.SimplicialPartition.nodalFunction_abs_le
+#check @Carleman.SimplicialPartition.nodalLp_congr
+#print axioms Carleman.SimplicialPartition.nodalLp_congr
+#check @Carleman.SimplicialPartition.nodalLp_add
+#print axioms Carleman.SimplicialPartition.nodalLp_add
+#check @Carleman.SimplicialPartition.nodalLp_smul
+#print axioms Carleman.SimplicialPartition.nodalLp_smul
+#check @Carleman.SimplicialPartition.nodalLpLinearMap
+#print axioms Carleman.SimplicialPartition.nodalLpLinearMap
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
