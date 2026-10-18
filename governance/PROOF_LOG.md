@@ -137,3 +137,5 @@
 - T070 / C086：原Dirichlet A3形式10声明独立验收PASS，5141声明递归审计、同SHA三项CI及逐字节相同远端产物。 固定证明 `c5e99b4f0aa241a24dcf27262fced6bc147a60d8`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/797091ee24fecc4b8960e4bcb9fa95883f2292a0/governance/reviews/T070-local-acceptance.md)。原文12/26，T071继续原Dirichlet允许权接口组装。
 
 - T071 / C087：原Dirichlet允许权接口3声明独立验收PASS，5145声明递归审计、同SHA三项CI及逐字节相同远端产物。 固定证明 `d65579460032f15bcba3c77709ccfd3f1642b8fc`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/605482c31a83563b5c3a027ca3860be543aa3fce/governance/reviews/T071-local-acceptance.md)。原文12/26，T072继续凸单元光滑函数的均值Poincare。
+
+- T072 / C088：凸单元光滑均值Poincare11声明独立验收PASS，5156声明递归审计、同SHA三项CI及逐字节相同远端产物。 固定证明 `36c57dbc4edf3d9671f7b00f8c0675230f6b4380`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/70fc91ce650718298728b8ea700e5a0d9b7ff123/governance/reviews/T072-local-acceptance.md)。原文12/26，T073继续原凸域真实弱H1均值Poincare。
