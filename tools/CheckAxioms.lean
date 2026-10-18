@@ -2314,6 +2314,47 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Physical.physical_weighted_initial_recovery
 #print axioms Carleman.Physical.physical_weighted_initial_recovery
 
+#check @Carleman.Physical.weighted_potential_bound
+#print axioms Carleman.Physical.weighted_potential_bound
+#check @Carleman.Physical.physicalCutoffLoad
+#print axioms Carleman.Physical.physicalCutoffLoad
+#check @Carleman.Physical.physical_cutoff_load_equation
+#print axioms Carleman.Physical.physical_cutoff_load_equation
+#check @Carleman.Physical.physical_cutoff_load_bound
+#print axioms Carleman.Physical.physical_cutoff_load_bound
+#check @Carleman.Physical.physicalWeight_lower_half
+#print axioms Carleman.Physical.physicalWeight_lower_half
+#check @Carleman.Physical.physical_potential_budget
+#print axioms Carleman.Physical.physical_potential_budget
+#check @Carleman.Physical.physicalWeightedSq
+#print axioms Carleman.Physical.physicalWeightedSq
+#check @Carleman.Physical.physicalWeightedCubeSq
+#print axioms Carleman.Physical.physicalWeightedCubeSq
+#check @Carleman.Physical.PhysicalLoadCarleman
+#print axioms Carleman.Physical.PhysicalLoadCarleman
+#check @Carleman.Physical.cutoff_observation_budget
+#print axioms Carleman.Physical.cutoff_observation_budget
+#check @Carleman.Physical.cutoff_carleman_absorb
+#print axioms Carleman.Physical.cutoff_carleman_absorb
+#check @Carleman.Physical.physicalEndpointRate
+#print axioms Carleman.Physical.physicalEndpointRate
+#check @Carleman.Physical.physicalEndpointRate_pos
+#print axioms Carleman.Physical.physicalEndpointRate_pos
+#check @Carleman.Physical.physicalInitialFactor
+#print axioms Carleman.Physical.physicalInitialFactor
+#check @Carleman.Physical.physicalInitialFactor_pos
+#print axioms Carleman.Physical.physicalInitialFactor_pos
+#check @Carleman.Physical.physicalRemainderFactor
+#print axioms Carleman.Physical.physicalRemainderFactor
+#check @Carleman.Physical.physicalObservationConstant
+#print axioms Carleman.Physical.physicalObservationConstant
+#check @Carleman.Physical.physicalObservationConstant_pos
+#print axioms Carleman.Physical.physicalObservationConstant_pos
+#check @Carleman.Physical.physical_observation_of_load_carleman
+#print axioms Carleman.Physical.physical_observation_of_load_carleman
+#check @Carleman.Physical.physical_observation_uniform_of_load_carleman
+#print axioms Carleman.Physical.physical_observation_uniform_of_load_carleman
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

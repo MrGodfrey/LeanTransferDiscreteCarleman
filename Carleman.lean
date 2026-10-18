@@ -281,3 +281,9 @@ public import Carleman.Control.PhysicalQClass
 public import Carleman.Control.PhysicalSpatialWeights
 public import Carleman.Control.PhysicalExponentialBudgets
 public import Carleman.Control.PhysicalWeightedEnergy
+
+public import Carleman.Control.PhysicalPotentialLoad
+public import Carleman.Control.PhysicalPotentialAbsorption
+public import Carleman.Control.PhysicalLoadCarleman
+public import Carleman.Control.PhysicalObservationAssembly
+public import Carleman.Control.PhysicalObservationUniform

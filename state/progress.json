@@ -15,7 +15,7 @@
     "next_action": "完成真实势载荷、潜势吸收、观测去权及物理观测组装；显式保留周期CE与具体实例供应，不能将观测作为输入。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T16:17:17.692686+00:00"
+    "last_activity_at": "2026-10-18T16:20:15.004437+00:00"
   },
   "verification": {
     "latest_build": {
@@ -5161,12 +5161,33 @@
       "extra_hypotheses": [
         "实际Lp重构上的统一周期载荷Carleman估计及具体质量/载荷/观测接口仍须由原实现供应"
       ],
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "CONDITIONAL",
       "paper_labels": [
         "prop:physicalO"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.weighted_potential_bound",
+        "Carleman.Physical.physicalCutoffLoad",
+        "Carleman.Physical.physical_cutoff_load_equation",
+        "Carleman.Physical.physical_cutoff_load_bound",
+        "Carleman.Physical.physicalWeight_lower_half",
+        "Carleman.Physical.physical_potential_budget",
+        "Carleman.Physical.physicalWeightedSq",
+        "Carleman.Physical.physicalWeightedCubeSq",
+        "Carleman.Physical.PhysicalLoadCarleman",
+        "Carleman.Physical.cutoff_observation_budget",
+        "Carleman.Physical.cutoff_carleman_absorb",
+        "Carleman.Physical.physicalEndpointRate",
+        "Carleman.Physical.physicalEndpointRate_pos",
+        "Carleman.Physical.physicalInitialFactor",
+        "Carleman.Physical.physicalInitialFactor_pos",
+        "Carleman.Physical.physicalRemainderFactor",
+        "Carleman.Physical.physicalObservationConstant",
+        "Carleman.Physical.physicalObservationConstant_pos",
+        "Carleman.Physical.physical_observation_of_load_carleman",
+        "Carleman.Physical.physical_observation_uniform_of_load_carleman"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -5176,7 +5197,7 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "从真实乘法势载荷与周期CE推出实际伴随观测；保留CE及数值实例供应，不计原Theorem7.2完成。"
+      "scope_notes": "真实乘法势载荷、截断方程、原qb预算吸收、实际观测去权和端点/初值预算已内部组装；Cb/d0先于T/M，C先于网格/空间/全轨迹。保留实际Lp周期载荷CE、质量/右逆/势兼容/观测实例供应，仍为CONDITIONAL。"
     }
   ],
   "events": [
@@ -12288,14 +12309,48 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.weighted_potential_bound",
+        "Carleman.Physical.physicalCutoffLoad",
+        "Carleman.Physical.physical_cutoff_load_equation",
+        "Carleman.Physical.physical_cutoff_load_bound",
+        "Carleman.Physical.physicalWeight_lower_half",
+        "Carleman.Physical.physical_potential_budget",
+        "Carleman.Physical.physicalWeightedSq",
+        "Carleman.Physical.physicalWeightedCubeSq",
+        "Carleman.Physical.PhysicalLoadCarleman",
+        "Carleman.Physical.cutoff_observation_budget",
+        "Carleman.Physical.cutoff_carleman_absorb",
+        "Carleman.Physical.physicalEndpointRate",
+        "Carleman.Physical.physicalEndpointRate_pos",
+        "Carleman.Physical.physicalInitialFactor",
+        "Carleman.Physical.physicalInitialFactor_pos",
+        "Carleman.Physical.physicalRemainderFactor",
+        "Carleman.Physical.physicalObservationConstant",
+        "Carleman.Physical.physicalObservationConstant_pos",
+        "Carleman.Physical.physical_observation_of_load_carleman",
+        "Carleman.Physical.physical_observation_uniform_of_load_carleman"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "真实势载荷、原方程和加权界已编译；Cb统一吸收预算、真实载荷CE的截断吸收及观测去权已编译。"
+        "真实势载荷、原方程和加权界已编译；Cb统一吸收预算、真实载荷CE的截断吸收及观测去权已编译。",
+        "五模块20声明已定向编译；physical_observation_uniform_of_load_carleman从真实周期载荷CE内部推出原形物理观测，保持Cb/d0/C的全部前置量词，未假设目标观测。"
       ],
       "next_action": "完成真实势载荷、潜势吸收、观测去权及物理观测组装；显式保留周期CE与具体实例供应，不能将观测作为输入。",
-      "integration_mode": "direct-main"
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "finished_at": "2026-10-18T16:21:06.161988+00:00",
+        "targets": [
+          "Carleman"
+        ],
+        "actual_build_jobs": 3500,
+        "recursive_axiom_audit": 3524,
+        "new_explicit_declarations": 20,
+        "declaration_artifact_sha256": "23ecf1ee980361f7cb53f5f2e311a1cf44627d2200758c4c0bd86c7712357e86",
+        "independent_review": "pending fixed-SHA review and remote CI"
+      }
     }
   ],
   "private_maintenance": {

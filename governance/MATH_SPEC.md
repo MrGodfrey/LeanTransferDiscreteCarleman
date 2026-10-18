@@ -734,3 +734,13 @@ C008/P009 是完整 Lemma4.1 候选，精确 main CI 核实后登记 BUILT/PAPER
 `PhysicalWeightedEnergy` 对真实 N+1 伴随轨迹及具体 χ/r，显式保留重构 R 的原始未加权质量比较。上界输入 ‖Rx‖²≤Cmass‖x‖²，输出真实加权余项积分，随后吸收 S 得 `(10 Cmass/(c_end qb T))exp(4MT)exp(-c_end S/2)‖pN‖²`；下界输入 ‖x‖²≤Cmass‖Rx‖²，输出中央初值控制整个真实周期加权 q³ 能量。χ=1 的中央节点、过渡外 r=0、原伴随能量和离散窗口测度均在内部调用。没有把目标观测不等式、空间指数包络或余项指数界作为输入。
 
 尚待具体重构质量界实例、势载荷与右逆的加权界、原 Carleman 供应、潜势吸收和统一最终组装；连续热 CE、具体 P1/FD 也未被本阶段证明。独立验收应核对全部22项声明及上述范围，不提升 P014。
+
+## T029：实际周期载荷 CE 到物理观测的条件桥
+
+范围为 CONDITIONAL，不能提升 P014 / 原 Theorem 7.2。五模块20声明直接构造 `-b_i.map(R z_i)-I r_i`，在 Lp 等价类上用实际有界乘法证明势载荷的加权界，实际 Γ 兼容给原负号方程。载荷平方界为 `2M²‖θRz‖²+2CI²‖θRr‖²`；M=0 保留。
+
+`PhysicalLoadCarleman` 明确是整个周期状态/载荷空间上的实际 q³ Lp 重构能量估计，输入真实 `D_-z+Az=Γf`，右侧为实际载荷与 Bstar 观测能量。本阶段仍没有从具体 P1/FD 或连续热 CE 供应它。`cutoff_carleman_absorb` 对实际截断轨迹和构造出的载荷应用此 CE；`physical_potential_budget` 从原 qb 公式及 `Cb≥max(1,32CCE)` 推出半能量吸收，所有网格/轨迹后的目标预算均内部清偿。实际 χ∈[0,1] 与真 Bstar 线性、空间指数包络给 `cutoff_observation_budget`。
+
+`physical_observation_of_load_carleman` 将真实加权端点余项、中部初值恢复、势吸收与观测去权合成。常数显式定义为 `Cmass/K * (4CCE CI² Kremainder + 2CCE (6/rstar³)+1)`，其中 K 是正的中部恢复因子，Kremainder 不含S/网格。`physical_observation_uniform_of_load_carleman` 先选择 Cb≥max(2,32CCE,2π/β) 和 d0=c_end/4，再对 T>0、M≥0 选择正 C(T,M)，最后量化所有X、网格、S、算子、数据和全伴随轨迹。原正弦q、完整qclass、半能量预算和原势二次型下界均在内部产生；不把目标观测作为输入。输出指数严格为 exp(-2d0 S)，观察时刻为 p^i（原 p^(n−1)）。
+
+显式待供应项：统一周期实际Lp载荷CE、重构双向质量界、Γ/I与乘法势的兼容、允许权下I的稳定性，以及 Bstar 实际数值观测到这里Lp观测的等距/有界接口。尤其 Bstar 当前是显式线性观察映射；不能仅凭名称认定它已是原控制算子的Hilbert伴随。原A/V自伴、A非负及势算子范数界在最终入口保留，真实物理 Hilbert 伴随方程不变。本阶段既不声称原具体数值条件已实例化，也不声称原连续热CE已证明。独立Agent应按该精确条件范围验收。
