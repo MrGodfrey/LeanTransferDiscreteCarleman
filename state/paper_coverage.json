@@ -68,16 +68,51 @@
       "milestone": "M3",
       "claim_ids": [
         "C005",
-        "C036"
+        "C036",
+        "C037"
       ],
-      "lean_declarations": [],
-      "declaration_version": null,
-      "verification_status": "PLANNED",
+      "lean_declarations": [
+        "Carleman.OriginalForm.section3_original_operator",
+        "Carleman.OriginalForm.ofBilinear_scalarForm",
+        "Carleman.PeriodicWeakTrajectory.graph_equation_iff",
+        "Carleman.Section3.Conclusions.primitive_on_interval",
+        "Carleman.Section3.Conclusions.form_bound",
+        "Carleman.Section3.Conclusions.form_coercive"
+      ],
+      "declaration_version": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+      "verification_status": "BUILT",
       "scope": "PAPER",
       "extra_hypotheses": [],
-      "build_evidence": null,
-      "semantic_review": null,
-      "blocker": "T018/C036提供原域参数插值及一般阶真实时间估计支持；完整原文声明与关联算子接口整体验收待完成，不自动增加原文完成数"
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39088174822/attempts/1",
+        "finished_at": "2026-10-18T01:59:23.644591+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd"
+      },
+      "semantic_review": {
+        "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+        "declarations": [
+          "Carleman.OriginalForm.section3_original_operator",
+          "Carleman.OriginalForm.ofBilinear_scalarForm",
+          "Carleman.PeriodicWeakTrajectory.graph_equation_iff",
+          "Carleman.Section3.Conclusions.primitive_on_interval",
+          "Carleman.Section3.Conclusions.form_bound",
+          "Carleman.Section3.Conclusions.form_coercive"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd/governance/reviews/T019.md",
+        "reviewed_at": "2026-10-18T02:00:54.907026+00:00",
+        "reviewer": "T019 executor; parent independent acceptance pending"
+      },
+      "blocker": "完整原命题已构建；父监督者独立语义/依赖验收待完成",
+      "independent_review_status": "PENDING"
     },
     {
       "id": "P005",
@@ -135,16 +170,49 @@
       "milestone": "M3",
       "claim_ids": [
         "C006",
-        "C036"
+        "C036",
+        "C037"
       ],
-      "lean_declarations": [],
-      "declaration_version": null,
-      "verification_status": "PLANNED",
+      "lean_declarations": [
+        "Carleman.OriginalForm.section3_original_operator",
+        "Carleman.OriginalForm.ofBilinear_scalarForm",
+        "Carleman.PeriodicWeakTrajectory.graph_equation_iff",
+        "Carleman.Section3.Conclusions.euler",
+        "Carleman.Section3.EulerEstimate"
+      ],
+      "declaration_version": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+      "verification_status": "BUILT",
       "scope": "PAPER",
       "extra_hypotheses": [],
-      "build_evidence": null,
-      "semantic_review": null,
-      "blocker": "T018/C036提供原域参数插值及一般阶真实时间估计支持；完整原文声明与关联算子接口整体验收待完成，不自动增加原文完成数"
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39088174822/attempts/1",
+        "finished_at": "2026-10-18T01:59:23.644591+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd"
+      },
+      "semantic_review": {
+        "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+        "declarations": [
+          "Carleman.OriginalForm.section3_original_operator",
+          "Carleman.OriginalForm.ofBilinear_scalarForm",
+          "Carleman.PeriodicWeakTrajectory.graph_equation_iff",
+          "Carleman.Section3.Conclusions.euler",
+          "Carleman.Section3.EulerEstimate"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd/governance/reviews/T019.md",
+        "reviewed_at": "2026-10-18T02:00:54.907026+00:00",
+        "reviewer": "T019 executor; parent independent acceptance pending"
+      },
+      "blocker": "完整原命题已构建；父监督者独立语义/依赖验收待完成",
+      "independent_review_status": "PENDING"
     },
     {
       "id": "P007",
@@ -154,16 +222,49 @@
       "tex_line": 964,
       "milestone": "M3",
       "claim_ids": [
-        "C036"
+        "C036",
+        "C037"
       ],
-      "lean_declarations": [],
-      "declaration_version": null,
-      "verification_status": "PLANNED",
+      "lean_declarations": [
+        "Carleman.OriginalForm.section3_original_operator",
+        "Carleman.OriginalForm.ofBilinear_scalarForm",
+        "Carleman.PeriodicWeakTrajectory.graph_equation_iff",
+        "Carleman.Section3.Conclusions.frozen",
+        "Carleman.Section3.ContinuousEstimate"
+      ],
+      "declaration_version": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+      "verification_status": "BUILT",
       "scope": "PAPER",
       "extra_hypotheses": [],
-      "build_evidence": null,
-      "semantic_review": null,
-      "blocker": "T018/C036提供原域参数插值及一般阶真实时间估计支持；完整原文声明与关联算子接口整体验收待完成，不自动增加原文完成数"
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39088174822/attempts/1",
+        "finished_at": "2026-10-18T01:59:23.644591+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd"
+      },
+      "semantic_review": {
+        "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+        "declarations": [
+          "Carleman.OriginalForm.section3_original_operator",
+          "Carleman.OriginalForm.ofBilinear_scalarForm",
+          "Carleman.PeriodicWeakTrajectory.graph_equation_iff",
+          "Carleman.Section3.Conclusions.frozen",
+          "Carleman.Section3.ContinuousEstimate"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd/governance/reviews/T019.md",
+        "reviewed_at": "2026-10-18T02:00:54.907026+00:00",
+        "reviewer": "T019 executor; parent independent acceptance pending"
+      },
+      "blocker": "完整原命题已构建；父监督者独立语义/依赖验收待完成",
+      "independent_review_status": "PENDING"
     },
     {
       "id": "P008",
@@ -174,16 +275,51 @@
       "milestone": "M3",
       "claim_ids": [
         "C007",
-        "C036"
+        "C036",
+        "C037"
       ],
-      "lean_declarations": [],
-      "declaration_version": null,
-      "verification_status": "PLANNED",
+      "lean_declarations": [
+        "Carleman.OriginalForm.section3_original_operator",
+        "Carleman.OriginalForm.ofBilinear_scalarForm",
+        "Carleman.PeriodicWeakTrajectory.graph_equation_iff",
+        "Carleman.Section3.Conclusions.temporal",
+        "Carleman.Section3.TemporalEstimate",
+        "Carleman.Section3.temporal_arbitrary_uniform"
+      ],
+      "declaration_version": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+      "verification_status": "BUILT",
       "scope": "PAPER",
       "extra_hypotheses": [],
-      "build_evidence": null,
-      "semantic_review": null,
-      "blocker": "T018/C036提供原域参数插值及一般阶真实时间估计支持；完整原文声明与关联算子接口整体验收待完成，不自动增加原文完成数"
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39088174822/attempts/1",
+        "finished_at": "2026-10-18T01:59:23.644591+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd"
+      },
+      "semantic_review": {
+        "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+        "declarations": [
+          "Carleman.OriginalForm.section3_original_operator",
+          "Carleman.OriginalForm.ofBilinear_scalarForm",
+          "Carleman.PeriodicWeakTrajectory.graph_equation_iff",
+          "Carleman.Section3.Conclusions.temporal",
+          "Carleman.Section3.TemporalEstimate",
+          "Carleman.Section3.temporal_arbitrary_uniform"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd/governance/reviews/T019.md",
+        "reviewed_at": "2026-10-18T02:00:54.907026+00:00",
+        "reviewer": "T019 executor; parent independent acceptance pending"
+      },
+      "blocker": "完整原命题已构建；父监督者独立语义/依赖验收待完成",
+      "independent_review_status": "PENDING"
     },
     {
       "id": "P009",

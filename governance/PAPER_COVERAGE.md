@@ -9,11 +9,11 @@
 | P001 | Theorem 2.1 | `thm:main` | 10 / 525 | M5 | C010 | 待建立 |
 | P002 | Corollary 2.2 | `cor:general-scales` | 11 / 599 | M5 | C011 | 待建立 |
 | P003 | Corollary 2.3 | `cor:scales` | 11 / 617 | M5 | C012 | 待建立 |
-| P004 | Lemma 3.1 | `lem:graph` | 11 / 647 | M3 | C005, C036 | 待建立 |
+| P004 | Lemma 3.1 | `lem:graph` | 11 / 647 | M3 | C005, C036, C037 | Carleman.OriginalForm.section3_original_operator, Carleman.OriginalForm.ofBilinear_scalarForm, Carleman.PeriodicWeakTrajectory.graph_equation_iff, Carleman.Section3.Conclusions.primitive_on_interval, Carleman.Section3.Conclusions.form_bound, Carleman.Section3.Conclusions.form_coercive |
 | P005 | Lemma 3.2 | `lem:cell` | 13 / 789 | M3 | C020 | Carleman.cell_estimates_uniform, Carleman.CellEstimates.weight_quotient_essSup, Carleman.CellEstimates.global_cell_bounds |
-| P006 | Lemma 3.3 | `lem:eulerMR` | 14 / 863 | M3 | C006, C036 | 待建立 |
-| P007 | Lemma 3.4 | `lem:frozen` | 15 / 964 | M3 | C036 | 待建立 |
-| P008 | Theorem 3.5 | `thm:timeerror` | 16 / 1023 | M3 | C007, C036 | 待建立 |
+| P006 | Lemma 3.3 | `lem:eulerMR` | 14 / 863 | M3 | C006, C036, C037 | Carleman.OriginalForm.section3_original_operator, Carleman.OriginalForm.ofBilinear_scalarForm, Carleman.PeriodicWeakTrajectory.graph_equation_iff, Carleman.Section3.Conclusions.euler, Carleman.Section3.EulerEstimate |
+| P007 | Lemma 3.4 | `lem:frozen` | 15 / 964 | M3 | C036, C037 | Carleman.OriginalForm.section3_original_operator, Carleman.OriginalForm.ofBilinear_scalarForm, Carleman.PeriodicWeakTrajectory.graph_equation_iff, Carleman.Section3.Conclusions.frozen, Carleman.Section3.ContinuousEstimate |
+| P008 | Theorem 3.5 | `thm:timeerror` | 16 / 1023 | M3 | C007, C036, C037 | Carleman.OriginalForm.section3_original_operator, Carleman.OriginalForm.ofBilinear_scalarForm, Carleman.PeriodicWeakTrajectory.graph_equation_iff, Carleman.Section3.Conclusions.temporal, Carleman.Section3.TemporalEstimate, Carleman.Section3.temporal_arbitrary_uniform |
 | P009 | Lemma 4.1 | `lem:spatialEuler` | 17 / 1148 | M4 | C008 | 待建立 |
 | P010 | Theorem 4.2 | `thm:combined` | 19 / 1287 | M4 | C009 | 待建立 |
 | P011 | Proposition 6.1 | `prop:p1` | 21 / 1499 | M6a | C014 | 待建立 |

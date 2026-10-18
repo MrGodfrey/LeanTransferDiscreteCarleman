@@ -1557,6 +1557,131 @@ set_option pp.maxSteps 1000000
 #check @Carleman.CoerciveForm.interpolated_weighted_frozen_sobolev_uniform
 #print axioms Carleman.CoerciveForm.interpolated_weighted_frozen_sobolev_uniform
 
+
+-- T019: full Section 3 and original-input bridges.
+#check @Carleman.Section3.AllowedFamily
+#print axioms Carleman.Section3.AllowedFamily
+#check @Carleman.Section3.AllowedFamily.inverse
+#print axioms Carleman.Section3.AllowedFamily.inverse
+#check @Carleman.Section3.Conclusions
+#print axioms Carleman.Section3.Conclusions
+#check @Carleman.Section3.complete_uniform
+#print axioms Carleman.Section3.complete_uniform
+#check @Carleman.OriginalForm.section3
+#print axioms Carleman.OriginalForm.section3
+#check @Carleman.periodCarrier
+#print axioms Carleman.periodCarrier
+#check @Carleman.periodCarrier_period
+#print axioms Carleman.periodCarrier_period
+#check @Carleman.periodCarrier_measure
+#print axioms Carleman.periodCarrier_measure
+#check @Carleman.intervalWeightRegularity
+#print axioms Carleman.intervalWeightRegularity
+#check @Carleman.Section3.mesh_dt_le_one
+#print axioms Carleman.Section3.mesh_dt_le_one
+#check @Carleman.Section3.Conclusions.primitive_on_interval
+#print axioms Carleman.Section3.Conclusions.primitive_on_interval
+#check @Carleman.boundedRealForm
+#print axioms Carleman.boundedRealForm
+#check @Carleman.conformingValue
+#print axioms Carleman.conformingValue
+#check @Carleman.OriginalForm.ofBilinear
+#print axioms Carleman.OriginalForm.ofBilinear
+#check @Carleman.OriginalForm.ofBilinear_scalarForm
+#print axioms Carleman.OriginalForm.ofBilinear_scalarForm
+#check @Carleman.OriginalForm
+#print axioms Carleman.OriginalForm
+#check @Carleman.OriginalForm.Energy
+#print axioms Carleman.OriginalForm.Energy
+#check @Carleman.OriginalForm.model
+#print axioms Carleman.OriginalForm.model
+#check @Carleman.OriginalForm.valueEquiv
+#print axioms Carleman.OriginalForm.valueEquiv
+#check @Carleman.OriginalForm.valueEquiv_coe
+#print axioms Carleman.OriginalForm.valueEquiv_coe
+#check @Carleman.OriginalForm.scalarForm
+#print axioms Carleman.OriginalForm.scalarForm
+#check @Carleman.OriginalForm.scalarForm_value
+#print axioms Carleman.OriginalForm.scalarForm_value
+#check @Carleman.OriginalForm.domain_le
+#print axioms Carleman.OriginalForm.domain_le
+#check @Carleman.OriginalForm.operator_test
+#print axioms Carleman.OriginalForm.operator_test
+#check @Carleman.OriginalForm.associated_iff
+#print axioms Carleman.OriginalForm.associated_iff
+#check @Carleman.OriginalForm.identify_operator
+#print axioms Carleman.OriginalForm.identify_operator
+#check @Carleman.OriginalForm.section3_original_operator
+#print axioms Carleman.OriginalForm.section3_original_operator
+#check @Carleman.TimeWeight.ofInterval
+#print axioms Carleman.TimeWeight.ofInterval
+#check @Carleman.TimeWeight.ofInterval_on
+#print axioms Carleman.TimeWeight.ofInterval_on
+#check @Carleman.TimeWeight.ofInterval_regularity
+#print axioms Carleman.TimeWeight.ofInterval_regularity
+#check @Carleman.exists_profile_of_smooth
+#print axioms Carleman.exists_profile_of_smooth
+#check @Carleman.Section3.ProfileEstimates
+#print axioms Carleman.Section3.ProfileEstimates
+#check @Carleman.Section3.ProfileEstimates.mono
+#print axioms Carleman.Section3.ProfileEstimates.mono
+#check @Carleman.Section3.profile_uniform
+#print axioms Carleman.Section3.profile_uniform
+#check @Carleman.SpatialProfile.signed
+#print axioms Carleman.SpatialProfile.signed
+#check @Carleman.SpatialProfile.signed_neg
+#print axioms Carleman.SpatialProfile.signed_neg
+#check @Carleman.Section3.signed_uniform
+#print axioms Carleman.Section3.signed_uniform
+#check @Carleman.Section3.euler_solved_uniform
+#print axioms Carleman.Section3.euler_solved_uniform
+#check @Carleman.Section3.shift_solved_uniform
+#print axioms Carleman.Section3.shift_solved_uniform
+#check @Carleman.Section3.frozen_solved_uniform
+#print axioms Carleman.Section3.frozen_solved_uniform
+#check @Carleman.Section3.temporal_arbitrary_uniform
+#print axioms Carleman.Section3.temporal_arbitrary_uniform
+#check @Carleman.Section3.EulerEstimate
+#print axioms Carleman.Section3.EulerEstimate
+#check @Carleman.Section3.ContinuousEstimate
+#print axioms Carleman.Section3.ContinuousEstimate
+#check @Carleman.Section3.TemporalEstimate
+#print axioms Carleman.Section3.TemporalEstimate
+#check @Carleman.Section3.EulerEstimate.mono
+#print axioms Carleman.Section3.EulerEstimate.mono
+#check @Carleman.Section3.ContinuousEstimate.mono
+#print axioms Carleman.Section3.ContinuousEstimate.mono
+#check @Carleman.Section3.TemporalEstimate.mono
+#print axioms Carleman.Section3.TemporalEstimate.mono
+#check @Carleman.PeriodicWeakTrajectory.graph_equation_iff
+#print axioms Carleman.PeriodicWeakTrajectory.graph_equation_iff
+#check @Carleman.CoerciveForm.interpolated_weighted_shift_graph_uniform
+#print axioms Carleman.CoerciveForm.interpolated_weighted_shift_graph_uniform
+#check @Carleman.CoerciveForm.interpolated_weighted_shift_sobolev_uniform
+#print axioms Carleman.CoerciveForm.interpolated_weighted_shift_sobolev_uniform
+#check @Carleman.CoerciveForm.lipschitz_weighted_shift_sobolev_uniform
+#print axioms Carleman.CoerciveForm.lipschitz_weighted_shift_sobolev_uniform
+#check @Carleman.continuous_shift_margin_uniform
+#print axioms Carleman.continuous_shift_margin_uniform
+#check @Carleman.SpatialProfile.logDerivative_shift_small_uniform
+#print axioms Carleman.SpatialProfile.logDerivative_shift_small_uniform
+#check @Carleman.CoerciveForm.weighted_shift_graph_remainder_uniform
+#print axioms Carleman.CoerciveForm.weighted_shift_graph_remainder_uniform
+#check @Carleman.Section3.Conclusions.threshold
+#print axioms Carleman.Section3.Conclusions.threshold
+#check @Carleman.Section3.Conclusions.primitive
+#print axioms Carleman.Section3.Conclusions.primitive
+#check @Carleman.Section3.Conclusions.form_bound
+#print axioms Carleman.Section3.Conclusions.form_bound
+#check @Carleman.Section3.Conclusions.form_coercive
+#print axioms Carleman.Section3.Conclusions.form_coercive
+#check @Carleman.Section3.Conclusions.euler
+#print axioms Carleman.Section3.Conclusions.euler
+#check @Carleman.Section3.Conclusions.frozen
+#print axioms Carleman.Section3.Conclusions.frozen
+#check @Carleman.Section3.Conclusions.temporal
+#print axioms Carleman.Section3.Conclusions.temporal
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
