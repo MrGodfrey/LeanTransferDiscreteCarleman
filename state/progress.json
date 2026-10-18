@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T030",
-    "supervisor_checked_at": "2026-10-18T16:29:03.251615+00:00",
-    "next_action": "完成真实L2子空间算子、L2(ω)限制与零延拓及Hilbert伴随，清偿观测/控制接口；仍保留具体网格和CE供应。",
+    "current_task_id": "T031",
+    "supervisor_checked_at": "2026-10-18T16:44:02.105635+00:00",
+    "next_action": "接通原热尺度推论与实际周期载荷CE，再到真实L2(ω)物理观测/HUM；具体P1/FD和连续热CE仍待供应。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T16:32:32.464776+00:00"
+    "last_activity_at": "2026-10-18T16:44:02.105635+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "f84745210c4ee35c2dd924f9c6ff04788047c28d",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39144611467/attempts/1",
-      "finished_at": "2026-10-18T16:22:57.037463+00:00",
+      "checked_sha": "31d5e165a595849bc1c882523838aad69576b594",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39145512377/attempts/1",
+      "finished_at": "2026-10-18T16:35:30.206799+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "f84745210c4ee35c2dd924f9c6ff04788047c28d"
+      "source_head_sha": "31d5e165a595849bc1c882523838aad69576b594"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "f84745210c4ee35c2dd924f9c6ff04788047c28d",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39144611467/attempts/1",
-      "finished_at": "2026-10-18T16:22:57.037463+00:00",
+      "checked_sha": "31d5e165a595849bc1c882523838aad69576b594",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39145512377/attempts/1",
+      "finished_at": "2026-10-18T16:35:30.206799+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "f84745210c4ee35c2dd924f9c6ff04788047c28d"
+      "source_head_sha": "31d5e165a595849bc1c882523838aad69576b594"
     }
   },
   "milestones": [
@@ -5248,7 +5248,7 @@
       "extra_hypotheses": [
         "具体P1/FD及其统一周期载荷Carleman估计仍须供应"
       ],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "CONDITIONAL",
       "paper_labels": [
         "prop:physicalO",
@@ -5288,16 +5288,111 @@
         "Carleman.Physical.conforming_physical_observation_uniform",
         "Carleman.Physical.conforming_observation_control_uniform"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "31d5e165a595849bc1c882523838aad69576b594",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "31d5e165a595849bc1c882523838aad69576b594",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39145512377/attempts/1",
+        "finished_at": "2026-10-18T16:35:30.206799+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "31d5e165a595849bc1c882523838aad69576b594"
+      },
+      "semantic_review": {
+        "checked_sha": "31d5e165a595849bc1c882523838aad69576b594",
+        "declarations": [
+          "Carleman.Physical.multiplier_clm_norm",
+          "Carleman.Physical.multiplier_clm_symmetric",
+          "Carleman.Physical.conformingPotential",
+          "Carleman.Physical.conformingPotential_apply",
+          "Carleman.Physical.conformingPotential_symmetric",
+          "Carleman.Physical.conformingPotential_norm",
+          "Carleman.Physical.conformingPotential_form",
+          "Carleman.Physical.conforming_load_right_inverse",
+          "Carleman.Physical.conforming_mass_norm",
+          "Carleman.Physical.conformingAmbientControl",
+          "Carleman.Physical.conformingAmbientControl_norm",
+          "Carleman.Physical.conformingAmbientControl_adjoint",
+          "Carleman.Physical.conforming_observation_integral",
+          "Carleman.Physical.restrictRegionLp",
+          "Carleman.Physical.restrictRegionLp_ae",
+          "Carleman.Physical.restrictRegionLp_norm_le",
+          "Carleman.Physical.restrictRegionLinear",
+          "Carleman.Physical.restrictRegionCLM",
+          "Carleman.Physical.integral_inner_zeroExtend",
+          "Carleman.Physical.restrictRegion_adjoint",
+          "Carleman.Physical.zeroExtend_restrictRegion",
+          "Carleman.Physical.restrictRegion_norm_eq_cutoff",
+          "Carleman.Physical.restrictRegionCLM_norm",
+          "Carleman.Physical.conformingRegionControl",
+          "Carleman.Physical.conformingRegionControl_apply",
+          "Carleman.Physical.conformingRegionControl_adjoint",
+          "Carleman.Physical.conformingRegionControl_adjoint_apply",
+          "Carleman.Physical.conformingRegionControl_norm",
+          "Carleman.Physical.conforming_region_observation_norm",
+          "Carleman.Physical.conformingRegionControl_pairing",
+          "Carleman.Physical.conforming_physical_observation_uniform",
+          "Carleman.Physical.conforming_observation_control_uniform"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4505d7407410d6b6116483d285c7627b6509ab22/governance/reviews/T030-local-acceptance.md",
+        "reviewed_at": "2026-10-18T16:39:45+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent conditional acceptance"
+      },
       "dependencies": [
         "C045",
         "C042"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "真实L2子空间正交载荷/质量、乘法势、自伴与范数界、L2(ω)限制和零延拓Hilbert伴随、真实控制伴随及统一观测/HUM已接通；仍显式保留周期载荷CE及具体P1/FD实例供应。"
+      "scope_notes": "真实L2子空间正交载荷/质量、乘法势、自伴与范数界、L2(ω)限制和零延拓Hilbert伴随、真实控制伴随及统一观测/HUM已接通；仍显式保留周期载荷CE及具体P1/FD实例供应。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C047",
+      "title": "原热尺度转移到真实区域观测和HUM",
+      "paper_ref": "Corollary2.3 to Theorems7.2/7.3, conforming original-data bridge",
+      "milestone": "M6b",
+      "extra_hypotheses": [
+        "具体P1的原数值条件与连续热Carleman估计仍待供应；本阶段从这些原始条件推出结论"
+      ],
+      "verification_status": "SPECIFIED",
+      "scope": "CONDITIONAL",
+      "paper_labels": [
+        "prop:physicalO",
+        "prop:physicalC"
+      ],
+      "lean_declarations": [
+        "Carleman.Physical.physical_cube_le_nodeEnergy",
+        "Carleman.Physical.physical_load_eq_transfer",
+        "Carleman.Physical.physical_observation_eq_transfer",
+        "Carleman.Physical.physical_load_carleman_of_transfer",
+        "Carleman.Physical.conformingReconstruction",
+        "Carleman.Physical.conformingReconstruction_RH",
+        "Carleman.Physical.conformingLoad",
+        "Carleman.Physical.conformingWeightedState",
+        "Carleman.Physical.conformingWeightedState_definite",
+        "Carleman.Physical.conformingHeatGeometry",
+        "Carleman.Physical.ConformingHeatData",
+        "Carleman.Physical.conforming_heat_load_uniform",
+        "Carleman.Physical.physicalMeshScale",
+        "Carleman.Physical.physicalMeshScale_pos",
+        "Carleman.Physical.conforming_heat_observation_control_uniform"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C012",
+        "C046"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "从原热尺度推论提取真实q³能量并接统一物理观测/HUM；不再输入周期离散CE。实际符合子空间重构/载荷；原A2/A3、N1–N5、连续A4仍显式。"
     }
   ],
   "events": [
@@ -5528,6 +5623,11 @@
       "at": "2026-10-18T16:29:03.251615+00:00",
       "public_summary": "从真实周期载荷CE推出物理观测的20声明通过独立Agent及同SHA CI验收；C045保留条件范围，原文仍12/26，验收队列清空。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c5e2ec187c3abc746e4d2c6bfaaad1905322fc2d/governance/reviews/T029-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T16:44:02.105635+00:00",
+      "public_summary": "真实L2(ω)控制接口32声明通过独立Agent和同SHA CI验收，队列清空；原文仍12/26。继续从原热尺度推论供应实际周期载荷CE。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4505d7407410d6b6116483d285c7627b6509ab22/governance/reviews/T030-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -5639,7 +5739,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/192099c762739de48201d1d4714b2fbdf9a2d86e/governance/reviews/T028-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39143907384/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c5e2ec187c3abc746e4d2c6bfaaad1905322fc2d/governance/reviews/T029-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39144611467/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39144611467/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4505d7407410d6b6116483d285c7627b6509ab22/governance/reviews/T030-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39145512377/attempts/1"
     ]
   },
   "schedules": [
@@ -12514,10 +12616,10 @@
       ],
       "branch": "main",
       "base_commit": "f84745210c4ee35c2dd924f9c6ff04788047c28d",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "31d5e165a595849bc1c882523838aad69576b594",
+      "merge_commit": "31d5e165a595849bc1c882523838aad69576b594",
       "lean_declarations": [
         "Carleman.Physical.multiplier_clm_norm",
         "Carleman.Physical.multiplier_clm_symmetric",
@@ -12552,13 +12654,24 @@
         "Carleman.Physical.conforming_physical_observation_uniform",
         "Carleman.Physical.conforming_observation_control_uniform"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "31d5e165a595849bc1c882523838aad69576b594",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39145512377/attempts/1",
+        "finished_at": "2026-10-18T16:35:30.206799+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "31d5e165a595849bc1c882523838aad69576b594"
+      },
       "blocker": null,
       "attempts": [
         "L2子空间真实势/质量和环境控制伴随已编译；条件观测入口清偿相应接口。继续真实L2(ω)控制空间的限制/零延拓。",
         "五模块32声明已定向编译；质量和右逆常数为1、势兼容内部构造，真实L2(ω)控制B/伴随和区域积分识别，统一观测加HUM从显式周期CE供应推出。"
       ],
-      "next_action": "完成真实L2子空间算子、L2(ω)限制与零延拓及Hilbert伴随，清偿观测/控制接口；仍保留具体网格和CE供应。",
+      "next_action": "本阶段已验收；T031从原热尺度推论内部供应周期载荷CE。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -12570,8 +12683,81 @@
         "recursive_axiom_audit": 3597,
         "new_explicit_declarations": 32,
         "declaration_artifact_sha256": "b9e082f122c1915770027940160e775cc7f8fe75e4134a0ad315e769ff054f93",
-        "independent_review": "pending fixed-SHA review and remote CI"
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "31d5e165a595849bc1c882523838aad69576b594",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C046"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "31d5e165a595849bc1c882523838aad69576b594",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T16:39:45+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4505d7407410d6b6116483d285c7627b6509ab22/governance/reviews/T030-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "31d5e165a595849bc1c882523838aad69576b594",
+        "checked_sha": "31d5e165a595849bc1c882523838aad69576b594",
+        "run_id": 39145512377,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3505,
+        "recursive_axiom_audit": 3597,
+        "new_explicit_declarations": 32,
+        "declaration_artifact_sha256": "b9e082f122c1915770027940160e775cc7f8fe75e4134a0ad315e769ff054f93",
+        "local_remote_artifacts_identical": true
       }
+    },
+    {
+      "id": "T031",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原热尺度转移到真实区域观测和HUM",
+      "goal_ids": [
+        "C047"
+      ],
+      "acceptance": [
+        "真实q³/载荷/观测范数与完整热能量精确识别",
+        "从原Corollary2.3内部供应周期CE及原4/5、2/5尺度",
+        "原数据到真实物理方程/控制，统一量词不变；同SHA独立验收且保留具体实现边界"
+      ],
+      "dependencies": [
+        "C012",
+        "C046"
+      ],
+      "branch": "main",
+      "base_commit": "31d5e165a595849bc1c882523838aad69576b594",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.Physical.physical_cube_le_nodeEnergy",
+        "Carleman.Physical.physical_load_eq_transfer",
+        "Carleman.Physical.physical_observation_eq_transfer",
+        "Carleman.Physical.physical_load_carleman_of_transfer",
+        "Carleman.Physical.conformingReconstruction",
+        "Carleman.Physical.conformingReconstruction_RH",
+        "Carleman.Physical.conformingLoad",
+        "Carleman.Physical.conformingWeightedState",
+        "Carleman.Physical.conformingWeightedState_definite",
+        "Carleman.Physical.conformingHeatGeometry",
+        "Carleman.Physical.ConformingHeatData",
+        "Carleman.Physical.conforming_heat_load_uniform",
+        "Carleman.Physical.physicalMeshScale",
+        "Carleman.Physical.physicalMeshScale_pos",
+        "Carleman.Physical.conforming_heat_observation_control_uniform"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "四模块15声明定向编译通过；最终入口已内部调用原热尺度推论并供应全部周期载荷CE，保持实际区域控制和原物理方程。"
+      ],
+      "next_action": "接通原热尺度推论与实际周期载荷CE，再到真实L2(ω)物理观测/HUM；具体P1/FD和连续热CE仍待供应。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {

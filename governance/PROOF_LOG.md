@@ -53,3 +53,5 @@
 | 2026-10-19 | T028 | `fba691ef4acce0af1d303f19cae7ceaccfe7eb20` | 完整qclass与实际Lp加权预算22声明独立验收PASS；三项CI及3482声明审计PASS；C044为AUXILIARY，原文12/26 | T029实际载荷与观测条件桥 |
 
 | 2026-10-19 | T029 | `f84745210c4ee35c2dd924f9c6ff04788047c28d` | 实际载荷CE到物理观测20声明独立验收PASS；三项CI和3524声明审计PASS；C045为CONDITIONAL，原文12/26 | T030真实L2子空间和控制伴随接口 |
+
+- T030 / C046：真实 L2(ω) 算子与观测/HUM 条件接口通过独立验收；32声明、3597项公理审计、同SHA CI。固定证明 `31d5e165a595849bc1c882523838aad69576b594`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4505d7407410d6b6116483d285c7627b6509ab22/governance/reviews/T030-local-acceptance.md)。T031接原热尺度，原文12/26不变。
