@@ -3677,6 +3677,25 @@ set_option pp.maxSteps 1000000
 #check @Carleman.allowedSquaredWeight_full_nodal_residual
 #print axioms Carleman.allowedSquaredWeight_full_nodal_residual
 
+#check @Carleman.supported_lipschitz_product
+#print axioms Carleman.supported_lipschitz_product
+#check @Carleman.SimplicialPartition.squared_nodal_product_lipschitz
+#print axioms Carleman.SimplicialPartition.squared_nodal_product_lipschitz
+#check @Carleman.compactLipschitz_restricted_jet_exists
+#print axioms Carleman.compactLipschitz_restricted_jet_exists
+#check @Carleman.SimplicialPartition.squared_nodal_residual_weak_jet
+#print axioms Carleman.SimplicialPartition.squared_nodal_residual_weak_jet
+#check @Carleman.allowedSquaredWeight_full_weak_residual
+#print axioms Carleman.allowedSquaredWeight_full_weak_residual
+#check @Carleman.SimplicialPartition.nodalProductResidual_lp
+#print axioms Carleman.SimplicialPartition.nodalProductResidual_lp
+#check @Carleman.allowed_weight_sq_integral
+#print axioms Carleman.allowed_weight_sq_integral
+#check @Carleman.allowed_inverse_weight_sq_integral
+#print axioms Carleman.allowed_inverse_weight_sq_integral
+#check @Carleman.allowed_full_nodal_weak_norms
+#print axioms Carleman.allowed_full_nodal_weak_norms
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

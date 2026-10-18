@@ -452,3 +452,10 @@ public import Carleman.Weights.SquaredNodalCell
 public import Carleman.Weights.SquaredNodalGlobal
 public import Carleman.Spatial.FullNodalGradient
 public import Carleman.Weights.FullNodalResidual
+
+public import Carleman.Spatial.SupportedLipschitzProduct
+public import Carleman.Spatial.NodalResidualSobolev
+public import Carleman.Weights.FullWeakNodalResidual
+public import Carleman.Spatial.NodalResidualLp
+public import Carleman.Weights.SquaredWeightNorm
+public import Carleman.Weights.FullNodalWeakNorms
