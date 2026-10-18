@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T078",
-    "supervisor_checked_at": "2026-10-18T23:34:51.302378+00:00",
-    "next_action": "固定SHA独立验收真实面迹线性性及闭面仿射核校正41声明；继续全部H2零迹逼近组合及物理尺寸统一缩放。",
+    "current_task_id": "T079",
+    "supervisor_checked_at": "2026-10-18T23:41:44.621678+00:00",
+    "next_action": "固定SHA独立验收参考立方体全部弱H2边界仿射逼近15声明；继续原物理盒子的面迹与仿射误差尺度统一。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T23:34:51.302378+00:00"
+    "last_activity_at": "2026-10-18T23:41:44.621678+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "8c4571e511be4cb48a8fd9b76c11ddba9a16e975",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39176339765/attempts/1",
-      "finished_at": "2026-10-18T23:26:22.716650+00:00",
+      "checked_sha": "d0fb274fb6f24830fd03428cddb86bbf9f034474",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39177128793/attempts/1",
+      "finished_at": "2026-10-18T23:37:07.712911+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "8c4571e511be4cb48a8fd9b76c11ddba9a16e975"
+      "source_head_sha": "d0fb274fb6f24830fd03428cddb86bbf9f034474"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "8c4571e511be4cb48a8fd9b76c11ddba9a16e975",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39176339765/attempts/1",
-      "finished_at": "2026-10-18T23:26:22.716650+00:00",
+      "checked_sha": "d0fb274fb6f24830fd03428cddb86bbf9f034474",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39177128793/attempts/1",
+      "finished_at": "2026-10-18T23:37:07.712911+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "8c4571e511be4cb48a8fd9b76c11ddba9a16e975"
+      "source_head_sha": "d0fb274fb6f24830fd03428cddb86bbf9f034474"
     }
   },
   "milestones": [
@@ -9134,7 +9134,7 @@
       "paper_ref": "Auxiliary genuine face-trace linearity and finite-dimensional closed-face affine correction on the reference cube in Appendix B Lemma B1",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "lem:fd-boundary-affine"
@@ -9182,16 +9182,117 @@
         "Carleman.affineBox_uniform_h1_correction_rss",
         "Carleman.unitCube_uniform_affine_correction"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "d0fb274fb6f24830fd03428cddb86bbf9f034474",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "d0fb274fb6f24830fd03428cddb86bbf9f034474",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39177128793/attempts/1",
+        "finished_at": "2026-10-18T23:37:07.712911+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "d0fb274fb6f24830fd03428cddb86bbf9f034474"
+      },
+      "semantic_review": {
+        "checked_sha": "d0fb274fb6f24830fd03428cddb86bbf9f034474",
+        "declarations": [
+          "Carleman.fiberEndpoint_integrable_slices",
+          "Carleman.fiberEndpointLp_add",
+          "Carleman.fiberEndpointLp_smul",
+          "Carleman.fiberEndpointLinearMap",
+          "Carleman.finiteDimensional_kernel_correction",
+          "Carleman.finiteFamily_kernel_correction",
+          "Carleman.coordinateBoxTransportLinearMap",
+          "Carleman.coordinateBoxTransportLinearMap_apply",
+          "Carleman.coordinateBoxFaceLinearMap",
+          "Carleman.coordinateBoxFaceLinearMap_apply",
+          "Carleman.weakJetBoxFaceLinearMap",
+          "Carleman.weakJetBoxFaceLinearMap_apply",
+          "Carleman.AffineCoefficients",
+          "Carleman.affineCoefficientPolynomial",
+          "Carleman.affineCoefficientPolynomial_apply",
+          "Carleman.affineBoxValueMap",
+          "Carleman.affineBoxValueMap_ae",
+          "Carleman.affineBoxDerivativeMap",
+          "Carleman.affineBoxDerivativeMap_weak",
+          "Carleman.affineBoxFaceMap",
+          "Carleman.affineBoxFaceMap_ae",
+          "Carleman.closedCoordinateBox",
+          "Carleman.closure_openCoordinateBox",
+          "Carleman.coordinateFacePoint_continuous",
+          "Carleman.coordinateClosedFace",
+          "Carleman.coordinateClosedFace_eq_image",
+          "Carleman.affineBoxFaceMap_eq_zero_iff",
+          "Carleman.affineBoxSelectedFaceMap",
+          "Carleman.affineBoxSelectedFaceMap_apply",
+          "Carleman.affineBoxSelectedFaceMap_kernel",
+          "Carleman.affineBox_uniform_kernel_correction",
+          "Carleman.affineBoxSelectedFaceMap_norm_le_rss",
+          "Carleman.affineCoefficientPolynomial_surjective",
+          "Carleman.affineBoxGradientMap",
+          "Carleman.affineBoxJet",
+          "Carleman.affineBoxJet_value",
+          "Carleman.affineBoxJet_gradient",
+          "Carleman.affineBox_bulk_norm_bound",
+          "Carleman.affineBox_uniform_h1_correction",
+          "Carleman.affineBox_uniform_h1_correction_rss",
+          "Carleman.unitCube_uniform_affine_correction"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/fd3070961400b978b99936215f995fed534400ba/governance/reviews/T078-local-acceptance.md",
+        "reviewed_at": "2026-10-18T23:39:14+00:00",
+        "reviewer": "/root/accept_section3; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C093",
         "C090"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "真实端点迹及原长方体迹的线性性，全部仿射系数与真实Lp值/弱导数/面迹映射，正边长闭面核精确识别。有限维实际range有界原像给所有面集合统一校正；单位立方体真实L2与全梯度误差由面迹平方和控制，常数仅依赖维数。尚待与全部H2逼近及零迹组合、物理尺寸统一缩放，原文12/26。"
+      "scope_notes": "真实端点迹及原长方体迹的线性性，全部仿射系数与真实Lp值/弱导数/面迹映射，正边长闭面核精确识别。有限维实际range有界原像给所有面集合统一校正；单位立方体真实L2与全梯度误差由面迹平方和控制，常数仅依赖维数。尚待与全部H2逼近及零迹组合、物理尺寸统一缩放，原文12/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C095",
+      "title": "参考立方体全部弱H2的边界仿射逼近",
+      "paper_ref": "Auxiliary full weak H2 boundary-affine approximation on the reference cube in Appendix B Lemma B1, pending uniform physical-box scaling",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "lem:fd-boundary-affine"
+      ],
+      "lean_declarations": [
+        "Carleman.openCoordinateBox_convex",
+        "Carleman.openCoordinateBox_nonempty",
+        "Carleman.openCoordinateBox_volume_pos",
+        "Carleman.unitCube_diameter_bound",
+        "Carleman.affineBoxJetLinearMap",
+        "Carleman.affineBoxJetLinearMap_apply",
+        "Carleman.weakJetBoxFaceLinearMap_affine",
+        "Carleman.unitCubeFace_norm_le",
+        "Carleman.h1_value_gradient_add_bound",
+        "Carleman.h2AffineResidual_eq_jet_sub",
+        "Carleman.unitCube_h2_affine_approximation",
+        "Carleman.unitCube_selected_affine_trace_bound",
+        "Carleman.unitCube_h1_boundary_correction",
+        "Carleman.unitCube_h2_boundary_affine",
+        "Carleman.unitCube_h2_boundary_affine_actual"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C094",
+        "C090"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实单位立方体凸性正体积直径、全部仿射H1 jet线性及实际面迹身份；原全部弱H2无约束逼近经实际零迹与闭面核校正组合，常数仅依赖维数且对任意面集合统一。返回实际仿射多项式与真实H1残差，值及全梯度由原Hessian半范数控制。原物理网格h2统一缩放及B2尚待，原文12/26。"
     }
   ],
   "events": [
@@ -9662,6 +9763,11 @@
       "at": "2026-10-18T23:34:51.302378+00:00",
       "public_summary": "原欧氏长方体弱面迹42声明独立验收PASS；实际面迹线性结构与单位立方体闭面仿射校正41声明全库通过，原文12/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9b87180fe812de95ccf108bea09e4b823230fd83/governance/reviews/T077-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T23:41:44.621678+00:00",
+      "public_summary": "真实面迹线性与闭面仿射核校正41声明独立验收PASS；参考立方体全部弱H2边界逼近15声明全库通过，原文12/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/fd3070961400b978b99936215f995fed534400ba/governance/reviews/T078-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -9869,7 +9975,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f35bbedd6a6e45dbc9ac37f4210de867c3f8d98f/governance/reviews/T076-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39175437967/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9b87180fe812de95ccf108bea09e4b823230fd83/governance/reviews/T077-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39176339765/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39176339765/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/fd3070961400b978b99936215f995fed534400ba/governance/reviews/T078-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39177128793/attempts/1"
     ]
   },
   "schedules": [
@@ -21592,10 +21700,10 @@
       ],
       "branch": "main",
       "base_commit": "8c4571e511be4cb48a8fd9b76c11ddba9a16e975",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "d0fb274fb6f24830fd03428cddb86bbf9f034474",
+      "merge_commit": "d0fb274fb6f24830fd03428cddb86bbf9f034474",
       "lean_declarations": [
         "Carleman.fiberEndpoint_integrable_slices",
         "Carleman.fiberEndpointLp_add",
@@ -21639,12 +21747,23 @@
         "Carleman.affineBox_uniform_h1_correction_rss",
         "Carleman.unitCube_uniform_affine_correction"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "d0fb274fb6f24830fd03428cddb86bbf9f034474",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39177128793/attempts/1",
+        "finished_at": "2026-10-18T23:37:07.712911+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "d0fb274fb6f24830fd03428cddb86bbf9f034474"
+      },
       "blocker": null,
       "attempts": [
         "七模块41声明定向3303 jobs、全库3712 jobs通过，5600声明递归公理审计PASS。"
       ],
-      "next_action": "固定SHA独立验收真实面迹线性性及闭面仿射核校正41声明；继续全部H2零迹逼近组合及物理尺寸统一缩放。",
+      "next_action": "真实面迹线性与闭面仿射核校正已独立验收；继续全部弱H2参考域逼近及物理尺寸统一。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -21656,6 +21775,95 @@
         "recursive_axiom_audit": 5600,
         "new_explicit_declarations": 41,
         "declaration_artifact_sha256": "85db3f2c37a61a7c87a1a50ad05c67c49ece104fdd121c0829ce9e1250a5f42d",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "d0fb274fb6f24830fd03428cddb86bbf9f034474",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_section3",
+          "claim_ids": [
+            "C094"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "d0fb274fb6f24830fd03428cddb86bbf9f034474",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T23:39:14+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/fd3070961400b978b99936215f995fed534400ba/governance/reviews/T078-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "d0fb274fb6f24830fd03428cddb86bbf9f034474",
+        "checked_sha": "d0fb274fb6f24830fd03428cddb86bbf9f034474",
+        "run_id": 39177128793,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3712,
+        "recursive_axiom_audit": 5600,
+        "new_explicit_declarations": 41,
+        "declaration_artifact_sha256": "85db3f2c37a61a7c87a1a50ad05c67c49ece104fdd121c0829ce9e1250a5f42d",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T079",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "参考立方体全部弱H2的边界仿射逼近",
+      "goal_ids": [
+        "C095"
+      ],
+      "acceptance": [
+        "单位立方体真实几何与弱H2逼近前提内部清偿，无新增光滑或逼近前提",
+        "仿射真实H1 jet线性、全部弱导数唯一性及面迹身份精确",
+        "原所选面零迹给仿射面迹为残差迹负值，有限面族常数统一",
+        "任意原全部弱H2和任意面集合，常数先于状态与面集合量化",
+        "输出实际仿射多项式在整个闭面处处零、真实H1残差值类等于原u-p和正确Hessian半范数界；保留物理尺度义务"
+      ],
+      "dependencies": [
+        "C094",
+        "C090"
+      ],
+      "branch": "main",
+      "base_commit": "d0fb274fb6f24830fd03428cddb86bbf9f034474",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.openCoordinateBox_convex",
+        "Carleman.openCoordinateBox_nonempty",
+        "Carleman.openCoordinateBox_volume_pos",
+        "Carleman.unitCube_diameter_bound",
+        "Carleman.affineBoxJetLinearMap",
+        "Carleman.affineBoxJetLinearMap_apply",
+        "Carleman.weakJetBoxFaceLinearMap_affine",
+        "Carleman.unitCubeFace_norm_le",
+        "Carleman.h1_value_gradient_add_bound",
+        "Carleman.h2AffineResidual_eq_jet_sub",
+        "Carleman.unitCube_h2_affine_approximation",
+        "Carleman.unitCube_selected_affine_trace_bound",
+        "Carleman.unitCube_h1_boundary_correction",
+        "Carleman.unitCube_h2_boundary_affine",
+        "Carleman.unitCube_h2_boundary_affine_actual"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "四模块15声明定向3352 jobs、全库3716 jobs通过，5631声明递归公理审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收参考立方体全部弱H2边界仿射逼近15声明；继续原物理盒子的面迹与仿射误差尺度统一。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3716,
+        "recursive_axiom_audit": 5631,
+        "new_explicit_declarations": 15,
+        "declaration_artifact_sha256": "e81a2110bc792e0977ee770cd3b4f904adf91ffd6e29f155656184c68b780f26",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

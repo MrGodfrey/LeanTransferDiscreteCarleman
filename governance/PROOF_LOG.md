@@ -149,3 +149,5 @@
 - T076 / C092：原完整乘积弱切片和实际双面迹16声明独立验收PASS，5367声明递归审计、同SHA三项CI及逐字节相同远端产物。 固定证明 `101b95e1b988d17332c7106c2be2aa945b213b3a`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f35bbedd6a6e45dbc9ac37f4210de867c3f8d98f/governance/reviews/T076-local-acceptance.md)。原文12/26，T077继续原欧氏长方体的真实弱面迹。
 
 - T077 / C093：原欧氏长方体真实弱面迹42声明独立验收PASS，5471声明递归审计、同SHA三项CI及逐字节相同远端产物。 固定证明 `8c4571e511be4cb48a8fd9b76c11ddba9a16e975`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9b87180fe812de95ccf108bea09e4b823230fd83/governance/reviews/T077-local-acceptance.md)。原文12/26，T078继续真实面迹线性结构与闭面仿射核校正。
+
+- T078 / C094：真实面迹线性与闭面仿射核校正41声明独立验收PASS，5600声明递归审计、同SHA三项CI及逐字节相同远端产物。 固定证明 `d0fb274fb6f24830fd03428cddb86bbf9f034474`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/fd3070961400b978b99936215f995fed534400ba/governance/reviews/T078-local-acceptance.md)。原文12/26，T079继续参考立方体全部弱H2的边界仿射逼近。
