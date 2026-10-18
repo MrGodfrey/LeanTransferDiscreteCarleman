@@ -782,9 +782,13 @@
       "claim_ids": [
         "C041"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.filterRayleigh",
+        "Carleman.Physical.filterConstant",
+        "Carleman.Physical.filter_reverse"
+      ],
       "declaration_version": null,
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": null,

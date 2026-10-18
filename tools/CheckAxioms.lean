@@ -2042,6 +2042,45 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Physical.physical_duality_lemma
 #print axioms Carleman.Physical.physical_duality_lemma
 
+#check @Carleman.Physical.rayleigh
+#print axioms Carleman.Physical.rayleigh
+#check @Carleman.Physical.rayleigh_nonneg
+#print axioms Carleman.Physical.rayleigh_nonneg
+#check @Carleman.Physical.rayleigh_step_normalized
+#print axioms Carleman.Physical.rayleigh_step_normalized
+#check @Carleman.Physical.rayleigh_smul
+#print axioms Carleman.Physical.rayleigh_smul
+#check @Carleman.Physical.rayleigh_step
+#print axioms Carleman.Physical.rayleigh_step
+#check @Carleman.Physical.positive_form_cauchy
+#print axioms Carleman.Physical.positive_form_cauchy
+#check @Carleman.Physical.positive_resolvent_lower
+#print axioms Carleman.Physical.positive_resolvent_lower
+#check @Carleman.Physical.perturbed_resolvent_lower
+#print axioms Carleman.Physical.perturbed_resolvent_lower
+#check @Carleman.Physical.adjoint_nonzero
+#print axioms Carleman.Physical.adjoint_nonzero
+#check @Carleman.Physical.exponential_recurrence
+#print axioms Carleman.Physical.exponential_recurrence
+#check @Carleman.Physical.adjoint_rayleigh_bound
+#print axioms Carleman.Physical.adjoint_rayleigh_bound
+#check @Carleman.Physical.adjoint_reverse_rayleigh
+#print axioms Carleman.Physical.adjoint_reverse_rayleigh
+#check @Carleman.Physical.filterRayleigh
+#print axioms Carleman.Physical.filterRayleigh
+#check @Carleman.Physical.rayleigh_le_opNorm
+#print axioms Carleman.Physical.rayleigh_le_opNorm
+#check @Carleman.Physical.filterRayleigh_bot
+#print axioms Carleman.Physical.filterRayleigh_bot
+#check @Carleman.Physical.rayleigh_le_filterRayleigh
+#print axioms Carleman.Physical.rayleigh_le_filterRayleigh
+#check @Carleman.Physical.filterConstant
+#print axioms Carleman.Physical.filterConstant
+#check @Carleman.Physical.filterConstant_pos
+#print axioms Carleman.Physical.filterConstant_pos
+#check @Carleman.Physical.filter_reverse
+#print axioms Carleman.Physical.filter_reverse
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

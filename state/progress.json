@@ -12,10 +12,10 @@
     "state": "RUNNING",
     "current_task_id": "T025",
     "supervisor_checked_at": "2026-10-18T15:24:55.962113+00:00",
-    "next_action": "接通原Rayleigh商单步增长、完整时间迭代与终端子空间上确界，完成原Lemma7.4再独立验收。",
+    "next_action": "推送固定版本main并独立Agent验收完整原Lemma7.4，核实同SHA真实CI。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T15:24:55.962113+00:00"
+    "last_activity_at": "2026-10-18T15:28:23.443727+00:00"
   },
   "verification": {
     "latest_build": {
@@ -4712,12 +4712,32 @@
       "paper_ref": "Lemma7.4",
       "milestone": "M6b",
       "extra_hypotheses": [],
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "paper_labels": [
         "lem:filter-reverse"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.rayleigh",
+        "Carleman.Physical.rayleigh_nonneg",
+        "Carleman.Physical.rayleigh_step_normalized",
+        "Carleman.Physical.rayleigh_smul",
+        "Carleman.Physical.rayleigh_step",
+        "Carleman.Physical.positive_form_cauchy",
+        "Carleman.Physical.positive_resolvent_lower",
+        "Carleman.Physical.perturbed_resolvent_lower",
+        "Carleman.Physical.adjoint_nonzero",
+        "Carleman.Physical.exponential_recurrence",
+        "Carleman.Physical.adjoint_rayleigh_bound",
+        "Carleman.Physical.adjoint_reverse_rayleigh",
+        "Carleman.Physical.filterRayleigh",
+        "Carleman.Physical.rayleigh_le_opNorm",
+        "Carleman.Physical.filterRayleigh_bot",
+        "Carleman.Physical.rayleigh_le_filterRayleigh",
+        "Carleman.Physical.filterConstant",
+        "Carleman.Physical.filterConstant_pos",
+        "Carleman.Physical.filter_reverse"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -4725,7 +4745,8 @@
         "C040"
       ],
       "blocker": null,
-      "pr_url": null
+      "pr_url": null,
+      "scope_notes": "完整原Lemma7.4候选；真实Rayleigh上确界、完整伴随轨迹、原KF，不要求F不变。待同SHA CI及独立Agent验收。"
     }
   ],
   "events": [
@@ -11347,14 +11368,45 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.rayleigh",
+        "Carleman.Physical.rayleigh_nonneg",
+        "Carleman.Physical.rayleigh_step_normalized",
+        "Carleman.Physical.rayleigh_smul",
+        "Carleman.Physical.rayleigh_step",
+        "Carleman.Physical.positive_form_cauchy",
+        "Carleman.Physical.positive_resolvent_lower",
+        "Carleman.Physical.perturbed_resolvent_lower",
+        "Carleman.Physical.adjoint_nonzero",
+        "Carleman.Physical.exponential_recurrence",
+        "Carleman.Physical.adjoint_rayleigh_bound",
+        "Carleman.Physical.adjoint_reverse_rayleigh",
+        "Carleman.Physical.filterRayleigh",
+        "Carleman.Physical.rayleigh_le_opNorm",
+        "Carleman.Physical.filterRayleigh_bot",
+        "Carleman.Physical.rayleigh_le_filterRayleigh",
+        "Carleman.Physical.filterConstant",
+        "Carleman.Physical.filterConstant_pos",
+        "Carleman.Physical.filter_reverse"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "真实Rayleigh单步增长已定向编译；正算子逆界已证明，正在消除编译提示并连接实际反向轨迹迭代。"
+        "真实Rayleigh单步增长已定向编译；正算子逆界已证明，正在消除编译提示并连接实际反向轨迹迭代。",
+        "四模块19声明完整原反向界已定向编译；Rayleigh增长、正算子逆界、完整递推和原子空间上确界已连接。",
+        "完整原Lemma7.4四模块19声明全库构建通过；3471jobs/3287声明递归公理审计，仅标准基础公理。"
       ],
-      "next_action": "接通原Rayleigh商单步增长、完整时间迭代与终端子空间上确界，完成原Lemma7.4再独立验收。",
-      "integration_mode": "direct-main"
+      "next_action": "推送固定版本main并独立Agent验收完整原Lemma7.4，核实同SHA真实CI。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "checked_at": "2026-10-18T15:28:23.443727+00:00",
+        "result": "PASS",
+        "build_jobs": 3471,
+        "recursive_axiom_audit": 3287,
+        "new_explicit_declarations": 19,
+        "audit_sha256": "881be53c03d27f95b2a111e6ab6eb0cd9c07f39dd1027ba4930964e96372dba2",
+        "note": "working tree precommit, not remote CI"
+      }
     }
   ],
   "private_maintenance": {

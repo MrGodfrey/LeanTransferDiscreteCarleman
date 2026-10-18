@@ -256,3 +256,8 @@ public import Carleman.Control.PhysicalDuality
 public import Carleman.Control.PhysicalEnergy
 public import Carleman.Control.PhysicalEquations
 public import Carleman.Control.PhysicalLemma
+
+public import Carleman.Control.RayleighStep
+public import Carleman.Control.PositiveResolvent
+public import Carleman.Control.ReverseIteration
+public import Carleman.Control.FilterReverse

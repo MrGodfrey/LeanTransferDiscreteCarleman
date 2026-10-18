@@ -696,3 +696,7 @@ C008/P009 是完整 Lemma4.1 候选，精确 main CI 核实后登记 BUILT/PAPER
 ## T024：原物理时间基础引理（等待固定版本独立验收）
 
 `Physical.physical_duality_lemma` 对原N+1物理节点和N控制步，从Section7的有限维非负自伴刚度、范数≤M的自伴势、范数≤1的控制算子给出完整初末值唯一解、精确反向指数界、统一C(T,M)控制L2能量界及原p^(n−1)对偶。最终方程保留真实Hilbert伴随；不存在周期回绕或状态限制。具体有限元/差分实例仍须各自验收。映射见 `analysis/T024-physical-duality.md`。
+
+## T025：原滤波反向界（等待固定版本独立验收）
+
+`Physical.filter_reverse` 从真实物理伴随方程和原非负刚度/有界势，证明原Lemma7.4的 `exp(TΛ_F+MT+M²T²/2)` 反向范数界。Λ_F为原非零子空间向量Rayleigh商的真实上确界；不要求A或势保持F。Rayleigh单步增长和正算子逆界均在内部证明。详细原文映射见 `analysis/T025-filter-reverse.md`。
