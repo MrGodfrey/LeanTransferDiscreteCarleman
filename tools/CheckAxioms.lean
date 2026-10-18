@@ -2826,6 +2826,61 @@ set_option pp.maxSteps 1000000
 #check @Carleman.SimplicialPartition.nodalLp_mem_sobolev
 #print axioms Carleman.SimplicialPartition.nodalLp_mem_sobolev
 
+#check @Carleman.SimplicialPartition.nodalDerivativeFunction_zero_outside
+#print axioms Carleman.SimplicialPartition.nodalDerivativeFunction_zero_outside
+#check @Carleman.SimplicialPartition.nodalFunction_hasFDerivAt_global_ae
+#print axioms Carleman.SimplicialPartition.nodalFunction_hasFDerivAt_global_ae
+#check @Carleman.SimplicialPartition.nodalDerivativeFunction_global_memLp
+#print axioms Carleman.SimplicialPartition.nodalDerivativeFunction_global_memLp
+#check @Carleman.SimplicialPartition.nodalGlobalDerivativeLp
+#print axioms Carleman.SimplicialPartition.nodalGlobalDerivativeLp
+#check @Carleman.SimplicialPartition.nodalGlobalDerivativeLp_ae
+#print axioms Carleman.SimplicialPartition.nodalGlobalDerivativeLp_ae
+#check @Carleman.SimplicialPartition.nodalFunction_global_memLp
+#print axioms Carleman.SimplicialPartition.nodalFunction_global_memLp
+#check @Carleman.SimplicialPartition.nodalGlobalLp
+#print axioms Carleman.SimplicialPartition.nodalGlobalLp
+#check @Carleman.SimplicialPartition.nodalGlobalLp_ae
+#print axioms Carleman.SimplicialPartition.nodalGlobalLp_ae
+#check @Carleman.weakSpatialDerivative_of_lipschitz_full
+#print axioms Carleman.weakSpatialDerivative_of_lipschitz_full
+#check @Carleman.lipschitzGlobalJet
+#print axioms Carleman.lipschitzGlobalJet
+#check @Carleman.lipschitzGlobalJet_value
+#print axioms Carleman.lipschitzGlobalJet_value
+#check @Carleman.SimplicialPartition.nodalGlobalSobolevJet
+#print axioms Carleman.SimplicialPartition.nodalGlobalSobolevJet
+#check @Carleman.SimplicialPartition.nodalGlobalSobolevJet_value
+#print axioms Carleman.SimplicialPartition.nodalGlobalSobolevJet_value
+#check @Carleman.SimplicialPartition.nodalGlobalLp_mem_sobolev
+#print axioms Carleman.SimplicialPartition.nodalGlobalLp_mem_sobolev
+#check @Carleman.SpatialTest.memLp_fderiv
+#print axioms Carleman.SpatialTest.memLp_fderiv
+#check @Carleman.SpatialTest.fderivLp
+#print axioms Carleman.SpatialTest.fderivLp
+#check @Carleman.SpatialTest.fderivLp_ae
+#print axioms Carleman.SpatialTest.fderivLp_ae
+#check @Carleman.SpatialTest.sobolevJet
+#print axioms Carleman.SpatialTest.sobolevJet
+#check @Carleman.SpatialTest.sobolevJet_value
+#print axioms Carleman.SpatialTest.sobolevJet_value
+#check @Carleman.dirichletJetSpace
+#print axioms Carleman.dirichletJetSpace
+#check @Carleman.dirichletSubspace
+#print axioms Carleman.dirichletSubspace
+#check @Carleman.dirichletSubspace_sobolev
+#print axioms Carleman.dirichletSubspace_sobolev
+#check @Carleman.test_mem_dirichletJetSpace
+#print axioms Carleman.test_mem_dirichletJetSpace
+#check @Carleman.test_mem_dirichletSubspace
+#print axioms Carleman.test_mem_dirichletSubspace
+#check @Carleman.mem_dirichletJetSpace_iff
+#print axioms Carleman.mem_dirichletJetSpace_iff
+#check @Carleman.dirichletSubspace_closed
+#print axioms Carleman.dirichletSubspace_closed
+#check @Carleman.dirichletSubspace_dense
+#print axioms Carleman.dirichletSubspace_dense
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

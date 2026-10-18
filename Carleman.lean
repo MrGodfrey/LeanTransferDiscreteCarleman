@@ -337,3 +337,9 @@ public import Carleman.Spatial.LipschitzWeakDerivative
 public import Carleman.Spatial.SimplicialNodalWeakDerivative
 public import Carleman.Spatial.FirstOrderSobolevJet
 public import Carleman.Spatial.SimplicialNodalSobolev
+
+public import Carleman.Spatial.SimplicialGlobalDerivative
+public import Carleman.Spatial.LipschitzGlobalSobolev
+public import Carleman.Spatial.SimplicialGlobalSobolev
+public import Carleman.Spatial.SpatialTestSobolev
+public import Carleman.Spatial.DirichletSpace

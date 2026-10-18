@@ -808,3 +808,9 @@ X为真实完备（最终控制入口为有限维）L2子空间，R=I为包含�
 八模块39声明，AUXILIARY，不提升P011。实际局部AffineMap的CLM导数经内部邻域等值给全局a.e.经典导数；零测骨架与有限indicator和给真实L2导数字段。BoundaryFitted要求边界单元交由边界顶点生成，边界节点零推出全局连续零延拓。有限个同常数Lipschitz函数的连续选择仍为同常数Lipschitz，经局部排除与直线段liminf斜率论证证明；实例化实际局部仿射函数及零函数，得原零延拓全局Lipschitz。
 
 实际差商积分分部推出对全部SpatialTest及任意方向的原弱导数身份；坐标导数组装真实WeakSobolevJet，value准确等于nodalLp，故进入原sobolevSubspace H1。所用Lipschitz常数可依赖网格/节点值，仅为成员证明，不是统一逆界。H01闭包身份、H2连续代表、局部误差、具体网格和连续Dirichlet热实例仍待。见`analysis/T038-nodal-h1.md`。
+
+## T039：全空间零延拓H1与Dirichlet闭包空间
+
+五模块27声明，AUXILIARY，不提升P011。实际节点函数及其逐片CLM导数在全空间volume下的Lp类、a.e.导数和完整弱H1身份均内部证明，有限体积由真实紧单元供应。原全部SpatialTest也构造真实fderivLp与H1 jet，value精确恢复测试函数Lp类。
+
+Dirichlet空间定义为这些紧支光滑jet的线性张成在真实H1图范数下的闭包，再经value实现为标量L2子空间；证明包含于H1、包含全部测试、开集上在H1中闭合且在L2中稠密。未把连续零边界直接等同于H01闭包；节点插值的H01成员、Poincare/实际梯度形式和数值估计仍待。见`analysis/T039-dirichlet-closure.md`。
