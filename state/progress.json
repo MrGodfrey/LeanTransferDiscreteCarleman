@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T037",
-    "supervisor_checked_at": "2026-10-18T17:44:59.325250+00:00",
-    "next_action": "提交固定证明SHA并启动独立Agent核对全局节点插值，再绑定同SHA远端CI。",
+    "current_task_id": "T038",
+    "supervisor_checked_at": "2026-10-18T17:56:41.413374+00:00",
+    "next_action": "实际单元导数的a.e.公式/L2存在及边界零延拓连续已定向构建；继续证明Lipschitz界并连接分布弱导数。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T17:47:07.584289+00:00"
+    "last_activity_at": "2026-10-18T17:56:41.413374+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "885add73e59dd08e5609597cac3c2ddd7fd395bd",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39150398479/attempts/1",
-      "finished_at": "2026-10-18T17:39:42.379331+00:00",
+      "checked_sha": "6923ae3b24d9590bd0afb4e66830b30fe49165d3",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39151180933/attempts/1",
+      "finished_at": "2026-10-18T17:49:51.670221+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "885add73e59dd08e5609597cac3c2ddd7fd395bd"
+      "source_head_sha": "6923ae3b24d9590bd0afb4e66830b30fe49165d3"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "885add73e59dd08e5609597cac3c2ddd7fd395bd",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39150398479/attempts/1",
-      "finished_at": "2026-10-18T17:39:42.379331+00:00",
+      "checked_sha": "6923ae3b24d9590bd0afb4e66830b30fe49165d3",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39151180933/attempts/1",
+      "finished_at": "2026-10-18T17:49:51.670221+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "885add73e59dd08e5609597cac3c2ddd7fd395bd"
+      "source_head_sha": "6923ae3b24d9590bd0afb4e66830b30fe49165d3"
     }
   },
   "milestones": [
@@ -5900,7 +5900,7 @@
       "paper_ref": "Section6 P1 continuous nodal interpolation construction",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:p1"
@@ -5937,15 +5937,108 @@
         "Carleman.SimplicialPartition.nodalLp_smul",
         "Carleman.SimplicialPartition.nodalLpLinearMap"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "6923ae3b24d9590bd0afb4e66830b30fe49165d3",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "6923ae3b24d9590bd0afb4e66830b30fe49165d3",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39151180933/attempts/1",
+        "finished_at": "2026-10-18T17:49:51.670221+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "6923ae3b24d9590bd0afb4e66830b30fe49165d3"
+      },
+      "semantic_review": {
+        "checked_sha": "6923ae3b24d9590bd0afb4e66830b30fe49165d3",
+        "declarations": [
+          "Carleman.SimplicialPartition.FaceMatching",
+          "Carleman.SimplicialPartition.localNodal",
+          "Carleman.SimplicialPartition.localNodal_vertex",
+          "Carleman.SimplicialPartition.localNodal_agree",
+          "Carleman.SimplicialPartition.nodalFunction",
+          "Carleman.SimplicialPartition.nodalFunction_on_cell",
+          "Carleman.SimplicialPartition.nodalFunction_vertex",
+          "Carleman.SimplicialPartition.nodalFunction_continuousOn",
+          "Carleman.SimplicialPartition.nodalFunction_reproduces",
+          "Carleman.affinePolynomialCoefficients",
+          "Carleman.affinePolynomialCoefficients_apply",
+          "Carleman.SimplicialPartition.nodalBound",
+          "Carleman.SimplicialPartition.nodalBound_nonneg",
+          "Carleman.SimplicialPartition.nodalBound_vertex",
+          "Carleman.SimplicialPartition.nodalFunction_bound",
+          "Carleman.SimplicialPartition.nodalFunction_memLp",
+          "Carleman.SimplicialPartition.nodalLp",
+          "Carleman.SimplicialPartition.nodalLp_ae",
+          "Carleman.SimplicialPartition.nodalLp_piecewise_affine",
+          "Carleman.SimplicialPartition.nodalFunction_congr",
+          "Carleman.SimplicialPartition.nodalFunction_add",
+          "Carleman.SimplicialPartition.nodalFunction_smul",
+          "Carleman.SimplicialPartition.nodalFunctionLinearMap",
+          "Carleman.SimplicialPartition.nodalFunction_unique",
+          "Carleman.SimplicialPartition.nodalFunction_idempotent",
+          "Carleman.SimplicialPartition.nodalFunction_abs_le",
+          "Carleman.SimplicialPartition.nodalLp_congr",
+          "Carleman.SimplicialPartition.nodalLp_add",
+          "Carleman.SimplicialPartition.nodalLp_smul",
+          "Carleman.SimplicialPartition.nodalLpLinearMap"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8e2009563a2a52e3ac5dc9923a35189cec8906fa/governance/reviews/T037-local-acceptance.md",
+        "reviewed_at": "2026-10-18T17:54:03+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C052"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "实际共同顶点凸包上的面匹配给局部仿射插值一致；构造全局连续函数及真实L2类并证明线性/节点保持/唯一性/幂等。输入为点态函数，不在Lp类上取点值；未证明H1、零迹、H2连续代表或误差，不提升P011。"
+      "scope_notes": "实际共同顶点凸包上的面匹配给局部仿射插值一致；构造全局连续函数及真实L2类并证明线性/节点保持/唯一性/幂等。输入为点态函数，不在Lp类上取点值；未证明H1、零迹、H2连续代表或误差，不提升P011。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C054",
+      "title": "节点插值的实际导数与边界零延拓",
+      "paper_ref": "Section6 P1 interpolation weak-gradient and Dirichlet realization",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:p1"
+      ],
+      "lean_declarations": [
+        "Carleman.SimplicialPartition.localNodalDerivative",
+        "Carleman.SimplicialPartition.localNodalDerivative_apply",
+        "Carleman.SimplicialPartition.localNodal_hasFDerivAt",
+        "Carleman.SimplicialPartition.nodalFunction_hasFDerivAt_on_interior",
+        "Carleman.SimplicialPartition.ae_mem_cell_interior",
+        "Carleman.SimplicialPartition.nodalDerivativeFunction",
+        "Carleman.SimplicialPartition.nodalDerivativeFunction_on_interior",
+        "Carleman.SimplicialPartition.nodalFunction_hasFDerivAt_ae",
+        "Carleman.SimplicialPartition.nodalDerivativeFunction_memLp",
+        "Carleman.SimplicialPartition.nodalDerivativeLp",
+        "Carleman.SimplicialPartition.nodalDerivativeLp_ae",
+        "Carleman.SimplicialPartition.nodalFunction_fderiv_memLp",
+        "Carleman.SimplicialPartition.BoundaryFitted",
+        "Carleman.SimplicialPartition.localNodal_zero_on_boundary",
+        "Carleman.SimplicialPartition.nodalFunction_zero_outside",
+        "Carleman.SimplicialPartition.nodalFunction_zero_on_boundary",
+        "Carleman.SimplicialPartition.nodalFunction_zero_on_compl",
+        "Carleman.SimplicialPartition.nodalFunction_continuous_of_boundary",
+        "Carleman.SimplicialPartition.nodalFunction_hasCompactSupport"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C053"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "实际单元导数及a.e.全局导数/L2存在；边界拟合的几何条件推出零边界和连续零延拓。当前弱导数/Lipschitz证明继续中；零迹与H01、局部误差未完成，不提升P011。"
     }
   ],
   "events": [
@@ -6211,6 +6304,11 @@
       "at": "2026-10-18T17:44:59.325250+00:00",
       "public_summary": "单纯形分区与局部节点插值30项声明经独立Agent及同SHA CI验收PASS；原文仍12/26。继续全局连续节点插值。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f30907a9141da23896b6597266e30e170be80fe0/governance/reviews/T036-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T17:56:41.413374+00:00",
+      "public_summary": "全局连续节点插值30声明经独立Agent及同SHA CI验收PASS；验收队列清空，原文12/26。继续真实导数和边界零延拓。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8e2009563a2a52e3ac5dc9923a35189cec8906fa/governance/reviews/T037-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -6336,7 +6434,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b6076951ce1e4b8eaac9537a4050cd28347904ac/governance/reviews/T035-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39149740857/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f30907a9141da23896b6597266e30e170be80fe0/governance/reviews/T036-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39150398479/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39150398479/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8e2009563a2a52e3ac5dc9923a35189cec8906fa/governance/reviews/T037-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39151180933/attempts/1"
     ]
   },
   "schedules": [
@@ -13941,10 +14041,10 @@
       ],
       "branch": "main",
       "base_commit": "885add73e59dd08e5609597cac3c2ddd7fd395bd",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "6923ae3b24d9590bd0afb4e66830b30fe49165d3",
+      "merge_commit": "6923ae3b24d9590bd0afb4e66830b30fe49165d3",
       "lean_declarations": [
         "Carleman.SimplicialPartition.FaceMatching",
         "Carleman.SimplicialPartition.localNodal",
@@ -13977,13 +14077,24 @@
         "Carleman.SimplicialPartition.nodalLp_smul",
         "Carleman.SimplicialPartition.nodalLpLinearMap"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "6923ae3b24d9590bd0afb4e66830b30fe49165d3",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39151180933/attempts/1",
+        "finished_at": "2026-10-18T17:49:51.670221+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "6923ae3b24d9590bd0afb4e66830b30fe49165d3"
+      },
       "blocker": null,
       "attempts": [
         "三模块主体已实现，完成定向构建并转全库审计。",
         "全库3538 jobs及4111项递归公理审计PASS；30项显式声明完整导入。"
       ],
-      "next_action": "提交固定证明SHA并启动独立Agent核对全局节点插值，再绑定同SHA远端CI。",
+      "next_action": "全局节点插值已独立验收；T038证明实际导数与边界零延拓并推进弱导数身份。",
       "integration_mode": "direct-main",
       "local_validation": {
         "result": "PASS",
@@ -13994,8 +14105,84 @@
         "axiom_artifact_sha256": "f985837e1bce3a9af207044e950703ccbf9a37e5d9e0fa59e24ccbaa5c61533c",
         "log": "/tmp/carleman-global-nodal-full.log",
         "declaration_artifact": "/tmp/carleman-global-nodal-local-axioms.txt",
-        "independent_review": "PENDING; fixed SHA required"
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "6923ae3b24d9590bd0afb4e66830b30fe49165d3",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C053"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "6923ae3b24d9590bd0afb4e66830b30fe49165d3",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T17:54:03+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8e2009563a2a52e3ac5dc9923a35189cec8906fa/governance/reviews/T037-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "6923ae3b24d9590bd0afb4e66830b30fe49165d3",
+        "checked_sha": "6923ae3b24d9590bd0afb4e66830b30fe49165d3",
+        "run_id": 39151180933,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3538,
+        "recursive_axiom_audit": 4111,
+        "new_explicit_declarations": 30,
+        "declaration_artifact_sha256": "f985837e1bce3a9af207044e950703ccbf9a37e5d9e0fa59e24ccbaa5c61533c",
+        "local_remote_artifacts_identical": true
       }
+    },
+    {
+      "id": "T038",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "节点插值的实际导数与边界零延拓",
+      "goal_ids": [
+        "C054"
+      ],
+      "acceptance": [
+        "实际AffineMap导数和零测骨架外全局导数公式，实际Lp类",
+        "边界拟合加边界节点零推出真实零边界及全局连续零延拓",
+        "构造可核查的Lipschitz/分布弱导数连接，保留未证明的H01和定量误差义务"
+      ],
+      "dependencies": [
+        "C053"
+      ],
+      "branch": "main",
+      "base_commit": "6923ae3b24d9590bd0afb4e66830b30fe49165d3",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.SimplicialPartition.localNodalDerivative",
+        "Carleman.SimplicialPartition.localNodalDerivative_apply",
+        "Carleman.SimplicialPartition.localNodal_hasFDerivAt",
+        "Carleman.SimplicialPartition.nodalFunction_hasFDerivAt_on_interior",
+        "Carleman.SimplicialPartition.ae_mem_cell_interior",
+        "Carleman.SimplicialPartition.nodalDerivativeFunction",
+        "Carleman.SimplicialPartition.nodalDerivativeFunction_on_interior",
+        "Carleman.SimplicialPartition.nodalFunction_hasFDerivAt_ae",
+        "Carleman.SimplicialPartition.nodalDerivativeFunction_memLp",
+        "Carleman.SimplicialPartition.nodalDerivativeLp",
+        "Carleman.SimplicialPartition.nodalDerivativeLp_ae",
+        "Carleman.SimplicialPartition.nodalFunction_fderiv_memLp",
+        "Carleman.SimplicialPartition.BoundaryFitted",
+        "Carleman.SimplicialPartition.localNodal_zero_on_boundary",
+        "Carleman.SimplicialPartition.nodalFunction_zero_outside",
+        "Carleman.SimplicialPartition.nodalFunction_zero_on_boundary",
+        "Carleman.SimplicialPartition.nodalFunction_zero_on_compl",
+        "Carleman.SimplicialPartition.nodalFunction_continuous_of_boundary",
+        "Carleman.SimplicialPartition.nodalFunction_hasCompactSupport"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "实际导数12声明和边界7声明定向3057 jobs通过；发现mathlib Rademacher.integral_lineDeriv_mul_eq可接弱导数。"
+      ],
+      "next_action": "实际单元导数的a.e.公式/L2存在及边界零延拓连续已定向构建；继续证明Lipschitz界并连接分布弱导数。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {

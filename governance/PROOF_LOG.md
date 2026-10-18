@@ -67,3 +67,5 @@
 - T035 / C051：实际分片仿射Lp空间和Galerkin刚度独立验收PASS；24声明、4006项审计及同SHA CI。固定证明 `f919944fb3755af8f9ab8cb92ea7a0970ae69d67`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b6076951ce1e4b8eaac9537a4050cd28347904ac/governance/reviews/T035-local-acceptance.md)。原文12/26，T036构造真实单纯形分区与局部节点插值。
 
 - T036 / C052：真实单纯形分区及局部节点插值独立验收PASS；30声明、4069项公理审计及同SHA CI。固定证明 `885add73e59dd08e5609597cac3c2ddd7fd395bd`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f30907a9141da23896b6597266e30e170be80fe0/governance/reviews/T036-local-acceptance.md)。原文12/26，T037继续面匹配全局节点插值。
+
+- T037 / C053：全局连续节点插值独立验收PASS；30声明、4111项公理审计及同SHA CI。固定证明 `6923ae3b24d9590bd0afb4e66830b30fe49165d3`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8e2009563a2a52e3ac5dc9923a35189cec8906fa/governance/reviews/T037-local-acceptance.md)。原文12/26，T038继续真实导数和边界零延拓。
