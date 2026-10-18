@@ -3895,6 +3895,75 @@ set_option pp.maxSteps 1000000
 #check @Carleman.convex_weakJet_mean_poincare
 #print axioms Carleman.convex_weakJet_mean_poincare
 
+#check @Carleman.scalarLp_norm_sq
+#print axioms Carleman.scalarLp_norm_sq
+#check @Carleman.scalarConstantLp
+#print axioms Carleman.scalarConstantLp
+#check @Carleman.scalarConstantLp_ae
+#print axioms Carleman.scalarConstantLp_ae
+#check @Carleman.norm_sub_scalarConstantLp_sq
+#print axioms Carleman.norm_sub_scalarConstantLp_sq
+#check @Carleman.boundedAffine_memLp
+#print axioms Carleman.boundedAffine_memLp
+#check @Carleman.boundedAffineLp
+#print axioms Carleman.boundedAffineLp
+#check @Carleman.boundedAffineLp_ae
+#print axioms Carleman.boundedAffineLp_ae
+#check @Carleman.boundedAffineLp_weak
+#print axioms Carleman.boundedAffineLp_weak
+#check @Carleman.IsWeakSpatialDerivative.sub
+#print axioms Carleman.IsWeakSpatialDerivative.sub
+#check @Carleman.coordinateFirstFields
+#print axioms Carleman.coordinateFirstFields
+#check @Carleman.coordinateFirstJet
+#print axioms Carleman.coordinateFirstJet
+#check @Carleman.coordinateFirstJet_value
+#print axioms Carleman.coordinateFirstJet_value
+#check @Carleman.coordinateFirstJet_gradient_norm_sq
+#print axioms Carleman.coordinateFirstJet_gradient_norm_sq
+#check @Carleman.coordinateFunctional
+#print axioms Carleman.coordinateFunctional
+#check @Carleman.coordinateFunctional_basis
+#print axioms Carleman.coordinateFunctional_basis
+#check @Carleman.meanAffinePolynomial
+#print axioms Carleman.meanAffinePolynomial
+#check @Carleman.meanAffinePolynomial_apply
+#print axioms Carleman.meanAffinePolynomial_apply
+#check @Carleman.meanAffinePolynomial_derivative
+#print axioms Carleman.meanAffinePolynomial_derivative
+#check @Carleman.meanAffinePolynomial_residual_ae
+#print axioms Carleman.meanAffinePolynomial_residual_ae
+#check @Carleman.meanAffinePolynomial_mean_residual
+#print axioms Carleman.meanAffinePolynomial_mean_residual
+#check @Carleman.weakGradientMean
+#print axioms Carleman.weakGradientMean
+#check @Carleman.h2_gradient_mean_bound
+#print axioms Carleman.h2_gradient_mean_bound
+#check @Carleman.h2MeanAffine
+#print axioms Carleman.h2MeanAffine
+#check @Carleman.h2AffineResidualCoordinates
+#print axioms Carleman.h2AffineResidualCoordinates
+#check @Carleman.h2AffineResidual_weak
+#print axioms Carleman.h2AffineResidual_weak
+#check @Carleman.h2AffineResidual
+#print axioms Carleman.h2AffineResidual
+#check @Carleman.h2AffineResidual_value
+#print axioms Carleman.h2AffineResidual_value
+#check @Carleman.h2AffineResidual_value_ae
+#print axioms Carleman.h2AffineResidual_value_ae
+#check @Carleman.h2AffineResidual_gradient_component
+#print axioms Carleman.h2AffineResidual_gradient_component
+#check @Carleman.h2AffineResidual_mean
+#print axioms Carleman.h2AffineResidual_mean
+#check @Carleman.h2AffineResidual_gradient_bound
+#print axioms Carleman.h2AffineResidual_gradient_bound
+#check @Carleman.h2AffineResidual_value_bound
+#print axioms Carleman.h2AffineResidual_value_bound
+#check @Carleman.h2AffineResidual_homogeneous_bound
+#print axioms Carleman.h2AffineResidual_homogeneous_bound
+#check @Carleman.exists_convex_h2_affine_approximation
+#print axioms Carleman.exists_convex_h2_affine_approximation
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

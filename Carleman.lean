@@ -491,3 +491,8 @@ public import Carleman.Spatial.MollifiedGradientEnergy
 public import Carleman.Spatial.InteriorWeakPoincare
 public import Carleman.Geometry.ConvexCompactExhaustion
 public import Carleman.Spatial.ConvexWeakPoincare
+public import Carleman.Spatial.BoundedAffineSobolev
+public import Carleman.Spatial.CoordinateFirstJet
+public import Carleman.Spatial.MeanAffinePolynomial
+public import Carleman.Spatial.H2MeanGradient
+public import Carleman.Spatial.ConvexH2AffineApproximation
