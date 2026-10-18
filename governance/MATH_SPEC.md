@@ -756,3 +756,11 @@ X为真实完备（最终控制入口为有限维）L2子空间，R=I为包含�
 `conforming_observation_control_uniform` 从显式统一周期 `PhysicalLoadCarleman` 输入出发，内部构造全部物理接口并调用已验收观测桥和HUM，输出真实B.adjoint的全轨迹观测以及L2(ω)中的实际控制、原前向方程、控制预算和指数终值余项。Cb/d0先于T/M，C(T,M)先于有限维X/网格/S/A/b/轨迹/初始数据，原qb与尺度双边条件不变。代价写sqrt(C)，与原可重新命名的正C(T,M)等价。
 
 周期CE输入暂采用与区域加权观察等价的环境L2 indicator形式。具体有限元数值几何、原完整离散能量到这条载荷CE的供应、连续热CE及原网格阈值仍待，不因这里的真实控制算子构造被视为完成。
+
+## T031：原热尺度推论到真实物理观测/控制
+
+四模块15声明，范围CONDITIONAL，不提升P014/P015。`PhysicalTransferGeometry`把完整热能量的c0=o=3与实际q³和dt有限和精确识别，只舍弃非负导数能量；minus方向与真实Γ载荷方程不变。`conformingReconstruction/conformingLoad`对X≤V的实际L2子空间内部构造包含、正交质量伴随、Γ和恒等普通lift；真实乘法状态seminorm的正定性内部证明。
+
+`ConformingHeatData`显式打包原AllowedFamily、NumericalData和实际弱周期轨迹上的连续A4；不含离散CE、误差桥或物理观测。`conforming_heat_load_uniform`内部调用已验收原`heat_scale_uniform`，从原误差阶aE≤Cap*h、a0+ηA≤Cap*h²与原4/5、2/5尺度供应实际周期载荷CE。κ/h0/Δ0/CCE先于所有数值空间、T/网格、权和状态。
+
+`conforming_heat_observation_control_uniform`进一步内部供应此前显式的周期CE，输出真实L2(ω)控制伴随观测和HUM控制/完整前向解。κ/h0/Δ0/Cb/d0先于T/M，Cphys(T,M)先于X/网格/刚度/误差/势/轨迹/初值；Smax严格等于κ min(h^(-4/5),dt^(-2/5))，原物理尺度条件全部保留。调用者仍须对完整PhysicalQClass权族提供原数据；具体P1网格、连续热CE和Dirichlet实现尚未构造，FD的不同质量/重构另需实现。详见`analysis/T031-original-physical-transfer.md`。

@@ -293,3 +293,8 @@ public import Carleman.Control.ObservedRegionLp
 public import Carleman.Control.ConformingRegionControl
 public import Carleman.Control.ConformingPhysicalObservation
 public import Carleman.Control.ConformingPhysicalControl
+
+public import Carleman.Control.PhysicalTransferGeometry
+public import Carleman.Control.ConformingTransferData
+public import Carleman.Control.ConformingHeatTransfer
+public import Carleman.Control.ConformingHeatControl

@@ -2420,6 +2420,37 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Physical.conforming_observation_control_uniform
 #print axioms Carleman.Physical.conforming_observation_control_uniform
 
+#check @Carleman.Physical.physical_cube_le_nodeEnergy
+#print axioms Carleman.Physical.physical_cube_le_nodeEnergy
+#check @Carleman.Physical.physical_load_eq_transfer
+#print axioms Carleman.Physical.physical_load_eq_transfer
+#check @Carleman.Physical.physical_observation_eq_transfer
+#print axioms Carleman.Physical.physical_observation_eq_transfer
+#check @Carleman.Physical.physical_load_carleman_of_transfer
+#print axioms Carleman.Physical.physical_load_carleman_of_transfer
+#check @Carleman.Physical.conformingReconstruction
+#print axioms Carleman.Physical.conformingReconstruction
+#check @Carleman.Physical.conformingReconstruction_RH
+#print axioms Carleman.Physical.conformingReconstruction_RH
+#check @Carleman.Physical.conformingLoad
+#print axioms Carleman.Physical.conformingLoad
+#check @Carleman.Physical.conformingWeightedState
+#print axioms Carleman.Physical.conformingWeightedState
+#check @Carleman.Physical.conformingWeightedState_definite
+#print axioms Carleman.Physical.conformingWeightedState_definite
+#check @Carleman.Physical.conformingHeatGeometry
+#print axioms Carleman.Physical.conformingHeatGeometry
+#check @Carleman.Physical.ConformingHeatData
+#print axioms Carleman.Physical.ConformingHeatData
+#check @Carleman.Physical.conforming_heat_load_uniform
+#print axioms Carleman.Physical.conforming_heat_load_uniform
+#check @Carleman.Physical.physicalMeshScale
+#print axioms Carleman.Physical.physicalMeshScale
+#check @Carleman.Physical.physicalMeshScale_pos
+#print axioms Carleman.Physical.physicalMeshScale_pos
+#check @Carleman.Physical.conforming_heat_observation_control_uniform
+#print axioms Carleman.Physical.conforming_heat_observation_control_uniform
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

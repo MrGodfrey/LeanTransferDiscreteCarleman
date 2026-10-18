@@ -15,7 +15,7 @@
     "next_action": "接通原热尺度推论与实际周期载荷CE，再到真实L2(ω)物理观测/HUM；具体P1/FD和连续热CE仍待供应。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T16:44:02.105635+00:00"
+    "last_activity_at": "2026-10-18T16:45:52.712683+00:00"
   },
   "verification": {
     "latest_build": {
@@ -12757,7 +12757,19 @@
         "四模块15声明定向编译通过；最终入口已内部调用原热尺度推论并供应全部周期载荷CE，保持实际区域控制和原物理方程。"
       ],
       "next_action": "接通原热尺度推论与实际周期载荷CE，再到真实L2(ω)物理观测/HUM；具体P1/FD和连续热CE仍待供应。",
-      "integration_mode": "direct-main"
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "finished_at": "2026-10-18T16:45:52.712683+00:00",
+        "targets": [
+          "Carleman"
+        ],
+        "actual_build_jobs": 3509,
+        "recursive_axiom_audit": 3655,
+        "new_explicit_declarations": 15,
+        "declaration_artifact_sha256": "aeba0c8a613abd65d979180577bca0cb57c50b8d8698acaa68ae8492c0731114",
+        "independent_review": "pending fixed-SHA review and remote CI"
+      }
     }
   ],
   "private_maintenance": {
