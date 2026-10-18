@@ -97,3 +97,5 @@
 - T050 / C066：原具体allowed权的单元比较及完整P1逆界20声明独立验收PASS，4757递归审计及同SHA CI；原ℓ尺度与真实内球形状条件已接入。 固定证明 `9ea552502177ccffb3f50593567578fc207c2568`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/cfb7a45a840b101b42067295773f7a08af9737e2/governance/reviews/T050-local-acceptance.md)。原文12/26，T051继续原四类权的统一邻接分级。
 
 - T051 / C067：四类实际权的统一邻接分级16声明独立验收PASS，原Γd严格余量，4777项递归审计及同SHA CI。 固定证明 `51e67cf2b206b1e754d90a53ccd03c6e80e570fc`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/46dace69d7a27941b444499ad4a4f6be101cc9aa/governance/reviews/T051-local-acceptance.md)。原文12/26，T052继续P1加权系数二次型的强制性。
+
+- T052 / C068：原阈值内有限系数强制性9声明独立验收PASS，4787项递归审计及同SHA CI。 固定证明 `df8b853f9203194295be90f39ef5f797af31b9b3`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/77c5fddd0f410df16af93949715f90b2c0c6ae72/governance/reviews/T052-local-acceptance.md)。原文12/26，T053继续真实重心坐标分布及一阶矩。
