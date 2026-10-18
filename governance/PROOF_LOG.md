@@ -49,3 +49,5 @@
 | 2026-10-18 | T026 | `549cde718bcf26f00b24f4a1493ee92b839f30b4` | 真实物理HUM条件桥23声明独立验收PASS；同SHA main三项CI/3349声明审计PASS；C042保持CONDITIONAL，原文12/26 | T027原观测的周期权与截断 |
 
 | 2026-10-19 | T027 | `c3ab9aaef14a4f5beca82505cdfd325e507c653e` | 原物理权与截断70声明独立验收PASS；同SHA三项CI与3436声明审计PASS；C043为AUXILIARY，原文12/26 | T028完整qclass与真实空间权 |
+
+| 2026-10-19 | T028 | `fba691ef4acce0af1d303f19cae7ceaccfe7eb20` | 完整qclass与实际Lp加权预算22声明独立验收PASS；三项CI及3482声明审计PASS；C044为AUXILIARY，原文12/26 | T029实际载荷与观测条件桥 |
