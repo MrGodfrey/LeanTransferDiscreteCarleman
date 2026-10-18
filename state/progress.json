@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T033",
-    "supervisor_checked_at": "2026-10-18T17:04:27.496244+00:00",
-    "next_action": "完成原Pi_h(sigma²z)测试的真实配对/时间导数和统一界；N4仅保留空间超逼近，验证后独立验收。",
+    "current_task_id": "T034",
+    "supervisor_checked_at": "2026-10-18T17:14:24.414513+00:00",
+    "next_action": "由真实插值误差、加权投影稳定性和逆估计推出原N3与投影测试的空间超逼近；具体网格估计保持显式，完成后独立验收。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T17:05:38.140297+00:00"
+    "last_activity_at": "2026-10-18T17:14:24.414513+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "1cf3071913d460625411022e4ea16c8336399bf8",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39147219355/attempts/1",
-      "finished_at": "2026-10-18T16:57:42.197316+00:00",
+      "checked_sha": "d999e5b3779aa82efee2da8e162b86148dc1f715",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39148036906/attempts/1",
+      "finished_at": "2026-10-18T17:08:30.389992+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "1cf3071913d460625411022e4ea16c8336399bf8"
+      "source_head_sha": "d999e5b3779aa82efee2da8e162b86148dc1f715"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "1cf3071913d460625411022e4ea16c8336399bf8",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39147219355/attempts/1",
-      "finished_at": "2026-10-18T16:57:42.197316+00:00",
+      "checked_sha": "d999e5b3779aa82efee2da8e162b86148dc1f715",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39148036906/attempts/1",
+      "finished_at": "2026-10-18T17:08:30.389992+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "1cf3071913d460625411022e4ea16c8336399bf8"
+      "source_head_sha": "d999e5b3779aa82efee2da8e162b86148dc1f715"
     }
   },
   "milestones": [
@@ -5518,7 +5518,7 @@
       "extra_hypotheses": [
         "具体P1网格的N3与空间超逼近、原连续热CE及Dirichlet实例仍待供应"
       ],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "CONDITIONAL",
       "paper_labels": [
         "prop:p1",
@@ -5547,15 +5547,93 @@
         "Carleman.Physical.ProjectedHeatData.toGalerkin",
         "Carleman.Physical.projected_heat_observation_control_uniform"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "d999e5b3779aa82efee2da8e162b86148dc1f715",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "d999e5b3779aa82efee2da8e162b86148dc1f715",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39148036906/attempts/1",
+        "finished_at": "2026-10-18T17:08:30.389992+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "d999e5b3779aa82efee2da8e162b86148dc1f715"
+      },
+      "semantic_review": {
+        "checked_sha": "d999e5b3779aa82efee2da8e162b86148dc1f715",
+        "declarations": [
+          "Carleman.Physical.weightedInclusion",
+          "Carleman.Physical.galerkinWeightedTest",
+          "Carleman.Physical.galerkinWeightedTest_pairing",
+          "Carleman.Physical.galerkinWeightedTest_apply",
+          "Carleman.Physical.galerkinWeightedTest_symmetric",
+          "Carleman.Physical.galerkinWeightedTest_energy",
+          "Carleman.Physical.galerkinWeightedTest_nonneg",
+          "Carleman.Physical.weightedInclusionDerivative",
+          "Carleman.Physical.galerkinWeightedTestDerivative",
+          "Carleman.Physical.galerkinWeightedTestDerivative_pairing",
+          "Carleman.Physical.galerkinWeightedTest_endpoint",
+          "Carleman.Physical.galerkinWeightedTest_hasDeriv",
+          "Carleman.Physical.weightedInclusionDerivative_bound",
+          "Carleman.Physical.galerkinWeightedTest_time_bound",
+          "Carleman.Physical.galerkinWeightedTest_time_bound_uniform",
+          "Carleman.Physical.GalerkinSuperapprox",
+          "Carleman.Physical.galerkinWeightedTestData",
+          "Carleman.Physical.ProjectedHeatData",
+          "Carleman.Physical.ProjectedHeatData.toGalerkin",
+          "Carleman.Physical.projected_heat_observation_control_uniform"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/37ec86ba022eae77efffca02fbd5c1d10ac1e621/governance/reviews/T033-local-acceptance.md",
+        "reviewed_at": "2026-10-18T17:12:17+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent conditional acceptance"
+      },
       "dependencies": [
         "C048"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "原Pi_h(sigma²z)由实际乘法/投影构造，其真实二次型导数及Ctime=2β(τStar+ρ.bound)统一界内部证明，N4仅保留原空间超逼近；条件物理结论保持。"
+      "scope_notes": "原Pi_h(sigma²z)由实际乘法/投影构造，其真实二次型导数及Ctime=2β(τStar+ρ.bound)统一界内部证明，N4仅保留原空间超逼近；条件物理结论保持。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C050",
+      "title": "插值误差到原投影近似和超逼近",
+      "paper_ref": "Section6 P1 weighted test construction and Section7 conditional consequences",
+      "milestone": "M6a",
+      "extra_hypotheses": [
+        "具体P1网格的N3与空间超逼近、原连续热CE及Dirichlet实例仍待供应"
+      ],
+      "verification_status": "SPECIFIED",
+      "scope": "CONDITIONAL",
+      "paper_labels": [
+        "prop:p1",
+        "prop:physicalO",
+        "prop:physicalC"
+      ],
+      "lean_declarations": [
+        "Carleman.Physical.conformingProjector",
+        "Carleman.Physical.conformingProjector_eq_Q",
+        "Carleman.Physical.conformingProjector_inclusion",
+        "Carleman.Physical.conformingProjector_error_decomposition",
+        "Carleman.Physical.conformingProjector_l2_error",
+        "Carleman.Physical.conformingProjector_energy_error",
+        "Carleman.Physical.ConformingInterpolationBounds",
+        "Carleman.Physical.conformingWeightedApproximation_of_interpolation",
+        "Carleman.Physical.GalerkinSuperapproxInterpolation",
+        "Carleman.Physical.galerkinSuperapprox_of_interpolation"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C049"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "从实际插值误差和加权投影/逆估计推导原正交投影误差及特定测试超逼近；不假称已证明具体网格局部估计。"
     }
   ],
   "events": [
@@ -5801,6 +5879,11 @@
       "at": "2026-10-18T17:04:27.496244+00:00",
       "public_summary": "实际Galerkin刚度及N1/N2/N5的16声明通过独立Agent与同SHA CI验收；原文仍12/26，验收队列清空。继续原投影加权测试及统一时间界。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/12368d07ad12763fd690b02ab7431ab8ce63490e/governance/reviews/T032-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T17:14:24.414513+00:00",
+      "public_summary": "实际Galerkin刚度及N1/N2/N5的16声明通过独立Agent与同SHA CI验收；原文仍12/26，验收队列清空。继续插值误差到原投影近似和超逼近。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/37ec86ba022eae77efffca02fbd5c1d10ac1e621/governance/reviews/T033-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -5918,7 +6001,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/08aeb054a0b5676712d98152dd725240668bcb97/governance/reviews/T031-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39146586608/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/12368d07ad12763fd690b02ab7431ab8ce63490e/governance/reviews/T032-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39147219355/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39147219355/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/37ec86ba022eae77efffca02fbd5c1d10ac1e621/governance/reviews/T033-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39148036906/attempts/1"
     ]
   },
   "schedules": [
@@ -13098,10 +13183,10 @@
       ],
       "branch": "main",
       "base_commit": "1cf3071913d460625411022e4ea16c8336399bf8",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "d999e5b3779aa82efee2da8e162b86148dc1f715",
+      "merge_commit": "d999e5b3779aa82efee2da8e162b86148dc1f715",
       "lean_declarations": [
         "Carleman.Physical.weightedInclusion",
         "Carleman.Physical.galerkinWeightedTest",
@@ -13124,12 +13209,23 @@
         "Carleman.Physical.ProjectedHeatData.toGalerkin",
         "Carleman.Physical.projected_heat_observation_control_uniform"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "d999e5b3779aa82efee2da8e162b86148dc1f715",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39148036906/attempts/1",
+        "finished_at": "2026-10-18T17:08:30.389992+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "d999e5b3779aa82efee2da8e162b86148dc1f715"
+      },
       "blocker": null,
       "attempts": [
         "五模块20声明已定向编译；实际投影加权测试与统一时间界清偿N4除超逼近之外所有字段，最终入口不再输入任意测试或时间界。"
       ],
-      "next_action": "完成原Pi_h(sigma²z)测试的真实配对/时间导数和统一界；N4仅保留空间超逼近，验证后独立验收。",
+      "next_action": "原投影加权测试及时间界已验收；T034推导投影近似和超逼近。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -13141,8 +13237,75 @@
         "recursive_axiom_audit": 3848,
         "new_explicit_declarations": 20,
         "declaration_artifact_sha256": "59966cdcae6ad88230f1ae7f0e5d025c9e3811e84a747f44d7ad3cded03abaec",
-        "independent_review": "pending fixed-SHA review and remote CI"
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "d999e5b3779aa82efee2da8e162b86148dc1f715",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C049"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "d999e5b3779aa82efee2da8e162b86148dc1f715",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T17:12:17+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/37ec86ba022eae77efffca02fbd5c1d10ac1e621/governance/reviews/T033-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "d999e5b3779aa82efee2da8e162b86148dc1f715",
+        "checked_sha": "d999e5b3779aa82efee2da8e162b86148dc1f715",
+        "run_id": 39148036906,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3518,
+        "recursive_axiom_audit": 3848,
+        "new_explicit_declarations": 20,
+        "declaration_artifact_sha256": "59966cdcae6ad88230f1ae7f0e5d025c9e3811e84a747f44d7ad3cded03abaec",
+        "local_remote_artifacts_identical": true
       }
+    },
+    {
+      "id": "T034",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "插值误差到原投影近似和超逼近",
+      "goal_ids": [
+        "C050"
+      ],
+      "acceptance": [
+        "原正交投影的误差分解准确",
+        "真实Sobolev能量/L2误差及常数阶从插值推导",
+        "特定Pi(sigma²z)的超逼近由插值推导；具体网格估计仍显式，同SHA独立验收"
+      ],
+      "dependencies": [
+        "C049"
+      ],
+      "branch": "main",
+      "base_commit": "d999e5b3779aa82efee2da8e162b86148dc1f715",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.Physical.conformingProjector",
+        "Carleman.Physical.conformingProjector_eq_Q",
+        "Carleman.Physical.conformingProjector_inclusion",
+        "Carleman.Physical.conformingProjector_error_decomposition",
+        "Carleman.Physical.conformingProjector_l2_error",
+        "Carleman.Physical.conformingProjector_energy_error",
+        "Carleman.Physical.ConformingInterpolationBounds",
+        "Carleman.Physical.conformingWeightedApproximation_of_interpolation",
+        "Carleman.Physical.GalerkinSuperapproxInterpolation",
+        "Carleman.Physical.galerkinSuperapprox_of_interpolation"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "真实投影误差分解与原N3插值推导已定向编译，继续特定测试超逼近及梯度版预算。"
+      ],
+      "next_action": "由真实插值误差、加权投影稳定性和逆估计推出原N3与投影测试的空间超逼近；具体网格估计保持显式，完成后独立验收。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {

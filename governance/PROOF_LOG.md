@@ -59,3 +59,5 @@
 - T031 / C047：原热尺度到实际物理控制条件入口独立验收PASS；15声明、3655项公理审计及同SHA CI。固定证明 `4223cdff025d68431b81dc2f3fb620e8bdc9ec6b`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/08aeb054a0b5676712d98152dd725240668bcb97/governance/reviews/T031-local-acceptance.md)。原文12/26，继续T032实际Galerkin刚度。
 
 - T032 / C048：实际Galerkin刚度及数值接口独立验收PASS；16声明、3766项审计及同SHA CI。固定证明 `1cf3071913d460625411022e4ea16c8336399bf8`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/12368d07ad12763fd690b02ab7431ab8ce63490e/governance/reviews/T032-local-acceptance.md)。原文12/26，T033构造真实加权测试。
+
+- T033 / C049：原投影加权测试及统一时间界独立验收PASS；20声明、3848项审计及同SHA CI。固定证明 `d999e5b3779aa82efee2da8e162b86148dc1f715`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/37ec86ba022eae77efffca02fbd5c1d10ac1e621/governance/reviews/T033-local-acceptance.md)。原文12/26，T034推导投影近似和超逼近。
