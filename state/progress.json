@@ -15,7 +15,7 @@
     "next_action": "完成原Pi_h(sigma²z)测试的真实配对/时间导数和统一界；N4仅保留空间超逼近，验证后独立验收。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T17:04:27.496244+00:00"
+    "last_activity_at": "2026-10-18T17:05:38.140297+00:00"
   },
   "verification": {
     "latest_build": {
@@ -13130,7 +13130,19 @@
         "五模块20声明已定向编译；实际投影加权测试与统一时间界清偿N4除超逼近之外所有字段，最终入口不再输入任意测试或时间界。"
       ],
       "next_action": "完成原Pi_h(sigma²z)测试的真实配对/时间导数和统一界；N4仅保留空间超逼近，验证后独立验收。",
-      "integration_mode": "direct-main"
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "finished_at": "2026-10-18T17:05:38.140297+00:00",
+        "targets": [
+          "Carleman"
+        ],
+        "actual_build_jobs": 3518,
+        "recursive_axiom_audit": 3848,
+        "new_explicit_declarations": 20,
+        "declaration_artifact_sha256": "59966cdcae6ad88230f1ae7f0e5d025c9e3811e84a747f44d7ad3cded03abaec",
+        "independent_review": "pending fixed-SHA review and remote CI"
+      }
     }
   ],
   "private_maintenance": {

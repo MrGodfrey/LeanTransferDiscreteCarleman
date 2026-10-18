@@ -303,3 +303,9 @@ public import Carleman.Control.GalerkinStiffness
 public import Carleman.Control.GalerkinNumericalData
 public import Carleman.Control.GalerkinHeatData
 public import Carleman.Control.GalerkinHeatControl
+
+public import Carleman.Control.GalerkinWeightedTest
+public import Carleman.Control.GalerkinTestTimeBound
+public import Carleman.Control.GalerkinTestData
+public import Carleman.Control.ProjectedHeatData
+public import Carleman.Control.ProjectedHeatControl

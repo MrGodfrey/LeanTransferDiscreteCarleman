@@ -2484,6 +2484,47 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Physical.galerkin_heat_observation_control_uniform
 #print axioms Carleman.Physical.galerkin_heat_observation_control_uniform
 
+#check @Carleman.Physical.weightedInclusion
+#print axioms Carleman.Physical.weightedInclusion
+#check @Carleman.Physical.galerkinWeightedTest
+#print axioms Carleman.Physical.galerkinWeightedTest
+#check @Carleman.Physical.galerkinWeightedTest_pairing
+#print axioms Carleman.Physical.galerkinWeightedTest_pairing
+#check @Carleman.Physical.galerkinWeightedTest_apply
+#print axioms Carleman.Physical.galerkinWeightedTest_apply
+#check @Carleman.Physical.galerkinWeightedTest_symmetric
+#print axioms Carleman.Physical.galerkinWeightedTest_symmetric
+#check @Carleman.Physical.galerkinWeightedTest_energy
+#print axioms Carleman.Physical.galerkinWeightedTest_energy
+#check @Carleman.Physical.galerkinWeightedTest_nonneg
+#print axioms Carleman.Physical.galerkinWeightedTest_nonneg
+#check @Carleman.Physical.weightedInclusionDerivative
+#print axioms Carleman.Physical.weightedInclusionDerivative
+#check @Carleman.Physical.galerkinWeightedTestDerivative
+#print axioms Carleman.Physical.galerkinWeightedTestDerivative
+#check @Carleman.Physical.galerkinWeightedTestDerivative_pairing
+#print axioms Carleman.Physical.galerkinWeightedTestDerivative_pairing
+#check @Carleman.Physical.galerkinWeightedTest_endpoint
+#print axioms Carleman.Physical.galerkinWeightedTest_endpoint
+#check @Carleman.Physical.galerkinWeightedTest_hasDeriv
+#print axioms Carleman.Physical.galerkinWeightedTest_hasDeriv
+#check @Carleman.Physical.weightedInclusionDerivative_bound
+#print axioms Carleman.Physical.weightedInclusionDerivative_bound
+#check @Carleman.Physical.galerkinWeightedTest_time_bound
+#print axioms Carleman.Physical.galerkinWeightedTest_time_bound
+#check @Carleman.Physical.galerkinWeightedTest_time_bound_uniform
+#print axioms Carleman.Physical.galerkinWeightedTest_time_bound_uniform
+#check @Carleman.Physical.GalerkinSuperapprox
+#print axioms Carleman.Physical.GalerkinSuperapprox
+#check @Carleman.Physical.galerkinWeightedTestData
+#print axioms Carleman.Physical.galerkinWeightedTestData
+#check @Carleman.Physical.ProjectedHeatData
+#print axioms Carleman.Physical.ProjectedHeatData
+#check @Carleman.Physical.ProjectedHeatData.toGalerkin
+#print axioms Carleman.Physical.ProjectedHeatData.toGalerkin
+#check @Carleman.Physical.projected_heat_observation_control_uniform
+#print axioms Carleman.Physical.projected_heat_observation_control_uniform
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

@@ -772,3 +772,11 @@ X为真实完备（最终控制入口为有限维）L2子空间，R=I为包含�
 重构单射、G=Id、Q=正交投影、实际加权观察识别已证明；`galerkinNumericalData`内部供应原N1/N2/N5相关全部字段，质量/载荷/观察常数均为1。仅N3加权近似和N4测试仍由调用者提供，实际零刚度缺陷允许ηA=0。`GalerkinHeatData`显式保留原A2/A3、N3/N4和连续A4，不含离散CE或物理观察。
 
 `galerkin_heat_observation_control_uniform`内部选取真实刚度及其自伴非负证明，不再输入任意A/defect或相关算子假设；原κ/h0/Δ0/Cb/d0先于T/M，Cphys先于全部数值数据。原尺度、全物理轨迹、真实区域控制伴随和前向方程不变。仍未构造具体P1网格及其N3/N4、连续Dirichlet热CE；不能以此提升具体实现覆盖。详见`analysis/T032-galerkin-physical.md`。
+
+## T033：原投影加权测试及统一时间界
+
+五模块20声明，CONDITIONAL，不提升P011/P014/P015。对真实L2子空间X，F(t)=σ(t)R，`galerkinWeightedTest=F.adjoint F`精确等于原Π_X(σ²z)；加权配对、二次型能量恒等、对称非负与周期端点均证明。时间导数候选为F'.adjoint F+F.adjoint F'；使用已证明的实际算子范数乘法导数，证明原N4所需整个闭区间的真实二次型HasDerivWithinAt。
+
+对真实加权状态使用对数导数乘子界，推出`|<z,T'z>|≤2β(|τ|+ρ.bound)(q‖σz‖)²`，再得统一`Ctime=2β(τStar+ρ.bound)`；该常数不含T、X、维数、h、dt或qmax，不需要加权投影稳定性。两符号空间权具有同一bound。
+
+`GalerkinSuperapprox`只保留原特定Π_X(σ²z)的空间超逼近，原V中双乘法保持条件、逆权范数和Csuper*h*qmax不变；`galerkinWeightedTestData`内部构造N4其余全部字段。`ProjectedHeatData`保留原Allowed、N3、空间超逼近和连续A4；最终`projected_heat_observation_control_uniform`内部指定上述时间常数与真实测试，原物理结论和先置常数不变。具体网格的近似/超逼近及连续Dirichlet热实例仍待供应。详见`analysis/T033-projected-weighted-test.md`。
