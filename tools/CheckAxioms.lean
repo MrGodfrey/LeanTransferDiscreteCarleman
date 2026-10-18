@@ -1415,6 +1415,148 @@ set_option pp.maxSteps 1000000
 #check @Carleman.CoerciveForm.interpolated_weighted_temporal_l2_uniform
 #print axioms Carleman.CoerciveForm.interpolated_weighted_temporal_l2_uniform
 
+
+-- T018: original-domain interpolation and its actual weighted consequences.
+#check @Carleman.interiorRegion
+#print axioms Carleman.interiorRegion
+#check @Carleman.isOpen_interiorRegion
+#print axioms Carleman.isOpen_interiorRegion
+#check @Carleman.interiorRegion_subset
+#print axioms Carleman.interiorRegion_subset
+#check @Carleman.interiorRegion_closedBall_subset
+#print axioms Carleman.interiorRegion_closedBall_subset
+#check @Carleman.eventually_mem_interiorRegion
+#print axioms Carleman.eventually_mem_interiorRegion
+#check @Carleman.InwardConePatch.tube_subset
+#print axioms Carleman.InwardConePatch.tube_subset
+#check @Carleman.LocalLipschitzGraphChart
+#print axioms Carleman.LocalLipschitzGraphChart
+#check @Carleman.IsBoundedLipschitzDomain
+#print axioms Carleman.IsBoundedLipschitzDomain
+#check @Carleman.LocalLipschitzGraphChart.exists_global_graph
+#print axioms Carleman.LocalLipschitzGraphChart.exists_global_graph
+#check @Carleman.IsBoundedLipschitzDomain.global_graph_charts
+#print axioms Carleman.IsBoundedLipschitzDomain.global_graph_charts
+#check @Carleman.HasLipschitzGraphCharts.local_charts
+#print axioms Carleman.HasLipschitzGraphCharts.local_charts
+#check @Carleman.boundedLipschitz_iff_global_graph_charts
+#print axioms Carleman.boundedLipschitz_iff_global_graph_charts
+#check @Carleman.IsBoundedLipschitzDomain.finite_uniform_cones
+#print axioms Carleman.IsBoundedLipschitzDomain.finite_uniform_cones
+#check @Carleman.coneCoordinateConstant
+#print axioms Carleman.coneCoordinateConstant
+#check @Carleman.coneCoordinateConstant_nonneg
+#print axioms Carleman.coneCoordinateConstant_nonneg
+#check @Carleman.weak_cone_coordinate_interpolation
+#print axioms Carleman.weak_cone_coordinate_interpolation
+#check @Carleman.discrete_interpolation_maximum
+#print axioms Carleman.discrete_interpolation_maximum
+#check @Carleman.IsWeakSpatialDerivative.zeroExtend
+#print axioms Carleman.IsWeakSpatialDerivative.zeroExtend
+#check @Carleman.SpatialTest.reflectedWithin
+#print axioms Carleman.SpatialTest.reflectedWithin
+#check @Carleman.SpatialTest.fderiv_convolution_integral
+#print axioms Carleman.SpatialTest.fderiv_convolution_integral
+#check @Carleman.IsWeakSpatialDerivative.convolution_exchange_local
+#print axioms Carleman.IsWeakSpatialDerivative.convolution_exchange_local
+#check @Carleman.IsWeakSpatialDerivative.fderiv_convolution_local
+#print axioms Carleman.IsWeakSpatialDerivative.fderiv_convolution_local
+#check @Carleman.finite_cones_common_height
+#print axioms Carleman.finite_cones_common_height
+#check @Carleman.finite_cones_coordinate_interpolation
+#print axioms Carleman.finite_cones_coordinate_interpolation
+#check @Carleman.WeakSobolevJet.boundedLipschitz_scaled_components
+#print axioms Carleman.WeakSobolevJet.boundedLipschitz_scaled_components
+#check @Carleman.WeakSobolevJet.boundedLipschitz_parameter_interpolation
+#print axioms Carleman.WeakSobolevJet.boundedLipschitz_parameter_interpolation
+#check @Carleman.boundedLipschitz_jet_neighbor
+#print axioms Carleman.boundedLipschitz_jet_neighbor
+#check @Carleman.coordinateCombination
+#print axioms Carleman.coordinateCombination
+#check @Carleman.coordinateSize
+#print axioms Carleman.coordinateSize
+#check @Carleman.coordinateSize_nonneg
+#print axioms Carleman.coordinateSize_nonneg
+#check @Carleman.coordinateCombination_add
+#print axioms Carleman.coordinateCombination_add
+#check @Carleman.coordinateCombination_basis
+#print axioms Carleman.coordinateCombination_basis
+#check @Carleman.coordinateCombination_norm_le
+#print axioms Carleman.coordinateCombination_norm_le
+#check @Carleman.weak_coordinateCombination
+#print axioms Carleman.weak_coordinateCombination
+#check @Carleman.weak_coordinateCombination_second
+#print axioms Carleman.weak_coordinateCombination_second
+#check @Carleman.bochnerL2Norm_restrict_le
+#print axioms Carleman.bochnerL2Norm_restrict_le
+#check @Carleman.l2_average_square_le
+#print axioms Carleman.l2_average_square_le
+#check @Carleman.integrable_square_of_slice_bound
+#print axioms Carleman.integrable_square_of_slice_bound
+#check @Carleman.l2_average_le_of_slice_bound
+#print axioms Carleman.l2_average_le_of_slice_bound
+#check @Carleman.bochnerL2Norm_finite_cover
+#print axioms Carleman.bochnerL2Norm_finite_cover
+#check @Carleman.boundedLipschitz_domain_parameter_interpolation
+#print axioms Carleman.boundedLipschitz_domain_parameter_interpolation
+#check @Carleman.local_mollifier_norm_bound
+#print axioms Carleman.local_mollifier_norm_bound
+#check @Carleman.mollified_cone_ftc
+#print axioms Carleman.mollified_cone_ftc
+#check @Carleman.mollified_cone_interpolation
+#print axioms Carleman.mollified_cone_interpolation
+#check @Carleman.mollified_cone_translation_l2
+#print axioms Carleman.mollified_cone_translation_l2
+#check @Carleman.weak_cone_interpolation_fullLp
+#print axioms Carleman.weak_cone_interpolation_fullLp
+#check @Carleman.weak_cone_interpolation
+#print axioms Carleman.weak_cone_interpolation
+#check @Carleman.SpatialTest.derivativeLp_zero
+#print axioms Carleman.SpatialTest.derivativeLp_zero
+#check @Carleman.SpatialTest.derivativeLp_add
+#print axioms Carleman.SpatialTest.derivativeLp_add
+#check @Carleman.SpatialTest.derivativeLp_smul
+#print axioms Carleman.SpatialTest.derivativeLp_smul
+#check @Carleman.IsWeakSpatialDerivative.direction_zero
+#print axioms Carleman.IsWeakSpatialDerivative.direction_zero
+#check @Carleman.IsWeakSpatialDerivative.direction_add
+#print axioms Carleman.IsWeakSpatialDerivative.direction_add
+#check @Carleman.IsWeakSpatialDerivative.direction_smul
+#print axioms Carleman.IsWeakSpatialDerivative.direction_smul
+#check @Carleman.IsWeakSpatialDerivative.direction_sum
+#print axioms Carleman.IsWeakSpatialDerivative.direction_sum
+#check @Carleman.IsWeakSpatialDerivative.sum_states
+#print axioms Carleman.IsWeakSpatialDerivative.sum_states
+#check @Carleman.zeroExtendLp
+#print axioms Carleman.zeroExtendLp
+#check @Carleman.zeroExtendLp_ae
+#print axioms Carleman.zeroExtendLp_ae
+#check @Carleman.zeroExtendLp_ae_restrict
+#print axioms Carleman.zeroExtendLp_ae_restrict
+#check @Carleman.zeroExtendLp_norm
+#print axioms Carleman.zeroExtendLp_norm
+#check @Carleman.integral_mul_zeroExtendLp
+#print axioms Carleman.integral_mul_zeroExtendLp
+#check @Carleman.CoerciveForm.lipschitz_weighted_euler_sobolev_uniform
+#print axioms Carleman.CoerciveForm.lipschitz_weighted_euler_sobolev_uniform
+#check @Carleman.CoerciveForm.lipschitz_weighted_frozen_sobolev_uniform
+#print axioms Carleman.CoerciveForm.lipschitz_weighted_frozen_sobolev_uniform
+#check @Carleman.CoerciveForm.lipschitz_weighted_temporal_error_uniform
+#print axioms Carleman.CoerciveForm.lipschitz_weighted_temporal_error_uniform
+#check @Carleman.WeakSobolevJet.componentMaximum
+#print axioms Carleman.WeakSobolevJet.componentMaximum
+#check @Carleman.WeakSobolevJet.component_le_maximum
+#print axioms Carleman.WeakSobolevJet.component_le_maximum
+#check @Carleman.WeakSobolevJet.componentMaximum_le_field
+#print axioms Carleman.WeakSobolevJet.componentMaximum_le_field
+#check @Carleman.WeakSobolevJet.componentMaximum_zero
+#print axioms Carleman.WeakSobolevJet.componentMaximum_zero
+#check @Carleman.boundedLipschitz_operator_parameter_graph
+#print axioms Carleman.boundedLipschitz_operator_parameter_graph
+
+#check @Carleman.CoerciveForm.interpolated_weighted_frozen_sobolev_uniform
+#print axioms Carleman.CoerciveForm.interpolated_weighted_frozen_sobolev_uniform
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

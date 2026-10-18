@@ -11,8 +11,9 @@ the final conclusion uses the actual Euclidean L² fields. -/
 open MeasureTheory Set
 open scoped BigOperators NNReal
 namespace Carleman.WeakSobolevJet
-variable {d n : ℕ}
-  (u : WeakSobolevJet d n (volume : Measure (SpatialCoordinates d)) univ)
+variable {d n : ℕ} {ν : Measure (SpatialCoordinates d)}
+  [IsFiniteMeasureOnCompacts ν] {S : Set (SpatialCoordinates d)}
+  (u : WeakSobolevJet d n ν S)
 
 def componentMaximum (k : ℕ) : ℝ≥0 :=
   if hk : k ≤ n then Finset.univ.sup (fun α : Sym (Fin d) k =>
@@ -44,6 +45,8 @@ theorem componentMaximum_zero : (componentMaximum u 0 : ℝ) = ‖value u‖ := 
   simp [componentMaximum, show ∀ α : Sym (Fin d) 0, α = Sym.nil from fun α => Subsingleton.elim _ _,
     value]
   rfl
+
+variable (u : WeakSobolevJet d n (volume : Measure (SpatialCoordinates d)) univ)
 
 theorem component_neighbor_sq_le (k : ℕ) (hk : k+2 ≤ n)
     (α : Sym (Fin d) k) (i : Fin d) :

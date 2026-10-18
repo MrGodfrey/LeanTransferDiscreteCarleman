@@ -630,3 +630,13 @@ B4仅在m=1的**时间部分**获得闭合。一般阶m+1至2m−1导数的原�
 在该前提下，真实A2交换子已统一吸收；一般m的Euler算子图12、完整离散R₂ₘ图、冻结连续算子图60已证。真实Euler/连续/逆权伴随构造给2160dt的L²率及sqrt(466560/c)sqrt(dt)的N_m率，同时证明误差弱jet的MemLp。阈值先于T/网格/两方向/权/τ/所有状态和载荷，ρ保持内禀SmoothOnClosure；连续值只要求a.e.属于D(A)，不加强为每时刻正规性。冻结连续完整R₂ₘ图尚未另行包装。
 
 原域几何新证明从明确Lipschitz图表构造实际内移闭球，再用开有界域闭包紧性得到有限覆盖和统一正高度。它不是Sobolev扩张，也没有证明hI；局部图函数到全局Lipschitz图表的定义等价亦不冒称已证。原域弱Taylor/平均估计仍缺。空间B4误差两系数、最终权族实例仍待；已证B2及普通Γ、原文全离散/两方向/T统一目标均不变。
+
+## T018：原bounded Lipschitz域hI消去与完整一般阶时间范数
+
+本段更新此前T012–T017的“原域插值未证”余额；历史阶段记录保留。详见[数学阶段](analysis/T018-domain-interpolation.md)及[逐声明核对](reviews/T018.md)。C036仍为AUXILIARY，原文完整结果计数1/26不变。
+
+已证明通常局部柱形Lipschitz图表与T017可用global graph接口的双向桥；从实际有限内锥覆盖、原域内弱卷积交换、真实L²平均、内缩穷尽/Fatou、方向组合及有限最大值，得到任意n、所有原域弱Hⁿ jet、全部r≥1的统一参数插值。零延拓仅是L²等距，测试仍在Ω内，不要求零迹、光滑边界、高阶反射或假设扩张存在。`boundedLipschitz_domain_parameter_interpolation`真正清偿hI；`boundedLipschitz_operator_parameter_graph`仅再用正向A1，给原eq:parametergraph的Au版本。
+
+一般m的原域入口现已不要求hI：完整允许权Euler R₂ₘ、完整冻结连续Bochner R₂ₘ、实际时间误差2160δt的L²率和sqrt(466560/c)sqrt(δt)的N_m率。每阶字段先取真实ℓ²/Bochner L²范数再求和；连续jet及误差jet的MemLp均证明。两方向、全状态/任意载荷、T/网格/允许权/τ之前的统一阈值、内禀SmoothOnClosure、a.e.D(A)/H弱导数/周期迹均保留。AllowedWeightData没有插值或目标估计字段。
+
+剩余重点转到Section4：N1–N5下真实空间误差a_E+η_A和a_0+a_E²+η_A、与时间误差的统一权族组合及最终TransferBridges实例。原连续非冻结图及shifted-form完整论文声明仍需整体验收。B2/B3/B5不重复假设，Γ仍是普通函数；原Theorem2.1不宣称完成。

@@ -67,7 +67,8 @@
       "tex_line": 647,
       "milestone": "M3",
       "claim_ids": [
-        "C005"
+        "C005",
+        "C036"
       ],
       "lean_declarations": [],
       "declaration_version": null,
@@ -76,7 +77,7 @@
       "extra_hypotheses": [],
       "build_evidence": null,
       "semantic_review": null,
-      "blocker": null
+      "blocker": "T018/C036提供原域参数插值及一般阶真实时间估计支持；完整原文声明与关联算子接口整体验收待完成，不自动增加原文完成数"
     },
     {
       "id": "P005",
@@ -133,7 +134,8 @@
       "tex_line": 863,
       "milestone": "M3",
       "claim_ids": [
-        "C006"
+        "C006",
+        "C036"
       ],
       "lean_declarations": [],
       "declaration_version": null,
@@ -142,7 +144,7 @@
       "extra_hypotheses": [],
       "build_evidence": null,
       "semantic_review": null,
-      "blocker": null
+      "blocker": "T018/C036提供原域参数插值及一般阶真实时间估计支持；完整原文声明与关联算子接口整体验收待完成，不自动增加原文完成数"
     },
     {
       "id": "P007",
@@ -151,7 +153,9 @@
       "pdf_page": 15,
       "tex_line": 964,
       "milestone": "M3",
-      "claim_ids": [],
+      "claim_ids": [
+        "C036"
+      ],
       "lean_declarations": [],
       "declaration_version": null,
       "verification_status": "PLANNED",
@@ -159,7 +163,7 @@
       "extra_hypotheses": [],
       "build_evidence": null,
       "semantic_review": null,
-      "blocker": null
+      "blocker": "T018/C036提供原域参数插值及一般阶真实时间估计支持；完整原文声明与关联算子接口整体验收待完成，不自动增加原文完成数"
     },
     {
       "id": "P008",
@@ -169,7 +173,8 @@
       "tex_line": 1023,
       "milestone": "M3",
       "claim_ids": [
-        "C007"
+        "C007",
+        "C036"
       ],
       "lean_declarations": [],
       "declaration_version": null,
@@ -178,7 +183,7 @@
       "extra_hypotheses": [],
       "build_evidence": null,
       "semantic_review": null,
-      "blocker": null
+      "blocker": "T018/C036提供原域参数插值及一般阶真实时间估计支持；完整原文声明与关联算子接口整体验收待完成，不自动增加原文完成数"
     },
     {
       "id": "P009",
