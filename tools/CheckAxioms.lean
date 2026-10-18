@@ -3852,6 +3852,49 @@ set_option pp.maxSteps 1000000
 #check @Carleman.convex_smooth_mean_poincare
 #print axioms Carleman.convex_smooth_mean_poincare
 
+#check @Carleman.l2_square_bound_of_ae_tendsto
+#print axioms Carleman.l2_square_bound_of_ae_tendsto
+#check @Carleman.pairwise_memLp
+#print axioms Carleman.pairwise_memLp
+#check @Carleman.pairwise_integral_congr_ae
+#print axioms Carleman.pairwise_integral_congr_ae
+#check @Carleman.pairwise_square_bound_of_ae_tendsto
+#print axioms Carleman.pairwise_square_bound_of_ae_tendsto
+#check @Carleman.l2_square_bound_on_exhaustion
+#print axioms Carleman.l2_square_bound_on_exhaustion
+#check @Carleman.spatialLinearMap_norm_sq
+#print axioms Carleman.spatialLinearMap_norm_sq
+#check @Carleman.mollified_gradient_energy_le
+#print axioms Carleman.mollified_gradient_energy_le
+#check @Carleman.convex_mollified_pairwise_bound
+#print axioms Carleman.convex_mollified_pairwise_bound
+#check @Carleman.shrinkingBump_rOut_tendsto
+#print axioms Carleman.shrinkingBump_rOut_tendsto
+#check @Carleman.compact_mollifier_eventually_inside
+#print axioms Carleman.compact_mollifier_eventually_inside
+#check @Carleman.interior_weak_pairwise_fullLp
+#print axioms Carleman.interior_weak_pairwise_fullLp
+#check @Carleman.interior_weak_pairwise
+#print axioms Carleman.interior_weak_pairwise
+#check @Carleman.interior_weak_mean_poincare
+#print axioms Carleman.interior_weak_mean_poincare
+#check @Carleman.convexInnerCompact
+#print axioms Carleman.convexInnerCompact
+#check @Carleman.convexInnerCompact_compact
+#print axioms Carleman.convexInnerCompact_compact
+#check @Carleman.convexInnerCompact_convex
+#print axioms Carleman.convexInnerCompact_convex
+#check @Carleman.convexInnerCompact_subset
+#print axioms Carleman.convexInnerCompact_subset
+#check @Carleman.convexInnerCompact_eventually_mem
+#print axioms Carleman.convexInnerCompact_eventually_mem
+#check @Carleman.convex_weak_pairwise_bound
+#print axioms Carleman.convex_weak_pairwise_bound
+#check @Carleman.convex_weak_mean_poincare
+#print axioms Carleman.convex_weak_mean_poincare
+#check @Carleman.convex_weakJet_mean_poincare
+#print axioms Carleman.convex_weakJet_mean_poincare
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

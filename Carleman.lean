@@ -486,3 +486,8 @@ public import Carleman.Spatial.MeanSquareDifference
 public import Carleman.Spatial.ConvexSegmentIntegral
 public import Carleman.Spatial.SmoothSegmentSquare
 public import Carleman.Spatial.ConvexSmoothPoincare
+public import Carleman.Spatial.PairwiseL2Limit
+public import Carleman.Spatial.MollifiedGradientEnergy
+public import Carleman.Spatial.InteriorWeakPoincare
+public import Carleman.Geometry.ConvexCompactExhaustion
+public import Carleman.Spatial.ConvexWeakPoincare

@@ -996,3 +996,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T072：凸单元光滑函数的均值 Poincaré
 
 见 [T072规格](analysis/T072-convex-poincare.md)。四模块11声明以真实均值平方恒等式、线段FTC、L² Cauchy–Schwarz和仿射体积雅可比，证明任意正体积紧凸K上真实C¹函数的均值误差≤(2^d/2)D²乘实际导数平方积分。半线段、两点差及全部Fubini可积性均证明；未将其冒充一般弱H¹/H²结果，后续仍需局部卷积穷竭和真正逼近。AUXILIARY，原文12/26。
+
+## T073：原凸域的真实弱 H¹ 均值 Poincaré
+
+见 [T073规格](analysis/T073-convex-weak.md)。五模块21声明以真实局部卷积、原弱导数坐标能量、L²双差Fatou与显式内部紧凸穷竭，证明原有界开凸域全部H¹ jet的均值误差≤(2^d/2)D²||field 1||²。零延拓仅作L²卷积，全部弱测试留在原域；无边界迹、光滑状态或全空间H¹延拓前提。一般H²仿射逼近及原B1/B2仍待，AUXILIARY，原文12/26。
