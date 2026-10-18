@@ -2128,6 +2128,147 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Physical.relaxed_control_of_observation
 #print axioms Carleman.Physical.relaxed_control_of_observation
 
+#check @Carleman.Physical.periodic_next_of_endpoints
+#print axioms Carleman.Physical.periodic_next_of_endpoints
+#check @Carleman.Physical.cutoffState
+#print axioms Carleman.Physical.cutoffState
+#check @Carleman.Physical.cutoffRemainder
+#print axioms Carleman.Physical.cutoffRemainder
+#check @Carleman.Physical.cutoff_next
+#print axioms Carleman.Physical.cutoff_next
+#check @Carleman.Physical.cutoff_difference
+#print axioms Carleman.Physical.cutoff_difference
+#check @Carleman.Physical.cutoff_residual
+#print axioms Carleman.Physical.cutoff_residual
+#check @Carleman.Physical.physicalWeightDenom
+#print axioms Carleman.Physical.physicalWeightDenom
+#check @Carleman.Physical.physicalWeight
+#print axioms Carleman.Physical.physicalWeight
+#check @Carleman.Physical.physicalWeightDenom_pos
+#print axioms Carleman.Physical.physicalWeightDenom_pos
+#check @Carleman.Physical.physicalWeightDenom_sq
+#print axioms Carleman.Physical.physicalWeightDenom_sq
+#check @Carleman.Physical.physicalWeightDenom_bounds
+#print axioms Carleman.Physical.physicalWeightDenom_bounds
+#check @Carleman.Physical.physicalWeight_bounds
+#print axioms Carleman.Physical.physicalWeight_bounds
+#check @Carleman.Physical.physicalWeight_zero
+#print axioms Carleman.Physical.physicalWeight_zero
+#check @Carleman.Physical.physicalWeight_periodic
+#print axioms Carleman.Physical.physicalWeight_periodic
+#check @Carleman.Physical.physicalWeightDenom_hasDerivAt
+#print axioms Carleman.Physical.physicalWeightDenom_hasDerivAt
+#check @Carleman.Physical.physicalWeightDerivative
+#print axioms Carleman.Physical.physicalWeightDerivative
+#check @Carleman.Physical.physicalWeight_hasDerivAt
+#print axioms Carleman.Physical.physicalWeight_hasDerivAt
+#check @Carleman.Physical.physicalWeight_smooth
+#print axioms Carleman.Physical.physicalWeight_smooth
+#check @Carleman.Physical.physicalWeight_derivative_bound
+#print axioms Carleman.Physical.physicalWeight_derivative_bound
+#check @Carleman.Physical.physicalTimeWeight
+#print axioms Carleman.Physical.physicalTimeWeight
+#check @Carleman.Physical.physicalTimeWeightRegularity
+#print axioms Carleman.Physical.physicalTimeWeightRegularity
+#check @Carleman.Physical.physicalWeightSecondDerivative
+#print axioms Carleman.Physical.physicalWeightSecondDerivative
+#check @Carleman.Physical.physicalWeightDerivative_hasDerivAt
+#print axioms Carleman.Physical.physicalWeightDerivative_hasDerivAt
+#check @Carleman.Physical.physicalWeight_second_derivative_bound
+#print axioms Carleman.Physical.physicalWeight_second_derivative_bound
+#check @Carleman.Physical.physicalWeight_deriv
+#print axioms Carleman.Physical.physicalWeight_deriv
+#check @Carleman.Physical.physicalWeight_second_deriv
+#print axioms Carleman.Physical.physicalWeight_second_deriv
+#check @Carleman.Physical.physicalWeightDerivative_zero
+#print axioms Carleman.Physical.physicalWeightDerivative_zero
+#check @Carleman.Physical.physicalWeightDerivative_periodic
+#print axioms Carleman.Physical.physicalWeightDerivative_periodic
+#check @Carleman.Physical.clipUnit
+#print axioms Carleman.Physical.clipUnit
+#check @Carleman.Physical.clipUnit_bounds
+#print axioms Carleman.Physical.clipUnit_bounds
+#check @Carleman.Physical.clipUnit_zero
+#print axioms Carleman.Physical.clipUnit_zero
+#check @Carleman.Physical.clipUnit_one
+#print axioms Carleman.Physical.clipUnit_one
+#check @Carleman.Physical.clipUnit_lipschitz
+#print axioms Carleman.Physical.clipUnit_lipschitz
+#check @Carleman.Physical.endpointDistance
+#print axioms Carleman.Physical.endpointDistance
+#check @Carleman.Physical.endpointDistance_lipschitz
+#print axioms Carleman.Physical.endpointDistance_lipschitz
+#check @Carleman.Physical.physicalCutoff
+#print axioms Carleman.Physical.physicalCutoff
+#check @Carleman.Physical.physicalCutoff_bounds
+#print axioms Carleman.Physical.physicalCutoff_bounds
+#check @Carleman.Physical.physicalCutoff_zero
+#print axioms Carleman.Physical.physicalCutoff_zero
+#check @Carleman.Physical.physicalCutoff_one
+#print axioms Carleman.Physical.physicalCutoff_one
+#check @Carleman.Physical.physicalCutoff_endpoints
+#print axioms Carleman.Physical.physicalCutoff_endpoints
+#check @Carleman.Physical.physicalCutoff_lipschitz
+#print axioms Carleman.Physical.physicalCutoff_lipschitz
+#check @Carleman.Physical.cutoffNodes
+#print axioms Carleman.Physical.cutoffNodes
+#check @Carleman.Physical.cutoffNodes_endpoints
+#print axioms Carleman.Physical.cutoffNodes_endpoints
+#check @Carleman.Physical.cutoffNodes_difference
+#print axioms Carleman.Physical.cutoffNodes_difference
+#check @Carleman.Physical.cutoffNodes_transition_location
+#print axioms Carleman.Physical.cutoffNodes_transition_location
+#check @Carleman.Physical.leftNodes
+#print axioms Carleman.Physical.leftNodes
+#check @Carleman.Physical.rightNodes
+#print axioms Carleman.Physical.rightNodes
+#check @Carleman.Physical.leftNodes_measure
+#print axioms Carleman.Physical.leftNodes_measure
+#check @Carleman.Physical.rightNodes_measure
+#print axioms Carleman.Physical.rightNodes_measure
+#check @Carleman.Physical.middleNodes
+#print axioms Carleman.Physical.middleNodes
+#check @Carleman.Physical.middleNodes_measure
+#print axioms Carleman.Physical.middleNodes_measure
+#check @Carleman.Physical.transitionNodes
+#print axioms Carleman.Physical.transitionNodes
+#check @Carleman.Physical.transitionNodes_measure
+#print axioms Carleman.Physical.transitionNodes_measure
+#check @Carleman.Physical.sine_reflect
+#print axioms Carleman.Physical.sine_reflect
+#check @Carleman.Physical.sine_endpoint_bound
+#print axioms Carleman.Physical.sine_endpoint_bound
+#check @Carleman.Physical.physicalWeight_near_endpoint
+#print axioms Carleman.Physical.physicalWeight_near_endpoint
+#check @Carleman.Physical.sine_middle_lower
+#print axioms Carleman.Physical.sine_middle_lower
+#check @Carleman.Physical.physicalWeight_middle_upper
+#print axioms Carleman.Physical.physicalWeight_middle_upper
+#check @Carleman.Physical.concrete_cutoff_residual
+#print axioms Carleman.Physical.concrete_cutoff_residual
+#check @Carleman.Physical.cutoffNodes_one_middle
+#print axioms Carleman.Physical.cutoffNodes_one_middle
+#check @Carleman.Physical.cutoff_remainder_zero
+#print axioms Carleman.Physical.cutoff_remainder_zero
+#check @Carleman.Physical.cutoff_remainder_norm_bound
+#print axioms Carleman.Physical.cutoff_remainder_norm_bound
+#check @Carleman.Physical.cutoff_remainder_energy_bound
+#print axioms Carleman.Physical.cutoff_remainder_energy_bound
+#check @Carleman.Physical.physical_adjoint_terminal_bound
+#print axioms Carleman.Physical.physical_adjoint_terminal_bound
+#check @Carleman.Physical.physical_cutoff_remainder_energy
+#print axioms Carleman.Physical.physical_cutoff_remainder_energy
+#check @Carleman.Physical.physical_adjoint_initial_lower
+#print axioms Carleman.Physical.physical_adjoint_initial_lower
+#check @Carleman.Physical.physical_middle_energy
+#print axioms Carleman.Physical.physical_middle_energy
+#check @Carleman.Physical.physical_delta_conditions
+#print axioms Carleman.Physical.physical_delta_conditions
+#check @Carleman.Physical.physical_transition_weight
+#print axioms Carleman.Physical.physical_transition_weight
+#check @Carleman.Physical.physical_weight_endpoint_decay
+#print axioms Carleman.Physical.physical_weight_endpoint_decay
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

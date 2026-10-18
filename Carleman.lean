@@ -266,3 +266,12 @@ public import Carleman.Control.PhysicalFlow
 public import Carleman.Control.PenalizedHUM
 public import Carleman.Control.PhysicalHUM
 public import Carleman.Control.RelaxedControl
+
+public import Carleman.Control.PhysicalCutoff
+public import Carleman.Control.PhysicalWeight
+public import Carleman.Control.PhysicalWeightSecond
+public import Carleman.Control.PhysicalRamp
+public import Carleman.Control.PhysicalWindow
+public import Carleman.Control.PhysicalWeightLocalization
+public import Carleman.Control.PhysicalCutoffEnergy
+public import Carleman.Control.PhysicalParameterChoice

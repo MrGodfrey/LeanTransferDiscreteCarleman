@@ -711,3 +711,16 @@ C008/P009 是完整 Lemma4.1 候选，精确 main CI 核实后登记 BUILT/PAPER
 `PhysicalHUM` 对真实控制序列使用 sqrt(dt) 加权嵌入及逆缩放，精确证明物理终值等于 `R.adjoint y0 + O.adjoint controlVector(u)`，并由真实初值问题存在性产生整个前向解。`RelaxedControl.relaxed_control_of_observation`（完整名称 `Carleman.Physical.relaxed_control_of_observation`）在原非负自伴刚度、有界自伴势和真实 Hilbert 伴随方程下，取 ε=exp(-dS)，输出原前向方程及两条控制结论。C、d、S 为显式参数；没有证明它们满足原网格与权函数构造要求。
 
 独立验收应覆盖全部显式声明、dt 权重、p^(n−1) 的时刻、真实伴随与终值识别，以及最后入口仍保留的观测假设。不得将该条件桥提升为 PAPER，也不得认为其提供原观测定理。
+## T027：原物理观测的周期权与具体截断基础
+
+范围为 AUXILIARY；原 Theorem 7.2 的空间加权范数、势载荷与具体 P1/FD 及连续热 Carleman 供应仍未完成，不能将本阶段计为完整观测定理。
+
+八个 `Control/Physical*` 模块完成原 `q(t)=qb/sqrt(sin²(πt/T)+δ²)` 的实际光滑函数：正分母、全时上下界、周期性、真实一二阶导数及准确比界 `π/(qb T)`、`4π²/(qb² T²)`。`physicalTimeWeight` 与 `physicalTimeWeightRegularity` 接到既有允许权接口；二阶公式通过 `HasDerivAt` 和实际 `deriv (deriv q)` 识别，首阶导数周期且端点为零。
+
+证明路线采用显式 Lipschitz 截断 `clipUnit((min(t,T−t)−a)/a)`，a=δT。原证明仅用其节点取值、边界消失、中央等于一及差商界，故无需截断本身光滑。该替换不改原论文，也不改变最终陈述。形式化证明其值在[0,1]、在距端点≤a处为零、距端点≥2a处为一、差商≤1/a。N+1个物理节点截断后准确连接周期 N 节点，保留 `D_- z + A z = -Vz-r` 的原符号与真实 r。没有将伴随轨迹本身周期化。
+
+对实际节点作整数计数，左右窗口测度各≤b+dt；dt≤T/12时中央三分之一测度≥T/6。过渡区域采用安全的 `5a` 上界（原稿更精细为3a），仅放大可选择的绝对常数，不改变 S 指数或统一性。真实伴随能量给出 `dt Σ‖r‖² ≤ (5/a)exp(4MT)‖pN‖²` 和中部初值恢复 `(T/6)exp(−4MT)‖p0‖² ≤ dt Σ_middle ‖pi‖²`；这些仍是未加空间权的中间界。
+
+`physical_delta_conditions` 直接从 qb≥2、16qb≤S≤qb T/(4dt) 给出δ>0、δ≤1/16、qmax=S、截断宽度和dt≤a/4。`physical_transition_weight` 对真实差商非零节点证明原 `q_i≥S/sqrt(1+9π²)`，`physical_weight_endpoint_decay` 对任意ρ≤−ρstar证明原端点指数 `exp(−(2ρstar/sqrt(1+9π²))S)`。中央 q≤2qb 也已从真实正弦函数推出。
+
+后续须把这些点态和未加权结果接到实际空间加权 seminorm、具体势载荷与 Theorem 2.1，选择统一 Cb 并完成潜势吸收、观测上界及指数余项吸收。不能把这些尚待条件隐藏在一个命名为原观测定理的接口中。
