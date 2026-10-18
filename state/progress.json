@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T073",
-    "supervisor_checked_at": "2026-10-18T22:43:54.189560+00:00",
-    "next_action": "固定SHA独立验收原凸域真实弱H1均值估计21声明；继续一般H2平均梯度仿射逼近。",
+    "current_task_id": "T074",
+    "supervisor_checked_at": "2026-10-18T22:52:28.676295+00:00",
+    "next_action": "固定SHA独立验收真实H2齐次仿射逼近34声明；继续物理边界面迹与仿射校正。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T22:43:54.189560+00:00"
+    "last_activity_at": "2026-10-18T22:52:28.676295+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "36c57dbc4edf3d9671f7b00f8c0675230f6b4380",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39172937739/attempts/1",
-      "finished_at": "2026-10-18T22:38:25.492041+00:00",
+      "checked_sha": "c99262c4a0d65a4d23f2efb57748bda490e971d7",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39173511962/attempts/1",
+      "finished_at": "2026-10-18T22:46:25.936718+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "36c57dbc4edf3d9671f7b00f8c0675230f6b4380"
+      "source_head_sha": "c99262c4a0d65a4d23f2efb57748bda490e971d7"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "36c57dbc4edf3d9671f7b00f8c0675230f6b4380",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39172937739/attempts/1",
-      "finished_at": "2026-10-18T22:38:25.492041+00:00",
+      "checked_sha": "c99262c4a0d65a4d23f2efb57748bda490e971d7",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39173511962/attempts/1",
+      "finished_at": "2026-10-18T22:46:25.936718+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "36c57dbc4edf3d9671f7b00f8c0675230f6b4380"
+      "source_head_sha": "c99262c4a0d65a4d23f2efb57748bda490e971d7"
     }
   },
   "milestones": [
@@ -8634,7 +8634,7 @@
       "paper_ref": "Auxiliary genuine weak H1 mean Poincare estimate toward Appendix B and P1 H2 approximation",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "lem:fd-boundary-affine",
@@ -8663,15 +8663,115 @@
         "Carleman.convex_weak_mean_poincare",
         "Carleman.convex_weakJet_mean_poincare"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "c99262c4a0d65a4d23f2efb57748bda490e971d7",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "c99262c4a0d65a4d23f2efb57748bda490e971d7",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39173511962/attempts/1",
+        "finished_at": "2026-10-18T22:46:25.936718+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "c99262c4a0d65a4d23f2efb57748bda490e971d7"
+      },
+      "semantic_review": {
+        "checked_sha": "c99262c4a0d65a4d23f2efb57748bda490e971d7",
+        "declarations": [
+          "Carleman.l2_square_bound_of_ae_tendsto",
+          "Carleman.pairwise_memLp",
+          "Carleman.pairwise_integral_congr_ae",
+          "Carleman.pairwise_square_bound_of_ae_tendsto",
+          "Carleman.l2_square_bound_on_exhaustion",
+          "Carleman.spatialLinearMap_norm_sq",
+          "Carleman.mollified_gradient_energy_le",
+          "Carleman.convex_mollified_pairwise_bound",
+          "Carleman.shrinkingBump_rOut_tendsto",
+          "Carleman.compact_mollifier_eventually_inside",
+          "Carleman.interior_weak_pairwise_fullLp",
+          "Carleman.interior_weak_pairwise",
+          "Carleman.interior_weak_mean_poincare",
+          "Carleman.convexInnerCompact",
+          "Carleman.convexInnerCompact_compact",
+          "Carleman.convexInnerCompact_convex",
+          "Carleman.convexInnerCompact_subset",
+          "Carleman.convexInnerCompact_eventually_mem",
+          "Carleman.convex_weak_pairwise_bound",
+          "Carleman.convex_weak_mean_poincare",
+          "Carleman.convex_weakJet_mean_poincare"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bfa77a04a27f806dcc2c7a01540a64b27217ff90/governance/reviews/T073-local-acceptance.md",
+        "reviewed_at": "2026-10-18T22:48:18+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C088"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "真实局部卷积能量、双差L2 Fatou及显式内部紧凸穷竭，给原有界开凸域全部H1 jet的均值误差≤(2^d/2)D²乘真实完整一阶字段范数平方。无全空间H1延拓、零迹或光滑状态前提；H2仿射逼近和原B1/B2仍待，原文12/26。"
+      "scope_notes": "真实局部卷积能量、双差L2 Fatou及显式内部紧凸穷竭，给原有界开凸域全部H1 jet的均值误差≤(2^d/2)D²乘真实完整一阶字段范数平方。无全空间H1延拓、零迹或光滑状态前提；H2仿射逼近和原B1/B2仍待，原文12/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C090",
+      "title": "原凸域全部弱H2状态的齐次仿射逼近",
+      "paper_ref": "Auxiliary genuine homogeneous H2 affine approximation toward Appendix B boundary affine lemma and P1 approximation",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "lem:fd-boundary-affine",
+        "prop:p1"
+      ],
+      "lean_declarations": [
+        "Carleman.scalarLp_norm_sq",
+        "Carleman.scalarConstantLp",
+        "Carleman.scalarConstantLp_ae",
+        "Carleman.norm_sub_scalarConstantLp_sq",
+        "Carleman.boundedAffine_memLp",
+        "Carleman.boundedAffineLp",
+        "Carleman.boundedAffineLp_ae",
+        "Carleman.boundedAffineLp_weak",
+        "Carleman.IsWeakSpatialDerivative.sub",
+        "Carleman.coordinateFirstFields",
+        "Carleman.coordinateFirstJet",
+        "Carleman.coordinateFirstJet_value",
+        "Carleman.coordinateFirstJet_gradient_norm_sq",
+        "Carleman.coordinateFunctional",
+        "Carleman.coordinateFunctional_basis",
+        "Carleman.meanAffinePolynomial",
+        "Carleman.meanAffinePolynomial_apply",
+        "Carleman.meanAffinePolynomial_derivative",
+        "Carleman.meanAffinePolynomial_residual_ae",
+        "Carleman.meanAffinePolynomial_mean_residual",
+        "Carleman.weakGradientMean",
+        "Carleman.h2_gradient_mean_bound",
+        "Carleman.h2MeanAffine",
+        "Carleman.h2AffineResidualCoordinates",
+        "Carleman.h2AffineResidual_weak",
+        "Carleman.h2AffineResidual",
+        "Carleman.h2AffineResidual_value",
+        "Carleman.h2AffineResidual_value_ae",
+        "Carleman.h2AffineResidual_gradient_component",
+        "Carleman.h2AffineResidual_mean",
+        "Carleman.h2AffineResidual_gradient_bound",
+        "Carleman.h2AffineResidual_value_bound",
+        "Carleman.h2AffineResidual_homogeneous_bound",
+        "Carleman.exists_convex_h2_affine_approximation"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C089"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "以实际弱梯度均值为仿射斜率，实际H1残差零均值；两次Poincare给||r||+D||grad r||≤d(2^d+1)D²||field₂u||。适用于原全部H2 jet，无光滑代表或全空间弱延拓前提；物理面零迹校正及原B1/B2仍待，原文12/26。"
     }
   ],
   "events": [
@@ -9117,6 +9217,11 @@
       "at": "2026-10-18T22:43:54.189560+00:00",
       "public_summary": "光滑均值Poincare11声明独立验收PASS；原凸域真实弱H1均值估计21声明全库通过，原文12/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/70fc91ce650718298728b8ea700e5a0d9b7ff123/governance/reviews/T072-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T22:52:28.676295+00:00",
+      "public_summary": "原凸域弱H1均值Poincare21声明独立验收PASS；一般弱H2齐次仿射逼近34声明全库通过，原文12/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bfa77a04a27f806dcc2c7a01540a64b27217ff90/governance/reviews/T073-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -9314,7 +9419,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/605482c31a83563b5c3a027ca3860be543aa3fce/governance/reviews/T071-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39172416462/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/70fc91ce650718298728b8ea700e5a0d9b7ff123/governance/reviews/T072-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39172937739/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39172937739/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bfa77a04a27f806dcc2c7a01540a64b27217ff90/governance/reviews/T073-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39173511962/attempts/1"
     ]
   },
   "schedules": [
@@ -20476,10 +20583,10 @@
       ],
       "branch": "main",
       "base_commit": "36c57dbc4edf3d9671f7b00f8c0675230f6b4380",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "c99262c4a0d65a4d23f2efb57748bda490e971d7",
+      "merge_commit": "c99262c4a0d65a4d23f2efb57748bda490e971d7",
       "lean_declarations": [
         "Carleman.l2_square_bound_of_ae_tendsto",
         "Carleman.pairwise_memLp",
@@ -20503,12 +20610,23 @@
         "Carleman.convex_weak_mean_poincare",
         "Carleman.convex_weakJet_mean_poincare"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "c99262c4a0d65a4d23f2efb57748bda490e971d7",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39173511962/attempts/1",
+        "finished_at": "2026-10-18T22:46:25.936718+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "c99262c4a0d65a4d23f2efb57748bda490e971d7"
+      },
       "blocker": null,
       "attempts": [
         "五模块21声明定向3247 jobs、全库3685 jobs通过，5178声明递归公理审计PASS。"
       ],
-      "next_action": "固定SHA独立验收原凸域真实弱H1均值估计21声明；继续一般H2平均梯度仿射逼近。",
+      "next_action": "原凸域全部弱H1均值估计已独立验收；继续真实弱H2仿射逼近和物理边界校正。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -20520,6 +20638,113 @@
         "recursive_axiom_audit": 5178,
         "new_explicit_declarations": 21,
         "declaration_artifact_sha256": "4860f1ce84c233631ad15e65b791a81f95da03a207d74b9bf9112e6a41b83e50",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "c99262c4a0d65a4d23f2efb57748bda490e971d7",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C089"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "c99262c4a0d65a4d23f2efb57748bda490e971d7",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T22:48:18+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bfa77a04a27f806dcc2c7a01540a64b27217ff90/governance/reviews/T073-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "c99262c4a0d65a4d23f2efb57748bda490e971d7",
+        "checked_sha": "c99262c4a0d65a4d23f2efb57748bda490e971d7",
+        "run_id": 39173511962,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3685,
+        "recursive_axiom_audit": 5178,
+        "new_explicit_declarations": 21,
+        "declaration_artifact_sha256": "4860f1ce84c233631ad15e65b791a81f95da03a207d74b9bf9112e6a41b83e50",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T074",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原凸域全部弱H2状态的齐次仿射逼近",
+      "goal_ids": [
+        "C090"
+      ],
+      "acceptance": [
+        "实际仿射Lp与常弱导数，残差代表、零均值及坐标身份正确",
+        "原H2弱梯度每坐标使用完整二阶弱身份，Hessian收缩及d²求和合法",
+        "真实残差H1组装及一阶平方和精确，二次Poincare没有额外正则前提",
+        "原任意H2状态、D=0及d=0边界量词、统一维数常数与真实Hessian范数保持",
+        "物理面迹校正及完整B1/B2/P1明确尚待，AUXILIARY不越界"
+      ],
+      "dependencies": [
+        "C089"
+      ],
+      "branch": "main",
+      "base_commit": "c99262c4a0d65a4d23f2efb57748bda490e971d7",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.scalarLp_norm_sq",
+        "Carleman.scalarConstantLp",
+        "Carleman.scalarConstantLp_ae",
+        "Carleman.norm_sub_scalarConstantLp_sq",
+        "Carleman.boundedAffine_memLp",
+        "Carleman.boundedAffineLp",
+        "Carleman.boundedAffineLp_ae",
+        "Carleman.boundedAffineLp_weak",
+        "Carleman.IsWeakSpatialDerivative.sub",
+        "Carleman.coordinateFirstFields",
+        "Carleman.coordinateFirstJet",
+        "Carleman.coordinateFirstJet_value",
+        "Carleman.coordinateFirstJet_gradient_norm_sq",
+        "Carleman.coordinateFunctional",
+        "Carleman.coordinateFunctional_basis",
+        "Carleman.meanAffinePolynomial",
+        "Carleman.meanAffinePolynomial_apply",
+        "Carleman.meanAffinePolynomial_derivative",
+        "Carleman.meanAffinePolynomial_residual_ae",
+        "Carleman.meanAffinePolynomial_mean_residual",
+        "Carleman.weakGradientMean",
+        "Carleman.h2_gradient_mean_bound",
+        "Carleman.h2MeanAffine",
+        "Carleman.h2AffineResidualCoordinates",
+        "Carleman.h2AffineResidual_weak",
+        "Carleman.h2AffineResidual",
+        "Carleman.h2AffineResidual_value",
+        "Carleman.h2AffineResidual_value_ae",
+        "Carleman.h2AffineResidual_gradient_component",
+        "Carleman.h2AffineResidual_mean",
+        "Carleman.h2AffineResidual_gradient_bound",
+        "Carleman.h2AffineResidual_value_bound",
+        "Carleman.h2AffineResidual_homogeneous_bound",
+        "Carleman.exists_convex_h2_affine_approximation"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "五模块34声明定向3299 jobs、全库3690 jobs通过，5303声明递归公理审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收真实H2齐次仿射逼近34声明；继续物理边界面迹与仿射校正。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3690,
+        "recursive_axiom_audit": 5303,
+        "new_explicit_declarations": 34,
+        "declaration_artifact_sha256": "af9e1333b23878c8b4bab7e34e1061af47274b6c79bb8d23afedbb2c19622138",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
