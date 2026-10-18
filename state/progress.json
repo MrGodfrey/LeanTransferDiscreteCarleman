@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T054",
-    "supervisor_checked_at": "2026-10-18T20:25:26.654265+00:00",
-    "next_action": "真实二阶矩与质量积分19声明固定SHA独立验收；继续实际节点权构造和全域节点加权测试。",
+    "current_task_id": "T055",
+    "supervisor_checked_at": "2026-10-18T20:33:27.012615+00:00",
+    "next_action": "实际共享节点权与节点测试16声明固定SHA独立验收；继续实际加权节点状态和测试的L2范数比较。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T20:25:26.654265+00:00"
+    "last_activity_at": "2026-10-18T20:33:27.012615+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "24509632c6ae2b1a3bb9e30eca790c82decec4e3",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39162631089/attempts/1",
-      "finished_at": "2026-10-18T20:20:08.265888+00:00",
+      "checked_sha": "cbea02af04b947ec6f1b1c6e3cfb0da5bd65e5a7",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39163247482/attempts/1",
+      "finished_at": "2026-10-18T20:27:57.688660+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "24509632c6ae2b1a3bb9e30eca790c82decec4e3"
+      "source_head_sha": "cbea02af04b947ec6f1b1c6e3cfb0da5bd65e5a7"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "24509632c6ae2b1a3bb9e30eca790c82decec4e3",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39162631089/attempts/1",
-      "finished_at": "2026-10-18T20:20:08.265888+00:00",
+      "checked_sha": "cbea02af04b947ec6f1b1c6e3cfb0da5bd65e5a7",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39163247482/attempts/1",
+      "finished_at": "2026-10-18T20:27:57.688660+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "24509632c6ae2b1a3bb9e30eca790c82decec4e3"
+      "source_head_sha": "cbea02af04b947ec6f1b1c6e3cfb0da5bd65e5a7"
     }
   },
   "milestones": [
@@ -7354,7 +7354,7 @@
       "paper_ref": "Auxiliary genuine simplex second moments, consistent P1 mass identity and weighted coercivity toward Section6 projection stability",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:p1"
@@ -7380,9 +7380,48 @@
         "Carleman.weighted_simplex_mass_coercive",
         "Carleman.weighted_simplex_mass_pos"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "cbea02af04b947ec6f1b1c6e3cfb0da5bd65e5a7",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "cbea02af04b947ec6f1b1c6e3cfb0da5bd65e5a7",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39163247482/attempts/1",
+        "finished_at": "2026-10-18T20:27:57.688660+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "cbea02af04b947ec6f1b1c6e3cfb0da5bd65e5a7"
+      },
+      "semantic_review": {
+        "checked_sha": "cbea02af04b947ec6f1b1c6e3cfb0da5bd65e5a7",
+        "declarations": [
+          "Carleman.integral_sq_eq_tail",
+          "Carleman.integral_unit_tail_power",
+          "Carleman.integral_simplexBarycentric_sq",
+          "Carleman.simplexPermutationLinear",
+          "Carleman.simplexPermutationShift",
+          "Carleman.simplexPermutation_vertex",
+          "Carleman.simplexPermutation_cell",
+          "Carleman.simplexPermutation_barycentric",
+          "Carleman.simplexPermutation_jacobian",
+          "Carleman.integral_comp_simplexPermutation",
+          "Carleman.integral_simplexBarycentric_mul_permutation",
+          "Carleman.integral_simplexBarycentric_mul_offdiag",
+          "Carleman.integral_simplexBarycentric_mul",
+          "Carleman.p1CoefficientForm_sum",
+          "Carleman.integral_simplexNodalInterpolant_mul",
+          "Carleman.simplex_mass_factor_pos",
+          "Carleman.integral_simplexNodalInterpolant_sq_bounds",
+          "Carleman.weighted_simplex_mass_coercive",
+          "Carleman.weighted_simplex_mass_pos"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/fd12dd4916571fcbd042377fa0004bab19f24f89/governance/reviews/T054-local-acceptance.md",
+        "reviewed_at": "2026-10-18T20:30:24+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C063",
         "C068",
@@ -7390,7 +7429,50 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "真实layer-cake给对角二阶矩；实际顶点置换的Jacobian为1与真实积分不变性给非对角矩。真实一致质量积分等于体积因子乘系数型，平方积分上下界比例d+2，并有原阈值内真实加权强制性。节点权对应、完整Vh表示及全域投影仍待，原文12/26。"
+      "scope_notes": "真实layer-cake给对角二阶矩；实际顶点置换的Jacobian为1与真实积分不变性给非对角矩。真实一致质量积分等于体积因子乘系数型，平方积分上下界比例d+2，并有原阈值内真实加权强制性。节点权对应、完整Vh表示及全域投影仍待，原文12/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C071",
+      "title": "原四类权的共享节点权与全域节点测试",
+      "paper_ref": "Auxiliary construction of uniformly graded nodal weights and actual weighted nodal tests toward Section6 P1 projection stability",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:p1"
+      ],
+      "lean_declarations": [
+        "Carleman.SimplicialPartition.incidentCells",
+        "Carleman.SimplicialPartition.mem_incidentCells",
+        "Carleman.SimplicialPartition.nodalWeightMinimum",
+        "Carleman.SimplicialPartition.nodalWeightMinimum_pos",
+        "Carleman.SimplicialPartition.nodalWeightMinimum_vertex_bounds",
+        "Carleman.SimplicialPartition.nodalWeightMinimum_local_ratio",
+        "Carleman.SimplicialPartition.gradedCellWeight",
+        "Carleman.SimplicialPartition.gradedCellWeight_pos",
+        "Carleman.SimplicialPartition.allowedWeight_scaled_neighbor_le",
+        "Carleman.SimplicialPartition.sizeWeightFactor_grading",
+        "Carleman.SimplicialPartition.gradedCellWeight_neighbor_le",
+        "Carleman.SimplicialPartition.gradedCellWeight_compare",
+        "Carleman.allowed_weights_uniform_nodal_weights",
+        "Carleman.SimplicialPartition.nodal_squared_weight_test_mem",
+        "Carleman.SimplicialPartition.nodal_weighted_mass_coercive",
+        "Carleman.SimplicialPartition.nodal_weighted_pairing_coercive"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C060",
+        "C065",
+        "C067",
+        "C070"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实共享几何顶点的相邻单元样本最小值给a_i/θ≤ω节点≤a_i。原四类权内部统一δ及θ<Γd，实际分片权与样本单元a.e.比较。节点平方权测试属于真实H1零边界一致P1，全域质量积分/真实L2内积有节点系数能量下界。完整Vh节点表示、范数比较及投影仍待，原文12/26。"
     }
   ],
   "events": [
@@ -7741,6 +7823,11 @@
       "at": "2026-10-18T20:25:26.654265+00:00",
       "public_summary": "真实重心分布及一阶矩7声明独立Agent及同SHA CI验收PASS；真实二阶矩、一致P1质量积分及原阈值内加权单元强制性19声明全库通过，完整投影仍待，原文12/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/abb9a87677739c8bd3d148d6a3d8d8204eb87708/governance/reviews/T053-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T20:33:27.012615+00:00",
+      "public_summary": "真实二阶矩和一致质量积分19声明独立Agent及同SHA CI验收PASS；原四类权的共享节点权与全域节点测试16声明全库通过，完整Vh表示和投影仍待，原文12/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/fd12dd4916571fcbd042377fa0004bab19f24f89/governance/reviews/T054-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -7900,7 +7987,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/77c5fddd0f410df16af93949715f90b2c0c6ae72/governance/reviews/T052-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39161889554/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/abb9a87677739c8bd3d148d6a3d8d8204eb87708/governance/reviews/T053-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39162631089/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39162631089/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/fd12dd4916571fcbd042377fa0004bab19f24f89/governance/reviews/T054-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39163247482/attempts/1"
     ]
   },
   "schedules": [
@@ -17258,10 +17347,10 @@
       ],
       "branch": "main",
       "base_commit": "24509632c6ae2b1a3bb9e30eca790c82decec4e3",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "cbea02af04b947ec6f1b1c6e3cfb0da5bd65e5a7",
+      "merge_commit": "cbea02af04b947ec6f1b1c6e3cfb0da5bd65e5a7",
       "lean_declarations": [
         "Carleman.integral_sq_eq_tail",
         "Carleman.integral_unit_tail_power",
@@ -17283,12 +17372,23 @@
         "Carleman.weighted_simplex_mass_coercive",
         "Carleman.weighted_simplex_mass_pos"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "cbea02af04b947ec6f1b1c6e3cfb0da5bd65e5a7",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39163247482/attempts/1",
+        "finished_at": "2026-10-18T20:27:57.688660+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "cbea02af04b947ec6f1b1c6e3cfb0da5bd65e5a7"
+      },
       "blocker": null,
       "attempts": [
         "四模块19声明定向3273 jobs及全库3613 jobs通过，4814项递归审计PASS。"
       ],
-      "next_action": "真实二阶矩与质量积分19声明固定SHA独立验收；继续实际节点权构造和全域节点加权测试。",
+      "next_action": "真实二阶矩与一致质量积分已验收；继续原四类权的共享节点权及全域节点加权测试。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -17300,6 +17400,97 @@
         "recursive_axiom_audit": 4814,
         "new_explicit_declarations": 19,
         "declaration_artifact_sha256": "2c8d7f5dd7d538af1908c57add7187a4ae51e0ad14ceca1144deee99b944c3c2",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "cbea02af04b947ec6f1b1c6e3cfb0da5bd65e5a7",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C070"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "cbea02af04b947ec6f1b1c6e3cfb0da5bd65e5a7",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T20:30:24+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/fd12dd4916571fcbd042377fa0004bab19f24f89/governance/reviews/T054-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "cbea02af04b947ec6f1b1c6e3cfb0da5bd65e5a7",
+        "checked_sha": "cbea02af04b947ec6f1b1c6e3cfb0da5bd65e5a7",
+        "run_id": 39163247482,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3613,
+        "recursive_axiom_audit": 4814,
+        "new_explicit_declarations": 19,
+        "declaration_artifact_sha256": "2c8d7f5dd7d538af1908c57add7187a4ae51e0ad14ceca1144deee99b944c3c2",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T055",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原四类权的共享节点权与全域节点测试",
+      "goal_ids": [
+        "C071"
+      ],
+      "acceptance": [
+        "共享节点最小值单值正且局部分级不扩大为θ²",
+        "原实际四类权样本、a.e.分片身份及统一δ量词完整，有效θ严格保原阈值",
+        "节点平方加权数据保边界零并构成真实H1零边界一致P1测试",
+        "真实全域积分和L2内积强制性不假设完整Vh已有节点表示"
+      ],
+      "dependencies": [
+        "C060",
+        "C065",
+        "C067",
+        "C070"
+      ],
+      "branch": "main",
+      "base_commit": "cbea02af04b947ec6f1b1c6e3cfb0da5bd65e5a7",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.SimplicialPartition.incidentCells",
+        "Carleman.SimplicialPartition.mem_incidentCells",
+        "Carleman.SimplicialPartition.nodalWeightMinimum",
+        "Carleman.SimplicialPartition.nodalWeightMinimum_pos",
+        "Carleman.SimplicialPartition.nodalWeightMinimum_vertex_bounds",
+        "Carleman.SimplicialPartition.nodalWeightMinimum_local_ratio",
+        "Carleman.SimplicialPartition.gradedCellWeight",
+        "Carleman.SimplicialPartition.gradedCellWeight_pos",
+        "Carleman.SimplicialPartition.allowedWeight_scaled_neighbor_le",
+        "Carleman.SimplicialPartition.sizeWeightFactor_grading",
+        "Carleman.SimplicialPartition.gradedCellWeight_neighbor_le",
+        "Carleman.SimplicialPartition.gradedCellWeight_compare",
+        "Carleman.allowed_weights_uniform_nodal_weights",
+        "Carleman.SimplicialPartition.nodal_squared_weight_test_mem",
+        "Carleman.SimplicialPartition.nodal_weighted_mass_coercive",
+        "Carleman.SimplicialPartition.nodal_weighted_pairing_coercive"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "四模块16声明定向3323 jobs及全库3617 jobs通过，4835项递归审计PASS。"
+      ],
+      "next_action": "实际共享节点权与节点测试16声明固定SHA独立验收；继续实际加权节点状态和测试的L2范数比较。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3617,
+        "recursive_axiom_audit": 4835,
+        "new_explicit_declarations": 16,
+        "declaration_artifact_sha256": "d617867d312929ffa3a5bd51f9bbf121461f743f634d37a2f0835ba13a06efc1",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
