@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T025",
-    "supervisor_checked_at": "2026-10-18T15:24:55.962113+00:00",
-    "next_action": "推送固定版本main并独立Agent验收完整原Lemma7.4，核实同SHA真实CI。",
+    "current_task_id": "T026",
+    "supervisor_checked_at": "2026-10-18T15:37:39.554661+00:00",
+    "next_action": "证明真实初值/观测映射、HUM正定最优性及实际控制轨迹；完整桥独立验收，仍保留显式观测假设。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T15:28:23.443727+00:00"
+    "last_activity_at": "2026-10-18T15:37:39.554661+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39139922166/attempts/1",
-      "finished_at": "2026-10-18T15:20:32.980527+00:00",
+      "checked_sha": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39140648544/attempts/1",
+      "finished_at": "2026-10-18T15:31:48.168756+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c"
+      "source_head_sha": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39139922166/attempts/1",
-      "finished_at": "2026-10-18T15:20:32.980527+00:00",
+      "checked_sha": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39140648544/attempts/1",
+      "finished_at": "2026-10-18T15:31:48.168756+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c"
+      "source_head_sha": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1"
     }
   },
   "milestones": [
@@ -4712,7 +4712,7 @@
       "paper_ref": "Lemma7.4",
       "milestone": "M6b",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "paper_labels": [
         "lem:filter-reverse"
@@ -4738,6 +4738,70 @@
         "Carleman.Physical.filterConstant_pos",
         "Carleman.Physical.filter_reverse"
       ],
+      "declaration_version": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39140648544/attempts/1",
+        "finished_at": "2026-10-18T15:31:48.168756+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1"
+      },
+      "semantic_review": {
+        "checked_sha": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1",
+        "declarations": [
+          "Carleman.Physical.rayleigh",
+          "Carleman.Physical.rayleigh_nonneg",
+          "Carleman.Physical.rayleigh_step_normalized",
+          "Carleman.Physical.rayleigh_smul",
+          "Carleman.Physical.rayleigh_step",
+          "Carleman.Physical.positive_form_cauchy",
+          "Carleman.Physical.positive_resolvent_lower",
+          "Carleman.Physical.perturbed_resolvent_lower",
+          "Carleman.Physical.adjoint_nonzero",
+          "Carleman.Physical.exponential_recurrence",
+          "Carleman.Physical.adjoint_rayleigh_bound",
+          "Carleman.Physical.adjoint_reverse_rayleigh",
+          "Carleman.Physical.filterRayleigh",
+          "Carleman.Physical.rayleigh_le_opNorm",
+          "Carleman.Physical.filterRayleigh_bot",
+          "Carleman.Physical.rayleigh_le_filterRayleigh",
+          "Carleman.Physical.filterConstant",
+          "Carleman.Physical.filterConstant_pos",
+          "Carleman.Physical.filter_reverse"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3fbcf7955e4186d3b7892d0d713ea782145814d9/governance/reviews/T025-local-acceptance.md",
+        "reviewed_at": "2026-10-18T15:35:53Z",
+        "reviewer": "/root/accept_section3; independent fixed-version original statement/dependency acceptance"
+      },
+      "dependencies": [
+        "C040"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "完整原Lemma7.4已独立验收；真实Rayleigh商上确界、全伴随轨迹与精确KF，不要求F不变。滤波观测与控制尚待。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C042",
+      "title": "真实物理HUM构造及显式观测条件桥",
+      "paper_ref": "Section7/Theorem7.3 proof infrastructure",
+      "milestone": "M6b",
+      "extra_hypotheses": [
+        "真实伴随轨迹的松弛观测估计；原Theorem7.2尚未供应"
+      ],
+      "verification_status": "PLANNED",
+      "scope": "CONDITIONAL",
+      "paper_labels": [
+        "thm:control"
+      ],
+      "lean_declarations": [],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -4746,7 +4810,7 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "完整原Lemma7.4候选；真实Rayleigh上确界、完整伴随轨迹、原KF，不要求F不变。待同SHA CI及独立Agent验收。"
+      "scope_notes": "辅助构造；不计原Theorem7.3完成，不能由抽象观测假设替代原Theorem7.2。"
     }
   ],
   "events": [
@@ -4952,6 +5016,11 @@
       "at": "2026-10-18T15:24:55.962113+00:00",
       "public_summary": "原Lemma7.1完整适定性、能量和精确对偶经独立Agent及同SHA CI验收；原文11/26，验收队列清空，继续滤波反向界。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/702861c3beb5b1ed41b096a9040b569f1d79a956/governance/reviews/T024-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T15:37:39.554661+00:00",
+      "public_summary": "原Lemma7.4完整Rayleigh逆界经独立Agent及同SHA CI验收；原文12/26，验收队列清空。继续物理HUM条件桥，未将观测假设计为原定理完成。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3fbcf7955e4186d3b7892d0d713ea782145814d9/governance/reviews/T025-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -5053,7 +5122,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6d7f9c7936aab5459d9e27bb6e26c657b0d61f7f/governance/reviews/T023-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39139005595/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/702861c3beb5b1ed41b096a9040b569f1d79a956/governance/reviews/T024-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39139922166/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39139922166/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3fbcf7955e4186d3b7892d0d713ea782145814d9/governance/reviews/T025-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39140648544/attempts/1"
     ]
   },
   "schedules": [
@@ -11364,10 +11435,10 @@
       ],
       "branch": "main",
       "base_commit": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1",
+      "merge_commit": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1",
       "lean_declarations": [
         "Carleman.Physical.rayleigh",
         "Carleman.Physical.rayleigh_nonneg",
@@ -11389,14 +11460,25 @@
         "Carleman.Physical.filterConstant_pos",
         "Carleman.Physical.filter_reverse"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39140648544/attempts/1",
+        "finished_at": "2026-10-18T15:31:48.168756+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1"
+      },
       "blocker": null,
       "attempts": [
         "真实Rayleigh单步增长已定向编译；正算子逆界已证明，正在消除编译提示并连接实际反向轨迹迭代。",
         "四模块19声明完整原反向界已定向编译；Rayleigh增长、正算子逆界、完整递推和原子空间上确界已连接。",
         "完整原Lemma7.4四模块19声明全库构建通过；3471jobs/3287声明递归公理审计，仅标准基础公理。"
       ],
-      "next_action": "推送固定版本main并独立Agent验收完整原Lemma7.4，核实同SHA真实CI。",
+      "next_action": "完整原Lemma7.4已验收；T026构造真实物理HUM条件桥，仍待原观测定理。",
       "integration_mode": "direct-main",
       "local_validation": {
         "checked_at": "2026-10-18T15:28:23.443727+00:00",
@@ -11406,7 +11488,65 @@
         "new_explicit_declarations": 19,
         "audit_sha256": "881be53c03d27f95b2a111e6ab6eb0cd9c07f39dd1027ba4930964e96372dba2",
         "note": "working tree precommit, not remote CI"
+      },
+      "declaration_version": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_section3",
+          "claim_ids": [
+            "C041"
+          ],
+          "paper_result_ids": [
+            "P016"
+          ],
+          "checked_sha": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T15:35:53Z",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3fbcf7955e4186d3b7892d0d713ea782145814d9/governance/reviews/T025-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1",
+        "checked_sha": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1",
+        "run_id": 39140648544,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3471,
+        "recursive_axiom_audit": 3287,
+        "new_explicit_declarations": 19,
+        "declaration_artifact_sha256": "881be53c03d27f95b2a111e6ab6eb0cd9c07f39dd1027ba4930964e96372dba2",
+        "local_remote_artifacts_identical": true
       }
+    },
+    {
+      "id": "T026",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "真实物理HUM控制与显式观测条件桥",
+      "goal_ids": [
+        "C042"
+      ],
+      "acceptance": [
+        "真实N+1节点伴随初值与观测CLM，准确sqrt(dt)控制加权",
+        "真实HUM最优性、物理对偶终值及统一代价和余量",
+        "显式保留尚未证明的原观测假设；独立Agent只验收CONDITIONAL，不计PAPER完成"
+      ],
+      "dependencies": [
+        "C040"
+      ],
+      "branch": "main",
+      "base_commit": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "真实初值/观测CLM与有限维正定HUM已定向编译；正在接通实际物理控制和终值。"
+      ],
+      "next_action": "证明真实初值/观测映射、HUM正定最优性及实际控制轨迹；完整桥独立验收，仍保留显式观测假设。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {

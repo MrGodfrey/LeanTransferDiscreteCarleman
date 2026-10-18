@@ -787,12 +787,35 @@
         "Carleman.Physical.filterConstant",
         "Carleman.Physical.filter_reverse"
       ],
-      "declaration_version": null,
-      "verification_status": "SPECIFIED",
+      "declaration_version": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "extra_hypotheses": [],
-      "build_evidence": null,
-      "semantic_review": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39140648544/attempts/1",
+        "finished_at": "2026-10-18T15:31:48.168756+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1"
+      },
+      "semantic_review": {
+        "checked_sha": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1",
+        "declarations": [
+          "Carleman.Physical.filterRayleigh",
+          "Carleman.Physical.filterConstant",
+          "Carleman.Physical.filter_reverse"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3fbcf7955e4186d3b7892d0d713ea782145814d9/governance/reviews/T025-local-acceptance.md",
+        "reviewed_at": "2026-10-18T15:35:53Z",
+        "reviewer": "/root/accept_section3; independent fixed-version original statement/dependency acceptance"
+      },
       "blocker": null
     },
     {
