@@ -964,3 +964,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 六模块9声明，AUXILIARY。只在实际支持集要求系数有界/Lipschitz的乘积论证，给零边界节点残差真实紧支撑全局Lipschitz性；真实弱导数及限制构造完整H¹ jet，字段a.e.等于实际残差及Euclidean梯度。成员资格常数不进入统一误差常数。
 
 真实Lp乘子差值与原允许σ/倒数ξ平方seminorm身份，使完整V_h任意状态内部得到I∈V_h和真实弱残差e，值/梯度加权范数平方分别≤C h⁴/Ch²乘(q⁴||σu||²+q²||σ∇u||²)。C先于网格、时间权、τ、时刻、符号与状态；ℓ⁻¹项、投影组合及残差H¹₀身份仍待，原文12/26。见`analysis/T064-weak-nodal-norms.md`。
+
+## T065：原尺度残差与节点超逼近
+
+见 [T065规格](analysis/T065-scaled-nodal-norms.md)。五模块7声明：真实ℓ⁻¹残差和同一I/e三平方范数界，准确原弱N范数及原9.26-eq10/11；统一常数先于网格/权/状态。投影测试eq:testsuper、H¹₀残差资格及一般H²插值未宣称完成；AUXILIARY，原文12/26。

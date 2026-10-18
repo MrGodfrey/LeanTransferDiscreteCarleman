@@ -3696,6 +3696,21 @@ set_option pp.maxSteps 1000000
 #check @Carleman.allowed_full_nodal_weak_norms
 #print axioms Carleman.allowed_full_nodal_weak_norms
 
+#check @Carleman.inverseScale_diameter_four_bound
+#print axioms Carleman.inverseScale_diameter_four_bound
+#check @Carleman.SimplicialPartition.inverseWeight_residual_sq_sum
+#print axioms Carleman.SimplicialPartition.inverseWeight_residual_sq_sum
+#check @Carleman.allowed_scaled_nodal_residual
+#print axioms Carleman.allowed_scaled_nodal_residual
+#check @Carleman.allowed_full_nodal_scaled_norms
+#print axioms Carleman.allowed_full_nodal_scaled_norms
+#check @Carleman.WeakSobolevJet.heat_weightedNorm_sq
+#print axioms Carleman.WeakSobolevJet.heat_weightedNorm_sq
+#check @Carleman.nonneg_le_sqrt_mul_of_sq_le
+#print axioms Carleman.nonneg_le_sqrt_mul_of_sq_le
+#check @Carleman.allowed_full_nodal_superapproximation
+#print axioms Carleman.allowed_full_nodal_superapproximation
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
