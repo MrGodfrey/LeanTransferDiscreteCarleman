@@ -445,3 +445,10 @@ public import Carleman.Spatial.AffineNodalBound
 public import Carleman.Spatial.WeightedCellError
 public import Carleman.Weights.SquaredCellIntegral
 public import Carleman.Weights.SquaredCellGradient
+
+public import Carleman.Spatial.SimplicialProductResidual
+public import Carleman.Weights.SquaredNodalIntegrability
+public import Carleman.Weights.SquaredNodalCell
+public import Carleman.Weights.SquaredNodalGlobal
+public import Carleman.Spatial.FullNodalGradient
+public import Carleman.Weights.FullNodalResidual

@@ -3650,6 +3650,33 @@ set_option pp.maxSteps 1000000
 #check @Carleman.allowedSquaredWeight_local_residual_integrals
 #print axioms Carleman.allowedSquaredWeight_local_residual_integrals
 
+#check @Carleman.SimplicialPartition.integrable_of_cells
+#print axioms Carleman.SimplicialPartition.integrable_of_cells
+#check @Carleman.SimplicialPartition.nodalProductResidual
+#print axioms Carleman.SimplicialPartition.nodalProductResidual
+#check @Carleman.SimplicialPartition.localNodal_weighted_interpolant
+#print axioms Carleman.SimplicialPartition.localNodal_weighted_interpolant
+#check @Carleman.SimplicialPartition.nodalProductResidual_on_cell
+#print axioms Carleman.SimplicialPartition.nodalProductResidual_on_cell
+#check @Carleman.SimplicialPartition.nodalProductResidual_fderiv_ae
+#print axioms Carleman.SimplicialPartition.nodalProductResidual_fderiv_ae
+#check @Carleman.SimplicialPartition.nodalFunction_fderiv_on_cell_ae
+#print axioms Carleman.SimplicialPartition.nodalFunction_fderiv_on_cell_ae
+#check @Carleman.SimplicialPartition.squaredNodal_integrability
+#print axioms Carleman.SimplicialPartition.squaredNodal_integrability
+#check @Carleman.allowedSquaredWeight_nodal_cell_integrals
+#print axioms Carleman.allowedSquaredWeight_nodal_cell_integrals
+#check @Carleman.allowedSquaredWeight_nodal_global_integrals
+#print axioms Carleman.allowedSquaredWeight_nodal_global_integrals
+#check @Carleman.SimplicialPartition.nodal_representation_weak_gradient
+#print axioms Carleman.SimplicialPartition.nodal_representation_weak_gradient
+#check @Carleman.SimplicialPartition.conforming_dirichlet_nodal_with_gradient
+#print axioms Carleman.SimplicialPartition.conforming_dirichlet_nodal_with_gradient
+#check @Carleman.SimplicialPartition.weighted_nodal_mem_dirichletConformingSpace
+#print axioms Carleman.SimplicialPartition.weighted_nodal_mem_dirichletConformingSpace
+#check @Carleman.allowedSquaredWeight_full_nodal_residual
+#print axioms Carleman.allowedSquaredWeight_full_nodal_residual
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
