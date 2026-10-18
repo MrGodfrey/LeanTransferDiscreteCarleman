@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T075",
-    "supervisor_checked_at": "2026-10-18T23:02:39.760810+00:00",
-    "next_action": "固定SHA独立验收全部弱区间H1实际迹与乘积端点积分25声明；继续从原空间弱测试推出真实弱切片。",
+    "current_task_id": "T076",
+    "supervisor_checked_at": "2026-10-18T23:11:01.715058+00:00",
+    "next_action": "固定SHA独立验收原乘积域完整弱切片及实际L2面迹16声明；继续长方体坐标拆分及仿射物理面校正。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T23:02:39.760810+00:00"
+    "last_activity_at": "2026-10-18T23:11:01.715058+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "55dbf36858608cc7ff9300ef61430e18fa0bdadf",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39174132190/attempts/1",
-      "finished_at": "2026-10-18T22:54:47.239010+00:00",
+      "checked_sha": "a4d0f062b3a3d32e166af481ed93e38096a992c2",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39174830242/attempts/1",
+      "finished_at": "2026-10-18T23:04:38.260153+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "55dbf36858608cc7ff9300ef61430e18fa0bdadf"
+      "source_head_sha": "a4d0f062b3a3d32e166af481ed93e38096a992c2"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "55dbf36858608cc7ff9300ef61430e18fa0bdadf",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39174132190/attempts/1",
-      "finished_at": "2026-10-18T22:54:47.239010+00:00",
+      "checked_sha": "a4d0f062b3a3d32e166af481ed93e38096a992c2",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39174830242/attempts/1",
+      "finished_at": "2026-10-18T23:04:38.260153+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "55dbf36858608cc7ff9300ef61430e18fa0bdadf"
+      "source_head_sha": "a4d0f062b3a3d32e166af481ed93e38096a992c2"
     }
   },
   "milestones": [
@@ -8834,7 +8834,7 @@
       "paper_ref": "Auxiliary genuine Hilbert weak H1 interval trace and product endpoint integrals toward Appendix B physical-face correction",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "lem:fd-boundary-affine"
@@ -8866,9 +8866,54 @@
         "Carleman.fiberEndpointIntegral_eq_weak_trace",
         "Carleman.weak_slices_actual_endpoint_traces"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "a4d0f062b3a3d32e166af481ed93e38096a992c2",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "a4d0f062b3a3d32e166af481ed93e38096a992c2",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39174830242/attempts/1",
+        "finished_at": "2026-10-18T23:04:38.260153+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "a4d0f062b3a3d32e166af481ed93e38096a992c2"
+      },
+      "semantic_review": {
+        "checked_sha": "a4d0f062b3a3d32e166af481ed93e38096a992c2",
+        "declarations": [
+          "Carleman.HasWeakTimeDerivative.congr_value",
+          "Carleman.HasWeakTimeDerivative.exists_continuous_representative",
+          "Carleman.TimeGrid.continuous_representative_unique",
+          "Carleman.TimeGrid.pathL2_injective",
+          "Carleman.TimeGrid.exists_tracePath",
+          "Carleman.TimeGrid.weakTracePath",
+          "Carleman.TimeGrid.weakTracePath_value",
+          "Carleman.TimeGrid.weakTracePath_ae",
+          "Carleman.TimeGrid.weakTracePath_weak",
+          "Carleman.TimeGrid.weakTracePath_point_bound",
+          "Carleman.TimeGrid.weakTracePath_norm_bound",
+          "Carleman.TimeGrid.weakTracePathCLM",
+          "Carleman.TimeGrid.weakTracePathCLM_value",
+          "Carleman.TimeGrid.weakTracePathCLM_eq_of_representative",
+          "Carleman.TimeGrid.weakIntervalTrace",
+          "Carleman.TimeGrid.weakIntervalTrace_bound",
+          "Carleman.TimeGrid.weakIntervalTrace_fundamental",
+          "Carleman.TimeGrid.weakIntervalTrace_affine_green",
+          "Carleman.TimeGrid.weakIntervalTrace_zero_formula",
+          "Carleman.TimeGrid.weakIntervalTrace_end_formula",
+          "Carleman.fiberEndpointIntegral",
+          "Carleman.fiberEndpointIntegral_congr",
+          "Carleman.fiberEndpointIntegral_memLp_bound",
+          "Carleman.fiberEndpointIntegral_eq_weak_trace",
+          "Carleman.weak_slices_actual_endpoint_traces"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d477c8159ce30f45adda8b95b26606cb2b304bd9/governance/reviews/T075-local-acceptance.md",
+        "reviewed_at": "2026-10-18T23:07:05+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C026",
         "C036",
@@ -8876,7 +8921,47 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "原全部弱Hilbert H1图的连续代表存在唯一，实际CLM迹和端点FTC；标量显式端点积分与真实乘积L2界(2/L)||f||²+2L||v||²。在实际弱切片上等于连续代表端点；原空间弱身份到切片、坐标拆分及物理面校正仍待，原文12/26。"
+      "scope_notes": "原全部弱Hilbert H1图的连续代表存在唯一，实际CLM迹和端点FTC；标量显式端点积分与真实乘积L2界(2/L)||f||²+2L||v||²。在实际弱切片上等于连续代表端点；原空间弱身份到切片、坐标拆分及物理面校正仍待，原文12/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C092",
+      "title": "原乘积域完整弱导数与实际L2面迹",
+      "paper_ref": "Auxiliary full product-domain weak slicing and genuine L2 face traces toward Appendix B boundary affine correction",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "lem:fd-boundary-affine"
+      ],
+      "lean_declarations": [
+        "Carleman.ae_forall_continuous_zero_on",
+        "Carleman.scalar_weak_interval_iff",
+        "Carleman.ae_weak_interval_of_ae_tests",
+        "Carleman.SpatialTest.tensor_tsupport_subset",
+        "Carleman.SpatialTest.tensor",
+        "Carleman.SpatialTest.tensor_interval_derivative",
+        "Carleman.product_weak_marginal",
+        "Carleman.intervalSliceLp",
+        "Carleman.intervalSliceLp_ae",
+        "Carleman.scalar_interval_test_pairing",
+        "Carleman.product_weak_slices",
+        "Carleman.product_weak_endpoint_representatives",
+        "Carleman.fiberEndpointLp",
+        "Carleman.fiberEndpointLp_ae",
+        "Carleman.fiberEndpointLp_norm_sq",
+        "Carleman.product_weak_face_trace_representatives"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C091"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "从原乘积域完整SpatialTest身份、真实张量测试与Fubini得到固定测试的切片身份；实际L2测试对可分性给所有测试共同满测集。原全部弱数据的真实切片及双端点L2面迹已证，2/L与2L缩放保持；长方体坐标拆分和仿射物理面校正仍待，原文12/26。"
     }
   ],
   "events": [
@@ -9332,6 +9417,11 @@
       "at": "2026-10-18T23:02:39.760810+00:00",
       "public_summary": "一般弱H2齐次仿射逼近34声明独立验收PASS；实际弱区间迹及乘积端点积分25声明全库通过，原文12/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b87a69864f8aec797ef3b45b0e36b1c1916b9369/governance/reviews/T074-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T23:11:01.715058+00:00",
+      "public_summary": "原全部弱区间H1迹25声明独立验收PASS；完整乘积弱切片与实际面迹16声明全库通过，原文12/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d477c8159ce30f45adda8b95b26606cb2b304bd9/governance/reviews/T075-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -9533,7 +9623,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bfa77a04a27f806dcc2c7a01540a64b27217ff90/governance/reviews/T073-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39173511962/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b87a69864f8aec797ef3b45b0e36b1c1916b9369/governance/reviews/T074-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39174132190/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39174132190/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d477c8159ce30f45adda8b95b26606cb2b304bd9/governance/reviews/T075-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39174830242/attempts/1"
     ]
   },
   "schedules": [
@@ -20920,10 +21012,10 @@
       ],
       "branch": "main",
       "base_commit": "55dbf36858608cc7ff9300ef61430e18fa0bdadf",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "a4d0f062b3a3d32e166af481ed93e38096a992c2",
+      "merge_commit": "a4d0f062b3a3d32e166af481ed93e38096a992c2",
       "lean_declarations": [
         "Carleman.HasWeakTimeDerivative.congr_value",
         "Carleman.HasWeakTimeDerivative.exists_continuous_representative",
@@ -20951,12 +21043,23 @@
         "Carleman.fiberEndpointIntegral_eq_weak_trace",
         "Carleman.weak_slices_actual_endpoint_traces"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "a4d0f062b3a3d32e166af481ed93e38096a992c2",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39174830242/attempts/1",
+        "finished_at": "2026-10-18T23:04:38.260153+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "a4d0f062b3a3d32e166af481ed93e38096a992c2"
+      },
       "blocker": null,
       "attempts": [
         "五模块25声明定向3213 jobs、全库3695 jobs通过，5341声明递归公理审计PASS。"
       ],
-      "next_action": "固定SHA独立验收全部弱区间H1实际迹与乘积端点积分25声明；继续从原空间弱测试推出真实弱切片。",
+      "next_action": "原全部弱区间H1真实迹及乘积端点积分已独立验收；继续原乘积域完整弱切片及物理面校正。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -20968,6 +21071,95 @@
         "recursive_axiom_audit": 5341,
         "new_explicit_declarations": 25,
         "declaration_artifact_sha256": "0bc0f8872e36716157957420f5d82eaf77d2fb0388c5601485490cbb1aa43c13",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "a4d0f062b3a3d32e166af481ed93e38096a992c2",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C091"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "a4d0f062b3a3d32e166af481ed93e38096a992c2",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T23:07:05+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d477c8159ce30f45adda8b95b26606cb2b304bd9/governance/reviews/T075-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "a4d0f062b3a3d32e166af481ed93e38096a992c2",
+        "checked_sha": "a4d0f062b3a3d32e166af481ed93e38096a992c2",
+        "run_id": 39174830242,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3695,
+        "recursive_axiom_audit": 5341,
+        "new_explicit_declarations": 25,
+        "declaration_artifact_sha256": "0bc0f8872e36716157957420f5d82eaf77d2fb0388c5601485490cbb1aa43c13",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T076",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原乘积域完整弱导数与实际L2面迹",
+      "goal_ids": [
+        "C092"
+      ],
+      "acceptance": [
+        "实际L2测试对空间可分，严格可数零测交后闭包延拓到全部测试",
+        "真实张量测试闭支撑紧且在原域，Frechet轴向导数等于φψ′",
+        "固定测试的Fubini可积性由真L2乘积供应，横向全部光滑测试基本引理适用",
+        "切片真实Lp类只在零测例外处置零，原f/v代表与全部弱身份正确还原",
+        "两面Lp类等于实际连续切片端点，2/L和2L尺度正确，原完整B1边界校正尚待"
+      ],
+      "dependencies": [
+        "C091"
+      ],
+      "branch": "main",
+      "base_commit": "a4d0f062b3a3d32e166af481ed93e38096a992c2",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.ae_forall_continuous_zero_on",
+        "Carleman.scalar_weak_interval_iff",
+        "Carleman.ae_weak_interval_of_ae_tests",
+        "Carleman.SpatialTest.tensor_tsupport_subset",
+        "Carleman.SpatialTest.tensor",
+        "Carleman.SpatialTest.tensor_interval_derivative",
+        "Carleman.product_weak_marginal",
+        "Carleman.intervalSliceLp",
+        "Carleman.intervalSliceLp_ae",
+        "Carleman.scalar_interval_test_pairing",
+        "Carleman.product_weak_slices",
+        "Carleman.product_weak_endpoint_representatives",
+        "Carleman.fiberEndpointLp",
+        "Carleman.fiberEndpointLp_ae",
+        "Carleman.fiberEndpointLp_norm_sq",
+        "Carleman.product_weak_face_trace_representatives"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "五模块16声明定向3223 jobs、全库3700 jobs通过，5367声明递归公理审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收原乘积域完整弱切片及实际L2面迹16声明；继续长方体坐标拆分及仿射物理面校正。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3700,
+        "recursive_axiom_audit": 5367,
+        "new_explicit_declarations": 16,
+        "declaration_artifact_sha256": "84784dea3328224363fcfc6d88d35e337ae740d23e0afdb537f80391312c523f",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
