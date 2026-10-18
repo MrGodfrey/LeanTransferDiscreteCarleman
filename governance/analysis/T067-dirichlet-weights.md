@@ -1,0 +1,15 @@
+# T067：原H¹₀空间允许权保持性
+
+四模块15声明，AUXILIARY。完成任意完整H¹₀状态的原允许权乘法保持性，及真实平方权残差的H¹₀资格。这里只清偿原A2的m=1能量空间保持部分；算子域保持、交换子、一般m及完整Appendix A结果未宣称完成，原文12/26。
+
+firstGradientAssembly把每个坐标L²字段通过真实有界线性注入装配成原Sym(Fin d)1的Euclidean字段。逐分量恒等式包括i=j/不同坐标；Lp零代表只在a.e.意义使用，d=0有限空和合法。该映射真实连续线性。
+
+weakFirstProduct从真实有界乘子w及有界真实一阶导数乘子dw_i构造H¹ jet：零阶为w u，一阶为w∇u+u∇w。每个坐标使用已有对所有SpatialTest成立的分布乘积法则，dw_i须a.e.等于w.value的真实fderiv方向分量。不是仅给出任意梯度字段。weakFirstProductCLM通过真实L²乘子连续性、有限字段装配和H¹图拓扑得到连续线性算子。所用有界常数仅证明固定权的成员资格，不称为q统一误差常数。
+
+对真实光滑紧支测试φ，wφ只需要w在开域内光滑；支撑紧含于域，域外局部恒零使其全空间光滑。乘法算子的值与mulOn测试完全一致，由真实弱导数唯一性识别完整jet。连续线性算子在生成元上保持测试函数张成空间，因此保持其拓扑闭包；一般闭包引理独立陈述，避免重复展开具体弱导数构造。该闭包正是项目原dirichletJetSpace，未引用未经证明的零边界点值刻画。
+
+boundedSmooth_map_mem_dirichlet内部从BoundedSmoothOn选择实际wordDerivative有界乘子，证明原H¹₀标量类经w.map仍属同一空间。allowed_multiplier_boundedSmooth使用原SmoothOnClosure及域有界性，内部供应所有原q^τexp(ηqρ)的内在有界光滑性，覆盖任意TimeWeight、τ、t和两种η。不要求域外光滑延拓，不限制节点或有限元状态。
+
+allowed_squared_residual_mem_dirichlet将保持性应用两次：σ²u−I在H¹₀中；对任何具有此实际L²值的真实H¹ jet e，由值的单射性/原闭包等价取得e∈dirichletJetSpace。故原smooth-on-closure条件下T064–T066的节点残差可获得真实H¹₀资格。这里并不把仅C²的旧辅助接口悄悄升级为C∞；新结论明确使用原论文固定光滑profile的内在条件。
+
+一般H²插值、具体Dirichlet域H²正则性、算子域权保持及原交换子估计继续保留为剩余义务。

@@ -972,3 +972,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T066：原完整P1投影测试超逼近
 
 见 [T066规格](analysis/T066-projected-superapproximation.md)。三模块6声明完成真实Π_h(σ²u)−σ²u弱H¹误差及原eq:testsuper，原γ<Γ_d阈值、尺度比较、统一δ/C和完整V_h保持；接入既有GalerkinSuperapprox并以弱导数唯一性识别canonical jet。未将该接口原有hw蕴含误记为A2已清偿。一般H² N3等仍待；AUXILIARY，原文12/26。
+
+## T067：原H¹₀允许权保持性
+
+见 [T067规格](analysis/T067-dirichlet-weights.md)。四模块15声明从真实一阶弱乘积与连续H¹算子、光滑测试乘积及闭包不变性证明全部H¹₀状态的允许权保持；原SmoothOnClosure无需域外延拓。平方权残差的实际H¹ jet由其值身份获得H¹₀资格。仅完成m=1能量空间保持部分，未宣称算子域/交换子或完整A2；一般H²逼近仍待，原文12/26。

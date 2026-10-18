@@ -3724,6 +3724,37 @@ set_option pp.maxSteps 1000000
 #check @Carleman.full_p1_galerkin_superapproximation
 #print axioms Carleman.full_p1_galerkin_superapproximation
 
+#check @Carleman.firstDerivativeInjection
+#print axioms Carleman.firstDerivativeInjection
+#check @Carleman.firstDerivativeInjection_component
+#print axioms Carleman.firstDerivativeInjection_component
+#check @Carleman.firstGradientAssembly
+#print axioms Carleman.firstGradientAssembly
+#check @Carleman.firstGradientAssembly_component
+#print axioms Carleman.firstGradientAssembly_component
+#check @Carleman.firstProductFields
+#print axioms Carleman.firstProductFields
+#check @Carleman.weakFirstProduct
+#print axioms Carleman.weakFirstProduct
+#check @Carleman.weakFirstProduct_value
+#print axioms Carleman.weakFirstProduct_value
+#check @Carleman.weakFirstProductCLM
+#print axioms Carleman.weakFirstProductCLM
+#check @Carleman.clm_mem_closed_span
+#print axioms Carleman.clm_mem_closed_span
+#check @Carleman.weakFirstProductCLM_test
+#print axioms Carleman.weakFirstProductCLM_test
+#check @Carleman.weakFirstProductCLM_mem_dirichlet
+#print axioms Carleman.weakFirstProductCLM_mem_dirichlet
+#check @Carleman.boundedSmooth_map_mem_dirichlet
+#print axioms Carleman.boundedSmooth_map_mem_dirichlet
+#check @Carleman.allowed_multiplier_boundedSmooth
+#print axioms Carleman.allowed_multiplier_boundedSmooth
+#check @Carleman.allowed_weight_mem_dirichlet
+#print axioms Carleman.allowed_weight_mem_dirichlet
+#check @Carleman.allowed_squared_residual_mem_dirichlet
+#print axioms Carleman.allowed_squared_residual_mem_dirichlet
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

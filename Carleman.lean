@@ -467,3 +467,7 @@ public import Carleman.Weights.FullNodalSuperapproximation
 public import Carleman.Spatial.WeakProjectionResidual
 public import Carleman.Weights.FullProjectedSuperapproximation
 public import Carleman.Control.FullP1Superapproximation
+public import Carleman.Spatial.FirstGradientAssembly
+public import Carleman.Spatial.FirstWeakProduct
+public import Carleman.Spatial.DirichletWeakProduct
+public import Carleman.Weights.DirichletAllowedWeight
