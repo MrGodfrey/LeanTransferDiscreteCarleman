@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T023",
-    "supervisor_checked_at": "2026-10-18T15:05:23.676642+00:00",
-    "next_action": "固定提交推送main，核实同SHA CI并启动独立Agent逐项验收两条原尺度推论。",
+    "current_task_id": "T024",
+    "supervisor_checked_at": "2026-10-18T15:15:52.145748+00:00",
+    "next_action": "完成原Lemma7.1的物理时间方程接口与完整统一结论，再固定版本独立验收。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T15:06:41.937630+00:00"
+    "last_activity_at": "2026-10-18T15:15:52.145748+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39137974197/attempts/1",
-      "finished_at": "2026-10-18T14:56:05.110784+00:00",
+      "checked_sha": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39139005595/attempts/1",
+      "finished_at": "2026-10-18T15:09:46.419126+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd"
+      "source_head_sha": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39137974197/attempts/1",
-      "finished_at": "2026-10-18T14:56:05.110784+00:00",
+      "checked_sha": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39139005595/attempts/1",
+      "finished_at": "2026-10-18T15:09:46.419126+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd"
+      "source_head_sha": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3"
     }
   },
   "milestones": [
@@ -111,9 +111,10 @@
       "id": "M5",
       "title": "原始 transfer 与尺度",
       "description": "Theorem 2.1 与 Corollaries 2.2–2.3",
-      "status": "IN_PROGRESS",
-      "evidence_commit": null,
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence_commit": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3",
+      "blocker": null,
+      "acceptance_evidence": "T022/T023独立验收；原Theorem2.1与Corollaries2.2–2.3已完整无新增前提，真实CI及递归公理同版本。"
     },
     {
       "id": "M6a",
@@ -127,7 +128,7 @@
       "id": "M6b",
       "title": "观测与控制",
       "description": "Section 7 的对偶、观测与控制",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "evidence_commit": null,
       "blocker": null
     },
@@ -981,7 +982,7 @@
       "paper_ref": "Corollary 2.2, p.11",
       "milestone": "M5",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "paper_labels": [
         "cor:general-scales"
@@ -1011,15 +1012,59 @@
         "Carleman.OriginalForm.scale_uniform",
         "Carleman.OriginalForm.heat_scale_uniform"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39139005595/attempts/1",
+        "finished_at": "2026-10-18T15:09:46.419126+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3"
+      },
+      "semantic_review": {
+        "checked_sha": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3",
+        "declarations": [
+          "Carleman.CarlemanExponents.nuEnergy",
+          "Carleman.CarlemanExponents.nuL2",
+          "Carleman.CarlemanExponents.omittedRatio",
+          "Carleman.CarlemanExponents.alphaX",
+          "Carleman.CarlemanExponents.alphaT",
+          "Carleman.CarlemanExponents.nuEnergy_nonneg",
+          "Carleman.CarlemanExponents.nuL2_pos",
+          "Carleman.CarlemanExponents.omittedRatio_pos",
+          "Carleman.CarlemanExponents.mul_le_of_le_omittedRatio",
+          "Carleman.CarlemanExponents.scale_bounds",
+          "Carleman.CarlemanExponents.heat",
+          "Carleman.CarlemanExponents.heat_scale_exponents",
+          "Carleman.exists_small_rpow",
+          "Carleman.scale_monomial_le",
+          "Carleman.ErrorScales.approximationConstant",
+          "Carleman.ErrorScales.approximationConstant_pos",
+          "Carleman.ErrorScales.approximation_rates",
+          "Carleman.ErrorScales.defects_le_budget",
+          "Carleman.exists_scale_smallness",
+          "Carleman.Section5.ScaleUniform",
+          "Carleman.Section5.scale_uniform_of_transfer",
+          "Carleman.OriginalForm.scale_uniform",
+          "Carleman.OriginalForm.heat_scale_uniform"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6d7f9c7936aab5459d9e27bb6e26c657b0d61f7f/governance/reviews/T023-local-acceptance.md",
+        "reviewed_at": "2026-10-18T15:14:51+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent fixed-version original statement/dependency acceptance"
+      },
       "dependencies": [
         "C010"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "完整原尺度推论候选已定向编译；同SHA全库CI与独立Agent验收仍待。"
+      "scope_notes": "原尺度推论已独立验收，原两版估计和T统一保持，无新增前提。",
+      "independent_review_status": "PASS"
     },
     {
       "id": "C012",
@@ -1027,7 +1072,7 @@
       "paper_ref": "Corollary 2.3, p.11",
       "milestone": "M5",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "paper_labels": [
         "cor:scales"
@@ -1037,15 +1082,39 @@
         "Carleman.CarlemanExponents.heat_scale_exponents",
         "Carleman.OriginalForm.heat_scale_uniform"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39139005595/attempts/1",
+        "finished_at": "2026-10-18T15:09:46.419126+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3"
+      },
+      "semantic_review": {
+        "checked_sha": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3",
+        "declarations": [
+          "Carleman.CarlemanExponents.heat",
+          "Carleman.CarlemanExponents.heat_scale_exponents",
+          "Carleman.OriginalForm.heat_scale_uniform"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6d7f9c7936aab5459d9e27bb6e26c657b0d61f7f/governance/reviews/T023-local-acceptance.md",
+        "reviewed_at": "2026-10-18T15:14:51+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent fixed-version original statement/dependency acceptance"
+      },
       "dependencies": [
         "C011"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "完整原尺度推论候选已定向编译；同SHA全库CI与独立Agent验收仍待。"
+      "scope_notes": "原尺度推论已独立验收，原两版估计和T统一保持，无新增前提。",
+      "independent_review_status": "PASS"
     },
     {
       "id": "C013",
@@ -4532,6 +4601,25 @@
         }
       ],
       "independent_review_status": "PASS"
+    },
+    {
+      "id": "C040",
+      "title": "物理时间适定性、能量与精确对偶",
+      "paper_ref": "Lemma7.1",
+      "milestone": "M6b",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "PAPER",
+      "paper_labels": [
+        "lem:physicalduality"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [],
+      "blocker": null,
+      "pr_url": null
     }
   ],
   "events": [
@@ -4727,6 +4815,11 @@
       "at": "2026-10-18T15:05:23.676642+00:00",
       "public_summary": "原Theorem2.1通过独立本机Agent及同SHA main CI验收；全部桥接清偿，原文完成8/26，继续两条尺度推论。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/01040759ab3f6a9ab33d5886b06773e541be7954/governance/reviews/T022-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T15:15:52.145748+00:00",
+      "public_summary": "一般尺度与热方程尺度推论均经独立Agent和同SHA CI验收；首个核心阶段M5完成，原文10/26，验收队列已清空。继续控制章节基础引理。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6d7f9c7936aab5459d9e27bb6e26c657b0d61f7f/governance/reviews/T023-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -4824,7 +4917,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39136913051/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b5972cc01dc6adb897244da9a8f0c5a130977d89/governance/reviews/T021-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/01040759ab3f6a9ab33d5886b06773e541be7954/governance/reviews/T022-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39137974197/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39137974197/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6d7f9c7936aab5459d9e27bb6e26c657b0d61f7f/governance/reviews/T023-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39139005595/attempts/1"
     ]
   },
   "schedules": [
@@ -10921,10 +11016,10 @@
       ],
       "branch": "main",
       "base_commit": "5fbbfa1714af4a34facdf933a0f37736a4b7e6cd",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3",
+      "merge_commit": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3",
       "lean_declarations": [
         "Carleman.CarlemanExponents.nuEnergy",
         "Carleman.CarlemanExponents.nuL2",
@@ -10950,13 +11045,24 @@
         "Carleman.OriginalForm.scale_uniform",
         "Carleman.OriginalForm.heat_scale_uniform"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39139005595/attempts/1",
+        "finished_at": "2026-10-18T15:09:46.419126+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3"
+      },
       "blocker": null,
       "attempts": [
         "七模块已定向编译，完整ScaleUniform及热方程原估计均已接通；正在全库审计及原文映射。",
         "完整两条尺度推论七模块23声明全库构建通过；3461jobs/3224声明递归公理审计，仅标准基础公理。"
       ],
-      "next_action": "固定提交推送main，核实同SHA CI并启动独立Agent逐项验收两条原尺度推论。",
+      "next_action": "首个核心阶段M5已全部验收；T024推进物理时间适定性、能量与精确对偶。",
       "integration_mode": "direct-main",
       "local_validation": {
         "checked_at": "2026-10-18T15:06:41.937630+00:00",
@@ -10966,7 +11072,65 @@
         "new_explicit_declarations": 23,
         "audit_sha256": "8ae1c19c08a7052e0249209f5f6261821ffe24eb5b918a5cb6e7a5772305357c",
         "note": "working tree precommit, not remote CI"
+      },
+      "declaration_version": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C011",
+            "C012"
+          ],
+          "paper_result_ids": [
+            "P002",
+            "P003"
+          ],
+          "checked_sha": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T15:14:51+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6d7f9c7936aab5459d9e27bb6e26c657b0d61f7f/governance/reviews/T023-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3",
+        "checked_sha": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3",
+        "run_id": 39139005595,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3461,
+        "recursive_axiom_audit": 3224,
+        "new_explicit_declarations": 23,
+        "declaration_artifact_sha256": "8ae1c19c08a7052e0249209f5f6261821ffe24eb5b918a5cb6e7a5772305357c",
+        "local_remote_artifacts_identical": true
       }
+    },
+    {
+      "id": "T024",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原Lemma7.1物理时间适定性、能量与对偶",
+      "goal_ids": [
+        "C040"
+      ],
+      "acceptance": [
+        "原N+1物理时间节点和N控制步、完整初末值唯一解",
+        "原精确指数反向稳定界、统一C(T,M)控制L2能量界、p^(n-1)精确对偶",
+        "固定版本完整构建、公理与独立Agent原命题验收"
+      ],
+      "dependencies": [],
+      "branch": "main",
+      "base_commit": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "独立准备的四模块已定向编译；有限维全状态可逆、初末值唯一解、实际对偶及完整能量界均已接通，正在连接原除dt方程与最终统一入口。"
+      ],
+      "next_action": "完成原Lemma7.1的物理时间方程接口与完整统一结论，再固定版本独立验收。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {

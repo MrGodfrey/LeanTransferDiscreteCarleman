@@ -1,6 +1,6 @@
 # Proof log
 
-原文 Theorem 2.1、Lemmas 3.1–3.4、Theorem 3.5、Lemma 4.1 和 Theorem 4.2 已独立验收；当前原文完成 8/26。完整证据见唯一任务台账及对应独立验收报告。
+原文 Theorem 2.1、Corollaries 2.2–2.3、Lemmas 3.1–3.4、Theorem 3.5、Lemma 4.1 和 Theorem 4.2 已独立验收；首个核心阶段M5完成，当前原文完成 10/26。完整证据见唯一任务台账及对应独立验收报告。
 
 每个合并工作单元只新增一行索引：日期、任务 ID、PR/提交、成果一句话和下一依赖。声明、原文定位、额外前提、构建及语义证据以任务/claim/coverage 记录和 PR 为准，不复制成数份报告。失败但有价值的检查点也可索引，明确标为未完成。
 
@@ -39,3 +39,5 @@
 | 2026-10-18 | T021 | main `9d8230090dad2c5b5a2efa74f5d085728866d139` / [独立验收](reviews/T021-local-acceptance.md) | 完整原Theorem4.2两种真实时空误差率，无额外前提；4模块13声明独立PASS，同SHA CI39136913051三项PASS，3449jobs/3125公理审计；原文7/26 | T022原Theorem2.1完整权族桥接及统一transfer |
 
 | 2026-10-18 | T022 | `5fbbfa1714af4a34facdf933a0f37736a4b7e6cd` | 原Theorem2.1完整两版估计独立验收PASS；同SHA main三项CI/3170声明公理审计PASS；全部B1–B5清偿，原文8/26 | T023原两条尺度推论 |
+
+| 2026-10-18 | T023 | `8706e95e3a24b09fe6e2675a0c72c827ba9a93f3` | 原两条尺度推论独立验收PASS；同SHA main三项CI/3224声明公理审计PASS；原文10/26，M5完成 | T024原Lemma7.1物理时间基础 |
