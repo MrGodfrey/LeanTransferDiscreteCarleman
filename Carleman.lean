@@ -433,3 +433,6 @@ public import Carleman.Spatial.FullWeightedProjection
 public import Carleman.Spatial.SimplexNodalRemainder
 public import Carleman.Spatial.SimplexTaylorInterpolation
 public import Carleman.Spatial.SimplexInterpolationIntegral
+
+public import Carleman.Spatial.SimplexWithinInterpolation
+public import Carleman.Spatial.AffineProductDerivative

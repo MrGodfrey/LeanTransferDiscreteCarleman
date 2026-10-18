@@ -3581,6 +3581,33 @@ set_option pp.maxSteps 1000000
 #check @Carleman.derivative_lipschitzOn_of_second_derivative_bound
 #print axioms Carleman.derivative_lipschitzOn_of_second_derivative_bound
 
+#check @Carleman.affineJetPolynomial
+#print axioms Carleman.affineJetPolynomial
+#check @Carleman.affineJetPolynomial_apply
+#print axioms Carleman.affineJetPolynomial_apply
+#check @Carleman.affineJetPolynomial_derivative
+#print axioms Carleman.affineJetPolynomial_derivative
+#check @Carleman.withinFirstOrder_remainder
+#print axioms Carleman.withinFirstOrder_remainder
+#check @Carleman.simplexNodal_within_value_error
+#print axioms Carleman.simplexNodal_within_value_error
+#check @Carleman.simplexNodal_within_gradient_error
+#print axioms Carleman.simplexNodal_within_gradient_error
+#check @Carleman.affineProductDerivative
+#print axioms Carleman.affineProductDerivative
+#check @Carleman.affineProduct_hasFDerivWithinAt
+#print axioms Carleman.affineProduct_hasFDerivWithinAt
+#check @Carleman.affineProductDerivative_lipschitzOn
+#print axioms Carleman.affineProductDerivative_lipschitzOn
+#check @Carleman.affineProduct_nodal_value_error
+#print axioms Carleman.affineProduct_nodal_value_error
+#check @Carleman.affineProduct_nodal_gradient_error
+#print axioms Carleman.affineProduct_nodal_gradient_error
+#check @Carleman.affineProduct_derivative_interior
+#print axioms Carleman.affineProduct_derivative_interior
+#check @Carleman.derivativeField_lipschitzOn_of_within_bound
+#print axioms Carleman.derivativeField_lipschitzOn_of_within_bound
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

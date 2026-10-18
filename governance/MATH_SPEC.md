@@ -934,3 +934,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 三模块13声明，AUXILIARY。实际仿射内球导数界和节点插值仿射再现给误差2R及G+4R/r。真实一阶Taylor仿射多项式与凸集均值定理，在Df为L-Lipschitz时给单元节点函数误差2Lh²、梯度误差(1+4κ)Lh；真实内球与h≤κr显式保留。积分通过实际连续性/可积性得到带真实单元体积的平方误差界，并使用项目真实Euclidean一阶fiber。
 
 真实二阶Fréchet导数的点态界可供应Df的Lipschitz性。此阶段只对经典导数满足这些条件的函数成立，未以此代替一般H²弱状态的原插值结论。允许权平方乘P1状态的导数控制及加权超逼近仍待；原文12/26。见`analysis/T059-classical-nodal-errors.md`。
+
+## T060：闭单元内在导数与真实权乘仿射插值误差
+
+两模块13声明，AUXILIARY。真实HasFDerivWithinAt连接函数与导数字段，在闭凸单元内部完成Taylor及节点误差2Lh²/(1+4κ)Lh，不附加边界外可微假设。实际乘积w·p的域内导数为wDp+pW，由真实导数字段界及Lipschitz性给P L₂+2||Dp||L₁，进而得到乘积节点值与梯度误差；单元内部明确等于真正fderiv。
+
+真实域内二阶字段界可供应W的Lipschitz常数。允许权σ²的统一实例、P到实际L²量转换与全域加权超逼近仍待；一般H²插值也未冒充完成，原文12/26。见`analysis/T060-within-affine-product.md`。
