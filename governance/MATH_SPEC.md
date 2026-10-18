@@ -814,3 +814,9 @@ X为真实完备（最终控制入口为有限维）L2子空间，R=I为包含�
 五模块27声明，AUXILIARY，不提升P011。实际节点函数及其逐片CLM导数在全空间volume下的Lp类、a.e.导数和完整弱H1身份均内部证明，有限体积由真实紧单元供应。原全部SpatialTest也构造真实fderivLp与H1 jet，value精确恢复测试函数Lp类。
 
 Dirichlet空间定义为这些紧支光滑jet的线性张成在真实H1图范数下的闭包，再经value实现为标量L2子空间；证明包含于H1、包含全部测试、开集上在H1中闭合且在L2中稠密。未把连续零边界直接等同于H01闭包；节点插值的H01成员、Poincare/实际梯度形式和数值估计仍待。见`analysis/T039-dirichlet-closure.md`。
+
+## T040：实际H01上的Poincare与Dirichlet梯度形式
+
+四模块27声明，AUXILIARY，不提升P011。原完整光滑测试的线性运算和真实jet身份使span每个元素仍为单个测试。以L(x)φ(x)作测试，准确乘法导数及弱积分分部推出slab Poincare；真实value/gradient的连续性把估计传到H1闭包，未预设目标估计。
+
+实际全梯度L2内积给连续对称Dirichlet形式，积分准确包含全部一阶分量。能量范数精确为零阶加梯度平方，Poincare给强制常数((2R)²+1)⁻¹；有界开集内部供应坐标slab，实际构造OriginalForm全部A1字段。没有添加零阶质量项。节点H01成员、H2算子域/正则性、数值估计及连续热CE仍待。见`analysis/T040-poincare-dirichlet-form.md`。

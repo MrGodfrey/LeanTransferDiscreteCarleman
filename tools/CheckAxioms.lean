@@ -2881,6 +2881,61 @@ set_option pp.maxSteps 1000000
 #check @Carleman.dirichletSubspace_dense
 #print axioms Carleman.dirichletSubspace_dense
 
+#check @Carleman.SpatialTest.zeroTest
+#print axioms Carleman.SpatialTest.zeroTest
+#check @Carleman.SpatialTest.addTest
+#print axioms Carleman.SpatialTest.addTest
+#check @Carleman.SpatialTest.smulTest
+#print axioms Carleman.SpatialTest.smulTest
+#check @Carleman.SpatialTest.zeroTest_jet
+#print axioms Carleman.SpatialTest.zeroTest_jet
+#check @Carleman.SpatialTest.addTest_jet
+#print axioms Carleman.SpatialTest.addTest_jet
+#check @Carleman.SpatialTest.smulTest_jet
+#print axioms Carleman.SpatialTest.smulTest_jet
+#check @Carleman.exists_test_of_mem_test_span
+#print axioms Carleman.exists_test_of_mem_test_span
+#check @Carleman.SpatialTest.linearMul
+#print axioms Carleman.SpatialTest.linearMul
+#check @Carleman.SpatialTest.linearMul_derivative
+#print axioms Carleman.SpatialTest.linearMul_derivative
+#check @Carleman.SpatialTest.weakDerivative
+#print axioms Carleman.SpatialTest.weakDerivative
+#check @Carleman.SpatialTest.linearMul_norm_le
+#print axioms Carleman.SpatialTest.linearMul_norm_le
+#check @Carleman.SpatialTest.poincare_slab
+#print axioms Carleman.SpatialTest.poincare_slab
+#check @Carleman.SpatialTest.sobolevJet_derivative
+#print axioms Carleman.SpatialTest.sobolevJet_derivative
+#check @Carleman.derivativeComponent_norm_le
+#print axioms Carleman.derivativeComponent_norm_le
+#check @Carleman.dirichlet_poincare
+#print axioms Carleman.dirichlet_poincare
+#check @Carleman.WeakSobolevJet.norm_zero_field
+#print axioms Carleman.WeakSobolevJet.norm_zero_field
+#check @Carleman.DirichletEnergy
+#print axioms Carleman.DirichletEnergy
+#check @Carleman.dirichletGradient
+#print axioms Carleman.dirichletGradient
+#check @Carleman.dirichletForm
+#print axioms Carleman.dirichletForm
+#check @Carleman.dirichletForm_apply
+#print axioms Carleman.dirichletForm_apply
+#check @Carleman.dirichletForm_symmetric
+#print axioms Carleman.dirichletForm_symmetric
+#check @Carleman.dirichletForm_integral
+#print axioms Carleman.dirichletForm_integral
+#check @Carleman.dirichletEnergy_norm_sq
+#print axioms Carleman.dirichletEnergy_norm_sq
+#check @Carleman.dirichletForm_coercive
+#print axioms Carleman.dirichletForm_coercive
+#check @Carleman.dirichletOriginalForm
+#print axioms Carleman.dirichletOriginalForm
+#check @Carleman.dirichletForm_coercive_of_bounded
+#print axioms Carleman.dirichletForm_coercive_of_bounded
+#check @Carleman.boundedDirichletOriginalForm
+#print axioms Carleman.boundedDirichletOriginalForm
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

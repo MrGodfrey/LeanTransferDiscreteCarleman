@@ -343,3 +343,8 @@ public import Carleman.Spatial.LipschitzGlobalSobolev
 public import Carleman.Spatial.SimplicialGlobalSobolev
 public import Carleman.Spatial.SpatialTestSobolev
 public import Carleman.Spatial.DirichletSpace
+
+public import Carleman.Spatial.SpatialTestOperations
+public import Carleman.Spatial.TestPoincare
+public import Carleman.Spatial.DirichletPoincare
+public import Carleman.Spatial.DirichletForm

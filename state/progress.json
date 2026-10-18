@@ -12,10 +12,10 @@
     "state": "RUNNING",
     "current_task_id": "T040",
     "supervisor_checked_at": "2026-10-18T18:31:03.625312+00:00",
-    "next_action": "紧支光滑测试的Poincare及H01闭包传递已定向通过；正在构造有界开集上的真实Dirichlet梯度强制形式。",
+    "next_action": "实际Poincare及Dirichlet梯度OriginalForm全库验证通过；提交固定SHA独立验收，等待同SHA远端CI。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T18:31:03.625312+00:00"
+    "last_activity_at": "2026-10-18T18:32:31.072110+00:00"
   },
   "verification": {
     "latest_build": {
@@ -14660,10 +14660,25 @@
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "测试函数线性运算、slab Poincare和H01闭包传递已定向通过；DirichletForm编译细节继续。"
+        "测试函数线性运算、slab Poincare和H01闭包传递已定向通过；DirichletForm编译细节继续。",
+        "四模块27声明定向3184 jobs及全库验证PASS；有界开集的OriginalForm全部字段实际构造。"
       ],
-      "next_action": "紧支光滑测试的Poincare及H01闭包传递已定向通过；正在构造有界开集上的真实Dirichlet梯度强制形式。",
-      "integration_mode": "direct-main"
+      "next_action": "实际Poincare及Dirichlet梯度OriginalForm全库验证通过；提交固定SHA独立验收，等待同SHA远端CI。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3558,
+        "recursive_axiom_audit": 4365,
+        "new_explicit_declarations": 27,
+        "declaration_artifact_sha256": "daf2119e210979375997f5fd98f4aa9bfd1ce41ea845038a6404a34c4caf068c",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING; fixed SHA required"
+      }
     }
   ],
   "private_maintenance": {
