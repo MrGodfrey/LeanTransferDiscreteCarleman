@@ -651,3 +651,16 @@ B4仅在m=1的**时间部分**获得闭合。一般阶m+1至2m−1导数的原�
 `Conclusions`同时包括Lemma3.1任意B的连续适定性、完整R、形式上界与B‖qσv‖²下界，以及Lemma3.3/3.4全解空间适定性和完整R，Theorem3.5任意实际解的δt L²率、sqrt(δt) Nm率和弱误差jet MemLp。两profile及指数范围、两时间方向统一选max阈值/min正δ；冻结方向与演化方向独立，误差使用同向真实延拓与bar g。K在B/L/T/网格/权/状态/载荷之前选择；共同L₀(B)已扩大使L₀(1)支配冻结阈值，可取L₁=L₀(1)、δ_time(L)=δ。`primitive_on_interval`显式以任意T>0陈述，不需要网格限制。
 
 P004/P006/P007/P008在完整同SHA实际构建与审计后登记BUILT/PAPER，等待父监督者独立验收；不会仅因执行者组装而记REVIEWED。B1、B2/B5、规范B3及B4 finite/order/shift继续复用，Γ为普通函数；B4时间部分已按原权族闭合。Section4/N1–N5的空间误差和两误差系数、最终统一transfer实例及原Theorem2.1仍待；原最终全离散/两方向/T统一结论不变。
+
+## T020：Section4空间误差的精确恒等式与全离散适定性
+
+见 [T020 数学阶段](analysis/T020-spatial-identities.md)。C038 为 AUXILIARY：
+节点相关自伴测试算子的周期能量恒等式、由真实 Euler 方程相减得到的
+`eq:thetaEuler`、保留全部三项的 `eq:completeidentity` 及实际加权 L² 左端，
+还有有限维全状态上任意载荷的辅助离散存在唯一性。两时间方向共用同一证明；
+不要求 Q²=Q、G=Id、不同节点测试算子交换或正交重构。
+
+N4 时间导数到真实算子差分的估计、superapproximation/coercivity 吸收、
+N3 的真实 N/R 范数接入及两种空间误差率仍待。现有对偶恒等式接收满足原方程的
+任意对偶解，下一阶段从已证 Section 3 供应它；不把恒等式当作空间误差估计。
+原文覆盖不提升，T019 的独立语义验收状态不因合并或 CI 成功而自动改变。

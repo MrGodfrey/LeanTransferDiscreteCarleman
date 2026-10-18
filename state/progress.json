@@ -9,38 +9,38 @@
     "started_at": "2026-10-17T09:43:34.927869+00:00"
   },
   "execution": {
-    "state": "REVIEW",
-    "current_task_id": "T019",
-    "supervisor_checked_at": "2026-10-17T13:54:55.912702+00:00",
-    "next_action": "父监督者独立验收PR22完整Section3及61声明；随后Section4真实空间误差与最终transfer桥接",
+    "state": "RUNNING",
+    "current_task_id": "T020",
+    "supervisor_checked_at": "2026-10-18T09:29:28.712345+00:00",
+    "next_action": "编译并核对Section4空间误差恒等式；随后从N3/N4推导实际空间能量和L²误差界",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T02:00:54.907026+00:00"
+    "last_activity_at": "2026-10-18T09:29:28.712345+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39088174822/attempts/1",
-      "finished_at": "2026-10-18T01:59:23.644591+00:00",
+      "checked_sha": "bce9be563a26a373585eb6d7f705d6fc5e2becf2",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39089488235/attempts/1",
+      "finished_at": "2026-10-18T02:20:59.140330+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd"
+      "source_head_sha": "bce9be563a26a373585eb6d7f705d6fc5e2becf2"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39088174822/attempts/1",
-      "finished_at": "2026-10-18T01:59:23.644591+00:00",
+      "checked_sha": "bce9be563a26a373585eb6d7f705d6fc5e2becf2",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39089488235/attempts/1",
+      "finished_at": "2026-10-18T02:20:59.140330+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd"
+      "source_head_sha": "bce9be563a26a373585eb6d7f705d6fc5e2becf2"
     }
   },
   "milestones": [
@@ -3947,6 +3947,70 @@
       ],
       "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/22",
       "scope_notes": "原Section3完整结论候选；实际同SHA构建后记BUILT，父监督者独立验收后才能增加原文完成数。Section4和原Theorem2.1未完成。"
+    },
+    {
+      "id": "C038",
+      "title": "Section4可变测试算子与空间误差、完整对偶恒等式",
+      "paper_ref": "eq:weighted-time-summation；eq:thetaEuler；eq:completeidentity；eq:auxEuler后适定性说明",
+      "milestone": "M4",
+      "scope": "AUXILIARY",
+      "verification_status": "SPECIFIED",
+      "extra_hypotheses": [],
+      "paper_labels": [
+        "eq:weighted-time-summation",
+        "eq:thetaEuler",
+        "eq:completeidentity",
+        "eq:auxEuler"
+      ],
+      "lean_declarations": [
+        "Carleman.sum_variable_bilinear_increment",
+        "Carleman.TimeGrid.pairing_variable_operator",
+        "Carleman.TimeGrid.pairing_variable_operator_lower",
+        "Carleman.Orientation.difference_map",
+        "Carleman.Orientation.difference_sub",
+        "Carleman.Reconstruction.spatialForm",
+        "Carleman.Reconstruction.spatialForm_sub_left",
+        "Carleman.Reconstruction.spatialForm_sub_right",
+        "Carleman.Reconstruction.spatial_continuous_test",
+        "Carleman.Reconstruction.spatial_discrete_test",
+        "Carleman.Reconstruction.spatial_error_equation",
+        "Carleman.Reconstruction.spatial_consistency_identity",
+        "Carleman.Orientation.pairing_difference_opposite",
+        "Carleman.Reconstruction.spatial_complete_identity",
+        "Carleman.Reconstruction.spatial_weighted_duality",
+        "Carleman.Reconstruction.auxiliaryEuler",
+        "Carleman.Reconstruction.auxiliaryEuler_injective",
+        "Carleman.Reconstruction.existsUnique_auxiliaryEuler",
+        "Carleman.TimeGrid.testOperator_cell_increment",
+        "Carleman.TimeGrid.pairing_testOperator_dPlus_lower",
+        "Carleman.TimeGrid.pairing_testOperator_dMinus_lower",
+        "Carleman.WeakSobolevJet.weightedFieldMap",
+        "Carleman.WeakSobolevJet.weightedFieldMap_norm_sq",
+        "Carleman.WeakSobolevJet.weightedSeminorm",
+        "Carleman.WeakSobolevJet.weightedSeminorm_apply",
+        "Carleman.WeakSobolevJet.weightedNorm_add_le",
+        "Carleman.WeakSobolevJet.weightedNorm_sub_le",
+        "Carleman.conformingWeightedSeminorm",
+        "Carleman.conformingWeightedSeminorm_apply",
+        "Carleman.TimeGrid.weightedNorm_nonneg",
+        "Carleman.TimeGrid.weightedNorm_product_sum",
+        "Carleman.TimeGrid.weightedNorm_add_le",
+        "Carleman.TimeGrid.weightedNorm_sub_le",
+        "Carleman.TimeGrid.weightedNorm_le_of_bound",
+        "Carleman.TimeGrid.weighted_bilinear_sum_bound"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "blocker": null,
+      "dependencies": [
+        "C001",
+        "C002",
+        "C037"
+      ],
+      "next_action": "从N3/N4推导真实空间能量与L²误差，接入已证Section3解及图估计。",
+      "pr_url": null,
+      "scope_notes": "原Section4精确恒等式和全离散适定性；不包含N3/N4误差估计，不能提升原文覆盖。"
     }
   ],
   "events": [
@@ -4185,7 +4249,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39086197036/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/22",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39088174822/attempts/1",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd/governance/reviews/T019.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd/governance/reviews/T019.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39089488235/attempts/1"
     ]
   },
   "schedules": [
@@ -9611,10 +9676,10 @@
       ],
       "branch": "proof/t019-section3-closure",
       "base_commit": "cfd7d038d322779b1e9bc1cdd076af65e0e829d1",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/22",
       "checkpoint_commit": "2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd",
-      "merge_commit": null,
+      "merge_commit": "bce9be563a26a373585eb6d7f705d6fc5e2becf2",
       "lean_declarations": [
         "Carleman.Section3.AllowedFamily",
         "Carleman.Section3.AllowedFamily.inverse",
@@ -9696,7 +9761,7 @@
         "直接从真实非冻结连续图能量证明权导数和空间交换子吸收；完整R和MemLp提升通过局部构建",
         "原V/Hilbert等价、完整原D/A识别、正逆允许权、所有解唯一性及统一阈值组合；保留原结论"
       ],
-      "next_action": "父监督者独立验收PR22完整Section3及61声明；随后Section4真实空间误差与最终transfer桥接",
+      "next_action": "PR22实际已合并且main CI通过；原文声明仍BUILT，保留独立语义验收要求。T020推进Section4代数与对偶基础。",
       "declaration_version": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
       "semantic_review": {
         "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
@@ -9818,6 +9883,76 @@
           "zip_sha256": "be1a5d7b1ca35c6e98977c512be28c3a02117888c2d3c36be83823b9bcf831af"
         }
       }
+    },
+    {
+      "id": "T020",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "Section4空间误差的测试算子、精确相容性和周期对偶",
+      "goal_ids": [
+        "C038"
+      ],
+      "acceptance": [
+        "两时间方向的可变自伴算子精确周期恒等式及下界",
+        "从真实连续与离散Euler方程推导误差和完整对偶恒等式，保留Q=RJ/G=JR和刚度缺陷",
+        "全离散空间任意载荷存在唯一性，实际编译及公理审计，无sorry或新增公理",
+        "辅助成果不计为原Lemma4.1或Theorem4.2完成"
+      ],
+      "dependencies": [
+        "C001",
+        "C002",
+        "C037"
+      ],
+      "branch": "proof/t020-spatial-identities",
+      "base_commit": "bce9be563a26a373585eb6d7f705d6fc5e2becf2",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.sum_variable_bilinear_increment",
+        "Carleman.TimeGrid.pairing_variable_operator",
+        "Carleman.TimeGrid.pairing_variable_operator_lower",
+        "Carleman.Orientation.difference_map",
+        "Carleman.Orientation.difference_sub",
+        "Carleman.Reconstruction.spatialForm",
+        "Carleman.Reconstruction.spatialForm_sub_left",
+        "Carleman.Reconstruction.spatialForm_sub_right",
+        "Carleman.Reconstruction.spatial_continuous_test",
+        "Carleman.Reconstruction.spatial_discrete_test",
+        "Carleman.Reconstruction.spatial_error_equation",
+        "Carleman.Reconstruction.spatial_consistency_identity",
+        "Carleman.Orientation.pairing_difference_opposite",
+        "Carleman.Reconstruction.spatial_complete_identity",
+        "Carleman.Reconstruction.spatial_weighted_duality",
+        "Carleman.Reconstruction.auxiliaryEuler",
+        "Carleman.Reconstruction.auxiliaryEuler_injective",
+        "Carleman.Reconstruction.existsUnique_auxiliaryEuler",
+        "Carleman.TimeGrid.testOperator_cell_increment",
+        "Carleman.TimeGrid.pairing_testOperator_dPlus_lower",
+        "Carleman.TimeGrid.pairing_testOperator_dMinus_lower",
+        "Carleman.WeakSobolevJet.weightedFieldMap",
+        "Carleman.WeakSobolevJet.weightedFieldMap_norm_sq",
+        "Carleman.WeakSobolevJet.weightedSeminorm",
+        "Carleman.WeakSobolevJet.weightedSeminorm_apply",
+        "Carleman.WeakSobolevJet.weightedNorm_add_le",
+        "Carleman.WeakSobolevJet.weightedNorm_sub_le",
+        "Carleman.conformingWeightedSeminorm",
+        "Carleman.conformingWeightedSeminorm_apply",
+        "Carleman.TimeGrid.weightedNorm_nonneg",
+        "Carleman.TimeGrid.weightedNorm_product_sum",
+        "Carleman.TimeGrid.weightedNorm_add_le",
+        "Carleman.TimeGrid.weightedNorm_sub_le",
+        "Carleman.TimeGrid.weightedNorm_le_of_bound",
+        "Carleman.TimeGrid.weighted_bilinear_sum_bound"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "核实PR22实际合并和main CI39089488235三项全部通过；本地快进至同一已合并基线",
+        "按用户要求在当前本地任务接续，保留固定工具链与唯一任务台账"
+      ],
+      "next_action": "编译新增七模块及完整Carleman目标，检查声明依赖，接续真实空间误差估计"
     }
   ],
   "private_maintenance": {

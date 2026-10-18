@@ -1682,6 +1682,80 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Section3.Conclusions.temporal
 #print axioms Carleman.Section3.Conclusions.temporal
 
+#check @Carleman.sum_variable_bilinear_increment
+#print axioms Carleman.sum_variable_bilinear_increment
+#check @Carleman.TimeGrid.pairing_variable_operator
+#print axioms Carleman.TimeGrid.pairing_variable_operator
+#check @Carleman.TimeGrid.pairing_variable_operator_lower
+#print axioms Carleman.TimeGrid.pairing_variable_operator_lower
+#check @Carleman.Orientation.difference_map
+#print axioms Carleman.Orientation.difference_map
+#check @Carleman.Orientation.difference_sub
+#print axioms Carleman.Orientation.difference_sub
+#check @Carleman.Reconstruction.spatialForm
+#print axioms Carleman.Reconstruction.spatialForm
+#check @Carleman.Reconstruction.spatialForm_sub_left
+#print axioms Carleman.Reconstruction.spatialForm_sub_left
+#check @Carleman.Reconstruction.spatialForm_sub_right
+#print axioms Carleman.Reconstruction.spatialForm_sub_right
+#check @Carleman.Reconstruction.spatial_continuous_test
+#print axioms Carleman.Reconstruction.spatial_continuous_test
+#check @Carleman.Reconstruction.spatial_discrete_test
+#print axioms Carleman.Reconstruction.spatial_discrete_test
+#check @Carleman.Reconstruction.spatial_error_equation
+#print axioms Carleman.Reconstruction.spatial_error_equation
+#check @Carleman.Reconstruction.spatial_consistency_identity
+#print axioms Carleman.Reconstruction.spatial_consistency_identity
+#check @Carleman.Orientation.pairing_difference_opposite
+#print axioms Carleman.Orientation.pairing_difference_opposite
+#check @Carleman.Reconstruction.spatial_complete_identity
+#print axioms Carleman.Reconstruction.spatial_complete_identity
+#check @Carleman.Reconstruction.spatial_weighted_duality
+#print axioms Carleman.Reconstruction.spatial_weighted_duality
+#check @Carleman.Reconstruction.auxiliaryEuler
+#print axioms Carleman.Reconstruction.auxiliaryEuler
+#check @Carleman.Reconstruction.auxiliaryEuler_injective
+#print axioms Carleman.Reconstruction.auxiliaryEuler_injective
+#check @Carleman.Reconstruction.existsUnique_auxiliaryEuler
+#print axioms Carleman.Reconstruction.existsUnique_auxiliaryEuler
+
+#check @Carleman.TimeGrid.testOperator_cell_increment
+#print axioms Carleman.TimeGrid.testOperator_cell_increment
+#check @Carleman.TimeGrid.pairing_testOperator_dPlus_lower
+#print axioms Carleman.TimeGrid.pairing_testOperator_dPlus_lower
+#check @Carleman.TimeGrid.pairing_testOperator_dMinus_lower
+#print axioms Carleman.TimeGrid.pairing_testOperator_dMinus_lower
+
+#check @Carleman.WeakSobolevJet.weightedFieldMap
+#print axioms Carleman.WeakSobolevJet.weightedFieldMap
+#check @Carleman.WeakSobolevJet.weightedFieldMap_norm_sq
+#print axioms Carleman.WeakSobolevJet.weightedFieldMap_norm_sq
+#check @Carleman.WeakSobolevJet.weightedSeminorm
+#print axioms Carleman.WeakSobolevJet.weightedSeminorm
+#check @Carleman.WeakSobolevJet.weightedSeminorm_apply
+#print axioms Carleman.WeakSobolevJet.weightedSeminorm_apply
+#check @Carleman.WeakSobolevJet.weightedNorm_add_le
+#print axioms Carleman.WeakSobolevJet.weightedNorm_add_le
+#check @Carleman.WeakSobolevJet.weightedNorm_sub_le
+#print axioms Carleman.WeakSobolevJet.weightedNorm_sub_le
+#check @Carleman.conformingWeightedSeminorm
+#print axioms Carleman.conformingWeightedSeminorm
+#check @Carleman.conformingWeightedSeminorm_apply
+#print axioms Carleman.conformingWeightedSeminorm_apply
+
+#check @Carleman.TimeGrid.weightedNorm_nonneg
+#print axioms Carleman.TimeGrid.weightedNorm_nonneg
+#check @Carleman.TimeGrid.weightedNorm_product_sum
+#print axioms Carleman.TimeGrid.weightedNorm_product_sum
+#check @Carleman.TimeGrid.weightedNorm_add_le
+#print axioms Carleman.TimeGrid.weightedNorm_add_le
+#check @Carleman.TimeGrid.weightedNorm_sub_le
+#print axioms Carleman.TimeGrid.weightedNorm_sub_le
+#check @Carleman.TimeGrid.weightedNorm_le_of_bound
+#print axioms Carleman.TimeGrid.weightedNorm_le_of_bound
+#check @Carleman.TimeGrid.weighted_bilinear_sum_bound
+#print axioms Carleman.TimeGrid.weighted_bilinear_sum_bound
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

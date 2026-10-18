@@ -1,5 +1,13 @@
 module
 
+public import Carleman.Periodic.OperatorEnergy
+public import Carleman.Periodic.TestOperatorDerivative
+public import Carleman.Transfer.SpatialConsistency
+public import Carleman.Transfer.SpatialDuality
+public import Carleman.Transfer.DiscreteExistence
+public import Carleman.Spatial.WeightedEnergySeminorm
+public import Carleman.Periodic.SeminormAlgebra
+
 public import Carleman.Periodic.Telescoping
 public import Carleman.Periodic.SummationByParts
 public import Carleman.Transfer.Residual
