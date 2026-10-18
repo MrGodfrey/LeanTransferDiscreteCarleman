@@ -3392,6 +3392,21 @@ set_option pp.maxSteps 1000000
 #check @Carleman.weighted_p1_coefficient_form_pos
 #print axioms Carleman.weighted_p1_coefficient_form_pos
 
+#check @Carleman.mem_simplexCell_iff_barycentric
+#print axioms Carleman.mem_simplexCell_iff_barycentric
+#check @Carleman.simplexBarycentric_homothety
+#print axioms Carleman.simplexBarycentric_homothety
+#check @Carleman.simplexBarycentric_superlevel_image
+#print axioms Carleman.simplexBarycentric_superlevel_image
+#check @Carleman.simplexBarycentric_superlevel_volume
+#print axioms Carleman.simplexBarycentric_superlevel_volume
+#check @Carleman.simplexBarycentric_superlevel_real
+#print axioms Carleman.simplexBarycentric_superlevel_real
+#check @Carleman.simplexBarycentric_le_one
+#print axioms Carleman.simplexBarycentric_le_one
+#check @Carleman.integral_simplexBarycentric
+#print axioms Carleman.integral_simplexBarycentric
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

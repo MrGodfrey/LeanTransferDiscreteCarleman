@@ -402,3 +402,5 @@ public import Carleman.Spatial.NeighborWeightComparison
 public import Carleman.Spatial.UniformNeighborGrading
 
 public import Carleman.Spatial.P1CoefficientCoercivity
+
+public import Carleman.Spatial.SimplexBarycentricDistribution
