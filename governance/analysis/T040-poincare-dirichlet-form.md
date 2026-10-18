@@ -18,7 +18,7 @@ Cauchy–Schwarz 与前述 ψ 范数界给 `‖φ‖≤2R‖D_e φ‖`；φ=0 �
 
 选 L 为坐标投影、e 为同一单位坐标方向，前述 slab 估计给所有测试 jet 的 `‖value‖≤2R‖field 1‖`。两个字段均为实际连续线性映射，所以该不等式的满足集合在 H¹ 图范数中闭合。每个 span 元素由已证明的线性闭合可表示为单个测试，于是闭包最小性将估计传递到完整 dirichletJetSpace。这里未假设 Poincaré、节点 H¹₀ 成员或任意边界刻画。
 
-## 实际梯度形式与 A1
+## 实际梯度形式与 A1 的形式部分
 
 `DirichletForm` 使用既有 conformingHilbert 对真实 dirichletSubspace 的实现。dirichletGradient 是 subtype、SobolevHilbert.toJet 和实际 field 1 连续线性映射的复合；形式就是该 L² 梯度的内积。精确积分公式是所有一阶 Sym 分量的乘积和，恰含每个坐标一次。对称性由实内积证明。
 
@@ -28,4 +28,4 @@ dirichletOriginalForm 内部供应实际空间、Sobolev包含、H¹闭合、L²
 
 ## 剩余原文义务
 
-本批完成真实 Dirichlet A1 形式的构造；尚未证明其全变分算子域等于 `H²∩H¹₀`、凸多面体 H² 椭圆正则性或原连续热 CE。节点零延拓进入紧支光滑 H¹ 闭包、H² 点值代表、具体网格条件及原局部误差/加权投影/逆估计仍需继续。完整 P1 Proposition 6.1 和热观测控制命题均不升级。
+本批完成真实 Dirichlet 形式及 Lean OriginalForm 的全部字段，只清偿原 A1 的空间与形式部分；原 A1 另含的 H² 椭圆正则性尚待。尚未证明其全变分算子域等于 `H²∩H¹₀`、凸多面体 H² 椭圆正则性或原连续热 CE。节点零延拓进入紧支光滑 H¹ 闭包、H² 点值代表、具体网格条件及原局部误差/加权投影/逆估计仍需继续。完整 P1 Proposition 6.1 和热观测控制命题均不升级。

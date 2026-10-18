@@ -819,4 +819,4 @@ Dirichlet空间定义为这些紧支光滑jet的线性张成在真实H1图范数
 
 四模块27声明，AUXILIARY，不提升P011。原完整光滑测试的线性运算和真实jet身份使span每个元素仍为单个测试。以L(x)φ(x)作测试，准确乘法导数及弱积分分部推出slab Poincare；真实value/gradient的连续性把估计传到H1闭包，未预设目标估计。
 
-实际全梯度L2内积给连续对称Dirichlet形式，积分准确包含全部一阶分量。能量范数精确为零阶加梯度平方，Poincare给强制常数((2R)²+1)⁻¹；有界开集内部供应坐标slab，实际构造OriginalForm全部A1字段。没有添加零阶质量项。节点H01成员、H2算子域/正则性、数值估计及连续热CE仍待。见`analysis/T040-poincare-dirichlet-form.md`。
+实际全梯度L2内积给连续对称Dirichlet形式，积分准确包含全部一阶分量。能量范数精确为零阶加梯度平方，Poincare给强制常数((2R)²+1)⁻¹；有界开集内部供应坐标slab，实际构造Lean OriginalForm的全部字段，仅对应原A1的空间与形式部分。原A1另要求的H2椭圆正则性尚未清偿。没有添加零阶质量项。节点H01成员、H2算子域/正则性、数值估计及连续热CE仍待。见`analysis/T040-poincare-dirichlet-form.md`。
