@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T076",
-    "supervisor_checked_at": "2026-10-18T23:11:01.715058+00:00",
-    "next_action": "固定SHA独立验收原乘积域完整弱切片及实际L2面迹16声明；继续长方体坐标拆分及仿射物理面校正。",
+    "current_task_id": "T077",
+    "supervisor_checked_at": "2026-10-18T23:23:41.914223+00:00",
+    "next_action": "固定SHA独立验收原欧氏长方体真实弱面迹42声明；继续面迹线性结构及物理面仿射核校正。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T23:11:01.715058+00:00"
+    "last_activity_at": "2026-10-18T23:23:41.914223+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "a4d0f062b3a3d32e166af481ed93e38096a992c2",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39174830242/attempts/1",
-      "finished_at": "2026-10-18T23:04:38.260153+00:00",
+      "checked_sha": "101b95e1b988d17332c7106c2be2aa945b213b3a",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39175437967/attempts/1",
+      "finished_at": "2026-10-18T23:13:43.911967+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "a4d0f062b3a3d32e166af481ed93e38096a992c2"
+      "source_head_sha": "101b95e1b988d17332c7106c2be2aa945b213b3a"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "a4d0f062b3a3d32e166af481ed93e38096a992c2",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39174830242/attempts/1",
-      "finished_at": "2026-10-18T23:04:38.260153+00:00",
+      "checked_sha": "101b95e1b988d17332c7106c2be2aa945b213b3a",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39175437967/attempts/1",
+      "finished_at": "2026-10-18T23:13:43.911967+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "a4d0f062b3a3d32e166af481ed93e38096a992c2"
+      "source_head_sha": "101b95e1b988d17332c7106c2be2aa945b213b3a"
     }
   },
   "milestones": [
@@ -8930,7 +8930,7 @@
       "paper_ref": "Auxiliary full product-domain weak slicing and genuine L2 face traces toward Appendix B boundary affine correction",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "lem:fd-boundary-affine"
@@ -8953,15 +8953,117 @@
         "Carleman.fiberEndpointLp_norm_sq",
         "Carleman.product_weak_face_trace_representatives"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "101b95e1b988d17332c7106c2be2aa945b213b3a",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "101b95e1b988d17332c7106c2be2aa945b213b3a",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39175437967/attempts/1",
+        "finished_at": "2026-10-18T23:13:43.911967+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "101b95e1b988d17332c7106c2be2aa945b213b3a"
+      },
+      "semantic_review": {
+        "checked_sha": "101b95e1b988d17332c7106c2be2aa945b213b3a",
+        "declarations": [
+          "Carleman.ae_forall_continuous_zero_on",
+          "Carleman.scalar_weak_interval_iff",
+          "Carleman.ae_weak_interval_of_ae_tests",
+          "Carleman.SpatialTest.tensor_tsupport_subset",
+          "Carleman.SpatialTest.tensor",
+          "Carleman.SpatialTest.tensor_interval_derivative",
+          "Carleman.product_weak_marginal",
+          "Carleman.intervalSliceLp",
+          "Carleman.intervalSliceLp_ae",
+          "Carleman.scalar_interval_test_pairing",
+          "Carleman.product_weak_slices",
+          "Carleman.product_weak_endpoint_representatives",
+          "Carleman.fiberEndpointLp",
+          "Carleman.fiberEndpointLp_ae",
+          "Carleman.fiberEndpointLp_norm_sq",
+          "Carleman.product_weak_face_trace_representatives"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f35bbedd6a6e45dbc9ac37f4210de867c3f8d98f/governance/reviews/T076-local-acceptance.md",
+        "reviewed_at": "2026-10-18T23:16:22+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C091"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "从原乘积域完整SpatialTest身份、真实张量测试与Fubini得到固定测试的切片身份；实际L2测试对可分性给所有测试共同满测集。原全部弱数据的真实切片及双端点L2面迹已证，2/L与2L缩放保持；长方体坐标拆分和仿射物理面校正仍待，原文12/26。"
+      "scope_notes": "从原乘积域完整SpatialTest身份、真实张量测试与Fubini得到固定测试的切片身份；实际L2测试对可分性给所有测试共同满测集。原全部弱数据的真实切片及双端点L2面迹已证，2/L与2L缩放保持；长方体坐标拆分和仿射物理面校正仍待，原文12/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C093",
+      "title": "原欧氏长方体的真实弱面迹",
+      "paper_ref": "Auxiliary genuine Euclidean box face traces with full weak data and physical continuous-face agreement toward Appendix B boundary affine correction",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "lem:fd-boundary-affine"
+      ],
+      "lean_declarations": [
+        "Carleman.coordinateSplitMeasurable",
+        "Carleman.coordinateSplitMeasurable_apply",
+        "Carleman.coordinateSplitMeasurable_symm_apply",
+        "Carleman.coordinateSplit",
+        "Carleman.coordinateSplit_apply",
+        "Carleman.coordinateSplit_measurePreserving",
+        "Carleman.coordinateSplit_basis",
+        "Carleman.affineSpatialChart",
+        "Carleman.affineSpatialChart_apply",
+        "Carleman.affineSpatialChart_hasFDerivAt",
+        "Carleman.SpatialTest.pullbackAffine",
+        "Carleman.SpatialTest.pullbackAffine_derivative",
+        "Carleman.affineTransportLp",
+        "Carleman.affineTransportLp_ae",
+        "Carleman.affineTransportLp_norm",
+        "Carleman.integral_mul_affineTransportLp",
+        "Carleman.IsWeakSpatialDerivative.affine_transport",
+        "Carleman.openCoordinateBox",
+        "Carleman.openCoordinateBox_isOpen",
+        "Carleman.openCoordinateBox_isBounded",
+        "Carleman.openCoordinateBox_finite",
+        "Carleman.coordinateBoxChart",
+        "Carleman.coordinateBoxChart_apply",
+        "Carleman.coordinateBoxChart_symm_apply",
+        "Carleman.coordinateBoxChart_preimage",
+        "Carleman.coordinateBoxChart_image",
+        "Carleman.coordinateBoxChart_measurePreserving",
+        "Carleman.coordinateBoxChart_restrict",
+        "Carleman.coordinateBoxAxisGrid",
+        "Carleman.coordinateBoxAxisGrid_period",
+        "Carleman.coordinateBoxChart_timeMeasure",
+        "Carleman.coordinateBoxLp",
+        "Carleman.coordinateBoxLp_norm",
+        "Carleman.coordinateBoxLp_ae",
+        "Carleman.coordinateBox_weak_transport",
+        "Carleman.coordinateBoxFaceTrace",
+        "Carleman.coordinateBoxFaceTrace_norm_sq",
+        "Carleman.coordinateBoxFaceTrace_representatives",
+        "Carleman.coordinateBoxFaceTrace_eq_continuous",
+        "Carleman.weakJetBoxFaceTrace",
+        "Carleman.weakJetBoxFaceTrace_norm_sq",
+        "Carleman.weakJetBoxFaceTrace_eq_continuous"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C092"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "实际欧氏坐标拆分、仿射全弱测试传输、原长方体与限制乘积体积严格识别；任意原弱坐标导数给真实面L2迹，保留2/L与2L尺度。全部H1 jet有全梯度界，连续代表的迹为实际面限制；多面仿射核校正及完整B1/B2尚待，原文12/26。"
     }
   ],
   "events": [
@@ -9422,6 +9524,11 @@
       "at": "2026-10-18T23:11:01.715058+00:00",
       "public_summary": "原全部弱区间H1迹25声明独立验收PASS；完整乘积弱切片与实际面迹16声明全库通过，原文12/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d477c8159ce30f45adda8b95b26606cb2b304bd9/governance/reviews/T075-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T23:23:41.914223+00:00",
+      "public_summary": "原乘积弱切片与双面迹16声明独立验收PASS；原欧氏长方体真实弱面迹42声明全库通过，原文12/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f35bbedd6a6e45dbc9ac37f4210de867c3f8d98f/governance/reviews/T076-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -9625,7 +9732,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b87a69864f8aec797ef3b45b0e36b1c1916b9369/governance/reviews/T074-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39174132190/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d477c8159ce30f45adda8b95b26606cb2b304bd9/governance/reviews/T075-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39174830242/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39174830242/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f35bbedd6a6e45dbc9ac37f4210de867c3f8d98f/governance/reviews/T076-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39175437967/attempts/1"
     ]
   },
   "schedules": [
@@ -21121,10 +21230,10 @@
       ],
       "branch": "main",
       "base_commit": "a4d0f062b3a3d32e166af481ed93e38096a992c2",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "101b95e1b988d17332c7106c2be2aa945b213b3a",
+      "merge_commit": "101b95e1b988d17332c7106c2be2aa945b213b3a",
       "lean_declarations": [
         "Carleman.ae_forall_continuous_zero_on",
         "Carleman.scalar_weak_interval_iff",
@@ -21143,12 +21252,23 @@
         "Carleman.fiberEndpointLp_norm_sq",
         "Carleman.product_weak_face_trace_representatives"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "101b95e1b988d17332c7106c2be2aa945b213b3a",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39175437967/attempts/1",
+        "finished_at": "2026-10-18T23:13:43.911967+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "101b95e1b988d17332c7106c2be2aa945b213b3a"
+      },
       "blocker": null,
       "attempts": [
         "五模块16声明定向3223 jobs、全库3700 jobs通过，5367声明递归公理审计PASS。"
       ],
-      "next_action": "固定SHA独立验收原乘积域完整弱切片及实际L2面迹16声明；继续长方体坐标拆分及仿射物理面校正。",
+      "next_action": "原完整乘积弱切片与实际双面迹已独立验收；继续原欧氏长方体面迹与物理面仿射校正。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -21160,6 +21280,121 @@
         "recursive_axiom_audit": 5367,
         "new_explicit_declarations": 16,
         "declaration_artifact_sha256": "84784dea3328224363fcfc6d88d35e337ae740d23e0afdb537f80391312c523f",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "101b95e1b988d17332c7106c2be2aa945b213b3a",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C092"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "101b95e1b988d17332c7106c2be2aa945b213b3a",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T23:16:22+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f35bbedd6a6e45dbc9ac37f4210de867c3f8d98f/governance/reviews/T076-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "101b95e1b988d17332c7106c2be2aa945b213b3a",
+        "checked_sha": "101b95e1b988d17332c7106c2be2aa945b213b3a",
+        "run_id": 39175437967,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3700,
+        "recursive_axiom_audit": 5367,
+        "new_explicit_declarations": 16,
+        "declaration_artifact_sha256": "84784dea3328224363fcfc6d88d35e337ae740d23e0afdb537f80391312c523f",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T077",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原欧氏长方体的真实弱面迹",
+      "goal_ids": [
+        "C093"
+      ],
+      "acceptance": [
+        "实际坐标等价、逆insertNth、体积保持及基方向严格成立，含横向维数零",
+        "仿射拉回真实完整测试族，实际链式法则和Lp等距传输，无额外弱身份假设",
+        "任意平移长方体的像与限制体积乘积精确识别，轴长为原边长",
+        "原全部弱数据的面迹等于真实切片端点，2/L和2L尺度正确",
+        "全部真实H1 jet全梯度界及连续代表的实际面值一致；不宣称完整B1或物理零迹校正"
+      ],
+      "dependencies": [
+        "C092"
+      ],
+      "branch": "main",
+      "base_commit": "101b95e1b988d17332c7106c2be2aa945b213b3a",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.coordinateSplitMeasurable",
+        "Carleman.coordinateSplitMeasurable_apply",
+        "Carleman.coordinateSplitMeasurable_symm_apply",
+        "Carleman.coordinateSplit",
+        "Carleman.coordinateSplit_apply",
+        "Carleman.coordinateSplit_measurePreserving",
+        "Carleman.coordinateSplit_basis",
+        "Carleman.affineSpatialChart",
+        "Carleman.affineSpatialChart_apply",
+        "Carleman.affineSpatialChart_hasFDerivAt",
+        "Carleman.SpatialTest.pullbackAffine",
+        "Carleman.SpatialTest.pullbackAffine_derivative",
+        "Carleman.affineTransportLp",
+        "Carleman.affineTransportLp_ae",
+        "Carleman.affineTransportLp_norm",
+        "Carleman.integral_mul_affineTransportLp",
+        "Carleman.IsWeakSpatialDerivative.affine_transport",
+        "Carleman.openCoordinateBox",
+        "Carleman.openCoordinateBox_isOpen",
+        "Carleman.openCoordinateBox_isBounded",
+        "Carleman.openCoordinateBox_finite",
+        "Carleman.coordinateBoxChart",
+        "Carleman.coordinateBoxChart_apply",
+        "Carleman.coordinateBoxChart_symm_apply",
+        "Carleman.coordinateBoxChart_preimage",
+        "Carleman.coordinateBoxChart_image",
+        "Carleman.coordinateBoxChart_measurePreserving",
+        "Carleman.coordinateBoxChart_restrict",
+        "Carleman.coordinateBoxAxisGrid",
+        "Carleman.coordinateBoxAxisGrid_period",
+        "Carleman.coordinateBoxChart_timeMeasure",
+        "Carleman.coordinateBoxLp",
+        "Carleman.coordinateBoxLp_norm",
+        "Carleman.coordinateBoxLp_ae",
+        "Carleman.coordinateBox_weak_transport",
+        "Carleman.coordinateBoxFaceTrace",
+        "Carleman.coordinateBoxFaceTrace_norm_sq",
+        "Carleman.coordinateBoxFaceTrace_representatives",
+        "Carleman.coordinateBoxFaceTrace_eq_continuous",
+        "Carleman.weakJetBoxFaceTrace",
+        "Carleman.weakJetBoxFaceTrace_norm_sq",
+        "Carleman.weakJetBoxFaceTrace_eq_continuous"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "五模块42声明定向3228 jobs、全库3705 jobs通过，5471声明递归公理审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收原欧氏长方体真实弱面迹42声明；继续面迹线性结构及物理面仿射核校正。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3705,
+        "recursive_axiom_audit": 5471,
+        "new_explicit_declarations": 42,
+        "declaration_artifact_sha256": "c01fc4eb2d2c0bb41165bd81cabf1a112b5939e6643d83b127f29bdbaacb1102",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
