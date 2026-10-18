@@ -41,3 +41,7 @@ Lemma3.1的form上界为Cform(L)=C+L^(2m)>0；下界保留**任意B>0的B‖qσv
 B1任意载荷存在、真正H弱导数和周期迹已清偿；B2/B5复用已证结果，Γ仍是普通函数；规范B3和B4的finite/order/shift条款仍复用。B4时间分析现在覆盖完整原允许权族、一般m、全部状态；剩下Section4/N1–N5的实际空间比较及a_E+η_A、a_0+a_E²+η_A系数，随后才能实例化完整transfer并清偿原Theorem2.1。未增加最终离散估计前提，也未将其宣称完成。
 
 本轮编译路线中，限制测度和conformingHilbert的大定义展开触发过默认elaboration预算；改为显式中间类型及局部预算后继续，数学结论未变。临时类型/命名错误均在正式build与审计前修正，不保留sorry或额外公理。
+
+## 下一阶段可复用检查点
+
+Section4先建立真正的N1/N3/N4重构与权测试接口：已有Reconstruction的R/J/Q/G和质量伴随、周期配对可以直接复用，不能假设Q²=Q或G=Id。原eq:thetaEuler应由两个实际Euler方程相减得到；加权时间恒等式需要把既有sum_weighted_increment的标量μ推广为随节点变化的自伴正测试算子T_n。原N4时间导数经真实cell比较给其差分项界，以Lemma3.1任意B余量吸收。再保留真实testsuper和stiffnessdefect，得到a_E+η_A的能量误差。L²必须使用原完整eq:completeidentity以及σ逆Euler图，分别产生a_0、a_E(a_E+η_A)、η_A，最后用a_E≤1得到a_0+a_E²+η_A。Theorem4.2沿真实U−bar u+bar(u−R u_h)分解与已证节点/延拓比较组合，不能用几个未经匹配的标量代替这些对象。
