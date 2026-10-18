@@ -477,3 +477,6 @@ public import Carleman.Spatial.DirichletOperatorProduct
 public import Carleman.Spatial.LaplacianCorrectionBounds
 public import Carleman.Spatial.DirichletCommutatorIdentity
 public import Carleman.Weights.DirichletCommutator
+public import Carleman.Spatial.WeakWeightedForm
+public import Carleman.Spatial.DirichletScalarForm
+public import Carleman.Weights.DirichletAllowedForm
