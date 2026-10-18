@@ -368,3 +368,6 @@ public import Carleman.Spatial.CompactConvolutionDerivative
 public import Carleman.Spatial.CompactMollificationLimit
 public import Carleman.Spatial.SobolevRestriction
 public import Carleman.Spatial.NodalDirichletMembership
+
+public import Carleman.Spatial.SimplexNodalLp
+public import Carleman.Spatial.SimplexReferenceInverse

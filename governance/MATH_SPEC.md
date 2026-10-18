@@ -844,3 +844,9 @@ Dirichlet空间定义为这些紧支光滑jet的线性张成在真实H1图范数
 五模块30声明，AUXILIARY，不提升原文覆盖。实际非负单位质量核卷积保持全局界/Lipschitz常数且有准确厚化支撑；完整弱积分分部证明实际fderiv(κ⋆f)=κ⋆fderiv f。Lebesgue微分和共同紧支界给真实光滑卷积的完整H1强极限。
 
 真实Lp字段逐项限制保留全部弱导数身份及H1图拓扑收敛。紧含于开S的Lipschitz函数以实际SpatialTest逼近而进入原Dirichlet闭包，再由节点内缩H1极限和闭性，证明实际nodalLp属于H01及实际一致P1空间；最终单独处理空域，不预设零边界等于H01。公开几何为开凸域、FaceMatching/BoundaryFitted及边界顶点值零。H2点值/正则性、统一加权误差/投影和连续热CE仍待。见`analysis/T044-nodal-dirichlet.md`。
+
+## T045：真实单纯形L2系数与参考逆估计
+
+两模块15声明，AUXILIARY，不提升原文覆盖。真实单纯形上节点多项式的Lp类线性；连续多项式a.e.身份、开集正测度及单元内部稠密性恢复实际全部节点系数，故该映射单射。有限维反Lipschitz界内部供应正常数B(T)先于全部系数。
+
+真实重心仿射坐标的CLM导数给实际节点多项式Fréchet导数，全坐标一阶fiber的真实L2类线性。该实际映射算子范数与系数反界给固定单纯形逆估计，正常数C(T)先于全部节点系数。尚未证明仿射缩放及形状正则族的统一h_K逆界，也未供应原加权逆估计；原文12/26。见`analysis/T045-reference-inverse.md`。

@@ -3124,6 +3124,37 @@ set_option pp.maxSteps 1000000
 #check @Carleman.SimplicialPartition.nodalLp_mem_dirichletConformingSpace
 #print axioms Carleman.SimplicialPartition.nodalLp_mem_dirichletConformingSpace
 
+#check @Carleman.simplexCell_finiteMeasure
+#print axioms Carleman.simplexCell_finiteMeasure
+#check @Carleman.simplexCell_subset_closure_interior
+#print axioms Carleman.simplexCell_subset_closure_interior
+#check @Carleman.simplexNodalInterpolant_memLp
+#print axioms Carleman.simplexNodalInterpolant_memLp
+#check @Carleman.simplexNodalLp
+#print axioms Carleman.simplexNodalLp
+#check @Carleman.simplexNodalLp_ae
+#print axioms Carleman.simplexNodalLp_ae
+#check @Carleman.simplexNodalLpLinear
+#print axioms Carleman.simplexNodalLpLinear
+#check @Carleman.simplexNodalLp_injective
+#print axioms Carleman.simplexNodalLp_injective
+#check @Carleman.simplexNodalLp_coefficient_bound
+#print axioms Carleman.simplexNodalLp_coefficient_bound
+#check @Carleman.simplexBarycentricDerivative
+#print axioms Carleman.simplexBarycentricDerivative
+#check @Carleman.simplexNodalDerivativeLinear
+#print axioms Carleman.simplexNodalDerivativeLinear
+#check @Carleman.simplexNodalInterpolant_hasFDerivAt
+#print axioms Carleman.simplexNodalInterpolant_hasFDerivAt
+#check @Carleman.simplexNodalGradientLp
+#print axioms Carleman.simplexNodalGradientLp
+#check @Carleman.simplexNodalGradientLp_ae
+#print axioms Carleman.simplexNodalGradientLp_ae
+#check @Carleman.simplexNodalGradientLinear
+#print axioms Carleman.simplexNodalGradientLinear
+#check @Carleman.simplex_reference_inverse
+#print axioms Carleman.simplex_reference_inverse
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
