@@ -464,3 +464,6 @@ public import Carleman.Weights.ScaledNodalResidual
 public import Carleman.Weights.FullNodalScaledNorms
 public import Carleman.Spatial.HeatNormSquare
 public import Carleman.Weights.FullNodalSuperapproximation
+public import Carleman.Spatial.WeakProjectionResidual
+public import Carleman.Weights.FullProjectedSuperapproximation
+public import Carleman.Control.FullP1Superapproximation

@@ -968,3 +968,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T065：原尺度残差与节点超逼近
 
 见 [T065规格](analysis/T065-scaled-nodal-norms.md)。五模块7声明：真实ℓ⁻¹残差和同一I/e三平方范数界，准确原弱N范数及原9.26-eq10/11；统一常数先于网格/权/状态。投影测试eq:testsuper、H¹₀残差资格及一般H²插值未宣称完成；AUXILIARY，原文12/26。
+
+## T066：原完整P1投影测试超逼近
+
+见 [T066规格](analysis/T066-projected-superapproximation.md)。三模块6声明完成真实Π_h(σ²u)−σ²u弱H¹误差及原eq:testsuper，原γ<Γ_d阈值、尺度比较、统一δ/C和完整V_h保持；接入既有GalerkinSuperapprox并以弱导数唯一性识别canonical jet。未将该接口原有hw蕴含误记为A2已清偿。一般H² N3等仍待；AUXILIARY，原文12/26。

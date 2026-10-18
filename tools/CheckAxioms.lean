@@ -3711,6 +3711,19 @@ set_option pp.maxSteps 1000000
 #check @Carleman.allowed_full_nodal_superapproximation
 #print axioms Carleman.allowed_full_nodal_superapproximation
 
+#check @Carleman.WeakSobolevJet.heat_weightedNorm_le_fields
+#print axioms Carleman.WeakSobolevJet.heat_weightedNorm_le_fields
+#check @Carleman.projection_error_of_residual
+#print axioms Carleman.projection_error_of_residual
+#check @Carleman.weak_projected_residual_estimate
+#print axioms Carleman.weak_projected_residual_estimate
+#check @Carleman.allowed_full_projected_superapproximation
+#print axioms Carleman.allowed_full_projected_superapproximation
+#check @Carleman.SpatialProfile.scaled_neg
+#print axioms Carleman.SpatialProfile.scaled_neg
+#check @Carleman.full_p1_galerkin_superapproximation
+#print axioms Carleman.full_p1_galerkin_superapproximation
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
