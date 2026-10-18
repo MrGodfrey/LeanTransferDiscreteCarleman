@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T045",
-    "supervisor_checked_at": "2026-10-18T19:18:07.910487+00:00",
-    "next_action": "参考单元逆估计提交固定SHA独立验收；继续真实仿射换元和形状尺度估计。",
+    "current_task_id": "T046",
+    "supervisor_checked_at": "2026-10-18T19:26:11.312235+00:00",
+    "next_action": "实际仿射缩放和内球几何逆界提交独立验收；继续所有单纯形的参考参数化与全网格逆界。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T19:18:07.910487+00:00"
+    "last_activity_at": "2026-10-18T19:26:11.312235+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "50ea3111057c5d7b796cca799c10a9a900d14caf",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39157419093/attempts/1",
-      "finished_at": "2026-10-18T19:11:08.436594+00:00",
+      "checked_sha": "6cbca2eb3813801b491d54b7f442834ded59d83c",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39158171521/attempts/1",
+      "finished_at": "2026-10-18T19:20:20.239225+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "50ea3111057c5d7b796cca799c10a9a900d14caf"
+      "source_head_sha": "6cbca2eb3813801b491d54b7f442834ded59d83c"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "50ea3111057c5d7b796cca799c10a9a900d14caf",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39157419093/attempts/1",
-      "finished_at": "2026-10-18T19:11:08.436594+00:00",
+      "checked_sha": "6cbca2eb3813801b491d54b7f442834ded59d83c",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39158171521/attempts/1",
+      "finished_at": "2026-10-18T19:20:20.239225+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "50ea3111057c5d7b796cca799c10a9a900d14caf"
+      "source_head_sha": "6cbca2eb3813801b491d54b7f442834ded59d83c"
     }
   },
   "milestones": [
@@ -6684,7 +6684,7 @@
       "paper_ref": "Section6 P1 inverse estimate: fixed reference simplex",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:p1"
@@ -6706,16 +6706,103 @@
         "Carleman.simplexNodalGradientLinear",
         "Carleman.simplex_reference_inverse"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "6cbca2eb3813801b491d54b7f442834ded59d83c",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "6cbca2eb3813801b491d54b7f442834ded59d83c",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39158171521/attempts/1",
+        "finished_at": "2026-10-18T19:20:20.239225+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "6cbca2eb3813801b491d54b7f442834ded59d83c"
+      },
+      "semantic_review": {
+        "checked_sha": "6cbca2eb3813801b491d54b7f442834ded59d83c",
+        "declarations": [
+          "Carleman.simplexCell_finiteMeasure",
+          "Carleman.simplexCell_subset_closure_interior",
+          "Carleman.simplexNodalInterpolant_memLp",
+          "Carleman.simplexNodalLp",
+          "Carleman.simplexNodalLp_ae",
+          "Carleman.simplexNodalLpLinear",
+          "Carleman.simplexNodalLp_injective",
+          "Carleman.simplexNodalLp_coefficient_bound",
+          "Carleman.simplexBarycentricDerivative",
+          "Carleman.simplexNodalDerivativeLinear",
+          "Carleman.simplexNodalInterpolant_hasFDerivAt",
+          "Carleman.simplexNodalGradientLp",
+          "Carleman.simplexNodalGradientLp_ae",
+          "Carleman.simplexNodalGradientLinear",
+          "Carleman.simplex_reference_inverse"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/af934ca12138ca43a9a1337be2e49770814f7055/governance/reviews/T045-local-acceptance.md",
+        "reviewed_at": "2026-10-18T19:22:55+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C052",
         "C060"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "实际节点多项式L2类线性且单射；连续性及开集正测度恢复节点系数，内部证明系数反界。实际全坐标梯度L2线性映射给固定参考单元逆估计，正常数先于全部节点系数但可依赖单元。仿射缩放、形状正则网格统一性与原加权逆估计仍待；不提升原文12/26。"
+      "scope_notes": "实际节点多项式L2类线性且单射；连续性及开集正测度恢复节点系数，内部证明系数反界。实际全坐标梯度L2线性映射给固定参考单元逆估计，正常数先于全部节点系数但可依赖单元。仿射缩放、形状正则网格统一性与原加权逆估计仍待；不提升原文12/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C062",
+      "title": "真实仿射换元与形状控制局部逆估计",
+      "paper_ref": "Section6 P1 inverse estimate: actual affine scaling and inball geometry",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:p1"
+      ],
+      "lean_declarations": [
+        "Carleman.affineChange",
+        "Carleman.affineChange_apply",
+        "Carleman.affineJacobian",
+        "Carleman.affineJacobian_pos",
+        "Carleman.affineChange_map_volume",
+        "Carleman.affineChange_map_restrict",
+        "Carleman.integral_comp_affineChange",
+        "Carleman.affineChangeEquiv",
+        "Carleman.affineChangeEquiv_apply",
+        "Carleman.affineSimplex",
+        "Carleman.affineSimplex_points",
+        "Carleman.affineSimplex_cell",
+        "Carleman.affineSimplex_nodal_comp",
+        "Carleman.affineSimplex_derivative_comp",
+        "Carleman.affineSimplex_derivative",
+        "Carleman.derivativeOneFiber_injective",
+        "Carleman.derivativeOneFiber_reverse_bound",
+        "Carleman.derivativeOneFiber_comp_bound",
+        "Carleman.lp_two_norm_sq_integral",
+        "Carleman.simplexNodalLp_norm_sq",
+        "Carleman.simplexNodalGradientLp_norm_sq",
+        "Carleman.affineSimplex_nodal_norm_sq",
+        "Carleman.affineSimplex_gradient_norm_sq",
+        "Carleman.affineSimplex_gradient_bound_sq",
+        "Carleman.affineSimplex_inverse",
+        "Carleman.affineSimplex_inverse_uniform",
+        "Carleman.affineSimplex_inverse_map_bound",
+        "Carleman.affineSimplex_shape_inverse"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C061"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实Jacobian测度/积分换元、节点多项式与Fréchet导数变换，精确L2缩放给全部可逆仿射像上的逆界。真实内球及h≤κr内部推出逆映射范数界，最终C(T,κ)/h先于全部映射/平移/尺度/节点。任意物理单纯形的统一参考参数化、全网格加权求和及其他原P1依赖仍待，原文12/26。"
     }
   ],
   "events": [
@@ -7021,6 +7108,11 @@
       "at": "2026-10-18T19:18:07.910487+00:00",
       "public_summary": "真实光滑逼近与节点H01成员30声明经独立Agent及同SHA CI验收PASS；旧队列清空。参考单元实际梯度逆估计新批次全库通过，原文12/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/abd85b3290f1afece41171d15df98778de07822a/governance/reviews/T044-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T19:26:11.312235+00:00",
+      "public_summary": "参考单元逆估计15声明经独立Agent及同SHA CI验收PASS；旧队列清空。真实仿射换元与内球形状控制的局部逆估计28声明全库通过，原文12/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/af934ca12138ca43a9a1337be2e49770814f7055/governance/reviews/T045-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -7162,7 +7254,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5acfb618de5bc22d07b251ef133fa5da2b5d88e7/governance/reviews/T043-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39156717401/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/abd85b3290f1afece41171d15df98778de07822a/governance/reviews/T044-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39157419093/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39157419093/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/af934ca12138ca43a9a1337be2e49770814f7055/governance/reviews/T045-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39158171521/attempts/1"
     ]
   },
   "schedules": [
@@ -15641,10 +15735,10 @@
       ],
       "branch": "main",
       "base_commit": "50ea3111057c5d7b796cca799c10a9a900d14caf",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "6cbca2eb3813801b491d54b7f442834ded59d83c",
+      "merge_commit": "6cbca2eb3813801b491d54b7f442834ded59d83c",
       "lean_declarations": [
         "Carleman.simplexCell_finiteMeasure",
         "Carleman.simplexCell_subset_closure_interior",
@@ -15662,12 +15756,23 @@
         "Carleman.simplexNodalGradientLinear",
         "Carleman.simplex_reference_inverse"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "6cbca2eb3813801b491d54b7f442834ded59d83c",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39158171521/attempts/1",
+        "finished_at": "2026-10-18T19:20:20.239225+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "6cbca2eb3813801b491d54b7f442834ded59d83c"
+      },
       "blocker": null,
       "attempts": [
         "两模块15声明定向3150 jobs及全库3577 jobs通过，4620声明递归审计PASS。"
       ],
-      "next_action": "参考单元逆估计提交固定SHA独立验收；继续真实仿射换元和形状尺度估计。",
+      "next_action": "固定参考单元逆估计已验收；继续实际仿射缩放和形状统一常数。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -15679,6 +15784,105 @@
         "recursive_axiom_audit": 4620,
         "new_explicit_declarations": 15,
         "declaration_artifact_sha256": "e198f2b30bd49906d02fa5105e16555c880e0e2624b0ed61a689dad26593f98a",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "6cbca2eb3813801b491d54b7f442834ded59d83c",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C061"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "6cbca2eb3813801b491d54b7f442834ded59d83c",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T19:22:55+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/af934ca12138ca43a9a1337be2e49770814f7055/governance/reviews/T045-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "6cbca2eb3813801b491d54b7f442834ded59d83c",
+        "checked_sha": "6cbca2eb3813801b491d54b7f442834ded59d83c",
+        "run_id": 39158171521,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3577,
+        "recursive_axiom_audit": 4620,
+        "new_explicit_declarations": 15,
+        "declaration_artifact_sha256": "e198f2b30bd49906d02fa5105e16555c880e0e2624b0ed61a689dad26593f98a",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T046",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "真实仿射换元与形状控制局部逆估计",
+      "goal_ids": [
+        "C062"
+      ],
+      "acceptance": [
+        "真实Lebesgue Jacobian和限制积分换元、同一节点多项式及实际Fréchet梯度身份",
+        "准确L2缩放与全部可逆仿射像统一逆估计，先置常数不含状态/尺度",
+        "从实际内球和形状比条件内部推导逆映射范数界，供应真实C/h局部逆估计"
+      ],
+      "dependencies": [
+        "C061"
+      ],
+      "branch": "main",
+      "base_commit": "6cbca2eb3813801b491d54b7f442834ded59d83c",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.affineChange",
+        "Carleman.affineChange_apply",
+        "Carleman.affineJacobian",
+        "Carleman.affineJacobian_pos",
+        "Carleman.affineChange_map_volume",
+        "Carleman.affineChange_map_restrict",
+        "Carleman.integral_comp_affineChange",
+        "Carleman.affineChangeEquiv",
+        "Carleman.affineChangeEquiv_apply",
+        "Carleman.affineSimplex",
+        "Carleman.affineSimplex_points",
+        "Carleman.affineSimplex_cell",
+        "Carleman.affineSimplex_nodal_comp",
+        "Carleman.affineSimplex_derivative_comp",
+        "Carleman.affineSimplex_derivative",
+        "Carleman.derivativeOneFiber_injective",
+        "Carleman.derivativeOneFiber_reverse_bound",
+        "Carleman.derivativeOneFiber_comp_bound",
+        "Carleman.lp_two_norm_sq_integral",
+        "Carleman.simplexNodalLp_norm_sq",
+        "Carleman.simplexNodalGradientLp_norm_sq",
+        "Carleman.affineSimplex_nodal_norm_sq",
+        "Carleman.affineSimplex_gradient_norm_sq",
+        "Carleman.affineSimplex_gradient_bound_sq",
+        "Carleman.affineSimplex_inverse",
+        "Carleman.affineSimplex_inverse_uniform",
+        "Carleman.affineSimplex_inverse_map_bound",
+        "Carleman.affineSimplex_shape_inverse"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "六模块28声明定向3183 jobs及全库3583 jobs通过，4652声明递归审计PASS。"
+      ],
+      "next_action": "实际仿射缩放和内球几何逆界提交独立验收；继续所有单纯形的参考参数化与全网格逆界。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3583,
+        "recursive_axiom_audit": 4652,
+        "new_explicit_declarations": 28,
+        "declaration_artifact_sha256": "8b30d1c815ded5fa429180c8250ebe0f2d60abbe9b04c9fb03eeec036e30130e",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
