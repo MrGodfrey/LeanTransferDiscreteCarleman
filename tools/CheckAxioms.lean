@@ -2355,6 +2355,71 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Physical.physical_observation_uniform_of_load_carleman
 #print axioms Carleman.Physical.physical_observation_uniform_of_load_carleman
 
+#check @Carleman.Physical.multiplier_clm_norm
+#print axioms Carleman.Physical.multiplier_clm_norm
+#check @Carleman.Physical.multiplier_clm_symmetric
+#print axioms Carleman.Physical.multiplier_clm_symmetric
+#check @Carleman.Physical.conformingPotential
+#print axioms Carleman.Physical.conformingPotential
+#check @Carleman.Physical.conformingPotential_apply
+#print axioms Carleman.Physical.conformingPotential_apply
+#check @Carleman.Physical.conformingPotential_symmetric
+#print axioms Carleman.Physical.conformingPotential_symmetric
+#check @Carleman.Physical.conformingPotential_norm
+#print axioms Carleman.Physical.conformingPotential_norm
+#check @Carleman.Physical.conformingPotential_form
+#print axioms Carleman.Physical.conformingPotential_form
+#check @Carleman.Physical.conforming_load_right_inverse
+#print axioms Carleman.Physical.conforming_load_right_inverse
+#check @Carleman.Physical.conforming_mass_norm
+#print axioms Carleman.Physical.conforming_mass_norm
+#check @Carleman.Physical.conformingAmbientControl
+#print axioms Carleman.Physical.conformingAmbientControl
+#check @Carleman.Physical.conformingAmbientControl_norm
+#print axioms Carleman.Physical.conformingAmbientControl_norm
+#check @Carleman.Physical.conformingAmbientControl_adjoint
+#print axioms Carleman.Physical.conformingAmbientControl_adjoint
+#check @Carleman.Physical.conforming_observation_integral
+#print axioms Carleman.Physical.conforming_observation_integral
+#check @Carleman.Physical.restrictRegionLp
+#print axioms Carleman.Physical.restrictRegionLp
+#check @Carleman.Physical.restrictRegionLp_ae
+#print axioms Carleman.Physical.restrictRegionLp_ae
+#check @Carleman.Physical.restrictRegionLp_norm_le
+#print axioms Carleman.Physical.restrictRegionLp_norm_le
+#check @Carleman.Physical.restrictRegionLinear
+#print axioms Carleman.Physical.restrictRegionLinear
+#check @Carleman.Physical.restrictRegionCLM
+#print axioms Carleman.Physical.restrictRegionCLM
+#check @Carleman.Physical.integral_inner_zeroExtend
+#print axioms Carleman.Physical.integral_inner_zeroExtend
+#check @Carleman.Physical.restrictRegion_adjoint
+#print axioms Carleman.Physical.restrictRegion_adjoint
+#check @Carleman.Physical.zeroExtend_restrictRegion
+#print axioms Carleman.Physical.zeroExtend_restrictRegion
+#check @Carleman.Physical.restrictRegion_norm_eq_cutoff
+#print axioms Carleman.Physical.restrictRegion_norm_eq_cutoff
+#check @Carleman.Physical.restrictRegionCLM_norm
+#print axioms Carleman.Physical.restrictRegionCLM_norm
+#check @Carleman.Physical.conformingRegionControl
+#print axioms Carleman.Physical.conformingRegionControl
+#check @Carleman.Physical.conformingRegionControl_apply
+#print axioms Carleman.Physical.conformingRegionControl_apply
+#check @Carleman.Physical.conformingRegionControl_adjoint
+#print axioms Carleman.Physical.conformingRegionControl_adjoint
+#check @Carleman.Physical.conformingRegionControl_adjoint_apply
+#print axioms Carleman.Physical.conformingRegionControl_adjoint_apply
+#check @Carleman.Physical.conformingRegionControl_norm
+#print axioms Carleman.Physical.conformingRegionControl_norm
+#check @Carleman.Physical.conforming_region_observation_norm
+#print axioms Carleman.Physical.conforming_region_observation_norm
+#check @Carleman.Physical.conformingRegionControl_pairing
+#print axioms Carleman.Physical.conformingRegionControl_pairing
+#check @Carleman.Physical.conforming_physical_observation_uniform
+#print axioms Carleman.Physical.conforming_physical_observation_uniform
+#check @Carleman.Physical.conforming_observation_control_uniform
+#print axioms Carleman.Physical.conforming_observation_control_uniform
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

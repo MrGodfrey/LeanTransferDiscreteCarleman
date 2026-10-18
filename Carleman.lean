@@ -287,3 +287,9 @@ public import Carleman.Control.PhysicalPotentialAbsorption
 public import Carleman.Control.PhysicalLoadCarleman
 public import Carleman.Control.PhysicalObservationAssembly
 public import Carleman.Control.PhysicalObservationUniform
+
+public import Carleman.Control.ConformingPhysicalOperators
+public import Carleman.Control.ObservedRegionLp
+public import Carleman.Control.ConformingRegionControl
+public import Carleman.Control.ConformingPhysicalObservation
+public import Carleman.Control.ConformingPhysicalControl

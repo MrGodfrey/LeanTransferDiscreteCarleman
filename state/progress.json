@@ -15,7 +15,7 @@
     "next_action": "完成真实L2子空间算子、L2(ω)限制与零延拓及Hilbert伴随，清偿观测/控制接口；仍保留具体网格和CE供应。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T16:29:03.251615+00:00"
+    "last_activity_at": "2026-10-18T16:32:32.464776+00:00"
   },
   "verification": {
     "latest_build": {
@@ -5248,13 +5248,46 @@
       "extra_hypotheses": [
         "具体P1/FD及其统一周期载荷Carleman估计仍须供应"
       ],
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "CONDITIONAL",
       "paper_labels": [
         "prop:physicalO",
-        "thm:physicalC"
+        "prop:physicalC"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.multiplier_clm_norm",
+        "Carleman.Physical.multiplier_clm_symmetric",
+        "Carleman.Physical.conformingPotential",
+        "Carleman.Physical.conformingPotential_apply",
+        "Carleman.Physical.conformingPotential_symmetric",
+        "Carleman.Physical.conformingPotential_norm",
+        "Carleman.Physical.conformingPotential_form",
+        "Carleman.Physical.conforming_load_right_inverse",
+        "Carleman.Physical.conforming_mass_norm",
+        "Carleman.Physical.conformingAmbientControl",
+        "Carleman.Physical.conformingAmbientControl_norm",
+        "Carleman.Physical.conformingAmbientControl_adjoint",
+        "Carleman.Physical.conforming_observation_integral",
+        "Carleman.Physical.restrictRegionLp",
+        "Carleman.Physical.restrictRegionLp_ae",
+        "Carleman.Physical.restrictRegionLp_norm_le",
+        "Carleman.Physical.restrictRegionLinear",
+        "Carleman.Physical.restrictRegionCLM",
+        "Carleman.Physical.integral_inner_zeroExtend",
+        "Carleman.Physical.restrictRegion_adjoint",
+        "Carleman.Physical.zeroExtend_restrictRegion",
+        "Carleman.Physical.restrictRegion_norm_eq_cutoff",
+        "Carleman.Physical.restrictRegionCLM_norm",
+        "Carleman.Physical.conformingRegionControl",
+        "Carleman.Physical.conformingRegionControl_apply",
+        "Carleman.Physical.conformingRegionControl_adjoint",
+        "Carleman.Physical.conformingRegionControl_adjoint_apply",
+        "Carleman.Physical.conformingRegionControl_norm",
+        "Carleman.Physical.conforming_region_observation_norm",
+        "Carleman.Physical.conformingRegionControl_pairing",
+        "Carleman.Physical.conforming_physical_observation_uniform",
+        "Carleman.Physical.conforming_observation_control_uniform"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -5264,7 +5297,7 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "构造正交L2子空间的真实质量、乘法势、载荷、观察区域限制/零延拓和控制伴随；具体网格及CE仍待。"
+      "scope_notes": "真实L2子空间正交载荷/质量、乘法势、自伴与范数界、L2(ω)限制和零延拓Hilbert伴随、真实控制伴随及统一观测/HUM已接通；仍显式保留周期载荷CE及具体P1/FD实例供应。"
     }
   ],
   "events": [
@@ -12485,14 +12518,60 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.multiplier_clm_norm",
+        "Carleman.Physical.multiplier_clm_symmetric",
+        "Carleman.Physical.conformingPotential",
+        "Carleman.Physical.conformingPotential_apply",
+        "Carleman.Physical.conformingPotential_symmetric",
+        "Carleman.Physical.conformingPotential_norm",
+        "Carleman.Physical.conformingPotential_form",
+        "Carleman.Physical.conforming_load_right_inverse",
+        "Carleman.Physical.conforming_mass_norm",
+        "Carleman.Physical.conformingAmbientControl",
+        "Carleman.Physical.conformingAmbientControl_norm",
+        "Carleman.Physical.conformingAmbientControl_adjoint",
+        "Carleman.Physical.conforming_observation_integral",
+        "Carleman.Physical.restrictRegionLp",
+        "Carleman.Physical.restrictRegionLp_ae",
+        "Carleman.Physical.restrictRegionLp_norm_le",
+        "Carleman.Physical.restrictRegionLinear",
+        "Carleman.Physical.restrictRegionCLM",
+        "Carleman.Physical.integral_inner_zeroExtend",
+        "Carleman.Physical.restrictRegion_adjoint",
+        "Carleman.Physical.zeroExtend_restrictRegion",
+        "Carleman.Physical.restrictRegion_norm_eq_cutoff",
+        "Carleman.Physical.restrictRegionCLM_norm",
+        "Carleman.Physical.conformingRegionControl",
+        "Carleman.Physical.conformingRegionControl_apply",
+        "Carleman.Physical.conformingRegionControl_adjoint",
+        "Carleman.Physical.conformingRegionControl_adjoint_apply",
+        "Carleman.Physical.conformingRegionControl_norm",
+        "Carleman.Physical.conforming_region_observation_norm",
+        "Carleman.Physical.conformingRegionControl_pairing",
+        "Carleman.Physical.conforming_physical_observation_uniform",
+        "Carleman.Physical.conforming_observation_control_uniform"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "L2子空间真实势/质量和环境控制伴随已编译；条件观测入口清偿相应接口。继续真实L2(ω)控制空间的限制/零延拓。"
+        "L2子空间真实势/质量和环境控制伴随已编译；条件观测入口清偿相应接口。继续真实L2(ω)控制空间的限制/零延拓。",
+        "五模块32声明已定向编译；质量和右逆常数为1、势兼容内部构造，真实L2(ω)控制B/伴随和区域积分识别，统一观测加HUM从显式周期CE供应推出。"
       ],
       "next_action": "完成真实L2子空间算子、L2(ω)限制与零延拓及Hilbert伴随，清偿观测/控制接口；仍保留具体网格和CE供应。",
-      "integration_mode": "direct-main"
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "finished_at": "2026-10-18T16:32:53.540100+00:00",
+        "targets": [
+          "Carleman"
+        ],
+        "actual_build_jobs": 3505,
+        "recursive_axiom_audit": 3597,
+        "new_explicit_declarations": 32,
+        "declaration_artifact_sha256": "b9e082f122c1915770027940160e775cc7f8fe75e4134a0ad315e769ff054f93",
+        "independent_review": "pending fixed-SHA review and remote CI"
+      }
     }
   ],
   "private_maintenance": {

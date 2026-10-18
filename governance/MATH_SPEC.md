@@ -744,3 +744,15 @@ C008/P009 是完整 Lemma4.1 候选，精确 main CI 核实后登记 BUILT/PAPER
 `physical_observation_of_load_carleman` 将真实加权端点余项、中部初值恢复、势吸收与观测去权合成。常数显式定义为 `Cmass/K * (4CCE CI² Kremainder + 2CCE (6/rstar³)+1)`，其中 K 是正的中部恢复因子，Kremainder 不含S/网格。`physical_observation_uniform_of_load_carleman` 先选择 Cb≥max(2,32CCE,2π/β) 和 d0=c_end/4，再对 T>0、M≥0 选择正 C(T,M)，最后量化所有X、网格、S、算子、数据和全伴随轨迹。原正弦q、完整qclass、半能量预算和原势二次型下界均在内部产生；不把目标观测作为输入。输出指数严格为 exp(-2d0 S)，观察时刻为 p^i（原 p^(n−1)）。
 
 显式待供应项：统一周期实际Lp载荷CE、重构双向质量界、Γ/I与乘法势的兼容、允许权下I的稳定性，以及 Bstar 实际数值观测到这里Lp观测的等距/有界接口。尤其 Bstar 当前是显式线性观察映射；不能仅凭名称认定它已是原控制算子的Hilbert伴随。原A/V自伴、A非负及势算子范数界在最终入口保留，真实物理 Hilbert 伴随方程不变。本阶段既不声称原具体数值条件已实例化，也不声称原连续热CE已证明。独立Agent应按该精确条件范围验收。
+
+## T030：真实 L2 子空间及 L2(ω) 控制接口
+
+五模块32显式声明。范围为 CONDITIONAL；本阶段清偿真实正交L2子空间的质量/势/载荷/控制伴随接口，仍需原具体 P1/FD 网格实现和统一周期载荷CE，不能提升P014/P015或Prop6.1/6.2。
+
+X为真实完备（最终控制入口为有限维）L2子空间，R=I为包含映射，Γ为正交投影；双向质量界和加权I界均以常数1实际证明。`conformingPotential X b=Γ b R` 采用真实有界乘法算子，证明其自伴、算子范数≤b.bound、准确双线性积分形式和Γ载荷兼容。任意非负自伴刚度A仍是显式输入，没有假称已构造具体热刚度矩阵。
+
+`restrictRegionLp/Linear/CLM` 实际把Lp(ν)限制到Lp(ν.restrict ω)，在a.e.商空间上证明线性和收缩。已有真实零延拓的等距性与新的积分恒等式共同证明限制算子的Hilbert伴随就是该零延拓；限制后再零延拓等于真实indicator乘法。`conformingRegionControl` 定义为Γ复合零延拓，控制空间真正是L2(ω)。其实际Hilbert伴随是限制复合R，范数≤1，双线性配对恰为区域积分；与中间环境Lp观察算子的范数严格一致。空/零测度ω也包含，未添加正测度条件。
+
+`conforming_observation_control_uniform` 从显式统一周期 `PhysicalLoadCarleman` 输入出发，内部构造全部物理接口并调用已验收观测桥和HUM，输出真实B.adjoint的全轨迹观测以及L2(ω)中的实际控制、原前向方程、控制预算和指数终值余项。Cb/d0先于T/M，C(T,M)先于有限维X/网格/S/A/b/轨迹/初始数据，原qb与尺度双边条件不变。代价写sqrt(C)，与原可重新命名的正C(T,M)等价。
+
+周期CE输入暂采用与区域加权观察等价的环境L2 indicator形式。具体有限元数值几何、原完整离散能量到这条载荷CE的供应、连续热CE及原网格阈值仍待，不因这里的真实控制算子构造被视为完成。
