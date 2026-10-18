@@ -3776,6 +3776,31 @@ set_option pp.maxSteps 1000000
 #check @Carleman.allowed_weight_mem_dirichlet_domain
 #print axioms Carleman.allowed_weight_mem_dirichlet_domain
 
+#check @Carleman.derivativeComponent_weighted_norm_le
+#print axioms Carleman.derivativeComponent_weighted_norm_le
+#check @Carleman.WeakSobolevJet.heat_parameterNorm
+#print axioms Carleman.WeakSobolevJet.heat_parameterNorm
+#check @Carleman.smoothLaplacianCorrection_norm_le
+#print axioms Carleman.smoothLaplacianCorrection_norm_le
+#check @Carleman.allowed_laplacian_correction_uniform
+#print axioms Carleman.allowed_laplacian_correction_uniform
+#check @Carleman.dirichletDomainJet
+#print axioms Carleman.dirichletDomainJet
+#check @Carleman.dirichletDomainJet_value
+#print axioms Carleman.dirichletDomainJet_value
+#check @Carleman.dirichletDomainJet_graph
+#print axioms Carleman.dirichletDomainJet_graph
+#check @Carleman.conformingWeight_operator_of_graph
+#print axioms Carleman.conformingWeight_operator_of_graph
+#check @Carleman.dirichlet_operator_mul_eq
+#print axioms Carleman.dirichlet_operator_mul_eq
+#check @Carleman.dirichlet_conjugatedCommutator_eq
+#print axioms Carleman.dirichlet_conjugatedCommutator_eq
+#check @Carleman.allowed_laplacian_correction_conjugated
+#print axioms Carleman.allowed_laplacian_correction_conjugated
+#check @Carleman.dirichlet_allowed_commutator_uniform
+#print axioms Carleman.dirichlet_allowed_commutator_uniform
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

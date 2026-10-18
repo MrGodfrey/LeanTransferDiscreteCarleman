@@ -980,3 +980,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T068：原Dirichlet算子乘积与允许权域保持
 
 见 [T068规格](analysis/T068-dirichlet-operator.md)。三模块10声明在完整弱测试上得到真实负Laplacian乘积公式；内部真实一阶、二阶导数乘子及H¹₀闭包保持，经原form-operator图刻画推出全部实际算子域的允许权保持。无H²正则前提，不缩小原域；统一交换子及A1正则仍待，AUXILIARY，原文12/26。
+
+## T069：原Dirichlet允许权统一交换子
+
+见 [T069规格](analysis/T069-dirichlet-commutator.md)。三模块12声明将真实修正项的相对导数界、实际原算子交换子身份及内在H¹权共轭组合，得到全部原域状态的C(q²||z||+q||∇z||)界。常数先于所有权参数；σ及倒数的实际域资格均内部清偿，无H²正则前提。结合T067/T068完成该模型m=1 A2；A3、A1正则及完整Appendix A仍待，AUXILIARY，原文12/26。
