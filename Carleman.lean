@@ -309,3 +309,10 @@ public import Carleman.Control.GalerkinTestTimeBound
 public import Carleman.Control.GalerkinTestData
 public import Carleman.Control.ProjectedHeatData
 public import Carleman.Control.ProjectedHeatControl
+
+public import Carleman.Control.ConformingProjectionError
+public import Carleman.Control.ConformingInterpolation
+public import Carleman.Control.GalerkinSuperapproxInterpolation
+public import Carleman.Control.ConformingHeatGradient
+public import Carleman.Control.HeatInterpolationData
+public import Carleman.Control.InterpolatedHeatNumericalData

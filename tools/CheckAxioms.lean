@@ -2525,6 +2525,57 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Physical.projected_heat_observation_control_uniform
 #print axioms Carleman.Physical.projected_heat_observation_control_uniform
 
+#check @Carleman.Physical.conformingProjector
+#print axioms Carleman.Physical.conformingProjector
+#check @Carleman.Physical.conformingProjector_eq_Q
+#print axioms Carleman.Physical.conformingProjector_eq_Q
+#check @Carleman.Physical.conformingProjector_inclusion
+#print axioms Carleman.Physical.conformingProjector_inclusion
+#check @Carleman.Physical.conformingProjector_error_decomposition
+#print axioms Carleman.Physical.conformingProjector_error_decomposition
+#check @Carleman.Physical.conformingProjector_l2_error
+#print axioms Carleman.Physical.conformingProjector_l2_error
+#check @Carleman.Physical.conformingProjector_energy_error
+#print axioms Carleman.Physical.conformingProjector_energy_error
+#check @Carleman.Physical.ConformingInterpolationBounds
+#print axioms Carleman.Physical.ConformingInterpolationBounds
+#check @Carleman.Physical.conformingWeightedApproximation_of_interpolation
+#print axioms Carleman.Physical.conformingWeightedApproximation_of_interpolation
+#check @Carleman.Physical.GalerkinSuperapproxInterpolation
+#print axioms Carleman.Physical.GalerkinSuperapproxInterpolation
+#check @Carleman.Physical.galerkinSuperapprox_of_interpolation
+#print axioms Carleman.Physical.galerkinSuperapprox_of_interpolation
+#check @Carleman.Physical.conformingHeatGradient
+#print axioms Carleman.Physical.conformingHeatGradient
+#check @Carleman.Physical.conformingHeatGradient_nonneg
+#print axioms Carleman.Physical.conformingHeatGradient_nonneg
+#check @Carleman.Physical.conformingHeatNorm_le
+#print axioms Carleman.Physical.conformingHeatNorm_le
+#check @Carleman.Physical.scaled_seminorm_le_auxiliary
+#print axioms Carleman.Physical.scaled_seminorm_le_auxiliary
+#check @Carleman.Physical.conformingHeatNorm_le_auxiliary
+#print axioms Carleman.Physical.conformingHeatNorm_le_auxiliary
+#check @Carleman.Physical.conformingHeatInverse_of_gradient
+#print axioms Carleman.Physical.conformingHeatInverse_of_gradient
+#check @Carleman.Physical.HeatInterpolationData
+#print axioms Carleman.Physical.HeatInterpolationData
+#check @Carleman.Physical.HeatInterpolationData.toBounds
+#print axioms Carleman.Physical.HeatInterpolationData.toBounds
+#check @Carleman.Physical.HeatInterpolationData.approximation
+#print axioms Carleman.Physical.HeatInterpolationData.approximation
+#check @Carleman.Physical.HeatSuperapproxData
+#print axioms Carleman.Physical.HeatSuperapproxData
+#check @Carleman.Physical.HeatSuperapproxData.toBounds
+#print axioms Carleman.Physical.HeatSuperapproxData.toBounds
+#check @Carleman.Physical.HeatSuperapproxData.superapprox
+#print axioms Carleman.Physical.HeatSuperapproxData.superapprox
+#check @Carleman.Physical.heatInterpolationErrors
+#print axioms Carleman.Physical.heatInterpolationErrors
+#check @Carleman.Physical.heatInterpolationErrors_orders
+#print axioms Carleman.Physical.heatInterpolationErrors_orders
+#check @Carleman.Physical.interpolatedHeatNumericalData
+#print axioms Carleman.Physical.interpolatedHeatNumericalData
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

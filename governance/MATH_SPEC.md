@@ -780,3 +780,9 @@ X为真实完备（最终控制入口为有限维）L2子空间，R=I为包含�
 对真实加权状态使用对数导数乘子界，推出`|<z,T'z>|≤2β(|τ|+ρ.bound)(q‖σz‖)²`，再得统一`Ctime=2β(τStar+ρ.bound)`；该常数不含T、X、维数、h、dt或qmax，不需要加权投影稳定性。两符号空间权具有同一bound。
 
 `GalerkinSuperapprox`只保留原特定Π_X(σ²z)的空间超逼近，原V中双乘法保持条件、逆权范数和Csuper*h*qmax不变；`galerkinWeightedTestData`内部构造N4其余全部字段。`ProjectedHeatData`保留原Allowed、N3、空间超逼近和连续A4；最终`projected_heat_observation_control_uniform`内部指定上述时间常数与真实测试，原物理结论和先置常数不变。具体网格的近似/超逼近及连续Dirichlet热实例仍待供应。详见`analysis/T033-projected-weighted-test.md`。
+
+## T034：插值误差到原投影近似和超逼近
+
+六模块25声明，CONDITIONAL，不提升P011/P014/P015。实际正交投影误差分解将插值的L2/能量误差和加权投影稳定性、逆估计转换为原N3；特定Pi(sigma²z)的空间N4从实际双乘法插值误差推出。热m=1采用实际唯一弱梯度场，逐点q|σ|≤|ζ|将原梯度加辅助L2预算转为真实Nσ；未假称ζ已是具体ell⁻¹σ。
+
+精确误差aE=(CE+(1+CI)Cp CE)h、a0=(1+Cp)C0h²、ηA=0，统一Cap取两个系数的max；超逼近Csuper=CS+(1+CI)CpCS，均不从T/X/mesh/qmax选择。最终`interpolatedHeatNumericalData`对全部两符号和允许τ内部供应原N1–N5，实际时间测试由T033构造。具体网格/加权投影稳定性/插值/逆估计仍为显式未供应局部输入，连续Dirichlet热实例也未完成。详见`analysis/T034-projection-errors.md`。
