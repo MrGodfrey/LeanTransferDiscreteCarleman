@@ -348,3 +348,8 @@ public import Carleman.Spatial.SpatialTestOperations
 public import Carleman.Spatial.TestPoincare
 public import Carleman.Spatial.DirichletPoincare
 public import Carleman.Spatial.DirichletForm
+
+public import Carleman.Spatial.GradientPairing
+public import Carleman.Spatial.WeakLaplacian
+public import Carleman.Spatial.DirichletLaplacian
+public import Carleman.Spatial.DirichletDistribution

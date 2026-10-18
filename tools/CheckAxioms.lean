@@ -2936,6 +2936,47 @@ set_option pp.maxSteps 1000000
 #check @Carleman.boundedDirichletOriginalForm
 #print axioms Carleman.boundedDirichletOriginalForm
 
+#check @Carleman.derivativeField_inner
+#print axioms Carleman.derivativeField_inner
+#check @Carleman.firstDerivativeField_inner
+#print axioms Carleman.firstDerivativeField_inner
+#check @Carleman.weakGradientPairing
+#print axioms Carleman.weakGradientPairing
+#check @Carleman.weakGradientPairing_apply
+#print axioms Carleman.weakGradientPairing_apply
+#check @Carleman.negativeLaplacian
+#print axioms Carleman.negativeLaplacian
+#check @Carleman.negativeLaplacian_apply
+#print axioms Carleman.negativeLaplacian_apply
+#check @Carleman.negativeLaplacian_test
+#print axioms Carleman.negativeLaplacian_test
+#check @Carleman.negativeLaplacian_dirichlet
+#print axioms Carleman.negativeLaplacian_dirichlet
+#check @Carleman.dirichletH2Energy
+#print axioms Carleman.dirichletH2Energy
+#check @Carleman.dirichletH2Energy_value
+#print axioms Carleman.dirichletH2Energy_value
+#check @Carleman.dirichletH2Energy_green
+#print axioms Carleman.dirichletH2Energy_green
+#check @Carleman.dirichletH2DomainElement
+#print axioms Carleman.dirichletH2DomainElement
+#check @Carleman.dirichletH2DomainElement_value
+#print axioms Carleman.dirichletH2DomainElement_value
+#check @Carleman.dirichletH2DomainElement_operator
+#print axioms Carleman.dirichletH2DomainElement_operator
+#check @Carleman.h2_dirichlet_le_domain
+#print axioms Carleman.h2_dirichlet_le_domain
+#check @Carleman.IsWeakNegativeLaplacian
+#print axioms Carleman.IsWeakNegativeLaplacian
+#check @Carleman.isWeakNegativeLaplacian_iff_dirichlet
+#print axioms Carleman.isWeakNegativeLaplacian_iff_dirichlet
+#check @Carleman.negativeLaplacian_isWeak
+#print axioms Carleman.negativeLaplacian_isWeak
+#check @Carleman.dirichletJetEnergy
+#print axioms Carleman.dirichletJetEnergy
+#check @Carleman.dirichlet_operator_graph_iff
+#print axioms Carleman.dirichlet_operator_graph_iff
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

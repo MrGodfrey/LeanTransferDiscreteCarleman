@@ -820,3 +820,9 @@ Dirichlet空间定义为这些紧支光滑jet的线性张成在真实H1图范数
 四模块27声明，AUXILIARY，不提升P011。原完整光滑测试的线性运算和真实jet身份使span每个元素仍为单个测试。以L(x)φ(x)作测试，准确乘法导数及弱积分分部推出slab Poincare；真实value/gradient的连续性把估计传到H1闭包，未预设目标估计。
 
 实际全梯度L2内积给连续对称Dirichlet形式，积分准确包含全部一阶分量。能量范数精确为零阶加梯度平方，Poincare给强制常数((2R)²+1)⁻¹；有界开集内部供应坐标slab，实际构造Lean OriginalForm的全部字段，仅对应原A1的空间与形式部分。原A1另要求的H2椭圆正则性尚未清偿。没有添加零阶质量项。节点H01成员、H2算子域/正则性、数值估计及连续热CE仍待。见`analysis/T040-poincare-dirichlet-form.md`。
+
+## T041：Dirichlet算子的实际负Laplacian与完整分布图
+
+四模块20声明，AUXILIARY，不提升原文覆盖。真实梯度Lp内积精确展开全部坐标一次，负Laplacian是实际H2 jet的纯二阶和之负值。完整弱导数身份给光滑测试Green恒等式，经H1闭包传至全部H01测试；由准确一阶截断构造能量元素，证明H2∩H01进入原实际形式算子域且operator=-Δ。
+
+完整变分算子图双向等价于真实H01 jet满足对全部SpatialTest的分布-divgrad=f，未引入H2/谱截断等额外域限制。反向H2正则性和原域等式仍未证明；节点H01、H2点值、网格数值估计及连续CE仍待。见`analysis/T041-dirichlet-laplacian.md`。
