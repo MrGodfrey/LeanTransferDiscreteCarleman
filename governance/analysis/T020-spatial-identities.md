@@ -1,7 +1,7 @@
 # T020 — Section 4 空间误差的精确恒等式
 
 从实际已合并基线 `bce9be563a26a373585eb6d7f705d6fc5e2becf2` 接续，
-分支 `proof/t020-spatial-identities`。PR22 已合并，main CI
+初始分支 `proof/t020-spatial-identities`，按用户本机开发指示已快进并推送 main。PR22 已合并，main CI
 [39089488235](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39089488235)
 的 lean、state-check、dashboard 三项实际成功。本地任务按用户要求接续云端检查点；
 原 Lean 4.35.0 和 mathlib `56a005855ea17e0b0958f73ec801ae140b0a1679` 不变。
@@ -62,3 +62,7 @@ N1 stiffness defect 逐项接入真实 N/R 范数，得到 `a_E+η_A` 能量界�
 完整对偶恒等式的三项分别产生 `a_0`、`a_E(a_E+η_A)` 和 `η_A`；
 利用 `a_E≤1` 得到 `a_0+a_E²+η_A`。最后与真实时间误差、延拓比较组合。
 不得把这些待证界放入新的“原假设”结构来宣称原文完成。
+
+## 本机构建检查点
+
+`3f85627f55d297e62ec124f6d9d22cf52ac85833` 本机完整 Carleman 构建3431 jobs成功，递归2940声明公理审计成功，仅正常基础公理。PR CI39132012222三项成功，实际测试SHA为`3832dbcae75558861ee911c0151f1d9c5a44697b`，与源码HEAD的tree同为`406b54232165cf21e299d8681c7fde3cc62ee018`。已核实测试提交的两个父节点为原main基线和源码HEAD。直接push main后PR23自动标为MERGED；后续在main继续，不新建常规PR。C038记录为BUILT/AUXILIARY，未据此提升原文覆盖。

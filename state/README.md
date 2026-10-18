@@ -1,6 +1,6 @@
 # 状态和证据协议（schema 2）
 
-`progress.json.tasks` 是唯一任务台账；`paper_coverage.json` 单独登记原文结果。执行者在 PR 提交有版本的结果，Dot 核实后整合总状态。CI 产出构建证据，生成器只做格式/关联检查，不查询 GitHub、重放 Lean 或判断数学忠实性。
+`progress.json.tasks` 是唯一任务台账；`paper_coverage.json` 单独登记原文结果。本机任务直接在 main 提交并推送有版本的结果，核实后整合总状态。CI 产出构建证据，生成器只做格式/关联检查，不查询 GitHub、重放 Lean 或判断数学忠实性。
 
 ## 两个证明维度
 
@@ -28,7 +28,7 @@ BUILT/REVIEWED 必须记录 `lean_declarations`、完整 40 位 `declaration_ver
 }
 ```
 
-状态为 TODO/RUNNING/REVIEW/MERGED/BLOCKED/PAUSED。非 TODO 记录实际分支、完整 base_commit 和平台身份；MERGED 记录实际合并 SHA 和 PR。同任务修正继续原 branch；新目标从合并基线开始。`execution.current_task_id` 指向当前主任务。`schedules` 只录真实保存的调度：id、timezone=Asia/Shanghai、destination、purpose、status；初始为空。
+状态为 TODO/RUNNING/REVIEW/MERGED/BLOCKED/PAUSED。非 TODO 记录实际分支、完整 base_commit 和平台身份。MERGED 表示阶段已集成：历史 PR 记录实际合并 SHA 和 PR；本机直接集成记录 `integration_mode=direct-main`、`branch=main` 和 `merge_commit`（已推送的主分支提交），PR 可为空。执行者核实远端已包含该提交；格式检查不验证 Git 可达性。同任务修正继续在 main；新目标从已验证基线开始。`execution.current_task_id` 指向当前主任务。`schedules` 只录真实保存的调度：id、timezone=Asia/Shanghai、destination、purpose、status；初始为空。
 
 ## 构建记录
 

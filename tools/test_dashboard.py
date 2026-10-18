@@ -68,6 +68,22 @@ class StatusRegression(unittest.TestCase):
         row['extra_hypotheses'] = []
         self.assertFalse(dashboard.complete(row))
 
+    def test_direct_main_integration_without_pr_keeps_commit_requirement(self):
+        task = dict(id='T001', platform_task_id='fixture', task_url=None,
+                    title='Local stage', goal_ids=[], acceptance=['Build'],
+                    dependencies=[], branch='main', base_commit=SHA,
+                    status='MERGED', integration_mode='direct-main', pr_url=None,
+                    checkpoint_commit=OTHER, merge_commit=OTHER, lean_declarations=[],
+                    build_evidence=None, blocker=None, attempts=[], next_action='Continue')
+        self.x['tasks'] = [task]
+        dashboard.validate(self.x, self.cov)
+        for field, value in [('merge_commit', None), ('branch', 'proof/fixture'),
+                             ('integration_mode', None)]:
+            with self.subTest(field=field):
+                x = copy.deepcopy(self.x)
+                x['tasks'][0][field] = value
+                with self.assertRaises(ValueError): dashboard.validate(x, self.cov)
+
     def test_original_completion_requires_no_extra_hypotheses(self):
         row = reviewed(self.cov['results'][0])
         dashboard.validate(self.x, self.cov)

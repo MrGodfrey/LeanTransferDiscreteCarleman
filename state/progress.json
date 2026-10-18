@@ -11,8 +11,8 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T020",
-    "supervisor_checked_at": "2026-10-18T09:29:28.712345+00:00",
-    "next_action": "编译并核对Section4空间误差恒等式；随后从N3/N4推导实际空间能量和L²误差界",
+    "supervisor_checked_at": "2026-10-18T13:40:17.159924+00:00",
+    "next_action": "main 已直接推送，接续 N4 真实加权时间下界与空间 Cea 能量估计",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-18T13:29:09.123016+00:00"
@@ -20,27 +20,27 @@
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "bce9be563a26a373585eb6d7f705d6fc5e2becf2",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39089488235/attempts/1",
-      "finished_at": "2026-10-18T02:20:59.140330+00:00",
+      "checked_sha": "3832dbcae75558861ee911c0151f1d9c5a44697b",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39132012222/attempts/1",
+      "finished_at": "2026-10-18T13:34:18.523511+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "bce9be563a26a373585eb6d7f705d6fc5e2becf2"
+      "source_head_sha": "3f85627f55d297e62ec124f6d9d22cf52ac85833"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "bce9be563a26a373585eb6d7f705d6fc5e2becf2",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39089488235/attempts/1",
-      "finished_at": "2026-10-18T02:20:59.140330+00:00",
+      "checked_sha": "3832dbcae75558861ee911c0151f1d9c5a44697b",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39132012222/attempts/1",
+      "finished_at": "2026-10-18T13:34:18.523511+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "bce9be563a26a373585eb6d7f705d6fc5e2becf2"
+      "source_head_sha": "3f85627f55d297e62ec124f6d9d22cf52ac85833"
     }
   },
   "milestones": [
@@ -3954,7 +3954,7 @@
       "paper_ref": "eq:weighted-time-summation；eq:thetaEuler；eq:completeidentity；eq:auxEuler后适定性说明",
       "milestone": "M4",
       "scope": "AUXILIARY",
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "extra_hypotheses": [],
       "paper_labels": [
         "eq:weighted-time-summation",
@@ -3999,8 +3999,19 @@
         "Carleman.TimeGrid.weightedNorm_le_of_bound",
         "Carleman.TimeGrid.weighted_bilinear_sum_bound"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "3832dbcae75558861ee911c0151f1d9c5a44697b",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "3832dbcae75558861ee911c0151f1d9c5a44697b",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39132012222/attempts/1",
+        "finished_at": "2026-10-18T13:34:18.523511+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "3f85627f55d297e62ec124f6d9d22cf52ac85833"
+      },
       "semantic_review": null,
       "blocker": null,
       "dependencies": [
@@ -4251,7 +4262,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39088174822/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd/governance/reviews/T019.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39089488235/attempts/1",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/23"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/23",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39132012222/attempts/1"
     ]
   },
   "schedules": [
@@ -9904,11 +9916,11 @@
         "C002",
         "C037"
       ],
-      "branch": "proof/t020-spatial-identities",
+      "branch": "main",
       "base_commit": "bce9be563a26a373585eb6d7f705d6fc5e2becf2",
       "status": "RUNNING",
       "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/23",
-      "checkpoint_commit": "fa2f093307be643889510161e815e3068709ac9f",
+      "checkpoint_commit": "3f85627f55d297e62ec124f6d9d22cf52ac85833",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.sum_variable_bilinear_increment",
@@ -9947,13 +9959,39 @@
         "Carleman.TimeGrid.weightedNorm_le_of_bound",
         "Carleman.TimeGrid.weighted_bilinear_sum_bound"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "3832dbcae75558861ee911c0151f1d9c5a44697b",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39132012222/attempts/1",
+        "finished_at": "2026-10-18T13:34:18.523511+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "3f85627f55d297e62ec124f6d9d22cf52ac85833"
+      },
       "blocker": null,
       "attempts": [
         "核实PR22实际合并和main CI39089488235三项全部通过；本地快进至同一已合并基线",
-        "按用户要求在当前本地任务接续，保留固定工具链与唯一任务台账"
+        "按用户要求在当前本地任务接续，保留固定工具链与唯一任务台账",
+        "本机完整构建3431 jobs和2940声明递归公理审计PASS；PR CI39132012222三项PASS；按用户指示切换main直接push，PR23自动合并"
       ],
-      "next_action": "编译新增七模块及完整Carleman目标，检查声明依赖，接续真实空间误差估计"
+      "next_action": "main 已直接推送，接续 N4 真实加权时间下界与空间 Cea 能量估计",
+      "integration_mode": "direct-main",
+      "ci_relationship": {
+        "proof_head": "3f85627f55d297e62ec124f6d9d22cf52ac85833",
+        "checked_test_sha": "3832dbcae75558861ee911c0151f1d9c5a44697b",
+        "base_sha": "bce9be563a26a373585eb6d7f705d6fc5e2becf2",
+        "proof_and_test_tree": "406b54232165cf21e299d8681c7fde3cc62ee018",
+        "test_parents": [
+          "bce9be563a26a373585eb6d7f705d6fc5e2becf2",
+          "3f85627f55d297e62ec124f6d9d22cf52ac85833"
+        ],
+        "run_id": 39132012222,
+        "recursive_axiom_audit": 2940,
+        "actual_build_jobs": 3431
+      }
     }
   ],
   "private_maintenance": {

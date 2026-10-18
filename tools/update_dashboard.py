@@ -134,7 +134,9 @@ def validate(x, coverage):
         if task['checkpoint_commit']:
             require(sha(task['checkpoint_commit']), 'invalid checkpoint SHA')
         if task['status'] == 'MERGED':
-            require(sha(task.get('merge_commit')) and https_url(task['pr_url']), 'merged task needs merge evidence')
+            direct_main = task.get('integration_mode') == 'direct-main' and task['branch'] == 'main'
+            require(sha(task.get('merge_commit')) and (direct_main or https_url(task['pr_url'])),
+                    'integrated task needs a commit and either direct-main or PR evidence')
     if current:
         task = next(t for t in x['tasks'] if t['id'] == current)
         if x['execution']['state'] in {'RUNNING', 'REVIEW'}:
