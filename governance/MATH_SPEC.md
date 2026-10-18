@@ -700,3 +700,14 @@ C008/P009 是完整 Lemma4.1 候选，精确 main CI 核实后登记 BUILT/PAPER
 ## T025：原滤波反向界（等待固定版本独立验收）
 
 `Physical.filter_reverse` 从真实物理伴随方程和原非负刚度/有界势，证明原Lemma7.4的 `exp(TΛ_F+MT+M²T²/2)` 反向范数界。Λ_F为原非零子空间向量Rayleigh商的真实上确界；不要求A或势保持F。Rayleigh单步增长和正算子逆界均在内部证明。详细原文映射见 `analysis/T025-filter-reverse.md`。
+## T026：真实物理 HUM 条件桥
+
+范围保持 CONDITIONAL，不计原 Theorem 7.3 完成；仍缺原 Theorem 7.2 的统一观测估计及其具体实现依赖。
+
+`PhysicalFlow` 用原有限维步映射的真实逆构造全部 N+1 个伴随节点，定义终值到初值的连续线性映射 R，以及到 `PiLp 2 (Fin N → U)` 的观测映射 O。O 的第 i 项为 `sqrt(dt) • B.adjoint p^i`，其范数平方严格等于原观测离散积分；R 单射及原能量上界均由已验收 Lemma 7.1 推出。
+
+`PenalizedHUM` 从真实正算子 `O.adjoint.comp O + ε² id` 的有限维双射直接得到唯一最优性方程，无需把极小点或目标控制当作输入。显式松弛观测 `‖Rz‖² ≤ C(‖Oz‖²+ε²‖z‖²)` 推出控制范数 `≤sqrt(C)‖y0‖` 和真实对偶终值余量 `≤ε sqrt(C)‖y0‖`。
+
+`PhysicalHUM` 对真实控制序列使用 sqrt(dt) 加权嵌入及逆缩放，精确证明物理终值等于 `R.adjoint y0 + O.adjoint controlVector(u)`，并由真实初值问题存在性产生整个前向解。`RelaxedControl.relaxed_control_of_observation`（完整名称 `Carleman.Physical.relaxed_control_of_observation`）在原非负自伴刚度、有界自伴势和真实 Hilbert 伴随方程下，取 ε=exp(-dS)，输出原前向方程及两条控制结论。C、d、S 为显式参数；没有证明它们满足原网格与权函数构造要求。
+
+独立验收应覆盖全部显式声明、dt 权重、p^(n−1) 的时刻、真实伴随与终值识别，以及最后入口仍保留的观测假设。不得将该条件桥提升为 PAPER，也不得认为其提供原观测定理。

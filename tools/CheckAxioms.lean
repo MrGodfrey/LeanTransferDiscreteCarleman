@@ -2081,6 +2081,53 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Physical.filter_reverse
 #print axioms Carleman.Physical.filter_reverse
 
+#check @Carleman.Physical.physicalStepEquiv
+#print axioms Carleman.Physical.physicalStepEquiv
+#check @Carleman.Physical.adjointNode
+#print axioms Carleman.Physical.adjointNode
+#check @Carleman.Physical.adjointNode_last
+#print axioms Carleman.Physical.adjointNode_last
+#check @Carleman.Physical.adjointNode_step
+#print axioms Carleman.Physical.adjointNode_step
+#check @Carleman.Physical.adjointNode_injective
+#print axioms Carleman.Physical.adjointNode_injective
+#check @Carleman.Physical.initialMap
+#print axioms Carleman.Physical.initialMap
+#check @Carleman.Physical.initialMap_injective
+#print axioms Carleman.Physical.initialMap_injective
+#check @Carleman.Physical.initialMap_bound
+#print axioms Carleman.Physical.initialMap_bound
+#check @Carleman.Physical.observationLinear
+#print axioms Carleman.Physical.observationLinear
+#check @Carleman.Physical.observationMap
+#print axioms Carleman.Physical.observationMap
+#check @Carleman.Physical.observationMap_norm_sq
+#print axioms Carleman.Physical.observationMap_norm_sq
+#check @Carleman.Physical.humOperator
+#print axioms Carleman.Physical.humOperator
+#check @Carleman.Physical.humOperator_pairing
+#print axioms Carleman.Physical.humOperator_pairing
+#check @Carleman.Physical.humOperator_bijective
+#print axioms Carleman.Physical.humOperator_bijective
+#check @Carleman.Physical.hum_optimality
+#print axioms Carleman.Physical.hum_optimality
+#check @Carleman.Physical.penalized_hum_control
+#print axioms Carleman.Physical.penalized_hum_control
+#check @Carleman.Physical.controlVector
+#print axioms Carleman.Physical.controlVector
+#check @Carleman.Physical.controlVector_norm
+#print axioms Carleman.Physical.controlVector_norm
+#check @Carleman.Physical.controlVector_unscale
+#print axioms Carleman.Physical.controlVector_unscale
+#check @Carleman.Physical.control_observation_pairing
+#print axioms Carleman.Physical.control_observation_pairing
+#check @Carleman.Physical.terminal_representation
+#print axioms Carleman.Physical.terminal_representation
+#check @Carleman.Physical.physical_hum_control
+#print axioms Carleman.Physical.physical_hum_control
+#check @Carleman.Physical.relaxed_control_of_observation
+#print axioms Carleman.Physical.relaxed_control_of_observation
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

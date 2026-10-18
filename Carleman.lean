@@ -261,3 +261,8 @@ public import Carleman.Control.RayleighStep
 public import Carleman.Control.PositiveResolvent
 public import Carleman.Control.ReverseIteration
 public import Carleman.Control.FilterReverse
+
+public import Carleman.Control.PhysicalFlow
+public import Carleman.Control.PenalizedHUM
+public import Carleman.Control.PhysicalHUM
+public import Carleman.Control.RelaxedControl

@@ -12,10 +12,10 @@
     "state": "RUNNING",
     "current_task_id": "T026",
     "supervisor_checked_at": "2026-10-18T15:37:39.554661+00:00",
-    "next_action": "证明真实初值/观测映射、HUM正定最优性及实际控制轨迹；完整桥独立验收，仍保留显式观测假设。",
+    "next_action": "推送固定证明提交，独立Agent核对完整条件桥与原文语义边界，真实同SHA CI核验。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T15:37:39.554661+00:00"
+    "last_activity_at": "2026-10-18T15:39:26.531423+00:00"
   },
   "verification": {
     "latest_build": {
@@ -4796,12 +4796,36 @@
       "extra_hypotheses": [
         "真实伴随轨迹的松弛观测估计；原Theorem7.2尚未供应"
       ],
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "CONDITIONAL",
       "paper_labels": [
-        "thm:control"
+        "prop:physicalC"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.physicalStepEquiv",
+        "Carleman.Physical.adjointNode",
+        "Carleman.Physical.adjointNode_last",
+        "Carleman.Physical.adjointNode_step",
+        "Carleman.Physical.adjointNode_injective",
+        "Carleman.Physical.initialMap",
+        "Carleman.Physical.initialMap_injective",
+        "Carleman.Physical.initialMap_bound",
+        "Carleman.Physical.observationLinear",
+        "Carleman.Physical.observationMap",
+        "Carleman.Physical.observationMap_norm_sq",
+        "Carleman.Physical.humOperator",
+        "Carleman.Physical.humOperator_pairing",
+        "Carleman.Physical.humOperator_bijective",
+        "Carleman.Physical.hum_optimality",
+        "Carleman.Physical.penalized_hum_control",
+        "Carleman.Physical.controlVector",
+        "Carleman.Physical.controlVector_norm",
+        "Carleman.Physical.controlVector_unscale",
+        "Carleman.Physical.control_observation_pairing",
+        "Carleman.Physical.terminal_representation",
+        "Carleman.Physical.physical_hum_control",
+        "Carleman.Physical.relaxed_control_of_observation"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -4810,7 +4834,7 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "辅助构造；不计原Theorem7.3完成，不能由抽象观测假设替代原Theorem7.2。"
+      "scope_notes": "完整HUM条件桥候选：实际物理状态、控制及终值；原观测定理作为显式输入，不计原Theorem7.3完成。待同SHA CI及独立Agent验收。"
     }
   ],
   "events": [
@@ -11539,14 +11563,52 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.physicalStepEquiv",
+        "Carleman.Physical.adjointNode",
+        "Carleman.Physical.adjointNode_last",
+        "Carleman.Physical.adjointNode_step",
+        "Carleman.Physical.adjointNode_injective",
+        "Carleman.Physical.initialMap",
+        "Carleman.Physical.initialMap_injective",
+        "Carleman.Physical.initialMap_bound",
+        "Carleman.Physical.observationLinear",
+        "Carleman.Physical.observationMap",
+        "Carleman.Physical.observationMap_norm_sq",
+        "Carleman.Physical.humOperator",
+        "Carleman.Physical.humOperator_pairing",
+        "Carleman.Physical.humOperator_bijective",
+        "Carleman.Physical.hum_optimality",
+        "Carleman.Physical.penalized_hum_control",
+        "Carleman.Physical.controlVector",
+        "Carleman.Physical.controlVector_norm",
+        "Carleman.Physical.controlVector_unscale",
+        "Carleman.Physical.control_observation_pairing",
+        "Carleman.Physical.terminal_representation",
+        "Carleman.Physical.physical_hum_control",
+        "Carleman.Physical.relaxed_control_of_observation"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "真实初值/观测CLM与有限维正定HUM已定向编译；正在接通实际物理控制和终值。"
+        "真实初值/观测CLM与有限维正定HUM已定向编译；正在接通实际物理控制和终值。",
+        "四模块完整HUM条件桥已定向编译；终值初值映射、真实sqrt(dt)观测、正定最优性、物理终值对偶与原指数余量已连接。"
       ],
-      "next_action": "证明真实初值/观测映射、HUM正定最优性及实际控制轨迹；完整桥独立验收，仍保留显式观测假设。",
-      "integration_mode": "direct-main"
+      "next_action": "推送固定证明提交，独立Agent核对完整条件桥与原文语义边界，真实同SHA CI核验。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "at": "2026-10-18T15:40:03.308318+00:00",
+        "targets": [
+          "Carleman"
+        ],
+        "build_jobs": 3475,
+        "recursive_axiom_audit": 3349,
+        "new_explicit_declarations": 23,
+        "axioms_sha256": "86cd8704bcc24a85c98de0fa5553940651ec2ccbb3792e07ad3f191871b75d1e",
+        "log": "/tmp/carleman-hum-full.log",
+        "note": "本机检查；真实同SHA CI与独立验收仍待。"
+      }
     }
   ],
   "private_maintenance": {
