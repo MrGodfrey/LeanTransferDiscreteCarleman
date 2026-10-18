@@ -2625,6 +2625,67 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Physical.affineGalerkinSpace_membership
 #print axioms Carleman.Physical.affineGalerkinSpace_membership
 
+#check @Carleman.simplicialCell
+#print axioms Carleman.simplicialCell
+#check @Carleman.simplicialCell_convex
+#print axioms Carleman.simplicialCell_convex
+#check @Carleman.simplicialCell_compact
+#print axioms Carleman.simplicialCell_compact
+#check @Carleman.simplicialCell_measurable
+#print axioms Carleman.simplicialCell_measurable
+#check @Carleman.simplicialCell_frontier_null
+#print axioms Carleman.simplicialCell_frontier_null
+#check @Carleman.simplicialCell_interior_nonempty
+#print axioms Carleman.simplicialCell_interior_nonempty
+#check @Carleman.simplicialRadius
+#print axioms Carleman.simplicialRadius
+#check @Carleman.simplicialRadius_nonneg
+#print axioms Carleman.simplicialRadius_nonneg
+#check @Carleman.simplicialCell_norm_le
+#print axioms Carleman.simplicialCell_norm_le
+#check @Carleman.simplicialCells_ae_partition
+#print axioms Carleman.simplicialCells_ae_partition
+#check @Carleman.SimplicialPartition
+#print axioms Carleman.SimplicialPartition
+#check @Carleman.SimplicialPartition.cell
+#print axioms Carleman.SimplicialPartition.cell
+#check @Carleman.SimplicialPartition.vertex_mem_closure
+#print axioms Carleman.SimplicialPartition.vertex_mem_closure
+#check @Carleman.SimplicialPartition.cells_union
+#print axioms Carleman.SimplicialPartition.cells_union
+#check @Carleman.SimplicialPartition.ae_partition
+#print axioms Carleman.SimplicialPartition.ae_partition
+#check @Carleman.SimplicialPartition.conformingSpace
+#print axioms Carleman.SimplicialPartition.conformingSpace
+#check @Carleman.SimplicialPartition.conformingSpace_finiteDimensional
+#print axioms Carleman.SimplicialPartition.conformingSpace_finiteDimensional
+#check @Carleman.SimplicialPartition.conformingSpace_le
+#print axioms Carleman.SimplicialPartition.conformingSpace_le
+#check @Carleman.SimplicialPartition.mem_conformingSpace_iff
+#print axioms Carleman.SimplicialPartition.mem_conformingSpace_iff
+#check @Carleman.simplexAffineBasis
+#print axioms Carleman.simplexAffineBasis
+#check @Carleman.simplexAffineBasis_apply
+#print axioms Carleman.simplexAffineBasis_apply
+#check @Carleman.simplexBarycentric
+#print axioms Carleman.simplexBarycentric
+#check @Carleman.simplexBarycentric_vertex
+#print axioms Carleman.simplexBarycentric_vertex
+#check @Carleman.simplexBarycentric_sum
+#print axioms Carleman.simplexBarycentric_sum
+#check @Carleman.simplexBarycentric_nonneg
+#print axioms Carleman.simplexBarycentric_nonneg
+#check @Carleman.simplexNodalInterpolant
+#print axioms Carleman.simplexNodalInterpolant
+#check @Carleman.simplexNodalInterpolant_apply
+#print axioms Carleman.simplexNodalInterpolant_apply
+#check @Carleman.simplexNodalInterpolant_vertex
+#print axioms Carleman.simplexNodalInterpolant_vertex
+#check @Carleman.simplexNodalInterpolant_reproduces
+#print axioms Carleman.simplexNodalInterpolant_reproduces
+#check @Carleman.simplexNodalInterpolant_abs_le
+#print axioms Carleman.simplexNodalInterpolant_abs_le
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

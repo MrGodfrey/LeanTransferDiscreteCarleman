@@ -320,3 +320,7 @@ public import Carleman.Control.InterpolatedHeatNumericalData
 public import Carleman.Spatial.PiecewiseAffineLp
 public import Carleman.Spatial.PiecewiseAffinePartition
 public import Carleman.Control.PiecewiseAffineGalerkin
+
+public import Carleman.Spatial.SimplicialCells
+public import Carleman.Spatial.SimplicialPartition
+public import Carleman.Spatial.SimplexNodalInterpolation
