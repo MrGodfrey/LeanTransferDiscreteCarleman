@@ -3516,6 +3516,23 @@ set_option pp.maxSteps 1000000
 #check @Carleman.allowed_weight_projection_of_nodal_representation
 #print axioms Carleman.allowed_weight_projection_of_nodal_representation
 
+#check @Carleman.SpatialTest.dirichlet_full_test_pairing
+#print axioms Carleman.SpatialTest.dirichlet_full_test_pairing
+#check @Carleman.dirichlet_full_test_pairing
+#print axioms Carleman.dirichlet_full_test_pairing
+#check @Carleman.dirichlet_zeroExtend_weak_derivative
+#print axioms Carleman.dirichlet_zeroExtend_weak_derivative
+#check @Carleman.derivativeComponent_zeroExtend
+#print axioms Carleman.derivativeComponent_zeroExtend
+#check @Carleman.WeakSobolevJet.zeroExtendDirichlet
+#print axioms Carleman.WeakSobolevJet.zeroExtendDirichlet
+#check @Carleman.WeakSobolevJet.zeroExtendDirichlet_value
+#print axioms Carleman.WeakSobolevJet.zeroExtendDirichlet_value
+#check @Carleman.WeakSobolevJet.zeroExtendDirichlet_field_norm
+#print axioms Carleman.WeakSobolevJet.zeroExtendDirichlet_field_norm
+#check @Carleman.WeakSobolevJet.zeroExtendDirichlet_restrict
+#print axioms Carleman.WeakSobolevJet.zeroExtendDirichlet_restrict
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

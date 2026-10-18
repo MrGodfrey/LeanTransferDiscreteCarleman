@@ -421,3 +421,6 @@ public import Carleman.Spatial.WeightedMassAbsorption
 public import Carleman.Spatial.NodalProjectionEstimate
 public import Carleman.Spatial.AllowedReciprocalWeight
 public import Carleman.Spatial.UniformNodalProjection
+
+public import Carleman.Spatial.DirichletTestPairing
+public import Carleman.Spatial.DirichletZeroExtension
