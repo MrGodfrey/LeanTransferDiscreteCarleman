@@ -115,3 +115,5 @@
 - T059 / C075：经典节点误差13声明独立验收PASS，4913项递归审计及同SHA CI。 固定证明 `daf0c9e455f04bf5d7eff4e4ecde1729e01f6a92`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/cdae6b6a72bc431a4d2e3a6c233572e4bd19c624/governance/reviews/T059-local-acceptance.md)。原文12/26，T060继续闭单元内在导数与真实权乘仿射插值误差。
 
 - T060 / C076：闭单元实际乘积误差13声明独立验收PASS，4929项递归审计及同SHA CI。 固定证明 `021696bbeb403adab3172f24294db01af5a2ab4e`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a189f27900919fe80f61361a37938ab0dd149a2d/governance/reviews/T060-local-acceptance.md)。原文12/26，T061继续实际允许权平方的域内导数与乘积节点误差。
+
+- T061 / C077：真实σ²导数/节点误差10声明独立验收PASS，4940项递归审计及同SHA CI。 固定证明 `05aadb86ef406e8e1f843a74ddace902041d79e9`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4d21da31219ae2e83079904baee1d2d2d2334756/governance/reviews/T061-local-acceptance.md)。原文12/26，T062继续真实加权单元残差及实际导数积分界。
