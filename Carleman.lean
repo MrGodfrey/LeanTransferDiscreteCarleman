@@ -395,3 +395,8 @@ public import Carleman.Weights.SpatialComparison
 public import Carleman.Spatial.SimplicialDiameter
 public import Carleman.Spatial.SimplicialAllowedComparison
 public import Carleman.Spatial.ConformingAllowedInverse
+
+public import Carleman.Spatial.SimplicialNeighbors
+public import Carleman.Weights.GradingThreshold
+public import Carleman.Spatial.NeighborWeightComparison
+public import Carleman.Spatial.UniformNeighborGrading

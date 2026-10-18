@@ -3340,6 +3340,39 @@ set_option pp.maxSteps 1000000
 #check @Carleman.conforming_allowed_weight_inverse
 #print axioms Carleman.conforming_allowed_weight_inverse
 
+#check @Carleman.SimplicialPartition.VertexNeighbors
+#print axioms Carleman.SimplicialPartition.VertexNeighbors
+#check @Carleman.SimplicialPartition.VertexNeighbors.symm
+#print axioms Carleman.SimplicialPartition.VertexNeighbors.symm
+#check @Carleman.SimplicialPartition.vertexNeighbors_dist_le
+#print axioms Carleman.SimplicialPartition.vertexNeighbors_dist_le
+#check @Carleman.SimplicialPartition.vertexNeighbors_dist_le_max
+#print axioms Carleman.SimplicialPartition.vertexNeighbors_dist_le_max
+#check @Carleman.exists_weight_grading_threshold
+#print axioms Carleman.exists_weight_grading_threshold
+#check @Carleman.SpatialProfile.scaled_multiplier_inverse_value
+#print axioms Carleman.SpatialProfile.scaled_multiplier_inverse_value
+#check @Carleman.SimplicialPartition.scale_grading_from_ratios
+#print axioms Carleman.SimplicialPartition.scale_grading_from_ratios
+#check @Carleman.SimplicialPartition.allowedWeight_neighbor_le
+#print axioms Carleman.SimplicialPartition.allowedWeight_neighbor_le
+#check @Carleman.SimplicialPartition.gradedWeight
+#print axioms Carleman.SimplicialPartition.gradedWeight
+#check @Carleman.SimplicialPartition.gradedWeight_on_cell
+#print axioms Carleman.SimplicialPartition.gradedWeight_on_cell
+#check @Carleman.SimplicialPartition.gradedWeight_neighbor_le
+#print axioms Carleman.SimplicialPartition.gradedWeight_neighbor_le
+#check @Carleman.p1GradingLimit
+#print axioms Carleman.p1GradingLimit
+#check @Carleman.p1GradingLimit_gt_one
+#print axioms Carleman.p1GradingLimit_gt_one
+#check @Carleman.p1GradingLimit_two
+#print axioms Carleman.p1GradingLimit_two
+#check @Carleman.p1GradingLimit_three
+#print axioms Carleman.p1GradingLimit_three
+#check @Carleman.allowed_weights_uniform_neighbor_grading
+#print axioms Carleman.allowed_weights_uniform_neighbor_grading
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
