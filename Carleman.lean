@@ -511,3 +511,10 @@ public import Carleman.Spatial.AffineWeakTransport
 public import Carleman.Geometry.CoordinateBoxChart
 public import Carleman.Spatial.CoordinateBoxTrace
 public import Carleman.Spatial.CoordinateBoxSobolevTrace
+public import Carleman.Spatial.FaceTraceLinearity
+public import Carleman.Spatial.FiniteKernelCorrection
+public import Carleman.Spatial.CoordinateBoxTraceLinearMap
+public import Carleman.Spatial.AffineBoxTraceMap
+public import Carleman.Geometry.ClosedCoordinateFaces
+public import Carleman.Spatial.AffineBoundaryKernel
+public import Carleman.Spatial.AffineBoundaryCorrection

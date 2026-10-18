@@ -4133,6 +4133,89 @@ set_option pp.maxSteps 1000000
 #check @Carleman.weakJetBoxFaceTrace_eq_continuous
 #print axioms Carleman.weakJetBoxFaceTrace_eq_continuous
 
+#check @Carleman.fiberEndpoint_integrable_slices
+#print axioms Carleman.fiberEndpoint_integrable_slices
+#check @Carleman.fiberEndpointLp_add
+#print axioms Carleman.fiberEndpointLp_add
+#check @Carleman.fiberEndpointLp_smul
+#print axioms Carleman.fiberEndpointLp_smul
+#check @Carleman.fiberEndpointLinearMap
+#print axioms Carleman.fiberEndpointLinearMap
+#check @Carleman.finiteDimensional_kernel_correction
+#print axioms Carleman.finiteDimensional_kernel_correction
+#check @Carleman.finiteFamily_kernel_correction
+#print axioms Carleman.finiteFamily_kernel_correction
+#check @Carleman.coordinateBoxTransportLinearMap
+#print axioms Carleman.coordinateBoxTransportLinearMap
+#check @Carleman.coordinateBoxTransportLinearMap_apply
+#print axioms Carleman.coordinateBoxTransportLinearMap_apply
+#check @Carleman.coordinateBoxFaceLinearMap
+#print axioms Carleman.coordinateBoxFaceLinearMap
+#check @Carleman.coordinateBoxFaceLinearMap_apply
+#print axioms Carleman.coordinateBoxFaceLinearMap_apply
+#check @Carleman.weakJetBoxFaceLinearMap
+#print axioms Carleman.weakJetBoxFaceLinearMap
+#check @Carleman.weakJetBoxFaceLinearMap_apply
+#print axioms Carleman.weakJetBoxFaceLinearMap_apply
+#check @Carleman.AffineCoefficients
+#print axioms Carleman.AffineCoefficients
+#check @Carleman.affineCoefficientPolynomial
+#print axioms Carleman.affineCoefficientPolynomial
+#check @Carleman.affineCoefficientPolynomial_apply
+#print axioms Carleman.affineCoefficientPolynomial_apply
+#check @Carleman.affineBoxValueMap
+#print axioms Carleman.affineBoxValueMap
+#check @Carleman.affineBoxValueMap_ae
+#print axioms Carleman.affineBoxValueMap_ae
+#check @Carleman.affineBoxDerivativeMap
+#print axioms Carleman.affineBoxDerivativeMap
+#check @Carleman.affineBoxDerivativeMap_weak
+#print axioms Carleman.affineBoxDerivativeMap_weak
+#check @Carleman.affineBoxFaceMap
+#print axioms Carleman.affineBoxFaceMap
+#check @Carleman.affineBoxFaceMap_ae
+#print axioms Carleman.affineBoxFaceMap_ae
+#check @Carleman.closedCoordinateBox
+#print axioms Carleman.closedCoordinateBox
+#check @Carleman.closure_openCoordinateBox
+#print axioms Carleman.closure_openCoordinateBox
+#check @Carleman.coordinateFacePoint_continuous
+#print axioms Carleman.coordinateFacePoint_continuous
+#check @Carleman.coordinateClosedFace
+#print axioms Carleman.coordinateClosedFace
+#check @Carleman.coordinateClosedFace_eq_image
+#print axioms Carleman.coordinateClosedFace_eq_image
+#check @Carleman.affineBoxFaceMap_eq_zero_iff
+#print axioms Carleman.affineBoxFaceMap_eq_zero_iff
+#check @Carleman.affineBoxSelectedFaceMap
+#print axioms Carleman.affineBoxSelectedFaceMap
+#check @Carleman.affineBoxSelectedFaceMap_apply
+#print axioms Carleman.affineBoxSelectedFaceMap_apply
+#check @Carleman.affineBoxSelectedFaceMap_kernel
+#print axioms Carleman.affineBoxSelectedFaceMap_kernel
+#check @Carleman.affineBox_uniform_kernel_correction
+#print axioms Carleman.affineBox_uniform_kernel_correction
+#check @Carleman.affineBoxSelectedFaceMap_norm_le_rss
+#print axioms Carleman.affineBoxSelectedFaceMap_norm_le_rss
+#check @Carleman.affineCoefficientPolynomial_surjective
+#print axioms Carleman.affineCoefficientPolynomial_surjective
+#check @Carleman.affineBoxGradientMap
+#print axioms Carleman.affineBoxGradientMap
+#check @Carleman.affineBoxJet
+#print axioms Carleman.affineBoxJet
+#check @Carleman.affineBoxJet_value
+#print axioms Carleman.affineBoxJet_value
+#check @Carleman.affineBoxJet_gradient
+#print axioms Carleman.affineBoxJet_gradient
+#check @Carleman.affineBox_bulk_norm_bound
+#print axioms Carleman.affineBox_bulk_norm_bound
+#check @Carleman.affineBox_uniform_h1_correction
+#print axioms Carleman.affineBox_uniform_h1_correction
+#check @Carleman.affineBox_uniform_h1_correction_rss
+#print axioms Carleman.affineBox_uniform_h1_correction_rss
+#check @Carleman.unitCube_uniform_affine_correction
+#print axioms Carleman.unitCube_uniform_affine_correction
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
