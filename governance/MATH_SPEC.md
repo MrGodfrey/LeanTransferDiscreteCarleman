@@ -764,3 +764,11 @@ X为真实完备（最终控制入口为有限维）L2子空间，R=I为包含�
 `ConformingHeatData`显式打包原AllowedFamily、NumericalData和实际弱周期轨迹上的连续A4；不含离散CE、误差桥或物理观测。`conforming_heat_load_uniform`内部调用已验收原`heat_scale_uniform`，从原误差阶aE≤Cap*h、a0+ηA≤Cap*h²与原4/5、2/5尺度供应实际周期载荷CE。κ/h0/Δ0/CCE先于所有数值空间、T/网格、权和状态。
 
 `conforming_heat_observation_control_uniform`进一步内部供应此前显式的周期CE，输出真实L2(ω)控制伴随观测和HUM控制/完整前向解。κ/h0/Δ0/Cb/d0先于T/M，Cphys(T,M)先于X/网格/刚度/误差/势/轨迹/初值；Smax严格等于κ min(h^(-4/5),dt^(-2/5))，原物理尺度条件全部保留。调用者仍须对完整PhysicalQClass权族提供原数据；具体P1网格、连续热CE和Dirichlet实现尚未构造，FD的不同质量/重构另需实现。详见`analysis/T031-original-physical-transfer.md`。
+
+## T032：实际Galerkin刚度与原数值接口
+
+四模块16声明，CONDITIONAL；不提升Prop6.1或P014/P015。对真实有限维L2子空间X≤a.V，以原形式拉回到X再用实际L2 Riesz逆构造`galerkinStiffness`，其精确配对、自伴、非负、唯一及零刚度缺陷全部是结论。有限维能量提升的连续性只用于定义算子，没有把其随网格变化的范数混入统一常数。
+
+重构单射、G=Id、Q=正交投影、实际加权观察识别已证明；`galerkinNumericalData`内部供应原N1/N2/N5相关全部字段，质量/载荷/观察常数均为1。仅N3加权近似和N4测试仍由调用者提供，实际零刚度缺陷允许ηA=0。`GalerkinHeatData`显式保留原A2/A3、N3/N4和连续A4，不含离散CE或物理观察。
+
+`galerkin_heat_observation_control_uniform`内部选取真实刚度及其自伴非负证明，不再输入任意A/defect或相关算子假设；原κ/h0/Δ0/Cb/d0先于T/M，Cphys先于全部数值数据。原尺度、全物理轨迹、真实区域控制伴随和前向方程不变。仍未构造具体P1网格及其N3/N4、连续Dirichlet热CE；不能以此提升具体实现覆盖。详见`analysis/T032-galerkin-physical.md`。

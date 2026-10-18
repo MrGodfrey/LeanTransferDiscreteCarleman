@@ -298,3 +298,8 @@ public import Carleman.Control.PhysicalTransferGeometry
 public import Carleman.Control.ConformingTransferData
 public import Carleman.Control.ConformingHeatTransfer
 public import Carleman.Control.ConformingHeatControl
+
+public import Carleman.Control.GalerkinStiffness
+public import Carleman.Control.GalerkinNumericalData
+public import Carleman.Control.GalerkinHeatData
+public import Carleman.Control.GalerkinHeatControl

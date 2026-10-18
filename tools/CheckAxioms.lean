@@ -2451,6 +2451,39 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Physical.conforming_heat_observation_control_uniform
 #print axioms Carleman.Physical.conforming_heat_observation_control_uniform
 
+#check @Carleman.Physical.conformingEnergyLift
+#print axioms Carleman.Physical.conformingEnergyLift
+#check @Carleman.Physical.conformingEnergyLift_value
+#print axioms Carleman.Physical.conformingEnergyLift_value
+#check @Carleman.Physical.galerkinStiffness
+#print axioms Carleman.Physical.galerkinStiffness
+#check @Carleman.Physical.galerkinStiffness_form
+#print axioms Carleman.Physical.galerkinStiffness_form
+#check @Carleman.Physical.galerkinStiffness_symmetric
+#print axioms Carleman.Physical.galerkinStiffness_symmetric
+#check @Carleman.Physical.galerkinStiffness_nonneg
+#print axioms Carleman.Physical.galerkinStiffness_nonneg
+#check @Carleman.Physical.galerkinStiffness_unique
+#print axioms Carleman.Physical.galerkinStiffness_unique
+#check @Carleman.Physical.galerkinStiffness_defect_zero
+#print axioms Carleman.Physical.galerkinStiffness_defect_zero
+#check @Carleman.Physical.conformingReconstruction_injective
+#print axioms Carleman.Physical.conformingReconstruction_injective
+#check @Carleman.Physical.conformingReconstruction_G
+#print axioms Carleman.Physical.conformingReconstruction_G
+#check @Carleman.Physical.conformingReconstruction_QH
+#print axioms Carleman.Physical.conformingReconstruction_QH
+#check @Carleman.Physical.conforming_weighted_observation
+#print axioms Carleman.Physical.conforming_weighted_observation
+#check @Carleman.Physical.galerkinNumericalData
+#print axioms Carleman.Physical.galerkinNumericalData
+#check @Carleman.Physical.GalerkinHeatData
+#print axioms Carleman.Physical.GalerkinHeatData
+#check @Carleman.Physical.GalerkinHeatData.toConforming
+#print axioms Carleman.Physical.GalerkinHeatData.toConforming
+#check @Carleman.Physical.galerkin_heat_observation_control_uniform
+#print axioms Carleman.Physical.galerkin_heat_observation_control_uniform
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
