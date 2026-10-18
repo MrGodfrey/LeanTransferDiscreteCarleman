@@ -141,3 +141,5 @@
 - T072 / C088：凸单元光滑均值Poincare11声明独立验收PASS，5156声明递归审计、同SHA三项CI及逐字节相同远端产物。 固定证明 `36c57dbc4edf3d9671f7b00f8c0675230f6b4380`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/70fc91ce650718298728b8ea700e5a0d9b7ff123/governance/reviews/T072-local-acceptance.md)。原文12/26，T073继续原凸域真实弱H1均值Poincare。
 
 - T073 / C089：原凸域弱H1均值Poincare21声明独立验收PASS，5178声明递归审计、同SHA三项CI及逐字节相同远端产物。 固定证明 `c99262c4a0d65a4d23f2efb57748bda490e971d7`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bfa77a04a27f806dcc2c7a01540a64b27217ff90/governance/reviews/T073-local-acceptance.md)。原文12/26，T074继续原凸域全部弱H2状态的齐次仿射逼近。
+
+- T074 / C090：原全部弱H2齐次仿射逼近34声明独立验收PASS，5303声明递归审计、同SHA三项CI及逐字节相同远端产物。 固定证明 `55dbf36858608cc7ff9300ef61430e18fa0bdadf`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b87a69864f8aec797ef3b45b0e36b1c1916b9369/governance/reviews/T074-local-acceptance.md)。原文12/26，T075继续全部弱区间H1类的实际迹与乘积端点积分。

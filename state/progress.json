@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T074",
-    "supervisor_checked_at": "2026-10-18T22:52:28.676295+00:00",
-    "next_action": "固定SHA独立验收真实H2齐次仿射逼近34声明；继续物理边界面迹与仿射校正。",
+    "current_task_id": "T075",
+    "supervisor_checked_at": "2026-10-18T23:02:39.760810+00:00",
+    "next_action": "固定SHA独立验收全部弱区间H1实际迹与乘积端点积分25声明；继续从原空间弱测试推出真实弱切片。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T22:52:28.676295+00:00"
+    "last_activity_at": "2026-10-18T23:02:39.760810+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "c99262c4a0d65a4d23f2efb57748bda490e971d7",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39173511962/attempts/1",
-      "finished_at": "2026-10-18T22:46:25.936718+00:00",
+      "checked_sha": "55dbf36858608cc7ff9300ef61430e18fa0bdadf",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39174132190/attempts/1",
+      "finished_at": "2026-10-18T22:54:47.239010+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "c99262c4a0d65a4d23f2efb57748bda490e971d7"
+      "source_head_sha": "55dbf36858608cc7ff9300ef61430e18fa0bdadf"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "c99262c4a0d65a4d23f2efb57748bda490e971d7",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39173511962/attempts/1",
-      "finished_at": "2026-10-18T22:46:25.936718+00:00",
+      "checked_sha": "55dbf36858608cc7ff9300ef61430e18fa0bdadf",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39174132190/attempts/1",
+      "finished_at": "2026-10-18T22:54:47.239010+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "c99262c4a0d65a4d23f2efb57748bda490e971d7"
+      "source_head_sha": "55dbf36858608cc7ff9300ef61430e18fa0bdadf"
     }
   },
   "milestones": [
@@ -8721,7 +8721,7 @@
       "paper_ref": "Auxiliary genuine homogeneous H2 affine approximation toward Appendix B boundary affine lemma and P1 approximation",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "lem:fd-boundary-affine",
@@ -8763,15 +8763,120 @@
         "Carleman.h2AffineResidual_homogeneous_bound",
         "Carleman.exists_convex_h2_affine_approximation"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "55dbf36858608cc7ff9300ef61430e18fa0bdadf",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "55dbf36858608cc7ff9300ef61430e18fa0bdadf",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39174132190/attempts/1",
+        "finished_at": "2026-10-18T22:54:47.239010+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "55dbf36858608cc7ff9300ef61430e18fa0bdadf"
+      },
+      "semantic_review": {
+        "checked_sha": "55dbf36858608cc7ff9300ef61430e18fa0bdadf",
+        "declarations": [
+          "Carleman.scalarLp_norm_sq",
+          "Carleman.scalarConstantLp",
+          "Carleman.scalarConstantLp_ae",
+          "Carleman.norm_sub_scalarConstantLp_sq",
+          "Carleman.boundedAffine_memLp",
+          "Carleman.boundedAffineLp",
+          "Carleman.boundedAffineLp_ae",
+          "Carleman.boundedAffineLp_weak",
+          "Carleman.IsWeakSpatialDerivative.sub",
+          "Carleman.coordinateFirstFields",
+          "Carleman.coordinateFirstJet",
+          "Carleman.coordinateFirstJet_value",
+          "Carleman.coordinateFirstJet_gradient_norm_sq",
+          "Carleman.coordinateFunctional",
+          "Carleman.coordinateFunctional_basis",
+          "Carleman.meanAffinePolynomial",
+          "Carleman.meanAffinePolynomial_apply",
+          "Carleman.meanAffinePolynomial_derivative",
+          "Carleman.meanAffinePolynomial_residual_ae",
+          "Carleman.meanAffinePolynomial_mean_residual",
+          "Carleman.weakGradientMean",
+          "Carleman.h2_gradient_mean_bound",
+          "Carleman.h2MeanAffine",
+          "Carleman.h2AffineResidualCoordinates",
+          "Carleman.h2AffineResidual_weak",
+          "Carleman.h2AffineResidual",
+          "Carleman.h2AffineResidual_value",
+          "Carleman.h2AffineResidual_value_ae",
+          "Carleman.h2AffineResidual_gradient_component",
+          "Carleman.h2AffineResidual_mean",
+          "Carleman.h2AffineResidual_gradient_bound",
+          "Carleman.h2AffineResidual_value_bound",
+          "Carleman.h2AffineResidual_homogeneous_bound",
+          "Carleman.exists_convex_h2_affine_approximation"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b87a69864f8aec797ef3b45b0e36b1c1916b9369/governance/reviews/T074-local-acceptance.md",
+        "reviewed_at": "2026-10-18T22:56:52+00:00",
+        "reviewer": "/root/accept_section3; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C089"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "以实际弱梯度均值为仿射斜率，实际H1残差零均值；两次Poincare给||r||+D||grad r||≤d(2^d+1)D²||field₂u||。适用于原全部H2 jet，无光滑代表或全空间弱延拓前提；物理面零迹校正及原B1/B2仍待，原文12/26。"
+      "scope_notes": "以实际弱梯度均值为仿射斜率，实际H1残差零均值；两次Poincare给||r||+D||grad r||≤d(2^d+1)D²||field₂u||。适用于原全部H2 jet，无光滑代表或全空间弱延拓前提；物理面零迹校正及原B1/B2仍待，原文12/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C091",
+      "title": "全部弱区间H1类的实际迹与乘积端点积分",
+      "paper_ref": "Auxiliary genuine Hilbert weak H1 interval trace and product endpoint integrals toward Appendix B physical-face correction",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "lem:fd-boundary-affine"
+      ],
+      "lean_declarations": [
+        "Carleman.HasWeakTimeDerivative.congr_value",
+        "Carleman.HasWeakTimeDerivative.exists_continuous_representative",
+        "Carleman.TimeGrid.continuous_representative_unique",
+        "Carleman.TimeGrid.pathL2_injective",
+        "Carleman.TimeGrid.exists_tracePath",
+        "Carleman.TimeGrid.weakTracePath",
+        "Carleman.TimeGrid.weakTracePath_value",
+        "Carleman.TimeGrid.weakTracePath_ae",
+        "Carleman.TimeGrid.weakTracePath_weak",
+        "Carleman.TimeGrid.weakTracePath_point_bound",
+        "Carleman.TimeGrid.weakTracePath_norm_bound",
+        "Carleman.TimeGrid.weakTracePathCLM",
+        "Carleman.TimeGrid.weakTracePathCLM_value",
+        "Carleman.TimeGrid.weakTracePathCLM_eq_of_representative",
+        "Carleman.TimeGrid.weakIntervalTrace",
+        "Carleman.TimeGrid.weakIntervalTrace_bound",
+        "Carleman.TimeGrid.weakIntervalTrace_fundamental",
+        "Carleman.TimeGrid.weakIntervalTrace_affine_green",
+        "Carleman.TimeGrid.weakIntervalTrace_zero_formula",
+        "Carleman.TimeGrid.weakIntervalTrace_end_formula",
+        "Carleman.fiberEndpointIntegral",
+        "Carleman.fiberEndpointIntegral_congr",
+        "Carleman.fiberEndpointIntegral_memLp_bound",
+        "Carleman.fiberEndpointIntegral_eq_weak_trace",
+        "Carleman.weak_slices_actual_endpoint_traces"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C026",
+        "C036",
+        "C090"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "原全部弱Hilbert H1图的连续代表存在唯一，实际CLM迹和端点FTC；标量显式端点积分与真实乘积L2界(2/L)||f||²+2L||v||²。在实际弱切片上等于连续代表端点；原空间弱身份到切片、坐标拆分及物理面校正仍待，原文12/26。"
     }
   ],
   "events": [
@@ -9222,6 +9327,11 @@
       "at": "2026-10-18T22:52:28.676295+00:00",
       "public_summary": "原凸域弱H1均值Poincare21声明独立验收PASS；一般弱H2齐次仿射逼近34声明全库通过，原文12/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bfa77a04a27f806dcc2c7a01540a64b27217ff90/governance/reviews/T073-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T23:02:39.760810+00:00",
+      "public_summary": "一般弱H2齐次仿射逼近34声明独立验收PASS；实际弱区间迹及乘积端点积分25声明全库通过，原文12/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b87a69864f8aec797ef3b45b0e36b1c1916b9369/governance/reviews/T074-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -9421,7 +9531,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/70fc91ce650718298728b8ea700e5a0d9b7ff123/governance/reviews/T072-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39172937739/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bfa77a04a27f806dcc2c7a01540a64b27217ff90/governance/reviews/T073-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39173511962/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39173511962/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b87a69864f8aec797ef3b45b0e36b1c1916b9369/governance/reviews/T074-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39174132190/attempts/1"
     ]
   },
   "schedules": [
@@ -20688,10 +20800,10 @@
       ],
       "branch": "main",
       "base_commit": "c99262c4a0d65a4d23f2efb57748bda490e971d7",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "55dbf36858608cc7ff9300ef61430e18fa0bdadf",
+      "merge_commit": "55dbf36858608cc7ff9300ef61430e18fa0bdadf",
       "lean_declarations": [
         "Carleman.scalarLp_norm_sq",
         "Carleman.scalarConstantLp",
@@ -20728,12 +20840,23 @@
         "Carleman.h2AffineResidual_homogeneous_bound",
         "Carleman.exists_convex_h2_affine_approximation"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "55dbf36858608cc7ff9300ef61430e18fa0bdadf",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39174132190/attempts/1",
+        "finished_at": "2026-10-18T22:54:47.239010+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "55dbf36858608cc7ff9300ef61430e18fa0bdadf"
+      },
       "blocker": null,
       "attempts": [
         "五模块34声明定向3299 jobs、全库3690 jobs通过，5303声明递归公理审计PASS。"
       ],
-      "next_action": "固定SHA独立验收真实H2齐次仿射逼近34声明；继续物理边界面迹与仿射校正。",
+      "next_action": "原全部弱H2齐次仿射逼近已独立验收；继续实际物理面迹及仿射零迹校正。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -20745,6 +20868,106 @@
         "recursive_axiom_audit": 5303,
         "new_explicit_declarations": 34,
         "declaration_artifact_sha256": "af9e1333b23878c8b4bab7e34e1061af47274b6c79bb8d23afedbb2c19622138",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "55dbf36858608cc7ff9300ef61430e18fa0bdadf",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_section3",
+          "claim_ids": [
+            "C090"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "55dbf36858608cc7ff9300ef61430e18fa0bdadf",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T22:56:52+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b87a69864f8aec797ef3b45b0e36b1c1916b9369/governance/reviews/T074-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "55dbf36858608cc7ff9300ef61430e18fa0bdadf",
+        "checked_sha": "55dbf36858608cc7ff9300ef61430e18fa0bdadf",
+        "run_id": 39174132190,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3690,
+        "recursive_axiom_audit": 5303,
+        "new_explicit_declarations": 34,
+        "declaration_artifact_sha256": "af9e1333b23878c8b4bab7e34e1061af47274b6c79bb8d23afedbb2c19622138",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T075",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "全部弱区间H1类的实际迹与乘积端点积分",
+      "goal_ids": [
+        "C091"
+      ],
+      "acceptance": [
+        "原全部弱L2类的连续代表从真实Bochner原函数及分布常数证明，未假定连续性",
+        "实际pathL2还原原值，唯一性推出线性且图max范数的长度依赖常数准确",
+        "真实绝对连续与a.e.强导数积分分部给正确两端点符号及L归一化",
+        "乘积端点函数实际L2成员资格、代表不变性和完整Fubini可积性",
+        "切片弱身份前提明确，未宣称原多维空间迹或完整B1已证"
+      ],
+      "dependencies": [
+        "C026",
+        "C036",
+        "C090"
+      ],
+      "branch": "main",
+      "base_commit": "55dbf36858608cc7ff9300ef61430e18fa0bdadf",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.HasWeakTimeDerivative.congr_value",
+        "Carleman.HasWeakTimeDerivative.exists_continuous_representative",
+        "Carleman.TimeGrid.continuous_representative_unique",
+        "Carleman.TimeGrid.pathL2_injective",
+        "Carleman.TimeGrid.exists_tracePath",
+        "Carleman.TimeGrid.weakTracePath",
+        "Carleman.TimeGrid.weakTracePath_value",
+        "Carleman.TimeGrid.weakTracePath_ae",
+        "Carleman.TimeGrid.weakTracePath_weak",
+        "Carleman.TimeGrid.weakTracePath_point_bound",
+        "Carleman.TimeGrid.weakTracePath_norm_bound",
+        "Carleman.TimeGrid.weakTracePathCLM",
+        "Carleman.TimeGrid.weakTracePathCLM_value",
+        "Carleman.TimeGrid.weakTracePathCLM_eq_of_representative",
+        "Carleman.TimeGrid.weakIntervalTrace",
+        "Carleman.TimeGrid.weakIntervalTrace_bound",
+        "Carleman.TimeGrid.weakIntervalTrace_fundamental",
+        "Carleman.TimeGrid.weakIntervalTrace_affine_green",
+        "Carleman.TimeGrid.weakIntervalTrace_zero_formula",
+        "Carleman.TimeGrid.weakIntervalTrace_end_formula",
+        "Carleman.fiberEndpointIntegral",
+        "Carleman.fiberEndpointIntegral_congr",
+        "Carleman.fiberEndpointIntegral_memLp_bound",
+        "Carleman.fiberEndpointIntegral_eq_weak_trace",
+        "Carleman.weak_slices_actual_endpoint_traces"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "五模块25声明定向3213 jobs、全库3695 jobs通过，5341声明递归公理审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收全部弱区间H1实际迹与乘积端点积分25声明；继续从原空间弱测试推出真实弱切片。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3695,
+        "recursive_axiom_audit": 5341,
+        "new_explicit_declarations": 25,
+        "declaration_artifact_sha256": "0bc0f8872e36716157957420f5d82eaf77d2fb0388c5601485490cbb1aa43c13",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
