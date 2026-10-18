@@ -2977,6 +2977,55 @@ set_option pp.maxSteps 1000000
 #check @Carleman.dirichlet_operator_graph_iff
 #print axioms Carleman.dirichlet_operator_graph_iff
 
+#check @Carleman.centeredDilation
+#print axioms Carleman.centeredDilation
+#check @Carleman.centeredDilation_mem
+#print axioms Carleman.centeredDilation_mem
+#check @Carleman.contractedFunction
+#print axioms Carleman.contractedFunction
+#check @Carleman.contractedFunction_tsupport
+#print axioms Carleman.contractedFunction_tsupport
+#check @Carleman.contractedFunction_compact
+#print axioms Carleman.contractedFunction_compact
+#check @Carleman.contractedFunction_support_inside
+#print axioms Carleman.contractedFunction_support_inside
+#check @Carleman.contractedFunction_buffer
+#print axioms Carleman.contractedFunction_buffer
+#check @Carleman.contractedFunction_continuous
+#print axioms Carleman.contractedFunction_continuous
+#check @Carleman.contractedFunction_hasFDerivAt
+#print axioms Carleman.contractedFunction_hasFDerivAt
+#check @Carleman.compactLipschitz_fderiv_memLp
+#print axioms Carleman.compactLipschitz_fderiv_memLp
+#check @Carleman.compactLipschitzDerivativeLp
+#print axioms Carleman.compactLipschitzDerivativeLp
+#check @Carleman.compactLipschitzDerivativeLp_ae
+#print axioms Carleman.compactLipschitzDerivativeLp_ae
+#check @Carleman.compactLipschitzLp
+#print axioms Carleman.compactLipschitzLp
+#check @Carleman.compactLipschitzLp_ae
+#print axioms Carleman.compactLipschitzLp_ae
+#check @Carleman.compactLipschitzSobolevJet
+#print axioms Carleman.compactLipschitzSobolevJet
+#check @Carleman.compactLipschitzSobolevJet_value
+#print axioms Carleman.compactLipschitzSobolevJet_value
+#check @Carleman.centeredDilation_lipschitz
+#print axioms Carleman.centeredDilation_lipschitz
+#check @Carleman.contractedFunction_lipschitz
+#print axioms Carleman.contractedFunction_lipschitz
+#check @Carleman.contractedSobolevJet
+#print axioms Carleman.contractedSobolevJet
+#check @Carleman.contractedSobolevJet_value_ae
+#print axioms Carleman.contractedSobolevJet_value_ae
+#check @Carleman.SimplicialPartition.nodalFunction_tsupport_subset
+#print axioms Carleman.SimplicialPartition.nodalFunction_tsupport_subset
+#check @Carleman.SimplicialPartition.nodal_contraction_buffer
+#print axioms Carleman.SimplicialPartition.nodal_contraction_buffer
+#check @Carleman.SimplicialPartition.nodalContractedSobolevJet
+#print axioms Carleman.SimplicialPartition.nodalContractedSobolevJet
+#check @Carleman.SimplicialPartition.nodalContractedSobolevJet_value_ae
+#print axioms Carleman.SimplicialPartition.nodalContractedSobolevJet_value_ae
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

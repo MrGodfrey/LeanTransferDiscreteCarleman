@@ -826,3 +826,9 @@ Dirichlet空间定义为这些紧支光滑jet的线性张成在真实H1图范数
 四模块20声明，AUXILIARY，不提升原文覆盖。真实梯度Lp内积精确展开全部坐标一次，负Laplacian是实际H2 jet的纯二阶和之负值。完整弱导数身份给光滑测试Green恒等式，经H1闭包传至全部H01测试；由准确一阶截断构造能量元素，证明H2∩H01进入原实际形式算子域且operator=-Δ。
 
 完整变分算子图双向等价于真实H01 jet满足对全部SpatialTest的分布-divgrad=f，未引入H2/谱截断等额外域限制。反向H2正则性和原域等式仍未证明；节点H01、H2点值、网格数值估计及连续CE仍待。见`analysis/T041-dirichlet-laplacian.md`。
+
+## T042：凸域内缩、正支撑缓冲与实际H1构造
+
+三模块24声明，AUXILIARY，不提升原文覆盖。真实centeredDilation及其逆映射构造原函数的内缩；开凸域中心与closure S的严格凸组合进入S，紧支集正向像给精确tsupport及正卷积缓冲。实际Fréchet链式导数与Lipschitz常数均证明。
+
+全空间紧支Lipschitz函数的真实fderiv由紧支indicator控制进入L2，Rademacher和已证完整积分分部给真实WeakSobolevJet。零边界实际节点函数据此构造内缩H1 jet，value准确恢复同一内缩函数。尚未证明r→1的H1收敛或光滑卷积的H1收敛，故节点H01成员仍待；缓冲可依赖函数/中心/r，不是统一网格常数。见`analysis/T042-contracted-nodal.md`。

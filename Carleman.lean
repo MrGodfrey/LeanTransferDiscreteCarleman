@@ -353,3 +353,7 @@ public import Carleman.Spatial.GradientPairing
 public import Carleman.Spatial.WeakLaplacian
 public import Carleman.Spatial.DirichletLaplacian
 public import Carleman.Spatial.DirichletDistribution
+
+public import Carleman.Spatial.ConvexSupportContraction
+public import Carleman.Spatial.CompactLipschitzSobolev
+public import Carleman.Spatial.ContractedNodalSobolev
