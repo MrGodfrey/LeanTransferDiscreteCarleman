@@ -3373,6 +3373,25 @@ set_option pp.maxSteps 1000000
 #check @Carleman.allowed_weights_uniform_neighbor_grading
 #print axioms Carleman.allowed_weights_uniform_neighbor_grading
 
+#check @Carleman.p1MassMargin
+#print axioms Carleman.p1MassMargin
+#check @Carleman.p1MassMargin_pos
+#print axioms Carleman.p1MassMargin_pos
+#check @Carleman.weight_deviation_bound
+#print axioms Carleman.weight_deviation_bound
+#check @Carleman.p1CoefficientForm
+#print axioms Carleman.p1CoefficientForm
+#check @Carleman.p1CoefficientForm_smul_right
+#print axioms Carleman.p1CoefficientForm_smul_right
+#check @Carleman.weighted_coefficient_deviation
+#print axioms Carleman.weighted_coefficient_deviation
+#check @Carleman.weighted_p1_coefficient_coercive
+#print axioms Carleman.weighted_p1_coefficient_coercive
+#check @Carleman.weighted_p1_coefficient_coercive_scaled
+#print axioms Carleman.weighted_p1_coefficient_coercive_scaled
+#check @Carleman.weighted_p1_coefficient_form_pos
+#print axioms Carleman.weighted_p1_coefficient_form_pos
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

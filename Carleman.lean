@@ -400,3 +400,5 @@ public import Carleman.Spatial.SimplicialNeighbors
 public import Carleman.Weights.GradingThreshold
 public import Carleman.Spatial.NeighborWeightComparison
 public import Carleman.Spatial.UniformNeighborGrading
+
+public import Carleman.Spatial.P1CoefficientCoercivity
