@@ -371,3 +371,10 @@ public import Carleman.Spatial.NodalDirichletMembership
 
 public import Carleman.Spatial.SimplexNodalLp
 public import Carleman.Spatial.SimplexReferenceInverse
+
+public import Carleman.Spatial.AffineChangeVolume
+public import Carleman.Spatial.AffineSimplex
+public import Carleman.Spatial.DerivativeFiberNorm
+public import Carleman.Spatial.AffineSimplexNorm
+public import Carleman.Spatial.AffineSimplexInverse
+public import Carleman.Spatial.AffineSimplexShapeInverse

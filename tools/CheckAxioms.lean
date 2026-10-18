@@ -3155,6 +3155,64 @@ set_option pp.maxSteps 1000000
 #check @Carleman.simplex_reference_inverse
 #print axioms Carleman.simplex_reference_inverse
 
+
+#check @Carleman.affineChange
+#print axioms Carleman.affineChange
+#check @Carleman.affineChange_apply
+#print axioms Carleman.affineChange_apply
+#check @Carleman.affineJacobian
+#print axioms Carleman.affineJacobian
+#check @Carleman.affineJacobian_pos
+#print axioms Carleman.affineJacobian_pos
+#check @Carleman.affineChange_map_volume
+#print axioms Carleman.affineChange_map_volume
+#check @Carleman.affineChange_map_restrict
+#print axioms Carleman.affineChange_map_restrict
+#check @Carleman.integral_comp_affineChange
+#print axioms Carleman.integral_comp_affineChange
+#check @Carleman.affineChangeEquiv
+#print axioms Carleman.affineChangeEquiv
+#check @Carleman.affineChangeEquiv_apply
+#print axioms Carleman.affineChangeEquiv_apply
+#check @Carleman.affineSimplex
+#print axioms Carleman.affineSimplex
+#check @Carleman.affineSimplex_points
+#print axioms Carleman.affineSimplex_points
+#check @Carleman.affineSimplex_cell
+#print axioms Carleman.affineSimplex_cell
+#check @Carleman.affineSimplex_nodal_comp
+#print axioms Carleman.affineSimplex_nodal_comp
+#check @Carleman.affineSimplex_derivative_comp
+#print axioms Carleman.affineSimplex_derivative_comp
+#check @Carleman.affineSimplex_derivative
+#print axioms Carleman.affineSimplex_derivative
+#check @Carleman.derivativeOneFiber_injective
+#print axioms Carleman.derivativeOneFiber_injective
+#check @Carleman.derivativeOneFiber_reverse_bound
+#print axioms Carleman.derivativeOneFiber_reverse_bound
+#check @Carleman.derivativeOneFiber_comp_bound
+#print axioms Carleman.derivativeOneFiber_comp_bound
+#check @Carleman.lp_two_norm_sq_integral
+#print axioms Carleman.lp_two_norm_sq_integral
+#check @Carleman.simplexNodalLp_norm_sq
+#print axioms Carleman.simplexNodalLp_norm_sq
+#check @Carleman.simplexNodalGradientLp_norm_sq
+#print axioms Carleman.simplexNodalGradientLp_norm_sq
+#check @Carleman.affineSimplex_nodal_norm_sq
+#print axioms Carleman.affineSimplex_nodal_norm_sq
+#check @Carleman.affineSimplex_gradient_norm_sq
+#print axioms Carleman.affineSimplex_gradient_norm_sq
+#check @Carleman.affineSimplex_gradient_bound_sq
+#print axioms Carleman.affineSimplex_gradient_bound_sq
+#check @Carleman.affineSimplex_inverse
+#print axioms Carleman.affineSimplex_inverse
+#check @Carleman.affineSimplex_inverse_uniform
+#print axioms Carleman.affineSimplex_inverse_uniform
+#check @Carleman.affineSimplex_inverse_map_bound
+#print axioms Carleman.affineSimplex_inverse_map_bound
+#check @Carleman.affineSimplex_shape_inverse
+#print axioms Carleman.affineSimplex_shape_inverse
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
