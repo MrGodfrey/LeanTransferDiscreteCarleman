@@ -390,3 +390,8 @@ public import Carleman.Spatial.ConformingLocalPolynomial
 public import Carleman.Spatial.SimplicialIntegrals
 public import Carleman.Spatial.CellwiseInverseWeight
 public import Carleman.Spatial.ConformingWeightedInverse
+
+public import Carleman.Weights.SpatialComparison
+public import Carleman.Spatial.SimplicialDiameter
+public import Carleman.Spatial.SimplicialAllowedComparison
+public import Carleman.Spatial.ConformingAllowedInverse

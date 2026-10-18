@@ -3299,6 +3299,47 @@ set_option pp.maxSteps 1000000
 #check @Carleman.conforming_weighted_inverse
 #print axioms Carleman.conforming_weighted_inverse
 
+#check @Carleman.uniqueDiffOn_closure_open_convex
+#print axioms Carleman.uniqueDiffOn_closure_open_convex
+#check @Carleman.smooth_profile_lipschitz
+#print axioms Carleman.smooth_profile_lipschitz
+#check @Carleman.allowedWeight_spatial_ratio
+#print axioms Carleman.allowedWeight_spatial_ratio
+#check @Carleman.allowedWeight_spatial_comparison
+#print axioms Carleman.allowedWeight_spatial_comparison
+#check @Carleman.SpatialProfile.scaled
+#print axioms Carleman.SpatialProfile.scaled
+#check @Carleman.SpatialProfile.scaled_multiplier_value
+#print axioms Carleman.SpatialProfile.scaled_multiplier_value
+#check @Carleman.SpatialProfile.scaled_one
+#print axioms Carleman.SpatialProfile.scaled_one
+#check @Carleman.SpatialProfile.scaled_neg_one
+#print axioms Carleman.SpatialProfile.scaled_neg_one
+#check @Carleman.SpatialProfile.scaled_multiplier_pos
+#print axioms Carleman.SpatialProfile.scaled_multiplier_pos
+#check @Carleman.SpatialProfile.scaled_multiplier_spatial_le
+#print axioms Carleman.SpatialProfile.scaled_multiplier_spatial_le
+#check @Carleman.SimplicialPartition.cellDiameter
+#print axioms Carleman.SimplicialPartition.cellDiameter
+#check @Carleman.SimplicialPartition.cellDiameter_nonneg
+#print axioms Carleman.SimplicialPartition.cellDiameter_nonneg
+#check @Carleman.SimplicialPartition.dist_le_cellDiameter
+#print axioms Carleman.SimplicialPartition.dist_le_cellDiameter
+#check @Carleman.SimplicialPartition.maxDiameter
+#print axioms Carleman.SimplicialPartition.maxDiameter
+#check @Carleman.SimplicialPartition.maxDiameter_nonneg
+#print axioms Carleman.SimplicialPartition.maxDiameter_nonneg
+#check @Carleman.SimplicialPartition.cellDiameter_le_max
+#print axioms Carleman.SimplicialPartition.cellDiameter_le_max
+#check @Carleman.SimplicialPartition.cellScale_le_inball
+#print axioms Carleman.SimplicialPartition.cellScale_le_inball
+#check @Carleman.SimplicialPartition.maxDiameter_mul_q_le
+#print axioms Carleman.SimplicialPartition.maxDiameter_mul_q_le
+#check @Carleman.SimplicialPartition.allowedWeight_cell_comparison
+#print axioms Carleman.SimplicialPartition.allowedWeight_cell_comparison
+#check @Carleman.conforming_allowed_weight_inverse
+#print axioms Carleman.conforming_allowed_weight_inverse
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
