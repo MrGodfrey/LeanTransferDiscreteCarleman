@@ -4048,6 +4048,91 @@ set_option pp.maxSteps 1000000
 #check @Carleman.product_weak_face_trace_representatives
 #print axioms Carleman.product_weak_face_trace_representatives
 
+#check @Carleman.coordinateSplitMeasurable
+#print axioms Carleman.coordinateSplitMeasurable
+#check @Carleman.coordinateSplitMeasurable_apply
+#print axioms Carleman.coordinateSplitMeasurable_apply
+#check @Carleman.coordinateSplitMeasurable_symm_apply
+#print axioms Carleman.coordinateSplitMeasurable_symm_apply
+#check @Carleman.coordinateSplit
+#print axioms Carleman.coordinateSplit
+#check @Carleman.coordinateSplit_apply
+#print axioms Carleman.coordinateSplit_apply
+#check @Carleman.coordinateSplit_measurePreserving
+#print axioms Carleman.coordinateSplit_measurePreserving
+#check @Carleman.coordinateSplit_basis
+#print axioms Carleman.coordinateSplit_basis
+#check @Carleman.affineSpatialChart
+#print axioms Carleman.affineSpatialChart
+#check @Carleman.affineSpatialChart_apply
+#print axioms Carleman.affineSpatialChart_apply
+#check @Carleman.affineSpatialChart_hasFDerivAt
+#print axioms Carleman.affineSpatialChart_hasFDerivAt
+#check @Carleman.SpatialTest.pullbackAffine
+#print axioms Carleman.SpatialTest.pullbackAffine
+#check @Carleman.SpatialTest.pullbackAffine_derivative
+#print axioms Carleman.SpatialTest.pullbackAffine_derivative
+#check @Carleman.affineTransportLp
+#print axioms Carleman.affineTransportLp
+#check @Carleman.affineTransportLp_ae
+#print axioms Carleman.affineTransportLp_ae
+#check @Carleman.affineTransportLp_norm
+#print axioms Carleman.affineTransportLp_norm
+#check @Carleman.integral_mul_affineTransportLp
+#print axioms Carleman.integral_mul_affineTransportLp
+#check @Carleman.IsWeakSpatialDerivative.affine_transport
+#print axioms Carleman.IsWeakSpatialDerivative.affine_transport
+#check @Carleman.openCoordinateBox
+#print axioms Carleman.openCoordinateBox
+#check @Carleman.openCoordinateBox_isOpen
+#print axioms Carleman.openCoordinateBox_isOpen
+#check @Carleman.openCoordinateBox_isBounded
+#print axioms Carleman.openCoordinateBox_isBounded
+#check @Carleman.openCoordinateBox_finite
+#print axioms Carleman.openCoordinateBox_finite
+#check @Carleman.coordinateBoxChart
+#print axioms Carleman.coordinateBoxChart
+#check @Carleman.coordinateBoxChart_apply
+#print axioms Carleman.coordinateBoxChart_apply
+#check @Carleman.coordinateBoxChart_symm_apply
+#print axioms Carleman.coordinateBoxChart_symm_apply
+#check @Carleman.coordinateBoxChart_preimage
+#print axioms Carleman.coordinateBoxChart_preimage
+#check @Carleman.coordinateBoxChart_image
+#print axioms Carleman.coordinateBoxChart_image
+#check @Carleman.coordinateBoxChart_measurePreserving
+#print axioms Carleman.coordinateBoxChart_measurePreserving
+#check @Carleman.coordinateBoxChart_restrict
+#print axioms Carleman.coordinateBoxChart_restrict
+#check @Carleman.coordinateBoxAxisGrid
+#print axioms Carleman.coordinateBoxAxisGrid
+#check @Carleman.coordinateBoxAxisGrid_period
+#print axioms Carleman.coordinateBoxAxisGrid_period
+#check @Carleman.coordinateBoxChart_timeMeasure
+#print axioms Carleman.coordinateBoxChart_timeMeasure
+#check @Carleman.coordinateBoxLp
+#print axioms Carleman.coordinateBoxLp
+#check @Carleman.coordinateBoxLp_norm
+#print axioms Carleman.coordinateBoxLp_norm
+#check @Carleman.coordinateBoxLp_ae
+#print axioms Carleman.coordinateBoxLp_ae
+#check @Carleman.coordinateBox_weak_transport
+#print axioms Carleman.coordinateBox_weak_transport
+#check @Carleman.coordinateBoxFaceTrace
+#print axioms Carleman.coordinateBoxFaceTrace
+#check @Carleman.coordinateBoxFaceTrace_norm_sq
+#print axioms Carleman.coordinateBoxFaceTrace_norm_sq
+#check @Carleman.coordinateBoxFaceTrace_representatives
+#print axioms Carleman.coordinateBoxFaceTrace_representatives
+#check @Carleman.coordinateBoxFaceTrace_eq_continuous
+#print axioms Carleman.coordinateBoxFaceTrace_eq_continuous
+#check @Carleman.weakJetBoxFaceTrace
+#print axioms Carleman.weakJetBoxFaceTrace
+#check @Carleman.weakJetBoxFaceTrace_norm_sq
+#print axioms Carleman.weakJetBoxFaceTrace_norm_sq
+#check @Carleman.weakJetBoxFaceTrace_eq_continuous
+#print axioms Carleman.weakJetBoxFaceTrace_eq_continuous
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

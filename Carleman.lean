@@ -506,3 +506,8 @@ public import Carleman.Spatial.TensorSpatialTest
 public import Carleman.Spatial.ProductWeakMarginal
 public import Carleman.Spatial.ProductWeakSlices
 public import Carleman.Spatial.ProductFaceTrace
+public import Carleman.Geometry.EuclideanCoordinateSplit
+public import Carleman.Spatial.AffineWeakTransport
+public import Carleman.Geometry.CoordinateBoxChart
+public import Carleman.Spatial.CoordinateBoxTrace
+public import Carleman.Spatial.CoordinateBoxSobolevTrace
