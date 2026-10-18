@@ -798,3 +798,13 @@ X为真实完备（最终控制入口为有限维）L2子空间，R=I为包含�
 三模块30声明，AUXILIARY，不提升P011/P012。实际有限顶点凸包的凸/紧/可测/边界零测及显式顶点和半径内部证明；真正非退化d单纯形内部非空。覆盖加内部不交推出受限Lebesgue测度的a.e.分区。`SimplicialPartition`用真实Simplex并记录inside/cover/disjoint，供应实际一致分片仿射空间及有限维/成员刻画，但不声称面匹配、形状正则和分级已证。
 
 真实AffineBasis重心坐标给局部节点插值：顶点值精确保持、全空间再现仿射多项式、单元内L∞稳定常数1。仅输入实际点值数组/仿射函数，未在Lp类上赋予节点值。全局连续/H01插值、Sobolev点值、局部误差及具体网格均待。详见`analysis/T036-simplicial-nodal.md`。
+
+## T037：面匹配全局连续节点插值
+
+三模块30声明，AUXILIARY，不提升P011。真实FaceMatching几何条件经共同顶点仿射包一致性给局部插值共享面一致；有限闭覆盖给closure S上连续，全局节点保持、仿射再现、唯一性、幂等与常数1节点稳定已证。实际toLp属于分片仿射空间，并构造点态函数到L2的真实LinearMap；从未在Lp等价类上取节点值。见`analysis/T037-global-nodal.md`。
+
+## T038：节点插值的实际弱导数与H1
+
+八模块39声明，AUXILIARY，不提升P011。实际局部AffineMap的CLM导数经内部邻域等值给全局a.e.经典导数；零测骨架与有限indicator和给真实L2导数字段。BoundaryFitted要求边界单元交由边界顶点生成，边界节点零推出全局连续零延拓。有限个同常数Lipschitz函数的连续选择仍为同常数Lipschitz，经局部排除与直线段liminf斜率论证证明；实例化实际局部仿射函数及零函数，得原零延拓全局Lipschitz。
+
+实际差商积分分部推出对全部SpatialTest及任意方向的原弱导数身份；坐标导数组装真实WeakSobolevJet，value准确等于nodalLp，故进入原sobolevSubspace H1。所用Lipschitz常数可依赖网格/节点值，仅为成员证明，不是统一逆界。H01闭包身份、H2连续代表、局部误差、具体网格和连续Dirichlet热实例仍待。见`analysis/T038-nodal-h1.md`。
