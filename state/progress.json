@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T062",
-    "supervisor_checked_at": "2026-10-18T21:23:17.072033+00:00",
-    "next_action": "真实加权单元误差10声明固定SHA独立验收；继续完整Vh节点残差的全域识别、弱梯度与网格求和。",
+    "current_task_id": "T063",
+    "supervisor_checked_at": "2026-10-18T21:31:36.883635+00:00",
+    "next_action": "完整状态全域节点残差13声明固定SHA独立验收；继续残差自身真实H1/弱梯度与Lp乘子身份。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T21:23:17.072033+00:00"
+    "last_activity_at": "2026-10-18T21:31:36.883635+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "05aadb86ef406e8e1f843a74ddace902041d79e9",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39167125090/attempts/1",
-      "finished_at": "2026-10-18T21:18:32.893364+00:00",
+      "checked_sha": "699fd4292136039b671d27e09f6e5758a1083f2a",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39167621125/attempts/1",
+      "finished_at": "2026-10-18T21:26:04.696468+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "05aadb86ef406e8e1f843a74ddace902041d79e9"
+      "source_head_sha": "699fd4292136039b671d27e09f6e5758a1083f2a"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "05aadb86ef406e8e1f843a74ddace902041d79e9",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39167125090/attempts/1",
-      "finished_at": "2026-10-18T21:18:32.893364+00:00",
+      "checked_sha": "699fd4292136039b671d27e09f6e5758a1083f2a",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39167621125/attempts/1",
+      "finished_at": "2026-10-18T21:26:04.696468+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "05aadb86ef406e8e1f843a74ddace902041d79e9"
+      "source_head_sha": "699fd4292136039b671d27e09f6e5758a1083f2a"
     }
   },
   "milestones": [
@@ -7930,7 +7930,7 @@
       "paper_ref": "Auxiliary actual weighted local residual and gradient integrals toward Section 6 Step 3",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:p1"
@@ -7947,15 +7947,83 @@
         "Carleman.squaredNodalResidual_fderiv_ae",
         "Carleman.allowedSquaredWeight_local_residual_integrals"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "699fd4292136039b671d27e09f6e5758a1083f2a",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "699fd4292136039b671d27e09f6e5758a1083f2a",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39167621125/attempts/1",
+        "finished_at": "2026-10-18T21:26:04.696468+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "699fd4292136039b671d27e09f6e5758a1083f2a"
+      },
+      "semantic_review": {
+        "checked_sha": "699fd4292136039b671d27e09f6e5758a1083f2a",
+        "declarations": [
+          "Carleman.affineNodalBound",
+          "Carleman.affineNodalBound_abs",
+          "Carleman.affineNodalBound_sq_mass",
+          "Carleman.affineNodalBound_energy",
+          "Carleman.norm_sq_div_integral_le",
+          "Carleman.affineNodalBound_weighted_energy",
+          "Carleman.weighted_cell_error_transfer",
+          "Carleman.allowedSquaredWeight_local_integral_errors",
+          "Carleman.squaredNodalResidual_fderiv_ae",
+          "Carleman.allowedSquaredWeight_local_residual_integrals"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/040fca454111b09868c9587162f64a6bf4423615/governance/reviews/T062-local-acceptance.md",
+        "reviewed_at": "2026-10-18T21:29:10+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C077"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "精确单纯形质量下界清偿点态P，真实CLM/fiber比较及正连续权积分转换得到σ²p实际节点残差值/梯度平方积分界hK^4/hK^2乘(q^4∫σ²p²+q²∫σ²|∇p|²)。真实零测边界连接actual fderiv；C先于网格、q、τ、符号及状态。全域完整Vh识别/弱梯度/求和和一般H2插值尚待，原文12/26。"
+      "scope_notes": "精确单纯形质量下界清偿点态P，真实CLM/fiber比较及正连续权积分转换得到σ²p实际节点残差值/梯度平方积分界hK^4/hK^2乘(q^4∫σ²p²+q²∫σ²|∇p|²)。真实零测边界连接actual fderiv；C先于网格、q、τ、符号及状态。全域完整Vh识别/弱梯度/求和和一般H2插值尚待，原文12/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C079",
+      "title": "完整状态的全域节点残差及实际积分求和",
+      "paper_ref": "Auxiliary actual global nodal residual integrals for full conforming states toward Section 6 Step 3",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:p1"
+      ],
+      "lean_declarations": [
+        "Carleman.SimplicialPartition.integrable_of_cells",
+        "Carleman.SimplicialPartition.nodalProductResidual",
+        "Carleman.SimplicialPartition.localNodal_weighted_interpolant",
+        "Carleman.SimplicialPartition.nodalProductResidual_on_cell",
+        "Carleman.SimplicialPartition.nodalProductResidual_fderiv_ae",
+        "Carleman.SimplicialPartition.nodalFunction_fderiv_on_cell_ae",
+        "Carleman.SimplicialPartition.squaredNodal_integrability",
+        "Carleman.allowedSquaredWeight_nodal_cell_integrals",
+        "Carleman.allowedSquaredWeight_nodal_global_integrals",
+        "Carleman.SimplicialPartition.nodal_representation_weak_gradient",
+        "Carleman.SimplicialPartition.conforming_dirichlet_nodal_with_gradient",
+        "Carleman.SimplicialPartition.weighted_nodal_mem_dirichletConformingSpace",
+        "Carleman.allowedSquaredWeight_full_nodal_residual"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C078",
+        "C074"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实全域节点残差在单元/内部与局部残差一致，零测骨架给实际fderiv身份；实际可积性及精确积分求和给统一h^4/h²残差平方界。任意完整Vh状态内部供应节点代表及真实弱梯度，右端是原H1 jet的Lp状态/弱梯度；加权节点测试属于完整H01一致空间。残差自身弱梯度、ell^-1项及投影组合尚待，原文12/26。"
     }
   ],
   "events": [
@@ -8346,6 +8414,11 @@
       "at": "2026-10-18T21:23:17.072033+00:00",
       "public_summary": "真实σ²导数/节点误差10声明独立Agent及同SHA CI验收PASS；实际加权单元残差10声明全库通过并清偿点态P，原文12/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4d21da31219ae2e83079904baee1d2d2d2334756/governance/reviews/T061-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T21:31:36.883635+00:00",
+      "public_summary": "实际加权单元残差10声明独立Agent及同SHA CI验收PASS；完整状态全域节点残差13声明全库通过，原文12/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/040fca454111b09868c9587162f64a6bf4423615/governance/reviews/T062-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -8521,7 +8594,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a189f27900919fe80f61361a37938ab0dd149a2d/governance/reviews/T060-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39166449091/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4d21da31219ae2e83079904baee1d2d2d2334756/governance/reviews/T061-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39167125090/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39167125090/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/040fca454111b09868c9587162f64a6bf4423615/governance/reviews/T062-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39167621125/attempts/1"
     ]
   },
   "schedules": [
@@ -18659,10 +18734,10 @@
       ],
       "branch": "main",
       "base_commit": "05aadb86ef406e8e1f843a74ddace902041d79e9",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "699fd4292136039b671d27e09f6e5758a1083f2a",
+      "merge_commit": "699fd4292136039b671d27e09f6e5758a1083f2a",
       "lean_declarations": [
         "Carleman.affineNodalBound",
         "Carleman.affineNodalBound_abs",
@@ -18675,12 +18750,23 @@
         "Carleman.squaredNodalResidual_fderiv_ae",
         "Carleman.allowedSquaredWeight_local_residual_integrals"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "699fd4292136039b671d27e09f6e5758a1083f2a",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39167621125/attempts/1",
+        "finished_at": "2026-10-18T21:26:04.696468+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "699fd4292136039b671d27e09f6e5758a1083f2a"
+      },
       "blocker": null,
       "attempts": [
         "四模块10声明定向3284 jobs及全库3641 jobs通过，4951项递归审计PASS。"
       ],
-      "next_action": "真实加权单元误差10声明固定SHA独立验收；继续完整Vh节点残差的全域识别、弱梯度与网格求和。",
+      "next_action": "真实加权单元残差已验收；继续完整状态的全域节点残差积分求和。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -18692,6 +18778,92 @@
         "recursive_axiom_audit": 4951,
         "new_explicit_declarations": 10,
         "declaration_artifact_sha256": "bde1a6a8e42f9da75df6d4002f6e163e0d878f6ae653b576848f26a5dbb1cf52",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "699fd4292136039b671d27e09f6e5758a1083f2a",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C078"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "699fd4292136039b671d27e09f6e5758a1083f2a",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T21:29:10+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/040fca454111b09868c9587162f64a6bf4423615/governance/reviews/T062-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "699fd4292136039b671d27e09f6e5758a1083f2a",
+        "checked_sha": "699fd4292136039b671d27e09f6e5758a1083f2a",
+        "run_id": 39167621125,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3641,
+        "recursive_axiom_audit": 4951,
+        "new_explicit_declarations": 10,
+        "declaration_artifact_sha256": "bde1a6a8e42f9da75df6d4002f6e163e0d878f6ae653b576848f26a5dbb1cf52",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T063",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "完整状态的全域节点残差及实际积分求和",
+      "goal_ids": [
+        "C079"
+      ],
+      "acceptance": [
+        "真实全域节点残差的单元值/导数身份，不将骨架经典不可微误当全域可微",
+        "真实可积性与精确单元积分求和，常数无单元个数及隐藏状态依赖",
+        "完整Vh内部供应节点表示和实际弱梯度，真实加权节点测试在原空间",
+        "明确左端尚为实际fderiv积分，未冒充残差弱H1、ell^-1项或完整原超逼近"
+      ],
+      "dependencies": [
+        "C078",
+        "C074"
+      ],
+      "branch": "main",
+      "base_commit": "699fd4292136039b671d27e09f6e5758a1083f2a",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.SimplicialPartition.integrable_of_cells",
+        "Carleman.SimplicialPartition.nodalProductResidual",
+        "Carleman.SimplicialPartition.localNodal_weighted_interpolant",
+        "Carleman.SimplicialPartition.nodalProductResidual_on_cell",
+        "Carleman.SimplicialPartition.nodalProductResidual_fderiv_ae",
+        "Carleman.SimplicialPartition.nodalFunction_fderiv_on_cell_ae",
+        "Carleman.SimplicialPartition.squaredNodal_integrability",
+        "Carleman.allowedSquaredWeight_nodal_cell_integrals",
+        "Carleman.allowedSquaredWeight_nodal_global_integrals",
+        "Carleman.SimplicialPartition.nodal_representation_weak_gradient",
+        "Carleman.SimplicialPartition.conforming_dirichlet_nodal_with_gradient",
+        "Carleman.SimplicialPartition.weighted_nodal_mem_dirichletConformingSpace",
+        "Carleman.allowedSquaredWeight_full_nodal_residual"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "六模块13声明定向3350 jobs及全库3647 jobs通过，4965项递归审计PASS。"
+      ],
+      "next_action": "完整状态全域节点残差13声明固定SHA独立验收；继续残差自身真实H1/弱梯度与Lp乘子身份。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3647,
+        "recursive_axiom_audit": 4965,
+        "new_explicit_declarations": 13,
+        "declaration_artifact_sha256": "c721ef8c1895adf52059e34d8340a72c2f3f3ae5be497365b5aaba1b25e0cf13",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
