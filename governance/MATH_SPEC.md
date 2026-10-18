@@ -946,3 +946,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 三模块10声明，AUXILIARY。真实平方权等于2ρ/2τ指数权，给实际闭域一、二阶fderivWithin及其HasFDerivWithinAt身份；固定C先于q、τ、符号及空间点，导数界Cqσ²/Cq²σ²。在原开凸紧闭包设定和hq≤1下，profile Lipschitz及真实均值定理供应锚定顶点的Cqσ²(a)一阶界和Cq²σ²(a)导数字段Lipschitz界。
 
 代入真实仿射状态p，得节点值误差2Cσ²(a)(q²P+2q||Dp||)h²及形状控制下导数字段误差(1+4κ)Cσ²(a)(q²P+2q||Dp||)h，实际TimeWeight乘子平方身份已证明。P到L²、倒数权及全域超逼近仍待；原文12/26。见`analysis/T061-squared-weight-errors.md`。
+
+## T062：真实加权单元残差及实际导数积分界
+
+四模块10声明，AUXILIARY。真实节点平方和构造P并由精确质量下界给P²|K|≤(d+1)(d+2)∫p²；真实CLM/fiber范数比较将q²P+2q||Dp||转成单元L²状态/梯度能量。正连续权的真实积分比较把点态节点误差转成σ倒数加权积分，未保留P额外前提。
+
+原允许σ²p实际残差满足值平方误差≤C h_K⁴(q⁴∫σ²p²+q²∫σ²|∇p|²)，梯度平方误差≤C h_K²同能量；C先于网格、q、τ、符号及状态。真实内球/形状与hq≤1保留；零测边界将域内字段识别为实际fderiv的a.e.积分。完整状态全域识别、弱梯度和网格求和仍待，原文12/26。见`analysis/T062-weighted-local-errors.md`。

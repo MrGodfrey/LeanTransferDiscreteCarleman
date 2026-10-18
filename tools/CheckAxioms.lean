@@ -3629,6 +3629,27 @@ set_option pp.maxSteps 1000000
 #check @Carleman.allowedSquaredWeight_product_errors
 #print axioms Carleman.allowedSquaredWeight_product_errors
 
+#check @Carleman.affineNodalBound
+#print axioms Carleman.affineNodalBound
+#check @Carleman.affineNodalBound_abs
+#print axioms Carleman.affineNodalBound_abs
+#check @Carleman.affineNodalBound_sq_mass
+#print axioms Carleman.affineNodalBound_sq_mass
+#check @Carleman.affineNodalBound_energy
+#print axioms Carleman.affineNodalBound_energy
+#check @Carleman.norm_sq_div_integral_le
+#print axioms Carleman.norm_sq_div_integral_le
+#check @Carleman.affineNodalBound_weighted_energy
+#print axioms Carleman.affineNodalBound_weighted_energy
+#check @Carleman.weighted_cell_error_transfer
+#print axioms Carleman.weighted_cell_error_transfer
+#check @Carleman.allowedSquaredWeight_local_integral_errors
+#print axioms Carleman.allowedSquaredWeight_local_integral_errors
+#check @Carleman.squaredNodalResidual_fderiv_ae
+#print axioms Carleman.squaredNodalResidual_fderiv_ae
+#check @Carleman.allowedSquaredWeight_local_residual_integrals
+#print axioms Carleman.allowedSquaredWeight_local_residual_integrals
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

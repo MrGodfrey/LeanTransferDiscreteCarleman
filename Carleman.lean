@@ -440,3 +440,8 @@ public import Carleman.Spatial.AffineProductDerivative
 public import Carleman.Weights.SquaredWithinDerivatives
 public import Carleman.Weights.SquaredCellDerivatives
 public import Carleman.Weights.SquaredNodalError
+
+public import Carleman.Spatial.AffineNodalBound
+public import Carleman.Spatial.WeightedCellError
+public import Carleman.Weights.SquaredCellIntegral
+public import Carleman.Weights.SquaredCellGradient
