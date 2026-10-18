@@ -1792,6 +1792,80 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Section4.conforming_energy_le_parameterNorm
 #print axioms Carleman.Section4.conforming_energy_le_parameterNorm
 
+-- Full Section 4 spatial energy and Aubin–Nitsche rates.
+#check @Carleman.Section4.energyNorm
+#print axioms Carleman.Section4.energyNorm
+#check @Carleman.Section4.regularityNorm
+#print axioms Carleman.Section4.regularityNorm
+#check @Carleman.Section4.WeightedApproximation
+#print axioms Carleman.Section4.WeightedApproximation
+#check @Carleman.Section4.WeightedApproximation.energy
+#print axioms Carleman.Section4.WeightedApproximation.energy
+#check @Carleman.Section4.WeightedApproximation.l2
+#print axioms Carleman.Section4.WeightedApproximation.l2
+#check @Carleman.Section4.nodal_energy_le_regularity
+#print axioms Carleman.Section4.nodal_energy_le_regularity
+#check @Carleman.Section4.WeightedApproximation.nodal_energy
+#print axioms Carleman.Section4.WeightedApproximation.nodal_energy
+#check @Carleman.Section4.WeightedApproximation.nodal_Q
+#print axioms Carleman.Section4.WeightedApproximation.nodal_Q
+#check @Carleman.Section4.WeightedApproximation.nodal_l2
+#print axioms Carleman.Section4.WeightedApproximation.nodal_l2
+#check @Carleman.Section4.regularityNorm_nonneg
+#print axioms Carleman.Section4.regularityNorm_nonneg
+#check @Carleman.Section4.energy_rates_of_cea
+#print axioms Carleman.Section4.energy_rates_of_cea
+#check @Carleman.Section4.WeightedTest
+#print axioms Carleman.Section4.WeightedTest
+#check @Carleman.Section4.WeightedTest.op
+#print axioms Carleman.Section4.WeightedTest.op
+#check @Carleman.Section4.WeightedTest.derivative
+#print axioms Carleman.Section4.WeightedTest.derivative
+#check @Carleman.Section4.WeightedTest.endpoint
+#print axioms Carleman.Section4.WeightedTest.endpoint
+#check @Carleman.Section4.WeightedTest.hasDeriv
+#print axioms Carleman.Section4.WeightedTest.hasDeriv
+#check @Carleman.Section4.WeightedTest.symmetric
+#print axioms Carleman.Section4.WeightedTest.symmetric
+#check @Carleman.Section4.WeightedTest.nonneg
+#print axioms Carleman.Section4.WeightedTest.nonneg
+#check @Carleman.Section4.WeightedTest.time_bound
+#print axioms Carleman.Section4.WeightedTest.time_bound
+#check @Carleman.Section4.WeightedTest.superapprox
+#print axioms Carleman.Section4.WeightedTest.superapprox
+#check @Carleman.Section4.spatial_smallness_thresholds
+#print axioms Carleman.Section4.spatial_smallness_thresholds
+#check @Carleman.Section4.EnergyEstimate
+#print axioms Carleman.Section4.EnergyEstimate
+#check @Carleman.Section4.energy_estimate_of_cea
+#print axioms Carleman.Section4.energy_estimate_of_cea
+#check @Carleman.Section4.squared_weight_signed_uniform
+#print axioms Carleman.Section4.squared_weight_signed_uniform
+#check @Carleman.Section4.spatial_time_threshold
+#print axioms Carleman.Section4.spatial_time_threshold
+#check @Carleman.Section4.EnergyUniform
+#print axioms Carleman.Section4.EnergyUniform
+#check @Carleman.Section4.energy_uniform_of_section3
+#print axioms Carleman.Section4.energy_uniform_of_section3
+#check @Carleman.OriginalForm.spatial_energy_uniform
+#print axioms Carleman.OriginalForm.spatial_energy_uniform
+#check @Carleman.Section4.weighted_pairing_bound
+#print axioms Carleman.Section4.weighted_pairing_bound
+#check @Carleman.Section4.spatial_duality_bound
+#print axioms Carleman.Section4.spatial_duality_bound
+#check @Carleman.Section4.L2Estimate
+#print axioms Carleman.Section4.L2Estimate
+#check @Carleman.Section4.duality_rate_coefficient
+#print axioms Carleman.Section4.duality_rate_coefficient
+#check @Carleman.Section4.l2_estimate_of_energy
+#print axioms Carleman.Section4.l2_estimate_of_energy
+#check @Carleman.Section4.SpatialUniform
+#print axioms Carleman.Section4.SpatialUniform
+#check @Carleman.Section4.spatial_uniform_of_section3
+#print axioms Carleman.Section4.spatial_uniform_of_section3
+#check @Carleman.OriginalForm.spatial_uniform
+#print axioms Carleman.OriginalForm.spatial_uniform
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

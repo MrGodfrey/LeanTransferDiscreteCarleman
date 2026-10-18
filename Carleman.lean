@@ -221,3 +221,12 @@ public import Carleman.Weights.InterpolatedShiftGraph
 public import Carleman.Weights.InterpolatedShiftSobolev
 public import Carleman.Weights.LipschitzShiftSobolev
 public import Carleman.Weights.ShiftedGraphRemainder
+
+public import Carleman.Section4.ApproximationData
+public import Carleman.Section4.EnergyRate
+public import Carleman.Section4.TestData
+public import Carleman.Section4.EnergyEstimate
+public import Carleman.Section4.EnergyUniform
+public import Carleman.Section4.DualityBound
+public import Carleman.Section4.L2Estimate
+public import Carleman.Section4.SpatialUniform

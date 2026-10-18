@@ -11,11 +11,11 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T020",
-    "supervisor_checked_at": "2026-10-18T13:57:32.617371+00:00",
-    "next_action": "组合N3、原Euler图界和Cea得到空间能量/状态稳定性；统一阈值并接续完整逆权对偶L2误差",
+    "supervisor_checked_at": "2026-10-18T14:20:34.629896+00:00",
+    "next_action": "核实 main CI 后登记 Lemma4.1 BUILT；接续 Theorem4.2 空间—时间合成和 B4。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T13:29:09.123016+00:00"
+    "last_activity_at": "2026-10-18T14:20:34.629896+00:00"
   },
   "verification": {
     "latest_build": {
@@ -101,7 +101,7 @@
       "id": "M4",
       "title": "加权空间误差",
       "description": "Lemma 4.1 与 Theorem 4.2",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "evidence_commit": null,
       "blocker": null
     },
@@ -688,20 +688,61 @@
       "paper_ref": "Lemma 4.1, pp.17–18",
       "milestone": "M4",
       "extra_hypotheses": [],
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "paper_labels": [
         "lem:spatialEuler"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Section4.energyNorm",
+        "Carleman.Section4.regularityNorm",
+        "Carleman.Section4.WeightedApproximation",
+        "Carleman.Section4.WeightedApproximation.energy",
+        "Carleman.Section4.WeightedApproximation.l2",
+        "Carleman.Section4.nodal_energy_le_regularity",
+        "Carleman.Section4.WeightedApproximation.nodal_energy",
+        "Carleman.Section4.WeightedApproximation.nodal_Q",
+        "Carleman.Section4.WeightedApproximation.nodal_l2",
+        "Carleman.Section4.regularityNorm_nonneg",
+        "Carleman.Section4.energy_rates_of_cea",
+        "Carleman.Section4.WeightedTest",
+        "Carleman.Section4.WeightedTest.op",
+        "Carleman.Section4.WeightedTest.derivative",
+        "Carleman.Section4.WeightedTest.endpoint",
+        "Carleman.Section4.WeightedTest.hasDeriv",
+        "Carleman.Section4.WeightedTest.symmetric",
+        "Carleman.Section4.WeightedTest.nonneg",
+        "Carleman.Section4.WeightedTest.time_bound",
+        "Carleman.Section4.WeightedTest.superapprox",
+        "Carleman.Section4.spatial_smallness_thresholds",
+        "Carleman.Section4.EnergyEstimate",
+        "Carleman.Section4.energy_estimate_of_cea",
+        "Carleman.Section4.squared_weight_signed_uniform",
+        "Carleman.Section4.spatial_time_threshold",
+        "Carleman.Section4.EnergyUniform",
+        "Carleman.Section4.energy_uniform_of_section3",
+        "Carleman.OriginalForm.spatial_energy_uniform",
+        "Carleman.Section4.weighted_pairing_bound",
+        "Carleman.Section4.spatial_duality_bound",
+        "Carleman.Section4.L2Estimate",
+        "Carleman.Section4.duality_rate_coefficient",
+        "Carleman.Section4.l2_estimate_of_energy",
+        "Carleman.Section4.SpatialUniform",
+        "Carleman.Section4.spatial_uniform_of_section3",
+        "Carleman.OriginalForm.spatial_uniform"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
       "dependencies": [
-        "C006"
+        "C037",
+        "C038",
+        "C039"
       ],
       "blocker": null,
-      "pr_url": null
+      "pr_url": null,
+      "next_action": "核实完整空间误差入口的同 SHA main CI；随后合成 Theorem4.2。",
+      "scope_notes": "完整 Lemma4.1 原假设入口、能量/状态稳定性及 L2 原率；本机全构建和3080声明审计PASS，等待版本化CI及独立语义验收。"
     },
     {
       "id": "C009",
@@ -9958,17 +9999,19 @@
       "id": "T020",
       "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
       "task_url": null,
-      "title": "Section4空间误差的测试算子、精确相容性和周期对偶",
+      "title": "Section4完整空间能量与加权L2误差",
       "goal_ids": [
         "C038",
-        "C039"
+        "C039",
+        "C008"
       ],
       "acceptance": [
         "两时间方向的可变自伴算子精确周期恒等式及下界",
         "从真实连续与离散Euler方程推导误差和完整对偶恒等式，保留Q=RJ/G=JR和刚度缺陷",
         "全离散空间任意载荷存在唯一性，实际编译及公理审计，无sorry或新增公理",
         "辅助成果不计为原Lemma4.1或Theorem4.2完成",
-        "实际权函数的双向时间下界、原Sobolev范数的Cea估计与N3节点到序列桥完成构建及公理审计"
+        "实际权函数的双向时间下界、原Sobolev范数的Cea估计与N3节点到序列桥完成构建及公理审计",
+        "完整原Lemma4.1能量及L2率，统一常数、原假设内部组装、全状态及两方向；同SHA构建和公理依赖核对"
       ],
       "dependencies": [
         "C001",
@@ -10033,7 +10076,43 @@
         "Carleman.TimeGrid.weightedNorm_le_field_sum",
         "Carleman.WeakSobolevJet.weightedNorm_truncate_le_parameterNorm",
         "Carleman.WeakSobolevJet.nodal_approximation_bound",
-        "Carleman.Section4.conforming_energy_le_parameterNorm"
+        "Carleman.Section4.conforming_energy_le_parameterNorm",
+        "Carleman.Section4.energyNorm",
+        "Carleman.Section4.regularityNorm",
+        "Carleman.Section4.WeightedApproximation",
+        "Carleman.Section4.WeightedApproximation.energy",
+        "Carleman.Section4.WeightedApproximation.l2",
+        "Carleman.Section4.nodal_energy_le_regularity",
+        "Carleman.Section4.WeightedApproximation.nodal_energy",
+        "Carleman.Section4.WeightedApproximation.nodal_Q",
+        "Carleman.Section4.WeightedApproximation.nodal_l2",
+        "Carleman.Section4.regularityNorm_nonneg",
+        "Carleman.Section4.energy_rates_of_cea",
+        "Carleman.Section4.WeightedTest",
+        "Carleman.Section4.WeightedTest.op",
+        "Carleman.Section4.WeightedTest.derivative",
+        "Carleman.Section4.WeightedTest.endpoint",
+        "Carleman.Section4.WeightedTest.hasDeriv",
+        "Carleman.Section4.WeightedTest.symmetric",
+        "Carleman.Section4.WeightedTest.nonneg",
+        "Carleman.Section4.WeightedTest.time_bound",
+        "Carleman.Section4.WeightedTest.superapprox",
+        "Carleman.Section4.spatial_smallness_thresholds",
+        "Carleman.Section4.EnergyEstimate",
+        "Carleman.Section4.energy_estimate_of_cea",
+        "Carleman.Section4.squared_weight_signed_uniform",
+        "Carleman.Section4.spatial_time_threshold",
+        "Carleman.Section4.EnergyUniform",
+        "Carleman.Section4.energy_uniform_of_section3",
+        "Carleman.OriginalForm.spatial_energy_uniform",
+        "Carleman.Section4.weighted_pairing_bound",
+        "Carleman.Section4.spatial_duality_bound",
+        "Carleman.Section4.L2Estimate",
+        "Carleman.Section4.duality_rate_coefficient",
+        "Carleman.Section4.l2_estimate_of_energy",
+        "Carleman.Section4.SpatialUniform",
+        "Carleman.Section4.spatial_uniform_of_section3",
+        "Carleman.OriginalForm.spatial_uniform"
       ],
       "build_evidence": {
         "status": "PASS",
@@ -10054,7 +10133,7 @@
         "本机完整构建3431 jobs和2940声明递归公理审计PASS；PR CI39132012222三项PASS；按用户指示切换main直接push，PR23自动合并",
         "main 010b378：六个新增模块17显式声明；本机及main CI39133477530完整构建/公理审计PASS，远端axioms.txt与本地逐字节相同；未提升原文覆盖。"
       ],
-      "next_action": "组合N3、原Euler图界和Cea得到空间能量/状态稳定性；统一阈值并接续完整逆权对偶L2误差",
+      "next_action": "核实 main CI 后登记 Lemma4.1 BUILT；接续 Theorem4.2 空间—时间合成和 B4。",
       "integration_mode": "direct-main",
       "ci_relationship": {
         "proof_head": "010b37869003458f0e1436e3804e11c807f550e9",
@@ -10085,7 +10164,17 @@
           "recursive_axiom_audit": 2940,
           "actual_build_jobs": 3431
         }
-      ]
+      ],
+      "local_spatial_validation": {
+        "base_commit": "d9b74c1fee306a7bf33a820d600af09af6319e0e",
+        "checked_at": "2026-10-18T14:20:34.629896+00:00",
+        "result": "PASS",
+        "build_jobs": 3445,
+        "recursive_axiom_audit": 3080,
+        "new_explicit_declarations": 36,
+        "audit_sha256": "4cf5509f91b61e80901ab0f86484133c25cf95cd92f58849a473a01189a98278",
+        "note": "Working tree validated before commit; not a remote CI record."
+      }
     }
   ],
   "private_maintenance": {

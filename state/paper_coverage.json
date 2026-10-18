@@ -331,9 +331,14 @@
       "claim_ids": [
         "C008"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Section4.EnergyEstimate",
+        "Carleman.Section4.L2Estimate",
+        "Carleman.Section4.SpatialUniform",
+        "Carleman.OriginalForm.spatial_uniform"
+      ],
       "declaration_version": null,
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": null,

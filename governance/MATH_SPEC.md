@@ -670,3 +670,9 @@ N3 的真实 N/R 范数接入及两种空间误差率仍待。现有对偶恒等
 [能量阶段](analysis/T020-spatial-energy.md)更新上一段的待办边界。C039 为 AUXILIARY：原 N4 的实际 qσ 重构质量导数界已给两方向时间负项 18C；真实弱 Sobolev Nm 上的 σ²/逆权乘法统一界、精确误差方程的 Céa 测试及缺陷吸收、N3 逐节点界到实际序列 R 范数的 Minkowski 提升已形式化。
 
 最终空间误差率、状态稳定性、参数统一阈值和完整逆权对偶实例仍待组装。`Section4.spatial_cea` 的 hform/hcoer/hmul 均有此前供应定理，必须在最终原假设入口调用；hsmall 必须由原 hqmax、ηA 阈值证明。此阶段不增加或放宽原假设，也不提升 Lemma4.1/Theorem4.2/Theorem2.1 的覆盖状态。
+
+### T020 完整空间误差：更新上述待组装边界
+
+[完整阶段](analysis/T020-spatial-complete.md)与[逐声明核对](reviews/T020-spatial-complete.md)对应八模块、36 显式声明。`OriginalForm.spatial_uniform` 已实际调用原 Section3 供应形式、任意质量余量与正/逆 Euler 图，并由原 hqmax/ηA 范围构造统一吸收阈值。原 N3/N4、实际两 Euler 方程给能量误差 `aE+ηA`、重构状态稳定性和完整逆权对偶 L² 误差 `a0+aE²+ηA`。所有常数先于 T/网格/qmax/离散空间/方向/符号/全状态及载荷；Q/G 和刚度缺陷均保留，无目标估计新增前提。
+
+C008/P009 是完整 Lemma4.1 候选，精确 main CI 核实后登记 BUILT/PAPER；执行者核对不增加独立 REVIEWED 计数。Theorem4.2 的真实时间延拓/空间误差组合、最终 B4 接口及原 Theorem2.1 仍待，原稿和最终目标没有修改。

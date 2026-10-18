@@ -14,7 +14,7 @@
 | P006 | Lemma 3.3 | `lem:eulerMR` | 14 / 863 | M3 | C006, C036, C037 | Carleman.OriginalForm.section3_original_operator, Carleman.OriginalForm.ofBilinear_scalarForm, Carleman.PeriodicWeakTrajectory.graph_equation_iff, Carleman.Section3.Conclusions.euler, Carleman.Section3.EulerEstimate |
 | P007 | Lemma 3.4 | `lem:frozen` | 15 / 964 | M3 | C036, C037 | Carleman.OriginalForm.section3_original_operator, Carleman.OriginalForm.ofBilinear_scalarForm, Carleman.PeriodicWeakTrajectory.graph_equation_iff, Carleman.Section3.Conclusions.frozen, Carleman.Section3.ContinuousEstimate |
 | P008 | Theorem 3.5 | `thm:timeerror` | 16 / 1023 | M3 | C007, C036, C037 | Carleman.OriginalForm.section3_original_operator, Carleman.OriginalForm.ofBilinear_scalarForm, Carleman.PeriodicWeakTrajectory.graph_equation_iff, Carleman.Section3.Conclusions.temporal, Carleman.Section3.TemporalEstimate, Carleman.Section3.temporal_arbitrary_uniform |
-| P009 | Lemma 4.1 | `lem:spatialEuler` | 17 / 1148 | M4 | C008 | 待建立 |
+| P009 | Lemma 4.1 | `lem:spatialEuler` | 17 / 1148 | M4 | C008 | Carleman.Section4.EnergyEstimate, Carleman.Section4.L2Estimate, Carleman.Section4.SpatialUniform, Carleman.OriginalForm.spatial_uniform |
 | P010 | Theorem 4.2 | `thm:combined` | 19 / 1287 | M4 | C009 | 待建立 |
 | P011 | Proposition 6.1 | `prop:p1` | 21 / 1499 | M6a | C014 | 待建立 |
 | P012 | Proposition 6.2 | `prop:fd` | 23 / 1672 | M6a | C015 | 待建立 |
