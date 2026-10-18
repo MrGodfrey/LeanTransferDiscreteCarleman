@@ -12,10 +12,10 @@
     "state": "RUNNING",
     "current_task_id": "T038",
     "supervisor_checked_at": "2026-10-18T17:56:41.413374+00:00",
-    "next_action": "实际单元导数的a.e.公式/L2存在及边界零延拓连续已定向构建；继续证明Lipschitz界并连接分布弱导数。",
+    "next_action": "实际弱导数与H1全库验证通过；提交固定SHA并独立验收，等待同SHA远端CI。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T17:56:41.413374+00:00"
+    "last_activity_at": "2026-10-18T18:07:21.765783+00:00"
   },
   "verification": {
     "latest_build": {
@@ -6000,7 +6000,7 @@
     },
     {
       "id": "C054",
-      "title": "节点插值的实际导数与边界零延拓",
+      "title": "节点插值的实际弱导数、H1成员与连续零延拓",
       "paper_ref": "Section6 P1 interpolation weak-gradient and Dirichlet realization",
       "milestone": "M6a",
       "extra_hypotheses": [],
@@ -6010,6 +6010,9 @@
         "prop:p1"
       ],
       "lean_declarations": [
+        "Carleman.lipschitzWith_of_eventually_norm_sub_le",
+        "Carleman.finite_selection_eventually_norm_sub_le",
+        "Carleman.lipschitzWith_finite_selection",
         "Carleman.SimplicialPartition.localNodalDerivative",
         "Carleman.SimplicialPartition.localNodalDerivative_apply",
         "Carleman.SimplicialPartition.localNodal_hasFDerivAt",
@@ -6028,7 +6031,24 @@
         "Carleman.SimplicialPartition.nodalFunction_zero_on_boundary",
         "Carleman.SimplicialPartition.nodalFunction_zero_on_compl",
         "Carleman.SimplicialPartition.nodalFunction_continuous_of_boundary",
-        "Carleman.SimplicialPartition.nodalFunction_hasCompactSupport"
+        "Carleman.SimplicialPartition.nodalFunction_hasCompactSupport",
+        "Carleman.SimplicialPartition.nodalLipschitzConstant",
+        "Carleman.SimplicialPartition.localNodal_lipschitzWith",
+        "Carleman.SimplicialPartition.nodalFunction_lipschitzWith",
+        "Carleman.weakSpatialDerivative_of_lipschitz",
+        "Carleman.SimplicialPartition.nodalDirectionalLp",
+        "Carleman.SimplicialPartition.nodalDirectionalLp_ae",
+        "Carleman.SimplicialPartition.nodalLp_weakDerivative",
+        "Carleman.scalarZeroFiber",
+        "Carleman.derivativeOneFiber",
+        "Carleman.scalarZeroFiber_component",
+        "Carleman.derivativeOneFiber_component",
+        "Carleman.firstOrderFields",
+        "Carleman.firstOrderJet",
+        "Carleman.firstOrderJet_value",
+        "Carleman.SimplicialPartition.nodalSobolevJet",
+        "Carleman.SimplicialPartition.nodalSobolevJet_value",
+        "Carleman.SimplicialPartition.nodalLp_mem_sobolev"
       ],
       "declaration_version": null,
       "build_evidence": null,
@@ -6038,7 +6058,7 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "实际单元导数及a.e.全局导数/L2存在；边界拟合的几何条件推出零边界和连续零延拓。当前弱导数/Lipschitz证明继续中；零迹与H01、局部误差未完成，不提升P011。"
+      "scope_notes": "从真实面匹配与边界拟合证明零边界连续延拓；有限Lipschitz选择定理给全局界；实际逐片导数经真实积分分部满足所有空间测试，构造H1弱jet并证明实际Lp属于sobolevSubspace。未证明H01闭包、H2代表/局部误差/网格统一估计，不提升P011。"
     }
   ],
   "events": [
@@ -14137,7 +14157,7 @@
       "id": "T038",
       "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
       "task_url": null,
-      "title": "节点插值的实际导数与边界零延拓",
+      "title": "节点插值的实际弱导数、H1成员与连续零延拓",
       "goal_ids": [
         "C054"
       ],
@@ -14156,6 +14176,9 @@
       "checkpoint_commit": null,
       "merge_commit": null,
       "lean_declarations": [
+        "Carleman.lipschitzWith_of_eventually_norm_sub_le",
+        "Carleman.finite_selection_eventually_norm_sub_le",
+        "Carleman.lipschitzWith_finite_selection",
         "Carleman.SimplicialPartition.localNodalDerivative",
         "Carleman.SimplicialPartition.localNodalDerivative_apply",
         "Carleman.SimplicialPartition.localNodal_hasFDerivAt",
@@ -14174,15 +14197,47 @@
         "Carleman.SimplicialPartition.nodalFunction_zero_on_boundary",
         "Carleman.SimplicialPartition.nodalFunction_zero_on_compl",
         "Carleman.SimplicialPartition.nodalFunction_continuous_of_boundary",
-        "Carleman.SimplicialPartition.nodalFunction_hasCompactSupport"
+        "Carleman.SimplicialPartition.nodalFunction_hasCompactSupport",
+        "Carleman.SimplicialPartition.nodalLipschitzConstant",
+        "Carleman.SimplicialPartition.localNodal_lipschitzWith",
+        "Carleman.SimplicialPartition.nodalFunction_lipschitzWith",
+        "Carleman.weakSpatialDerivative_of_lipschitz",
+        "Carleman.SimplicialPartition.nodalDirectionalLp",
+        "Carleman.SimplicialPartition.nodalDirectionalLp_ae",
+        "Carleman.SimplicialPartition.nodalLp_weakDerivative",
+        "Carleman.scalarZeroFiber",
+        "Carleman.derivativeOneFiber",
+        "Carleman.scalarZeroFiber_component",
+        "Carleman.derivativeOneFiber_component",
+        "Carleman.firstOrderFields",
+        "Carleman.firstOrderJet",
+        "Carleman.firstOrderJet_value",
+        "Carleman.SimplicialPartition.nodalSobolevJet",
+        "Carleman.SimplicialPartition.nodalSobolevJet_value",
+        "Carleman.SimplicialPartition.nodalLp_mem_sobolev"
       ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "实际导数12声明和边界7声明定向3057 jobs通过；发现mathlib Rademacher.integral_lineDeriv_mul_eq可接弱导数。"
+        "实际导数12声明和边界7声明定向3057 jobs通过；发现mathlib Rademacher.integral_lineDeriv_mul_eq可接弱导数。",
+        "八模块39声明定向3179 jobs PASS；跨片Lipschitz界、真实弱导数及H1 jet均已证明，进入全库构建。"
       ],
-      "next_action": "实际单元导数的a.e.公式/L2存在及边界零延拓连续已定向构建；继续证明Lipschitz界并连接分布弱导数。",
-      "integration_mode": "direct-main"
+      "next_action": "实际弱导数与H1全库验证通过；提交固定SHA并独立验收，等待同SHA远端CI。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3549,
+        "recursive_axiom_audit": 4210,
+        "new_explicit_declarations": 39,
+        "declaration_artifact_sha256": "79840d094068a22361ac2d4e3bdb57d107b604634a7045cda74fe4f7401c254d",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING; fixed SHA required"
+      }
     }
   ],
   "private_maintenance": {

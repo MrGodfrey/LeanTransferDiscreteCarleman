@@ -328,3 +328,12 @@ public import Carleman.Spatial.SimplexNodalInterpolation
 public import Carleman.Spatial.SimplicialNodalGluing
 public import Carleman.Spatial.SimplicialNodalLp
 public import Carleman.Spatial.SimplicialNodalOperator
+
+public import Carleman.Spatial.FiniteLipschitzSelection
+public import Carleman.Spatial.SimplicialNodalDerivative
+public import Carleman.Spatial.SimplicialNodalBoundary
+public import Carleman.Spatial.SimplicialNodalLipschitz
+public import Carleman.Spatial.LipschitzWeakDerivative
+public import Carleman.Spatial.SimplicialNodalWeakDerivative
+public import Carleman.Spatial.FirstOrderSobolevJet
+public import Carleman.Spatial.SimplicialNodalSobolev

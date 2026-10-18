@@ -1,0 +1,29 @@
+# T038：节点插值的真实弱导数、H¹ 成员与连续零延拓
+
+八模块39声明，AUXILIARY，对应Section6 P1节点插值/分片仿射函数进入H¹的分析基础。原稿保持不变，P011及其他具名原文覆盖不提升。
+
+## 实际局部导数和零测骨架
+
+`SimplicialNodalDerivative` 从真实localNodal的ContinuousAffineMap.contLinear定义局部导数，证明它作用在方向e上就是原AffineMap.linear e；HasFDerivAt不是输入，而是仿射映射实际可微性。全局函数在单元内部邻域等于该仿射函数，故有相同导数。有限单元边界已证Lebesgue零测，覆盖S给几乎处处位于某单元内部。定义导数字段为各开单元indicator乘实际常值导数的有限和，内部不交使其准确等于该单元导数；骨架上选零。有限测度下证明该真实CLM值函数MemLp 2，构造nodalDerivativeLp并证明全局经典fderiv的L²存在。此阶段尚未仅凭a.e.可微便声称弱导数；真正的分布身份在后续模块独立证明。
+
+## 真实边界条件和全局 Lipschitz
+
+`SimplicialNodalBoundary` 的BoundaryFitted是几何输入：单元与frontier S的交包含于该单元边界顶点的凸包。若这些边界节点值为0，则局部AffineMap在生成面上为0；FaceMatching使全局插值在全部边界为0。对开集S，closure S内边界零与closure外原定义零给整个S补集为零；两个闭集closure S与S补集覆盖全空间，证明原nodalFunction的整个零延拓连续。有限紧单元覆盖也给紧支集，后者不要求边界节点条件。
+
+`FiniteLipschitzSelection` 证明一般实值函数定理：连续函数若逐点取自有限个具有同一Lipschitz常数C的函数，则仍为C-Lipschitz。在每个x，连续性与有限性排除所有在x不相等的候选，于是邻近y所选候选也必须在x与f相等，得到同一C的局部点对界。沿任意直线段，把局部界转换为右侧斜率上界，应用mathlib真实liminf fencing定理，得到全局Lipschitz界；不假设在面上可微，也不忽略跨面线段。
+
+`SimplicialNodalLipschitz` 取明确常数C=sum_i ‖localNodalDerivative_i‖₊。各局部仿射函数由算子范数界为C-Lipschitz；加入一个零函数，原全局零延拓逐点选取这有限族，且边界模块已证明它连续，因此得到真正的全局LipschitzWith。此常数允许依赖具体网格与节点值，仅为弱导数存在性使用；没有声称原统一梯度逆估计、h缩放、形状正则或投影稳定常数。
+
+## 从积分分部到真实 H¹ jet
+
+`LipschitzWeakDerivative` 不是目标式假设包装：从实际全局Lipschitz代表f与L²类u/v的a.e.代表公式，使用固定mathlib Rademacher中的difference-quotient积分分部定理。任意SpatialTest的真实smooth与compact给测试函数本身Lipschitz；其lineDeriv准确等于实际fderiv。测试函数及其导数在S外为0，故全空间积分准确限制到volume.restrict S；代入a.e.代表后得到项目原IsWeakSpatialDerivative的所有测试积分身份。方向任意，没有缩小测试族。
+
+`SimplicialNodalWeakDerivative` 通过CLM求值将实际nodalDerivativeLp映为每方向的真实L²类。单元内部已证HasFDerivAt给其与实际lineDeriv的a.e.一致，再应用上述积分分部定理，得到nodalLp的每个方向的真实分布弱导数。
+
+`FirstOrderSobolevJet` 把scalar u送入零阶单分量Euclidean fiber，将实际CLM值导数字段在正交坐标方向的值送入一阶Sym fiber。两个component身份在Lp中由a.e.代表证明，不是重新选择任意梯度；Sym.oneEquiv识别单元素多重指标。用已证明的坐标弱导数身份组装项目原weakJetSubmodule，零阶value精确等于u。
+
+`SimplicialNodalSobolev` 将上述实际节点插值及导数字段装入WeakSobolevJet d 1 (volume.restrict S) S，并证明value就是已构造的nodalLp；因此它属于既有sobolevSubspace的真实range。完整条件是开S、有限真单纯形分区、FaceMatching、BoundaryFitted、有限限制测度，以及输入实际点态函数f在每个边界节点为0。
+
+## 未完成的原文义务
+
+H¹₀作为紧支光滑函数闭包仍需密度/零迹论证，不能只凭零边界连续性自动识别。此处不是对任意Lp/H1/H2等价类取点值；原H2连续代表尚待。具体网格满足几何条件、统一形状正则与原分级、局部h/h²误差、梯度逆界、加权投影稳定、超逼近和实际Dirichlet连续热CE均未由本批供应。H¹成员的条件性几何输入不等同于完整P1命题；原文仍12/26。

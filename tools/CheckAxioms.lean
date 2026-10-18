@@ -2747,6 +2747,85 @@ set_option pp.maxSteps 1000000
 #check @Carleman.SimplicialPartition.nodalLpLinearMap
 #print axioms Carleman.SimplicialPartition.nodalLpLinearMap
 
+#check @Carleman.lipschitzWith_of_eventually_norm_sub_le
+#print axioms Carleman.lipschitzWith_of_eventually_norm_sub_le
+#check @Carleman.finite_selection_eventually_norm_sub_le
+#print axioms Carleman.finite_selection_eventually_norm_sub_le
+#check @Carleman.lipschitzWith_finite_selection
+#print axioms Carleman.lipschitzWith_finite_selection
+#check @Carleman.SimplicialPartition.localNodalDerivative
+#print axioms Carleman.SimplicialPartition.localNodalDerivative
+#check @Carleman.SimplicialPartition.localNodalDerivative_apply
+#print axioms Carleman.SimplicialPartition.localNodalDerivative_apply
+#check @Carleman.SimplicialPartition.localNodal_hasFDerivAt
+#print axioms Carleman.SimplicialPartition.localNodal_hasFDerivAt
+#check @Carleman.SimplicialPartition.nodalFunction_hasFDerivAt_on_interior
+#print axioms Carleman.SimplicialPartition.nodalFunction_hasFDerivAt_on_interior
+#check @Carleman.SimplicialPartition.ae_mem_cell_interior
+#print axioms Carleman.SimplicialPartition.ae_mem_cell_interior
+#check @Carleman.SimplicialPartition.nodalDerivativeFunction
+#print axioms Carleman.SimplicialPartition.nodalDerivativeFunction
+#check @Carleman.SimplicialPartition.nodalDerivativeFunction_on_interior
+#print axioms Carleman.SimplicialPartition.nodalDerivativeFunction_on_interior
+#check @Carleman.SimplicialPartition.nodalFunction_hasFDerivAt_ae
+#print axioms Carleman.SimplicialPartition.nodalFunction_hasFDerivAt_ae
+#check @Carleman.SimplicialPartition.nodalDerivativeFunction_memLp
+#print axioms Carleman.SimplicialPartition.nodalDerivativeFunction_memLp
+#check @Carleman.SimplicialPartition.nodalDerivativeLp
+#print axioms Carleman.SimplicialPartition.nodalDerivativeLp
+#check @Carleman.SimplicialPartition.nodalDerivativeLp_ae
+#print axioms Carleman.SimplicialPartition.nodalDerivativeLp_ae
+#check @Carleman.SimplicialPartition.nodalFunction_fderiv_memLp
+#print axioms Carleman.SimplicialPartition.nodalFunction_fderiv_memLp
+#check @Carleman.SimplicialPartition.BoundaryFitted
+#print axioms Carleman.SimplicialPartition.BoundaryFitted
+#check @Carleman.SimplicialPartition.localNodal_zero_on_boundary
+#print axioms Carleman.SimplicialPartition.localNodal_zero_on_boundary
+#check @Carleman.SimplicialPartition.nodalFunction_zero_outside
+#print axioms Carleman.SimplicialPartition.nodalFunction_zero_outside
+#check @Carleman.SimplicialPartition.nodalFunction_zero_on_boundary
+#print axioms Carleman.SimplicialPartition.nodalFunction_zero_on_boundary
+#check @Carleman.SimplicialPartition.nodalFunction_zero_on_compl
+#print axioms Carleman.SimplicialPartition.nodalFunction_zero_on_compl
+#check @Carleman.SimplicialPartition.nodalFunction_continuous_of_boundary
+#print axioms Carleman.SimplicialPartition.nodalFunction_continuous_of_boundary
+#check @Carleman.SimplicialPartition.nodalFunction_hasCompactSupport
+#print axioms Carleman.SimplicialPartition.nodalFunction_hasCompactSupport
+#check @Carleman.SimplicialPartition.nodalLipschitzConstant
+#print axioms Carleman.SimplicialPartition.nodalLipschitzConstant
+#check @Carleman.SimplicialPartition.localNodal_lipschitzWith
+#print axioms Carleman.SimplicialPartition.localNodal_lipschitzWith
+#check @Carleman.SimplicialPartition.nodalFunction_lipschitzWith
+#print axioms Carleman.SimplicialPartition.nodalFunction_lipschitzWith
+#check @Carleman.weakSpatialDerivative_of_lipschitz
+#print axioms Carleman.weakSpatialDerivative_of_lipschitz
+#check @Carleman.SimplicialPartition.nodalDirectionalLp
+#print axioms Carleman.SimplicialPartition.nodalDirectionalLp
+#check @Carleman.SimplicialPartition.nodalDirectionalLp_ae
+#print axioms Carleman.SimplicialPartition.nodalDirectionalLp_ae
+#check @Carleman.SimplicialPartition.nodalLp_weakDerivative
+#print axioms Carleman.SimplicialPartition.nodalLp_weakDerivative
+#check @Carleman.scalarZeroFiber
+#print axioms Carleman.scalarZeroFiber
+#check @Carleman.derivativeOneFiber
+#print axioms Carleman.derivativeOneFiber
+#check @Carleman.scalarZeroFiber_component
+#print axioms Carleman.scalarZeroFiber_component
+#check @Carleman.derivativeOneFiber_component
+#print axioms Carleman.derivativeOneFiber_component
+#check @Carleman.firstOrderFields
+#print axioms Carleman.firstOrderFields
+#check @Carleman.firstOrderJet
+#print axioms Carleman.firstOrderJet
+#check @Carleman.firstOrderJet_value
+#print axioms Carleman.firstOrderJet_value
+#check @Carleman.SimplicialPartition.nodalSobolevJet
+#print axioms Carleman.SimplicialPartition.nodalSobolevJet
+#check @Carleman.SimplicialPartition.nodalSobolevJet_value
+#print axioms Carleman.SimplicialPartition.nodalSobolevJet_value
+#check @Carleman.SimplicialPartition.nodalLp_mem_sobolev
+#print axioms Carleman.SimplicialPartition.nodalLp_mem_sobolev
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
