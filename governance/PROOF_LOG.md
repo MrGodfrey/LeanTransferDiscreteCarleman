@@ -33,3 +33,4 @@
 | 2026-10-18 | T018证据 | [draft PR #21](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/21) / `4060ffcc348503fc56db095754fc98655043093d` | 24模块/57新定理/69项核对；CI39084779381三项32步PASS，24模块+root重编3408jobs/2697审计；原域hI清偿，自有Lean21266/17936行，原文1/26 | 父监督者独立验收；Section4空间B4及权族组合 |
 | 2026-10-18 | T019 | [draft PR22](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/22) / `2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd` | 完整Section3四项原命题、16模块35定理61核对；CI39088174822三项32步PASS，3424jobs/2882审计，P004/6/7/8 BUILT | 独立验收；Section4空间误差及最终transfer |
 | 2026-10-18 | T020检查点 | main `3f85627f55d297e62ec124f6d9d22cf52ac85833` / [阶段记录](analysis/T020-spatial-identities.md) | 七模块35显式声明；本机完整构建3431 jobs及2940声明公理审计PASS，PR CI39132012222三项PASS；直接main push，C038 BUILT/AUXILIARY | N4真实权导数下界、空间能量与L²误差 |
+| 2026-10-18 | T020能量检查点 | main / [阶段记录](analysis/T020-spatial-energy.md) | 六模块17显式声明：真实N4时间下界、原Sobolev空间Cea及N3序列桥；本机完整3437 jobs/2973声明公理审计PASS；原文覆盖不提升 | 最终能量率/状态稳定性、统一阈值、完整逆权对偶L²率 |

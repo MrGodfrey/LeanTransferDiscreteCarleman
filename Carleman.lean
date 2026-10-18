@@ -1,5 +1,12 @@
 module
 
+public import Carleman.Transfer.WeightedTestTime
+public import Carleman.Transfer.SpatialCea
+public import Carleman.Spatial.SquaredWeightTest
+public import Carleman.Section4.SpatialEnergy
+public import Carleman.Periodic.SeminormSum
+public import Carleman.Section4.NodalApproximation
+
 public import Carleman.Periodic.OperatorEnergy
 public import Carleman.Periodic.TestOperatorDerivative
 public import Carleman.Transfer.SpatialConsistency

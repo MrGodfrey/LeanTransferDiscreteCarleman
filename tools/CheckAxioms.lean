@@ -1756,6 +1756,42 @@ set_option pp.maxSteps 1000000
 #check @Carleman.TimeGrid.weighted_bilinear_sum_bound
 #print axioms Carleman.TimeGrid.weighted_bilinear_sum_bound
 
+-- Section 4 actual weighted test, Cea and nodal approximation bounds.
+#check @Carleman.SpatialProfile.test_mass_cell_le
+#print axioms Carleman.SpatialProfile.test_mass_cell_le
+#check @Carleman.SpatialProfile.test_derivative_cell_bound
+#print axioms Carleman.SpatialProfile.test_derivative_cell_bound
+#check @Carleman.SpatialProfile.pairing_test_dPlus_lower
+#print axioms Carleman.SpatialProfile.pairing_test_dPlus_lower
+#check @Carleman.SpatialProfile.pairing_test_dMinus_lower
+#print axioms Carleman.SpatialProfile.pairing_test_dMinus_lower
+#check @Carleman.Reconstruction.spatial_test_stability
+#print axioms Carleman.Reconstruction.spatial_test_stability
+#check @Carleman.Reconstruction.spatial_test_node
+#print axioms Carleman.Reconstruction.spatial_test_node
+#check @Carleman.Reconstruction.spatial_test_energy_bound
+#print axioms Carleman.Reconstruction.spatial_test_energy_bound
+#check @Carleman.squared_weight_test_uniform
+#print axioms Carleman.squared_weight_test_uniform
+#check @Carleman.OriginalForm.bilinearForm
+#print axioms Carleman.OriginalForm.bilinearForm
+#check @Carleman.OriginalForm.bilinearForm_apply
+#print axioms Carleman.OriginalForm.bilinearForm_apply
+#check @Carleman.Section4.energySeminorm
+#print axioms Carleman.Section4.energySeminorm
+#check @Carleman.Section4.spatial_cea
+#print axioms Carleman.Section4.spatial_cea
+#check @Carleman.TimeGrid.weightedNorm_sum_le
+#print axioms Carleman.TimeGrid.weightedNorm_sum_le
+#check @Carleman.TimeGrid.weightedNorm_le_field_sum
+#print axioms Carleman.TimeGrid.weightedNorm_le_field_sum
+#check @Carleman.WeakSobolevJet.weightedNorm_truncate_le_parameterNorm
+#print axioms Carleman.WeakSobolevJet.weightedNorm_truncate_le_parameterNorm
+#check @Carleman.WeakSobolevJet.nodal_approximation_bound
+#print axioms Carleman.WeakSobolevJet.nodal_approximation_bound
+#check @Carleman.Section4.conforming_energy_le_parameterNorm
+#print axioms Carleman.Section4.conforming_energy_le_parameterNorm
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

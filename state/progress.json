@@ -11,8 +11,8 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T020",
-    "supervisor_checked_at": "2026-10-18T13:40:17.159924+00:00",
-    "next_action": "main 已直接推送，接续 N4 真实加权时间下界与空间 Cea 能量估计",
+    "supervisor_checked_at": "2026-10-18T13:51:59.231766+00:00",
+    "next_action": "组合N3、原Euler图界和Cea得到空间能量/状态稳定性；统一阈值并接续完整逆权对偶L2误差",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-18T13:29:09.123016+00:00"
@@ -20,27 +20,27 @@
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "3832dbcae75558861ee911c0151f1d9c5a44697b",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39132012222/attempts/1",
-      "finished_at": "2026-10-18T13:34:18.523511+00:00",
+      "checked_sha": "7f17beb74fbc260084d425126cc719187b0caaac",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39132595824/attempts/1",
+      "finished_at": "2026-10-18T13:42:46.568523+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "3f85627f55d297e62ec124f6d9d22cf52ac85833"
+      "source_head_sha": "7f17beb74fbc260084d425126cc719187b0caaac"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "3832dbcae75558861ee911c0151f1d9c5a44697b",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39132012222/attempts/1",
-      "finished_at": "2026-10-18T13:34:18.523511+00:00",
+      "checked_sha": "7f17beb74fbc260084d425126cc719187b0caaac",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39132595824/attempts/1",
+      "finished_at": "2026-10-18T13:42:46.568523+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "3f85627f55d297e62ec124f6d9d22cf52ac85833"
+      "source_head_sha": "7f17beb74fbc260084d425126cc719187b0caaac"
     }
   },
   "milestones": [
@@ -3999,18 +3999,18 @@
         "Carleman.TimeGrid.weightedNorm_le_of_bound",
         "Carleman.TimeGrid.weighted_bilinear_sum_bound"
       ],
-      "declaration_version": "3832dbcae75558861ee911c0151f1d9c5a44697b",
+      "declaration_version": "7f17beb74fbc260084d425126cc719187b0caaac",
       "build_evidence": {
         "status": "PASS",
-        "checked_sha": "3832dbcae75558861ee911c0151f1d9c5a44697b",
-        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39132012222/attempts/1",
-        "finished_at": "2026-10-18T13:34:18.523511+00:00",
+        "checked_sha": "7f17beb74fbc260084d425126cc719187b0caaac",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39132595824/attempts/1",
+        "finished_at": "2026-10-18T13:42:46.568523+00:00",
         "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "targets": [
           "Carleman"
         ],
-        "source_head_sha": "3f85627f55d297e62ec124f6d9d22cf52ac85833"
+        "source_head_sha": "7f17beb74fbc260084d425126cc719187b0caaac"
       },
       "semantic_review": null,
       "blocker": null,
@@ -4022,6 +4022,50 @@
       "next_action": "从N3/N4推导真实空间能量与L²误差，接入已证Section3解及图估计。",
       "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/23",
       "scope_notes": "原Section4精确恒等式和全离散适定性；不包含N3/N4误差估计，不能提升原文覆盖。"
+    },
+    {
+      "id": "C039",
+      "title": "Section4真实加权时间下界、空间Cea估计与N3序列桥",
+      "paper_ref": "Section 4, Lemma 4.1 energy proof ingredients",
+      "milestone": "M4",
+      "scope": "AUXILIARY",
+      "verification_status": "SPECIFIED",
+      "extra_hypotheses": [],
+      "paper_labels": [
+        "eq:weighted-time-summation",
+        "eq:spatial-test-errors",
+        "eq:spatial-energy-stability"
+      ],
+      "lean_declarations": [
+        "Carleman.SpatialProfile.test_mass_cell_le",
+        "Carleman.SpatialProfile.test_derivative_cell_bound",
+        "Carleman.SpatialProfile.pairing_test_dPlus_lower",
+        "Carleman.SpatialProfile.pairing_test_dMinus_lower",
+        "Carleman.Reconstruction.spatial_test_stability",
+        "Carleman.Reconstruction.spatial_test_node",
+        "Carleman.Reconstruction.spatial_test_energy_bound",
+        "Carleman.squared_weight_test_uniform",
+        "Carleman.OriginalForm.bilinearForm",
+        "Carleman.OriginalForm.bilinearForm_apply",
+        "Carleman.Section4.energySeminorm",
+        "Carleman.Section4.spatial_cea",
+        "Carleman.TimeGrid.weightedNorm_sum_le",
+        "Carleman.TimeGrid.weightedNorm_le_field_sum",
+        "Carleman.WeakSobolevJet.weightedNorm_truncate_le_parameterNorm",
+        "Carleman.WeakSobolevJet.nodal_approximation_bound",
+        "Carleman.Section4.conforming_energy_le_parameterNorm"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "blocker": null,
+      "dependencies": [
+        "C038",
+        "C037"
+      ],
+      "next_action": "从N3/N4推导真实空间能量与L²误差，接入已证Section3解及图估计。",
+      "pr_url": null,
+      "scope_notes": "原N4权导数给18C质量下界；真实Sobolev范数Cea与N3序列桥。完整两种空间误差率、统一小性阈值及原定理组装待完成。"
     }
   ],
   "events": [
@@ -4263,7 +4307,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd/governance/reviews/T019.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39089488235/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/23",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39132012222/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39132012222/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39132595824/attempts/1"
     ]
   },
   "schedules": [
@@ -9903,13 +9948,15 @@
       "task_url": null,
       "title": "Section4空间误差的测试算子、精确相容性和周期对偶",
       "goal_ids": [
-        "C038"
+        "C038",
+        "C039"
       ],
       "acceptance": [
         "两时间方向的可变自伴算子精确周期恒等式及下界",
         "从真实连续与离散Euler方程推导误差和完整对偶恒等式，保留Q=RJ/G=JR和刚度缺陷",
         "全离散空间任意载荷存在唯一性，实际编译及公理审计，无sorry或新增公理",
-        "辅助成果不计为原Lemma4.1或Theorem4.2完成"
+        "辅助成果不计为原Lemma4.1或Theorem4.2完成",
+        "实际权函数的双向时间下界、原Sobolev范数的Cea估计与N3节点到序列桥完成构建及公理审计"
       ],
       "dependencies": [
         "C001",
@@ -9920,7 +9967,7 @@
       "base_commit": "bce9be563a26a373585eb6d7f705d6fc5e2becf2",
       "status": "RUNNING",
       "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/23",
-      "checkpoint_commit": "3f85627f55d297e62ec124f6d9d22cf52ac85833",
+      "checkpoint_commit": "7f17beb74fbc260084d425126cc719187b0caaac",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.sum_variable_bilinear_increment",
@@ -9957,19 +10004,36 @@
         "Carleman.TimeGrid.weightedNorm_add_le",
         "Carleman.TimeGrid.weightedNorm_sub_le",
         "Carleman.TimeGrid.weightedNorm_le_of_bound",
-        "Carleman.TimeGrid.weighted_bilinear_sum_bound"
+        "Carleman.TimeGrid.weighted_bilinear_sum_bound",
+        "Carleman.SpatialProfile.test_mass_cell_le",
+        "Carleman.SpatialProfile.test_derivative_cell_bound",
+        "Carleman.SpatialProfile.pairing_test_dPlus_lower",
+        "Carleman.SpatialProfile.pairing_test_dMinus_lower",
+        "Carleman.Reconstruction.spatial_test_stability",
+        "Carleman.Reconstruction.spatial_test_node",
+        "Carleman.Reconstruction.spatial_test_energy_bound",
+        "Carleman.squared_weight_test_uniform",
+        "Carleman.OriginalForm.bilinearForm",
+        "Carleman.OriginalForm.bilinearForm_apply",
+        "Carleman.Section4.energySeminorm",
+        "Carleman.Section4.spatial_cea",
+        "Carleman.TimeGrid.weightedNorm_sum_le",
+        "Carleman.TimeGrid.weightedNorm_le_field_sum",
+        "Carleman.WeakSobolevJet.weightedNorm_truncate_le_parameterNorm",
+        "Carleman.WeakSobolevJet.nodal_approximation_bound",
+        "Carleman.Section4.conforming_energy_le_parameterNorm"
       ],
       "build_evidence": {
         "status": "PASS",
-        "checked_sha": "3832dbcae75558861ee911c0151f1d9c5a44697b",
-        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39132012222/attempts/1",
-        "finished_at": "2026-10-18T13:34:18.523511+00:00",
+        "checked_sha": "7f17beb74fbc260084d425126cc719187b0caaac",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39132595824/attempts/1",
+        "finished_at": "2026-10-18T13:42:46.568523+00:00",
         "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "targets": [
           "Carleman"
         ],
-        "source_head_sha": "3f85627f55d297e62ec124f6d9d22cf52ac85833"
+        "source_head_sha": "7f17beb74fbc260084d425126cc719187b0caaac"
       },
       "blocker": null,
       "attempts": [
@@ -9977,7 +10041,7 @@
         "按用户要求在当前本地任务接续，保留固定工具链与唯一任务台账",
         "本机完整构建3431 jobs和2940声明递归公理审计PASS；PR CI39132012222三项PASS；按用户指示切换main直接push，PR23自动合并"
       ],
-      "next_action": "main 已直接推送，接续 N4 真实加权时间下界与空间 Cea 能量估计",
+      "next_action": "组合N3、原Euler图界和Cea得到空间能量/状态稳定性；统一阈值并接续完整逆权对偶L2误差",
       "integration_mode": "direct-main",
       "ci_relationship": {
         "proof_head": "3f85627f55d297e62ec124f6d9d22cf52ac85833",

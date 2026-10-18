@@ -664,3 +664,9 @@ N4 时间导数到真实算子差分的估计、superapproximation/coercivity �
 N3 的真实 N/R 范数接入及两种空间误差率仍待。现有对偶恒等式接收满足原方程的
 任意对偶解，下一阶段从已证 Section 3 供应它；不把恒等式当作空间误差估计。
 原文覆盖不提升，T019 的独立语义验收状态不因合并或 CI 成功而自动改变。
+
+### T020 本机 main 接续：真实空间 Céa 估计
+
+[能量阶段](analysis/T020-spatial-energy.md)更新上一段的待办边界。C039 为 AUXILIARY：原 N4 的实际 qσ 重构质量导数界已给两方向时间负项 18C；真实弱 Sobolev Nm 上的 σ²/逆权乘法统一界、精确误差方程的 Céa 测试及缺陷吸收、N3 逐节点界到实际序列 R 范数的 Minkowski 提升已形式化。
+
+最终空间误差率、状态稳定性、参数统一阈值和完整逆权对偶实例仍待组装。`Section4.spatial_cea` 的 hform/hcoer/hmul 均有此前供应定理，必须在最终原假设入口调用；hsmall 必须由原 hqmax、ηA 阈值证明。此阶段不增加或放宽原假设，也不提升 Lemma4.1/Theorem4.2/Theorem2.1 的覆盖状态。
