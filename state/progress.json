@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T026",
-    "supervisor_checked_at": "2026-10-18T15:37:39.554661+00:00",
-    "next_action": "推送固定证明提交，独立Agent核对完整条件桥与原文语义边界，真实同SHA CI核验。",
+    "current_task_id": "T027",
+    "supervisor_checked_at": "2026-10-18T15:47:09.240182+00:00",
+    "next_action": "完成原正则化正弦权及一二阶导数比、周期迹；构造实际截断并连接余项、端点及中部估计。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T15:39:26.531423+00:00"
+    "last_activity_at": "2026-10-18T15:47:09.240182+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39140648544/attempts/1",
-      "finished_at": "2026-10-18T15:31:48.168756+00:00",
+      "checked_sha": "549cde718bcf26f00b24f4a1493ee92b839f30b4",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39141525842/attempts/1",
+      "finished_at": "2026-10-18T15:41:58.029847+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1"
+      "source_head_sha": "549cde718bcf26f00b24f4a1493ee92b839f30b4"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39140648544/attempts/1",
-      "finished_at": "2026-10-18T15:31:48.168756+00:00",
+      "checked_sha": "549cde718bcf26f00b24f4a1493ee92b839f30b4",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39141525842/attempts/1",
+      "finished_at": "2026-10-18T15:41:58.029847+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1"
+      "source_head_sha": "549cde718bcf26f00b24f4a1493ee92b839f30b4"
     }
   },
   "milestones": [
@@ -4796,7 +4796,7 @@
       "extra_hypotheses": [
         "真实伴随轨迹的松弛观测估计；原Theorem7.2尚未供应"
       ],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "CONDITIONAL",
       "paper_labels": [
         "prop:physicalC"
@@ -4826,15 +4826,82 @@
         "Carleman.Physical.physical_hum_control",
         "Carleman.Physical.relaxed_control_of_observation"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "549cde718bcf26f00b24f4a1493ee92b839f30b4",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "549cde718bcf26f00b24f4a1493ee92b839f30b4",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39141525842/attempts/1",
+        "finished_at": "2026-10-18T15:41:58.029847+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "549cde718bcf26f00b24f4a1493ee92b839f30b4"
+      },
+      "semantic_review": {
+        "checked_sha": "549cde718bcf26f00b24f4a1493ee92b839f30b4",
+        "declarations": [
+          "Carleman.Physical.physicalStepEquiv",
+          "Carleman.Physical.adjointNode",
+          "Carleman.Physical.adjointNode_last",
+          "Carleman.Physical.adjointNode_step",
+          "Carleman.Physical.adjointNode_injective",
+          "Carleman.Physical.initialMap",
+          "Carleman.Physical.initialMap_injective",
+          "Carleman.Physical.initialMap_bound",
+          "Carleman.Physical.observationLinear",
+          "Carleman.Physical.observationMap",
+          "Carleman.Physical.observationMap_norm_sq",
+          "Carleman.Physical.humOperator",
+          "Carleman.Physical.humOperator_pairing",
+          "Carleman.Physical.humOperator_bijective",
+          "Carleman.Physical.hum_optimality",
+          "Carleman.Physical.penalized_hum_control",
+          "Carleman.Physical.controlVector",
+          "Carleman.Physical.controlVector_norm",
+          "Carleman.Physical.controlVector_unscale",
+          "Carleman.Physical.control_observation_pairing",
+          "Carleman.Physical.terminal_representation",
+          "Carleman.Physical.physical_hum_control",
+          "Carleman.Physical.relaxed_control_of_observation"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/797a0d993d78aa667efee705d6886636a9750012/governance/reviews/T026-local-acceptance.md",
+        "reviewed_at": "2026-10-18T15:45:39+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent conditional bridge acceptance"
+      },
       "dependencies": [
         "C040"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "完整HUM条件桥候选：实际物理状态、控制及终值；原观测定理作为显式输入，不计原Theorem7.3完成。待同SHA CI及独立Agent验收。"
+      "scope_notes": "完整真实物理HUM条件桥已独立验收；显式观测假设保留，不计原Theorem7.3完成。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C043",
+      "title": "物理观测的原周期权与截断基础",
+      "paper_ref": "Theorem7.2 proof, Steps1–3 foundations",
+      "milestone": "M6b",
+      "extra_hypotheses": [],
+      "verification_status": "PLANNED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:physicalO"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C040",
+        "C006"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实原正弦权、允许性及物理到周期截断；尚不计原观测定理完成。"
     }
   ],
   "events": [
@@ -5045,6 +5112,11 @@
       "at": "2026-10-18T15:37:39.554661+00:00",
       "public_summary": "原Lemma7.4完整Rayleigh逆界经独立Agent及同SHA CI验收；原文12/26，验收队列清空。继续物理HUM条件桥，未将观测假设计为原定理完成。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3fbcf7955e4186d3b7892d0d713ea782145814d9/governance/reviews/T025-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T15:47:09.240182+00:00",
+      "public_summary": "真实物理HUM条件桥23声明经独立Agent及同SHA CI验收；保留观测假设，原文仍12/26。队列清空，继续原观测的权与截断。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/797a0d993d78aa667efee705d6886636a9750012/governance/reviews/T026-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -5148,7 +5220,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/702861c3beb5b1ed41b096a9040b569f1d79a956/governance/reviews/T024-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39139922166/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3fbcf7955e4186d3b7892d0d713ea782145814d9/governance/reviews/T025-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39140648544/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39140648544/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/797a0d993d78aa667efee705d6886636a9750012/governance/reviews/T026-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39141525842/attempts/1"
     ]
   },
   "schedules": [
@@ -11559,10 +11633,10 @@
       ],
       "branch": "main",
       "base_commit": "12d18c9c6548cc70165ad9e4c01314f4438dc5f1",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "549cde718bcf26f00b24f4a1493ee92b839f30b4",
+      "merge_commit": "549cde718bcf26f00b24f4a1493ee92b839f30b4",
       "lean_declarations": [
         "Carleman.Physical.physicalStepEquiv",
         "Carleman.Physical.adjointNode",
@@ -11588,13 +11662,24 @@
         "Carleman.Physical.physical_hum_control",
         "Carleman.Physical.relaxed_control_of_observation"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "549cde718bcf26f00b24f4a1493ee92b839f30b4",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39141525842/attempts/1",
+        "finished_at": "2026-10-18T15:41:58.029847+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "549cde718bcf26f00b24f4a1493ee92b839f30b4"
+      },
       "blocker": null,
       "attempts": [
         "真实初值/观测CLM与有限维正定HUM已定向编译；正在接通实际物理控制和终值。",
         "四模块完整HUM条件桥已定向编译；终值初值映射、真实sqrt(dt)观测、正定最优性、物理终值对偶与原指数余量已连接。"
       ],
-      "next_action": "推送固定证明提交，独立Agent核对完整条件桥与原文语义边界，真实同SHA CI核验。",
+      "next_action": "HUM条件桥已验收；T027推进原观测证明的真实周期权与物理截断。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -11608,7 +11693,64 @@
         "axioms_sha256": "86cd8704bcc24a85c98de0fa5553940651ec2ccbb3792e07ad3f191871b75d1e",
         "log": "/tmp/carleman-hum-full.log",
         "note": "本机检查；真实同SHA CI与独立验收仍待。"
+      },
+      "declaration_version": "549cde718bcf26f00b24f4a1493ee92b839f30b4",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C042"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "549cde718bcf26f00b24f4a1493ee92b839f30b4",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T15:45:39+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/797a0d993d78aa667efee705d6886636a9750012/governance/reviews/T026-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "549cde718bcf26f00b24f4a1493ee92b839f30b4",
+        "checked_sha": "549cde718bcf26f00b24f4a1493ee92b839f30b4",
+        "run_id": 39141525842,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3475,
+        "recursive_axiom_audit": 3349,
+        "new_explicit_declarations": 23,
+        "declaration_artifact_sha256": "86cd8704bcc24a85c98de0fa5553940651ec2ccbb3792e07ad3f191871b75d1e",
+        "local_remote_artifacts_identical": true
       }
+    },
+    {
+      "id": "T027",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原物理观测的周期权与截断基础",
+      "goal_ids": [
+        "C043"
+      ],
+      "acceptance": [
+        "原正则化正弦权，真实正性/上界/周期性/一二阶导数比",
+        "真实N+1物理节点截断为周期序列，首尾与原余项符号准确",
+        "实际截断与端点/中部预算接通；独立验收AUXILIARY，完整观测仍待"
+      ],
+      "dependencies": [
+        "C040",
+        "C006"
+      ],
+      "branch": "main",
+      "base_commit": "549cde718bcf26f00b24f4a1493ee92b839f30b4",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "物理到周期截断及原余项恒等式已定向编译；原正弦权及一阶允许性已编译，继续二阶导数与实际截断。"
+      ],
+      "next_action": "完成原正则化正弦权及一二阶导数比、周期迹；构造实际截断并连接余项、端点及中部估计。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
