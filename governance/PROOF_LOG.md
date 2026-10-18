@@ -89,3 +89,5 @@
 - T046 / C062：真实仿射缩放与内球形状局部逆界独立验收PASS；28声明、4652项公理审计及同SHA CI。 固定证明 `0c632f37eadbcece6459555fef22a2bb4b3ca688`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/09cfe5b5ede08d7ba065b47138896eecc16c15ed/governance/reviews/T046-local-acceptance.md)。原文12/26，T047继续所有单纯形的统一局部加权逆估计。
 
 - T047 / C063：所有单纯形的统一局部加权逆界独立验收PASS；11声明、4671项公理审计及同SHA CI。 固定证明 `ce719d2683c7509827e457ea2e15e0ce5451b487`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c295f96861f597585e3b984574604a0c665f15cd/governance/reviews/T047-local-acceptance.md)。原文12/26，T048继续完整一致P1状态的真实局部弱梯度。
+
+- T048 / C064：任意完整H1一致P1状态的实际局部仿射代表与全弱梯度身份20声明独立验收PASS，4715项审计及同SHA CI。 固定证明 `2ccd0e5f1ae783f69c70d18593e09c79dfe7d7bd`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/00d6704a5090ea604d887b9a56e27c13964d9026/governance/reviews/T048-local-acceptance.md)。原文12/26，T049继续完整一致P1空间的全域加权逆估计。
