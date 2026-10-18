@@ -3608,6 +3608,27 @@ set_option pp.maxSteps 1000000
 #check @Carleman.derivativeField_lipschitzOn_of_within_bound
 #print axioms Carleman.derivativeField_lipschitzOn_of_within_bound
 
+#check @Carleman.allowedSquaredWeight
+#print axioms Carleman.allowedSquaredWeight
+#check @Carleman.allowedSquaredWeight_eq
+#print axioms Carleman.allowedSquaredWeight_eq
+#check @Carleman.allowedSquaredWeight_contDiffOn
+#print axioms Carleman.allowedSquaredWeight_contDiffOn
+#check @Carleman.allowedSquaredWeight_hasFDerivWithinAt
+#print axioms Carleman.allowedSquaredWeight_hasFDerivWithinAt
+#check @Carleman.allowedSquaredWeight_secondWithin
+#print axioms Carleman.allowedSquaredWeight_secondWithin
+#check @Carleman.allowedSquaredWeight_within_derivatives_uniform
+#print axioms Carleman.allowedSquaredWeight_within_derivatives_uniform
+#check @Carleman.allowedSquaredWeight_cell_le
+#print axioms Carleman.allowedSquaredWeight_cell_le
+#check @Carleman.allowedSquaredWeight_local_derivative_data
+#print axioms Carleman.allowedSquaredWeight_local_derivative_data
+#check @Carleman.allowedSquaredWeight_multiplier_value
+#print axioms Carleman.allowedSquaredWeight_multiplier_value
+#check @Carleman.allowedSquaredWeight_product_errors
+#print axioms Carleman.allowedSquaredWeight_product_errors
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

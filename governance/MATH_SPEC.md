@@ -940,3 +940,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 两模块13声明，AUXILIARY。真实HasFDerivWithinAt连接函数与导数字段，在闭凸单元内部完成Taylor及节点误差2Lh²/(1+4κ)Lh，不附加边界外可微假设。实际乘积w·p的域内导数为wDp+pW，由真实导数字段界及Lipschitz性给P L₂+2||Dp||L₁，进而得到乘积节点值与梯度误差；单元内部明确等于真正fderiv。
 
 真实域内二阶字段界可供应W的Lipschitz常数。允许权σ²的统一实例、P到实际L²量转换与全域加权超逼近仍待；一般H²插值也未冒充完成，原文12/26。见`analysis/T060-within-affine-product.md`。
+
+## T061：实际允许权平方的域内导数与乘积节点误差
+
+三模块10声明，AUXILIARY。真实平方权等于2ρ/2τ指数权，给实际闭域一、二阶fderivWithin及其HasFDerivWithinAt身份；固定C先于q、τ、符号及空间点，导数界Cqσ²/Cq²σ²。在原开凸紧闭包设定和hq≤1下，profile Lipschitz及真实均值定理供应锚定顶点的Cqσ²(a)一阶界和Cq²σ²(a)导数字段Lipschitz界。
+
+代入真实仿射状态p，得节点值误差2Cσ²(a)(q²P+2q||Dp||)h²及形状控制下导数字段误差(1+4κ)Cσ²(a)(q²P+2q||Dp||)h，实际TimeWeight乘子平方身份已证明。P到L²、倒数权及全域超逼近仍待；原文12/26。见`analysis/T061-squared-weight-errors.md`。

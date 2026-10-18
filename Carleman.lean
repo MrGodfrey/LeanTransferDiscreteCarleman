@@ -436,3 +436,7 @@ public import Carleman.Spatial.SimplexInterpolationIntegral
 
 public import Carleman.Spatial.SimplexWithinInterpolation
 public import Carleman.Spatial.AffineProductDerivative
+
+public import Carleman.Weights.SquaredWithinDerivatives
+public import Carleman.Weights.SquaredCellDerivatives
+public import Carleman.Weights.SquaredNodalError
