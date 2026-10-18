@@ -992,3 +992,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T071：原Dirichlet允许权接口组装
 
 见 [T071规格](analysis/T071-dirichlet-data.md)。两模块3声明准确识别H² jet低阶字段与原H¹域jet，内部供应原AllowedWeightData及双符号AllowedFamily所有A2/A3字段。统一常数先于全部权参数；原A1的H²域嵌入明确保留为前提，未新增闭包公理或宣称正则性已证。AUXILIARY，原文12/26。
+
+## T072：凸单元光滑函数的均值 Poincaré
+
+见 [T072规格](analysis/T072-convex-poincare.md)。四模块11声明以真实均值平方恒等式、线段FTC、L² Cauchy–Schwarz和仿射体积雅可比，证明任意正体积紧凸K上真实C¹函数的均值误差≤(2^d/2)D²乘实际导数平方积分。半线段、两点差及全部Fubini可积性均证明；未将其冒充一般弱H¹/H²结果，后续仍需局部卷积穷竭和真正逼近。AUXILIARY，原文12/26。

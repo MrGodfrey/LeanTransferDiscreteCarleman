@@ -3829,6 +3829,29 @@ set_option pp.maxSteps 1000000
 #check @Carleman.dirichlet_allowed_family_uniform
 #print axioms Carleman.dirichlet_allowed_family_uniform
 
+#check @Carleman.integral_sq_sub_const
+#print axioms Carleman.integral_sq_sub_const
+#check @Carleman.integral_pairwise_sq
+#print axioms Carleman.integral_pairwise_sq
+#check @Carleman.mean_square_pairwise_identity
+#print axioms Carleman.mean_square_pairwise_identity
+#check @Carleman.integral_comp_scalar_affine
+#print axioms Carleman.integral_comp_scalar_affine
+#check @Carleman.integral_convex_segment_le
+#print axioms Carleman.integral_convex_segment_le
+#check @Carleman.smooth_segment_ftc
+#print axioms Carleman.smooth_segment_ftc
+#check @Carleman.smooth_segment_difference_sq
+#print axioms Carleman.smooth_segment_difference_sq
+#check @Carleman.convex_half_segment_integral_le
+#print axioms Carleman.convex_half_segment_integral_le
+#check @Carleman.convex_smooth_midpoint_error
+#print axioms Carleman.convex_smooth_midpoint_error
+#check @Carleman.convex_smooth_pairwise_bound
+#print axioms Carleman.convex_smooth_pairwise_bound
+#check @Carleman.convex_smooth_mean_poincare
+#print axioms Carleman.convex_smooth_mean_poincare
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

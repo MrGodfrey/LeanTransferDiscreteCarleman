@@ -482,3 +482,7 @@ public import Carleman.Spatial.DirichletScalarForm
 public import Carleman.Weights.DirichletAllowedForm
 public import Carleman.Spatial.DirichletDomainOrders
 public import Carleman.Weights.DirichletAllowedData
+public import Carleman.Spatial.MeanSquareDifference
+public import Carleman.Spatial.ConvexSegmentIntegral
+public import Carleman.Spatial.SmoothSegmentSquare
+public import Carleman.Spatial.ConvexSmoothPoincare
