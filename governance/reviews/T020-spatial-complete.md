@@ -26,3 +26,5 @@
 八模块、36 显式声明均由 Carleman 根目标导入并逐个加入 CheckAxioms；本机完整构建及全部 3080 声明递归检查 PASS。既有 2973 声明未改写。原稿 SHA256 保持 `492d3a5ece01681b2440b1481e75937a1daa7214d0e582901566b1a144555cef`。
 
 有限维辅助离散存在唯一性沿用此前 `Reconstruction.existsUnique_auxiliaryEuler`；本阶段估计对所有实际解成立，既不把唯一性替换成选定解，也不强加有限维之外的限制。正式覆盖保留 BUILT 而非 REVIEWED，等待独立验收。Theorem4.2 和原最终 Theorem2.1 仍待完成。
+
+实际 main 提交 `a315bdc449c58a705a982f0d009f1dde24d6af66` 的 [CI39135593975](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39135593975/attempts/1) 三项全部成功，下载的公理产物与本机逐字节相同，SHA256 `4cf5509f91b61e80901ab0f86484133c25cf95cd92f58849a473a01189a98278`。C008/P009已按协议绑定BUILT；独立本机Agent另行验收。
