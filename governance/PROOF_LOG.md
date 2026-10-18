@@ -109,3 +109,5 @@
 - T056 / C072：真实加权范数和保留节点表示的统一投影18声明独立验收PASS，4859项递归审计及同SHA CI。 固定证明 `14bdf0cb11fcc8ac2c51297c2307fb5745ee49b5`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/99bb6cfd4d3f2a979d547526d3dd4793af73a46a/governance/reviews/T056-local-acceptance.md)。原文12/26，T057继续完整H1零边界jet的真实全空间零延拓。
 
 - T057 / C073：真实全空间H1零延拓8声明独立验收PASS，4890项递归审计及同SHA CI。 固定证明 `fbcd888532fe88caff4907495fad399fe6feeb55`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2be1654e4da0a6d92a7553091def3bb72df0f490/governance/reviews/T057-local-acceptance.md)。原文12/26，T058继续完整一致P1空间节点表示与原四类权统一投影界。
+
+- T058 / C074：完整P1节点表示与原四类权统一投影10声明独立验收PASS，4900项递归审计及同SHA CI。 固定证明 `9b4962ef9d03bb7bce6cc906a508857d57398c8c`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/304487b6765fd8280e8c30b8d22dc11fdc4c9d9f/governance/reviews/T058-local-acceptance.md)。原文12/26，T059继续经典导数控制下的真实单纯形节点插值误差。

@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T058",
-    "supervisor_checked_at": "2026-10-18T20:55:41.177597+00:00",
-    "next_action": "完整空间节点表示与原四类权投影10声明固定SHA独立验收；继续真实节点插值误差与超逼近。",
+    "current_task_id": "T059",
+    "supervisor_checked_at": "2026-10-18T21:02:31.323607+00:00",
+    "next_action": "经典节点误差13声明固定SHA独立验收；继续闭单元内在导数版本及权平方乘仿射的超逼近。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T20:55:41.177597+00:00"
+    "last_activity_at": "2026-10-18T21:02:31.323607+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "fbcd888532fe88caff4907495fad399fe6feeb55",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39165132995/attempts/1",
-      "finished_at": "2026-10-18T20:52:03.503291+00:00",
+      "checked_sha": "9b4962ef9d03bb7bce6cc906a508857d57398c8c",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39165540866/attempts/1",
+      "finished_at": "2026-10-18T20:57:32.190857+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "fbcd888532fe88caff4907495fad399fe6feeb55"
+      "source_head_sha": "9b4962ef9d03bb7bce6cc906a508857d57398c8c"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "fbcd888532fe88caff4907495fad399fe6feeb55",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39165132995/attempts/1",
-      "finished_at": "2026-10-18T20:52:03.503291+00:00",
+      "checked_sha": "9b4962ef9d03bb7bce6cc906a508857d57398c8c",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39165540866/attempts/1",
+      "finished_at": "2026-10-18T20:57:32.190857+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "fbcd888532fe88caff4907495fad399fe6feeb55"
+      "source_head_sha": "9b4962ef9d03bb7bce6cc906a508857d57398c8c"
     }
   },
   "milestones": [
@@ -7659,7 +7659,7 @@
       "paper_ref": "Section 6 Step 1 eq:p1-weighted-projection on the full conforming H1_0 P1 space",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:p1"
@@ -7676,9 +7676,39 @@
         "Carleman.SimplicialPartition.conforming_dirichlet_nodal_representation",
         "Carleman.allowed_weight_full_projection"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "9b4962ef9d03bb7bce6cc906a508857d57398c8c",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "9b4962ef9d03bb7bce6cc906a508857d57398c8c",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39165540866/attempts/1",
+        "finished_at": "2026-10-18T20:57:32.190857+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "9b4962ef9d03bb7bce6cc906a508857d57398c8c"
+      },
+      "semantic_review": {
+        "checked_sha": "9b4962ef9d03bb7bce6cc906a508857d57398c8c",
+        "declarations": [
+          "Carleman.SpatialTest.convolution_ae_norm_bound",
+          "Carleman.spatialLinearMap_norm_of_basis_bound",
+          "Carleman.convolution_lipschitz_of_bounded_weak_derivatives",
+          "Carleman.exists_lipschitzRepresentative_of_bounded_weak_derivatives",
+          "Carleman.SimplicialPartition.conforming_gradient_bounded",
+          "Carleman.SimplicialPartition.conforming_dirichlet_lipschitz_representative",
+          "Carleman.continuous_zeroExtend_zero_compl",
+          "Carleman.SimplicialPartition.conforming_representative_affine_on_cells",
+          "Carleman.SimplicialPartition.conforming_dirichlet_nodal_representation",
+          "Carleman.allowed_weight_full_projection"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/304487b6765fd8280e8c30b8d22dc11fdc4c9d9f/governance/reviews/T058-local-acceptance.md",
+        "reviewed_at": "2026-10-18T20:59:58+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C072",
         "C073",
@@ -7686,7 +7716,45 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "实际有界弱梯度经真实卷积与a.e.收敛供应全局Lipschitz代表，完整H1零边界分片仿射状态据此获得共享节点表示与零边界数据。内部清偿T056表示前提，证明原四类实际权在完整空间上统一L2投影稳定性；代表Lipschitz界不进入最终常数。完整prop:p1仍需插值/超逼近，原文12/26。"
+      "scope_notes": "实际有界弱梯度经真实卷积与a.e.收敛供应全局Lipschitz代表，完整H1零边界分片仿射状态据此获得共享节点表示与零边界数据。内部清偿T056表示前提，证明原四类实际权在完整空间上统一L2投影稳定性；代表Lipschitz界不进入最终常数。完整prop:p1仍需插值/超逼近，原文12/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C075",
+      "title": "经典导数控制下的真实单纯形节点插值误差",
+      "paper_ref": "Auxiliary classical nodal interpolation estimates toward Section 6 P1 approximation and superapproximation",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:p1"
+      ],
+      "lean_declarations": [
+        "Carleman.affineScalarDerivative_inball_bound",
+        "Carleman.simplexNodalInterpolant_sub_affine",
+        "Carleman.simplexNodal_error_of_affine_approximation",
+        "Carleman.simplexNodal_derivative_error_of_affine_approximation",
+        "Carleman.affineFirstOrder",
+        "Carleman.affineFirstOrder_apply",
+        "Carleman.affineFirstOrder_derivative",
+        "Carleman.affineFirstOrder_remainder",
+        "Carleman.simplexNodal_error_of_lipschitz_derivative",
+        "Carleman.simplexNodal_gradient_error_of_lipschitz_derivative",
+        "Carleman.simplexNodal_error_sq_integral",
+        "Carleman.simplexNodal_gradient_error_sq_integral",
+        "Carleman.derivative_lipschitzOn_of_second_derivative_bound"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C061",
+        "C064"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实仿射内球导数界与节点再现给2R/G+4R/r误差；真实Taylor仿射与实际Df Lipschitz界给2Lh²/(1+4κ)Lh点态节点误差及带真实单元体积和Euclidean梯度fiber的平方积分界。显式经典导数条件保留，不冒充一般H2原插值定理，原文12/26。"
     }
   ],
   "events": [
@@ -8057,6 +8125,11 @@
       "at": "2026-10-18T20:55:41.177597+00:00",
       "public_summary": "完整H1零边界零延拓8声明独立Agent及同SHA CI验收PASS；完整P1节点表示及原四类权无额外节点前提的投影稳定性10声明全库通过，原文12/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2be1654e4da0a6d92a7553091def3bb72df0f490/governance/reviews/T057-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T21:02:31.323607+00:00",
+      "public_summary": "原完整空间四类权投影10声明独立Agent及同SHA CI验收PASS；经典导数控制的真实节点插值点态/积分误差13声明全库通过，原文12/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/304487b6765fd8280e8c30b8d22dc11fdc4c9d9f/governance/reviews/T058-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -8224,7 +8297,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/99bb6cfd4d3f2a979d547526d3dd4793af73a46a/governance/reviews/T056-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39164593895/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2be1654e4da0a6d92a7553091def3bb72df0f490/governance/reviews/T057-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39165132995/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39165132995/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/304487b6765fd8280e8c30b8d22dc11fdc4c9d9f/governance/reviews/T058-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39165540866/attempts/1"
     ]
   },
   "schedules": [
@@ -17983,10 +18058,10 @@
       ],
       "branch": "main",
       "base_commit": "fbcd888532fe88caff4907495fad399fe6feeb55",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "9b4962ef9d03bb7bce6cc906a508857d57398c8c",
+      "merge_commit": "9b4962ef9d03bb7bce6cc906a508857d57398c8c",
       "lean_declarations": [
         "Carleman.SpatialTest.convolution_ae_norm_bound",
         "Carleman.spatialLinearMap_norm_of_basis_bound",
@@ -17999,12 +18074,23 @@
         "Carleman.SimplicialPartition.conforming_dirichlet_nodal_representation",
         "Carleman.allowed_weight_full_projection"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "9b4962ef9d03bb7bce6cc906a508857d57398c8c",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39165540866/attempts/1",
+        "finished_at": "2026-10-18T20:57:32.190857+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "9b4962ef9d03bb7bce6cc906a508857d57398c8c"
+      },
       "blocker": null,
       "attempts": [
         "四模块10声明定向3338 jobs及全库3629 jobs通过，4900项递归审计PASS。"
       ],
-      "next_action": "完整空间节点表示与原四类权投影10声明固定SHA独立验收；继续真实节点插值误差与超逼近。",
+      "next_action": "原完整空间四类权投影界已验收，继续实际节点插值与超逼近。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -18016,6 +18102,92 @@
         "recursive_axiom_audit": 4900,
         "new_explicit_declarations": 10,
         "declaration_artifact_sha256": "6f65bda73c8f7d95d68f8ab0c48641ecab5d618d3b0205778db0fa63be265648",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "9b4962ef9d03bb7bce6cc906a508857d57398c8c",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C074"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "9b4962ef9d03bb7bce6cc906a508857d57398c8c",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T20:59:58+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/304487b6765fd8280e8c30b8d22dc11fdc4c9d9f/governance/reviews/T058-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "9b4962ef9d03bb7bce6cc906a508857d57398c8c",
+        "checked_sha": "9b4962ef9d03bb7bce6cc906a508857d57398c8c",
+        "run_id": 39165540866,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3629,
+        "recursive_axiom_audit": 4900,
+        "new_explicit_declarations": 10,
+        "declaration_artifact_sha256": "6f65bda73c8f7d95d68f8ab0c48641ecab5d618d3b0205778db0fa63be265648",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T059",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "经典导数控制下的真实单纯形节点插值误差",
+      "goal_ids": [
+        "C075"
+      ],
+      "acceptance": [
+        "真实内球与仿射导数范数界及节点仿射再现准确",
+        "Taylor多项式的实际点值/导数和余项、形状尺度、所有除法符号正确",
+        "真实Lebesgue误差平方积分、可积性、体积和完整一阶fiber准确",
+        "经典Df Lipschitz/二阶点态前提明确，不误称一般H2插值或超逼近已完成"
+      ],
+      "dependencies": [
+        "C061",
+        "C064"
+      ],
+      "branch": "main",
+      "base_commit": "9b4962ef9d03bb7bce6cc906a508857d57398c8c",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.affineScalarDerivative_inball_bound",
+        "Carleman.simplexNodalInterpolant_sub_affine",
+        "Carleman.simplexNodal_error_of_affine_approximation",
+        "Carleman.simplexNodal_derivative_error_of_affine_approximation",
+        "Carleman.affineFirstOrder",
+        "Carleman.affineFirstOrder_apply",
+        "Carleman.affineFirstOrder_derivative",
+        "Carleman.affineFirstOrder_remainder",
+        "Carleman.simplexNodal_error_of_lipschitz_derivative",
+        "Carleman.simplexNodal_gradient_error_of_lipschitz_derivative",
+        "Carleman.simplexNodal_error_sq_integral",
+        "Carleman.simplexNodal_gradient_error_sq_integral",
+        "Carleman.derivative_lipschitzOn_of_second_derivative_bound"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "三模块13声明定向3222 jobs及全库3632 jobs通过，4913项递归审计PASS。"
+      ],
+      "next_action": "经典节点误差13声明固定SHA独立验收；继续闭单元内在导数版本及权平方乘仿射的超逼近。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3632,
+        "recursive_axiom_audit": 4913,
+        "new_explicit_declarations": 13,
+        "declaration_artifact_sha256": "43ca49e2f9227781288b29a59374cdcd7964feb8d601b24a4d86d88ef94fd091",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
