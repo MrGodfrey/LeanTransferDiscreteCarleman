@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T029",
-    "supervisor_checked_at": "2026-10-18T16:17:17.692686+00:00",
-    "next_action": "完成真实势载荷、潜势吸收、观测去权及物理观测组装；显式保留周期CE与具体实例供应，不能将观测作为输入。",
+    "current_task_id": "T030",
+    "supervisor_checked_at": "2026-10-18T16:29:03.251615+00:00",
+    "next_action": "完成真实L2子空间算子、L2(ω)限制与零延拓及Hilbert伴随，清偿观测/控制接口；仍保留具体网格和CE供应。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T16:20:15.004437+00:00"
+    "last_activity_at": "2026-10-18T16:29:03.251615+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "fba691ef4acce0af1d303f19cae7ceaccfe7eb20",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39143907384/attempts/1",
-      "finished_at": "2026-10-18T16:13:25.420230+00:00",
+      "checked_sha": "f84745210c4ee35c2dd924f9c6ff04788047c28d",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39144611467/attempts/1",
+      "finished_at": "2026-10-18T16:22:57.037463+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "fba691ef4acce0af1d303f19cae7ceaccfe7eb20"
+      "source_head_sha": "f84745210c4ee35c2dd924f9c6ff04788047c28d"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "fba691ef4acce0af1d303f19cae7ceaccfe7eb20",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39143907384/attempts/1",
-      "finished_at": "2026-10-18T16:13:25.420230+00:00",
+      "checked_sha": "f84745210c4ee35c2dd924f9c6ff04788047c28d",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39144611467/attempts/1",
+      "finished_at": "2026-10-18T16:22:57.037463+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "fba691ef4acce0af1d303f19cae7ceaccfe7eb20"
+      "source_head_sha": "f84745210c4ee35c2dd924f9c6ff04788047c28d"
     }
   },
   "milestones": [
@@ -5161,7 +5161,7 @@
       "extra_hypotheses": [
         "实际Lp重构上的统一周期载荷Carleman估计及具体质量/载荷/观测接口仍须由原实现供应"
       ],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "CONDITIONAL",
       "paper_labels": [
         "prop:physicalO"
@@ -5188,16 +5188,83 @@
         "Carleman.Physical.physical_observation_of_load_carleman",
         "Carleman.Physical.physical_observation_uniform_of_load_carleman"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "f84745210c4ee35c2dd924f9c6ff04788047c28d",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "f84745210c4ee35c2dd924f9c6ff04788047c28d",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39144611467/attempts/1",
+        "finished_at": "2026-10-18T16:22:57.037463+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "f84745210c4ee35c2dd924f9c6ff04788047c28d"
+      },
+      "semantic_review": {
+        "checked_sha": "f84745210c4ee35c2dd924f9c6ff04788047c28d",
+        "declarations": [
+          "Carleman.Physical.weighted_potential_bound",
+          "Carleman.Physical.physicalCutoffLoad",
+          "Carleman.Physical.physical_cutoff_load_equation",
+          "Carleman.Physical.physical_cutoff_load_bound",
+          "Carleman.Physical.physicalWeight_lower_half",
+          "Carleman.Physical.physical_potential_budget",
+          "Carleman.Physical.physicalWeightedSq",
+          "Carleman.Physical.physicalWeightedCubeSq",
+          "Carleman.Physical.PhysicalLoadCarleman",
+          "Carleman.Physical.cutoff_observation_budget",
+          "Carleman.Physical.cutoff_carleman_absorb",
+          "Carleman.Physical.physicalEndpointRate",
+          "Carleman.Physical.physicalEndpointRate_pos",
+          "Carleman.Physical.physicalInitialFactor",
+          "Carleman.Physical.physicalInitialFactor_pos",
+          "Carleman.Physical.physicalRemainderFactor",
+          "Carleman.Physical.physicalObservationConstant",
+          "Carleman.Physical.physicalObservationConstant_pos",
+          "Carleman.Physical.physical_observation_of_load_carleman",
+          "Carleman.Physical.physical_observation_uniform_of_load_carleman"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c5e2ec187c3abc746e4d2c6bfaaad1905322fc2d/governance/reviews/T029-local-acceptance.md",
+        "reviewed_at": "2026-10-18T16:27:21+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent conditional acceptance"
+      },
       "dependencies": [
         "C043",
         "C044"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "真实乘法势载荷、截断方程、原qb预算吸收、实际观测去权和端点/初值预算已内部组装；Cb/d0先于T/M，C先于网格/空间/全轨迹。保留实际Lp周期载荷CE、质量/右逆/势兼容/观测实例供应，仍为CONDITIONAL。"
+      "scope_notes": "真实乘法势载荷、截断方程、原qb预算吸收、实际观测去权和端点/初值预算已内部组装；Cb/d0先于T/M，C先于网格/空间/全轨迹。保留实际Lp周期载荷CE、质量/右逆/势兼容/观测实例供应，仍为CONDITIONAL。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C046",
+      "title": "真实L2子空间的物理算子与观测控制接口",
+      "paper_ref": "Section7 conforming L2 realization of physical data",
+      "milestone": "M6b",
+      "extra_hypotheses": [
+        "具体P1/FD及其统一周期载荷Carleman估计仍须供应"
+      ],
+      "verification_status": "PLANNED",
+      "scope": "CONDITIONAL",
+      "paper_labels": [
+        "prop:physicalO",
+        "thm:physicalC"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C045",
+        "C042"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "构造正交L2子空间的真实质量、乘法势、载荷、观察区域限制/零延拓和控制伴随；具体网格及CE仍待。"
     }
   ],
   "events": [
@@ -5423,6 +5490,11 @@
       "at": "2026-10-18T16:17:17.692686+00:00",
       "public_summary": "完整原qclass及空间加权预算22声明通过独立Agent与同SHA CI验收；原文仍12/26，验收队列清空。继续真实势载荷到物理观测。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/192099c762739de48201d1d4714b2fbdf9a2d86e/governance/reviews/T028-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T16:29:03.251615+00:00",
+      "public_summary": "从真实周期载荷CE推出物理观测的20声明通过独立Agent及同SHA CI验收；C045保留条件范围，原文仍12/26，验收队列清空。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c5e2ec187c3abc746e4d2c6bfaaad1905322fc2d/governance/reviews/T029-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -5532,7 +5604,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/feb190b9e3a528204835c491a647af37a61439ac/governance/reviews/T027-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39142758460/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/192099c762739de48201d1d4714b2fbdf9a2d86e/governance/reviews/T028-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39143907384/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39143907384/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c5e2ec187c3abc746e4d2c6bfaaad1905322fc2d/governance/reviews/T029-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39144611467/attempts/1"
     ]
   },
   "schedules": [
@@ -12305,10 +12379,10 @@
       ],
       "branch": "main",
       "base_commit": "fba691ef4acce0af1d303f19cae7ceaccfe7eb20",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "f84745210c4ee35c2dd924f9c6ff04788047c28d",
+      "merge_commit": "f84745210c4ee35c2dd924f9c6ff04788047c28d",
       "lean_declarations": [
         "Carleman.Physical.weighted_potential_bound",
         "Carleman.Physical.physicalCutoffLoad",
@@ -12331,13 +12405,24 @@
         "Carleman.Physical.physical_observation_of_load_carleman",
         "Carleman.Physical.physical_observation_uniform_of_load_carleman"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "f84745210c4ee35c2dd924f9c6ff04788047c28d",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39144611467/attempts/1",
+        "finished_at": "2026-10-18T16:22:57.037463+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "f84745210c4ee35c2dd924f9c6ff04788047c28d"
+      },
       "blocker": null,
       "attempts": [
         "真实势载荷、原方程和加权界已编译；Cb统一吸收预算、真实载荷CE的截断吸收及观测去权已编译。",
         "五模块20声明已定向编译；physical_observation_uniform_of_load_carleman从真实周期载荷CE内部推出原形物理观测，保持Cb/d0/C的全部前置量词，未假设目标观测。"
       ],
-      "next_action": "完成真实势载荷、潜势吸收、观测去权及物理观测组装；显式保留周期CE与具体实例供应，不能将观测作为输入。",
+      "next_action": "物理观测条件桥已验收；T030构造真实L2子空间的质量/势/载荷和观察区域Hilbert伴随接口。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -12350,7 +12435,64 @@
         "new_explicit_declarations": 20,
         "declaration_artifact_sha256": "23ecf1ee980361f7cb53f5f2e311a1cf44627d2200758c4c0bd86c7712357e86",
         "independent_review": "pending fixed-SHA review and remote CI"
+      },
+      "declaration_version": "f84745210c4ee35c2dd924f9c6ff04788047c28d",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C045"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "f84745210c4ee35c2dd924f9c6ff04788047c28d",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T16:27:21+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c5e2ec187c3abc746e4d2c6bfaaad1905322fc2d/governance/reviews/T029-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "f84745210c4ee35c2dd924f9c6ff04788047c28d",
+        "checked_sha": "f84745210c4ee35c2dd924f9c6ff04788047c28d",
+        "run_id": 39144611467,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3500,
+        "recursive_axiom_audit": 3524,
+        "new_explicit_declarations": 20,
+        "declaration_artifact_sha256": "23ecf1ee980361f7cb53f5f2e311a1cf44627d2200758c4c0bd86c7712357e86",
+        "local_remote_artifacts_identical": true
       }
+    },
+    {
+      "id": "T030",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "真实L2子空间的物理算子与观测控制接口",
+      "goal_ids": [
+        "C046"
+      ],
+      "acceptance": [
+        "真实正交投影载荷/质量及乘法势，自伴和范数界",
+        "真实L2(ω)限制、零延拓等距与Hilbert控制伴随",
+        "连接物理观测/HUM；条件范围和未完成具体CE明确，同SHA独立验收"
+      ],
+      "dependencies": [
+        "C045",
+        "C042"
+      ],
+      "branch": "main",
+      "base_commit": "f84745210c4ee35c2dd924f9c6ff04788047c28d",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "L2子空间真实势/质量和环境控制伴随已编译；条件观测入口清偿相应接口。继续真实L2(ω)控制空间的限制/零延拓。"
+      ],
+      "next_action": "完成真实L2子空间算子、L2(ω)限制与零延拓及Hilbert伴随，清偿观测/控制接口；仍保留具体网格和CE供应。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
