@@ -3446,6 +3446,39 @@ set_option pp.maxSteps 1000000
 #check @Carleman.weighted_simplex_mass_pos
 #print axioms Carleman.weighted_simplex_mass_pos
 
+#check @Carleman.SimplicialPartition.incidentCells
+#print axioms Carleman.SimplicialPartition.incidentCells
+#check @Carleman.SimplicialPartition.mem_incidentCells
+#print axioms Carleman.SimplicialPartition.mem_incidentCells
+#check @Carleman.SimplicialPartition.nodalWeightMinimum
+#print axioms Carleman.SimplicialPartition.nodalWeightMinimum
+#check @Carleman.SimplicialPartition.nodalWeightMinimum_pos
+#print axioms Carleman.SimplicialPartition.nodalWeightMinimum_pos
+#check @Carleman.SimplicialPartition.nodalWeightMinimum_vertex_bounds
+#print axioms Carleman.SimplicialPartition.nodalWeightMinimum_vertex_bounds
+#check @Carleman.SimplicialPartition.nodalWeightMinimum_local_ratio
+#print axioms Carleman.SimplicialPartition.nodalWeightMinimum_local_ratio
+#check @Carleman.SimplicialPartition.gradedCellWeight
+#print axioms Carleman.SimplicialPartition.gradedCellWeight
+#check @Carleman.SimplicialPartition.gradedCellWeight_pos
+#print axioms Carleman.SimplicialPartition.gradedCellWeight_pos
+#check @Carleman.SimplicialPartition.allowedWeight_scaled_neighbor_le
+#print axioms Carleman.SimplicialPartition.allowedWeight_scaled_neighbor_le
+#check @Carleman.SimplicialPartition.sizeWeightFactor_grading
+#print axioms Carleman.SimplicialPartition.sizeWeightFactor_grading
+#check @Carleman.SimplicialPartition.gradedCellWeight_neighbor_le
+#print axioms Carleman.SimplicialPartition.gradedCellWeight_neighbor_le
+#check @Carleman.SimplicialPartition.gradedCellWeight_compare
+#print axioms Carleman.SimplicialPartition.gradedCellWeight_compare
+#check @Carleman.allowed_weights_uniform_nodal_weights
+#print axioms Carleman.allowed_weights_uniform_nodal_weights
+#check @Carleman.SimplicialPartition.nodal_squared_weight_test_mem
+#print axioms Carleman.SimplicialPartition.nodal_squared_weight_test_mem
+#check @Carleman.SimplicialPartition.nodal_weighted_mass_coercive
+#print axioms Carleman.SimplicialPartition.nodal_weighted_mass_coercive
+#check @Carleman.SimplicialPartition.nodal_weighted_pairing_coercive
+#print axioms Carleman.SimplicialPartition.nodal_weighted_pairing_coercive
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

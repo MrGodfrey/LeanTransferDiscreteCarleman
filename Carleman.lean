@@ -409,3 +409,8 @@ public import Carleman.Spatial.BoundedSecondMoment
 public import Carleman.Spatial.SimplexSecondMoments
 public import Carleman.Spatial.SimplexPermutationIntegral
 public import Carleman.Spatial.SimplexMassIntegral
+
+public import Carleman.Spatial.NodalWeightMinimum
+public import Carleman.Spatial.AllowedCellWeight
+public import Carleman.Spatial.UniformNodalWeight
+public import Carleman.Spatial.NodalWeightedTest
