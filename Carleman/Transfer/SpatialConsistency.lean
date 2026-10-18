@@ -49,14 +49,15 @@ to the conforming variational equation, on the full original domain. -/
 theorem spatial_continuous_test (g : TimeGrid) (s : Orientation)
     {D : Submodule ℝ H} (hDV : D ≤ V) (A : D →ₗ[ℝ] H)
     (a : V →ₗ[ℝ] V →ₗ[ℝ] ℝ)
-    (hA : ∀ u v, inner ℝ (A u) (v : H) = a (Submodule.inclusion hDV u) v)
+    (hA : ∀ (u : D) (v : V), inner ℝ (A u) (v : H) = a (Submodule.inclusion hDV u) v)
     (μ : g.Sequence ℝ) (f : g.Sequence H) (u : g.Sequence D)
     (hu : ∀ i, s.difference g (fun k => (u k : H)) i + A (u i) + μ i • (u i : H) = f i)
     (i : g.Index) (v : V) :
     inner ℝ (s.difference g (fun k => (u k : H)) i) (v : H) +
       spatialForm a (μ i) (Submodule.inclusion hDV (u i)) v = inner ℝ (f i) (v : H) := by
   have he := congrArg (fun z => inner ℝ z (v : H)) (hu i)
-  simpa only [inner_add_left, real_inner_smul_left, hA, spatialForm, add_assoc] using he
+  simpa only [inner_add_left, real_inner_smul_left, hA, spatialForm, add_assoc,
+    Submodule.coe_inclusion] using he
 
 /-- Testing the actual auxiliary Euler scheme uses exactly N1's stiffness
 identity and the mass-adjoint identity, without Q²=Q or G=Id. -/
@@ -82,7 +83,7 @@ theorem spatial_error_equation (g : TimeGrid) (s : Orientation)
     (defect : X →ₗ[ℝ] X →ₗ[ℝ] ℝ)
     (hA : ∀ z v, inner ℝ (A z) v = a (r.R z) (r.R v) + defect z v)
     (μ : g.Sequence ℝ) (f : g.Sequence H) (u : g.Sequence V) (z : g.Sequence X)
-    (hu : ∀ i v, inner ℝ (s.difference g (fun k => (u k : H)) i) (v : H) +
+    (hu : ∀ (i : g.Index) (v : V), inner ℝ (s.difference g (fun k => (u k : H)) i) (v : H) +
       spatialForm a (μ i) (u i) v = inner ℝ (f i) (v : H))
     (hz : ∀ i, s.difference g z i + A (z i) + μ i • r.G (z i) = r.J (f i))
     (i : g.Index) (v : X) :
@@ -109,7 +110,7 @@ theorem spatial_consistency_identity (g : TimeGrid) (s : Orientation)
     (defect : X →ₗ[ℝ] X →ₗ[ℝ] ℝ)
     (hA : ∀ z v, inner ℝ (A z) v = a (r.R z) (r.R v) + defect z v)
     (μ : g.Sequence ℝ) (f : g.Sequence H) (u : g.Sequence V) (z : g.Sequence X)
-    (hu : ∀ i v, inner ℝ (s.difference g (fun k => (u k : H)) i) (v : H) +
+    (hu : ∀ (i : g.Index) (v : V), inner ℝ (s.difference g (fun k => (u k : H)) i) (v : H) +
       spatialForm a (μ i) (u i) v = inner ℝ (f i) (v : H))
     (hz : ∀ i, s.difference g z i + A (z i) + μ i • r.G (z i) = r.J (f i))
     (i : g.Index) (Y : V) :

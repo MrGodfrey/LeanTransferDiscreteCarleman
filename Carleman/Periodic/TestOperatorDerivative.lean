@@ -34,7 +34,7 @@ theorem testOperator_cell_increment (T : ℝ → H →ₗ[ℝ] H)
     (fun t ht => by simpa only [Real.norm_eq_abs] using hbound t (Ico_subset_Icc_self ht))
     (g.cellTime (i.val+1)) (right_mem_Icc.mpr (g.cellTime_lt_succ i.val).le)
   rw [g.cellTime_succ_sub, g.next_node_value T hend i] at he
-  simpa only [LinearMap.sub_apply, inner_sub_right, Real.norm_eq_abs, mul_comm] using he
+  simpa only [LinearMap.sub_apply, inner_sub_right, Real.norm_eq_abs, mul_comm, cellTime, nodeTime] using he
 
 /-- N4's genuine derivative, bounded relative to the left cell node, gives
 the complete lower bound for the positive time direction. -/

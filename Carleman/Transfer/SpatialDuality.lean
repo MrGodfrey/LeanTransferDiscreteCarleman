@@ -30,10 +30,10 @@ theorem spatial_complete_identity (g : TimeGrid) (s : Orientation)
     (A : X →ₗ[ℝ] X) (defect : X →ₗ[ℝ] X →ₗ[ℝ] ℝ)
     (hA : ∀ z v, inner ℝ (A z) v = a (r.R z) (r.R v) + defect z v)
     (μ : g.Sequence ℝ) (f k : g.Sequence H) (u Y : g.Sequence V) (z : g.Sequence X)
-    (hu : ∀ i v, inner ℝ (s.difference g (fun j => (u j : H)) i) (v : H) +
+    (hu : ∀ (i : g.Index) (v : V), inner ℝ (s.difference g (fun j => (u j : H)) i) (v : H) +
       spatialForm a (μ i) (u i) v = inner ℝ (f i) (v : H))
     (hz : ∀ i, s.difference g z i + A (z i) + μ i • r.G (z i) = r.J (f i))
-    (hY : ∀ i v, inner ℝ (s.opposite.difference g (fun j => (Y j : H)) i) (v : H) +
+    (hY : ∀ (i : g.Index) (v : V), inner ℝ (s.opposite.difference g (fun j => (Y j : H)) i) (v : H) +
       spatialForm a (μ i) (Y i) v = inner ℝ (k i) (v : H)) :
     g.pairing (fun i => (u i : H) - r.RH (z i)) k =
       g.dt * ∑ i,
@@ -48,8 +48,10 @@ theorem spatial_complete_identity (g : TimeGrid) (s : Orientation)
     have he := hY i (e i)
     have hs : spatialForm a (μ i) (Y i) (e i) = spatialForm a (μ i) (e i) (Y i) := by
       rw [spatialForm, spatialForm, ha, real_inner_comm (Y i : H)]
-    rw [hs, real_inner_comm _ (e i : H), real_inner_comm (k i) (e i : H)] at he
-    exact he.symm
+    rw [hs] at he
+    calc
+      _ = inner ℝ (k i) (e i : H) := real_inner_comm _ _
+      _ = _ := he.symm.trans (by congr 1; exact real_inner_comm _ _)
   calc
     _ = g.pairing (fun i => (e i : H))
           (s.opposite.difference g (fun i => (Y i : H))) +
@@ -75,10 +77,10 @@ theorem spatial_weighted_duality (g : TimeGrid) (s : Orientation)
     (μ : g.Sequence ℝ) (f : g.Sequence H) (u Y : g.Sequence V) (z : g.Sequence X)
     (W : g.Index → H →ₗ[ℝ] H)
     (hW : ∀ i v w, inner ℝ v (W i w) = inner ℝ (W i v) w)
-    (hu : ∀ i v, inner ℝ (s.difference g (fun j => (u j : H)) i) (v : H) +
+    (hu : ∀ (i : g.Index) (v : V), inner ℝ (s.difference g (fun j => (u j : H)) i) (v : H) +
       spatialForm a (μ i) (u i) v = inner ℝ (f i) (v : H))
     (hz : ∀ i, s.difference g z i + A (z i) + μ i • r.G (z i) = r.J (f i))
-    (hY : ∀ i v, inner ℝ (s.opposite.difference g (fun j => (Y j : H)) i) (v : H) +
+    (hY : ∀ (i : g.Index) (v : V), inner ℝ (s.opposite.difference g (fun j => (Y j : H)) i) (v : H) +
       spatialForm a (μ i) (Y i) v =
         inner ℝ (W i (W i ((u i : H) - r.RH (z i)))) (v : H)) :
     g.dt * ∑ i, ‖W i ((u i : H) - r.RH (z i))‖^2 =
@@ -89,7 +91,11 @@ theorem spatial_weighted_duality (g : TimeGrid) (s : Orientation)
         defect (z i) (r.J (Y i : H))) := by
   have he := r.spatial_complete_identity g s a ha A defect hA μ f
     (fun i => W i (W i ((u i : H) - r.RH (z i)))) u Y z hu hz hY
-  simpa only [TimeGrid.pairing, hW, real_inner_self_eq_norm_sq] using he
+  have hnorm (i : g.Index) :
+      inner ℝ ((u i : H) - r.RH (z i)) (W i (W i ((u i : H) - r.RH (z i)))) =
+        ‖W i ((u i : H) - r.RH (z i))‖^2 := by
+    rw [hW i _ _, real_inner_self_eq_norm_sq]
+  simpa only [TimeGrid.pairing, hnorm] using he
 
 end Reconstruction
 end Carleman

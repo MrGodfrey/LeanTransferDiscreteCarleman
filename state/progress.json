@@ -15,7 +15,7 @@
     "next_action": "编译并核对Section4空间误差恒等式；随后从N3/N4推导实际空间能量和L²误差界",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T09:29:28.712345+00:00"
+    "last_activity_at": "2026-10-18T13:29:09.123016+00:00"
   },
   "verification": {
     "latest_build": {
@@ -4009,7 +4009,7 @@
         "C037"
       ],
       "next_action": "从N3/N4推导真实空间能量与L²误差，接入已证Section3解及图估计。",
-      "pr_url": null,
+      "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/23",
       "scope_notes": "原Section4精确恒等式和全离散适定性；不包含N3/N4误差估计，不能提升原文覆盖。"
     }
   ],
@@ -4250,7 +4250,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/22",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39088174822/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd/governance/reviews/T019.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39089488235/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39089488235/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/23"
     ]
   },
   "schedules": [
@@ -9906,8 +9907,8 @@
       "branch": "proof/t020-spatial-identities",
       "base_commit": "bce9be563a26a373585eb6d7f705d6fc5e2becf2",
       "status": "RUNNING",
-      "pr_url": null,
-      "checkpoint_commit": null,
+      "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/23",
+      "checkpoint_commit": "fa2f093307be643889510161e815e3068709ac9f",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.sum_variable_bilinear_increment",

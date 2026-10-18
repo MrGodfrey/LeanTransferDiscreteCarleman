@@ -26,9 +26,10 @@ theorem weightedNorm_product_sum (p : g.Index → Seminorm ℝ E)
   calc
     _ ≤ g.dt * (Real.sqrt (∑ i, (p i (u i))^2) * Real.sqrt (∑ i, (q i (v i))^2)) :=
       mul_le_mul_of_nonneg_left hc g.dt_pos.le
-    _ = _ := by
-      rw [← Real.sq_sqrt g.dt_pos.le]
-      ring
+    _ = (Real.sqrt g.dt)^2 *
+        (Real.sqrt (∑ i, (p i (u i))^2) * Real.sqrt (∑ i, (q i (v i))^2)) := by
+      rw [Real.sq_sqrt g.dt_pos.le]
+    _ = _ := by ring
 
 theorem weightedNorm_add_le (p : g.Index → Seminorm ℝ E) (u v : g.Sequence E) :
     g.weightedNorm p (u+v) ≤ g.weightedNorm p u + g.weightedNorm p v := by

@@ -22,7 +22,7 @@ def auxiliaryEuler (s : Orientation) (A : X →ₗ[ℝ] X) (μ : g.Sequence ℝ)
     module
   map_smul' c u := by
     funext i
-    simp only [Pi.smul_apply, Orientation.difference_neighbor, shiftedSpatial,
+    simp only [Pi.smul_apply, Pi.add_apply, Orientation.difference_neighbor, shiftedSpatial,
       map_smul, RingHom.id_apply, smul_sub, smul_add]
     module
 
