@@ -55,3 +55,5 @@
 | 2026-10-19 | T029 | `f84745210c4ee35c2dd924f9c6ff04788047c28d` | 实际载荷CE到物理观测20声明独立验收PASS；三项CI和3524声明审计PASS；C045为CONDITIONAL，原文12/26 | T030真实L2子空间和控制伴随接口 |
 
 - T030 / C046：真实 L2(ω) 算子与观测/HUM 条件接口通过独立验收；32声明、3597项公理审计、同SHA CI。固定证明 `31d5e165a595849bc1c882523838aad69576b594`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4505d7407410d6b6116483d285c7627b6509ab22/governance/reviews/T030-local-acceptance.md)。T031接原热尺度，原文12/26不变。
+
+- T031 / C047：原热尺度到实际物理控制条件入口独立验收PASS；15声明、3655项公理审计及同SHA CI。固定证明 `4223cdff025d68431b81dc2f3fb620e8bdc9ec6b`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/08aeb054a0b5676712d98152dd725240668bcb97/governance/reviews/T031-local-acceptance.md)。原文12/26，继续T032实际Galerkin刚度。
