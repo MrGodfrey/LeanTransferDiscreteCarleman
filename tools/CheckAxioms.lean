@@ -4318,6 +4318,37 @@ set_option pp.maxSteps 1000000
 #check @Carleman.affineBox_h1_scaling_bound
 #print axioms Carleman.affineBox_h1_scaling_bound
 
+#check @Carleman.physicalBox_weak_face_scaled_bound
+#print axioms Carleman.physicalBox_weak_face_scaled_bound
+#check @Carleman.physicalBox_weak_face_uniform_bound
+#print axioms Carleman.physicalBox_weak_face_uniform_bound
+#check @Carleman.physicalBox_affine_face_norm_scaling
+#print axioms Carleman.physicalBox_affine_face_norm_scaling
+#check @Carleman.physicalBox_selected_reference_trace_bound
+#print axioms Carleman.physicalBox_selected_reference_trace_bound
+#check @Carleman.h1_scaled_value_gradient_add_bound
+#print axioms Carleman.h1_scaled_value_gradient_add_bound
+#check @Carleman.physicalBox_h1_boundary_correction
+#print axioms Carleman.physicalBox_h1_boundary_correction
+#check @Carleman.physicalBox_diameter_bound
+#print axioms Carleman.physicalBox_diameter_bound
+#check @Carleman.physicalBox_h2_affine_approximation
+#print axioms Carleman.physicalBox_h2_affine_approximation
+#check @Carleman.unitCube_face_tangent_derivative_zero
+#print axioms Carleman.unitCube_face_tangent_derivative_zero
+#check @Carleman.unitCube_two_faces_affine_zero
+#print axioms Carleman.unitCube_two_faces_affine_zero
+#check @Carleman.physicalBox_two_faces_affine_zero
+#print axioms Carleman.physicalBox_two_faces_affine_zero
+#check @Carleman.physicalBox_h2_boundary_affine
+#print axioms Carleman.physicalBox_h2_boundary_affine
+#check @Carleman.physicalBox_h2_boundary_affine_actual
+#print axioms Carleman.physicalBox_h2_boundary_affine_actual
+#check @Carleman.physicalBox_h2_corner_bound
+#print axioms Carleman.physicalBox_h2_corner_bound
+#check @Carleman.OriginalForm.boundary_affine_lemma
+#print axioms Carleman.OriginalForm.boundary_affine_lemma
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

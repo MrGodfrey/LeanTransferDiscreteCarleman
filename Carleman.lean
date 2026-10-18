@@ -526,3 +526,9 @@ public import Carleman.Geometry.CoordinateBoxScaling
 public import Carleman.Geometry.PhysicalBoxChart
 public import Carleman.Spatial.AffineBoxPullback
 public import Carleman.Spatial.AffineBoxNormScaling
+public import Carleman.Spatial.PhysicalBoxTraceBounds
+public import Carleman.Spatial.PhysicalBoxBoundaryCorrection
+public import Carleman.Spatial.PhysicalBoxH2Affine
+public import Carleman.Spatial.AffineCornerKernel
+public import Carleman.Spatial.PhysicalBoxBoundaryAffine
+public import Carleman.Spatial.BoundaryAffineLemma
