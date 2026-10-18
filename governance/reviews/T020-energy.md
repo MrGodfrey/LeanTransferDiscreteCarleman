@@ -26,3 +26,5 @@
 全部名称带 `Carleman.` 前缀。所有模块从根目标导入，显式声明均进入递归公理检查。不得把当前 Céa 条件式或未组装的常数阈值当作完整原空间误差定理。
 
 本机执行 `bash tools/lean_ci.sh` 实际成功：3437 build jobs，2973 个 Carleman 声明递归公理检查通过，仅正常基础公理。17 个新增显式声明的类型和公理报告已输出。此记录不冒充远端 CI；精确源码版本和实际 main CI 在读取成功记录后绑定。
+
+实际 main 提交 `010b37869003458f0e1436e3804e11c807f550e9` 的 [CI39133477530](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39133477530/attempts/1) lean、state-check、dashboard 三项全部成功。下载的声明及公理产物与本机逐字节相同，SHA256 `f07f0ed4bf81cdaee4e34a91dfdb4905d03ef1fc94510ad9d5195f636f90cef7`；17 个新显式声明均仅依赖正常基础公理。C039 绑定此版本记录为 BUILT/AUXILIARY，未作独立论文级验收或覆盖提升。

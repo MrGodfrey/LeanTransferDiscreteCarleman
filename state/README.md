@@ -34,7 +34,7 @@ BUILT/REVIEWED 必须记录 `lean_declarations`、完整 40 位 `declaration_ver
 
 `verification.latest_build` 和 `last_successful_build` 分开。构建对象包含 status（NOT_RUN/PASS/FAIL/RUNNING/CANCELLED）、checked_sha、ci_url、finished_at、lean_version、mathlib_commit、targets。PASS 需要实际版本和目标；安装失败可记录版本为 null。CI 的 source_head_sha 额外记录 PR HEAD，checked_sha 是实际检出的测试提交（PR 可能是合并测试提交）。监督者核实它与待合并内容的关系，不把两者当成同一个 SHA。
 
-同次 CI 结果在生成快照时覆盖 latest_build，只有 PASS 才更新上次成功记录，不改写源 JSON。Dot 后续将事实同步进台账；状态提交不需预知自身 SHA。生成器检查 SHA 形状不代表确认该提交存在，CI URL 非空也不代表该运行通过；必须访问真实证据。
+同次 CI 结果在生成快照时覆盖 latest_build，只有 PASS 才更新上次成功记录，不改写源 JSON。执行者后续将事实同步进台账；状态提交不需预知自身 SHA。生成器检查 SHA 形状不代表确认该提交存在，CI URL 非空也不代表该运行通过；必须访问真实证据。
 
 ## 展示和时间
 

@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T020",
-    "supervisor_checked_at": "2026-10-18T13:51:59.231766+00:00",
+    "supervisor_checked_at": "2026-10-18T13:57:32.617371+00:00",
     "next_action": "组合N3、原Euler图界和Cea得到空间能量/状态稳定性；统一阈值并接续完整逆权对偶L2误差",
     "blocker": null,
     "pause_reason": null,
@@ -20,27 +20,27 @@
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "7f17beb74fbc260084d425126cc719187b0caaac",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39132595824/attempts/1",
-      "finished_at": "2026-10-18T13:42:46.568523+00:00",
+      "checked_sha": "010b37869003458f0e1436e3804e11c807f550e9",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39133477530/attempts/1",
+      "finished_at": "2026-10-18T13:54:45.642983+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "7f17beb74fbc260084d425126cc719187b0caaac"
+      "source_head_sha": "010b37869003458f0e1436e3804e11c807f550e9"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "7f17beb74fbc260084d425126cc719187b0caaac",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39132595824/attempts/1",
-      "finished_at": "2026-10-18T13:42:46.568523+00:00",
+      "checked_sha": "010b37869003458f0e1436e3804e11c807f550e9",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39133477530/attempts/1",
+      "finished_at": "2026-10-18T13:54:45.642983+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "7f17beb74fbc260084d425126cc719187b0caaac"
+      "source_head_sha": "010b37869003458f0e1436e3804e11c807f550e9"
     }
   },
   "milestones": [
@@ -4029,7 +4029,7 @@
       "paper_ref": "Section 4, Lemma 4.1 energy proof ingredients",
       "milestone": "M4",
       "scope": "AUXILIARY",
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "extra_hypotheses": [],
       "paper_labels": [
         "eq:weighted-time-summation",
@@ -4055,15 +4055,26 @@
         "Carleman.WeakSobolevJet.nodal_approximation_bound",
         "Carleman.Section4.conforming_energy_le_parameterNorm"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "010b37869003458f0e1436e3804e11c807f550e9",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "010b37869003458f0e1436e3804e11c807f550e9",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39133477530/attempts/1",
+        "finished_at": "2026-10-18T13:54:45.642983+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "010b37869003458f0e1436e3804e11c807f550e9"
+      },
       "semantic_review": null,
       "blocker": null,
       "dependencies": [
         "C038",
         "C037"
       ],
-      "next_action": "从N3/N4推导真实空间能量与L²误差，接入已证Section3解及图估计。",
+      "next_action": "从原假设统一供应形式/乘法/小性阈值；组合N3和原Euler图界，接续真实对偶L²率。",
       "pr_url": null,
       "scope_notes": "原N4权导数给18C质量下界；真实Sobolev范数Cea与N3序列桥。完整两种空间误差率、统一小性阈值及原定理组装待完成。"
     }
@@ -4308,7 +4319,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39089488235/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/23",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39132012222/attempts/1",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39132595824/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39132595824/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39133477530/attempts/1"
     ]
   },
   "schedules": [
@@ -9966,8 +9978,8 @@
       "branch": "main",
       "base_commit": "bce9be563a26a373585eb6d7f705d6fc5e2becf2",
       "status": "RUNNING",
-      "pr_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/23",
-      "checkpoint_commit": "7f17beb74fbc260084d425126cc719187b0caaac",
+      "pr_url": null,
+      "checkpoint_commit": "010b37869003458f0e1436e3804e11c807f550e9",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.sum_variable_bilinear_increment",
@@ -10025,37 +10037,55 @@
       ],
       "build_evidence": {
         "status": "PASS",
-        "checked_sha": "7f17beb74fbc260084d425126cc719187b0caaac",
-        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39132595824/attempts/1",
-        "finished_at": "2026-10-18T13:42:46.568523+00:00",
+        "checked_sha": "010b37869003458f0e1436e3804e11c807f550e9",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39133477530/attempts/1",
+        "finished_at": "2026-10-18T13:54:45.642983+00:00",
         "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "targets": [
           "Carleman"
         ],
-        "source_head_sha": "7f17beb74fbc260084d425126cc719187b0caaac"
+        "source_head_sha": "010b37869003458f0e1436e3804e11c807f550e9"
       },
       "blocker": null,
       "attempts": [
         "核实PR22实际合并和main CI39089488235三项全部通过；本地快进至同一已合并基线",
         "按用户要求在当前本地任务接续，保留固定工具链与唯一任务台账",
-        "本机完整构建3431 jobs和2940声明递归公理审计PASS；PR CI39132012222三项PASS；按用户指示切换main直接push，PR23自动合并"
+        "本机完整构建3431 jobs和2940声明递归公理审计PASS；PR CI39132012222三项PASS；按用户指示切换main直接push，PR23自动合并",
+        "main 010b378：六个新增模块17显式声明；本机及main CI39133477530完整构建/公理审计PASS，远端axioms.txt与本地逐字节相同；未提升原文覆盖。"
       ],
       "next_action": "组合N3、原Euler图界和Cea得到空间能量/状态稳定性；统一阈值并接续完整逆权对偶L2误差",
       "integration_mode": "direct-main",
       "ci_relationship": {
-        "proof_head": "3f85627f55d297e62ec124f6d9d22cf52ac85833",
-        "checked_test_sha": "3832dbcae75558861ee911c0151f1d9c5a44697b",
-        "base_sha": "bce9be563a26a373585eb6d7f705d6fc5e2becf2",
-        "proof_and_test_tree": "406b54232165cf21e299d8681c7fde3cc62ee018",
-        "test_parents": [
-          "bce9be563a26a373585eb6d7f705d6fc5e2becf2",
-          "3f85627f55d297e62ec124f6d9d22cf52ac85833"
-        ],
-        "run_id": 39132012222,
-        "recursive_axiom_audit": 2940,
-        "actual_build_jobs": 3431
-      }
+        "proof_head": "010b37869003458f0e1436e3804e11c807f550e9",
+        "checked_sha": "010b37869003458f0e1436e3804e11c807f550e9",
+        "integration_mode": "direct-main",
+        "run_id": 39133477530,
+        "all_jobs": "lean, state-check, dashboard PASS",
+        "actual_build_jobs": 3437,
+        "recursive_axiom_audit": 2973,
+        "explicit_energy_declarations": 17,
+        "declaration_artifact_sha256": "f07f0ed4bf81cdaee4e34a91dfdb4905d03ef1fc94510ad9d5195f636f90cef7",
+        "local_and_remote_audit_identical": true
+      },
+      "historical_pr_urls": [
+        "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/pull/23"
+      ],
+      "prior_ci_relationships": [
+        {
+          "proof_head": "3f85627f55d297e62ec124f6d9d22cf52ac85833",
+          "checked_test_sha": "3832dbcae75558861ee911c0151f1d9c5a44697b",
+          "base_sha": "bce9be563a26a373585eb6d7f705d6fc5e2becf2",
+          "proof_and_test_tree": "406b54232165cf21e299d8681c7fde3cc62ee018",
+          "test_parents": [
+            "bce9be563a26a373585eb6d7f705d6fc5e2becf2",
+            "3f85627f55d297e62ec124f6d9d22cf52ac85833"
+          ],
+          "run_id": 39132012222,
+          "recursive_axiom_audit": 2940,
+          "actual_build_jobs": 3431
+        }
+      ]
     }
   ],
   "private_maintenance": {
