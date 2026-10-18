@@ -113,3 +113,5 @@
 - T058 / C074：完整P1节点表示与原四类权统一投影10声明独立验收PASS，4900项递归审计及同SHA CI。 固定证明 `9b4962ef9d03bb7bce6cc906a508857d57398c8c`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/304487b6765fd8280e8c30b8d22dc11fdc4c9d9f/governance/reviews/T058-local-acceptance.md)。原文12/26，T059继续经典导数控制下的真实单纯形节点插值误差。
 
 - T059 / C075：经典节点误差13声明独立验收PASS，4913项递归审计及同SHA CI。 固定证明 `daf0c9e455f04bf5d7eff4e4ecde1729e01f6a92`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/cdae6b6a72bc431a4d2e3a6c233572e4bd19c624/governance/reviews/T059-local-acceptance.md)。原文12/26，T060继续闭单元内在导数与真实权乘仿射插值误差。
+
+- T060 / C076：闭单元实际乘积误差13声明独立验收PASS，4929项递归审计及同SHA CI。 固定证明 `021696bbeb403adab3172f24294db01af5a2ab4e`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a189f27900919fe80f61361a37938ab0dd149a2d/governance/reviews/T060-local-acceptance.md)。原文12/26，T061继续实际允许权平方的域内导数与乘积节点误差。
