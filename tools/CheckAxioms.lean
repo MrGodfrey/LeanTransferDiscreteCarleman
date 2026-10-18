@@ -3755,6 +3755,27 @@ set_option pp.maxSteps 1000000
 #check @Carleman.allowed_squared_residual_mem_dirichlet
 #print axioms Carleman.allowed_squared_residual_mem_dirichlet
 
+#check @Carleman.weakGradientPairing_coordinates
+#print axioms Carleman.weakGradientPairing_coordinates
+#check @Carleman.weakFirstProduct_component
+#print axioms Carleman.weakFirstProduct_component
+#check @Carleman.weak_product_coordinate_test
+#print axioms Carleman.weak_product_coordinate_test
+#check @Carleman.weakGradientPairing_product_test
+#print axioms Carleman.weakGradientPairing_product_test
+#check @Carleman.IsWeakNegativeLaplacian.mul
+#print axioms Carleman.IsWeakNegativeLaplacian.mul
+#check @Carleman.smoothLaplacianCorrection
+#print axioms Carleman.smoothLaplacianCorrection
+#check @Carleman.boundedSmooth_weakLaplacian_product
+#print axioms Carleman.boundedSmooth_weakLaplacian_product
+#check @Carleman.boundedSmooth_dirichlet_operator_product
+#print axioms Carleman.boundedSmooth_dirichlet_operator_product
+#check @Carleman.boundedSmooth_map_mem_dirichlet_domain
+#print axioms Carleman.boundedSmooth_map_mem_dirichlet_domain
+#check @Carleman.allowed_weight_mem_dirichlet_domain
+#print axioms Carleman.allowed_weight_mem_dirichlet_domain
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

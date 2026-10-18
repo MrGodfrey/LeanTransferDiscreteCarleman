@@ -1,0 +1,13 @@
+# T068：原Dirichlet算子乘积与允许权域保持
+
+三模块10显式声明，AUXILIARY。完整弱负Laplacian测试身份与已验收的H¹₀乘法保持，给实际原form-operator域上的乘积公式及允许权保持；不预设H²椭圆正则，不将域缩小为H²∩H¹₀，原文仍12/26。
+
+weakGradientPairing_coordinates将实际Euclidean一阶字段配对展开为全部坐标配对，每个Sym一阶坐标恰好一次。weakFirstProduct_component识别实际乘积jet的每个坐标。weak_product_coordinate_test对真实光滑紧支测试使用完整分布弱导数身份；随后对w和dw_i各使用一次乘积测试，得到
+pair(∇(wu),∇φ)=pair(∇u,∇(wφ))−Σ_i〈2 dw_i D_i u+ddw_i u,φ〉。
+dw_i、ddw_i明确要求等于真实一阶和同方向二阶导数；通用引理的这些联系不是任意给定字段。
+
+IsWeakNegativeLaplacian.mul因此在全部原SpatialTest上证明−Δ(wu)=w f−Σ_i(2dw_iD_i u+ddw_i u)，没有H²状态假设。boundedSmooth_weakLaplacian_product内部由真实wordDerivative构造有界dw_i及ddw_i，并从实际H¹₀闭包保持取得同一个乘积jet的边界资格。
+
+boundedSmooth_dirichlet_operator_product调用原dirichlet_operator_graph_iff，在完整实际Dirichlet form-operator域中产生状态z及精确算子等式。boundedSmooth_map_mem_dirichlet_domain先将任意原域状态转为真实H¹₀弱jet，再应用乘积及同一图刻画，故结论覆盖全部原域。allowed_weight_mem_dirichlet_domain由原SmoothOnClosure及有界开域内部供应实际q^τexp(ηqρ)的有界光滑性，覆盖所有TimeWeight、τ、时刻、两种符号，也覆盖相应倒数权。
+
+这里只清偿m=1的算子域保持及实际乘积身份；没有声明固定乘子的界独立于权参数。原统一交换子估计仍需从相对导数界另行推出，A1的H²正则及完整Appendix A仍待。

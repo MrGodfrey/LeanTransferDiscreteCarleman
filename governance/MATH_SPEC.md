@@ -976,3 +976,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T067：原H¹₀允许权保持性
 
 见 [T067规格](analysis/T067-dirichlet-weights.md)。四模块15声明从真实一阶弱乘积与连续H¹算子、光滑测试乘积及闭包不变性证明全部H¹₀状态的允许权保持；原SmoothOnClosure无需域外延拓。平方权残差的实际H¹ jet由其值身份获得H¹₀资格。仅完成m=1能量空间保持部分，未宣称算子域/交换子或完整A2；一般H²逼近仍待，原文12/26。
+
+## T068：原Dirichlet算子乘积与允许权域保持
+
+见 [T068规格](analysis/T068-dirichlet-operator.md)。三模块10声明在完整弱测试上得到真实负Laplacian乘积公式；内部真实一阶、二阶导数乘子及H¹₀闭包保持，经原form-operator图刻画推出全部实际算子域的允许权保持。无H²正则前提，不缩小原域；统一交换子及A1正则仍待，AUXILIARY，原文12/26。

@@ -471,3 +471,6 @@ public import Carleman.Spatial.FirstGradientAssembly
 public import Carleman.Spatial.FirstWeakProduct
 public import Carleman.Spatial.DirichletWeakProduct
 public import Carleman.Weights.DirichletAllowedWeight
+public import Carleman.Spatial.WeakProductComponents
+public import Carleman.Spatial.WeakLaplacianProduct
+public import Carleman.Spatial.DirichletOperatorProduct
