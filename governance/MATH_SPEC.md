@@ -832,3 +832,9 @@ Dirichlet空间定义为这些紧支光滑jet的线性张成在真实H1图范数
 三模块24声明，AUXILIARY，不提升原文覆盖。真实centeredDilation及其逆映射构造原函数的内缩；开凸域中心与closure S的严格凸组合进入S，紧支集正向像给精确tsupport及正卷积缓冲。实际Fréchet链式导数与Lipschitz常数均证明。
 
 全空间紧支Lipschitz函数的真实fderiv由紧支indicator控制进入L2，Rademacher和已证完整积分分部给真实WeakSobolevJet。零边界实际节点函数据此构造内缩H1 jet，value准确恢复同一内缩函数。尚未证明r→1的H1收敛或光滑卷积的H1收敛，故节点H01成员仍待；缓冲可依赖函数/中心/r，不是统一网格常数。见`analysis/T042-contracted-nodal.md`。
+
+## T043：实际节点内缩的强H1收敛
+
+四模块18声明，AUXILIARY，不提升原文覆盖。实际Lp平方范数积分和支配收敛给任意normed目标的强L2极限，共同紧支及统一函数/Lipschitz界给实际紧支Lipschitz jet的完整H1图拓扑收敛。
+
+具体r_n=(n+1)/(n+2)内缩，逆像点趋于x；在实际单元内部导数为固定CLM，closure S外局部为零，有限零测骨架外真实fderiv收敛。支撑共同位于紧closure S，Lipschitz常数≤2C，故内部供应全部条件，实际nodalContractedSobolevJet趋于原nodalGlobalSobolevJet。C可依赖网格/节点值，仅用于极限。光滑卷积H1极限和最终H01成员仍待。见`analysis/T043-nodal-contraction-limit.md`。

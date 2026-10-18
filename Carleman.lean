@@ -357,3 +357,8 @@ public import Carleman.Spatial.DirichletDistribution
 public import Carleman.Spatial.ConvexSupportContraction
 public import Carleman.Spatial.CompactLipschitzSobolev
 public import Carleman.Spatial.ContractedNodalSobolev
+
+public import Carleman.Spatial.LpDominatedLimit
+public import Carleman.Spatial.CompactLipschitzLimit
+public import Carleman.Spatial.ContractionSequence
+public import Carleman.Spatial.NodalContractionLimit

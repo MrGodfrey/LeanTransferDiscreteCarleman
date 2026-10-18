@@ -3026,6 +3026,43 @@ set_option pp.maxSteps 1000000
 #check @Carleman.SimplicialPartition.nodalContractedSobolevJet_value_ae
 #print axioms Carleman.SimplicialPartition.nodalContractedSobolevJet_value_ae
 
+#check @Carleman.lp_two_norm_sub_sq_integral
+#print axioms Carleman.lp_two_norm_sub_sq_integral
+#check @Carleman.lp_two_tendsto_of_dominated_norm_sq
+#print axioms Carleman.lp_two_tendsto_of_dominated_norm_sq
+#check @Carleman.lp_two_tendsto_of_bounded_support
+#print axioms Carleman.lp_two_tendsto_of_bounded_support
+#check @Carleman.firstOrderFields_tendsto
+#print axioms Carleman.firstOrderFields_tendsto
+#check @Carleman.compactLipschitzSobolevJet_tendsto
+#print axioms Carleman.compactLipschitzSobolevJet_tendsto
+#check @Carleman.inwardRatio
+#print axioms Carleman.inwardRatio
+#check @Carleman.inwardRatio_pos
+#print axioms Carleman.inwardRatio_pos
+#check @Carleman.inwardRatio_lt_one
+#print axioms Carleman.inwardRatio_lt_one
+#check @Carleman.inwardRatio_half_le
+#print axioms Carleman.inwardRatio_half_le
+#check @Carleman.inwardRatio_inv_le_two
+#print axioms Carleman.inwardRatio_inv_le_two
+#check @Carleman.inwardRatio_tendsto
+#print axioms Carleman.inwardRatio_tendsto
+#check @Carleman.inverse_inward_tendsto
+#print axioms Carleman.inverse_inward_tendsto
+#check @Carleman.inwardFunction_tendsto
+#print axioms Carleman.inwardFunction_tendsto
+#check @Carleman.inward_fderiv_tendsto_of_local_affine
+#print axioms Carleman.inward_fderiv_tendsto_of_local_affine
+#check @Carleman.SimplicialPartition.nodal_inward_fderiv_tendsto_ae
+#print axioms Carleman.SimplicialPartition.nodal_inward_fderiv_tendsto_ae
+#check @Carleman.SimplicialPartition.closure_isCompact
+#print axioms Carleman.SimplicialPartition.closure_isCompact
+#check @Carleman.SimplicialPartition.nodalCompactJet_eq
+#print axioms Carleman.SimplicialPartition.nodalCompactJet_eq
+#check @Carleman.SimplicialPartition.nodal_inward_tendsto_H1
+#print axioms Carleman.SimplicialPartition.nodal_inward_tendsto_H1
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
