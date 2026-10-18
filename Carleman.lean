@@ -362,3 +362,9 @@ public import Carleman.Spatial.LpDominatedLimit
 public import Carleman.Spatial.CompactLipschitzLimit
 public import Carleman.Spatial.ContractionSequence
 public import Carleman.Spatial.NodalContractionLimit
+
+public import Carleman.Spatial.CompactConvolution
+public import Carleman.Spatial.CompactConvolutionDerivative
+public import Carleman.Spatial.CompactMollificationLimit
+public import Carleman.Spatial.SobolevRestriction
+public import Carleman.Spatial.NodalDirichletMembership

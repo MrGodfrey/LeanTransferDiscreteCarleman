@@ -3063,6 +3063,67 @@ set_option pp.maxSteps 1000000
 #check @Carleman.SimplicialPartition.nodal_inward_tendsto_H1
 #print axioms Carleman.SimplicialPartition.nodal_inward_tendsto_H1
 
+#check @Carleman.SpatialTest.convolution_norm_bound
+#print axioms Carleman.SpatialTest.convolution_norm_bound
+#check @Carleman.SpatialTest.convolution_lipschitz
+#print axioms Carleman.SpatialTest.convolution_lipschitz
+#check @Carleman.SpatialTest.convolution_tsupport_subset_thickening
+#print axioms Carleman.SpatialTest.convolution_tsupport_subset_thickening
+#check @Carleman.SpatialTest.convolution_smooth
+#print axioms Carleman.SpatialTest.convolution_smooth
+#check @Carleman.SpatialTest.convolution_compact
+#print axioms Carleman.SpatialTest.convolution_compact
+#check @Carleman.compactLipschitz_weakDerivative
+#print axioms Carleman.compactLipschitz_weakDerivative
+#check @Carleman.compactLipschitz_convolution_fderiv
+#print axioms Carleman.compactLipschitz_convolution_fderiv
+#check @Carleman.shrinkingBump_radius_tendsto
+#print axioms Carleman.shrinkingBump_radius_tendsto
+#check @Carleman.shrinkingBump_radius_le_two
+#print axioms Carleman.shrinkingBump_radius_le_two
+#check @Carleman.compactMollification
+#print axioms Carleman.compactMollification
+#check @Carleman.compactMollification_smooth
+#print axioms Carleman.compactMollification_smooth
+#check @Carleman.compactMollification_compact
+#print axioms Carleman.compactMollification_compact
+#check @Carleman.compactMollification_lipschitz
+#print axioms Carleman.compactMollification_lipschitz
+#check @Carleman.compactMollification_support
+#print axioms Carleman.compactMollification_support
+#check @Carleman.compactMollification_tendsto
+#print axioms Carleman.compactMollification_tendsto
+#check @Carleman.compactMollification_fderiv_tendsto
+#print axioms Carleman.compactMollification_fderiv_tendsto
+#check @Carleman.compactMollification_tendsto_H1
+#print axioms Carleman.compactMollification_tendsto_H1
+#check @Carleman.SpatialTest.toUniv
+#print axioms Carleman.SpatialTest.toUniv
+#check @Carleman.IsWeakSpatialDerivative.restrictDomain
+#print axioms Carleman.IsWeakSpatialDerivative.restrictDomain
+#check @Carleman.derivativeComponent_restrict
+#print axioms Carleman.derivativeComponent_restrict
+#check @Carleman.WeakSobolevJet.restrictDomain
+#print axioms Carleman.WeakSobolevJet.restrictDomain
+#check @Carleman.WeakSobolevJet.restrictDomain_value
+#print axioms Carleman.WeakSobolevJet.restrictDomain_value
+#check @Carleman.WeakSobolevJet.restrictDomain_tendsto
+#print axioms Carleman.WeakSobolevJet.restrictDomain_tendsto
+#check @Carleman.restrictedJet_eq_test
+#print axioms Carleman.restrictedJet_eq_test
+#check @Carleman.compactLipschitzSobolevJet_value_ae
+#print axioms Carleman.compactLipschitzSobolevJet_value_ae
+#check @Carleman.compactLipschitz_mem_dirichletJetSpace
+#print axioms Carleman.compactLipschitz_mem_dirichletJetSpace
+#check @Carleman.SimplicialPartition.nodal_inward_mem_dirichletJetSpace
+#print axioms Carleman.SimplicialPartition.nodal_inward_mem_dirichletJetSpace
+#check @Carleman.SimplicialPartition.nodal_global_restrict_mem_dirichletJetSpace
+#print axioms Carleman.SimplicialPartition.nodal_global_restrict_mem_dirichletJetSpace
+#check @Carleman.SimplicialPartition.nodalLp_mem_dirichletSubspace
+#print axioms Carleman.SimplicialPartition.nodalLp_mem_dirichletSubspace
+#check @Carleman.SimplicialPartition.nodalLp_mem_dirichletConformingSpace
+#print axioms Carleman.SimplicialPartition.nodalLp_mem_dirichletConformingSpace
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

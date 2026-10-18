@@ -838,3 +838,9 @@ Dirichlet空间定义为这些紧支光滑jet的线性张成在真实H1图范数
 四模块18声明，AUXILIARY，不提升原文覆盖。实际Lp平方范数积分和支配收敛给任意normed目标的强L2极限，共同紧支及统一函数/Lipschitz界给实际紧支Lipschitz jet的完整H1图拓扑收敛。
 
 具体r_n=(n+1)/(n+2)内缩，逆像点趋于x；在实际单元内部导数为固定CLM，closure S外局部为零，有限零测骨架外真实fderiv收敛。支撑共同位于紧closure S，Lipschitz常数≤2C，故内部供应全部条件，实际nodalContractedSobolevJet趋于原nodalGlobalSobolevJet。C可依赖网格/节点值，仅用于极限。光滑卷积H1极限和最终H01成员仍待。见`analysis/T043-nodal-contraction-limit.md`。
+
+## T044：真实光滑逼近与节点H01成员
+
+五模块30声明，AUXILIARY，不提升原文覆盖。实际非负单位质量核卷积保持全局界/Lipschitz常数且有准确厚化支撑；完整弱积分分部证明实际fderiv(κ⋆f)=κ⋆fderiv f。Lebesgue微分和共同紧支界给真实光滑卷积的完整H1强极限。
+
+真实Lp字段逐项限制保留全部弱导数身份及H1图拓扑收敛。紧含于开S的Lipschitz函数以实际SpatialTest逼近而进入原Dirichlet闭包，再由节点内缩H1极限和闭性，证明实际nodalLp属于H01及实际一致P1空间；最终单独处理空域，不预设零边界等于H01。公开几何为开凸域、FaceMatching/BoundaryFitted及边界顶点值零。H2点值/正则性、统一加权误差/投影和连续热CE仍待。见`analysis/T044-nodal-dirichlet.md`。
