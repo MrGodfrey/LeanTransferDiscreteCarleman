@@ -480,3 +480,5 @@ public import Carleman.Weights.DirichletCommutator
 public import Carleman.Spatial.WeakWeightedForm
 public import Carleman.Spatial.DirichletScalarForm
 public import Carleman.Weights.DirichletAllowedForm
+public import Carleman.Spatial.DirichletDomainOrders
+public import Carleman.Weights.DirichletAllowedData

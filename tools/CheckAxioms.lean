@@ -3822,6 +3822,13 @@ set_option pp.maxSteps 1000000
 #check @Carleman.dirichlet_allowed_form_upper
 #print axioms Carleman.dirichlet_allowed_form_upper
 
+#check @Carleman.dirichlet_domain_lower_sum
+#print axioms Carleman.dirichlet_domain_lower_sum
+#check @Carleman.dirichlet_allowed_data_uniform
+#print axioms Carleman.dirichlet_allowed_data_uniform
+#check @Carleman.dirichlet_allowed_family_uniform
+#print axioms Carleman.dirichlet_allowed_family_uniform
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

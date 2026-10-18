@@ -988,3 +988,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T070：原Dirichlet形式的A3加权估计
 
 见 [T070规格](analysis/T070-dirichlet-form.md)。三模块10声明从真实平方权弱梯度恒等式、Cauchy–Schwarz及Young得到原N范数上下界；原scalarForm经同一H¹₀能量实现准确识别。原SmoothOnClosure内部给统一导数系数，全部原状态的权保持资格已清偿；c=1/2，上界常数1，下界C先于全部权参数。A1的H²正则及完整Appendix A仍待，AUXILIARY，原文12/26。
+
+## T071：原Dirichlet允许权接口组装
+
+见 [T071规格](analysis/T071-dirichlet-data.md)。两模块3声明准确识别H² jet低阶字段与原H¹域jet，内部供应原AllowedWeightData及双符号AllowedFamily所有A2/A3字段。统一常数先于全部权参数；原A1的H²域嵌入明确保留为前提，未新增闭包公理或宣称正则性已证。AUXILIARY，原文12/26。

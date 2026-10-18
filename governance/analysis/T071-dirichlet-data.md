@@ -1,0 +1,9 @@
+# T071：接入原Dirichlet AllowedWeightData与AllowedFamily
+
+两模块3声明，AUXILIARY。把已证明的m=1 Dirichlet空间/域权保持、实际统一交换子和A3加权形式，接入原transfer所使用的AllowedWeightData和Section3.AllowedFamily。原文12/26；H²域嵌入仍显式保留为独立A1前提，未宣称完成椭圆正则性。
+
+dirichlet_domain_lower_sum在给定原域嵌入H²后，通过实际H² jet的截断、值唯一性及零阶字段精确范数身份，证明原A2的Fin 2阶数和恰为q²||z||+q||∇z||。这里的梯度是先前原完整域的canonical H¹ jet的梯度，没有选择另一组导数字段。
+
+dirichlet_allowed_data_uniform的常数C=max(1,C_lower)、Ccomm>0先于H²嵌入、TimeWeight、τ、η及所有状态。其form/domain/inverse三个保持字段由已验收结论内部供应；coercive由已证下界和增大余项常数得到；commutator由实际算子估计及阶数恒等式得到。ξ的负profile与负η精确识别，依赖型资格仅作合法证明传输。
+
+dirichlet_allowed_family_uniform同时覆盖signed两种profile和任意有限τStar，data直接来自上述全参数结论，上界使用实际原形式和反号反指数的倒数。统一C≥1合法包住已证上界常数1。没有把A2/A3、投影或控制结论重新作为输入；唯一保留的空间分析义务是原A1的H²域嵌入，定量椭圆界和具体几何域的该嵌入仍需另证。
