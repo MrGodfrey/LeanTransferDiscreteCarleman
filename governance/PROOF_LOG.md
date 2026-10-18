@@ -125,3 +125,5 @@
 - T064 / C080：真实弱残差和乘子范数9声明独立验收PASS，4974项递归审计及同SHA CI。 固定证明 `7d5b98f23e305b99c69543c953bb545fefc42cb7`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c4c1b2b68d1a4056a82362c5d20dada06493fdf4/governance/reviews/T064-local-acceptance.md)。原文12/26，T065继续原尺度残差与节点超逼近。
 
 - T065 / C081：原尺度残差和节点超逼近7声明独立验收PASS，4981项递归审计及同SHA CI。 固定证明 `9c354128a5ebd5e3eeb36f3e15e5fa9ae4a27158`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/797e405259136a025a3aa5324412ad5c73588f9a/governance/reviews/T065-local-acceptance.md)。原文12/26，T066继续原完整P1投影测试超逼近。
+
+- T066 / C082：原完整P1投影测试超逼近6声明独立验收PASS，4987项递归审计及同SHA CI。 固定证明 `1f04be4f79db9d40ac1af37271eb8e9dc58639a3`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5d231f554395acfd99fe3373239f8b3add96e8a8/governance/reviews/T066-local-acceptance.md)。原文12/26，T067继续原H¹₀允许权保持性。
