@@ -724,3 +724,13 @@ C008/P009 是完整 Lemma4.1 候选，精确 main CI 核实后登记 BUILT/PAPER
 `physical_delta_conditions` 直接从 qb≥2、16qb≤S≤qb T/(4dt) 给出δ>0、δ≤1/16、qmax=S、截断宽度和dt≤a/4。`physical_transition_weight` 对真实差商非零节点证明原 `q_i≥S/sqrt(1+9π²)`，`physical_weight_endpoint_decay` 对任意ρ≤−ρstar证明原端点指数 `exp(−(2ρstar/sqrt(1+9π²))S)`。中央 q≤2qb 也已从真实正弦函数推出。
 
 后续须把这些点态和未加权结果接到实际空间加权 seminorm、具体势载荷与 Theorem 2.1，选择统一 Cb 并完成潜势吸收、观测上界及指数余项吸收。不能把这些尚待条件隐藏在一个命名为原观测定理的接口中。
+
+## T028：完整原权条件和实际空间加权预算
+
+本阶段仍为 AUXILIARY，不计原 Theorem 7.2 完成。`physicalBaseAmplitude` 严格采用原 `Cb(qc+T⁻¹+M^(2/3))`，证明 qb≥Cb qc、qb T≥Cb、qb³≥Cb³M²；M=0 也包含。`physical_qclass_uniform` 对任意固定 Cmin 选择 Cb=max(2,max(2π/β,Cmin))，量词先于 T/M/网格/S。实际返回原正弦权、qmax=S 和完整 `PhysicalQClass`：全局光滑代表、qc 下界、实际 deriv/deriv² 的 β/β² 界、0/1/2 阶端点匹配，另接既有一阶 TimeWeightRegularity。可把 Cmin 留作后续潜势吸收预算，不需要改变 q 的选择。
+
+`PhysicalSpatialWeights` 对真实 Lp 乘法 seminorm 给出 exp(-ρstar q) 上包络和 exp(-ρ.bound q) 下包络；原过渡节点得到 exp(-c_end S) 平方界，中央节点得到 exp(-4ρ.bound qb) 平方下界。`PhysicalExponentialBudgets` 证明 q³ exp(-2ρstar q)≤6/ρstar³ 及 S exp(-cS)≤(2/c)exp(-cS/2)，并作用到真实空间观测范数。
+
+`PhysicalWeightedEnergy` 对真实 N+1 伴随轨迹及具体 χ/r，显式保留重构 R 的原始未加权质量比较。上界输入 ‖Rx‖²≤Cmass‖x‖²，输出真实加权余项积分，随后吸收 S 得 `(10 Cmass/(c_end qb T))exp(4MT)exp(-c_end S/2)‖pN‖²`；下界输入 ‖x‖²≤Cmass‖Rx‖²，输出中央初值控制整个真实周期加权 q³ 能量。χ=1 的中央节点、过渡外 r=0、原伴随能量和离散窗口测度均在内部调用。没有把目标观测不等式、空间指数包络或余项指数界作为输入。
+
+尚待具体重构质量界实例、势载荷与右逆的加权界、原 Carleman 供应、潜势吸收和统一最终组装；连续热 CE、具体 P1/FD 也未被本阶段证明。独立验收应核对全部22项声明及上述范围，不提升 P014。

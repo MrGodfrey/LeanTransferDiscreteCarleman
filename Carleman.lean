@@ -275,3 +275,9 @@ public import Carleman.Control.PhysicalWindow
 public import Carleman.Control.PhysicalWeightLocalization
 public import Carleman.Control.PhysicalCutoffEnergy
 public import Carleman.Control.PhysicalParameterChoice
+
+public import Carleman.Control.PhysicalBaseAmplitude
+public import Carleman.Control.PhysicalQClass
+public import Carleman.Control.PhysicalSpatialWeights
+public import Carleman.Control.PhysicalExponentialBudgets
+public import Carleman.Control.PhysicalWeightedEnergy

@@ -2269,6 +2269,51 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Physical.physical_weight_endpoint_decay
 #print axioms Carleman.Physical.physical_weight_endpoint_decay
 
+#check @Carleman.Physical.physicalBaseAmplitude
+#print axioms Carleman.Physical.physicalBaseAmplitude
+#check @Carleman.Physical.physicalBaseAmplitude_bounds
+#print axioms Carleman.Physical.physicalBaseAmplitude_bounds
+#check @Carleman.Physical.physicalBaseAmplitude_ge_two
+#print axioms Carleman.Physical.physicalBaseAmplitude_ge_two
+#check @Carleman.Physical.physicalBaseAmplitude_derivative_budgets
+#print axioms Carleman.Physical.physicalBaseAmplitude_derivative_budgets
+#check @Carleman.Physical.physicalWeightSecondDerivative_periodic
+#print axioms Carleman.Physical.physicalWeightSecondDerivative_periodic
+#check @Carleman.Physical.PhysicalQClass
+#print axioms Carleman.Physical.PhysicalQClass
+#check @Carleman.Physical.PhysicalQClass.toRegularity
+#print axioms Carleman.Physical.PhysicalQClass.toRegularity
+#check @Carleman.Physical.physicalWeight_lower_qc
+#print axioms Carleman.Physical.physicalWeight_lower_qc
+#check @Carleman.Physical.physicalTimeWeight_qclass
+#print axioms Carleman.Physical.physicalTimeWeight_qclass
+#check @Carleman.Physical.physical_qclass_uniform
+#print axioms Carleman.Physical.physical_qclass_uniform
+#check @Carleman.Physical.spatial_weight_upper
+#print axioms Carleman.Physical.spatial_weight_upper
+#check @Carleman.Physical.spatial_weight_lower
+#print axioms Carleman.Physical.spatial_weight_lower
+#check @Carleman.Physical.spatial_weight_upper_sq
+#print axioms Carleman.Physical.spatial_weight_upper_sq
+#check @Carleman.Physical.spatial_weight_lower_sq
+#print axioms Carleman.Physical.spatial_weight_lower_sq
+#check @Carleman.Physical.physical_spatial_endpoint
+#print axioms Carleman.Physical.physical_spatial_endpoint
+#check @Carleman.Physical.physical_spatial_middle
+#print axioms Carleman.Physical.physical_spatial_middle
+#check @Carleman.Physical.cubic_exponential_bound
+#print axioms Carleman.Physical.cubic_exponential_bound
+#check @Carleman.Physical.linear_exponential_decay
+#print axioms Carleman.Physical.linear_exponential_decay
+#check @Carleman.Physical.spatial_observation_weight_bound
+#print axioms Carleman.Physical.spatial_observation_weight_bound
+#check @Carleman.Physical.physical_weighted_remainder_energy
+#print axioms Carleman.Physical.physical_weighted_remainder_energy
+#check @Carleman.Physical.physical_weighted_remainder_decay
+#print axioms Carleman.Physical.physical_weighted_remainder_decay
+#check @Carleman.Physical.physical_weighted_initial_recovery
+#print axioms Carleman.Physical.physical_weighted_initial_recovery
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

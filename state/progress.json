@@ -15,7 +15,7 @@
     "next_action": "由原qb公式统一选Cb，补齐完整qclass并构造实际空间加权预算；随后连接势载荷、CE及最终吸收。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T16:05:40.626324+00:00"
+    "last_activity_at": "2026-10-18T16:11:00.117785+00:00"
   },
   "verification": {
     "latest_build": {
@@ -5071,12 +5071,35 @@
       "paper_ref": "Theorem7.2 proof, Steps1–3 weighted foundations",
       "milestone": "M6b",
       "extra_hypotheses": [],
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:physicalO"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.physicalBaseAmplitude",
+        "Carleman.Physical.physicalBaseAmplitude_bounds",
+        "Carleman.Physical.physicalBaseAmplitude_ge_two",
+        "Carleman.Physical.physicalBaseAmplitude_derivative_budgets",
+        "Carleman.Physical.physicalWeightSecondDerivative_periodic",
+        "Carleman.Physical.PhysicalQClass",
+        "Carleman.Physical.PhysicalQClass.toRegularity",
+        "Carleman.Physical.physicalWeight_lower_qc",
+        "Carleman.Physical.physicalTimeWeight_qclass",
+        "Carleman.Physical.physical_qclass_uniform",
+        "Carleman.Physical.spatial_weight_upper",
+        "Carleman.Physical.spatial_weight_lower",
+        "Carleman.Physical.spatial_weight_upper_sq",
+        "Carleman.Physical.spatial_weight_lower_sq",
+        "Carleman.Physical.physical_spatial_endpoint",
+        "Carleman.Physical.physical_spatial_middle",
+        "Carleman.Physical.cubic_exponential_bound",
+        "Carleman.Physical.linear_exponential_decay",
+        "Carleman.Physical.spatial_observation_weight_bound",
+        "Carleman.Physical.physical_weighted_remainder_energy",
+        "Carleman.Physical.physical_weighted_remainder_decay",
+        "Carleman.Physical.physical_weighted_initial_recovery"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -5085,7 +5108,7 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "统一Cb及完整两阶qclass、真实Lp空间权与端点/中部预算；完整观测仍待CE供应与吸收。"
+      "scope_notes": "原qb公式和统一Cb、真实二阶qclass全部条件、实际Lp权端点/中部比较、真实伴随加权余项与初值恢复已接通；显式重构质量界保留，具体势载荷及CE供应与吸收仍待，不计原Theorem7.2完成。"
     }
   ],
   "events": [
@@ -12086,14 +12109,50 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.physicalBaseAmplitude",
+        "Carleman.Physical.physicalBaseAmplitude_bounds",
+        "Carleman.Physical.physicalBaseAmplitude_ge_two",
+        "Carleman.Physical.physicalBaseAmplitude_derivative_budgets",
+        "Carleman.Physical.physicalWeightSecondDerivative_periodic",
+        "Carleman.Physical.PhysicalQClass",
+        "Carleman.Physical.PhysicalQClass.toRegularity",
+        "Carleman.Physical.physicalWeight_lower_qc",
+        "Carleman.Physical.physicalTimeWeight_qclass",
+        "Carleman.Physical.physical_qclass_uniform",
+        "Carleman.Physical.spatial_weight_upper",
+        "Carleman.Physical.spatial_weight_lower",
+        "Carleman.Physical.spatial_weight_upper_sq",
+        "Carleman.Physical.spatial_weight_lower_sq",
+        "Carleman.Physical.physical_spatial_endpoint",
+        "Carleman.Physical.physical_spatial_middle",
+        "Carleman.Physical.cubic_exponential_bound",
+        "Carleman.Physical.linear_exponential_decay",
+        "Carleman.Physical.spatial_observation_weight_bound",
+        "Carleman.Physical.physical_weighted_remainder_energy",
+        "Carleman.Physical.physical_weighted_remainder_decay",
+        "Carleman.Physical.physical_weighted_initial_recovery"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "实际空间Lp权端点/中部比较已定向编译；正在从原qb公式证明统一参数选择。"
+        "实际空间Lp权端点/中部比较已定向编译；正在从原qb公式证明统一参数选择。",
+        "五模块22声明完成原qb公式、先于T/M/网格的任意下界Cb选择、真实完整qclass、实际Lp加权比较与真实轨迹能量；指数多项式吸收给网格无关余项常数。"
       ],
       "next_action": "由原qb公式统一选Cb，补齐完整qclass并构造实际空间加权预算；随后连接势载荷、CE及最终吸收。",
-      "integration_mode": "direct-main"
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "finished_at": "2026-10-18T16:11:37.544847+00:00",
+        "targets": [
+          "Carleman"
+        ],
+        "actual_build_jobs": 3495,
+        "recursive_axiom_audit": 3482,
+        "new_explicit_declarations": 22,
+        "declaration_artifact_sha256": "ef0d1e56ad51fb5508875940d00b094f6ec349c24d6abaca6cf95bebe86bd123",
+        "independent_review": "pending fixed-SHA review and remote CI"
+      }
     }
   ],
   "private_maintenance": {
