@@ -230,3 +230,8 @@ public import Carleman.Section4.EnergyUniform
 public import Carleman.Section4.DualityBound
 public import Carleman.Section4.L2Estimate
 public import Carleman.Section4.SpatialUniform
+
+public import Carleman.Spatial.SpacetimeNormAlgebra
+public import Carleman.Spatial.SpacetimeCellEnergy
+public import Carleman.Section4.CombinedEstimate
+public import Carleman.Section4.CombinedUniform

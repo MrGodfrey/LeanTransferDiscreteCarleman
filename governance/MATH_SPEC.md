@@ -676,3 +676,9 @@ N3 的真实 N/R 范数接入及两种空间误差率仍待。现有对偶恒等
 [完整阶段](analysis/T020-spatial-complete.md)与[逐声明核对](reviews/T020-spatial-complete.md)对应八模块、36 显式声明。`OriginalForm.spatial_uniform` 已实际调用原 Section3 供应形式、任意质量余量与正/逆 Euler 图，并由原 hqmax/ηA 范围构造统一吸收阈值。原 N3/N4、实际两 Euler 方程给能量误差 `aE+ηA`、重构状态稳定性和完整逆权对偶 L² 误差 `a0+aE²+ηA`。所有常数先于 T/网格/qmax/离散空间/方向/符号/全状态及载荷；Q/G 和刚度缺陷均保留，无目标估计新增前提。
 
 C008/P009 是完整 Lemma4.1 候选，精确 main CI 核实后登记 BUILT/PAPER；执行者核对不增加独立 REVIEWED 计数。Theorem4.2 的真实时间延拓/空间误差组合、最终 B4 接口及原 Theorem2.1 仍待，原稿和最终目标没有修改。
+
+## T021：完整原 Theorem4.2 空间—时间误差
+
+[阶段和逐声明映射](analysis/T021-combined-error.md)记录四模块、13 显式声明。`OriginalForm.combined_uniform` 从原解析及数值假设内部构造中间 Euler 解、调用 Section3 时间估计与 Lemma4.1 空间估计，再用真实两方向单元延拓和时空 Nm/Bochner L² 三角，得到原 `sqrt(dt)+aE+ηA` 能量率与 `dt+a0+aE²+ηA` L² 率。完整 V 误差代表与原 U−Rbar z 几乎处处相等，并实际证明全部弱 jet 的 MemLp。
+
+固定公共时间阈值包含 `cellThreshold β (τStar+m) ρ.bound`，较大的解析指数只比较 q 幂密度，不扩大原数值允许权族。所有常数先于 T/网格/qmax/离散化/方向/符号/全状态/载荷。C009/P010 在真实同 SHA main CI 后登记 BUILT，独立本机 Agent 验收后才记 REVIEWED。最终 TransferBridges 的原假设实例与原 Theorem2.1 仍待完成；没有提前清空其额外桥接前提。

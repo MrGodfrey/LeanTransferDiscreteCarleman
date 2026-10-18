@@ -1,6 +1,6 @@
 # Proof log
 
-原文 Lemma 3.2 已独立验收；当前原文完成 1/26。完整证据见任务台账和工程 PR。
+原文 Lemmas 3.1–3.4、Theorem 3.5 和 Lemma 4.1 已独立验收；当前原文完成 6/26。完整证据见唯一任务台账及对应独立验收报告。
 
 每个合并工作单元只新增一行索引：日期、任务 ID、PR/提交、成果一句话和下一依赖。声明、原文定位、额外前提、构建及语义证据以任务/claim/coverage 记录和 PR 为准，不复制成数份报告。失败但有价值的检查点也可索引，明确标为未完成。
 
@@ -35,3 +35,4 @@
 | 2026-10-18 | T020检查点 | main `3f85627f55d297e62ec124f6d9d22cf52ac85833` / [阶段记录](analysis/T020-spatial-identities.md) | 七模块35显式声明；本机完整构建3431 jobs及2940声明公理审计PASS，PR CI39132012222三项PASS；直接main push，C038 BUILT/AUXILIARY | N4真实权导数下界、空间能量与L²误差 |
 | 2026-10-18 | T020能量检查点 | main `010b37869003458f0e1436e3804e11c807f550e9` / [阶段记录](analysis/T020-spatial-energy.md) | 六模块17显式声明：真实N4时间下界、原Sobolev空间Cea及N3序列桥；本机及main CI39133477530三项PASS，完整3437 jobs/2973声明公理审计，声明产物逐字节相同；C039 BUILT/AUXILIARY，原文覆盖不提升 | 最终能量率/状态稳定性、统一阈值、完整逆权对偶L²率 |
 | 2026-10-18 | T020完整空间误差 | main `a315bdc449c58a705a982f0d009f1dde24d6af66` / [阶段记录](analysis/T020-spatial-complete.md) | 原Lemma4.1能量/状态稳定性及L2率；八模块36声明，CI39135593975三项PASS，3445 jobs/3080声明审计；C008/P009 BUILT，独立本机Agent验收进行中 | T021真实时空合成与B4；清理独立验收队列 |
+| 2026-10-18 | T019/T020独立验收 | main `a315bdc449c58a705a982f0d009f1dde24d6af66` / [Section3](reviews/T019-local-acceptance.md)、[基础层](reviews/T020-foundations-local-acceptance.md)、[Lemma4.1](reviews/T020-lemma-local-acceptance.md) | 三名独立本机Agent逐项通过149项声明，实际同SHA CI和3080声明公理审计；五项原命题升REVIEWED/PAPER，原文6/26，积压队列清空 | T021 Theorem4.2同SHA CI和独立验收；原Theorem2.1桥接 |

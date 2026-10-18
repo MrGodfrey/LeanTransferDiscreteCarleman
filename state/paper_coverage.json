@@ -79,24 +79,24 @@
         "Carleman.Section3.Conclusions.form_bound",
         "Carleman.Section3.Conclusions.form_coercive"
       ],
-      "declaration_version": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
-      "verification_status": "BUILT",
+      "declaration_version": "a315bdc449c58a705a982f0d009f1dde24d6af66",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": {
         "status": "PASS",
-        "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
-        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39088174822/attempts/1",
-        "finished_at": "2026-10-18T01:59:23.644591+00:00",
+        "checked_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39135593975/attempts/1",
+        "finished_at": "2026-10-18T14:23:13.156876+00:00",
         "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "targets": [
           "Carleman"
         ],
-        "source_head_sha": "2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd"
+        "source_head_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66"
       },
       "semantic_review": {
-        "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+        "checked_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66",
         "declarations": [
           "Carleman.OriginalForm.section3_original_operator",
           "Carleman.OriginalForm.ofBilinear_scalarForm",
@@ -107,12 +107,45 @@
         ],
         "result": "PASS",
         "axiom_check": "PASS",
-        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd/governance/reviews/T019.md",
-        "reviewed_at": "2026-10-18T02:00:54.907026+00:00",
-        "reviewer": "T019 executor; parent independent acceptance pending"
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/415c8ca2e98df80d17ffec353335fa345b65eb55/governance/reviews/T019-local-acceptance.md",
+        "reviewed_at": "2026-10-18T14:31:08Z",
+        "reviewer": "/root/accept_section3; independent fixed-version paper/source/quantifier/dependency acceptance"
       },
-      "blocker": "完整原命题已构建；父监督者独立语义/依赖验收待完成",
-      "independent_review_status": "PENDING"
+      "blocker": null,
+      "independent_review_status": "PASS",
+      "prior_evidence": [
+        {
+          "declaration_version": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+          "build_evidence": {
+            "status": "PASS",
+            "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+            "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39088174822/attempts/1",
+            "finished_at": "2026-10-18T01:59:23.644591+00:00",
+            "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+            "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+            "targets": [
+              "Carleman"
+            ],
+            "source_head_sha": "2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd"
+          },
+          "semantic_review": {
+            "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+            "declarations": [
+              "Carleman.OriginalForm.section3_original_operator",
+              "Carleman.OriginalForm.ofBilinear_scalarForm",
+              "Carleman.PeriodicWeakTrajectory.graph_equation_iff",
+              "Carleman.Section3.Conclusions.primitive_on_interval",
+              "Carleman.Section3.Conclusions.form_bound",
+              "Carleman.Section3.Conclusions.form_coercive"
+            ],
+            "result": "PASS",
+            "axiom_check": "PASS",
+            "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd/governance/reviews/T019.md",
+            "reviewed_at": "2026-10-18T02:00:54.907026+00:00",
+            "reviewer": "T019 executor; parent independent acceptance pending"
+          }
+        }
+      ]
     },
     {
       "id": "P005",
@@ -180,24 +213,24 @@
         "Carleman.Section3.Conclusions.euler",
         "Carleman.Section3.EulerEstimate"
       ],
-      "declaration_version": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
-      "verification_status": "BUILT",
+      "declaration_version": "a315bdc449c58a705a982f0d009f1dde24d6af66",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": {
         "status": "PASS",
-        "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
-        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39088174822/attempts/1",
-        "finished_at": "2026-10-18T01:59:23.644591+00:00",
+        "checked_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39135593975/attempts/1",
+        "finished_at": "2026-10-18T14:23:13.156876+00:00",
         "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "targets": [
           "Carleman"
         ],
-        "source_head_sha": "2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd"
+        "source_head_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66"
       },
       "semantic_review": {
-        "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+        "checked_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66",
         "declarations": [
           "Carleman.OriginalForm.section3_original_operator",
           "Carleman.OriginalForm.ofBilinear_scalarForm",
@@ -207,12 +240,44 @@
         ],
         "result": "PASS",
         "axiom_check": "PASS",
-        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd/governance/reviews/T019.md",
-        "reviewed_at": "2026-10-18T02:00:54.907026+00:00",
-        "reviewer": "T019 executor; parent independent acceptance pending"
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/415c8ca2e98df80d17ffec353335fa345b65eb55/governance/reviews/T019-local-acceptance.md",
+        "reviewed_at": "2026-10-18T14:31:08Z",
+        "reviewer": "/root/accept_section3; independent fixed-version paper/source/quantifier/dependency acceptance"
       },
-      "blocker": "完整原命题已构建；父监督者独立语义/依赖验收待完成",
-      "independent_review_status": "PENDING"
+      "blocker": null,
+      "independent_review_status": "PASS",
+      "prior_evidence": [
+        {
+          "declaration_version": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+          "build_evidence": {
+            "status": "PASS",
+            "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+            "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39088174822/attempts/1",
+            "finished_at": "2026-10-18T01:59:23.644591+00:00",
+            "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+            "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+            "targets": [
+              "Carleman"
+            ],
+            "source_head_sha": "2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd"
+          },
+          "semantic_review": {
+            "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+            "declarations": [
+              "Carleman.OriginalForm.section3_original_operator",
+              "Carleman.OriginalForm.ofBilinear_scalarForm",
+              "Carleman.PeriodicWeakTrajectory.graph_equation_iff",
+              "Carleman.Section3.Conclusions.euler",
+              "Carleman.Section3.EulerEstimate"
+            ],
+            "result": "PASS",
+            "axiom_check": "PASS",
+            "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd/governance/reviews/T019.md",
+            "reviewed_at": "2026-10-18T02:00:54.907026+00:00",
+            "reviewer": "T019 executor; parent independent acceptance pending"
+          }
+        }
+      ]
     },
     {
       "id": "P007",
@@ -232,24 +297,24 @@
         "Carleman.Section3.Conclusions.frozen",
         "Carleman.Section3.ContinuousEstimate"
       ],
-      "declaration_version": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
-      "verification_status": "BUILT",
+      "declaration_version": "a315bdc449c58a705a982f0d009f1dde24d6af66",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": {
         "status": "PASS",
-        "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
-        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39088174822/attempts/1",
-        "finished_at": "2026-10-18T01:59:23.644591+00:00",
+        "checked_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39135593975/attempts/1",
+        "finished_at": "2026-10-18T14:23:13.156876+00:00",
         "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "targets": [
           "Carleman"
         ],
-        "source_head_sha": "2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd"
+        "source_head_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66"
       },
       "semantic_review": {
-        "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+        "checked_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66",
         "declarations": [
           "Carleman.OriginalForm.section3_original_operator",
           "Carleman.OriginalForm.ofBilinear_scalarForm",
@@ -259,12 +324,44 @@
         ],
         "result": "PASS",
         "axiom_check": "PASS",
-        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd/governance/reviews/T019.md",
-        "reviewed_at": "2026-10-18T02:00:54.907026+00:00",
-        "reviewer": "T019 executor; parent independent acceptance pending"
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/415c8ca2e98df80d17ffec353335fa345b65eb55/governance/reviews/T019-local-acceptance.md",
+        "reviewed_at": "2026-10-18T14:31:08Z",
+        "reviewer": "/root/accept_section3; independent fixed-version paper/source/quantifier/dependency acceptance"
       },
-      "blocker": "完整原命题已构建；父监督者独立语义/依赖验收待完成",
-      "independent_review_status": "PENDING"
+      "blocker": null,
+      "independent_review_status": "PASS",
+      "prior_evidence": [
+        {
+          "declaration_version": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+          "build_evidence": {
+            "status": "PASS",
+            "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+            "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39088174822/attempts/1",
+            "finished_at": "2026-10-18T01:59:23.644591+00:00",
+            "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+            "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+            "targets": [
+              "Carleman"
+            ],
+            "source_head_sha": "2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd"
+          },
+          "semantic_review": {
+            "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+            "declarations": [
+              "Carleman.OriginalForm.section3_original_operator",
+              "Carleman.OriginalForm.ofBilinear_scalarForm",
+              "Carleman.PeriodicWeakTrajectory.graph_equation_iff",
+              "Carleman.Section3.Conclusions.frozen",
+              "Carleman.Section3.ContinuousEstimate"
+            ],
+            "result": "PASS",
+            "axiom_check": "PASS",
+            "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd/governance/reviews/T019.md",
+            "reviewed_at": "2026-10-18T02:00:54.907026+00:00",
+            "reviewer": "T019 executor; parent independent acceptance pending"
+          }
+        }
+      ]
     },
     {
       "id": "P008",
@@ -286,24 +383,24 @@
         "Carleman.Section3.TemporalEstimate",
         "Carleman.Section3.temporal_arbitrary_uniform"
       ],
-      "declaration_version": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
-      "verification_status": "BUILT",
+      "declaration_version": "a315bdc449c58a705a982f0d009f1dde24d6af66",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": {
         "status": "PASS",
-        "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
-        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39088174822/attempts/1",
-        "finished_at": "2026-10-18T01:59:23.644591+00:00",
+        "checked_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39135593975/attempts/1",
+        "finished_at": "2026-10-18T14:23:13.156876+00:00",
         "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "targets": [
           "Carleman"
         ],
-        "source_head_sha": "2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd"
+        "source_head_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66"
       },
       "semantic_review": {
-        "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+        "checked_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66",
         "declarations": [
           "Carleman.OriginalForm.section3_original_operator",
           "Carleman.OriginalForm.ofBilinear_scalarForm",
@@ -314,12 +411,45 @@
         ],
         "result": "PASS",
         "axiom_check": "PASS",
-        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd/governance/reviews/T019.md",
-        "reviewed_at": "2026-10-18T02:00:54.907026+00:00",
-        "reviewer": "T019 executor; parent independent acceptance pending"
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/415c8ca2e98df80d17ffec353335fa345b65eb55/governance/reviews/T019-local-acceptance.md",
+        "reviewed_at": "2026-10-18T14:31:08Z",
+        "reviewer": "/root/accept_section3; independent fixed-version paper/source/quantifier/dependency acceptance"
       },
-      "blocker": "完整原命题已构建；父监督者独立语义/依赖验收待完成",
-      "independent_review_status": "PENDING"
+      "blocker": null,
+      "independent_review_status": "PASS",
+      "prior_evidence": [
+        {
+          "declaration_version": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+          "build_evidence": {
+            "status": "PASS",
+            "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+            "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39088174822/attempts/1",
+            "finished_at": "2026-10-18T01:59:23.644591+00:00",
+            "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+            "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+            "targets": [
+              "Carleman"
+            ],
+            "source_head_sha": "2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd"
+          },
+          "semantic_review": {
+            "checked_sha": "d4f0ec5a6a53b28657dacd72820dc15092e620d3",
+            "declarations": [
+              "Carleman.OriginalForm.section3_original_operator",
+              "Carleman.OriginalForm.ofBilinear_scalarForm",
+              "Carleman.PeriodicWeakTrajectory.graph_equation_iff",
+              "Carleman.Section3.Conclusions.temporal",
+              "Carleman.Section3.TemporalEstimate",
+              "Carleman.Section3.temporal_arbitrary_uniform"
+            ],
+            "result": "PASS",
+            "axiom_check": "PASS",
+            "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2938a1f3002b2fd7894c98d9f6aaa5115f7d0dbd/governance/reviews/T019.md",
+            "reviewed_at": "2026-10-18T02:00:54.907026+00:00",
+            "reviewer": "T019 executor; parent independent acceptance pending"
+          }
+        }
+      ]
     },
     {
       "id": "P009",
@@ -338,7 +468,7 @@
         "Carleman.OriginalForm.spatial_uniform"
       ],
       "declaration_version": "a315bdc449c58a705a982f0d009f1dde24d6af66",
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": {
@@ -353,8 +483,40 @@
         ],
         "source_head_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66"
       },
-      "semantic_review": null,
-      "blocker": null
+      "semantic_review": {
+        "checked_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66",
+        "declarations": [
+          "Carleman.Section4.EnergyEstimate",
+          "Carleman.Section4.L2Estimate",
+          "Carleman.Section4.SpatialUniform",
+          "Carleman.OriginalForm.spatial_uniform"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/415c8ca2e98df80d17ffec353335fa345b65eb55/governance/reviews/T020-lemma-local-acceptance.md",
+        "reviewed_at": "2026-10-18T14:34:14+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent fixed-version paper/source/quantifier/dependency acceptance"
+      },
+      "blocker": null,
+      "prior_evidence": [
+        {
+          "declaration_version": "a315bdc449c58a705a982f0d009f1dde24d6af66",
+          "build_evidence": {
+            "status": "PASS",
+            "checked_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66",
+            "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39135593975/attempts/1",
+            "finished_at": "2026-10-18T14:23:13.156876+00:00",
+            "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+            "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+            "targets": [
+              "Carleman"
+            ],
+            "source_head_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66"
+          },
+          "semantic_review": null
+        }
+      ],
+      "independent_review_status": "PASS"
     },
     {
       "id": "P010",
@@ -366,9 +528,14 @@
       "claim_ids": [
         "C009"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Section4.reconstructedError_value_ae",
+        "Carleman.Section4.CombinedEstimate",
+        "Carleman.Section4.CombinedUniform",
+        "Carleman.OriginalForm.combined_uniform"
+      ],
       "declaration_version": null,
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": null,

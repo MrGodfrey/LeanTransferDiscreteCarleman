@@ -1866,6 +1866,34 @@ set_option pp.maxSteps 1000000
 #check @Carleman.OriginalForm.spatial_uniform
 #print axioms Carleman.OriginalForm.spatial_uniform
 
+-- Full original Theorem 4.2 with actual weak space-time error.
+#check @Carleman.WeakSobolevJet.parameterTimeField_add
+#print axioms Carleman.WeakSobolevJet.parameterTimeField_add
+#check @Carleman.WeakSobolevJet.spacetimeWeightedNorm_add_le
+#print axioms Carleman.WeakSobolevJet.spacetimeWeightedNorm_add_le
+#check @Carleman.WeakSobolevJet.spacetimeWeightedNorm_congr_ae
+#print axioms Carleman.WeakSobolevJet.spacetimeWeightedNorm_congr_ae
+#check @Carleman.WeakSobolevJet.spacetimeWeightedNorm_extension_le
+#print axioms Carleman.WeakSobolevJet.spacetimeWeightedNorm_extension_le
+#check @Carleman.Section4.reconstructedError
+#print axioms Carleman.Section4.reconstructedError
+#check @Carleman.Section4.reconstructedError_value_ae
+#print axioms Carleman.Section4.reconstructedError_value_ae
+#check @Carleman.Section4.reconstructedError_decomposition
+#print axioms Carleman.Section4.reconstructedError_decomposition
+#check @Carleman.Section4.CombinedEstimate
+#print axioms Carleman.Section4.CombinedEstimate
+#check @Carleman.Section4.combine_nonnegative_rates
+#print axioms Carleman.Section4.combine_nonnegative_rates
+#check @Carleman.Section4.combined_estimate_of_spatial_temporal
+#print axioms Carleman.Section4.combined_estimate_of_spatial_temporal
+#check @Carleman.Section4.CombinedUniform
+#print axioms Carleman.Section4.CombinedUniform
+#check @Carleman.Section4.combined_uniform_of_section3
+#print axioms Carleman.Section4.combined_uniform_of_section3
+#check @Carleman.OriginalForm.combined_uniform
+#print axioms Carleman.OriginalForm.combined_uniform
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
