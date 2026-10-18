@@ -967,10 +967,16 @@
       "pdf_page": 38,
       "tex_line": 2803,
       "milestone": "M6a",
-      "claim_ids": [],
-      "lean_declarations": [],
+      "claim_ids": [
+        "C097"
+      ],
+      "lean_declarations": [
+        "Carleman.OriginalForm.boundary_affine_lemma",
+        "Carleman.physicalBox_h2_corner_bound",
+        "Carleman.physicalBox_two_faces_affine_zero"
+      ],
       "declaration_version": null,
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": null,

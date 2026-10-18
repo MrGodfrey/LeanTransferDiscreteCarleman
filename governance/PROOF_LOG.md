@@ -153,3 +153,5 @@
 - T078 / C094：真实面迹线性与闭面仿射核校正41声明独立验收PASS，5600声明递归审计、同SHA三项CI及逐字节相同远端产物。 固定证明 `d0fb274fb6f24830fd03428cddb86bbf9f034474`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/fd3070961400b978b99936215f995fed534400ba/governance/reviews/T078-local-acceptance.md)。原文12/26，T079继续参考立方体全部弱H2的边界仿射逼近。
 
 - T079 / C095：参考立方体全部弱H2边界逼近15声明独立验收PASS，5631声明递归审计、同SHA三项CI及逐字节相同远端产物。 固定证明 `9e23cd8be8716b986762484e947b242ba8465323`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bff197c0c7e0f7dcf519056e1a0fed3885b65a5c/governance/reviews/T079-local-acceptance.md)。原文12/26，T080继续物理盒仿射多项式与真实面迹的精确缩放。
+
+- T080 / C096：实际物理盒仿射与面迹缩放35声明独立验收PASS，5689声明递归审计、同SHA三项CI及逐字节相同远端产物。 固定证明 `68b77bdd9b152ba18e226a6a093892f548c2d90f`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/97f656ea30397406b25039a8e95497099389e260/governance/reviews/T080-local-acceptance.md)。原文12/26，T081继续原Lemma B.1统一物理h2边界仿射逼近。

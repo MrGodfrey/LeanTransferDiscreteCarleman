@@ -30,5 +30,5 @@
 | P022 | Proposition A.1 | `prop:spatial-operators` | 36 / 2615 | M6a | 待分解 | 待建立 |
 | P023 | Corollary A.2 | `prop:analytic-realizations` | 37 / 2659 | M6a | 待分解 | 待建立 |
 | P024 | Proposition A.3 | `prop:continuousCE` | 37 / 2672 | M6a | C013 | 待建立 |
-| P025 | Lemma B.1 | `lem:fd-boundary-affine` | 38 / 2803 | M6a | 待分解 | 待建立 |
+| P025 | Lemma B.1 | `lem:fd-boundary-affine` | 38 / 2803 | M6a | C097 | Carleman.OriginalForm.boundary_affine_lemma, Carleman.physicalBox_h2_corner_bound, Carleman.physicalBox_two_faces_affine_zero |
 | P026 | Lemma B.2 | `lem:fd-weighted-approximation` | 39 / 2841 | M6a | 待分解 | 待建立 |
