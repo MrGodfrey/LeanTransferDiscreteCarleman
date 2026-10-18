@@ -378,3 +378,6 @@ public import Carleman.Spatial.DerivativeFiberNorm
 public import Carleman.Spatial.AffineSimplexNorm
 public import Carleman.Spatial.AffineSimplexInverse
 public import Carleman.Spatial.AffineSimplexShapeInverse
+
+public import Carleman.Spatial.SimplexReferenceMap
+public import Carleman.Spatial.SimplexWeightedInverse

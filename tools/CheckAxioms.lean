@@ -3213,6 +3213,30 @@ set_option pp.maxSteps 1000000
 #check @Carleman.affineSimplex_shape_inverse
 #print axioms Carleman.affineSimplex_shape_inverse
 
+
+#check @Carleman.simplexCoordinateLinearEquiv
+#print axioms Carleman.simplexCoordinateLinearEquiv
+#check @Carleman.simplexCoordinateLinearEquiv_sub
+#print axioms Carleman.simplexCoordinateLinearEquiv_sub
+#check @Carleman.simplexCoordinateShift
+#print axioms Carleman.simplexCoordinateShift
+#check @Carleman.affineSimplex_coordinate_eq
+#print axioms Carleman.affineSimplex_coordinate_eq
+#check @Carleman.referenceSimplex
+#print axioms Carleman.referenceSimplex
+#check @Carleman.simplex_shape_inverse
+#print axioms Carleman.simplex_shape_inverse
+#check @Carleman.simplex_weighted_shape_inverse
+#print axioms Carleman.simplex_weighted_shape_inverse
+#check @Carleman.simplex_local_weighted_inverse
+#print axioms Carleman.simplex_local_weighted_inverse
+#check @Carleman.simplexNodalLp_weighted_sq
+#print axioms Carleman.simplexNodalLp_weighted_sq
+#check @Carleman.simplexNodalGradientLp_weighted_sq
+#print axioms Carleman.simplexNodalGradientLp_weighted_sq
+#check @Carleman.simplex_weighted_inverse_integral
+#print axioms Carleman.simplex_weighted_inverse_integral
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
