@@ -518,3 +518,7 @@ public import Carleman.Spatial.AffineBoxTraceMap
 public import Carleman.Geometry.ClosedCoordinateFaces
 public import Carleman.Spatial.AffineBoundaryKernel
 public import Carleman.Spatial.AffineBoundaryCorrection
+public import Carleman.Geometry.CoordinateBoxConvexity
+public import Carleman.Spatial.AffineJetTraceIdentities
+public import Carleman.Spatial.UnitCubeH2Affine
+public import Carleman.Spatial.UnitCubeBoundaryAffine

@@ -4216,6 +4216,37 @@ set_option pp.maxSteps 1000000
 #check @Carleman.unitCube_uniform_affine_correction
 #print axioms Carleman.unitCube_uniform_affine_correction
 
+#check @Carleman.openCoordinateBox_convex
+#print axioms Carleman.openCoordinateBox_convex
+#check @Carleman.openCoordinateBox_nonempty
+#print axioms Carleman.openCoordinateBox_nonempty
+#check @Carleman.openCoordinateBox_volume_pos
+#print axioms Carleman.openCoordinateBox_volume_pos
+#check @Carleman.unitCube_diameter_bound
+#print axioms Carleman.unitCube_diameter_bound
+#check @Carleman.affineBoxJetLinearMap
+#print axioms Carleman.affineBoxJetLinearMap
+#check @Carleman.affineBoxJetLinearMap_apply
+#print axioms Carleman.affineBoxJetLinearMap_apply
+#check @Carleman.weakJetBoxFaceLinearMap_affine
+#print axioms Carleman.weakJetBoxFaceLinearMap_affine
+#check @Carleman.unitCubeFace_norm_le
+#print axioms Carleman.unitCubeFace_norm_le
+#check @Carleman.h1_value_gradient_add_bound
+#print axioms Carleman.h1_value_gradient_add_bound
+#check @Carleman.h2AffineResidual_eq_jet_sub
+#print axioms Carleman.h2AffineResidual_eq_jet_sub
+#check @Carleman.unitCube_h2_affine_approximation
+#print axioms Carleman.unitCube_h2_affine_approximation
+#check @Carleman.unitCube_selected_affine_trace_bound
+#print axioms Carleman.unitCube_selected_affine_trace_bound
+#check @Carleman.unitCube_h1_boundary_correction
+#print axioms Carleman.unitCube_h1_boundary_correction
+#check @Carleman.unitCube_h2_boundary_affine
+#print axioms Carleman.unitCube_h2_boundary_affine
+#check @Carleman.unitCube_h2_boundary_affine_actual
+#print axioms Carleman.unitCube_h2_boundary_affine_actual
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
