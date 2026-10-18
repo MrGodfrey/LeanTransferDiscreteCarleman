@@ -3533,6 +3533,27 @@ set_option pp.maxSteps 1000000
 #check @Carleman.WeakSobolevJet.zeroExtendDirichlet_restrict
 #print axioms Carleman.WeakSobolevJet.zeroExtendDirichlet_restrict
 
+#check @Carleman.SpatialTest.convolution_ae_norm_bound
+#print axioms Carleman.SpatialTest.convolution_ae_norm_bound
+#check @Carleman.spatialLinearMap_norm_of_basis_bound
+#print axioms Carleman.spatialLinearMap_norm_of_basis_bound
+#check @Carleman.convolution_lipschitz_of_bounded_weak_derivatives
+#print axioms Carleman.convolution_lipschitz_of_bounded_weak_derivatives
+#check @Carleman.exists_lipschitzRepresentative_of_bounded_weak_derivatives
+#print axioms Carleman.exists_lipschitzRepresentative_of_bounded_weak_derivatives
+#check @Carleman.SimplicialPartition.conforming_gradient_bounded
+#print axioms Carleman.SimplicialPartition.conforming_gradient_bounded
+#check @Carleman.SimplicialPartition.conforming_dirichlet_lipschitz_representative
+#print axioms Carleman.SimplicialPartition.conforming_dirichlet_lipschitz_representative
+#check @Carleman.continuous_zeroExtend_zero_compl
+#print axioms Carleman.continuous_zeroExtend_zero_compl
+#check @Carleman.SimplicialPartition.conforming_representative_affine_on_cells
+#print axioms Carleman.SimplicialPartition.conforming_representative_affine_on_cells
+#check @Carleman.SimplicialPartition.conforming_dirichlet_nodal_representation
+#print axioms Carleman.SimplicialPartition.conforming_dirichlet_nodal_representation
+#check @Carleman.allowed_weight_full_projection
+#print axioms Carleman.allowed_weight_full_projection
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

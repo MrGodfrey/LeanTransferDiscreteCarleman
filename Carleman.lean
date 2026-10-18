@@ -424,3 +424,8 @@ public import Carleman.Spatial.UniformNodalProjection
 
 public import Carleman.Spatial.DirichletTestPairing
 public import Carleman.Spatial.DirichletZeroExtension
+
+public import Carleman.Spatial.BoundedWeakGradient
+public import Carleman.Spatial.ConformingLipschitzRepresentative
+public import Carleman.Spatial.FullConformingNodal
+public import Carleman.Spatial.FullWeightedProjection
