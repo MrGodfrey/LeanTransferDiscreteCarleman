@@ -75,3 +75,5 @@
 - T039 / C055：全空间零延拓H1与Dirichlet闭包独立验收PASS；27声明、4294项公理审计及同SHA CI。固定证明 `fa61af9d4b260cac83d599ef4e228af88f67aee8`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e0a4aa0f8e29833a424dadbd1a3f0bcfe2ad9b0b/governance/reviews/T039-local-acceptance.md)。原文12/26，T040继续Poincare及实际Dirichlet梯度形式。
 
 - T040 / C056：Poincare与实际Dirichlet形式独立验收PASS；27声明、4365项公理审计及同SHA CI。固定证明 `4f669626b3228adea39a16fbf6c1d22313763331`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/198d89fb3a3dfc26b356f053b73b8e8e96477b0b/governance/reviews/T040-local-acceptance.md)。原A1的H2正则性仍待，原文12/26；T041继续实际负Laplacian与分布算子图。
+
+- T041 / C057：真实负Laplacian与完整分布算子图独立验收PASS；20声明、4465项公理审计及同SHA CI。固定证明 `3d5aa9cec281974bef7da9d37ffa11a8f9f75670`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bf05d4537979f4633df72a3aa2d0569fee155328/governance/reviews/T041-local-acceptance.md)。反向H2正则性仍待，原文12/26；T042继续凸域内缩与实际H1构造。
