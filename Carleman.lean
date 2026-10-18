@@ -404,3 +404,8 @@ public import Carleman.Spatial.UniformNeighborGrading
 public import Carleman.Spatial.P1CoefficientCoercivity
 
 public import Carleman.Spatial.SimplexBarycentricDistribution
+
+public import Carleman.Spatial.BoundedSecondMoment
+public import Carleman.Spatial.SimplexSecondMoments
+public import Carleman.Spatial.SimplexPermutationIntegral
+public import Carleman.Spatial.SimplexMassIntegral

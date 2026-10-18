@@ -898,3 +898,9 @@ Dirichlet空间定义为这些紧支光滑jet的线性张成在真实H1图范数
 单模块7声明，AUXILIARY，不提升原文覆盖。实际重心坐标与homothety作用公式给K∩{λ_i≥t}在0≤t<1时是顶点中心、比例1−t的真实缩放像。真实Lebesgue缩放定理给分布体积(1−t)^d volume(K)，并正确换成单元受限测度的real值。
 
 非负坐标和为1给λ_i≤1；紧单元连续函数可积及实际layer-cake／区间幂积分给∫Kλ_i=volume.real(K)/(d+1)，端点1只按零测排除，含d=0。二阶矩、真实一致质量积分身份及完整投影稳定性仍待，原文12/26。见`analysis/T053-barycentric-distribution.md`。
+
+## T054：真实二阶矩与一致 P1 质量积分
+
+四模块19声明，AUXILIARY。真实layer-cake、顶点置换的实际Jacobian换元和非空内部给完整二阶矩：对角2 vol(K)/((d+1)(d+2))、非对角vol(K)/((d+1)(d+2))。真实有限双和积分得到∫K p_c p_e等于该体积因子乘p1CoefficientForm c e；真实平方积分有系数平方和的上下界，比例d+2。
+
+T052强制性因此提升为真实单元积分估计，原阈值内非零c给∫K p_c p_(ω²c)>0；体积、局部权归一化和任意正负系数均准确保留。节点权与原实际四类权对应、完整Vh节点表示/测试及全域投影稳定性仍待，原文12/26。见`analysis/T054-simplex-mass-integral.md`。

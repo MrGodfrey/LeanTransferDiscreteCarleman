@@ -3407,6 +3407,45 @@ set_option pp.maxSteps 1000000
 #check @Carleman.integral_simplexBarycentric
 #print axioms Carleman.integral_simplexBarycentric
 
+#check @Carleman.integral_sq_eq_tail
+#print axioms Carleman.integral_sq_eq_tail
+#check @Carleman.integral_unit_tail_power
+#print axioms Carleman.integral_unit_tail_power
+#check @Carleman.integral_simplexBarycentric_sq
+#print axioms Carleman.integral_simplexBarycentric_sq
+#check @Carleman.simplexPermutationLinear
+#print axioms Carleman.simplexPermutationLinear
+#check @Carleman.simplexPermutationShift
+#print axioms Carleman.simplexPermutationShift
+#check @Carleman.simplexPermutation_vertex
+#print axioms Carleman.simplexPermutation_vertex
+#check @Carleman.simplexPermutation_cell
+#print axioms Carleman.simplexPermutation_cell
+#check @Carleman.simplexPermutation_barycentric
+#print axioms Carleman.simplexPermutation_barycentric
+#check @Carleman.simplexPermutation_jacobian
+#print axioms Carleman.simplexPermutation_jacobian
+#check @Carleman.integral_comp_simplexPermutation
+#print axioms Carleman.integral_comp_simplexPermutation
+#check @Carleman.integral_simplexBarycentric_mul_permutation
+#print axioms Carleman.integral_simplexBarycentric_mul_permutation
+#check @Carleman.integral_simplexBarycentric_mul_offdiag
+#print axioms Carleman.integral_simplexBarycentric_mul_offdiag
+#check @Carleman.integral_simplexBarycentric_mul
+#print axioms Carleman.integral_simplexBarycentric_mul
+#check @Carleman.p1CoefficientForm_sum
+#print axioms Carleman.p1CoefficientForm_sum
+#check @Carleman.integral_simplexNodalInterpolant_mul
+#print axioms Carleman.integral_simplexNodalInterpolant_mul
+#check @Carleman.simplex_mass_factor_pos
+#print axioms Carleman.simplex_mass_factor_pos
+#check @Carleman.integral_simplexNodalInterpolant_sq_bounds
+#print axioms Carleman.integral_simplexNodalInterpolant_sq_bounds
+#check @Carleman.weighted_simplex_mass_coercive
+#print axioms Carleman.weighted_simplex_mass_coercive
+#check @Carleman.weighted_simplex_mass_pos
+#print axioms Carleman.weighted_simplex_mass_pos
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
