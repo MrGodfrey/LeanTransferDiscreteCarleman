@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T050",
-    "supervisor_checked_at": "2026-10-18T19:55:23.019366+00:00",
-    "next_action": "原allowed权及ℓ尺度的完整P1逆界20声明提交固定SHA独立验收；继续四类权的邻接分级及统一小参数阈值。",
+    "current_task_id": "T051",
+    "supervisor_checked_at": "2026-10-18T20:01:12.862445+00:00",
+    "next_action": "原四类权的统一邻接分级16声明固定SHA独立验收；读取DST原证明并继续实际一致质量投影稳定性。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T19:55:23.019366+00:00"
+    "last_activity_at": "2026-10-18T20:01:12.862445+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "99694c20834ac8d3b712f5e2d071a4e4ccfc308b",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39160438454/attempts/1",
-      "finished_at": "2026-10-18T19:50:10.312679+00:00",
+      "checked_sha": "9ea552502177ccffb3f50593567578fc207c2568",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39160957782/attempts/1",
+      "finished_at": "2026-10-18T19:58:04.716584+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "99694c20834ac8d3b712f5e2d071a4e4ccfc308b"
+      "source_head_sha": "9ea552502177ccffb3f50593567578fc207c2568"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "99694c20834ac8d3b712f5e2d071a4e4ccfc308b",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39160438454/attempts/1",
-      "finished_at": "2026-10-18T19:50:10.312679+00:00",
+      "checked_sha": "9ea552502177ccffb3f50593567578fc207c2568",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39160957782/attempts/1",
+      "finished_at": "2026-10-18T19:58:04.716584+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "99694c20834ac8d3b712f5e2d071a4e4ccfc308b"
+      "source_head_sha": "9ea552502177ccffb3f50593567578fc207c2568"
     }
   },
   "milestones": [
@@ -7073,7 +7073,7 @@
       "paper_ref": "Section6 eq:element-weight-comparison and eq:p1-weighted-inverse for actual allowed weights and cell scales",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:p1"
@@ -7100,15 +7100,96 @@
         "Carleman.SimplicialPartition.allowedWeight_cell_comparison",
         "Carleman.conforming_allowed_weight_inverse"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "9ea552502177ccffb3f50593567578fc207c2568",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "9ea552502177ccffb3f50593567578fc207c2568",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39160957782/attempts/1",
+        "finished_at": "2026-10-18T19:58:04.716584+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "9ea552502177ccffb3f50593567578fc207c2568"
+      },
+      "semantic_review": {
+        "checked_sha": "9ea552502177ccffb3f50593567578fc207c2568",
+        "declarations": [
+          "Carleman.uniqueDiffOn_closure_open_convex",
+          "Carleman.smooth_profile_lipschitz",
+          "Carleman.allowedWeight_spatial_ratio",
+          "Carleman.allowedWeight_spatial_comparison",
+          "Carleman.SpatialProfile.scaled",
+          "Carleman.SpatialProfile.scaled_multiplier_value",
+          "Carleman.SpatialProfile.scaled_one",
+          "Carleman.SpatialProfile.scaled_neg_one",
+          "Carleman.SpatialProfile.scaled_multiplier_pos",
+          "Carleman.SpatialProfile.scaled_multiplier_spatial_le",
+          "Carleman.SimplicialPartition.cellDiameter",
+          "Carleman.SimplicialPartition.cellDiameter_nonneg",
+          "Carleman.SimplicialPartition.dist_le_cellDiameter",
+          "Carleman.SimplicialPartition.maxDiameter",
+          "Carleman.SimplicialPartition.maxDiameter_nonneg",
+          "Carleman.SimplicialPartition.cellDiameter_le_max",
+          "Carleman.SimplicialPartition.cellScale_le_inball",
+          "Carleman.SimplicialPartition.maxDiameter_mul_q_le",
+          "Carleman.SimplicialPartition.allowedWeight_cell_comparison",
+          "Carleman.conforming_allowed_weight_inverse"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/cfb7a45a840b101b42067295773f7a08af9737e2/governance/reviews/T050-local-acceptance.md",
+        "reviewed_at": "2026-10-18T19:59:54+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C065"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "固定C1 profile在紧凸闭域的实际导数界供应空间Lipschitz界；两符号所有τ的实际指数比值消去q^τ。实际单元/最大直径及hq≤1供应统一权比较，原ℓ≤B diam及真实内球形状比供应逆尺度。完整H1一致P1状态的原allowed加权逆界，C先于所有网格/权/时刻/符号/τ/状态。尚未完成加权投影、H2插值/超逼近及其余P1义务，12/26。"
+      "scope_notes": "固定C1 profile在紧凸闭域的实际导数界供应空间Lipschitz界；两符号所有τ的实际指数比值消去q^τ。实际单元/最大直径及hq≤1供应统一权比较，原ℓ≤B diam及真实内球形状比供应逆尺度。完整H1一致P1状态的原allowed加权逆界，C先于所有网格/权/时刻/符号/τ/状态。尚未完成加权投影、H2插值/超逼近及其余P1义务，12/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C067",
+      "title": "原四类权的统一邻接分级",
+      "paper_ref": "Section6 Step1: four actual weights have uniform neighbor grading strictly below Gamma_d",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:p1"
+      ],
+      "lean_declarations": [
+        "Carleman.SimplicialPartition.VertexNeighbors",
+        "Carleman.SimplicialPartition.VertexNeighbors.symm",
+        "Carleman.SimplicialPartition.vertexNeighbors_dist_le",
+        "Carleman.SimplicialPartition.vertexNeighbors_dist_le_max",
+        "Carleman.exists_weight_grading_threshold",
+        "Carleman.SpatialProfile.scaled_multiplier_inverse_value",
+        "Carleman.SimplicialPartition.scale_grading_from_ratios",
+        "Carleman.SimplicialPartition.allowedWeight_neighbor_le",
+        "Carleman.SimplicialPartition.gradedWeight",
+        "Carleman.SimplicialPartition.gradedWeight_on_cell",
+        "Carleman.SimplicialPartition.gradedWeight_neighbor_le",
+        "Carleman.p1GradingLimit",
+        "Carleman.p1GradingLimit_gt_one",
+        "Carleman.p1GradingLimit_two",
+        "Carleman.p1GradingLimit_three",
+        "Carleman.allowed_weights_uniform_neighbor_grading"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C066",
+        "C065"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实共享顶点和单元直径给邻接点距离≤2h；原ℓ比值与实际分片逆尺度乘子供应四权a.e.邻接比较。真实σ反演改变τ及η；实际Γd及d2/3数值核对，固定profile供应L并构造δ>0先于全部网格/权/时刻/尺度。hqmax≤δ给分级常数(γ+Γd)/2<Γd；DST加权投影稳定性未证明，12/26。"
     }
   ],
   "events": [
@@ -7439,6 +7520,11 @@
       "at": "2026-10-18T19:55:23.019366+00:00",
       "public_summary": "完整Vh全域加权逆界9声明经独立Agent及同SHA CI验收PASS；原具体allowed权和ℓ尺度对应20声明全库通过，原文12/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c114cef2c53f50d8197f2541f87f4f80e7e8d0cd/governance/reviews/T049-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T20:01:12.862445+00:00",
+      "public_summary": "原allowed权的完整P1逆界20声明独立Agent及同SHA CI验收PASS；四类实际权的统一邻接分级16声明全库通过，原文12/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/cfb7a45a840b101b42067295773f7a08af9737e2/governance/reviews/T050-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -7590,7 +7676,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/00d6704a5090ea604d887b9a56e27c13964d9026/governance/reviews/T048-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39159881586/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c114cef2c53f50d8197f2541f87f4f80e7e8d0cd/governance/reviews/T049-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39160438454/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39160438454/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/cfb7a45a840b101b42067295773f7a08af9737e2/governance/reviews/T050-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39160957782/attempts/1"
     ]
   },
   "schedules": [
@@ -16564,10 +16652,10 @@
       ],
       "branch": "main",
       "base_commit": "99694c20834ac8d3b712f5e2d071a4e4ccfc308b",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "9ea552502177ccffb3f50593567578fc207c2568",
+      "merge_commit": "9ea552502177ccffb3f50593567578fc207c2568",
       "lean_declarations": [
         "Carleman.uniqueDiffOn_closure_open_convex",
         "Carleman.smooth_profile_lipschitz",
@@ -16590,12 +16678,23 @@
         "Carleman.SimplicialPartition.allowedWeight_cell_comparison",
         "Carleman.conforming_allowed_weight_inverse"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "9ea552502177ccffb3f50593567578fc207c2568",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39160957782/attempts/1",
+        "finished_at": "2026-10-18T19:58:04.716584+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "9ea552502177ccffb3f50593567578fc207c2568"
+      },
       "blocker": null,
       "attempts": [
         "四模块20声明定向3245 jobs及全库3596 jobs通过，4757项递归审计PASS。"
       ],
-      "next_action": "原allowed权及ℓ尺度的完整P1逆界20声明提交固定SHA独立验收；继续四类权的邻接分级及统一小参数阈值。",
+      "next_action": "原实际allowed权的完整P1逆界已验收；继续原四类权的统一邻接分级和加权投影稳定性。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -16607,6 +16706,94 @@
         "recursive_axiom_audit": 4757,
         "new_explicit_declarations": 20,
         "declaration_artifact_sha256": "52fc8b474e148cff082d91556b5a09fb1e4fe588216373a532b9ec25815d2a73",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "9ea552502177ccffb3f50593567578fc207c2568",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C066"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "9ea552502177ccffb3f50593567578fc207c2568",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T19:59:54+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/cfb7a45a840b101b42067295773f7a08af9737e2/governance/reviews/T050-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "9ea552502177ccffb3f50593567578fc207c2568",
+        "checked_sha": "9ea552502177ccffb3f50593567578fc207c2568",
+        "run_id": 39160957782,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3596,
+        "recursive_axiom_audit": 4757,
+        "new_explicit_declarations": 20,
+        "declaration_artifact_sha256": "52fc8b474e148cff082d91556b5a09fb1e4fe588216373a532b9ec25815d2a73",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T051",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原四类权的统一邻接分级",
+      "goal_ids": [
+        "C067"
+      ],
+      "acceptance": [
+        "真实顶点邻接、距离上界与原尺度双侧比值到逆尺度比较",
+        "四类实际乘子及其倒数/分片a.e.身份和双层邻接测度比较",
+        "实际Γd及统一正阈值先于全部网格/权/τ/时刻/符号，严格保留Γd余量"
+      ],
+      "dependencies": [
+        "C066",
+        "C065"
+      ],
+      "branch": "main",
+      "base_commit": "9ea552502177ccffb3f50593567578fc207c2568",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.SimplicialPartition.VertexNeighbors",
+        "Carleman.SimplicialPartition.VertexNeighbors.symm",
+        "Carleman.SimplicialPartition.vertexNeighbors_dist_le",
+        "Carleman.SimplicialPartition.vertexNeighbors_dist_le_max",
+        "Carleman.exists_weight_grading_threshold",
+        "Carleman.SpatialProfile.scaled_multiplier_inverse_value",
+        "Carleman.SimplicialPartition.scale_grading_from_ratios",
+        "Carleman.SimplicialPartition.allowedWeight_neighbor_le",
+        "Carleman.SimplicialPartition.gradedWeight",
+        "Carleman.SimplicialPartition.gradedWeight_on_cell",
+        "Carleman.SimplicialPartition.gradedWeight_neighbor_le",
+        "Carleman.p1GradingLimit",
+        "Carleman.p1GradingLimit_gt_one",
+        "Carleman.p1GradingLimit_two",
+        "Carleman.p1GradingLimit_three",
+        "Carleman.allowed_weights_uniform_neighbor_grading"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "四模块16声明定向3247 jobs及全库3600 jobs通过，4777项递归审计PASS。"
+      ],
+      "next_action": "原四类权的统一邻接分级16声明固定SHA独立验收；读取DST原证明并继续实际一致质量投影稳定性。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3600,
+        "recursive_axiom_audit": 4777,
+        "new_explicit_declarations": 16,
+        "declaration_artifact_sha256": "7cb4201f8a25ed807e9ff332dad7f8d249487bd3af144a936821067c5f282b9d",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
