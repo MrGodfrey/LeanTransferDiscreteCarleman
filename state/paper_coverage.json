@@ -703,12 +703,35 @@
         "Carleman.Physical.AdjointEquation",
         "Carleman.Physical.physical_duality_lemma"
       ],
-      "declaration_version": null,
-      "verification_status": "SPECIFIED",
+      "declaration_version": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "extra_hypotheses": [],
-      "build_evidence": null,
-      "semantic_review": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39139922166/attempts/1",
+        "finished_at": "2026-10-18T15:20:32.980527+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c"
+      },
+      "semantic_review": {
+        "checked_sha": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c",
+        "declarations": [
+          "Carleman.Physical.ForwardEquation",
+          "Carleman.Physical.AdjointEquation",
+          "Carleman.Physical.physical_duality_lemma"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/702861c3beb5b1ed41b096a9040b569f1d79a956/governance/reviews/T024-local-acceptance.md",
+        "reviewed_at": "2026-10-18T15:23:21+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent fixed-version original statement/dependency acceptance"
+      },
       "blocker": null
     },
     {
@@ -756,7 +779,9 @@
       "pdf_page": 29,
       "tex_line": 2164,
       "milestone": "M6b",
-      "claim_ids": [],
+      "claim_ids": [
+        "C041"
+      ],
       "lean_declarations": [],
       "declaration_version": null,
       "verification_status": "PLANNED",

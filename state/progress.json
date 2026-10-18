@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T024",
-    "supervisor_checked_at": "2026-10-18T15:15:52.145748+00:00",
-    "next_action": "推送固定版本main，核实真实同SHA CI并独立Agent验收完整原Lemma7.1。",
+    "current_task_id": "T025",
+    "supervisor_checked_at": "2026-10-18T15:24:55.962113+00:00",
+    "next_action": "接通原Rayleigh商单步增长、完整时间迭代与终端子空间上确界，完成原Lemma7.4再独立验收。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T15:18:46.699801+00:00"
+    "last_activity_at": "2026-10-18T15:24:55.962113+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39139005595/attempts/1",
-      "finished_at": "2026-10-18T15:09:46.419126+00:00",
+      "checked_sha": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39139922166/attempts/1",
+      "finished_at": "2026-10-18T15:20:32.980527+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3"
+      "source_head_sha": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39139005595/attempts/1",
-      "finished_at": "2026-10-18T15:09:46.419126+00:00",
+      "checked_sha": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39139922166/attempts/1",
+      "finished_at": "2026-10-18T15:20:32.980527+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3"
+      "source_head_sha": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c"
     }
   },
   "milestones": [
@@ -4608,7 +4608,7 @@
       "paper_ref": "Lemma7.1",
       "milestone": "M6b",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "paper_labels": [
         "lem:physicalduality"
@@ -4646,13 +4646,86 @@
         "Carleman.Physical.adjoint_equation_iff",
         "Carleman.Physical.physical_duality_lemma"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39139922166/attempts/1",
+        "finished_at": "2026-10-18T15:20:32.980527+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c"
+      },
+      "semantic_review": {
+        "checked_sha": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c",
+        "declarations": [
+          "Carleman.Physical.step",
+          "Carleman.Physical.step_apply",
+          "Carleman.Physical.one_sub_mul_exp_ge_one",
+          "Carleman.Physical.step_norm_lower",
+          "Carleman.Physical.step_inverse_bound",
+          "Carleman.Physical.step_bijective",
+          "Carleman.Physical.stiffness_potential_lower",
+          "Carleman.Physical.Forward",
+          "Carleman.Physical.Adjoint",
+          "Carleman.Physical.existsUnique_forward",
+          "Carleman.Physical.existsUnique_adjoint",
+          "Carleman.Physical.duality_increment",
+          "Carleman.Physical.physical_duality",
+          "Carleman.Physical.control_duality",
+          "Carleman.Physical.adjoint_energy",
+          "Carleman.Physical.partialSum",
+          "Carleman.Physical.partialSum_zero",
+          "Carleman.Physical.partialSum_succ",
+          "Carleman.Physical.partialSum_le_sum",
+          "Carleman.Physical.forward_recurrence_bound",
+          "Carleman.Physical.controlNorm",
+          "Carleman.Physical.time_l1_le_l2",
+          "Carleman.Physical.energyConstant",
+          "Carleman.Physical.energyConstant_pos",
+          "Carleman.Physical.forward_energy",
+          "Carleman.Physical.step_equation_iff",
+          "Carleman.Physical.ForwardEquation",
+          "Carleman.Physical.AdjointEquation",
+          "Carleman.Physical.forward_equation_iff",
+          "Carleman.Physical.adjoint_equation_iff",
+          "Carleman.Physical.physical_duality_lemma"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/702861c3beb5b1ed41b096a9040b569f1d79a956/governance/reviews/T024-local-acceptance.md",
+        "reviewed_at": "2026-10-18T15:23:21+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent fixed-version original statement/dependency acceptance"
+      },
       "dependencies": [],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "完整原Lemma7.1候选；统一常数先于数值空间和时间网格，实际前向/伴随方程与控制L2范数。待同SHA CI与独立验收。"
+      "scope_notes": "完整原Lemma7.1已独立验收；原Section7算子层数据、两侧适定性、统一能量与真实伴随对偶均保持。具体FEM/FD实例仍待。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C041",
+      "title": "终端子空间Rayleigh商与反向范数界",
+      "paper_ref": "Lemma7.4",
+      "milestone": "M6b",
+      "extra_hypotheses": [],
+      "verification_status": "PLANNED",
+      "scope": "PAPER",
+      "paper_labels": [
+        "lem:filter-reverse"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C040"
+      ],
+      "blocker": null,
+      "pr_url": null
     }
   ],
   "events": [
@@ -4853,6 +4926,11 @@
       "at": "2026-10-18T15:15:52.145748+00:00",
       "public_summary": "一般尺度与热方程尺度推论均经独立Agent和同SHA CI验收；首个核心阶段M5完成，原文10/26，验收队列已清空。继续控制章节基础引理。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6d7f9c7936aab5459d9e27bb6e26c657b0d61f7f/governance/reviews/T023-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T15:24:55.962113+00:00",
+      "public_summary": "原Lemma7.1完整适定性、能量和精确对偶经独立Agent及同SHA CI验收；原文11/26，验收队列清空，继续滤波反向界。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/702861c3beb5b1ed41b096a9040b569f1d79a956/governance/reviews/T024-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -4952,7 +5030,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/01040759ab3f6a9ab33d5886b06773e541be7954/governance/reviews/T022-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39137974197/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6d7f9c7936aab5459d9e27bb6e26c657b0d61f7f/governance/reviews/T023-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39139005595/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39139005595/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/702861c3beb5b1ed41b096a9040b569f1d79a956/governance/reviews/T024-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39139922166/attempts/1"
     ]
   },
   "schedules": [
@@ -11152,10 +11232,10 @@
       "dependencies": [],
       "branch": "main",
       "base_commit": "8706e95e3a24b09fe6e2675a0c72c827ba9a93f3",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c",
+      "merge_commit": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c",
       "lean_declarations": [
         "Carleman.Physical.step",
         "Carleman.Physical.step_apply",
@@ -11189,13 +11269,24 @@
         "Carleman.Physical.adjoint_equation_iff",
         "Carleman.Physical.physical_duality_lemma"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39139922166/attempts/1",
+        "finished_at": "2026-10-18T15:20:32.980527+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c"
+      },
       "blocker": null,
       "attempts": [
         "独立准备的四模块已定向编译；有限维全状态可逆、初末值唯一解、实际对偶及完整能量界均已接通，正在连接原除dt方程与最终统一入口。",
         "完整原Lemma7.1六模块31声明本机全库构建通过；3467jobs/3265声明递归公理审计，仅基础公理。"
       ],
-      "next_action": "推送固定版本main，核实真实同SHA CI并独立Agent验收完整原Lemma7.1。",
+      "next_action": "完整原Lemma7.1已验收；T025推进Lemma7.4的无谱限制Rayleigh逆界。",
       "integration_mode": "direct-main",
       "local_validation": {
         "checked_at": "2026-10-18T15:18:46.699801+00:00",
@@ -11205,7 +11296,65 @@
         "new_explicit_declarations": 31,
         "audit_sha256": "0e519a9cfe5cc7b745f140f9a163e2ff3adc5ee6ea13f1ba8751cce913762e2c",
         "note": "working tree precommit, not remote CI"
+      },
+      "declaration_version": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C040"
+          ],
+          "paper_result_ids": [
+            "P013"
+          ],
+          "checked_sha": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T15:23:21+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/702861c3beb5b1ed41b096a9040b569f1d79a956/governance/reviews/T024-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c",
+        "checked_sha": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c",
+        "run_id": 39139922166,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3467,
+        "recursive_axiom_audit": 3265,
+        "new_explicit_declarations": 31,
+        "declaration_artifact_sha256": "0e519a9cfe5cc7b745f140f9a163e2ff3adc5ee6ea13f1ba8751cce913762e2c",
+        "local_remote_artifacts_identical": true
       }
+    },
+    {
+      "id": "T025",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原Lemma7.4终端滤波的反向范数界",
+      "goal_ids": [
+        "C041"
+      ],
+      "acceptance": [
+        "原Rayleigh商从真实非负刚度与有界势推导，单步增长dt*M²",
+        "原K_F=exp(TΛ_F+MT+M²T²/2)，不要求算子或势保持终端F",
+        "全实际伴随轨迹；固定版本构建、公理与独立Agent验收"
+      ],
+      "dependencies": [
+        "C040"
+      ],
+      "branch": "main",
+      "base_commit": "1aa9b1f253dd759ccc18d92d151aa7c81646f51c",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "真实Rayleigh单步增长已定向编译；正算子逆界已证明，正在消除编译提示并连接实际反向轨迹迭代。"
+      ],
+      "next_action": "接通原Rayleigh商单步增长、完整时间迭代与终端子空间上确界，完成原Lemma7.4再独立验收。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {

@@ -21,7 +21,7 @@
 | P013 | Lemma 7.1 | `lem:physicalduality` | 24 / 1753 | M6b | C040 | Carleman.Physical.ForwardEquation, Carleman.Physical.AdjointEquation, Carleman.Physical.physical_duality_lemma |
 | P014 | Theorem 7.2 | `prop:physicalO` | 25 / 1827 | M6b | C016 | 待建立 |
 | P015 | Theorem 7.3 | `prop:physicalC` | 27 / 2032 | M6b | C017 | 待建立 |
-| P016 | Lemma 7.4 | `lem:filter-reverse` | 29 / 2164 | M6b | 待分解 | 待建立 |
+| P016 | Lemma 7.4 | `lem:filter-reverse` | 29 / 2164 | M6b | C041 | 待建立 |
 | P017 | Theorem 7.5 | `thm:filtered-observability` | 29 / 2177 | M6b | C018 | 待建立 |
 | P018 | Corollary 7.6 | `cor:filtered-control` | 29 / 2201 | M6b | 待分解 | 待建立 |
 | P019 | Proposition 7.7 | `prop:filter-p1` | 30 / 2224 | M6b | 待分解 | 待建立 |
