@@ -1,0 +1,13 @@
+# T048：完整一致P1状态的真实局部弱梯度
+
+四模块20声明，AUXILIARY，清偿把原全局弱梯度限制到单元并识别为实际仿射导数的义务。不假设状态来自节点插值、不取Sobolev/Lp点值。全网格加权求和和原允许权比较仍待，原文12/26。
+
+SubdomainRestriction 对T⊆S按真实受限Lebesgue测度单调性构造所有实际L2字段限制，并证明a.e.公式。任意SpatialTest T用相同函数成为SpatialTest S；测试及其实际导数在T外为零，故完整积分分部身份在限制后仍成立。任意阶全部分量交换和相邻阶完整弱身份给原WeakSobolevJet的真实子域限制；value准确为原标量类的限制。没有以光滑或零延拓假设代替任意弱状态。
+
+AffineWeakGradient 定义真实连续仿射映射的CLM导数，每点HasFDerivAt及全局Lipschitz界均证明。有限测度开域上，若实际u与该仿射p a.e.一致，则p的真实方向导数常函数属于L2；实际Lipschitz积分分部供应完整弱身份，再以全部测试的弱导数唯一性识别任何已有弱导数v。遍历全部坐标并使用Sym.oneEquiv恢复完整一阶Euclidean fiber，得到实际H1 jet的全梯度a.e.身份。
+
+SimplicialLocalGradient 用真实单纯形边界零测证明闭单元与内部的限制测度相同，内部测度有限。开凸S下，cell⊆closure S推出interior cell⊆S，空S另处理，因此闭单元测度≤域测度。把原任意H1 jet限制到实际单元内部，从局部标量仿射身份得到全梯度身份，再由准确零测边界扩回整个闭单元。没有假定闭单元包含于开域、也没有遗漏边界上的a.e.转换。
+
+ConformingLocalPolynomial 把原完整分片仿射空间中实际坐标数组c0+Σc_j x_j构成真正AffineMap。对任意V、任意真实H1 jet，只要其value属于既有M.conformingSpace V，便从原完整空间成员刻画给每个单元上的真实p，且value和全部一阶字段分别a.e.为p和fiber(fderiv p)。V可取原dirichletSubspace，因此此局部身份不限制原Vh状态，也不要求FaceMatching或额外节点表示。
+
+本阶段不供应全网格加权逆估计。仍需真实单元求和、原allowed权的统一单元比较及ℓ/h尺度识别；H2插值、加权投影、椭圆正则性、连续热CE等也未完成。

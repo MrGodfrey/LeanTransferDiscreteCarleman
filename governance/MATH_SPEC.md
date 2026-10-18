@@ -862,3 +862,9 @@ Dirichlet空间定义为这些紧支光滑jet的线性张成在真实H1图范数
 两模块11声明，AUXILIARY，不提升原文覆盖。任意T/U的顶点差线性基给真实连续线性等价，准确平移使全部顶点映射，从而清偿所有物理单纯形的共同参考参数化。参考单元只依赖维数，形状常数C(n,κ)先于所有单元/尺度/系数。
 
 实际单元乘子满足|w|≤Ws及s≤W|w|时，真实L2范数比较使归一化s精确消去，得到C(n,κ,W)/h的局部加权逆界，常数先于权/单元/多项式。另给任意实际AffineMap及其真实L2/梯度代表形式与完整积分形式。完整Vh的局部弱梯度识别、全网格求和、allowed权族比较和其余P1义务仍待；原文12/26。见`analysis/T047-weighted-simplex.md`。
+
+## T048：完整一致P1状态的真实局部弱梯度
+
+四模块20声明，AUXILIARY，不提升原文覆盖。任意子域的实际L2字段限制保留全部SpatialTest弱身份与任意阶完整jet。真实仿射函数的CLM导数和Lipschitz积分分部构造方向弱导数，完整测试唯一性识别任何实际H1 jet的全部一阶fiber。
+
+开凸S中cell⊆closure S给interior cell⊆S，空域单独处理；真实零测边界使闭单元和内部受限测度相同。局部限制和仿射唯一性证明任意H1状态在闭单元上的实际梯度身份。原完整conformingSpace成员刻画给真正AffineMap p及其value/梯度a.e.公式，不需节点表示、FaceMatching或额外状态限制。全网格求和、allowed权比较及其余原P1依赖仍待，原文12/26。见`analysis/T048-local-gradient.md`。

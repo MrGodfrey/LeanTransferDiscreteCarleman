@@ -3237,6 +3237,48 @@ set_option pp.maxSteps 1000000
 #check @Carleman.simplex_weighted_inverse_integral
 #print axioms Carleman.simplex_weighted_inverse_integral
 
+
+#check @Carleman.subdomainLp
+#print axioms Carleman.subdomainLp
+#check @Carleman.subdomainLp_ae
+#print axioms Carleman.subdomainLp_ae
+#check @Carleman.SpatialTest.monoDomain
+#print axioms Carleman.SpatialTest.monoDomain
+#check @Carleman.IsWeakSpatialDerivative.restrictSubdomain
+#print axioms Carleman.IsWeakSpatialDerivative.restrictSubdomain
+#check @Carleman.derivativeComponent_subdomain
+#print axioms Carleman.derivativeComponent_subdomain
+#check @Carleman.WeakSobolevJet.restrictSubdomain
+#print axioms Carleman.WeakSobolevJet.restrictSubdomain
+#check @Carleman.WeakSobolevJet.restrictSubdomain_value
+#print axioms Carleman.WeakSobolevJet.restrictSubdomain_value
+#check @Carleman.affineScalarDerivative
+#print axioms Carleman.affineScalarDerivative
+#check @Carleman.affineScalar_hasFDerivAt
+#print axioms Carleman.affineScalar_hasFDerivAt
+#check @Carleman.affineScalar_lipschitz
+#print axioms Carleman.affineScalar_lipschitz
+#check @Carleman.weakDerivative_eq_affine
+#print axioms Carleman.weakDerivative_eq_affine
+#check @Carleman.WeakSobolevJet.gradient_eq_affine
+#print axioms Carleman.WeakSobolevJet.gradient_eq_affine
+#check @Carleman.simplexCell_ae_interior
+#print axioms Carleman.simplexCell_ae_interior
+#check @Carleman.simplexInterior_finiteMeasure
+#print axioms Carleman.simplexInterior_finiteMeasure
+#check @Carleman.SimplicialPartition.cell_interior_subset
+#print axioms Carleman.SimplicialPartition.cell_interior_subset
+#check @Carleman.SimplicialPartition.cell_measure_le_domain
+#print axioms Carleman.SimplicialPartition.cell_measure_le_domain
+#check @Carleman.SimplicialPartition.gradient_on_cell
+#print axioms Carleman.SimplicialPartition.gradient_on_cell
+#check @Carleman.affinePolynomialOfCoefficients
+#print axioms Carleman.affinePolynomialOfCoefficients
+#check @Carleman.affinePolynomialOfCoefficients_apply
+#print axioms Carleman.affinePolynomialOfCoefficients_apply
+#check @Carleman.SimplicialPartition.conforming_local_polynomial
+#print axioms Carleman.SimplicialPartition.conforming_local_polynomial
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

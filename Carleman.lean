@@ -381,3 +381,8 @@ public import Carleman.Spatial.AffineSimplexShapeInverse
 
 public import Carleman.Spatial.SimplexReferenceMap
 public import Carleman.Spatial.SimplexWeightedInverse
+
+public import Carleman.Spatial.SubdomainRestriction
+public import Carleman.Spatial.AffineWeakGradient
+public import Carleman.Spatial.SimplicialLocalGradient
+public import Carleman.Spatial.ConformingLocalPolynomial
