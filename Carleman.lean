@@ -522,3 +522,7 @@ public import Carleman.Geometry.CoordinateBoxConvexity
 public import Carleman.Spatial.AffineJetTraceIdentities
 public import Carleman.Spatial.UnitCubeH2Affine
 public import Carleman.Spatial.UnitCubeBoundaryAffine
+public import Carleman.Geometry.CoordinateBoxScaling
+public import Carleman.Geometry.PhysicalBoxChart
+public import Carleman.Spatial.AffineBoxPullback
+public import Carleman.Spatial.AffineBoxNormScaling

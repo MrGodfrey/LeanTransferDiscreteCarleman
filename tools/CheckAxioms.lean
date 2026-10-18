@@ -4247,6 +4247,77 @@ set_option pp.maxSteps 1000000
 #check @Carleman.unitCube_h2_boundary_affine_actual
 #print axioms Carleman.unitCube_h2_boundary_affine_actual
 
+#check @Carleman.coordinateDilation
+#print axioms Carleman.coordinateDilation
+#check @Carleman.coordinateDilation_apply
+#print axioms Carleman.coordinateDilation_apply
+#check @Carleman.coordinateDilation_symm_apply
+#print axioms Carleman.coordinateDilation_symm_apply
+#check @Carleman.coordinateDilation_basis
+#print axioms Carleman.coordinateDilation_basis
+#check @Carleman.coordinateDilation_norm_le
+#print axioms Carleman.coordinateDilation_norm_le
+#check @Carleman.coordinateDilation_symm_norm_le
+#print axioms Carleman.coordinateDilation_symm_norm_le
+#check @Carleman.coordinateDilation_jacobian
+#print axioms Carleman.coordinateDilation_jacobian
+#check @Carleman.physicalBoxChart
+#print axioms Carleman.physicalBoxChart
+#check @Carleman.physicalBoxChart_apply
+#print axioms Carleman.physicalBoxChart_apply
+#check @Carleman.physicalBoxChart_preimage_open
+#print axioms Carleman.physicalBoxChart_preimage_open
+#check @Carleman.physicalBoxChart_image_open
+#print axioms Carleman.physicalBoxChart_image_open
+#check @Carleman.physicalBoxChart_preimage_closed
+#print axioms Carleman.physicalBoxChart_preimage_closed
+#check @Carleman.physicalBoxChart_preimage_face
+#print axioms Carleman.physicalBoxChart_preimage_face
+#check @Carleman.physicalBoxChart_image_face
+#print axioms Carleman.physicalBoxChart_image_face
+#check @Carleman.physicalBoxChart_facePoint
+#print axioms Carleman.physicalBoxChart_facePoint
+#check @Carleman.integral_physicalBoxChart
+#print axioms Carleman.integral_physicalBoxChart
+#check @Carleman.physicalBoxChart_face_jacobian
+#print axioms Carleman.physicalBoxChart_face_jacobian
+#check @Carleman.affineCoefficientChange
+#print axioms Carleman.affineCoefficientChange
+#check @Carleman.affineCoefficientChange_apply
+#print axioms Carleman.affineCoefficientChange_apply
+#check @Carleman.affineBoxPullback
+#print axioms Carleman.affineBoxPullback
+#check @Carleman.affineBoxPullback_apply
+#print axioms Carleman.affineBoxPullback_apply
+#check @Carleman.affineBoxPullback_derivative
+#print axioms Carleman.affineBoxPullback_derivative
+#check @Carleman.affineBoxPullback_zero_face_iff
+#print axioms Carleman.affineBoxPullback_zero_face_iff
+#check @Carleman.affineBoxValueMap_norm_sq
+#print axioms Carleman.affineBoxValueMap_norm_sq
+#check @Carleman.affineBoxFaceMap_norm_sq
+#print axioms Carleman.affineBoxFaceMap_norm_sq
+#check @Carleman.affineBoxValueMap_scaling_sq
+#print axioms Carleman.affineBoxValueMap_scaling_sq
+#check @Carleman.affineBoxFaceMap_scaling_sq
+#print axioms Carleman.affineBoxFaceMap_scaling_sq
+#check @Carleman.affineBoxDerivativeMap_norm_sq
+#print axioms Carleman.affineBoxDerivativeMap_norm_sq
+#check @Carleman.coordinateBox_volume_scaling
+#print axioms Carleman.coordinateBox_volume_scaling
+#check @Carleman.affineBoxGradientMap_norm_sq
+#print axioms Carleman.affineBoxGradientMap_norm_sq
+#check @Carleman.affineBoxGradientMap_scaling_sq
+#print axioms Carleman.affineBoxGradientMap_scaling_sq
+#check @Carleman.affineBoxGradientMap_scaling_bound_sq
+#print axioms Carleman.affineBoxGradientMap_scaling_bound_sq
+#check @Carleman.affineBoxValueMap_scaling
+#print axioms Carleman.affineBoxValueMap_scaling
+#check @Carleman.affineBoxGradientMap_scaling_bound
+#print axioms Carleman.affineBoxGradientMap_scaling_bound
+#check @Carleman.affineBox_h1_scaling_bound
+#print axioms Carleman.affineBox_h1_scaling_bound
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
