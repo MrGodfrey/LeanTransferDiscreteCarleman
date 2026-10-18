@@ -77,3 +77,5 @@
 - T040 / C056：Poincare与实际Dirichlet形式独立验收PASS；27声明、4365项公理审计及同SHA CI。固定证明 `4f669626b3228adea39a16fbf6c1d22313763331`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/198d89fb3a3dfc26b356f053b73b8e8e96477b0b/governance/reviews/T040-local-acceptance.md)。原A1的H2正则性仍待，原文12/26；T041继续实际负Laplacian与分布算子图。
 
 - T041 / C057：真实负Laplacian与完整分布算子图独立验收PASS；20声明、4465项公理审计及同SHA CI。固定证明 `3d5aa9cec281974bef7da9d37ffa11a8f9f75670`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bf05d4537979f4633df72a3aa2d0569fee155328/governance/reviews/T041-local-acceptance.md)。反向H2正则性仍待，原文12/26；T042继续凸域内缩与实际H1构造。
+
+- T042 / C058：凸域内缩、正支撑缓冲与实际H1构造独立验收PASS；24声明、4504项公理审计及同SHA CI。固定证明 `0df65a77f4a13fdab4641c30a3843f02bd8b1af8`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/54b9925eafd013ef9517a01ea975560d42cd0e60/governance/reviews/T042-local-acceptance.md)。原文12/26，T043继续实际节点内缩的强H1收敛。

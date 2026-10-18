@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T042",
-    "supervisor_checked_at": "2026-10-18T18:49:47.499489+00:00",
-    "next_action": "提交固定SHA，独立验收凸域内缩与实际紧支Lipschitz H1；继续H1逼近收敛。",
+    "current_task_id": "T043",
+    "supervisor_checked_at": "2026-10-18T18:59:18.990943+00:00",
+    "next_action": "实际节点内缩强H1收敛18声明已通过全库；提交固定SHA独立验收，继续内支撑光滑化。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T18:49:47.499489+00:00"
+    "last_activity_at": "2026-10-18T18:59:18.990943+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "3d5aa9cec281974bef7da9d37ffa11a8f9f75670",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39155188364/attempts/1",
-      "finished_at": "2026-10-18T18:42:01.256638+00:00",
+      "checked_sha": "0df65a77f4a13fdab4641c30a3843f02bd8b1af8",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39155983776/attempts/1",
+      "finished_at": "2026-10-18T18:51:44.317671+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "3d5aa9cec281974bef7da9d37ffa11a8f9f75670"
+      "source_head_sha": "0df65a77f4a13fdab4641c30a3843f02bd8b1af8"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "3d5aa9cec281974bef7da9d37ffa11a8f9f75670",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39155188364/attempts/1",
-      "finished_at": "2026-10-18T18:42:01.256638+00:00",
+      "checked_sha": "0df65a77f4a13fdab4641c30a3843f02bd8b1af8",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39155983776/attempts/1",
+      "finished_at": "2026-10-18T18:51:44.317671+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "3d5aa9cec281974bef7da9d37ffa11a8f9f75670"
+      "source_head_sha": "0df65a77f4a13fdab4641c30a3843f02bd8b1af8"
     }
   },
   "milestones": [
@@ -6406,7 +6406,7 @@
       "paper_ref": "Section6 conforming P1 Dirichlet membership",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:p1"
@@ -6437,16 +6437,102 @@
         "Carleman.SimplicialPartition.nodalContractedSobolevJet",
         "Carleman.SimplicialPartition.nodalContractedSobolevJet_value_ae"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "0df65a77f4a13fdab4641c30a3843f02bd8b1af8",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "0df65a77f4a13fdab4641c30a3843f02bd8b1af8",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39155983776/attempts/1",
+        "finished_at": "2026-10-18T18:51:44.317671+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "0df65a77f4a13fdab4641c30a3843f02bd8b1af8"
+      },
+      "semantic_review": {
+        "checked_sha": "0df65a77f4a13fdab4641c30a3843f02bd8b1af8",
+        "declarations": [
+          "Carleman.centeredDilation",
+          "Carleman.centeredDilation_mem",
+          "Carleman.contractedFunction",
+          "Carleman.contractedFunction_tsupport",
+          "Carleman.contractedFunction_compact",
+          "Carleman.contractedFunction_support_inside",
+          "Carleman.contractedFunction_buffer",
+          "Carleman.contractedFunction_continuous",
+          "Carleman.contractedFunction_hasFDerivAt",
+          "Carleman.compactLipschitz_fderiv_memLp",
+          "Carleman.compactLipschitzDerivativeLp",
+          "Carleman.compactLipschitzDerivativeLp_ae",
+          "Carleman.compactLipschitzLp",
+          "Carleman.compactLipschitzLp_ae",
+          "Carleman.compactLipschitzSobolevJet",
+          "Carleman.compactLipschitzSobolevJet_value",
+          "Carleman.centeredDilation_lipschitz",
+          "Carleman.contractedFunction_lipschitz",
+          "Carleman.contractedSobolevJet",
+          "Carleman.contractedSobolevJet_value_ae",
+          "Carleman.SimplicialPartition.nodalFunction_tsupport_subset",
+          "Carleman.SimplicialPartition.nodal_contraction_buffer",
+          "Carleman.SimplicialPartition.nodalContractedSobolevJet",
+          "Carleman.SimplicialPartition.nodalContractedSobolevJet_value_ae"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/54b9925eafd013ef9517a01ea975560d42cd0e60/governance/reviews/T042-local-acceptance.md",
+        "reviewed_at": "2026-10-18T18:55:27+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C055",
         "C057"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "实际中心伸缩同胚给紧支集内缩及正卷积缓冲；全空间紧支Lipschitz函数的真实fderiv属于L2，由Rademacher和完整积分分部构造H1 jet，再实例化实际节点内缩。H1逼近收敛和节点H01成员尚待，不提升原文覆盖。"
+      "scope_notes": "实际中心伸缩同胚给紧支集内缩及正卷积缓冲；全空间紧支Lipschitz函数的真实fderiv属于L2，由Rademacher和完整积分分部构造H1 jet，再实例化实际节点内缩。H1逼近收敛和节点H01成员尚待，不提升原文覆盖。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C059",
+      "title": "实际节点内缩的强H1收敛",
+      "paper_ref": "Section6 conforming P1 Dirichlet membership",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:p1"
+      ],
+      "lean_declarations": [
+        "Carleman.lp_two_norm_sub_sq_integral",
+        "Carleman.lp_two_tendsto_of_dominated_norm_sq",
+        "Carleman.lp_two_tendsto_of_bounded_support",
+        "Carleman.firstOrderFields_tendsto",
+        "Carleman.compactLipschitzSobolevJet_tendsto",
+        "Carleman.inwardRatio",
+        "Carleman.inwardRatio_pos",
+        "Carleman.inwardRatio_lt_one",
+        "Carleman.inwardRatio_half_le",
+        "Carleman.inwardRatio_inv_le_two",
+        "Carleman.inwardRatio_tendsto",
+        "Carleman.inverse_inward_tendsto",
+        "Carleman.inwardFunction_tendsto",
+        "Carleman.inward_fderiv_tendsto_of_local_affine",
+        "Carleman.SimplicialPartition.nodal_inward_fderiv_tendsto_ae",
+        "Carleman.SimplicialPartition.closure_isCompact",
+        "Carleman.SimplicialPartition.nodalCompactJet_eq",
+        "Carleman.SimplicialPartition.nodal_inward_tendsto_H1"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C058"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "具体r_n=(n+1)/(n+2)内缩序列回到原实际节点H1 jet。真实函数值逐点及实际fderiv几乎处处收敛，紧支和统一Lipschitz界经DCT给两个L2字段强收敛；未假定目标H1收敛。光滑卷积H1极限及节点H01成员仍待，不提升原文覆盖。"
     }
   ],
   "events": [
@@ -6737,6 +6823,11 @@
       "at": "2026-10-18T18:49:47.499489+00:00",
       "public_summary": "真实负Laplacian及完整分布算子图20声明经独立Agent和同SHA CI验收PASS；旧验收队列清空。凸域内缩与实际H1新批次全库通过，原文12/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bf05d4537979f4633df72a3aa2d0569fee155328/governance/reviews/T041-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T18:59:18.990943+00:00",
+      "public_summary": "凸域内缩、正支撑缓冲与实际H1构造24声明经独立Agent及同SHA CI验收PASS；旧验收队列清空。继续实际节点内缩的强H1收敛，原文12/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/54b9925eafd013ef9517a01ea975560d42cd0e60/governance/reviews/T042-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -6872,7 +6963,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/198d89fb3a3dfc26b356f053b73b8e8e96477b0b/governance/reviews/T040-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39154628082/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bf05d4537979f4633df72a3aa2d0569fee155328/governance/reviews/T041-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39155188364/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39155188364/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/54b9925eafd013ef9517a01ea975560d42cd0e60/governance/reviews/T042-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39155983776/attempts/1"
     ]
   },
   "schedules": [
@@ -15031,10 +15124,10 @@
       ],
       "branch": "main",
       "base_commit": "3d5aa9cec281974bef7da9d37ffa11a8f9f75670",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "0df65a77f4a13fdab4641c30a3843f02bd8b1af8",
+      "merge_commit": "0df65a77f4a13fdab4641c30a3843f02bd8b1af8",
       "lean_declarations": [
         "Carleman.centeredDilation",
         "Carleman.centeredDilation_mem",
@@ -15061,12 +15154,23 @@
         "Carleman.SimplicialPartition.nodalContractedSobolevJet",
         "Carleman.SimplicialPartition.nodalContractedSobolevJet_value_ae"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "0df65a77f4a13fdab4641c30a3843f02bd8b1af8",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39155983776/attempts/1",
+        "finished_at": "2026-10-18T18:51:44.317671+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "0df65a77f4a13fdab4641c30a3843f02bd8b1af8"
+      },
       "blocker": null,
       "attempts": [
         "三模块24声明定向3185 jobs和全库3565 jobs通过，4504声明递归公理审计PASS。"
       ],
-      "next_action": "提交固定SHA，独立验收凸域内缩与实际紧支Lipschitz H1；继续H1逼近收敛。",
+      "next_action": "真实内缩与紧支Lipschitz H1独立验收通过；继续实际节点内缩的H1收敛。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -15078,6 +15182,95 @@
         "recursive_axiom_audit": 4504,
         "new_explicit_declarations": 24,
         "declaration_artifact_sha256": "053315b3d2302f9ccb899ab8f55df65048b98fdafddff1e57e417c488e120839",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "0df65a77f4a13fdab4641c30a3843f02bd8b1af8",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C058"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "0df65a77f4a13fdab4641c30a3843f02bd8b1af8",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T18:55:27+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/54b9925eafd013ef9517a01ea975560d42cd0e60/governance/reviews/T042-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "0df65a77f4a13fdab4641c30a3843f02bd8b1af8",
+        "checked_sha": "0df65a77f4a13fdab4641c30a3843f02bd8b1af8",
+        "run_id": 39155983776,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3565,
+        "recursive_axiom_audit": 4504,
+        "new_explicit_declarations": 24,
+        "declaration_artifact_sha256": "053315b3d2302f9ccb899ab8f55df65048b98fdafddff1e57e417c488e120839",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T043",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "实际节点内缩的强H1收敛",
+      "goal_ids": [
+        "C059"
+      ],
+      "acceptance": [
+        "实际Lp平方范数积分与支配收敛推出强L2极限",
+        "具体内缩比例及局部仿射真实导数在零测骨架外收敛",
+        "共同紧支和真实统一Lipschitz上界给完整节点H1图拓扑收敛，不假设H1极限或H01成员"
+      ],
+      "dependencies": [
+        "C058"
+      ],
+      "branch": "main",
+      "base_commit": "0df65a77f4a13fdab4641c30a3843f02bd8b1af8",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.lp_two_norm_sub_sq_integral",
+        "Carleman.lp_two_tendsto_of_dominated_norm_sq",
+        "Carleman.lp_two_tendsto_of_bounded_support",
+        "Carleman.firstOrderFields_tendsto",
+        "Carleman.compactLipschitzSobolevJet_tendsto",
+        "Carleman.inwardRatio",
+        "Carleman.inwardRatio_pos",
+        "Carleman.inwardRatio_lt_one",
+        "Carleman.inwardRatio_half_le",
+        "Carleman.inwardRatio_inv_le_two",
+        "Carleman.inwardRatio_tendsto",
+        "Carleman.inverse_inward_tendsto",
+        "Carleman.inwardFunction_tendsto",
+        "Carleman.inward_fderiv_tendsto_of_local_affine",
+        "Carleman.SimplicialPartition.nodal_inward_fderiv_tendsto_ae",
+        "Carleman.SimplicialPartition.closure_isCompact",
+        "Carleman.SimplicialPartition.nodalCompactJet_eq",
+        "Carleman.SimplicialPartition.nodal_inward_tendsto_H1"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "四模块18声明定向3193 jobs和全库验证通过，4527声明递归审计PASS。"
+      ],
+      "next_action": "实际节点内缩强H1收敛18声明已通过全库；提交固定SHA独立验收，继续内支撑光滑化。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3570,
+        "recursive_axiom_audit": 4527,
+        "new_explicit_declarations": 18,
+        "declaration_artifact_sha256": "8573cbb048a860b2ca6d566ec9e74761386748e02ca858972d1007e3db45a220",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
