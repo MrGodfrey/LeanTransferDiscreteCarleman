@@ -496,3 +496,8 @@ public import Carleman.Spatial.CoordinateFirstJet
 public import Carleman.Spatial.MeanAffinePolynomial
 public import Carleman.Spatial.H2MeanGradient
 public import Carleman.Spatial.ConvexH2AffineApproximation
+public import Carleman.Continuous.WeakIntervalRepresentative
+public import Carleman.Continuous.WeakIntervalTrace
+public import Carleman.Continuous.ScalarIntervalTrace
+public import Carleman.Spatial.FiberEndpointIntegral
+public import Carleman.Spatial.WeakSliceEndpointTrace

@@ -3964,6 +3964,57 @@ set_option pp.maxSteps 1000000
 #check @Carleman.exists_convex_h2_affine_approximation
 #print axioms Carleman.exists_convex_h2_affine_approximation
 
+#check @Carleman.HasWeakTimeDerivative.congr_value
+#print axioms Carleman.HasWeakTimeDerivative.congr_value
+#check @Carleman.HasWeakTimeDerivative.exists_continuous_representative
+#print axioms Carleman.HasWeakTimeDerivative.exists_continuous_representative
+#check @Carleman.TimeGrid.continuous_representative_unique
+#print axioms Carleman.TimeGrid.continuous_representative_unique
+#check @Carleman.TimeGrid.pathL2_injective
+#print axioms Carleman.TimeGrid.pathL2_injective
+#check @Carleman.TimeGrid.exists_tracePath
+#print axioms Carleman.TimeGrid.exists_tracePath
+#check @Carleman.TimeGrid.weakTracePath
+#print axioms Carleman.TimeGrid.weakTracePath
+#check @Carleman.TimeGrid.weakTracePath_value
+#print axioms Carleman.TimeGrid.weakTracePath_value
+#check @Carleman.TimeGrid.weakTracePath_ae
+#print axioms Carleman.TimeGrid.weakTracePath_ae
+#check @Carleman.TimeGrid.weakTracePath_weak
+#print axioms Carleman.TimeGrid.weakTracePath_weak
+#check @Carleman.TimeGrid.weakTracePath_point_bound
+#print axioms Carleman.TimeGrid.weakTracePath_point_bound
+#check @Carleman.TimeGrid.weakTracePath_norm_bound
+#print axioms Carleman.TimeGrid.weakTracePath_norm_bound
+#check @Carleman.TimeGrid.weakTracePathCLM
+#print axioms Carleman.TimeGrid.weakTracePathCLM
+#check @Carleman.TimeGrid.weakTracePathCLM_value
+#print axioms Carleman.TimeGrid.weakTracePathCLM_value
+#check @Carleman.TimeGrid.weakTracePathCLM_eq_of_representative
+#print axioms Carleman.TimeGrid.weakTracePathCLM_eq_of_representative
+#check @Carleman.TimeGrid.weakIntervalTrace
+#print axioms Carleman.TimeGrid.weakIntervalTrace
+#check @Carleman.TimeGrid.weakIntervalTrace_bound
+#print axioms Carleman.TimeGrid.weakIntervalTrace_bound
+#check @Carleman.TimeGrid.weakIntervalTrace_fundamental
+#print axioms Carleman.TimeGrid.weakIntervalTrace_fundamental
+#check @Carleman.TimeGrid.weakIntervalTrace_affine_green
+#print axioms Carleman.TimeGrid.weakIntervalTrace_affine_green
+#check @Carleman.TimeGrid.weakIntervalTrace_zero_formula
+#print axioms Carleman.TimeGrid.weakIntervalTrace_zero_formula
+#check @Carleman.TimeGrid.weakIntervalTrace_end_formula
+#print axioms Carleman.TimeGrid.weakIntervalTrace_end_formula
+#check @Carleman.fiberEndpointIntegral
+#print axioms Carleman.fiberEndpointIntegral
+#check @Carleman.fiberEndpointIntegral_congr
+#print axioms Carleman.fiberEndpointIntegral_congr
+#check @Carleman.fiberEndpointIntegral_memLp_bound
+#print axioms Carleman.fiberEndpointIntegral_memLp_bound
+#check @Carleman.fiberEndpointIntegral_eq_weak_trace
+#print axioms Carleman.fiberEndpointIntegral_eq_weak_trace
+#check @Carleman.weak_slices_actual_endpoint_traces
+#print axioms Carleman.weak_slices_actual_endpoint_traces
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
