@@ -127,3 +127,5 @@
 - T065 / C081：原尺度残差和节点超逼近7声明独立验收PASS，4981项递归审计及同SHA CI。 固定证明 `9c354128a5ebd5e3eeb36f3e15e5fa9ae4a27158`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/797e405259136a025a3aa5324412ad5c73588f9a/governance/reviews/T065-local-acceptance.md)。原文12/26，T066继续原完整P1投影测试超逼近。
 
 - T066 / C082：原完整P1投影测试超逼近6声明独立验收PASS，4987项递归审计及同SHA CI。 固定证明 `1f04be4f79db9d40ac1af37271eb8e9dc58639a3`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5d231f554395acfd99fe3373239f8b3add96e8a8/governance/reviews/T066-local-acceptance.md)。原文12/26，T067继续原H¹₀允许权保持性。
+
+- T067 / C083：原H01允许权保持15声明独立验收PASS，5062项递归审计及同SHA三项CI通过。 固定证明 `604328efce1cc28e4d6fe6cadcdaa039ee0e76a3`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/39f19225dff2c3956b4a483355a5f56a7069302b/governance/reviews/T067-local-acceptance.md)。原文12/26，T068继续原Dirichlet算子域的真实乘积与权保持。

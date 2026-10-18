@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T067",
-    "supervisor_checked_at": "2026-10-18T22:00:35.361815+00:00",
-    "next_action": "固定SHA独立验收H01保持15声明；继续Dirichlet算子域的实际乘积公式和一般H²逼近。",
+    "current_task_id": "T068",
+    "supervisor_checked_at": "2026-10-18T22:07:35.413609+00:00",
+    "next_action": "固定SHA独立验收原算子乘积及权保持；继续从实际导数系数证明原统一交换子估计。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T22:00:35.361815+00:00"
+    "last_activity_at": "2026-10-18T22:07:35.413609+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "1f04be4f79db9d40ac1af37271eb8e9dc58639a3",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39169654262/attempts/1",
-      "finished_at": "2026-10-18T21:54:56.631897+00:00",
+      "checked_sha": "604328efce1cc28e4d6fe6cadcdaa039ee0e76a3",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39170347012/attempts/1",
+      "finished_at": "2026-10-18T22:03:17.578304+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "1f04be4f79db9d40ac1af37271eb8e9dc58639a3"
+      "source_head_sha": "604328efce1cc28e4d6fe6cadcdaa039ee0e76a3"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "1f04be4f79db9d40ac1af37271eb8e9dc58639a3",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39169654262/attempts/1",
-      "finished_at": "2026-10-18T21:54:56.631897+00:00",
+      "checked_sha": "604328efce1cc28e4d6fe6cadcdaa039ee0e76a3",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39170347012/attempts/1",
+      "finished_at": "2026-10-18T22:03:17.578304+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "1f04be4f79db9d40ac1af37271eb8e9dc58639a3"
+      "source_head_sha": "604328efce1cc28e4d6fe6cadcdaa039ee0e76a3"
     }
   },
   "milestones": [
@@ -8243,7 +8243,7 @@
       "paper_ref": "Auxiliary original m=1 H01 allowed-weight preservation toward A2 and the Step3 residual boundary qualification",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:p1"
@@ -8265,15 +8265,84 @@
         "Carleman.allowed_weight_mem_dirichlet",
         "Carleman.allowed_squared_residual_mem_dirichlet"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "604328efce1cc28e4d6fe6cadcdaa039ee0e76a3",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "604328efce1cc28e4d6fe6cadcdaa039ee0e76a3",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39170347012/attempts/1",
+        "finished_at": "2026-10-18T22:03:17.578304+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "604328efce1cc28e4d6fe6cadcdaa039ee0e76a3"
+      },
+      "semantic_review": {
+        "checked_sha": "604328efce1cc28e4d6fe6cadcdaa039ee0e76a3",
+        "declarations": [
+          "Carleman.firstDerivativeInjection",
+          "Carleman.firstDerivativeInjection_component",
+          "Carleman.firstGradientAssembly",
+          "Carleman.firstGradientAssembly_component",
+          "Carleman.firstProductFields",
+          "Carleman.weakFirstProduct",
+          "Carleman.weakFirstProduct_value",
+          "Carleman.weakFirstProductCLM",
+          "Carleman.clm_mem_closed_span",
+          "Carleman.weakFirstProductCLM_test",
+          "Carleman.weakFirstProductCLM_mem_dirichlet",
+          "Carleman.boundedSmooth_map_mem_dirichlet",
+          "Carleman.allowed_multiplier_boundedSmooth",
+          "Carleman.allowed_weight_mem_dirichlet",
+          "Carleman.allowed_squared_residual_mem_dirichlet"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/39f19225dff2c3956b4a483355a5f56a7069302b/governance/reviews/T067-local-acceptance.md",
+        "reviewed_at": "2026-10-18T22:05:02+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C082"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "真实坐标L²装配、分布乘积法则和连续H1乘法算子；真实光滑紧支测试乘积及闭包不变性给全部H01状态的原允许权保持。原SmoothOnClosure内部提供有界光滑导数，无域外延拓；任意真实平方权残差jet由值身份获得H01资格。不宣称算子域/交换子或全部A2；一般H²逼近仍待，原文12/26。"
+      "scope_notes": "真实坐标L²装配、分布乘积法则和连续H1乘法算子；真实光滑紧支测试乘积及闭包不变性给全部H01状态的原允许权保持。原SmoothOnClosure内部提供有界光滑导数，无域外延拓；任意真实平方权残差jet由值身份获得H01资格。不宣称算子域/交换子或全部A2；一般H²逼近仍待，原文12/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C084",
+      "title": "原Dirichlet算子域的真实乘积与权保持",
+      "paper_ref": "Auxiliary original m=1 Dirichlet form-operator product formula and domain preservation toward A2",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:p1"
+      ],
+      "lean_declarations": [
+        "Carleman.weakGradientPairing_coordinates",
+        "Carleman.weakFirstProduct_component",
+        "Carleman.weak_product_coordinate_test",
+        "Carleman.weakGradientPairing_product_test",
+        "Carleman.IsWeakNegativeLaplacian.mul",
+        "Carleman.smoothLaplacianCorrection",
+        "Carleman.boundedSmooth_weakLaplacian_product",
+        "Carleman.boundedSmooth_dirichlet_operator_product",
+        "Carleman.boundedSmooth_map_mem_dirichlet_domain",
+        "Carleman.allowed_weight_mem_dirichlet_domain"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C083"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "完整弱测试上的实际负Laplacian乘积公式及真实H01保持，通过原form-operator图刻画得到原算子域允许权保持；真实一阶和同方向二阶导数乘子内部供应，不预设H2正则或缩小算子域。尚缺统一交换子、A1正则和完整Appendix A；原文12/26。"
     }
   ],
   "events": [
@@ -8689,6 +8758,11 @@
       "at": "2026-10-18T22:00:35.361815+00:00",
       "public_summary": "原完整P1投影测试超逼近6声明独立验收PASS；原H01允许权保持及残差边界资格15声明全库通过，原文12/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5d231f554395acfd99fe3373239f8b3add96e8a8/governance/reviews/T066-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T22:07:35.413609+00:00",
+      "public_summary": "原H01允许权保持15声明独立验收PASS；原Dirichlet算子乘积与域权保持10声明全库通过，原文12/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/39f19225dff2c3956b4a483355a5f56a7069302b/governance/reviews/T067-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -8874,7 +8948,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/797e405259136a025a3aa5324412ad5c73588f9a/governance/reviews/T065-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39169211832/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5d231f554395acfd99fe3373239f8b3add96e8a8/governance/reviews/T066-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39169654262/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39169654262/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/39f19225dff2c3956b4a483355a5f56a7069302b/governance/reviews/T067-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39170347012/attempts/1"
     ]
   },
   "schedules": [
@@ -19475,10 +19551,10 @@
       ],
       "branch": "main",
       "base_commit": "1f04be4f79db9d40ac1af37271eb8e9dc58639a3",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "604328efce1cc28e4d6fe6cadcdaa039ee0e76a3",
+      "merge_commit": "604328efce1cc28e4d6fe6cadcdaa039ee0e76a3",
       "lean_declarations": [
         "Carleman.firstDerivativeInjection",
         "Carleman.firstDerivativeInjection_component",
@@ -19496,12 +19572,23 @@
         "Carleman.allowed_weight_mem_dirichlet",
         "Carleman.allowed_squared_residual_mem_dirichlet"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "604328efce1cc28e4d6fe6cadcdaa039ee0e76a3",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39170347012/attempts/1",
+        "finished_at": "2026-10-18T22:03:17.578304+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "604328efce1cc28e4d6fe6cadcdaa039ee0e76a3"
+      },
       "blocker": null,
       "attempts": [
         "四模块15声明定向3189 jobs、全库3665 jobs通过，5062声明递归公理审计PASS。"
       ],
-      "next_action": "固定SHA独立验收H01保持15声明；继续Dirichlet算子域的实际乘积公式和一般H²逼近。",
+      "next_action": "原H01保持及残差资格已独立验收；继续原Dirichlet算子域保持和统一交换子。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -19513,6 +19600,88 @@
         "recursive_axiom_audit": 5062,
         "new_explicit_declarations": 15,
         "declaration_artifact_sha256": "ef7d2ea661d6f533854d4885f3e62cca430e92eabe4d41c3c7a4aa90ff4aac46",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "604328efce1cc28e4d6fe6cadcdaa039ee0e76a3",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C083"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "604328efce1cc28e4d6fe6cadcdaa039ee0e76a3",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T22:05:02+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/39f19225dff2c3956b4a483355a5f56a7069302b/governance/reviews/T067-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "604328efce1cc28e4d6fe6cadcdaa039ee0e76a3",
+        "checked_sha": "604328efce1cc28e4d6fe6cadcdaa039ee0e76a3",
+        "run_id": 39170347012,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3665,
+        "recursive_axiom_audit": 5062,
+        "new_explicit_declarations": 15,
+        "declaration_artifact_sha256": "ef7d2ea661d6f533854d4885f3e62cca430e92eabe4d41c3c7a4aa90ff4aac46",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T068",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原Dirichlet算子域的真实乘积与权保持",
+      "goal_ids": [
+        "C084"
+      ],
+      "acceptance": [
+        "真实Euclidean一阶坐标配对及两次完整测试乘积，负号和2系数准确",
+        "实际弱负Laplacian与真实H01乘积闭包相容",
+        "原form-operator完整图刻画给实际域成员及实际算子等式，不缩为H2状态",
+        "原SmoothOnClosure覆盖全部允许权与逆权，无额外几何/时间/节点假设"
+      ],
+      "dependencies": [
+        "C083"
+      ],
+      "branch": "main",
+      "base_commit": "604328efce1cc28e4d6fe6cadcdaa039ee0e76a3",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.weakGradientPairing_coordinates",
+        "Carleman.weakFirstProduct_component",
+        "Carleman.weak_product_coordinate_test",
+        "Carleman.weakGradientPairing_product_test",
+        "Carleman.IsWeakNegativeLaplacian.mul",
+        "Carleman.smoothLaplacianCorrection",
+        "Carleman.boundedSmooth_weakLaplacian_product",
+        "Carleman.boundedSmooth_dirichlet_operator_product",
+        "Carleman.boundedSmooth_map_mem_dirichlet_domain",
+        "Carleman.allowed_weight_mem_dirichlet_domain"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "三模块10显式声明全库3668 jobs通过，5099声明递归公理审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收原算子乘积及权保持；继续从实际导数系数证明原统一交换子估计。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3668,
+        "recursive_axiom_audit": 5099,
+        "new_explicit_declarations": 10,
+        "declaration_artifact_sha256": "091f8fdaa9d703d6802d8e6238e6366b98740d03092b352efb7005dd40e6c493",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
