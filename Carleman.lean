@@ -316,3 +316,7 @@ public import Carleman.Control.GalerkinSuperapproxInterpolation
 public import Carleman.Control.ConformingHeatGradient
 public import Carleman.Control.HeatInterpolationData
 public import Carleman.Control.InterpolatedHeatNumericalData
+
+public import Carleman.Spatial.PiecewiseAffineLp
+public import Carleman.Spatial.PiecewiseAffinePartition
+public import Carleman.Control.PiecewiseAffineGalerkin

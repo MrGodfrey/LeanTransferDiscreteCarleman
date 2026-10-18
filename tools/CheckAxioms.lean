@@ -2576,6 +2576,55 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Physical.interpolatedHeatNumericalData
 #print axioms Carleman.Physical.interpolatedHeatNumericalData
 
+#check @Carleman.affineCoordinate
+#print axioms Carleman.affineCoordinate
+#check @Carleman.affineCoordinate_continuous
+#print axioms Carleman.affineCoordinate_continuous
+#check @Carleman.affineCoordinate_bound
+#print axioms Carleman.affineCoordinate_bound
+#check @Carleman.affineCellGenerator
+#print axioms Carleman.affineCellGenerator
+#check @Carleman.affineCellGenerator_ae
+#print axioms Carleman.affineCellGenerator_ae
+#check @Carleman.piecewiseAffineMap
+#print axioms Carleman.piecewiseAffineMap
+#check @Carleman.piecewiseAffineMap_ae
+#print axioms Carleman.piecewiseAffineMap_ae
+#check @Carleman.piecewiseAffineSpace
+#print axioms Carleman.piecewiseAffineSpace
+#check @Carleman.mem_piecewiseAffineSpace_iff
+#print axioms Carleman.mem_piecewiseAffineSpace_iff
+#check @Carleman.piecewiseAffineSpace_bound_independent
+#print axioms Carleman.piecewiseAffineSpace_bound_independent
+#check @Carleman.piecewiseAffineSpace_finiteDimensional
+#print axioms Carleman.piecewiseAffineSpace_finiteDimensional
+#check @Carleman.conformingPiecewiseAffineSpace
+#print axioms Carleman.conformingPiecewiseAffineSpace
+#check @Carleman.conformingPiecewiseAffineSpace_finiteDimensional
+#print axioms Carleman.conformingPiecewiseAffineSpace_finiteDimensional
+#check @Carleman.conformingPiecewiseAffineSpace_le
+#print axioms Carleman.conformingPiecewiseAffineSpace_le
+#check @Carleman.affineCoordinate_sum
+#print axioms Carleman.affineCoordinate_sum
+#check @Carleman.piecewiseAffine_formula_on_cell
+#print axioms Carleman.piecewiseAffine_formula_on_cell
+#check @Carleman.mem_piecewiseAffineSpace_iff_on_cells
+#print axioms Carleman.mem_piecewiseAffineSpace_iff_on_cells
+#check @Carleman.mem_conformingPiecewiseAffineSpace_iff
+#print axioms Carleman.mem_conformingPiecewiseAffineSpace_iff
+#check @Carleman.Physical.affineGalerkinSpace
+#print axioms Carleman.Physical.affineGalerkinSpace
+#check @Carleman.Physical.affineGalerkinStiffness
+#print axioms Carleman.Physical.affineGalerkinStiffness
+#check @Carleman.Physical.affineGalerkinStiffness_pairing
+#print axioms Carleman.Physical.affineGalerkinStiffness_pairing
+#check @Carleman.Physical.affineGalerkinStiffness_symmetric
+#print axioms Carleman.Physical.affineGalerkinStiffness_symmetric
+#check @Carleman.Physical.affineGalerkinStiffness_nonneg
+#print axioms Carleman.Physical.affineGalerkinStiffness_nonneg
+#check @Carleman.Physical.affineGalerkinSpace_membership
+#print axioms Carleman.Physical.affineGalerkinSpace_membership
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
