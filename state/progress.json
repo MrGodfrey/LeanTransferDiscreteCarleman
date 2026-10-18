@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T039",
-    "supervisor_checked_at": "2026-10-18T18:20:57.914351+00:00",
-    "next_action": "全空间零延拓与真实Dirichlet闭包全库验证通过；提交固定SHA并独立验收，等待同SHA远端CI。",
+    "current_task_id": "T040",
+    "supervisor_checked_at": "2026-10-18T18:31:03.625312+00:00",
+    "next_action": "紧支光滑测试的Poincare及H01闭包传递已定向通过；正在构造有界开集上的真实Dirichlet梯度强制形式。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-18T18:22:41.589701+00:00"
+    "last_activity_at": "2026-10-18T18:31:03.625312+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "756ee9cedb6af22baf308c796fbe0f1d7885e26d",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39152713399/attempts/1",
-      "finished_at": "2026-10-18T18:10:24.599863+00:00",
+      "checked_sha": "fa61af9d4b260cac83d599ef4e228af88f67aee8",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39153888300/attempts/1",
+      "finished_at": "2026-10-18T18:24:48.121358+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "756ee9cedb6af22baf308c796fbe0f1d7885e26d"
+      "source_head_sha": "fa61af9d4b260cac83d599ef4e228af88f67aee8"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "756ee9cedb6af22baf308c796fbe0f1d7885e26d",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39152713399/attempts/1",
-      "finished_at": "2026-10-18T18:10:24.599863+00:00",
+      "checked_sha": "fa61af9d4b260cac83d599ef4e228af88f67aee8",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39153888300/attempts/1",
+      "finished_at": "2026-10-18T18:24:48.121358+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "756ee9cedb6af22baf308c796fbe0f1d7885e26d"
+      "source_head_sha": "fa61af9d4b260cac83d599ef4e228af88f67aee8"
     }
   },
   "milestones": [
@@ -6126,7 +6126,7 @@
       "paper_ref": "Section3 and Section6 genuine H01 realization and P1 zero extension",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:p1"
@@ -6160,15 +6160,113 @@
         "Carleman.dirichletSubspace_closed",
         "Carleman.dirichletSubspace_dense"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "fa61af9d4b260cac83d599ef4e228af88f67aee8",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "fa61af9d4b260cac83d599ef4e228af88f67aee8",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39153888300/attempts/1",
+        "finished_at": "2026-10-18T18:24:48.121358+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "fa61af9d4b260cac83d599ef4e228af88f67aee8"
+      },
+      "semantic_review": {
+        "checked_sha": "fa61af9d4b260cac83d599ef4e228af88f67aee8",
+        "declarations": [
+          "Carleman.SimplicialPartition.nodalDerivativeFunction_zero_outside",
+          "Carleman.SimplicialPartition.nodalFunction_hasFDerivAt_global_ae",
+          "Carleman.SimplicialPartition.nodalDerivativeFunction_global_memLp",
+          "Carleman.SimplicialPartition.nodalGlobalDerivativeLp",
+          "Carleman.SimplicialPartition.nodalGlobalDerivativeLp_ae",
+          "Carleman.SimplicialPartition.nodalFunction_global_memLp",
+          "Carleman.SimplicialPartition.nodalGlobalLp",
+          "Carleman.SimplicialPartition.nodalGlobalLp_ae",
+          "Carleman.weakSpatialDerivative_of_lipschitz_full",
+          "Carleman.lipschitzGlobalJet",
+          "Carleman.lipschitzGlobalJet_value",
+          "Carleman.SimplicialPartition.nodalGlobalSobolevJet",
+          "Carleman.SimplicialPartition.nodalGlobalSobolevJet_value",
+          "Carleman.SimplicialPartition.nodalGlobalLp_mem_sobolev",
+          "Carleman.SpatialTest.memLp_fderiv",
+          "Carleman.SpatialTest.fderivLp",
+          "Carleman.SpatialTest.fderivLp_ae",
+          "Carleman.SpatialTest.sobolevJet",
+          "Carleman.SpatialTest.sobolevJet_value",
+          "Carleman.dirichletJetSpace",
+          "Carleman.dirichletSubspace",
+          "Carleman.dirichletSubspace_sobolev",
+          "Carleman.test_mem_dirichletJetSpace",
+          "Carleman.test_mem_dirichletSubspace",
+          "Carleman.mem_dirichletJetSpace_iff",
+          "Carleman.dirichletSubspace_closed",
+          "Carleman.dirichletSubspace_dense"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e0a4aa0f8e29833a424dadbd1a3f0bcfe2ad9b0b/governance/reviews/T039-local-acceptance.md",
+        "reviewed_at": "2026-10-18T18:27:45+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C054"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "全空间实际零延拓及导数Lp类与H1 jet；全部SpatialTest的真实H1 jet；以其线性张成的H1闭包定义Dirichlet空间，证明H1闭合与L2稠密。节点插值进入H01闭包、Poincare/梯度形式及统一数值估计仍待，不提升P011。"
+      "scope_notes": "全空间实际零延拓及导数Lp类与H1 jet；全部SpatialTest的真实H1 jet；以其线性张成的H1闭包定义Dirichlet空间，证明H1闭合与L2稠密。节点插值进入H01闭包、Poincare/梯度形式及统一数值估计仍待，不提升P011。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C056",
+      "title": "真实H01上的Poincare与Dirichlet梯度形式",
+      "paper_ref": "Section3 A1 and Section6 Dirichlet heat realization",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:p1"
+      ],
+      "lean_declarations": [
+        "Carleman.SpatialTest.zeroTest",
+        "Carleman.SpatialTest.addTest",
+        "Carleman.SpatialTest.smulTest",
+        "Carleman.SpatialTest.zeroTest_jet",
+        "Carleman.SpatialTest.addTest_jet",
+        "Carleman.SpatialTest.smulTest_jet",
+        "Carleman.exists_test_of_mem_test_span",
+        "Carleman.SpatialTest.linearMul",
+        "Carleman.SpatialTest.linearMul_derivative",
+        "Carleman.SpatialTest.weakDerivative",
+        "Carleman.SpatialTest.linearMul_norm_le",
+        "Carleman.SpatialTest.poincare_slab",
+        "Carleman.SpatialTest.sobolevJet_derivative",
+        "Carleman.derivativeComponent_norm_le",
+        "Carleman.dirichlet_poincare",
+        "Carleman.WeakSobolevJet.norm_zero_field",
+        "Carleman.DirichletEnergy",
+        "Carleman.dirichletGradient",
+        "Carleman.dirichletForm",
+        "Carleman.dirichletForm_apply",
+        "Carleman.dirichletForm_symmetric",
+        "Carleman.dirichletForm_integral",
+        "Carleman.dirichletEnergy_norm_sq",
+        "Carleman.dirichletForm_coercive",
+        "Carleman.dirichletOriginalForm",
+        "Carleman.dirichletForm_coercive_of_bounded",
+        "Carleman.boundedDirichletOriginalForm"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C055"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "从真实紧支测试积分分部证明slab Poincare，经H1闭包传递；实际全梯度Lp构造连续对称形式并证明强制性，供应有界开集的OriginalForm。节点H01成员、H2正则性、局部误差和连续CE仍待，不提升P011。"
     }
   ],
   "events": [
@@ -6444,6 +6542,11 @@
       "at": "2026-10-18T18:20:57.914351+00:00",
       "public_summary": "节点插值实际弱导数与H1的39声明经独立Agent及同SHA CI验收PASS；验收队列清空，原文12/26。继续全空间零延拓与真实Dirichlet闭包。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1dc4095ed1de32e38362a4f4b9de6de8491425dd/governance/reviews/T038-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-18T18:31:03.625312+00:00",
+      "public_summary": "全空间零延拓H1与Dirichlet闭包27声明经独立Agent及同SHA CI验收PASS；验收队列清空，原文12/26。继续Poincare及真实Dirichlet梯度形式。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e0a4aa0f8e29833a424dadbd1a3f0bcfe2ad9b0b/governance/reviews/T039-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -6573,7 +6676,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8e2009563a2a52e3ac5dc9923a35189cec8906fa/governance/reviews/T037-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39151180933/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1dc4095ed1de32e38362a4f4b9de6de8491425dd/governance/reviews/T038-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39152713399/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39152713399/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e0a4aa0f8e29833a424dadbd1a3f0bcfe2ad9b0b/governance/reviews/T039-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39153888300/attempts/1"
     ]
   },
   "schedules": [
@@ -14410,10 +14515,10 @@
       ],
       "branch": "main",
       "base_commit": "756ee9cedb6af22baf308c796fbe0f1d7885e26d",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "fa61af9d4b260cac83d599ef4e228af88f67aee8",
+      "merge_commit": "fa61af9d4b260cac83d599ef4e228af88f67aee8",
       "lean_declarations": [
         "Carleman.SimplicialPartition.nodalDerivativeFunction_zero_outside",
         "Carleman.SimplicialPartition.nodalFunction_hasFDerivAt_global_ae",
@@ -14443,12 +14548,23 @@
         "Carleman.dirichletSubspace_closed",
         "Carleman.dirichletSubspace_dense"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "fa61af9d4b260cac83d599ef4e228af88f67aee8",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39153888300/attempts/1",
+        "finished_at": "2026-10-18T18:24:48.121358+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "fa61af9d4b260cac83d599ef4e228af88f67aee8"
+      },
       "blocker": null,
       "attempts": [
         "五模块27声明定向构建通过；Dirichlet最后一次构建3163 jobs。"
       ],
-      "next_action": "全空间零延拓与真实Dirichlet闭包全库验证通过；提交固定SHA并独立验收，等待同SHA远端CI。",
+      "next_action": "全空间零延拓H1与Dirichlet闭包已独立验收；T040证明Poincare并构造真实梯度OriginalForm。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -14462,8 +14578,92 @@
         "declaration_artifact_sha256": "aa6d492cb18ff22b91168a64881a43f85566943b40e7ba0ef20ff4df1fa69fa3",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING; fixed SHA required"
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "fa61af9d4b260cac83d599ef4e228af88f67aee8",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C055"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "fa61af9d4b260cac83d599ef4e228af88f67aee8",
+          "status": "PASS",
+          "reviewed_at": "2026-10-18T18:27:45+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e0a4aa0f8e29833a424dadbd1a3f0bcfe2ad9b0b/governance/reviews/T039-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "fa61af9d4b260cac83d599ef4e228af88f67aee8",
+        "checked_sha": "fa61af9d4b260cac83d599ef4e228af88f67aee8",
+        "run_id": 39153888300,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3554,
+        "recursive_axiom_audit": 4294,
+        "new_explicit_declarations": 27,
+        "declaration_artifact_sha256": "aa6d492cb18ff22b91168a64881a43f85566943b40e7ba0ef20ff4df1fa69fa3",
+        "local_remote_artifacts_identical": true
       }
+    },
+    {
+      "id": "T040",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "真实H01上的Poincare与Dirichlet梯度形式",
+      "goal_ids": [
+        "C056"
+      ],
+      "acceptance": [
+        "实际紧支测试线性运算和真实积分分部推出Poincare",
+        "连续性将估计传递到实际H01闭包，全部梯度字段保持真实弱导数",
+        "实际梯度积分形式连续对称且强制，直接构造有界开集Dirichlet OriginalForm；不预设Poincare或目标形式性质"
+      ],
+      "dependencies": [
+        "C055"
+      ],
+      "branch": "main",
+      "base_commit": "fa61af9d4b260cac83d599ef4e228af88f67aee8",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.SpatialTest.zeroTest",
+        "Carleman.SpatialTest.addTest",
+        "Carleman.SpatialTest.smulTest",
+        "Carleman.SpatialTest.zeroTest_jet",
+        "Carleman.SpatialTest.addTest_jet",
+        "Carleman.SpatialTest.smulTest_jet",
+        "Carleman.exists_test_of_mem_test_span",
+        "Carleman.SpatialTest.linearMul",
+        "Carleman.SpatialTest.linearMul_derivative",
+        "Carleman.SpatialTest.weakDerivative",
+        "Carleman.SpatialTest.linearMul_norm_le",
+        "Carleman.SpatialTest.poincare_slab",
+        "Carleman.SpatialTest.sobolevJet_derivative",
+        "Carleman.derivativeComponent_norm_le",
+        "Carleman.dirichlet_poincare",
+        "Carleman.WeakSobolevJet.norm_zero_field",
+        "Carleman.DirichletEnergy",
+        "Carleman.dirichletGradient",
+        "Carleman.dirichletForm",
+        "Carleman.dirichletForm_apply",
+        "Carleman.dirichletForm_symmetric",
+        "Carleman.dirichletForm_integral",
+        "Carleman.dirichletEnergy_norm_sq",
+        "Carleman.dirichletForm_coercive",
+        "Carleman.dirichletOriginalForm",
+        "Carleman.dirichletForm_coercive_of_bounded",
+        "Carleman.boundedDirichletOriginalForm"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "测试函数线性运算、slab Poincare和H01闭包传递已定向通过；DirichletForm编译细节继续。"
+      ],
+      "next_action": "紧支光滑测试的Poincare及H01闭包传递已定向通过；正在构造有界开集上的真实Dirichlet梯度强制形式。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {

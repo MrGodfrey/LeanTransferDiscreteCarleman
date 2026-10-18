@@ -71,3 +71,5 @@
 - T037 / C053：全局连续节点插值独立验收PASS；30声明、4111项公理审计及同SHA CI。固定证明 `6923ae3b24d9590bd0afb4e66830b30fe49165d3`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8e2009563a2a52e3ac5dc9923a35189cec8906fa/governance/reviews/T037-local-acceptance.md)。原文12/26，T038继续真实导数和边界零延拓。
 
 - T038 / C054：节点插值实际弱导数与H1独立验收PASS；39声明、4210项公理审计及同SHA CI。固定证明 `756ee9cedb6af22baf308c796fbe0f1d7885e26d`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1dc4095ed1de32e38362a4f4b9de6de8491425dd/governance/reviews/T038-local-acceptance.md)。原文12/26，T039继续全空间零延拓H1与Dirichlet闭包空间。
+
+- T039 / C055：全空间零延拓H1与Dirichlet闭包独立验收PASS；27声明、4294项公理审计及同SHA CI。固定证明 `fa61af9d4b260cac83d599ef4e228af88f67aee8`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e0a4aa0f8e29833a424dadbd1a3f0bcfe2ad9b0b/governance/reviews/T039-local-acceptance.md)。原文12/26，T040继续Poincare及实际Dirichlet梯度形式。
