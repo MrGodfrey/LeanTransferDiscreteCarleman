@@ -386,3 +386,7 @@ public import Carleman.Spatial.SubdomainRestriction
 public import Carleman.Spatial.AffineWeakGradient
 public import Carleman.Spatial.SimplicialLocalGradient
 public import Carleman.Spatial.ConformingLocalPolynomial
+
+public import Carleman.Spatial.SimplicialIntegrals
+public import Carleman.Spatial.CellwiseInverseWeight
+public import Carleman.Spatial.ConformingWeightedInverse

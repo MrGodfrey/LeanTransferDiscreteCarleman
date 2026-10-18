@@ -3279,6 +3279,26 @@ set_option pp.maxSteps 1000000
 #check @Carleman.SimplicialPartition.conforming_local_polynomial
 #print axioms Carleman.SimplicialPartition.conforming_local_polynomial
 
+
+#check @Carleman.SimplicialPartition.cell_restrict_domain
+#print axioms Carleman.SimplicialPartition.cell_restrict_domain
+#check @Carleman.SimplicialPartition.integral_eq_sum_cells
+#print axioms Carleman.SimplicialPartition.integral_eq_sum_cells
+#check @Carleman.BoundedMultiplier.restrictMeasure
+#print axioms Carleman.BoundedMultiplier.restrictMeasure
+#check @Carleman.SimplicialPartition.inverseScale
+#print axioms Carleman.SimplicialPartition.inverseScale
+#check @Carleman.SimplicialPartition.inverseScale_on_cell
+#print axioms Carleman.SimplicialPartition.inverseScale_on_cell
+#check @Carleman.SimplicialPartition.inverseWeight
+#print axioms Carleman.SimplicialPartition.inverseWeight
+#check @Carleman.SimplicialPartition.inverseWeight_on_cell
+#print axioms Carleman.SimplicialPartition.inverseWeight_on_cell
+#check @Carleman.SimplicialPartition.inverseWeight_sq_sum
+#print axioms Carleman.SimplicialPartition.inverseWeight_sq_sum
+#check @Carleman.conforming_weighted_inverse
+#print axioms Carleman.conforming_weighted_inverse
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
