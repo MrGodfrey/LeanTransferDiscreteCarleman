@@ -794,3 +794,9 @@ public import Carleman.Spatial.BoxAuxiliaryEstimates
 public import Carleman.Weights.InteriorGaussianWeight
 public import Carleman.Weights.InteriorGaussianGeometry
 public import Carleman.Weights.InteriorHeatMatrix
+
+public import Carleman.Spatial.SmoothDirectionalCalculus
+public import Carleman.Spatial.SmoothDirectionalEnergy
+public import Carleman.Spatial.PointwiseHeatIdentity
+public import Carleman.Spatial.PointwiseHeatConjugation
+public import Carleman.Spatial.SpacetimeHeatIdentity

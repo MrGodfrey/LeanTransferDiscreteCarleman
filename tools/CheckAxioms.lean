@@ -6271,6 +6271,113 @@ set_option pp.maxSteps 1000000
 #check @Carleman.exists_interior_heat_weight
 #print axioms Carleman.exists_interior_heat_weight
 
+#check @Carleman.smoothD
+#print axioms Carleman.smoothD
+#check @Carleman.smoothD_contDiff
+#print axioms Carleman.smoothD_contDiff
+#check @Carleman.smoothD_add
+#print axioms Carleman.smoothD_add
+#check @Carleman.smoothD_sub
+#print axioms Carleman.smoothD_sub
+#check @Carleman.smoothD_neg
+#print axioms Carleman.smoothD_neg
+#check @Carleman.smoothD_mul
+#print axioms Carleman.smoothD_mul
+#check @Carleman.smoothD_const_mul
+#print axioms Carleman.smoothD_const_mul
+#check @Carleman.smoothD_sq
+#print axioms Carleman.smoothD_sq
+#check @Carleman.smoothD_sum
+#print axioms Carleman.smoothD_sum
+#check @Carleman.smoothD_comm
+#print axioms Carleman.smoothD_comm
+#check @Carleman.directionalLap
+#print axioms Carleman.directionalLap
+#check @Carleman.directionalPair
+#print axioms Carleman.directionalPair
+#check @Carleman.directionalEnergy
+#print axioms Carleman.directionalEnergy
+#check @Carleman.directionalHessianForm
+#print axioms Carleman.directionalHessianForm
+#check @Carleman.directionalLap_contDiff
+#print axioms Carleman.directionalLap_contDiff
+#check @Carleman.directionalPair_contDiff
+#print axioms Carleman.directionalPair_contDiff
+#check @Carleman.directionalEnergy_contDiff
+#print axioms Carleman.directionalEnergy_contDiff
+#check @Carleman.smoothD_directionalPair
+#print axioms Carleman.smoothD_directionalPair
+#check @Carleman.smoothD_directionalEnergy
+#print axioms Carleman.smoothD_directionalEnergy
+#check @Carleman.directional_transport_cancellation
+#print axioms Carleman.directional_transport_cancellation
+#check @Carleman.directionalPair_comm
+#print axioms Carleman.directionalPair_comm
+#check @Carleman.directionalPair_mul_left
+#print axioms Carleman.directionalPair_mul_left
+#check @Carleman.directionalPair_sq_left
+#print axioms Carleman.directionalPair_sq_left
+#check @Carleman.directionalPair_self
+#print axioms Carleman.directionalPair_self
+#check @Carleman.directional_div_product
+#print axioms Carleman.directional_div_product
+#check @Carleman.smoothD_directionalEnergy_time
+#print axioms Carleman.smoothD_directionalEnergy_time
+#check @Carleman.directionalLap_mul
+#print axioms Carleman.directionalLap_mul
+#check @Carleman.pointwiseHeatFlux
+#print axioms Carleman.pointwiseHeatFlux
+#check @Carleman.pointwiseHeatTimeFlux
+#print axioms Carleman.pointwiseHeatTimeFlux
+#check @Carleman.pointwiseHeatB
+#print axioms Carleman.pointwiseHeatB
+#check @Carleman.pointwiseHeatMatrixEnergy
+#print axioms Carleman.pointwiseHeatMatrixEnergy
+#check @Carleman.pointwiseHeatFlux_divergence
+#print axioms Carleman.pointwiseHeatFlux_divergence
+#check @Carleman.pointwise_heat_identity
+#print axioms Carleman.pointwise_heat_identity
+#check @Carleman.smoothD_exp
+#print axioms Carleman.smoothD_exp
+#check @Carleman.smoothD_exp_neg
+#print axioms Carleman.smoothD_exp_neg
+#check @Carleman.directionalLap_exp_neg
+#print axioms Carleman.directionalLap_exp_neg
+#check @Carleman.directionalPair_exp_neg
+#print axioms Carleman.directionalPair_exp_neg
+#check @Carleman.heatConjugationK
+#print axioms Carleman.heatConjugationK
+#check @Carleman.heatCarlemanA
+#print axioms Carleman.heatCarlemanA
+#check @Carleman.heatConjugationK_eq
+#print axioms Carleman.heatConjugationK_eq
+#check @Carleman.heatConjugationK_contDiff
+#print axioms Carleman.heatConjugationK_contDiff
+#check @Carleman.pointwiseHeatB_original_formula
+#print axioms Carleman.pointwiseHeatB_original_formula
+#check @Carleman.pointwise_heat_conjugation
+#print axioms Carleman.pointwise_heat_conjugation
+#check @Carleman.pointwise_heat_carleman_identity
+#print axioms Carleman.pointwise_heat_carleman_identity
+#check @Carleman.pointwise_heat_carleman_inequality
+#print axioms Carleman.pointwise_heat_carleman_inequality
+#check @Carleman.spaceTimeSpatialDirection
+#print axioms Carleman.spaceTimeSpatialDirection
+#check @Carleman.spaceTimeHeat
+#print axioms Carleman.spaceTimeHeat
+#check @Carleman.spaceTime_timeD
+#print axioms Carleman.spaceTime_timeD
+#check @Carleman.spaceTime_spatialD
+#print axioms Carleman.spaceTime_spatialD
+#check @Carleman.spaceTime_directionalLap
+#print axioms Carleman.spaceTime_directionalLap
+#check @Carleman.spaceTime_heat_directional
+#print axioms Carleman.spaceTime_heat_directional
+#check @Carleman.spacetime_heat_carleman_identity
+#print axioms Carleman.spacetime_heat_carleman_identity
+#check @Carleman.spacetime_heat_carleman_inequality
+#print axioms Carleman.spacetime_heat_carleman_inequality
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
