@@ -604,3 +604,6 @@ public import Carleman.Spatial.WeightedMeasureAnchor
 public import Carleman.Spatial.CartesianKuhnWeightedLocalError
 public import Carleman.Spatial.CartesianKuhnErrorAssembly
 public import Carleman.Spatial.AllowedCartesianKuhnError
+
+public import Carleman.Spatial.KuhnNodalGradient
+public import Carleman.Spatial.CartesianKuhnCellStiffness

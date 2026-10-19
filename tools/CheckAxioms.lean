@@ -4997,6 +4997,25 @@ set_option pp.maxSteps 1000000
 #check @Carleman.allowed_weight_cartesianKuhn_approximation
 #print axioms Carleman.allowed_weight_cartesianKuhn_approximation
 
+#check @Carleman.cartesianKuhnNodalDerivative_basis
+#print axioms Carleman.cartesianKuhnNodalDerivative_basis
+#check @Carleman.derivativeOneFiber_inner
+#print axioms Carleman.derivativeOneFiber_inner
+#check @Carleman.cartesianKuhnNodalGradient_inner
+#print axioms Carleman.cartesianKuhnNodalGradient_inner
+#check @Carleman.cartesianKuhnNodalGradientLp_inner
+#print axioms Carleman.cartesianKuhnNodalGradientLp_inner
+#check @Carleman.cartesianKuhnCellDifference
+#print axioms Carleman.cartesianKuhnCellDifference
+#check @Carleman.cartesianKuhnReconstructionJet_coordinate_on_cell
+#print axioms Carleman.cartesianKuhnReconstructionJet_coordinate_on_cell
+#check @Carleman.cartesianKuhnReconstructionJet_cell_energy
+#print axioms Carleman.cartesianKuhnReconstructionJet_cell_energy
+#check @Carleman.cartesianKuhnReconstruction_weakGradientPairing_cells
+#print axioms Carleman.cartesianKuhnReconstruction_weakGradientPairing_cells
+#check @Carleman.cartesianKuhnReconstruction_scalarForm_cells
+#print axioms Carleman.cartesianKuhnReconstruction_scalarForm_cells
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
