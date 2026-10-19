@@ -233,3 +233,5 @@
 - T118 / C134：闭域强光滑逼近与连续代表12声明独立PASS；同SHA三项CI、6666声明递归审计及固定产物逐字节一致。 固定证明 `4e727b83c3fcb821432ba4089e6f9ea0c9e0a277`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d32f98e5236a69b3c097bdfe6c4c5090d0df726a/governance/reviews/T118-local-acceptance.md)。原文14/26，T119继续原全部弱H²的真实局部节点值误差。
 
 - T119 / C135：原全部弱H²局部节点值误差12声明独立PASS；同SHA三项CI、6678声明递归审计及固定产物逐字节一致。 固定证明 `6f051d6775dc64fbf1ccf1e93df232c43dee616f`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1f5714678b36a593dfae67e3fb496eecaed0740f/governance/reviews/T119-local-acceptance.md)。原文14/26，T120继续原全部弱H²的真实局部节点梯度误差。
+
+- T120 / C136：全部弱H²局部节点梯度误差9声明独立PASS；同SHA三项CI、6688声明递归审计及固定产物逐字节一致。 固定证明 `a26158d00376e85866c536aa366239af41c83f97`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/881e016ba4bb9591c2d313c445e334103119b2fd/governance/reviews/T120-local-acceptance.md)。原文14/26，T121继续真实全空间弱导数的C¹链式法则。

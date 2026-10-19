@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T120",
-    "supervisor_checked_at": "2026-10-19T05:27:47.207857+00:00",
-    "next_action": "固定SHA独立验收全部弱H²局部节点梯度界；继续H¹₀连续代表边界零值与全局允许权组装。",
+    "current_task_id": "T121",
+    "supervisor_checked_at": "2026-10-19T05:35:15.234945+00:00",
+    "next_action": "固定SHA独立验收真实弱C¹链式法则；继续截断排除值域间隙及H¹₀连续代表边界零值。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T05:27:47.207857+00:00"
+    "last_activity_at": "2026-10-19T05:35:15.234945+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "6f051d6775dc64fbf1ccf1e93df232c43dee616f",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39204037128/attempts/1",
-      "finished_at": "2026-10-19T05:23:16.828732+00:00",
+      "checked_sha": "a26158d00376e85866c536aa366239af41c83f97",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39204693650/attempts/1",
+      "finished_at": "2026-10-19T05:29:58.341631+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "6f051d6775dc64fbf1ccf1e93df232c43dee616f"
+      "source_head_sha": "a26158d00376e85866c536aa366239af41c83f97"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "6f051d6775dc64fbf1ccf1e93df232c43dee616f",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39204037128/attempts/1",
-      "finished_at": "2026-10-19T05:23:16.828732+00:00",
+      "checked_sha": "a26158d00376e85866c536aa366239af41c83f97",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39204693650/attempts/1",
+      "finished_at": "2026-10-19T05:29:58.341631+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "6f051d6775dc64fbf1ccf1e93df232c43dee616f"
+      "source_head_sha": "a26158d00376e85866c536aa366239af41c83f97"
     }
   },
   "milestones": [
@@ -12492,7 +12492,7 @@
       "paper_ref": "Original P1 Step 2: complete local nodal interpolation gradient error for every weak H² state, with the actual full weak gradient and original same-cell Hessian energy",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:p1",
@@ -12510,9 +12510,38 @@
         "Carleman.WeakSobolevJet.simplex_nodal_gradient_integral",
         "Carleman.WeakSobolevJet.exists_nodal_h2_representative"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "a26158d00376e85866c536aa366239af41c83f97",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "a26158d00376e85866c536aa366239af41c83f97",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39204693650/attempts/1",
+        "finished_at": "2026-10-19T05:29:58.341631+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "a26158d00376e85866c536aa366239af41c83f97"
+      },
+      "semantic_review": {
+        "checked_sha": "a26158d00376e85866c536aa366239af41c83f97",
+        "declarations": [
+          "Carleman.l2_error_sub_constant_tendsto",
+          "Carleman.simplexNodal_affineDerivative_eq",
+          "Carleman.simplexNodalDerivative_tendsto",
+          "Carleman.firstDerivativeFiber_norm_sq",
+          "Carleman.firstDerivativeFiber_sub_norm_sq",
+          "Carleman.simplexNodal_h2_gradient_integral_of_limit",
+          "Carleman.derivativeOneFiber_local_sub_integral_eq",
+          "Carleman.WeakSobolevJet.simplex_nodal_gradient_integral",
+          "Carleman.WeakSobolevJet.exists_nodal_h2_representative"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/881e016ba4bb9591c2d313c445e334103119b2fd/governance/reviews/T120-local-acceptance.md",
+        "reviewed_at": "2026-10-19T05:32:00+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C135",
         "C129",
@@ -12520,7 +12549,41 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "实际节点导数极限、全一阶强L²收敛和完整纤维平方和身份给全部原弱H²局部梯度界；常数仅依维数/形状，同单元弱Hessian积分，最终一个闭包代表用于所有单元的值/梯度界。H¹₀边界零值及全局权仍待；AUXILIARY14/26。"
+      "scope_notes": "实际节点导数极限、全一阶强L²收敛和完整纤维平方和身份给全部原弱H²局部梯度界；常数仅依维数/形状，同单元弱Hessian积分，最终一个闭包代表用于所有单元的值/梯度界。H¹₀边界零值及全局权仍待；AUXILIARY14/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C137",
+      "title": "真实全空间弱导数的C¹链式法则",
+      "paper_ref": "Auxiliary analytic obligation for original P1 Step 2: scalar weak H¹ chain rule supporting the actual boundary-zero continuous representative of H¹₀ states",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:p1"
+      ],
+      "lean_declarations": [
+        "Carleman.memLp_mul_of_ae_bound",
+        "Carleman.bochnerL2Norm_mul_le_of_ae_bound",
+        "Carleman.l2_bounded_multiplier_zero_tendsto",
+        "Carleman.l2_bounded_multiplier_strong_tendsto",
+        "Carleman.memLp_toLp_tendsto_of_L2_error",
+        "Carleman.IsWeakSpatialDerivative.of_strong_function_limits",
+        "Carleman.weakSpatialDerivative_of_contDiff",
+        "Carleman.l2_lipschitz_comp_error_tendsto",
+        "Carleman.IsWeakSpatialDerivative.scalar_chain_rule"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C131",
+        "C135"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实有界乘子MemLp、支配收敛和强L²乘积极限；原全部测试弱导数身份的强闭合；真实缩小卷积给任意全空间弱L²导数对的C¹ Lipschitz标量链式法则，η(0)=0确保真实L²。边界零值仍需后续截断与几何；AUXILIARY14/26。"
     }
   ],
   "events": [
@@ -13205,6 +13268,11 @@
       "at": "2026-10-19T05:27:47.207857+00:00",
       "public_summary": "全部弱H²局部节点值误差已独立验收；完整弱梯度局部节点误差9声明构建审计通过，继续H¹₀边界零值。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1f5714678b36a593dfae67e3fb496eecaed0740f/governance/reviews/T119-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T05:35:15.234945+00:00",
+      "public_summary": "原全部弱H²局部值/梯度误差已独立验收；真实弱C¹链式法则9声明构建审计通过，继续边界零值截断论证。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/881e016ba4bb9591c2d313c445e334103119b2fd/governance/reviews/T120-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -13496,7 +13564,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d32f98e5236a69b3c097bdfe6c4c5090d0df726a/governance/reviews/T118-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39203179575/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1f5714678b36a593dfae67e3fb496eecaed0740f/governance/reviews/T119-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39204037128/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39204037128/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/881e016ba4bb9591c2d313c445e334103119b2fd/governance/reviews/T120-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39204693650/attempts/1"
     ]
   },
   "schedules": [
@@ -29522,10 +29592,10 @@
       ],
       "branch": "main",
       "base_commit": "6f051d6775dc64fbf1ccf1e93df232c43dee616f",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "a26158d00376e85866c536aa366239af41c83f97",
+      "merge_commit": "a26158d00376e85866c536aa366239af41c83f97",
       "lean_declarations": [
         "Carleman.l2_error_sub_constant_tendsto",
         "Carleman.simplexNodal_affineDerivative_eq",
@@ -29537,12 +29607,23 @@
         "Carleman.WeakSobolevJet.simplex_nodal_gradient_integral",
         "Carleman.WeakSobolevJet.exists_nodal_h2_representative"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "a26158d00376e85866c536aa366239af41c83f97",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39204693650/attempts/1",
+        "finished_at": "2026-10-19T05:29:58.341631+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "a26158d00376e85866c536aa366239af41c83f97"
+      },
       "blocker": null,
       "attempts": [
         "四模块9声明定向3357 jobs、全库3869 jobs通过；6688声明递归审计PASS。"
       ],
-      "next_action": "固定SHA独立验收全部弱H²局部节点梯度界；继续H¹₀连续代表边界零值与全局允许权组装。",
+      "next_action": "全部弱H²局部值/梯度节点误差已独立验收；继续H¹₀连续代表边界零值与全局允许权。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -29554,6 +29635,89 @@
         "recursive_axiom_audit": 6688,
         "new_explicit_declarations": 9,
         "declaration_artifact_sha256": "c66d73205c28466b4c7943ff923ec4a234bbf5388e87c608f49f528fc6839107",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "a26158d00376e85866c536aa366239af41c83f97",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C136"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "a26158d00376e85866c536aa366239af41c83f97",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T05:32:00+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/881e016ba4bb9591c2d313c445e334103119b2fd/governance/reviews/T120-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "a26158d00376e85866c536aa366239af41c83f97",
+        "checked_sha": "a26158d00376e85866c536aa366239af41c83f97",
+        "run_id": 39204693650,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3869,
+        "recursive_axiom_audit": 6688,
+        "new_explicit_declarations": 9,
+        "declaration_artifact_sha256": "c66d73205c28466b4c7943ff923ec4a234bbf5388e87c608f49f528fc6839107",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T121",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "真实全空间弱导数的C¹链式法则",
+      "goal_ids": [
+        "C137"
+      ],
+      "acceptance": [
+        "有界乘子及所有差真实MemLp，支配函数M²|g|²确实可积",
+        "变动乘子与强数据的精确误差分解给真实强L²极限",
+        "原全部SpatialTest配对闭合与经典积分分部无新增点态正则假设",
+        "同一实际u/v卷积的真实方向导数及C¹链式法则，η′连续/有界内部供应",
+        "任意原全空间弱导数对与任意方向；不冒称边界零值或完整P1"
+      ],
+      "dependencies": [
+        "C131",
+        "C135"
+      ],
+      "branch": "main",
+      "base_commit": "a26158d00376e85866c536aa366239af41c83f97",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.memLp_mul_of_ae_bound",
+        "Carleman.bochnerL2Norm_mul_le_of_ae_bound",
+        "Carleman.l2_bounded_multiplier_zero_tendsto",
+        "Carleman.l2_bounded_multiplier_strong_tendsto",
+        "Carleman.memLp_toLp_tendsto_of_L2_error",
+        "Carleman.IsWeakSpatialDerivative.of_strong_function_limits",
+        "Carleman.weakSpatialDerivative_of_contDiff",
+        "Carleman.l2_lipschitz_comp_error_tendsto",
+        "Carleman.IsWeakSpatialDerivative.scalar_chain_rule"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "三模块9声明定向3255 jobs、全库3872 jobs通过；6697声明递归审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收真实弱C¹链式法则；继续截断排除值域间隙及H¹₀连续代表边界零值。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3872,
+        "recursive_axiom_audit": 6697,
+        "new_explicit_declarations": 9,
+        "declaration_artifact_sha256": "0712f1a9ed1a74436b903b356fcf3f4865f0e2411c31ef6ccdd95db61d65ebc8",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
