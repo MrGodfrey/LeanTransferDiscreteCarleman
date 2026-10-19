@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T172",
-    "supervisor_checked_at": "2026-10-19T13:42:53.145180+00:00",
-    "next_action": "独立验收完整Cartesian滤波控制；继续完整P1物理估计、控制及一般几何，清理在途验收。",
+    "current_task_id": "T173",
+    "supervisor_checked_at": "2026-10-19T13:50:45.498837+00:00",
+    "next_action": "独立验收P1真实物理载荷估计；继续P1物理观测/实际控制及滤波后果，收齐在途验收。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T13:42:53.145180+00:00"
+    "last_activity_at": "2026-10-19T13:50:45.498837+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "f6e35f26cc23e5ca84eb8e869a12864be70e7b27",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39261882332/attempts/1",
-      "finished_at": "2026-10-19T13:40:43.619993+00:00",
+      "checked_sha": "113b2c6e318ce5cb48f1fda5696223646e0cd2b1",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39262538619/attempts/1",
+      "finished_at": "2026-10-19T13:45:49.317714+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "f6e35f26cc23e5ca84eb8e869a12864be70e7b27"
+      "source_head_sha": "113b2c6e318ce5cb48f1fda5696223646e0cd2b1"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "f6e35f26cc23e5ca84eb8e869a12864be70e7b27",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39261882332/attempts/1",
-      "finished_at": "2026-10-19T13:40:43.619993+00:00",
+      "checked_sha": "113b2c6e318ce5cb48f1fda5696223646e0cd2b1",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39262538619/attempts/1",
+      "finished_at": "2026-10-19T13:45:49.317714+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "f6e35f26cc23e5ca84eb8e869a12864be70e7b27"
+      "source_head_sha": "113b2c6e318ce5cb48f1fda5696223646e0cd2b1"
     }
   },
   "milestones": [
@@ -16304,7 +16304,7 @@
       "paper_ref": "Original filtered observability condition and the actual full Cartesian box realization",
       "milestone": "M6b",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "thm:filtered-observability"
@@ -16327,14 +16327,26 @@
         ],
         "source_head_sha": "f6e35f26cc23e5ca84eb8e869a12864be70e7b27"
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "f6e35f26cc23e5ca84eb8e869a12864be70e7b27",
+        "declarations": [
+          "Carleman.Physical.filter_condition_budget",
+          "Carleman.Physical.filtered_observation_of_relaxed",
+          "Carleman.Physical.box_cartesian_filtered_observability"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f102d1571bad357dedf292a90d4ccc6b832db369/governance/reviews/T171-local-acceptance.md",
+        "reviewed_at": "2026-10-19T13:44:33+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C186"
       ],
       "blocker": null,
       "pr_url": null,
       "scope_notes": "原Rayleigh和对数条件精确给反向估计余项吸收；仅终态属于任意F，不要求不变子空间。实际盒Cartesian观测内部供应，C0先于全部网格/势/F，保留原控制空间与尺度。仅盒实例。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C188",
@@ -16342,7 +16354,7 @@
       "paper_ref": "Original complementary terminal penalty and actual filtered control on the full Cartesian box realization",
       "milestone": "M6b",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "cor:filtered-control",
@@ -16370,8 +16382,19 @@
         "Carleman.Physical.filter_penalty_decay",
         "Carleman.Physical.box_cartesian_filtered_control"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "113b2c6e318ce5cb48f1fda5696223646e0cd2b1",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "113b2c6e318ce5cb48f1fda5696223646e0cd2b1",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39262538619/attempts/1",
+        "finished_at": "2026-10-19T13:45:49.317714+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "113b2c6e318ce5cb48f1fda5696223646e0cd2b1"
+      },
       "semantic_review": null,
       "dependencies": [
         "C187",
@@ -16379,7 +16402,35 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "真实互补HUM算子、正交分解和物理流构造实际控制及全部ForwardEquation轨道。完整盒Cartesian实例内部供应原松弛观测，统一C0(T,M)先于全部网格/势/θ/F，精确PF终态为零、原成本与完整指数终态率，无F不变性假设。仅盒实例。"
+      "scope_notes": "真实互补HUM算子、正交分解和物理流构造实际控制及全部ForwardEquation轨道。完整盒Cartesian实例内部供应原松弛观测，统一C0(T,M)先于全部网格/势/θ/F，精确PF终态为零、原成本与完整指数终态率，无F不变性假设。仅盒实例。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C189",
+      "title": "完整一致质量P1盒实例的实际物理载荷估计",
+      "paper_ref": "Original full consistent-mass P1 realization and heat-scale physical load Carleman estimate on boxes",
+      "milestone": "M6b",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:p1",
+        "cor:scales"
+      ],
+      "lean_declarations": [
+        "Carleman.Physical.box_p1_physical_load_carleman"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C142",
+        "C159",
+        "C182"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "完整P1状态/刚度/包含/实际L²载荷和观察；盒H²域/图界、允许权、原数值近似/测试及全弱CE内部供应。原形状与grading及热尺度保留，常数先于全部网格/时间/权。仅固定盒实例，无额外CE或数值假设。"
     }
   ],
   "events": [
@@ -17334,6 +17385,16 @@
       "at": "2026-10-19T13:42:53.145180+00:00",
       "public_summary": "原Cartesian滤波观测同SHA三项CI与原始审计通过、独立验收在途；真实互补HUM及完整滤波控制已完成构建审计。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39261882332/attempts/1"
+    },
+    {
+      "at": "2026-10-19T13:47:38.911274+00:00",
+      "public_summary": "T171原Cartesian滤波观测独立验收通过，该项验收队列已销项；覆盖保持17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f102d1571bad357dedf292a90d4ccc6b832db369/governance/reviews/T171-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T13:50:45.498837+00:00",
+      "public_summary": "完整Cartesian滤波控制同SHA三项CI及原始审计通过、独立验收在途；完整P1盒载荷估计已构建审计。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39262538619/attempts/1"
     }
   ],
   "snapshot": {
@@ -17728,7 +17789,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/cf033f11dc66ebab3c8a083ed3db516cb1d78183/governance/reviews/T169-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39260278276/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/da95f786af0ae582fcc4fa9ba22d0bd4b1f84b4c/governance/reviews/T170-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39261882332/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39261882332/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f102d1571bad357dedf292a90d4ccc6b832db369/governance/reviews/T171-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39262538619/attempts/1"
     ]
   },
   "schedules": [
@@ -38839,10 +38902,10 @@
       ],
       "branch": "main",
       "base_commit": "3a752bc986ef1a893825b6597211ccb519d8a292",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "f6e35f26cc23e5ca84eb8e869a12864be70e7b27",
-      "merge_commit": null,
+      "merge_commit": "f6e35f26cc23e5ca84eb8e869a12864be70e7b27",
       "lean_declarations": [
         "Carleman.Physical.filter_condition_budget",
         "Carleman.Physical.filtered_observation_of_relaxed",
@@ -38864,7 +38927,7 @@
       "attempts": [
         "两模块三声明，定向3992 jobs，根目标4099及8099递归声明审计通过。"
       ],
-      "next_action": "固定提交已构建推送；等待正在运行的独立Agent语义验收，不把CI当作验收。",
+      "next_action": "原Cartesian终端滤波观测已独立验收；实际滤波控制与P1实例继续。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -38878,7 +38941,7 @@
         "declaration_artifact_sha256": "cacb14043c6cb78528a83b3938b32d2327273ed23f495219622b6fa834b78a8e",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING; fixed SHA required"
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
       },
       "declaration_version": "f6e35f26cc23e5ca84eb8e869a12864be70e7b27",
       "ci_relationship": {
@@ -38891,7 +38954,20 @@
         "new_explicit_declarations": 3,
         "declaration_artifact_sha256": "cacb14043c6cb78528a83b3938b32d2327273ed23f495219622b6fa834b78a8e",
         "local_remote_artifacts_identical": true
-      }
+      },
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C187"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "f6e35f26cc23e5ca84eb8e869a12864be70e7b27",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T13:44:33+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f102d1571bad357dedf292a90d4ccc6b832db369/governance/reviews/T171-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T172",
@@ -38914,9 +38990,9 @@
       ],
       "branch": "main",
       "base_commit": "f6e35f26cc23e5ca84eb8e869a12864be70e7b27",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "113b2c6e318ce5cb48f1fda5696223646e0cd2b1",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.Physical.complementaryHumOperator",
@@ -38940,12 +39016,23 @@
         "Carleman.Physical.filter_penalty_decay",
         "Carleman.Physical.box_cartesian_filtered_control"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "113b2c6e318ce5cb48f1fda5696223646e0cd2b1",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39262538619/attempts/1",
+        "finished_at": "2026-10-19T13:45:49.317714+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "113b2c6e318ce5cb48f1fda5696223646e0cd2b1"
+      },
       "blocker": null,
       "attempts": [
         "六模块二十声明，最终定向3998 jobs，根目标4105及8135递归声明审计通过。"
       ],
-      "next_action": "独立验收完整Cartesian滤波控制；继续完整P1物理估计、控制及一般几何，清理在途验收。",
+      "next_action": "固定提交已构建推送；等待正在运行的独立Agent语义验收，不把CI当作验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -38957,6 +39044,69 @@
         "recursive_axiom_audit": 8135,
         "new_explicit_declarations": 20,
         "declaration_artifact_sha256": "76e24372f62d67b3ac0cd66e5afd4501cd9b07913ec58f0939fad41d1080109f",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING; fixed SHA required"
+      },
+      "declaration_version": "113b2c6e318ce5cb48f1fda5696223646e0cd2b1",
+      "ci_relationship": {
+        "proof_head": "113b2c6e318ce5cb48f1fda5696223646e0cd2b1",
+        "checked_sha": "113b2c6e318ce5cb48f1fda5696223646e0cd2b1",
+        "run_id": 39262538619,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 4105,
+        "recursive_axiom_audit": 8135,
+        "new_explicit_declarations": 20,
+        "declaration_artifact_sha256": "76e24372f62d67b3ac0cd66e5afd4501cd9b07913ec58f0939fad41d1080109f",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T173",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "完整一致质量P1盒实例的实际物理载荷估计",
+      "goal_ids": [
+        "C189"
+      ],
+      "acceptance": [
+        "全部原P1状态与一致质量刚度，实际包含/正交投影和控制观察",
+        "盒H²域/图界、允许权与连续CE实际内部供应",
+        "原数值近似和测试对全部网格/权，维数2/3及grading完整",
+        "κ缩小先于物理尺度选择，原热范围清偿h*qmax数值阈值",
+        "全部载荷/状态，原负向差分及q³权，常数先于网格时间"
+      ],
+      "dependencies": [
+        "C142",
+        "C159",
+        "C182"
+      ],
+      "branch": "main",
+      "base_commit": "113b2c6e318ce5cb48f1fda5696223646e0cd2b1",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.Physical.box_p1_physical_load_carleman"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "一个完整定理，定向3919 jobs，根目标4106及8138递归声明审计通过。"
+      ],
+      "next_action": "独立验收P1真实物理载荷估计；继续P1物理观测/实际控制及滤波后果，收齐在途验收。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4106,
+        "recursive_axiom_audit": 8138,
+        "new_explicit_declarations": 1,
+        "declaration_artifact_sha256": "abdf47e14194df5f7b1f6a62ea0eec8aaa2beb2531f36792ebb3c668ba7606a3",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
