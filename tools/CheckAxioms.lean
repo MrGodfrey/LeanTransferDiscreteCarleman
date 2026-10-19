@@ -4809,6 +4809,43 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianKuhnLoadLiftLp_norm_sq_bound
 #print axioms Carleman.cartesianKuhnLoadLiftLp_norm_sq_bound
 
+#check @Carleman.simplex_continuous_memLp
+#print axioms Carleman.simplex_continuous_memLp
+#check @Carleman.simplex_continuous_weighted_integrable
+#print axioms Carleman.simplex_continuous_weighted_integrable
+#check @Carleman.simplex_weighted_sq_anchor
+#print axioms Carleman.simplex_weighted_sq_anchor
+#check @Carleman.weighted_coefficient_sq_anchor
+#print axioms Carleman.weighted_coefficient_sq_anchor
+#check @Carleman.simplexNodal_sq_lumped_bounds
+#print axioms Carleman.simplexNodal_sq_lumped_bounds
+#check @Carleman.simplex_weighted_reconstruction_bounds
+#print axioms Carleman.simplex_weighted_reconstruction_bounds
+#check @Carleman.simplex_weighted_load_bound
+#print axioms Carleman.simplex_weighted_load_bound
+#check @Carleman.closedCoordinateBox_diameter_bound
+#print axioms Carleman.closedCoordinateBox_diameter_bound
+#check @Carleman.cartesianKuhnSimplex_dist_le
+#print axioms Carleman.cartesianKuhnSimplex_dist_le
+#check @Carleman.cartesianKuhn_allowedWeight_comparison
+#print axioms Carleman.cartesianKuhn_allowedWeight_comparison
+#check @Carleman.cartesianInteriorData_weight
+#print axioms Carleman.cartesianInteriorData_weight
+#check @Carleman.cartesianKuhn_weighted_mass_assembly
+#print axioms Carleman.cartesianKuhn_weighted_mass_assembly
+#check @Carleman.BoundedMultiplier.integrable_scalar_density_ae
+#print axioms Carleman.BoundedMultiplier.integrable_scalar_density_ae
+#check @Carleman.BoundedMultiplier.seminorm_sq_scalar_ae
+#print axioms Carleman.BoundedMultiplier.seminorm_sq_scalar_ae
+#check @Carleman.cartesianKuhn_weighted_reconstruction_cell_bounds
+#print axioms Carleman.cartesianKuhn_weighted_reconstruction_cell_bounds
+#check @Carleman.cartesianKuhn_weighted_load_cell_bound
+#print axioms Carleman.cartesianKuhn_weighted_load_cell_bound
+#check @Carleman.cartesianKuhn_weighted_norm_bounds
+#print axioms Carleman.cartesianKuhn_weighted_norm_bounds
+#check @Carleman.allowed_weight_cartesianKuhn_stability
+#print axioms Carleman.allowed_weight_cartesianKuhn_stability
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

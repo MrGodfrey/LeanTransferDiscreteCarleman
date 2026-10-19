@@ -574,3 +574,11 @@ public import Carleman.Spatial.SimplexLoadNorm
 public import Carleman.Spatial.CartesianKuhnMassAssembly
 public import Carleman.Spatial.CartesianKuhnNormBounds
 public import Carleman.Spatial.CartesianKuhnLpNorm
+public import Carleman.Spatial.WeightedCompactCell
+public import Carleman.Spatial.SimplexWeightedStability
+public import Carleman.Geometry.KuhnAllowedWeightComparison
+public import Carleman.Spatial.CartesianKuhnWeightedMass
+public import Carleman.Spatial.WeightedScalarRepresentative
+public import Carleman.Spatial.CartesianKuhnWeightedCell
+public import Carleman.Spatial.CartesianKuhnWeightedNorm
+public import Carleman.Spatial.AllowedCartesianKuhnStability
