@@ -750,3 +750,6 @@ public import Carleman.Spatial.InteriorPoissonRegularity
 public import Carleman.Spatial.ConformingUniformInverse
 public import Carleman.Control.FilterRayleighBound
 public import Carleman.Control.ConformingFilterRayleigh
+public import Carleman.Spatial.LinearRefinementCell
+public import Carleman.Spatial.UniformLinearProlongation
+public import Carleman.Spatial.RefinedChainInverse

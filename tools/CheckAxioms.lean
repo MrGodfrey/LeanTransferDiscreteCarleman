@@ -5850,6 +5850,43 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Physical.p1_coarse_filter_rayleigh
 #print axioms Carleman.Physical.p1_coarse_filter_rayleigh
 
+#check @Carleman.linearRefinementValue
+#print axioms Carleman.linearRefinementValue
+#check @Carleman.linearRefinementMass
+#print axioms Carleman.linearRefinementMass
+#check @Carleman.linearRefinementEnergy
+#print axioms Carleman.linearRefinementEnergy
+#check @Carleman.sum_affine_sq
+#print axioms Carleman.sum_affine_sq
+#check @Carleman.linearRefinementMass_eq
+#print axioms Carleman.linearRefinementMass_eq
+#check @Carleman.linearRefinementEnergy_eq
+#print axioms Carleman.linearRefinementEnergy_eq
+#check @Carleman.linearRefinement_inverse
+#print axioms Carleman.linearRefinement_inverse
+#check @Carleman.uniformLinearProlongation
+#print axioms Carleman.uniformLinearProlongation
+#check @Carleman.linearRefinementValue_zero
+#print axioms Carleman.linearRefinementValue_zero
+#check @Carleman.linearRefinementValue_end
+#print axioms Carleman.linearRefinementValue_end
+#check @Carleman.uniformLinearProlongation_node
+#print axioms Carleman.uniformLinearProlongation_node
+#check @Carleman.uniformLinearProlongation_cell
+#print axioms Carleman.uniformLinearProlongation_cell
+#check @Carleman.sum_uniform_blocks
+#print axioms Carleman.sum_uniform_blocks
+#check @Carleman.uniformLinearProlongation_energy_cells
+#print axioms Carleman.uniformLinearProlongation_energy_cells
+#check @Carleman.uniformLinearProlongation_mass_cells
+#print axioms Carleman.uniformLinearProlongation_mass_cells
+#check @Carleman.trapezoid_square_sum
+#print axioms Carleman.trapezoid_square_sum
+#check @Carleman.uniformLinearProlongation_inverse
+#print axioms Carleman.uniformLinearProlongation_inverse
+#check @Carleman.uniformLinearProlongation_physical_inverse
+#print axioms Carleman.uniformLinearProlongation_physical_inverse
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
