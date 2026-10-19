@@ -939,3 +939,6 @@ public import Carleman.Spatial.CartesianCellReconstruction
 public import Carleman.Spatial.BoundedMultiplierAverage
 public import Carleman.Control.TimeCellAverage
 public import Carleman.Control.CartesianAveragedPotential
+public import Carleman.Control.TimeCellReconstruction
+public import Carleman.Control.ReconstructedControlCompactness
+public import Carleman.Control.RealizedTimeControl

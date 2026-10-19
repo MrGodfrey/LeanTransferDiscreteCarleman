@@ -7275,6 +7275,39 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianAveragedPotential_operator_symmetric
 #print axioms Carleman.cartesianAveragedPotential_operator_symmetric
 
+#check @Carleman.TimeGrid.physicalTimeCell_disjoint
+#print axioms Carleman.TimeGrid.physicalTimeCell_disjoint
+#check @Carleman.TimeGrid.physicalTimeCell_restrict_volume
+#print axioms Carleman.TimeGrid.physicalTimeCell_restrict_volume
+#check @Carleman.timeCellReconstruction
+#print axioms Carleman.timeCellReconstruction
+#check @Carleman.timeCellReconstruction_ae
+#print axioms Carleman.timeCellReconstruction_ae
+#check @Carleman.timeCellReconstruction_inner
+#print axioms Carleman.timeCellReconstruction_inner
+#check @Carleman.timeCellReconstruction_norm
+#print axioms Carleman.timeCellReconstruction_norm
+#check @Carleman.timeCellReconstruction_on_cell
+#print axioms Carleman.timeCellReconstruction_on_cell
+#check @Carleman.reconstructedControl
+#print axioms Carleman.reconstructedControl
+#check @Carleman.reconstructedControl_norm
+#print axioms Carleman.reconstructedControl_norm
+#check @Carleman.reconstructedControl_on_cell
+#print axioms Carleman.reconstructedControl_on_cell
+#check @Carleman.reconstructed_controls_weak_subsequence
+#print axioms Carleman.reconstructed_controls_weak_subsequence
+#check @Carleman.Physical.conformingTimeControl_norm
+#print axioms Carleman.Physical.conformingTimeControl_norm
+#check @Carleman.Physical.conformingTimeControl_on_cell
+#print axioms Carleman.Physical.conformingTimeControl_on_cell
+#check @Carleman.Physical.conformingTimeControl_pairing
+#print axioms Carleman.Physical.conformingTimeControl_pairing
+#check @Carleman.cartesianTimeControl_norm
+#print axioms Carleman.cartesianTimeControl_norm
+#check @Carleman.cartesianTimeControl_pairing
+#print axioms Carleman.cartesianTimeControl_pairing
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
