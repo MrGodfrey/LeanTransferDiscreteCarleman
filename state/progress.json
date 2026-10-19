@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T094",
-    "supervisor_checked_at": "2026-10-19T01:57:07.463360+00:00",
-    "next_action": "固定SHA独立验收原完整Dirichlet H²状态实际局部仿射再现14声明；继续真实Kuhn网格统一逆估计和实际Q_h误差。",
+    "current_task_id": "T095",
+    "supervisor_checked_at": "2026-10-19T02:07:53.544126+00:00",
+    "next_action": "固定SHA独立验收实际Dirichlet弱梯度和统一逆估计17声明；继续原完整H²∩H¹₀状态实际Q_h局部误差。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T01:57:07.463360+00:00"
+    "last_activity_at": "2026-10-19T02:07:53.544126+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "ba9aa5d2a3caf655bba037695fe733a3f292d952",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39187182886/attempts/1",
-      "finished_at": "2026-10-19T01:52:27.801108+00:00",
+      "checked_sha": "fc89f7ab4516bb6dd97a43a2e5224e722b0b7a56",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39187677676/attempts/1",
+      "finished_at": "2026-10-19T02:00:16.465988+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "ba9aa5d2a3caf655bba037695fe733a3f292d952"
+      "source_head_sha": "fc89f7ab4516bb6dd97a43a2e5224e722b0b7a56"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "ba9aa5d2a3caf655bba037695fe733a3f292d952",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39187182886/attempts/1",
-      "finished_at": "2026-10-19T01:52:27.801108+00:00",
+      "checked_sha": "fc89f7ab4516bb6dd97a43a2e5224e722b0b7a56",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39187677676/attempts/1",
+      "finished_at": "2026-10-19T02:00:16.465988+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "ba9aa5d2a3caf655bba037695fe733a3f292d952"
+      "source_head_sha": "fc89f7ab4516bb6dd97a43a2e5224e722b0b7a56"
     }
   },
   "milestones": [
@@ -10611,7 +10611,7 @@
       "paper_ref": "Auxiliary actual boundary-compatible affine reproduction by Q_h and uniform local B1 approximants for all original H²∩H¹₀ states, Appendix B Step 2",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "lem:fd-weighted-approximation",
@@ -10633,9 +10633,43 @@
         "Carleman.cartesianKuhnProjection_physical_affine",
         "Carleman.cartesianKuhn_h2_local_reproduced_affine"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "fc89f7ab4516bb6dd97a43a2e5224e722b0b7a56",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "fc89f7ab4516bb6dd97a43a2e5224e722b0b7a56",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39187677676/attempts/1",
+        "finished_at": "2026-10-19T02:00:16.465988+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "fc89f7ab4516bb6dd97a43a2e5224e722b0b7a56"
+      },
+      "semantic_review": {
+        "checked_sha": "fc89f7ab4516bb6dd97a43a2e5224e722b0b7a56",
+        "declarations": [
+          "Carleman.cartesianGridPoint_interior_index",
+          "Carleman.cartesianFiniteSimplex_interior_vertex",
+          "Carleman.cartesianKuhnMoment_affine",
+          "Carleman.cartesianKuhnProjection_affine_on_cell",
+          "Carleman.cartesianKuhnMoment_sub",
+          "Carleman.cartesianKuhnProjection_sub",
+          "Carleman.cartesianFiniteSimplex_subset_closedPatch",
+          "Carleman.cartesianClosedPatch_subset_closedDomain",
+          "Carleman.cartesianClippedPhysicalFaces",
+          "Carleman.cartesianClippedPhysicalFaces_frontier",
+          "Carleman.cartesianCell_boundary_in_physicalFace",
+          "Carleman.cartesianPhysicalFace_zero_on_boundaryCell",
+          "Carleman.cartesianKuhnProjection_physical_affine",
+          "Carleman.cartesianKuhn_h2_local_reproduced_affine"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/982d3003561a9f79490de3bf4551ce5732753830/governance/reviews/T094-local-acceptance.md",
+        "reviewed_at": "2026-10-19T02:03:55+00:00",
+        "reviewer": "/root/accept_section3; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C109",
         "C105",
@@ -10644,7 +10678,52 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "实际整数内部顶点完整枚举；同一真实J_h对原仿射L²类给节点矩，边界零顶点及真实P1再现给闭单元Q_hp=p。实际裁剪块的物理闭面属于原frontier并覆盖全部中心单元边界点。原全部弱H²∩H¹₀状态因此给真实局部H¹残差和统一h²仿射逼近，p自动由实际Q_h再现；常数仅依赖维数和原步长可比界，真实局部Hessian范数。减法线性性已证，梯度逆界及完整FD/B2仍待，AUXILIARY，13/26。"
+      "scope_notes": "实际整数内部顶点完整枚举；同一真实J_h对原仿射L²类给节点矩，边界零顶点及真实P1再现给闭单元Q_hp=p。实际裁剪块的物理闭面属于原frontier并覆盖全部中心单元边界点。原全部弱H²∩H¹₀状态因此给真实局部H¹残差和统一h²仿射逼近，p自动由实际Q_h再现；常数仅依赖维数和原步长可比界，真实局部Hessian范数。减法线性性已证，梯度逆界及完整FD/B2仍待，AUXILIARY，13/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C111",
+      "title": "实际Kuhn重构的原Dirichlet弱梯度与统一逆估计",
+      "paper_ref": "Auxiliary genuine weak-gradient inverse estimate and actual Q_h local gradient stability, Appendix B Step 2",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "lem:fd-weighted-approximation",
+        "eq:fd-local-approximation"
+      ],
+      "lean_declarations": [
+        "Carleman.coordinatePermutation_symm_norm",
+        "Carleman.cartesianKuhn_inverse_map_bound",
+        "Carleman.cartesianKuhn_uniform_inverse",
+        "Carleman.cartesianFiniteSimplex_uniform_inverse",
+        "Carleman.cartesianKuhnReconstruction_eq_nodal",
+        "Carleman.cartesianKuhnReconstructionLp_eq_nodal",
+        "Carleman.cartesianKuhnReconstructionLp_mem_dirichlet",
+        "Carleman.cartesianKuhnReconstructionJet",
+        "Carleman.cartesianKuhnReconstructionJet_value",
+        "Carleman.cartesianKuhnReconstructionJet_mem_dirichlet",
+        "Carleman.cartesianKuhnReconstructionJet_gradient_on_cell",
+        "Carleman.cartesianKuhnReconstruction_cell_norm",
+        "Carleman.cartesianKuhnReconstructionJet_cell_gradient_norm",
+        "Carleman.cartesianKuhnReconstruction_weak_inverse",
+        "Carleman.cartesianKuhnProjectionJet",
+        "Carleman.cartesianKuhnProjectionJet_value",
+        "Carleman.cartesianKuhnProjection_local_gradient_bound"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C110",
+        "C109",
+        "C105",
+        "C086"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "实际坐标置换范数及物理Kuhn仿射逆映射界给统一单元逆估计。实际有限帽函数重构等于已验收nodal函数，属于原Dirichlet图闭包并具有真正弱H¹ jet；弱梯度逐单元等于实际仿射梯度。由此得到原Q_h在实际裁剪块上的局部梯度稳定性，常数仅依赖维数与步长可比界，先于全部网格、h、状态选择。全L²输入，原真实弱梯度与范数；完整B2/FD仍待，AUXILIARY，13/26。"
     }
   ],
   "events": [
@@ -11199,6 +11278,11 @@
       "at": "2026-10-19T01:57:07.463360+00:00",
       "public_summary": "实际Q_h局部L²稳定性及裁剪矩形邻域独立验收PASS；原完整Dirichlet H²状态实际局部仿射再现14声明构建通过，原文保持13/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/15638c4fc729b90389761d7b2f0c5ede7bcf27e7/governance/reviews/T093-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T02:07:53.544126+00:00",
+      "public_summary": "实际物理边界相容仿射再现独立验收PASS；实际重构原Dirichlet弱梯度及统一逆估计17声明构建通过，原文保持13/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/982d3003561a9f79490de3bf4551ce5732753830/governance/reviews/T094-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -11438,7 +11522,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b356322f6d6fb51c2bbda6d96def905adf89398f/governance/reviews/T092-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39186541670/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/15638c4fc729b90389761d7b2f0c5ede7bcf27e7/governance/reviews/T093-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39187182886/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39187182886/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/982d3003561a9f79490de3bf4551ce5732753830/governance/reviews/T094-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39187677676/attempts/1"
     ]
   },
   "schedules": [
@@ -24905,10 +24991,10 @@
       ],
       "branch": "main",
       "base_commit": "ba9aa5d2a3caf655bba037695fe733a3f292d952",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "fc89f7ab4516bb6dd97a43a2e5224e722b0b7a56",
+      "merge_commit": "fc89f7ab4516bb6dd97a43a2e5224e722b0b7a56",
       "lean_declarations": [
         "Carleman.cartesianGridPoint_interior_index",
         "Carleman.cartesianFiniteSimplex_interior_vertex",
@@ -24925,12 +25011,23 @@
         "Carleman.cartesianKuhnProjection_physical_affine",
         "Carleman.cartesianKuhn_h2_local_reproduced_affine"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "fc89f7ab4516bb6dd97a43a2e5224e722b0b7a56",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39187677676/attempts/1",
+        "finished_at": "2026-10-19T02:00:16.465988+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "fc89f7ab4516bb6dd97a43a2e5224e722b0b7a56"
+      },
       "blocker": null,
       "attempts": [
         "四模块14声明定向3445 jobs、全库3784 jobs通过，6122声明递归公理审计PASS。"
       ],
-      "next_action": "固定SHA独立验收原完整Dirichlet H²状态实际局部仿射再现14声明；继续真实Kuhn网格统一逆估计和实际Q_h误差。",
+      "next_action": "原完整Dirichlet H²状态实际仿射再现已独立验收；继续实际弱梯度逆界和完整B2误差。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -24942,6 +25039,99 @@
         "recursive_axiom_audit": 6122,
         "new_explicit_declarations": 14,
         "declaration_artifact_sha256": "bb6037b6999944c694170ebcfd15c7479d9312b1f80fcb4ade5bf8d0cf1d31fc",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "fc89f7ab4516bb6dd97a43a2e5224e722b0b7a56",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_section3",
+          "claim_ids": [
+            "C110"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "fc89f7ab4516bb6dd97a43a2e5224e722b0b7a56",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T02:03:55+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/982d3003561a9f79490de3bf4551ce5732753830/governance/reviews/T094-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "fc89f7ab4516bb6dd97a43a2e5224e722b0b7a56",
+        "checked_sha": "fc89f7ab4516bb6dd97a43a2e5224e722b0b7a56",
+        "run_id": 39187677676,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3784,
+        "recursive_axiom_audit": 6122,
+        "new_explicit_declarations": 14,
+        "declaration_artifact_sha256": "bb6037b6999944c694170ebcfd15c7479d9312b1f80fcb4ade5bf8d0cf1d31fc",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T095",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "实际Kuhn重构的原Dirichlet弱梯度与统一逆估计",
+      "goal_ids": [
+        "C111"
+      ],
+      "acceptance": [
+        "真正物理Kuhn逆映射，常数仅依赖维数与可比界",
+        "同一有限帽函数R_h属于原H¹₀图闭包，弱梯度真实",
+        "实际Q_h局部梯度稳定性对全部原L²输入，使用原裁剪块",
+        "未以分片形式梯度替代弱梯度，未提升完整B2/FD",
+        "固定SHA全部声明及递归公理与真实CI独立验收"
+      ],
+      "dependencies": [
+        "C110",
+        "C109",
+        "C105",
+        "C086"
+      ],
+      "branch": "main",
+      "base_commit": "fc89f7ab4516bb6dd97a43a2e5224e722b0b7a56",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.coordinatePermutation_symm_norm",
+        "Carleman.cartesianKuhn_inverse_map_bound",
+        "Carleman.cartesianKuhn_uniform_inverse",
+        "Carleman.cartesianFiniteSimplex_uniform_inverse",
+        "Carleman.cartesianKuhnReconstruction_eq_nodal",
+        "Carleman.cartesianKuhnReconstructionLp_eq_nodal",
+        "Carleman.cartesianKuhnReconstructionLp_mem_dirichlet",
+        "Carleman.cartesianKuhnReconstructionJet",
+        "Carleman.cartesianKuhnReconstructionJet_value",
+        "Carleman.cartesianKuhnReconstructionJet_mem_dirichlet",
+        "Carleman.cartesianKuhnReconstructionJet_gradient_on_cell",
+        "Carleman.cartesianKuhnReconstruction_cell_norm",
+        "Carleman.cartesianKuhnReconstructionJet_cell_gradient_norm",
+        "Carleman.cartesianKuhnReconstruction_weak_inverse",
+        "Carleman.cartesianKuhnProjectionJet",
+        "Carleman.cartesianKuhnProjectionJet_value",
+        "Carleman.cartesianKuhnProjection_local_gradient_bound"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "四模块17声明定向3385 jobs、全库3788 jobs通过，6146声明递归公理审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收实际Dirichlet弱梯度和统一逆估计17声明；继续原完整H²∩H¹₀状态实际Q_h局部误差。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3788,
+        "recursive_axiom_audit": 6146,
+        "new_explicit_declarations": 17,
+        "declaration_artifact_sha256": "d516348a2bc0c01141a73e02d3fe5327e1e7b9dd58370ba905eaf072986bdda4",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
