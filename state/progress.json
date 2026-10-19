@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T125",
-    "supervisor_checked_at": "2026-10-19T06:10:23.205721+00:00",
-    "next_action": "固定SHA独立验收真实P1投影误差与N3；继续原L²(ω)控制的完整P1数值数据。",
+    "current_task_id": "T126",
+    "supervisor_checked_at": "2026-10-19T06:19:50.748837+00:00",
+    "next_action": "固定SHA独立验收原控制空间完整P1数值数据；继续凸域Dirichlet H²正则性的实际弱导数与极限基础。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T06:10:23.205721+00:00"
+    "last_activity_at": "2026-10-19T06:19:50.748837+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "f3e3ddb8621286134d4560b73a682b495d0c0907",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39207488120/attempts/1",
-      "finished_at": "2026-10-19T06:03:20.096643+00:00",
+      "checked_sha": "ed02ecc45e5edf8cb96085c4aff7e5da38397bcf",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39208420555/attempts/1",
+      "finished_at": "2026-10-19T06:13:40.587931+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "f3e3ddb8621286134d4560b73a682b495d0c0907"
+      "source_head_sha": "ed02ecc45e5edf8cb96085c4aff7e5da38397bcf"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "f3e3ddb8621286134d4560b73a682b495d0c0907",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39207488120/attempts/1",
-      "finished_at": "2026-10-19T06:03:20.096643+00:00",
+      "checked_sha": "ed02ecc45e5edf8cb96085c4aff7e5da38397bcf",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39208420555/attempts/1",
+      "finished_at": "2026-10-19T06:13:40.587931+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "f3e3ddb8621286134d4560b73a682b495d0c0907"
+      "source_head_sha": "ed02ecc45e5edf8cb96085c4aff7e5da38397bcf"
     }
   },
   "milestones": [
@@ -12804,7 +12804,7 @@
       "paper_ref": "Original P1 Step 2: actual L² projection errors h²/h and N3 from all weak H² Dirichlet states",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:p1",
@@ -12816,15 +12816,68 @@
         "Carleman.weak_h2_allowed_projection_approximation",
         "Carleman.full_p1_weightedApproximation_interface"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "ed02ecc45e5edf8cb96085c4aff7e5da38397bcf",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "ed02ecc45e5edf8cb96085c4aff7e5da38397bcf",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39208420555/attempts/1",
+        "finished_at": "2026-10-19T06:13:40.587931+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "ed02ecc45e5edf8cb96085c4aff7e5da38397bcf"
+      },
+      "semantic_review": {
+        "checked_sha": "ed02ecc45e5edf8cb96085c4aff7e5da38397bcf",
+        "declarations": [
+          "Carleman.SimplicialPartition.cellWeight_mesh_power_le",
+          "Carleman.weak_h2_allowed_projection_approximation",
+          "Carleman.full_p1_weightedApproximation_interface"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3c4bca8784b6fbe98fb627cf873a8a92c08bbf79/governance/reviews/T125-local-acceptance.md",
+        "reviewed_at": "2026-10-19T06:17:02+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C140"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "实际最大直径上尺度比较、原完整P1正交投影h²/h误差与原N3；同一误差先于全部允许权，统一常数先于网格与时间。具体Dirichlet算子H²正则性仍待；AUXILIARY14/26。"
+      "scope_notes": "实际最大直径上尺度比较、原完整P1正交投影h²/h误差与原N3；同一误差先于全部允许权，统一常数先于网格与时间。具体Dirichlet算子H²正则性仍待；AUXILIARY14/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C142",
+      "title": "原L²(ω)控制的完整P1数值数据",
+      "paper_ref": "Original P1 proposition: actual consistent-mass Galerkin N1–N5 data and original L²(omega) control",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:p1"
+      ],
+      "lean_declarations": [
+        "Carleman.Physical.restrictRegion_weighted_sq",
+        "Carleman.Physical.conforming_region_weighted_observation",
+        "Carleman.Physical.galerkinRegionNumericalData",
+        "Carleman.p1ErrorScales",
+        "Carleman.full_p1_numericalData"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C141",
+        "C127"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "实际L²(ω)控制及限制伴随、全conforming P1空间和一致质量数据，内部供应已证明N3/N4，误差Ch/Ch²/0；具体Dirichlet算子H²包含仍显式为A1输入。AUXILIARY14/26。"
     }
   ],
   "events": [
@@ -13534,6 +13587,11 @@
       "at": "2026-10-19T06:10:23.205721+00:00",
       "public_summary": "原全域允许权节点两估计已独立验收；真实P1投影h²/h误差及N3构建审计通过，完整原控制数值接口继续。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/07a24f79223efaeca8b2736b057a6c29c356d45b/governance/reviews/T124-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T06:19:50.748837+00:00",
+      "public_summary": "真实全P1投影h²/h及N3已独立验收；原L²(ω)控制的完整P1数值数据构建审计通过，连续H²正则性继续。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3c4bca8784b6fbe98fb627cf873a8a92c08bbf79/governance/reviews/T125-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -13835,7 +13893,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/03b4a391b6c4d32a3a4f2a2c30f501432b987c0c/governance/reviews/T123-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39206744043/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/07a24f79223efaeca8b2736b057a6c29c356d45b/governance/reviews/T124-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39207488120/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39207488120/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3c4bca8784b6fbe98fb627cf873a8a92c08bbf79/governance/reviews/T125-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39208420555/attempts/1"
     ]
   },
   "schedules": [
@@ -30325,21 +30385,32 @@
       ],
       "branch": "main",
       "base_commit": "f3e3ddb8621286134d4560b73a682b495d0c0907",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "ed02ecc45e5edf8cb96085c4aff7e5da38397bcf",
+      "merge_commit": "ed02ecc45e5edf8cb96085c4aff7e5da38397bcf",
       "lean_declarations": [
         "Carleman.SimplicialPartition.cellWeight_mesh_power_le",
         "Carleman.weak_h2_allowed_projection_approximation",
         "Carleman.full_p1_weightedApproximation_interface"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "ed02ecc45e5edf8cb96085c4aff7e5da38397bcf",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39208420555/attempts/1",
+        "finished_at": "2026-10-19T06:13:40.587931+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "ed02ecc45e5edf8cb96085c4aff7e5da38397bcf"
+      },
       "blocker": null,
       "attempts": [
         "三模块3声明定向3711 jobs、全库3887 jobs通过；6743声明递归审计PASS。"
       ],
-      "next_action": "固定SHA独立验收真实P1投影误差与N3；继续原L²(ω)控制的完整P1数值数据。",
+      "next_action": "真实全P1投影h²/h误差与N3已独立验收；继续原L²(ω)控制的完整数值数据。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -30351,6 +30422,84 @@
         "recursive_axiom_audit": 6743,
         "new_explicit_declarations": 3,
         "declaration_artifact_sha256": "dc0904cf0618ed061e9f64ee2a0f8fc6109195e6b03eb858a85a87eb51a31d9d",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "ed02ecc45e5edf8cb96085c4aff7e5da38397bcf",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C141"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "ed02ecc45e5edf8cb96085c4aff7e5da38397bcf",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T06:17:02+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3c4bca8784b6fbe98fb627cf873a8a92c08bbf79/governance/reviews/T125-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "ed02ecc45e5edf8cb96085c4aff7e5da38397bcf",
+        "checked_sha": "ed02ecc45e5edf8cb96085c4aff7e5da38397bcf",
+        "run_id": 39208420555,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3887,
+        "recursive_axiom_audit": 6743,
+        "new_explicit_declarations": 3,
+        "declaration_artifact_sha256": "dc0904cf0618ed061e9f64ee2a0f8fc6109195e6b03eb858a85a87eb51a31d9d",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T126",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原L²(ω)控制的完整P1数值数据",
+      "goal_ids": [
+        "C142"
+      ],
+      "acceptance": [
+        "真实L²(ω)控制及受限权范数精确积分，ω₀⊆ω观测界常数1",
+        "完整P1空间、实际inclusion重构、正交投影负载和Galerkin刚度零缺陷",
+        "已清偿N3与N4内部供应，统一δ及常数先于全部网格/时间/允许权",
+        "h为实际最大直径、误差Ch/Ch²/0；连续H²正则性依赖显式保留"
+      ],
+      "dependencies": [
+        "C141",
+        "C127"
+      ],
+      "branch": "main",
+      "base_commit": "ed02ecc45e5edf8cb96085c4aff7e5da38397bcf",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.Physical.restrictRegion_weighted_sq",
+        "Carleman.Physical.conforming_region_weighted_observation",
+        "Carleman.Physical.galerkinRegionNumericalData",
+        "Carleman.p1ErrorScales",
+        "Carleman.full_p1_numericalData"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "两模块5声明定向3724 jobs、全库3889 jobs通过；6782声明递归审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收原控制空间完整P1数值数据；继续凸域Dirichlet H²正则性的实际弱导数与极限基础。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3889,
+        "recursive_axiom_audit": 6782,
+        "new_explicit_declarations": 5,
+        "declaration_artifact_sha256": "58f0f1235c93292ca05aa2a345b4fa18aaf03178401c7a6428dc5902431d7e12",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

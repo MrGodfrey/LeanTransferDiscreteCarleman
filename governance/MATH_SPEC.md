@@ -1208,3 +1208,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T125：原全部弱状态的P1投影误差与N3
 
 真实Π_h的固定误差E∈H¹₀先于全部允许权选定；原全域节点估计、四权投影稳定性、加权逆估计和上下尺度给值Ch²、能量Ch界。常数先于全部网格、原弱H²∩H¹₀状态、T/时间/实幂/符号。对任意原D⊆H²∩H¹₀，实际conforming重构与唯一弱jet对应，得到原Section4.WeightedApproximation，aE=Ch、a0=Ch²。三模块3声明6743审计通过；具体连续DirichletH²正则性不由本接口证明，AUXILIARY14/26。见 `analysis/T125-p1-approx.md`。
+
+## T126：原 L²(ω) 控制与全 P1 NumericalData
+
+`restrictRegion_weighted_sq` 给真实受限 L² 权范数的积分身份；`conforming_region_weighted_observation` 在 ω₀⊆ω 下证明实际 B_h* 限制的观测界，常数1。`galerkinRegionNumericalData` 使用真实 inclusion 重构、Galerkin 刚度、零缺陷、正交投影负载及原 L²(ω) 控制。
+
+`full_p1_numericalData` 对原全 conforming P1 网格族、原 grading、真实允许时间权与两符号，把已证明的 N3/N4 内部供应给同一实际数据；统一 δ/Ctime/Csuper/Capp 先于全部网格及时间参数，aE=Capp h、a₀=Capp h²、ηA=0。具体 Dirichlet 算子域的 H² 包含 hD 仍是显式原 A1 前提；本阶段不替代连续 H² 正则性或连续 CE，AUXILIARY、14/26。
