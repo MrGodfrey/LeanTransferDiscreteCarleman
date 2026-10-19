@@ -650,3 +650,6 @@ public import Carleman.Spatial.CartesianWeightedTestInterface
 public import Carleman.Spatial.CartesianPhysicalStiffness
 public import Carleman.Spatial.CartesianPhysicalNorms
 public import Carleman.Spatial.CartesianPhysicalStability
+
+public import Carleman.Spatial.CartesianApproximationInterface
+public import Carleman.Spatial.CartesianNumericalData

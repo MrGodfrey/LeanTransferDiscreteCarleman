@@ -5341,6 +5341,16 @@ set_option pp.maxSteps 1000000
 #check @Carleman.allowed_weight_cartesian_physical_stability
 #print axioms Carleman.allowed_weight_cartesian_physical_stability
 
+#check @Carleman.cartesian_heat_error_from_b2
+#print axioms Carleman.cartesian_heat_error_from_b2
+#check @Carleman.cartesian_weightedApproximation_interface
+#print axioms Carleman.cartesian_weightedApproximation_interface
+
+#check @Carleman.cartesianErrorScales
+#print axioms Carleman.cartesianErrorScales
+#check @Carleman.cartesian_numericalData
+#print axioms Carleman.cartesian_numericalData
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
