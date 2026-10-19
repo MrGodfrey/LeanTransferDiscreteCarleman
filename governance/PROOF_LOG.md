@@ -163,3 +163,5 @@
 - T083 / C099：原允许权局部边界逼近9声明独立验收PASS，同SHA三项CI、5792声明递归审计及逐字节相同远端产物。 固定证明 `4e697929d6afc9043f0a20caf093a0d62a33963d`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2341fc2fee95be45c8fb2281804fdce1567c2bfe/governance/reviews/T083-local-acceptance.md)。原文13/26，T084继续真实平方积分、笛卡尔有限重叠与全域加权组合。
 
 - T084 / C100：真实平方积分与笛卡尔有限重叠、全域加权组合16声明独立验收PASS，同SHA三项CI、5810声明递归审计及逐字节相同远端产物。 固定证明 `d8ccc85628961e226550d9fea095eac9710ed969`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/da372c08ba75ac2f4e6c393e5631fa2cb17dab97/governance/reviews/T084-local-acceptance.md)。原文13/26，T085继续实际Kuhn单纯形及顶点星的几何支撑。
+
+- T085 / C101：真实Kuhn单元与完整顶点星24声明独立验收PASS，同SHA三项CI、5856声明递归审计及逐字节相同远端产物。 固定证明 `e52ffb4aed1df34fbcb1839e9472abafa927abfd`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f9af9dc6e6ca3bffd69d5b0967b2c329e4358c04/governance/reviews/T085-local-acceptance.md)。原文13/26，T086继续真实有限Kuhn网格的覆盖与几乎处处分割。
