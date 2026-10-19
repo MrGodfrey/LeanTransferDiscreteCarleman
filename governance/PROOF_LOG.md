@@ -201,3 +201,5 @@
 - T102 / C118：原测试真实算子范数导数、端点/周期及统一eq:testtime共12声明独立PASS；同SHA三项CI和6285项递归审计、原始产物逐字节一致。 固定证明 `c749c4620eb0cba6f74a8a6ae58f6ce114645897`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a2e96249d2cf5aa17e1ac8fa54fb06884385d2cd/governance/reviews/T102-local-acceptance.md)。原文14/26，T103继续原Kuhn测试的真实统一形状及节点代表唯一性。
 
 - T103 / C119：实际统一内球、直径与节点代表唯一性8声明独立PASS；同SHA三项CI、6293声明递归审计及原始产物逐字节一致。 固定证明 `23d19fb4276d47fb788d7040ae156f3e67e46ec8`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b3b7ff45e5870099037edd1cf200a47ea0f7875e/governance/reviews/T103-local-acceptance.md)。原文14/26，T104继续原FD对角测试的完整弱超逼近。
+
+- T104 / C120：原eq:testsuper全状态真实弱超逼近5声明独立PASS；同SHA三项CI、6299声明递归审计及逐字节一致原始产物完整核实。 固定证明 `29ebd0b76cccb70d6da4499eaa09d35cab2895ff`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4c165823064ce33a8681a1dcf8f2d57006a78e57/governance/reviews/T104-local-acceptance.md)。原文14/26，T105继续原FD节点观察与真实重构区域界。

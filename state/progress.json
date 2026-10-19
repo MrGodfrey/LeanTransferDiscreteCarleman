@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T104",
-    "supervisor_checked_at": "2026-10-19T03:19:57.532746+00:00",
-    "next_action": "固定SHA独立验收原实际对角测试完整弱超逼近；继续原节点观察限制和真实区域重构相容。",
+    "current_task_id": "T105",
+    "supervisor_checked_at": "2026-10-19T03:29:28.889194+00:00",
+    "next_action": "固定SHA独立验收原节点观察及区域界；继续原物理Hilbert空间、质量伴随和完整FD数值接口组装。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T03:19:57.532746+00:00"
+    "last_activity_at": "2026-10-19T03:29:28.889194+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "23d19fb4276d47fb788d7040ae156f3e67e46ec8",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39193233175/attempts/1",
-      "finished_at": "2026-10-19T03:10:45.254340+00:00",
+      "checked_sha": "29ebd0b76cccb70d6da4499eaa09d35cab2895ff",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39194196544/attempts/1",
+      "finished_at": "2026-10-19T03:22:47.680464+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "23d19fb4276d47fb788d7040ae156f3e67e46ec8"
+      "source_head_sha": "29ebd0b76cccb70d6da4499eaa09d35cab2895ff"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "23d19fb4276d47fb788d7040ae156f3e67e46ec8",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39193233175/attempts/1",
-      "finished_at": "2026-10-19T03:10:45.254340+00:00",
+      "checked_sha": "29ebd0b76cccb70d6da4499eaa09d35cab2895ff",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39194196544/attempts/1",
+      "finished_at": "2026-10-19T03:22:47.680464+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "23d19fb4276d47fb788d7040ae156f3e67e46ec8"
+      "source_head_sha": "29ebd0b76cccb70d6da4499eaa09d35cab2895ff"
     }
   },
   "milestones": [
@@ -11312,7 +11312,7 @@
         "result": "PASS",
         "axiom_check": "PASS",
         "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b3b7ff45e5870099037edd1cf200a47ea0f7875e/governance/reviews/T103-local-acceptance.md",
-        "reviewed_at": "2026-10-19T03:19:00+00:00",
+        "reviewed_at": "2026-10-19T03:19:21+00:00",
         "reviewer": "/root/accept_section3; independent auxiliary acceptance"
       },
       "dependencies": [
@@ -11331,7 +11331,7 @@
       "paper_ref": "Original eq:testsuper and Appendix B Step 3 for the actual Cartesian diagonal test on every discrete state",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "eq:testsuper",
@@ -11345,9 +11345,34 @@
         "Carleman.allowed_prescribed_nodal_superapproximation",
         "Carleman.allowed_weight_cartesian_test_superapproximation"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "29ebd0b76cccb70d6da4499eaa09d35cab2895ff",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "29ebd0b76cccb70d6da4499eaa09d35cab2895ff",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39194196544/attempts/1",
+        "finished_at": "2026-10-19T03:22:47.680464+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "29ebd0b76cccb70d6da4499eaa09d35cab2895ff"
+      },
+      "semantic_review": {
+        "checked_sha": "29ebd0b76cccb70d6da4499eaa09d35cab2895ff",
+        "declarations": [
+          "Carleman.allowed_prescribed_nodal_weak_norms",
+          "Carleman.WeakSobolevJet.weightedNorm_neg",
+          "Carleman.heat_nodal_residual_norm_bound",
+          "Carleman.allowed_prescribed_nodal_superapproximation",
+          "Carleman.allowed_weight_cartesian_test_superapproximation"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4c165823064ce33a8681a1dcf8f2d57006a78e57/governance/reviews/T104-local-acceptance.md",
+        "reviewed_at": "2026-10-19T03:26:48+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C119",
         "C117",
@@ -11355,7 +11380,50 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "由真实节点代表唯一性将全弱乘积残差落实到原节点数据，显式采用论文残差方向I(σ²u)−σ²u，组合为真实H¹权范数。实际Kuhn统一内球、直径和全状态conforming资格内部清偿；固定物理域、ρ、κ后先选ε/C，再量化全部网格/允许权/两符号/时间/原完整离散状态，得到原eq:testsuper。观察和完整FD组装仍待，AUXILIARY14/26。"
+      "scope_notes": "由真实节点代表唯一性将全弱乘积残差落实到原节点数据，显式采用论文残差方向I(σ²u)−σ²u，组合为真实H¹权范数。实际Kuhn统一内球、直径和全状态conforming资格内部清偿；固定物理域、ρ、κ后先选ε/C，再量化全部网格/允许权/两符号/时间/原完整离散状态，得到原eq:testsuper。观察和完整FD组装仍待，AUXILIARY14/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C121",
+      "title": "原FD节点观察与真实重构区域界",
+      "paper_ref": "Original Cartesian nodal control and eq:observationinterface in Appendix B Step 3",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "eq:observationinterface",
+        "ass:observation",
+        "prop:fd"
+      ],
+      "lean_declarations": [
+        "Carleman.cartesianObservedState",
+        "Carleman.cartesianObservedState_apply",
+        "Carleman.cartesianKuhnHat_support_dist",
+        "Carleman.cartesianKuhnReconstruction_observed_eq",
+        "Carleman.CartesianObservationIndex",
+        "Carleman.cartesianControlRestriction",
+        "Carleman.cartesianControlExtension",
+        "Carleman.cartesianControlPhysicalInner",
+        "Carleman.cartesianControlWeightedSq",
+        "Carleman.cartesianControlRestriction_extension",
+        "Carleman.cartesianControlExtension_restriction",
+        "Carleman.cartesianControlExtension_pairing",
+        "Carleman.cartesianObservedState_weighted_energy",
+        "Carleman.cartesianKuhnReconstructionLp_observed_eq",
+        "Carleman.allowed_weight_cartesian_observation"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C108",
+        "C103",
+        "C117"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实帽函数节点星和物理单元距离界结合原观察域紧包含，给网格一致局部重构身份。实际控制节点子类型、限制/零延拓及原物理配对严格实现；控制加权平方和等于零延拓节点能量。由区域Lp身份和全允许权质量界得原eq:observationinterface，常数阈值先于全部网格权族两符号状态。完整FD原数值接口组装仍待，AUXILIARY14/26。"
     }
   ],
   "events": [
@@ -11960,6 +12028,11 @@
       "at": "2026-10-19T03:19:57.532746+00:00",
       "public_summary": "实际Kuhn统一形状及节点代表唯一性已独立验收；原实际对角测试完整弱超逼近5声明构建审计通过。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b3b7ff45e5870099037edd1cf200a47ea0f7875e/governance/reviews/T103-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T03:29:28.889194+00:00",
+      "public_summary": "原FD完整弱测试超逼近已独立验收；实际节点观察与重构区域界15声明构建审计通过。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4c165823064ce33a8681a1dcf8f2d57006a78e57/governance/reviews/T104-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -12219,7 +12292,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a2e96249d2cf5aa17e1ac8fa54fb06884385d2cd/governance/reviews/T102-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39192583763/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b3b7ff45e5870099037edd1cf200a47ea0f7875e/governance/reviews/T103-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39193233175/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39193233175/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4c165823064ce33a8681a1dcf8f2d57006a78e57/governance/reviews/T104-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39194196544/attempts/1"
     ]
   },
   "schedules": [
@@ -26634,7 +26709,7 @@
           "paper_result_ids": [],
           "checked_sha": "23d19fb4276d47fb788d7040ae156f3e67e46ec8",
           "status": "PASS",
-          "reviewed_at": "2026-10-19T03:19:00+00:00",
+          "reviewed_at": "2026-10-19T03:19:21+00:00",
           "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b3b7ff45e5870099037edd1cf200a47ea0f7875e/governance/reviews/T103-local-acceptance.md"
         }
       ],
@@ -26672,10 +26747,10 @@
       ],
       "branch": "main",
       "base_commit": "23d19fb4276d47fb788d7040ae156f3e67e46ec8",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "29ebd0b76cccb70d6da4499eaa09d35cab2895ff",
+      "merge_commit": "29ebd0b76cccb70d6da4499eaa09d35cab2895ff",
       "lean_declarations": [
         "Carleman.allowed_prescribed_nodal_weak_norms",
         "Carleman.WeakSobolevJet.weightedNorm_neg",
@@ -26683,12 +26758,23 @@
         "Carleman.allowed_prescribed_nodal_superapproximation",
         "Carleman.allowed_weight_cartesian_test_superapproximation"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "29ebd0b76cccb70d6da4499eaa09d35cab2895ff",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39194196544/attempts/1",
+        "finished_at": "2026-10-19T03:22:47.680464+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "29ebd0b76cccb70d6da4499eaa09d35cab2895ff"
+      },
       "blocker": null,
       "attempts": [
         "三模块5声明定向3526 jobs、全库3815 jobs通过；6299声明递归公理审计PASS。"
       ],
-      "next_action": "固定SHA独立验收原实际对角测试完整弱超逼近；继续原节点观察限制和真实区域重构相容。",
+      "next_action": "原全状态实际对角测试eq:testsuper已独立验收；继续实际观察和完整FD数值接口组装。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -26700,6 +26786,96 @@
         "recursive_axiom_audit": 6299,
         "new_explicit_declarations": 5,
         "declaration_artifact_sha256": "67c65a22255a76349ad9d77b9438f444bd5994a4224b7582d1309f8d08976989",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "29ebd0b76cccb70d6da4499eaa09d35cab2895ff",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C120"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "29ebd0b76cccb70d6da4499eaa09d35cab2895ff",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T03:26:48+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4c165823064ce33a8681a1dcf8f2d57006a78e57/governance/reviews/T104-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "29ebd0b76cccb70d6da4499eaa09d35cab2895ff",
+        "checked_sha": "29ebd0b76cccb70d6da4499eaa09d35cab2895ff",
+        "run_id": 39194196544,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3815,
+        "recursive_axiom_audit": 6299,
+        "new_explicit_declarations": 5,
+        "declaration_artifact_sha256": "67c65a22255a76349ad9d77b9438f444bd5994a4224b7582d1309f8d08976989",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T105",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原FD节点观察与真实重构区域界",
+      "goal_ids": [
+        "C121"
+      ],
+      "acceptance": [
+        "实际帽函数支撑及真实距离界供应局部性，不输入目标观察估计",
+        "由原ω₀紧包含ω内部选h₀，先于全部网格与完整节点状态",
+        "控制空间确为ω内节点，B为零延拓、B*为限制，物理权严格∏δ",
+        "真实区域L²范数及控制节点加权平方和，不能以全节点范数替代",
+        "全部允许权和两符号统一；原h qmax小条件可同时供应两网格小条件；完整FD不提前提升"
+      ],
+      "dependencies": [
+        "C108",
+        "C103",
+        "C117"
+      ],
+      "branch": "main",
+      "base_commit": "29ebd0b76cccb70d6da4499eaa09d35cab2895ff",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.cartesianObservedState",
+        "Carleman.cartesianObservedState_apply",
+        "Carleman.cartesianKuhnHat_support_dist",
+        "Carleman.cartesianKuhnReconstruction_observed_eq",
+        "Carleman.CartesianObservationIndex",
+        "Carleman.cartesianControlRestriction",
+        "Carleman.cartesianControlExtension",
+        "Carleman.cartesianControlPhysicalInner",
+        "Carleman.cartesianControlWeightedSq",
+        "Carleman.cartesianControlRestriction_extension",
+        "Carleman.cartesianControlExtension_restriction",
+        "Carleman.cartesianControlExtension_pairing",
+        "Carleman.cartesianObservedState_weighted_energy",
+        "Carleman.cartesianKuhnReconstructionLp_observed_eq",
+        "Carleman.allowed_weight_cartesian_observation"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "三模块15声明定向3500 jobs、全库3818 jobs通过，6321声明递归公理审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收原节点观察及区域界；继续原物理Hilbert空间、质量伴随和完整FD数值接口组装。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3818,
+        "recursive_axiom_audit": 6321,
+        "new_explicit_declarations": 15,
+        "declaration_artifact_sha256": "b035b1e8efe524f70197bcd06f5a942cb4a61185902315a51125e7a24ceee7f7",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
