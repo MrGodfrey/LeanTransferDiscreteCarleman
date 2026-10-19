@@ -6855,6 +6855,39 @@ set_option pp.maxSteps 1000000
 #check @Carleman.exists_box_smooth_operator_graph_approximation
 #print axioms Carleman.exists_box_smooth_operator_graph_approximation
 
+#check @Carleman.CoerciveForm.harmonicGraph
+#print axioms Carleman.CoerciveForm.harmonicGraph
+#check @Carleman.CoerciveForm.harmonicGraph_trace
+#print axioms Carleman.CoerciveForm.harmonicGraph_trace
+#check @Carleman.CoerciveForm.harmonicGraphLinear
+#print axioms Carleman.CoerciveForm.harmonicGraphLinear
+#check @Carleman.CoerciveForm.harmonicGraph_continuous
+#print axioms Carleman.CoerciveForm.harmonicGraph_continuous
+#check @Carleman.CoerciveForm.harmonicGraphCLM
+#print axioms Carleman.CoerciveForm.harmonicGraphCLM
+#check @Carleman.CoerciveForm.harmonicGraph_mem_core
+#print axioms Carleman.CoerciveForm.harmonicGraph_mem_core
+#check @Carleman.CoerciveForm.harmonicStateSpan
+#print axioms Carleman.CoerciveForm.harmonicStateSpan
+#check @Carleman.CoerciveForm.harmonicStateSpan_le_core
+#print axioms Carleman.CoerciveForm.harmonicStateSpan_le_core
+#check @Carleman.CoerciveForm.frequencyGraph_mem_harmonicStateSpan
+#print axioms Carleman.CoerciveForm.frequencyGraph_mem_harmonicStateSpan
+#check @Carleman.CoerciveForm.constantSolve_harmonic_mem
+#print axioms Carleman.CoerciveForm.constantSolve_harmonic_mem
+#check @Carleman.CoerciveForm.harmonicStateSpan_dense
+#print axioms Carleman.CoerciveForm.harmonicStateSpan_dense
+#check @Carleman.CoerciveForm.dense_of_harmonic_approximation
+#print axioms Carleman.CoerciveForm.dense_of_harmonic_approximation
+#check @Carleman.smoothDirichletTimeCore
+#print axioms Carleman.smoothDirichletTimeCore
+#check @Carleman.harmonicGraph_mem_smoothDirichletTimeCore
+#print axioms Carleman.harmonicGraph_mem_smoothDirichletTimeCore
+#check @Carleman.box_smoothDirichletTimeCore_dense
+#print axioms Carleman.box_smoothDirichletTimeCore_dense
+#check @Carleman.exists_box_smooth_periodic_graph_approximation
+#print axioms Carleman.exists_box_smooth_periodic_graph_approximation
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

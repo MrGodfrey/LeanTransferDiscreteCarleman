@@ -877,3 +877,8 @@ public import Carleman.Spatial.BoxCompactSmoothDensity
 public import Carleman.Spatial.SmoothLaplacianL2Limit
 public import Carleman.Spatial.SmoothDirichletGraph
 public import Carleman.Spatial.BoxSmoothGraphDensity
+
+public import Carleman.Continuous.HarmonicGraphContinuity
+public import Carleman.Continuous.HarmonicStateDensity
+public import Carleman.Spatial.DirichletSmoothTimeCore
+public import Carleman.Spatial.BoxSmoothTimeDensity
