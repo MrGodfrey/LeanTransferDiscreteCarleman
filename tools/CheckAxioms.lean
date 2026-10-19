@@ -4672,6 +4672,37 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianKuhnHat_firstMoment_domain
 #print axioms Carleman.cartesianKuhnHat_firstMoment_domain
 
+#check @Carleman.openCoordinateBox_volume_real
+#print axioms Carleman.openCoordinateBox_volume_real
+#check @Carleman.cartesianKuhnSimplex_translation_vertex
+#print axioms Carleman.cartesianKuhnSimplex_translation_vertex
+#check @Carleman.cartesianKuhnSimplex_volume_translation
+#print axioms Carleman.cartesianKuhnSimplex_volume_translation
+#check @Carleman.cartesianKuhnSimplex_sum_permutation_volume
+#print axioms Carleman.cartesianKuhnSimplex_sum_permutation_volume
+#check @Carleman.cartesianKuhn_origin_eq_of_vertex_eq
+#print axioms Carleman.cartesianKuhn_origin_eq_of_vertex_eq
+#check @Carleman.cartesianFiniteSimplex_fixed_vertex_injective
+#print axioms Carleman.cartesianFiniteSimplex_fixed_vertex_injective
+#check @Carleman.cartesianKuhn_node_incidence_unique
+#print axioms Carleman.cartesianKuhn_node_incidence_unique
+#check @Carleman.cartesianKuhn_node_incidence_sum
+#print axioms Carleman.cartesianKuhn_node_incidence_sum
+#check @Carleman.integral_cartesianKuhnHat_cell
+#print axioms Carleman.integral_cartesianKuhnHat_cell
+#check @Carleman.cartesianKuhnHat_mass_domain
+#print axioms Carleman.cartesianKuhnHat_mass_domain
+#check @Carleman.cartesianKuhnHat_mass
+#print axioms Carleman.cartesianKuhnHat_mass
+#check @Carleman.cartesianKuhnHat_affine_integrable
+#print axioms Carleman.cartesianKuhnHat_affine_integrable
+#check @Carleman.cartesianKuhnHat_affine_integral
+#print axioms Carleman.cartesianKuhnHat_affine_integral
+#check @Carleman.cartesianKuhnHat_affine_integral_domain
+#print axioms Carleman.cartesianKuhnHat_affine_integral_domain
+#check @Carleman.cartesianKuhnHat_affine_moment
+#print axioms Carleman.cartesianKuhnHat_affine_moment
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

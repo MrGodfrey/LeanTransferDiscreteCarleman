@@ -560,3 +560,7 @@ public import Carleman.Spatial.SimplexAffineRelabel
 public import Carleman.Geometry.KuhnReflection
 public import Carleman.Spatial.CartesianKuhnHatSymmetry
 public import Carleman.Spatial.CartesianKuhnFirstMoment
+public import Carleman.Geometry.KuhnCellVolume
+public import Carleman.Geometry.KuhnNodeIncidence
+public import Carleman.Spatial.CartesianKuhnMass
+public import Carleman.Spatial.CartesianKuhnAffineMoment
