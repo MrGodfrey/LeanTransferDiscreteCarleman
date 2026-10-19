@@ -5554,6 +5554,25 @@ set_option pp.maxSteps 1000000
 #check @Carleman.WeakSobolevJet.exists_nodal_value_representative
 #print axioms Carleman.WeakSobolevJet.exists_nodal_value_representative
 
+#check @Carleman.l2_error_sub_constant_tendsto
+#print axioms Carleman.l2_error_sub_constant_tendsto
+#check @Carleman.simplexNodal_affineDerivative_eq
+#print axioms Carleman.simplexNodal_affineDerivative_eq
+#check @Carleman.simplexNodalDerivative_tendsto
+#print axioms Carleman.simplexNodalDerivative_tendsto
+#check @Carleman.firstDerivativeFiber_norm_sq
+#print axioms Carleman.firstDerivativeFiber_norm_sq
+#check @Carleman.firstDerivativeFiber_sub_norm_sq
+#print axioms Carleman.firstDerivativeFiber_sub_norm_sq
+#check @Carleman.simplexNodal_h2_gradient_integral_of_limit
+#print axioms Carleman.simplexNodal_h2_gradient_integral_of_limit
+#check @Carleman.derivativeOneFiber_local_sub_integral_eq
+#print axioms Carleman.derivativeOneFiber_local_sub_integral_eq
+#check @Carleman.WeakSobolevJet.simplex_nodal_gradient_integral
+#print axioms Carleman.WeakSobolevJet.simplex_nodal_gradient_integral
+#check @Carleman.WeakSobolevJet.exists_nodal_h2_representative
+#print axioms Carleman.WeakSobolevJet.exists_nodal_h2_representative
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

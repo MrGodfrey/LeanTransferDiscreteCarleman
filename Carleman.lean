@@ -691,3 +691,7 @@ public import Carleman.Spatial.SmoothHessianCoordinateEnergy
 public import Carleman.Spatial.SimplexH2ValueLimit
 public import Carleman.Spatial.WeakH2NodalSmoothing
 public import Carleman.Spatial.WeakH2NodalValue
+public import Carleman.Spatial.L2ConstantShiftLimit
+public import Carleman.Spatial.SimplexNodalDerivativeLimit
+public import Carleman.Spatial.SimplexH2GradientLimit
+public import Carleman.Spatial.WeakH2NodalGradient
