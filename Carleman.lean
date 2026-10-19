@@ -660,3 +660,8 @@ public import Carleman.Spatial.SmoothAveragedTaylor
 public import Carleman.Spatial.SmoothH2NodalError
 
 public import Carleman.Spatial.SmoothH2NodalGradient
+
+public import Carleman.Spatial.TensorCoordinateNorm
+public import Carleman.Spatial.LocalHessianConvolution
+public import Carleman.Spatial.MollifiedHessianEnergy
+public import Carleman.Spatial.MollifiedH2NodalBounds

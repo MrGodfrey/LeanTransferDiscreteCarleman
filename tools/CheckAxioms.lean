@@ -5396,6 +5396,29 @@ set_option pp.maxSteps 1000000
 #check @Carleman.simplexNodal_smooth_h2_gradient_integral
 #print axioms Carleman.simplexNodal_smooth_h2_gradient_integral
 
+#check @Carleman.tensorCoordinateBound
+#print axioms Carleman.tensorCoordinateBound
+#check @Carleman.tensorCoordinateBound_pos
+#print axioms Carleman.tensorCoordinateBound_pos
+#check @Carleman.tensor_norm_sq_le_coordinate_sum
+#print axioms Carleman.tensor_norm_sq_le_coordinate_sum
+#check @Carleman.SpatialTest.directionalKernel
+#print axioms Carleman.SpatialTest.directionalKernel
+#check @Carleman.SpatialTest.directionalKernel_support
+#print axioms Carleman.SpatialTest.directionalKernel_support
+#check @Carleman.IsWeakSpatialDerivative.mixed_fderiv_convolution_local
+#print axioms Carleman.IsWeakSpatialDerivative.mixed_fderiv_convolution_local
+#check @Carleman.IsWeakSpatialDerivative.second_tensor_convolution_local
+#print axioms Carleman.IsWeakSpatialDerivative.second_tensor_convolution_local
+#check @Carleman.mollified_hessian_energy_le
+#print axioms Carleman.mollified_hessian_energy_le
+#check @Carleman.WeakSobolevJet.mollified_hessian_energy_le
+#print axioms Carleman.WeakSobolevJet.mollified_hessian_energy_le
+#check @Carleman.WeakSobolevJet.mollified_nodal_value_integral
+#print axioms Carleman.WeakSobolevJet.mollified_nodal_value_integral
+#check @Carleman.WeakSobolevJet.mollified_nodal_gradient_integral
+#print axioms Carleman.WeakSobolevJet.mollified_nodal_gradient_integral
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
