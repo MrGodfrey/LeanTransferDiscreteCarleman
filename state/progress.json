@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T148",
-    "supervisor_checked_at": "2026-10-19T10:01:46.712262+00:00",
-    "next_action": "独立验收实际盒上热通量散度积分；继续周期时间Fubini与光滑积分热恒等式。",
+    "current_task_id": "T149",
+    "supervisor_checked_at": "2026-10-19T10:09:46.393867+00:00",
+    "next_action": "独立验收光滑周期盒状态的真实积分热不等式；继续指定Gaussian相位和原B/混合系数的实际微分展开。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T10:01:46.712262+00:00"
+    "last_activity_at": "2026-10-19T10:09:46.393867+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "e3a9cd6fa7134bdb9d924c56686a14d0bb64029d",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39233525574/attempts/1",
-      "finished_at": "2026-10-19T09:56:20.994132+00:00",
+      "checked_sha": "a3a39eadfe9f18fee3bdd0a60b07cd5856bd3dbb",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39234467863/attempts/1",
+      "finished_at": "2026-10-19T10:04:50.938484+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "e3a9cd6fa7134bdb9d924c56686a14d0bb64029d"
+      "source_head_sha": "a3a39eadfe9f18fee3bdd0a60b07cd5856bd3dbb"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "e3a9cd6fa7134bdb9d924c56686a14d0bb64029d",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39233525574/attempts/1",
-      "finished_at": "2026-10-19T09:56:20.994132+00:00",
+      "checked_sha": "a3a39eadfe9f18fee3bdd0a60b07cd5856bd3dbb",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39234467863/attempts/1",
+      "finished_at": "2026-10-19T10:04:50.938484+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "e3a9cd6fa7134bdb9d924c56686a14d0bb64029d"
+      "source_head_sha": "a3a39eadfe9f18fee3bdd0a60b07cd5856bd3dbb"
     }
   },
   "milestones": [
@@ -14616,7 +14616,7 @@
       "paper_ref": "Original prop:continuousCE proof, actual smooth spatial flux integration on boxes",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:continuousCE"
@@ -14638,16 +14638,92 @@
         "Carleman.coordinateFacePoint_mem_closed",
         "Carleman.box_gaussian_heat_flux_integral"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "a3a39eadfe9f18fee3bdd0a60b07cd5856bd3dbb",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "a3a39eadfe9f18fee3bdd0a60b07cd5856bd3dbb",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39234467863/attempts/1",
+        "finished_at": "2026-10-19T10:04:50.938484+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "a3a39eadfe9f18fee3bdd0a60b07cd5856bd3dbb"
+      },
+      "semantic_review": {
+        "checked_sha": "a3a39eadfe9f18fee3bdd0a60b07cd5856bd3dbb",
+        "declarations": [
+          "Carleman.coordinateBoxFunctional",
+          "Carleman.coordinateBoxThreshold",
+          "Carleman.coordinateBoxFunctional_apply",
+          "Carleman.openCoordinateBox_halfspaces",
+          "Carleman.closedCoordinateBox_halfspaces",
+          "Carleman.coordinateBoxFunctional_normal",
+          "Carleman.coordinateBox_face_witness",
+          "Carleman.box_face_gaussian_heat_flux",
+          "Carleman.coordinateDivergence",
+          "Carleman.coordinateDivergence_contDiff",
+          "Carleman.smooth_closed_box_divergence",
+          "Carleman.openCoordinateBox_ae_closed",
+          "Carleman.smooth_open_box_divergence",
+          "Carleman.coordinateFacePoint_mem_closed",
+          "Carleman.box_gaussian_heat_flux_integral"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/77687866a93f6aa5eb4200d6c4a4640d0a69bbb0/governance/reviews/T148-local-acceptance.md",
+        "reviewed_at": "2026-10-19T10:06:40+00:00",
+        "reviewer": "/root/accept_section3; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C163",
         "C162"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "实际坐标盒内部构造全部半空间/法向/面见证；真实Euclidean保测换元和Fréchet链式法则接Bochner散度，开闭盒a.e.识别，得到同一V在原开盒上的散度积分非正。限光滑盒步骤，原弱Green/一般多面体/完整CE待。"
+      "scope_notes": "实际坐标盒内部构造全部半空间/法向/面见证；真实Euclidean保测换元和Fréchet链式法则接Bochner散度，开闭盒a.e.识别，得到同一V在原开盒上的散度积分非正。限光滑盒步骤，原弱Green/一般多面体/完整CE待。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C165",
+      "title": "真实光滑周期盒状态的积分热不等式",
+      "paper_ref": "Original prop:continuousCE proof, full smooth time-space integration of the heat inequality",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:continuousCE"
+      ],
+      "lean_declarations": [
+        "Carleman.boxTimeIntegral",
+        "Carleman.continuous_box_time_integrable",
+        "Carleman.boxTimeIntegral_eq_iterated",
+        "Carleman.boxTimeIntegral_add",
+        "Carleman.boxTimeIntegral_mono",
+        "Carleman.boxTimeIntegral_nonpos_of_spatial",
+        "Carleman.boxTimeIntegral_periodic_derivative",
+        "Carleman.directionalHessianForm_contDiff",
+        "Carleman.pointwiseHeatMatrixEnergy_contDiff",
+        "Carleman.pointwiseHeatB_contDiff",
+        "Carleman.heatCarlemanBulk",
+        "Carleman.heatCarlemanBulk_contDiff",
+        "Carleman.pointwiseHeatDivergence_contDiff",
+        "Carleman.spaceTimeHeat_contDiff",
+        "Carleman.box_smooth_heat_carleman_inequality"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C164",
+        "C162",
+        "C161"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "实际时空限制乘积测度的可积性与Fubini内部证明；同一M_t积分零、divV积分非正，原完整bulk的时空积分≤真实共轭热残差平方积分。限光滑周期盒步骤，bulk系数/吸收与原C²q/弱轨道/一般多面体仍待。"
     }
   ],
   "events": [
@@ -15472,6 +15548,11 @@
       "at": "2026-10-19T10:01:46.712262+00:00",
       "public_summary": "有限半空间真实闭面通量已独立验收；实际坐标盒全部面符号与真实散度积分已构建审计，进入独立验收。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1241c07afdcdff8d5ce9ec236538ef486d71059a/governance/reviews/T147-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T10:09:46.393867+00:00",
+      "public_summary": "实际坐标盒散度积分已独立验收；光滑周期盒状态的完整积分热不等式已构建审计，进入独立验收。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/77687866a93f6aa5eb4200d6c4a4640d0a69bbb0/governance/reviews/T148-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -15819,7 +15900,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7f5d9aaebb6e9edcced54be1bf86b0d58d124b91/governance/reviews/T146-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39232361430/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1241c07afdcdff8d5ce9ec236538ef486d71059a/governance/reviews/T147-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39233525574/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39233525574/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/77687866a93f6aa5eb4200d6c4a4640d0a69bbb0/governance/reviews/T148-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39234467863/attempts/1"
     ]
   },
   "schedules": [
@@ -34658,10 +34741,10 @@
       ],
       "branch": "main",
       "base_commit": "e3a9cd6fa7134bdb9d924c56686a14d0bb64029d",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "a3a39eadfe9f18fee3bdd0a60b07cd5856bd3dbb",
+      "merge_commit": "a3a39eadfe9f18fee3bdd0a60b07cd5856bd3dbb",
       "lean_declarations": [
         "Carleman.coordinateBoxFunctional",
         "Carleman.coordinateBoxThreshold",
@@ -34679,12 +34762,23 @@
         "Carleman.coordinateFacePoint_mem_closed",
         "Carleman.box_gaussian_heat_flux_integral"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "a3a39eadfe9f18fee3bdd0a60b07cd5856bd3dbb",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39234467863/attempts/1",
+        "finished_at": "2026-10-19T10:04:50.938484+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "a3a39eadfe9f18fee3bdd0a60b07cd5856bd3dbb"
+      },
       "blocker": null,
       "attempts": [
         "四模块15声明联合定向3260 jobs、全库4005 jobs和7476声明递归公理审计通过。"
       ],
-      "next_action": "独立验收实际盒上热通量散度积分；继续周期时间Fubini与光滑积分热恒等式。",
+      "next_action": "实际盒上热通量散度积分独立验收通过；继续完整光滑时空热不等式和系数估计。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -34696,6 +34790,96 @@
         "recursive_axiom_audit": 7476,
         "new_explicit_declarations": 15,
         "declaration_artifact_sha256": "cf8815c27e3e2095263233d1ea809d5668e41e9270b7fd22d26560d2d7ea39b6",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "a3a39eadfe9f18fee3bdd0a60b07cd5856bd3dbb",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_section3",
+          "claim_ids": [
+            "C164"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "a3a39eadfe9f18fee3bdd0a60b07cd5856bd3dbb",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T10:06:40+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/77687866a93f6aa5eb4200d6c4a4640d0a69bbb0/governance/reviews/T148-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "a3a39eadfe9f18fee3bdd0a60b07cd5856bd3dbb",
+        "checked_sha": "a3a39eadfe9f18fee3bdd0a60b07cd5856bd3dbb",
+        "run_id": 39234467863,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 4005,
+        "recursive_axiom_audit": 7476,
+        "new_explicit_declarations": 15,
+        "declaration_artifact_sha256": "cf8815c27e3e2095263233d1ea809d5668e41e9270b7fd22d26560d2d7ea39b6",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T149",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "真实光滑周期盒状态的积分热不等式",
+      "goal_ids": [
+        "C165"
+      ],
+      "acceptance": [
+        "实际时空Lebesgue可积性内部由紧柱连续性推出",
+        "真实Fubini和周期FTC消去同一M_t整个时空积分",
+        "全部真实bulk/散度项的可积性及原矩阵/混合/B项完整保留",
+        "同一z与k内部定义，实际热残差，原盒通量符号用于真实单调积分",
+        "明确未完成heatcross/吸收/原C²权和弱轨道，P024不提升"
+      ],
+      "dependencies": [
+        "C164",
+        "C162",
+        "C161"
+      ],
+      "branch": "main",
+      "base_commit": "a3a39eadfe9f18fee3bdd0a60b07cd5856bd3dbb",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.boxTimeIntegral",
+        "Carleman.continuous_box_time_integrable",
+        "Carleman.boxTimeIntegral_eq_iterated",
+        "Carleman.boxTimeIntegral_add",
+        "Carleman.boxTimeIntegral_mono",
+        "Carleman.boxTimeIntegral_nonpos_of_spatial",
+        "Carleman.boxTimeIntegral_periodic_derivative",
+        "Carleman.directionalHessianForm_contDiff",
+        "Carleman.pointwiseHeatMatrixEnergy_contDiff",
+        "Carleman.pointwiseHeatB_contDiff",
+        "Carleman.heatCarlemanBulk",
+        "Carleman.heatCarlemanBulk_contDiff",
+        "Carleman.pointwiseHeatDivergence_contDiff",
+        "Carleman.spaceTimeHeat_contDiff",
+        "Carleman.box_smooth_heat_carleman_inequality"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "三模块15声明联合定向3267 jobs、全库4008 jobs和7494声明递归公理审计通过。"
+      ],
+      "next_action": "独立验收光滑周期盒状态的真实积分热不等式；继续指定Gaussian相位和原B/混合系数的实际微分展开。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4008,
+        "recursive_axiom_audit": 7494,
+        "new_explicit_declarations": 15,
+        "declaration_artifact_sha256": "8b89e3e3aa7a89e98a42f2d2c011f0beb48d5f6454e542b2b84d3a54e75b4c86",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
