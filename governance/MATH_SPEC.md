@@ -1398,3 +1398,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 真实方向微分及空间 Laplacian 线性性、原谐波 Bochner 字段身份内部证明。构造带同一实际光滑 F 的更强周期图子空间，逐项保留全时空 C∞、严格周期、全时间全边界零值、每个 Icc 时刻迹身份，以及时间 a.e./空间 a.e. 的实际经典 ∂t 和负 Laplacian 字段。真实谐波系数值/算子身份及 T160 空间图逼近给该子空间在完整弱周期图中稠密；最终对所有原弱周期轨道输出同一序列及精确经典字段身份。五模块十三声明。
 
 空间梯度和实际加权柱积分的识别、完整弱 CE 极限及一般凸多面体继续；仍 AUXILIARY、P024 不提升、覆盖17/26。详见 `analysis/T162-classical-periodic-density.md`。
+
+## T163 / C179：完整弱周期图的真实梯度和加权热能量连续性（辅助）
+
+实际能量字段由原 resolventEnergy(1)(Au+u) 的 Bochner CLM 构造，并嵌回原值。弱 H¹ 值唯一性内部给同一光滑代表的真实弱梯度；将原 dirichletGradient 作用于该能量字段，得到完整图连续的真实空间梯度。复用原 timeMap 证明 timeSq 为加权 Bochner 范数平方，原 q³ 值、q 梯度、ε∂t+A 残差和观察 cutoff 四项均连续。五模块十八声明。
+
+同一权和同一常数下的光滑 core CE 可由完整图密度延拓到全部弱轨道；此处明确保留光滑 core 不等式前提，实际柱积分与 Bochner 四项的对接仍待，未声称完整弱 CE。一般凸多面体仍待；AUXILIARY、P024 不提升、覆盖17/26。详见 `analysis/T163-weak-heat-continuity.md`。

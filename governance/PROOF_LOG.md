@@ -317,3 +317,5 @@
 - T160 / C176：任意原盒算子图状态的真实光滑零边界密度10声明独立 AUXILIARY PASS；三项同 SHA CI 与7713声明 raw 逐字节一致。 固定证明 `d5a8ab859e4413c6eb950702df73990e356c3786`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e039d22d791ead1305810940718ebc9237fc854a/governance/reviews/T160-local-acceptance.md)。原文17/26，T161继续完整盒弱周期图空间的光滑零边界密度。
 
 - T161 / C177：完整弱周期图光滑零边界密度16声明独立 AUXILIARY PASS；三项同 SHA CI 与7765声明 raw 逐字节一致。 固定证明 `edd51c0e410a3a6e21259fd156f719e60d965500`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2ed59f0aeb57b2721e7ef9fd6363404b9cfa1f4e/governance/reviews/T161-local-acceptance.md)。原文17/26，T162继续带实际经典微分字段的完整盒弱周期图逼近。
+
+- T162 / C178：完整周期图经典字段逼近13声明独立 AUXILIARY PASS；同SHA三项CI与7799项审计raw逐字节一致。 固定证明 `5ec78c3027e714324439187119dfbfe4765a2af6`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a4be7780bc36ad9340d7daff65249ff0fc0d332b/governance/reviews/T162-local-acceptance.md)。原文17/26，T163继续完整弱周期图上的真实梯度和加权热能量连续性。
