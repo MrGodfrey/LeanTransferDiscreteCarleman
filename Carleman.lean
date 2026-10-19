@@ -594,3 +594,8 @@ public import Carleman.Geometry.KuhnInverseMap
 public import Carleman.Spatial.CartesianKuhnInverse
 public import Carleman.Spatial.CartesianKuhnReconstructionJet
 public import Carleman.Spatial.CartesianKuhnWeakInverse
+
+public import Carleman.Spatial.WeakJetLocality
+public import Carleman.Spatial.CartesianKuhnErrorLocality
+public import Carleman.Spatial.CartesianKuhnErrorStability
+public import Carleman.Spatial.CartesianKuhnLocalError

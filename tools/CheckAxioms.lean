@@ -4955,6 +4955,33 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianKuhnProjection_local_gradient_bound
 #print axioms Carleman.cartesianKuhnProjection_local_gradient_bound
 
+#check @Carleman.WeakSobolevJet.restrictSubdomain_eq_of_value_ae
+#print axioms Carleman.WeakSobolevJet.restrictSubdomain_eq_of_value_ae
+#check @Carleman.SimplicialPartition.field_congr_on_cell
+#print axioms Carleman.SimplicialPartition.field_congr_on_cell
+#check @Carleman.bochnerL2Norm_mono_measure
+#print axioms Carleman.bochnerL2Norm_mono_measure
+#check @Carleman.bochnerL2Norm_lp_sub
+#print axioms Carleman.bochnerL2Norm_lp_sub
+#check @Carleman.cartesianClippedPatch_cell_measure
+#print axioms Carleman.cartesianClippedPatch_cell_measure
+#check @Carleman.cartesianKuhnProjectionJet_ae
+#print axioms Carleman.cartesianKuhnProjectionJet_ae
+#check @Carleman.cartesianKuhnProjectionJet_sub
+#print axioms Carleman.cartesianKuhnProjectionJet_sub
+#check @Carleman.cartesianKuhnErrorJet
+#print axioms Carleman.cartesianKuhnErrorJet
+#check @Carleman.cartesianKuhnErrorJet_sub
+#print axioms Carleman.cartesianKuhnErrorJet_sub
+#check @Carleman.cartesianKuhnErrorJet_value_local_invariant
+#print axioms Carleman.cartesianKuhnErrorJet_value_local_invariant
+#check @Carleman.cartesianKuhnErrorJet_field_local_invariant
+#print axioms Carleman.cartesianKuhnErrorJet_field_local_invariant
+#check @Carleman.cartesianKuhnErrorJet_local_stability
+#print axioms Carleman.cartesianKuhnErrorJet_local_stability
+#check @Carleman.cartesianKuhn_h2_local_error
+#print axioms Carleman.cartesianKuhn_h2_local_error
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
