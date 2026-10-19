@@ -1464,3 +1464,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 真实全部单纯形P1 Dirichlet空间、consistent-mass刚度、包含重构、L²投影载荷和真实观察组成PhysicalLoadCarleman。完整盒H²域/图界、允许权族、原数值近似/测试和连续弱CE全部内部供应。统一κ=min(κ0,ε)在所有网格和物理尺度选择前清偿h*qmax阈值，原热尺度不变。一个完整定理，所有常数先于网格/时间/权；原维数2、3及原形状/grading条件完整包含。
 
 仅盒P1实例，后续物理观测/控制及一般几何继续；AUXILIARY、覆盖17/26。详见 `analysis/T173-box-p1-load.md`。
+
+## T174 / C190：完整 P1 物理及滤波区域控制（辅助实例）
+
+T173的实际载荷CE内部供应完整P1物理观测与区域L²(ω) HUM控制；consistent-mass刚度、真实势投影、原全状态和完整物理方程均保持。qc/κ/h0/Δ0/Cb/d0先于T/M，Cphys及滤波统一C0(T,M)先于所有网格/势/θ/F。原热尺度及两侧物理条件、两滤波预算、2C0观察、sqrt(2C0)成本、PF终态精确为零和完整指数终态率不变。三模块四声明含两个透明完整结论定义；目标未转移为前提，无F不变性要求。
+
+一般凸多面体/一般算子和控制收敛继续；AUXILIARY、覆盖17/26。详见 `analysis/T174-box-p1-physical-control.md`。
