@@ -556,3 +556,7 @@ public import Carleman.Geometry.KuhnFaceMatching
 public import Carleman.Spatial.SimplexCoordinateBoundary
 public import Carleman.Spatial.CartesianKuhnNodal
 public import Carleman.Spatial.CartesianKuhnHatSupport
+public import Carleman.Spatial.SimplexAffineRelabel
+public import Carleman.Geometry.KuhnReflection
+public import Carleman.Spatial.CartesianKuhnHatSymmetry
+public import Carleman.Spatial.CartesianKuhnFirstMoment

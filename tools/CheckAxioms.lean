@@ -4639,6 +4639,39 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianKuhnHat_tsupport_subset_cellStar
 #print axioms Carleman.cartesianKuhnHat_tsupport_subset_cellStar
 
+#check @Carleman.simplex_cell_affine_relabel
+#print axioms Carleman.simplex_cell_affine_relabel
+#check @Carleman.simplexBarycentric_affine_relabel
+#print axioms Carleman.simplexBarycentric_affine_relabel
+#check @Carleman.kuhnReflectedOrigin
+#print axioms Carleman.kuhnReflectedOrigin
+#check @Carleman.kuhnReflectedPermutation
+#print axioms Carleman.kuhnReflectedPermutation
+#check @Carleman.kuhnVertexIndex_reflection
+#print axioms Carleman.kuhnVertexIndex_reflection
+#check @Carleman.cartesianKuhnSimplex_reflection_vertex
+#print axioms Carleman.cartesianKuhnSimplex_reflection_vertex
+#check @Carleman.cartesianKuhnSimplex_reflection_cell
+#print axioms Carleman.cartesianKuhnSimplex_reflection_cell
+#check @Carleman.cartesianKuhn_incident_finite_index
+#print axioms Carleman.cartesianKuhn_incident_finite_index
+#check @Carleman.cartesianFiniteSimplex_of_latticeIndex
+#print axioms Carleman.cartesianFiniteSimplex_of_latticeIndex
+#check @Carleman.cartesianFiniteSimplex_reflected_incident
+#print axioms Carleman.cartesianFiniteSimplex_reflected_incident
+#check @Carleman.cartesianKuhnHat_reflection_of_nonzero
+#print axioms Carleman.cartesianKuhnHat_reflection_of_nonzero
+#check @Carleman.cartesianKuhnHat_reflection
+#print axioms Carleman.cartesianKuhnHat_reflection
+#check @Carleman.cartesianKuhnHat_integrable
+#print axioms Carleman.cartesianKuhnHat_integrable
+#check @Carleman.cartesianKuhnHat_firstMoment_integrable
+#print axioms Carleman.cartesianKuhnHat_firstMoment_integrable
+#check @Carleman.cartesianKuhnHat_firstMoment_zero
+#print axioms Carleman.cartesianKuhnHat_firstMoment_zero
+#check @Carleman.cartesianKuhnHat_firstMoment_domain
+#print axioms Carleman.cartesianKuhnHat_firstMoment_domain
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
