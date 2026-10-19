@@ -5419,6 +5419,27 @@ set_option pp.maxSteps 1000000
 #check @Carleman.WeakSobolevJet.mollified_nodal_gradient_integral
 #print axioms Carleman.WeakSobolevJet.mollified_nodal_gradient_integral
 
+#check @Carleman.l2_square_tendsto_zero_of_ae_of_energy_le
+#print axioms Carleman.l2_square_tendsto_zero_of_ae_of_energy_le
+#check @Carleman.spatialMollifier_square_error_tendsto
+#print axioms Carleman.spatialMollifier_square_error_tendsto
+#check @Carleman.spatialMollifier_L2_error_tendsto
+#print axioms Carleman.spatialMollifier_L2_error_tendsto
+#check @Carleman.spatialMollificationLp
+#print axioms Carleman.spatialMollificationLp
+#check @Carleman.spatialMollificationLp_ae
+#print axioms Carleman.spatialMollificationLp_ae
+#check @Carleman.spatialMollificationLp_tendsto
+#print axioms Carleman.spatialMollificationLp_tendsto
+#check @Carleman.spatialMollifier_L2_error_restrict_tendsto
+#print axioms Carleman.spatialMollifier_L2_error_restrict_tendsto
+#check @Carleman.IsWeakSpatialDerivative.local_mollification_strong_first
+#print axioms Carleman.IsWeakSpatialDerivative.local_mollification_strong_first
+#check @Carleman.IsWeakSpatialDerivative.local_mollification_strong_second
+#print axioms Carleman.IsWeakSpatialDerivative.local_mollification_strong_second
+#check @Carleman.WeakSobolevJet.local_mollification_strong_h2
+#print axioms Carleman.WeakSobolevJet.local_mollification_strong_h2
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

@@ -665,3 +665,8 @@ public import Carleman.Spatial.TensorCoordinateNorm
 public import Carleman.Spatial.LocalHessianConvolution
 public import Carleman.Spatial.MollifiedHessianEnergy
 public import Carleman.Spatial.MollifiedH2NodalBounds
+
+public import Carleman.Spatial.StrongL2Limit
+public import Carleman.Spatial.StrongMollifierLimit
+public import Carleman.Spatial.LocalStrongMollification
+public import Carleman.Spatial.WeakH2LocalSmoothing
