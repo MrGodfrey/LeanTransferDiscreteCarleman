@@ -812,3 +812,7 @@ public import Carleman.Geometry.CoordinateBoxHalfspaces
 public import Carleman.Spatial.BoxHeatBoundary
 public import Carleman.Spatial.SmoothBoxDivergence
 public import Carleman.Spatial.BoxHeatFluxIntegral
+
+public import Carleman.Spatial.SmoothBoxTimeIntegral
+public import Carleman.Spatial.HeatIdentityRegularity
+public import Carleman.Spatial.BoxIntegratedHeatIdentity

@@ -6465,6 +6465,37 @@ set_option pp.maxSteps 1000000
 #check @Carleman.box_gaussian_heat_flux_integral
 #print axioms Carleman.box_gaussian_heat_flux_integral
 
+#check @Carleman.boxTimeIntegral
+#print axioms Carleman.boxTimeIntegral
+#check @Carleman.continuous_box_time_integrable
+#print axioms Carleman.continuous_box_time_integrable
+#check @Carleman.boxTimeIntegral_eq_iterated
+#print axioms Carleman.boxTimeIntegral_eq_iterated
+#check @Carleman.boxTimeIntegral_add
+#print axioms Carleman.boxTimeIntegral_add
+#check @Carleman.boxTimeIntegral_mono
+#print axioms Carleman.boxTimeIntegral_mono
+#check @Carleman.boxTimeIntegral_nonpos_of_spatial
+#print axioms Carleman.boxTimeIntegral_nonpos_of_spatial
+#check @Carleman.boxTimeIntegral_periodic_derivative
+#print axioms Carleman.boxTimeIntegral_periodic_derivative
+#check @Carleman.directionalHessianForm_contDiff
+#print axioms Carleman.directionalHessianForm_contDiff
+#check @Carleman.pointwiseHeatMatrixEnergy_contDiff
+#print axioms Carleman.pointwiseHeatMatrixEnergy_contDiff
+#check @Carleman.pointwiseHeatB_contDiff
+#print axioms Carleman.pointwiseHeatB_contDiff
+#check @Carleman.heatCarlemanBulk
+#print axioms Carleman.heatCarlemanBulk
+#check @Carleman.heatCarlemanBulk_contDiff
+#print axioms Carleman.heatCarlemanBulk_contDiff
+#check @Carleman.pointwiseHeatDivergence_contDiff
+#print axioms Carleman.pointwiseHeatDivergence_contDiff
+#check @Carleman.spaceTimeHeat_contDiff
+#print axioms Carleman.spaceTimeHeat_contDiff
+#check @Carleman.box_smooth_heat_carleman_inequality
+#print axioms Carleman.box_smooth_heat_carleman_inequality
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
