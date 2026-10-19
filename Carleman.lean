@@ -839,3 +839,6 @@ public import Carleman.Spatial.BoxGaussianHeatObservation
 public import Carleman.Spatial.HeatGradientReturn
 public import Carleman.Weights.InteriorHeatGradientReturn
 public import Carleman.Spatial.BoxSmoothHeatEstimate
+
+public import Carleman.Spatial.HeatTimeReflection
+public import Carleman.Spatial.BoxSmoothHeatBothSigns

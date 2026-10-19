@@ -6629,6 +6629,35 @@ set_option pp.maxSteps 1000000
 #check @Carleman.box_smooth_gaussian_heat_estimate
 #print axioms Carleman.box_smooth_gaussian_heat_estimate
 
+#check @Carleman.heatTimeReflection
+#print axioms Carleman.heatTimeReflection
+#check @Carleman.heatTimeReflection_contDiff
+#print axioms Carleman.heatTimeReflection_contDiff
+#check @Carleman.heatTimeReflection_involutive
+#print axioms Carleman.heatTimeReflection_involutive
+#check @Carleman.time_reflection_mem_interval
+#print axioms Carleman.time_reflection_mem_interval
+#check @Carleman.heatTimeReflection_periodic
+#print axioms Carleman.heatTimeReflection_periodic
+#check @Carleman.time_reflection_measurePreserving
+#print axioms Carleman.time_reflection_measurePreserving
+#check @Carleman.heatTimeReflection_measurePreserving
+#print axioms Carleman.heatTimeReflection_measurePreserving
+#check @Carleman.boxTimeIntegral_reflection
+#print axioms Carleman.boxTimeIntegral_reflection
+#check @Carleman.deriv_time_reflection
+#print axioms Carleman.deriv_time_reflection
+#check @Carleman.deriv_deriv_time_reflection
+#print axioms Carleman.deriv_deriv_time_reflection
+#check @Carleman.spaceTimeHeat_time_reflection
+#print axioms Carleman.spaceTimeHeat_time_reflection
+#check @Carleman.spaceTimeOrientedHeat
+#print axioms Carleman.spaceTimeOrientedHeat
+#check @Carleman.spaceTimeHeat_time_reflection_eq
+#print axioms Carleman.spaceTimeHeat_time_reflection_eq
+#check @Carleman.box_smooth_gaussian_heat_both_signs
+#print axioms Carleman.box_smooth_gaussian_heat_both_signs
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
