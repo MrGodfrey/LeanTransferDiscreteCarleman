@@ -6704,6 +6704,17 @@ set_option pp.maxSteps 1000000
 #check @Carleman.box_C2_gaussian_heat_both_signs
 #print axioms Carleman.box_C2_gaussian_heat_both_signs
 
+#check @Carleman.exists_continuous_periodic_extension
+#print axioms Carleman.exists_continuous_periodic_extension
+#check @Carleman.periodic_primitive_of_interval
+#print axioms Carleman.periodic_primitive_of_interval
+#check @Carleman.exists_periodic_C2_extension
+#print axioms Carleman.exists_periodic_C2_extension
+#check @Carleman.boxTimeIntegral_congr_on
+#print axioms Carleman.boxTimeIntegral_congr_on
+#check @Carleman.box_interval_C2_gaussian_heat_both_signs
+#print axioms Carleman.box_interval_C2_gaussian_heat_both_signs
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

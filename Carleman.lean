@@ -850,3 +850,7 @@ public import Carleman.Weights.PeriodicC2Mollification
 
 public import Carleman.Spatial.BoxTimeIntegralLimit
 public import Carleman.Spatial.BoxC2HeatEstimate
+
+public import Carleman.Weights.PeriodicPrimitive
+public import Carleman.Weights.PeriodicC2Extension
+public import Carleman.Spatial.BoxIntervalC2HeatEstimate
