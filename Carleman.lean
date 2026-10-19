@@ -715,3 +715,6 @@ public import Carleman.Spatial.WeakH2ProjectionApproximation
 public import Carleman.Spatial.FullP1ApproximationInterface
 public import Carleman.Control.ConformingRegionWeightedData
 public import Carleman.Control.FullP1NumericalData
+public import Carleman.Spatial.BoundedTestRepresentation
+public import Carleman.Spatial.WeakDerivativeBoundedTest
+public import Carleman.Spatial.WeakDerivativeBoundedLimit

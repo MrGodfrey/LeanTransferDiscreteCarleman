@@ -5659,6 +5659,17 @@ set_option pp.maxSteps 1000000
 #check @Carleman.full_p1_numericalData
 #print axioms Carleman.full_p1_numericalData
 
+#check @Carleman.exists_inner_of_bounded_test_functional
+#print axioms Carleman.exists_inner_of_bounded_test_functional
+#check @Carleman.exists_weakSpatialDerivative_of_test_bound
+#print axioms Carleman.exists_weakSpatialDerivative_of_test_bound
+#check @Carleman.exists_weakSpatialDerivative_iff_test_bound
+#print axioms Carleman.exists_weakSpatialDerivative_iff_test_bound
+#check @Carleman.exists_weakSpatialDerivative_of_test_limits
+#print axioms Carleman.exists_weakSpatialDerivative_of_test_limits
+#check @Carleman.exists_weakSpatialDerivative_of_strong_limit_bounded
+#print axioms Carleman.exists_weakSpatialDerivative_of_strong_limit_bounded
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
