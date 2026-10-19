@@ -393,3 +393,5 @@
 - T185 / C201：固定证明 `fe308a7e6958dc8a2caa9f9dec3c331ae5678a03` 的Lean结果工件与原始审计核对通过；作业终态接口尚未更新，三项CI和独立正式验收均保留待定，当前仅BUILT。T186继续原差分单元与Kuhn重构的实际一致性，原文覆盖17/26。
 
 - T187 / C203：原状态方程内部给梯度预算，真实E_h与R_h同弱极限；七模块二十声明，4158 jobs/8453项审计通过。基线固定T186 `2f52ae6bafebec9c18313da458507026064a7542` 已本地验证及独立语义核对，推送与正式CI验收待定；未提前登记REVIEWED。原文17/26。
+
+- T185 / C201：七声明独立7/7 PASS；原势/测试乘法及完整弱强配对忠实。三项实际作业完整日志独立核验成功，API摘要迟滞如实单列；8411项raw逐字节核对。 固定证明 `fe308a7e6958dc8a2caa9f9dec3c331ae5678a03`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5b3612e6e77084ba69726720c748e54dc83fe796/governance/reviews/T185-local-acceptance.md)。原文17/26；当前执行任务不变。
