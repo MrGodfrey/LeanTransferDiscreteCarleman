@@ -7449,6 +7449,33 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianSpacetimeCellIsometry_adjoint_average
 #print axioms Carleman.cartesianSpacetimeCellIsometry_adjoint_average
 
+#check @Carleman.finiteCell_continuous_residual_tendsto
+#print axioms Carleman.finiteCell_continuous_residual_tendsto
+#check @Carleman.finiteCell_average_strong_convergence
+#print axioms Carleman.finiteCell_average_strong_convergence
+#check @Carleman.fixedSpacetimeCellIsometry
+#print axioms Carleman.fixedSpacetimeCellIsometry
+#check @Carleman.fixedSpacetime_uncovered_volume
+#print axioms Carleman.fixedSpacetime_uncovered_volume
+#check @Carleman.fixedSpacetime_uncovered_volume_tendsto
+#print axioms Carleman.fixedSpacetime_uncovered_volume_tendsto
+#check @Carleman.fixedSpacetimeCell_average_strong_convergence
+#print axioms Carleman.fixedSpacetimeCell_average_strong_convergence
+#check @Carleman.BoundedMultiplier.toL2
+#print axioms Carleman.BoundedMultiplier.toL2
+#check @Carleman.BoundedMultiplier.toL2_ae
+#print axioms Carleman.BoundedMultiplier.toL2_ae
+#check @Carleman.cartesianSpacetimePotential_eq_projection
+#print axioms Carleman.cartesianSpacetimePotential_eq_projection
+#check @Carleman.fixedSpacetimePotential
+#print axioms Carleman.fixedSpacetimePotential
+#check @Carleman.fixedSpacetimePotential_bound
+#print axioms Carleman.fixedSpacetimePotential_bound
+#check @Carleman.fixedSpacetimePotential_eq_projection
+#print axioms Carleman.fixedSpacetimePotential_eq_projection
+#check @Carleman.cartesianAveragedPotential_strong_convergence
+#print axioms Carleman.cartesianAveragedPotential_strong_convergence
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

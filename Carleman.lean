@@ -958,3 +958,7 @@ public import Carleman.Spatial.FiniteCellMultiplier
 public import Carleman.Control.CartesianPotentialReconstruction
 public import Carleman.Geometry.CartesianSpacetimeCells
 public import Carleman.Control.CartesianSpacetimePotential
+public import Carleman.Spatial.FiniteCellStrongConvergence
+public import Carleman.Spatial.FixedSpacetimeCellReconstruction
+public import Carleman.Spatial.FixedSpacetimeCellStrongConvergence
+public import Carleman.Control.AveragedPotentialStrongConvergence
