@@ -894,3 +894,8 @@ public import Carleman.Continuous.PeriodicEnergyField
 public import Carleman.Spatial.SmoothWeakGradientIdentity
 public import Carleman.Spatial.DirichletPeriodicGradient
 public import Carleman.Spatial.DirichletHeatContinuity
+
+public import Carleman.Spatial.BochnerBoxIntegral
+public import Carleman.Spatial.PeriodicClassicalRepresentatives
+public import Carleman.Spatial.DirichletHeatIntegral
+public import Carleman.Spatial.BoxWeakHeatEstimate
