@@ -203,3 +203,5 @@
 - T103 / C119：实际统一内球、直径与节点代表唯一性8声明独立PASS；同SHA三项CI、6293声明递归审计及原始产物逐字节一致。 固定证明 `23d19fb4276d47fb788d7040ae156f3e67e46ec8`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b3b7ff45e5870099037edd1cf200a47ea0f7875e/governance/reviews/T103-local-acceptance.md)。原文14/26，T104继续原FD对角测试的完整弱超逼近。
 
 - T104 / C120：原eq:testsuper全状态真实弱超逼近5声明独立PASS；同SHA三项CI、6299声明递归审计及逐字节一致原始产物完整核实。 固定证明 `29ebd0b76cccb70d6da4499eaa09d35cab2895ff`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4c165823064ce33a8681a1dcf8f2d57006a78e57/governance/reviews/T104-local-acceptance.md)。原文14/26，T105继续原FD节点观察与真实重构区域界。
+
+- T105 / C121：原节点观察、真实限制/零延拓物理配对及全允许权区域界15声明独立PASS；同SHA三项CI、6321声明递归审计和原始产物逐字节一致。 固定证明 `2f2e71d4359a206ac9035d73b61889bfa3cb7bfb`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1da5a83485fc21bb023aae889f8ec144388cde4a/governance/reviews/T105-local-acceptance.md)。原文14/26，T106继续原FD物理Hilbert空间及真实控制伴随。
