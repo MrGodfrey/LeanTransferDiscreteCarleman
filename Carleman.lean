@@ -800,3 +800,7 @@ public import Carleman.Spatial.SmoothDirectionalEnergy
 public import Carleman.Spatial.PointwiseHeatIdentity
 public import Carleman.Spatial.PointwiseHeatConjugation
 public import Carleman.Spatial.SpacetimeHeatIdentity
+
+public import Carleman.Spatial.PeriodicHeatFlux
+public import Carleman.Spatial.SmoothPlaneBoundary
+public import Carleman.Spatial.PlaneHeatFlux

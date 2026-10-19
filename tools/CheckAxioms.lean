@@ -6378,6 +6378,37 @@ set_option pp.maxSteps 1000000
 #check @Carleman.spacetime_heat_carleman_inequality
 #print axioms Carleman.spacetime_heat_carleman_inequality
 
+#check @Carleman.smoothD_periodic
+#print axioms Carleman.smoothD_periodic
+#check @Carleman.directionalLap_periodic
+#print axioms Carleman.directionalLap_periodic
+#check @Carleman.directionalEnergy_periodic
+#print axioms Carleman.directionalEnergy_periodic
+#check @Carleman.heatConjugationK_periodic
+#print axioms Carleman.heatConjugationK_periodic
+#check @Carleman.pointwiseHeatTimeFlux_contDiff
+#print axioms Carleman.pointwiseHeatTimeFlux_contDiff
+#check @Carleman.pointwiseHeatTimeFlux_periodic
+#print axioms Carleman.pointwiseHeatTimeFlux_periodic
+#check @Carleman.spacetime_periodic_derivative_integral
+#print axioms Carleman.spacetime_periodic_derivative_integral
+#check @Carleman.spacetime_heat_time_flux_integral
+#print axioms Carleman.spacetime_heat_time_flux_integral
+#check @Carleman.smooth_plane_tangent_derivative
+#print axioms Carleman.smooth_plane_tangent_derivative
+#check @Carleman.smooth_plane_normal_derivative
+#print axioms Carleman.smooth_plane_normal_derivative
+#check @Carleman.spacetime_plane_zero_derivatives
+#print axioms Carleman.spacetime_plane_zero_derivatives
+#check @Carleman.spacetime_directional_normal_sum
+#print axioms Carleman.spacetime_directional_normal_sum
+#check @Carleman.pointwiseHeatFlux_normal_eq
+#print axioms Carleman.pointwiseHeatFlux_normal_eq
+#check @Carleman.smooth_plane_heat_flux
+#print axioms Carleman.smooth_plane_heat_flux
+#check @Carleman.gaussian_plane_heat_flux_nonpos
+#print axioms Carleman.gaussian_plane_heat_flux_nonpos
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
