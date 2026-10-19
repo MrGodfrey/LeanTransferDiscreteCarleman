@@ -5942,6 +5942,27 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Physical.fd_dividing_filter_rayleigh
 #print axioms Carleman.Physical.fd_dividing_filter_rayleigh
 
+#check @Carleman.inward_fderiv_tendsto_of_contDiffAt
+#print axioms Carleman.inward_fderiv_tendsto_of_contDiffAt
+#check @Carleman.compactLipschitz_inward_tendsto_H1
+#print axioms Carleman.compactLipschitz_inward_tendsto_H1
+#check @Carleman.piecewiseSmooth_mem_dirichletJetSpace
+#print axioms Carleman.piecewiseSmooth_mem_dirichletJetSpace
+#check @Carleman.zeroBoundary_indicator_lipschitz
+#print axioms Carleman.zeroBoundary_indicator_lipschitz
+#check @Carleman.indicator_tsupport_subset_closure
+#print axioms Carleman.indicator_tsupport_subset_closure
+#check @Carleman.indicator_hasCompactSupport
+#print axioms Carleman.indicator_hasCompactSupport
+#check @Carleman.indicator_contDiffAt_off_frontier
+#print axioms Carleman.indicator_contDiffAt_off_frontier
+#check @Carleman.indicator_contDiffAt_ae
+#print axioms Carleman.indicator_contDiffAt_ae
+#check @Carleman.smooth_boundary_zero_mem_dirichletJetSpace
+#print axioms Carleman.smooth_boundary_zero_mem_dirichletJetSpace
+#check @Carleman.smooth_boundary_test_mem_dirichletJetSpace
+#print axioms Carleman.smooth_boundary_test_mem_dirichletJetSpace
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

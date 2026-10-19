@@ -759,3 +759,6 @@ public import Carleman.Spatial.TensorProlongationInverse
 public import Carleman.Spatial.CartesianBoxValues
 public import Carleman.Spatial.CartesianCoarseProlongation
 public import Carleman.Control.CartesianFilterRayleigh
+public import Carleman.Spatial.PiecewiseSmoothContraction
+public import Carleman.Spatial.ZeroBoundaryIndicator
+public import Carleman.Spatial.SmoothBoundaryDirichlet
