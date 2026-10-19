@@ -1416,3 +1416,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 任意原 Icc 连续正 q 内部构造有界 TimeWeight 代表，保持原值及两阶 derivWithin；真实 exp(qρ) 乘子能量在这些代表间精确相等。原区间 C²、端点匹配、下界和两导数预算因此可直接输入完整盒弱 CE，不再要求 TimeWeight 数据或区间外性质。原 PeriodicWeakTrajectory 的实际 domain jet 梯度与图梯度 a.e. 相等且内部证明 MemLp，原值、导数、算子、观察字段全部恢复。最终直接量化原 q 和全部原弱轨道，参数在全部 g/q/ε/u 之前、C 和双方向均保持。五模块十四声明。
 
 完整结论仍为盒域，后续接入通用转移几何及具体差分实例；一般凸多面体继续。AUXILIARY，P024 不提升、覆盖17/26。详见 `analysis/T165-original-box-weak.md`。
+
+## T166 / C182：实际热梯度与盒连续 CE 接入原转移几何（辅助范围）
+
+有界系数表达式以零阶零、一阶恒等构造，精确等于真实一阶弱字段。原 sobolevGeometry 的四项连续能量与原弱轨道的 exp(qρ) 能量精确一致；domainValue 只需 a.e. 代表。原闭区间 C² 权条件汇集为 IntervalQClass，并推出原 TimeWeightRegularity。最终真实盒弱 CE 清偿通用转移接口 continuous 假设，全部空间/时间/权/符号/状态之前选择同一参数和C，无新的CE或梯度身份前提。四模块十一声明。
+
+具体 Cartesian 完整离散估计及一般凸多面体继续；AUXILIARY、P024不提升、覆盖17/26。详见 `analysis/T166-heat-transfer-geometry.md`。
