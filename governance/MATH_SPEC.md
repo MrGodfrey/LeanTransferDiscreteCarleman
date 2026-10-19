@@ -1380,3 +1380,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 任意原弱H² jet且H¹截断属于H¹₀，先以实际负Laplacian作右端构造奇Poisson扩展，再用扩大盒的已证H²正则性；实际值唯一性恢复原盒全部jet。全偶卷积对原盒闭包紧内强收敛，经真实测度限制与字段恢复，得到原域值和全部一二阶实际坐标导数的L²极限。该卷积值就是已证局部奇延拓的卷积；取尾序列后每项C∞且在整个frontier严格零值。三模块四声明。
 
 完成空间H²密度，尚未接入全部周期时空图空间和弱CE，且区域仍坐标盒；仍AUXILIARY、P024不提升、覆盖17/26。详见 `analysis/T159-box-h2-density.md`。
+
+## T160 / C176：真实盒 Dirichlet 算子图的光滑零边界密度（辅助）
+
+固定紧支截断保持原盒上全部实际方向导数，将 T159 空间 H² 密度加强为真正 SpatialTest 序列。实际二阶导数与 Laplacian Lp 对齐，有限 Lp 求和给负 Laplacian 强收敛；原凸域 H¹₀ 归属及弱 Poisson 图等价内部供应每项的实际 Dirichlet 域和算子身份。最终对任意原盒 Dirichlet 算子图元素，构造严格零边界全局紧支光滑序列及同一实际算子图序列，值和算子分别为原 Lp 类并在完整空间图范数中收敛。四模块十声明。
+
+周期时间图密度、完整弱 CE 及一般凸多面体仍待；AUXILIARY，P024 不提升、覆盖 17/26。详见 `analysis/T160-box-graph-density.md`。

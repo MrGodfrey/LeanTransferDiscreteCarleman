@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T159",
-    "supervisor_checked_at": "2026-10-19T11:39:43.440391+00:00",
-    "next_action": "独立验收完整空间H²零边界密度；接到真实Dirichlet算子图及完整弱周期轨道。",
+    "current_task_id": "T160",
+    "supervisor_checked_at": "2026-10-19T11:49:53.424884+00:00",
+    "next_action": "独立验收完整空间算子图光滑密度；继续有限时间谐波及完整弱周期图逼近。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T11:39:43.440391+00:00"
+    "last_activity_at": "2026-10-19T11:49:53.424884+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "9cc8c5f57aec03ca11ce58ffe86fa6b0ae8f87a8",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39245008692/attempts/1",
-      "finished_at": "2026-10-19T11:31:40.540768+00:00",
+      "checked_sha": "5923dbf398166a48ddf42f98585ff54a10545b0f",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39246261383/attempts/1",
+      "finished_at": "2026-10-19T11:42:04.652222+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "9cc8c5f57aec03ca11ce58ffe86fa6b0ae8f87a8"
+      "source_head_sha": "5923dbf398166a48ddf42f98585ff54a10545b0f"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "9cc8c5f57aec03ca11ce58ffe86fa6b0ae8f87a8",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39245008692/attempts/1",
-      "finished_at": "2026-10-19T11:31:40.540768+00:00",
+      "checked_sha": "5923dbf398166a48ddf42f98585ff54a10545b0f",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39246261383/attempts/1",
+      "finished_at": "2026-10-19T11:42:04.652222+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "9cc8c5f57aec03ca11ce58ffe86fa6b0ae8f87a8"
+      "source_head_sha": "5923dbf398166a48ddf42f98585ff54a10545b0f"
     }
   },
   "milestones": [
@@ -15488,7 +15488,7 @@
       "paper_ref": "Boundary-preserving approximation toward prop:continuousCE",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:continuousCE"
@@ -15499,15 +15499,73 @@
         "Carleman.WeakSobolevJet.restrictSubdomain_component_ae",
         "Carleman.exists_box_dirichlet_smooth_h2_approximation"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "5923dbf398166a48ddf42f98585ff54a10545b0f",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "5923dbf398166a48ddf42f98585ff54a10545b0f",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39246261383/attempts/1",
+        "finished_at": "2026-10-19T11:42:04.652222+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "5923dbf398166a48ddf42f98585ff54a10545b0f"
+      },
+      "semantic_review": {
+        "checked_sha": "5923dbf398166a48ddf42f98585ff54a10545b0f",
+        "declarations": [
+          "Carleman.WeakSobolevJet.local_even_mollification_strong_h2",
+          "Carleman.local_L2_error_restrict_tendsto",
+          "Carleman.WeakSobolevJet.restrictSubdomain_component_ae",
+          "Carleman.exists_box_dirichlet_smooth_h2_approximation"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9bc6a802c80a677fb9f5dc60000ae265152d6036/governance/reviews/T159-local-acceptance.md",
+        "reviewed_at": "2026-10-19T11:46:23+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C174"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "任意原弱H² jet且H¹截断属H¹₀，内部构造奇Poisson扩展并使用扩大盒H²正则性；同一真实全偶卷积取尾序列，全部项C∞且全frontier严格零，同时原域值及全部一二阶实际方向导数L²强收敛。周期时空图密度、完整弱CE及一般多面体未完成。"
+      "scope_notes": "任意原弱H² jet且H¹截断属H¹₀，内部构造奇Poisson扩展并使用扩大盒H²正则性；同一真实全偶卷积取尾序列，全部项C∞且全frontier严格零，同时原域值及全部一二阶实际方向导数L²强收敛。周期时空图密度、完整弱CE及一般多面体未完成。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C176",
+      "title": "真实盒 Dirichlet 算子图的严格零边界光滑密度",
+      "paper_ref": "Spatial operator-graph density toward prop:continuousCE",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:continuousCE"
+      ],
+      "lean_declarations": [
+        "Carleman.coordinateDerivative_eqOn_of_eqOn",
+        "Carleman.exists_box_dirichlet_compact_h2_approximation",
+        "Carleman.lp_tendsto_of_representative_L2_error",
+        "Carleman.coordinateDerivative_two_diagonal",
+        "Carleman.SpatialTest.laplacianOnLp",
+        "Carleman.SpatialTest.laplacianOnLp_ae",
+        "Carleman.SpatialTest.laplacianOnLp_tendsto",
+        "Carleman.SpatialTest.laplacianOnLp_eq_subdomain",
+        "Carleman.SpatialTest.exists_dirichlet_domain_of_boundary",
+        "Carleman.exists_box_smooth_operator_graph_approximation"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C175"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "任意原盒 Dirichlet 算子图状态，内部使用完整 H² 正则性构造真正 SpatialTest 序列及实际图元素；逐项全边界零，原值及负 Laplacian Lp 身份准确，完整空间算子图范数强收敛。周期时空密度、完整弱 CE 及一般多面体仍待。"
     }
   ],
   "events": [
@@ -16387,6 +16445,11 @@
       "at": "2026-10-19T11:39:43.440391+00:00",
       "public_summary": "实际全盒奇延拓已独立验收；任意H²交H¹₀状态的严格零边界光滑逼近构建审计通过，继续算子图与弱周期轨道。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e8e3d8bc8884348420751be2c20eb130d9c5ac57/governance/reviews/T158-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T11:49:53.424884+00:00",
+      "public_summary": "完整盒空间 H² 零边界密度已独立验收；真实 Dirichlet 算子图光滑密度构建审计通过，继续周期时空逼近。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9bc6a802c80a677fb9f5dc60000ae265152d6036/governance/reviews/T159-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -16756,7 +16819,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bb50f089561e1683a51d9fd06a6d17435c4f6661/governance/reviews/T157-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39244043403/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e8e3d8bc8884348420751be2c20eb130d9c5ac57/governance/reviews/T158-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39245008692/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39245008692/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9bc6a802c80a677fb9f5dc60000ae265152d6036/governance/reviews/T159-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39246261383/attempts/1"
     ]
   },
   "schedules": [
@@ -36716,22 +36781,33 @@
       ],
       "branch": "main",
       "base_commit": "9cc8c5f57aec03ca11ce58ffe86fa6b0ae8f87a8",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "5923dbf398166a48ddf42f98585ff54a10545b0f",
+      "merge_commit": "5923dbf398166a48ddf42f98585ff54a10545b0f",
       "lean_declarations": [
         "Carleman.WeakSobolevJet.local_even_mollification_strong_h2",
         "Carleman.local_L2_error_restrict_tendsto",
         "Carleman.WeakSobolevJet.restrictSubdomain_component_ae",
         "Carleman.exists_box_dirichlet_smooth_h2_approximation"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "5923dbf398166a48ddf42f98585ff54a10545b0f",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39246261383/attempts/1",
+        "finished_at": "2026-10-19T11:42:04.652222+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "5923dbf398166a48ddf42f98585ff54a10545b0f"
+      },
       "blocker": null,
       "attempts": [
         "三模块4声明定向3433 jobs、根目标4054 jobs、7695声明递归公理审计通过。"
       ],
-      "next_action": "独立验收完整空间H²零边界密度；接到真实Dirichlet算子图及完整弱周期轨道。",
+      "next_action": "完整盒空间 H² 零边界密度已独立验收；接续真实算子图及周期弱轨道。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -36743,6 +36819,89 @@
         "recursive_axiom_audit": 7695,
         "new_explicit_declarations": 4,
         "declaration_artifact_sha256": "28ca7dedc08ad0e5e373b86965314816f78110157ea915249496f3bc2f57b8d3",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "5923dbf398166a48ddf42f98585ff54a10545b0f",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C175"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "5923dbf398166a48ddf42f98585ff54a10545b0f",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T11:46:23+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9bc6a802c80a677fb9f5dc60000ae265152d6036/governance/reviews/T159-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "5923dbf398166a48ddf42f98585ff54a10545b0f",
+        "checked_sha": "5923dbf398166a48ddf42f98585ff54a10545b0f",
+        "run_id": 39246261383,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 4054,
+        "recursive_axiom_audit": 7695,
+        "new_explicit_declarations": 4,
+        "declaration_artifact_sha256": "28ca7dedc08ad0e5e373b86965314816f78110157ea915249496f3bc2f57b8d3",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T160",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "真实盒 Dirichlet 算子图的严格零边界光滑密度",
+      "goal_ids": [
+        "C176"
+      ],
+      "acceptance": [
+        "紧支截断不改变原盒全部实际方向导数及严格零边界",
+        "实际 Lp 误差与图范数对齐，负 Laplacian 是真实二阶导数和",
+        "光滑零边界函数的 H¹₀ 归属、弱方程与实际算子身份内部清偿",
+        "覆盖任意原盒算子图状态，无附加光滑代表或域归属前提",
+        "仍 AUXILIARY，不提升完整弱周期 CE"
+      ],
+      "dependencies": [
+        "C175"
+      ],
+      "branch": "main",
+      "base_commit": "5923dbf398166a48ddf42f98585ff54a10545b0f",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.coordinateDerivative_eqOn_of_eqOn",
+        "Carleman.exists_box_dirichlet_compact_h2_approximation",
+        "Carleman.lp_tendsto_of_representative_L2_error",
+        "Carleman.coordinateDerivative_two_diagonal",
+        "Carleman.SpatialTest.laplacianOnLp",
+        "Carleman.SpatialTest.laplacianOnLp_ae",
+        "Carleman.SpatialTest.laplacianOnLp_tendsto",
+        "Carleman.SpatialTest.laplacianOnLp_eq_subdomain",
+        "Carleman.SpatialTest.exists_dirichlet_domain_of_boundary",
+        "Carleman.exists_box_smooth_operator_graph_approximation"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "四模块10声明定向3464 jobs、根目标4058 jobs、7713声明递归公理审计通过。"
+      ],
+      "next_action": "独立验收完整空间算子图光滑密度；继续有限时间谐波及完整弱周期图逼近。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4058,
+        "recursive_axiom_audit": 7713,
+        "new_explicit_declarations": 10,
+        "declaration_artifact_sha256": "c94678abd8b1aafea6f4d9a21cd3c4bb5ffc571a083007306ef45f40153d6c3f",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
