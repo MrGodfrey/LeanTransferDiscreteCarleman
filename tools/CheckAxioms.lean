@@ -7124,6 +7124,48 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Physical.box_cartesian_filtered_observability
 #print axioms Carleman.Physical.box_cartesian_filtered_observability
 
+-- T172: actual complementary HUM and full Cartesian filtered controls.
+#check @Carleman.Physical.complementaryHumOperator
+#print axioms Carleman.Physical.complementaryHumOperator
+#check @Carleman.Physical.complementaryHumOperator_pairing
+#print axioms Carleman.Physical.complementaryHumOperator_pairing
+#check @Carleman.Physical.complementaryHumOperator_bijective
+#print axioms Carleman.Physical.complementaryHumOperator_bijective
+#check @Carleman.Physical.complementary_hum_optimality
+#print axioms Carleman.Physical.complementary_hum_optimality
+#check @Carleman.Physical.complementary_hum_control
+#print axioms Carleman.Physical.complementary_hum_control
+#check @Carleman.Physical.complementaryPenalty
+#print axioms Carleman.Physical.complementaryPenalty
+#check @Carleman.Physical.complementaryPenalty_sq
+#print axioms Carleman.Physical.complementaryPenalty_sq
+#check @Carleman.Physical.complementaryPenalty_pos
+#print axioms Carleman.Physical.complementaryPenalty_pos
+#check @Carleman.Physical.complementary_terminal_bound
+#print axioms Carleman.Physical.complementary_terminal_bound
+#check @Carleman.Physical.complementary_observation_of_relaxed
+#print axioms Carleman.Physical.complementary_observation_of_relaxed
+#check @Carleman.Physical.physical_complementary_hum_control
+#print axioms Carleman.Physical.physical_complementary_hum_control
+#check @Carleman.Physical.filtered_control_of_relaxed
+#print axioms Carleman.Physical.filtered_control_of_relaxed
+#check @Carleman.Physical.filterTerminalFactor
+#print axioms Carleman.Physical.filterTerminalFactor
+#check @Carleman.Physical.filterTerminalFactor_nonneg
+#print axioms Carleman.Physical.filterTerminalFactor_nonneg
+#check @Carleman.Physical.filter_terminal_constant_budget
+#print axioms Carleman.Physical.filter_terminal_constant_budget
+#check @Carleman.Physical.filterRayleigh_nonneg
+#print axioms Carleman.Physical.filterRayleigh_nonneg
+#check @Carleman.Physical.filterConstant_ge_one
+#print axioms Carleman.Physical.filterConstant_ge_one
+#check @Carleman.Physical.complementaryPenalty_le
+#print axioms Carleman.Physical.complementaryPenalty_le
+#check @Carleman.Physical.filter_penalty_decay
+#print axioms Carleman.Physical.filter_penalty_decay
+#check @Carleman.Physical.box_cartesian_filtered_control
+#print axioms Carleman.Physical.box_cartesian_filtered_control
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

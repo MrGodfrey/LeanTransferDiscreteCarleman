@@ -923,3 +923,9 @@ public import Carleman.Control.BoxCartesianObservation
 public import Carleman.Control.BoxCartesianControl
 public import Carleman.Control.FilteredObservation
 public import Carleman.Control.BoxCartesianFilteredObservation
+public import Carleman.Control.ComplementaryHUM
+public import Carleman.Control.ComplementaryObservation
+public import Carleman.Control.PhysicalComplementaryHUM
+public import Carleman.Control.FilteredControl
+public import Carleman.Control.FilterPenaltyBound
+public import Carleman.Control.BoxCartesianFilteredControl
