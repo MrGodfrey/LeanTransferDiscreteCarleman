@@ -5648,6 +5648,17 @@ set_option pp.maxSteps 1000000
 #check @Carleman.full_p1_weightedApproximation_interface
 #print axioms Carleman.full_p1_weightedApproximation_interface
 
+#check @Carleman.Physical.restrictRegion_weighted_sq
+#print axioms Carleman.Physical.restrictRegion_weighted_sq
+#check @Carleman.Physical.conforming_region_weighted_observation
+#print axioms Carleman.Physical.conforming_region_weighted_observation
+#check @Carleman.Physical.galerkinRegionNumericalData
+#print axioms Carleman.Physical.galerkinRegionNumericalData
+#check @Carleman.p1ErrorScales
+#print axioms Carleman.p1ErrorScales
+#check @Carleman.full_p1_numericalData
+#print axioms Carleman.full_p1_numericalData
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

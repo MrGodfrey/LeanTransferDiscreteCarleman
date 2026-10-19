@@ -713,3 +713,5 @@ public import Carleman.Spatial.WeakH2AllowedNodal
 public import Carleman.Spatial.MaxDiameterWeight
 public import Carleman.Spatial.WeakH2ProjectionApproximation
 public import Carleman.Spatial.FullP1ApproximationInterface
+public import Carleman.Control.ConformingRegionWeightedData
+public import Carleman.Control.FullP1NumericalData
