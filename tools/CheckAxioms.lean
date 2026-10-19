@@ -7044,6 +7044,39 @@ set_option pp.maxSteps 1000000
 #check @Carleman.box_cartesian_heat_estimate
 #print axioms Carleman.box_cartesian_heat_estimate
 
+#check @Carleman.PhysicalFiniteSpace.finiteMemLp
+#print axioms Carleman.PhysicalFiniteSpace.finiteMemLp
+#check @Carleman.PhysicalFiniteSpace.toCountLp
+#print axioms Carleman.PhysicalFiniteSpace.toCountLp
+#check @Carleman.PhysicalFiniteSpace.toCountLp_apply
+#print axioms Carleman.PhysicalFiniteSpace.toCountLp_apply
+#check @Carleman.PhysicalFiniteSpace.toCountLpLinear
+#print axioms Carleman.PhysicalFiniteSpace.toCountLpLinear
+#check @Carleman.PhysicalFiniteSpace.toCountLp_norm
+#print axioms Carleman.PhysicalFiniteSpace.toCountLp_norm
+#check @Carleman.PhysicalFiniteSpace.countLpEquiv
+#print axioms Carleman.PhysicalFiniteSpace.countLpEquiv
+#check @Carleman.PhysicalFiniteSpace.countLpEquiv_apply
+#print axioms Carleman.PhysicalFiniteSpace.countLpEquiv_apply
+#check @Carleman.BoundedMultiplier.ofFinite
+#print axioms Carleman.BoundedMultiplier.ofFinite
+#check @Carleman.SpatialProfile.ofFinite
+#print axioms Carleman.SpatialProfile.ofFinite
+#check @Carleman.PhysicalFiniteSpace.countLpEquiv_multiplier
+#print axioms Carleman.PhysicalFiniteSpace.countLpEquiv_multiplier
+#check @Carleman.PhysicalFiniteSpace.countLpEquiv_weighted_norm
+#print axioms Carleman.PhysicalFiniteSpace.countLpEquiv_weighted_norm
+#check @Carleman.PhysicalFiniteSpace.countLpEquiv_symm_map
+#print axioms Carleman.PhysicalFiniteSpace.countLpEquiv_symm_map
+#check @Carleman.PhysicalFiniteSpace.multiplier_symmetric
+#print axioms Carleman.PhysicalFiniteSpace.multiplier_symmetric
+#check @Carleman.PhysicalFiniteSpace.multiplier_opNorm_le
+#print axioms Carleman.PhysicalFiniteSpace.multiplier_opNorm_le
+#check @Carleman.smooth_interval_derivatives
+#print axioms Carleman.smooth_interval_derivatives
+#check @Carleman.Physical.PhysicalQClass.toInterval
+#print axioms Carleman.Physical.PhysicalQClass.toInterval
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

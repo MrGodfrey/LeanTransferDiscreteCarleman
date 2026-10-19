@@ -912,3 +912,6 @@ public import Carleman.Transfer.BoxHeatContinuous
 public import Carleman.Transfer.CartesianHeatGeometry
 public import Carleman.Transfer.CartesianTransportedData
 public import Carleman.Transfer.BoxCartesianHeatEstimate
+public import Carleman.Spatial.PhysicalFiniteLp
+public import Carleman.Spatial.PhysicalFiniteWeights
+public import Carleman.Control.PhysicalIntervalQClass
