@@ -5043,6 +5043,35 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianKuhnReconstruction_scalarForm_edges
 #print axioms Carleman.cartesianKuhnReconstruction_scalarForm_edges
 
+#check @Carleman.cartesianInteriorToBox
+#print axioms Carleman.cartesianInteriorToBox
+#check @Carleman.cartesianInteriorToBox_injective
+#print axioms Carleman.cartesianInteriorToBox_injective
+#check @Carleman.cartesian_sum_zero_faces_to_interior
+#print axioms Carleman.cartesian_sum_zero_faces_to_interior
+#check @Carleman.cartesianLatticePredecessor
+#print axioms Carleman.cartesianLatticePredecessor
+#check @Carleman.cartesianLatticePredecessor_successor
+#print axioms Carleman.cartesianLatticePredecessor_successor
+#check @Carleman.cartesian_sum_axis_shift
+#print axioms Carleman.cartesian_sum_axis_shift
+#check @Carleman.cartesian_sum_axis_by_parts
+#print axioms Carleman.cartesian_sum_axis_by_parts
+#check @Carleman.cartesianPhysicalInner
+#print axioms Carleman.cartesianPhysicalInner
+#check @Carleman.cartesianFiniteDifferenceLaplacian
+#print axioms Carleman.cartesianFiniteDifferenceLaplacian
+#check @Carleman.cartesianLatticeData_at_interior
+#print axioms Carleman.cartesianLatticeData_at_interior
+#check @Carleman.cartesianAxisDifference_sum_by_parts
+#print axioms Carleman.cartesianAxisDifference_sum_by_parts
+#check @Carleman.cartesianFiniteDifferenceLaplacian_pairing_edges
+#print axioms Carleman.cartesianFiniteDifferenceLaplacian_pairing_edges
+#check @Carleman.cartesianFiniteDifferenceLaplacian_weak_stiffness
+#print axioms Carleman.cartesianFiniteDifferenceLaplacian_weak_stiffness
+#check @Carleman.cartesianFiniteDifferenceLaplacian_stiffness
+#print axioms Carleman.cartesianFiniteDifferenceLaplacian_stiffness
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

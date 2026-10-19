@@ -611,3 +611,7 @@ public import Carleman.Spatial.CartesianKuhnCellStiffness
 public import Carleman.Geometry.FiniteCartesianShift
 public import Carleman.Spatial.CartesianLatticeDifferences
 public import Carleman.Spatial.CartesianKuhnEdgeAssembly
+
+public import Carleman.Geometry.FiniteCartesianInteriorSum
+public import Carleman.Spatial.CartesianSummationByParts
+public import Carleman.Spatial.CartesianFiniteDifference
