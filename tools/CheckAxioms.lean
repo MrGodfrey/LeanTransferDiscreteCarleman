@@ -5302,6 +5302,45 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesian_weightedTest_interface
 #print axioms Carleman.cartesian_weightedTest_interface
 
+#check @Carleman.cartesianInteriorData_add
+#print axioms Carleman.cartesianInteriorData_add
+#check @Carleman.cartesianInteriorData_smul
+#print axioms Carleman.cartesianInteriorData_smul
+#check @Carleman.cartesianPhysicalLaplacian
+#print axioms Carleman.cartesianPhysicalLaplacian
+#check @Carleman.cartesianPhysicalLaplacian_values
+#print axioms Carleman.cartesianPhysicalLaplacian_values
+#check @Carleman.cartesianPhysicalLaplacian_stiffness
+#print axioms Carleman.cartesianPhysicalLaplacian_stiffness
+#check @Carleman.cartesianPhysicalLaplacian_symmetric
+#print axioms Carleman.cartesianPhysicalLaplacian_symmetric
+#check @Carleman.cartesianPhysicalLaplacian_adjoint
+#print axioms Carleman.cartesianPhysicalLaplacian_adjoint
+#check @Carleman.cartesianPhysicalLaplacian_nonneg
+#print axioms Carleman.cartesianPhysicalLaplacian_nonneg
+#check @Carleman.cartesianStateSeminorm
+#print axioms Carleman.cartesianStateSeminorm
+#check @Carleman.cartesianControlSeminorm
+#print axioms Carleman.cartesianControlSeminorm
+#check @Carleman.cartesianStateSeminorm_apply
+#print axioms Carleman.cartesianStateSeminorm_apply
+#check @Carleman.cartesianControlSeminorm_apply
+#print axioms Carleman.cartesianControlSeminorm_apply
+#check @Carleman.cartesianStateSeminorm_definite
+#print axioms Carleman.cartesianStateSeminorm_definite
+#check @Carleman.cartesianControlSeminorm_definite
+#print axioms Carleman.cartesianControlSeminorm_definite
+#check @Carleman.cartesianStateSeminorm_weight_scale
+#print axioms Carleman.cartesianStateSeminorm_weight_scale
+#check @Carleman.cartesianControlSeminorm_weight_scale
+#print axioms Carleman.cartesianControlSeminorm_weight_scale
+#check @Carleman.cartesianPhysicalTest_positive
+#print axioms Carleman.cartesianPhysicalTest_positive
+#check @Carleman.cartesianReconstruction_norm_sq_bounds
+#print axioms Carleman.cartesianReconstruction_norm_sq_bounds
+#check @Carleman.allowed_weight_cartesian_physical_stability
+#print axioms Carleman.allowed_weight_cartesian_physical_stability
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

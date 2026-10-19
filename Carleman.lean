@@ -646,3 +646,7 @@ public import Carleman.Spatial.CartesianReconstructionInterface
 public import Carleman.Spatial.PhysicalFiniteDiagonal
 public import Carleman.Spatial.CartesianPhysicalTest
 public import Carleman.Spatial.CartesianWeightedTestInterface
+
+public import Carleman.Spatial.CartesianPhysicalStiffness
+public import Carleman.Spatial.CartesianPhysicalNorms
+public import Carleman.Spatial.CartesianPhysicalStability
