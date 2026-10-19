@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T144",
-    "supervisor_checked_at": "2026-10-19T09:26:34.919873+00:00",
-    "next_action": "独立验收实际高斯权与热矩阵；继续真实方向导数下的完整点态热算子恒等式。",
+    "current_task_id": "T145",
+    "supervisor_checked_at": "2026-10-19T09:36:33.871313+00:00",
+    "next_action": "独立验收完整光滑点态热恒等式；继续实际边界通量与时间周期端点处理。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T09:26:34.919873+00:00"
+    "last_activity_at": "2026-10-19T09:36:33.871313+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "90ca06c7cd42fae4b870fae9a67219fa729226f7",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39229089450/attempts/1",
-      "finished_at": "2026-10-19T09:21:18.895790+00:00",
+      "checked_sha": "2cd92104c803b6a2e586be26a9685e4b2c7fc976",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39230125946/attempts/1",
+      "finished_at": "2026-10-19T09:28:50.812630+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "90ca06c7cd42fae4b870fae9a67219fa729226f7"
+      "source_head_sha": "2cd92104c803b6a2e586be26a9685e4b2c7fc976"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "90ca06c7cd42fae4b870fae9a67219fa729226f7",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39229089450/attempts/1",
-      "finished_at": "2026-10-19T09:21:18.895790+00:00",
+      "checked_sha": "2cd92104c803b6a2e586be26a9685e4b2c7fc976",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39230125946/attempts/1",
+      "finished_at": "2026-10-19T09:28:50.812630+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "90ca06c7cd42fae4b870fae9a67219fa729226f7"
+      "source_head_sha": "2cd92104c803b6a2e586be26a9685e4b2c7fc976"
     }
   },
   "milestones": [
@@ -14213,7 +14213,7 @@
       "paper_ref": "Original prop:continuousCE proof, Gaussian spatial weight and c matrix; Fu–Lü–Zhang Corollary 3.1 (3.5)",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:continuousCE"
@@ -14252,16 +14252,145 @@
         "Carleman.interiorHeatMatrix_uniform_coercive",
         "Carleman.exists_interior_heat_weight"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "2cd92104c803b6a2e586be26a9685e4b2c7fc976",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "2cd92104c803b6a2e586be26a9685e4b2c7fc976",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39230125946/attempts/1",
+        "finished_at": "2026-10-19T09:28:50.812630+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "2cd92104c803b6a2e586be26a9685e4b2c7fc976"
+      },
+      "semantic_review": {
+        "checked_sha": "2cd92104c803b6a2e586be26a9685e4b2c7fc976",
+        "declarations": [
+          "Carleman.interiorQuadratic",
+          "Carleman.interiorGaussian",
+          "Carleman.interiorCarlemanProfile",
+          "Carleman.interiorQuadratic_contDiff",
+          "Carleman.interiorGaussian_contDiff",
+          "Carleman.interiorCarlemanProfile_contDiff",
+          "Carleman.interiorQuadratic_hasFDerivAt",
+          "Carleman.interiorGaussian_hasFDerivAt",
+          "Carleman.interiorCarlemanProfile_hasFDerivAt",
+          "Carleman.interiorGaussian_fderiv_apply",
+          "Carleman.interiorCarlemanProfile_fderiv_apply",
+          "Carleman.interiorGaussian_pos",
+          "Carleman.interiorGaussian_le_one",
+          "Carleman.interiorCarlemanProfile_bounds",
+          "Carleman.interiorCarlemanProfile_hessian",
+          "Carleman.interiorCarlemanProfile_smoothOnClosure",
+          "Carleman.interiorSpatialProfile",
+          "Carleman.interiorSpatialProfile_value",
+          "Carleman.interiorQuadratic_gradient",
+          "Carleman.interiorQuadratic_gradient_norm_sq",
+          "Carleman.interiorQuadratic_gradient_outside_ball",
+          "Carleman.exists_interiorGaussian_gradient_threshold",
+          "Carleman.interiorGaussian_lower_bound",
+          "Carleman.interiorGaussian_supporting_normal",
+          "Carleman.interiorGaussian_face_flux_nonpos",
+          "Carleman.interiorHeatPsi",
+          "Carleman.interiorHeatMatrix",
+          "Carleman.interiorCarlemanProfile_scaled_hessian",
+          "Carleman.interiorHeatMatrix_formula",
+          "Carleman.interiorHeatMatrix_coercive",
+          "Carleman.interiorHeatMatrix_uniform_coercive",
+          "Carleman.exists_interior_heat_weight"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/de0d01bd7a6737e37504efdb78b4477e5554e4a3/governance/reviews/T144-local-acceptance.md",
+        "reviewed_at": "2026-10-19T09:30:37+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C030",
         "C149"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "原负高斯权的实际Fréchet导数、Riesz梯度、完整观测球参数构造及真实热矩阵与支持面通量符号。未声称完整点态恒等式、Green积分或连续CE，P024不提升。"
+      "scope_notes": "原负高斯权的实际Fréchet导数、Riesz梯度、完整观测球参数构造及真实热矩阵与支持面通量符号。未声称完整点态恒等式、Green积分或连续CE，P024不提升。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C161",
+      "title": "真实时空热算子的完整点态Carleman恒等式",
+      "paper_ref": "Original prop:continuousCE smooth proof, Fu–Lü–Zhang Corollary 3.1 (3.3)–(3.5), p=Id and Phi=0",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:continuousCE"
+      ],
+      "lean_declarations": [
+        "Carleman.smoothD",
+        "Carleman.smoothD_contDiff",
+        "Carleman.smoothD_add",
+        "Carleman.smoothD_sub",
+        "Carleman.smoothD_neg",
+        "Carleman.smoothD_mul",
+        "Carleman.smoothD_const_mul",
+        "Carleman.smoothD_sq",
+        "Carleman.smoothD_sum",
+        "Carleman.smoothD_comm",
+        "Carleman.directionalLap",
+        "Carleman.directionalPair",
+        "Carleman.directionalEnergy",
+        "Carleman.directionalHessianForm",
+        "Carleman.directionalLap_contDiff",
+        "Carleman.directionalPair_contDiff",
+        "Carleman.directionalEnergy_contDiff",
+        "Carleman.smoothD_directionalPair",
+        "Carleman.smoothD_directionalEnergy",
+        "Carleman.directional_transport_cancellation",
+        "Carleman.directionalPair_comm",
+        "Carleman.directionalPair_mul_left",
+        "Carleman.directionalPair_sq_left",
+        "Carleman.directionalPair_self",
+        "Carleman.directional_div_product",
+        "Carleman.smoothD_directionalEnergy_time",
+        "Carleman.directionalLap_mul",
+        "Carleman.pointwiseHeatFlux",
+        "Carleman.pointwiseHeatTimeFlux",
+        "Carleman.pointwiseHeatB",
+        "Carleman.pointwiseHeatMatrixEnergy",
+        "Carleman.pointwiseHeatFlux_divergence",
+        "Carleman.pointwise_heat_identity",
+        "Carleman.smoothD_exp",
+        "Carleman.smoothD_exp_neg",
+        "Carleman.directionalLap_exp_neg",
+        "Carleman.directionalPair_exp_neg",
+        "Carleman.heatConjugationK",
+        "Carleman.heatCarlemanA",
+        "Carleman.heatConjugationK_eq",
+        "Carleman.heatConjugationK_contDiff",
+        "Carleman.pointwiseHeatB_original_formula",
+        "Carleman.pointwise_heat_conjugation",
+        "Carleman.pointwise_heat_carleman_identity",
+        "Carleman.pointwise_heat_carleman_inequality",
+        "Carleman.spaceTimeSpatialDirection",
+        "Carleman.spaceTimeHeat",
+        "Carleman.spaceTime_timeD",
+        "Carleman.spaceTime_spatialD",
+        "Carleman.spaceTime_directionalLap",
+        "Carleman.spaceTime_heat_directional",
+        "Carleman.spacetime_heat_carleman_identity",
+        "Carleman.spacetime_heat_carleman_inequality"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C149"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "实际方向微分/通量/指数共轭及真实ℝ×Euclidean热算子的完整点态等式不等式，限全空间C∞准备步骤。原C²时间权及完整Sobolev轨道、Green积分、端点和吸收仍待，P024不提升。"
     }
   ],
   "events": [
@@ -15066,6 +15195,11 @@
       "at": "2026-10-19T09:26:34.919873+00:00",
       "public_summary": "实际盒解析数据、真实Lipschitz边界及完整Section3已独立验收；连续CE实际高斯权和空间矩阵已构建审计，进入独立验收。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/73e1b1b7d6ebf8b8f67901d25329c62a55a865ab/governance/reviews/T143-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T09:36:33.871313+00:00",
+      "public_summary": "实际高斯权与原空间矩阵独立验收通过；真实时空热算子的完整光滑点态恒等式已构建审计，进入独立验收。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/de0d01bd7a6737e37504efdb78b4477e5554e4a3/governance/reviews/T144-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -15405,7 +15539,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1a2461ade27f9fc7327d3c03e1c6a09c952318a9/governance/reviews/T142-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39226924106/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/73e1b1b7d6ebf8b8f67901d25329c62a55a865ab/governance/reviews/T143-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39229089450/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39229089450/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/de0d01bd7a6737e37504efdb78b4477e5554e4a3/governance/reviews/T144-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39230125946/attempts/1"
     ]
   },
   "schedules": [
@@ -33793,10 +33929,10 @@
       ],
       "branch": "main",
       "base_commit": "90ca06c7cd42fae4b870fae9a67219fa729226f7",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "2cd92104c803b6a2e586be26a9685e4b2c7fc976",
+      "merge_commit": "2cd92104c803b6a2e586be26a9685e4b2c7fc976",
       "lean_declarations": [
         "Carleman.interiorQuadratic",
         "Carleman.interiorGaussian",
@@ -33831,12 +33967,23 @@
         "Carleman.interiorHeatMatrix_uniform_coercive",
         "Carleman.exists_interior_heat_weight"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "2cd92104c803b6a2e586be26a9685e4b2c7fc976",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39230125946/attempts/1",
+        "finished_at": "2026-10-19T09:28:50.812630+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "2cd92104c803b6a2e586be26a9685e4b2c7fc976"
+      },
       "blocker": null,
       "attempts": [
         "三模块32声明定向3224 jobs、全库3976 jobs、7354声明递归公理审计通过。"
       ],
-      "next_action": "独立验收实际高斯权与热矩阵；继续真实方向导数下的完整点态热算子恒等式。",
+      "next_action": "实际高斯权与空间矩阵已独立验收；继续真实时空点态恒等式。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -33848,6 +33995,132 @@
         "recursive_axiom_audit": 7354,
         "new_explicit_declarations": 32,
         "declaration_artifact_sha256": "3832de1c1b2e06c6ad536a02dcf6b0b6530d8dbac8b17997bab84a3925d2ac66",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "2cd92104c803b6a2e586be26a9685e4b2c7fc976",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C160"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "2cd92104c803b6a2e586be26a9685e4b2c7fc976",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T09:30:37+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/de0d01bd7a6737e37504efdb78b4477e5554e4a3/governance/reviews/T144-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "2cd92104c803b6a2e586be26a9685e4b2c7fc976",
+        "checked_sha": "2cd92104c803b6a2e586be26a9685e4b2c7fc976",
+        "run_id": 39230125946,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3976,
+        "recursive_axiom_audit": 7354,
+        "new_explicit_declarations": 32,
+        "declaration_artifact_sha256": "3832de1c1b2e06c6ad536a02dcf6b0b6530d8dbac8b17997bab84a3925d2ac66",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T145",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "真实时空热算子的完整点态Carleman恒等式",
+      "goal_ids": [
+        "C161"
+      ],
+      "acceptance": [
+        "实际Fréchet微分法则、混合二阶交换及通量抵消均已证明",
+        "完整保留原M_t、divV、两平方、2c、Ψ梯度项和B全部项",
+        "实际A和k、原B展开、真实指数共轭及原u与z关系",
+        "实际时间deriv、空间Laplacian与热残差身份",
+        "明确C∞阶段边界，原C²权/轨道与积分吸收仍待，不提升P024"
+      ],
+      "dependencies": [
+        "C149"
+      ],
+      "branch": "main",
+      "base_commit": "2cd92104c803b6a2e586be26a9685e4b2c7fc976",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.smoothD",
+        "Carleman.smoothD_contDiff",
+        "Carleman.smoothD_add",
+        "Carleman.smoothD_sub",
+        "Carleman.smoothD_neg",
+        "Carleman.smoothD_mul",
+        "Carleman.smoothD_const_mul",
+        "Carleman.smoothD_sq",
+        "Carleman.smoothD_sum",
+        "Carleman.smoothD_comm",
+        "Carleman.directionalLap",
+        "Carleman.directionalPair",
+        "Carleman.directionalEnergy",
+        "Carleman.directionalHessianForm",
+        "Carleman.directionalLap_contDiff",
+        "Carleman.directionalPair_contDiff",
+        "Carleman.directionalEnergy_contDiff",
+        "Carleman.smoothD_directionalPair",
+        "Carleman.smoothD_directionalEnergy",
+        "Carleman.directional_transport_cancellation",
+        "Carleman.directionalPair_comm",
+        "Carleman.directionalPair_mul_left",
+        "Carleman.directionalPair_sq_left",
+        "Carleman.directionalPair_self",
+        "Carleman.directional_div_product",
+        "Carleman.smoothD_directionalEnergy_time",
+        "Carleman.directionalLap_mul",
+        "Carleman.pointwiseHeatFlux",
+        "Carleman.pointwiseHeatTimeFlux",
+        "Carleman.pointwiseHeatB",
+        "Carleman.pointwiseHeatMatrixEnergy",
+        "Carleman.pointwiseHeatFlux_divergence",
+        "Carleman.pointwise_heat_identity",
+        "Carleman.smoothD_exp",
+        "Carleman.smoothD_exp_neg",
+        "Carleman.directionalLap_exp_neg",
+        "Carleman.directionalPair_exp_neg",
+        "Carleman.heatConjugationK",
+        "Carleman.heatCarlemanA",
+        "Carleman.heatConjugationK_eq",
+        "Carleman.heatConjugationK_contDiff",
+        "Carleman.pointwiseHeatB_original_formula",
+        "Carleman.pointwise_heat_conjugation",
+        "Carleman.pointwise_heat_carleman_identity",
+        "Carleman.pointwise_heat_carleman_inequality",
+        "Carleman.spaceTimeSpatialDirection",
+        "Carleman.spaceTimeHeat",
+        "Carleman.spaceTime_timeD",
+        "Carleman.spaceTime_spatialD",
+        "Carleman.spaceTime_directionalLap",
+        "Carleman.spaceTime_heat_directional",
+        "Carleman.spacetime_heat_carleman_identity",
+        "Carleman.spacetime_heat_carleman_inequality"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "五模块53声明定向3224 jobs、全库3981 jobs、7415声明递归公理审计通过。"
+      ],
+      "next_action": "独立验收完整光滑点态热恒等式；继续实际边界通量与时间周期端点处理。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3981,
+        "recursive_axiom_audit": 7415,
+        "new_explicit_declarations": 53,
+        "declaration_artifact_sha256": "7d789d7cd19746bad3047299a20bef8db5b5d2f53d2b51eea385bfa28335eada",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

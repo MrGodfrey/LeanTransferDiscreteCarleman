@@ -1308,3 +1308,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T144 / C160：连续热算子的实际高斯权与空间矩阵
 
 原 ψ=−‖x−c‖²、φ=exp(lψ)、ρ=φ−2 全空间光滑；真实 Fréchet 一/二阶导数与 Riesz 梯度，负权界及实际有界 SpatialProfile 全部内部证明。用真实 ℓ=qρ 的 Hessian/Laplacian 和 Ψ=−Δℓ−8qlφ 构造原矩阵，证明精确 c=4qlφId+2ql²φ∇ψ⊗∇ψ 及全空间一致强制性。从有界域及非空开观测子集内部选实际球、l、正下界和矩阵常数，先于 q/时间/状态；支持面上的真实法向导数给通量标量非正。三模块32声明。AUXILIARY，仅为 P024 的实际空间权步骤；完整点态热恒等式、面 Green 积分、端点、吸收、密度及时间反射仍待。详见 `analysis/T144-interior-heat-weight.md`。
+
+## T145 / C161：真实时空热算子的完整点态恒等式
+
+用真实Fréchet方向导数证明全部乘积、有限和、混合二阶交换和通量抵消；完整保留原M_t、divV、两个平方、原c二次型和B。实际A=|∇ℓ|²−Δℓ−Ψ、k=ℓ_t+A，B精确展开为原书全部项；真实exp共轭连接原热残差。在ℝ×Euclidean空间上明确识别原deriv与空间Laplacian，z=exp(ℓ)u内部定义，得到任意全空间C∞实函数的完整点态Carleman等式和不等式。五模块53声明；AUXILIARY。此批C∞准备步骤尚未恢复原C²时间权与完整Sobolev轨道，真实域Green积分、周期端点、heatcross系数估计/吸收、密度及时间反射仍待，P024不提升。详见 `analysis/T145-pointwise-heat-identity.md`。
