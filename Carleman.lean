@@ -790,3 +790,7 @@ public import Carleman.Geometry.DirectionalCoordinates
 public import Carleman.Geometry.FiniteHalfspaceCharts
 public import Carleman.Geometry.BoxLipschitzDomain
 public import Carleman.Spatial.BoxAuxiliaryEstimates
+
+public import Carleman.Weights.InteriorGaussianWeight
+public import Carleman.Weights.InteriorGaussianGeometry
+public import Carleman.Weights.InteriorHeatMatrix

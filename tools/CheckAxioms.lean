@@ -6206,6 +6206,71 @@ set_option pp.maxSteps 1000000
 #check @Carleman.box_section3
 #print axioms Carleman.box_section3
 
+#check @Carleman.interiorQuadratic
+#print axioms Carleman.interiorQuadratic
+#check @Carleman.interiorGaussian
+#print axioms Carleman.interiorGaussian
+#check @Carleman.interiorCarlemanProfile
+#print axioms Carleman.interiorCarlemanProfile
+#check @Carleman.interiorQuadratic_contDiff
+#print axioms Carleman.interiorQuadratic_contDiff
+#check @Carleman.interiorGaussian_contDiff
+#print axioms Carleman.interiorGaussian_contDiff
+#check @Carleman.interiorCarlemanProfile_contDiff
+#print axioms Carleman.interiorCarlemanProfile_contDiff
+#check @Carleman.interiorQuadratic_hasFDerivAt
+#print axioms Carleman.interiorQuadratic_hasFDerivAt
+#check @Carleman.interiorGaussian_hasFDerivAt
+#print axioms Carleman.interiorGaussian_hasFDerivAt
+#check @Carleman.interiorCarlemanProfile_hasFDerivAt
+#print axioms Carleman.interiorCarlemanProfile_hasFDerivAt
+#check @Carleman.interiorGaussian_fderiv_apply
+#print axioms Carleman.interiorGaussian_fderiv_apply
+#check @Carleman.interiorCarlemanProfile_fderiv_apply
+#print axioms Carleman.interiorCarlemanProfile_fderiv_apply
+#check @Carleman.interiorGaussian_pos
+#print axioms Carleman.interiorGaussian_pos
+#check @Carleman.interiorGaussian_le_one
+#print axioms Carleman.interiorGaussian_le_one
+#check @Carleman.interiorCarlemanProfile_bounds
+#print axioms Carleman.interiorCarlemanProfile_bounds
+#check @Carleman.interiorCarlemanProfile_hessian
+#print axioms Carleman.interiorCarlemanProfile_hessian
+#check @Carleman.interiorCarlemanProfile_smoothOnClosure
+#print axioms Carleman.interiorCarlemanProfile_smoothOnClosure
+#check @Carleman.interiorSpatialProfile
+#print axioms Carleman.interiorSpatialProfile
+#check @Carleman.interiorSpatialProfile_value
+#print axioms Carleman.interiorSpatialProfile_value
+#check @Carleman.interiorQuadratic_gradient
+#print axioms Carleman.interiorQuadratic_gradient
+#check @Carleman.interiorQuadratic_gradient_norm_sq
+#print axioms Carleman.interiorQuadratic_gradient_norm_sq
+#check @Carleman.interiorQuadratic_gradient_outside_ball
+#print axioms Carleman.interiorQuadratic_gradient_outside_ball
+#check @Carleman.exists_interiorGaussian_gradient_threshold
+#print axioms Carleman.exists_interiorGaussian_gradient_threshold
+#check @Carleman.interiorGaussian_lower_bound
+#print axioms Carleman.interiorGaussian_lower_bound
+#check @Carleman.interiorGaussian_supporting_normal
+#print axioms Carleman.interiorGaussian_supporting_normal
+#check @Carleman.interiorGaussian_face_flux_nonpos
+#print axioms Carleman.interiorGaussian_face_flux_nonpos
+#check @Carleman.interiorHeatPsi
+#print axioms Carleman.interiorHeatPsi
+#check @Carleman.interiorHeatMatrix
+#print axioms Carleman.interiorHeatMatrix
+#check @Carleman.interiorCarlemanProfile_scaled_hessian
+#print axioms Carleman.interiorCarlemanProfile_scaled_hessian
+#check @Carleman.interiorHeatMatrix_formula
+#print axioms Carleman.interiorHeatMatrix_formula
+#check @Carleman.interiorHeatMatrix_coercive
+#print axioms Carleman.interiorHeatMatrix_coercive
+#check @Carleman.interiorHeatMatrix_uniform_coercive
+#print axioms Carleman.interiorHeatMatrix_uniform_coercive
+#check @Carleman.exists_interior_heat_weight
+#print axioms Carleman.exists_interior_heat_weight
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
