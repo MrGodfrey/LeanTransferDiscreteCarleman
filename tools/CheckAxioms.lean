@@ -5273,6 +5273,35 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianLoadInterface_right_inverse
 #print axioms Carleman.cartesianLoadInterface_right_inverse
 
+#check @Carleman.PhysicalFiniteSpace.multiplierFamily
+#print axioms Carleman.PhysicalFiniteSpace.multiplierFamily
+#check @Carleman.PhysicalFiniteSpace.multiplierFamily_apply
+#print axioms Carleman.PhysicalFiniteSpace.multiplierFamily_apply
+#check @Carleman.PhysicalFiniteSpace.multiplierFamily_hasDerivWithinAt
+#print axioms Carleman.PhysicalFiniteSpace.multiplierFamily_hasDerivWithinAt
+#check @Carleman.cartesianPhysicalTest
+#print axioms Carleman.cartesianPhysicalTest
+#check @Carleman.cartesianPhysicalTestDerivative
+#print axioms Carleman.cartesianPhysicalTestDerivative
+#check @Carleman.cartesianPhysicalTest_values
+#print axioms Carleman.cartesianPhysicalTest_values
+#check @Carleman.cartesianPhysicalTestDerivative_values
+#print axioms Carleman.cartesianPhysicalTestDerivative_values
+#check @Carleman.cartesianPhysicalTest_hasDerivWithinAt
+#print axioms Carleman.cartesianPhysicalTest_hasDerivWithinAt
+#check @Carleman.cartesianPhysicalTest_pairing_hasDerivWithinAt
+#print axioms Carleman.cartesianPhysicalTest_pairing_hasDerivWithinAt
+#check @Carleman.cartesianPhysicalTest_endpoint
+#print axioms Carleman.cartesianPhysicalTest_endpoint
+#check @Carleman.cartesianPhysicalTest_symmetric
+#print axioms Carleman.cartesianPhysicalTest_symmetric
+#check @Carleman.cartesianPhysicalTest_pairing
+#print axioms Carleman.cartesianPhysicalTest_pairing
+#check @Carleman.cartesianPhysicalTest_nonneg
+#print axioms Carleman.cartesianPhysicalTest_nonneg
+#check @Carleman.cartesian_weightedTest_interface
+#print axioms Carleman.cartesian_weightedTest_interface
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

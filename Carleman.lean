@@ -642,3 +642,7 @@ public import Carleman.Spatial.CartesianHilbertObservation
 public import Carleman.Spatial.CartesianReconstructionLinear
 public import Carleman.Spatial.CartesianMassAdjoint
 public import Carleman.Spatial.CartesianReconstructionInterface
+
+public import Carleman.Spatial.PhysicalFiniteDiagonal
+public import Carleman.Spatial.CartesianPhysicalTest
+public import Carleman.Spatial.CartesianWeightedTestInterface
