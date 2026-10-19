@@ -1428,3 +1428,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 真实Cartesian物理状态/载荷/控制范数与弱梯度组成转移几何；实际固定域运输保持Γ=id。盒A1、全允许权族、N1–N5及完整连续CE全部由已有证明内部供应。原heat scale转移给qmax≤κ min(h^(-4/5),dt^(-2/5))，缩小κ后由实幂预算清偿h*qmax数值阈值。最终对所有原离散状态和两个时间方向，真实q³状态加q重构弱梯度由实际差分+Laplacian残差和真实Hilbert控制伴随观察控制。所有参数先于网格、h、g、w、z；无CE、图正则、数值测试或过滤前提。三模块七声明。
 
 这是固定盒Cartesian端到端实例，仍AUXILIARY、覆盖17/26；物理观测/控制及一般几何继续。详见 `analysis/T167-box-cartesian.md`。
+
+## T168 / C184：原物理有限空间的精确计数 L² 接口（辅助）
+
+真实 sqrt(mass)*f 计数 L² 类给原有限物理 Hilbert 空间的线性等距满射，保留全部节点及原质量内积。实际有限乘子在此对应下精确交换；加权范数、逆映射、原节点势自伴性和同一 M 算子范数界内部证明。实际全局光滑权的一二阶区间导数身份把原 PhysicalQClass 无损送入 IntervalQClass，保留全部端点条件及 β/qc/T。三模块十六声明。
+
+实际 Cartesian 物理观测接口与最终观测/控制后果继续；本批不声称观测定理完成。AUXILIARY、覆盖17/26。详见 `analysis/T168-physical-finite-lp.md`。
