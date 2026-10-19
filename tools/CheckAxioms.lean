@@ -6774,6 +6774,57 @@ set_option pp.maxSteps 1000000
 #check @Carleman.evenSpatialMollifier_L2_error_tendsto
 #print axioms Carleman.evenSpatialMollifier_L2_error_tendsto
 
+#check @Carleman.evenSpatialMollifier_tsupport_subset
+#print axioms Carleman.evenSpatialMollifier_tsupport_subset
+#check @Carleman.evenSpatialMollifier_L2_error_restrict_tendsto
+#print axioms Carleman.evenSpatialMollifier_L2_error_restrict_tendsto
+#check @Carleman.IsWeakSpatialDerivative.local_even_mollification_strong_first
+#print axioms Carleman.IsWeakSpatialDerivative.local_even_mollification_strong_first
+#check @Carleman.IsWeakSpatialDerivative.local_even_mollification_strong_second
+#print axioms Carleman.IsWeakSpatialDerivative.local_even_mollification_strong_second
+#check @Carleman.coordinateReflection_commute
+#print axioms Carleman.coordinateReflection_commute
+#check @Carleman.coordinateOddPart
+#print axioms Carleman.coordinateOddPart
+#check @Carleman.coordinateOddPart_ae
+#print axioms Carleman.coordinateOddPart_ae
+#check @Carleman.IsOddInSlab
+#print axioms Carleman.IsOddInSlab
+#check @Carleman.coordinateOddPart_odd
+#print axioms Carleman.coordinateOddPart_odd
+#check @Carleman.IsOddInSlab.oddPart_other
+#print axioms Carleman.IsOddInSlab.oddPart_other
+#check @Carleman.IsZeroOutsideSlab
+#print axioms Carleman.IsZeroOutsideSlab
+#check @Carleman.zeroExtend_box_zero_outside_slab
+#print axioms Carleman.zeroExtend_box_zero_outside_slab
+#check @Carleman.IsZeroOutsideSlab.lower_oddPart
+#print axioms Carleman.IsZeroOutsideSlab.lower_oddPart
+#check @Carleman.IsZeroOutsideSlab.double_oddPart_lower
+#print axioms Carleman.IsZeroOutsideSlab.double_oddPart_lower
+#check @Carleman.double_oddPart_both_faces
+#print axioms Carleman.double_oddPart_both_faces
+#check @Carleman.zeroExtend_restrict_of_zero_outside
+#print axioms Carleman.zeroExtend_restrict_of_zero_outside
+#check @Carleman.oddExtendLp_zero_outside
+#print axioms Carleman.oddExtendLp_zero_outside
+#check @Carleman.exists_odd_dirichlet_extension_value
+#print axioms Carleman.exists_odd_dirichlet_extension_value
+#check @Carleman.exists_lower_box_extension_value
+#print axioms Carleman.exists_lower_box_extension_value
+#check @Carleman.exists_upper_box_extension_value
+#print axioms Carleman.exists_upper_box_extension_value
+#check @Carleman.exists_finite_odd_box_extension
+#print axioms Carleman.exists_finite_odd_box_extension
+#check @Carleman.IsOddInSlab.even_mollification_zero
+#print axioms Carleman.IsOddInSlab.even_mollification_zero
+#check @Carleman.frontier_box_has_coordinate_face
+#print axioms Carleman.frontier_box_has_coordinate_face
+#check @Carleman.even_mollification_eventually_zero_boundary
+#print axioms Carleman.even_mollification_eventually_zero_boundary
+#check @Carleman.exists_box_poisson_extension_smooth_boundary
+#print axioms Carleman.exists_box_poisson_extension_smooth_boundary
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

@@ -860,3 +860,11 @@ public import Carleman.Spatial.EvenCoordinateKernel
 public import Carleman.Spatial.EvenSpatialMollifier
 public import Carleman.Spatial.EvenKernelConvolution
 public import Carleman.Spatial.EvenMollifierLimit
+
+public import Carleman.Spatial.EvenLocalMollification
+public import Carleman.Spatial.CoordinateOddPart
+public import Carleman.Spatial.DoubleOddSlab
+public import Carleman.Spatial.OddPoissonExtensionValue
+public import Carleman.Spatial.BoxPoissonExtensionValue
+public import Carleman.Spatial.FiniteOddBoxExtension
+public import Carleman.Spatial.OddSlabSmoothing
