@@ -1328,3 +1328,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T149 / C165：真实光滑周期盒状态的积分热不等式
 
 真实时空限制乘积测度上的可积性由紧柱连续性内部供应；Fubini与周期FTC给同一M_t的整个时空积分零，实际盒散度符号给∫divV≤0。原点态不等式经真实单调积分得到完整bulk（平方、矩阵、混合项和B全部保留）积分≤真实exp(L)(∂t−Δ)u残差平方积分。z及k内部构造，时间T与全光滑周期状态量词保留。三模块15声明，AUXILIARY；bulk尚待实际系数界/观测吸收，原C²权/弱轨道/一般多面体/密度/时间反射仍待，P024不提升。详见 `analysis/T149-integrated-smooth-heat.md`。
+
+## T150 / C166：原高斯相位与热系数的实际微分展开
+
+真实Gaussian的Laplacian、梯度能量及其导数，真实分离时空相位的时间/空间微分和配对，内部给原L=qρ、Ψ=−ΔL−8qlφ的光滑周期与完整系数公式。同一实际k=q′ρ+q²G+8qlφ，实际B经乘积微分消去Laplacian后精确为4q³l³φ³g(lg−6)加全部q²/q′/q″项；g为真实∇ψ范数平方。原Ψ梯度及平方和也精确计算。四模块32声明，AUXILIARY；未证明qclass余项界/混合项Young/吸收、原C²权或完整CE，P024不提升。详见 `analysis/T150-gaussian-heat-coefficients.md`。
