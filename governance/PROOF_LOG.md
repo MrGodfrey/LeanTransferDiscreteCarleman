@@ -337,3 +337,7 @@
 - T169 / C185：13/13声明独立验收PASS，原物理质量/控制/全部载荷和统一量词无损；三项真实CI及原始审计逐字节核对。 固定证明 `7d1cc86d3c0a01b524f099ba90baaf59784f159d`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/cf033f11dc66ebab3c8a083ed3db516cb1d78183/governance/reviews/T169-local-acceptance.md)。原文17/26；当前执行任务不变。
 
 - T170 / C186：固定证明 `3a752bc986ef1a893825b6597211ccb519d8a292` 的三项实际CI与原始审计核对通过；独立Agent验收仍在运行，当前仅BUILT。T171继续原终端子空间滤波观测及完整Cartesian实例，原文覆盖17/26。
+
+- T170 / C186：3/3声明独立验收PASS，实际原方程/控制Hilbert空间和网格统一量词完整；三项真实CI及原始审计逐字节核对。 固定证明 `3a752bc986ef1a893825b6597211ccb519d8a292`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/da95f786af0ae582fcc4fa9ba22d0bd4b1f84b4c/governance/reviews/T170-local-acceptance.md)。原文17/26；当前执行任务不变。
+
+- T171 / C187：固定证明 `f6e35f26cc23e5ca84eb8e869a12864be70e7b27` 的三项实际CI与原始审计核对通过；独立Agent验收仍在运行，当前仅BUILT。T172继续真实互补HUM与完整Cartesian滤波控制，原文覆盖17/26。

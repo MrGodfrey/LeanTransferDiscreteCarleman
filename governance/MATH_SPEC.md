@@ -1452,3 +1452,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 原 Rayleigh/对数条件精确给 4C0 exp(-2dS)K²≤1；实际 filter_reverse 只作用于终端所属 F 的数据，代入原松弛观测并吸收四分之一余项得到2C0观察界。最终盒Cartesian定理内部调用T170完整物理观测，C0=max(1,C)先于网格/节点势/θ/F/轨道，原完整方程和控制空间不变，不要求算子保持F。两模块三声明。
 
 完整滤波控制及一般几何继续；AUXILIARY、覆盖17/26。详见 `analysis/T171-cartesian-filtered-observation.md`。
+
+## T172 / C188：真实互补 HUM 与完整 Cartesian 滤波控制（辅助实例）
+
+实际 O*O+η²P(F⊥) 给唯一 Euler 解与原控制；真实互补观察、原反向界及物理流给 PF yN=0 和完整终态估计。全部正向状态/控制及时间范数实际构造，不要求 F 不变。盒实例内部清偿原松弛观测，C0=max(1,max(C,2factor(T,M)²)) 在全部网格/势/θ/F 之前选取，原两个滤波条件使用同一 C0，实际成本 sqrt(2C0)、完整终态 C0 exp(-(1−θ)d0S)。六模块二十声明，无新增 CE、频率不变性或方程假设。
+
+完整 P1 实例及一般几何继续；AUXILIARY、覆盖17/26。详见 `analysis/T172-cartesian-filtered-control.md`。
