@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T088",
-    "supervisor_checked_at": "2026-10-19T00:58:41.628356+00:00",
-    "next_action": "固定SHA独立验收内部节点星反射、实际帽函数对称及零一阶矩16声明；继续实际零阶矩、节点质量与载荷右逆。",
+    "current_task_id": "T089",
+    "supervisor_checked_at": "2026-10-19T01:10:05.277055+00:00",
+    "next_action": "固定SHA独立验收实际质量及仿射矩再现15声明；继续实际单元载荷和全网格右逆。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T00:58:41.628356+00:00"
+    "last_activity_at": "2026-10-19T01:10:05.277055+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "7b2627620e04ad9b44e6bee31fab8a241d4f4d1a",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39182503383/attempts/1",
-      "finished_at": "2026-10-19T00:51:17.700483+00:00",
+      "checked_sha": "b54a0a22a2352ab389a1cb109f1d60386ca2261a",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39183200183/attempts/1",
+      "finished_at": "2026-10-19T01:01:16.324009+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "7b2627620e04ad9b44e6bee31fab8a241d4f4d1a"
+      "source_head_sha": "b54a0a22a2352ab389a1cb109f1d60386ca2261a"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "7b2627620e04ad9b44e6bee31fab8a241d4f4d1a",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39182503383/attempts/1",
-      "finished_at": "2026-10-19T00:51:17.700483+00:00",
+      "checked_sha": "b54a0a22a2352ab389a1cb109f1d60386ca2261a",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39183200183/attempts/1",
+      "finished_at": "2026-10-19T01:01:16.324009+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "7b2627620e04ad9b44e6bee31fab8a241d4f4d1a"
+      "source_head_sha": "b54a0a22a2352ab389a1cb109f1d60386ca2261a"
     }
   },
   "milestones": [
@@ -10085,7 +10085,7 @@
       "paper_ref": "Auxiliary actual finite-domain interior nodal hat central symmetry and vector first moment in Appendix B Step 1, second identity of eq:fdmoments",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:fd",
@@ -10109,15 +10109,92 @@
         "Carleman.cartesianKuhnHat_firstMoment_zero",
         "Carleman.cartesianKuhnHat_firstMoment_domain"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "b54a0a22a2352ab389a1cb109f1d60386ca2261a",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "b54a0a22a2352ab389a1cb109f1d60386ca2261a",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39183200183/attempts/1",
+        "finished_at": "2026-10-19T01:01:16.324009+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "b54a0a22a2352ab389a1cb109f1d60386ca2261a"
+      },
+      "semantic_review": {
+        "checked_sha": "b54a0a22a2352ab389a1cb109f1d60386ca2261a",
+        "declarations": [
+          "Carleman.simplex_cell_affine_relabel",
+          "Carleman.simplexBarycentric_affine_relabel",
+          "Carleman.kuhnReflectedOrigin",
+          "Carleman.kuhnReflectedPermutation",
+          "Carleman.kuhnVertexIndex_reflection",
+          "Carleman.cartesianKuhnSimplex_reflection_vertex",
+          "Carleman.cartesianKuhnSimplex_reflection_cell",
+          "Carleman.cartesianKuhn_incident_finite_index",
+          "Carleman.cartesianFiniteSimplex_of_latticeIndex",
+          "Carleman.cartesianFiniteSimplex_reflected_incident",
+          "Carleman.cartesianKuhnHat_reflection_of_nonzero",
+          "Carleman.cartesianKuhnHat_reflection",
+          "Carleman.cartesianKuhnHat_integrable",
+          "Carleman.cartesianKuhnHat_firstMoment_integrable",
+          "Carleman.cartesianKuhnHat_firstMoment_zero",
+          "Carleman.cartesianKuhnHat_firstMoment_domain"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0d59762783fdc4af10f502d529646186e18564a6/governance/reviews/T088-local-acceptance.md",
+        "reviewed_at": "2026-10-19T01:03:46+00:00",
+        "reviewer": "/root/accept_section3; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C103"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "实际仿射重标号精确映射闭凸包和重心坐标；Kuhn原点2a-z-1及逆序排列给所有顶点和闭单元中心反射。内部整数节点保证完整关联/反射单元实际有限索引，包括邻边界内部节点。真实帽函数零延拓全空间中心对称；同一向量函数真正可积，反射换元及域外零给原Ω上零一阶矩。零阶矩、载荷、Qh与FD/B2仍待，AUXILIARY，13/26。"
+      "scope_notes": "实际仿射重标号精确映射闭凸包和重心坐标；Kuhn原点2a-z-1及逆序排列给所有顶点和闭单元中心反射。内部整数节点保证完整关联/反射单元实际有限索引，包括邻边界内部节点。真实帽函数零延拓全空间中心对称；同一向量函数真正可积，反射换元及域外零给原Ω上零一阶矩。零阶矩、载荷、Qh与FD/B2仍待，AUXILIARY，13/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C105",
+      "title": "实际内部节点质量与完整仿射矩再现",
+      "paper_ref": "Auxiliary actual nodal mass and affine moment reproduction in Appendix B Step 1, eq:fdmoments and its affine consequence",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:fd",
+        "eq:fdmoments"
+      ],
+      "lean_declarations": [
+        "Carleman.openCoordinateBox_volume_real",
+        "Carleman.cartesianKuhnSimplex_translation_vertex",
+        "Carleman.cartesianKuhnSimplex_volume_translation",
+        "Carleman.cartesianKuhnSimplex_sum_permutation_volume",
+        "Carleman.cartesianKuhn_origin_eq_of_vertex_eq",
+        "Carleman.cartesianFiniteSimplex_fixed_vertex_injective",
+        "Carleman.cartesianKuhn_node_incidence_unique",
+        "Carleman.cartesianKuhn_node_incidence_sum",
+        "Carleman.integral_cartesianKuhnHat_cell",
+        "Carleman.cartesianKuhnHat_mass_domain",
+        "Carleman.cartesianKuhnHat_mass",
+        "Carleman.cartesianKuhnHat_affine_integrable",
+        "Carleman.cartesianKuhnHat_affine_integral",
+        "Carleman.cartesianKuhnHat_affine_integral_domain",
+        "Carleman.cartesianKuhnHat_affine_moment"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C103",
+        "C104"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实坐标盒体积与Kuhn平移单元体积身份，内部节点固定排列/顶点位置的唯一有限关联；真实帽函数积分精确等于网格盒体积。实际pφ可积性及零向量一阶矩供应原完整仿射再现。第一/最后内部层均覆盖，无新增质量、再现或可积假设。载荷、稳定性、完整FD/B2仍待；AUXILIARY，13/26。"
     }
   ],
   "events": [
@@ -10638,6 +10715,11 @@
       "at": "2026-10-19T00:58:41.628356+00:00",
       "public_summary": "实际公共面、连续Dirichlet帽函数和真实支撑独立验收PASS；内部节点星反射与原零一阶矩16声明构建通过，原文保持13/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5321eadc2f9133336033250a22518f42b7d5bc3e/governance/reviews/T087-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T01:10:05.277055+00:00",
+      "public_summary": "内部节点星对称与真实零一阶矩独立验收PASS；实际零阶质量和原仿射再现15声明构建通过，原文保持13/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0d59762783fdc4af10f502d529646186e18564a6/governance/reviews/T088-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -10865,7 +10947,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1424acb1dbb16fd4526de5c1f7b07dee1ac46cc4/governance/reviews/T086-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39181779883/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5321eadc2f9133336033250a22518f42b7d5bc3e/governance/reviews/T087-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39182503383/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39182503383/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0d59762783fdc4af10f502d529646186e18564a6/governance/reviews/T088-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39183200183/attempts/1"
     ]
   },
   "schedules": [
@@ -23690,10 +23774,10 @@
       ],
       "branch": "main",
       "base_commit": "7b2627620e04ad9b44e6bee31fab8a241d4f4d1a",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "b54a0a22a2352ab389a1cb109f1d60386ca2261a",
+      "merge_commit": "b54a0a22a2352ab389a1cb109f1d60386ca2261a",
       "lean_declarations": [
         "Carleman.simplex_cell_affine_relabel",
         "Carleman.simplexBarycentric_affine_relabel",
@@ -23712,12 +23796,23 @@
         "Carleman.cartesianKuhnHat_firstMoment_zero",
         "Carleman.cartesianKuhnHat_firstMoment_domain"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "b54a0a22a2352ab389a1cb109f1d60386ca2261a",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39183200183/attempts/1",
+        "finished_at": "2026-10-19T01:01:16.324009+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "b54a0a22a2352ab389a1cb109f1d60386ca2261a"
+      },
       "blocker": null,
       "attempts": [
         "四模块16声明定向3314 jobs、全库3754 jobs通过，5968声明递归公理审计PASS。"
       ],
-      "next_action": "固定SHA独立验收内部节点星反射、实际帽函数对称及零一阶矩16声明；继续实际零阶矩、节点质量与载荷右逆。",
+      "next_action": "实际内部节点星对称和零向量一阶矩已独立验收；继续零阶质量、完整仿射矩与载荷。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -23729,6 +23824,95 @@
         "recursive_axiom_audit": 5968,
         "new_explicit_declarations": 16,
         "declaration_artifact_sha256": "9165c623617c3d8b29b106e915a29b44663d6a24eec600b36edcd8ae442056ab",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "b54a0a22a2352ab389a1cb109f1d60386ca2261a",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_section3",
+          "claim_ids": [
+            "C104"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "b54a0a22a2352ab389a1cb109f1d60386ca2261a",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T01:03:46+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0d59762783fdc4af10f502d529646186e18564a6/governance/reviews/T088-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "b54a0a22a2352ab389a1cb109f1d60386ca2261a",
+        "checked_sha": "b54a0a22a2352ab389a1cb109f1d60386ca2261a",
+        "run_id": 39183200183,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3754,
+        "recursive_axiom_audit": 5968,
+        "new_explicit_declarations": 16,
+        "declaration_artifact_sha256": "9165c623617c3d8b29b106e915a29b44663d6a24eec600b36edcd8ae442056ab",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T089",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "实际内部节点质量与完整仿射矩再现",
+      "goal_ids": [
+        "C105"
+      ],
+      "acceptance": [
+        "真实Lebesgue体积由坐标盒及实际平移得到，全部排列单元体积和来自实际有限分割",
+        "每个内部节点固定排列和顶点位置恰有一个真实有限原点，无远离边界限制",
+        "实际帽函数单元重心坐标积分与唯一关联相加给原Ω上零阶质量等于prodδ",
+        "实际仿射函数乘帽函数真正可积，线性部分穿过可积向量矩给完整归一化再现",
+        "不提升载荷右逆、稳定性、完整FD或B2，原文保持13/26"
+      ],
+      "dependencies": [
+        "C103",
+        "C104"
+      ],
+      "branch": "main",
+      "base_commit": "b54a0a22a2352ab389a1cb109f1d60386ca2261a",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.openCoordinateBox_volume_real",
+        "Carleman.cartesianKuhnSimplex_translation_vertex",
+        "Carleman.cartesianKuhnSimplex_volume_translation",
+        "Carleman.cartesianKuhnSimplex_sum_permutation_volume",
+        "Carleman.cartesianKuhn_origin_eq_of_vertex_eq",
+        "Carleman.cartesianFiniteSimplex_fixed_vertex_injective",
+        "Carleman.cartesianKuhn_node_incidence_unique",
+        "Carleman.cartesianKuhn_node_incidence_sum",
+        "Carleman.integral_cartesianKuhnHat_cell",
+        "Carleman.cartesianKuhnHat_mass_domain",
+        "Carleman.cartesianKuhnHat_mass",
+        "Carleman.cartesianKuhnHat_affine_integrable",
+        "Carleman.cartesianKuhnHat_affine_integral",
+        "Carleman.cartesianKuhnHat_affine_integral_domain",
+        "Carleman.cartesianKuhnHat_affine_moment"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "四模块15声明定向3336 jobs、全库3758 jobs通过，5988声明递归公理审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收实际质量及仿射矩再现15声明；继续实际单元载荷和全网格右逆。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3758,
+        "recursive_axiom_audit": 5988,
+        "new_explicit_declarations": 15,
+        "declaration_artifact_sha256": "40c2b1ae4958b86eb9ff237963b8588cadd3f1c50a63d85bc1f2a0982de163b6",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

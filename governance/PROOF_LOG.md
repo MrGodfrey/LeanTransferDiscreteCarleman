@@ -169,3 +169,5 @@
 - T086 / C102：实际有限Kuhn覆盖、内部不交和几乎处处唯一分割34声明独立验收PASS，同SHA三项CI、5896声明递归审计及逐字节相同远端产物。 固定证明 `e753eb065d87695d33e31c141cfe15c7cea4b5de`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1424acb1dbb16fd4526de5c1f7b07dee1ac46cc4/governance/reviews/T086-local-acceptance.md)。原文13/26，T087继续实际Kuhn公共面与连续Dirichlet节点帽函数。
 
 - T087 / C103：实际公共面、边界贴合及连续H1_0帽函数/真实支撑43声明独立验收PASS，同SHA三项CI、5951声明递归审计及逐字节相同远端产物。 固定证明 `7b2627620e04ad9b44e6bee31fab8a241d4f4d1a`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5321eadc2f9133336033250a22518f42b7d5bc3e/governance/reviews/T087-local-acceptance.md)。原文13/26，T088继续实际内部节点帽函数中心对称与零一阶矩。
+
+- T088 / C104：完整内部节点星反射、真实帽函数中心对称和零向量一阶矩16声明独立验收PASS，同SHA三项CI、5968声明递归审计及逐字节相同远端产物。 固定证明 `b54a0a22a2352ab389a1cb109f1d60386ca2261a`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0d59762783fdc4af10f502d529646186e18564a6/governance/reviews/T088-local-acceptance.md)。原文13/26，T089继续实际内部节点质量与完整仿射矩再现。
