@@ -4891,6 +4891,35 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianKuhnProjection_patch_congr
 #print axioms Carleman.cartesianKuhnProjection_patch_congr
 
+#check @Carleman.cartesianGridPoint_interior_index
+#print axioms Carleman.cartesianGridPoint_interior_index
+#check @Carleman.cartesianFiniteSimplex_interior_vertex
+#print axioms Carleman.cartesianFiniteSimplex_interior_vertex
+#check @Carleman.cartesianKuhnMoment_affine
+#print axioms Carleman.cartesianKuhnMoment_affine
+#check @Carleman.cartesianKuhnProjection_affine_on_cell
+#print axioms Carleman.cartesianKuhnProjection_affine_on_cell
+#check @Carleman.cartesianKuhnMoment_sub
+#print axioms Carleman.cartesianKuhnMoment_sub
+#check @Carleman.cartesianKuhnProjection_sub
+#print axioms Carleman.cartesianKuhnProjection_sub
+#check @Carleman.cartesianFiniteSimplex_subset_closedPatch
+#print axioms Carleman.cartesianFiniteSimplex_subset_closedPatch
+#check @Carleman.cartesianClosedPatch_subset_closedDomain
+#print axioms Carleman.cartesianClosedPatch_subset_closedDomain
+#check @Carleman.cartesianClippedPhysicalFaces
+#print axioms Carleman.cartesianClippedPhysicalFaces
+#check @Carleman.cartesianClippedPhysicalFaces_frontier
+#print axioms Carleman.cartesianClippedPhysicalFaces_frontier
+#check @Carleman.cartesianCell_boundary_in_physicalFace
+#print axioms Carleman.cartesianCell_boundary_in_physicalFace
+#check @Carleman.cartesianPhysicalFace_zero_on_boundaryCell
+#print axioms Carleman.cartesianPhysicalFace_zero_on_boundaryCell
+#check @Carleman.cartesianKuhnProjection_physical_affine
+#print axioms Carleman.cartesianKuhnProjection_physical_affine
+#check @Carleman.cartesianKuhn_h2_local_reproduced_affine
+#print axioms Carleman.cartesianKuhn_h2_local_reproduced_affine
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

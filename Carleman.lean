@@ -586,3 +586,7 @@ public import Carleman.Spatial.CartesianKuhnMomentBounds
 public import Carleman.Spatial.CartesianKuhnProjection
 public import Carleman.Geometry.CartesianClippedPatch
 public import Carleman.Spatial.CartesianKuhnPatchProjection
+public import Carleman.Geometry.CartesianInteriorVertex
+public import Carleman.Spatial.CartesianKuhnAffineProjection
+public import Carleman.Geometry.CartesianClippedBoundary
+public import Carleman.Spatial.CartesianKuhnLocalAffine
