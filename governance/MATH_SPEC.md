@@ -1148,3 +1148,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T110：原B.2逼近接口与真实FD数值数据组装
 
 详见 [T110 分析](analysis/T110-fd-approximation-interface.md)。两模块4声明由原完整B.2和hq≤1严格推出完整H¹能量/值误差，保持a_E=Ch、a₀=Ch²；同一实际Q_h误差jet经弱值唯一性接入WeightedApproximation。原数值数据在同一真实A/R/J/载荷/B*及实际权范数上统一组装，η_A=0，阈值及全部常数先于网格、周期、权族与两符号。D(A)≤H²明确保留为原A1连续前提，不冒充已证具体H²正则性或完整FD/P012。AUXILIARY14/26。
+
+## T111：原全P1空间的完整加权测试接口
+
+详见 [T111 分析](analysis/T111-p1-weighted-test.md)。实际全P1超逼近与原Galerkin测试时间性质组合为完整WeightedTest，明确算子与导数均为同一实际Pi_h(σ²z)构造。阈值与正时间/空间常数先于全部原分级网格、周期、时间权和两符号；有限测度由紧闭包内部供应。原全H²逼近仍待，不提前提升P1/P011。AUXILIARY14/26。

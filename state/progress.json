@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T110",
-    "supervisor_checked_at": "2026-10-19T04:10:06.990937+00:00",
-    "next_action": "固定SHA独立验收原B.2逼近接口和实际FD统一数值数据；继续原P1测试与逼近。",
+    "current_task_id": "T111",
+    "supervisor_checked_at": "2026-10-19T04:17:16.868827+00:00",
+    "next_action": "固定SHA独立验收全P1完整加权测试；继续原H²状态的节点逼近依据。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T04:10:06.990937+00:00"
+    "last_activity_at": "2026-10-19T04:17:16.868827+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "b1611e7c3fe37e6b3ed31556e932f61b657e2be1",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39197402706/attempts/1",
-      "finished_at": "2026-10-19T04:03:03.175212+00:00",
+      "checked_sha": "20523c258707a3864f45541d0eea83581360c86b",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39198141744/attempts/1",
+      "finished_at": "2026-10-19T04:12:49.925840+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "b1611e7c3fe37e6b3ed31556e932f61b657e2be1"
+      "source_head_sha": "20523c258707a3864f45541d0eea83581360c86b"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "b1611e7c3fe37e6b3ed31556e932f61b657e2be1",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39197402706/attempts/1",
-      "finished_at": "2026-10-19T04:03:03.175212+00:00",
+      "checked_sha": "20523c258707a3864f45541d0eea83581360c86b",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39198141744/attempts/1",
+      "finished_at": "2026-10-19T04:12:49.925840+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "b1611e7c3fe37e6b3ed31556e932f61b657e2be1"
+      "source_head_sha": "20523c258707a3864f45541d0eea83581360c86b"
     }
   },
   "milestones": [
@@ -11810,7 +11810,7 @@
       "paper_ref": "Original B.2 to N3 with a_E=Ch and a₀=Ch²; actual FD NumericalData with explicit original domain regularity",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "ass:interfaces",
@@ -11825,9 +11825,33 @@
         "Carleman.cartesianErrorScales",
         "Carleman.cartesian_numericalData"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "20523c258707a3864f45541d0eea83581360c86b",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "20523c258707a3864f45541d0eea83581360c86b",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39198141744/attempts/1",
+        "finished_at": "2026-10-19T04:12:49.925840+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "20523c258707a3864f45541d0eea83581360c86b"
+      },
+      "semantic_review": {
+        "checked_sha": "20523c258707a3864f45541d0eea83581360c86b",
+        "declarations": [
+          "Carleman.cartesian_heat_error_from_b2",
+          "Carleman.cartesian_weightedApproximation_interface",
+          "Carleman.cartesianErrorScales",
+          "Carleman.cartesian_numericalData"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c3f37bd0d4bd17500fb457e0f3da13450bcf4bd4/governance/reviews/T110-local-acceptance.md",
+        "reviewed_at": "2026-10-19T04:14:32+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C125",
         "C124",
@@ -11835,7 +11859,34 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "原全H² Dirichlet状态B.2接入同一实际Q的WeightedApproximation，完整H¹范数与q保留；同一原A/R/J/lift/B*及实际物理权范数组装NumericalData，零刚度缺陷。阈值和全部常数先于网格、周期、权族与两符号。实际闭形式D(A)≤H²作为原A1连续前提明确保留，未证明具体H²正则性或提升完整FD/P012。AUXILIARY14/26。"
+      "scope_notes": "原全H² Dirichlet状态B.2接入同一实际Q的WeightedApproximation，完整H¹范数与q保留；同一原A/R/J/lift/B*及实际物理权范数组装NumericalData，零刚度缺陷。阈值和全部常数先于网格、周期、权族与两符号。实际闭形式D(A)≤H²作为原A1连续前提明确保留，未证明具体H²正则性或提升完整FD/P012。AUXILIARY14/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C127",
+      "title": "原全P1空间的完整加权测试接口",
+      "paper_ref": "Original full P1 projected weighted test, time derivative and complete WeightedTest uniformly over graded meshes",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "Ptest",
+        "prop:p1"
+      ],
+      "lean_declarations": [
+        "Carleman.full_p1_weightedTest_interface"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C082",
+        "C049"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "原全P1空间实际Pi_h(σ²z)及实际导数供应完整WeightedTest，全部超逼近与时间字段内部从已证结论组合。固定常数先于全部原分级网格、周期、允许时间权及两符号。有限测度由紧闭包内部推导，无额外数值假设。全H²逼近仍待，P1/P011不提升；AUXILIARY14/26。"
     }
   ],
   "events": [
@@ -12470,6 +12521,11 @@
       "at": "2026-10-19T04:10:06.990937+00:00",
       "public_summary": "原物理刚度、加权范数和统一稳定性已独立验收；原B.2逼近接口及实际FD数值数据4声明构建审计通过。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8c556bf38f8f11d4f6aad694df8803ca31dd1d6e/governance/reviews/T109-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T04:17:16.868827+00:00",
+      "public_summary": "原B.2逼近接口及真实FD统一数值数据已独立验收；原全P1完整加权测试构建审计通过，继续全H²逼近。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c3f37bd0d4bd17500fb457e0f3da13450bcf4bd4/governance/reviews/T110-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -12741,7 +12797,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/931d28da09451e562916c261c7cebc8a4becf45b/governance/reviews/T108-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39196739700/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8c556bf38f8f11d4f6aad694df8803ca31dd1d6e/governance/reviews/T109-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39197402706/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39197402706/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c3f37bd0d4bd17500fb457e0f3da13450bcf4bd4/governance/reviews/T110-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39198141744/attempts/1"
     ]
   },
   "schedules": [
@@ -27805,22 +27863,33 @@
       ],
       "branch": "main",
       "base_commit": "b1611e7c3fe37e6b3ed31556e932f61b657e2be1",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "20523c258707a3864f45541d0eea83581360c86b",
+      "merge_commit": "20523c258707a3864f45541d0eea83581360c86b",
       "lean_declarations": [
         "Carleman.cartesian_heat_error_from_b2",
         "Carleman.cartesian_weightedApproximation_interface",
         "Carleman.cartesianErrorScales",
         "Carleman.cartesian_numericalData"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "20523c258707a3864f45541d0eea83581360c86b",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39198141744/attempts/1",
+        "finished_at": "2026-10-19T04:12:49.925840+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "20523c258707a3864f45541d0eea83581360c86b"
+      },
       "blocker": null,
       "attempts": [
         "两模块4显式声明定向3781 jobs、全库3832 jobs通过；6554声明递归公理审计PASS。"
       ],
-      "next_action": "固定SHA独立验收原B.2逼近接口和实际FD统一数值数据；继续原P1测试与逼近。",
+      "next_action": "原B.2逼近接口及同一实际FD数值数据独立验收；原连续H²正则性保留，继续原P1测试与全H²逼近。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -27832,6 +27901,81 @@
         "recursive_axiom_audit": 6554,
         "new_explicit_declarations": 4,
         "declaration_artifact_sha256": "945d9f7e41bd4661019239c792278154555daca6022e6308ffe5f619308a995c",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "20523c258707a3864f45541d0eea83581360c86b",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C126"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "20523c258707a3864f45541d0eea83581360c86b",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T04:14:32+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c3f37bd0d4bd17500fb457e0f3da13450bcf4bd4/governance/reviews/T110-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "20523c258707a3864f45541d0eea83581360c86b",
+        "checked_sha": "20523c258707a3864f45541d0eea83581360c86b",
+        "run_id": 39198141744,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3832,
+        "recursive_axiom_audit": 6554,
+        "new_explicit_declarations": 4,
+        "declaration_artifact_sha256": "945d9f7e41bd4661019239c792278154555daca6022e6308ffe5f619308a995c",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T111",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原全P1空间的完整加权测试接口",
+      "goal_ids": [
+        "C127"
+      ],
+      "acceptance": [
+        "结论中的测试和导数恰为同一实际原Galerkin构造",
+        "真实全P1空间、原分级形状与边界条件保留，不缩小状态空间",
+        "完整时间导数、周期端点、对称非负及原弱超逼近内部供应",
+        "正阈值和正统一常数先于全部网格与周期权族，两符号完整",
+        "全H²逼近仍待，不提前提升完整P1命题"
+      ],
+      "dependencies": [
+        "C082",
+        "C049"
+      ],
+      "branch": "main",
+      "base_commit": "20523c258707a3864f45541d0eea83581360c86b",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.full_p1_weightedTest_interface"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "单模块1显式声明定向3614 jobs、全库3833 jobs通过；6556声明递归公理审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收全P1完整加权测试；继续原H²状态的节点逼近依据。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3833,
+        "recursive_axiom_audit": 6556,
+        "new_explicit_declarations": 1,
+        "declaration_artifact_sha256": "be77fb7bbc510990a10f718941a1290c5a15652c6b2c4f4cb104fa94684c6466",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
