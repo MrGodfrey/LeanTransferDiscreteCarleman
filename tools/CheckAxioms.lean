@@ -7368,6 +7368,25 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianCell_average_lipschitz_error
 #print axioms Carleman.cartesianCell_average_lipschitz_error
 
+#check @Carleman.cartesianBoxCellIsometry
+#print axioms Carleman.cartesianBoxCellIsometry
+#check @Carleman.cartesianBoxCellIsometry_adjoint_average
+#print axioms Carleman.cartesianBoxCellIsometry_adjoint_average
+#check @Carleman.cartesianBoxCellIsometry_average_norm
+#print axioms Carleman.cartesianBoxCellIsometry_average_norm
+#check @Carleman.cartesianBoxCell_average_error
+#print axioms Carleman.cartesianBoxCell_average_error
+#check @Carleman.cartesianBox_uncovered_volume_tendsto
+#print axioms Carleman.cartesianBox_uncovered_volume_tendsto
+#check @Carleman.isometric_reconstruction_residual_bound
+#print axioms Carleman.isometric_reconstruction_residual_bound
+#check @Carleman.isometric_reconstruction_tendsto_of_denseRange
+#print axioms Carleman.isometric_reconstruction_tendsto_of_denseRange
+#check @Carleman.cartesianBoxCell_continuous_residual_tendsto
+#print axioms Carleman.cartesianBoxCell_continuous_residual_tendsto
+#check @Carleman.cartesianBoxCell_average_strong_convergence
+#print axioms Carleman.cartesianBoxCell_average_strong_convergence
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

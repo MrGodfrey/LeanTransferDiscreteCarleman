@@ -949,3 +949,6 @@ public import Carleman.Control.SupportedTimeControl
 public import Carleman.Spatial.IsometricReconstructionProjection
 public import Carleman.Spatial.FiniteCellApproximation
 public import Carleman.Spatial.CartesianCellApproximation
+public import Carleman.Spatial.FixedBoxCellReconstruction
+public import Carleman.Spatial.DenseReconstructionConvergence
+public import Carleman.Spatial.CartesianCellStrongConvergence
