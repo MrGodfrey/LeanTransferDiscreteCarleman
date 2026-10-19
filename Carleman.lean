@@ -737,3 +737,6 @@ public import Carleman.Spatial.DirichletWeakSolve
 public import Carleman.Spatial.DirichletSubdomainSolve
 public import Carleman.Spatial.SpatialTestExhaustion
 public import Carleman.Spatial.DirichletExhaustionLimit
+public import Carleman.Spatial.CompactTestHessianEnergy
+public import Carleman.Spatial.CompactTestH2Jet
+public import Carleman.Spatial.WeakPoissonConvolution

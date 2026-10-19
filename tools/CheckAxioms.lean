@@ -5776,6 +5776,25 @@ set_option pp.maxSteps 1000000
 #check @Carleman.exists_dirichlet_H2_of_exhaustion
 #print axioms Carleman.exists_dirichlet_H2_of_exhaustion
 
+#check @Carleman.SpatialTest.mixed_derivative_norm_sq
+#print axioms Carleman.SpatialTest.mixed_derivative_norm_sq
+#check @Carleman.SpatialTest.hessian_energy_eq_laplacian
+#print axioms Carleman.SpatialTest.hessian_energy_eq_laplacian
+#check @Carleman.SpatialTest.hessian_component_norm_le_laplacian
+#print axioms Carleman.SpatialTest.hessian_component_norm_le_laplacian
+#check @Carleman.SpatialTest.laplacianLp
+#print axioms Carleman.SpatialTest.laplacianLp
+#check @Carleman.SpatialTest.exists_H2_jet
+#print axioms Carleman.SpatialTest.exists_H2_jet
+#check @Carleman.IsWeakSpatialDerivative.mixed_convolution_first
+#print axioms Carleman.IsWeakSpatialDerivative.mixed_convolution_first
+#check @Carleman.IsWeakNegativeLaplacian.integral_test
+#print axioms Carleman.IsWeakNegativeLaplacian.integral_test
+#check @Carleman.IsWeakNegativeLaplacian.convolution_identity
+#print axioms Carleman.IsWeakNegativeLaplacian.convolution_identity
+#check @Carleman.IsWeakNegativeLaplacian.mollified_laplacian
+#print axioms Carleman.IsWeakNegativeLaplacian.mollified_laplacian
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
