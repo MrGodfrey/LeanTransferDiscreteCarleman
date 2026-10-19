@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T175",
-    "supervisor_checked_at": "2026-10-19T14:09:43.894964+00:00",
-    "next_action": "独立验收真实差分对偶单元重构；继续原时空单元平均势的界及控制收敛。",
+    "current_task_id": "T176",
+    "supervisor_checked_at": "2026-10-19T14:19:43.618823+00:00",
+    "next_action": "独立验收原时空平均势；继续完整时间重构保范数、实际控制的弱子列与极限方程。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T14:09:43.894964+00:00"
+    "last_activity_at": "2026-10-19T14:19:43.618823+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "d93e52fc433c99d25a188effa0c451488098a451",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39264879548/attempts/1",
-      "finished_at": "2026-10-19T14:02:16.398808+00:00",
+      "checked_sha": "7c2ceacf62d42b168879106b8c6d6fc246c45794",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39266504703/attempts/1",
+      "finished_at": "2026-10-19T14:12:48.522344+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "d93e52fc433c99d25a188effa0c451488098a451"
+      "source_head_sha": "7c2ceacf62d42b168879106b8c6d6fc246c45794"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "d93e52fc433c99d25a188effa0c451488098a451",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39264879548/attempts/1",
-      "finished_at": "2026-10-19T14:02:16.398808+00:00",
+      "checked_sha": "7c2ceacf62d42b168879106b8c6d6fc246c45794",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39266504703/attempts/1",
+      "finished_at": "2026-10-19T14:12:48.522344+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "d93e52fc433c99d25a188effa0c451488098a451"
+      "source_head_sha": "7c2ceacf62d42b168879106b8c6d6fc246c45794"
     }
   },
   "milestones": [
@@ -16546,7 +16546,7 @@
       "paper_ref": "Actual Cartesian dual-cell L2 reconstruction, physical control pairing and averaging adjoint",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "eq:conv-dual-cells",
@@ -16576,8 +16576,19 @@
         "Carleman.cartesianCellIsometry_adjoint_average",
         "Carleman.cartesianCellIsometry_average_norm"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "7c2ceacf62d42b168879106b8c6d6fc246c45794",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "7c2ceacf62d42b168879106b8c6d6fc246c45794",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39266504703/attempts/1",
+        "finished_at": "2026-10-19T14:12:48.522344+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "7c2ceacf62d42b168879106b8c6d6fc246c45794"
+      },
       "semantic_review": null,
       "dependencies": [
         "C184",
@@ -16585,7 +16596,58 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "实际内部对偶单元包含、互不交及精确体积；真实有限指示函数L²重构等距，真实Hilbert伴随为单元平均；原E_h与K_h=E_hB_h保范数和控制配对。未假设全域覆盖，边界条带零延拓保留；未声称强收敛、ω支持或连续极限方程。"
+      "scope_notes": "实际内部对偶单元包含、互不交及精确体积；真实有限指示函数L²重构等距，真实Hilbert伴随为单元平均；原E_h与K_h=E_hB_h保范数和控制配对。未假设全域覆盖，边界条带零延拓保留；未声称强收敛、ω支持或连续极限方程。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C192",
+      "title": "原时空单元平均势及原物理算子的统一界",
+      "paper_ref": "Actual time and Cartesian space-time cell averages of the original L-infinity potential",
+      "milestone": "M6b",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "eq:conv-data-fe",
+        "eq:conv-data-fd"
+      ],
+      "lean_declarations": [
+        "Carleman.BoundedMultiplier.ofMeasureLE",
+        "Carleman.BoundedMultiplier.ofMeasureLE_bound",
+        "Carleman.BoundedMultiplier.integrable",
+        "Carleman.BoundedMultiplier.averageFirst",
+        "Carleman.BoundedMultiplier.averageFirst_bound",
+        "Carleman.BoundedMultiplier.averageFirst_congr",
+        "Carleman.BoundedMultiplier.setAverage_bound",
+        "Carleman.BoundedMultiplier.averageFirst_setIntegral",
+        "Carleman.TimeGrid.physicalTimeCell",
+        "Carleman.TimeGrid.physicalTimeCell_finite",
+        "Carleman.TimeGrid.physicalTimeCell_subset",
+        "Carleman.TimeGrid.physicalTimeCell_volume",
+        "Carleman.TimeGrid.physicalTimeCell_restrict_le",
+        "Carleman.timeCellPotential",
+        "Carleman.timeCellPotential_value",
+        "Carleman.timeCellPotential_bound",
+        "Carleman.timeCellPotential_congr",
+        "Carleman.timeCellPotential_setIntegral",
+        "Carleman.cartesianAveragedPotential",
+        "Carleman.cartesianAveragedPotential_formula",
+        "Carleman.cartesianAveragedPotential_bound",
+        "Carleman.cartesianAveragedPotentialMultiplier",
+        "Carleman.cartesianAveragedPotential_congr",
+        "Carleman.cartesianAveragedPotential_operator_norm",
+        "Carleman.cartesianAveragedPotential_operator_symmetric"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C191",
+        "C184"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "原时间单元真实长度，a.e.有界势的实际时间平均及原时空单元平均；Fubini原双积分公式，代表无关性，同一M界及原物理乘法算子的范数/对称性。未声称平均强收敛或完整控制收敛。"
     }
   ],
   "events": [
@@ -17570,6 +17632,11 @@
       "at": "2026-10-19T14:09:43.894964+00:00",
       "public_summary": "完整P1盒物理及滤波区域控制已独立验收；原差分对偶单元重构、精确配对及实际平均完成构建审计。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/08759a4cb612cbb34ffc8be7a4f7ebbf6fa0a085/governance/reviews/T174-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T14:19:43.618823+00:00",
+      "public_summary": "原对偶单元重构同SHA三项CI通过、独立验收在途；原时空平均势保统一界与真实物理算子性质已构建审计。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39266504703/attempts/1"
     }
   ],
   "snapshot": {
@@ -17971,7 +18038,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39263701979/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/59e16ce40ad11d2c62abb0b0776a2055efa458fb/governance/reviews/T173-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/08759a4cb612cbb34ffc8be7a4f7ebbf6fa0a085/governance/reviews/T174-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39264879548/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39264879548/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39266504703/attempts/1"
     ]
   },
   "schedules": [
@@ -39451,9 +39519,9 @@
       ],
       "branch": "main",
       "base_commit": "d93e52fc433c99d25a188effa0c451488098a451",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "7c2ceacf62d42b168879106b8c6d6fc246c45794",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.cartesianDualCell",
@@ -39478,12 +39546,23 @@
         "Carleman.cartesianCellIsometry_adjoint_average",
         "Carleman.cartesianCellIsometry_average_norm"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "7c2ceacf62d42b168879106b8c6d6fc246c45794",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39266504703/attempts/1",
+        "finished_at": "2026-10-19T14:12:48.522344+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "7c2ceacf62d42b168879106b8c6d6fc246c45794"
+      },
       "blocker": null,
       "attempts": [
         "三模块二十一声明，几何3326与重构3517定向jobs；根目标4112及8190声明递归公理审计通过。"
       ],
-      "next_action": "独立验收真实差分对偶单元重构；继续原时空单元平均势的界及控制收敛。",
+      "next_action": "固定提交已构建推送；等待正在运行的独立Agent语义验收，不把CI当作验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -39495,6 +39574,91 @@
         "recursive_axiom_audit": 8190,
         "new_explicit_declarations": 21,
         "declaration_artifact_sha256": "99c931015fc5ffe57120be21d7dbc2c41ea0aa517bf7c657ddb8a9f998429293",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING; fixed SHA required"
+      },
+      "declaration_version": "7c2ceacf62d42b168879106b8c6d6fc246c45794",
+      "ci_relationship": {
+        "proof_head": "7c2ceacf62d42b168879106b8c6d6fc246c45794",
+        "checked_sha": "7c2ceacf62d42b168879106b8c6d6fc246c45794",
+        "run_id": 39266504703,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 4112,
+        "recursive_axiom_audit": 8190,
+        "new_explicit_declarations": 21,
+        "declaration_artifact_sha256": "99c931015fc5ffe57120be21d7dbc2c41ea0aa517bf7c657ddb8a9f998429293",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T176",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原时空单元平均势及原物理算子的统一界",
+      "goal_ids": [
+        "C192"
+      ],
+      "acceptance": [
+        "乘积a.e.界经真实积分与测度限制得到同一M，没有逐点截面或节点采样假设",
+        "原后向Euler时间单元包含和真实dt长度",
+        "实际对偶单元双积分公式含dt与∏δ的正确归一化",
+        "真实物理乘法算子保原范数界/对称性，完整代表无关性"
+      ],
+      "dependencies": [
+        "C191",
+        "C184"
+      ],
+      "branch": "main",
+      "base_commit": "7c2ceacf62d42b168879106b8c6d6fc246c45794",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.BoundedMultiplier.ofMeasureLE",
+        "Carleman.BoundedMultiplier.ofMeasureLE_bound",
+        "Carleman.BoundedMultiplier.integrable",
+        "Carleman.BoundedMultiplier.averageFirst",
+        "Carleman.BoundedMultiplier.averageFirst_bound",
+        "Carleman.BoundedMultiplier.averageFirst_congr",
+        "Carleman.BoundedMultiplier.setAverage_bound",
+        "Carleman.BoundedMultiplier.averageFirst_setIntegral",
+        "Carleman.TimeGrid.physicalTimeCell",
+        "Carleman.TimeGrid.physicalTimeCell_finite",
+        "Carleman.TimeGrid.physicalTimeCell_subset",
+        "Carleman.TimeGrid.physicalTimeCell_volume",
+        "Carleman.TimeGrid.physicalTimeCell_restrict_le",
+        "Carleman.timeCellPotential",
+        "Carleman.timeCellPotential_value",
+        "Carleman.timeCellPotential_bound",
+        "Carleman.timeCellPotential_congr",
+        "Carleman.timeCellPotential_setIntegral",
+        "Carleman.cartesianAveragedPotential",
+        "Carleman.cartesianAveragedPotential_formula",
+        "Carleman.cartesianAveragedPotential_bound",
+        "Carleman.cartesianAveragedPotentialMultiplier",
+        "Carleman.cartesianAveragedPotential_congr",
+        "Carleman.cartesianAveragedPotential_operator_norm",
+        "Carleman.cartesianAveragedPotential_operator_symmetric"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "三模块二十五声明，定向3522 jobs；根目标4115及8229声明递归公理审计通过。"
+      ],
+      "next_action": "独立验收原时空平均势；继续完整时间重构保范数、实际控制的弱子列与极限方程。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4115,
+        "recursive_axiom_audit": 8229,
+        "new_explicit_declarations": 25,
+        "declaration_artifact_sha256": "3b48978b3750e4d968d4e97de3ea4400558e92a2c7424cfd829a22d5d6d2b2ec",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
