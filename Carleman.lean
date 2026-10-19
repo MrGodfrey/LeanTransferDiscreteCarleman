@@ -872,3 +872,8 @@ public import Carleman.Spatial.OddSlabSmoothing
 public import Carleman.Spatial.WeakH2EvenLocalSmoothing
 public import Carleman.Spatial.LocalSmoothingRestriction
 public import Carleman.Spatial.BoxDirichletSmoothDensity
+
+public import Carleman.Spatial.BoxCompactSmoothDensity
+public import Carleman.Spatial.SmoothLaplacianL2Limit
+public import Carleman.Spatial.SmoothDirichletGraph
+public import Carleman.Spatial.BoxSmoothGraphDensity

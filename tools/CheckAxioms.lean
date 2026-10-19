@@ -6834,6 +6834,27 @@ set_option pp.maxSteps 1000000
 #check @Carleman.exists_box_dirichlet_smooth_h2_approximation
 #print axioms Carleman.exists_box_dirichlet_smooth_h2_approximation
 
+#check @Carleman.coordinateDerivative_eqOn_of_eqOn
+#print axioms Carleman.coordinateDerivative_eqOn_of_eqOn
+#check @Carleman.exists_box_dirichlet_compact_h2_approximation
+#print axioms Carleman.exists_box_dirichlet_compact_h2_approximation
+#check @Carleman.lp_tendsto_of_representative_L2_error
+#print axioms Carleman.lp_tendsto_of_representative_L2_error
+#check @Carleman.coordinateDerivative_two_diagonal
+#print axioms Carleman.coordinateDerivative_two_diagonal
+#check @Carleman.SpatialTest.laplacianOnLp
+#print axioms Carleman.SpatialTest.laplacianOnLp
+#check @Carleman.SpatialTest.laplacianOnLp_ae
+#print axioms Carleman.SpatialTest.laplacianOnLp_ae
+#check @Carleman.SpatialTest.laplacianOnLp_tendsto
+#print axioms Carleman.SpatialTest.laplacianOnLp_tendsto
+#check @Carleman.SpatialTest.laplacianOnLp_eq_subdomain
+#print axioms Carleman.SpatialTest.laplacianOnLp_eq_subdomain
+#check @Carleman.SpatialTest.exists_dirichlet_domain_of_boundary
+#print axioms Carleman.SpatialTest.exists_dirichlet_domain_of_boundary
+#check @Carleman.exists_box_smooth_operator_graph_approximation
+#print axioms Carleman.exists_box_smooth_operator_graph_approximation
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
