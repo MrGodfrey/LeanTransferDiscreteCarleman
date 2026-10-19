@@ -179,3 +179,5 @@
 - T091 / C107：真实重构和同一载荷右逆的网格一致无权L²界24声明独立验收PASS，同SHA三项CI、6057声明递归审计及逐字节相同远端产物。固定证明 `c5ac12749281c37710ade58c454fe9945273c7ec`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2278ec9211a32f37e3aaefb4fe5a84b0739c23a4/governance/reviews/T091-local-acceptance.md)。原文13/26，T092继续原允许权族加权稳定性。
 
 - T092 / C108：原允许权族实际重构与同一载荷右逆加权稳定性18声明独立验收PASS，同SHA三项CI、6076声明递归审计及逐字节相同远端产物。 固定证明 `1c3da9ffc54b5624f27760db5368aa05cbdfc0a5`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b356322f6d6fb51c2bbda6d96def905adf89398f/governance/reviews/T092-local-acceptance.md)。原文13/26，T093继续实际Q_h的局部L²稳定性与裁剪矩形邻域。
+
+- T093 / C109：实际Q_h局部L²稳定性与裁剪矩形邻域22声明独立验收PASS，同SHA三项CI、6104声明递归审计及逐字节相同远端产物。 固定证明 `ba9aa5d2a3caf655bba037695fe733a3f292d952`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/15638c4fc729b90389761d7b2f0c5ede7bcf27e7/governance/reviews/T093-local-acceptance.md)。原文13/26，T094继续原完整Dirichlet H²状态的实际局部仿射再现。
