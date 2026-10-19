@@ -888,3 +888,9 @@ public import Carleman.Continuous.HarmonicGraphFields
 public import Carleman.Spatial.ClassicalDirichletTimeCore
 public import Carleman.Spatial.ClassicalHarmonicTimeCore
 public import Carleman.Spatial.BoxClassicalTimeDensity
+
+public import Carleman.Spatial.WeightedTimeContinuity
+public import Carleman.Continuous.PeriodicEnergyField
+public import Carleman.Spatial.SmoothWeakGradientIdentity
+public import Carleman.Spatial.DirichletPeriodicGradient
+public import Carleman.Spatial.DirichletHeatContinuity

@@ -6915,6 +6915,43 @@ set_option pp.maxSteps 1000000
 #check @Carleman.exists_box_classical_periodic_graph_approximation
 #print axioms Carleman.exists_box_classical_periodic_graph_approximation
 
+#check @Carleman.SpatialProfile.weightedTimeCLM
+#print axioms Carleman.SpatialProfile.weightedTimeCLM
+#check @Carleman.SpatialProfile.timeSq_eq_weightedTimeCLM_norm_sq
+#print axioms Carleman.SpatialProfile.timeSq_eq_weightedTimeCLM_norm_sq
+#check @Carleman.SpatialProfile.continuous_timeSq
+#print axioms Carleman.SpatialProfile.continuous_timeSq
+#check @Carleman.CoerciveForm.periodicEnergy
+#print axioms Carleman.CoerciveForm.periodicEnergy
+#check @Carleman.CoerciveForm.periodicEnergy_eq
+#print axioms Carleman.CoerciveForm.periodicEnergy_eq
+#check @Carleman.CoerciveForm.periodicEnergy_embed
+#print axioms Carleman.CoerciveForm.periodicEnergy_embed
+#check @Carleman.CoerciveForm.periodicEnergy_embed_ae
+#print axioms Carleman.CoerciveForm.periodicEnergy_embed_ae
+#check @Carleman.SpatialTest.sobolevJet_component_ae
+#print axioms Carleman.SpatialTest.sobolevJet_component_ae
+#check @Carleman.WeakSobolevJet.component_eq_smooth_derivative
+#print axioms Carleman.WeakSobolevJet.component_eq_smooth_derivative
+#check @Carleman.WeakSobolevJet.gradient_norm_sq_eq_smooth
+#print axioms Carleman.WeakSobolevJet.gradient_norm_sq_eq_smooth
+#check @Carleman.dirichletPeriodicGradient
+#print axioms Carleman.dirichletPeriodicGradient
+#check @Carleman.dirichletPeriodicGradient_ae
+#print axioms Carleman.dirichletPeriodicGradient_ae
+#check @Carleman.dirichletPeriodicGradient_smooth_norm
+#print axioms Carleman.dirichletPeriodicGradient_smooth_norm
+#check @Carleman.dirichletHeatLeft
+#print axioms Carleman.dirichletHeatLeft
+#check @Carleman.dirichletHeatRight
+#print axioms Carleman.dirichletHeatRight
+#check @Carleman.continuous_dirichletHeatLeft
+#print axioms Carleman.continuous_dirichletHeatLeft
+#check @Carleman.continuous_dirichletHeatRight
+#print axioms Carleman.continuous_dirichletHeatRight
+#check @Carleman.box_dirichletHeat_le_of_classical
+#print axioms Carleman.box_dirichletHeat_le_of_classical
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
