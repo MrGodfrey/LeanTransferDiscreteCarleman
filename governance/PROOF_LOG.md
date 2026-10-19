@@ -307,3 +307,5 @@
 - T155 / C171：全局C²周期权双方向盒估计3声明独立AUXILIARY PASS；同SHA三项CI与7616声明raw逐字节相同。 固定证明 `069e313b5c03c66aec7c41e72055f95292515e58`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4b51268f1dcd9a5989e3f3f1846fe29265976648/governance/reviews/T155-local-acceptance.md)。原文17/26，T156继续原闭区间C²权的匹配周期延拓与双方向盒估计。
 
 - T156 / C172：原闭区间C²匹配周期延拓及盒双方向估计5声明独立AUXILIARY PASS；同SHA三项CI与7621声明raw逐字节相同。 固定证明 `b65d78fa150ea0cc5c0cd7d7b3342e7498b1bc50`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/382f5f65b9e0ec75462179c9a9a01f795fe62cef/governance/reviews/T156-local-acceptance.md)。原文17/26，T157继续逐坐标全偶空间平滑核与实际L²强收敛。
+
+- T157 / C173：全偶空间核及全L²强收敛29声明独立AUXILIARY PASS；三项同SHA CI与7652声明raw逐字节一致。 固定证明 `5eb3c89b2d38b27beedd3ce5e9192704def15e00`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bb50f089561e1683a51d9fd06a6d17435c4f6661/governance/reviews/T157-local-acceptance.md)。原文17/26，T158继续实际全盒局部奇延拓与保持零边界的平滑。
