@@ -5504,6 +5504,31 @@ set_option pp.maxSteps 1000000
 #check @Carleman.inwardPullback_scaled_L2_error_tendsto
 #print axioms Carleman.inwardPullback_scaled_L2_error_tendsto
 
+#check @Carleman.exists_inward_mollifier_sequence
+#print axioms Carleman.exists_inward_mollifier_sequence
+#check @Carleman.inwardMollification
+#print axioms Carleman.inwardMollification
+#check @Carleman.inwardMollification_smooth
+#print axioms Carleman.inwardMollification_smooth
+#check @Carleman.inwardMollification_scaled_L2_error_tendsto
+#print axioms Carleman.inwardMollification_scaled_L2_error_tendsto
+#check @Carleman.IsWeakSpatialDerivative.coordinate_one_inwardMollification
+#print axioms Carleman.IsWeakSpatialDerivative.coordinate_one_inwardMollification
+#check @Carleman.IsWeakSpatialDerivative.coordinate_two_inwardMollification
+#print axioms Carleman.IsWeakSpatialDerivative.coordinate_two_inwardMollification
+#check @Carleman.WeakSobolevJet.inward_mollification_strong_h2
+#print axioms Carleman.WeakSobolevJet.inward_mollification_strong_h2
+#check @Carleman.continuousOn_memLp_compact
+#print axioms Carleman.continuousOn_memLp_compact
+#check @Carleman.l2_limit_ae_eq_of_ae_tendsto
+#print axioms Carleman.l2_limit_ae_eq_of_ae_tendsto
+#check @Carleman.WeakSobolevJet.inward_mollification_uniform_limit
+#print axioms Carleman.WeakSobolevJet.inward_mollification_uniform_limit
+#check @Carleman.WeakSobolevJet.exists_closure_continuous_representative
+#print axioms Carleman.WeakSobolevJet.exists_closure_continuous_representative
+#check @Carleman.WeakSobolevJet.closure_continuous_representative_unique
+#print axioms Carleman.WeakSobolevJet.closure_continuous_representative_unique
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

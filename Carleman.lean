@@ -681,3 +681,8 @@ public import Carleman.Spatial.StrongL2EnergyLimit
 public import Carleman.Spatial.StrongInwardPullback
 public import Carleman.Spatial.InwardSmoothDerivatives
 public import Carleman.Spatial.InwardApproximationLimit
+public import Carleman.Spatial.InwardMollifierSequence
+public import Carleman.Spatial.InwardMollification
+public import Carleman.Spatial.WeakH2ClosureSmoothing
+public import Carleman.Spatial.L2LimitRepresentative
+public import Carleman.Spatial.WeakH2ClosureContinuous
