@@ -658,3 +658,5 @@ public import Carleman.Control.FullP1WeightedTest
 
 public import Carleman.Spatial.SmoothAveragedTaylor
 public import Carleman.Spatial.SmoothH2NodalError
+
+public import Carleman.Spatial.SmoothH2NodalGradient

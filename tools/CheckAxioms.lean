@@ -5385,6 +5385,17 @@ set_option pp.maxSteps 1000000
 #check @Carleman.simplexNodal_smooth_h2_value_integral
 #print axioms Carleman.simplexNodal_smooth_h2_value_integral
 
+#check @Carleman.derivativeOneFiber_norm_sq
+#print axioms Carleman.derivativeOneFiber_norm_sq
+#check @Carleman.smooth_directional_gradient_bound
+#print axioms Carleman.smooth_directional_gradient_bound
+#check @Carleman.averagedTaylorPolynomial_derivative
+#print axioms Carleman.averagedTaylorPolynomial_derivative
+#check @Carleman.averagedTaylorPolynomial_gradient_integral
+#print axioms Carleman.averagedTaylorPolynomial_gradient_integral
+#check @Carleman.simplexNodal_smooth_h2_gradient_integral
+#print axioms Carleman.simplexNodal_smooth_h2_gradient_integral
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
