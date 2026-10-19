@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T161",
-    "supervisor_checked_at": "2026-10-19T11:58:25.073237+00:00",
-    "next_action": "独立验收完整弱周期图光滑密度；继续经典时间导数和负 Laplacian 的实际字段身份及弱 CE 极限。",
+    "current_task_id": "T162",
+    "supervisor_checked_at": "2026-10-19T12:06:43.365303+00:00",
+    "next_action": "独立验收带实际经典微分字段的完整周期图逼近；继续空间梯度、加权 Bochner 范数与实际柱积分识别。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T11:58:25.073237+00:00"
+    "last_activity_at": "2026-10-19T12:06:43.365303+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "d5a8ab859e4413c6eb950702df73990e356c3786",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39247555446/attempts/1",
-      "finished_at": "2026-10-19T11:53:52.921677+00:00",
+      "checked_sha": "edd51c0e410a3a6e21259fd156f719e60d965500",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39248518805/attempts/1",
+      "finished_at": "2026-10-19T12:01:38.353861+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "d5a8ab859e4413c6eb950702df73990e356c3786"
+      "source_head_sha": "edd51c0e410a3a6e21259fd156f719e60d965500"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "d5a8ab859e4413c6eb950702df73990e356c3786",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39247555446/attempts/1",
-      "finished_at": "2026-10-19T11:53:52.921677+00:00",
+      "checked_sha": "edd51c0e410a3a6e21259fd156f719e60d965500",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39248518805/attempts/1",
+      "finished_at": "2026-10-19T12:01:38.353861+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "d5a8ab859e4413c6eb950702df73990e356c3786"
+      "source_head_sha": "edd51c0e410a3a6e21259fd156f719e60d965500"
     }
   },
   "milestones": [
@@ -15604,7 +15604,7 @@
       "paper_ref": "Full periodic graph density toward prop:continuousCE",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:continuousCE"
@@ -15627,15 +15627,88 @@
         "Carleman.box_smoothDirichletTimeCore_dense",
         "Carleman.exists_box_smooth_periodic_graph_approximation"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "edd51c0e410a3a6e21259fd156f719e60d965500",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "edd51c0e410a3a6e21259fd156f719e60d965500",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39248518805/attempts/1",
+        "finished_at": "2026-10-19T12:01:38.353861+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "edd51c0e410a3a6e21259fd156f719e60d965500"
+      },
+      "semantic_review": {
+        "checked_sha": "edd51c0e410a3a6e21259fd156f719e60d965500",
+        "declarations": [
+          "Carleman.CoerciveForm.harmonicGraph",
+          "Carleman.CoerciveForm.harmonicGraph_trace",
+          "Carleman.CoerciveForm.harmonicGraphLinear",
+          "Carleman.CoerciveForm.harmonicGraph_continuous",
+          "Carleman.CoerciveForm.harmonicGraphCLM",
+          "Carleman.CoerciveForm.harmonicGraph_mem_core",
+          "Carleman.CoerciveForm.harmonicStateSpan",
+          "Carleman.CoerciveForm.harmonicStateSpan_le_core",
+          "Carleman.CoerciveForm.frequencyGraph_mem_harmonicStateSpan",
+          "Carleman.CoerciveForm.constantSolve_harmonic_mem",
+          "Carleman.CoerciveForm.harmonicStateSpan_dense",
+          "Carleman.CoerciveForm.dense_of_harmonic_approximation",
+          "Carleman.smoothDirichletTimeCore",
+          "Carleman.harmonicGraph_mem_smoothDirichletTimeCore",
+          "Carleman.box_smoothDirichletTimeCore_dense",
+          "Carleman.exists_box_smooth_periodic_graph_approximation"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2ed59f0aeb57b2721e7ef9fd6363404b9cfa1f4e/governance/reviews/T161-local-acceptance.md",
+        "reviewed_at": "2026-10-19T12:03:08+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C176"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "原算子图谐波系数映射实际连续，原周期解算子传递有限谐波稠密性；空间图逼近给实际全时空光滑周期零边界代表的完整周期图范数逼近，覆盖所有弱轨道。经典字段到实际积分识别、完整弱 CE 及一般多面体仍待。"
+      "scope_notes": "原算子图谐波系数映射实际连续，原周期解算子传递有限谐波稠密性；空间图逼近给实际全时空光滑周期零边界代表的完整周期图范数逼近，覆盖所有弱轨道。经典字段到实际积分识别、完整弱 CE 及一般多面体仍待。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C178",
+      "title": "带实际经典微分字段的完整盒弱周期图逼近",
+      "paper_ref": "Classical derivative and operator identities in the density step of prop:continuousCE",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:continuousCE"
+      ],
+      "lean_declarations": [
+        "Carleman.directionalLap_add",
+        "Carleman.directionalLap_const_mul",
+        "Carleman.directionalLap_zero",
+        "Carleman.spatialLaplacian_add",
+        "Carleman.spatialLaplacian_const_mul",
+        "Carleman.smooth_harmonic_time_derivative",
+        "Carleman.smooth_harmonic_spatial_laplacian",
+        "Carleman.CoerciveForm.harmonicGraph_derivative_ae",
+        "Carleman.CoerciveForm.harmonicGraph_operator_ae",
+        "Carleman.classicalDirichletTimeCore",
+        "Carleman.harmonicGraph_mem_classicalDirichletTimeCore",
+        "Carleman.box_classicalDirichletTimeCore_dense",
+        "Carleman.exists_box_classical_periodic_graph_approximation"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C177"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "同一实际光滑周期零边界序列同时给完整图收敛、逐时刻 Lp 迹、以及时间/空间双层 a.e. 的真实经典时间导数和负 Laplacian 字段身份。实际加权柱积分极限、完整弱 CE 及一般多面体仍待。"
     }
   ],
   "events": [
@@ -16525,6 +16598,11 @@
       "at": "2026-10-19T11:58:25.073237+00:00",
       "public_summary": "盒空间算子图密度已独立验收；完整弱周期图的光滑零边界逼近构建审计通过，继续实际经典字段与积分识别。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e039d22d791ead1305810940718ebc9237fc854a/governance/reviews/T160-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T12:06:43.365303+00:00",
+      "public_summary": "完整弱周期图光滑密度已独立验收；同一序列的实际经典时间导数和负 Laplacian 字段身份构建审计通过，继续弱估计积分传递。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2ed59f0aeb57b2721e7ef9fd6363404b9cfa1f4e/governance/reviews/T161-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -16898,7 +16976,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9bc6a802c80a677fb9f5dc60000ae265152d6036/governance/reviews/T159-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39246261383/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e039d22d791ead1305810940718ebc9237fc854a/governance/reviews/T160-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39247555446/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39247555446/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2ed59f0aeb57b2721e7ef9fd6363404b9cfa1f4e/governance/reviews/T161-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39248518805/attempts/1"
     ]
   },
   "schedules": [
@@ -37040,10 +37120,10 @@
       ],
       "branch": "main",
       "base_commit": "d5a8ab859e4413c6eb950702df73990e356c3786",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "edd51c0e410a3a6e21259fd156f719e60d965500",
+      "merge_commit": "edd51c0e410a3a6e21259fd156f719e60d965500",
       "lean_declarations": [
         "Carleman.CoerciveForm.harmonicGraph",
         "Carleman.CoerciveForm.harmonicGraph_trace",
@@ -37062,12 +37142,23 @@
         "Carleman.box_smoothDirichletTimeCore_dense",
         "Carleman.exists_box_smooth_periodic_graph_approximation"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "edd51c0e410a3a6e21259fd156f719e60d965500",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39248518805/attempts/1",
+        "finished_at": "2026-10-19T12:01:38.353861+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "edd51c0e410a3a6e21259fd156f719e60d965500"
+      },
       "blocker": null,
       "attempts": [
         "四模块16声明定向3493 jobs、根目标4062 jobs、7765声明递归公理审计通过。"
       ],
-      "next_action": "独立验收完整弱周期图光滑密度；继续经典时间导数和负 Laplacian 的实际字段身份及弱 CE 极限。",
+      "next_action": "完整盒弱周期图光滑零边界密度已独立验收；继续经典字段识别与实际加权积分极限。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -37079,6 +37170,92 @@
         "recursive_axiom_audit": 7765,
         "new_explicit_declarations": 16,
         "declaration_artifact_sha256": "ca219b6e01966fbd28dd5b994025e8d9be6872d4445a996a0f2b78f03d6ca8fd",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "edd51c0e410a3a6e21259fd156f719e60d965500",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C177"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "edd51c0e410a3a6e21259fd156f719e60d965500",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T12:03:08+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2ed59f0aeb57b2721e7ef9fd6363404b9cfa1f4e/governance/reviews/T161-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "edd51c0e410a3a6e21259fd156f719e60d965500",
+        "checked_sha": "edd51c0e410a3a6e21259fd156f719e60d965500",
+        "run_id": 39248518805,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 4062,
+        "recursive_axiom_audit": 7765,
+        "new_explicit_declarations": 16,
+        "declaration_artifact_sha256": "ca219b6e01966fbd28dd5b994025e8d9be6872d4445a996a0f2b78f03d6ca8fd",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T162",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "带实际经典微分字段的完整盒弱周期图逼近",
+      "goal_ids": [
+        "C178"
+      ],
+      "acceptance": [
+        "真实方向微分和空间 Laplacian 的线性及 cos/sin 公式内部证明",
+        "两层 Lp 代表规则保持原实际 Bochner 时间导数与算子字段",
+        "同一 F 和 P 共同满足全时间边界零值、全局周期与精确字段身份",
+        "全部原弱周期轨道覆盖，未添加光滑性/全时刻域归属/给定逼近前提",
+        "只完成经典字段图逼近，不提升尚未得到的完整弱 CE"
+      ],
+      "dependencies": [
+        "C177"
+      ],
+      "branch": "main",
+      "base_commit": "edd51c0e410a3a6e21259fd156f719e60d965500",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.directionalLap_add",
+        "Carleman.directionalLap_const_mul",
+        "Carleman.directionalLap_zero",
+        "Carleman.spatialLaplacian_add",
+        "Carleman.spatialLaplacian_const_mul",
+        "Carleman.smooth_harmonic_time_derivative",
+        "Carleman.smooth_harmonic_spatial_laplacian",
+        "Carleman.CoerciveForm.harmonicGraph_derivative_ae",
+        "Carleman.CoerciveForm.harmonicGraph_operator_ae",
+        "Carleman.classicalDirichletTimeCore",
+        "Carleman.harmonicGraph_mem_classicalDirichletTimeCore",
+        "Carleman.box_classicalDirichletTimeCore_dense",
+        "Carleman.exists_box_classical_periodic_graph_approximation"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "五模块13声明定向3502 jobs、根目标4067 jobs、7799声明递归公理审计通过。"
+      ],
+      "next_action": "独立验收带实际经典微分字段的完整周期图逼近；继续空间梯度、加权 Bochner 范数与实际柱积分识别。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4067,
+        "recursive_axiom_audit": 7799,
+        "new_explicit_declarations": 13,
+        "declaration_artifact_sha256": "df4daf04c607a2ea591d71656fa19d93465458b8ac1c32564d232e51c850336e",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
