@@ -191,3 +191,5 @@
 - T097 / C113：完整原Lemma B2独立PAPER验收PASS，7声明、同SHA三项CI、6188声明递归审计及逐字节一致远端产物；P026完整完成，无额外前提。 固定证明 `a9ca6fccf19cc677a4a60b07f373eb533df9d502`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ddd9633ac6f66629e96b350ee1edec97d5dbe28a/governance/reviews/T097-local-acceptance.md)。原文14/26，T098继续实际Kuhn弱刚度的精确单元差分展开。
 
 - T098 / C114：真实Kuhn单元刚度9声明独立验收PASS，同SHA三项CI和6198声明递归审计通过；真实弱梯度、物理体积及原Dirichlet形式全部核对。 固定证明 `36d8ee7de732f00be2146ad4ef293ccf9c53c53f`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0fd0559ae1968ec61619b4510b7e8660b4915577/governance/reviews/T098-local-acceptance.md)。原文14/26，T099继续原Kuhn弱刚度的精确坐标边组装。
+
+- T099 / C115：实际坐标边组装13声明独立PASS，同SHA三项CI、6213声明递归审计及逐字节相同原始产物均核实；原边界与实际体积权完整保留。 固定证明 `e6f194345f2f7b9822f8d8654a003aee071382a2`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6de954eb92b9e065df23845d02317c6085207781/governance/reviews/T099-local-acceptance.md)。原文14/26，T100继续原标准差分Laplacian的精确刚度恒等式。

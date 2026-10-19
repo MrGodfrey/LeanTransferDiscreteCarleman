@@ -1104,3 +1104,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T099：原弱刚度的精确坐标边组装
 
 详见 [T099 分析](analysis/T099-kuhn-stiffness-edges.md)。三模块13声明证明原零边界数据在有限格网掩码平移下的真实和不变，严格识别Kuhn相邻差商为坐标前向差商；固定排列的前缀平移与π换元去除排列依赖，真实体积平移不变及排列体积总和给原物理权∏δ_j。最终原Dirichlet scalarForm(R_hf,R_hg)精确等于完整坐标边差商配对，全部原独立状态及边界层保留。AUXILIARY；原2d+1点Laplacian分部求和和完整FD刚度仍待，FD/P012不提升，原文14/26。
+
+## T100：原标准差分 Laplacian 的精确刚度恒等式
+
+详见 [T100 分析](analysis/T100-fd-stiffness.md)。三模块14声明证明真实有限格网的零边界分部求和，并由内部节点到半开盒的实际单射去除且仅去除零项。原2d+1点Laplacian与原物理节点配对接入真实坐标边能量，最终精确等于同一原H¹₀重构上的Dirichlet scalarForm，即eq:fdstiffness。全部正步长、原独立状态及完整边界项保留，无额外可比性条件。AUXILIARY，完整FD/P012仍待实际测试、观察和接口组装，原文14/26。
