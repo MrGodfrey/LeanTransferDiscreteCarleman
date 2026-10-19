@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T156",
-    "supervisor_checked_at": "2026-10-19T11:12:26.260030+00:00",
-    "next_action": "独立验收原闭区间C²时间权；继续保持零边界的真实光滑逼近及完整弱轨道。",
+    "current_task_id": "T157",
+    "supervisor_checked_at": "2026-10-19T11:21:06.475874+00:00",
+    "next_action": "独立验收全偶核与L²逼近；继续局部H²强收敛和实际盒奇延拓。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T11:12:26.260030+00:00"
+    "last_activity_at": "2026-10-19T11:21:06.475874+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "069e313b5c03c66aec7c41e72055f95292515e58",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39242086203/attempts/1",
-      "finished_at": "2026-10-19T11:07:59.500028+00:00",
+      "checked_sha": "b65d78fa150ea0cc5c0cd7d7b3342e7498b1bc50",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39242968737/attempts/1",
+      "finished_at": "2026-10-19T11:14:31.291714+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "069e313b5c03c66aec7c41e72055f95292515e58"
+      "source_head_sha": "b65d78fa150ea0cc5c0cd7d7b3342e7498b1bc50"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "069e313b5c03c66aec7c41e72055f95292515e58",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39242086203/attempts/1",
-      "finished_at": "2026-10-19T11:07:59.500028+00:00",
+      "checked_sha": "b65d78fa150ea0cc5c0cd7d7b3342e7498b1bc50",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39242968737/attempts/1",
+      "finished_at": "2026-10-19T11:14:31.291714+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "069e313b5c03c66aec7c41e72055f95292515e58"
+      "source_head_sha": "b65d78fa150ea0cc5c0cd7d7b3342e7498b1bc50"
     }
   },
   "milestones": [
@@ -15238,7 +15238,7 @@
       "paper_ref": "Original closed-interval C2 qclass with matching derivatives and prop:continuousCE",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:continuousCE"
@@ -15250,15 +15250,93 @@
         "Carleman.boxTimeIntegral_congr_on",
         "Carleman.box_interval_C2_gaussian_heat_both_signs"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "b65d78fa150ea0cc5c0cd7d7b3342e7498b1bc50",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "b65d78fa150ea0cc5c0cd7d7b3342e7498b1bc50",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39242968737/attempts/1",
+        "finished_at": "2026-10-19T11:14:31.291714+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "b65d78fa150ea0cc5c0cd7d7b3342e7498b1bc50"
+      },
+      "semantic_review": {
+        "checked_sha": "b65d78fa150ea0cc5c0cd7d7b3342e7498b1bc50",
+        "declarations": [
+          "Carleman.exists_continuous_periodic_extension",
+          "Carleman.periodic_primitive_of_interval",
+          "Carleman.exists_periodic_C2_extension",
+          "Carleman.boxTimeIntegral_congr_on",
+          "Carleman.box_interval_C2_gaussian_heat_both_signs"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/382f5f65b9e0ec75462179c9a9a01f795fe62cef/governance/reviews/T156-local-acceptance.md",
+        "reviewed_at": "2026-10-19T11:16:02+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C171"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "原ContDiffOn2闭区间q及0/1/2阶端点匹配，经实际二阶导数连续周期延拓和两次积分得到全局C²周期Q，值与一二阶真实导数精确恢复；内部应用C²估计并以四项实际柱积分相等换回原q。同常数量词不变，仍光滑状态/坐标盒，弱轨道和一般多面体待。"
+      "scope_notes": "原ContDiffOn2闭区间q及0/1/2阶端点匹配，经实际二阶导数连续周期延拓和两次积分得到全局C²周期Q，值与一二阶真实导数精确恢复；内部应用C²估计并以四项实际柱积分相等换回原q。同常数量词不变，仍光滑状态/坐标盒，弱轨道和一般多面体待。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C173",
+      "title": "逐坐标全偶空间平滑核与实际L²强收敛",
+      "paper_ref": "Boundary-preserving approximation toward prop:continuousCE",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:continuousCE"
+      ],
+      "lean_declarations": [
+        "Carleman.coordinateReflection_zero",
+        "Carleman.coordinateSignFlip_involutive",
+        "Carleman.coordinateReflection_sub_fixed",
+        "Carleman.convolution_zero_of_local_odd",
+        "Carleman.coordinateSignFlip_commute",
+        "Carleman.SpatialTest.evenCoordinate",
+        "Carleman.SpatialTest.evenCoordinate_value",
+        "Carleman.SpatialTest.evenCoordinate_invariant",
+        "Carleman.SpatialTest.evenCoordinate_preserves_invariant",
+        "Carleman.SpatialTest.evenCoordinate_nonneg",
+        "Carleman.SpatialTest.evenCoordinate_integral",
+        "Carleman.SpatialTest.evenCoordinate_support",
+        "Carleman.SpatialTest.evenCoordinates",
+        "Carleman.SpatialTest.evenCoordinates_invariant",
+        "Carleman.SpatialTest.evenCoordinates_nonneg",
+        "Carleman.SpatialTest.evenCoordinates_integral",
+        "Carleman.SpatialTest.evenCoordinates_support",
+        "Carleman.evenSpatialMollifier",
+        "Carleman.evenSpatialMollifier_invariant",
+        "Carleman.evenSpatialMollifier_nonneg",
+        "Carleman.evenSpatialMollifier_integral",
+        "Carleman.evenSpatialMollifier_support",
+        "Carleman.evenSpatialMollifier_convolution_zero",
+        "Carleman.SpatialTest.reflected_kernel_convolution",
+        "Carleman.SpatialTest.evenCoordinate_convolution",
+        "Carleman.SpatialTest.evenCoordinates_converges",
+        "Carleman.evenSpatialMollifier_converges",
+        "Carleman.evenSpatialMollifier_square_error_tendsto",
+        "Carleman.evenSpatialMollifier_L2_error_tendsto"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C172"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实逐坐标反射平均构造非负单位质量紧支C∞全偶核，真实局部奇卷积在平面为零，且对全部全空间L²状态强收敛。局部奇性仍为明确输入；实际盒奇延拓、H²零边界密度及完整弱轨道未完成。"
     }
   ],
   "events": [
@@ -16123,6 +16201,11 @@
       "at": "2026-10-19T11:12:26.260030+00:00",
       "public_summary": "全局C²权双方向估计已独立验收；原闭区间C²匹配延拓与同常数估计构建审计通过，继续完整弱轨道。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4b51268f1dcd9a5989e3f3f1846fe29265976648/governance/reviews/T155-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T11:21:06.475874+00:00",
+      "public_summary": "原闭区间C²权已独立验收；逐坐标全偶核与全部L²状态强收敛已构建审计通过，继续保持零边界的弱轨道逼近。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/382f5f65b9e0ec75462179c9a9a01f795fe62cef/governance/reviews/T156-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -16486,7 +16569,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1de9a3b3d36fb75deee268ac2e585ed6f99a0902/governance/reviews/T154-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39241104262/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4b51268f1dcd9a5989e3f3f1846fe29265976648/governance/reviews/T155-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39242086203/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39242086203/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/382f5f65b9e0ec75462179c9a9a01f795fe62cef/governance/reviews/T156-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39242968737/attempts/1"
     ]
   },
   "schedules": [
@@ -36135,10 +36220,10 @@
       ],
       "branch": "main",
       "base_commit": "069e313b5c03c66aec7c41e72055f95292515e58",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "b65d78fa150ea0cc5c0cd7d7b3342e7498b1bc50",
+      "merge_commit": "b65d78fa150ea0cc5c0cd7d7b3342e7498b1bc50",
       "lean_declarations": [
         "Carleman.exists_continuous_periodic_extension",
         "Carleman.periodic_primitive_of_interval",
@@ -36146,12 +36231,23 @@
         "Carleman.boxTimeIntegral_congr_on",
         "Carleman.box_interval_C2_gaussian_heat_both_signs"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "b65d78fa150ea0cc5c0cd7d7b3342e7498b1bc50",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39242968737/attempts/1",
+        "finished_at": "2026-10-19T11:14:31.291714+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "b65d78fa150ea0cc5c0cd7d7b3342e7498b1bc50"
+      },
       "blocker": null,
       "attempts": [
         "三模块5声明定向3308 jobs、全库4039 jobs和7621声明递归公理审计通过。"
       ],
-      "next_action": "独立验收原闭区间C²时间权；继续保持零边界的真实光滑逼近及完整弱轨道。",
+      "next_action": "原闭区间C²时间权已独立验收；接续保持边界的空间逼近及完整弱轨道。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -36163,6 +36259,108 @@
         "recursive_axiom_audit": 7621,
         "new_explicit_declarations": 5,
         "declaration_artifact_sha256": "037637d42768669d66a9355cf5dc870ac3e52ee2bd083d0f0bfbc5358849fd53",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "b65d78fa150ea0cc5c0cd7d7b3342e7498b1bc50",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C172"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "b65d78fa150ea0cc5c0cd7d7b3342e7498b1bc50",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T11:16:02+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/382f5f65b9e0ec75462179c9a9a01f795fe62cef/governance/reviews/T156-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "b65d78fa150ea0cc5c0cd7d7b3342e7498b1bc50",
+        "checked_sha": "b65d78fa150ea0cc5c0cd7d7b3342e7498b1bc50",
+        "run_id": 39242968737,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 4039,
+        "recursive_axiom_audit": 7621,
+        "new_explicit_declarations": 5,
+        "declaration_artifact_sha256": "037637d42768669d66a9355cf5dc870ac3e52ee2bd083d0f0bfbc5358849fd53",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T157",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "逐坐标全偶空间平滑核与实际L²强收敛",
+      "goal_ids": [
+        "C173"
+      ],
+      "acceptance": [
+        "真实逐坐标偶性由实际平均构造，而非假定通用bump径向对称",
+        "非负、单位质量、收缩支集和光滑紧支均保持",
+        "局部奇性a.e.配合反射换元给平面严格零值",
+        "实际Lp反射及卷积平均恒等式合法且内部可积",
+        "对全部L²状态的真实强收敛；不提升完整弱轨道或P024"
+      ],
+      "dependencies": [
+        "C172"
+      ],
+      "branch": "main",
+      "base_commit": "b65d78fa150ea0cc5c0cd7d7b3342e7498b1bc50",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.coordinateReflection_zero",
+        "Carleman.coordinateSignFlip_involutive",
+        "Carleman.coordinateReflection_sub_fixed",
+        "Carleman.convolution_zero_of_local_odd",
+        "Carleman.coordinateSignFlip_commute",
+        "Carleman.SpatialTest.evenCoordinate",
+        "Carleman.SpatialTest.evenCoordinate_value",
+        "Carleman.SpatialTest.evenCoordinate_invariant",
+        "Carleman.SpatialTest.evenCoordinate_preserves_invariant",
+        "Carleman.SpatialTest.evenCoordinate_nonneg",
+        "Carleman.SpatialTest.evenCoordinate_integral",
+        "Carleman.SpatialTest.evenCoordinate_support",
+        "Carleman.SpatialTest.evenCoordinates",
+        "Carleman.SpatialTest.evenCoordinates_invariant",
+        "Carleman.SpatialTest.evenCoordinates_nonneg",
+        "Carleman.SpatialTest.evenCoordinates_integral",
+        "Carleman.SpatialTest.evenCoordinates_support",
+        "Carleman.evenSpatialMollifier",
+        "Carleman.evenSpatialMollifier_invariant",
+        "Carleman.evenSpatialMollifier_nonneg",
+        "Carleman.evenSpatialMollifier_integral",
+        "Carleman.evenSpatialMollifier_support",
+        "Carleman.evenSpatialMollifier_convolution_zero",
+        "Carleman.SpatialTest.reflected_kernel_convolution",
+        "Carleman.SpatialTest.evenCoordinate_convolution",
+        "Carleman.SpatialTest.evenCoordinates_converges",
+        "Carleman.evenSpatialMollifier_converges",
+        "Carleman.evenSpatialMollifier_square_error_tendsto",
+        "Carleman.evenSpatialMollifier_L2_error_tendsto"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "五模块29声明定向3300 jobs、全库4044 jobs和7652声明递归公理审计通过。"
+      ],
+      "next_action": "独立验收全偶核与L²逼近；继续局部H²强收敛和实际盒奇延拓。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4044,
+        "recursive_axiom_audit": 7652,
+        "new_explicit_declarations": 29,
+        "declaration_artifact_sha256": "d5c5692d75c335625cba58e18415045a63ae25a3cfd32853453fcc241479d588",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

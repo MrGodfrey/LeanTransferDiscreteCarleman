@@ -1362,3 +1362,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 `PeriodicPrimitive`、`PeriodicC2Extension`、`BoxIntervalC2HeatEstimate` 共五声明。真实连续二阶导数经 AddCircle 延拓后积分两次，实际 FTC、端点匹配和周期积分给全局 C² 周期 Q，并在整个 Icc 上恢复 q、derivWithin q 和二次 derivWithin。最终 `box_interval_C2_gaussian_heat_both_signs` 内部供应延拓及 qclass，再以真实柱积分相等换回原 q。原 C²([0,T])、零至二阶端点条件已保留，无新延拓假设；同常数顺序及两个时间符号不变。
 
 状态仍 C∞ 周期零边界，区域仍坐标盒；完整弱轨道及一般凸多面体未完成。仍 AUXILIARY，P024 不提升、覆盖17/26。详见 `analysis/T156-interval-c2-heat.md`。
+
+## T157 / C173：逐坐标全偶空间核与真实 L² 逼近（辅助）
+
+实际逐坐标反射平均构造 C∞ 紧支、非负、单位质量、支集收缩的全偶核；不假设通用 ContDiffBump 径向对称。真实反射换元给局部奇函数卷积在对应平面严格为零。实际反射 Lp 和卷积平均恒等式传递全部 L² 状态的 a.e. 收敛，再以 L² 收缩证明平方误差及 L² 强收敛。五模块29声明。
+
+局部奇性尚为明确输入；本批不声称已完成盒奇延拓、保持零边界的 H² 逼近或完整弱轨道。范围 AUXILIARY，P024 不提升、覆盖17/26。详见 `analysis/T157-even-spatial-mollification.md`。
