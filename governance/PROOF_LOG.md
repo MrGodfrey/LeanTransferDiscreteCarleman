@@ -237,3 +237,5 @@
 - T120 / C136：全部弱H²局部节点梯度误差9声明独立PASS；同SHA三项CI、6688声明递归审计及固定产物逐字节一致。 固定证明 `a26158d00376e85866c536aa366239af41c83f97`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/881e016ba4bb9591c2d313c445e334103119b2fd/governance/reviews/T120-local-acceptance.md)。原文14/26，T121继续真实全空间弱导数的C¹链式法则。
 
 - T121 / C137：真实弱C¹链式法则9声明独立PASS；同SHA三项CI、6697声明递归审计及固定产物逐字节一致。 固定证明 `4689b4942585bde7e96bc0ecfa1a360de012db2b`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/238926d59554057bc7cffae67f4ff41726eafb86/governance/reviews/T121-local-acceptance.md)。原文14/26，T122继续原H¹₀闭包连续代表的全部边界点零值。
+
+- T122 / C138：原H¹₀连续代表全部边界零值5声明独立PASS；同SHA三项CI、6702声明递归审计及固定产物逐字节一致。 固定证明 `b40c6b3a3e783529e21adc5a699f4d4d19c4edbe`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/893f36b8c744a64f9d5a3e6aad9a998a9024d8d6/governance/reviews/T122-local-acceptance.md)。原文14/26，T123继续全部弱H²∩H¹₀的真实conforming节点误差。
