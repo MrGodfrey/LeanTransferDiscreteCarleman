@@ -373,3 +373,7 @@
 - T179 / C195：十一声明独立11/11 PASS，实际伴随最佳逼近、原a.e.误差和精确未覆盖体积忠实，三CI与8296声明raw逐字节核对。 固定证明 `c93eb000a3fe6624a0923b70781b2caa173cce4b`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6a2d0267d61d5d8e316a4d341dd48a60b62447f7/governance/reviews/T179-local-acceptance.md)。原文17/26；当前执行任务不变。
 
 - T180 / C196：固定证明 `1d85add4836977c5a6b3bd55448110e9bad21a50` 的三项实际CI与原始审计核对通过；独立Agent验收仍在运行，当前仅BUILT。T181继续全P1空间任意L²初值的实际投影强一致性，原文覆盖17/26。
+
+- T180 / C196：九声明独立9/9 PASS，固定原域真实平均、条带体积趋零、残差收缩及真实稠密性清偿任意L²强收敛，三CI与8309声明raw逐字节核对。 固定证明 `1d85add4836977c5a6b3bd55448110e9bad21a50`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5d7bf13e6d15857cf74bb5e3a234500ffada5e1e/governance/reviews/T180-local-acceptance.md)。原文17/26；当前执行任务不变。
+
+- T181 / C197：固定证明 `7a2f33cfe125a118ee1792410345603891957e6c` 的三项实际CI与原始审计核对通过；独立Agent验收仍在运行，当前仅BUILT。T182继续原时空平均势的真实重构与精确物理配对，原文覆盖17/26。
