@@ -684,13 +684,36 @@
         "Carleman.cartesian_numericalData_of_box",
         "Carleman.cartesian_full_weight_interface"
       ],
-      "declaration_version": null,
-      "verification_status": "SPECIFIED",
+      "declaration_version": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "extra_hypotheses": [],
-      "build_evidence": null,
-      "semantic_review": null,
-      "blocker": null
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39226924106/attempts/1",
+        "finished_at": "2026-10-19T09:03:16.065390+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f"
+      },
+      "semantic_review": {
+        "checked_sha": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f",
+        "declarations": [
+          "Carleman.cartesian_numericalData_of_box",
+          "Carleman.cartesian_full_weight_interface"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1a2461ade27f9fc7327d3c03e1c6a09c952318a9/governance/reviews/T142-local-acceptance.md",
+        "reviewed_at": "2026-10-19T09:06:20+00:00",
+        "reviewer": "/root/accept_section3; independent paper acceptance"
+      },
+      "blocker": null,
+      "independent_review_status": "PASS"
     },
     {
       "id": "P013",

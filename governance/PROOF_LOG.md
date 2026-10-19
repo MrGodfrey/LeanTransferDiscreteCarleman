@@ -277,3 +277,5 @@
 - T140 / C156：实际下侧盒面奇延拓40声明独立AUXILIARY PASS；同SHA三项CI、7229声明审计和原始证据逐字节一致。 固定证明 `e1774a58f1c57c8a3305173b5195beea5ffd53b7`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/361f5e173e97dc7cd0066efc759c0f5c13390267/governance/reviews/T140-local-acceptance.md)。原文16/26，T141继续原坐标盒Dirichlet算子的全局H²、精确算子域与右端估计。
 
 - T141 / C157：原盒全局H²、精确D(A)=H²∩H¹₀及完整右端估计34声明独立AUXILIARY PASS；三项实际CI和7289声明原始审计逐字节核对通过。 固定证明 `b818f314b275265490aa9b797779f7db0005ddb9`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/dfab53c2a4b49f043f28a8dfea6fd7c5cad9e125/governance/reviews/T141-local-acceptance.md)。原文16/26，T142继续完整原Cartesian有限差分数值实现与所有允许权接口。
+
+- T142 / C158：原Proposition6.2完整N1–N5及指定平方节点权测试独立PAPER PASS；实际三项CI和7291声明raw逐字节核对通过。 固定证明 `13c8977bd4c50a11d6bed5fdab64b09aeee0203f`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1a2461ade27f9fc7327d3c03e1c6a09c952318a9/governance/reviews/T142-local-acceptance.md)。原文17/26，T143继续真实有限半空间边界图册、盒域解析数据及完整Section3辅助估计。

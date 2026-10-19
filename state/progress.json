@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T142",
-    "supervisor_checked_at": "2026-10-19T09:00:43.770959+00:00",
-    "next_action": "独立验收完整原Cartesian数值命题P012；继续盒上全部解析数据和真实有限半空间边界图册。",
+    "current_task_id": "T143",
+    "supervisor_checked_at": "2026-10-19T09:18:08.094619+00:00",
+    "next_action": "独立验收实际盒解析数据与Section3全部估计；继续原连续CE的具体空间权。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T09:00:43.770959+00:00"
+    "last_activity_at": "2026-10-19T09:18:08.094619+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "b818f314b275265490aa9b797779f7db0005ddb9",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39225053273/attempts/1",
-      "finished_at": "2026-10-19T08:48:39.817105+00:00",
+      "checked_sha": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39226924106/attempts/1",
+      "finished_at": "2026-10-19T09:03:16.065390+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "b818f314b275265490aa9b797779f7db0005ddb9"
+      "source_head_sha": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "b818f314b275265490aa9b797779f7db0005ddb9",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39225053273/attempts/1",
-      "finished_at": "2026-10-19T08:48:39.817105+00:00",
+      "checked_sha": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39226924106/attempts/1",
+      "finished_at": "2026-10-19T09:03:16.065390+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "b818f314b275265490aa9b797779f7db0005ddb9"
+      "source_head_sha": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f"
     }
   },
   "milestones": [
@@ -14095,7 +14095,7 @@
       "paper_ref": "Original Proposition 6.2 / prop:fd, actual Cartesian N1–N5 and specified squared nodal weight test",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "paper_labels": [
         "prop:fd"
@@ -14104,16 +14104,76 @@
         "Carleman.cartesian_numericalData_of_box",
         "Carleman.cartesian_full_weight_interface"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39226924106/attempts/1",
+        "finished_at": "2026-10-19T09:03:16.065390+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f"
+      },
+      "semantic_review": {
+        "checked_sha": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f",
+        "declarations": [
+          "Carleman.cartesian_numericalData_of_box",
+          "Carleman.cartesian_full_weight_interface"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1a2461ade27f9fc7327d3c03e1c6a09c952318a9/governance/reviews/T142-local-acceptance.md",
+        "reviewed_at": "2026-10-19T09:06:20+00:00",
+        "reviewer": "/root/accept_section3; independent paper acceptance"
+      },
       "dependencies": [
         "C157",
         "C126"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "完整原Proposition6.2，实际盒H²包含内部提供，完整N1–N5和指定对角测试。另明确transfer较小接口未存的严格正定、全允许权范数比较及观测；依赖中的原质量/载荷/刚度恒等式共同核对。连续CE、一般凸多面体不属于该命题。"
+      "scope_notes": "完整原Proposition6.2，实际盒H²包含内部提供，完整N1–N5和指定对角测试。另明确transfer较小接口未存的严格正定、全允许权范数比较及观测；依赖中的原质量/载荷/刚度恒等式共同核对。连续CE、一般凸多面体不属于该命题。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C159",
+      "title": "真实有限半空间边界图册、盒域解析数据及完整Section3辅助估计",
+      "paper_ref": "Original Corollary A.2 box case and Section 3 auxiliary estimates, actual finite-halfspace Lipschitz charts",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "cor:analytic"
+      ],
+      "lean_declarations": [
+        "Carleman.box_dirichlet_graph_estimate",
+        "Carleman.box_analytic_data_uniform",
+        "Carleman.box_analytic_realization",
+        "Carleman.shearDirectionCoordinates",
+        "Carleman.shearDirectionCoordinates_direction",
+        "Carleman.exists_directional_coordinates",
+        "Carleman.finite_linear_max_lipschitz",
+        "Carleman.finite_halfspace_graph_charts",
+        "Carleman.finite_halfspace_bounded_lipschitz",
+        "Carleman.openCoordinateBox_bounded_lipschitz",
+        "Carleman.box_section3"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C157",
+        "C087",
+        "C037",
+        "C036"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "实际盒域完整原算子H²图范数、全允许权族和全部Section3辅助估计，内部构造实际有限半空间与盒边界Lipschitz图册。一般凸多面体H²及连续CE仍缺，故AUXILIARY不提升P023/P024。"
     }
   ],
   "events": [
@@ -14908,6 +14968,11 @@
       "at": "2026-10-19T09:00:43.770959+00:00",
       "public_summary": "盒上全局H²、精确算子域和右端估计已独立验收；完整Cartesian数值命题及所有允许权较强接口已构建审计，申请原P012验收。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/dfab53c2a4b49f043f28a8dfea6fd7c5cad9e125/governance/reviews/T141-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T09:18:08.094619+00:00",
+      "public_summary": "完整原Cartesian有限差分命题P012独立验收通过；实际盒解析数据、有限半空间边界图册和全部Section3估计已构建审计，进入独立验收。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1a2461ade27f9fc7327d3c03e1c6a09c952318a9/governance/reviews/T142-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -15243,7 +15308,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/361f5e173e97dc7cd0066efc759c0f5c13390267/governance/reviews/T140-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39223664696/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/dfab53c2a4b49f043f28a8dfea6fd7c5cad9e125/governance/reviews/T141-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39225053273/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39225053273/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1a2461ade27f9fc7327d3c03e1c6a09c952318a9/governance/reviews/T142-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39226924106/attempts/1"
     ]
   },
   "schedules": [
@@ -33444,20 +33511,31 @@
       ],
       "branch": "main",
       "base_commit": "b818f314b275265490aa9b797779f7db0005ddb9",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f",
+      "merge_commit": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f",
       "lean_declarations": [
         "Carleman.cartesian_numericalData_of_box",
         "Carleman.cartesian_full_weight_interface"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39226924106/attempts/1",
+        "finished_at": "2026-10-19T09:03:16.065390+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f"
+      },
       "blocker": null,
       "attempts": [
         "两模块两声明定向3842/3756 jobs、全库3967 jobs通过；7291声明递归公理审计PASS。"
       ],
-      "next_action": "独立验收完整原Cartesian数值命题P012；继续盒上全部解析数据和真实有限半空间边界图册。",
+      "next_action": "完整原Cartesian数值命题已验收，P012提升；继续盒域全部解析数据。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -33469,6 +33547,95 @@
         "recursive_axiom_audit": 7291,
         "new_explicit_declarations": 2,
         "declaration_artifact_sha256": "4559d5dce8c6e4cc1e14fd69cc84b7ab17838067a06dcd9a57c43342f562f1e9",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_section3",
+          "claim_ids": [
+            "C158"
+          ],
+          "paper_result_ids": [
+            "P012"
+          ],
+          "checked_sha": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T09:06:20+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1a2461ade27f9fc7327d3c03e1c6a09c952318a9/governance/reviews/T142-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f",
+        "checked_sha": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f",
+        "run_id": 39226924106,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3967,
+        "recursive_axiom_audit": 7291,
+        "new_explicit_declarations": 2,
+        "declaration_artifact_sha256": "4559d5dce8c6e4cc1e14fd69cc84b7ab17838067a06dcd9a57c43342f562f1e9",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T143",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "真实有限半空间边界图册、盒域解析数据及完整Section3辅助估计",
+      "goal_ids": [
+        "C159"
+      ],
+      "acceptance": [
+        "实际canonical域元素完整H²图范数界与原算子相同",
+        "常数先于任意时间权、参数、网格和状态，全双符号AllowedFamily",
+        "真实有限半空间边界含角点的局部集合等价和Lipschitz图册",
+        "实际盒无外给正则性或边界图册，全部Section3估计接通",
+        "仅辅助范围，不冒充一般凸多面体H²或连续CE"
+      ],
+      "dependencies": [
+        "C157",
+        "C087",
+        "C037",
+        "C036"
+      ],
+      "branch": "main",
+      "base_commit": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.box_dirichlet_graph_estimate",
+        "Carleman.box_analytic_data_uniform",
+        "Carleman.box_analytic_realization",
+        "Carleman.shearDirectionCoordinates",
+        "Carleman.shearDirectionCoordinates_direction",
+        "Carleman.exists_directional_coordinates",
+        "Carleman.finite_linear_max_lipschitz",
+        "Carleman.finite_halfspace_graph_charts",
+        "Carleman.finite_halfspace_bounded_lipschitz",
+        "Carleman.openCoordinateBox_bounded_lipschitz",
+        "Carleman.box_section3"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "五模块11声明定向3580 jobs、全库3972 jobs和7310声明递归公理审计通过。"
+      ],
+      "next_action": "独立验收实际盒解析数据与Section3全部估计；继续原连续CE的具体空间权。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3972,
+        "recursive_axiom_audit": 7310,
+        "new_explicit_declarations": 11,
+        "declaration_artifact_sha256": "cf8df18c5505c03754f5f85457e249b9ba50b770ed654766f054c7afb21fd02a",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
