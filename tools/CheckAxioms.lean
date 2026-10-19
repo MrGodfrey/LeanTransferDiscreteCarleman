@@ -7543,6 +7543,48 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianCell_kuhn_L2_consistency
 #print axioms Carleman.cartesianCell_kuhn_L2_consistency
 
+#check @Carleman.timeCellReconstruction_sub
+#print axioms Carleman.timeCellReconstruction_sub
+#check @Carleman.timeCellReconstruction_norm_le
+#print axioms Carleman.timeCellReconstruction_norm_le
+#check @Carleman.fixedTimeCellReconstruction
+#print axioms Carleman.fixedTimeCellReconstruction
+#check @Carleman.fixedTimeCellReconstruction_sub
+#print axioms Carleman.fixedTimeCellReconstruction_sub
+#check @Carleman.fixedTimeCellReconstruction_norm_le
+#print axioms Carleman.fixedTimeCellReconstruction_norm_le
+#check @Carleman.cartesianBoxKuhnReconstructionJet
+#print axioms Carleman.cartesianBoxKuhnReconstructionJet
+#check @Carleman.cartesianBoxCell_kuhn_L2_consistency
+#print axioms Carleman.cartesianBoxCell_kuhn_L2_consistency
+#check @Carleman.hilbert_weak_of_norm_sub_tendsto_zero
+#print axioms Carleman.hilbert_weak_of_norm_sub_tendsto_zero
+#check @Carleman.cartesianBoxCell_kuhn_time_consistency
+#print axioms Carleman.cartesianBoxCell_kuhn_time_consistency
+#check @Carleman.cartesianBoxCell_kuhn_time_error_tendsto
+#print axioms Carleman.cartesianBoxCell_kuhn_time_error_tendsto
+#check @Carleman.cartesianBoxCell_kuhn_same_weak_limit
+#print axioms Carleman.cartesianBoxCell_kuhn_same_weak_limit
+
+#check @Carleman.Physical.forward_energy_increment
+#print axioms Carleman.Physical.forward_energy_increment
+#check @Carleman.Physical.forward_energy_balance
+#print axioms Carleman.Physical.forward_energy_balance
+#check @Carleman.Physical.forward_stiffness_budget_of_state_bound
+#print axioms Carleman.Physical.forward_stiffness_budget_of_state_bound
+#check @Carleman.Physical.forward_stiffness_budget
+#print axioms Carleman.Physical.forward_stiffness_budget
+#check @Carleman.cartesianPhysicalLaplacian_gradient_sq
+#print axioms Carleman.cartesianPhysicalLaplacian_gradient_sq
+#check @Carleman.cartesian_state_gradient_budget
+#print axioms Carleman.cartesian_state_gradient_budget
+#check @Carleman.cartesian_state_gradient_uniform
+#print axioms Carleman.cartesian_state_gradient_uniform
+#check @Carleman.cartesian_state_fixed_gradient_uniform
+#print axioms Carleman.cartesian_state_fixed_gradient_uniform
+#check @Carleman.cartesian_controlled_states_same_weak_limit
+#print axioms Carleman.cartesian_controlled_states_same_weak_limit
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

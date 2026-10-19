@@ -973,3 +973,10 @@ public import Carleman.Geometry.KuhnNearestVertex
 public import Carleman.Geometry.CoordinateHyperplaneNull
 public import Carleman.Spatial.CartesianCellNearestValue
 public import Carleman.Spatial.CartesianCellKuhnConsistency
+public import Carleman.Control.TimeReconstructionEstimates
+public import Carleman.Spatial.FixedBoxKuhnConsistency
+public import Carleman.Control.HilbertWeakPerturbation
+public import Carleman.Control.CartesianStateWeakConsistency
+public import Carleman.Control.PhysicalStiffnessEnergy
+public import Carleman.Control.CartesianStateEnergy
+public import Carleman.Control.CartesianEquationWeakConsistency
