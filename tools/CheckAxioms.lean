@@ -7006,6 +7006,29 @@ set_option pp.maxSteps 1000000
 #check @Carleman.box_original_weak_C2_heat_both_signs
 #print axioms Carleman.box_original_weak_C2_heat_both_signs
 
+#check @Carleman.heatGradientExpression
+#print axioms Carleman.heatGradientExpression
+#check @Carleman.heatGradientExpression_apply
+#print axioms Carleman.heatGradientExpression_apply
+#check @Carleman.heatDifferentialFamily
+#print axioms Carleman.heatDifferentialFamily
+#check @Carleman.conforming_heat_expression
+#print axioms Carleman.conforming_heat_expression
+#check @Carleman.dirichlet_conforming_gradient
+#print axioms Carleman.dirichlet_conforming_gradient
+#check @Carleman.dirichletHeatGeometry_energy
+#print axioms Carleman.dirichletHeatGeometry_energy
+#check @Carleman.dirichletHeatGeometry_residual
+#print axioms Carleman.dirichletHeatGeometry_residual
+#check @Carleman.dirichletHeatGeometry_observation
+#print axioms Carleman.dirichletHeatGeometry_observation
+#check @Carleman.IntervalQClass
+#print axioms Carleman.IntervalQClass
+#check @Carleman.IntervalQClass.toRegularity
+#print axioms Carleman.IntervalQClass.toRegularity
+#check @Carleman.box_heat_continuous_data
+#print axioms Carleman.box_heat_continuous_data
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

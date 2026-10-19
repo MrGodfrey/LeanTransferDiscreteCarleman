@@ -905,3 +905,7 @@ public import Carleman.Spatial.IntervalHeatEnergies
 public import Carleman.Spatial.BoxIntervalWeakHeat
 public import Carleman.Spatial.WeakTrajectoryHeatEnergies
 public import Carleman.Spatial.BoxOriginalWeakHeat
+public import Carleman.Spatial.HeatGradientExpression
+public import Carleman.Transfer.DirichletHeatGeometry
+public import Carleman.Weights.IntervalQClass
+public import Carleman.Transfer.BoxHeatContinuous
