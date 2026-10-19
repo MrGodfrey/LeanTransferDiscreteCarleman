@@ -933,3 +933,6 @@ public import Carleman.Control.BoxP1LoadCarleman
 public import Carleman.Control.PhysicalControlConclusion
 public import Carleman.Control.BoxP1PhysicalControl
 public import Carleman.Control.BoxP1FilteredControl
+public import Carleman.Geometry.CartesianDualCells
+public import Carleman.Spatial.FiniteCellReconstruction
+public import Carleman.Spatial.CartesianCellReconstruction

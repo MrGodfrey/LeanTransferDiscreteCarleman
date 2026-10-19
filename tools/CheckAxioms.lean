@@ -7180,6 +7180,50 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Physical.box_p1_filtered_observation_control
 #print axioms Carleman.Physical.box_p1_filtered_observation_control
 
+-- T175: actual dual-cell isometry, control pairing and cell averaging.
+#check @Carleman.cartesianDualCell
+#print axioms Carleman.cartesianDualCell
+#check @Carleman.cartesianDualCell_measurable
+#print axioms Carleman.cartesianDualCell_measurable
+#check @Carleman.cartesianDualCell_subset
+#print axioms Carleman.cartesianDualCell_subset
+#check @Carleman.cartesianDualCell_disjoint
+#print axioms Carleman.cartesianDualCell_disjoint
+#check @Carleman.cartesianDualCell_volume
+#print axioms Carleman.cartesianDualCell_volume
+#check @Carleman.cartesianDualCell_restrict_volume
+#print axioms Carleman.cartesianDualCell_restrict_volume
+#check @Carleman.finiteCellLinear
+#print axioms Carleman.finiteCellLinear
+#check @Carleman.finiteCellLinear_ae
+#print axioms Carleman.finiteCellLinear_ae
+#check @Carleman.finiteCellLinear_inner
+#print axioms Carleman.finiteCellLinear_inner
+#check @Carleman.finiteCellIsometry
+#print axioms Carleman.finiteCellIsometry
+#check @Carleman.finiteCellLinear_pairing
+#print axioms Carleman.finiteCellLinear_pairing
+#check @Carleman.finiteCellIsometry_adjoint
+#print axioms Carleman.finiteCellIsometry_adjoint
+#check @Carleman.finiteCellIsometry_average_norm
+#print axioms Carleman.finiteCellIsometry_average_norm
+#check @Carleman.cartesianCellIsometry
+#print axioms Carleman.cartesianCellIsometry
+#check @Carleman.cartesianCellIsometry_ae
+#print axioms Carleman.cartesianCellIsometry_ae
+#check @Carleman.cartesianCellIsometry_inner
+#print axioms Carleman.cartesianCellIsometry_inner
+#check @Carleman.cartesianCellControl
+#print axioms Carleman.cartesianCellControl
+#check @Carleman.cartesianCellControl_norm
+#print axioms Carleman.cartesianCellControl_norm
+#check @Carleman.cartesianCellControl_pairing
+#print axioms Carleman.cartesianCellControl_pairing
+#check @Carleman.cartesianCellIsometry_adjoint_average
+#print axioms Carleman.cartesianCellIsometry_adjoint_average
+#check @Carleman.cartesianCellIsometry_average_norm
+#print axioms Carleman.cartesianCellIsometry_average_norm
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
