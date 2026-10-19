@@ -550,3 +550,9 @@ public import Carleman.Geometry.KuhnBarycentricCoordinates
 public import Carleman.Geometry.KuhnOrderedCell
 public import Carleman.Geometry.FiniteCartesianKuhnCover
 public import Carleman.Geometry.KuhnCellInterior
+public import Carleman.Spatial.SimplexPositiveSupport
+public import Carleman.Geometry.KuhnLatticeCoordinates
+public import Carleman.Geometry.KuhnFaceMatching
+public import Carleman.Spatial.SimplexCoordinateBoundary
+public import Carleman.Spatial.CartesianKuhnNodal
+public import Carleman.Spatial.CartesianKuhnHatSupport

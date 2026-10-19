@@ -4552,6 +4552,93 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianFiniteSimplex_ae_partition
 #print axioms Carleman.cartesianFiniteSimplex_ae_partition
 
+#check @Carleman.integer_weighted_le_of_pos
+#print axioms Carleman.integer_weighted_le_of_pos
+#check @Carleman.simplexBarycentric_reconstruct
+#print axioms Carleman.simplexBarycentric_reconstruct
+#check @Carleman.simplex_mem_convexHull_positive_support
+#print axioms Carleman.simplex_mem_convexHull_positive_support
+#check @Carleman.simplex_integer_affine_le_of_pos
+#print axioms Carleman.simplex_integer_affine_le_of_pos
+#check @Carleman.cartesianGridPoint
+#print axioms Carleman.cartesianGridPoint
+#check @Carleman.cartesianGridCoordinate
+#print axioms Carleman.cartesianGridCoordinate
+#check @Carleman.cartesianGridCoordinate_apply
+#print axioms Carleman.cartesianGridCoordinate_apply
+#check @Carleman.cartesianGridCoordinate_point
+#print axioms Carleman.cartesianGridCoordinate_point
+#check @Carleman.kuhnVertexIndex
+#print axioms Carleman.kuhnVertexIndex
+#check @Carleman.cartesianKuhnSimplex_points_eq_gridPoint
+#print axioms Carleman.cartesianKuhnSimplex_points_eq_gridPoint
+#check @Carleman.cartesianGridCoordinate_vertex
+#print axioms Carleman.cartesianGridCoordinate_vertex
+#check @Carleman.kuhnVertexIndex_width
+#print axioms Carleman.kuhnVertexIndex_width
+#check @Carleman.kuhnVertexIndex_difference_width
+#print axioms Carleman.kuhnVertexIndex_difference_width
+#check @Carleman.cartesianKuhn_positive_vertex_upper
+#print axioms Carleman.cartesianKuhn_positive_vertex_upper
+#check @Carleman.cartesianKuhn_positive_vertex_lower
+#print axioms Carleman.cartesianKuhn_positive_vertex_lower
+#check @Carleman.cartesianKuhn_positive_vertex_difference
+#print axioms Carleman.cartesianKuhn_positive_vertex_difference
+#check @Carleman.cartesianKuhn_gridPoint_is_vertex
+#print axioms Carleman.cartesianKuhn_gridPoint_is_vertex
+#check @Carleman.cartesianKuhn_positive_vertex_mem_other
+#print axioms Carleman.cartesianKuhn_positive_vertex_mem_other
+#check @Carleman.cartesianKuhn_cells_common_face
+#print axioms Carleman.cartesianKuhn_cells_common_face
+#check @Carleman.cartesianKuhnPartition
+#print axioms Carleman.cartesianKuhnPartition
+#check @Carleman.cartesianKuhnPartition_faceMatching
+#print axioms Carleman.cartesianKuhnPartition_faceMatching
+#check @Carleman.simplex_affine_min_eq_of_pos
+#print axioms Carleman.simplex_affine_min_eq_of_pos
+#check @Carleman.simplex_coordinateBox_boundary_support
+#print axioms Carleman.simplex_coordinateBox_boundary_support
+#check @Carleman.cartesianKuhnPartition_boundaryFitted
+#print axioms Carleman.cartesianKuhnPartition_boundaryFitted
+#check @Carleman.cartesianKuhnHat
+#print axioms Carleman.cartesianKuhnHat
+#check @Carleman.cartesianKuhnHat_on_cell
+#print axioms Carleman.cartesianKuhnHat_on_cell
+#check @Carleman.cartesianKuhnHat_vertex
+#print axioms Carleman.cartesianKuhnHat_vertex
+#check @Carleman.cartesianKuhnHat_data_boundary
+#print axioms Carleman.cartesianKuhnHat_data_boundary
+#check @Carleman.cartesianKuhnHat_continuous
+#print axioms Carleman.cartesianKuhnHat_continuous
+#check @Carleman.cartesianKuhnHat_zero_compl
+#print axioms Carleman.cartesianKuhnHat_zero_compl
+#check @Carleman.cartesianKuhnHat_compact
+#print axioms Carleman.cartesianKuhnHat_compact
+#check @Carleman.cartesianKuhnHat_nonneg
+#print axioms Carleman.cartesianKuhnHat_nonneg
+#check @Carleman.cartesianKuhnHat_le_one
+#print axioms Carleman.cartesianKuhnHat_le_one
+#check @Carleman.cartesianKuhnHatLp
+#print axioms Carleman.cartesianKuhnHatLp
+#check @Carleman.cartesianKuhnHatLp_ae
+#print axioms Carleman.cartesianKuhnHatLp_ae
+#check @Carleman.cartesianKuhnHatLp_mem_dirichlet
+#print axioms Carleman.cartesianKuhnHatLp_mem_dirichlet
+#check @Carleman.cartesianKuhnHat_on_incidentCell
+#print axioms Carleman.cartesianKuhnHat_on_incidentCell
+#check @Carleman.cartesianKuhnHat_zero_on_nonincidentCell
+#print axioms Carleman.cartesianKuhnHat_zero_on_nonincidentCell
+#check @Carleman.cartesianFiniteNodeStar
+#print axioms Carleman.cartesianFiniteNodeStar
+#check @Carleman.cartesianFiniteNodeStar_compact
+#print axioms Carleman.cartesianFiniteNodeStar_compact
+#check @Carleman.cartesianKuhnHat_support_subset
+#print axioms Carleman.cartesianKuhnHat_support_subset
+#check @Carleman.cartesianKuhnHat_tsupport_subset
+#print axioms Carleman.cartesianKuhnHat_tsupport_subset
+#check @Carleman.cartesianKuhnHat_tsupport_subset_cellStar
+#print axioms Carleman.cartesianKuhnHat_tsupport_subset_cellStar
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
