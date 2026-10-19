@@ -333,3 +333,7 @@
 - T168 / C184：真实有限质量等距接口十六声明独立 AUXILIARY PASS；同SHA三项CI及8062声明raw审计逐字节一致。 固定证明 `30a03e32af45ef82baacbbfe6917cd7ceff234f3`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/32dc5007beb63b90e5a21096b93a0be14d566225/governance/reviews/T168-local-acceptance.md)。原文17/26，T169继续实际Cartesian控制范数与物理载荷Carleman估计。
 
 - T169 / C185：固定证明 `7d1cc86d3c0a01b524f099ba90baaf59784f159d` 的三项实际CI与原始审计核对通过；独立Agent验收仍在运行，当前仅BUILT。T170继续网格统一的Cartesian物理观测与实际HUM控制，原文覆盖17/26。
+
+- T169 / C185：13/13声明独立验收PASS，原物理质量/控制/全部载荷和统一量词无损；三项真实CI及原始审计逐字节核对。 固定证明 `7d1cc86d3c0a01b524f099ba90baaf59784f159d`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/cf033f11dc66ebab3c8a083ed3db516cb1d78183/governance/reviews/T169-local-acceptance.md)。原文17/26；当前执行任务不变。
+
+- T170 / C186：固定证明 `3a752bc986ef1a893825b6597211ccb519d8a292` 的三项实际CI与原始审计核对通过；独立Agent验收仍在运行，当前仅BUILT。T171继续原终端子空间滤波观测及完整Cartesian实例，原文覆盖17/26。

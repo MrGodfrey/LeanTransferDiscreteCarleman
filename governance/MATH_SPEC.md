@@ -1446,3 +1446,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 物理观测常数按固定相位界统一于全部空间类型、测度与节点相位，避免依赖网格数。实际Gaussian节点相位、质量等距 R=I、逆Γ、原节点势和实际 Laplacian 内部清偿所有接口；T169 原载荷 CE 无外加前提地供应权估计。最终 Cb/d0 先于 T/M，C(T,M) 先于全部网格/节点势/状态；原 S 尺度和两侧条件下完整物理伴随观测成立，观察项准确为原 U 中的 B* 范数，余项 exp(-2d0S)。真实 HUM 给每个 y0 的实际控制和完整 ForwardEquation，成本 sqrt(C)、终态 sqrt(C)exp(-d0S)。三模块三声明。
 
 仅为完整盒 Cartesian 实例，P1 与一般几何仍待；AUXILIARY、覆盖17/26。详见 `analysis/T170-cartesian-observation-control.md`。
+
+## T171 / C187：原终端子空间滤波观测（盒 Cartesian 实例）
+
+原 Rayleigh/对数条件精确给 4C0 exp(-2dS)K²≤1；实际 filter_reverse 只作用于终端所属 F 的数据，代入原松弛观测并吸收四分之一余项得到2C0观察界。最终盒Cartesian定理内部调用T170完整物理观测，C0=max(1,C)先于网格/节点势/θ/F/轨道，原完整方程和控制空间不变，不要求算子保持F。两模块三声明。
+
+完整滤波控制及一般几何继续；AUXILIARY、覆盖17/26。详见 `analysis/T171-cartesian-filtered-observation.md`。
