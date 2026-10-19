@@ -5234,6 +5234,45 @@ set_option pp.maxSteps 1000000
 #check @Carleman.allowed_weight_cartesian_hilbert_observation
 #print axioms Carleman.allowed_weight_cartesian_hilbert_observation
 
+#check @Carleman.cartesianKuhnReconstructionLp_eq_sum
+#print axioms Carleman.cartesianKuhnReconstructionLp_eq_sum
+#check @Carleman.cartesianPhysicalReconstructionLp
+#print axioms Carleman.cartesianPhysicalReconstructionLp
+#check @Carleman.cartesianPhysicalReconstructionLp_apply
+#print axioms Carleman.cartesianPhysicalReconstructionLp_apply
+#check @Carleman.cartesianPhysicalReconstructionLp_injective
+#print axioms Carleman.cartesianPhysicalReconstructionLp_injective
+#check @Carleman.cartesianKuhnMoment_eq_inner
+#print axioms Carleman.cartesianKuhnMoment_eq_inner
+#check @Carleman.cartesianKuhnMoment_pairing
+#print axioms Carleman.cartesianKuhnMoment_pairing
+#check @Carleman.cartesianPhysicalMoment
+#print axioms Carleman.cartesianPhysicalMoment
+#check @Carleman.cartesianPhysicalMoment_values
+#print axioms Carleman.cartesianPhysicalMoment_values
+#check @Carleman.cartesianPhysicalMoment_load_right_inverse
+#print axioms Carleman.cartesianPhysicalMoment_load_right_inverse
+#check @Carleman.cartesianReconstruction
+#print axioms Carleman.cartesianReconstruction
+#check @Carleman.cartesianReconstruction_RH
+#print axioms Carleman.cartesianReconstruction_RH
+#check @Carleman.cartesianReconstruction_J_values
+#print axioms Carleman.cartesianReconstruction_J_values
+#check @Carleman.cartesianReconstruction_QH
+#print axioms Carleman.cartesianReconstruction_QH
+#check @Carleman.cartesianReconstruction_G_values
+#print axioms Carleman.cartesianReconstruction_G_values
+#check @Carleman.cartesianReconstruction_injective
+#print axioms Carleman.cartesianReconstruction_injective
+#check @Carleman.cartesianLoadInterface
+#print axioms Carleman.cartesianLoadInterface
+#check @Carleman.cartesianLoadInterface_Γ
+#print axioms Carleman.cartesianLoadInterface_Γ
+#check @Carleman.cartesianLoadInterface_lift
+#print axioms Carleman.cartesianLoadInterface_lift
+#check @Carleman.cartesianLoadInterface_right_inverse
+#print axioms Carleman.cartesianLoadInterface_right_inverse
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

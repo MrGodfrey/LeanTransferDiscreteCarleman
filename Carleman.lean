@@ -638,3 +638,7 @@ public import Carleman.Spatial.AllowedCartesianObservation
 public import Carleman.Spatial.PhysicalFiniteSpace
 public import Carleman.Spatial.CartesianPhysicalSpaces
 public import Carleman.Spatial.CartesianHilbertObservation
+
+public import Carleman.Spatial.CartesianReconstructionLinear
+public import Carleman.Spatial.CartesianMassAdjoint
+public import Carleman.Spatial.CartesianReconstructionInterface
