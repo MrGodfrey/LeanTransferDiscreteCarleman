@@ -271,3 +271,5 @@
 - T137 / C153：完整原Cartesian粗滤波27声明独立PAPER PASS；同SHA三项CI、7042声明审计和原始证据逐字节一致。 固定证明 `ac30cc21022f162809fdd7f88550a3fd58e5ad35`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8827183f488ba99a84cad4439fe05026102cca78/governance/reviews/T137-local-acceptance.md)。原文16/26，T138继续原凸域零边界光滑测试的真实H¹₀成员资格。
 
 - T138 / C154：零边界测试10声明独立AUXILIARY PASS；同SHA三项CI、7052声明审计和原始证据逐字节一致。 固定证明 `d1dca8884990c684f923a4938e40a6cc88e1645f`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1e7becb351d9c120b6a7a02b43f6946f1103cee7/governance/reviews/T138-local-acceptance.md)。原文16/26，T139继续原全空间弱H¹的实际坐标反射与能量保持。
+
+- T139 / C155：全空间弱H¹反射31声明独立AUXILIARY PASS；同SHA正式三项CI、7156声明审计和原始证据逐字节一致；另一次取消运行排除。 固定证明 `b60153e14ed7085f5828aea582fbc74ade8286aa`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2b2269913a7e00a30e44f4c1b0c103b32b420db1/governance/reviews/T139-local-acceptance.md)。原文16/26，T140继续原弱Dirichlet Poisson解跨实际下侧盒面的奇延拓。
