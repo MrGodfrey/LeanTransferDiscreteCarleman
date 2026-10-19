@@ -259,3 +259,5 @@
 - T131 / C147：真实内域弱解、统一H¹界及穷竭极限21声明独立PASS；同SHA三项CI、6934声明递归审计及固定原始产物逐字节一致。 固定证明 `94f7ddd96b42ac046a4dc2cb14fffb5cd97f1402`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/fe89262333da68327ee463dad71de2c15b54d613/governance/reviews/T131-local-acceptance.md)。原文14/26，T132继续紧支测试Hessian能量与真实弱Poisson卷积平滑化。
 
 - T132 / C148：紧支测试Hessian能量与原H¹弱Poisson局部卷积PDE9声明独立PASS；同SHA三项CI、6951声明递归审计和原始产物逐字节一致。 固定证明 `a69b48ebeef0ea36e6f324c6bd2e1e7bf6659f52`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/63657bb8c48830439dffec4583cfff0894c68926/governance/reviews/T132-local-acceptance.md)。原文14/26，T133继续真实Poisson截断恒等式与统一H²界。
+
+- T133 / C149：实际Poisson截断恒等式与统一H²界12声明独立PASS；同SHA三项CI、6968声明递归审计及固定原始证据逐字节一致。 固定证明 `c3ea3c03352de258d944bf495695b31bcef3f3b0`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/970119bd158092cfb87421087edc1481ce9bf915/governance/reviews/T133-local-acceptance.md)。原文14/26，T134继续原H¹弱Poisson解的真实内部H²正则性。
