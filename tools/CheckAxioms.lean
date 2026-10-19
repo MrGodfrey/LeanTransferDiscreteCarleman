@@ -6715,6 +6715,65 @@ set_option pp.maxSteps 1000000
 #check @Carleman.box_interval_C2_gaussian_heat_both_signs
 #print axioms Carleman.box_interval_C2_gaussian_heat_both_signs
 
+#check @Carleman.coordinateReflection_zero
+#print axioms Carleman.coordinateReflection_zero
+#check @Carleman.coordinateSignFlip_involutive
+#print axioms Carleman.coordinateSignFlip_involutive
+#check @Carleman.coordinateReflection_sub_fixed
+#print axioms Carleman.coordinateReflection_sub_fixed
+#check @Carleman.convolution_zero_of_local_odd
+#print axioms Carleman.convolution_zero_of_local_odd
+#check @Carleman.coordinateSignFlip_commute
+#print axioms Carleman.coordinateSignFlip_commute
+#check @Carleman.SpatialTest.evenCoordinate
+#print axioms Carleman.SpatialTest.evenCoordinate
+#check @Carleman.SpatialTest.evenCoordinate_value
+#print axioms Carleman.SpatialTest.evenCoordinate_value
+#check @Carleman.SpatialTest.evenCoordinate_invariant
+#print axioms Carleman.SpatialTest.evenCoordinate_invariant
+#check @Carleman.SpatialTest.evenCoordinate_preserves_invariant
+#print axioms Carleman.SpatialTest.evenCoordinate_preserves_invariant
+#check @Carleman.SpatialTest.evenCoordinate_nonneg
+#print axioms Carleman.SpatialTest.evenCoordinate_nonneg
+#check @Carleman.SpatialTest.evenCoordinate_integral
+#print axioms Carleman.SpatialTest.evenCoordinate_integral
+#check @Carleman.SpatialTest.evenCoordinate_support
+#print axioms Carleman.SpatialTest.evenCoordinate_support
+#check @Carleman.SpatialTest.evenCoordinates
+#print axioms Carleman.SpatialTest.evenCoordinates
+#check @Carleman.SpatialTest.evenCoordinates_invariant
+#print axioms Carleman.SpatialTest.evenCoordinates_invariant
+#check @Carleman.SpatialTest.evenCoordinates_nonneg
+#print axioms Carleman.SpatialTest.evenCoordinates_nonneg
+#check @Carleman.SpatialTest.evenCoordinates_integral
+#print axioms Carleman.SpatialTest.evenCoordinates_integral
+#check @Carleman.SpatialTest.evenCoordinates_support
+#print axioms Carleman.SpatialTest.evenCoordinates_support
+#check @Carleman.evenSpatialMollifier
+#print axioms Carleman.evenSpatialMollifier
+#check @Carleman.evenSpatialMollifier_invariant
+#print axioms Carleman.evenSpatialMollifier_invariant
+#check @Carleman.evenSpatialMollifier_nonneg
+#print axioms Carleman.evenSpatialMollifier_nonneg
+#check @Carleman.evenSpatialMollifier_integral
+#print axioms Carleman.evenSpatialMollifier_integral
+#check @Carleman.evenSpatialMollifier_support
+#print axioms Carleman.evenSpatialMollifier_support
+#check @Carleman.evenSpatialMollifier_convolution_zero
+#print axioms Carleman.evenSpatialMollifier_convolution_zero
+#check @Carleman.SpatialTest.reflected_kernel_convolution
+#print axioms Carleman.SpatialTest.reflected_kernel_convolution
+#check @Carleman.SpatialTest.evenCoordinate_convolution
+#print axioms Carleman.SpatialTest.evenCoordinate_convolution
+#check @Carleman.SpatialTest.evenCoordinates_converges
+#print axioms Carleman.SpatialTest.evenCoordinates_converges
+#check @Carleman.evenSpatialMollifier_converges
+#print axioms Carleman.evenSpatialMollifier_converges
+#check @Carleman.evenSpatialMollifier_square_error_tendsto
+#print axioms Carleman.evenSpatialMollifier_square_error_tendsto
+#check @Carleman.evenSpatialMollifier_L2_error_tendsto
+#print axioms Carleman.evenSpatialMollifier_L2_error_tendsto
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

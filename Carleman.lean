@@ -854,3 +854,9 @@ public import Carleman.Spatial.BoxC2HeatEstimate
 public import Carleman.Weights.PeriodicPrimitive
 public import Carleman.Weights.PeriodicC2Extension
 public import Carleman.Spatial.BoxIntervalC2HeatEstimate
+
+public import Carleman.Spatial.LocalOddConvolution
+public import Carleman.Spatial.EvenCoordinateKernel
+public import Carleman.Spatial.EvenSpatialMollifier
+public import Carleman.Spatial.EvenKernelConvolution
+public import Carleman.Spatial.EvenMollifierLimit
