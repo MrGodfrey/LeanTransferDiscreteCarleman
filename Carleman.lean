@@ -730,3 +730,10 @@ public import Carleman.Spatial.WeakLaplacianLimit
 public import Carleman.Spatial.DirichletH2ApproximationLimit
 public import Carleman.Spatial.DirichletExtensionContinuity
 public import Carleman.Spatial.DirichletSubdomainExtension
+public import Carleman.Spatial.SubdomainZeroExtension
+public import Carleman.Spatial.DirichletExtensionPairing
+public import Carleman.Spatial.DirichletExtensionHessianTest
+public import Carleman.Spatial.DirichletWeakSolve
+public import Carleman.Spatial.DirichletSubdomainSolve
+public import Carleman.Spatial.SpatialTestExhaustion
+public import Carleman.Spatial.DirichletExhaustionLimit

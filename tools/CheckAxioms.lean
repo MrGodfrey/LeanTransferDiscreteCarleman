@@ -5733,6 +5733,49 @@ set_option pp.maxSteps 1000000
 #check @Carleman.WeakSobolevJet.extendDirichlet_mem
 #print axioms Carleman.WeakSobolevJet.extendDirichlet_mem
 
+#check @Carleman.subdomainZeroExtend
+#print axioms Carleman.subdomainZeroExtend
+#check @Carleman.subdomainZeroExtend_ae
+#print axioms Carleman.subdomainZeroExtend_ae
+#check @Carleman.subdomainLp_zeroExtend
+#print axioms Carleman.subdomainLp_zeroExtend
+#check @Carleman.subdomainZeroExtend_norm
+#print axioms Carleman.subdomainZeroExtend_norm
+#check @Carleman.subdomainZeroExtend_inner
+#print axioms Carleman.subdomainZeroExtend_inner
+#check @Carleman.SpatialTest.restrictSubdomain_mono
+#print axioms Carleman.SpatialTest.restrictSubdomain_mono
+#check @Carleman.WeakSobolevJet.extendDirichlet_field
+#print axioms Carleman.WeakSobolevJet.extendDirichlet_field
+#check @Carleman.WeakSobolevJet.extendDirichlet_field_norm
+#print axioms Carleman.WeakSobolevJet.extendDirichlet_field_norm
+#check @Carleman.WeakSobolevJet.extendDirichlet_pairing
+#print axioms Carleman.WeakSobolevJet.extendDirichlet_pairing
+#check @Carleman.WeakSobolevJet.extendDirichlet_poisson_test
+#print axioms Carleman.WeakSobolevJet.extendDirichlet_poisson_test
+#check @Carleman.subdomainZeroExtend_test_inner
+#print axioms Carleman.subdomainZeroExtend_test_inner
+#check @Carleman.subdomainZeroExtend_derivativeTest_inner
+#print axioms Carleman.subdomainZeroExtend_derivativeTest_inner
+#check @Carleman.derivativeComponent_subdomainZeroExtend
+#print axioms Carleman.derivativeComponent_subdomainZeroExtend
+#check @Carleman.WeakSobolevJet.extendDirichlet_hessian_test
+#print axioms Carleman.WeakSobolevJet.extendDirichlet_hessian_test
+#check @Carleman.exists_dirichlet_weak_solution
+#print axioms Carleman.exists_dirichlet_weak_solution
+#check @Carleman.dirichlet_weak_solution_gradient_bound
+#print axioms Carleman.dirichlet_weak_solution_gradient_bound
+#check @Carleman.dirichlet_weak_solution_energy_bound
+#print axioms Carleman.dirichlet_weak_solution_energy_bound
+#check @Carleman.dirichlet_subdomain_energy_bound
+#print axioms Carleman.dirichlet_subdomain_energy_bound
+#check @Carleman.exists_uniform_dirichlet_subdomain_solutions
+#print axioms Carleman.exists_uniform_dirichlet_subdomain_solutions
+#check @Carleman.SpatialTest.eventually_support_subset
+#print axioms Carleman.SpatialTest.eventually_support_subset
+#check @Carleman.exists_dirichlet_H2_of_exhaustion
+#print axioms Carleman.exists_dirichlet_H2_of_exhaustion
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
