@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T150",
-    "supervisor_checked_at": "2026-10-19T10:19:20.813581+00:00",
-    "next_action": "独立验收原Gaussian热系数的实际展开；继续矩阵项识别、qclass统一余项和真实混合项Young估计。",
+    "current_task_id": "T151",
+    "supervisor_checked_at": "2026-10-19T10:28:36.902261+00:00",
+    "next_action": "独立验收真实光滑盒heatcross；继续观测区吸收、从z返回u和有限正则/弱轨道扩展。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T10:19:20.813581+00:00"
+    "last_activity_at": "2026-10-19T10:28:36.902261+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "37d15b168e8c1ac3f313848be5a0c56594d2aad2",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39235457780/attempts/1",
-      "finished_at": "2026-10-19T10:11:55.969309+00:00",
+      "checked_sha": "cc5e0b8ad589a03b86766a8c2c5dedc49449ced4",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39236637373/attempts/1",
+      "finished_at": "2026-10-19T10:21:41.810870+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "37d15b168e8c1ac3f313848be5a0c56594d2aad2"
+      "source_head_sha": "cc5e0b8ad589a03b86766a8c2c5dedc49449ced4"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "37d15b168e8c1ac3f313848be5a0c56594d2aad2",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39235457780/attempts/1",
-      "finished_at": "2026-10-19T10:11:55.969309+00:00",
+      "checked_sha": "cc5e0b8ad589a03b86766a8c2c5dedc49449ced4",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39236637373/attempts/1",
+      "finished_at": "2026-10-19T10:21:41.810870+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "37d15b168e8c1ac3f313848be5a0c56594d2aad2"
+      "source_head_sha": "cc5e0b8ad589a03b86766a8c2c5dedc49449ced4"
     }
   },
   "milestones": [
@@ -14767,7 +14767,7 @@
       "paper_ref": "Original prop:continuousCE and eq:heatcross, exact Gaussian heat coefficients",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:continuousCE"
@@ -14806,9 +14806,61 @@
         "Carleman.interiorGaussianHeatB_formula",
         "Carleman.interiorGaussianHeatB_leading"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "cc5e0b8ad589a03b86766a8c2c5dedc49449ced4",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "cc5e0b8ad589a03b86766a8c2c5dedc49449ced4",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39236637373/attempts/1",
+        "finished_at": "2026-10-19T10:21:41.810870+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "cc5e0b8ad589a03b86766a8c2c5dedc49449ced4"
+      },
+      "semantic_review": {
+        "checked_sha": "cc5e0b8ad589a03b86766a8c2c5dedc49449ced4",
+        "declarations": [
+          "Carleman.interiorCarlemanProfile_laplacian",
+          "Carleman.interiorCarlemanProfile_energy",
+          "Carleman.interiorCarlemanProfile_energy_fderiv",
+          "Carleman.interiorCarlemanProfile_laplacian_fderiv",
+          "Carleman.interiorCarlemanProfile_energy_pair",
+          "Carleman.interiorCarlemanProfile_gaussian_pair",
+          "Carleman.separableHeatPhase",
+          "Carleman.separableHeatPhase_contDiff",
+          "Carleman.separableHeatPhase_timeD",
+          "Carleman.separableHeatPhase_spatialD",
+          "Carleman.separableHeatPhase_lap",
+          "Carleman.separableHeatPhase_energy",
+          "Carleman.separableHeatPhase_pair",
+          "Carleman.directionalPair_add_left",
+          "Carleman.directionalPair_const_mul_left",
+          "Carleman.interiorGaussianHeatPhase",
+          "Carleman.interiorGaussianHeatPsi",
+          "Carleman.interiorGaussianHeatPhase_contDiff",
+          "Carleman.interiorGaussianHeatPsi_contDiff",
+          "Carleman.interiorGaussianHeatPhase_periodic",
+          "Carleman.interiorGaussianHeatPsi_periodic",
+          "Carleman.interiorGaussianHeatPsi_formula",
+          "Carleman.interiorGaussianHeatPsi_eq_spatial",
+          "Carleman.interiorGaussianHeatK_formula",
+          "Carleman.interiorGaussianHeatK_explicit",
+          "Carleman.interiorGaussianHeatPsi_spatialD",
+          "Carleman.interiorGaussianHeatPsi_energy",
+          "Carleman.pointwiseHeatB_lap_cancel",
+          "Carleman.interiorGaussianHeatK_timeD",
+          "Carleman.interiorGaussianHeatK_pair",
+          "Carleman.interiorGaussianHeatB_formula",
+          "Carleman.interiorGaussianHeatB_leading"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/43200933a1d5d1d3c769f387b6b55bede1771082/governance/reviews/T150-local-acceptance.md",
+        "reviewed_at": "2026-10-19T10:25:27+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C160",
         "C161",
@@ -14816,7 +14868,47 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "真实Gaussian的Laplacian/梯度能量及导数、实际分离时空相位、同一Ψ/k/B全系数；B主项精确4q³l³φ³g(lg−6)，其余q²/q′/q″全保留。限C∞准备，尚未qclass余项/Young/观测吸收或原C²权和弱轨道。"
+      "scope_notes": "真实Gaussian的Laplacian/梯度能量及导数、实际分离时空相位、同一Ψ/k/B全系数；B主项精确4q³l³φ³g(lg−6)，其余q²/q′/q″全保留。限C∞准备，尚未qclass余项/Young/观测吸收或原C²权和弱轨道。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C167",
+      "title": "实际高斯热权的统一余项、混合项与光滑盒heatcross",
+      "paper_ref": "Original prop:continuousCE and eq:heatcross, actual smooth periodic box estimate",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:continuousCE"
+      ],
+      "lean_declarations": [
+        "Carleman.interiorGaussianHeatPhase_second_spatialD",
+        "Carleman.interiorGaussianHeatMatrixEnergy_formula",
+        "Carleman.interiorGaussianHeatMatrixEnergy_coercive",
+        "Carleman.heat_remainder_bound",
+        "Carleman.interiorHeatLeadingCoefficient",
+        "Carleman.interiorGaussianHeatB_uniform_lower_bound",
+        "Carleman.directionalEnergy_nonneg",
+        "Carleman.directionalPair_young",
+        "Carleman.interiorGaussianHeatPsi_uniform_energy_bound",
+        "Carleman.interiorGaussianHeat_mixed_term_bound",
+        "Carleman.interiorGaussianHeat_bulk_lower_bound",
+        "Carleman.boxTimeIntegral_const_mul",
+        "Carleman.boxTimeIntegral_mono_on",
+        "Carleman.interiorHeatLeadingCoefficient_continuous",
+        "Carleman.box_smooth_gaussian_heat_cross"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C165",
+        "C166"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "实际矩阵二次型、B完整余项、真实混合项Young和同一bulk下界，接真实盒时空积分得到heatcross，主项常数6及残差1/4独立λ，余项C(l)先于全部T/q/β/u。限C∞周期盒，未观测吸收/返回u/原C²权及弱轨道，不提升P024。"
     }
   ],
   "events": [
@@ -15651,6 +15743,11 @@
       "at": "2026-10-19T10:19:20.813581+00:00",
       "public_summary": "光滑周期盒积分热不等式已独立验收；原Gaussian相位及Ψ/k/B真实全系数已构建审计，进入独立验收。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/75ec59948b7632100d8a2a0bc3c84408f17e9995/governance/reviews/T149-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T10:28:36.902261+00:00",
+      "public_summary": "原Gaussian实际系数独立验收通过；真实光滑盒heatcross已构建审计，交独立验收并继续观测吸收。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/43200933a1d5d1d3c769f387b6b55bede1771082/governance/reviews/T150-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -16002,7 +16099,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/77687866a93f6aa5eb4200d6c4a4640d0a69bbb0/governance/reviews/T148-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39234467863/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/75ec59948b7632100d8a2a0bc3c84408f17e9995/governance/reviews/T149-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39235457780/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39235457780/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/43200933a1d5d1d3c769f387b6b55bede1771082/governance/reviews/T150-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39236637373/attempts/1"
     ]
   },
   "schedules": [
@@ -35043,10 +35142,10 @@
       ],
       "branch": "main",
       "base_commit": "37d15b168e8c1ac3f313848be5a0c56594d2aad2",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "cc5e0b8ad589a03b86766a8c2c5dedc49449ced4",
+      "merge_commit": "cc5e0b8ad589a03b86766a8c2c5dedc49449ced4",
       "lean_declarations": [
         "Carleman.interiorCarlemanProfile_laplacian",
         "Carleman.interiorCarlemanProfile_energy",
@@ -35081,12 +35180,23 @@
         "Carleman.interiorGaussianHeatB_formula",
         "Carleman.interiorGaussianHeatB_leading"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "cc5e0b8ad589a03b86766a8c2c5dedc49449ced4",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39236637373/attempts/1",
+        "finished_at": "2026-10-19T10:21:41.810870+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "cc5e0b8ad589a03b86766a8c2c5dedc49449ced4"
+      },
       "blocker": null,
       "attempts": [
         "四模块32声明联合定向3238 jobs、全库4012 jobs和7530声明递归公理审计通过。"
       ],
-      "next_action": "独立验收原Gaussian热系数的实际展开；继续矩阵项识别、qclass统一余项和真实混合项Young估计。",
+      "next_action": "原Gaussian真实热系数独立验收通过；接续实际heatcross及观测吸收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -35098,6 +35208,95 @@
         "recursive_axiom_audit": 7530,
         "new_explicit_declarations": 32,
         "declaration_artifact_sha256": "0cac9584b0f3a9f9d43f52e43e9e2a0e480d1627147875e6155b5ec0805412b8",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "cc5e0b8ad589a03b86766a8c2c5dedc49449ced4",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C166"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "cc5e0b8ad589a03b86766a8c2c5dedc49449ced4",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T10:25:27+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/43200933a1d5d1d3c769f387b6b55bede1771082/governance/reviews/T150-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "cc5e0b8ad589a03b86766a8c2c5dedc49449ced4",
+        "checked_sha": "cc5e0b8ad589a03b86766a8c2c5dedc49449ced4",
+        "run_id": 39236637373,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 4012,
+        "recursive_axiom_audit": 7530,
+        "new_explicit_declarations": 32,
+        "declaration_artifact_sha256": "0cac9584b0f3a9f9d43f52e43e9e2a0e480d1627147875e6155b5ec0805412b8",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T151",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "实际高斯热权的统一余项、混合项与光滑盒heatcross",
+      "goal_ids": [
+        "C167"
+      ],
+      "acceptance": [
+        "实际矩阵识别与同一B全部时间余项保留",
+        "真实Ψ梯度及有限方向Young平方证明",
+        "常数只依赖固定空间域/中心/λ，先于T/q/β/u",
+        "同一bulk下界与实际柱体单调积分、时间/空间通量连接",
+        "最终heatcross主项常数6、残差1/4及有符号主项准确；C∞盒限制明确"
+      ],
+      "dependencies": [
+        "C165",
+        "C166"
+      ],
+      "branch": "main",
+      "base_commit": "cc5e0b8ad589a03b86766a8c2c5dedc49449ced4",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.interiorGaussianHeatPhase_second_spatialD",
+        "Carleman.interiorGaussianHeatMatrixEnergy_formula",
+        "Carleman.interiorGaussianHeatMatrixEnergy_coercive",
+        "Carleman.heat_remainder_bound",
+        "Carleman.interiorHeatLeadingCoefficient",
+        "Carleman.interiorGaussianHeatB_uniform_lower_bound",
+        "Carleman.directionalEnergy_nonneg",
+        "Carleman.directionalPair_young",
+        "Carleman.interiorGaussianHeatPsi_uniform_energy_bound",
+        "Carleman.interiorGaussianHeat_mixed_term_bound",
+        "Carleman.interiorGaussianHeat_bulk_lower_bound",
+        "Carleman.boxTimeIntegral_const_mul",
+        "Carleman.boxTimeIntegral_mono_on",
+        "Carleman.interiorHeatLeadingCoefficient_continuous",
+        "Carleman.box_smooth_gaussian_heat_cross"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "八模块15声明定向3280 jobs、全库4020 jobs和7550声明递归公理审计通过。"
+      ],
+      "next_action": "独立验收真实光滑盒heatcross；继续观测区吸收、从z返回u和有限正则/弱轨道扩展。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4020,
+        "recursive_axiom_audit": 7550,
+        "new_explicit_declarations": 15,
+        "declaration_artifact_sha256": "986062c9e4600c5ca094723a3d13273c5dc8cba84ab415126b288ed14ff95628",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

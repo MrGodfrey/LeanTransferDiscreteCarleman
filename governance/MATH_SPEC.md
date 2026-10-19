@@ -1332,3 +1332,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T150 / C166：原高斯相位与热系数的实际微分展开
 
 真实Gaussian的Laplacian、梯度能量及其导数，真实分离时空相位的时间/空间微分和配对，内部给原L=qρ、Ψ=−ΔL−8qlφ的光滑周期与完整系数公式。同一实际k=q′ρ+q²G+8qlφ，实际B经乘积微分消去Laplacian后精确为4q³l³φ³g(lg−6)加全部q²/q′/q″项；g为真实∇ψ范数平方。原Ψ梯度及平方和也精确计算。四模块32声明，AUXILIARY；未证明qclass余项界/混合项Young/吸收、原C²权或完整CE，P024不提升。详见 `analysis/T150-gaussian-heat-coefficients.md`。
+
+## T151 / C167：真实高斯热权的统一余项、混合项与光滑盒 heatcross
+
+实际矩阵二次型内部化为4qlφ能量加非负平方；同一B的全部余项由实际q′/q″界与紧空间系数界控制。实际Ψ梯度能量内部估计，有限方向真实平方求和证明Young混合项界。代入同一bulk并在真实柱体限制测度上单调积分，得到原形式heatcross，主项常数6、残差系数1/4，余项C(l)先于所有T/q/β/u选择。八模块15声明，AUXILIARY光滑周期盒结果；尚需观测吸收、返回u、原C²权与完整弱轨道、一般凸多面体和时间反射，P024不提升。详见 `analysis/T151-gaussian-heat-cross.md`。

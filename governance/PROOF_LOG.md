@@ -293,3 +293,5 @@
 - T148 / C164：实际盒面符号与真实散度积分15声明独立AUXILIARY PASS；同SHA三项CI与7476声明raw逐字节相同。 固定证明 `a3a39eadfe9f18fee3bdd0a60b07cd5856bd3dbb`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/77687866a93f6aa5eb4200d6c4a4640d0a69bbb0/governance/reviews/T148-local-acceptance.md)。原文17/26，T149继续真实光滑周期盒状态的积分热不等式。
 
 - T149 / C165：真实光滑周期盒积分热不等式15声明独立AUXILIARY PASS；同SHA三项CI与7494声明raw逐字节相同。 固定证明 `37d15b168e8c1ac3f313848be5a0c56594d2aad2`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/75ec59948b7632100d8a2a0bc3c84408f17e9995/governance/reviews/T149-local-acceptance.md)。原文17/26，T150继续原Gaussian相位与热系数的实际微分展开。
+
+- T150 / C166：原Gaussian真实热系数32声明独立AUXILIARY PASS；同SHA三项CI与7530声明raw逐字节相同。 固定证明 `cc5e0b8ad589a03b86766a8c2c5dedc49449ced4`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/43200933a1d5d1d3c769f387b6b55bede1771082/governance/reviews/T150-local-acceptance.md)。原文17/26，T151继续实际高斯热权的统一余项、混合项与光滑盒heatcross。
