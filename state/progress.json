@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T108",
-    "supervisor_checked_at": "2026-10-19T03:52:30.221327+00:00",
-    "next_action": "固定SHA独立验收同一原物理Hilbert测试及完整WeightedTest；继续原刚度、逼近和统一数值数据。",
+    "current_task_id": "T109",
+    "supervisor_checked_at": "2026-10-19T04:00:59.581602+00:00",
+    "next_action": "固定SHA独立验收原物理刚度及加权范数/稳定性；继续原B.2到WeightedApproximation及完整数值数据。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T03:52:30.221327+00:00"
+    "last_activity_at": "2026-10-19T04:00:59.581602+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "513b40027762c901232372629409f0001dea82ab",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39196236578/attempts/1",
-      "finished_at": "2026-10-19T03:47:54.181377+00:00",
+      "checked_sha": "cd4c4c9e459a1757a027c36fd05fa3dbfd83fc92",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39196739700/attempts/1",
+      "finished_at": "2026-10-19T03:55:24.967216+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "513b40027762c901232372629409f0001dea82ab"
+      "source_head_sha": "cd4c4c9e459a1757a027c36fd05fa3dbfd83fc92"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "513b40027762c901232372629409f0001dea82ab",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39196236578/attempts/1",
-      "finished_at": "2026-10-19T03:47:54.181377+00:00",
+      "checked_sha": "cd4c4c9e459a1757a027c36fd05fa3dbfd83fc92",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39196739700/attempts/1",
+      "finished_at": "2026-10-19T03:55:24.967216+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "513b40027762c901232372629409f0001dea82ab"
+      "source_head_sha": "cd4c4c9e459a1757a027c36fd05fa3dbfd83fc92"
     }
   },
   "milestones": [
@@ -11645,7 +11645,7 @@
       "paper_ref": "Original physical Hilbert squared-weight test and full uniform N4 WeightedTest interface",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "ass:test",
@@ -11669,9 +11669,43 @@
         "Carleman.cartesianPhysicalTest_nonneg",
         "Carleman.cartesian_weightedTest_interface"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "cd4c4c9e459a1757a027c36fd05fa3dbfd83fc92",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "cd4c4c9e459a1757a027c36fd05fa3dbfd83fc92",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39196739700/attempts/1",
+        "finished_at": "2026-10-19T03:55:24.967216+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "cd4c4c9e459a1757a027c36fd05fa3dbfd83fc92"
+      },
+      "semantic_review": {
+        "checked_sha": "cd4c4c9e459a1757a027c36fd05fa3dbfd83fc92",
+        "declarations": [
+          "Carleman.PhysicalFiniteSpace.multiplierFamily",
+          "Carleman.PhysicalFiniteSpace.multiplierFamily_apply",
+          "Carleman.PhysicalFiniteSpace.multiplierFamily_hasDerivWithinAt",
+          "Carleman.cartesianPhysicalTest",
+          "Carleman.cartesianPhysicalTestDerivative",
+          "Carleman.cartesianPhysicalTest_values",
+          "Carleman.cartesianPhysicalTestDerivative_values",
+          "Carleman.cartesianPhysicalTest_hasDerivWithinAt",
+          "Carleman.cartesianPhysicalTest_pairing_hasDerivWithinAt",
+          "Carleman.cartesianPhysicalTest_endpoint",
+          "Carleman.cartesianPhysicalTest_symmetric",
+          "Carleman.cartesianPhysicalTest_pairing",
+          "Carleman.cartesianPhysicalTest_nonneg",
+          "Carleman.cartesian_weightedTest_interface"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/931d28da09451e562916c261c7cebc8a4becf45b/governance/reviews/T108-local-acceptance.md",
+        "reviewed_at": "2026-10-19T03:57:44+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C123",
         "C120",
@@ -11679,7 +11713,56 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "同一原物理Hilbert平方权测试及其真实算子范数导数、二次配对时间导数、周期端点、对称性、精确节点能量及非负。完整WeightedTest明确op/derivative等于同一实际原公式，真实时间/超逼近估计内部组合，弱jet值唯一性识别接口残差和重构；统一ε/Ctime/Csuper先于所有网格、周期、允许权、两符号及完整状态。不以有限维连续性替代统一估计。完整FD仍待其他数据组装，AUXILIARY14/26。"
+      "scope_notes": "同一原物理Hilbert平方权测试及其真实算子范数导数、二次配对时间导数、周期端点、对称性、精确节点能量及非负。完整WeightedTest明确op/derivative等于同一实际原公式，真实时间/超逼近估计内部组合，弱jet值唯一性识别接口残差和重构；统一ε/Ctime/Csuper先于所有网格、周期、允许权、两符号及完整状态。不以有限维连续性替代统一估计。完整FD仍待其他数据组装，AUXILIARY14/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C125",
+      "title": "原物理刚度、加权范数与统一稳定性",
+      "paper_ref": "Original physical FD operator self-adjointness/nonnegativity, exact stiffness and prescribed weighted norm/stability identities",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "ass:interfaces",
+        "ass:loads",
+        "Ptest",
+        "prop:fd"
+      ],
+      "lean_declarations": [
+        "Carleman.cartesianInteriorData_add",
+        "Carleman.cartesianInteriorData_smul",
+        "Carleman.cartesianPhysicalLaplacian",
+        "Carleman.cartesianPhysicalLaplacian_values",
+        "Carleman.cartesianPhysicalLaplacian_stiffness",
+        "Carleman.cartesianPhysicalLaplacian_symmetric",
+        "Carleman.cartesianPhysicalLaplacian_adjoint",
+        "Carleman.cartesianPhysicalLaplacian_nonneg",
+        "Carleman.cartesianStateSeminorm",
+        "Carleman.cartesianControlSeminorm",
+        "Carleman.cartesianStateSeminorm_apply",
+        "Carleman.cartesianControlSeminorm_apply",
+        "Carleman.cartesianStateSeminorm_definite",
+        "Carleman.cartesianControlSeminorm_definite",
+        "Carleman.cartesianStateSeminorm_weight_scale",
+        "Carleman.cartesianControlSeminorm_weight_scale",
+        "Carleman.cartesianPhysicalTest_positive",
+        "Carleman.cartesianReconstruction_norm_sq_bounds",
+        "Carleman.allowed_weight_cartesian_physical_stability"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C124",
+        "C123",
+        "C116",
+        "C108"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "同一原2d+1点差分算子成为真实物理Hilbert连续算子，证明原精确刚度、真实Hilbert伴随相等与非负。状态/控制实际加权seminorm正定、权同质性，原测试严格正；实际RH的精确无权范数界、原允许权重构双向界/同一载荷界/测试范数比较均接入原接口，统一常数先于全部网格、周期、权族与全状态。N3接口及完整FD统一装配仍待，AUXILIARY14/26。"
     }
   ],
   "events": [
@@ -12304,6 +12387,11 @@
       "at": "2026-10-19T03:52:30.221327+00:00",
       "public_summary": "同一原R/J/Q/G和载荷接口已独立验收；完整物理WeightedTest14声明构建审计通过。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bbbf0255c69b580b8331a56327e224a3033aeee0/governance/reviews/T107-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T04:00:59.581602+00:00",
+      "public_summary": "同一原物理WeightedTest已独立验收；原物理刚度、加权范数及统一稳定性19声明构建审计通过。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/931d28da09451e562916c261c7cebc8a4becf45b/governance/reviews/T108-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -12571,7 +12659,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b8fb7f34377ab18ef1dde9f9428457efca57a136/governance/reviews/T106-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39195706077/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bbbf0255c69b580b8331a56327e224a3033aeee0/governance/reviews/T107-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39196236578/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39196236578/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/931d28da09451e562916c261c7cebc8a4becf45b/governance/reviews/T108-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39196739700/attempts/1"
     ]
   },
   "schedules": [
@@ -27429,10 +27519,10 @@
       ],
       "branch": "main",
       "base_commit": "513b40027762c901232372629409f0001dea82ab",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "cd4c4c9e459a1757a027c36fd05fa3dbfd83fc92",
+      "merge_commit": "cd4c4c9e459a1757a027c36fd05fa3dbfd83fc92",
       "lean_declarations": [
         "Carleman.PhysicalFiniteSpace.multiplierFamily",
         "Carleman.PhysicalFiniteSpace.multiplierFamily_apply",
@@ -27449,12 +27539,23 @@
         "Carleman.cartesianPhysicalTest_nonneg",
         "Carleman.cartesian_weightedTest_interface"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "cd4c4c9e459a1757a027c36fd05fa3dbfd83fc92",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39196739700/attempts/1",
+        "finished_at": "2026-10-19T03:55:24.967216+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "cd4c4c9e459a1757a027c36fd05fa3dbfd83fc92"
+      },
       "blocker": null,
       "attempts": [
         "三模块14显式声明定向3751 jobs、全库3827 jobs通过；6513声明递归公理审计PASS。"
       ],
-      "next_action": "固定SHA独立验收同一原物理Hilbert测试及完整WeightedTest；继续原刚度、逼近和统一数值数据。",
+      "next_action": "同一原物理Hilbert测试及完整WeightedTest已独立验收；继续原刚度、加权范数和统一数值数据。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -27466,6 +27567,101 @@
         "recursive_axiom_audit": 6513,
         "new_explicit_declarations": 14,
         "declaration_artifact_sha256": "29f62e38b53d318302863184a77f5478cd4895ecf8756ca9cef8189e3ce66229",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "cd4c4c9e459a1757a027c36fd05fa3dbfd83fc92",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C124"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "cd4c4c9e459a1757a027c36fd05fa3dbfd83fc92",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T03:57:44+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/931d28da09451e562916c261c7cebc8a4becf45b/governance/reviews/T108-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "cd4c4c9e459a1757a027c36fd05fa3dbfd83fc92",
+        "checked_sha": "cd4c4c9e459a1757a027c36fd05fa3dbfd83fc92",
+        "run_id": 39196739700,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3827,
+        "recursive_axiom_audit": 6513,
+        "new_explicit_declarations": 14,
+        "declaration_artifact_sha256": "29f62e38b53d318302863184a77f5478cd4895ecf8756ca9cef8189e3ce66229",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T109",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原物理刚度、加权范数与统一稳定性",
+      "goal_ids": [
+        "C125"
+      ],
+      "acceptance": [
+        "同一原差分算子逐值公式，全部内部节点及零边界保留",
+        "实际物理Hilbert精确刚度、自伴与非负，不混用函数sup内积",
+        "原状态/控制加权seminorm正定及权同质性，原测试严格正定",
+        "同一R与实际load/test范数界，精确无权常数和全允许权统一常数",
+        "N3与完整数值数据仍待，不提前提升FD或隐去原A1"
+      ],
+      "dependencies": [
+        "C124",
+        "C123",
+        "C116",
+        "C108"
+      ],
+      "branch": "main",
+      "base_commit": "cd4c4c9e459a1757a027c36fd05fa3dbfd83fc92",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.cartesianInteriorData_add",
+        "Carleman.cartesianInteriorData_smul",
+        "Carleman.cartesianPhysicalLaplacian",
+        "Carleman.cartesianPhysicalLaplacian_values",
+        "Carleman.cartesianPhysicalLaplacian_stiffness",
+        "Carleman.cartesianPhysicalLaplacian_symmetric",
+        "Carleman.cartesianPhysicalLaplacian_adjoint",
+        "Carleman.cartesianPhysicalLaplacian_nonneg",
+        "Carleman.cartesianStateSeminorm",
+        "Carleman.cartesianControlSeminorm",
+        "Carleman.cartesianStateSeminorm_apply",
+        "Carleman.cartesianControlSeminorm_apply",
+        "Carleman.cartesianStateSeminorm_definite",
+        "Carleman.cartesianControlSeminorm_definite",
+        "Carleman.cartesianStateSeminorm_weight_scale",
+        "Carleman.cartesianControlSeminorm_weight_scale",
+        "Carleman.cartesianPhysicalTest_positive",
+        "Carleman.cartesianReconstruction_norm_sq_bounds",
+        "Carleman.allowed_weight_cartesian_physical_stability"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "三模块19显式声明定向3515 jobs、全库3830 jobs通过；6545声明递归公理审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收原物理刚度及加权范数/稳定性；继续原B.2到WeightedApproximation及完整数值数据。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3830,
+        "recursive_axiom_audit": 6545,
+        "new_explicit_declarations": 19,
+        "declaration_artifact_sha256": "b02354e8474428f9e08778bd69bb0742d2b7fa7f6b8f6874d049884bdc2a34e4",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

@@ -209,3 +209,5 @@
 - T106 / C122：原物理Hilbert空间、精确加权范数、真实控制伴随及观察界23声明独立PASS；同SHA三项CI、6406声明递归审计和原始产物逐字节一致。 固定证明 `337d9c1b8c5fadce4e638a2c96311e230ee94bb1`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b8fb7f34377ab18ef1dde9f9428457efca57a136/governance/reviews/T106-local-acceptance.md)。原文14/26，T107继续原FD重构、质量伴随与载荷接口。
 
 - T107 / C123：同一原R/J/Q/G、真实物理Hilbert质量伴随及实际载荷接口19声明独立PASS；同SHA三项CI、6476声明递归审计和固定产物逐字节一致。 固定证明 `513b40027762c901232372629409f0001dea82ab`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bbbf0255c69b580b8331a56327e224a3033aeee0/governance/reviews/T107-local-acceptance.md)。原文14/26，T108继续同一原物理Hilbert测试的完整WeightedTest接口。
+
+- T108 / C124：原物理Hilbert测试、真实算子范数导数和完整统一WeightedTest14声明独立PASS；同SHA三项CI、6513声明递归审计和固定产物逐字节一致。 固定证明 `cd4c4c9e459a1757a027c36fd05fa3dbfd83fc92`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/931d28da09451e562916c261c7cebc8a4becf45b/governance/reviews/T108-local-acceptance.md)。原文14/26，T109继续原物理刚度、加权范数与统一稳定性。
