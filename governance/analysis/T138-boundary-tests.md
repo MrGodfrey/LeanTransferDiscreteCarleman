@@ -1,0 +1,11 @@
+# T138：原凸域上的真实零边界光滑测试属于 H¹₀
+
+为跨盒面反射的弱Poisson证明提供实际合法测试，不能把边界为零或反对称测试直接假定为原H¹₀成员。此批从现有闭包定义直接构造该资格。
+
+`PiecewiseSmoothContraction` 首先证明在C¹点x，真实逆内缩点趋于x，附近可微性与导数连续性给内缩函数真实Fréchet导数极限。对紧支Lipschitz函数在a.e.点C¹且拓扑支持包含closure S，内缩支持严格进入S；所有函数/导数的统一有界性和共同紧支持使现有L²支配收敛给完整H¹强极限。每个内缩函数再由实际卷积逼近属于域内测试闭包，因此极限也属于原dirichletJetSpace。
+
+`ZeroBoundaryIndicator` 对真实S.indicator φ证明保持原Lipschitz常数。跨越S与补集的一对点用实际最近边界点及infDist控制，边界φ=0将函数差归结为Lipschitz界；没有凭连续性假定Lipschitz。支持包含closure S，且仍包含于φ的紧支持。域内零延拓局部等于φ，closure S外局部等于0；凸集边界真实Lebesgue零测，因此零延拓在a.e.点C¹，但没有声称跨边界C¹。
+
+`SmoothBoundaryDirichlet` 的最终陈述只需S开、凸、有界、非空，φ为真实全空间紧支光滑测试且frontier S上为0。先对indicator φ运用上述构造，再以原全部测试下弱jet值单射识别为同一原H¹ jet。第二项直接给φ.sobolevJet的真实子域限制属于dirichletJetSpace；φ可在边界有非零法向导数，支持不需要严格包含于S。
+
+三模块10声明，定向3288 jobs、全库3944 jobs通过；7052声明递归公理审计PASS。固定 `/tmp/carleman-t138-boundary-local-axioms.txt` 2170082bytes，SHA256 `ffec1eaeb88c52c1c7ac0dc447090b13ed64a14de9d0e0df5729f8f76f06be66`。仅正常基础公理。申请AUXILIARY验收；这是真实边界测试工具，并未完成全局H²正则、凸域统一Hessian界或连续CE，P023等不提升。

@@ -267,3 +267,5 @@
 - T135 / C151：完整原Proposition7.7的8声明独立PAPER PASS；同SHA三项CI、6989声明审计和原始证据逐字节一致，仅P019提升为15/26。 固定证明 `7ad1a9dd94d3abfe384564b1f24f351f5c60fe21`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/de75c6f3460fc5f85cefe9c4bcb7649c9601850d/governance/reviews/T135-local-acceptance.md)。原文15/26，T136继续原Cartesian粗网格命题的一维精确插值逆估计。
 
 - T136 / C152：实际一维插值18声明独立AUXILIARY PASS；同SHA三项CI、7011声明审计和原始证据逐字节一致。 固定证明 `fe4cd0a34c2c118548b17ce534eae0f210bea70c`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2578ee282cdd7eeadd27b80fb8b0795ac75146d0/governance/reviews/T136-local-acceptance.md)。原文15/26，T137继续原Proposition 7.8的实际Cartesian粗网格Rayleigh界。
+
+- T137 / C153：完整原Cartesian粗滤波27声明独立PAPER PASS；同SHA三项CI、7042声明审计和原始证据逐字节一致。 固定证明 `ac30cc21022f162809fdd7f88550a3fd58e5ad35`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8827183f488ba99a84cad4439fe05026102cca78/governance/reviews/T137-local-acceptance.md)。原文16/26，T138继续原凸域零边界光滑测试的真实H¹₀成员资格。

@@ -1280,3 +1280,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 `tensorLinearProlongation` 是全部真实粗内节点数据的一维线性节点基函数张量积；粗节点恢复、两侧零边界、任意坐标截面等于同一一维粗插值均内部证明。有限 Cartesian 和用实际 piSplitAt 双射逐坐标分解，应用T136精确一维估计并求和得到12∑Hr⁻²。`cartesianCoarseProlongation` 将全部粗数据送入原物理细状态空间，其真实对角质量和原2d+1点差分能量均与上述张量值严格相等，包括边界两端；未改质量、差分或保留空间。
 
 `Physical.fd_coarse_filter_rayleigh` 对任意维数、每轴m>0和任意K，细分数N=mK，全部正细步长h，证明原filterRayleigh在实际插值range上的上界12∑((m_r h_r)⁻¹)²。`fd_dividing_filter_rayleigh`直接接受原N与m_r∣N_r，内部取K_r=N_r/m_r，输出真实线性插值映射及其每个细节点精确公式和同一Rayleigh界。域原点任意，盒长由N_rh_r确定；无网格尺寸比例、维数限制、算子不变性、H²正则或CE输入。系数12严格保留，零空间/空内节点也由原定义处理。六模块27声明申请完整P020/PAPER验收；固定SHA独立验收及实际CI完成前仍15/26。
+
+### T138 / C154：真实零边界光滑函数的 H¹₀ 成员资格
+
+在原有界凸开域S上，任意全空间紧支光滑测试φ只要在frontier S逐点为0，其限制的完整原H¹ jet属于由紧支域内测试闭包定义的dirichletJetSpace。最终定理不要求φ的支持严格位于S；边界零值经真实indicator零延拓、全空间Lipschitz资格、凸边界零测、内缩强H¹收敛和实际光滑卷积逼近推导闭包成员资格。半径序列依原域内点构造，统一函数/导数界供L²支配收敛；导数连续性只在边界外使用，未假定零延拓全局C¹。该完整测试引理将用于跨盒面奇反射的合法弱测试；全局H²/原P023仍未完成，范围AUXILIARY。

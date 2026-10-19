@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T137",
-    "supervisor_checked_at": "2026-10-19T08:03:11.788999+00:00",
-    "next_action": "固定SHA独立验收完整Cartesian P020；继续全局H²边界正则所需的真实零边界测试与反射步骤。",
+    "current_task_id": "T138",
+    "supervisor_checked_at": "2026-10-19T08:15:50.559939+00:00",
+    "next_action": "固定SHA独立验收零边界测试资格；继续实际全空间弱H¹反射及跨盒面Poisson延拓。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T08:03:11.788999+00:00"
+    "last_activity_at": "2026-10-19T08:15:50.559939+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "fe4cd0a34c2c118548b17ce534eae0f210bea70c",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39219003258/attempts/1",
-      "finished_at": "2026-10-19T07:56:55.267800+00:00",
+      "checked_sha": "ac30cc21022f162809fdd7f88550a3fd58e5ad35",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39220063498/attempts/1",
+      "finished_at": "2026-10-19T08:05:30.636086+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "fe4cd0a34c2c118548b17ce534eae0f210bea70c"
+      "source_head_sha": "ac30cc21022f162809fdd7f88550a3fd58e5ad35"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "fe4cd0a34c2c118548b17ce534eae0f210bea70c",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39219003258/attempts/1",
-      "finished_at": "2026-10-19T07:56:55.267800+00:00",
+      "checked_sha": "ac30cc21022f162809fdd7f88550a3fd58e5ad35",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39220063498/attempts/1",
+      "finished_at": "2026-10-19T08:05:30.636086+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "fe4cd0a34c2c118548b17ce534eae0f210bea70c"
+      "source_head_sha": "ac30cc21022f162809fdd7f88550a3fd58e5ad35"
     }
   },
   "milestones": [
@@ -13577,7 +13577,7 @@
       "paper_ref": "Proposition 7.8: actual tensor-product Cartesian coarse-filter Rayleigh bound",
       "milestone": "M6b",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "paper_labels": [
         "prop:filter-fd"
@@ -13611,9 +13611,56 @@
         "Carleman.Physical.fd_coarse_filter_rayleigh",
         "Carleman.Physical.fd_dividing_filter_rayleigh"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "ac30cc21022f162809fdd7f88550a3fd58e5ad35",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "ac30cc21022f162809fdd7f88550a3fd58e5ad35",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39220063498/attempts/1",
+        "finished_at": "2026-10-19T08:05:30.636086+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "ac30cc21022f162809fdd7f88550a3fd58e5ad35"
+      },
+      "semantic_review": {
+        "checked_sha": "ac30cc21022f162809fdd7f88550a3fd58e5ad35",
+        "declarations": [
+          "Carleman.linearRefinementBasis",
+          "Carleman.tensorLinearProlongation",
+          "Carleman.linearRefinementBasis_node",
+          "Carleman.uniformLinearProlongation_sum",
+          "Carleman.uniformLinearProlongation_const_mul",
+          "Carleman.tensorLinearProlongation_zero_face",
+          "Carleman.tensorLinearProlongation_node",
+          "Carleman.tensorLinearProlongation_slice",
+          "Carleman.cartesianAxisFill",
+          "Carleman.cartesianAxisFill_self",
+          "Carleman.cartesianAxisFill_update",
+          "Carleman.cartesian_sum_axis",
+          "Carleman.tensorLinearProlongation_line_inverse",
+          "Carleman.tensorLinearProlongation_direction_inverse",
+          "Carleman.tensorLinearProlongation_inverse",
+          "Carleman.cartesianLatticeData_of_box_values",
+          "Carleman.cartesian_sum_box_values",
+          "Carleman.cartesianLatticeSuccessor_nat",
+          "Carleman.cartesianCoarseProlongation",
+          "Carleman.cartesianCoarseProlongation_values",
+          "Carleman.cartesianCoarseProlongation_mass",
+          "Carleman.cartesianCoarseProlongation_axis",
+          "Carleman.cartesianCoarseProlongation_energy",
+          "Carleman.Physical.cartesianCoarseFilter",
+          "Carleman.Physical.cartesian_coarse_energy_bound",
+          "Carleman.Physical.fd_coarse_filter_rayleigh",
+          "Carleman.Physical.fd_dividing_filter_rayleigh"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8827183f488ba99a84cad4439fe05026102cca78/governance/reviews/T137-local-acceptance.md",
+        "reviewed_at": "2026-10-19T08:10:33+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent paper acceptance"
+      },
       "dependencies": [
         "C152",
         "C151",
@@ -13621,7 +13668,45 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "完整原P020：真实全部粗内节点数据张量分片线性插值，原细物理对角质量、2d+1差分算子和实际插值range；严格12∑Hr⁻²。最终直接接受m_r∣N_r并提供每细节点的精确插值公式，无各向同性、额外正则、CE或算子不变性。待固定SHA独立PAPER验收。"
+      "scope_notes": "完整原P020：真实全部粗内节点数据张量分片线性插值，原细物理对角质量、2d+1差分算子和实际插值range；严格12∑Hr⁻²。最终直接接受m_r∣N_r并提供每细节点的精确插值公式，无各向同性、额外正则、CE或算子不变性。待固定SHA独立PAPER验收。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C154",
+      "title": "原凸域零边界光滑测试的真实H¹₀成员资格",
+      "paper_ref": "Boundary test membership for original Dirichlet weak Poisson regularity",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:p1",
+        "prop:fd"
+      ],
+      "lean_declarations": [
+        "Carleman.inward_fderiv_tendsto_of_contDiffAt",
+        "Carleman.compactLipschitz_inward_tendsto_H1",
+        "Carleman.piecewiseSmooth_mem_dirichletJetSpace",
+        "Carleman.zeroBoundary_indicator_lipschitz",
+        "Carleman.indicator_tsupport_subset_closure",
+        "Carleman.indicator_hasCompactSupport",
+        "Carleman.indicator_contDiffAt_off_frontier",
+        "Carleman.indicator_contDiffAt_ae",
+        "Carleman.smooth_boundary_zero_mem_dirichletJetSpace",
+        "Carleman.smooth_boundary_test_mem_dirichletJetSpace"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C058",
+        "C059",
+        "C060",
+        "C147"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "实际紧支Lipschitz且a.e.C¹的内缩强H¹极限，以及原有界开凸域边界为零的全空间光滑函数限制属于原H¹₀闭包；未声称全局H²或CE。"
     }
   ],
   "events": [
@@ -14391,6 +14476,11 @@
       "at": "2026-10-19T08:03:11.788999+00:00",
       "public_summary": "一维粗插值18声明已独立验收；完整Cartesian粗网格Rayleigh命题27声明已构建审计，申请原P020验收，边界正则证明继续。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2578ee282cdd7eeadd27b80fb8b0795ac75146d0/governance/reviews/T136-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T08:15:50.559939+00:00",
+      "public_summary": "完整原P020的Cartesian粗滤波已独立验收，原文覆盖16/26；零边界测试10声明已构建审计，继续弱Poisson边界正则。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8827183f488ba99a84cad4439fe05026102cca78/governance/reviews/T137-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -14716,7 +14806,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/de75c6f3460fc5f85cefe9c4bcb7649c9601850d/governance/reviews/T135-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39217963129/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2578ee282cdd7eeadd27b80fb8b0795ac75146d0/governance/reviews/T136-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39219003258/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39219003258/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8827183f488ba99a84cad4439fe05026102cca78/governance/reviews/T137-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39220063498/attempts/1"
     ]
   },
   "schedules": [
@@ -32344,10 +32436,10 @@
       ],
       "branch": "main",
       "base_commit": "fe4cd0a34c2c118548b17ce534eae0f210bea70c",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "ac30cc21022f162809fdd7f88550a3fd58e5ad35",
+      "merge_commit": "ac30cc21022f162809fdd7f88550a3fd58e5ad35",
       "lean_declarations": [
         "Carleman.linearRefinementBasis",
         "Carleman.tensorLinearProlongation",
@@ -32377,12 +32469,23 @@
         "Carleman.Physical.fd_coarse_filter_rayleigh",
         "Carleman.Physical.fd_dividing_filter_rayleigh"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "ac30cc21022f162809fdd7f88550a3fd58e5ad35",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39220063498/attempts/1",
+        "finished_at": "2026-10-19T08:05:30.636086+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "ac30cc21022f162809fdd7f88550a3fd58e5ad35"
+      },
       "blocker": null,
       "attempts": [
         "六模块27声明定向3522 jobs、全库3941 jobs通过；7042声明递归审计PASS。"
       ],
-      "next_action": "固定SHA独立验收完整Cartesian P020；继续全局H²边界正则所需的真实零边界测试与反射步骤。",
+      "next_action": "完整原P020已验收；继续原弱Poisson边界正则。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -32394,6 +32497,93 @@
         "recursive_axiom_audit": 7042,
         "new_explicit_declarations": 27,
         "declaration_artifact_sha256": "cbb193ef1348054e358a3ed155a500878483f0f187abee4577b3f62accbca0a1",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "ac30cc21022f162809fdd7f88550a3fd58e5ad35",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C153"
+          ],
+          "paper_result_ids": [
+            "P020"
+          ],
+          "checked_sha": "ac30cc21022f162809fdd7f88550a3fd58e5ad35",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T08:10:33+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8827183f488ba99a84cad4439fe05026102cca78/governance/reviews/T137-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "ac30cc21022f162809fdd7f88550a3fd58e5ad35",
+        "checked_sha": "ac30cc21022f162809fdd7f88550a3fd58e5ad35",
+        "run_id": 39220063498,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3941,
+        "recursive_axiom_audit": 7042,
+        "new_explicit_declarations": 27,
+        "declaration_artifact_sha256": "cbb193ef1348054e358a3ed155a500878483f0f187abee4577b3f62accbca0a1",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T138",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原凸域零边界光滑测试的真实H¹₀成员资格",
+      "goal_ids": [
+        "C154"
+      ],
+      "acceptance": [
+        "内缩导数极限由实际C¹点推出，共同紧支持下强H¹收敛",
+        "零边界indicator保持Lipschitz且凸域边界零测",
+        "原弱jet值单射识别同一限制，支持无需严格包含域内",
+        "无H²或连续CE额外前提，不提升P023"
+      ],
+      "dependencies": [
+        "C058",
+        "C059",
+        "C060",
+        "C147"
+      ],
+      "branch": "main",
+      "base_commit": "ac30cc21022f162809fdd7f88550a3fd58e5ad35",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.inward_fderiv_tendsto_of_contDiffAt",
+        "Carleman.compactLipschitz_inward_tendsto_H1",
+        "Carleman.piecewiseSmooth_mem_dirichletJetSpace",
+        "Carleman.zeroBoundary_indicator_lipschitz",
+        "Carleman.indicator_tsupport_subset_closure",
+        "Carleman.indicator_hasCompactSupport",
+        "Carleman.indicator_contDiffAt_off_frontier",
+        "Carleman.indicator_contDiffAt_ae",
+        "Carleman.smooth_boundary_zero_mem_dirichletJetSpace",
+        "Carleman.smooth_boundary_test_mem_dirichletJetSpace"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "三模块10声明定向3288 jobs、全库3944 jobs通过；7052声明递归审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收零边界测试资格；继续实际全空间弱H¹反射及跨盒面Poisson延拓。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3944,
+        "recursive_axiom_audit": 7052,
+        "new_explicit_declarations": 10,
+        "declaration_artifact_sha256": "ffec1eaeb88c52c1c7ac0dc447090b13ed64a14de9d0e0df5729f8f76f06be66",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
