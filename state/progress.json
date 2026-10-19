@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T169",
-    "supervisor_checked_at": "2026-10-19T13:20:08.267938+00:00",
-    "next_action": "独立验收实际Cartesian物理载荷估计；继续网格统一物理观测、真实HUM控制和滤波后果，并推进一般几何。",
+    "current_task_id": "T170",
+    "supervisor_checked_at": "2026-10-19T13:27:03.435343+00:00",
+    "next_action": "独立验收原Cartesian物理观测与控制；继续完整滤波后果和一般几何，并收齐在途独立验收。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T13:20:08.267938+00:00"
+    "last_activity_at": "2026-10-19T13:27:03.435343+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "30a03e32af45ef82baacbbfe6917cd7ceff234f3",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39258043795/attempts/1",
-      "finished_at": "2026-10-19T13:14:14.201431+00:00",
+      "checked_sha": "7d1cc86d3c0a01b524f099ba90baaf59784f159d",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39259282628/attempts/1",
+      "finished_at": "2026-10-19T13:22:23.384873+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "30a03e32af45ef82baacbbfe6917cd7ceff234f3"
+      "source_head_sha": "7d1cc86d3c0a01b524f099ba90baaf59784f159d"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "30a03e32af45ef82baacbbfe6917cd7ceff234f3",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39258043795/attempts/1",
-      "finished_at": "2026-10-19T13:14:14.201431+00:00",
+      "checked_sha": "7d1cc86d3c0a01b524f099ba90baaf59784f159d",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39259282628/attempts/1",
+      "finished_at": "2026-10-19T13:22:23.384873+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "30a03e32af45ef82baacbbfe6917cd7ceff234f3"
+      "source_head_sha": "7d1cc86d3c0a01b524f099ba90baaf59784f159d"
     }
   },
   "milestones": [
@@ -16179,7 +16179,7 @@
       "paper_ref": "Exact Cartesian control norm and full-state physical periodic load Carleman estimate",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:fd",
@@ -16201,8 +16201,19 @@
         "Carleman.cartesianInteriorCountProfile_negative",
         "Carleman.box_cartesian_physical_load_carleman"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "7d1cc86d3c0a01b524f099ba90baaf59784f159d",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "7d1cc86d3c0a01b524f099ba90baaf59784f159d",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39259282628/attempts/1",
+        "finished_at": "2026-10-19T13:22:23.384873+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "7d1cc86d3c0a01b524f099ba90baaf59784f159d"
+      },
       "semantic_review": null,
       "dependencies": [
         "C184",
@@ -16210,7 +16221,36 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "原节点控制零延拓保范数，实际计数观察EBB*精确保留原控制Hilbert范数与全部权。真实高斯节点相位bound=2且≤−1。T167完整估计内部清偿物理载荷CE，全部状态/载荷、原热尺度和参数先于网格，仍盒Cartesian实例。"
+      "scope_notes": "原节点控制零延拓保范数，实际计数观察EBB*精确保留原控制Hilbert范数与全部权。真实高斯节点相位bound=2且≤−1。T167完整估计内部清偿物理载荷CE，全部状态/载荷、原热尺度和参数先于网格，仍盒Cartesian实例。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C186",
+      "title": "网格统一的Cartesian物理观测与实际HUM控制",
+      "paper_ref": "Original physical observability and actual control for the full Cartesian box realization",
+      "milestone": "M6b",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:physicalO",
+        "prop:physicalC"
+      ],
+      "lean_declarations": [
+        "Carleman.Physical.physical_observation_uniform_profiles",
+        "Carleman.Physical.box_cartesian_physical_observability",
+        "Carleman.Physical.box_cartesian_physical_control"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C185",
+        "C184"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "实际相位界统一于全部网格测度/节点数；原CE、质量/载荷/节点势及Laplace条件全部内部供应。Cb/d0先于T/M、C(T,M)先于全部网格和状态。原非周期物理观测及真实控制，原尺度/成本/指数余项完整。仅盒Cartesian实例。"
     }
   ],
   "events": [
@@ -17140,6 +17180,11 @@
       "at": "2026-10-19T13:20:08.267938+00:00",
       "public_summary": "原有限物理空间等距接口已独立验收；实际Cartesian物理载荷估计保留原控制范数并完成构建审计。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/32dc5007beb63b90e5a21096b93a0be14d566225/governance/reviews/T168-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T13:27:03.435343+00:00",
+      "public_summary": "实际Cartesian载荷估计同SHA三项CI通过、独立验收在途；完整网格统一观测与实际HUM控制已构建审计。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39259282628/attempts/1"
     }
   ],
   "snapshot": {
@@ -17529,7 +17574,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/fd82c0c1388df766d0ef1fccc3b745652a381fc5/governance/reviews/T167-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39256167609/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/32dc5007beb63b90e5a21096b93a0be14d566225/governance/reviews/T168-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39258043795/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39258043795/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39259282628/attempts/1"
     ]
   },
   "schedules": [
@@ -38455,9 +38501,9 @@
       ],
       "branch": "main",
       "base_commit": "30a03e32af45ef82baacbbfe6917cd7ceff234f3",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "7d1cc86d3c0a01b524f099ba90baaf59784f159d",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.cartesianPhysicalControl_adjoint_extension",
@@ -38474,12 +38520,23 @@
         "Carleman.cartesianInteriorCountProfile_negative",
         "Carleman.box_cartesian_physical_load_carleman"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "7d1cc86d3c0a01b524f099ba90baaf59784f159d",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39259282628/attempts/1",
+        "finished_at": "2026-10-19T13:22:23.384873+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "7d1cc86d3c0a01b524f099ba90baaf59784f159d"
+      },
       "blocker": null,
       "attempts": [
         "三模块十三声明，控制等距定向3514、载荷组合3982 jobs，根目标4094 jobs及8093声明审计通过。"
       ],
-      "next_action": "独立验收实际Cartesian物理载荷估计；继续网格统一物理观测、真实HUM控制和滤波后果，并推进一般几何。",
+      "next_action": "固定提交已构建推送；等待正在运行的独立Agent语义验收，不把CI当作验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -38491,6 +38548,70 @@
         "recursive_axiom_audit": 8093,
         "new_explicit_declarations": 13,
         "declaration_artifact_sha256": "2163ab6209f04e62d9563574a6ef1df423c1705878b0ffeb049544cbb7307eb4",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING; fixed SHA required"
+      },
+      "declaration_version": "7d1cc86d3c0a01b524f099ba90baaf59784f159d",
+      "ci_relationship": {
+        "proof_head": "7d1cc86d3c0a01b524f099ba90baaf59784f159d",
+        "checked_sha": "7d1cc86d3c0a01b524f099ba90baaf59784f159d",
+        "run_id": 39259282628,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 4094,
+        "recursive_axiom_audit": 8093,
+        "new_explicit_declarations": 13,
+        "declaration_artifact_sha256": "2163ab6209f04e62d9563574a6ef1df423c1705878b0ffeb049544cbb7307eb4",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T170",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "网格统一的Cartesian物理观测与实际HUM控制",
+      "goal_ids": [
+        "C186"
+      ],
+      "acceptance": [
+        "常数选择先于所有空间类型/测度/网格，负相位固定bound2",
+        "原任意有界节点势和真实Laplace/控制Hilbert伴随无损",
+        "所有物理伴随解及原S尺度两侧条件，观察和余项完全原式",
+        "实际原节点控制及ForwardEquation状态，成本sqrtC与终态sqrtC exp(-d0S)",
+        "实际载荷CE内部清偿，无额外CE/正则/数值/滤波条件"
+      ],
+      "dependencies": [
+        "C185",
+        "C184"
+      ],
+      "branch": "main",
+      "base_commit": "7d1cc86d3c0a01b524f099ba90baaf59784f159d",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.Physical.physical_observation_uniform_profiles",
+        "Carleman.Physical.box_cartesian_physical_observability",
+        "Carleman.Physical.box_cartesian_physical_control"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "三模块三声明，定向3068/3986/3987 jobs，根目标4097及8096递归声明审计通过。"
+      ],
+      "next_action": "独立验收原Cartesian物理观测与控制；继续完整滤波后果和一般几何，并收齐在途独立验收。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4097,
+        "recursive_axiom_audit": 8096,
+        "new_explicit_declarations": 3,
+        "declaration_artifact_sha256": "4898f0fd311b42c290e7317371fb9e7d7f3b0b76c0e2864fab66a8f63b8ce174",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

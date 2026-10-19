@@ -1440,3 +1440,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 真实 Hilbert 伴随给 B*B=id，原节点零延拓保物理范数且与实际权乘法交换。计数 L² 观测 EBB* 精确保留原控制范数；节点相位与全部允许权范数通过真实等距映射识别。固定 bound=2、≤−1 的原高斯节点相位从逐点界构造。完整 T167 估计内部供应真实 PhysicalLoadCarleman，原 q³ 状态、逆等距载荷、原控制观察及热尺度全部保持。三模块十三声明，参数先于所有网格与时间数据，无额外 CE/正则/数值测试条件。
 
 实际网格统一物理观测及控制继续；本批仍为盒 Cartesian 辅助实例，覆盖17/26。详见 `analysis/T169-cartesian-physical-load.md`。
+
+## T170 / C186：原 Cartesian 物理观测与真实 HUM 控制（辅助实例）
+
+物理观测常数按固定相位界统一于全部空间类型、测度与节点相位，避免依赖网格数。实际Gaussian节点相位、质量等距 R=I、逆Γ、原节点势和实际 Laplacian 内部清偿所有接口；T169 原载荷 CE 无外加前提地供应权估计。最终 Cb/d0 先于 T/M，C(T,M) 先于全部网格/节点势/状态；原 S 尺度和两侧条件下完整物理伴随观测成立，观察项准确为原 U 中的 B* 范数，余项 exp(-2d0S)。真实 HUM 给每个 y0 的实际控制和完整 ForwardEquation，成本 sqrt(C)、终态 sqrt(C)exp(-d0S)。三模块三声明。
+
+仅为完整盒 Cartesian 实例，P1 与一般几何仍待；AUXILIARY、覆盖17/26。详见 `analysis/T170-cartesian-observation-control.md`。
