@@ -7166,6 +7166,10 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Physical.box_cartesian_filtered_control
 #print axioms Carleman.Physical.box_cartesian_filtered_control
 
+-- T173: full consistent-mass P1 physical load estimate on boxes.
+#check @Carleman.Physical.box_p1_physical_load_carleman
+#print axioms Carleman.Physical.box_p1_physical_load_carleman
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
