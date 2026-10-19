@@ -615,3 +615,6 @@ public import Carleman.Spatial.CartesianKuhnEdgeAssembly
 public import Carleman.Geometry.FiniteCartesianInteriorSum
 public import Carleman.Spatial.CartesianSummationByParts
 public import Carleman.Spatial.CartesianFiniteDifference
+
+public import Carleman.Spatial.CartesianDiagonalTest
+public import Carleman.Spatial.AllowedCartesianDiagonalTest

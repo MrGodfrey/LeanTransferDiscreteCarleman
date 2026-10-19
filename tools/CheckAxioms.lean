@@ -5072,6 +5072,37 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianFiniteDifferenceLaplacian_stiffness
 #print axioms Carleman.cartesianFiniteDifferenceLaplacian_stiffness
 
+#check @Carleman.cartesianNodalMultiplier
+#print axioms Carleman.cartesianNodalMultiplier
+#check @Carleman.cartesianSquaredWeightTest
+#print axioms Carleman.cartesianSquaredWeightTest
+#check @Carleman.cartesianWeightedNodeEnergy
+#print axioms Carleman.cartesianWeightedNodeEnergy
+#check @Carleman.cartesianNodalMultiplier_selfadjoint
+#print axioms Carleman.cartesianNodalMultiplier_selfadjoint
+#check @Carleman.cartesianSquaredWeightTest_pairing
+#print axioms Carleman.cartesianSquaredWeightTest_pairing
+#check @Carleman.cartesianWeightedNodeEnergy_nonneg
+#print axioms Carleman.cartesianWeightedNodeEnergy_nonneg
+#check @Carleman.cartesianWeightedNodeEnergy_eq_zero_iff
+#print axioms Carleman.cartesianWeightedNodeEnergy_eq_zero_iff
+#check @Carleman.cartesianSquaredWeightTest_positive
+#print axioms Carleman.cartesianSquaredWeightTest_positive
+#check @Carleman.cartesianSquaredWeightTest_inverse_energy
+#print axioms Carleman.cartesianSquaredWeightTest_inverse_energy
+#check @Carleman.cartesianInteriorData_multiplier
+#print axioms Carleman.cartesianInteriorData_multiplier
+#check @Carleman.cartesianKuhnReconstruction_multiplier_nodal
+#print axioms Carleman.cartesianKuhnReconstruction_multiplier_nodal
+#check @Carleman.cartesianKuhnReconstructionLp_multiplier_nodal
+#print axioms Carleman.cartesianKuhnReconstructionLp_multiplier_nodal
+#check @Carleman.cartesianSquaredWeightTest_reconstruction
+#print axioms Carleman.cartesianSquaredWeightTest_reconstruction
+#check @Carleman.cartesianSquaredWeightTest_residual
+#print axioms Carleman.cartesianSquaredWeightTest_residual
+#check @Carleman.allowed_weight_cartesian_test_norm
+#print axioms Carleman.allowed_weight_cartesian_test_norm
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
