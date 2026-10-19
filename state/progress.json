@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T092",
-    "supervisor_checked_at": "2026-10-19T01:41:35.373168+00:00",
-    "next_action": "固定SHA独立验收原允许权族实际重构/载荷加权稳定性；继续实际局部Q_h稳定性和B2。",
+    "current_task_id": "T093",
+    "supervisor_checked_at": "2026-10-19T01:50:28.589729+00:00",
+    "next_action": "固定SHA独立验收实际Q_h局部L²稳定性和裁剪矩形邻域22声明；继续真实局部仿射再现和B2。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T01:41:35.373168+00:00"
+    "last_activity_at": "2026-10-19T01:50:28.589729+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "c5ac12749281c37710ade58c454fe9945273c7ec",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39185414279/attempts/1",
-      "finished_at": "2026-10-19T01:29:09.148118+00:00",
+      "checked_sha": "1c3da9ffc54b5624f27760db5368aa05cbdfc0a5",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39186541670/attempts/1",
+      "finished_at": "2026-10-19T01:44:41.440500+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "c5ac12749281c37710ade58c454fe9945273c7ec"
+      "source_head_sha": "1c3da9ffc54b5624f27760db5368aa05cbdfc0a5"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "c5ac12749281c37710ade58c454fe9945273c7ec",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39185414279/attempts/1",
-      "finished_at": "2026-10-19T01:29:09.148118+00:00",
+      "checked_sha": "1c3da9ffc54b5624f27760db5368aa05cbdfc0a5",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39186541670/attempts/1",
+      "finished_at": "2026-10-19T01:44:41.440500+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "c5ac12749281c37710ade58c454fe9945273c7ec"
+      "source_head_sha": "1c3da9ffc54b5624f27760db5368aa05cbdfc0a5"
     }
   },
   "milestones": [
@@ -10437,7 +10437,7 @@
       "paper_ref": "Auxiliary actual allowed-weight reconstruction and load stability in Appendix B Step 1",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:fd",
@@ -10463,15 +10463,104 @@
         "Carleman.cartesianKuhn_weighted_norm_bounds",
         "Carleman.allowed_weight_cartesianKuhn_stability"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "1c3da9ffc54b5624f27760db5368aa05cbdfc0a5",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "1c3da9ffc54b5624f27760db5368aa05cbdfc0a5",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39186541670/attempts/1",
+        "finished_at": "2026-10-19T01:44:41.440500+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "1c3da9ffc54b5624f27760db5368aa05cbdfc0a5"
+      },
+      "semantic_review": {
+        "checked_sha": "1c3da9ffc54b5624f27760db5368aa05cbdfc0a5",
+        "declarations": [
+          "Carleman.simplex_continuous_memLp",
+          "Carleman.simplex_continuous_weighted_integrable",
+          "Carleman.simplex_weighted_sq_anchor",
+          "Carleman.weighted_coefficient_sq_anchor",
+          "Carleman.simplexNodal_sq_lumped_bounds",
+          "Carleman.simplex_weighted_reconstruction_bounds",
+          "Carleman.simplex_weighted_load_bound",
+          "Carleman.closedCoordinateBox_diameter_bound",
+          "Carleman.cartesianKuhnSimplex_dist_le",
+          "Carleman.cartesianKuhn_allowedWeight_comparison",
+          "Carleman.cartesianInteriorData_weight",
+          "Carleman.cartesianKuhn_weighted_mass_assembly",
+          "Carleman.BoundedMultiplier.integrable_scalar_density_ae",
+          "Carleman.BoundedMultiplier.seminorm_sq_scalar_ae",
+          "Carleman.cartesianKuhn_weighted_reconstruction_cell_bounds",
+          "Carleman.cartesianKuhn_weighted_load_cell_bound",
+          "Carleman.cartesianKuhn_weighted_norm_bounds",
+          "Carleman.allowed_weight_cartesianKuhn_stability"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b356322f6d6fb51c2bbda6d96def905adf89398f/governance/reviews/T092-local-acceptance.md",
+        "reviewed_at": "2026-10-19T01:48:00+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C107"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "固定原光滑轮廓和域后，一致C先于所有实际网格、h、时间权及周期T、幂次、符号和原完整离散状态；hq≤1内部给实际单元含边界顶点权比较。真实R_h与同一L²右逆载荷满足Eσ≤C‖σR_hf‖²、‖σR_hf‖²≤CEσ及‖σL_hf‖²≤CEσ，Eσ为原物理加权对角节点质量，无网格基数损失。局部Q_h、刚度和完整FD/B2仍待，AUXILIARY，13/26。"
+      "scope_notes": "固定原光滑轮廓和域后，一致C先于所有实际网格、h、时间权及周期T、幂次、符号和原完整离散状态；hq≤1内部给实际单元含边界顶点权比较。真实R_h与同一L²右逆载荷满足Eσ≤C‖σR_hf‖²、‖σR_hf‖²≤CEσ及‖σL_hf‖²≤CEσ，Eσ为原物理加权对角节点质量，无网格基数损失。局部Q_h、刚度和完整FD/B2仍待，AUXILIARY，13/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C109",
+      "title": "实际Q_h的局部L²稳定性与裁剪矩形邻域",
+      "paper_ref": "Auxiliary actual moment reconstruction local L² stability and concrete clipped rectangular patches, Appendix B Step 1 eq:fd-projection-stability",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:fd",
+        "eq:fd-projection-stability"
+      ],
+      "lean_declarations": [
+        "Carleman.cartesianKuhnMoment_local_integral",
+        "Carleman.cartesianKuhnMoment_local_sq_bound",
+        "Carleman.cartesianKuhnMoment_local_congr",
+        "Carleman.cartesianKuhnProjection",
+        "Carleman.cartesianKuhnProjectionLp",
+        "Carleman.cartesianKuhn_cell_volume_le",
+        "Carleman.cartesianKuhnProjection_local_sq_bound",
+        "Carleman.cartesianKuhnProjection_local_congr",
+        "Carleman.cartesianKuhnProjection_local_norm_bound",
+        "Carleman.cartesianClippedPatchLower",
+        "Carleman.cartesianClippedPatchUpper",
+        "Carleman.cartesianClippedPatch",
+        "Carleman.cartesianClippedPatch_eq_box",
+        "Carleman.cartesianClippedPatch_width_bounds",
+        "Carleman.cartesianClippedPatch_isOpen",
+        "Carleman.cartesianClippedPatch_subset_domain",
+        "Carleman.cartesianClippedPatch_contains_cell",
+        "Carleman.cartesianClippedPatch_multiplicity_le",
+        "Carleman.cartesianKuhnHat_support_subset_clippedPatch",
+        "Carleman.cartesianKuhnProjection_patch_sq_bound",
+        "Carleman.cartesianKuhnProjection_patch_norm_bound",
+        "Carleman.cartesianKuhnProjection_patch_congr"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C103",
+        "C105",
+        "C106",
+        "C107",
+        "C100"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "实际Q_h=R_hJ_h，真实帽质量/Cauchy–Schwarz/单元P1质量给所有原L²状态的局部积分和范数界，常数1。一般版本允许任意活动支撑容纳块；具体版本内部构造物理域裁剪radius-2开矩形块，宽度δ_j到5δ_j、重数5^d d!，真实活动帽支撑条件内部清偿。a.e.局部数据决定K上逐点Q_h。具体块是等价证明路线的一致加宽块，不声称原最小块；局部仿射再现、梯度逆界及完整FD/B2仍待，AUXILIARY，13/26。"
     }
   ],
   "events": [
@@ -11016,6 +11105,11 @@
     {
       "at": "2026-10-19T01:41:35.373168+00:00",
       "public_summary": "原允许权族实际重构与载荷加权稳定性18声明全库构建通过，固定提交独立验收待办，原文保持13/26。"
+    },
+    {
+      "at": "2026-10-19T01:50:28.589729+00:00",
+      "public_summary": "原允许权族实际重构与载荷加权稳定性独立验收PASS；实际Q_h局部L²稳定性与裁剪矩形邻域22声明构建通过，原文保持13/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b356322f6d6fb51c2bbda6d96def905adf89398f/governance/reviews/T092-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -11251,7 +11345,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/975ddce0bb16c1f7760caeae2178ed1b08cf6e2a/governance/reviews/T090-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39184701139/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2278ec9211a32f37e3aaefb4fe5a84b0739c23a4/governance/reviews/T091-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39185414279/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39185414279/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b356322f6d6fb51c2bbda6d96def905adf89398f/governance/reviews/T092-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39186541670/attempts/1"
     ]
   },
   "schedules": [
@@ -24503,10 +24599,10 @@
       ],
       "branch": "main",
       "base_commit": "c5ac12749281c37710ade58c454fe9945273c7ec",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "1c3da9ffc54b5624f27760db5368aa05cbdfc0a5",
+      "merge_commit": "1c3da9ffc54b5624f27760db5368aa05cbdfc0a5",
       "lean_declarations": [
         "Carleman.simplex_continuous_memLp",
         "Carleman.simplex_continuous_weighted_integrable",
@@ -24527,12 +24623,23 @@
         "Carleman.cartesianKuhn_weighted_norm_bounds",
         "Carleman.allowed_weight_cartesianKuhn_stability"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "1c3da9ffc54b5624f27760db5368aa05cbdfc0a5",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39186541670/attempts/1",
+        "finished_at": "2026-10-19T01:44:41.440500+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "1c3da9ffc54b5624f27760db5368aa05cbdfc0a5"
+      },
       "blocker": null,
       "attempts": [
         "八模块18声明定向3442 jobs、全库3776 jobs通过，6076声明递归公理审计PASS。"
       ],
-      "next_action": "固定SHA独立验收原允许权族实际重构/载荷加权稳定性；继续实际局部Q_h稳定性和B2。",
+      "next_action": "原允许权族实际重构与同一载荷右逆加权稳定性已独立验收；继续实际局部Q_h及B2。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -24544,6 +24651,105 @@
         "recursive_axiom_audit": 6076,
         "new_explicit_declarations": 18,
         "declaration_artifact_sha256": "66be7da1cfaa72a5d22768840bf97ad8e9d0fbd354370c4f61fa26c401faf42f",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "1c3da9ffc54b5624f27760db5368aa05cbdfc0a5",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C108"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "1c3da9ffc54b5624f27760db5368aa05cbdfc0a5",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T01:48:00+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b356322f6d6fb51c2bbda6d96def905adf89398f/governance/reviews/T092-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "1c3da9ffc54b5624f27760db5368aa05cbdfc0a5",
+        "checked_sha": "1c3da9ffc54b5624f27760db5368aa05cbdfc0a5",
+        "run_id": 39186541670,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3776,
+        "recursive_axiom_audit": 6076,
+        "new_explicit_declarations": 18,
+        "declaration_artifact_sha256": "66be7da1cfaa72a5d22768840bf97ad8e9d0fbd354370c4f61fa26c401faf42f",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T093",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "实际Q_h的局部L²稳定性与裁剪矩形邻域",
+      "goal_ids": [
+        "C109"
+      ],
+      "acceptance": [
+        "实际Q_h严格等于原真实R_hJ_h且保留全部原L²状态",
+        "实际帽质量及可积Cauchy–Schwarz只使用局部支撑数据，不取状态节点值",
+        "局部P1质量与真实单元体积≤prodδ给常数1，无全网格基数损失",
+        "具体裁剪块为真正开矩形、逐坐标宽度及有限重叠真实证明，活动支撑内部清偿",
+        "明确一致加宽块与原最小块的区别，不提升完整FD/B2，独立核对固定SHA"
+      ],
+      "dependencies": [
+        "C103",
+        "C105",
+        "C106",
+        "C107",
+        "C100"
+      ],
+      "branch": "main",
+      "base_commit": "1c3da9ffc54b5624f27760db5368aa05cbdfc0a5",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.cartesianKuhnMoment_local_integral",
+        "Carleman.cartesianKuhnMoment_local_sq_bound",
+        "Carleman.cartesianKuhnMoment_local_congr",
+        "Carleman.cartesianKuhnProjection",
+        "Carleman.cartesianKuhnProjectionLp",
+        "Carleman.cartesianKuhn_cell_volume_le",
+        "Carleman.cartesianKuhnProjection_local_sq_bound",
+        "Carleman.cartesianKuhnProjection_local_congr",
+        "Carleman.cartesianKuhnProjection_local_norm_bound",
+        "Carleman.cartesianClippedPatchLower",
+        "Carleman.cartesianClippedPatchUpper",
+        "Carleman.cartesianClippedPatch",
+        "Carleman.cartesianClippedPatch_eq_box",
+        "Carleman.cartesianClippedPatch_width_bounds",
+        "Carleman.cartesianClippedPatch_isOpen",
+        "Carleman.cartesianClippedPatch_subset_domain",
+        "Carleman.cartesianClippedPatch_contains_cell",
+        "Carleman.cartesianClippedPatch_multiplicity_le",
+        "Carleman.cartesianKuhnHat_support_subset_clippedPatch",
+        "Carleman.cartesianKuhnProjection_patch_sq_bound",
+        "Carleman.cartesianKuhnProjection_patch_norm_bound",
+        "Carleman.cartesianKuhnProjection_patch_congr"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "四模块22声明定向3363 jobs、全库3780 jobs通过，6104声明递归公理审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收实际Q_h局部L²稳定性和裁剪矩形邻域22声明；继续真实局部仿射再现和B2。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3780,
+        "recursive_axiom_audit": 6104,
+        "new_explicit_declarations": 22,
+        "declaration_artifact_sha256": "f9e78b8ffbc60d8e8b21093c62c61b04866d63cfa70069fd65fe389b5653dbcf",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
