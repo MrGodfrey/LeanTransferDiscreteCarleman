@@ -6107,6 +6107,75 @@ set_option pp.maxSteps 1000000
 #check @Carleman.WeakSobolevJet.oddExtend_gradient_norm_le
 #print axioms Carleman.WeakSobolevJet.oddExtend_gradient_norm_le
 
+#check @Carleman.upperReflectedBox
+#print axioms Carleman.upperReflectedBox
+#check @Carleman.upperReflectedBox_boundary_exclusion
+#print axioms Carleman.upperReflectedBox_boundary_exclusion
+#check @Carleman.upperReflectedBox_no_original_overlap
+#print axioms Carleman.upperReflectedBox_no_original_overlap
+#check @Carleman.upperReflectedBox_contains_original
+#print axioms Carleman.upperReflectedBox_contains_original
+#check @Carleman.upperReflectedBox_contains_reflection
+#print axioms Carleman.upperReflectedBox_contains_reflection
+#check @Carleman.upperReflectedBox_test_boundary
+#print axioms Carleman.upperReflectedBox_test_boundary
+#check @Carleman.upper_box_odd_poisson
+#print axioms Carleman.upper_box_odd_poisson
+#check @Carleman.upper_box_odd_restrict
+#print axioms Carleman.upper_box_odd_restrict
+#check @Carleman.upper_box_odd_dirichlet
+#print axioms Carleman.upper_box_odd_dirichlet
+#check @Carleman.subdomainLp_trans
+#print axioms Carleman.subdomainLp_trans
+#check @Carleman.subdomainLp_self
+#print axioms Carleman.subdomainLp_self
+#check @Carleman.subdomainLp_restrictRegion
+#print axioms Carleman.subdomainLp_restrictRegion
+#check @Carleman.WeakSobolevJet.restrictSubdomain_trans
+#print axioms Carleman.WeakSobolevJet.restrictSubdomain_trans
+#check @Carleman.WeakSobolevJet.restrictSubdomain_self
+#print axioms Carleman.WeakSobolevJet.restrictSubdomain_self
+#check @Carleman.WeakSobolevJet.restrictSubdomain_restrictDomain
+#print axioms Carleman.WeakSobolevJet.restrictSubdomain_restrictDomain
+#check @Carleman.IsPoissonExtension
+#print axioms Carleman.IsPoissonExtension
+#check @Carleman.exists_odd_dirichlet_extension
+#print axioms Carleman.exists_odd_dirichlet_extension
+#check @Carleman.exists_lower_box_extension
+#print axioms Carleman.exists_lower_box_extension
+#check @Carleman.exists_upper_box_extension
+#print axioms Carleman.exists_upper_box_extension
+#check @Carleman.expandedBoxLower
+#print axioms Carleman.expandedBoxLower
+#check @Carleman.expandedBoxUpper
+#print axioms Carleman.expandedBoxUpper
+#check @Carleman.expandedBox_positive
+#print axioms Carleman.expandedBox_positive
+#check @Carleman.expandedBox_contains
+#print axioms Carleman.expandedBox_contains
+#check @Carleman.expandedBoxLower_insert
+#print axioms Carleman.expandedBoxLower_insert
+#check @Carleman.expandedBoxUpper_insert
+#print axioms Carleman.expandedBoxUpper_insert
+#check @Carleman.expandedBox_closure_inside
+#print axioms Carleman.expandedBox_closure_inside
+#check @Carleman.IsPoissonExtension.refl
+#print axioms Carleman.IsPoissonExtension.refl
+#check @Carleman.IsPoissonExtension.trans
+#print axioms Carleman.IsPoissonExtension.trans
+#check @Carleman.exists_finite_box_extension
+#print axioms Carleman.exists_finite_box_extension
+#check @Carleman.derivativeComponent_norm_le_field
+#print axioms Carleman.derivativeComponent_norm_le_field
+#check @Carleman.exists_box_dirichlet_H2_bound
+#print axioms Carleman.exists_box_dirichlet_H2_bound
+#check @Carleman.box_dirichlet_domain_le_h2
+#print axioms Carleman.box_dirichlet_domain_le_h2
+#check @Carleman.box_dirichlet_domain_eq_h2
+#print axioms Carleman.box_dirichlet_domain_eq_h2
+#check @Carleman.exists_box_dirichlet_H2_estimate
+#print axioms Carleman.exists_box_dirichlet_H2_estimate
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

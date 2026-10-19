@@ -774,3 +774,12 @@ public import Carleman.Spatial.OddReflectionDirichlet
 public import Carleman.Geometry.LowerReflectedBox
 public import Carleman.Spatial.BoxOddPoisson
 public import Carleman.Spatial.OddReflectionBounds
+public import Carleman.Geometry.UpperReflectedBox
+public import Carleman.Spatial.UpperBoxOddPoisson
+public import Carleman.Spatial.SubdomainComposition
+public import Carleman.Spatial.BoxPoissonExtension
+public import Carleman.Geometry.ExpandedCoordinateBox
+public import Carleman.Spatial.PoissonExtensionComposition
+public import Carleman.Spatial.FiniteBoxPoissonExtension
+public import Carleman.Spatial.BoxPoissonRegularity
+public import Carleman.Spatial.BoxDirichletRegularity
