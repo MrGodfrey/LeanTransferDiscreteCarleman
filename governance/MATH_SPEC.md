@@ -1132,3 +1132,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T106：原FD物理Hilbert空间及真实控制伴随
 
 详见 [T106 分析](analysis/T106-fd-physical-spaces.md)。三模块23声明从正物理质量内积构造真正有限维完备状态/控制Hilbert空间，范数平方严格等于原加权节点平方和。原零延拓/限制成为实际连续算子，Hilbert adjoint(B)=B*由原物理配对证明。原允许权观察界已改写为这一真实伴随的加权Hilbert范数，无网格依赖范数等价常数。重构质量伴随及完整数值接口装配仍待，AUXILIARY14/26。
+
+## T107：原FD重构、质量伴随与载荷接口
+
+详见 [T107 分析](analysis/T107-fd-mass-interface.md)。三模块19声明构造同一原物理Hilbert空间上的实际重构连续线性映射及单射性，证明真实Hilbert伴随逐节点严格等于原归一化帽函数积分。原Reconstruction接口的R/J/Q/G与已验收实际构造完全一致；原LoadInterface取F=X、Γ=Id和同一真实L²载荷，并证明兼容性及I=Id右逆。完整FD数值接口组装仍待，AUXILIARY14/26。

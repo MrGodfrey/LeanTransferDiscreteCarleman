@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T106",
-    "supervisor_checked_at": "2026-10-19T03:39:03.282152+00:00",
-    "next_action": "固定SHA独立验收原物理Hilbert空间及控制伴随；继续原重构、归一化矩质量伴随、Q/G与载荷接口。",
+    "current_task_id": "T107",
+    "supervisor_checked_at": "2026-10-19T03:45:31.838268+00:00",
+    "next_action": "固定SHA独立验收原重构、质量伴随及载荷接口；继续真实物理测试、刚度和完整FD数值数据。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T03:39:03.282152+00:00"
+    "last_activity_at": "2026-10-19T03:45:31.838268+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "2f2e71d4359a206ac9035d73b61889bfa3cb7bfb",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39194940847/attempts/1",
-      "finished_at": "2026-10-19T03:32:50.819269+00:00",
+      "checked_sha": "337d9c1b8c5fadce4e638a2c96311e230ee94bb1",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39195706077/attempts/1",
+      "finished_at": "2026-10-19T03:41:00.254959+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "2f2e71d4359a206ac9035d73b61889bfa3cb7bfb"
+      "source_head_sha": "337d9c1b8c5fadce4e638a2c96311e230ee94bb1"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "2f2e71d4359a206ac9035d73b61889bfa3cb7bfb",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39194940847/attempts/1",
-      "finished_at": "2026-10-19T03:32:50.819269+00:00",
+      "checked_sha": "337d9c1b8c5fadce4e638a2c96311e230ee94bb1",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39195706077/attempts/1",
+      "finished_at": "2026-10-19T03:41:00.254959+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "2f2e71d4359a206ac9035d73b61889bfa3cb7bfb"
+      "source_head_sha": "337d9c1b8c5fadce4e638a2c96311e230ee94bb1"
     }
   },
   "milestones": [
@@ -11467,7 +11467,7 @@
       "paper_ref": "Original finite-dimensional physical state/control Hilbert spaces and actual adjoint of nodal zero extension",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "ass:interfaces",
@@ -11499,16 +11499,105 @@
         "Carleman.cartesianPhysicalControlWeight_norm_sq",
         "Carleman.allowed_weight_cartesian_hilbert_observation"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "337d9c1b8c5fadce4e638a2c96311e230ee94bb1",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "337d9c1b8c5fadce4e638a2c96311e230ee94bb1",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39195706077/attempts/1",
+        "finished_at": "2026-10-19T03:41:00.254959+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "337d9c1b8c5fadce4e638a2c96311e230ee94bb1"
+      },
+      "semantic_review": {
+        "checked_sha": "337d9c1b8c5fadce4e638a2c96311e230ee94bb1",
+        "declarations": [
+          "Carleman.PhysicalFiniteSpace",
+          "Carleman.PhysicalFiniteSpace.valuesEquiv",
+          "Carleman.PhysicalFiniteSpace.core",
+          "Carleman.PhysicalFiniteSpace.inner_eq",
+          "Carleman.PhysicalFiniteSpace.norm_sq",
+          "Carleman.PhysicalFiniteSpace.norm_eq",
+          "Carleman.PhysicalFiniteSpace.multiplier",
+          "Carleman.PhysicalFiniteSpace.multiplier_apply",
+          "Carleman.PhysicalFiniteSpace.multiplier_norm_sq",
+          "Carleman.CartesianPhysicalState",
+          "Carleman.CartesianPhysicalControl",
+          "Carleman.cartesianPhysicalState_inner",
+          "Carleman.cartesianPhysicalControl_inner",
+          "Carleman.cartesianPhysicalControlExtension",
+          "Carleman.cartesianPhysicalControlRestriction",
+          "Carleman.cartesianPhysicalControlExtension_values",
+          "Carleman.cartesianPhysicalControlRestriction_values",
+          "Carleman.cartesianPhysicalControl_adjoint",
+          "Carleman.cartesianPhysicalStateWeight",
+          "Carleman.cartesianPhysicalControlWeight",
+          "Carleman.cartesianPhysicalStateWeight_norm_sq",
+          "Carleman.cartesianPhysicalControlWeight_norm_sq",
+          "Carleman.allowed_weight_cartesian_hilbert_observation"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b8fb7f34377ab18ef1dde9f9428457efca57a136/governance/reviews/T106-local-acceptance.md",
+        "reviewed_at": "2026-10-19T03:42:53+00:00",
+        "reviewer": "/root/accept_section3; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C121",
         "C117"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "由原正物理质量内积直接构造真正有限维完备Hilbert空间，范数平方严格为原节点平方和，状态/控制保留全部原指标。真实连续零延拓的Hilbert伴随严格等于限制；实际权乘子范数平方等于原加权节点能量，原全允许权观察界转为真实伴随的控制Hilbert范数。无网格依赖范数等价常数。原重构质量伴随及完整FD接口装配仍待，AUXILIARY14/26。"
+      "scope_notes": "由原正物理质量内积直接构造真正有限维完备Hilbert空间，范数平方严格为原节点平方和，状态/控制保留全部原指标。真实连续零延拓的Hilbert伴随严格等于限制；实际权乘子范数平方等于原加权节点能量，原全允许权观察界转为真实伴随的控制Hilbert范数。无网格依赖范数等价常数。原重构质量伴随及完整FD接口装配仍待，AUXILIARY14/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C123",
+      "title": "原FD重构、质量伴随与载荷接口",
+      "paper_ref": "Actual Cartesian reconstruction, normalized moment Hilbert adjoint, Q/G identities and original load interface",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "ass:interfaces",
+        "prop:fd"
+      ],
+      "lean_declarations": [
+        "Carleman.cartesianKuhnReconstructionLp_eq_sum",
+        "Carleman.cartesianPhysicalReconstructionLp",
+        "Carleman.cartesianPhysicalReconstructionLp_apply",
+        "Carleman.cartesianPhysicalReconstructionLp_injective",
+        "Carleman.cartesianKuhnMoment_eq_inner",
+        "Carleman.cartesianKuhnMoment_pairing",
+        "Carleman.cartesianPhysicalMoment",
+        "Carleman.cartesianPhysicalMoment_values",
+        "Carleman.cartesianPhysicalMoment_load_right_inverse",
+        "Carleman.cartesianReconstruction",
+        "Carleman.cartesianReconstruction_RH",
+        "Carleman.cartesianReconstruction_J_values",
+        "Carleman.cartesianReconstruction_QH",
+        "Carleman.cartesianReconstruction_G_values",
+        "Carleman.cartesianReconstruction_injective",
+        "Carleman.cartesianLoadInterface",
+        "Carleman.cartesianLoadInterface_Γ",
+        "Carleman.cartesianLoadInterface_lift",
+        "Carleman.cartesianLoadInterface_right_inverse"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C122",
+        "C106",
+        "C111"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "原物理Hilbert空间上的实际重构连续线性映射及单射性；真实Hilbert伴随逐节点严格等于原归一化帽积分。原Reconstruction的R/J/Q/G与同一实际构造完全一致，原LoadInterface取F=X、Γ=Id和已有真实L²载荷，兼容性与I=Id右逆实际证明。有限维连续性仅用于对象资格，不代替统一常数。完整FD数值接口组装仍待，AUXILIARY14/26。"
     }
   ],
   "events": [
@@ -12123,6 +12212,11 @@
       "at": "2026-10-19T03:39:03.282152+00:00",
       "public_summary": "原节点观察及区域界已独立验收；原物理Hilbert空间、真实控制伴随及其观察范数23声明构建审计通过。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1da5a83485fc21bb023aae889f8ec144388cde4a/governance/reviews/T105-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T03:45:31.838268+00:00",
+      "public_summary": "原物理Hilbert空间及控制伴随已独立验收；原重构、质量伴随和载荷接口19声明构建审计通过。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b8fb7f34377ab18ef1dde9f9428457efca57a136/governance/reviews/T106-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -12386,7 +12480,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4c165823064ce33a8681a1dcf8f2d57006a78e57/governance/reviews/T104-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39194196544/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1da5a83485fc21bb023aae889f8ec144388cde4a/governance/reviews/T105-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39194940847/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39194940847/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b8fb7f34377ab18ef1dde9f9428457efca57a136/governance/reviews/T106-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39195706077/attempts/1"
     ]
   },
   "schedules": [
@@ -27030,10 +27126,10 @@
       ],
       "branch": "main",
       "base_commit": "2f2e71d4359a206ac9035d73b61889bfa3cb7bfb",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "337d9c1b8c5fadce4e638a2c96311e230ee94bb1",
+      "merge_commit": "337d9c1b8c5fadce4e638a2c96311e230ee94bb1",
       "lean_declarations": [
         "Carleman.PhysicalFiniteSpace",
         "Carleman.PhysicalFiniteSpace.valuesEquiv",
@@ -27059,12 +27155,23 @@
         "Carleman.cartesianPhysicalControlWeight_norm_sq",
         "Carleman.allowed_weight_cartesian_hilbert_observation"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "337d9c1b8c5fadce4e638a2c96311e230ee94bb1",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39195706077/attempts/1",
+        "finished_at": "2026-10-19T03:41:00.254959+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "337d9c1b8c5fadce4e638a2c96311e230ee94bb1"
+      },
       "blocker": null,
       "attempts": [
         "三模块23显式声明定向3503 jobs、全库3821 jobs通过；包括全部生成实例和投影的6406声明递归公理审计PASS。"
       ],
-      "next_action": "固定SHA独立验收原物理Hilbert空间及控制伴随；继续原重构、归一化矩质量伴随、Q/G与载荷接口。",
+      "next_action": "原物理Hilbert空间、真实控制伴随和观察界已独立验收；继续原重构质量伴随和数值接口组装。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -27076,6 +27183,100 @@
         "recursive_axiom_audit": 6406,
         "new_explicit_declarations": 23,
         "declaration_artifact_sha256": "fad17c6d867e1d9e2f8820bde6e48524f85c3bcdae5c68575a24f84287a05c13",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "337d9c1b8c5fadce4e638a2c96311e230ee94bb1",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_section3",
+          "claim_ids": [
+            "C122"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "337d9c1b8c5fadce4e638a2c96311e230ee94bb1",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T03:42:53+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b8fb7f34377ab18ef1dde9f9428457efca57a136/governance/reviews/T106-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "337d9c1b8c5fadce4e638a2c96311e230ee94bb1",
+        "checked_sha": "337d9c1b8c5fadce4e638a2c96311e230ee94bb1",
+        "run_id": 39195706077,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3821,
+        "recursive_axiom_audit": 6406,
+        "new_explicit_declarations": 23,
+        "declaration_artifact_sha256": "fad17c6d867e1d9e2f8820bde6e48524f85c3bcdae5c68575a24f84287a05c13",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T107",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原FD重构、质量伴随与载荷接口",
+      "goal_ids": [
+        "C123"
+      ],
+      "acceptance": [
+        "重构确为同一原有限帽和的L²类，全物理节点空间及真实H¹₀资格保留",
+        "真实Hilbert伴随逐值等于原归一化积分，物理质量精确抵消",
+        "QH严格等于已接受B.2使用的同一Q_h，G=JR精确一致",
+        "原F=X、Γ=Id、同一真实L²载荷兼容性和I=Id右逆",
+        "不以有限维自动连续性替代网格一致估计，不提前提升完整FD"
+      ],
+      "dependencies": [
+        "C122",
+        "C106",
+        "C111"
+      ],
+      "branch": "main",
+      "base_commit": "337d9c1b8c5fadce4e638a2c96311e230ee94bb1",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.cartesianKuhnReconstructionLp_eq_sum",
+        "Carleman.cartesianPhysicalReconstructionLp",
+        "Carleman.cartesianPhysicalReconstructionLp_apply",
+        "Carleman.cartesianPhysicalReconstructionLp_injective",
+        "Carleman.cartesianKuhnMoment_eq_inner",
+        "Carleman.cartesianKuhnMoment_pairing",
+        "Carleman.cartesianPhysicalMoment",
+        "Carleman.cartesianPhysicalMoment_values",
+        "Carleman.cartesianPhysicalMoment_load_right_inverse",
+        "Carleman.cartesianReconstruction",
+        "Carleman.cartesianReconstruction_RH",
+        "Carleman.cartesianReconstruction_J_values",
+        "Carleman.cartesianReconstruction_QH",
+        "Carleman.cartesianReconstruction_G_values",
+        "Carleman.cartesianReconstruction_injective",
+        "Carleman.cartesianLoadInterface",
+        "Carleman.cartesianLoadInterface_Γ",
+        "Carleman.cartesianLoadInterface_lift",
+        "Carleman.cartesianLoadInterface_right_inverse"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "三模块19声明定向3506 jobs、全库3824 jobs通过；6476声明递归公理审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收原重构、质量伴随及载荷接口；继续真实物理测试、刚度和完整FD数值数据。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3824,
+        "recursive_axiom_audit": 6476,
+        "new_explicit_declarations": 19,
+        "declaration_artifact_sha256": "e1df70e557ce51b7452586cfd03d20fdceda824dab52e64bd764844c4212efe3",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

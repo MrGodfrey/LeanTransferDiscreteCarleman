@@ -205,3 +205,5 @@
 - T104 / C120：原eq:testsuper全状态真实弱超逼近5声明独立PASS；同SHA三项CI、6299声明递归审计及逐字节一致原始产物完整核实。 固定证明 `29ebd0b76cccb70d6da4499eaa09d35cab2895ff`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4c165823064ce33a8681a1dcf8f2d57006a78e57/governance/reviews/T104-local-acceptance.md)。原文14/26，T105继续原FD节点观察与真实重构区域界。
 
 - T105 / C121：原节点观察、真实限制/零延拓物理配对及全允许权区域界15声明独立PASS；同SHA三项CI、6321声明递归审计和原始产物逐字节一致。 固定证明 `2f2e71d4359a206ac9035d73b61889bfa3cb7bfb`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1da5a83485fc21bb023aae889f8ec144388cde4a/governance/reviews/T105-local-acceptance.md)。原文14/26，T106继续原FD物理Hilbert空间及真实控制伴随。
+
+- T106 / C122：原物理Hilbert空间、精确加权范数、真实控制伴随及观察界23声明独立PASS；同SHA三项CI、6406声明递归审计和原始产物逐字节一致。 固定证明 `337d9c1b8c5fadce4e638a2c96311e230ee94bb1`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b8fb7f34377ab18ef1dde9f9428457efca57a136/governance/reviews/T106-local-acceptance.md)。原文14/26，T107继续原FD重构、质量伴随与载荷接口。
