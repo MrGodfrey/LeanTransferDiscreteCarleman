@@ -1304,3 +1304,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T143 / C159：实际盒域解析数据、真实边界图册与完整 Section 3 辅助估计
 
 真实原盒算子的canonical H² jet受实际算子值控制，域包含与严格正图范数常数内部供应；全部原允许权族的A2/A3与同一原形式保持。任意光滑原空间函数内部构造同值profile。实际非零方向线性坐标、有限活跃面最大图函数及非活跃面邻域给有限严格半空间交的真实Lipschitz图册，真实中点和上下坐标不等式给任意正盒图册，包括全部棱角。最终 `box_section3` 联合提供同一真实算子的完整 Conclusions 和全部所需 AllowedFamily，常数先于网格/周期/权/状态，两种时间方向保留，无额外图册或正则性输入。五模块11声明；AUXILIARY，P023的一般凸多面体正则与P024连续Carleman估计仍待，不提前提升。详见 `analysis/T143-box-analytic-data.md`。
+
+## T144 / C160：连续热算子的实际高斯权与空间矩阵
+
+原 ψ=−‖x−c‖²、φ=exp(lψ)、ρ=φ−2 全空间光滑；真实 Fréchet 一/二阶导数与 Riesz 梯度，负权界及实际有界 SpatialProfile 全部内部证明。用真实 ℓ=qρ 的 Hessian/Laplacian 和 Ψ=−Δℓ−8qlφ 构造原矩阵，证明精确 c=4qlφId+2ql²φ∇ψ⊗∇ψ 及全空间一致强制性。从有界域及非空开观测子集内部选实际球、l、正下界和矩阵常数，先于 q/时间/状态；支持面上的真实法向导数给通量标量非正。三模块32声明。AUXILIARY，仅为 P024 的实际空间权步骤；完整点态热恒等式、面 Green 积分、端点、吸收、密度及时间反射仍待。详见 `analysis/T144-interior-heat-weight.md`。

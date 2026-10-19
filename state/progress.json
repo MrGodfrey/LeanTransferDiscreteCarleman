@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T143",
-    "supervisor_checked_at": "2026-10-19T09:18:08.094619+00:00",
-    "next_action": "独立验收实际盒解析数据与Section3全部估计；继续原连续CE的具体空间权。",
+    "current_task_id": "T144",
+    "supervisor_checked_at": "2026-10-19T09:26:34.919873+00:00",
+    "next_action": "独立验收实际高斯权与热矩阵；继续真实方向导数下的完整点态热算子恒等式。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T09:18:08.094619+00:00"
+    "last_activity_at": "2026-10-19T09:26:34.919873+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39226924106/attempts/1",
-      "finished_at": "2026-10-19T09:03:16.065390+00:00",
+      "checked_sha": "90ca06c7cd42fae4b870fae9a67219fa729226f7",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39229089450/attempts/1",
+      "finished_at": "2026-10-19T09:21:18.895790+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f"
+      "source_head_sha": "90ca06c7cd42fae4b870fae9a67219fa729226f7"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39226924106/attempts/1",
-      "finished_at": "2026-10-19T09:03:16.065390+00:00",
+      "checked_sha": "90ca06c7cd42fae4b870fae9a67219fa729226f7",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39229089450/attempts/1",
+      "finished_at": "2026-10-19T09:21:18.895790+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f"
+      "source_head_sha": "90ca06c7cd42fae4b870fae9a67219fa729226f7"
     }
   },
   "milestones": [
@@ -14144,7 +14144,7 @@
       "paper_ref": "Original Corollary A.2 box case and Section 3 auxiliary estimates, actual finite-halfspace Lipschitz charts",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "cor:analytic"
@@ -14162,9 +14162,40 @@
         "Carleman.openCoordinateBox_bounded_lipschitz",
         "Carleman.box_section3"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "90ca06c7cd42fae4b870fae9a67219fa729226f7",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "90ca06c7cd42fae4b870fae9a67219fa729226f7",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39229089450/attempts/1",
+        "finished_at": "2026-10-19T09:21:18.895790+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "90ca06c7cd42fae4b870fae9a67219fa729226f7"
+      },
+      "semantic_review": {
+        "checked_sha": "90ca06c7cd42fae4b870fae9a67219fa729226f7",
+        "declarations": [
+          "Carleman.box_dirichlet_graph_estimate",
+          "Carleman.box_analytic_data_uniform",
+          "Carleman.box_analytic_realization",
+          "Carleman.shearDirectionCoordinates",
+          "Carleman.shearDirectionCoordinates_direction",
+          "Carleman.exists_directional_coordinates",
+          "Carleman.finite_linear_max_lipschitz",
+          "Carleman.finite_halfspace_graph_charts",
+          "Carleman.finite_halfspace_bounded_lipschitz",
+          "Carleman.openCoordinateBox_bounded_lipschitz",
+          "Carleman.box_section3"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/73e1b1b7d6ebf8b8f67901d25329c62a55a865ab/governance/reviews/T143-local-acceptance.md",
+        "reviewed_at": "2026-10-19T09:22:51+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C157",
         "C087",
@@ -14173,7 +14204,64 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "实际盒域完整原算子H²图范数、全允许权族和全部Section3辅助估计，内部构造实际有限半空间与盒边界Lipschitz图册。一般凸多面体H²及连续CE仍缺，故AUXILIARY不提升P023/P024。"
+      "scope_notes": "实际盒域完整原算子H²图范数、全允许权族和全部Section3辅助估计，内部构造实际有限半空间与盒边界Lipschitz图册。一般凸多面体H²及连续CE仍缺，故AUXILIARY不提升P023/P024。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C160",
+      "title": "连续热算子的实际高斯权、空间矩阵与观测球选择",
+      "paper_ref": "Original prop:continuousCE proof, Gaussian spatial weight and c matrix; Fu–Lü–Zhang Corollary 3.1 (3.5)",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:continuousCE"
+      ],
+      "lean_declarations": [
+        "Carleman.interiorQuadratic",
+        "Carleman.interiorGaussian",
+        "Carleman.interiorCarlemanProfile",
+        "Carleman.interiorQuadratic_contDiff",
+        "Carleman.interiorGaussian_contDiff",
+        "Carleman.interiorCarlemanProfile_contDiff",
+        "Carleman.interiorQuadratic_hasFDerivAt",
+        "Carleman.interiorGaussian_hasFDerivAt",
+        "Carleman.interiorCarlemanProfile_hasFDerivAt",
+        "Carleman.interiorGaussian_fderiv_apply",
+        "Carleman.interiorCarlemanProfile_fderiv_apply",
+        "Carleman.interiorGaussian_pos",
+        "Carleman.interiorGaussian_le_one",
+        "Carleman.interiorCarlemanProfile_bounds",
+        "Carleman.interiorCarlemanProfile_hessian",
+        "Carleman.interiorCarlemanProfile_smoothOnClosure",
+        "Carleman.interiorSpatialProfile",
+        "Carleman.interiorSpatialProfile_value",
+        "Carleman.interiorQuadratic_gradient",
+        "Carleman.interiorQuadratic_gradient_norm_sq",
+        "Carleman.interiorQuadratic_gradient_outside_ball",
+        "Carleman.exists_interiorGaussian_gradient_threshold",
+        "Carleman.interiorGaussian_lower_bound",
+        "Carleman.interiorGaussian_supporting_normal",
+        "Carleman.interiorGaussian_face_flux_nonpos",
+        "Carleman.interiorHeatPsi",
+        "Carleman.interiorHeatMatrix",
+        "Carleman.interiorCarlemanProfile_scaled_hessian",
+        "Carleman.interiorHeatMatrix_formula",
+        "Carleman.interiorHeatMatrix_coercive",
+        "Carleman.interiorHeatMatrix_uniform_coercive",
+        "Carleman.exists_interior_heat_weight"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C030",
+        "C149"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "原负高斯权的实际Fréchet导数、Riesz梯度、完整观测球参数构造及真实热矩阵与支持面通量符号。未声称完整点态恒等式、Green积分或连续CE，P024不提升。"
     }
   ],
   "events": [
@@ -14973,6 +15061,11 @@
       "at": "2026-10-19T09:18:08.094619+00:00",
       "public_summary": "完整原Cartesian有限差分命题P012独立验收通过；实际盒解析数据、有限半空间边界图册和全部Section3估计已构建审计，进入独立验收。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1a2461ade27f9fc7327d3c03e1c6a09c952318a9/governance/reviews/T142-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T09:26:34.919873+00:00",
+      "public_summary": "实际盒解析数据、真实Lipschitz边界及完整Section3已独立验收；连续CE实际高斯权和空间矩阵已构建审计，进入独立验收。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/73e1b1b7d6ebf8b8f67901d25329c62a55a865ab/governance/reviews/T143-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -15310,7 +15403,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/dfab53c2a4b49f043f28a8dfea6fd7c5cad9e125/governance/reviews/T141-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39225053273/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1a2461ade27f9fc7327d3c03e1c6a09c952318a9/governance/reviews/T142-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39226924106/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39226924106/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/73e1b1b7d6ebf8b8f67901d25329c62a55a865ab/governance/reviews/T143-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39229089450/attempts/1"
     ]
   },
   "schedules": [
@@ -33602,10 +33697,10 @@
       ],
       "branch": "main",
       "base_commit": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "90ca06c7cd42fae4b870fae9a67219fa729226f7",
+      "merge_commit": "90ca06c7cd42fae4b870fae9a67219fa729226f7",
       "lean_declarations": [
         "Carleman.box_dirichlet_graph_estimate",
         "Carleman.box_analytic_data_uniform",
@@ -33619,12 +33714,23 @@
         "Carleman.openCoordinateBox_bounded_lipschitz",
         "Carleman.box_section3"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "90ca06c7cd42fae4b870fae9a67219fa729226f7",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39229089450/attempts/1",
+        "finished_at": "2026-10-19T09:21:18.895790+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "90ca06c7cd42fae4b870fae9a67219fa729226f7"
+      },
       "blocker": null,
       "attempts": [
         "五模块11声明定向3580 jobs、全库3972 jobs和7310声明递归公理审计通过。"
       ],
-      "next_action": "独立验收实际盒解析数据与Section3全部估计；继续原连续CE的具体空间权。",
+      "next_action": "实际盒解析数据、真实边界图册与全部Section3已验收；继续连续CE实际空间权。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -33636,6 +33742,112 @@
         "recursive_axiom_audit": 7310,
         "new_explicit_declarations": 11,
         "declaration_artifact_sha256": "cf8df18c5505c03754f5f85457e249b9ba50b770ed654766f054c7afb21fd02a",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "90ca06c7cd42fae4b870fae9a67219fa729226f7",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C159"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "90ca06c7cd42fae4b870fae9a67219fa729226f7",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T09:22:51+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/73e1b1b7d6ebf8b8f67901d25329c62a55a865ab/governance/reviews/T143-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "90ca06c7cd42fae4b870fae9a67219fa729226f7",
+        "checked_sha": "90ca06c7cd42fae4b870fae9a67219fa729226f7",
+        "run_id": 39229089450,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3972,
+        "recursive_axiom_audit": 7310,
+        "new_explicit_declarations": 11,
+        "declaration_artifact_sha256": "cf8df18c5505c03754f5f85457e249b9ba50b770ed654766f054c7afb21fd02a",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T144",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "连续热算子的实际高斯权、空间矩阵与观测球选择",
+      "goal_ids": [
+        "C160"
+      ],
+      "acceptance": [
+        "实际ψ/φ/ρ和真实一二阶导数，无任意导数字段",
+        "原2Hℓ−(Δℓ+Ψ)Id矩阵及精确4qlφId+2ql²φ∇ψ张量公式",
+        "从有界域和非空开观测集内部选择球、l及正下界，先于所有q与状态",
+        "支持面真实法向导数符号，明确不冒充Green积分",
+        "完整原连续CE仍待，AUXILIARY范围及无额外数学公理"
+      ],
+      "dependencies": [
+        "C030",
+        "C149"
+      ],
+      "branch": "main",
+      "base_commit": "90ca06c7cd42fae4b870fae9a67219fa729226f7",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.interiorQuadratic",
+        "Carleman.interiorGaussian",
+        "Carleman.interiorCarlemanProfile",
+        "Carleman.interiorQuadratic_contDiff",
+        "Carleman.interiorGaussian_contDiff",
+        "Carleman.interiorCarlemanProfile_contDiff",
+        "Carleman.interiorQuadratic_hasFDerivAt",
+        "Carleman.interiorGaussian_hasFDerivAt",
+        "Carleman.interiorCarlemanProfile_hasFDerivAt",
+        "Carleman.interiorGaussian_fderiv_apply",
+        "Carleman.interiorCarlemanProfile_fderiv_apply",
+        "Carleman.interiorGaussian_pos",
+        "Carleman.interiorGaussian_le_one",
+        "Carleman.interiorCarlemanProfile_bounds",
+        "Carleman.interiorCarlemanProfile_hessian",
+        "Carleman.interiorCarlemanProfile_smoothOnClosure",
+        "Carleman.interiorSpatialProfile",
+        "Carleman.interiorSpatialProfile_value",
+        "Carleman.interiorQuadratic_gradient",
+        "Carleman.interiorQuadratic_gradient_norm_sq",
+        "Carleman.interiorQuadratic_gradient_outside_ball",
+        "Carleman.exists_interiorGaussian_gradient_threshold",
+        "Carleman.interiorGaussian_lower_bound",
+        "Carleman.interiorGaussian_supporting_normal",
+        "Carleman.interiorGaussian_face_flux_nonpos",
+        "Carleman.interiorHeatPsi",
+        "Carleman.interiorHeatMatrix",
+        "Carleman.interiorCarlemanProfile_scaled_hessian",
+        "Carleman.interiorHeatMatrix_formula",
+        "Carleman.interiorHeatMatrix_coercive",
+        "Carleman.interiorHeatMatrix_uniform_coercive",
+        "Carleman.exists_interior_heat_weight"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "三模块32声明定向3224 jobs、全库3976 jobs、7354声明递归公理审计通过。"
+      ],
+      "next_action": "独立验收实际高斯权与热矩阵；继续真实方向导数下的完整点态热算子恒等式。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3976,
+        "recursive_axiom_audit": 7354,
+        "new_explicit_declarations": 32,
+        "declaration_artifact_sha256": "3832de1c1b2e06c6ad536a02dcf6b0b6530d8dbac8b17997bab84a3925d2ac66",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

@@ -279,3 +279,5 @@
 - T141 / C157：原盒全局H²、精确D(A)=H²∩H¹₀及完整右端估计34声明独立AUXILIARY PASS；三项实际CI和7289声明原始审计逐字节核对通过。 固定证明 `b818f314b275265490aa9b797779f7db0005ddb9`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/dfab53c2a4b49f043f28a8dfea6fd7c5cad9e125/governance/reviews/T141-local-acceptance.md)。原文16/26，T142继续完整原Cartesian有限差分数值实现与所有允许权接口。
 
 - T142 / C158：原Proposition6.2完整N1–N5及指定平方节点权测试独立PAPER PASS；实际三项CI和7291声明raw逐字节核对通过。 固定证明 `13c8977bd4c50a11d6bed5fdab64b09aeee0203f`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1a2461ade27f9fc7327d3c03e1c6a09c952318a9/governance/reviews/T142-local-acceptance.md)。原文17/26，T143继续真实有限半空间边界图册、盒域解析数据及完整Section3辅助估计。
+
+- T143 / C159：五模块11声明的实际有限半空间图册、原盒H²图范数和完整Section3独立AUXILIARY PASS；同SHA三项CI和7310项raw逐字节相同。 固定证明 `90ca06c7cd42fae4b870fae9a67219fa729226f7`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/73e1b1b7d6ebf8b8f67901d25329c62a55a865ab/governance/reviews/T143-local-acceptance.md)。原文17/26，T144继续连续热算子的实际高斯权、空间矩阵与观测球选择。
