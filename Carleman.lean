@@ -607,3 +607,7 @@ public import Carleman.Spatial.AllowedCartesianKuhnError
 
 public import Carleman.Spatial.KuhnNodalGradient
 public import Carleman.Spatial.CartesianKuhnCellStiffness
+
+public import Carleman.Geometry.FiniteCartesianShift
+public import Carleman.Spatial.CartesianLatticeDifferences
+public import Carleman.Spatial.CartesianKuhnEdgeAssembly

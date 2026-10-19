@@ -5016,6 +5016,33 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianKuhnReconstruction_scalarForm_cells
 #print axioms Carleman.cartesianKuhnReconstruction_scalarForm_cells
 
+#check @Carleman.finRotate_val_step
+#print axioms Carleman.finRotate_val_step
+#check @Carleman.cartesian_sum_face_zero_shift
+#print axioms Carleman.cartesian_sum_face_zero_shift
+#check @Carleman.cartesianLatticeData
+#print axioms Carleman.cartesianLatticeData
+#check @Carleman.cartesianLatticeData_zero_face
+#print axioms Carleman.cartesianLatticeData_zero_face
+#check @Carleman.cartesianLatticeSuccessor
+#print axioms Carleman.cartesianLatticeSuccessor
+#check @Carleman.cartesianAxisDifference
+#print axioms Carleman.cartesianAxisDifference
+#check @Carleman.cartesianAxisDifference_zero_transverse
+#print axioms Carleman.cartesianAxisDifference_zero_transverse
+#check @Carleman.kuhnVertexIndex_succ_eq_axis
+#print axioms Carleman.kuhnVertexIndex_succ_eq_axis
+#check @Carleman.cartesianKuhnCellDifference_eq_axis
+#print axioms Carleman.cartesianKuhnCellDifference_eq_axis
+#check @Carleman.cartesianKuhn_step_sum
+#print axioms Carleman.cartesianKuhn_step_sum
+#check @Carleman.cartesianKuhn_permutation_step_sum
+#print axioms Carleman.cartesianKuhn_permutation_step_sum
+#check @Carleman.cartesianKuhnReconstruction_weakGradientPairing_edges
+#print axioms Carleman.cartesianKuhnReconstruction_weakGradientPairing_edges
+#check @Carleman.cartesianKuhnReconstruction_scalarForm_edges
+#print axioms Carleman.cartesianKuhnReconstruction_scalarForm_edges
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
