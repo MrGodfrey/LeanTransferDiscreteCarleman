@@ -1214,3 +1214,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 `restrictRegion_weighted_sq` 给真实受限 L² 权范数的积分身份；`conforming_region_weighted_observation` 在 ω₀⊆ω 下证明实际 B_h* 限制的观测界，常数1。`galerkinRegionNumericalData` 使用真实 inclusion 重构、Galerkin 刚度、零缺陷、正交投影负载及原 L²(ω) 控制。
 
 `full_p1_numericalData` 对原全 conforming P1 网格族、原 grading、真实允许时间权与两符号，把已证明的 N3/N4 内部供应给同一实际数据；统一 δ/Ctime/Csuper/Capp 先于全部网格及时间参数，aE=Capp h、a₀=Capp h²、ηA=0。具体 Dirichlet 算子域的 H² 包含 hD 仍是显式原 A1 前提；本阶段不替代连续 H² 正则性或连续 CE，AUXILIARY、14/26。
+
+## T127：有界分布导数与实际 L² 极限
+
+`exists_inner_of_bounded_test_functional` 由真实 Hahn–Banach 和 Riesz 构造同常数 Hilbert 代表。`exists_weakSpatialDerivative_of_test_bound` / `exists_weakSpatialDerivative_iff_test_bound` 对任意开域上的原全部光滑紧支测试，证明分布导数在原 L² 测试范数中 C 有界与存在范数≤C的真实弱导数等价。
+
+`exists_weakSpatialDerivative_of_test_limits` 容许每个测试各自最终成立的分部积分身份，候选导数字段只要求最终L²范数≤C，不要求其收敛；从测试配对极限构造真实弱导数。`exists_weakSpatialDerivative_of_strong_limit_bounded` 给恒定域上强L²极限的直接推论。常数C原样保留，无有界域或边界光滑性限制，不预设待证弱导数存在。凸域Dirichlet H²的实际先验界和内域正则性仍未完成；AUXILIARY14/26。
