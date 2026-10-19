@@ -582,3 +582,7 @@ public import Carleman.Spatial.WeightedScalarRepresentative
 public import Carleman.Spatial.CartesianKuhnWeightedCell
 public import Carleman.Spatial.CartesianKuhnWeightedNorm
 public import Carleman.Spatial.AllowedCartesianKuhnStability
+public import Carleman.Spatial.CartesianKuhnMomentBounds
+public import Carleman.Spatial.CartesianKuhnProjection
+public import Carleman.Geometry.CartesianClippedPatch
+public import Carleman.Spatial.CartesianKuhnPatchProjection

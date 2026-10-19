@@ -4846,6 +4846,51 @@ set_option pp.maxSteps 1000000
 #check @Carleman.allowed_weight_cartesianKuhn_stability
 #print axioms Carleman.allowed_weight_cartesianKuhn_stability
 
+#check @Carleman.cartesianKuhnMoment_local_integral
+#print axioms Carleman.cartesianKuhnMoment_local_integral
+#check @Carleman.cartesianKuhnMoment_local_sq_bound
+#print axioms Carleman.cartesianKuhnMoment_local_sq_bound
+#check @Carleman.cartesianKuhnMoment_local_congr
+#print axioms Carleman.cartesianKuhnMoment_local_congr
+#check @Carleman.cartesianKuhnProjection
+#print axioms Carleman.cartesianKuhnProjection
+#check @Carleman.cartesianKuhnProjectionLp
+#print axioms Carleman.cartesianKuhnProjectionLp
+#check @Carleman.cartesianKuhn_cell_volume_le
+#print axioms Carleman.cartesianKuhn_cell_volume_le
+#check @Carleman.cartesianKuhnProjection_local_sq_bound
+#print axioms Carleman.cartesianKuhnProjection_local_sq_bound
+#check @Carleman.cartesianKuhnProjection_local_congr
+#print axioms Carleman.cartesianKuhnProjection_local_congr
+#check @Carleman.cartesianKuhnProjection_local_norm_bound
+#print axioms Carleman.cartesianKuhnProjection_local_norm_bound
+#check @Carleman.cartesianClippedPatchLower
+#print axioms Carleman.cartesianClippedPatchLower
+#check @Carleman.cartesianClippedPatchUpper
+#print axioms Carleman.cartesianClippedPatchUpper
+#check @Carleman.cartesianClippedPatch
+#print axioms Carleman.cartesianClippedPatch
+#check @Carleman.cartesianClippedPatch_eq_box
+#print axioms Carleman.cartesianClippedPatch_eq_box
+#check @Carleman.cartesianClippedPatch_width_bounds
+#print axioms Carleman.cartesianClippedPatch_width_bounds
+#check @Carleman.cartesianClippedPatch_isOpen
+#print axioms Carleman.cartesianClippedPatch_isOpen
+#check @Carleman.cartesianClippedPatch_subset_domain
+#print axioms Carleman.cartesianClippedPatch_subset_domain
+#check @Carleman.cartesianClippedPatch_contains_cell
+#print axioms Carleman.cartesianClippedPatch_contains_cell
+#check @Carleman.cartesianClippedPatch_multiplicity_le
+#print axioms Carleman.cartesianClippedPatch_multiplicity_le
+#check @Carleman.cartesianKuhnHat_support_subset_clippedPatch
+#print axioms Carleman.cartesianKuhnHat_support_subset_clippedPatch
+#check @Carleman.cartesianKuhnProjection_patch_sq_bound
+#print axioms Carleman.cartesianKuhnProjection_patch_sq_bound
+#check @Carleman.cartesianKuhnProjection_patch_norm_bound
+#print axioms Carleman.cartesianKuhnProjection_patch_norm_bound
+#check @Carleman.cartesianKuhnProjection_patch_congr
+#print axioms Carleman.cartesianKuhnProjection_patch_congr
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
