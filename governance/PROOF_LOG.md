@@ -173,3 +173,5 @@
 - T088 / C104：完整内部节点星反射、真实帽函数中心对称和零向量一阶矩16声明独立验收PASS，同SHA三项CI、5968声明递归审计及逐字节相同远端产物。 固定证明 `b54a0a22a2352ab389a1cb109f1d60386ca2261a`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0d59762783fdc4af10f502d529646186e18564a6/governance/reviews/T088-local-acceptance.md)。原文13/26，T089继续实际内部节点质量与完整仿射矩再现。
 
 - T089 / C105：实际内部节点零阶质量及原完整仿射矩再现15声明独立验收PASS，同SHA三项CI、5988声明递归审计及逐字节相同远端产物。 固定证明 `f2e5416279274e334edf8df2d2e43ce3a4d23c39`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e74013892fe7a9771dc021ada481042542376e42/governance/reviews/T089-local-acceptance.md)。原文13/26，T090继续原完整内部节点空间上的真实L²载荷右逆。
+
+- T090 / C106：原完整内部节点空间真实L²载荷右逆28声明独立验收PASS，同SHA三项CI、6026声明递归审计及逐字节相同远端产物。 固定证明 `340cab6232ac4c81515d19b523fec6e7a031df75`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/975ddce0bb16c1f7760caeae2178ed1b08cf6e2a/governance/reviews/T090-local-acceptance.md)。原文13/26，T091继续实际重构与载荷的网格一致无权L²界。
