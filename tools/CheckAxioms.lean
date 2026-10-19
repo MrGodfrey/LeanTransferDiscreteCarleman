@@ -5833,6 +5833,23 @@ set_option pp.maxSteps 1000000
 #check @Carleman.exists_interior_H2_bound
 #print axioms Carleman.exists_interior_H2_bound
 
+#check @Carleman.SimplicialPartition.maxDiameter_pos
+#print axioms Carleman.SimplicialPartition.maxDiameter_pos
+#check @Carleman.SimplicialPartition.inverseWeight_const_bound
+#print axioms Carleman.SimplicialPartition.inverseWeight_const_bound
+#check @Carleman.conforming_uniform_inverse
+#print axioms Carleman.conforming_uniform_inverse
+#check @Carleman.Physical.filterRayleigh_le_of_energy_bound
+#print axioms Carleman.Physical.filterRayleigh_le_of_energy_bound
+#check @Carleman.Physical.nestedConformingFilter
+#print axioms Carleman.Physical.nestedConformingFilter
+#check @Carleman.Physical.dirichlet_galerkin_energy
+#print axioms Carleman.Physical.dirichlet_galerkin_energy
+#check @Carleman.Physical.nested_p1_filter_rayleigh
+#print axioms Carleman.Physical.nested_p1_filter_rayleigh
+#check @Carleman.Physical.p1_coarse_filter_rayleigh
+#print axioms Carleman.Physical.p1_coarse_filter_rayleigh
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
