@@ -355,3 +355,7 @@
 - T174 / C190：两完整结论定义与两实际定理独立4/4 PASS；同SHA三项CI成功，8151声明raw审计逐字节一致。 固定证明 `d93e52fc433c99d25a188effa0c451488098a451`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/08759a4cb612cbb34ffc8be7a4f7ebbf6fa0a085/governance/reviews/T174-local-acceptance.md)。原文17/26，T175继续原差分对偶单元的真实重构、控制配对与单元平均。
 
 - T175 / C191：固定证明 `7c2ceacf62d42b168879106b8c6d6fc246c45794` 的三项实际CI与原始审计核对通过；独立Agent验收仍在运行，当前仅BUILT。T176继续原时空单元平均势及原物理算子的统一界，原文覆盖17/26。
+
+- T175 / C191：二十一声明独立21/21 PASS；真实Lebesgue重构与原物理范数/控制配对/平均伴随一致，三项CI及8190声明raw逐字节核对。 固定证明 `7c2ceacf62d42b168879106b8c6d6fc246c45794`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8a921065b09fe7082c4ef5d1163e9925f3f98709/governance/reviews/T175-local-acceptance.md)。原文17/26；当前执行任务不变。
+
+- T176 / C192：固定证明 `ef4e3f83320e3a2d4cc7a074a1df996c13bd9d52` 的三项实际CI与原始审计核对通过；独立Agent验收仍在运行，当前仅BUILT。T177继续真实时间重构的控制范数、配对与弱子列，原文覆盖17/26。
