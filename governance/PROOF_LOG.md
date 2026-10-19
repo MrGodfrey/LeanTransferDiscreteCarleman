@@ -211,3 +211,5 @@
 - T107 / C123：同一原R/J/Q/G、真实物理Hilbert质量伴随及实际载荷接口19声明独立PASS；同SHA三项CI、6476声明递归审计和固定产物逐字节一致。 固定证明 `513b40027762c901232372629409f0001dea82ab`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bbbf0255c69b580b8331a56327e224a3033aeee0/governance/reviews/T107-local-acceptance.md)。原文14/26，T108继续同一原物理Hilbert测试的完整WeightedTest接口。
 
 - T108 / C124：原物理Hilbert测试、真实算子范数导数和完整统一WeightedTest14声明独立PASS；同SHA三项CI、6513声明递归审计和固定产物逐字节一致。 固定证明 `cd4c4c9e459a1757a027c36fd05fa3dbfd83fc92`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/931d28da09451e562916c261c7cebc8a4becf45b/governance/reviews/T108-local-acceptance.md)。原文14/26，T109继续原物理刚度、加权范数与统一稳定性。
+
+- T109 / C125：原物理刚度、自伴非负、加权范数及统一稳定性19声明独立PASS；同SHA三项CI、6545声明递归审计和固定产物逐字节一致。 固定证明 `b1611e7c3fe37e6b3ed31556e932f61b657e2be1`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8c556bf38f8f11d4f6aad694df8803ca31dd1d6e/governance/reviews/T109-local-acceptance.md)。原文14/26，T110继续原B.2逼近接口与真实FD数值数据组装。
