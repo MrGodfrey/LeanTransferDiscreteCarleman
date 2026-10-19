@@ -1152,3 +1152,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T111：原全P1空间的完整加权测试接口
 
 详见 [T111 分析](analysis/T111-p1-weighted-test.md)。实际全P1超逼近与原Galerkin测试时间性质组合为完整WeightedTest，明确算子与导数均为同一实际Pi_h(σ²z)构造。阈值与正时间/空间常数先于全部原分级网格、周期、时间权和两符号；有限测度由紧闭包内部供应。原全H²逼近仍待，不提前提升P1/P011。AUXILIARY14/26。
+
+## T112：低维光滑状态的真实L² Hessian节点值误差
+
+详见 [T112 分析](analysis/T112-p1-h2-nodal.md)。二阶Taylor积分余项、真实收缩Jacobian及可积r^(−1/2)核给d≤3的平均Taylor余项；同一实际仿射多项式及节点插值给闭单纯形上∫|f−I_Kf|²≤16D⁴∫‖D²f‖²，保留真实L² Hessian，自动证明体积正性。两模块15声明；当前只在光滑类证明，弱H²闭包、梯度及全局权估计仍待。AUXILIARY14/26，P011不提升。

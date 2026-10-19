@@ -215,3 +215,5 @@
 - T109 / C125：原物理刚度、自伴非负、加权范数及统一稳定性19声明独立PASS；同SHA三项CI、6545声明递归审计和固定产物逐字节一致。 固定证明 `b1611e7c3fe37e6b3ed31556e932f61b657e2be1`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8c556bf38f8f11d4f6aad694df8803ca31dd1d6e/governance/reviews/T109-local-acceptance.md)。原文14/26，T110继续原B.2逼近接口与真实FD数值数据组装。
 
 - T110 / C126：原B.2逼近接口及真实FD统一数值数据4声明独立PASS；同SHA三项CI、6554声明递归审计和固定产物逐字节一致，原A1定义域正则性明确保留。 固定证明 `20523c258707a3864f45541d0eea83581360c86b`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c3f37bd0d4bd17500fb457e0f3da13450bcf4bd4/governance/reviews/T110-local-acceptance.md)。原文14/26，T111继续原全P1空间的完整加权测试接口。
+
+- T111 / C127：原全P1完整WeightedTest独立PASS；同SHA三项CI、6556声明递归审计和固定产物逐字节一致。 固定证明 `0d91a94335bd491366597b81f45de26b4559b7ad`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b572f6af6e25e7526f32a6124a5a94b10c1021be/governance/reviews/T111-local-acceptance.md)。原文14/26，T112继续低维光滑状态的真实L² Hessian节点值误差。

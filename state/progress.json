@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T111",
-    "supervisor_checked_at": "2026-10-19T04:17:16.868827+00:00",
-    "next_action": "固定SHA独立验收全P1完整加权测试；继续原H²状态的节点逼近依据。",
+    "current_task_id": "T112",
+    "supervisor_checked_at": "2026-10-19T04:23:29.979956+00:00",
+    "next_action": "固定SHA独立验收真实L² Hessian节点值误差；继续配套梯度界及原弱H²闭包。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T04:17:16.868827+00:00"
+    "last_activity_at": "2026-10-19T04:23:29.979956+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "20523c258707a3864f45541d0eea83581360c86b",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39198141744/attempts/1",
-      "finished_at": "2026-10-19T04:12:49.925840+00:00",
+      "checked_sha": "0d91a94335bd491366597b81f45de26b4559b7ad",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39198725994/attempts/1",
+      "finished_at": "2026-10-19T04:19:20.655122+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "20523c258707a3864f45541d0eea83581360c86b"
+      "source_head_sha": "0d91a94335bd491366597b81f45de26b4559b7ad"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "20523c258707a3864f45541d0eea83581360c86b",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39198141744/attempts/1",
-      "finished_at": "2026-10-19T04:12:49.925840+00:00",
+      "checked_sha": "0d91a94335bd491366597b81f45de26b4559b7ad",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39198725994/attempts/1",
+      "finished_at": "2026-10-19T04:19:20.655122+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "20523c258707a3864f45541d0eea83581360c86b"
+      "source_head_sha": "0d91a94335bd491366597b81f45de26b4559b7ad"
     }
   },
   "milestones": [
@@ -11868,7 +11868,7 @@
       "paper_ref": "Original full P1 projected weighted test, time derivative and complete WeightedTest uniformly over graded meshes",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "Ptest",
@@ -11877,16 +11877,79 @@
       "lean_declarations": [
         "Carleman.full_p1_weightedTest_interface"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "0d91a94335bd491366597b81f45de26b4559b7ad",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "0d91a94335bd491366597b81f45de26b4559b7ad",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39198725994/attempts/1",
+        "finished_at": "2026-10-19T04:19:20.655122+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "0d91a94335bd491366597b81f45de26b4559b7ad"
+      },
+      "semantic_review": {
+        "checked_sha": "0d91a94335bd491366597b81f45de26b4559b7ad",
+        "declarations": [
+          "Carleman.full_p1_weightedTest_interface"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b572f6af6e25e7526f32a6124a5a94b10c1021be/governance/reviews/T111-local-acceptance.md",
+        "reviewed_at": "2026-10-19T04:21:05+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C082",
         "C049"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "原全P1空间实际Pi_h(σ²z)及实际导数供应完整WeightedTest，全部超逼近与时间字段内部从已证结论组合。固定常数先于全部原分级网格、周期、允许时间权及两符号。有限测度由紧闭包内部推导，无额外数值假设。全H²逼近仍待，P1/P011不提升；AUXILIARY14/26。"
+      "scope_notes": "原全P1空间实际Pi_h(σ²z)及实际导数供应完整WeightedTest，全部超逼近与时间字段内部从已证结论组合。固定常数先于全部原分级网格、周期、允许时间权及两符号。有限测度由紧闭包内部推导，无额外数值假设。全H²逼近仍待，P1/P011不提升；AUXILIARY14/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C128",
+      "title": "低维光滑状态的真实L² Hessian节点值误差",
+      "paper_ref": "Original P1 Step 2 local nodal interpolation: actual L² Hessian value error on the smooth subclass, via averaged Taylor integrals",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:p1",
+        "eq:p1-interpolation"
+      ],
+      "lean_declarations": [
+        "Carleman.smooth_first_taylor_integral",
+        "Carleman.integral_convex_segment_jacobian_le",
+        "Carleman.convex_segment_norm_integral_sq",
+        "Carleman.convex_segment_lowdim_kernel_bound",
+        "Carleman.integrableOn_unit_inv_sqrt",
+        "Carleman.integral_unit_inv_sqrt",
+        "Carleman.convex_segment_lowdim_integral_bound",
+        "Carleman.smooth_first_taylor_contracted",
+        "Carleman.smooth_taylor_remainder_norm_bound",
+        "Carleman.convex_smooth_averaged_taylor_error",
+        "Carleman.averagedTaylorPolynomial",
+        "Carleman.averagedTaylorPolynomial_apply",
+        "Carleman.averagedTaylorPolynomial_error",
+        "Carleman.simplexNodal_smooth_h2_value_error",
+        "Carleman.simplexNodal_smooth_h2_value_integral"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C088",
+        "C075",
+        "C031"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实二阶Taylor积分余项、完整收缩Jacobian及低维可积奇异核给平均仿射余项；同一实际单纯形重心节点插值得∫|f−I_Kf|²≤16D⁴∫‖D²f‖²。保留真实L² Hessian与闭单元节点，常数独立网格体积及状态。当前只证光滑类，弱H²闭包、梯度和全局允许权仍待，AUXILIARY14/26，P011不提升。"
     }
   ],
   "events": [
@@ -12526,6 +12589,11 @@
       "at": "2026-10-19T04:17:16.868827+00:00",
       "public_summary": "原B.2逼近接口及真实FD统一数值数据已独立验收；原全P1完整加权测试构建审计通过，继续全H²逼近。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c3f37bd0d4bd17500fb457e0f3da13450bcf4bd4/governance/reviews/T110-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T04:23:29.979956+00:00",
+      "public_summary": "原全P1完整加权测试已独立验收；低维光滑状态的真实L² Hessian节点值误差15声明构建审计通过，继续全H²逼近。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b572f6af6e25e7526f32a6124a5a94b10c1021be/governance/reviews/T111-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -12799,7 +12867,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8c556bf38f8f11d4f6aad694df8803ca31dd1d6e/governance/reviews/T109-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39197402706/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c3f37bd0d4bd17500fb457e0f3da13450bcf4bd4/governance/reviews/T110-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39198141744/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39198141744/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b572f6af6e25e7526f32a6124a5a94b10c1021be/governance/reviews/T111-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39198725994/attempts/1"
     ]
   },
   "schedules": [
@@ -27952,19 +28022,30 @@
       ],
       "branch": "main",
       "base_commit": "20523c258707a3864f45541d0eea83581360c86b",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "0d91a94335bd491366597b81f45de26b4559b7ad",
+      "merge_commit": "0d91a94335bd491366597b81f45de26b4559b7ad",
       "lean_declarations": [
         "Carleman.full_p1_weightedTest_interface"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "0d91a94335bd491366597b81f45de26b4559b7ad",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39198725994/attempts/1",
+        "finished_at": "2026-10-19T04:19:20.655122+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "0d91a94335bd491366597b81f45de26b4559b7ad"
+      },
       "blocker": null,
       "attempts": [
         "单模块1显式声明定向3614 jobs、全库3833 jobs通过；6556声明递归公理审计PASS。"
       ],
-      "next_action": "固定SHA独立验收全P1完整加权测试；继续原H²状态的节点逼近依据。",
+      "next_action": "原全P1完整WeightedTest独立验收；继续原H²状态局部节点逼近依据。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -27976,6 +28057,96 @@
         "recursive_axiom_audit": 6556,
         "new_explicit_declarations": 1,
         "declaration_artifact_sha256": "be77fb7bbc510990a10f718941a1290c5a15652c6b2c4f4cb104fa94684c6466",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "0d91a94335bd491366597b81f45de26b4559b7ad",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C127"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "0d91a94335bd491366597b81f45de26b4559b7ad",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T04:21:05+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b572f6af6e25e7526f32a6124a5a94b10c1021be/governance/reviews/T111-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "0d91a94335bd491366597b81f45de26b4559b7ad",
+        "checked_sha": "0d91a94335bd491366597b81f45de26b4559b7ad",
+        "run_id": 39198725994,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3833,
+        "recursive_axiom_audit": 6556,
+        "new_explicit_declarations": 1,
+        "declaration_artifact_sha256": "be77fb7bbc510990a10f718941a1290c5a15652c6b2c4f4cb104fa94684c6466",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T112",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "低维光滑状态的真实L² Hessian节点值误差",
+      "goal_ids": [
+        "C128"
+      ],
+      "acceptance": [
+        "真实Taylor余项、非退化收缩Jacobians及凸域包含，未丢奇异端点",
+        "低维d≤3的r^(-1/2)实际可积及精确积分2",
+        "真实平均Taylor仿射多项式与同一节点插值身份",
+        "Hessian右端为真实L²积分，点误差及平方积分常数统一",
+        "明确光滑子类范围，未将L²类直接取值或冒充全弱H²及完整P1"
+      ],
+      "dependencies": [
+        "C088",
+        "C075",
+        "C031"
+      ],
+      "branch": "main",
+      "base_commit": "0d91a94335bd491366597b81f45de26b4559b7ad",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.smooth_first_taylor_integral",
+        "Carleman.integral_convex_segment_jacobian_le",
+        "Carleman.convex_segment_norm_integral_sq",
+        "Carleman.convex_segment_lowdim_kernel_bound",
+        "Carleman.integrableOn_unit_inv_sqrt",
+        "Carleman.integral_unit_inv_sqrt",
+        "Carleman.convex_segment_lowdim_integral_bound",
+        "Carleman.smooth_first_taylor_contracted",
+        "Carleman.smooth_taylor_remainder_norm_bound",
+        "Carleman.convex_smooth_averaged_taylor_error",
+        "Carleman.averagedTaylorPolynomial",
+        "Carleman.averagedTaylorPolynomial_apply",
+        "Carleman.averagedTaylorPolynomial_error",
+        "Carleman.simplexNodal_smooth_h2_value_error",
+        "Carleman.simplexNodal_smooth_h2_value_integral"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "两模块15显式声明定向3269 jobs、全库3836 jobs通过；6577声明递归公理审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收真实L² Hessian节点值误差；继续配套梯度界及原弱H²闭包。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3836,
+        "recursive_axiom_audit": 6577,
+        "new_explicit_declarations": 15,
+        "declaration_artifact_sha256": "d8316745f0ccde509794ed84809143537f822124d8aacd34c46c1bda16ec5355",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
