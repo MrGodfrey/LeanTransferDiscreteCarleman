@@ -5440,6 +5440,35 @@ set_option pp.maxSteps 1000000
 #check @Carleman.WeakSobolevJet.local_mollification_strong_h2
 #print axioms Carleman.WeakSobolevJet.local_mollification_strong_h2
 
+#check @Carleman.continuous_memLp_compact
+#print axioms Carleman.continuous_memLp_compact
+#check @Carleman.compact_integral_norm_le_l2
+#print axioms Carleman.compact_integral_norm_le_l2
+#check @Carleman.convex_smooth_h2_point_bound
+#print axioms Carleman.convex_smooth_h2_point_bound
+#check @Carleman.tensor_norm_le_coordinate_sum
+#print axioms Carleman.tensor_norm_le_coordinate_sum
+#check @Carleman.tensor_L2_le_coordinate_sum
+#print axioms Carleman.tensor_L2_le_coordinate_sum
+#check @Carleman.convex_smooth_h2_coordinate_point_bound
+#print axioms Carleman.convex_smooth_h2_coordinate_point_bound
+#check @Carleman.coordinateDerivative_sub
+#print axioms Carleman.coordinateDerivative_sub
+#check @Carleman.bochnerL2Norm_sub_le_errors
+#print axioms Carleman.bochnerL2Norm_sub_le_errors
+#check @Carleman.convex_smooth_h2_uniform_limit
+#print axioms Carleman.convex_smooth_h2_uniform_limit
+#check @Carleman.coordinateDerivative_one
+#print axioms Carleman.coordinateDerivative_one
+#check @Carleman.coordinateDerivative_two
+#print axioms Carleman.coordinateDerivative_two
+#check @Carleman.WeakSobolevJet.exists_local_continuous_representative
+#print axioms Carleman.WeakSobolevJet.exists_local_continuous_representative
+#check @Carleman.WeakSobolevJet.exists_continuous_representative
+#print axioms Carleman.WeakSobolevJet.exists_continuous_representative
+#check @Carleman.WeakSobolevJet.continuous_representative_unique
+#print axioms Carleman.WeakSobolevJet.continuous_representative_unique
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

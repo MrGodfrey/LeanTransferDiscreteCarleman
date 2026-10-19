@@ -670,3 +670,9 @@ public import Carleman.Spatial.StrongL2Limit
 public import Carleman.Spatial.StrongMollifierLimit
 public import Carleman.Spatial.LocalStrongMollification
 public import Carleman.Spatial.WeakH2LocalSmoothing
+
+public import Carleman.Spatial.SmoothH2PointBound
+public import Carleman.Spatial.TensorCoordinateL2
+public import Carleman.Spatial.SmoothH2UniformLimit
+public import Carleman.Spatial.WeakH2LocalContinuous
+public import Carleman.Spatial.WeakH2Continuous
