@@ -7345,6 +7345,29 @@ set_option pp.maxSteps 1000000
 #check @Carleman.exists_regional_control_weak_subsequence
 #print axioms Carleman.exists_regional_control_weak_subsequence
 
+#check @Carleman.reconstruction_adjoint_left_inverse
+#print axioms Carleman.reconstruction_adjoint_left_inverse
+#check @Carleman.reconstruction_residual_orthogonal
+#print axioms Carleman.reconstruction_residual_orthogonal
+#check @Carleman.reconstruction_error_pythagoras
+#print axioms Carleman.reconstruction_error_pythagoras
+#check @Carleman.reconstruction_best_approximation
+#print axioms Carleman.reconstruction_best_approximation
+#check @Carleman.finiteCells_union_volume
+#print axioms Carleman.finiteCells_union_volume
+#check @Carleman.finiteCellLinear_error_bound
+#print axioms Carleman.finiteCellLinear_error_bound
+#check @Carleman.finiteCell_average_error_bound
+#print axioms Carleman.finiteCell_average_error_bound
+#check @Carleman.cartesianDualCells_union_volume
+#print axioms Carleman.cartesianDualCells_union_volume
+#check @Carleman.cartesianDualCells_uncovered_volume
+#print axioms Carleman.cartesianDualCells_uncovered_volume
+#check @Carleman.cartesianCell_average_continuous_error
+#print axioms Carleman.cartesianCell_average_continuous_error
+#check @Carleman.cartesianCell_average_lipschitz_error
+#print axioms Carleman.cartesianCell_average_lipschitz_error
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

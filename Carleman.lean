@@ -946,3 +946,6 @@ public import Carleman.Spatial.CartesianCellControlSupport
 public import Carleman.Control.SupportedRegionSpace
 public import Carleman.Control.BochnerKernelSpace
 public import Carleman.Control.SupportedTimeControl
+public import Carleman.Spatial.IsometricReconstructionProjection
+public import Carleman.Spatial.FiniteCellApproximation
+public import Carleman.Spatial.CartesianCellApproximation
