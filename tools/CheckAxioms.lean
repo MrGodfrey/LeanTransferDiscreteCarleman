@@ -5820,6 +5820,19 @@ set_option pp.maxSteps 1000000
 #check @Carleman.exists_uniform_cutoff_H2
 #print axioms Carleman.exists_uniform_cutoff_H2
 
+#check @Carleman.exists_spatialTest_eq_one_on_compact
+#print axioms Carleman.exists_spatialTest_eq_one_on_compact
+#check @Carleman.cutoff_fderiv_eq
+#print axioms Carleman.cutoff_fderiv_eq
+#check @Carleman.cutoff_mollifier_gradient_tendsto
+#print axioms Carleman.cutoff_mollifier_gradient_tendsto
+#check @Carleman.IsWeakNegativeLaplacian.restrictSubdomain
+#print axioms Carleman.IsWeakNegativeLaplacian.restrictSubdomain
+#check @Carleman.exists_interior_H2_of_cutoff
+#print axioms Carleman.exists_interior_H2_of_cutoff
+#check @Carleman.exists_interior_H2_bound
+#print axioms Carleman.exists_interior_H2_bound
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

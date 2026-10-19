@@ -743,3 +743,7 @@ public import Carleman.Spatial.WeakPoissonConvolution
 public import Carleman.Spatial.SmoothLaplacianProduct
 public import Carleman.Spatial.CutoffPoissonConvolution
 public import Carleman.Spatial.CutoffPoissonEstimate
+public import Carleman.Spatial.InteriorSmoothCutoff
+public import Carleman.Spatial.CutoffMollifierGradient
+public import Carleman.Spatial.WeakPoissonRestriction
+public import Carleman.Spatial.InteriorPoissonRegularity
