@@ -377,3 +377,7 @@
 - T180 / C196：九声明独立9/9 PASS，固定原域真实平均、条带体积趋零、残差收缩及真实稠密性清偿任意L²强收敛，三CI与8309声明raw逐字节核对。 固定证明 `1d85add4836977c5a6b3bd55448110e9bad21a50`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5d7bf13e6d15857cf74bb5e3a234500ffada5e1e/governance/reviews/T180-local-acceptance.md)。原文17/26；当前执行任务不变。
 
 - T181 / C197：固定证明 `7a2f33cfe125a118ee1792410345603891957e6c` 的三项实际CI与原始审计核对通过；独立Agent验收仍在运行，当前仅BUILT。T182继续原时空平均势的真实重构与精确物理配对，原文覆盖17/26。
+
+- T181 / C197：五声明独立5/5 PASS，真实测试L²稠密、节点插值与H¹₀成员资格、完整P1投影对任意原L²强收敛忠实，三CI与8314声明raw逐字节核对。 固定证明 `7a2f33cfe125a118ee1792410345603891957e6c`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7c13fe36b5570f9c789759b0ef845896ff76c38f/governance/reviews/T181-local-acceptance.md)。原文17/26；当前执行任务不变。
+
+- T182 / C198：二十五声明独立25/25 PASS，真实单元乘法/原质量配对、全截面Fubini和正乘积质量忠实；三CI与8352声明raw逐字节核对。 固定证明 `ffa5a6f8061e5b13aa96a7f77081aa4f8482e2e5`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7edbc905e19aabaa5b4300c0b835eb328edb4235/governance/reviews/T182-local-acceptance.md)。原文17/26，T183继续原时空单元平均及有界势的强L²一致性。
