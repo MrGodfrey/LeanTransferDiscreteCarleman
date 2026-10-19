@@ -952,3 +952,5 @@ public import Carleman.Spatial.CartesianCellApproximation
 public import Carleman.Spatial.FixedBoxCellReconstruction
 public import Carleman.Spatial.DenseReconstructionConvergence
 public import Carleman.Spatial.CartesianCellStrongConvergence
+public import Carleman.Spatial.SpatialTestLpDensity
+public import Carleman.Spatial.P1InitialDataApproximation

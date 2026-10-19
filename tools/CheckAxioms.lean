@@ -7387,6 +7387,17 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianBoxCell_average_strong_convergence
 #print axioms Carleman.cartesianBoxCell_average_strong_convergence
 
+#check @Carleman.spatialTest_toLp_denseRange
+#print axioms Carleman.spatialTest_toLp_denseRange
+#check @Carleman.SimplicialPartition.nodal_lipschitz_value_error
+#print axioms Carleman.SimplicialPartition.nodal_lipschitz_value_error
+#check @Carleman.SimplicialPartition.test_nodal_L2_error
+#print axioms Carleman.SimplicialPartition.test_nodal_L2_error
+#check @Carleman.SimplicialPartition.test_projection_L2_error
+#print axioms Carleman.SimplicialPartition.test_projection_L2_error
+#check @Carleman.full_p1_initial_projection_strong_convergence
+#print axioms Carleman.full_p1_initial_projection_strong_convergence
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
