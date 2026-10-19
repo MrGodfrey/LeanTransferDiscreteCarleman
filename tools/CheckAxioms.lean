@@ -6561,6 +6561,37 @@ set_option pp.maxSteps 1000000
 #check @Carleman.interiorGaussianHeatB_leading
 #print axioms Carleman.interiorGaussianHeatB_leading
 
+#check @Carleman.interiorGaussianHeatPhase_second_spatialD
+#print axioms Carleman.interiorGaussianHeatPhase_second_spatialD
+#check @Carleman.interiorGaussianHeatMatrixEnergy_formula
+#print axioms Carleman.interiorGaussianHeatMatrixEnergy_formula
+#check @Carleman.interiorGaussianHeatMatrixEnergy_coercive
+#print axioms Carleman.interiorGaussianHeatMatrixEnergy_coercive
+#check @Carleman.heat_remainder_bound
+#print axioms Carleman.heat_remainder_bound
+#check @Carleman.interiorHeatLeadingCoefficient
+#print axioms Carleman.interiorHeatLeadingCoefficient
+#check @Carleman.interiorGaussianHeatB_uniform_lower_bound
+#print axioms Carleman.interiorGaussianHeatB_uniform_lower_bound
+#check @Carleman.directionalEnergy_nonneg
+#print axioms Carleman.directionalEnergy_nonneg
+#check @Carleman.directionalPair_young
+#print axioms Carleman.directionalPair_young
+#check @Carleman.interiorGaussianHeatPsi_uniform_energy_bound
+#print axioms Carleman.interiorGaussianHeatPsi_uniform_energy_bound
+#check @Carleman.interiorGaussianHeat_mixed_term_bound
+#print axioms Carleman.interiorGaussianHeat_mixed_term_bound
+#check @Carleman.interiorGaussianHeat_bulk_lower_bound
+#print axioms Carleman.interiorGaussianHeat_bulk_lower_bound
+#check @Carleman.boxTimeIntegral_const_mul
+#print axioms Carleman.boxTimeIntegral_const_mul
+#check @Carleman.boxTimeIntegral_mono_on
+#print axioms Carleman.boxTimeIntegral_mono_on
+#check @Carleman.interiorHeatLeadingCoefficient_continuous
+#print axioms Carleman.interiorHeatLeadingCoefficient_continuous
+#check @Carleman.box_smooth_gaussian_heat_cross
+#print axioms Carleman.box_smooth_gaussian_heat_cross
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

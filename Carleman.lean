@@ -821,3 +821,12 @@ public import Carleman.Weights.InteriorGaussianDifferential
 public import Carleman.Spatial.SeparableHeatPhase
 public import Carleman.Weights.InteriorHeatCoefficients
 public import Carleman.Weights.InteriorHeatB
+
+public import Carleman.Weights.InteriorHeatMatrixEnergy
+public import Carleman.Weights.HeatRemainderBound
+public import Carleman.Weights.InteriorHeatBLowerBound
+public import Carleman.Spatial.DirectionalYoung
+public import Carleman.Weights.InteriorHeatMixedTerm
+public import Carleman.Weights.InteriorHeatBulkLowerBound
+public import Carleman.Spatial.BoxTimeIntegralOrder
+public import Carleman.Spatial.BoxGaussianHeatCross
