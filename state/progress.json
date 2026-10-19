@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T130",
-    "supervisor_checked_at": "2026-10-19T06:55:10.811112+00:00",
-    "next_action": "固定SHA独立验收子域H¹₀零延拓；继续真实内域解、统一H¹界与穷竭测试身份。",
+    "current_task_id": "T131",
+    "supervisor_checked_at": "2026-10-19T07:02:17.915182+00:00",
+    "next_action": "固定SHA独立验收真实内域解与穷竭极限；继续内部Hessian能量与Poisson平滑化，为H²正则估计作准备。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T06:55:10.811112+00:00"
+    "last_activity_at": "2026-10-19T07:02:17.915182+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "bee8a93d0856f84c9280d10a19f50da7da2a362f",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39211640653/attempts/1",
-      "finished_at": "2026-10-19T06:47:13.593959+00:00",
+      "checked_sha": "5c1c62ee09ab89d7e28c0b484c02494958856b33",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39212728130/attempts/1",
+      "finished_at": "2026-10-19T06:57:21.761275+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "bee8a93d0856f84c9280d10a19f50da7da2a362f"
+      "source_head_sha": "5c1c62ee09ab89d7e28c0b484c02494958856b33"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "bee8a93d0856f84c9280d10a19f50da7da2a362f",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39211640653/attempts/1",
-      "finished_at": "2026-10-19T06:47:13.593959+00:00",
+      "checked_sha": "5c1c62ee09ab89d7e28c0b484c02494958856b33",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39212728130/attempts/1",
+      "finished_at": "2026-10-19T06:57:21.761275+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "bee8a93d0856f84c9280d10a19f50da7da2a362f"
+      "source_head_sha": "5c1c62ee09ab89d7e28c0b484c02494958856b33"
     }
   },
   "milestones": [
@@ -13100,7 +13100,7 @@
       "paper_ref": "Appendix analytic realizations: continuous zero extension of actual inner-domain H¹₀ states into the original H¹₀ space",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:analytic-realizations"
@@ -13114,9 +13114,36 @@
         "Carleman.WeakSobolevJet.extendDirichlet_test",
         "Carleman.WeakSobolevJet.extendDirichlet_mem"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "5c1c62ee09ab89d7e28c0b484c02494958856b33",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "5c1c62ee09ab89d7e28c0b484c02494958856b33",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39212728130/attempts/1",
+        "finished_at": "2026-10-19T06:57:21.761275+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "5c1c62ee09ab89d7e28c0b484c02494958856b33"
+      },
+      "semantic_review": {
+        "checked_sha": "5c1c62ee09ab89d7e28c0b484c02494958856b33",
+        "declarations": [
+          "Carleman.SpatialTest.zeroExtendDirichlet_value_ae",
+          "Carleman.WeakSobolevJet.zeroExtendDirichlet_tendsto",
+          "Carleman.WeakSobolevJet.extendDirichlet",
+          "Carleman.WeakSobolevJet.extendDirichlet_value",
+          "Carleman.WeakSobolevJet.extendDirichlet_field_norm_le",
+          "Carleman.WeakSobolevJet.extendDirichlet_test",
+          "Carleman.WeakSobolevJet.extendDirichlet_mem"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7fe031c3d9d92b384c3ee6c357498f440f946ddc/governance/reviews/T130-local-acceptance.md",
+        "reviewed_at": "2026-10-19T06:59:10+00:00",
+        "reviewer": "/root/accept_section3; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C073",
         "C055",
@@ -13124,7 +13151,53 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "真实H¹₀零延拓的原图拓扑连续性与测试函数全空间值身份；限制到目标S后字段范数不增，T⊆S时同一测试身份与原H¹₀闭包成员保留。无H²零延拓，AUXILIARY14/26。"
+      "scope_notes": "真实H¹₀零延拓的原图拓扑连续性与测试函数全空间值身份；限制到目标S后字段范数不增，T⊆S时同一测试身份与原H¹₀闭包成员保留。无H²零延拓，AUXILIARY14/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C147",
+      "title": "真实内域弱解、统一H¹界与Dirichlet穷竭极限",
+      "paper_ref": "Appendix analytic realizations: actual subdomain solutions, uniform first-order estimates and the domain-exhaustion limit",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "lean_declarations": [
+        "Carleman.subdomainZeroExtend",
+        "Carleman.subdomainZeroExtend_ae",
+        "Carleman.subdomainLp_zeroExtend",
+        "Carleman.subdomainZeroExtend_norm",
+        "Carleman.subdomainZeroExtend_inner",
+        "Carleman.SpatialTest.restrictSubdomain_mono",
+        "Carleman.WeakSobolevJet.extendDirichlet_field",
+        "Carleman.WeakSobolevJet.extendDirichlet_field_norm",
+        "Carleman.WeakSobolevJet.extendDirichlet_pairing",
+        "Carleman.WeakSobolevJet.extendDirichlet_poisson_test",
+        "Carleman.subdomainZeroExtend_test_inner",
+        "Carleman.subdomainZeroExtend_derivativeTest_inner",
+        "Carleman.derivativeComponent_subdomainZeroExtend",
+        "Carleman.WeakSobolevJet.extendDirichlet_hessian_test",
+        "Carleman.exists_dirichlet_weak_solution",
+        "Carleman.dirichlet_weak_solution_gradient_bound",
+        "Carleman.dirichlet_weak_solution_energy_bound",
+        "Carleman.dirichlet_subdomain_energy_bound",
+        "Carleman.exists_uniform_dirichlet_subdomain_solutions",
+        "Carleman.SpatialTest.eventually_support_subset",
+        "Carleman.exists_dirichlet_H2_of_exhaustion"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C145",
+        "C146"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实L²子域零延拓的等距与配对，内域原方程及二阶分部积分的局部测试身份；coercive form内部构造弱解并给外域统一H¹界。递增开穷竭的测试支持最终包含，实际H²内域解与统一Hessian界推出原H² Dirichlet解。光滑内域H²正则性、二阶界与光滑凸穷竭仍待，AUXILIARY14/26。"
     }
   ],
   "events": [
@@ -13859,6 +13932,11 @@
       "at": "2026-10-19T06:55:10.811112+00:00",
       "public_summary": "H¹₀弱紧性和Dirichlet H²逼近极限7声明已独立验收；子域H¹₀零延拓已构建审计，实际穷竭极限继续。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f589f8632f202c653d03c05fb21abefce8047cac/governance/reviews/T129-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T07:02:17.915182+00:00",
+      "public_summary": "子域H¹₀零延拓7声明已独立验收；真实内域解、统一H¹界和穷竭极限21声明已构建审计，继续H²内部估计。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7fe031c3d9d92b384c3ee6c357498f440f946ddc/governance/reviews/T130-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -14170,7 +14248,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5cd2b4f55f27cf65a8c03af9fee68849aef6de9e/governance/reviews/T128-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39210894315/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f589f8632f202c653d03c05fb21abefce8047cac/governance/reviews/T129-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39211640653/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39211640653/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7fe031c3d9d92b384c3ee6c357498f440f946ddc/governance/reviews/T130-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39212728130/attempts/1"
     ]
   },
   "schedules": [
@@ -31119,10 +31199,10 @@
       ],
       "branch": "main",
       "base_commit": "bee8a93d0856f84c9280d10a19f50da7da2a362f",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "5c1c62ee09ab89d7e28c0b484c02494958856b33",
+      "merge_commit": "5c1c62ee09ab89d7e28c0b484c02494958856b33",
       "lean_declarations": [
         "Carleman.SpatialTest.zeroExtendDirichlet_value_ae",
         "Carleman.WeakSobolevJet.zeroExtendDirichlet_tendsto",
@@ -31132,12 +31212,23 @@
         "Carleman.WeakSobolevJet.extendDirichlet_test",
         "Carleman.WeakSobolevJet.extendDirichlet_mem"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "5c1c62ee09ab89d7e28c0b484c02494958856b33",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39212728130/attempts/1",
+        "finished_at": "2026-10-19T06:57:21.761275+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "5c1c62ee09ab89d7e28c0b484c02494958856b33"
+      },
       "blocker": null,
       "attempts": [
         "两模块7声明定向3213 jobs、全库3912 jobs通过；6904声明递归审计PASS。"
       ],
-      "next_action": "固定SHA独立验收子域H¹₀零延拓；继续真实内域解、统一H¹界与穷竭测试身份。",
+      "next_action": "真实子域H¹₀零延拓已独立验收；继续实际弱解、统一界和穷竭极限。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -31149,6 +31240,102 @@
         "recursive_axiom_audit": 6904,
         "new_explicit_declarations": 7,
         "declaration_artifact_sha256": "e44529ffe7a62861c137c62e6e69658853595c0c26e15650d773a5995c1788d9",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "5c1c62ee09ab89d7e28c0b484c02494958856b33",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_section3",
+          "claim_ids": [
+            "C146"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "5c1c62ee09ab89d7e28c0b484c02494958856b33",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T06:59:10+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7fe031c3d9d92b384c3ee6c357498f440f946ddc/governance/reviews/T130-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "5c1c62ee09ab89d7e28c0b484c02494958856b33",
+        "checked_sha": "5c1c62ee09ab89d7e28c0b484c02494958856b33",
+        "run_id": 39212728130,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3912,
+        "recursive_axiom_audit": 6904,
+        "new_explicit_declarations": 7,
+        "declaration_artifact_sha256": "e44529ffe7a62861c137c62e6e69658853595c0c26e15650d773a5995c1788d9",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T131",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "真实内域弱解、统一H¹界与Dirichlet穷竭极限",
+      "goal_ids": [
+        "C147"
+      ],
+      "acceptance": [
+        "实际标量及向量L²延拓等距、限制恢复与精确内积身份",
+        "原H¹₀延拓的全部字段与同一真实测试jet配对",
+        "内域Hessian仅逐分量L²延拓，分部积分仅对内域支持测试成立",
+        "弱解由原coercive form构造，H¹统一界从原方程/Poincare内部证明且常数在内域之前",
+        "紧支持的最终包含内部证明，原域真实H²解与同一f方程由同一逼近族构造",
+        "保留H²内域解/统一Hessian界输入，不提前提升P023"
+      ],
+      "dependencies": [
+        "C145",
+        "C146"
+      ],
+      "branch": "main",
+      "base_commit": "5c1c62ee09ab89d7e28c0b484c02494958856b33",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.subdomainZeroExtend",
+        "Carleman.subdomainZeroExtend_ae",
+        "Carleman.subdomainLp_zeroExtend",
+        "Carleman.subdomainZeroExtend_norm",
+        "Carleman.subdomainZeroExtend_inner",
+        "Carleman.SpatialTest.restrictSubdomain_mono",
+        "Carleman.WeakSobolevJet.extendDirichlet_field",
+        "Carleman.WeakSobolevJet.extendDirichlet_field_norm",
+        "Carleman.WeakSobolevJet.extendDirichlet_pairing",
+        "Carleman.WeakSobolevJet.extendDirichlet_poisson_test",
+        "Carleman.subdomainZeroExtend_test_inner",
+        "Carleman.subdomainZeroExtend_derivativeTest_inner",
+        "Carleman.derivativeComponent_subdomainZeroExtend",
+        "Carleman.WeakSobolevJet.extendDirichlet_hessian_test",
+        "Carleman.exists_dirichlet_weak_solution",
+        "Carleman.dirichlet_weak_solution_gradient_bound",
+        "Carleman.dirichlet_weak_solution_energy_bound",
+        "Carleman.dirichlet_subdomain_energy_bound",
+        "Carleman.exists_uniform_dirichlet_subdomain_solutions",
+        "Carleman.SpatialTest.eventually_support_subset",
+        "Carleman.exists_dirichlet_H2_of_exhaustion"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "七模块21声明定向3285 jobs、全库3919 jobs通过；6934声明递归审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收真实内域解与穷竭极限；继续内部Hessian能量与Poisson平滑化，为H²正则估计作准备。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3919,
+        "recursive_axiom_audit": 6934,
+        "new_explicit_declarations": 21,
+        "declaration_artifact_sha256": "dcd04a59278984515610a0139ce55b7ee5779b1bf115cc06e96d502f3d18abb1",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

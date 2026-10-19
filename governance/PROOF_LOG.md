@@ -253,3 +253,5 @@
 - T128 / C144：真实对称Hessian及H²极限16声明独立PASS；同SHA三项CI、6880声明递归审计及固定产物逐字节一致。 固定证明 `5f407936e769fa9742463e35a8d7d8e29970aa36`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5cd2b4f55f27cf65a8c03af9fee68849aef6de9e/governance/reviews/T128-local-acceptance.md)。原文14/26，T129继续真实H¹₀弱紧性与Dirichlet H²逼近极限。
 
 - T129 / C145：H¹₀弱紧性及H² Dirichlet极限7声明独立PASS；同SHA三项CI、6887声明递归审计及固定产物逐字节一致。 固定证明 `bee8a93d0856f84c9280d10a19f50da7da2a362f`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f589f8632f202c653d03c05fb21abefce8047cac/governance/reviews/T129-local-acceptance.md)。原文14/26，T130继续子域到原区域的真实H¹₀零延拓。
+
+- T130 / C146：子域H¹₀零延拓7声明独立PASS；同SHA三项CI、6904声明递归审计及固定产物逐字节一致；旧T057远端产物已独立保留。 固定证明 `5c1c62ee09ab89d7e28c0b484c02494958856b33`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7fe031c3d9d92b384c3ee6c357498f440f946ddc/governance/reviews/T130-local-acceptance.md)。原文14/26，T131继续真实内域弱解、统一H¹界与Dirichlet穷竭极限。
