@@ -283,3 +283,5 @@
 - T143 / C159：五模块11声明的实际有限半空间图册、原盒H²图范数和完整Section3独立AUXILIARY PASS；同SHA三项CI和7310项raw逐字节相同。 固定证明 `90ca06c7cd42fae4b870fae9a67219fa729226f7`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/73e1b1b7d6ebf8b8f67901d25329c62a55a865ab/governance/reviews/T143-local-acceptance.md)。原文17/26，T144继续连续热算子的实际高斯权、空间矩阵与观测球选择。
 
 - T144 / C160：实际高斯权、全导数、原c矩阵和观测球参数32声明独立AUXILIARY PASS；同SHA三项CI和7354声明原始审计逐字节相同。 固定证明 `2cd92104c803b6a2e586be26a9685e4b2c7fc976`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/de0d01bd7a6737e37504efdb78b4477e5554e4a3/governance/reviews/T144-local-acceptance.md)。原文17/26，T145继续真实时空热算子的完整点态Carleman恒等式。
+
+- T145 / C161：真实时空热算子的完整光滑点态恒等式/共轭53声明独立AUXILIARY PASS；同SHA三项CI与7415声明raw逐字节相同。 固定证明 `ccbd7a887ed37afbc4d4e530d06b885350e74b3a`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/53d45e0c35c091f9472a708f7cc4832bb8fc696f/governance/reviews/T145-local-acceptance.md)。原文17/26，T146继续周期时间通量积分与实际平面Dirichlet热通量。

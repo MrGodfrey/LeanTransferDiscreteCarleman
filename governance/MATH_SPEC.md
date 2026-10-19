@@ -1312,3 +1312,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T145 / C161：真实时空热算子的完整点态恒等式
 
 用真实Fréchet方向导数证明全部乘积、有限和、混合二阶交换和通量抵消；完整保留原M_t、divV、两个平方、原c二次型和B。实际A=|∇ℓ|²−Δℓ−Ψ、k=ℓ_t+A，B精确展开为原书全部项；真实exp共轭连接原热残差。在ℝ×Euclidean空间上明确识别原deriv与空间Laplacian，z=exp(ℓ)u内部定义，得到任意全空间C∞实函数的完整点态Carleman等式和不等式。五模块53声明；AUXILIARY。此批C∞准备步骤尚未恢复原C²时间权与完整Sobolev轨道，真实域Green积分、周期端点、heatcross系数估计/吸收、密度及时间反射仍待，P024不提升。详见 `analysis/T145-pointwise-heat-identity.md`。
+
+## T146 / C162：周期时间通量积分与实际平面热通量
+
+实际平移周期性经Fréchet微分保持，内部给原M的周期与光滑性；真实时间切片FTC证明每个x上∫₀ᵀM_t=0。局部平面零边值沿真实切向曲线推出切向导数零、法向梯度及时间导数零，继而T145同一热通量严格为V·n=2D_nℓ(D_nz)²。实际Gaussian权与支持半空间条件给非正符号。三模块15声明，AUXILIARY光滑阶段；原C²时间权、Sobolev轨道、原面几何和棱角零测、法向迹/Green积分、吸收及密度仍待，P024不提升。详见 `analysis/T146-heat-time-and-plane-flux.md`。
