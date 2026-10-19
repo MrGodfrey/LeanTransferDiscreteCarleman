@@ -269,3 +269,5 @@
 - T136 / C152：实际一维插值18声明独立AUXILIARY PASS；同SHA三项CI、7011声明审计和原始证据逐字节一致。 固定证明 `fe4cd0a34c2c118548b17ce534eae0f210bea70c`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2578ee282cdd7eeadd27b80fb8b0795ac75146d0/governance/reviews/T136-local-acceptance.md)。原文15/26，T137继续原Proposition 7.8的实际Cartesian粗网格Rayleigh界。
 
 - T137 / C153：完整原Cartesian粗滤波27声明独立PAPER PASS；同SHA三项CI、7042声明审计和原始证据逐字节一致。 固定证明 `ac30cc21022f162809fdd7f88550a3fd58e5ad35`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8827183f488ba99a84cad4439fe05026102cca78/governance/reviews/T137-local-acceptance.md)。原文16/26，T138继续原凸域零边界光滑测试的真实H¹₀成员资格。
+
+- T138 / C154：零边界测试10声明独立AUXILIARY PASS；同SHA三项CI、7052声明审计和原始证据逐字节一致。 固定证明 `d1dca8884990c684f923a4938e40a6cc88e1645f`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1e7becb351d9c120b6a7a02b43f6946f1103cee7/governance/reviews/T138-local-acceptance.md)。原文16/26，T139继续原全空间弱H¹的实际坐标反射与能量保持。
