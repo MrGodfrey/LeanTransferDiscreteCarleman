@@ -287,3 +287,5 @@
 - T145 / C161：真实时空热算子的完整光滑点态恒等式/共轭53声明独立AUXILIARY PASS；同SHA三项CI与7415声明raw逐字节相同。 固定证明 `ccbd7a887ed37afbc4d4e530d06b885350e74b3a`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/53d45e0c35c091f9472a708f7cc4832bb8fc696f/governance/reviews/T145-local-acceptance.md)。原文17/26，T146继续周期时间通量积分与实际平面Dirichlet热通量。
 
 - T146 / C162：实际周期时间通量与局部平面法向通量15声明独立AUXILIARY PASS；同SHA三项CI与7434声明raw逐字节相同。 固定证明 `c598090a2e592f2e2a5441e5d05eaec994e9b1b3`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7f5d9aaebb6e9edcced54be1bf86b0d58d124b91/governance/reviews/T146-local-acceptance.md)。原文17/26，T147继续有限半空间交的真实闭面几何与高斯热通量。
+
+- T147 / C163：实际有限半空间面几何与闭面热通量12声明独立AUXILIARY PASS；同SHA三项CI与7453声明raw逐字节相同。 固定证明 `e3a9cd6fa7134bdb9d924c56686a14d0bb64029d`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1241c07afdcdff8d5ce9ec236538ef486d71059a/governance/reviews/T147-local-acceptance.md)。原文17/26，T148继续实际坐标盒的面通量与散度积分。
