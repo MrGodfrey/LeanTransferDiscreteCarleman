@@ -753,3 +753,9 @@ public import Carleman.Control.ConformingFilterRayleigh
 public import Carleman.Spatial.LinearRefinementCell
 public import Carleman.Spatial.UniformLinearProlongation
 public import Carleman.Spatial.RefinedChainInverse
+public import Carleman.Spatial.TensorLinearProlongation
+public import Carleman.Geometry.CartesianAxisSum
+public import Carleman.Spatial.TensorProlongationInverse
+public import Carleman.Spatial.CartesianBoxValues
+public import Carleman.Spatial.CartesianCoarseProlongation
+public import Carleman.Control.CartesianFilterRayleigh

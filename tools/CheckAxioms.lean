@@ -5887,6 +5887,61 @@ set_option pp.maxSteps 1000000
 #check @Carleman.uniformLinearProlongation_physical_inverse
 #print axioms Carleman.uniformLinearProlongation_physical_inverse
 
+#check @Carleman.linearRefinementBasis
+#print axioms Carleman.linearRefinementBasis
+#check @Carleman.tensorLinearProlongation
+#print axioms Carleman.tensorLinearProlongation
+#check @Carleman.linearRefinementBasis_node
+#print axioms Carleman.linearRefinementBasis_node
+#check @Carleman.uniformLinearProlongation_sum
+#print axioms Carleman.uniformLinearProlongation_sum
+#check @Carleman.uniformLinearProlongation_const_mul
+#print axioms Carleman.uniformLinearProlongation_const_mul
+#check @Carleman.tensorLinearProlongation_zero_face
+#print axioms Carleman.tensorLinearProlongation_zero_face
+#check @Carleman.tensorLinearProlongation_node
+#print axioms Carleman.tensorLinearProlongation_node
+#check @Carleman.tensorLinearProlongation_slice
+#print axioms Carleman.tensorLinearProlongation_slice
+#check @Carleman.cartesianAxisFill
+#print axioms Carleman.cartesianAxisFill
+#check @Carleman.cartesianAxisFill_self
+#print axioms Carleman.cartesianAxisFill_self
+#check @Carleman.cartesianAxisFill_update
+#print axioms Carleman.cartesianAxisFill_update
+#check @Carleman.cartesian_sum_axis
+#print axioms Carleman.cartesian_sum_axis
+#check @Carleman.tensorLinearProlongation_line_inverse
+#print axioms Carleman.tensorLinearProlongation_line_inverse
+#check @Carleman.tensorLinearProlongation_direction_inverse
+#print axioms Carleman.tensorLinearProlongation_direction_inverse
+#check @Carleman.tensorLinearProlongation_inverse
+#print axioms Carleman.tensorLinearProlongation_inverse
+#check @Carleman.cartesianLatticeData_of_box_values
+#print axioms Carleman.cartesianLatticeData_of_box_values
+#check @Carleman.cartesian_sum_box_values
+#print axioms Carleman.cartesian_sum_box_values
+#check @Carleman.cartesianLatticeSuccessor_nat
+#print axioms Carleman.cartesianLatticeSuccessor_nat
+#check @Carleman.cartesianCoarseProlongation
+#print axioms Carleman.cartesianCoarseProlongation
+#check @Carleman.cartesianCoarseProlongation_values
+#print axioms Carleman.cartesianCoarseProlongation_values
+#check @Carleman.cartesianCoarseProlongation_mass
+#print axioms Carleman.cartesianCoarseProlongation_mass
+#check @Carleman.cartesianCoarseProlongation_axis
+#print axioms Carleman.cartesianCoarseProlongation_axis
+#check @Carleman.cartesianCoarseProlongation_energy
+#print axioms Carleman.cartesianCoarseProlongation_energy
+#check @Carleman.Physical.cartesianCoarseFilter
+#print axioms Carleman.Physical.cartesianCoarseFilter
+#check @Carleman.Physical.cartesian_coarse_energy_bound
+#print axioms Carleman.Physical.cartesian_coarse_energy_bound
+#check @Carleman.Physical.fd_coarse_filter_rayleigh
+#print axioms Carleman.Physical.fd_coarse_filter_rayleigh
+#check @Carleman.Physical.fd_dividing_filter_rayleigh
+#print axioms Carleman.Physical.fd_dividing_filter_rayleigh
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
