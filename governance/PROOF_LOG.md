@@ -219,3 +219,5 @@
 - T111 / C127：原全P1完整WeightedTest独立PASS；同SHA三项CI、6556声明递归审计和固定产物逐字节一致。 固定证明 `0d91a94335bd491366597b81f45de26b4559b7ad`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b572f6af6e25e7526f32a6124a5a94b10c1021be/governance/reviews/T111-local-acceptance.md)。原文14/26，T112继续低维光滑状态的真实L² Hessian节点值误差。
 
 - T112 / C128：低维光滑类真实L² Hessian节点值误差15声明独立PASS；同SHA三项CI、6577声明递归审计和固定产物逐字节一致。 固定证明 `c8377e5f743689641ab84d5049b4d0fb291d29f5`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2a8b330912c856e86ae747c744c9ac5db44de099/governance/reviews/T112-local-acceptance.md)。原文14/26，T113继续光滑状态的真实L² Hessian节点梯度误差。
+
+- T113 / C129：真实L² Hessian光滑节点梯度误差5声明独立PASS；同SHA三项CI、6582声明递归审计和固定产物逐字节一致。 固定证明 `9e1f7ef800794f6fb560151f827fc7df51f7b10a`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e19079e7b9c9b26fafbbdaed52059d8bbf569398/governance/reviews/T113-local-acceptance.md)。原文14/26，T114继续原弱Hessian的真实局部卷积与节点误差界。
