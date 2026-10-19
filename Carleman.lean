@@ -921,3 +921,5 @@ public import Carleman.Control.BoxCartesianLoadCarleman
 public import Carleman.Control.PhysicalObservationUniformProfiles
 public import Carleman.Control.BoxCartesianObservation
 public import Carleman.Control.BoxCartesianControl
+public import Carleman.Control.FilteredObservation
+public import Carleman.Control.BoxCartesianFilteredObservation

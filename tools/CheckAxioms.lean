@@ -7115,6 +7115,15 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Physical.box_cartesian_physical_control
 #print axioms Carleman.Physical.box_cartesian_physical_control
 
+
+-- T171: original terminal filtering and actual Cartesian observation.
+#check @Carleman.Physical.filter_condition_budget
+#print axioms Carleman.Physical.filter_condition_budget
+#check @Carleman.Physical.filtered_observation_of_relaxed
+#print axioms Carleman.Physical.filtered_observation_of_relaxed
+#check @Carleman.Physical.box_cartesian_filtered_observability
+#print axioms Carleman.Physical.box_cartesian_filtered_observability
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
