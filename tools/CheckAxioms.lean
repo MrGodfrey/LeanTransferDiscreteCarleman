@@ -5187,6 +5187,53 @@ set_option pp.maxSteps 1000000
 #check @Carleman.allowed_weight_cartesian_observation
 #print axioms Carleman.allowed_weight_cartesian_observation
 
+#check @Carleman.PhysicalFiniteSpace
+#print axioms Carleman.PhysicalFiniteSpace
+#check @Carleman.PhysicalFiniteSpace.valuesEquiv
+#print axioms Carleman.PhysicalFiniteSpace.valuesEquiv
+#check @Carleman.PhysicalFiniteSpace.core
+#print axioms Carleman.PhysicalFiniteSpace.core
+#check @Carleman.PhysicalFiniteSpace.inner_eq
+#print axioms Carleman.PhysicalFiniteSpace.inner_eq
+#check @Carleman.PhysicalFiniteSpace.norm_sq
+#print axioms Carleman.PhysicalFiniteSpace.norm_sq
+#check @Carleman.PhysicalFiniteSpace.norm_eq
+#print axioms Carleman.PhysicalFiniteSpace.norm_eq
+#check @Carleman.PhysicalFiniteSpace.multiplier
+#print axioms Carleman.PhysicalFiniteSpace.multiplier
+#check @Carleman.PhysicalFiniteSpace.multiplier_apply
+#print axioms Carleman.PhysicalFiniteSpace.multiplier_apply
+#check @Carleman.PhysicalFiniteSpace.multiplier_norm_sq
+#print axioms Carleman.PhysicalFiniteSpace.multiplier_norm_sq
+#check @Carleman.CartesianPhysicalState
+#print axioms Carleman.CartesianPhysicalState
+#check @Carleman.CartesianPhysicalControl
+#print axioms Carleman.CartesianPhysicalControl
+#check @Carleman.cartesianPhysicalState_inner
+#print axioms Carleman.cartesianPhysicalState_inner
+#check @Carleman.cartesianPhysicalControl_inner
+#print axioms Carleman.cartesianPhysicalControl_inner
+#check @Carleman.cartesianPhysicalControlExtension
+#print axioms Carleman.cartesianPhysicalControlExtension
+#check @Carleman.cartesianPhysicalControlRestriction
+#print axioms Carleman.cartesianPhysicalControlRestriction
+#check @Carleman.cartesianPhysicalControlExtension_values
+#print axioms Carleman.cartesianPhysicalControlExtension_values
+#check @Carleman.cartesianPhysicalControlRestriction_values
+#print axioms Carleman.cartesianPhysicalControlRestriction_values
+#check @Carleman.cartesianPhysicalControl_adjoint
+#print axioms Carleman.cartesianPhysicalControl_adjoint
+#check @Carleman.cartesianPhysicalStateWeight
+#print axioms Carleman.cartesianPhysicalStateWeight
+#check @Carleman.cartesianPhysicalControlWeight
+#print axioms Carleman.cartesianPhysicalControlWeight
+#check @Carleman.cartesianPhysicalStateWeight_norm_sq
+#print axioms Carleman.cartesianPhysicalStateWeight_norm_sq
+#check @Carleman.cartesianPhysicalControlWeight_norm_sq
+#print axioms Carleman.cartesianPhysicalControlWeight_norm_sq
+#check @Carleman.allowed_weight_cartesian_hilbert_observation
+#print axioms Carleman.allowed_weight_cartesian_hilbert_observation
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

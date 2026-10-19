@@ -634,3 +634,7 @@ public import Carleman.Spatial.AllowedCartesianTestSuperapproximation
 public import Carleman.Spatial.CartesianObservationLocalization
 public import Carleman.Spatial.CartesianNodalControl
 public import Carleman.Spatial.AllowedCartesianObservation
+
+public import Carleman.Spatial.PhysicalFiniteSpace
+public import Carleman.Spatial.CartesianPhysicalSpaces
+public import Carleman.Spatial.CartesianHilbertObservation
