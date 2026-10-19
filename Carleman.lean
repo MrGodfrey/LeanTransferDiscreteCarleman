@@ -740,3 +740,6 @@ public import Carleman.Spatial.DirichletExhaustionLimit
 public import Carleman.Spatial.CompactTestHessianEnergy
 public import Carleman.Spatial.CompactTestH2Jet
 public import Carleman.Spatial.WeakPoissonConvolution
+public import Carleman.Spatial.SmoothLaplacianProduct
+public import Carleman.Spatial.CutoffPoissonConvolution
+public import Carleman.Spatial.CutoffPoissonEstimate

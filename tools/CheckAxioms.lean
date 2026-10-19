@@ -5795,6 +5795,31 @@ set_option pp.maxSteps 1000000
 #check @Carleman.IsWeakNegativeLaplacian.mollified_laplacian
 #print axioms Carleman.IsWeakNegativeLaplacian.mollified_laplacian
 
+#check @Carleman.spatialLaplacian
+#print axioms Carleman.spatialLaplacian
+#check @Carleman.smooth_directional_mul
+#print axioms Carleman.smooth_directional_mul
+#check @Carleman.smooth_second_directional_mul
+#print axioms Carleman.smooth_second_directional_mul
+#check @Carleman.spatialLaplacian_mul
+#print axioms Carleman.spatialLaplacian_mul
+#check @Carleman.SpatialTest.mulSmooth
+#print axioms Carleman.SpatialTest.mulSmooth
+#check @Carleman.SpatialTest.laplacianLp_ae
+#print axioms Carleman.SpatialTest.laplacianLp_ae
+#check @Carleman.spatialLaplacian_smooth
+#print axioms Carleman.spatialLaplacian_smooth
+#check @Carleman.SpatialTest.laplacian_eq_zero_of_notMem_tsupport
+#print axioms Carleman.SpatialTest.laplacian_eq_zero_of_notMem_tsupport
+#check @Carleman.IsWeakNegativeLaplacian.cutoff_convolution
+#print axioms Carleman.IsWeakNegativeLaplacian.cutoff_convolution
+#check @Carleman.SpatialTest.exists_laplacian_multiplier_bound
+#print axioms Carleman.SpatialTest.exists_laplacian_multiplier_bound
+#check @Carleman.IsWeakNegativeLaplacian.cutoff_laplacian_bound
+#print axioms Carleman.IsWeakNegativeLaplacian.cutoff_laplacian_bound
+#check @Carleman.exists_uniform_cutoff_H2
+#print axioms Carleman.exists_uniform_cutoff_H2
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
