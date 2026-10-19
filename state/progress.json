@@ -11,11 +11,11 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T092",
-    "supervisor_checked_at": "2026-10-19T01:34:21.018885+00:00",
-    "next_action": "继续T092：把实际单元加权比较、真实网格hq≤1权比较和精确节点质量组装为全允许权族的全域稳定性；完成后固定SHA独立验收。",
+    "supervisor_checked_at": "2026-10-19T01:41:35.373168+00:00",
+    "next_action": "固定SHA独立验收原允许权族实际重构/载荷加权稳定性；继续实际局部Q_h稳定性和B2。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T01:34:21.018885+00:00"
+    "last_activity_at": "2026-10-19T01:41:35.373168+00:00"
   },
   "verification": {
     "latest_build": {
@@ -10443,7 +10443,26 @@
         "prop:fd",
         "eq:fd-local-stability"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.simplex_continuous_memLp",
+        "Carleman.simplex_continuous_weighted_integrable",
+        "Carleman.simplex_weighted_sq_anchor",
+        "Carleman.weighted_coefficient_sq_anchor",
+        "Carleman.simplexNodal_sq_lumped_bounds",
+        "Carleman.simplex_weighted_reconstruction_bounds",
+        "Carleman.simplex_weighted_load_bound",
+        "Carleman.closedCoordinateBox_diameter_bound",
+        "Carleman.cartesianKuhnSimplex_dist_le",
+        "Carleman.cartesianKuhn_allowedWeight_comparison",
+        "Carleman.cartesianInteriorData_weight",
+        "Carleman.cartesianKuhn_weighted_mass_assembly",
+        "Carleman.BoundedMultiplier.integrable_scalar_density_ae",
+        "Carleman.BoundedMultiplier.seminorm_sq_scalar_ae",
+        "Carleman.cartesianKuhn_weighted_reconstruction_cell_bounds",
+        "Carleman.cartesianKuhn_weighted_load_cell_bound",
+        "Carleman.cartesianKuhn_weighted_norm_bounds",
+        "Carleman.allowed_weight_cartesianKuhn_stability"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -10452,7 +10471,7 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "进行中：由真实单元权锚点界、原允许权族hq≤1和精确加权节点质量得到网格一致L²重构/载荷稳定性。完整量词与全域组装尚待，未宣布构建完成或提升FD/B2。"
+      "scope_notes": "固定原光滑轮廓和域后，一致C先于所有实际网格、h、时间权及周期T、幂次、符号和原完整离散状态；hq≤1内部给实际单元含边界顶点权比较。真实R_h与同一L²右逆载荷满足Eσ≤C‖σR_hf‖²、‖σR_hf‖²≤CEσ及‖σL_hf‖²≤CEσ，Eσ为原物理加权对角节点质量，无网格基数损失。局部Q_h、刚度和完整FD/B2仍待，AUXILIARY，13/26。"
     }
   ],
   "events": [
@@ -10993,6 +11012,10 @@
       "at": "2026-10-19T01:34:21.018885+00:00",
       "public_summary": "实际网格一致重构与载荷无权L²界独立验收PASS，已清空验收积压；继续原允许权族加权稳定性，原文保持13/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2278ec9211a32f37e3aaefb4fe5a84b0739c23a4/governance/reviews/T091-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T01:41:35.373168+00:00",
+      "public_summary": "原允许权族实际重构与载荷加权稳定性18声明全库构建通过，固定提交独立验收待办，原文保持13/26。"
     }
   ],
   "snapshot": {
@@ -24484,14 +24507,47 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.simplex_continuous_memLp",
+        "Carleman.simplex_continuous_weighted_integrable",
+        "Carleman.simplex_weighted_sq_anchor",
+        "Carleman.weighted_coefficient_sq_anchor",
+        "Carleman.simplexNodal_sq_lumped_bounds",
+        "Carleman.simplex_weighted_reconstruction_bounds",
+        "Carleman.simplex_weighted_load_bound",
+        "Carleman.closedCoordinateBox_diameter_bound",
+        "Carleman.cartesianKuhnSimplex_dist_le",
+        "Carleman.cartesianKuhn_allowedWeight_comparison",
+        "Carleman.cartesianInteriorData_weight",
+        "Carleman.cartesianKuhn_weighted_mass_assembly",
+        "Carleman.BoundedMultiplier.integrable_scalar_density_ae",
+        "Carleman.BoundedMultiplier.seminorm_sq_scalar_ae",
+        "Carleman.cartesianKuhn_weighted_reconstruction_cell_bounds",
+        "Carleman.cartesianKuhn_weighted_load_cell_bound",
+        "Carleman.cartesianKuhn_weighted_norm_bounds",
+        "Carleman.allowed_weight_cartesianKuhn_stability"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "实际单元加权重构/载荷比较和闭网格盒hq≤1权比较已定向构建；继续真实全域组装和原量词。"
+        "八模块18声明定向3442 jobs、全库3776 jobs通过，6076声明递归公理审计PASS。"
       ],
-      "next_action": "继续T092：把实际单元加权比较、真实网格hq≤1权比较和精确节点质量组装为全允许权族的全域稳定性；完成后固定SHA独立验收。",
-      "integration_mode": "direct-main"
+      "next_action": "固定SHA独立验收原允许权族实际重构/载荷加权稳定性；继续实际局部Q_h稳定性和B2。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3776,
+        "recursive_axiom_audit": 6076,
+        "new_explicit_declarations": 18,
+        "declaration_artifact_sha256": "66be7da1cfaa72a5d22768840bf97ad8e9d0fbd354370c4f61fa26c401faf42f",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING; fixed SHA required"
+      }
     }
   ],
   "private_maintenance": {
