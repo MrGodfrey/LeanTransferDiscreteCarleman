@@ -1204,3 +1204,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T124：全部原弱状态的全域允许权节点插值
 
 原弱 H²∩H¹₀ 的同一f/e先于全部允许权选定；实际局部W⁴权转移、精确单元求和和真实ℓ²/ℓ乘子给原两个节点插值估计。C仅依赖固定域/profile/d/形状/尺度比较，不依赖网格、状态、时间或实幂；全部TimeWeight、τ,t及两种符号均覆盖，h q(t)≤1。五模块10声明，6740项递归公理通过；投影和P1接口仍待组合，AUXILIARY14/26。见 `analysis/T124-weak-weighted.md`。
+
+## T125：原全部弱状态的P1投影误差与N3
+
+真实Π_h的固定误差E∈H¹₀先于全部允许权选定；原全域节点估计、四权投影稳定性、加权逆估计和上下尺度给值Ch²、能量Ch界。常数先于全部网格、原弱H²∩H¹₀状态、T/时间/实幂/符号。对任意原D⊆H²∩H¹₀，实际conforming重构与唯一弱jet对应，得到原Section4.WeightedApproximation，aE=Ch、a0=Ch²。三模块3声明6743审计通过；具体连续DirichletH²正则性不由本接口证明，AUXILIARY14/26。见 `analysis/T125-p1-approx.md`。

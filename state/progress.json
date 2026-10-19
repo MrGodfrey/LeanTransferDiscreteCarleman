@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T124",
-    "supervisor_checked_at": "2026-10-19T06:00:28.768126+00:00",
-    "next_action": "固定SHA独立验收全域允许权节点插值估计；继续真实L²投影h²/h误差与原N3接口。",
+    "current_task_id": "T125",
+    "supervisor_checked_at": "2026-10-19T06:10:23.205721+00:00",
+    "next_action": "固定SHA独立验收真实P1投影误差与N3；继续原L²(ω)控制的完整P1数值数据。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T06:00:28.768126+00:00"
+    "last_activity_at": "2026-10-19T06:10:23.205721+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "e56df9d1895554e8cdfacc7e52c86bac51a08e6c",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39206744043/attempts/1",
-      "finished_at": "2026-10-19T05:54:51.147742+00:00",
+      "checked_sha": "f3e3ddb8621286134d4560b73a682b495d0c0907",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39207488120/attempts/1",
+      "finished_at": "2026-10-19T06:03:20.096643+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "e56df9d1895554e8cdfacc7e52c86bac51a08e6c"
+      "source_head_sha": "f3e3ddb8621286134d4560b73a682b495d0c0907"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "e56df9d1895554e8cdfacc7e52c86bac51a08e6c",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39206744043/attempts/1",
-      "finished_at": "2026-10-19T05:54:51.147742+00:00",
+      "checked_sha": "f3e3ddb8621286134d4560b73a682b495d0c0907",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39207488120/attempts/1",
+      "finished_at": "2026-10-19T06:03:20.096643+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "e56df9d1895554e8cdfacc7e52c86bac51a08e6c"
+      "source_head_sha": "f3e3ddb8621286134d4560b73a682b495d0c0907"
     }
   },
   "milestones": [
@@ -12738,7 +12738,7 @@
       "paper_ref": "Original P1 Step 2 eq:p1-interpolation and eq:p1-interpolation-energy: actual mesh-weighted global nodal estimates on every weak H² Dirichlet state",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:p1",
@@ -12757,15 +12757,74 @@
         "Carleman.weak_h2_weighted_nodal_approximation",
         "Carleman.weak_h2_allowed_nodal_approximation"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "f3e3ddb8621286134d4560b73a682b495d0c0907",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "f3e3ddb8621286134d4560b73a682b495d0c0907",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39207488120/attempts/1",
+        "finished_at": "2026-10-19T06:03:20.096643+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "f3e3ddb8621286134d4560b73a682b495d0c0907"
+      },
+      "semantic_review": {
+        "checked_sha": "f3e3ddb8621286134d4560b73a682b495d0c0907",
+        "declarations": [
+          "Carleman.BoundedMultiplier.integral_transfer",
+          "Carleman.BoundedMultiplier.integral_transfer_memLp",
+          "Carleman.SimplicialPartition.cellWeight",
+          "Carleman.SimplicialPartition.cellWeight_on_cell",
+          "Carleman.SimplicialPartition.cellWeight_sq_sum",
+          "Carleman.SimplicialPartition.cellWeight_seminorm_le",
+          "Carleman.SimplicialPartition.weighted_cell_errors_sum",
+          "Carleman.SimplicialPartition.weighted_cell_inverse_errors_sum",
+          "Carleman.weak_h2_weighted_nodal_approximation",
+          "Carleman.weak_h2_allowed_nodal_approximation"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/07a24f79223efaeca8b2736b057a6c29c356d45b/governance/reviews/T124-local-acceptance.md",
+        "reviewed_at": "2026-10-19T06:06:44+00:00",
+        "reviewer": "/root/accept_section3; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C139"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "真实局部权W⁴转移、全网格精确积分求和、实际ℓ²/ℓ乘子给原全部弱H²∩H¹₀两个节点误差界；同一f/e先于全部允许权，统一常数先于全部网格/状态/τ/t/符号。原P1投影及数值接口仍待；AUXILIARY14/26。"
+      "scope_notes": "真实局部权W⁴转移、全网格精确积分求和、实际ℓ²/ℓ乘子给原全部弱H²∩H¹₀两个节点误差界；同一f/e先于全部允许权，统一常数先于全部网格/状态/τ/t/符号。原P1投影及数值接口仍待；AUXILIARY14/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C141",
+      "title": "原全部弱H²状态的真实P1投影h²/h误差与N3",
+      "paper_ref": "Original P1 Step 2: actual L² projection errors h²/h and N3 from all weak H² Dirichlet states",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:p1",
+        "eq:p1-interpolation",
+        "eq:p1-interpolation-energy"
+      ],
+      "lean_declarations": [
+        "Carleman.SimplicialPartition.cellWeight_mesh_power_le",
+        "Carleman.weak_h2_allowed_projection_approximation",
+        "Carleman.full_p1_weightedApproximation_interface"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C140"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "实际最大直径上尺度比较、原完整P1正交投影h²/h误差与原N3；同一误差先于全部允许权，统一常数先于网格与时间。具体Dirichlet算子H²正则性仍待；AUXILIARY14/26。"
     }
   ],
   "events": [
@@ -13470,6 +13529,11 @@
       "at": "2026-10-19T06:00:28.768126+00:00",
       "public_summary": "全部弱H²∩H¹₀的真实conforming节点误差已独立验收；原全域允许权节点插值两估计10声明构建审计通过，继续原投影误差和N3。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/03b4a391b6c4d32a3a4f2a2c30f501432b987c0c/governance/reviews/T123-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T06:10:23.205721+00:00",
+      "public_summary": "原全域允许权节点两估计已独立验收；真实P1投影h²/h误差及N3构建审计通过，完整原控制数值接口继续。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/07a24f79223efaeca8b2736b057a6c29c356d45b/governance/reviews/T124-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -13769,7 +13833,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/893f36b8c744a64f9d5a3e6aad9a998a9024d8d6/governance/reviews/T122-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39206204127/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/03b4a391b6c4d32a3a4f2a2c30f501432b987c0c/governance/reviews/T123-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39206744043/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39206744043/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/07a24f79223efaeca8b2736b057a6c29c356d45b/governance/reviews/T124-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39207488120/attempts/1"
     ]
   },
   "schedules": [
@@ -30166,10 +30232,10 @@
       ],
       "branch": "main",
       "base_commit": "e56df9d1895554e8cdfacc7e52c86bac51a08e6c",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "f3e3ddb8621286134d4560b73a682b495d0c0907",
+      "merge_commit": "f3e3ddb8621286134d4560b73a682b495d0c0907",
       "lean_declarations": [
         "Carleman.BoundedMultiplier.integral_transfer",
         "Carleman.BoundedMultiplier.integral_transfer_memLp",
@@ -30182,12 +30248,23 @@
         "Carleman.weak_h2_weighted_nodal_approximation",
         "Carleman.weak_h2_allowed_nodal_approximation"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "f3e3ddb8621286134d4560b73a682b495d0c0907",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39207488120/attempts/1",
+        "finished_at": "2026-10-19T06:03:20.096643+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "f3e3ddb8621286134d4560b73a682b495d0c0907"
+      },
       "blocker": null,
       "attempts": [
         "五模块10声明定向3400 jobs、全库3884 jobs通过；6740声明递归审计PASS。"
       ],
-      "next_action": "固定SHA独立验收全域允许权节点插值估计；继续真实L²投影h²/h误差与原N3接口。",
+      "next_action": "全域允许权节点两估计已独立验收；继续原真实投影h²/h误差和N3。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -30199,6 +30276,81 @@
         "recursive_axiom_audit": 6740,
         "new_explicit_declarations": 10,
         "declaration_artifact_sha256": "96d63e0cd091e26aa0e452ab5323ef969447a8f055fbe6d03f6430bb400b5b4b",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "f3e3ddb8621286134d4560b73a682b495d0c0907",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_section3",
+          "claim_ids": [
+            "C140"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "f3e3ddb8621286134d4560b73a682b495d0c0907",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T06:06:44+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/07a24f79223efaeca8b2736b057a6c29c356d45b/governance/reviews/T124-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "f3e3ddb8621286134d4560b73a682b495d0c0907",
+        "checked_sha": "f3e3ddb8621286134d4560b73a682b495d0c0907",
+        "run_id": 39207488120,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3884,
+        "recursive_axiom_audit": 6740,
+        "new_explicit_declarations": 10,
+        "declaration_artifact_sha256": "96d63e0cd091e26aa0e452ab5323ef969447a8f055fbe6d03f6430bb400b5b4b",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T125",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原全部弱H²状态的真实P1投影h²/h误差与N3",
+      "goal_ids": [
+        "C141"
+      ],
+      "acceptance": [
+        "实际网格幂乘子界用最大直径且无单元数量常数",
+        "真实全P1正交投影、同一H¹₀误差、原全部弱H²状态",
+        "原grading与上下尺度给h²值误差及h能量误差，常数先于全部允许权和时间",
+        "实际conforming重构与唯一弱jet连接原N3；具体算子H²依赖不隐藏"
+      ],
+      "dependencies": [
+        "C140"
+      ],
+      "branch": "main",
+      "base_commit": "f3e3ddb8621286134d4560b73a682b495d0c0907",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.SimplicialPartition.cellWeight_mesh_power_le",
+        "Carleman.weak_h2_allowed_projection_approximation",
+        "Carleman.full_p1_weightedApproximation_interface"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "三模块3声明定向3711 jobs、全库3887 jobs通过；6743声明递归审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收真实P1投影误差与N3；继续原L²(ω)控制的完整P1数值数据。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3887,
+        "recursive_axiom_audit": 6743,
+        "new_explicit_declarations": 3,
+        "declaration_artifact_sha256": "dc0904cf0618ed061e9f64ee2a0f8fc6109195e6b03eb858a85a87eb51a31d9d",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

@@ -241,3 +241,5 @@
 - T122 / C138：原H¹₀连续代表全部边界零值5声明独立PASS；同SHA三项CI、6702声明递归审计及固定产物逐字节一致。 固定证明 `b40c6b3a3e783529e21adc5a699f4d4d19c4edbe`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/893f36b8c744a64f9d5a3e6aad9a998a9024d8d6/governance/reviews/T122-local-acceptance.md)。原文14/26，T123继续全部弱H²∩H¹₀的真实conforming节点误差。
 
 - T123 / C139：真实conforming节点误差8声明独立PASS；同SHA三项CI、6727声明递归审计及固定产物逐字节一致。 固定证明 `e56df9d1895554e8cdfacc7e52c86bac51a08e6c`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/03b4a391b6c4d32a3a4f2a2c30f501432b987c0c/governance/reviews/T123-local-acceptance.md)。原文14/26，T124继续全部弱H²∩H¹₀的全域允许权节点插值估计。
+
+- T124 / C140：全域允许权节点估计10声明独立PASS；同SHA三项CI、6740声明递归审计及固定产物逐字节一致。 固定证明 `f3e3ddb8621286134d4560b73a682b495d0c0907`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/07a24f79223efaeca8b2736b057a6c29c356d45b/governance/reviews/T124-local-acceptance.md)。原文14/26，T125继续原全部弱H²状态的真实P1投影h²/h误差与N3。
