@@ -728,3 +728,5 @@ public import Carleman.Spatial.HilbertWeakSubsequence
 public import Carleman.Spatial.DirichletWeakSubsequence
 public import Carleman.Spatial.WeakLaplacianLimit
 public import Carleman.Spatial.DirichletH2ApproximationLimit
+public import Carleman.Spatial.DirichletExtensionContinuity
+public import Carleman.Spatial.DirichletSubdomainExtension

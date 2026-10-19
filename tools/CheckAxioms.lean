@@ -5718,6 +5718,21 @@ set_option pp.maxSteps 1000000
 #check @Carleman.exists_dirichlet_H2_of_bounded_approximants
 #print axioms Carleman.exists_dirichlet_H2_of_bounded_approximants
 
+#check @Carleman.SpatialTest.zeroExtendDirichlet_value_ae
+#print axioms Carleman.SpatialTest.zeroExtendDirichlet_value_ae
+#check @Carleman.WeakSobolevJet.zeroExtendDirichlet_tendsto
+#print axioms Carleman.WeakSobolevJet.zeroExtendDirichlet_tendsto
+#check @Carleman.WeakSobolevJet.extendDirichlet
+#print axioms Carleman.WeakSobolevJet.extendDirichlet
+#check @Carleman.WeakSobolevJet.extendDirichlet_value
+#print axioms Carleman.WeakSobolevJet.extendDirichlet_value
+#check @Carleman.WeakSobolevJet.extendDirichlet_field_norm_le
+#print axioms Carleman.WeakSobolevJet.extendDirichlet_field_norm_le
+#check @Carleman.WeakSobolevJet.extendDirichlet_test
+#print axioms Carleman.WeakSobolevJet.extendDirichlet_test
+#check @Carleman.WeakSobolevJet.extendDirichlet_mem
+#print axioms Carleman.WeakSobolevJet.extendDirichlet_mem
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
