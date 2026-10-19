@@ -349,3 +349,7 @@
 - T172 / C188：20/20声明独立验收PASS，真实HUM、原物理流/控制与原滤波条件和统一C0完整；三项真实CI及原始审计逐字节核对。 固定证明 `113b2c6e318ce5cb48f1fda5696223646e0cd2b1`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/519939f511ea5c60d68d766d127a9914e38d7ef5/governance/reviews/T172-local-acceptance.md)。原文17/26；当前执行任务不变。
 
 - T173 / C189：固定证明 `7c4ed351ef6097a8543e7e9da53aa1b8ca756b1d` 的三项实际CI与原始审计核对通过；独立Agent验收仍在运行，当前仅BUILT。T174继续完整P1盒实例的物理及滤波观测与区域控制，原文覆盖17/26。
+
+- T173 / C189：完整定理独立验收PASS，真实P1全空间/质量/载荷与原解析数值条件内部清偿；三项真实CI及原始审计逐字节核对。 固定证明 `7c4ed351ef6097a8543e7e9da53aa1b8ca756b1d`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/59e16ce40ad11d2c62abb0b0776a2055efa458fb/governance/reviews/T173-local-acceptance.md)。原文17/26；当前执行任务不变。
+
+- T174 / C190：两完整结论定义与两实际定理独立4/4 PASS；同SHA三项CI成功，8151声明raw审计逐字节一致。 固定证明 `d93e52fc433c99d25a188effa0c451488098a451`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/08759a4cb612cbb34ffc8be7a4f7ebbf6fa0a085/governance/reviews/T174-local-acceptance.md)。原文17/26，T175继续原差分对偶单元的真实重构、控制配对与单元平均。

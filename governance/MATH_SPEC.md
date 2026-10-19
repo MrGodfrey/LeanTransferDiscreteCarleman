@@ -1470,3 +1470,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 T173的实际载荷CE内部供应完整P1物理观测与区域L²(ω) HUM控制；consistent-mass刚度、真实势投影、原全状态和完整物理方程均保持。qc/κ/h0/Δ0/Cb/d0先于T/M，Cphys及滤波统一C0(T,M)先于所有网格/势/θ/F。原热尺度及两侧物理条件、两滤波预算、2C0观察、sqrt(2C0)成本、PF终态精确为零和完整指数终态率不变。三模块四声明含两个透明完整结论定义；目标未转移为前提，无F不变性要求。
 
 一般凸多面体/一般算子和控制收敛继续；AUXILIARY、覆盖17/26。详见 `analysis/T174-box-p1-physical-control.md`。
+
+## T175 / C191：原 Cartesian 对偶单元等距重构与实际平均（辅助）
+
+真实内部对偶开盒在原域内互不交、体积精确∏δ；原边界条带保留为零。真实indicator L²和给原物理质量空间到连续域L²的等距嵌入E_h；K_h=E_hB_h保原控制范数与配对。其真实Hilbert伴随精确为原单元平均，物理范数不增。三模块二十一声明，完整内部节点与空索引情形均包含，没有全域覆盖或任意范数等价前提。
+
+数据强收敛、控制支持及连续极限方程继续；AUXILIARY、覆盖17/26。详见 `analysis/T175-cartesian-cell-reconstruction.md`。
