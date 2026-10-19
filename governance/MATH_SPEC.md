@@ -1100,3 +1100,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T098：实际 Kuhn 弱刚度的精确单元差分展开
 
 详见 [T098 分析](analysis/T098-kuhn-stiffness-cells.md)。两模块9声明从实际物理顶点差和真实仿射导数证明坐标差商公式，完整弱梯度的局部积分及全域原Dirichlet scalarForm严格等于真实单元体积加权相邻节点差商配对之和。输入为全部原内部节点状态，真实H¹₀重构、完整DerivativeFiber、闭单元零测边界及有限积分分割保持不变。AUXILIARY；全局坐标边重排、差分分部求和和完整FD刚度仍待，FD/P012不提升。
+
+## T099：原弱刚度的精确坐标边组装
+
+详见 [T099 分析](analysis/T099-kuhn-stiffness-edges.md)。三模块13声明证明原零边界数据在有限格网掩码平移下的真实和不变，严格识别Kuhn相邻差商为坐标前向差商；固定排列的前缀平移与π换元去除排列依赖，真实体积平移不变及排列体积总和给原物理权∏δ_j。最终原Dirichlet scalarForm(R_hf,R_hg)精确等于完整坐标边差商配对，全部原独立状态及边界层保留。AUXILIARY；原2d+1点Laplacian分部求和和完整FD刚度仍待，FD/P012不提升，原文14/26。
