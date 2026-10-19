@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T132",
-    "supervisor_checked_at": "2026-10-19T07:12:42.965859+00:00",
-    "next_action": "固定SHA独立验收内部能量与弱Poisson平滑化；继续紧支截断的统一H²估计。",
+    "current_task_id": "T133",
+    "supervisor_checked_at": "2026-10-19T07:20:29.233030+00:00",
+    "next_action": "固定SHA独立验收截断PDE与统一H²界；继续真实截断构造和原弱解的内部H²极限。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T07:12:42.965859+00:00"
+    "last_activity_at": "2026-10-19T07:20:29.233030+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "94f7ddd96b42ac046a4dc2cb14fffb5cd97f1402",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39213443617/attempts/1",
-      "finished_at": "2026-10-19T07:05:11.567417+00:00",
+      "checked_sha": "a69b48ebeef0ea36e6f324c6bd2e1e7bf6659f52",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39214559347/attempts/1",
+      "finished_at": "2026-10-19T07:15:03.586454+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "94f7ddd96b42ac046a4dc2cb14fffb5cd97f1402"
+      "source_head_sha": "a69b48ebeef0ea36e6f324c6bd2e1e7bf6659f52"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "94f7ddd96b42ac046a4dc2cb14fffb5cd97f1402",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39213443617/attempts/1",
-      "finished_at": "2026-10-19T07:05:11.567417+00:00",
+      "checked_sha": "a69b48ebeef0ea36e6f324c6bd2e1e7bf6659f52",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39214559347/attempts/1",
+      "finished_at": "2026-10-19T07:15:03.586454+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "94f7ddd96b42ac046a4dc2cb14fffb5cd97f1402"
+      "source_head_sha": "a69b48ebeef0ea36e6f324c6bd2e1e7bf6659f52"
     }
   },
   "milestones": [
@@ -13247,7 +13247,7 @@
       "paper_ref": "Appendix analytic realizations: compact-test Hessian energy and actual weak Poisson convolution identity",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:analytic-realizations"
@@ -13263,16 +13263,81 @@
         "Carleman.IsWeakNegativeLaplacian.convolution_identity",
         "Carleman.IsWeakNegativeLaplacian.mollified_laplacian"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "a69b48ebeef0ea36e6f324c6bd2e1e7bf6659f52",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "a69b48ebeef0ea36e6f324c6bd2e1e7bf6659f52",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39214559347/attempts/1",
+        "finished_at": "2026-10-19T07:15:03.586454+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "a69b48ebeef0ea36e6f324c6bd2e1e7bf6659f52"
+      },
+      "semantic_review": {
+        "checked_sha": "a69b48ebeef0ea36e6f324c6bd2e1e7bf6659f52",
+        "declarations": [
+          "Carleman.SpatialTest.mixed_derivative_norm_sq",
+          "Carleman.SpatialTest.hessian_energy_eq_laplacian",
+          "Carleman.SpatialTest.hessian_component_norm_le_laplacian",
+          "Carleman.SpatialTest.laplacianLp",
+          "Carleman.SpatialTest.exists_H2_jet",
+          "Carleman.IsWeakSpatialDerivative.mixed_convolution_first",
+          "Carleman.IsWeakNegativeLaplacian.integral_test",
+          "Carleman.IsWeakNegativeLaplacian.convolution_identity",
+          "Carleman.IsWeakNegativeLaplacian.mollified_laplacian"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/63657bb8c48830439dffec4583cfff0894c68926/governance/reviews/T132-local-acceptance.md",
+        "reviewed_at": "2026-10-19T07:17:00+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C144",
         "C147"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "两次实际分部积分给紧支测试Hessian能量恒等式，并构造原测试的真实H² jet。仅从原H¹弱Poisson方程证明域内部卷积函数的真实负Laplacian等于同一右端项卷积；未假设原解H²，不作二阶零延拓。内部截断估计与边界正则性仍待，AUXILIARY14/26。"
+      "scope_notes": "两次实际分部积分给紧支测试Hessian能量恒等式，并构造原测试的真实H² jet。仅从原H¹弱Poisson方程证明域内部卷积函数的真实负Laplacian等于同一右端项卷积；未假设原解H²，不作二阶零延拓。内部截断估计与边界正则性仍待，AUXILIARY14/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C149",
+      "title": "真实Poisson截断恒等式与统一H²界",
+      "paper_ref": "Appendix analytic realizations: actual localized Poisson identity and uniform cutoff Hessian estimates",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "lean_declarations": [
+        "Carleman.spatialLaplacian",
+        "Carleman.smooth_directional_mul",
+        "Carleman.smooth_second_directional_mul",
+        "Carleman.spatialLaplacian_mul",
+        "Carleman.SpatialTest.mulSmooth",
+        "Carleman.SpatialTest.laplacianLp_ae",
+        "Carleman.spatialLaplacian_smooth",
+        "Carleman.SpatialTest.laplacian_eq_zero_of_notMem_tsupport",
+        "Carleman.IsWeakNegativeLaplacian.cutoff_convolution",
+        "Carleman.SpatialTest.exists_laplacian_multiplier_bound",
+        "Carleman.IsWeakNegativeLaplacian.cutoff_laplacian_bound",
+        "Carleman.exists_uniform_cutoff_H2"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C148"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "实际Laplacian乘积法则和紧支局部化；仅截断支持内核合法即得全空间精确截断PDE。从截断紧支光滑性内部选常数，实际L²卷积收缩与有界乘法给统一Laplacian界并构造真实H² jet。常数先于解、载荷、核；原解内部极限及边界正则性仍待，AUXILIARY14/26。"
     }
   ],
   "events": [
@@ -14017,6 +14082,11 @@
       "at": "2026-10-19T07:12:42.965859+00:00",
       "public_summary": "实际内域弱解及穷竭极限21声明已独立验收；紧支测试内部能量与弱Poisson平滑化9声明已构建审计，继续内部截断估计。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/fe89262333da68327ee463dad71de2c15b54d613/governance/reviews/T131-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T07:20:29.233030+00:00",
+      "public_summary": "内部Hessian能量与弱Poisson平滑化9声明已独立验收；实际截断PDE和统一H²界12声明已构建审计，继续原解内部正则性。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/63657bb8c48830439dffec4583cfff0894c68926/governance/reviews/T132-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -14332,7 +14402,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7fe031c3d9d92b384c3ee6c357498f440f946ddc/governance/reviews/T130-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39212728130/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/fe89262333da68327ee463dad71de2c15b54d613/governance/reviews/T131-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39213443617/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39213443617/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/63657bb8c48830439dffec4583cfff0894c68926/governance/reviews/T132-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39214559347/attempts/1"
     ]
   },
   "schedules": [
@@ -31480,10 +31552,10 @@
       ],
       "branch": "main",
       "base_commit": "94f7ddd96b42ac046a4dc2cb14fffb5cd97f1402",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "a69b48ebeef0ea36e6f324c6bd2e1e7bf6659f52",
+      "merge_commit": "a69b48ebeef0ea36e6f324c6bd2e1e7bf6659f52",
       "lean_declarations": [
         "Carleman.SpatialTest.mixed_derivative_norm_sq",
         "Carleman.SpatialTest.hessian_energy_eq_laplacian",
@@ -31495,12 +31567,23 @@
         "Carleman.IsWeakNegativeLaplacian.convolution_identity",
         "Carleman.IsWeakNegativeLaplacian.mollified_laplacian"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "a69b48ebeef0ea36e6f324c6bd2e1e7bf6659f52",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39214559347/attempts/1",
+        "finished_at": "2026-10-19T07:15:03.586454+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "a69b48ebeef0ea36e6f324c6bd2e1e7bf6659f52"
+      },
       "blocker": null,
       "attempts": [
         "三模块9声明定向3252 jobs、全库3922 jobs通过；6951声明递归审计PASS。"
       ],
-      "next_action": "固定SHA独立验收内部能量与弱Poisson平滑化；继续紧支截断的统一H²估计。",
+      "next_action": "内部Hessian能量与弱Poisson平滑化已验收；继续实际截断估计和原解内部H²极限。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -31512,6 +31595,91 @@
         "recursive_axiom_audit": 6951,
         "new_explicit_declarations": 9,
         "declaration_artifact_sha256": "c7719e6145e61f465ebcd7dd51a25c15bc41b6e3939df9733771f42dde4cf4b6",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "a69b48ebeef0ea36e6f324c6bd2e1e7bf6659f52",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C148"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "a69b48ebeef0ea36e6f324c6bd2e1e7bf6659f52",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T07:17:00+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/63657bb8c48830439dffec4583cfff0894c68926/governance/reviews/T132-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "a69b48ebeef0ea36e6f324c6bd2e1e7bf6659f52",
+        "checked_sha": "a69b48ebeef0ea36e6f324c6bd2e1e7bf6659f52",
+        "run_id": 39214559347,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3922,
+        "recursive_axiom_audit": 6951,
+        "new_explicit_declarations": 9,
+        "declaration_artifact_sha256": "c7719e6145e61f465ebcd7dd51a25c15bc41b6e3939df9733771f42dde4cf4b6",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T133",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "真实Poisson截断恒等式与统一H²界",
+      "goal_ids": [
+        "C149"
+      ],
+      "acceptance": [
+        "实际经典一阶/二阶乘积法则及Laplacian求和，L²代表身份准确",
+        "支持外截断及导数均为零，核支持条件只在实际截断支持要求",
+        "非负单位核收缩、每个MemLp和限制范数比较真实有效",
+        "常数内部从固定截断选出，量词先于弱解、载荷与平滑核",
+        "真实H² jet保留同一一阶测试jet及负Laplacian，维数因子和剩余P023义务明确"
+      ],
+      "dependencies": [
+        "C148"
+      ],
+      "branch": "main",
+      "base_commit": "a69b48ebeef0ea36e6f324c6bd2e1e7bf6659f52",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.spatialLaplacian",
+        "Carleman.smooth_directional_mul",
+        "Carleman.smooth_second_directional_mul",
+        "Carleman.spatialLaplacian_mul",
+        "Carleman.SpatialTest.mulSmooth",
+        "Carleman.SpatialTest.laplacianLp_ae",
+        "Carleman.spatialLaplacian_smooth",
+        "Carleman.SpatialTest.laplacian_eq_zero_of_notMem_tsupport",
+        "Carleman.IsWeakNegativeLaplacian.cutoff_convolution",
+        "Carleman.SpatialTest.exists_laplacian_multiplier_bound",
+        "Carleman.IsWeakNegativeLaplacian.cutoff_laplacian_bound",
+        "Carleman.exists_uniform_cutoff_H2"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "三模块12声明定向3290 jobs、全库3925 jobs通过；6968声明递归审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收截断PDE与统一H²界；继续真实截断构造和原弱解的内部H²极限。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3925,
+        "recursive_axiom_audit": 6968,
+        "new_explicit_declarations": 12,
+        "declaration_artifact_sha256": "d72677eb1bca4ecce1ea6ad2bcabf7f52210227baf564fd85adb46e1d9d0cd8b",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

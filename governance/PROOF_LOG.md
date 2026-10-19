@@ -257,3 +257,5 @@
 - T130 / C146：子域H¹₀零延拓7声明独立PASS；同SHA三项CI、6904声明递归审计及固定产物逐字节一致；旧T057远端产物已独立保留。 固定证明 `5c1c62ee09ab89d7e28c0b484c02494958856b33`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7fe031c3d9d92b384c3ee6c357498f440f946ddc/governance/reviews/T130-local-acceptance.md)。原文14/26，T131继续真实内域弱解、统一H¹界与Dirichlet穷竭极限。
 
 - T131 / C147：真实内域弱解、统一H¹界及穷竭极限21声明独立PASS；同SHA三项CI、6934声明递归审计及固定原始产物逐字节一致。 固定证明 `94f7ddd96b42ac046a4dc2cb14fffb5cd97f1402`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/fe89262333da68327ee463dad71de2c15b54d613/governance/reviews/T131-local-acceptance.md)。原文14/26，T132继续紧支测试Hessian能量与真实弱Poisson卷积平滑化。
+
+- T132 / C148：紧支测试Hessian能量与原H¹弱Poisson局部卷积PDE9声明独立PASS；同SHA三项CI、6951声明递归审计和原始产物逐字节一致。 固定证明 `a69b48ebeef0ea36e6f324c6bd2e1e7bf6659f52`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/63657bb8c48830439dffec4583cfff0894c68926/governance/reviews/T132-local-acceptance.md)。原文14/26，T133继续真实Poisson截断恒等式与统一H²界。
