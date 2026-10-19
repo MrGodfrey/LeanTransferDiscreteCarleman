@@ -313,3 +313,5 @@
 - T158 / C174：真实盒奇延拓与整个frontier零边界平滑25声明独立AUXILIARY PASS；三项同SHA CI与7690声明raw逐字节一致。 固定证明 `9cc8c5f57aec03ca11ce58ffe86fa6b0ae8f87a8`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e8e3d8bc8884348420751be2c20eb130d9c5ac57/governance/reviews/T158-local-acceptance.md)。原文17/26，T159继续任意盒H²交H¹₀状态的严格零边界光滑密度。
 
 - T159 / C175：完整盒 H² 交 H¹₀ 光滑零边界密度4声明独立 AUXILIARY PASS；三项同 SHA CI 与7695声明 raw 逐字节一致。 固定证明 `5923dbf398166a48ddf42f98585ff54a10545b0f`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9bc6a802c80a677fb9f5dc60000ae265152d6036/governance/reviews/T159-local-acceptance.md)。原文17/26，T160继续真实盒 Dirichlet 算子图的严格零边界光滑密度。
+
+- T160 / C176：任意原盒算子图状态的真实光滑零边界密度10声明独立 AUXILIARY PASS；三项同 SHA CI 与7713声明 raw 逐字节一致。 固定证明 `d5a8ab859e4413c6eb950702df73990e356c3786`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e039d22d791ead1305810940718ebc9237fc854a/governance/reviews/T160-local-acceptance.md)。原文17/26，T161继续完整盒弱周期图空间的光滑零边界密度。
