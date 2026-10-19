@@ -5103,6 +5103,31 @@ set_option pp.maxSteps 1000000
 #check @Carleman.allowed_weight_cartesian_test_norm
 #print axioms Carleman.allowed_weight_cartesian_test_norm
 
+#check @Carleman.finiteDiagonalOperatorFamily
+#print axioms Carleman.finiteDiagonalOperatorFamily
+#check @Carleman.finiteDiagonalOperatorFamily_apply
+#print axioms Carleman.finiteDiagonalOperatorFamily_apply
+#check @Carleman.finiteDiagonalOperatorFamily_hasDerivWithinAt
+#print axioms Carleman.finiteDiagonalOperatorFamily_hasDerivWithinAt
+#check @Carleman.cartesianPhysicalInner_diagonal_bound
+#print axioms Carleman.cartesianPhysicalInner_diagonal_bound
+#check @Carleman.cartesianAllowedTestOperator
+#print axioms Carleman.cartesianAllowedTestOperator
+#check @Carleman.cartesianAllowedTestDerivative
+#print axioms Carleman.cartesianAllowedTestDerivative
+#check @Carleman.cartesianAllowedTestOperator_apply
+#print axioms Carleman.cartesianAllowedTestOperator_apply
+#check @Carleman.cartesianAllowedTestOperator_hasDerivWithinAt
+#print axioms Carleman.cartesianAllowedTestOperator_hasDerivWithinAt
+#check @Carleman.cartesianAllowedTestOperator_endpoint
+#print axioms Carleman.cartesianAllowedTestOperator_endpoint
+#check @Carleman.cartesianAllowedTestDerivative_pairing_bound
+#print axioms Carleman.cartesianAllowedTestDerivative_pairing_bound
+#check @Carleman.cartesianAllowedTestOperator_periodic
+#print axioms Carleman.cartesianAllowedTestOperator_periodic
+#check @Carleman.allowed_weight_cartesian_test_time
+#print axioms Carleman.allowed_weight_cartesian_test_time
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

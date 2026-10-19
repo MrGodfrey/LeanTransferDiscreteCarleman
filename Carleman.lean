@@ -618,3 +618,7 @@ public import Carleman.Spatial.CartesianFiniteDifference
 
 public import Carleman.Spatial.CartesianDiagonalTest
 public import Carleman.Spatial.AllowedCartesianDiagonalTest
+
+public import Carleman.Spatial.FiniteDiagonalOperator
+public import Carleman.Spatial.CartesianTestTimeDerivative
+public import Carleman.Spatial.AllowedCartesianTestTime
