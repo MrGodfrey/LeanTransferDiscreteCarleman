@@ -1356,3 +1356,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 `BoxTimeIntegralLimit` 的两项实际有限柱支配收敛定理（含真实观察示性函数），及 `BoxC2HeatEstimate.box_C2_gaussian_heat_both_signs`。先固定光滑估计参数并取 β=β₀/9，再对所有 T>0、全局 C² 周期 q 和光滑周期零边界 u，应用真实逼近及四项实际积分极限，得原指数(3,1;3)、原 ε∂t−Δ 残差的同常数双方向估计。支配常数可依赖本次数据但只用于极限，不进入最终估计常数。
 
 仍为坐标盒及光滑状态；原闭区间 C² 的匹配延拓、完整弱轨道与一般凸多面体待。AUXILIARY，P024 不提升，覆盖17/26。详见 `analysis/T155-c2-heat-estimate.md`。
+
+## T156 / C172：原闭区间 C² 权的匹配周期延拓（辅助）
+
+`PeriodicPrimitive`、`PeriodicC2Extension`、`BoxIntervalC2HeatEstimate` 共五声明。真实连续二阶导数经 AddCircle 延拓后积分两次，实际 FTC、端点匹配和周期积分给全局 C² 周期 Q，并在整个 Icc 上恢复 q、derivWithin q 和二次 derivWithin。最终 `box_interval_C2_gaussian_heat_both_signs` 内部供应延拓及 qclass，再以真实柱积分相等换回原 q。原 C²([0,T])、零至二阶端点条件已保留，无新延拓假设；同常数顺序及两个时间符号不变。
+
+状态仍 C∞ 周期零边界，区域仍坐标盒；完整弱轨道及一般凸多面体未完成。仍 AUXILIARY，P024 不提升、覆盖17/26。详见 `analysis/T156-interval-c2-heat.md`。

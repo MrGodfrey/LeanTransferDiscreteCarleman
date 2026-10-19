@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T155",
-    "supervisor_checked_at": "2026-10-19T11:05:14.206558+00:00",
-    "next_action": "独立验收全局C²权双方向盒估计；继续原闭区间C²匹配延拓与完整弱轨道。",
+    "current_task_id": "T156",
+    "supervisor_checked_at": "2026-10-19T11:12:26.260030+00:00",
+    "next_action": "独立验收原闭区间C²时间权；继续保持零边界的真实光滑逼近及完整弱轨道。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T11:05:14.206558+00:00"
+    "last_activity_at": "2026-10-19T11:12:26.260030+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "abadce407f55be6c99212cbf92654e8fa44a7c2d",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39241104262/attempts/1",
-      "finished_at": "2026-10-19T10:59:13.474014+00:00",
+      "checked_sha": "069e313b5c03c66aec7c41e72055f95292515e58",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39242086203/attempts/1",
+      "finished_at": "2026-10-19T11:07:59.500028+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "abadce407f55be6c99212cbf92654e8fa44a7c2d"
+      "source_head_sha": "069e313b5c03c66aec7c41e72055f95292515e58"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "abadce407f55be6c99212cbf92654e8fa44a7c2d",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39241104262/attempts/1",
-      "finished_at": "2026-10-19T10:59:13.474014+00:00",
+      "checked_sha": "069e313b5c03c66aec7c41e72055f95292515e58",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39242086203/attempts/1",
+      "finished_at": "2026-10-19T11:07:59.500028+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "abadce407f55be6c99212cbf92654e8fa44a7c2d"
+      "source_head_sha": "069e313b5c03c66aec7c41e72055f95292515e58"
     }
   },
   "milestones": [
@@ -15187,7 +15187,7 @@
       "paper_ref": "Original qclass and prop:continuousCE: actual weighted integral limits for periodic C2 time weights",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:continuousCE"
@@ -15197,16 +15197,68 @@
         "Carleman.boxTimeIntegral_observation_tendsto_parameter",
         "Carleman.box_C2_gaussian_heat_both_signs"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "069e313b5c03c66aec7c41e72055f95292515e58",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "069e313b5c03c66aec7c41e72055f95292515e58",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39242086203/attempts/1",
+        "finished_at": "2026-10-19T11:07:59.500028+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "069e313b5c03c66aec7c41e72055f95292515e58"
+      },
+      "semantic_review": {
+        "checked_sha": "069e313b5c03c66aec7c41e72055f95292515e58",
+        "declarations": [
+          "Carleman.boxTimeIntegral_tendsto_parameter",
+          "Carleman.boxTimeIntegral_observation_tendsto_parameter",
+          "Carleman.box_C2_gaussian_heat_both_signs"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4b51268f1dcd9a5989e3f3f1846fe29265976648/governance/reviews/T155-local-acceptance.md",
+        "reviewed_at": "2026-10-19T11:09:29+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C169",
         "C170"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "真实有限柱连续参数支配收敛含观察示性函数，四项实际积分极限给全局C²周期时间权的双方向估计；c/λ/β/qc/C先于T/q/ε/u，β固定缩小1/9，支配界不进入最终常数。状态仍光滑、几何仍坐标盒，原闭区间延拓/弱轨道/一般多面体待。"
+      "scope_notes": "真实有限柱连续参数支配收敛含观察示性函数，四项实际积分极限给全局C²周期时间权的双方向估计；c/λ/β/qc/C先于T/q/ε/u，β固定缩小1/9，支配界不进入最终常数。状态仍光滑、几何仍坐标盒，原闭区间延拓/弱轨道/一般多面体待。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C172",
+      "title": "原闭区间C²权的匹配周期延拓与双方向盒估计",
+      "paper_ref": "Original closed-interval C2 qclass with matching derivatives and prop:continuousCE",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:continuousCE"
+      ],
+      "lean_declarations": [
+        "Carleman.exists_continuous_periodic_extension",
+        "Carleman.periodic_primitive_of_interval",
+        "Carleman.exists_periodic_C2_extension",
+        "Carleman.boxTimeIntegral_congr_on",
+        "Carleman.box_interval_C2_gaussian_heat_both_signs"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C171"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "原ContDiffOn2闭区间q及0/1/2阶端点匹配，经实际二阶导数连续周期延拓和两次积分得到全局C²周期Q，值与一二阶真实导数精确恢复；内部应用C²估计并以四项实际柱积分相等换回原q。同常数量词不变，仍光滑状态/坐标盒，弱轨道和一般多面体待。"
     }
   ],
   "events": [
@@ -16066,6 +16118,11 @@
       "at": "2026-10-19T11:05:14.206558+00:00",
       "public_summary": "C²周期权真实逼近已独立验收；四项实际积分极限及C²权双方向盒估计构建审计通过，继续原闭区间与弱轨道。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1de9a3b3d36fb75deee268ac2e585ed6f99a0902/governance/reviews/T154-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T11:12:26.260030+00:00",
+      "public_summary": "全局C²权双方向估计已独立验收；原闭区间C²匹配延拓与同常数估计构建审计通过，继续完整弱轨道。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4b51268f1dcd9a5989e3f3f1846fe29265976648/governance/reviews/T155-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -16427,7 +16484,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1cff393c966746c2a1917dcfb9b709fc6322ea08/governance/reviews/T153-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39239955552/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1de9a3b3d36fb75deee268ac2e585ed6f99a0902/governance/reviews/T154-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39241104262/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39241104262/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4b51268f1dcd9a5989e3f3f1846fe29265976648/governance/reviews/T155-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39242086203/attempts/1"
     ]
   },
   "schedules": [
@@ -35989,21 +36048,32 @@
       ],
       "branch": "main",
       "base_commit": "abadce407f55be6c99212cbf92654e8fa44a7c2d",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "069e313b5c03c66aec7c41e72055f95292515e58",
+      "merge_commit": "069e313b5c03c66aec7c41e72055f95292515e58",
       "lean_declarations": [
         "Carleman.boxTimeIntegral_tendsto_parameter",
         "Carleman.boxTimeIntegral_observation_tendsto_parameter",
         "Carleman.box_C2_gaussian_heat_both_signs"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "069e313b5c03c66aec7c41e72055f95292515e58",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39242086203/attempts/1",
+        "finished_at": "2026-10-19T11:07:59.500028+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "069e313b5c03c66aec7c41e72055f95292515e58"
+      },
       "blocker": null,
       "attempts": [
         "两模块3声明定向3300 jobs、全库4036 jobs和7616声明递归公理审计通过。"
       ],
-      "next_action": "独立验收全局C²权双方向盒估计；继续原闭区间C²匹配延拓与完整弱轨道。",
+      "next_action": "C²周期权的实际积分极限与双方向盒估计独立验收通过；接续闭区间匹配延拓及完整弱轨道。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -36015,6 +36085,84 @@
         "recursive_axiom_audit": 7616,
         "new_explicit_declarations": 3,
         "declaration_artifact_sha256": "632ad3ee3262086011324e4d66e1c6ba085b5c2f1572194a46fdc62e0a19ecfa",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "069e313b5c03c66aec7c41e72055f95292515e58",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C171"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "069e313b5c03c66aec7c41e72055f95292515e58",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T11:09:29+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4b51268f1dcd9a5989e3f3f1846fe29265976648/governance/reviews/T155-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "069e313b5c03c66aec7c41e72055f95292515e58",
+        "checked_sha": "069e313b5c03c66aec7c41e72055f95292515e58",
+        "run_id": 39242086203,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 4036,
+        "recursive_axiom_audit": 7616,
+        "new_explicit_declarations": 3,
+        "declaration_artifact_sha256": "632ad3ee3262086011324e4d66e1c6ba085b5c2f1572194a46fdc62e0a19ecfa",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T156",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原闭区间C²权的匹配周期延拓与双方向盒估计",
+      "goal_ids": [
+        "C172"
+      ],
+      "acceptance": [
+        "AddCircle连续延拓含整个闭区间两个端点",
+        "实际FTC与零周期积分证明原函数周期，无外加延拓假设",
+        "真实derivWithin及实际全导数精确相等",
+        "原闭区间qclass内部供应并四项积分换回同一q",
+        "原常数顺序及双方向保持；光滑状态/坐标盒范围明确"
+      ],
+      "dependencies": [
+        "C171"
+      ],
+      "branch": "main",
+      "base_commit": "069e313b5c03c66aec7c41e72055f95292515e58",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.exists_continuous_periodic_extension",
+        "Carleman.periodic_primitive_of_interval",
+        "Carleman.exists_periodic_C2_extension",
+        "Carleman.boxTimeIntegral_congr_on",
+        "Carleman.box_interval_C2_gaussian_heat_both_signs"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "三模块5声明定向3308 jobs、全库4039 jobs和7621声明递归公理审计通过。"
+      ],
+      "next_action": "独立验收原闭区间C²时间权；继续保持零边界的真实光滑逼近及完整弱轨道。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4039,
+        "recursive_axiom_audit": 7621,
+        "new_explicit_declarations": 5,
+        "declaration_artifact_sha256": "037637d42768669d66a9355cf5dc870ac3e52ee2bd083d0f0bfbc5358849fd53",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
