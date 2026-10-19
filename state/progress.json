@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T115",
-    "supervisor_checked_at": "2026-10-19T04:46:14.709927+00:00",
-    "next_action": "固定SHA独立验收原弱H²内部强光滑逼近；继续低维点值估计和真实连续节点代表。",
+    "current_task_id": "T116",
+    "supervisor_checked_at": "2026-10-19T04:56:26.349692+00:00",
+    "next_action": "固定SHA独立验收原弱H²内部连续代表；继续实际收缩逼近与闭包边界连续性。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T04:46:14.709927+00:00"
+    "last_activity_at": "2026-10-19T04:56:26.349692+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "a5c68e2aaa4da98efe42da31ed0c1da04ba99952",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39200479416/attempts/1",
-      "finished_at": "2026-10-19T04:41:26.470888+00:00",
+      "checked_sha": "f134750df6b8ef03c639f50dd5084d4c42d49272",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39201164238/attempts/1",
+      "finished_at": "2026-10-19T04:48:25.068490+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "a5c68e2aaa4da98efe42da31ed0c1da04ba99952"
+      "source_head_sha": "f134750df6b8ef03c639f50dd5084d4c42d49272"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "a5c68e2aaa4da98efe42da31ed0c1da04ba99952",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39200479416/attempts/1",
-      "finished_at": "2026-10-19T04:41:26.470888+00:00",
+      "checked_sha": "f134750df6b8ef03c639f50dd5084d4c42d49272",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39201164238/attempts/1",
+      "finished_at": "2026-10-19T04:48:25.068490+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "a5c68e2aaa4da98efe42da31ed0c1da04ba99952"
+      "source_head_sha": "f134750df6b8ef03c639f50dd5084d4c42d49272"
     }
   },
   "milestones": [
@@ -12121,7 +12121,7 @@
       "paper_ref": "Original P1 Step 2: genuine smooth approximations to all weak H² states, with strong convergence of every derivative component on interior compact sets",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:p1",
@@ -12140,16 +12140,88 @@
         "Carleman.IsWeakSpatialDerivative.local_mollification_strong_second",
         "Carleman.WeakSobolevJet.local_mollification_strong_h2"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "f134750df6b8ef03c639f50dd5084d4c42d49272",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "f134750df6b8ef03c639f50dd5084d4c42d49272",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39201164238/attempts/1",
+        "finished_at": "2026-10-19T04:48:25.068490+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "f134750df6b8ef03c639f50dd5084d4c42d49272"
+      },
+      "semantic_review": {
+        "checked_sha": "f134750df6b8ef03c639f50dd5084d4c42d49272",
+        "declarations": [
+          "Carleman.l2_square_tendsto_zero_of_ae_of_energy_le",
+          "Carleman.spatialMollifier_square_error_tendsto",
+          "Carleman.spatialMollifier_L2_error_tendsto",
+          "Carleman.spatialMollificationLp",
+          "Carleman.spatialMollificationLp_ae",
+          "Carleman.spatialMollificationLp_tendsto",
+          "Carleman.spatialMollifier_L2_error_restrict_tendsto",
+          "Carleman.IsWeakSpatialDerivative.local_mollification_strong_first",
+          "Carleman.IsWeakSpatialDerivative.local_mollification_strong_second",
+          "Carleman.WeakSobolevJet.local_mollification_strong_h2"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a05b7637d45f1eaecb26f019fcdb18096bd9bd1c/governance/reviews/T115-local-acceptance.md",
+        "reviewed_at": "2026-10-19T04:51:03+00:00",
+        "reviewer": "/root/accept_section3; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C130",
         "C089"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "真实L² Fatou和平行四边形身份给无支配函数的强收敛准则；实际缩小卷积核在全部L²上强收敛；同一C∞卷积对原全部弱H² jet的值、所有一阶和二阶分量在内部紧集上同时强收敛。无光滑代表或全空间Sobolev延拓假设；连续节点代表、边界与全局允许权仍待。AUXILIARY14/26，P011不提升。"
+      "scope_notes": "真实L² Fatou和平行四边形身份给无支配函数的强收敛准则；实际缩小卷积核在全部L²上强收敛；同一C∞卷积对原全部弱H² jet的值、所有一阶和二阶分量在内部紧集上同时强收敛。无光滑代表或全空间Sobolev延拓假设；连续节点代表、边界与全局允许权仍待。AUXILIARY14/26，P011不提升。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C132",
+      "title": "低维原弱H²的真实内部连续代表",
+      "paper_ref": "Original P1 Step 2: actual low-dimensional point bounds, uniform limits, and continuous representatives of all original weak H² states on the open domain",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:p1",
+        "eq:p1-interpolation",
+        "eq:p1-interpolation-energy"
+      ],
+      "lean_declarations": [
+        "Carleman.continuous_memLp_compact",
+        "Carleman.compact_integral_norm_le_l2",
+        "Carleman.convex_smooth_h2_point_bound",
+        "Carleman.tensor_norm_le_coordinate_sum",
+        "Carleman.tensor_L2_le_coordinate_sum",
+        "Carleman.convex_smooth_h2_coordinate_point_bound",
+        "Carleman.coordinateDerivative_sub",
+        "Carleman.bochnerL2Norm_sub_le_errors",
+        "Carleman.convex_smooth_h2_uniform_limit",
+        "Carleman.coordinateDerivative_one",
+        "Carleman.coordinateDerivative_two",
+        "Carleman.WeakSobolevJet.exists_local_continuous_representative",
+        "Carleman.WeakSobolevJet.exists_continuous_representative",
+        "Carleman.WeakSobolevJet.continuous_representative_unique"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C131",
+        "C130",
+        "C128"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "实际L² Hessian点值估计和全坐标L²收敛给紧凸集上一致连续极限；同一原缩小卷积构造全部d≤3弱H²在任意开域上的单一连续代表、a.e.身份和逐点唯一性。闭包边界延拓及全局允许权插值仍待；AUXILIARY14/26，P011不提升。"
     }
   ],
   "events": [
@@ -12809,6 +12881,11 @@
       "at": "2026-10-19T04:46:14.709927+00:00",
       "public_summary": "原弱Hessian局部卷积与节点界已独立验收；原弱H²内部强光滑逼近10声明构建审计通过，继续连续节点代表。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ed7f1c9b310276585f9065f2e011063a4318e4ff/governance/reviews/T114-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T04:56:26.349692+00:00",
+      "public_summary": "原弱H²内部强光滑逼近已独立验收；低维真实内部连续代表14声明构建审计通过，继续闭包边界适配。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a05b7637d45f1eaecb26f019fcdb18096bd9bd1c/governance/reviews/T115-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -13090,7 +13167,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e19079e7b9c9b26fafbbdaed52059d8bbf569398/governance/reviews/T113-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39199869405/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ed7f1c9b310276585f9065f2e011063a4318e4ff/governance/reviews/T114-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39200479416/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39200479416/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a05b7637d45f1eaecb26f019fcdb18096bd9bd1c/governance/reviews/T115-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39201164238/attempts/1"
     ]
   },
   "schedules": [
@@ -28619,10 +28698,10 @@
       ],
       "branch": "main",
       "base_commit": "a5c68e2aaa4da98efe42da31ed0c1da04ba99952",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "f134750df6b8ef03c639f50dd5084d4c42d49272",
+      "merge_commit": "f134750df6b8ef03c639f50dd5084d4c42d49272",
       "lean_declarations": [
         "Carleman.l2_square_tendsto_zero_of_ae_of_energy_le",
         "Carleman.spatialMollifier_square_error_tendsto",
@@ -28635,12 +28714,23 @@
         "Carleman.IsWeakSpatialDerivative.local_mollification_strong_second",
         "Carleman.WeakSobolevJet.local_mollification_strong_h2"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "f134750df6b8ef03c639f50dd5084d4c42d49272",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39201164238/attempts/1",
+        "finished_at": "2026-10-19T04:48:25.068490+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "f134750df6b8ef03c639f50dd5084d4c42d49272"
+      },
       "blocker": null,
       "attempts": [
         "四模块10显式声明定向3264 jobs、全库3845 jobs通过；6617声明递归公理审计PASS。"
       ],
-      "next_action": "固定SHA独立验收原弱H²内部强光滑逼近；继续低维点值估计和真实连续节点代表。",
+      "next_action": "原弱H²真实内部强光滑逼近已独立验收；继续低维连续代表和闭包边界适配。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -28652,6 +28742,95 @@
         "recursive_axiom_audit": 6617,
         "new_explicit_declarations": 10,
         "declaration_artifact_sha256": "19fa623ea0be6657f94b72e17ed570f0739857030a3ac99e1e6cc4f099656d57",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "f134750df6b8ef03c639f50dd5084d4c42d49272",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_section3",
+          "claim_ids": [
+            "C131"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "f134750df6b8ef03c639f50dd5084d4c42d49272",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T04:51:03+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a05b7637d45f1eaecb26f019fcdb18096bd9bd1c/governance/reviews/T115-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "f134750df6b8ef03c639f50dd5084d4c42d49272",
+        "checked_sha": "f134750df6b8ef03c639f50dd5084d4c42d49272",
+        "run_id": 39201164238,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3845,
+        "recursive_axiom_audit": 6617,
+        "new_explicit_declarations": 10,
+        "declaration_artifact_sha256": "19fa623ea0be6657f94b72e17ed570f0739857030a3ac99e1e6cc4f099656d57",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T116",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "低维原弱H²的真实内部连续代表",
+      "goal_ids": [
+        "C132"
+      ],
+      "acceptance": [
+        "真实算子范数L² Hessian点值估计及固定维数坐标重构正确",
+        "值和全部一阶/二阶分量强L²收敛实际推出一致Cauchy与连续极限",
+        "原全部弱H² jet的同一卷积给真实局部一致极限和a.e.身份",
+        "真实内部闭球拼接得到开域单一连续代表和唯一性，无预设点值",
+        "明确内部范围，不提升闭包边界或完整P1结论"
+      ],
+      "dependencies": [
+        "C131",
+        "C130",
+        "C128"
+      ],
+      "branch": "main",
+      "base_commit": "f134750df6b8ef03c639f50dd5084d4c42d49272",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.continuous_memLp_compact",
+        "Carleman.compact_integral_norm_le_l2",
+        "Carleman.convex_smooth_h2_point_bound",
+        "Carleman.tensor_norm_le_coordinate_sum",
+        "Carleman.tensor_L2_le_coordinate_sum",
+        "Carleman.convex_smooth_h2_coordinate_point_bound",
+        "Carleman.coordinateDerivative_sub",
+        "Carleman.bochnerL2Norm_sub_le_errors",
+        "Carleman.convex_smooth_h2_uniform_limit",
+        "Carleman.coordinateDerivative_one",
+        "Carleman.coordinateDerivative_two",
+        "Carleman.WeakSobolevJet.exists_local_continuous_representative",
+        "Carleman.WeakSobolevJet.exists_continuous_representative",
+        "Carleman.WeakSobolevJet.continuous_representative_unique"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "五模块14显式声明定向3284 jobs、全库3850 jobs通过；6631声明递归公理审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收原弱H²内部连续代表；继续实际收缩逼近与闭包边界连续性。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3850,
+        "recursive_axiom_audit": 6631,
+        "new_explicit_declarations": 14,
+        "declaration_artifact_sha256": "364b815fa7148c77283e253a1b86c6b6a9a114941c28fbb333aaccf5d7aef157",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

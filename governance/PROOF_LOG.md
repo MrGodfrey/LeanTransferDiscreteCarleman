@@ -223,3 +223,5 @@
 - T113 / C129：真实L² Hessian光滑节点梯度误差5声明独立PASS；同SHA三项CI、6582声明递归审计和固定产物逐字节一致。 固定证明 `9e1f7ef800794f6fb560151f827fc7df51f7b10a`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e19079e7b9c9b26fafbbdaed52059d8bbf569398/governance/reviews/T113-local-acceptance.md)。原文14/26，T114继续原弱Hessian的真实局部卷积与节点误差界。
 
 - T114 / C130：原弱Hessian真实局部卷积与节点界11声明独立PASS；同SHA三项CI、6601声明递归审计和固定产物逐字节一致。 固定证明 `a5c68e2aaa4da98efe42da31ed0c1da04ba99952`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ed7f1c9b310276585f9065f2e011063a4318e4ff/governance/reviews/T114-local-acceptance.md)。原文14/26，T115继续原弱H²的真实内部强光滑逼近。
+
+- T115 / C131：原弱H²实际内部强光滑逼近10声明独立PASS；同SHA三项CI、6617声明递归审计和固定产物逐字节一致。 固定证明 `f134750df6b8ef03c639f50dd5084d4c42d49272`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a05b7637d45f1eaecb26f019fcdb18096bd9bd1c/governance/reviews/T115-local-acceptance.md)。原文14/26，T116继续低维原弱H²的真实内部连续代表。
