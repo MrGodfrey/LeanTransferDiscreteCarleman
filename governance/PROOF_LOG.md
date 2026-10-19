@@ -249,3 +249,5 @@
 - T126 / C142：原控制空间完整P1数值数据5声明独立PASS；同SHA三项CI、6782声明递归审计及固定产物逐字节一致。 固定证明 `8bfc0cb3d9a3d394805cfbb9720d903fc139bdfe`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8be5cfe3ca72b5713971c730b71d24274b35a567/governance/reviews/T126-local-acceptance.md)。原文14/26，T127继续有界分布导数的真实L²表示及极限。
 
 - T127 / C143：有界分布导数5声明独立PASS；同SHA三项CI、6787声明递归审计及固定产物逐字节一致。 固定证明 `b7491fa1b22b01515e8d0c428f35a3dbe301c34f`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ee8ad5c395ca21d2b7a0444e55e1bc26f3a613e0/governance/reviews/T127-local-acceptance.md)。原文14/26，T128继续真实混合弱导数交换、对称Hessian组装与H²极限。
+
+- T128 / C144：真实对称Hessian及H²极限16声明独立PASS；同SHA三项CI、6880声明递归审计及固定产物逐字节一致。 固定证明 `5f407936e769fa9742463e35a8d7d8e29970aa36`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5cd2b4f55f27cf65a8c03af9fee68849aef6de9e/governance/reviews/T128-local-acceptance.md)。原文14/26，T129继续真实H¹₀弱紧性与Dirichlet H²逼近极限。

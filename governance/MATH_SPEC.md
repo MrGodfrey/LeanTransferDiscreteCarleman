@@ -1226,3 +1226,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 `SpatialTest.derivativeTest` 保持原紧支光滑测试资格，真实两次方向导数在 L² 中交换；`IsWeakSpatialDerivative.mixed_commute` 由全部测试身份和密度证明原弱状态混合导数交换。`derivativeFieldAssembly` 将原无序多重指标的 L² 分量组装为真实 Euclidean 字段，精确恢复每个分量及平方范数和。
 
 `secondOrderJet` 保留原 H¹ jet 的全部字段，接入真实二阶弱导数。`exists_weakH2_of_gradient_test_bounds` 从每个梯度分量的原测试范函 C 界内部构造二阶 L² 字段及对称性，得到相同一阶截断的原 H² jet，并有 ‖field₂U‖²≤card(Sym(Fin d),2) C²。`exists_weakH2_of_gradient_test_limits` 允许逐测试最终身份和只受最终统一界控制的候选 Hessian；`exists_weakH2_of_strong_H1_limit_bounded` 为强 H¹ 极限推论。任意维数/开域，C≥0，无 H² 零延拓或候选 Hessian 收敛前提。具体 Dirichlet 正则性先验界和光滑内域解仍待，AUXILIARY14/26。
+
+## T129：H¹₀ 弱紧性与真实 Dirichlet H² 极限
+
+`exists_hilbert_weak_subsequence` 及闭子空间版本由实际弱对偶紧性/Riesz选同一弱子列并保留原范数界。`exists_dirichlet_weak_subsequence` 在真实Sobolev Hilbert空间及原H¹₀测试闭包中提取子列，内部供应Lebesgue L²可分性，保留两阶真实字段的弱收敛和平方和界。
+
+`IsWeakNegativeLaplacian.unique_rhs` 及 `of_weak_gradient_limit` 保持全部原Poisson测试身份。`exists_dirichlet_H2_of_bounded_approximants` 从原H¹₀逼近、统一H¹能量界、候选Hessian最终L²界与逐测试最终身份，内部构造实际H²∩H¹₀解且negativeLaplacian v=f，Hessian平方≤card(Sym(Fin d),2)C₂²。无需候选Hessian收敛/全域弱导数资格或H²零延拓。实际光滑内域解、Hessian先验界和穷竭仍待供应；AUXILIARY14/26，P023不提升。
