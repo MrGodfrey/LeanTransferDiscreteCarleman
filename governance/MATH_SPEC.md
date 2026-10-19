@@ -1249,3 +1249,12 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 - 穷竭极限：若这些内域有实际 H² 解且完整 Hessian 统一有界 C，则构造同一 f 的真实 H²∩H¹₀(S) 解，Hessian²≤card(Sym(Fin d),2)C²。H¹ 界、全域候选字段及逐测试最终身份均不再作为输入。
 - 边界：不宣称 H² 零延拓；只延拓 H¹₀ 状态及单独 L² 二阶分量。不对支持未落入内域的测试声称内域方程成立。
 - AUXILIARY，14/26。光滑内域 H² 正则性、统一二阶估计和凸域光滑穷竭仍未清偿，P023 不提升。分析见 `analysis/T131-dirichlet-exhaustion.md`。
+
+
+## T132 / C148：内部 Hessian 能量与弱 Poisson 平滑化
+
+- 原对象：实际紧支 C∞ 测试，以及任意原 H¹ 弱 Poisson 状态和 L² 右端项。
+- 测试结论：真实有序二阶能量等于纯二阶导数和的 L² 范数平方；内部构造原 H² jet，保留同一 H¹ 截断与实际 Laplacian。
+- 平滑化结论：反射核紧支持位于域内时，真实卷积函数满足 −Δ(u*κ)=f*κ；只用原一阶弱链和 Poisson 方程。
+- 不将紧支测试恒等式冒充一般 Dirichlet 边界估计，不假设原状态 H² 或全空间 H² 零延拓。
+- AUXILIARY，14/26。分析见 `analysis/T132-interior-energy.md`；P023 的剩余边界与凸域正则性义务不变。
