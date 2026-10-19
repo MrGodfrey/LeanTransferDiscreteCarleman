@@ -4401,6 +4401,39 @@ set_option pp.maxSteps 1000000
 #check @Carleman.allowed_weight_dirichlet_h2_local_boundary_affine
 #print axioms Carleman.allowed_weight_dirichlet_h2_local_boundary_affine
 
+#check @Carleman.finiteCoverMultiplicity
+#print axioms Carleman.finiteCoverMultiplicity
+#check @Carleman.sum_indicator_eq_multiplicity
+#print axioms Carleman.sum_indicator_eq_multiplicity
+#check @Carleman.bochnerL2Norm_sq_finite_overlap
+#print axioms Carleman.bochnerL2Norm_sq_finite_overlap
+#check @Carleman.bochnerL2Norm_sq_finite_cover
+#print axioms Carleman.bochnerL2Norm_sq_finite_cover
+#check @Carleman.subdomainLp_norm_eq_bochner
+#print axioms Carleman.subdomainLp_norm_eq_bochner
+#check @Carleman.subdomainLp_sq_finite_overlap
+#print axioms Carleman.subdomainLp_sq_finite_overlap
+#check @Carleman.subdomainLp_sq_finite_cover
+#print axioms Carleman.subdomainLp_sq_finite_cover
+#check @Carleman.cartesianPatch
+#print axioms Carleman.cartesianPatch
+#check @Carleman.cartesianPatch_isOpen
+#print axioms Carleman.cartesianPatch_isOpen
+#check @Carleman.cartesianPatch_index_bound
+#print axioms Carleman.cartesianPatch_index_bound
+#check @Carleman.cartesianPatch_window_card
+#print axioms Carleman.cartesianPatch_window_card
+#check @Carleman.cartesianPatch_multiplicity_le
+#print axioms Carleman.cartesianPatch_multiplicity_le
+#check @Carleman.cartesianPatch_permutation_multiplicity_le
+#print axioms Carleman.cartesianPatch_permutation_multiplicity_le
+#check @Carleman.finite_patch_h2_assembly
+#print axioms Carleman.finite_patch_h2_assembly
+#check @Carleman.weighted_finite_patch_h2_assembly
+#print axioms Carleman.weighted_finite_patch_h2_assembly
+#check @Carleman.weighted_cartesian_patch_h2_assembly
+#print axioms Carleman.weighted_cartesian_patch_h2_assembly
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

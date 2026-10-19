@@ -540,3 +540,6 @@ public import Carleman.Spatial.LocalWeightedNorm
 public import Carleman.Spatial.WeightedLocalBoundaryAffine
 public import Carleman.Spatial.BoxAllowedComparison
 public import Carleman.Spatial.AllowedLocalBoundaryAffine
+public import Carleman.Spatial.L2FiniteOverlap
+public import Carleman.Geometry.CartesianPatchOverlap
+public import Carleman.Spatial.FinitePatchAssembly
