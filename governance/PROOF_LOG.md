@@ -265,3 +265,5 @@
 - T134 / C150：原H¹弱Poisson解内部H²正则性6声明独立PASS；同SHA三项CI、6975声明递归审计及固定原始证据逐字节一致。 固定证明 `3d418d76a4959a094dcd26d2d157c213f297531d`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7dd98d90d35d58e3673717e06da247d265e5031f/governance/reviews/T134-local-acceptance.md)。原文14/26，T135继续原Proposition 7.7的实际P1粗网格Rayleigh界。
 
 - T135 / C151：完整原Proposition7.7的8声明独立PAPER PASS；同SHA三项CI、6989声明审计和原始证据逐字节一致，仅P019提升为15/26。 固定证明 `7ad1a9dd94d3abfe384564b1f24f351f5c60fe21`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/de75c6f3460fc5f85cefe9c4bcb7649c9601850d/governance/reviews/T135-local-acceptance.md)。原文15/26，T136继续原Cartesian粗网格命题的一维精确插值逆估计。
+
+- T136 / C152：实际一维插值18声明独立AUXILIARY PASS；同SHA三项CI、7011声明审计和原始证据逐字节一致。 固定证明 `fe4cd0a34c2c118548b17ce534eae0f210bea70c`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2578ee282cdd7eeadd27b80fb8b0795ac75146d0/governance/reviews/T136-local-acceptance.md)。原文15/26，T137继续原Proposition 7.8的实际Cartesian粗网格Rayleigh界。

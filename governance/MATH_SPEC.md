@@ -1274,3 +1274,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ### T136 / C152：原 Cartesian 粗网格命题的一维精确插值估计
 
 原 `prop:filter-fd` / P020 中的一维部分使用真正粗节点线性插值，细区间数为 mK，m>0。`linearRefinementMass_eq` 精确给每粗单元细梯形质量 m(a²+ab+b²)/3+(a−b)²/(6m)，`linearRefinementEnergy_eq` 精确给边能量 (b−a)²/m，进而内部推出系数12的单元逆估计。`uniformLinearProlongation` 直接用商/余数从同一粗数据计算全部细节点；节点值、完整闭粗单元上的线性公式、质量与能量分块均精确证明。零端点使梯形质量总和严格等于实际对角节点平方和，最后恢复 h 加权物理质量与前向商，得到常数12/(mh)²，先于所有粗数据且对任意正整数m成立。K=0、m=1也保留。此批三模块18声明只申请AUXILIARY验收；多维张量插值及原实际差分算子/保留像连接尚待，P020不提前提升。
+
+### T137 / C153：原 Proposition 7.8 的完整 Cartesian 粗网格 Rayleigh 界
+
+`tensorLinearProlongation` 是全部真实粗内节点数据的一维线性节点基函数张量积；粗节点恢复、两侧零边界、任意坐标截面等于同一一维粗插值均内部证明。有限 Cartesian 和用实际 piSplitAt 双射逐坐标分解，应用T136精确一维估计并求和得到12∑Hr⁻²。`cartesianCoarseProlongation` 将全部粗数据送入原物理细状态空间，其真实对角质量和原2d+1点差分能量均与上述张量值严格相等，包括边界两端；未改质量、差分或保留空间。
+
+`Physical.fd_coarse_filter_rayleigh` 对任意维数、每轴m>0和任意K，细分数N=mK，全部正细步长h，证明原filterRayleigh在实际插值range上的上界12∑((m_r h_r)⁻¹)²。`fd_dividing_filter_rayleigh`直接接受原N与m_r∣N_r，内部取K_r=N_r/m_r，输出真实线性插值映射及其每个细节点精确公式和同一Rayleigh界。域原点任意，盒长由N_rh_r确定；无网格尺寸比例、维数限制、算子不变性、H²正则或CE输入。系数12严格保留，零空间/空内节点也由原定义处理。六模块27声明申请完整P020/PAPER验收；固定SHA独立验收及实际CI完成前仍15/26。
