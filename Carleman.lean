@@ -698,3 +698,7 @@ public import Carleman.Spatial.WeakH2NodalGradient
 public import Carleman.Spatial.L2BoundedMultiplierLimit
 public import Carleman.Spatial.WeakDerivativeStrongLimit
 public import Carleman.Spatial.WeakScalarChainRule
+public import Carleman.Spatial.SmoothGapCutoff
+public import Carleman.Spatial.WeakZeroGradientConstant
+public import Carleman.Spatial.WeakScalarGap
+public import Carleman.Spatial.DirichletContinuousBoundary

@@ -5592,6 +5592,17 @@ set_option pp.maxSteps 1000000
 #check @Carleman.IsWeakSpatialDerivative.scalar_chain_rule
 #print axioms Carleman.IsWeakSpatialDerivative.scalar_chain_rule
 
+#check @Carleman.exists_smooth_gap_cutoff
+#print axioms Carleman.exists_smooth_gap_cutoff
+#check @Carleman.weak_zero_gradient_ae_constant
+#print axioms Carleman.weak_zero_gradient_ae_constant
+#check @Carleman.weak_scalar_gap_on_convex
+#print axioms Carleman.weak_scalar_gap_on_convex
+#check @Carleman.dirichlet_continuous_zero_on_frontier
+#print axioms Carleman.dirichlet_continuous_zero_on_frontier
+#check @Carleman.WeakSobolevJet.exists_dirichlet_closure_representative
+#print axioms Carleman.WeakSobolevJet.exists_dirichlet_closure_representative
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
