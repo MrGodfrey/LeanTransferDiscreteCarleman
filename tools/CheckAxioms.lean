@@ -5469,6 +5469,41 @@ set_option pp.maxSteps 1000000
 #check @Carleman.WeakSobolevJet.continuous_representative_unique
 #print axioms Carleman.WeakSobolevJet.continuous_representative_unique
 
+#check @Carleman.scalarAffine_memLp
+#print axioms Carleman.scalarAffine_memLp
+#check @Carleman.integral_scalarAffine_univ
+#print axioms Carleman.integral_scalarAffine_univ
+#check @Carleman.scalarAffine_L2_sq
+#print axioms Carleman.scalarAffine_L2_sq
+#check @Carleman.inwardPullback
+#print axioms Carleman.inwardPullback
+#check @Carleman.inwardPullback_memLp
+#print axioms Carleman.inwardPullback_memLp
+#check @Carleman.inwardPullback_L2_le
+#print axioms Carleman.inwardPullback_L2_le
+#check @Carleman.inwardPoint_tendsto
+#print axioms Carleman.inwardPoint_tendsto
+#check @Carleman.l2_square_tendsto_zero_of_ae_of_energy_tendsto
+#print axioms Carleman.l2_square_tendsto_zero_of_ae_of_energy_tendsto
+#check @Carleman.l2_error_tendsto_of_ae_of_energy_tendsto
+#print axioms Carleman.l2_error_tendsto_of_ae_of_energy_tendsto
+#check @Carleman.inwardPullback_L2_error_tendsto_of_continuous
+#print axioms Carleman.inwardPullback_L2_error_tendsto_of_continuous
+#check @Carleman.inwardPullback_L2_error_tendsto
+#print axioms Carleman.inwardPullback_L2_error_tendsto
+#check @Carleman.scalarAffine_iteratedFDeriv
+#print axioms Carleman.scalarAffine_iteratedFDeriv
+#check @Carleman.inwardPullback_contDiff
+#print axioms Carleman.inwardPullback_contDiff
+#check @Carleman.coordinateDerivative_inwardPullback
+#print axioms Carleman.coordinateDerivative_inwardPullback
+#check @Carleman.inwardPullback_L2_error_tendsto_diagonal
+#print axioms Carleman.inwardPullback_L2_error_tendsto_diagonal
+#check @Carleman.l2_scaled_error_tendsto
+#print axioms Carleman.l2_scaled_error_tendsto
+#check @Carleman.inwardPullback_scaled_L2_error_tendsto
+#print axioms Carleman.inwardPullback_scaled_L2_error_tendsto
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

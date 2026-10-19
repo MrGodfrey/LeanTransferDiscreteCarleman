@@ -676,3 +676,8 @@ public import Carleman.Spatial.TensorCoordinateL2
 public import Carleman.Spatial.SmoothH2UniformLimit
 public import Carleman.Spatial.WeakH2LocalContinuous
 public import Carleman.Spatial.WeakH2Continuous
+public import Carleman.Spatial.ScalarAffineL2
+public import Carleman.Spatial.StrongL2EnergyLimit
+public import Carleman.Spatial.StrongInwardPullback
+public import Carleman.Spatial.InwardSmoothDerivatives
+public import Carleman.Spatial.InwardApproximationLimit
