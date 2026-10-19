@@ -24,7 +24,7 @@
 | P016 | Lemma 7.4 | `lem:filter-reverse` | 29 / 2164 | M6b | C041 | Carleman.Physical.filterRayleigh, Carleman.Physical.filterConstant, Carleman.Physical.filter_reverse |
 | P017 | Theorem 7.5 | `thm:filtered-observability` | 29 / 2177 | M6b | C018 | 待建立 |
 | P018 | Corollary 7.6 | `cor:filtered-control` | 29 / 2201 | M6b | 待分解 | 待建立 |
-| P019 | Proposition 7.7 | `prop:filter-p1` | 30 / 2224 | M6b | 待分解 | 待建立 |
+| P019 | Proposition 7.7 | `prop:filter-p1` | 30 / 2224 | M6b | C151 | Carleman.SimplicialPartition.maxDiameter_pos, Carleman.SimplicialPartition.inverseWeight_const_bound, Carleman.conforming_uniform_inverse, Carleman.Physical.filterRayleigh_le_of_energy_bound, Carleman.Physical.nestedConformingFilter, Carleman.Physical.dirichlet_galerkin_energy, Carleman.Physical.nested_p1_filter_rayleigh, Carleman.Physical.p1_coarse_filter_rayleigh |
 | P020 | Proposition 7.8 | `prop:filter-fd` | 30 / 2241 | M6b | 待分解 | 待建立 |
 | P021 | Corollary 7.9 | `prop:control-convergence` | 31 / 2344 | M6c | C019 | 待建立 |
 | P022 | Proposition A.1 | `prop:spatial-operators` | 36 / 2615 | M6a | 待分解 | 待建立 |

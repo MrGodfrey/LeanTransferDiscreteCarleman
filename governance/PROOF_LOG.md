@@ -261,3 +261,5 @@
 - T132 / C148：紧支测试Hessian能量与原H¹弱Poisson局部卷积PDE9声明独立PASS；同SHA三项CI、6951声明递归审计和原始产物逐字节一致。 固定证明 `a69b48ebeef0ea36e6f324c6bd2e1e7bf6659f52`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/63657bb8c48830439dffec4583cfff0894c68926/governance/reviews/T132-local-acceptance.md)。原文14/26，T133继续真实Poisson截断恒等式与统一H²界。
 
 - T133 / C149：实际Poisson截断恒等式与统一H²界12声明独立PASS；同SHA三项CI、6968声明递归审计及固定原始证据逐字节一致。 固定证明 `c3ea3c03352de258d944bf495695b31bcef3f3b0`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/970119bd158092cfb87421087edc1481ce9bf915/governance/reviews/T133-local-acceptance.md)。原文14/26，T134继续原H¹弱Poisson解的真实内部H²正则性。
+
+- T134 / C150：原H¹弱Poisson解内部H²正则性6声明独立PASS；同SHA三项CI、6975声明递归审计及固定原始证据逐字节一致。 固定证明 `3d418d76a4959a094dcd26d2d157c213f297531d`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7dd98d90d35d58e3673717e06da247d265e5031f/governance/reviews/T134-local-acceptance.md)。原文14/26，T135继续原Proposition 7.7的实际P1粗网格Rayleigh界。

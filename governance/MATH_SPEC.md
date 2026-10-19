@@ -1266,3 +1266,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T134 / C150：原弱 Poisson 解的内部 H² 正则性
 
 四模块6声明内部构造紧支光滑截断，证明 η=1 的开内域上实际截断卷积梯度强 L² 收敛到原梯度。真实二阶候选的完整测试身份和 T133 最终统一界恢复同一 u|T 的 H² jet。原弱方程经测试延拓/限制准确保留同一载荷；最终定理仅输入 S、T 开、closure T 紧包含于 S，常数先于全部原 H¹ 弱解及 L² 载荷，输出完整一阶 jet 等式、negativeLaplacian v=f|T 及显式 Sym 维数因子估计。无 H²、核、截断或极限前提；内部正则性已构造，边界正则性和凸域全局估计仍待。AUXILIARY14/26，P023不提升，详见 `analysis/T134-interior-regularity.md`。
+
+## T135 / C151：原 P1 粗空间 Rayleigh 界（P019）
+
+目标为 `prop:filter-p1` 的完整 Proposition7.7。三模块8声明从已证全 conforming P1 逆估计取真实常数权1，内部得到 κ/Q 形状准一致参数下的全粗状态梯度界；C 先于所有粗/细网格和域。细刚度严格为原 Dirichlet Galerkin 算子，一致质量为原 L² 子空间范数，F 为实际粗空间包含映射的像，Hc 为实际粗单元最大直径。内部证明零空间/非零空间的真实 Rayleigh supremum 界，最终 Λ_F≤C/Hc²。无预设逆界、H²正则性或连续CE，不要求细算子保持F。独立验收前不增加完成数；完整 PAPER 验收后只提升 P019，详见 `analysis/T135-filter-p1.md`。
