@@ -590,3 +590,7 @@ public import Carleman.Geometry.CartesianInteriorVertex
 public import Carleman.Spatial.CartesianKuhnAffineProjection
 public import Carleman.Geometry.CartesianClippedBoundary
 public import Carleman.Spatial.CartesianKuhnLocalAffine
+public import Carleman.Geometry.KuhnInverseMap
+public import Carleman.Spatial.CartesianKuhnInverse
+public import Carleman.Spatial.CartesianKuhnReconstructionJet
+public import Carleman.Spatial.CartesianKuhnWeakInverse

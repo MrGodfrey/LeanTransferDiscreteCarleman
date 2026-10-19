@@ -4920,6 +4920,41 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianKuhn_h2_local_reproduced_affine
 #print axioms Carleman.cartesianKuhn_h2_local_reproduced_affine
 
+#check @Carleman.coordinatePermutation_symm_norm
+#print axioms Carleman.coordinatePermutation_symm_norm
+#check @Carleman.cartesianKuhn_inverse_map_bound
+#print axioms Carleman.cartesianKuhn_inverse_map_bound
+#check @Carleman.cartesianKuhn_uniform_inverse
+#print axioms Carleman.cartesianKuhn_uniform_inverse
+#check @Carleman.cartesianFiniteSimplex_uniform_inverse
+#print axioms Carleman.cartesianFiniteSimplex_uniform_inverse
+#check @Carleman.cartesianKuhnReconstruction_eq_nodal
+#print axioms Carleman.cartesianKuhnReconstruction_eq_nodal
+#check @Carleman.cartesianKuhnReconstructionLp_eq_nodal
+#print axioms Carleman.cartesianKuhnReconstructionLp_eq_nodal
+#check @Carleman.cartesianKuhnReconstructionLp_mem_dirichlet
+#print axioms Carleman.cartesianKuhnReconstructionLp_mem_dirichlet
+#check @Carleman.cartesianKuhnReconstructionJet
+#print axioms Carleman.cartesianKuhnReconstructionJet
+#check @Carleman.cartesianKuhnReconstructionJet_value
+#print axioms Carleman.cartesianKuhnReconstructionJet_value
+#check @Carleman.cartesianKuhnReconstructionJet_mem_dirichlet
+#print axioms Carleman.cartesianKuhnReconstructionJet_mem_dirichlet
+#check @Carleman.cartesianKuhnReconstructionJet_gradient_on_cell
+#print axioms Carleman.cartesianKuhnReconstructionJet_gradient_on_cell
+#check @Carleman.cartesianKuhnReconstruction_cell_norm
+#print axioms Carleman.cartesianKuhnReconstruction_cell_norm
+#check @Carleman.cartesianKuhnReconstructionJet_cell_gradient_norm
+#print axioms Carleman.cartesianKuhnReconstructionJet_cell_gradient_norm
+#check @Carleman.cartesianKuhnReconstruction_weak_inverse
+#print axioms Carleman.cartesianKuhnReconstruction_weak_inverse
+#check @Carleman.cartesianKuhnProjectionJet
+#print axioms Carleman.cartesianKuhnProjectionJet
+#check @Carleman.cartesianKuhnProjectionJet_value
+#print axioms Carleman.cartesianKuhnProjectionJet_value
+#check @Carleman.cartesianKuhnProjection_local_gradient_bound
+#print axioms Carleman.cartesianKuhnProjection_local_gradient_bound
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
