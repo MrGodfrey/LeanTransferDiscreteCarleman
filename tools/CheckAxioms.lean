@@ -7224,6 +7224,57 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianCellIsometry_average_norm
 #print axioms Carleman.cartesianCellIsometry_average_norm
 
+#check @Carleman.BoundedMultiplier.ofMeasureLE
+#print axioms Carleman.BoundedMultiplier.ofMeasureLE
+#check @Carleman.BoundedMultiplier.ofMeasureLE_bound
+#print axioms Carleman.BoundedMultiplier.ofMeasureLE_bound
+#check @Carleman.BoundedMultiplier.integrable
+#print axioms Carleman.BoundedMultiplier.integrable
+#check @Carleman.BoundedMultiplier.averageFirst
+#print axioms Carleman.BoundedMultiplier.averageFirst
+#check @Carleman.BoundedMultiplier.averageFirst_bound
+#print axioms Carleman.BoundedMultiplier.averageFirst_bound
+#check @Carleman.BoundedMultiplier.averageFirst_congr
+#print axioms Carleman.BoundedMultiplier.averageFirst_congr
+#check @Carleman.BoundedMultiplier.setAverage_bound
+#print axioms Carleman.BoundedMultiplier.setAverage_bound
+#check @Carleman.BoundedMultiplier.averageFirst_setIntegral
+#print axioms Carleman.BoundedMultiplier.averageFirst_setIntegral
+#check @Carleman.TimeGrid.physicalTimeCell
+#print axioms Carleman.TimeGrid.physicalTimeCell
+#check @Carleman.TimeGrid.physicalTimeCell_finite
+#print axioms Carleman.TimeGrid.physicalTimeCell_finite
+#check @Carleman.TimeGrid.physicalTimeCell_subset
+#print axioms Carleman.TimeGrid.physicalTimeCell_subset
+#check @Carleman.TimeGrid.physicalTimeCell_volume
+#print axioms Carleman.TimeGrid.physicalTimeCell_volume
+#check @Carleman.TimeGrid.physicalTimeCell_restrict_le
+#print axioms Carleman.TimeGrid.physicalTimeCell_restrict_le
+#check @Carleman.timeCellPotential
+#print axioms Carleman.timeCellPotential
+#check @Carleman.timeCellPotential_value
+#print axioms Carleman.timeCellPotential_value
+#check @Carleman.timeCellPotential_bound
+#print axioms Carleman.timeCellPotential_bound
+#check @Carleman.timeCellPotential_congr
+#print axioms Carleman.timeCellPotential_congr
+#check @Carleman.timeCellPotential_setIntegral
+#print axioms Carleman.timeCellPotential_setIntegral
+#check @Carleman.cartesianAveragedPotential
+#print axioms Carleman.cartesianAveragedPotential
+#check @Carleman.cartesianAveragedPotential_formula
+#print axioms Carleman.cartesianAveragedPotential_formula
+#check @Carleman.cartesianAveragedPotential_bound
+#print axioms Carleman.cartesianAveragedPotential_bound
+#check @Carleman.cartesianAveragedPotentialMultiplier
+#print axioms Carleman.cartesianAveragedPotentialMultiplier
+#check @Carleman.cartesianAveragedPotential_congr
+#print axioms Carleman.cartesianAveragedPotential_congr
+#check @Carleman.cartesianAveragedPotential_operator_norm
+#print axioms Carleman.cartesianAveragedPotential_operator_norm
+#check @Carleman.cartesianAveragedPotential_operator_symmetric
+#print axioms Carleman.cartesianAveragedPotential_operator_symmetric
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

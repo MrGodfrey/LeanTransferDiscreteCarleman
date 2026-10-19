@@ -936,3 +936,6 @@ public import Carleman.Control.BoxP1FilteredControl
 public import Carleman.Geometry.CartesianDualCells
 public import Carleman.Spatial.FiniteCellReconstruction
 public import Carleman.Spatial.CartesianCellReconstruction
+public import Carleman.Spatial.BoundedMultiplierAverage
+public import Carleman.Control.TimeCellAverage
+public import Carleman.Control.CartesianAveragedPotential
