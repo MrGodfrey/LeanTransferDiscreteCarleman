@@ -183,3 +183,5 @@
 - T093 / C109：实际Q_h局部L²稳定性与裁剪矩形邻域22声明独立验收PASS，同SHA三项CI、6104声明递归审计及逐字节相同远端产物。 固定证明 `ba9aa5d2a3caf655bba037695fe733a3f292d952`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/15638c4fc729b90389761d7b2f0c5ede7bcf27e7/governance/reviews/T093-local-acceptance.md)。原文13/26，T094继续原完整Dirichlet H²状态的实际局部仿射再现。
 
 - T094 / C110：实际物理边界相容仿射再现14声明独立验收PASS，同SHA三项CI、6122声明递归审计及逐字节相同产物。 固定证明 `fc89f7ab4516bb6dd97a43a2e5224e722b0b7a56`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/982d3003561a9f79490de3bf4551ce5732753830/governance/reviews/T094-local-acceptance.md)。原文13/26，T095继续实际Kuhn重构的原Dirichlet弱梯度与统一逆估计。
+
+- T095 / C111：实际弱梯度及统一逆界17声明独立验收PASS，同SHA三项CI、6146声明递归审计与逐字节一致远端产物。 固定证明 `116908340801d3f1cd9f7e940304807f70bdb1ba`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8f9f0df45769b9a0fd6d03279d55e92fa688201b/governance/reviews/T095-local-acceptance.md)。原文13/26，T096继续原全部Dirichlet H²状态的实际Q_h局部误差。
