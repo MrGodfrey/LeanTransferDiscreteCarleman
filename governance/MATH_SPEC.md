@@ -1120,3 +1120,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T103：原Kuhn测试的真实统一形状及节点代表唯一性
 
 详见 [T103 分析](analysis/T103-kuhn-test-geometry.md)。三模块8声明通过参考单纯形真实内接球及实际仿射逆界，构造全部物理Kuhn单元的统一半径r₀h/κ内接球，真实cellDiameter/maxDiameter≤(d+1)h，形状常数先于全部网格。两个真实nodalLp相等经局部多项式连续性推出所有实际顶点值相等，因此节点乘法与代表选择无关。原R_h全状态的实际conformingSpace资格内部证明。为随后原超逼近清偿几何和代表前提，AUXILIARY14/26，FD仍待。
+
+## T104：原FD对角测试的完整弱超逼近
+
+详见 [T104 分析](analysis/T104-fd-test-super.md)。三模块5声明将真实全状态弱乘积残差落实到指定原节点数据，显式取论文残差方向，并组合零阶与梯度界为完整H¹权范数。实际Kuhn统一内球、直径和全状态conforming资格均内部供应。固定原物理域、ρ、κ后先选ε及C，再量化全部网格、权族、两符号、时间和完整状态，得到原eq:testsuper。T101/T102的真实对角算子不变；观察及完整FD接口组装仍待，AUXILIARY14/26。
