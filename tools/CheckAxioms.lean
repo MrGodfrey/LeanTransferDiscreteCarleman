@@ -5529,6 +5529,31 @@ set_option pp.maxSteps 1000000
 #check @Carleman.WeakSobolevJet.closure_continuous_representative_unique
 #print axioms Carleman.WeakSobolevJet.closure_continuous_representative_unique
 
+#check @Carleman.bochnerL2Norm_reverse_triangle
+#print axioms Carleman.bochnerL2Norm_reverse_triangle
+#check @Carleman.bochnerL2Norm_tendsto_of_error
+#print axioms Carleman.bochnerL2Norm_tendsto_of_error
+#check @Carleman.l2_square_integral_tendsto_of_error
+#print axioms Carleman.l2_square_integral_tendsto_of_error
+#check @Carleman.l2_square_bound_of_ae_of_bound_tendsto
+#print axioms Carleman.l2_square_bound_of_ae_of_bound_tendsto
+#check @Carleman.smooth_hessian_integral_le_coordinate_sum
+#print axioms Carleman.smooth_hessian_integral_le_coordinate_sum
+#check @Carleman.hessian_coordinate_energy_tendsto
+#print axioms Carleman.hessian_coordinate_energy_tendsto
+#check @Carleman.simplexNodalInterpolant_tendsto
+#print axioms Carleman.simplexNodalInterpolant_tendsto
+#check @Carleman.simplexNodal_h2_value_integral_of_limit
+#print axioms Carleman.simplexNodal_h2_value_integral_of_limit
+#check @Carleman.WeakSobolevJet.exists_smooth_h2_pointwise_approximation
+#print axioms Carleman.WeakSobolevJet.exists_smooth_h2_pointwise_approximation
+#check @Carleman.derivativeComponent_local_integral_le
+#print axioms Carleman.derivativeComponent_local_integral_le
+#check @Carleman.WeakSobolevJet.simplex_nodal_value_integral
+#print axioms Carleman.WeakSobolevJet.simplex_nodal_value_integral
+#check @Carleman.WeakSobolevJet.exists_nodal_value_representative
+#print axioms Carleman.WeakSobolevJet.exists_nodal_value_representative
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

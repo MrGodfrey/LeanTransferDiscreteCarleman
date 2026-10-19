@@ -686,3 +686,8 @@ public import Carleman.Spatial.InwardMollification
 public import Carleman.Spatial.WeakH2ClosureSmoothing
 public import Carleman.Spatial.L2LimitRepresentative
 public import Carleman.Spatial.WeakH2ClosureContinuous
+public import Carleman.Spatial.StrongL2NormLimit
+public import Carleman.Spatial.SmoothHessianCoordinateEnergy
+public import Carleman.Spatial.SimplexH2ValueLimit
+public import Carleman.Spatial.WeakH2NodalSmoothing
+public import Carleman.Spatial.WeakH2NodalValue
