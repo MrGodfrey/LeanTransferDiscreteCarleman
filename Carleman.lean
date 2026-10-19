@@ -536,3 +536,7 @@ public import Carleman.Spatial.SubdomainContinuity
 public import Carleman.Spatial.CoordinateBoxTraceContinuity
 public import Carleman.Spatial.DirichletBoxFace
 public import Carleman.Spatial.DirichletLocalAffine
+public import Carleman.Spatial.LocalWeightedNorm
+public import Carleman.Spatial.WeightedLocalBoundaryAffine
+public import Carleman.Spatial.BoxAllowedComparison
+public import Carleman.Spatial.AllowedLocalBoundaryAffine

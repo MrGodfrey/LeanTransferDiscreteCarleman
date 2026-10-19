@@ -4382,6 +4382,25 @@ set_option pp.maxSteps 1000000
 #check @Carleman.dirichlet_h2_local_boundary_affine
 #print axioms Carleman.dirichlet_h2_local_boundary_affine
 
+#check @Carleman.BoundedMultiplier.onSubdomain
+#print axioms Carleman.BoundedMultiplier.onSubdomain
+#check @Carleman.BoundedMultiplier.onSubdomain_map
+#print axioms Carleman.BoundedMultiplier.onSubdomain_map
+#check @Carleman.BoundedMultiplier.onSubdomain_seminorm
+#print axioms Carleman.BoundedMultiplier.onSubdomain_seminorm
+#check @Carleman.BoundedMultiplier.seminorm_le_anchor
+#print axioms Carleman.BoundedMultiplier.seminorm_le_anchor
+#check @Carleman.BoundedMultiplier.norm_le_seminorm_anchor
+#print axioms Carleman.BoundedMultiplier.norm_le_seminorm_anchor
+#check @Carleman.weighted_dirichlet_h2_local_boundary_affine
+#print axioms Carleman.weighted_dirichlet_h2_local_boundary_affine
+#check @Carleman.coordinateBox_diameter_bound
+#print axioms Carleman.coordinateBox_diameter_bound
+#check @Carleman.allowedWeight_box_comparison
+#print axioms Carleman.allowedWeight_box_comparison
+#check @Carleman.allowed_weight_dirichlet_h2_local_boundary_affine
+#print axioms Carleman.allowed_weight_dirichlet_h2_local_boundary_affine
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
