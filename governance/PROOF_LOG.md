@@ -231,3 +231,5 @@
 - T117 / C133：真实向内收缩全L²强连续性17声明独立PASS；同SHA三项CI、6649声明递归审计和固定产物逐字节一致。 固定证明 `d533b7e90f5e8cecf266e09e8faa5afab3772ed7`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a08e9800e0d7894ee94e9b3367f42823b77e22fc/governance/reviews/T117-local-acceptance.md)。原文14/26，T118继续原弱H²的闭域强光滑逼近与连续代表。
 
 - T118 / C134：闭域强光滑逼近与连续代表12声明独立PASS；同SHA三项CI、6666声明递归审计及固定产物逐字节一致。 固定证明 `4e727b83c3fcb821432ba4089e6f9ea0c9e0a277`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d32f98e5236a69b3c097bdfe6c4c5090d0df726a/governance/reviews/T118-local-acceptance.md)。原文14/26，T119继续原全部弱H²的真实局部节点值误差。
+
+- T119 / C135：原全部弱H²局部节点值误差12声明独立PASS；同SHA三项CI、6678声明递归审计及固定产物逐字节一致。 固定证明 `6f051d6775dc64fbf1ccf1e93df232c43dee616f`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1f5714678b36a593dfae67e3fb496eecaed0740f/governance/reviews/T119-local-acceptance.md)。原文14/26，T120继续原全部弱H²的真实局部节点梯度误差。
