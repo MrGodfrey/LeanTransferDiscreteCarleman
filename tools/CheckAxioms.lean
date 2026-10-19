@@ -5573,6 +5573,25 @@ set_option pp.maxSteps 1000000
 #check @Carleman.WeakSobolevJet.exists_nodal_h2_representative
 #print axioms Carleman.WeakSobolevJet.exists_nodal_h2_representative
 
+#check @Carleman.memLp_mul_of_ae_bound
+#print axioms Carleman.memLp_mul_of_ae_bound
+#check @Carleman.bochnerL2Norm_mul_le_of_ae_bound
+#print axioms Carleman.bochnerL2Norm_mul_le_of_ae_bound
+#check @Carleman.l2_bounded_multiplier_zero_tendsto
+#print axioms Carleman.l2_bounded_multiplier_zero_tendsto
+#check @Carleman.l2_bounded_multiplier_strong_tendsto
+#print axioms Carleman.l2_bounded_multiplier_strong_tendsto
+#check @Carleman.memLp_toLp_tendsto_of_L2_error
+#print axioms Carleman.memLp_toLp_tendsto_of_L2_error
+#check @Carleman.IsWeakSpatialDerivative.of_strong_function_limits
+#print axioms Carleman.IsWeakSpatialDerivative.of_strong_function_limits
+#check @Carleman.weakSpatialDerivative_of_contDiff
+#print axioms Carleman.weakSpatialDerivative_of_contDiff
+#check @Carleman.l2_lipschitz_comp_error_tendsto
+#print axioms Carleman.l2_lipschitz_comp_error_tendsto
+#check @Carleman.IsWeakSpatialDerivative.scalar_chain_rule
+#print axioms Carleman.IsWeakSpatialDerivative.scalar_chain_rule
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

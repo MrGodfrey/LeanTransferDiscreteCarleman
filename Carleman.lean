@@ -695,3 +695,6 @@ public import Carleman.Spatial.L2ConstantShiftLimit
 public import Carleman.Spatial.SimplexNodalDerivativeLimit
 public import Carleman.Spatial.SimplexH2GradientLimit
 public import Carleman.Spatial.WeakH2NodalGradient
+public import Carleman.Spatial.L2BoundedMultiplierLimit
+public import Carleman.Spatial.WeakDerivativeStrongLimit
+public import Carleman.Spatial.WeakScalarChainRule
