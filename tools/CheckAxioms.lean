@@ -5156,6 +5156,37 @@ set_option pp.maxSteps 1000000
 #check @Carleman.allowed_weight_cartesian_test_superapproximation
 #print axioms Carleman.allowed_weight_cartesian_test_superapproximation
 
+#check @Carleman.cartesianObservedState
+#print axioms Carleman.cartesianObservedState
+#check @Carleman.cartesianObservedState_apply
+#print axioms Carleman.cartesianObservedState_apply
+#check @Carleman.cartesianKuhnHat_support_dist
+#print axioms Carleman.cartesianKuhnHat_support_dist
+#check @Carleman.cartesianKuhnReconstruction_observed_eq
+#print axioms Carleman.cartesianKuhnReconstruction_observed_eq
+#check @Carleman.CartesianObservationIndex
+#print axioms Carleman.CartesianObservationIndex
+#check @Carleman.cartesianControlRestriction
+#print axioms Carleman.cartesianControlRestriction
+#check @Carleman.cartesianControlExtension
+#print axioms Carleman.cartesianControlExtension
+#check @Carleman.cartesianControlPhysicalInner
+#print axioms Carleman.cartesianControlPhysicalInner
+#check @Carleman.cartesianControlWeightedSq
+#print axioms Carleman.cartesianControlWeightedSq
+#check @Carleman.cartesianControlRestriction_extension
+#print axioms Carleman.cartesianControlRestriction_extension
+#check @Carleman.cartesianControlExtension_restriction
+#print axioms Carleman.cartesianControlExtension_restriction
+#check @Carleman.cartesianControlExtension_pairing
+#print axioms Carleman.cartesianControlExtension_pairing
+#check @Carleman.cartesianObservedState_weighted_energy
+#print axioms Carleman.cartesianObservedState_weighted_energy
+#check @Carleman.cartesianKuhnReconstructionLp_observed_eq
+#print axioms Carleman.cartesianKuhnReconstructionLp_observed_eq
+#check @Carleman.allowed_weight_cartesian_observation
+#print axioms Carleman.allowed_weight_cartesian_observation
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

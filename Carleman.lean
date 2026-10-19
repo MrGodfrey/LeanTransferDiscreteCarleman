@@ -630,3 +630,7 @@ public import Carleman.Spatial.NodalMultiplierUniqueness
 public import Carleman.Weights.PrescribedNodalWeakResidual
 public import Carleman.Weights.PrescribedNodalSuperapproximation
 public import Carleman.Spatial.AllowedCartesianTestSuperapproximation
+
+public import Carleman.Spatial.CartesianObservationLocalization
+public import Carleman.Spatial.CartesianNodalControl
+public import Carleman.Spatial.AllowedCartesianObservation
