@@ -564,3 +564,8 @@ public import Carleman.Geometry.KuhnCellVolume
 public import Carleman.Geometry.KuhnNodeIncidence
 public import Carleman.Spatial.CartesianKuhnMass
 public import Carleman.Spatial.CartesianKuhnAffineMoment
+public import Carleman.Spatial.SimplexLoadPolynomial
+public import Carleman.Spatial.CartesianKuhnLoad
+public import Carleman.Spatial.CartesianKuhnLoadMoment
+public import Carleman.Geometry.CartesianInteriorNodes
+public import Carleman.Spatial.CartesianKuhnLoadLift

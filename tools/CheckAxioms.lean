@@ -4703,6 +4703,63 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianKuhnHat_affine_moment
 #print axioms Carleman.cartesianKuhnHat_affine_moment
 
+#check @Carleman.simplexLoadPolynomial
+#print axioms Carleman.simplexLoadPolynomial
+#check @Carleman.simplexLoadPolynomial_continuous
+#print axioms Carleman.simplexLoadPolynomial_continuous
+#check @Carleman.integral_simplex_dual_barycentric
+#print axioms Carleman.integral_simplex_dual_barycentric
+#check @Carleman.integral_simplexLoadPolynomial_barycentric
+#print axioms Carleman.integral_simplexLoadPolynomial_barycentric
+#check @Carleman.cartesianKuhnLoadCoefficients
+#print axioms Carleman.cartesianKuhnLoadCoefficients
+#check @Carleman.cartesianKuhnLoad
+#print axioms Carleman.cartesianKuhnLoad
+#check @Carleman.cartesianKuhnLoad_on_cell
+#print axioms Carleman.cartesianKuhnLoad_on_cell
+#check @Carleman.cartesianKuhnLoad_memLp
+#print axioms Carleman.cartesianKuhnLoad_memLp
+#check @Carleman.cartesianKuhnLoad_integrable
+#print axioms Carleman.cartesianKuhnLoad_integrable
+#check @Carleman.cartesianKuhnLoad_mul_hat_integrable
+#print axioms Carleman.cartesianKuhnLoad_mul_hat_integrable
+#check @Carleman.integral_cartesianKuhnLoad_mul_hat_cell
+#print axioms Carleman.integral_cartesianKuhnLoad_mul_hat_cell
+#check @Carleman.cartesianKuhnLoad_hat_integral_domain
+#print axioms Carleman.cartesianKuhnLoad_hat_integral_domain
+#check @Carleman.cartesianKuhnLoad_moment_right_inverse
+#print axioms Carleman.cartesianKuhnLoad_moment_right_inverse
+#check @Carleman.CartesianInteriorIndex
+#print axioms Carleman.CartesianInteriorIndex
+#check @Carleman.cartesianInteriorLatticeIndex
+#print axioms Carleman.cartesianInteriorLatticeIndex
+#check @Carleman.cartesianInteriorPoint
+#print axioms Carleman.cartesianInteriorPoint
+#check @Carleman.cartesianInteriorPoint_mem
+#print axioms Carleman.cartesianInteriorPoint_mem
+#check @Carleman.cartesianInteriorPoint_injective
+#print axioms Carleman.cartesianInteriorPoint_injective
+#check @Carleman.cartesianInteriorData
+#print axioms Carleman.cartesianInteriorData
+#check @Carleman.cartesianInteriorData_at_node
+#print axioms Carleman.cartesianInteriorData_at_node
+#check @Carleman.cartesianKuhnLoadLift
+#print axioms Carleman.cartesianKuhnLoadLift
+#check @Carleman.cartesianKuhnLoadLift_memLp
+#print axioms Carleman.cartesianKuhnLoadLift_memLp
+#check @Carleman.cartesianKuhnLoadLiftLp
+#print axioms Carleman.cartesianKuhnLoadLiftLp
+#check @Carleman.cartesianKuhnLoadLiftLp_ae
+#print axioms Carleman.cartesianKuhnLoadLiftLp_ae
+#check @Carleman.cartesianKuhnMoment
+#print axioms Carleman.cartesianKuhnMoment
+#check @Carleman.cartesianKuhnMoment_integrable
+#print axioms Carleman.cartesianKuhnMoment_integrable
+#check @Carleman.cartesianKuhnLoadLiftLp_right_inverse
+#print axioms Carleman.cartesianKuhnLoadLiftLp_right_inverse
+#check @Carleman.cartesianKuhnMoment_surjective
+#print axioms Carleman.cartesianKuhnMoment_surjective
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
