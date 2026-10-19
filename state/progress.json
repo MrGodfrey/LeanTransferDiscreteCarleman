@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T152",
-    "supervisor_checked_at": "2026-10-19T10:38:37.419576+00:00",
-    "next_action": "独立验收光滑周期盒正向热观测估计；继续真实时间反射双方向及原有限正则权/弱轨道扩展。",
+    "current_task_id": "T153",
+    "supervisor_checked_at": "2026-10-19T10:47:11.813486+00:00",
+    "next_action": "独立验收真实时间反射双方向估计；继续真实平滑卷积恢复原C²时间权，再扩展完整弱轨道。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T10:38:37.419576+00:00"
+    "last_activity_at": "2026-10-19T10:47:11.813486+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "8e740040ffe3ce75cb89b5868d5998b5ad8cd74c",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39237769364/attempts/1",
-      "finished_at": "2026-10-19T10:31:13.489150+00:00",
+      "checked_sha": "86686ea4d106798727d898bf61abc238812a8cb8",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39238936853/attempts/1",
+      "finished_at": "2026-10-19T10:41:55.996544+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "8e740040ffe3ce75cb89b5868d5998b5ad8cd74c"
+      "source_head_sha": "86686ea4d106798727d898bf61abc238812a8cb8"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "8e740040ffe3ce75cb89b5868d5998b5ad8cd74c",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39237769364/attempts/1",
-      "finished_at": "2026-10-19T10:31:13.489150+00:00",
+      "checked_sha": "86686ea4d106798727d898bf61abc238812a8cb8",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39238936853/attempts/1",
+      "finished_at": "2026-10-19T10:41:55.996544+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "8e740040ffe3ce75cb89b5868d5998b5ad8cd74c"
+      "source_head_sha": "86686ea4d106798727d898bf61abc238812a8cb8"
     }
   },
   "milestones": [
@@ -14952,7 +14952,7 @@
       "paper_ref": "Original prop:continuousCE observation absorption and gradient return, smooth forward box case",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:continuousCE"
@@ -14977,16 +14977,92 @@
         "Carleman.interiorGaussianHeat_return_bound",
         "Carleman.box_smooth_gaussian_heat_estimate"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "86686ea4d106798727d898bf61abc238812a8cb8",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "86686ea4d106798727d898bf61abc238812a8cb8",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39238936853/attempts/1",
+        "finished_at": "2026-10-19T10:41:55.996544+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "86686ea4d106798727d898bf61abc238812a8cb8"
+      },
+      "semantic_review": {
+        "checked_sha": "86686ea4d106798727d898bf61abc238812a8cb8",
+        "declarations": [
+          "Carleman.exists_heat_absorption_parameters",
+          "Carleman.interiorHeatPotential",
+          "Carleman.interiorHeatPotential_continuous",
+          "Carleman.interiorHeatPotential_positive_outside",
+          "Carleman.exists_interior_heat_observation_coefficients",
+          "Carleman.interiorHeat_observation_absorption",
+          "Carleman.continuous_box_observation_integrable",
+          "Carleman.boxTimeIntegral_observation",
+          "Carleman.boxTimeIntegral_mono_on_integrable",
+          "Carleman.boxTimeIntegral_add_integrable",
+          "Carleman.boxTimeIntegral_nonneg_on",
+          "Carleman.box_smooth_gaussian_heat_observation",
+          "Carleman.heat_gradient_return",
+          "Carleman.spatial_directionalEnergy_gradient",
+          "Carleman.spaceTime_directionalEnergy_gradient",
+          "Carleman.interiorGaussianHeatPhase_uniform_energy",
+          "Carleman.interiorGaussianHeat_return_bound",
+          "Carleman.box_smooth_gaussian_heat_estimate"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0c5ed16e4215a823746ee66b2d6c0bc9f1c39569/governance/reviews/T152-local-acceptance.md",
+        "reviewed_at": "2026-10-19T10:43:37+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C160",
         "C167"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "真实观测区内选球及λ、实际势球外正界和全域示性界、β/qc统一吸收、真实观测乘积积分、实际指数梯度返回、完整原u的(3,1;3)光滑周期盒正向估计；常数先于T/q/u。仍限C∞与盒，未原C²权/弱轨道/一般多面体/反向，P024不提升。"
+      "scope_notes": "真实观测区内选球及λ、实际势球外正界和全域示性界、β/qc统一吸收、真实观测乘积积分、实际指数梯度返回、完整原u的(3,1;3)光滑周期盒正向估计；常数先于T/q/u。仍限C∞与盒，未原C²权/弱轨道/一般多面体/反向，P024不提升。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C169",
+      "title": "真实时间反射与同常数的光滑盒双方向估计",
+      "paper_ref": "Original prop:continuousCE time reflection and both signs, smooth periodic box case",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:continuousCE"
+      ],
+      "lean_declarations": [
+        "Carleman.heatTimeReflection",
+        "Carleman.heatTimeReflection_contDiff",
+        "Carleman.heatTimeReflection_involutive",
+        "Carleman.time_reflection_mem_interval",
+        "Carleman.heatTimeReflection_periodic",
+        "Carleman.time_reflection_measurePreserving",
+        "Carleman.heatTimeReflection_measurePreserving",
+        "Carleman.boxTimeIntegral_reflection",
+        "Carleman.deriv_time_reflection",
+        "Carleman.deriv_deriv_time_reflection",
+        "Carleman.spaceTimeHeat_time_reflection",
+        "Carleman.spaceTimeOrientedHeat",
+        "Carleman.spaceTimeHeat_time_reflection_eq",
+        "Carleman.box_smooth_gaussian_heat_both_signs"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C168"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实R_T时间反射的光滑周期、自反、时间限制及柱乘积测度保持和实际积分换元；原q′/q″符号、原−∂t−Δ残差及观察集合相容，最终同一参数先于T/q/ε/u覆盖ε=±1。仍C∞周期盒，原C²权/弱轨道/一般多面体待，P024不提升。"
     }
   ],
   "events": [
@@ -15831,6 +15907,11 @@
       "at": "2026-10-19T10:38:37.419576+00:00",
       "public_summary": "光滑盒heatcross已独立验收；真实观测吸收和原u的完整光滑正向估计已构建审计，交独立验收并继续扩展。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/23427034f26387ec67e56d1b18fd98ddb6898819/governance/reviews/T151-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T10:47:11.813486+00:00",
+      "public_summary": "光滑周期盒正向估计已独立验收；实际时间反射的同常数双方向估计已构建审计，继续原有限正则权族扩展。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0c5ed16e4215a823746ee66b2d6c0bc9f1c39569/governance/reviews/T152-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -16186,7 +16267,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/43200933a1d5d1d3c769f387b6b55bede1771082/governance/reviews/T150-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39236637373/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/23427034f26387ec67e56d1b18fd98ddb6898819/governance/reviews/T151-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39237769364/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39237769364/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0c5ed16e4215a823746ee66b2d6c0bc9f1c39569/governance/reviews/T152-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39238936853/attempts/1"
     ]
   },
   "schedules": [
@@ -35444,10 +35527,10 @@
       ],
       "branch": "main",
       "base_commit": "8e740040ffe3ce75cb89b5868d5998b5ad8cd74c",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "86686ea4d106798727d898bf61abc238812a8cb8",
+      "merge_commit": "86686ea4d106798727d898bf61abc238812a8cb8",
       "lean_declarations": [
         "Carleman.exists_heat_absorption_parameters",
         "Carleman.interiorHeatPotential",
@@ -35468,12 +35551,23 @@
         "Carleman.interiorGaussianHeat_return_bound",
         "Carleman.box_smooth_gaussian_heat_estimate"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "86686ea4d106798727d898bf61abc238812a8cb8",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39238936853/attempts/1",
+        "finished_at": "2026-10-19T10:41:55.996544+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "86686ea4d106798727d898bf61abc238812a8cb8"
+      },
       "blocker": null,
       "attempts": [
         "八模块18声明定向3288 jobs、全库4028 jobs和7571声明递归公理审计通过。"
       ],
-      "next_action": "独立验收光滑周期盒正向热观测估计；继续真实时间反射双方向及原有限正则权/弱轨道扩展。",
+      "next_action": "光滑周期盒正向热观测估计独立验收通过；接续同常数双方向及原C²权扩展。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -35485,6 +35579,93 @@
         "recursive_axiom_audit": 7571,
         "new_explicit_declarations": 18,
         "declaration_artifact_sha256": "75d2760a07a0568dd037a3c93c5c86185a1c12cdae2de5d1fc5eefa711cb3f5a",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "86686ea4d106798727d898bf61abc238812a8cb8",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C168"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "86686ea4d106798727d898bf61abc238812a8cb8",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T10:43:37+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0c5ed16e4215a823746ee66b2d6c0bc9f1c39569/governance/reviews/T152-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "86686ea4d106798727d898bf61abc238812a8cb8",
+        "checked_sha": "86686ea4d106798727d898bf61abc238812a8cb8",
+        "run_id": 39238936853,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 4028,
+        "recursive_axiom_audit": 7571,
+        "new_explicit_declarations": 18,
+        "declaration_artifact_sha256": "75d2760a07a0568dd037a3c93c5c86185a1c12cdae2de5d1fc5eefa711cb3f5a",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T153",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "真实时间反射与同常数的光滑盒双方向估计",
+      "goal_ids": [
+        "C169"
+      ],
+      "acceptance": [
+        "实际时间反射与柱体测度保持/任意函数积分换元",
+        "真实q一二阶导数、区间及周期/边界保持",
+        "正向反射残差等于原反向残差，空间梯度和观察项准确",
+        "最终同一组常数覆盖两个ε，先于T/q/ε/u，无额外T因子",
+        "C∞周期盒范围明确，未宣称原低正则或一般多面体已完成"
+      ],
+      "dependencies": [
+        "C168"
+      ],
+      "branch": "main",
+      "base_commit": "86686ea4d106798727d898bf61abc238812a8cb8",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.heatTimeReflection",
+        "Carleman.heatTimeReflection_contDiff",
+        "Carleman.heatTimeReflection_involutive",
+        "Carleman.time_reflection_mem_interval",
+        "Carleman.heatTimeReflection_periodic",
+        "Carleman.time_reflection_measurePreserving",
+        "Carleman.heatTimeReflection_measurePreserving",
+        "Carleman.boxTimeIntegral_reflection",
+        "Carleman.deriv_time_reflection",
+        "Carleman.deriv_deriv_time_reflection",
+        "Carleman.spaceTimeHeat_time_reflection",
+        "Carleman.spaceTimeOrientedHeat",
+        "Carleman.spaceTimeHeat_time_reflection_eq",
+        "Carleman.box_smooth_gaussian_heat_both_signs"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "两模块14声明定向3290 jobs、全库4030 jobs和7588声明递归公理审计通过。"
+      ],
+      "next_action": "独立验收真实时间反射双方向估计；继续真实平滑卷积恢复原C²时间权，再扩展完整弱轨道。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4030,
+        "recursive_axiom_audit": 7588,
+        "new_explicit_declarations": 14,
+        "declaration_artifact_sha256": "dc67c50476d527f50e8ed5ba9e1ad616a91814e20cd0c624b526226b1ca8483b",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
