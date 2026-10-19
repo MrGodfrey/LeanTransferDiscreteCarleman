@@ -918,3 +918,6 @@ public import Carleman.Control.PhysicalIntervalQClass
 public import Carleman.Spatial.CartesianPhysicalControlIsometry
 public import Carleman.Spatial.CartesianCountWeights
 public import Carleman.Control.BoxCartesianLoadCarleman
+public import Carleman.Control.PhysicalObservationUniformProfiles
+public import Carleman.Control.BoxCartesianObservation
+public import Carleman.Control.BoxCartesianControl

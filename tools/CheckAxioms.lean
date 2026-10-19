@@ -7106,6 +7106,15 @@ set_option pp.maxSteps 1000000
 #check @Carleman.box_cartesian_physical_load_carleman
 #print axioms Carleman.box_cartesian_physical_load_carleman
 
+
+-- T170: actual Cartesian physical observation and control.
+#check @Carleman.Physical.physical_observation_uniform_profiles
+#print axioms Carleman.Physical.physical_observation_uniform_profiles
+#check @Carleman.Physical.box_cartesian_physical_observability
+#print axioms Carleman.Physical.box_cartesian_physical_observability
+#check @Carleman.Physical.box_cartesian_physical_control
+#print axioms Carleman.Physical.box_cartesian_physical_control
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
