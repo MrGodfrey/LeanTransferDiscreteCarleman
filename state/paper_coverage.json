@@ -874,13 +874,42 @@
         "Carleman.Physical.nested_p1_filter_rayleigh",
         "Carleman.Physical.p1_coarse_filter_rayleigh"
       ],
-      "declaration_version": null,
-      "verification_status": "SPECIFIED",
+      "declaration_version": "7ad1a9dd94d3abfe384564b1f24f351f5c60fe21",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "extra_hypotheses": [],
-      "build_evidence": null,
-      "semantic_review": null,
-      "blocker": null
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "7ad1a9dd94d3abfe384564b1f24f351f5c60fe21",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39217963129/attempts/1",
+        "finished_at": "2026-10-19T07:46:46.513848+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "7ad1a9dd94d3abfe384564b1f24f351f5c60fe21"
+      },
+      "semantic_review": {
+        "checked_sha": "7ad1a9dd94d3abfe384564b1f24f351f5c60fe21",
+        "declarations": [
+          "Carleman.SimplicialPartition.maxDiameter_pos",
+          "Carleman.SimplicialPartition.inverseWeight_const_bound",
+          "Carleman.conforming_uniform_inverse",
+          "Carleman.Physical.filterRayleigh_le_of_energy_bound",
+          "Carleman.Physical.nestedConformingFilter",
+          "Carleman.Physical.dirichlet_galerkin_energy",
+          "Carleman.Physical.nested_p1_filter_rayleigh",
+          "Carleman.Physical.p1_coarse_filter_rayleigh"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/de75c6f3460fc5f85cefe9c4bcb7649c9601850d/governance/reviews/T135-local-acceptance.md",
+        "reviewed_at": "2026-10-19T07:49:25+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent paper acceptance"
+      },
+      "blocker": null,
+      "independent_review_status": "PASS"
     },
     {
       "id": "P020",

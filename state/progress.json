@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T135",
-    "supervisor_checked_at": "2026-10-19T07:44:24.832129+00:00",
-    "next_action": "固定SHA独立验收完整P019；继续Cartesian线性插值精确质量/边能量与原系数12的张量估计。",
+    "current_task_id": "T136",
+    "supervisor_checked_at": "2026-10-19T07:53:58.919685+00:00",
+    "next_action": "固定SHA独立验收一维精确插值；继续实际张量插值、原差分刚度及12∑Hr⁻²完整命题。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T07:44:24.832129+00:00"
+    "last_activity_at": "2026-10-19T07:53:58.919685+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "3d418d76a4959a094dcd26d2d157c213f297531d",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39216297404/attempts/1",
-      "finished_at": "2026-10-19T07:31:28.746663+00:00",
+      "checked_sha": "7ad1a9dd94d3abfe384564b1f24f351f5c60fe21",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39217963129/attempts/1",
+      "finished_at": "2026-10-19T07:46:46.513848+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "3d418d76a4959a094dcd26d2d157c213f297531d"
+      "source_head_sha": "7ad1a9dd94d3abfe384564b1f24f351f5c60fe21"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "3d418d76a4959a094dcd26d2d157c213f297531d",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39216297404/attempts/1",
-      "finished_at": "2026-10-19T07:31:28.746663+00:00",
+      "checked_sha": "7ad1a9dd94d3abfe384564b1f24f351f5c60fe21",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39217963129/attempts/1",
+      "finished_at": "2026-10-19T07:46:46.513848+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "3d418d76a4959a094dcd26d2d157c213f297531d"
+      "source_head_sha": "7ad1a9dd94d3abfe384564b1f24f351f5c60fe21"
     }
   },
   "milestones": [
@@ -13436,7 +13436,7 @@
       "paper_ref": "Proposition 7.7: conforming P1 coarse-filter Rayleigh bound",
       "milestone": "M6b",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "paper_labels": [
         "prop:filter-p1"
@@ -13451,9 +13451,37 @@
         "Carleman.Physical.nested_p1_filter_rayleigh",
         "Carleman.Physical.p1_coarse_filter_rayleigh"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "7ad1a9dd94d3abfe384564b1f24f351f5c60fe21",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "7ad1a9dd94d3abfe384564b1f24f351f5c60fe21",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39217963129/attempts/1",
+        "finished_at": "2026-10-19T07:46:46.513848+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "7ad1a9dd94d3abfe384564b1f24f351f5c60fe21"
+      },
+      "semantic_review": {
+        "checked_sha": "7ad1a9dd94d3abfe384564b1f24f351f5c60fe21",
+        "declarations": [
+          "Carleman.SimplicialPartition.maxDiameter_pos",
+          "Carleman.SimplicialPartition.inverseWeight_const_bound",
+          "Carleman.conforming_uniform_inverse",
+          "Carleman.Physical.filterRayleigh_le_of_energy_bound",
+          "Carleman.Physical.nestedConformingFilter",
+          "Carleman.Physical.dirichlet_galerkin_energy",
+          "Carleman.Physical.nested_p1_filter_rayleigh",
+          "Carleman.Physical.p1_coarse_filter_rayleigh"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/de75c6f3460fc5f85cefe9c4bcb7649c9601850d/governance/reviews/T135-local-acceptance.md",
+        "reviewed_at": "2026-10-19T07:49:25+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent paper acceptance"
+      },
       "dependencies": [
         "C065",
         "C048",
@@ -13462,7 +13490,47 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "完整原P019：真实粗细conforming P1空间、实际包含映射像、原L²质量和Dirichlet Galerkin刚度；Hc为真实最大粗单元直径，常数只依赖d及粗形状/准一致界。无逆估计、H²正则或连续CE输入。待固定SHA独立PAPER验收。"
+      "scope_notes": "完整原P019：真实粗细conforming P1空间、实际包含映射像、原L²质量和Dirichlet Galerkin刚度；Hc为真实最大粗单元直径，常数只依赖d及粗形状/准一致界。无逆估计、H²正则或连续CE输入。待固定SHA独立PAPER验收。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C152",
+      "title": "原Cartesian粗网格命题的一维精确插值逆估计",
+      "paper_ref": "Proposition 7.8: exact one-dimensional interpolation mass and energy",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:filter-fd"
+      ],
+      "lean_declarations": [
+        "Carleman.linearRefinementValue",
+        "Carleman.linearRefinementMass",
+        "Carleman.linearRefinementEnergy",
+        "Carleman.sum_affine_sq",
+        "Carleman.linearRefinementMass_eq",
+        "Carleman.linearRefinementEnergy_eq",
+        "Carleman.linearRefinement_inverse",
+        "Carleman.uniformLinearProlongation",
+        "Carleman.linearRefinementValue_zero",
+        "Carleman.linearRefinementValue_end",
+        "Carleman.uniformLinearProlongation_node",
+        "Carleman.uniformLinearProlongation_cell",
+        "Carleman.sum_uniform_blocks",
+        "Carleman.uniformLinearProlongation_energy_cells",
+        "Carleman.uniformLinearProlongation_mass_cells",
+        "Carleman.trapezoid_square_sum",
+        "Carleman.uniformLinearProlongation_inverse",
+        "Carleman.uniformLinearProlongation_physical_inverse"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实一维粗节点线性插值的精确质量/边能量、闭粗单元公式和总量分块；零端点恢复实际对角质量，系数严格12/(mh)²，对所有m>0、K≥0和全部粗数据成立。完整多维及实际物理算子连接仍待，AUXILIARY。"
     }
   ],
   "events": [
@@ -14222,6 +14290,11 @@
       "at": "2026-10-19T07:44:24.832129+00:00",
       "public_summary": "原弱解内部H²正则性6声明已独立验收；实际P1粗网格Rayleigh完整命题8声明已构建审计，申请P019原文验收。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7dd98d90d35d58e3673717e06da247d265e5031f/governance/reviews/T134-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T07:53:58.919685+00:00",
+      "public_summary": "完整原P1粗网格Proposition7.7独立PAPER验收通过，原文15/26；Cartesian一维精确插值18声明已构建审计，多维实际连接继续。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/de75c6f3460fc5f85cefe9c4bcb7649c9601850d/governance/reviews/T135-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -14543,7 +14616,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/970119bd158092cfb87421087edc1481ce9bf915/governance/reviews/T133-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39215380428/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7dd98d90d35d58e3673717e06da247d265e5031f/governance/reviews/T134-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39216297404/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39216297404/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/de75c6f3460fc5f85cefe9c4bcb7649c9601850d/governance/reviews/T135-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39217963129/attempts/1"
     ]
   },
   "schedules": [
@@ -31975,10 +32050,10 @@
       ],
       "branch": "main",
       "base_commit": "3d418d76a4959a094dcd26d2d157c213f297531d",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "7ad1a9dd94d3abfe384564b1f24f351f5c60fe21",
+      "merge_commit": "7ad1a9dd94d3abfe384564b1f24f351f5c60fe21",
       "lean_declarations": [
         "Carleman.SimplicialPartition.maxDiameter_pos",
         "Carleman.SimplicialPartition.inverseWeight_const_bound",
@@ -31989,12 +32064,23 @@
         "Carleman.Physical.nested_p1_filter_rayleigh",
         "Carleman.Physical.p1_coarse_filter_rayleigh"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "7ad1a9dd94d3abfe384564b1f24f351f5c60fe21",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39217963129/attempts/1",
+        "finished_at": "2026-10-19T07:46:46.513848+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "7ad1a9dd94d3abfe384564b1f24f351f5c60fe21"
+      },
       "blocker": null,
       "attempts": [
         "三模块8声明定向3544 jobs、全库3932 jobs通过；6989声明递归审计PASS。"
       ],
-      "next_action": "固定SHA独立验收完整P019；继续Cartesian线性插值精确质量/边能量与原系数12的张量估计。",
+      "next_action": "完整原P1粗网格Rayleigh命题已独立PAPER验收；继续Cartesian原命题。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -32006,6 +32092,97 @@
         "recursive_axiom_audit": 6989,
         "new_explicit_declarations": 8,
         "declaration_artifact_sha256": "690b28457d73c9b0f025ae6c29901636d674ef65961194ac73f2a2c31eb989d3",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "7ad1a9dd94d3abfe384564b1f24f351f5c60fe21",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C151"
+          ],
+          "paper_result_ids": [
+            "P019"
+          ],
+          "checked_sha": "7ad1a9dd94d3abfe384564b1f24f351f5c60fe21",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T07:49:25+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/de75c6f3460fc5f85cefe9c4bcb7649c9601850d/governance/reviews/T135-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "7ad1a9dd94d3abfe384564b1f24f351f5c60fe21",
+        "checked_sha": "7ad1a9dd94d3abfe384564b1f24f351f5c60fe21",
+        "run_id": 39217963129,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3932,
+        "recursive_axiom_audit": 6989,
+        "new_explicit_declarations": 8,
+        "declaration_artifact_sha256": "690b28457d73c9b0f025ae6c29901636d674ef65961194ac73f2a2c31eb989d3",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T136",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原Cartesian粗网格命题的一维精确插值逆估计",
+      "goal_ids": [
+        "C152"
+      ],
+      "acceptance": [
+        "逐单元精确质量含(a-b)²/(6m)修正且能量为(b-a)²/m",
+        "真正商余数插值覆盖全部粗节点和闭区间右端点",
+        "总质量望远镜修正由原零端点消去，等于对角质量",
+        "系数12和物理h因子保持；m=1、K=0合法",
+        "只接受一维辅助结论，多维及原物理Rayleigh命题不提前提升"
+      ],
+      "dependencies": [],
+      "branch": "main",
+      "base_commit": "7ad1a9dd94d3abfe384564b1f24f351f5c60fe21",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.linearRefinementValue",
+        "Carleman.linearRefinementMass",
+        "Carleman.linearRefinementEnergy",
+        "Carleman.sum_affine_sq",
+        "Carleman.linearRefinementMass_eq",
+        "Carleman.linearRefinementEnergy_eq",
+        "Carleman.linearRefinement_inverse",
+        "Carleman.uniformLinearProlongation",
+        "Carleman.linearRefinementValue_zero",
+        "Carleman.linearRefinementValue_end",
+        "Carleman.uniformLinearProlongation_node",
+        "Carleman.uniformLinearProlongation_cell",
+        "Carleman.sum_uniform_blocks",
+        "Carleman.uniformLinearProlongation_energy_cells",
+        "Carleman.uniformLinearProlongation_mass_cells",
+        "Carleman.trapezoid_square_sum",
+        "Carleman.uniformLinearProlongation_inverse",
+        "Carleman.uniformLinearProlongation_physical_inverse"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "三模块18声明定向1103 jobs、全库3935 jobs通过；7011声明递归审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收一维精确插值；继续实际张量插值、原差分刚度及12∑Hr⁻²完整命题。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3935,
+        "recursive_axiom_audit": 7011,
+        "new_explicit_declarations": 18,
+        "declaration_artifact_sha256": "12fcf4ad8a59a9cf6c1267be692e86458997f4f9498637a194d0a5291c975954",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

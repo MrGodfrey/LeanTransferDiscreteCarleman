@@ -1270,3 +1270,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T135 / C151：原 P1 粗空间 Rayleigh 界（P019）
 
 目标为 `prop:filter-p1` 的完整 Proposition7.7。三模块8声明从已证全 conforming P1 逆估计取真实常数权1，内部得到 κ/Q 形状准一致参数下的全粗状态梯度界；C 先于所有粗/细网格和域。细刚度严格为原 Dirichlet Galerkin 算子，一致质量为原 L² 子空间范数，F 为实际粗空间包含映射的像，Hc 为实际粗单元最大直径。内部证明零空间/非零空间的真实 Rayleigh supremum 界，最终 Λ_F≤C/Hc²。无预设逆界、H²正则性或连续CE，不要求细算子保持F。独立验收前不增加完成数；完整 PAPER 验收后只提升 P019，详见 `analysis/T135-filter-p1.md`。
+
+### T136 / C152：原 Cartesian 粗网格命题的一维精确插值估计
+
+原 `prop:filter-fd` / P020 中的一维部分使用真正粗节点线性插值，细区间数为 mK，m>0。`linearRefinementMass_eq` 精确给每粗单元细梯形质量 m(a²+ab+b²)/3+(a−b)²/(6m)，`linearRefinementEnergy_eq` 精确给边能量 (b−a)²/m，进而内部推出系数12的单元逆估计。`uniformLinearProlongation` 直接用商/余数从同一粗数据计算全部细节点；节点值、完整闭粗单元上的线性公式、质量与能量分块均精确证明。零端点使梯形质量总和严格等于实际对角节点平方和，最后恢复 h 加权物理质量与前向商，得到常数12/(mh)²，先于所有粗数据且对任意正整数m成立。K=0、m=1也保留。此批三模块18声明只申请AUXILIARY验收；多维张量插值及原实际差分算子/保留像连接尚待，P020不提前提升。
