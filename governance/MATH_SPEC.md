@@ -1220,3 +1220,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 `exists_inner_of_bounded_test_functional` 由真实 Hahn–Banach 和 Riesz 构造同常数 Hilbert 代表。`exists_weakSpatialDerivative_of_test_bound` / `exists_weakSpatialDerivative_iff_test_bound` 对任意开域上的原全部光滑紧支测试，证明分布导数在原 L² 测试范数中 C 有界与存在范数≤C的真实弱导数等价。
 
 `exists_weakSpatialDerivative_of_test_limits` 容许每个测试各自最终成立的分部积分身份，候选导数字段只要求最终L²范数≤C，不要求其收敛；从测试配对极限构造真实弱导数。`exists_weakSpatialDerivative_of_strong_limit_bounded` 给恒定域上强L²极限的直接推论。常数C原样保留，无有界域或边界光滑性限制，不预设待证弱导数存在。凸域Dirichlet H²的实际先验界和内域正则性仍未完成；AUXILIARY14/26。
+
+## T128：真实对称 Hessian 组装与 H² 极限
+
+`SpatialTest.derivativeTest` 保持原紧支光滑测试资格，真实两次方向导数在 L² 中交换；`IsWeakSpatialDerivative.mixed_commute` 由全部测试身份和密度证明原弱状态混合导数交换。`derivativeFieldAssembly` 将原无序多重指标的 L² 分量组装为真实 Euclidean 字段，精确恢复每个分量及平方范数和。
+
+`secondOrderJet` 保留原 H¹ jet 的全部字段，接入真实二阶弱导数。`exists_weakH2_of_gradient_test_bounds` 从每个梯度分量的原测试范函 C 界内部构造二阶 L² 字段及对称性，得到相同一阶截断的原 H² jet，并有 ‖field₂U‖²≤card(Sym(Fin d),2) C²。`exists_weakH2_of_gradient_test_limits` 允许逐测试最终身份和只受最终统一界控制的候选 Hessian；`exists_weakH2_of_strong_H1_limit_bounded` 为强 H¹ 极限推论。任意维数/开域，C≥0，无 H² 零延拓或候选 Hessian 收敛前提。具体 Dirichlet 正则性先验界和光滑内域解仍待，AUXILIARY14/26。

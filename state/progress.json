@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T127",
-    "supervisor_checked_at": "2026-10-19T06:28:41.576338+00:00",
-    "next_action": "固定SHA独立验收有界分布导数与极限；继续真实混合弱导数交换及原Hessian组装。",
+    "current_task_id": "T128",
+    "supervisor_checked_at": "2026-10-19T06:36:15.464287+00:00",
+    "next_action": "固定SHA独立验收真实Hessian与H²极限；继续H¹₀弱紧性及Dirichlet方程的逼近极限。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T06:28:41.576338+00:00"
+    "last_activity_at": "2026-10-19T06:36:15.464287+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "8bfc0cb3d9a3d394805cfbb9720d903fc139bdfe",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39209309105/attempts/1",
-      "finished_at": "2026-10-19T06:22:18.635671+00:00",
+      "checked_sha": "b7491fa1b22b01515e8d0c428f35a3dbe301c34f",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39210179049/attempts/1",
+      "finished_at": "2026-10-19T06:31:12.398703+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "8bfc0cb3d9a3d394805cfbb9720d903fc139bdfe"
+      "source_head_sha": "b7491fa1b22b01515e8d0c428f35a3dbe301c34f"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "8bfc0cb3d9a3d394805cfbb9720d903fc139bdfe",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39209309105/attempts/1",
-      "finished_at": "2026-10-19T06:22:18.635671+00:00",
+      "checked_sha": "b7491fa1b22b01515e8d0c428f35a3dbe301c34f",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39210179049/attempts/1",
+      "finished_at": "2026-10-19T06:31:12.398703+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "8bfc0cb3d9a3d394805cfbb9720d903fc139bdfe"
+      "source_head_sha": "b7491fa1b22b01515e8d0c428f35a3dbe301c34f"
     }
   },
   "milestones": [
@@ -12911,7 +12911,7 @@
       "paper_ref": "Appendix analytic realizations: bounded distributional derivative and limit foundations for Grisvard Theorem 3.2.1.2",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:analytic-realizations"
@@ -12923,16 +12923,81 @@
         "Carleman.exists_weakSpatialDerivative_of_test_limits",
         "Carleman.exists_weakSpatialDerivative_of_strong_limit_bounded"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "b7491fa1b22b01515e8d0c428f35a3dbe301c34f",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "b7491fa1b22b01515e8d0c428f35a3dbe301c34f",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39210179049/attempts/1",
+        "finished_at": "2026-10-19T06:31:12.398703+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "b7491fa1b22b01515e8d0c428f35a3dbe301c34f"
+      },
+      "semantic_review": {
+        "checked_sha": "b7491fa1b22b01515e8d0c428f35a3dbe301c34f",
+        "declarations": [
+          "Carleman.exists_inner_of_bounded_test_functional",
+          "Carleman.exists_weakSpatialDerivative_of_test_bound",
+          "Carleman.exists_weakSpatialDerivative_iff_test_bound",
+          "Carleman.exists_weakSpatialDerivative_of_test_limits",
+          "Carleman.exists_weakSpatialDerivative_of_strong_limit_bounded"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ee8ad5c395ca21d2b7a0444e55e1bc26f3a613e0/governance/reviews/T127-local-acceptance.md",
+        "reviewed_at": "2026-10-19T06:33:16+00:00",
+        "reviewer": "/root/accept_section3; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C022",
         "C056"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "通过真实测试空间、Hahn–Banach和Riesz构造有界分布导数的L²代表；测试配对极限与最终统一导数界给真实极限弱导数，无候选导数收敛前提。具体Dirichlet H²先验界仍待；AUXILIARY14/26。"
+      "scope_notes": "通过真实测试空间、Hahn–Banach和Riesz构造有界分布导数的L²代表；测试配对极限与最终统一导数界给真实极限弱导数，无候选导数收敛前提。具体Dirichlet H²先验界仍待；AUXILIARY14/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C144",
+      "title": "真实混合弱导数交换、对称Hessian组装与H²极限",
+      "paper_ref": "Appendix analytic realizations: actual symmetric Hessian construction and H² limit step for convex-domain regularity",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "lean_declarations": [
+        "Carleman.SpatialTest.derivativeTest",
+        "Carleman.SpatialTest.derivativeTest_toLp",
+        "Carleman.SpatialTest.derivativeTest_derivativeLp_commute",
+        "Carleman.IsWeakSpatialDerivative.mixed_commute",
+        "Carleman.derivativeFiberInjection",
+        "Carleman.derivativeFiberInjection_component",
+        "Carleman.derivativeFieldAssembly",
+        "Carleman.derivativeFieldAssembly_component",
+        "Carleman.derivativeFieldAssembly_norm_sq",
+        "Carleman.secondOrderFields",
+        "Carleman.secondOrderJet",
+        "Carleman.secondOrderJet_truncate",
+        "Carleman.secondOrderJet_hessian",
+        "Carleman.exists_weakH2_of_gradient_test_bounds",
+        "Carleman.exists_weakH2_of_gradient_test_limits",
+        "Carleman.exists_weakH2_of_strong_H1_limit_bounded"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C143"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "实际微分测试及混合弱导数交换，原无序多重指标字段的真实L²组装；原H¹状态梯度测试界构造同一H²jet，逐测试最终身份及统一候选Hessian界传极限。实际Dirichlet先验界仍待；AUXILIARY14/26。"
     }
   ],
   "events": [
@@ -13652,6 +13717,11 @@
       "at": "2026-10-19T06:28:41.576338+00:00",
       "public_summary": "原L²(ω)控制完整P1数值数据已独立验收；有界分布导数真实L²表示及极限5声明构建审计通过，连续H²正则性继续。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8be5cfe3ca72b5713971c730b71d24274b35a567/governance/reviews/T126-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T06:36:15.464287+00:00",
+      "public_summary": "有界分布导数与极限已独立验收；真实对称Hessian及H²极限16声明构建审计通过，Dirichlet弱紧性与方程极限继续。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ee8ad5c395ca21d2b7a0444e55e1bc26f3a613e0/governance/reviews/T127-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -13957,7 +14027,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3c4bca8784b6fbe98fb627cf873a8a92c08bbf79/governance/reviews/T125-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39208420555/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8be5cfe3ca72b5713971c730b71d24274b35a567/governance/reviews/T126-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39209309105/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39209309105/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ee8ad5c395ca21d2b7a0444e55e1bc26f3a613e0/governance/reviews/T127-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39210179049/attempts/1"
     ]
   },
   "schedules": [
@@ -30624,10 +30696,10 @@
       ],
       "branch": "main",
       "base_commit": "8bfc0cb3d9a3d394805cfbb9720d903fc139bdfe",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "b7491fa1b22b01515e8d0c428f35a3dbe301c34f",
+      "merge_commit": "b7491fa1b22b01515e8d0c428f35a3dbe301c34f",
       "lean_declarations": [
         "Carleman.exists_inner_of_bounded_test_functional",
         "Carleman.exists_weakSpatialDerivative_of_test_bound",
@@ -30635,12 +30707,23 @@
         "Carleman.exists_weakSpatialDerivative_of_test_limits",
         "Carleman.exists_weakSpatialDerivative_of_strong_limit_bounded"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "b7491fa1b22b01515e8d0c428f35a3dbe301c34f",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39210179049/attempts/1",
+        "finished_at": "2026-10-19T06:31:12.398703+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "b7491fa1b22b01515e8d0c428f35a3dbe301c34f"
+      },
       "blocker": null,
       "attempts": [
         "三模块5声明定向3169 jobs、全库3892 jobs通过；6787声明递归审计PASS。"
       ],
-      "next_action": "固定SHA独立验收有界分布导数与极限；继续真实混合弱导数交换及原Hessian组装。",
+      "next_action": "有界分布导数与极限已独立验收；继续真实对称Hessian及H²极限。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -30652,6 +30735,95 @@
         "recursive_axiom_audit": 6787,
         "new_explicit_declarations": 5,
         "declaration_artifact_sha256": "94b2ec60a7ea2cb40147fcb603c70b448a8df5b2973b20ff74e6effe2d87b025",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "b7491fa1b22b01515e8d0c428f35a3dbe301c34f",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_section3",
+          "claim_ids": [
+            "C143"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "b7491fa1b22b01515e8d0c428f35a3dbe301c34f",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T06:33:16+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ee8ad5c395ca21d2b7a0444e55e1bc26f3a613e0/governance/reviews/T127-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "b7491fa1b22b01515e8d0c428f35a3dbe301c34f",
+        "checked_sha": "b7491fa1b22b01515e8d0c428f35a3dbe301c34f",
+        "run_id": 39210179049,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3892,
+        "recursive_axiom_audit": 6787,
+        "new_explicit_declarations": 5,
+        "declaration_artifact_sha256": "94b2ec60a7ea2cb40147fcb603c70b448a8df5b2973b20ff74e6effe2d87b025",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T128",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "真实混合弱导数交换、对称Hessian组装与H²极限",
+      "goal_ids": [
+        "C144"
+      ],
+      "acceptance": [
+        "微分保留原测试资格、经典测试导数真实交换，由全部测试密度推出弱混合导数交换",
+        "原无序多重指标的真实L²字段，精确分量与平方范数身份",
+        "构造同一原H¹状态的H²jet，二阶导数和对称性不是假设",
+        "定量card(Sym(Fin d),2)C²界、任意维数/开域/C≥0",
+        "逐测试最终身份允许候选字段不收敛、不预设全域弱Hessian或H²零延拓"
+      ],
+      "dependencies": [
+        "C143"
+      ],
+      "branch": "main",
+      "base_commit": "b7491fa1b22b01515e8d0c428f35a3dbe301c34f",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.SpatialTest.derivativeTest",
+        "Carleman.SpatialTest.derivativeTest_toLp",
+        "Carleman.SpatialTest.derivativeTest_derivativeLp_commute",
+        "Carleman.IsWeakSpatialDerivative.mixed_commute",
+        "Carleman.derivativeFiberInjection",
+        "Carleman.derivativeFiberInjection_component",
+        "Carleman.derivativeFieldAssembly",
+        "Carleman.derivativeFieldAssembly_component",
+        "Carleman.derivativeFieldAssembly_norm_sq",
+        "Carleman.secondOrderFields",
+        "Carleman.secondOrderJet",
+        "Carleman.secondOrderJet_truncate",
+        "Carleman.secondOrderJet_hessian",
+        "Carleman.exists_weakH2_of_gradient_test_bounds",
+        "Carleman.exists_weakH2_of_gradient_test_limits",
+        "Carleman.exists_weakH2_of_strong_H1_limit_bounded"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "六模块16声明定向3197 jobs、全库3900 jobs通过；6880声明递归审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收真实Hessian与H²极限；继续H¹₀弱紧性及Dirichlet方程的逼近极限。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3900,
+        "recursive_axiom_audit": 6880,
+        "new_explicit_declarations": 16,
+        "declaration_artifact_sha256": "0d2734ed7fd8407595f8b3b0bc43ba3a0b4d88ccbdad2d072d51a658fbd882ef",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
