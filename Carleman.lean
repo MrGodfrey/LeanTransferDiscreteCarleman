@@ -942,3 +942,7 @@ public import Carleman.Control.CartesianAveragedPotential
 public import Carleman.Control.TimeCellReconstruction
 public import Carleman.Control.ReconstructedControlCompactness
 public import Carleman.Control.RealizedTimeControl
+public import Carleman.Spatial.CartesianCellControlSupport
+public import Carleman.Control.SupportedRegionSpace
+public import Carleman.Control.BochnerKernelSpace
+public import Carleman.Control.SupportedTimeControl

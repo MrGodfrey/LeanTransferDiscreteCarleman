@@ -7308,6 +7308,43 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianTimeControl_pairing
 #print axioms Carleman.cartesianTimeControl_pairing
 
+#check @Carleman.cartesianDualCell_dist_le
+#print axioms Carleman.cartesianDualCell_dist_le
+#check @Carleman.cartesianDualCell_subset_region
+#print axioms Carleman.cartesianDualCell_subset_region
+#check @Carleman.cartesianCellControl_zero_outside
+#print axioms Carleman.cartesianCellControl_zero_outside
+#check @Carleman.cartesianCellControl_support_small_mesh
+#print axioms Carleman.cartesianCellControl_support_small_mesh
+#check @Carleman.Physical.supportedRegionSpace
+#print axioms Carleman.Physical.supportedRegionSpace
+#check @Carleman.Physical.supportedRegionSpace_closed
+#print axioms Carleman.Physical.supportedRegionSpace_closed
+#check @Carleman.Physical.mem_supportedRegionSpace_iff
+#print axioms Carleman.Physical.mem_supportedRegionSpace_iff
+#check @Carleman.Physical.zeroExtend_restrict_of_supported
+#print axioms Carleman.Physical.zeroExtend_restrict_of_supported
+#check @Carleman.bochnerKernelSpace
+#print axioms Carleman.bochnerKernelSpace
+#check @Carleman.bochnerKernelSpace_closed
+#print axioms Carleman.bochnerKernelSpace_closed
+#check @Carleman.mem_bochnerKernelSpace_iff
+#print axioms Carleman.mem_bochnerKernelSpace_iff
+#check @Carleman.timeCellReconstruction_mem_bochnerKernel
+#print axioms Carleman.timeCellReconstruction_mem_bochnerKernel
+#check @Carleman.exists_bochnerKernel_weak_subsequence
+#print axioms Carleman.exists_bochnerKernel_weak_subsequence
+#check @Carleman.bochnerKernel_of_weak_tendsto
+#print axioms Carleman.bochnerKernel_of_weak_tendsto
+#check @Carleman.cartesianTimeControl_supported
+#print axioms Carleman.cartesianTimeControl_supported
+#check @Carleman.cartesianTimeControl_supported_small_mesh
+#print axioms Carleman.cartesianTimeControl_supported_small_mesh
+#check @Carleman.supportedBochner_zeroExtension
+#print axioms Carleman.supportedBochner_zeroExtension
+#check @Carleman.exists_regional_control_weak_subsequence
+#print axioms Carleman.exists_regional_control_weak_subsequence
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
