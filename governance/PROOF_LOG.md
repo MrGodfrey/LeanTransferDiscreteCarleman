@@ -367,3 +367,9 @@
 - T177 / C193：十六声明独立16/16 PASS，真实Bochner分片常数重构、原物理控制范数与配对、共同空间弱子列忠实，三CI与8254声明raw逐字节核对。 固定证明 `d1134c0ccc8f343aef6223f304fe52f86a7aff1d`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/923f74e8dc1e4b64967bdc10ba8248aa71dd96e9/governance/reviews/T177-local-acceptance.md)。原文17/26；当前执行任务不变。
 
 - T178 / C194：十八声明独立18/18 PASS，实际紧包含单元支撑、真实闭核及区域零延拓恢复忠实，三CI与8284声明raw逐字节核对。 固定证明 `673bf04f87c065482b06bac35a2a97c971592dc2`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b7f7971014e3839e49177496c3be31cd21784cf4/governance/reviews/T178-local-acceptance.md)。原文17/26，T179继续原单元平均的真实L²误差和边界条带体积。
+
+- T179 / C195：固定证明 `c93eb000a3fe6624a0923b70781b2caa173cce4b` 的三项实际CI与原始审计核对通过；独立Agent验收仍在运行，当前仅BUILT。T180继续原差分单元平均初值的任意L²强一致性，原文覆盖17/26。
+
+- T179 / C195：十一声明独立11/11 PASS，实际伴随最佳逼近、原a.e.误差和精确未覆盖体积忠实，三CI与8296声明raw逐字节核对。 固定证明 `c93eb000a3fe6624a0923b70781b2caa173cce4b`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6a2d0267d61d5d8e316a4d341dd48a60b62447f7/governance/reviews/T179-local-acceptance.md)。原文17/26；当前执行任务不变。
+
+- T180 / C196：固定证明 `1d85add4836977c5a6b3bd55448110e9bad21a50` 的三项实际CI与原始审计核对通过；独立Agent验收仍在运行，当前仅BUILT。T181继续全P1空间任意L²初值的实际投影强一致性，原文覆盖17/26。
