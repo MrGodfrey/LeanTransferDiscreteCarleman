@@ -966,3 +966,6 @@ public import Carleman.Control.FixedTimeCellStrongConvergence
 public import Carleman.Control.TimePotentialReconstruction
 public import Carleman.Control.TimePotentialSlices
 public import Carleman.Control.TimePotentialStrongConvergence
+public import Carleman.Control.PotentialTestConsistency
+public import Carleman.Control.PotentialWeakPairing
+public import Carleman.Control.AveragedPotentialWeakPairing

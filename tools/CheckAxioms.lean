@@ -7507,6 +7507,21 @@ set_option pp.maxSteps 1000000
 #check @Carleman.timeAveragedPotential_strong_convergence
 #print axioms Carleman.timeAveragedPotential_strong_convergence
 
+#check @Carleman.BoundedMultiplier.map_toL2_comm
+#print axioms Carleman.BoundedMultiplier.map_toL2_comm
+#check @Carleman.BoundedMultiplier.test_product_error
+#print axioms Carleman.BoundedMultiplier.test_product_error
+#check @Carleman.BoundedMultiplier.test_product_strong_convergence
+#print axioms Carleman.BoundedMultiplier.test_product_strong_convergence
+#check @Carleman.hilbert_weak_strong_pairing
+#print axioms Carleman.hilbert_weak_strong_pairing
+#check @Carleman.potential_weak_pairing_tendsto
+#print axioms Carleman.potential_weak_pairing_tendsto
+#check @Carleman.timeAveragedPotential_weak_pairing
+#print axioms Carleman.timeAveragedPotential_weak_pairing
+#check @Carleman.cartesianAveragedPotential_weak_pairing
+#print axioms Carleman.cartesianAveragedPotential_weak_pairing
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
