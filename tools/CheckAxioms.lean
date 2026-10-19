@@ -5670,6 +5670,39 @@ set_option pp.maxSteps 1000000
 #check @Carleman.exists_weakSpatialDerivative_of_strong_limit_bounded
 #print axioms Carleman.exists_weakSpatialDerivative_of_strong_limit_bounded
 
+#check @Carleman.SpatialTest.derivativeTest
+#print axioms Carleman.SpatialTest.derivativeTest
+#check @Carleman.SpatialTest.derivativeTest_toLp
+#print axioms Carleman.SpatialTest.derivativeTest_toLp
+#check @Carleman.SpatialTest.derivativeTest_derivativeLp_commute
+#print axioms Carleman.SpatialTest.derivativeTest_derivativeLp_commute
+#check @Carleman.IsWeakSpatialDerivative.mixed_commute
+#print axioms Carleman.IsWeakSpatialDerivative.mixed_commute
+#check @Carleman.derivativeFiberInjection
+#print axioms Carleman.derivativeFiberInjection
+#check @Carleman.derivativeFiberInjection_component
+#print axioms Carleman.derivativeFiberInjection_component
+#check @Carleman.derivativeFieldAssembly
+#print axioms Carleman.derivativeFieldAssembly
+#check @Carleman.derivativeFieldAssembly_component
+#print axioms Carleman.derivativeFieldAssembly_component
+#check @Carleman.derivativeFieldAssembly_norm_sq
+#print axioms Carleman.derivativeFieldAssembly_norm_sq
+#check @Carleman.secondOrderFields
+#print axioms Carleman.secondOrderFields
+#check @Carleman.secondOrderJet
+#print axioms Carleman.secondOrderJet
+#check @Carleman.secondOrderJet_truncate
+#print axioms Carleman.secondOrderJet_truncate
+#check @Carleman.secondOrderJet_hessian
+#print axioms Carleman.secondOrderJet_hessian
+#check @Carleman.exists_weakH2_of_gradient_test_bounds
+#print axioms Carleman.exists_weakH2_of_gradient_test_bounds
+#check @Carleman.exists_weakH2_of_gradient_test_limits
+#print axioms Carleman.exists_weakH2_of_gradient_test_limits
+#check @Carleman.exists_weakH2_of_strong_H1_limit_bounded
+#print axioms Carleman.exists_weakH2_of_strong_H1_limit_bounded
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

@@ -718,3 +718,9 @@ public import Carleman.Control.FullP1NumericalData
 public import Carleman.Spatial.BoundedTestRepresentation
 public import Carleman.Spatial.WeakDerivativeBoundedTest
 public import Carleman.Spatial.WeakDerivativeBoundedLimit
+public import Carleman.Spatial.SpatialTestDerivative
+public import Carleman.Spatial.WeakMixedDerivative
+public import Carleman.Spatial.DerivativeFieldAssembly
+public import Carleman.Spatial.SecondOrderJetAssembly
+public import Carleman.Spatial.WeakH2BoundedTest
+public import Carleman.Spatial.WeakH2BoundedLimit
