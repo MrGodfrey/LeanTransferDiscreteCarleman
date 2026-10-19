@@ -7476,6 +7476,37 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianAveragedPotential_strong_convergence
 #print axioms Carleman.cartesianAveragedPotential_strong_convergence
 
+#check @Carleman.fixedTimeCellIsometry
+#print axioms Carleman.fixedTimeCellIsometry
+#check @Carleman.fixedTimeCellIsometry_adjoint_average
+#print axioms Carleman.fixedTimeCellIsometry_adjoint_average
+#check @Carleman.fixedTimeCell_uncovered_volume
+#print axioms Carleman.fixedTimeCell_uncovered_volume
+#check @Carleman.fixedTimeCell_average_strong_convergence
+#print axioms Carleman.fixedTimeCell_average_strong_convergence
+#check @Carleman.timeReconstructedPotential
+#print axioms Carleman.timeReconstructedPotential
+#check @Carleman.timeReconstructedPotential_bound
+#print axioms Carleman.timeReconstructedPotential_bound
+#check @Carleman.timeReconstructedPotential_on_cell
+#print axioms Carleman.timeReconstructedPotential_on_cell
+#check @Carleman.fixedTimePotential
+#print axioms Carleman.fixedTimePotential
+#check @Carleman.fixedTimePotential_bound
+#print axioms Carleman.fixedTimePotential_bound
+#check @Carleman.fixedTimePotential_value
+#print axioms Carleman.fixedTimePotential_value
+#check @Carleman.BoundedMultiplier.sub_sq_integrable
+#print axioms Carleman.BoundedMultiplier.sub_sq_integrable
+#check @Carleman.BoundedMultiplier.toL2_sub_norm_sq
+#print axioms Carleman.BoundedMultiplier.toL2_sub_norm_sq
+#check @Carleman.fixedTimePotential_slice_error
+#print axioms Carleman.fixedTimePotential_slice_error
+#check @Carleman.fixedTimePotential_slice_error_tendsto
+#print axioms Carleman.fixedTimePotential_slice_error_tendsto
+#check @Carleman.timeAveragedPotential_strong_convergence
+#print axioms Carleman.timeAveragedPotential_strong_convergence
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

@@ -962,3 +962,7 @@ public import Carleman.Spatial.FiniteCellStrongConvergence
 public import Carleman.Spatial.FixedSpacetimeCellReconstruction
 public import Carleman.Spatial.FixedSpacetimeCellStrongConvergence
 public import Carleman.Control.AveragedPotentialStrongConvergence
+public import Carleman.Control.FixedTimeCellStrongConvergence
+public import Carleman.Control.TimePotentialReconstruction
+public import Carleman.Control.TimePotentialSlices
+public import Carleman.Control.TimePotentialStrongConvergence
