@@ -5641,6 +5641,13 @@ set_option pp.maxSteps 1000000
 #check @Carleman.weak_h2_allowed_nodal_approximation
 #print axioms Carleman.weak_h2_allowed_nodal_approximation
 
+#check @Carleman.SimplicialPartition.cellWeight_mesh_power_le
+#print axioms Carleman.SimplicialPartition.cellWeight_mesh_power_le
+#check @Carleman.weak_h2_allowed_projection_approximation
+#print axioms Carleman.weak_h2_allowed_projection_approximation
+#check @Carleman.full_p1_weightedApproximation_interface
+#print axioms Carleman.full_p1_weightedApproximation_interface
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

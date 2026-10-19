@@ -710,3 +710,6 @@ public import Carleman.Spatial.CellwiseScaledWeight
 public import Carleman.Spatial.WeightedCellAssembly
 public import Carleman.Spatial.WeakH2WeightedNodal
 public import Carleman.Spatial.WeakH2AllowedNodal
+public import Carleman.Spatial.MaxDiameterWeight
+public import Carleman.Spatial.WeakH2ProjectionApproximation
+public import Carleman.Spatial.FullP1ApproximationInterface
