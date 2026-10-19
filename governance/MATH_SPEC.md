@@ -1422,3 +1422,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 有界系数表达式以零阶零、一阶恒等构造，精确等于真实一阶弱字段。原 sobolevGeometry 的四项连续能量与原弱轨道的 exp(qρ) 能量精确一致；domainValue 只需 a.e. 代表。原闭区间 C² 权条件汇集为 IntervalQClass，并推出原 TimeWeightRegularity。最终真实盒弱 CE 清偿通用转移接口 continuous 假设，全部空间/时间/权/符号/状态之前选择同一参数和C，无新的CE或梯度身份前提。四模块十一声明。
 
 具体 Cartesian 完整离散估计及一般凸多面体继续；AUXILIARY、P024不提升、覆盖17/26。详见 `analysis/T166-heat-transfer-geometry.md`。
+
+## T167 / C183：原完整 Cartesian 盒热差分估计（辅助实例）
+
+真实Cartesian物理状态/载荷/控制范数与弱梯度组成转移几何；实际固定域运输保持Γ=id。盒A1、全允许权族、N1–N5及完整连续CE全部由已有证明内部供应。原heat scale转移给qmax≤κ min(h^(-4/5),dt^(-2/5))，缩小κ后由实幂预算清偿h*qmax数值阈值。最终对所有原离散状态和两个时间方向，真实q³状态加q重构弱梯度由实际差分+Laplacian残差和真实Hilbert控制伴随观察控制。所有参数先于网格、h、g、w、z；无CE、图正则、数值测试或过滤前提。三模块七声明。
+
+这是固定盒Cartesian端到端实例，仍AUXILIARY、覆盖17/26；物理观测/控制及一般几何继续。详见 `analysis/T167-box-cartesian.md`。
