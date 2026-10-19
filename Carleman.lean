@@ -626,3 +626,7 @@ public import Carleman.Spatial.AllowedCartesianTestTime
 public import Carleman.Geometry.AffineSimplexInball
 public import Carleman.Geometry.CartesianKuhnShape
 public import Carleman.Spatial.NodalMultiplierUniqueness
+
+public import Carleman.Weights.PrescribedNodalWeakResidual
+public import Carleman.Weights.PrescribedNodalSuperapproximation
+public import Carleman.Spatial.AllowedCartesianTestSuperapproximation

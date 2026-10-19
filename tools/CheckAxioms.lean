@@ -5145,6 +5145,17 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianKuhnReconstructionLp_mem_conforming
 #print axioms Carleman.cartesianKuhnReconstructionLp_mem_conforming
 
+#check @Carleman.allowed_prescribed_nodal_weak_norms
+#print axioms Carleman.allowed_prescribed_nodal_weak_norms
+#check @Carleman.WeakSobolevJet.weightedNorm_neg
+#print axioms Carleman.WeakSobolevJet.weightedNorm_neg
+#check @Carleman.heat_nodal_residual_norm_bound
+#print axioms Carleman.heat_nodal_residual_norm_bound
+#check @Carleman.allowed_prescribed_nodal_superapproximation
+#print axioms Carleman.allowed_prescribed_nodal_superapproximation
+#check @Carleman.allowed_weight_cartesian_test_superapproximation
+#print axioms Carleman.allowed_weight_cartesian_test_superapproximation
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
