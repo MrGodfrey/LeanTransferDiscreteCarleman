@@ -1410,3 +1410,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 实际乘积测度 Fubini、Ioo/Icc 测度一致、内外 Lp 代表与真实观察 cutoff 将四个 Bochner 能量项逐一识别为论文柱积分。q 仅要求原 Icc 连续即可证明加权可积；观察示性函数由真实可测性处理。原 C² 光滑状态 CE 内部清偿经典 core 不等式，再由完整图密度得到任意原弱周期图状态的估计。四模块十二声明；c、λ、β、qc、C 在所有时间网格/权/符号/轨道之前选择，保留两个时间方向、指数(3,1;3)、真实ε∂t−Δ和同一C。
 
 区域仍限正坐标盒。TimeWeight 的任意原闭区间 q 代表构造与原弱轨道直接接口继续；一般凸多面体仍待。AUXILIARY，P024 不提升，覆盖17/26。详见 `analysis/T164-box-weak-heat.md`。
+
+## T165 / C181：原闭区间 q 与原全部弱轨道的直接盒 CE（辅助范围）
+
+任意原 Icc 连续正 q 内部构造有界 TimeWeight 代表，保持原值及两阶 derivWithin；真实 exp(qρ) 乘子能量在这些代表间精确相等。原区间 C²、端点匹配、下界和两导数预算因此可直接输入完整盒弱 CE，不再要求 TimeWeight 数据或区间外性质。原 PeriodicWeakTrajectory 的实际 domain jet 梯度与图梯度 a.e. 相等且内部证明 MemLp，原值、导数、算子、观察字段全部恢复。最终直接量化原 q 和全部原弱轨道，参数在全部 g/q/ε/u 之前、C 和双方向均保持。五模块十四声明。
+
+完整结论仍为盒域，后续接入通用转移几何及具体差分实例；一般凸多面体继续。AUXILIARY，P024 不提升、覆盖17/26。详见 `analysis/T165-original-box-weak.md`。

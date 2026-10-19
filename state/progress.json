@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T164",
-    "supervisor_checked_at": "2026-10-19T12:29:19.533749+00:00",
-    "next_action": "独立验收完整盒弱CE；继续任意原闭区间q的代表构造与原弱轨道直接接口，再推进一般凸多面体。",
+    "current_task_id": "T165",
+    "supervisor_checked_at": "2026-10-19T12:40:10.530933+00:00",
+    "next_action": "独立验收原区间权和原弱轨道直接盒CE；继续真实梯度接入通用Sobolev transfer及具体差分端到端实例。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T12:29:19.533749+00:00"
+    "last_activity_at": "2026-10-19T12:40:10.530933+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "61ddd47f394ef2a5c61e3ccc317ace118ab816b5",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39250961568/attempts/1",
-      "finished_at": "2026-10-19T12:20:44.074143+00:00",
+      "checked_sha": "3eef6d37a89f75f890de1a12aa8fe1f976217e04",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39252468748/attempts/1",
+      "finished_at": "2026-10-19T12:33:20.308081+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "61ddd47f394ef2a5c61e3ccc317ace118ab816b5"
+      "source_head_sha": "3eef6d37a89f75f890de1a12aa8fe1f976217e04"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "61ddd47f394ef2a5c61e3ccc317ace118ab816b5",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39250961568/attempts/1",
-      "finished_at": "2026-10-19T12:20:44.074143+00:00",
+      "checked_sha": "3eef6d37a89f75f890de1a12aa8fe1f976217e04",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39252468748/attempts/1",
+      "finished_at": "2026-10-19T12:33:20.308081+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "61ddd47f394ef2a5c61e3ccc317ace118ab816b5"
+      "source_head_sha": "3eef6d37a89f75f890de1a12aa8fe1f976217e04"
     }
   },
   "milestones": [
@@ -15830,7 +15830,7 @@
       "paper_ref": "Full weak-state box specialization of prop:continuousCE with original interval C2 TimeWeight representatives",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:continuousCE"
@@ -15849,16 +15849,86 @@
         "Carleman.dirichletHeatRight_eq_boxIntegral",
         "Carleman.box_weak_C2_gaussian_heat_both_signs"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "3eef6d37a89f75f890de1a12aa8fe1f976217e04",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "3eef6d37a89f75f890de1a12aa8fe1f976217e04",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39252468748/attempts/1",
+        "finished_at": "2026-10-19T12:33:20.308081+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "3eef6d37a89f75f890de1a12aa8fe1f976217e04"
+      },
+      "semantic_review": {
+        "checked_sha": "3eef6d37a89f75f890de1a12aa8fe1f976217e04",
+        "declarations": [
+          "Carleman.weighted_box_density_integrable",
+          "Carleman.timeSq_eq_boxTimeIntegral_of_norm_sq",
+          "Carleman.timeSq_eq_boxTimeIntegral_of_continuous",
+          "Carleman.timeSq_eq_boxTimeIntegral_of_indicator",
+          "Carleman.periodicGraph_value_classical_ae",
+          "Carleman.periodicGraph_residual_classical_ae",
+          "Carleman.periodicGraph_observation_classical_ae",
+          "Carleman.smooth_spatial_gradient_sq_continuous",
+          "Carleman.smooth_oriented_heat_continuous",
+          "Carleman.dirichletHeatLeft_eq_boxIntegral",
+          "Carleman.dirichletHeatRight_eq_boxIntegral",
+          "Carleman.box_weak_C2_gaussian_heat_both_signs"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ff258db6b1352cba92ffd18ec13dfc0d96c7c1c5/governance/reviews/T164-local-acceptance.md",
+        "reviewed_at": "2026-10-19T12:36:41+00:00",
+        "reviewer": "/root/accept_section3; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C179",
         "C172"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "真实Fubini和两层Lp代表将四项Bochner能量与原柱积分识别；内部清偿光滑core CE，以相同参数和C覆盖所有原盒弱周期图及两个符号。权仍由TimeWeight承载，一般凸多面体未覆盖，P024不提升。"
+      "scope_notes": "真实Fubini和两层Lp代表将四项Bochner能量与原柱积分识别；内部清偿光滑core CE，以相同参数和C覆盖所有原盒弱周期图及两个符号。权仍由TimeWeight承载，一般凸多面体未覆盖，P024不提升。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C181",
+      "title": "任意原闭区间权和原弱轨道的完整盒 Carleman 估计",
+      "paper_ref": "Full box specialization of prop:continuousCE directly on original interval q and PeriodicWeakTrajectory",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:continuousCE"
+      ],
+      "lean_declarations": [
+        "Carleman.exists_timeWeight_eqOn_interval",
+        "Carleman.eqOn_interval_within_derivatives",
+        "Carleman.SpatialProfile.zero_multiplier_seminorm_eq_exp",
+        "Carleman.SpatialProfile.timeSq_eq_exp_of_eqOn",
+        "Carleman.dirichletIntervalHeatLeft",
+        "Carleman.dirichletIntervalHeatRight",
+        "Carleman.dirichletHeatLeft_eq_interval",
+        "Carleman.dirichletHeatRight_eq_interval",
+        "Carleman.box_weak_interval_C2_gaussian_heat_both_signs",
+        "Carleman.dirichletTrajectory_gradient_ae",
+        "Carleman.dirichletTrajectory_gradient_memLp",
+        "Carleman.dirichletIntervalHeatLeft_trajectory",
+        "Carleman.dirichletIntervalHeatRight_trajectory",
+        "Carleman.box_original_weak_C2_heat_both_signs"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C180"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "内部构造原闭区间q的连续有界TimeWeight代表，保留两阶区间导数；精确恢复实际原弱轨道的值、时间导数、算子及弱梯度。所有常数在g/q/ε/u之前，无延拓、逼近或CE前提；仍仅盒域，P024不提升。"
     }
   ],
   "events": [
@@ -16763,6 +16833,11 @@
       "at": "2026-10-19T12:29:19.533749+00:00",
       "public_summary": "真实梯度和连续性已独立验收；实际积分前提已清偿，完整盒弱周期图双方向Carleman估计构建审计通过。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/856665a2a1d9ddc31255593efddb538a6ee3c682/governance/reviews/T163-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T12:40:10.530933+00:00",
+      "public_summary": "完整盒弱图双方向CE已独立验收；任意原区间权和原弱轨道直接版本构建审计通过，继续差分转移。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ff258db6b1352cba92ffd18ec13dfc0d96c7c1c5/governance/reviews/T164-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -17142,7 +17217,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a4be7780bc36ad9340d7daff65249ff0fc0d332b/governance/reviews/T162-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39249556138/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/856665a2a1d9ddc31255593efddb538a6ee3c682/governance/reviews/T163-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39250961568/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39250961568/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ff258db6b1352cba92ffd18ec13dfc0d96c7c1c5/governance/reviews/T164-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39252468748/attempts/1"
     ]
   },
   "schedules": [
@@ -37584,10 +37661,10 @@
       ],
       "branch": "main",
       "base_commit": "61ddd47f394ef2a5c61e3ccc317ace118ab816b5",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "3eef6d37a89f75f890de1a12aa8fe1f976217e04",
+      "merge_commit": "3eef6d37a89f75f890de1a12aa8fe1f976217e04",
       "lean_declarations": [
         "Carleman.weighted_box_density_integrable",
         "Carleman.timeSq_eq_boxTimeIntegral_of_norm_sq",
@@ -37602,12 +37679,23 @@
         "Carleman.dirichletHeatRight_eq_boxIntegral",
         "Carleman.box_weak_C2_gaussian_heat_both_signs"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "3eef6d37a89f75f890de1a12aa8fe1f976217e04",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39252468748/attempts/1",
+        "finished_at": "2026-10-19T12:33:20.308081+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "3eef6d37a89f75f890de1a12aa8fe1f976217e04"
+      },
       "blocker": null,
       "attempts": [
         "四模块12声明定向3582 jobs、根目标4076 jobs及7926声明递归审计通过。"
       ],
-      "next_action": "独立验收完整盒弱CE；继续任意原闭区间q的代表构造与原弱轨道直接接口，再推进一般凸多面体。",
+      "next_action": "完整盒弱图双方向CE已独立验收；任意原区间权及原弱轨道直接版本继续。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -37619,6 +37707,93 @@
         "recursive_axiom_audit": 7926,
         "new_explicit_declarations": 12,
         "declaration_artifact_sha256": "0e34ed37ddc7d0fa34d57823681e30b39e7e9975f70a1416327bd84a31fc25b2",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "3eef6d37a89f75f890de1a12aa8fe1f976217e04",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_section3",
+          "claim_ids": [
+            "C180"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "3eef6d37a89f75f890de1a12aa8fe1f976217e04",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T12:36:41+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ff258db6b1352cba92ffd18ec13dfc0d96c7c1c5/governance/reviews/T164-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "3eef6d37a89f75f890de1a12aa8fe1f976217e04",
+        "checked_sha": "3eef6d37a89f75f890de1a12aa8fe1f976217e04",
+        "run_id": 39252468748,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 4076,
+        "recursive_axiom_audit": 7926,
+        "new_explicit_declarations": 12,
+        "declaration_artifact_sha256": "0e34ed37ddc7d0fa34d57823681e30b39e7e9975f70a1416327bd84a31fc25b2",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T165",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "任意原闭区间权和原弱轨道的完整盒 Carleman 估计",
+      "goal_ids": [
+        "C181"
+      ],
+      "acceptance": [
+        "原q仅在闭区间C2且满足原三重端点匹配、下界和两导数预算",
+        "真实有界延拓内部构造并精确保留区间值和两阶导数",
+        "最终直接量化全部原PeriodicWeakTrajectory，无每时刻域资格要求",
+        "四项实际原能量身份保留同一C、双符号及T统一性",
+        "仅盒域辅助范围，P024不提升"
+      ],
+      "dependencies": [
+        "C180"
+      ],
+      "branch": "main",
+      "base_commit": "3eef6d37a89f75f890de1a12aa8fe1f976217e04",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.exists_timeWeight_eqOn_interval",
+        "Carleman.eqOn_interval_within_derivatives",
+        "Carleman.SpatialProfile.zero_multiplier_seminorm_eq_exp",
+        "Carleman.SpatialProfile.timeSq_eq_exp_of_eqOn",
+        "Carleman.dirichletIntervalHeatLeft",
+        "Carleman.dirichletIntervalHeatRight",
+        "Carleman.dirichletHeatLeft_eq_interval",
+        "Carleman.dirichletHeatRight_eq_interval",
+        "Carleman.box_weak_interval_C2_gaussian_heat_both_signs",
+        "Carleman.dirichletTrajectory_gradient_ae",
+        "Carleman.dirichletTrajectory_gradient_memLp",
+        "Carleman.dirichletIntervalHeatLeft_trajectory",
+        "Carleman.dirichletIntervalHeatRight_trajectory",
+        "Carleman.box_original_weak_C2_heat_both_signs"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "五模块十四声明定向3596 jobs、根目标4081 jobs及7984声明递归审计通过。"
+      ],
+      "next_action": "独立验收原区间权和原弱轨道直接盒CE；继续真实梯度接入通用Sobolev transfer及具体差分端到端实例。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4081,
+        "recursive_axiom_audit": 7984,
+        "new_explicit_declarations": 14,
+        "declaration_artifact_sha256": "15cd685b2d61987101fa4319b4c0cea22f5b7e7b0ca4b0d97e0f0b96b05efda3",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

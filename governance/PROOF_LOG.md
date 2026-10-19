@@ -321,3 +321,5 @@
 - T162 / C178：完整周期图经典字段逼近13声明独立 AUXILIARY PASS；同SHA三项CI与7799项审计raw逐字节一致。 固定证明 `5ec78c3027e714324439187119dfbfe4765a2af6`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a4be7780bc36ad9340d7daff65249ff0fc0d332b/governance/reviews/T162-local-acceptance.md)。原文17/26，T163继续完整弱周期图上的真实梯度和加权热能量连续性。
 
 - T163 / C179：真实弱梯度及四项连续性18声明独立 AUXILIARY PASS；同SHA三项CI与7913项审计raw逐字节一致。 固定证明 `61ddd47f394ef2a5c61e3ccc317ace118ab816b5`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/856665a2a1d9ddc31255593efddb538a6ee3c682/governance/reviews/T163-local-acceptance.md)。原文17/26，T164继续完整盒弱周期图的双方向连续 Carleman 估计。
+
+- T164 / C180：完整盒弱图双方向CE十二声明独立 AUXILIARY PASS；同SHA三项CI与7926项审计raw逐字节一致。 固定证明 `3eef6d37a89f75f890de1a12aa8fe1f976217e04`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ff258db6b1352cba92ffd18ec13dfc0d96c7c1c5/governance/reviews/T164-local-acceptance.md)。原文17/26，T165继续任意原闭区间权和原弱轨道的完整盒 Carleman 估计。
