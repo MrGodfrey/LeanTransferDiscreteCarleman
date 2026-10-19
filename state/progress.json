@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T089",
-    "supervisor_checked_at": "2026-10-19T01:10:05.277055+00:00",
-    "next_action": "固定SHA独立验收实际质量及仿射矩再现15声明；继续实际单元载荷和全网格右逆。",
+    "current_task_id": "T090",
+    "supervisor_checked_at": "2026-10-19T01:17:20.255797+00:00",
+    "next_action": "固定SHA独立验收原完整有限节点空间真实L²载荷右逆28声明；继续实际载荷和重构的网格一致加权稳定性。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T01:10:05.277055+00:00"
+    "last_activity_at": "2026-10-19T01:17:20.255797+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "b54a0a22a2352ab389a1cb109f1d60386ca2261a",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39183200183/attempts/1",
-      "finished_at": "2026-10-19T01:01:16.324009+00:00",
+      "checked_sha": "f2e5416279274e334edf8df2d2e43ce3a4d23c39",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39184122639/attempts/1",
+      "finished_at": "2026-10-19T01:12:54.238937+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "b54a0a22a2352ab389a1cb109f1d60386ca2261a"
+      "source_head_sha": "f2e5416279274e334edf8df2d2e43ce3a4d23c39"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "b54a0a22a2352ab389a1cb109f1d60386ca2261a",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39183200183/attempts/1",
-      "finished_at": "2026-10-19T01:01:16.324009+00:00",
+      "checked_sha": "f2e5416279274e334edf8df2d2e43ce3a4d23c39",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39184122639/attempts/1",
+      "finished_at": "2026-10-19T01:12:54.238937+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "b54a0a22a2352ab389a1cb109f1d60386ca2261a"
+      "source_head_sha": "f2e5416279274e334edf8df2d2e43ce3a4d23c39"
     }
   },
   "milestones": [
@@ -10162,7 +10162,7 @@
       "paper_ref": "Auxiliary actual nodal mass and affine moment reproduction in Appendix B Step 1, eq:fdmoments and its affine consequence",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:fd",
@@ -10185,16 +10185,106 @@
         "Carleman.cartesianKuhnHat_affine_integral_domain",
         "Carleman.cartesianKuhnHat_affine_moment"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "f2e5416279274e334edf8df2d2e43ce3a4d23c39",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "f2e5416279274e334edf8df2d2e43ce3a4d23c39",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39184122639/attempts/1",
+        "finished_at": "2026-10-19T01:12:54.238937+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "f2e5416279274e334edf8df2d2e43ce3a4d23c39"
+      },
+      "semantic_review": {
+        "checked_sha": "f2e5416279274e334edf8df2d2e43ce3a4d23c39",
+        "declarations": [
+          "Carleman.openCoordinateBox_volume_real",
+          "Carleman.cartesianKuhnSimplex_translation_vertex",
+          "Carleman.cartesianKuhnSimplex_volume_translation",
+          "Carleman.cartesianKuhnSimplex_sum_permutation_volume",
+          "Carleman.cartesianKuhn_origin_eq_of_vertex_eq",
+          "Carleman.cartesianFiniteSimplex_fixed_vertex_injective",
+          "Carleman.cartesianKuhn_node_incidence_unique",
+          "Carleman.cartesianKuhn_node_incidence_sum",
+          "Carleman.integral_cartesianKuhnHat_cell",
+          "Carleman.cartesianKuhnHat_mass_domain",
+          "Carleman.cartesianKuhnHat_mass",
+          "Carleman.cartesianKuhnHat_affine_integrable",
+          "Carleman.cartesianKuhnHat_affine_integral",
+          "Carleman.cartesianKuhnHat_affine_integral_domain",
+          "Carleman.cartesianKuhnHat_affine_moment"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e74013892fe7a9771dc021ada481042542376e42/governance/reviews/T089-local-acceptance.md",
+        "reviewed_at": "2026-10-19T01:15:09+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C103",
         "C104"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "真实坐标盒体积与Kuhn平移单元体积身份，内部节点固定排列/顶点位置的唯一有限关联；真实帽函数积分精确等于网格盒体积。实际pφ可积性及零向量一阶矩供应原完整仿射再现。第一/最后内部层均覆盖，无新增质量、再现或可积假设。载荷、稳定性、完整FD/B2仍待；AUXILIARY，13/26。"
+      "scope_notes": "真实坐标盒体积与Kuhn平移单元体积身份，内部节点固定排列/顶点位置的唯一有限关联；真实帽函数积分精确等于网格盒体积。实际pφ可积性及零向量一阶矩供应原完整仿射再现。第一/最后内部层均覆盖，无新增质量、再现或可积假设。载荷、稳定性、完整FD/B2仍待；AUXILIARY，13/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C106",
+      "title": "原完整内部节点空间上的真实L²载荷右逆",
+      "paper_ref": "Auxiliary actual finite-grid affine load and its L² normalized-moment right inverse on the full original interior-node space, Appendix B Step 1",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:fd",
+        "eq:fdmoments"
+      ],
+      "lean_declarations": [
+        "Carleman.simplexLoadPolynomial",
+        "Carleman.simplexLoadPolynomial_continuous",
+        "Carleman.integral_simplex_dual_barycentric",
+        "Carleman.integral_simplexLoadPolynomial_barycentric",
+        "Carleman.cartesianKuhnLoadCoefficients",
+        "Carleman.cartesianKuhnLoad",
+        "Carleman.cartesianKuhnLoad_on_cell",
+        "Carleman.cartesianKuhnLoad_memLp",
+        "Carleman.cartesianKuhnLoad_integrable",
+        "Carleman.cartesianKuhnLoad_mul_hat_integrable",
+        "Carleman.integral_cartesianKuhnLoad_mul_hat_cell",
+        "Carleman.cartesianKuhnLoad_hat_integral_domain",
+        "Carleman.cartesianKuhnLoad_moment_right_inverse",
+        "Carleman.CartesianInteriorIndex",
+        "Carleman.cartesianInteriorLatticeIndex",
+        "Carleman.cartesianInteriorPoint",
+        "Carleman.cartesianInteriorPoint_mem",
+        "Carleman.cartesianInteriorPoint_injective",
+        "Carleman.cartesianInteriorData",
+        "Carleman.cartesianInteriorData_at_node",
+        "Carleman.cartesianKuhnLoadLift",
+        "Carleman.cartesianKuhnLoadLift_memLp",
+        "Carleman.cartesianKuhnLoadLiftLp",
+        "Carleman.cartesianKuhnLoadLiftLp_ae",
+        "Carleman.cartesianKuhnMoment",
+        "Carleman.cartesianKuhnMoment_integrable",
+        "Carleman.cartesianKuhnLoadLiftLp_right_inverse",
+        "Carleman.cartesianKuhnMoment_surjective"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C103",
+        "C105",
+        "C065"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实单元载荷多项式双对偶积分，有限网格仅内部顶点活动载荷及其每单元a.e.原公式、真正L²和可积性；实际帽质量给全网格归一化矩右逆。构造原完整有限内部节点索引和实际点单射，任意离散向量的真实L²载荷满足整个空间J_h L_h=Id，J_h满射。加权一致稳定性、刚度及完整FD/B2仍待；AUXILIARY，13/26。"
     }
   ],
   "events": [
@@ -10720,6 +10810,11 @@
       "at": "2026-10-19T01:10:05.277055+00:00",
       "public_summary": "内部节点星对称与真实零一阶矩独立验收PASS；实际零阶质量和原仿射再现15声明构建通过，原文保持13/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0d59762783fdc4af10f502d529646186e18564a6/governance/reviews/T088-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T01:17:20.255797+00:00",
+      "public_summary": "实际节点质量和完整仿射矩再现独立验收PASS；原完整内部节点空间L²载荷右逆28声明构建通过，原文保持13/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e74013892fe7a9771dc021ada481042542376e42/governance/reviews/T089-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -10949,7 +11044,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5321eadc2f9133336033250a22518f42b7d5bc3e/governance/reviews/T087-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39182503383/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0d59762783fdc4af10f502d529646186e18564a6/governance/reviews/T088-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39183200183/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39183200183/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e74013892fe7a9771dc021ada481042542376e42/governance/reviews/T089-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39184122639/attempts/1"
     ]
   },
   "schedules": [
@@ -23875,10 +23972,10 @@
       ],
       "branch": "main",
       "base_commit": "b54a0a22a2352ab389a1cb109f1d60386ca2261a",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "f2e5416279274e334edf8df2d2e43ce3a4d23c39",
+      "merge_commit": "f2e5416279274e334edf8df2d2e43ce3a4d23c39",
       "lean_declarations": [
         "Carleman.openCoordinateBox_volume_real",
         "Carleman.cartesianKuhnSimplex_translation_vertex",
@@ -23896,12 +23993,23 @@
         "Carleman.cartesianKuhnHat_affine_integral_domain",
         "Carleman.cartesianKuhnHat_affine_moment"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "f2e5416279274e334edf8df2d2e43ce3a4d23c39",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39184122639/attempts/1",
+        "finished_at": "2026-10-19T01:12:54.238937+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "f2e5416279274e334edf8df2d2e43ce3a4d23c39"
+      },
       "blocker": null,
       "attempts": [
         "四模块15声明定向3336 jobs、全库3758 jobs通过，5988声明递归公理审计PASS。"
       ],
-      "next_action": "固定SHA独立验收实际质量及仿射矩再现15声明；继续实际单元载荷和全网格右逆。",
+      "next_action": "实际零阶质量及完整仿射矩再现已独立验收；继续真实载荷右逆与稳定性。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -23913,6 +24021,110 @@
         "recursive_axiom_audit": 5988,
         "new_explicit_declarations": 15,
         "declaration_artifact_sha256": "40c2b1ae4958b86eb9ff237963b8588cadd3f1c50a63d85bc1f2a0982de163b6",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "f2e5416279274e334edf8df2d2e43ce3a4d23c39",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C105"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "f2e5416279274e334edf8df2d2e43ce3a4d23c39",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T01:15:09+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e74013892fe7a9771dc021ada481042542376e42/governance/reviews/T089-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "f2e5416279274e334edf8df2d2e43ce3a4d23c39",
+        "checked_sha": "f2e5416279274e334edf8df2d2e43ce3a4d23c39",
+        "run_id": 39184122639,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3758,
+        "recursive_axiom_audit": 5988,
+        "new_explicit_declarations": 15,
+        "declaration_artifact_sha256": "40c2b1ae4958b86eb9ff237963b8588cadd3f1c50a63d85bc1f2a0982de163b6",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T090",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原完整内部节点空间上的真实L²载荷右逆",
+      "goal_ids": [
+        "C106"
+      ],
+      "acceptance": [
+        "原((d+2)λ_i−1)载荷多项式及实际双对偶积分由已证一二阶矩推导",
+        "活动系数严格只在原域内部顶点，真实分片函数每单元a.e.等于原公式，共享面零测不重复计积分",
+        "全空间L²/可积性和载荷乘实际帽的可积性内部供应，不用默认不可积积分",
+        "真实全网格质量将单元等式组装为每个原内部节点的矩右逆",
+        "完整有限索引对应1至N_j−1，物理点单射；任意离散向量构造真正L²载荷并证明整个空间右逆",
+        "任意原L²状态的节点矩真正可积，不提升加权一致稳定性或完整FD/B2"
+      ],
+      "dependencies": [
+        "C103",
+        "C105",
+        "C065"
+      ],
+      "branch": "main",
+      "base_commit": "f2e5416279274e334edf8df2d2e43ce3a4d23c39",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.simplexLoadPolynomial",
+        "Carleman.simplexLoadPolynomial_continuous",
+        "Carleman.integral_simplex_dual_barycentric",
+        "Carleman.integral_simplexLoadPolynomial_barycentric",
+        "Carleman.cartesianKuhnLoadCoefficients",
+        "Carleman.cartesianKuhnLoad",
+        "Carleman.cartesianKuhnLoad_on_cell",
+        "Carleman.cartesianKuhnLoad_memLp",
+        "Carleman.cartesianKuhnLoad_integrable",
+        "Carleman.cartesianKuhnLoad_mul_hat_integrable",
+        "Carleman.integral_cartesianKuhnLoad_mul_hat_cell",
+        "Carleman.cartesianKuhnLoad_hat_integral_domain",
+        "Carleman.cartesianKuhnLoad_moment_right_inverse",
+        "Carleman.CartesianInteriorIndex",
+        "Carleman.cartesianInteriorLatticeIndex",
+        "Carleman.cartesianInteriorPoint",
+        "Carleman.cartesianInteriorPoint_mem",
+        "Carleman.cartesianInteriorPoint_injective",
+        "Carleman.cartesianInteriorData",
+        "Carleman.cartesianInteriorData_at_node",
+        "Carleman.cartesianKuhnLoadLift",
+        "Carleman.cartesianKuhnLoadLift_memLp",
+        "Carleman.cartesianKuhnLoadLiftLp",
+        "Carleman.cartesianKuhnLoadLiftLp_ae",
+        "Carleman.cartesianKuhnMoment",
+        "Carleman.cartesianKuhnMoment_integrable",
+        "Carleman.cartesianKuhnLoadLiftLp_right_inverse",
+        "Carleman.cartesianKuhnMoment_surjective"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "五模块28声明定向3354 jobs、全库3763 jobs通过，6026声明递归公理审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收原完整有限节点空间真实L²载荷右逆28声明；继续实际载荷和重构的网格一致加权稳定性。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3763,
+        "recursive_axiom_audit": 6026,
+        "new_explicit_declarations": 28,
+        "declaration_artifact_sha256": "83c26d3148b3dfde9c17fdfdfa1357c2ecb28936dfbfbb7a9a6294f982754675",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
