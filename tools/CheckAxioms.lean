@@ -6026,6 +6026,87 @@ set_option pp.maxSteps 1000000
 #check @Carleman.WeakSobolevJet.reflectCoordinate_gradient_adjoint
 #print axioms Carleman.WeakSobolevJet.reflectCoordinate_gradient_adjoint
 
+#check @Carleman.SpatialTest.fullJet
+#print axioms Carleman.SpatialTest.fullJet
+#check @Carleman.SpatialTest.fullJet_value_ae
+#print axioms Carleman.SpatialTest.fullJet_value_ae
+#check @Carleman.SpatialTest.fullJet_restrict
+#print axioms Carleman.SpatialTest.fullJet_restrict
+#check @Carleman.SpatialTest.reflectCoordinate
+#print axioms Carleman.SpatialTest.reflectCoordinate
+#check @Carleman.SpatialTest.reflectCoordinate_value
+#print axioms Carleman.SpatialTest.reflectCoordinate_value
+#check @Carleman.SpatialTest.reflectCoordinate_fullJet
+#print axioms Carleman.SpatialTest.reflectCoordinate_fullJet
+#check @Carleman.SpatialTest.oddReflectionTest
+#print axioms Carleman.SpatialTest.oddReflectionTest
+#check @Carleman.SpatialTest.oddReflectionTest_value
+#print axioms Carleman.SpatialTest.oddReflectionTest_value
+#check @Carleman.SpatialTest.oddReflectionTest_fullJet
+#print axioms Carleman.SpatialTest.oddReflectionTest_fullJet
+#check @Carleman.zeroExtendLp_inner
+#print axioms Carleman.zeroExtendLp_inner
+#check @Carleman.WeakSobolevJet.zeroExtendDirichlet_pairing
+#print axioms Carleman.WeakSobolevJet.zeroExtendDirichlet_pairing
+#check @Carleman.SpatialTest.fullJet_eq_zeroExtend
+#print axioms Carleman.SpatialTest.fullJet_eq_zeroExtend
+#check @Carleman.SpatialTest.fullJet_pairing
+#print axioms Carleman.SpatialTest.fullJet_pairing
+#check @Carleman.SpatialTest.fullJet_inner
+#print axioms Carleman.SpatialTest.fullJet_inner
+#check @Carleman.SpatialTest.fullJet_boundary_mem
+#print axioms Carleman.SpatialTest.fullJet_boundary_mem
+#check @Carleman.WeakSobolevJet.oddExtend
+#print axioms Carleman.WeakSobolevJet.oddExtend
+#check @Carleman.oddExtendLp
+#print axioms Carleman.oddExtendLp
+#check @Carleman.oddExtend_poisson_full_test
+#print axioms Carleman.oddExtend_poisson_full_test
+#check @Carleman.oddExtend_isWeakNegativeLaplacian
+#print axioms Carleman.oddExtend_isWeakNegativeLaplacian
+#check @Carleman.coordinateReflectionLp_continuous
+#print axioms Carleman.coordinateReflectionLp_continuous
+#check @Carleman.WeakSobolevJet.reflectCoordinate_tendsto
+#print axioms Carleman.WeakSobolevJet.reflectCoordinate_tendsto
+#check @Carleman.SpatialTest.oddReflectionInto
+#print axioms Carleman.SpatialTest.oddReflectionInto
+#check @Carleman.SpatialTest.oddReflectionInto_value
+#print axioms Carleman.SpatialTest.oddReflectionInto_value
+#check @Carleman.SpatialTest.oddExtend_test
+#print axioms Carleman.SpatialTest.oddExtend_test
+#check @Carleman.WeakSobolevJet.oddExtend_tendsto
+#print axioms Carleman.WeakSobolevJet.oddExtend_tendsto
+#check @Carleman.WeakSobolevJet.oddExtend_mem
+#print axioms Carleman.WeakSobolevJet.oddExtend_mem
+#check @Carleman.lowerReflectedBox
+#print axioms Carleman.lowerReflectedBox
+#check @Carleman.coordinateReflection_fixed_plane
+#print axioms Carleman.coordinateReflection_fixed_plane
+#check @Carleman.lowerReflectedBox_boundary_exclusion
+#print axioms Carleman.lowerReflectedBox_boundary_exclusion
+#check @Carleman.lowerReflectedBox_no_original_overlap
+#print axioms Carleman.lowerReflectedBox_no_original_overlap
+#check @Carleman.lowerReflectedBox_contains_original
+#print axioms Carleman.lowerReflectedBox_contains_original
+#check @Carleman.lowerReflectedBox_contains_reflection
+#print axioms Carleman.lowerReflectedBox_contains_reflection
+#check @Carleman.lowerReflectedBox_test_boundary
+#print axioms Carleman.lowerReflectedBox_test_boundary
+#check @Carleman.lower_box_odd_poisson
+#print axioms Carleman.lower_box_odd_poisson
+#check @Carleman.oddExtend_restrict_original
+#print axioms Carleman.oddExtend_restrict_original
+#check @Carleman.lower_box_odd_restrict
+#print axioms Carleman.lower_box_odd_restrict
+#check @Carleman.lower_box_odd_dirichlet
+#print axioms Carleman.lower_box_odd_dirichlet
+#check @Carleman.oddExtendLp_norm_le
+#print axioms Carleman.oddExtendLp_norm_le
+#check @Carleman.WeakSobolevJet.oddExtend_value_norm_le
+#print axioms Carleman.WeakSobolevJet.oddExtend_value_norm_le
+#check @Carleman.WeakSobolevJet.oddExtend_gradient_norm_le
+#print axioms Carleman.WeakSobolevJet.oddExtend_gradient_norm_le
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

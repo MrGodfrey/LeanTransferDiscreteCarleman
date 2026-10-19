@@ -766,3 +766,11 @@ public import Carleman.Geometry.CoordinateReflection
 public import Carleman.Spatial.FirstComponentJet
 public import Carleman.Spatial.CoordinateReflectionLp
 public import Carleman.Spatial.CoordinateReflectionH1
+public import Carleman.Spatial.ReflectionTest
+public import Carleman.Spatial.FullSpaceTestPairing
+public import Carleman.Spatial.OddReflectionPoisson
+public import Carleman.Spatial.ReflectionContinuity
+public import Carleman.Spatial.OddReflectionDirichlet
+public import Carleman.Geometry.LowerReflectedBox
+public import Carleman.Spatial.BoxOddPoisson
+public import Carleman.Spatial.OddReflectionBounds
