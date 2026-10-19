@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T140",
-    "supervisor_checked_at": "2026-10-19T08:33:47.348138+00:00",
-    "next_action": "固定SHA独立验收实际下侧盒面弱Dirichlet延拓；继续上下全部盒面有限迭代与原闭盒全局H²。",
+    "current_task_id": "T141",
+    "supervisor_checked_at": "2026-10-19T08:45:23.203930+00:00",
+    "next_action": "固定SHA独立验收盒上全局H²和算子域；用已证域包含清偿原Cartesian数值命题的最后H²前提。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T08:33:47.348138+00:00"
+    "last_activity_at": "2026-10-19T08:45:23.203930+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "b60153e14ed7085f5828aea582fbc74ade8286aa",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39222503707/attempts/1",
-      "finished_at": "2026-10-19T08:27:25.130613+00:00",
+      "checked_sha": "e1774a58f1c57c8a3305173b5195beea5ffd53b7",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39223664696/attempts/1",
+      "finished_at": "2026-10-19T08:36:35.891750+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "b60153e14ed7085f5828aea582fbc74ade8286aa"
+      "source_head_sha": "e1774a58f1c57c8a3305173b5195beea5ffd53b7"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "b60153e14ed7085f5828aea582fbc74ade8286aa",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39222503707/attempts/1",
-      "finished_at": "2026-10-19T08:27:25.130613+00:00",
+      "checked_sha": "e1774a58f1c57c8a3305173b5195beea5ffd53b7",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39223664696/attempts/1",
+      "finished_at": "2026-10-19T08:36:35.891750+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "b60153e14ed7085f5828aea582fbc74ade8286aa"
+      "source_head_sha": "e1774a58f1c57c8a3305173b5195beea5ffd53b7"
     }
   },
   "milestones": [
@@ -13853,7 +13853,7 @@
       "paper_ref": "Actual odd extension of original Dirichlet weak Poisson solutions across any lower box face",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:analytic-realizations"
@@ -13900,9 +13900,69 @@
         "Carleman.WeakSobolevJet.oddExtend_value_norm_le",
         "Carleman.WeakSobolevJet.oddExtend_gradient_norm_le"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "e1774a58f1c57c8a3305173b5195beea5ffd53b7",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "e1774a58f1c57c8a3305173b5195beea5ffd53b7",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39223664696/attempts/1",
+        "finished_at": "2026-10-19T08:36:35.891750+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "e1774a58f1c57c8a3305173b5195beea5ffd53b7"
+      },
+      "semantic_review": {
+        "checked_sha": "e1774a58f1c57c8a3305173b5195beea5ffd53b7",
+        "declarations": [
+          "Carleman.SpatialTest.fullJet",
+          "Carleman.SpatialTest.fullJet_value_ae",
+          "Carleman.SpatialTest.fullJet_restrict",
+          "Carleman.SpatialTest.reflectCoordinate",
+          "Carleman.SpatialTest.reflectCoordinate_value",
+          "Carleman.SpatialTest.reflectCoordinate_fullJet",
+          "Carleman.SpatialTest.oddReflectionTest",
+          "Carleman.SpatialTest.oddReflectionTest_value",
+          "Carleman.SpatialTest.oddReflectionTest_fullJet",
+          "Carleman.zeroExtendLp_inner",
+          "Carleman.WeakSobolevJet.zeroExtendDirichlet_pairing",
+          "Carleman.SpatialTest.fullJet_eq_zeroExtend",
+          "Carleman.SpatialTest.fullJet_pairing",
+          "Carleman.SpatialTest.fullJet_inner",
+          "Carleman.SpatialTest.fullJet_boundary_mem",
+          "Carleman.WeakSobolevJet.oddExtend",
+          "Carleman.oddExtendLp",
+          "Carleman.oddExtend_poisson_full_test",
+          "Carleman.oddExtend_isWeakNegativeLaplacian",
+          "Carleman.coordinateReflectionLp_continuous",
+          "Carleman.WeakSobolevJet.reflectCoordinate_tendsto",
+          "Carleman.SpatialTest.oddReflectionInto",
+          "Carleman.SpatialTest.oddReflectionInto_value",
+          "Carleman.SpatialTest.oddExtend_test",
+          "Carleman.WeakSobolevJet.oddExtend_tendsto",
+          "Carleman.WeakSobolevJet.oddExtend_mem",
+          "Carleman.lowerReflectedBox",
+          "Carleman.coordinateReflection_fixed_plane",
+          "Carleman.lowerReflectedBox_boundary_exclusion",
+          "Carleman.lowerReflectedBox_no_original_overlap",
+          "Carleman.lowerReflectedBox_contains_original",
+          "Carleman.lowerReflectedBox_contains_reflection",
+          "Carleman.lowerReflectedBox_test_boundary",
+          "Carleman.lower_box_odd_poisson",
+          "Carleman.oddExtend_restrict_original",
+          "Carleman.lower_box_odd_restrict",
+          "Carleman.lower_box_odd_dirichlet",
+          "Carleman.oddExtendLp_norm_le",
+          "Carleman.WeakSobolevJet.oddExtend_value_norm_le",
+          "Carleman.WeakSobolevJet.oddExtend_gradient_norm_le"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/361f5e173e97dc7cd0066efc759c0f5c13390267/governance/reviews/T140-local-acceptance.md",
+        "reviewed_at": "2026-10-19T08:41:13+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C155",
         "C154",
@@ -13911,7 +13971,68 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "任意实际下侧盒面的指定奇延拓U=E₀u−RE₀u在扩大盒上满足原弱Poisson方程、属于原H¹₀并恢复整个原解，值/梯度/右端范数≤2倍；未完成全部上下盒面迭代或全局H²。"
+      "scope_notes": "任意实际下侧盒面的指定奇延拓U=E₀u−RE₀u在扩大盒上满足原弱Poisson方程、属于原H¹₀并恢复整个原解，值/梯度/右端范数≤2倍；未完成全部上下盒面迭代或全局H²。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C157",
+      "title": "原坐标盒Dirichlet算子的全局H²、精确算子域与右端估计",
+      "paper_ref": "Original box Dirichlet Laplacian global H2 regularity and domain equality; box portion of Corollary A.2",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "lean_declarations": [
+        "Carleman.upperReflectedBox",
+        "Carleman.upperReflectedBox_boundary_exclusion",
+        "Carleman.upperReflectedBox_no_original_overlap",
+        "Carleman.upperReflectedBox_contains_original",
+        "Carleman.upperReflectedBox_contains_reflection",
+        "Carleman.upperReflectedBox_test_boundary",
+        "Carleman.upper_box_odd_poisson",
+        "Carleman.upper_box_odd_restrict",
+        "Carleman.upper_box_odd_dirichlet",
+        "Carleman.subdomainLp_trans",
+        "Carleman.subdomainLp_self",
+        "Carleman.subdomainLp_restrictRegion",
+        "Carleman.WeakSobolevJet.restrictSubdomain_trans",
+        "Carleman.WeakSobolevJet.restrictSubdomain_self",
+        "Carleman.WeakSobolevJet.restrictSubdomain_restrictDomain",
+        "Carleman.IsPoissonExtension",
+        "Carleman.exists_odd_dirichlet_extension",
+        "Carleman.exists_lower_box_extension",
+        "Carleman.exists_upper_box_extension",
+        "Carleman.expandedBoxLower",
+        "Carleman.expandedBoxUpper",
+        "Carleman.expandedBox_positive",
+        "Carleman.expandedBox_contains",
+        "Carleman.expandedBoxLower_insert",
+        "Carleman.expandedBoxUpper_insert",
+        "Carleman.expandedBox_closure_inside",
+        "Carleman.IsPoissonExtension.refl",
+        "Carleman.IsPoissonExtension.trans",
+        "Carleman.exists_finite_box_extension",
+        "Carleman.derivativeComponent_norm_le_field",
+        "Carleman.exists_box_dirichlet_H2_bound",
+        "Carleman.box_dirichlet_domain_le_h2",
+        "Carleman.box_dirichlet_domain_eq_h2",
+        "Carleman.exists_box_dirichlet_H2_estimate"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C156",
+        "C150",
+        "C147",
+        "C057"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "任意固定正边长盒完整原弱解全局H²；实际上下全部坐标有限奇延拓，几何和4^d常数在状态之前，原闭盒内部正则与同一原jet；正维数精确D(A)=H²∩H¹₀且完整H²图范数≤K‖f‖。未完成一般凸多面体或全部P023解析假设。"
     }
   ],
   "events": [
@@ -14696,6 +14817,11 @@
       "at": "2026-10-19T08:33:47.348138+00:00",
       "public_summary": "实际全空间弱H¹反射已独立验收；下侧盒面完整弱Dirichlet奇延拓40声明已构建审计，继续全盒边界H²证明。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2b2269913a7e00a30e44f4c1b0c103b32b420db1/governance/reviews/T139-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T08:45:23.203930+00:00",
+      "public_summary": "实际下侧盒面弱Dirichlet延拓已独立验收；盒上全局H²、精确算子域和右端估计34声明已构建审计，原Cartesian数值实现继续。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/361f5e173e97dc7cd0066efc759c0f5c13390267/governance/reviews/T140-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -15027,7 +15153,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1e7becb351d9c120b6a7a02b43f6946f1103cee7/governance/reviews/T138-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39221552762/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2b2269913a7e00a30e44f4c1b0c103b32b420db1/governance/reviews/T139-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39222503707/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39222503707/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/361f5e173e97dc7cd0066efc759c0f5c13390267/governance/reviews/T140-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39223664696/attempts/1"
     ]
   },
   "schedules": [
@@ -32982,10 +33110,10 @@
       ],
       "branch": "main",
       "base_commit": "b60153e14ed7085f5828aea582fbc74ade8286aa",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "e1774a58f1c57c8a3305173b5195beea5ffd53b7",
+      "merge_commit": "e1774a58f1c57c8a3305173b5195beea5ffd53b7",
       "lean_declarations": [
         "Carleman.SpatialTest.fullJet",
         "Carleman.SpatialTest.fullJet_value_ae",
@@ -33028,12 +33156,23 @@
         "Carleman.WeakSobolevJet.oddExtend_value_norm_le",
         "Carleman.WeakSobolevJet.oddExtend_gradient_norm_le"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "e1774a58f1c57c8a3305173b5195beea5ffd53b7",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39223664696/attempts/1",
+        "finished_at": "2026-10-19T08:36:35.891750+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "e1774a58f1c57c8a3305173b5195beea5ffd53b7"
+      },
       "blocker": null,
       "attempts": [
         "八模块40声明定向3334 jobs、全库3956 jobs通过；7229声明递归审计PASS。"
       ],
-      "next_action": "固定SHA独立验收实际下侧盒面弱Dirichlet延拓；继续上下全部盒面有限迭代与原闭盒全局H²。",
+      "next_action": "实际下侧盒面完整弱Dirichlet延拓已验收；继续全盒H²固定版本独立验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -33045,6 +33184,116 @@
         "recursive_axiom_audit": 7229,
         "new_explicit_declarations": 40,
         "declaration_artifact_sha256": "1157dd43a7aa83b91a304275b8223e495a7f4c767ae33436c4548b062801573e",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "e1774a58f1c57c8a3305173b5195beea5ffd53b7",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C156"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "e1774a58f1c57c8a3305173b5195beea5ffd53b7",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T08:41:13+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/361f5e173e97dc7cd0066efc759c0f5c13390267/governance/reviews/T140-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "e1774a58f1c57c8a3305173b5195beea5ffd53b7",
+        "checked_sha": "e1774a58f1c57c8a3305173b5195beea5ffd53b7",
+        "run_id": 39223664696,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3956,
+        "recursive_axiom_audit": 7229,
+        "new_explicit_declarations": 40,
+        "declaration_artifact_sha256": "1157dd43a7aa83b91a304275b8223e495a7f4c767ae33436c4548b062801573e",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T141",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原坐标盒Dirichlet算子的全局H²、精确算子域与右端估计",
+      "goal_ids": [
+        "C157"
+      ],
+      "acceptance": [
+        "上下盒面真实方程、H¹₀与恢复，嵌套实际限制复合",
+        "固定扩大盒及4^d界独立于原状态/右端，原闭盒严格在内部",
+        "原内部H²应用于实际延拓解，原负Laplacian右端唯一性",
+        "精确原形式算子域与完整H²右端估计，不预设H²或光滑输入",
+        "仅盒上正则辅助范围，不提升完整P023"
+      ],
+      "dependencies": [
+        "C156",
+        "C150",
+        "C147",
+        "C057"
+      ],
+      "branch": "main",
+      "base_commit": "e1774a58f1c57c8a3305173b5195beea5ffd53b7",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.upperReflectedBox",
+        "Carleman.upperReflectedBox_boundary_exclusion",
+        "Carleman.upperReflectedBox_no_original_overlap",
+        "Carleman.upperReflectedBox_contains_original",
+        "Carleman.upperReflectedBox_contains_reflection",
+        "Carleman.upperReflectedBox_test_boundary",
+        "Carleman.upper_box_odd_poisson",
+        "Carleman.upper_box_odd_restrict",
+        "Carleman.upper_box_odd_dirichlet",
+        "Carleman.subdomainLp_trans",
+        "Carleman.subdomainLp_self",
+        "Carleman.subdomainLp_restrictRegion",
+        "Carleman.WeakSobolevJet.restrictSubdomain_trans",
+        "Carleman.WeakSobolevJet.restrictSubdomain_self",
+        "Carleman.WeakSobolevJet.restrictSubdomain_restrictDomain",
+        "Carleman.IsPoissonExtension",
+        "Carleman.exists_odd_dirichlet_extension",
+        "Carleman.exists_lower_box_extension",
+        "Carleman.exists_upper_box_extension",
+        "Carleman.expandedBoxLower",
+        "Carleman.expandedBoxUpper",
+        "Carleman.expandedBox_positive",
+        "Carleman.expandedBox_contains",
+        "Carleman.expandedBoxLower_insert",
+        "Carleman.expandedBoxUpper_insert",
+        "Carleman.expandedBox_closure_inside",
+        "Carleman.IsPoissonExtension.refl",
+        "Carleman.IsPoissonExtension.trans",
+        "Carleman.exists_finite_box_extension",
+        "Carleman.derivativeComponent_norm_le_field",
+        "Carleman.exists_box_dirichlet_H2_bound",
+        "Carleman.box_dirichlet_domain_le_h2",
+        "Carleman.box_dirichlet_domain_eq_h2",
+        "Carleman.exists_box_dirichlet_H2_estimate"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "九模块34声明定向3404 jobs、全库3965 jobs通过；7289声明递归审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收盒上全局H²和算子域；用已证域包含清偿原Cartesian数值命题的最后H²前提。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3965,
+        "recursive_axiom_audit": 7289,
+        "new_explicit_declarations": 34,
+        "declaration_artifact_sha256": "5837236580601c8df8c51a65b8d67eb278def318dfd18a7bbaecae4511a5d06e",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
