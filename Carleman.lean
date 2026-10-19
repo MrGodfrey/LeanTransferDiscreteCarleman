@@ -622,3 +622,7 @@ public import Carleman.Spatial.AllowedCartesianDiagonalTest
 public import Carleman.Spatial.FiniteDiagonalOperator
 public import Carleman.Spatial.CartesianTestTimeDerivative
 public import Carleman.Spatial.AllowedCartesianTestTime
+
+public import Carleman.Geometry.AffineSimplexInball
+public import Carleman.Geometry.CartesianKuhnShape
+public import Carleman.Spatial.NodalMultiplierUniqueness

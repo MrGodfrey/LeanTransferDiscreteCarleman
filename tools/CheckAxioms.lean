@@ -5128,6 +5128,23 @@ set_option pp.maxSteps 1000000
 #check @Carleman.allowed_weight_cartesian_test_time
 #print axioms Carleman.allowed_weight_cartesian_test_time
 
+#check @Carleman.simplex_exists_inball
+#print axioms Carleman.simplex_exists_inball
+#check @Carleman.affineSimplex_contains_ball
+#print axioms Carleman.affineSimplex_contains_ball
+#check @Carleman.cartesianKuhn_cellDiameter_le
+#print axioms Carleman.cartesianKuhn_cellDiameter_le
+#check @Carleman.cartesianKuhn_maxDiameter_le
+#print axioms Carleman.cartesianKuhn_maxDiameter_le
+#check @Carleman.cartesianKuhn_uniform_inballs
+#print axioms Carleman.cartesianKuhn_uniform_inballs
+#check @Carleman.SimplicialPartition.nodalLp_vertex_eq
+#print axioms Carleman.SimplicialPartition.nodalLp_vertex_eq
+#check @Carleman.SimplicialPartition.nodalLp_multiplier_congr
+#print axioms Carleman.SimplicialPartition.nodalLp_multiplier_congr
+#check @Carleman.cartesianKuhnReconstructionLp_mem_conforming
+#print axioms Carleman.cartesianKuhnReconstructionLp_mem_conforming
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
