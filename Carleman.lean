@@ -830,3 +830,12 @@ public import Carleman.Weights.InteriorHeatMixedTerm
 public import Carleman.Weights.InteriorHeatBulkLowerBound
 public import Carleman.Spatial.BoxTimeIntegralOrder
 public import Carleman.Spatial.BoxGaussianHeatCross
+
+public import Carleman.Weights.HeatAbsorptionParameters
+public import Carleman.Weights.InteriorHeatPotential
+public import Carleman.Weights.InteriorHeatAbsorption
+public import Carleman.Spatial.BoxObservationIntegral
+public import Carleman.Spatial.BoxGaussianHeatObservation
+public import Carleman.Spatial.HeatGradientReturn
+public import Carleman.Weights.InteriorHeatGradientReturn
+public import Carleman.Spatial.BoxSmoothHeatEstimate

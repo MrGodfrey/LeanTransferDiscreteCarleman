@@ -6592,6 +6592,43 @@ set_option pp.maxSteps 1000000
 #check @Carleman.box_smooth_gaussian_heat_cross
 #print axioms Carleman.box_smooth_gaussian_heat_cross
 
+#check @Carleman.exists_heat_absorption_parameters
+#print axioms Carleman.exists_heat_absorption_parameters
+#check @Carleman.interiorHeatPotential
+#print axioms Carleman.interiorHeatPotential
+#check @Carleman.interiorHeatPotential_continuous
+#print axioms Carleman.interiorHeatPotential_continuous
+#check @Carleman.interiorHeatPotential_positive_outside
+#print axioms Carleman.interiorHeatPotential_positive_outside
+#check @Carleman.exists_interior_heat_observation_coefficients
+#print axioms Carleman.exists_interior_heat_observation_coefficients
+#check @Carleman.interiorHeat_observation_absorption
+#print axioms Carleman.interiorHeat_observation_absorption
+#check @Carleman.continuous_box_observation_integrable
+#print axioms Carleman.continuous_box_observation_integrable
+#check @Carleman.boxTimeIntegral_observation
+#print axioms Carleman.boxTimeIntegral_observation
+#check @Carleman.boxTimeIntegral_mono_on_integrable
+#print axioms Carleman.boxTimeIntegral_mono_on_integrable
+#check @Carleman.boxTimeIntegral_add_integrable
+#print axioms Carleman.boxTimeIntegral_add_integrable
+#check @Carleman.boxTimeIntegral_nonneg_on
+#print axioms Carleman.boxTimeIntegral_nonneg_on
+#check @Carleman.box_smooth_gaussian_heat_observation
+#print axioms Carleman.box_smooth_gaussian_heat_observation
+#check @Carleman.heat_gradient_return
+#print axioms Carleman.heat_gradient_return
+#check @Carleman.spatial_directionalEnergy_gradient
+#print axioms Carleman.spatial_directionalEnergy_gradient
+#check @Carleman.spaceTime_directionalEnergy_gradient
+#print axioms Carleman.spaceTime_directionalEnergy_gradient
+#check @Carleman.interiorGaussianHeatPhase_uniform_energy
+#print axioms Carleman.interiorGaussianHeatPhase_uniform_energy
+#check @Carleman.interiorGaussianHeat_return_bound
+#print axioms Carleman.interiorGaussianHeat_return_bound
+#check @Carleman.box_smooth_gaussian_heat_estimate
+#print axioms Carleman.box_smooth_gaussian_heat_estimate
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
