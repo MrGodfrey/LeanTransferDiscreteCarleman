@@ -1092,3 +1092,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T096：实际 Q_h 的原全状态无权局部误差
 
 详见 [T096 分析](analysis/T096-kuhn-local-error.md)。`cartesianKuhn_h2_local_error` 对所有原弱 H²∩H¹₀ 状态、实际有限 Kuhn 单元和正可比网格证明真实值及弱梯度的局部 h² 误差，右侧为同一原 Hessian 在实际加宽裁剪块的 L² 范数。C只依赖固定维数与κ，先于全部网格、h和状态选取。原仿射再现、真实限制 jet 唯一性、实际 Q_h 梯度逆界均内部使用已证结论；无额外状态假设。四模块13声明，AUXILIARY；允许权及全域求和仍待，B.2/FD不提升，原文13/26。
+
+## T097：原 Lemma B.2 的全状态允许权逼近
+
+详见 [T097 分析](analysis/T097-kuhn-weighted-error.md)。四模块7声明中最终 `allowed_weight_cartesianKuhn_approximation` 直接给原实际Q_h的全域加权值差及完整弱梯度差≤Ch²乘原加权Hessian范数，对全部原H²∩H¹₀和允许权、两种符号、任意幂/时间/周期统一。固定原轮廓C¹正则性给实际裁剪块统一权比较，真实局部误差与实际有限重叠内部组装；常数先于全部网格、h、权参数和状态选择。固定环境S允许Ω_g⊆S，原Ω_g=S矩形是原文实例，未增加原假设。保留统一加宽裁剪块的等价证明路线。申请P026/PAPER独立固定SHA验收；验收前SPECIFIED且原文13/26。FD/P012及其余命题不自动提升。

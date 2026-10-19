@@ -1013,10 +1013,15 @@
       "pdf_page": 39,
       "tex_line": 2841,
       "milestone": "M6a",
-      "claim_ids": [],
-      "lean_declarations": [],
+      "claim_ids": [
+        "C113"
+      ],
+      "lean_declarations": [
+        "Carleman.allowed_weight_cartesianKuhn_h2_error",
+        "Carleman.allowed_weight_cartesianKuhn_approximation"
+      ],
       "declaration_version": null,
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": null,

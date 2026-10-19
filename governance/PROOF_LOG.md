@@ -185,3 +185,5 @@
 - T094 / C110：实际物理边界相容仿射再现14声明独立验收PASS，同SHA三项CI、6122声明递归审计及逐字节相同产物。 固定证明 `fc89f7ab4516bb6dd97a43a2e5224e722b0b7a56`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/982d3003561a9f79490de3bf4551ce5732753830/governance/reviews/T094-local-acceptance.md)。原文13/26，T095继续实际Kuhn重构的原Dirichlet弱梯度与统一逆估计。
 
 - T095 / C111：实际弱梯度及统一逆界17声明独立验收PASS，同SHA三项CI、6146声明递归审计与逐字节一致远端产物。 固定证明 `116908340801d3f1cd9f7e940304807f70bdb1ba`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8f9f0df45769b9a0fd6d03279d55e92fa688201b/governance/reviews/T095-local-acceptance.md)。原文13/26，T096继续原全部Dirichlet H²状态的实际Q_h局部误差。
+
+- T096 / C112：原全状态实际Q_h局部误差13声明独立验收PASS，同SHA三项CI、6177声明递归审计及逐字节相同产物。 固定证明 `ab5f74bf708c3bb969ecca40fcee8b26edd16d96`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8354a9dd20c71cf97d86b1dbcfd7c387fbb70e98/governance/reviews/T096-local-acceptance.md)。原文13/26，T097继续原Lemma B.2的完整允许权全状态逼近。
