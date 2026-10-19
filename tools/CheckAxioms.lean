@@ -4434,6 +4434,55 @@ set_option pp.maxSteps 1000000
 #check @Carleman.weighted_cartesian_patch_h2_assembly
 #print axioms Carleman.weighted_cartesian_patch_h2_assembly
 
+#check @Carleman.coordinateStandardSimplex
+#print axioms Carleman.coordinateStandardSimplex
+#check @Carleman.kuhnPrefixMatrix
+#print axioms Carleman.kuhnPrefixMatrix
+#check @Carleman.kuhnPrefixMatrix_det
+#print axioms Carleman.kuhnPrefixMatrix_det
+#check @Carleman.kuhnPrefixEquiv
+#print axioms Carleman.kuhnPrefixEquiv
+#check @Carleman.kuhnPrefixEquiv_basis
+#print axioms Carleman.kuhnPrefixEquiv_basis
+#check @Carleman.kuhnReferenceSimplex
+#print axioms Carleman.kuhnReferenceSimplex
+#check @Carleman.kuhnReferenceSimplex_points
+#print axioms Carleman.kuhnReferenceSimplex_points
+#check @Carleman.coordinatePermutation
+#print axioms Carleman.coordinatePermutation
+#check @Carleman.coordinatePermutation_apply
+#print axioms Carleman.coordinatePermutation_apply
+#check @Carleman.cartesianKuhnSimplex
+#print axioms Carleman.cartesianKuhnSimplex
+#check @Carleman.cartesianKuhnSimplex_points
+#print axioms Carleman.cartesianKuhnSimplex_points
+#check @Carleman.cartesianKuhnSimplex_points_step
+#print axioms Carleman.cartesianKuhnSimplex_points_step
+#check @Carleman.closedCoordinateBox_convex
+#print axioms Carleman.closedCoordinateBox_convex
+#check @Carleman.cartesianKuhnSimplex_cell_subset_box
+#print axioms Carleman.cartesianKuhnSimplex_cell_subset_box
+#check @Carleman.cartesianKuhnSimplex_cell_subset_patch
+#print axioms Carleman.cartesianKuhnSimplex_cell_subset_patch
+#check @Carleman.cartesianKuhn_shared_vertex_index_bound
+#print axioms Carleman.cartesianKuhn_shared_vertex_index_bound
+#check @Carleman.cartesianKuhn_shared_vertex_cell_subset
+#print axioms Carleman.cartesianKuhn_shared_vertex_cell_subset
+#check @Carleman.cartesianKuhnStarPatch
+#print axioms Carleman.cartesianKuhnStarPatch
+#check @Carleman.cartesianKuhnStarPatch_subset_patch
+#print axioms Carleman.cartesianKuhnStarPatch_subset_patch
+#check @Carleman.cartesianKuhnStarPatch_multiplicity_le
+#print axioms Carleman.cartesianKuhnStarPatch_multiplicity_le
+#check @Carleman.cartesianKuhn_cell_subset_starPatch
+#print axioms Carleman.cartesianKuhn_cell_subset_starPatch
+#check @Carleman.cartesianKuhnStarPatch_eq_finite_union
+#print axioms Carleman.cartesianKuhnStarPatch_eq_finite_union
+#check @Carleman.cartesianKuhnStarPatch_compact
+#print axioms Carleman.cartesianKuhnStarPatch_compact
+#check @Carleman.cartesianKuhnStarPatch_measurable
+#print axioms Carleman.cartesianKuhnStarPatch_measurable
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

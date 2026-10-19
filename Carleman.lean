@@ -543,3 +543,6 @@ public import Carleman.Spatial.AllowedLocalBoundaryAffine
 public import Carleman.Spatial.L2FiniteOverlap
 public import Carleman.Geometry.CartesianPatchOverlap
 public import Carleman.Spatial.FinitePatchAssembly
+public import Carleman.Geometry.KuhnReferenceSimplex
+public import Carleman.Geometry.CartesianKuhnSimplex
+public import Carleman.Geometry.KuhnVertexStars
