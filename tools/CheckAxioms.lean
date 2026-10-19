@@ -7398,6 +7398,57 @@ set_option pp.maxSteps 1000000
 #check @Carleman.full_p1_initial_projection_strong_convergence
 #print axioms Carleman.full_p1_initial_projection_strong_convergence
 
+#check @Carleman.finiteCellFunction
+#print axioms Carleman.finiteCellFunction
+#check @Carleman.finiteCellFunction_on_cell
+#print axioms Carleman.finiteCellFunction_on_cell
+#check @Carleman.finiteCellFunction_zero_outside
+#print axioms Carleman.finiteCellFunction_zero_outside
+#check @Carleman.finiteCellFunction_bound
+#print axioms Carleman.finiteCellFunction_bound
+#check @Carleman.finiteCellMultiplier
+#print axioms Carleman.finiteCellMultiplier
+#check @Carleman.finiteCellMultiplier_commute
+#print axioms Carleman.finiteCellMultiplier_commute
+#check @Carleman.finiteCellMultiplier_pairing
+#print axioms Carleman.finiteCellMultiplier_pairing
+#check @Carleman.cartesianReconstructedPotential
+#print axioms Carleman.cartesianReconstructedPotential
+#check @Carleman.cartesianReconstructedPotential_bound
+#print axioms Carleman.cartesianReconstructedPotential_bound
+#check @Carleman.cartesianReconstructedPotential_on_cell
+#print axioms Carleman.cartesianReconstructedPotential_on_cell
+#check @Carleman.cartesianReconstructedPotential_zero_outside
+#print axioms Carleman.cartesianReconstructedPotential_zero_outside
+#check @Carleman.cartesianReconstructedPotential_commute
+#print axioms Carleman.cartesianReconstructedPotential_commute
+#check @Carleman.cartesianReconstructedPotential_pairing
+#print axioms Carleman.cartesianReconstructedPotential_pairing
+#check @Carleman.cartesianSpacetimeCell
+#print axioms Carleman.cartesianSpacetimeCell
+#check @Carleman.cartesianSpacetimeCell_measurable
+#print axioms Carleman.cartesianSpacetimeCell_measurable
+#check @Carleman.cartesianSpacetimeCell_disjoint
+#print axioms Carleman.cartesianSpacetimeCell_disjoint
+#check @Carleman.cartesianSpacetimeCell_restrict_volume
+#print axioms Carleman.cartesianSpacetimeCell_restrict_volume
+#check @Carleman.cartesianSpacetimePotential
+#print axioms Carleman.cartesianSpacetimePotential
+#check @Carleman.cartesianSpacetimePotential_bound
+#print axioms Carleman.cartesianSpacetimePotential_bound
+#check @Carleman.cartesianSpacetimePotential_on_cell
+#print axioms Carleman.cartesianSpacetimePotential_on_cell
+#check @Carleman.cartesianSpacetimePotential_zero_outside
+#print axioms Carleman.cartesianSpacetimePotential_zero_outside
+#check @Carleman.cartesianAveragedPotential_product_formula
+#print axioms Carleman.cartesianAveragedPotential_product_formula
+#check @Carleman.cartesianSpacetimePotential_on_time_cell
+#print axioms Carleman.cartesianSpacetimePotential_on_time_cell
+#check @Carleman.cartesianSpacetimeCellIsometry
+#print axioms Carleman.cartesianSpacetimeCellIsometry
+#check @Carleman.cartesianSpacetimeCellIsometry_adjoint_average
+#print axioms Carleman.cartesianSpacetimeCellIsometry_adjoint_average
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
