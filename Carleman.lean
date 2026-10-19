@@ -915,3 +915,6 @@ public import Carleman.Transfer.BoxCartesianHeatEstimate
 public import Carleman.Spatial.PhysicalFiniteLp
 public import Carleman.Spatial.PhysicalFiniteWeights
 public import Carleman.Control.PhysicalIntervalQClass
+public import Carleman.Spatial.CartesianPhysicalControlIsometry
+public import Carleman.Spatial.CartesianCountWeights
+public import Carleman.Control.BoxCartesianLoadCarleman

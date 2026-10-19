@@ -7077,6 +7077,35 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Physical.PhysicalQClass.toInterval
 #print axioms Carleman.Physical.PhysicalQClass.toInterval
 
+
+-- T169: actual Cartesian physical load estimate.
+#check @Carleman.cartesianPhysicalControl_adjoint_extension
+#print axioms Carleman.cartesianPhysicalControl_adjoint_extension
+#check @Carleman.cartesianPhysicalControlExtension_norm
+#print axioms Carleman.cartesianPhysicalControlExtension_norm
+#check @Carleman.cartesianPhysicalControlExtension_weight
+#print axioms Carleman.cartesianPhysicalControlExtension_weight
+#check @Carleman.cartesianPhysicalControlExtension_seminorm
+#print axioms Carleman.cartesianPhysicalControlExtension_seminorm
+#check @Carleman.cartesianCountLpEquiv
+#print axioms Carleman.cartesianCountLpEquiv
+#check @Carleman.cartesianCountObservation
+#print axioms Carleman.cartesianCountObservation
+#check @Carleman.cartesianCountObservation_norm
+#print axioms Carleman.cartesianCountObservation_norm
+#check @Carleman.cartesianCountProfile
+#print axioms Carleman.cartesianCountProfile
+#check @Carleman.cartesianCountProfile_seminorm
+#print axioms Carleman.cartesianCountProfile_seminorm
+#check @Carleman.cartesianCountProfile_observation
+#print axioms Carleman.cartesianCountProfile_observation
+#check @Carleman.cartesianInteriorCountProfile
+#print axioms Carleman.cartesianInteriorCountProfile
+#check @Carleman.cartesianInteriorCountProfile_negative
+#print axioms Carleman.cartesianInteriorCountProfile_negative
+#check @Carleman.box_cartesian_physical_load_carleman
+#print axioms Carleman.box_cartesian_physical_load_carleman
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
