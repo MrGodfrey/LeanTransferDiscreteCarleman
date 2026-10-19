@@ -724,3 +724,7 @@ public import Carleman.Spatial.DerivativeFieldAssembly
 public import Carleman.Spatial.SecondOrderJetAssembly
 public import Carleman.Spatial.WeakH2BoundedTest
 public import Carleman.Spatial.WeakH2BoundedLimit
+public import Carleman.Spatial.HilbertWeakSubsequence
+public import Carleman.Spatial.DirichletWeakSubsequence
+public import Carleman.Spatial.WeakLaplacianLimit
+public import Carleman.Spatial.DirichletH2ApproximationLimit

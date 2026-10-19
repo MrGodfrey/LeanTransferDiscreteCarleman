@@ -5703,6 +5703,21 @@ set_option pp.maxSteps 1000000
 #check @Carleman.exists_weakH2_of_strong_H1_limit_bounded
 #print axioms Carleman.exists_weakH2_of_strong_H1_limit_bounded
 
+#check @Carleman.exists_hilbert_weak_subsequence
+#print axioms Carleman.exists_hilbert_weak_subsequence
+#check @Carleman.exists_hilbert_weak_subsequence_in_subspace
+#print axioms Carleman.exists_hilbert_weak_subsequence_in_subspace
+#check @Carleman.hilbert_weak_tendsto_map
+#print axioms Carleman.hilbert_weak_tendsto_map
+#check @Carleman.exists_dirichlet_weak_subsequence
+#print axioms Carleman.exists_dirichlet_weak_subsequence
+#check @Carleman.IsWeakNegativeLaplacian.unique_rhs
+#print axioms Carleman.IsWeakNegativeLaplacian.unique_rhs
+#check @Carleman.IsWeakNegativeLaplacian.of_weak_gradient_limit
+#print axioms Carleman.IsWeakNegativeLaplacian.of_weak_gradient_limit
+#check @Carleman.exists_dirichlet_H2_of_bounded_approximants
+#print axioms Carleman.exists_dirichlet_H2_of_bounded_approximants
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
