@@ -7522,6 +7522,27 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianAveragedPotential_weak_pairing
 #print axioms Carleman.cartesianAveragedPotential_weak_pairing
 
+#check @Carleman.antitone_threshold_cut
+#print axioms Carleman.antitone_threshold_cut
+#check @Carleman.kuhnOrderedCube_nearest_vertex
+#print axioms Carleman.kuhnOrderedCube_nearest_vertex
+#check @Carleman.cartesianKuhnSimplex_nearest_vertex
+#print axioms Carleman.cartesianKuhnSimplex_nearest_vertex
+#check @Carleman.coordinate_hyperplane_volume_zero
+#print axioms Carleman.coordinate_hyperplane_volume_zero
+#check @Carleman.coordinate_ne_ae
+#print axioms Carleman.coordinate_ne_ae
+#check @Carleman.cartesianKuhnSimplex_nearest_vertex_ae
+#print axioms Carleman.cartesianKuhnSimplex_nearest_vertex_ae
+#check @Carleman.cartesian_lattice_unique_nearest
+#print axioms Carleman.cartesian_lattice_unique_nearest
+#check @Carleman.cartesianCellFunction_nearest_value
+#print axioms Carleman.cartesianCellFunction_nearest_value
+#check @Carleman.cartesianCell_kuhn_pointwise_consistency
+#print axioms Carleman.cartesianCell_kuhn_pointwise_consistency
+#check @Carleman.cartesianCell_kuhn_L2_consistency
+#print axioms Carleman.cartesianCell_kuhn_L2_consistency
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

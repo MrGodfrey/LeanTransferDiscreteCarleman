@@ -969,3 +969,7 @@ public import Carleman.Control.TimePotentialStrongConvergence
 public import Carleman.Control.PotentialTestConsistency
 public import Carleman.Control.PotentialWeakPairing
 public import Carleman.Control.AveragedPotentialWeakPairing
+public import Carleman.Geometry.KuhnNearestVertex
+public import Carleman.Geometry.CoordinateHyperplaneNull
+public import Carleman.Spatial.CartesianCellNearestValue
+public import Carleman.Spatial.CartesianCellKuhnConsistency
