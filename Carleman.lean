@@ -653,3 +653,5 @@ public import Carleman.Spatial.CartesianPhysicalStability
 
 public import Carleman.Spatial.CartesianApproximationInterface
 public import Carleman.Spatial.CartesianNumericalData
+
+public import Carleman.Control.FullP1WeightedTest
