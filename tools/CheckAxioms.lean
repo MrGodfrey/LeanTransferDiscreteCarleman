@@ -5354,6 +5354,37 @@ set_option pp.maxSteps 1000000
 #check @Carleman.full_p1_weightedTest_interface
 #print axioms Carleman.full_p1_weightedTest_interface
 
+#check @Carleman.smooth_first_taylor_integral
+#print axioms Carleman.smooth_first_taylor_integral
+#check @Carleman.integral_convex_segment_jacobian_le
+#print axioms Carleman.integral_convex_segment_jacobian_le
+#check @Carleman.convex_segment_norm_integral_sq
+#print axioms Carleman.convex_segment_norm_integral_sq
+#check @Carleman.convex_segment_lowdim_kernel_bound
+#print axioms Carleman.convex_segment_lowdim_kernel_bound
+#check @Carleman.integrableOn_unit_inv_sqrt
+#print axioms Carleman.integrableOn_unit_inv_sqrt
+#check @Carleman.integral_unit_inv_sqrt
+#print axioms Carleman.integral_unit_inv_sqrt
+#check @Carleman.convex_segment_lowdim_integral_bound
+#print axioms Carleman.convex_segment_lowdim_integral_bound
+#check @Carleman.smooth_first_taylor_contracted
+#print axioms Carleman.smooth_first_taylor_contracted
+#check @Carleman.smooth_taylor_remainder_norm_bound
+#print axioms Carleman.smooth_taylor_remainder_norm_bound
+#check @Carleman.convex_smooth_averaged_taylor_error
+#print axioms Carleman.convex_smooth_averaged_taylor_error
+#check @Carleman.averagedTaylorPolynomial
+#print axioms Carleman.averagedTaylorPolynomial
+#check @Carleman.averagedTaylorPolynomial_apply
+#print axioms Carleman.averagedTaylorPolynomial_apply
+#check @Carleman.averagedTaylorPolynomial_error
+#print axioms Carleman.averagedTaylorPolynomial_error
+#check @Carleman.simplexNodal_smooth_h2_value_error
+#print axioms Carleman.simplexNodal_smooth_h2_value_error
+#check @Carleman.simplexNodal_smooth_h2_value_integral
+#print axioms Carleman.simplexNodal_smooth_h2_value_integral
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
