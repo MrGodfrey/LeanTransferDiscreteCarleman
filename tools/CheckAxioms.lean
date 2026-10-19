@@ -7029,6 +7029,21 @@ set_option pp.maxSteps 1000000
 #check @Carleman.box_heat_continuous_data
 #print axioms Carleman.box_heat_continuous_data
 
+#check @Carleman.cartesianLoadInterfaceOn
+#print axioms Carleman.cartesianLoadInterfaceOn
+#check @Carleman.cartesianLoadInterfaceOn_Γ
+#print axioms Carleman.cartesianLoadInterfaceOn_Γ
+#check @Carleman.cartesianHeatState_definite
+#print axioms Carleman.cartesianHeatState_definite
+#check @Carleman.cartesianHeatControl_definite
+#print axioms Carleman.cartesianHeatControl_definite
+#check @Carleman.cartesianHeatGeometry
+#print axioms Carleman.cartesianHeatGeometry
+#check @Carleman.cartesian_numericalData_on
+#print axioms Carleman.cartesian_numericalData_on
+#check @Carleman.box_cartesian_heat_estimate
+#print axioms Carleman.box_cartesian_heat_estimate
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

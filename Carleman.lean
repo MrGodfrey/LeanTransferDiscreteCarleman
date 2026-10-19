@@ -909,3 +909,6 @@ public import Carleman.Spatial.HeatGradientExpression
 public import Carleman.Transfer.DirichletHeatGeometry
 public import Carleman.Weights.IntervalQClass
 public import Carleman.Transfer.BoxHeatContinuous
+public import Carleman.Transfer.CartesianHeatGeometry
+public import Carleman.Transfer.CartesianTransportedData
+public import Carleman.Transfer.BoxCartesianHeatEstimate
