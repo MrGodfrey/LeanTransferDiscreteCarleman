@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T084",
-    "supervisor_checked_at": "2026-10-19T00:18:55.762097+00:00",
-    "next_action": "固定SHA独立验收真实平方积分、笛卡尔重叠及全域加权组合16声明；继续原Kuhn网格几何与实际矩重构。",
+    "current_task_id": "T085",
+    "supervisor_checked_at": "2026-10-19T00:27:33.645170+00:00",
+    "next_action": "固定SHA独立验收实际Kuhn单元、顶点星支撑及重叠24声明；继续单元有序坐标刻画、覆盖/不交及实际节点矩。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T00:18:55.762097+00:00"
+    "last_activity_at": "2026-10-19T00:27:33.645170+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "4e697929d6afc9043f0a20caf093a0d62a33963d",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39179746249/attempts/1",
-      "finished_at": "2026-10-19T00:15:27.143281+00:00",
+      "checked_sha": "d8ccc85628961e226550d9fea095eac9710ed969",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39180237642/attempts/1",
+      "finished_at": "2026-10-19T00:22:27.621391+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "4e697929d6afc9043f0a20caf093a0d62a33963d"
+      "source_head_sha": "d8ccc85628961e226550d9fea095eac9710ed969"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "4e697929d6afc9043f0a20caf093a0d62a33963d",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39179746249/attempts/1",
-      "finished_at": "2026-10-19T00:15:27.143281+00:00",
+      "checked_sha": "d8ccc85628961e226550d9fea095eac9710ed969",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39180237642/attempts/1",
+      "finished_at": "2026-10-19T00:22:27.621391+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "4e697929d6afc9043f0a20caf093a0d62a33963d"
+      "source_head_sha": "d8ccc85628961e226550d9fea095eac9710ed969"
     }
   },
   "milestones": [
@@ -9670,7 +9670,7 @@
       "paper_ref": "Auxiliary actual square-integral finite overlap, Cartesian patch counting, and global weighted assembly for Appendix B Lemma B.2",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "lem:fd-weighted-approximation"
@@ -9693,16 +9693,101 @@
         "Carleman.weighted_finite_patch_h2_assembly",
         "Carleman.weighted_cartesian_patch_h2_assembly"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "d8ccc85628961e226550d9fea095eac9710ed969",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "d8ccc85628961e226550d9fea095eac9710ed969",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39180237642/attempts/1",
+        "finished_at": "2026-10-19T00:22:27.621391+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "d8ccc85628961e226550d9fea095eac9710ed969"
+      },
+      "semantic_review": {
+        "checked_sha": "d8ccc85628961e226550d9fea095eac9710ed969",
+        "declarations": [
+          "Carleman.finiteCoverMultiplicity",
+          "Carleman.sum_indicator_eq_multiplicity",
+          "Carleman.bochnerL2Norm_sq_finite_overlap",
+          "Carleman.bochnerL2Norm_sq_finite_cover",
+          "Carleman.subdomainLp_norm_eq_bochner",
+          "Carleman.subdomainLp_sq_finite_overlap",
+          "Carleman.subdomainLp_sq_finite_cover",
+          "Carleman.cartesianPatch",
+          "Carleman.cartesianPatch_isOpen",
+          "Carleman.cartesianPatch_index_bound",
+          "Carleman.cartesianPatch_window_card",
+          "Carleman.cartesianPatch_multiplicity_le",
+          "Carleman.cartesianPatch_permutation_multiplicity_le",
+          "Carleman.finite_patch_h2_assembly",
+          "Carleman.weighted_finite_patch_h2_assembly",
+          "Carleman.weighted_cartesian_patch_h2_assembly"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/da372c08ba75ac2f4e6c393e5631fa2cb17dab97/governance/reviews/T084-local-acceptance.md",
+        "reviewed_at": "2026-10-19T00:25:46+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C099",
         "C098"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "原L²真实局部平方积分按实际有限重数上下估计；正步长整数笛卡尔扩张盒的重数由floor窗口与真实有限基数得到(2r+1)^d d!上界。原加权字段的局部h²界通过平方求和得到sqrt(2M)全域损失，无总网格数因子。实际Kuhn网格索引、支撑进入这些盒及Qh局部再现/稳定性仍待，AUXILIARY，原文13/26。"
+      "scope_notes": "原L²真实局部平方积分按实际有限重数上下估计；正步长整数笛卡尔扩张盒的重数由floor窗口与真实有限基数得到(2r+1)^d d!上界。原加权字段的局部h²界通过平方求和得到sqrt(2M)全域损失，无总网格数因子。实际Kuhn网格索引、支撑进入这些盒及Qh局部再现/稳定性仍待，AUXILIARY，原文13/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C101",
+      "title": "实际Kuhn单纯形及顶点星的几何支撑",
+      "paper_ref": "Auxiliary actual Cartesian Kuhn simplices, shared-vertex stars and their uniform support overlap for Appendix B",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:fd",
+        "lem:fd-weighted-approximation"
+      ],
+      "lean_declarations": [
+        "Carleman.coordinateStandardSimplex",
+        "Carleman.kuhnPrefixMatrix",
+        "Carleman.kuhnPrefixMatrix_det",
+        "Carleman.kuhnPrefixEquiv",
+        "Carleman.kuhnPrefixEquiv_basis",
+        "Carleman.kuhnReferenceSimplex",
+        "Carleman.kuhnReferenceSimplex_points",
+        "Carleman.coordinatePermutation",
+        "Carleman.coordinatePermutation_apply",
+        "Carleman.cartesianKuhnSimplex",
+        "Carleman.cartesianKuhnSimplex_points",
+        "Carleman.cartesianKuhnSimplex_points_step",
+        "Carleman.closedCoordinateBox_convex",
+        "Carleman.cartesianKuhnSimplex_cell_subset_box",
+        "Carleman.cartesianKuhnSimplex_cell_subset_patch",
+        "Carleman.cartesianKuhn_shared_vertex_index_bound",
+        "Carleman.cartesianKuhn_shared_vertex_cell_subset",
+        "Carleman.cartesianKuhnStarPatch",
+        "Carleman.cartesianKuhnStarPatch_subset_patch",
+        "Carleman.cartesianKuhnStarPatch_multiplicity_le",
+        "Carleman.cartesianKuhn_cell_subset_starPatch",
+        "Carleman.cartesianKuhnStarPatch_eq_finite_union",
+        "Carleman.cartesianKuhnStarPatch_compact",
+        "Carleman.cartesianKuhnStarPatch_measurable"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C100"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实上三角矩阵行列式1构造前缀顶点单纯形，实际排列/正步长缩放/平移给Kuhn单元；顶点、步进、闭盒包含均内部证明。共享顶点使整数原点每坐标差至多1，完整无限网格星并集是有限紧单元并，紧可测、包含本单元、位于半径2实际盒，重数≤5^d d!。网格覆盖/不交、帽函数、矩条件及Qh仍待，AUXILIARY，原文13/26。"
     }
   ],
   "events": [
@@ -10203,6 +10288,11 @@
       "at": "2026-10-19T00:18:55.762097+00:00",
       "public_summary": "原允许权局部逼近独立验收PASS；真实平方积分及笛卡尔有限重叠的全域组合16声明全库通过，原文保持13/26，继续独立验收。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2341fc2fee95be45c8fb2281804fdce1567c2bfe/governance/reviews/T083-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T00:27:33.645170+00:00",
+      "public_summary": "真实平方积分、笛卡尔有限重叠与全域组合独立验收PASS；实际Kuhn单元及完整顶点星支撑24声明全库通过并继续独立验收，原文保持13/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/da372c08ba75ac2f4e6c393e5631fa2cb17dab97/governance/reviews/T084-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -10422,7 +10512,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6a3e9dadb436f7e05d4eef590f0cf9babad92fe7/governance/reviews/T082-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39179213298/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2341fc2fee95be45c8fb2281804fdce1567c2bfe/governance/reviews/T083-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39179746249/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39179746249/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/da372c08ba75ac2f4e6c393e5631fa2cb17dab97/governance/reviews/T084-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39180237642/attempts/1"
     ]
   },
   "schedules": [
@@ -22793,10 +22885,10 @@
       ],
       "branch": "main",
       "base_commit": "4e697929d6afc9043f0a20caf093a0d62a33963d",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "d8ccc85628961e226550d9fea095eac9710ed969",
+      "merge_commit": "d8ccc85628961e226550d9fea095eac9710ed969",
       "lean_declarations": [
         "Carleman.finiteCoverMultiplicity",
         "Carleman.sum_indicator_eq_multiplicity",
@@ -22815,12 +22907,23 @@
         "Carleman.weighted_finite_patch_h2_assembly",
         "Carleman.weighted_cartesian_patch_h2_assembly"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "d8ccc85628961e226550d9fea095eac9710ed969",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39180237642/attempts/1",
+        "finished_at": "2026-10-19T00:22:27.621391+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "d8ccc85628961e226550d9fea095eac9710ed969"
+      },
       "blocker": null,
       "attempts": [
         "三模块16声明定向3236 jobs、全库3737 jobs通过，5810声明递归公理审计PASS。"
       ],
-      "next_action": "固定SHA独立验收真实平方积分、笛卡尔重叠及全域加权组合16声明；继续原Kuhn网格几何与实际矩重构。",
+      "next_action": "真实平方积分、笛卡尔计数与全域组合已独立验收；继续实际Kuhn单元、顶点星及矩重构。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -22832,6 +22935,103 @@
         "recursive_axiom_audit": 5810,
         "new_explicit_declarations": 16,
         "declaration_artifact_sha256": "d3ccc761cebaaf3ba6b2292484f8c4f9a2a21d3349fc21f2eaa5a76d6ec366a3",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "d8ccc85628961e226550d9fea095eac9710ed969",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C100"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "d8ccc85628961e226550d9fea095eac9710ed969",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T00:25:46+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/da372c08ba75ac2f4e6c393e5631fa2cb17dab97/governance/reviews/T084-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "d8ccc85628961e226550d9fea095eac9710ed969",
+        "checked_sha": "d8ccc85628961e226550d9fea095eac9710ed969",
+        "run_id": 39180237642,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3737,
+        "recursive_axiom_audit": 5810,
+        "new_explicit_declarations": 16,
+        "declaration_artifact_sha256": "d3ccc761cebaaf3ba6b2292484f8c4f9a2a21d3349fc21f2eaa5a76d6ec366a3",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T085",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "实际Kuhn单纯形及顶点星的几何支撑",
+      "goal_ids": [
+        "C101"
+      ],
+      "acceptance": [
+        "标准坐标单纯形真实仿射无关，上三角实际行列式及同构内部证明",
+        "前缀顶点及物理排列/正尺度/平移公式精确吻合Kuhn逐坐标步进",
+        "整个闭单纯形的凸包包含于实际网格盒及开扩张块，保留所有面顶点",
+        "共享顶点严格推出整数坐标邻接，完整无限网格顶点星并集有真实有限并表达且紧可测",
+        "原真实星并集供应已证扩张块计数，点态重数≤5^d d!；保留网格覆盖/不交、帽函数矩与Qh义务"
+      ],
+      "dependencies": [
+        "C100"
+      ],
+      "branch": "main",
+      "base_commit": "d8ccc85628961e226550d9fea095eac9710ed969",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.coordinateStandardSimplex",
+        "Carleman.kuhnPrefixMatrix",
+        "Carleman.kuhnPrefixMatrix_det",
+        "Carleman.kuhnPrefixEquiv",
+        "Carleman.kuhnPrefixEquiv_basis",
+        "Carleman.kuhnReferenceSimplex",
+        "Carleman.kuhnReferenceSimplex_points",
+        "Carleman.coordinatePermutation",
+        "Carleman.coordinatePermutation_apply",
+        "Carleman.cartesianKuhnSimplex",
+        "Carleman.cartesianKuhnSimplex_points",
+        "Carleman.cartesianKuhnSimplex_points_step",
+        "Carleman.closedCoordinateBox_convex",
+        "Carleman.cartesianKuhnSimplex_cell_subset_box",
+        "Carleman.cartesianKuhnSimplex_cell_subset_patch",
+        "Carleman.cartesianKuhn_shared_vertex_index_bound",
+        "Carleman.cartesianKuhn_shared_vertex_cell_subset",
+        "Carleman.cartesianKuhnStarPatch",
+        "Carleman.cartesianKuhnStarPatch_subset_patch",
+        "Carleman.cartesianKuhnStarPatch_multiplicity_le",
+        "Carleman.cartesianKuhn_cell_subset_starPatch",
+        "Carleman.cartesianKuhnStarPatch_eq_finite_union",
+        "Carleman.cartesianKuhnStarPatch_compact",
+        "Carleman.cartesianKuhnStarPatch_measurable"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "三模块24声明定向3254 jobs、全库3740 jobs通过，5856声明递归公理审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收实际Kuhn单元、顶点星支撑及重叠24声明；继续单元有序坐标刻画、覆盖/不交及实际节点矩。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3740,
+        "recursive_axiom_audit": 5856,
+        "new_explicit_declarations": 24,
+        "declaration_artifact_sha256": "4aa7f26e53a9357b51e340c56cd216897fe214031ba50235da4da572fb2dc966",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

@@ -161,3 +161,5 @@
 - T082 / C098：全局H01到真实局部零迹及原全H2局部逼近16声明独立验收PASS，同SHA三项CI、5777声明递归审计及逐字节相同远端产物。 固定证明 `59452751f05398e3446ed5305638a1e20dc89061`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6a3e9dadb436f7e05d4eef590f0cf9babad92fe7/governance/reviews/T082-local-acceptance.md)。原文13/26，T083继续原允许权族的真实局部边界仿射逼近。
 
 - T083 / C099：原允许权局部边界逼近9声明独立验收PASS，同SHA三项CI、5792声明递归审计及逐字节相同远端产物。 固定证明 `4e697929d6afc9043f0a20caf093a0d62a33963d`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2341fc2fee95be45c8fb2281804fdce1567c2bfe/governance/reviews/T083-local-acceptance.md)。原文13/26，T084继续真实平方积分、笛卡尔有限重叠与全域加权组合。
+
+- T084 / C100：真实平方积分与笛卡尔有限重叠、全域加权组合16声明独立验收PASS，同SHA三项CI、5810声明递归审计及逐字节相同远端产物。 固定证明 `d8ccc85628961e226550d9fea095eac9710ed969`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/da372c08ba75ac2f4e6c393e5631fa2cb17dab97/governance/reviews/T084-local-acceptance.md)。原文13/26，T085继续实际Kuhn单纯形及顶点星的几何支撑。
