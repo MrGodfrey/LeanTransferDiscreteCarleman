@@ -1232,3 +1232,11 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 `exists_hilbert_weak_subsequence` 及闭子空间版本由实际弱对偶紧性/Riesz选同一弱子列并保留原范数界。`exists_dirichlet_weak_subsequence` 在真实Sobolev Hilbert空间及原H¹₀测试闭包中提取子列，内部供应Lebesgue L²可分性，保留两阶真实字段的弱收敛和平方和界。
 
 `IsWeakNegativeLaplacian.unique_rhs` 及 `of_weak_gradient_limit` 保持全部原Poisson测试身份。`exists_dirichlet_H2_of_bounded_approximants` 从原H¹₀逼近、统一H¹能量界、候选Hessian最终L²界与逐测试最终身份，内部构造实际H²∩H¹₀解且negativeLaplacian v=f，Hessian平方≤card(Sym(Fin d),2)C₂²。无需候选Hessian收敛/全域弱导数资格或H²零延拓。实际光滑内域解、Hessian先验界和穷竭仍待供应；AUXILIARY14/26，P023不提升。
+
+
+## T130 / C146：真实子域 Dirichlet 零延拓
+
+- 原对象：任意开域 T⊆S，原 H¹₀ 测试闭包中的 H¹ jet。
+- 结论：真实全空间零延拓后限制到 S，仍属于原 H¹₀(S)；每阶 L² 字段范数不增，测试精确保持同一函数，延拓在原完整 H¹ 拓扑连续。
+- 证明义务：测试支持和 a.e. 身份、限制伴随的零延拓连续性、真实测试闭包传极限，均内部证明；不要求 H² 零延拓。
+- AUXILIARY，P023 不提升；分析见 `analysis/T130-dirichlet-extension.md`。
