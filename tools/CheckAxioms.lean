@@ -6182,6 +6182,30 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesian_full_weight_interface
 #print axioms Carleman.cartesian_full_weight_interface
 
+#check @Carleman.box_dirichlet_graph_estimate
+#print axioms Carleman.box_dirichlet_graph_estimate
+#check @Carleman.box_analytic_data_uniform
+#print axioms Carleman.box_analytic_data_uniform
+#check @Carleman.box_analytic_realization
+#print axioms Carleman.box_analytic_realization
+
+#check @Carleman.shearDirectionCoordinates
+#print axioms Carleman.shearDirectionCoordinates
+#check @Carleman.shearDirectionCoordinates_direction
+#print axioms Carleman.shearDirectionCoordinates_direction
+#check @Carleman.exists_directional_coordinates
+#print axioms Carleman.exists_directional_coordinates
+#check @Carleman.finite_linear_max_lipschitz
+#print axioms Carleman.finite_linear_max_lipschitz
+#check @Carleman.finite_halfspace_graph_charts
+#print axioms Carleman.finite_halfspace_graph_charts
+#check @Carleman.finite_halfspace_bounded_lipschitz
+#print axioms Carleman.finite_halfspace_bounded_lipschitz
+#check @Carleman.openCoordinateBox_bounded_lipschitz
+#print axioms Carleman.openCoordinateBox_bounded_lipschitz
+#check @Carleman.box_section3
+#print axioms Carleman.box_section3
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

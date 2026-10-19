@@ -785,3 +785,8 @@ public import Carleman.Spatial.BoxPoissonRegularity
 public import Carleman.Spatial.BoxDirichletRegularity
 public import Carleman.Spatial.CartesianBoxNumericalData
 public import Carleman.Spatial.CartesianFullWeightInterface
+public import Carleman.Spatial.BoxAnalyticData
+public import Carleman.Geometry.DirectionalCoordinates
+public import Carleman.Geometry.FiniteHalfspaceCharts
+public import Carleman.Geometry.BoxLipschitzDomain
+public import Carleman.Spatial.BoxAuxiliaryEstimates
