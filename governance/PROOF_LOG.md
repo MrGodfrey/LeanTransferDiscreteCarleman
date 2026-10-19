@@ -157,3 +157,5 @@
 - T080 / C096：实际物理盒仿射与面迹缩放35声明独立验收PASS，5689声明递归审计、同SHA三项CI及逐字节相同远端产物。 固定证明 `68b77bdd9b152ba18e226a6a093892f548c2d90f`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/97f656ea30397406b25039a8e95497099389e260/governance/reviews/T080-local-acceptance.md)。原文12/26，T081继续原Lemma B.1统一物理h2边界仿射逼近。
 
 - T081 / C097：原完整Lemma B.1与角点结论15声明独立PAPER验收PASS，5708声明递归审计、同SHA三项CI及逐字节相同远端产物；P025升REVIEWED。 固定证明 `e71006a89160b4a22833727048495aff3f9d2016`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/923bebdf208c2bcc6f517d9548d0f401a350bf49/governance/reviews/T081-local-acceptance.md)。原文12/26，T082继续全局Dirichlet状态的真实局部面零迹与边界逼近。
+
+- T082 / C098：全局H01到真实局部零迹及原全H2局部逼近16声明独立验收PASS，同SHA三项CI、5777声明递归审计及逐字节相同远端产物。 固定证明 `59452751f05398e3446ed5305638a1e20dc89061`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6a3e9dadb436f7e05d4eef590f0cf9babad92fe7/governance/reviews/T082-local-acceptance.md)。原文13/26，T083继续原允许权族的真实局部边界仿射逼近。
