@@ -930,3 +930,6 @@ public import Carleman.Control.FilteredControl
 public import Carleman.Control.FilterPenaltyBound
 public import Carleman.Control.BoxCartesianFilteredControl
 public import Carleman.Control.BoxP1LoadCarleman
+public import Carleman.Control.PhysicalControlConclusion
+public import Carleman.Control.BoxP1PhysicalControl
+public import Carleman.Control.BoxP1FilteredControl
