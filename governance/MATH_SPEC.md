@@ -1136,3 +1136,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T107：原FD重构、质量伴随与载荷接口
 
 详见 [T107 分析](analysis/T107-fd-mass-interface.md)。三模块19声明构造同一原物理Hilbert空间上的实际重构连续线性映射及单射性，证明真实Hilbert伴随逐节点严格等于原归一化帽函数积分。原Reconstruction接口的R/J/Q/G与已验收实际构造完全一致；原LoadInterface取F=X、Γ=Id和同一真实L²载荷，并证明兼容性及I=Id右逆。完整FD数值接口组装仍待，AUXILIARY14/26。
+
+## T108：同一原物理Hilbert测试的完整WeightedTest接口
+
+详见 [T108 分析](analysis/T108-fd-weighted-test.md)。三模块14声明构造真实物理Hilbert平方权测试及其算子范数导数，证明同一原节点公式、周期端点、二次配对导数、对称与非负。完整WeightedTest明确使用同一实际测试/导数，实际时间和超逼近界内部组合，弱jet值唯一性识别原残差及重构，常数先于全部网格、周期、允许权和两符号。完整FD其他数据装配仍待，AUXILIARY14/26。
