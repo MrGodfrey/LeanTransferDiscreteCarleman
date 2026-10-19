@@ -5963,6 +5963,69 @@ set_option pp.maxSteps 1000000
 #check @Carleman.smooth_boundary_test_mem_dirichletJetSpace
 #print axioms Carleman.smooth_boundary_test_mem_dirichletJetSpace
 
+#check @Carleman.coordinateSignFlip
+#print axioms Carleman.coordinateSignFlip
+#check @Carleman.coordinateSignFlip_apply
+#print axioms Carleman.coordinateSignFlip_apply
+#check @Carleman.coordinateReflection
+#print axioms Carleman.coordinateReflection
+#check @Carleman.coordinateReflection_apply
+#print axioms Carleman.coordinateReflection_apply
+#check @Carleman.coordinateReflection_involutive
+#print axioms Carleman.coordinateReflection_involutive
+#check @Carleman.coordinateReflection_symm
+#print axioms Carleman.coordinateReflection_symm
+#check @Carleman.coordinateReflection_measurePreserving
+#print axioms Carleman.coordinateReflection_measurePreserving
+#check @Carleman.coordinateReflectionSign
+#print axioms Carleman.coordinateReflectionSign
+#check @Carleman.coordinateReflectionSign_sq
+#print axioms Carleman.coordinateReflectionSign_sq
+#check @Carleman.coordinateSignFlip_basis
+#print axioms Carleman.coordinateSignFlip_basis
+#check @Carleman.firstComponentFields
+#print axioms Carleman.firstComponentFields
+#check @Carleman.firstComponentJet
+#print axioms Carleman.firstComponentJet
+#check @Carleman.firstComponentJet_value
+#print axioms Carleman.firstComponentJet_value
+#check @Carleman.firstComponentJet_gradient
+#print axioms Carleman.firstComponentJet_gradient
+#check @Carleman.firstGradientAssembly_norm_sq
+#print axioms Carleman.firstGradientAssembly_norm_sq
+#check @Carleman.coordinateReflectionLp
+#print axioms Carleman.coordinateReflectionLp
+#check @Carleman.coordinateReflectionLp_ae
+#print axioms Carleman.coordinateReflectionLp_ae
+#check @Carleman.coordinateReflectionLp_norm
+#print axioms Carleman.coordinateReflectionLp_norm
+#check @Carleman.integral_mul_coordinateReflectionLp
+#print axioms Carleman.integral_mul_coordinateReflectionLp
+#check @Carleman.coordinateReflectionLp_inner
+#print axioms Carleman.coordinateReflectionLp_inner
+#check @Carleman.coordinateReflectionLp_involutive
+#print axioms Carleman.coordinateReflectionLp_involutive
+#check @Carleman.coordinateReflectionLp_inner_both
+#print axioms Carleman.coordinateReflectionLp_inner_both
+#check @Carleman.IsWeakSpatialDerivative.coordinate_reflection
+#print axioms Carleman.IsWeakSpatialDerivative.coordinate_reflection
+#check @Carleman.WeakSobolevJet.reflectCoordinate
+#print axioms Carleman.WeakSobolevJet.reflectCoordinate
+#check @Carleman.WeakSobolevJet.reflectCoordinate_value
+#print axioms Carleman.WeakSobolevJet.reflectCoordinate_value
+#check @Carleman.WeakSobolevJet.reflectCoordinate_gradient
+#print axioms Carleman.WeakSobolevJet.reflectCoordinate_gradient
+#check @Carleman.WeakSobolevJet.reflectCoordinate_involutive
+#print axioms Carleman.WeakSobolevJet.reflectCoordinate_involutive
+#check @Carleman.WeakSobolevJet.reflectCoordinate_value_norm
+#print axioms Carleman.WeakSobolevJet.reflectCoordinate_value_norm
+#check @Carleman.WeakSobolevJet.reflectCoordinate_gradient_pairing
+#print axioms Carleman.WeakSobolevJet.reflectCoordinate_gradient_pairing
+#check @Carleman.WeakSobolevJet.reflectCoordinate_gradient_norm
+#print axioms Carleman.WeakSobolevJet.reflectCoordinate_gradient_norm
+#check @Carleman.WeakSobolevJet.reflectCoordinate_gradient_adjoint
+#print axioms Carleman.WeakSobolevJet.reflectCoordinate_gradient_adjoint
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

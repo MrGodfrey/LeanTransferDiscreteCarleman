@@ -762,3 +762,7 @@ public import Carleman.Control.CartesianFilterRayleigh
 public import Carleman.Spatial.PiecewiseSmoothContraction
 public import Carleman.Spatial.ZeroBoundaryIndicator
 public import Carleman.Spatial.SmoothBoundaryDirichlet
+public import Carleman.Geometry.CoordinateReflection
+public import Carleman.Spatial.FirstComponentJet
+public import Carleman.Spatial.CoordinateReflectionLp
+public import Carleman.Spatial.CoordinateReflectionH1
