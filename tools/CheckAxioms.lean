@@ -5620,6 +5620,27 @@ set_option pp.maxSteps 1000000
 #check @Carleman.SimplicialPartition.exists_weak_h2_conforming_nodal_error
 #print axioms Carleman.SimplicialPartition.exists_weak_h2_conforming_nodal_error
 
+#check @Carleman.BoundedMultiplier.integral_transfer
+#print axioms Carleman.BoundedMultiplier.integral_transfer
+#check @Carleman.BoundedMultiplier.integral_transfer_memLp
+#print axioms Carleman.BoundedMultiplier.integral_transfer_memLp
+#check @Carleman.SimplicialPartition.cellWeight
+#print axioms Carleman.SimplicialPartition.cellWeight
+#check @Carleman.SimplicialPartition.cellWeight_on_cell
+#print axioms Carleman.SimplicialPartition.cellWeight_on_cell
+#check @Carleman.SimplicialPartition.cellWeight_sq_sum
+#print axioms Carleman.SimplicialPartition.cellWeight_sq_sum
+#check @Carleman.SimplicialPartition.cellWeight_seminorm_le
+#print axioms Carleman.SimplicialPartition.cellWeight_seminorm_le
+#check @Carleman.SimplicialPartition.weighted_cell_errors_sum
+#print axioms Carleman.SimplicialPartition.weighted_cell_errors_sum
+#check @Carleman.SimplicialPartition.weighted_cell_inverse_errors_sum
+#print axioms Carleman.SimplicialPartition.weighted_cell_inverse_errors_sum
+#check @Carleman.weak_h2_weighted_nodal_approximation
+#print axioms Carleman.weak_h2_weighted_nodal_approximation
+#check @Carleman.weak_h2_allowed_nodal_approximation
+#print axioms Carleman.weak_h2_allowed_nodal_approximation
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

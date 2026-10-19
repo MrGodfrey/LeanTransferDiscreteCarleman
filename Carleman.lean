@@ -705,3 +705,8 @@ public import Carleman.Spatial.DirichletContinuousBoundary
 public import Carleman.Spatial.H2NodalErrorJet
 public import Carleman.Spatial.H2NodalCellError
 public import Carleman.Spatial.WeakH2ConformingNodal
+public import Carleman.Spatial.WeightedIntegralTransfer
+public import Carleman.Spatial.CellwiseScaledWeight
+public import Carleman.Spatial.WeightedCellAssembly
+public import Carleman.Spatial.WeakH2WeightedNodal
+public import Carleman.Spatial.WeakH2AllowedNodal
