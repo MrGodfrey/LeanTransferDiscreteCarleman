@@ -6825,6 +6825,15 @@ set_option pp.maxSteps 1000000
 #check @Carleman.exists_box_poisson_extension_smooth_boundary
 #print axioms Carleman.exists_box_poisson_extension_smooth_boundary
 
+#check @Carleman.WeakSobolevJet.local_even_mollification_strong_h2
+#print axioms Carleman.WeakSobolevJet.local_even_mollification_strong_h2
+#check @Carleman.local_L2_error_restrict_tendsto
+#print axioms Carleman.local_L2_error_restrict_tendsto
+#check @Carleman.WeakSobolevJet.restrictSubdomain_component_ae
+#print axioms Carleman.WeakSobolevJet.restrictSubdomain_component_ae
+#check @Carleman.exists_box_dirichlet_smooth_h2_approximation
+#print axioms Carleman.exists_box_dirichlet_smooth_h2_approximation
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

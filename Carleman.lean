@@ -868,3 +868,7 @@ public import Carleman.Spatial.OddPoissonExtensionValue
 public import Carleman.Spatial.BoxPoissonExtensionValue
 public import Carleman.Spatial.FiniteOddBoxExtension
 public import Carleman.Spatial.OddSlabSmoothing
+
+public import Carleman.Spatial.WeakH2EvenLocalSmoothing
+public import Carleman.Spatial.LocalSmoothingRestriction
+public import Carleman.Spatial.BoxDirichletSmoothDensity
