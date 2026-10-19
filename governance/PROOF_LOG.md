@@ -387,3 +387,7 @@
 - T183 / C199：十三声明独立13/13 PASS，真实单元密度、固定时空几何、原势EE*身份及独立细化忠实；三CI与8379声明raw逐字节核对。 固定证明 `8e2e1e1a269c81ea0f9fdd98c6f13477cf8583b8`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9c59cce67dc2096daa946b11f69f02942a979aa3/governance/reviews/T183-local-acceptance.md)。原文17/26；当前执行任务不变。
 
 - T184 / C200：固定证明 `01d32d5c9dc4a907e058d302714a3f64366e8767` 的三项实际CI与原始审计核对通过；独立Agent验收仍在运行，当前仅BUILT。T185继续原平均势与弱状态的极限配对，原文覆盖17/26。
+
+- T184 / C200：十五声明独立15/15 PASS，原时间平均、真实切片/Fubini和支配收敛忠实；三CI与8404声明raw逐字节核对。 固定证明 `01d32d5c9dc4a907e058d302714a3f64366e8767`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bd45f6d316fb418a6a721b32f00177979f536c18/governance/reviews/T184-local-acceptance.md)。原文17/26；当前执行任务不变。
+
+- T185 / C201：固定证明 `fe308a7e6958dc8a2caa9f9dec3c331ae5678a03` 的Lean结果工件与原始审计核对通过；作业终态接口尚未更新，三项CI和独立正式验收均保留待定，当前仅BUILT。T186继续原差分单元与Kuhn重构的实际一致性，原文覆盖17/26。
