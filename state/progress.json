@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T097",
-    "supervisor_checked_at": "2026-10-19T02:23:13.010318+00:00",
-    "next_action": "固定SHA独立验收完整原B2/P026及7声明，验收前原文13/26；继续实际Kuhn刚度与FD接口。",
+    "current_task_id": "T098",
+    "supervisor_checked_at": "2026-10-19T02:31:47.759227+00:00",
+    "next_action": "固定SHA独立验收实际Kuhn弱刚度单元展开9声明；继续坐标边重排与原差分分部求和。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T02:23:13.010318+00:00"
+    "last_activity_at": "2026-10-19T02:31:47.759227+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "ab5f74bf708c3bb969ecca40fcee8b26edd16d96",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39189061598/attempts/1",
-      "finished_at": "2026-10-19T02:17:18.515092+00:00",
+      "checked_sha": "a9ca6fccf19cc677a4a60b07f373eb533df9d502",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39189752195/attempts/1",
+      "finished_at": "2026-10-19T02:26:43.612494+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "ab5f74bf708c3bb969ecca40fcee8b26edd16d96"
+      "source_head_sha": "a9ca6fccf19cc677a4a60b07f373eb533df9d502"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "ab5f74bf708c3bb969ecca40fcee8b26edd16d96",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39189061598/attempts/1",
-      "finished_at": "2026-10-19T02:17:18.515092+00:00",
+      "checked_sha": "a9ca6fccf19cc677a4a60b07f373eb533df9d502",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39189752195/attempts/1",
+      "finished_at": "2026-10-19T02:26:43.612494+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "ab5f74bf708c3bb969ecca40fcee8b26edd16d96"
+      "source_head_sha": "a9ca6fccf19cc677a4a60b07f373eb533df9d502"
     }
   },
   "milestones": [
@@ -10842,7 +10842,7 @@
       "paper_ref": "Lemma B.2, actual global weighted Q_h approximation for every original H²∩H¹₀ state, Appendix B Step 2",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "paper_labels": [
         "lem:fd-weighted-approximation",
@@ -10857,9 +10857,36 @@
         "Carleman.allowed_weight_cartesianKuhn_h2_error",
         "Carleman.allowed_weight_cartesianKuhn_approximation"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "a9ca6fccf19cc677a4a60b07f373eb533df9d502",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "a9ca6fccf19cc677a4a60b07f373eb533df9d502",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39189752195/attempts/1",
+        "finished_at": "2026-10-19T02:26:43.612494+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "a9ca6fccf19cc677a4a60b07f373eb533df9d502"
+      },
+      "semantic_review": {
+        "checked_sha": "a9ca6fccf19cc677a4a60b07f373eb533df9d502",
+        "declarations": [
+          "Carleman.BoundedMultiplier.bochner_map_restrict",
+          "Carleman.BoundedMultiplier.bochner_map_le_anchor",
+          "Carleman.BoundedMultiplier.bochner_le_map_anchor",
+          "Carleman.cartesianKuhn_h2_weighted_local_error",
+          "Carleman.cartesianKuhn_error_assembly",
+          "Carleman.allowed_weight_cartesianKuhn_h2_error",
+          "Carleman.allowed_weight_cartesianKuhn_approximation"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ddd9633ac6f66629e96b350ee1edec97d5dbe28a/governance/reviews/T097-local-acceptance.md",
+        "reviewed_at": "2026-10-19T02:30:07+00:00",
+        "reviewer": "/root/accept_section3; independent paper acceptance"
+      },
       "dependencies": [
         "C112",
         "C111",
@@ -10868,7 +10895,43 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "完整原B2：真实Q_h值差和完整弱梯度差的全域允许权范数≤Ch²乘同一原加权Hessian范数，全部原H²∩H¹₀、任意权幂/时间/周期、两符号及hq≤1；固定维数、轮廓和κ选C在全部网格/h/权参数/状态之前。真实裁剪块比较与5^d d!有限重叠内部清偿，无额外输入逼近或逆界假设，无一般状态节点值。固定环境S含网格盒，原Ω_g=S实例覆盖原矩形。申请P026/PAPER独立验收，验收前仍13/26；FD不提升。"
+      "scope_notes": "完整原B2：真实Q_h值差和完整弱梯度差的全域允许权范数≤Ch²乘同一原加权Hessian范数，全部原H²∩H¹₀、任意权幂/时间/周期、两符号及hq≤1；固定维数、轮廓和κ选C在全部网格/h/权参数/状态之前。真实裁剪块比较与5^d d!有限重叠内部清偿，无额外输入逼近或逆界假设，无一般状态节点值。固定环境S含网格盒，原Ω_g=S实例覆盖原矩形。申请P026/PAPER独立验收，验收前仍13/26；FD不提升。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C114",
+      "title": "实际Kuhn弱刚度的精确单元差分展开",
+      "paper_ref": "Auxiliary exact physical Kuhn gradient and original Dirichlet form expansion by cell-edge differences, Section 6 FD stiffness proof",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "eq:fdstiffness",
+        "eq:physicalFD"
+      ],
+      "lean_declarations": [
+        "Carleman.cartesianKuhnNodalDerivative_basis",
+        "Carleman.derivativeOneFiber_inner",
+        "Carleman.cartesianKuhnNodalGradient_inner",
+        "Carleman.cartesianKuhnNodalGradientLp_inner",
+        "Carleman.cartesianKuhnCellDifference",
+        "Carleman.cartesianKuhnReconstructionJet_coordinate_on_cell",
+        "Carleman.cartesianKuhnReconstructionJet_cell_energy",
+        "Carleman.cartesianKuhnReconstruction_weakGradientPairing_cells",
+        "Carleman.cartesianKuhnReconstruction_scalarForm_cells"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C111",
+        "C101",
+        "C086"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "实际仿射fderiv坐标等于真实Kuhn相邻顶点差商，完整DerivativeFiber内积无误差转换。原R_h真实H¹₀ jet的局部弱梯度积分与全域原Dirichlet scalarForm严格等于实际有限单元体积加权差商配对。全部原内部节点状态、正步长与边界处理，无额外shape限制。全局坐标边重排和差分分部求和仍待，AUXILIARY，FD不提升；B2独立完成后原文14/26。"
     }
   ],
   "events": [
@@ -11438,6 +11501,11 @@
       "at": "2026-10-19T02:23:13.010318+00:00",
       "public_summary": "原完整状态实际Q_h局部误差独立验收PASS；原Lemma B.2完整允许权全域逼近7声明构建通过并申请PAPER验收，原文暂13/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8354a9dd20c71cf97d86b1dbcfd7c387fbb70e98/governance/reviews/T096-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T02:31:47.759227+00:00",
+      "public_summary": "完整原Lemma B2已获独立PAPER验收，原文提升至14/26；实际Kuhn弱刚度精确单元展开9声明构建通过，FD仍待。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ddd9633ac6f66629e96b350ee1edec97d5dbe28a/governance/reviews/T097-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -11683,7 +11751,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8f9f0df45769b9a0fd6d03279d55e92fa688201b/governance/reviews/T095-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39188529418/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8354a9dd20c71cf97d86b1dbcfd7c387fbb70e98/governance/reviews/T096-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39189061598/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39189061598/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ddd9633ac6f66629e96b350ee1edec97d5dbe28a/governance/reviews/T097-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39189752195/attempts/1"
     ]
   },
   "schedules": [
@@ -25454,10 +25524,10 @@
       ],
       "branch": "main",
       "base_commit": "ab5f74bf708c3bb969ecca40fcee8b26edd16d96",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "a9ca6fccf19cc677a4a60b07f373eb533df9d502",
+      "merge_commit": "a9ca6fccf19cc677a4a60b07f373eb533df9d502",
       "lean_declarations": [
         "Carleman.BoundedMultiplier.bochner_map_restrict",
         "Carleman.BoundedMultiplier.bochner_map_le_anchor",
@@ -25467,12 +25537,23 @@
         "Carleman.allowed_weight_cartesianKuhn_h2_error",
         "Carleman.allowed_weight_cartesianKuhn_approximation"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "a9ca6fccf19cc677a4a60b07f373eb533df9d502",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39189752195/attempts/1",
+        "finished_at": "2026-10-19T02:26:43.612494+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "a9ca6fccf19cc677a4a60b07f373eb533df9d502"
+      },
       "blocker": null,
       "attempts": [
         "四模块7声明定向3474 jobs、全库3796 jobs通过，6188声明递归公理审计PASS。"
       ],
-      "next_action": "固定SHA独立验收完整原B2/P026及7声明，验收前原文13/26；继续实际Kuhn刚度与FD接口。",
+      "next_action": "完整原Lemma B2/P026已独立PAPER验收，无额外前提；继续真实Kuhn刚度及FD接口。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -25484,6 +25565,92 @@
         "recursive_axiom_audit": 6188,
         "new_explicit_declarations": 7,
         "declaration_artifact_sha256": "0fdf3ee30ea9143b692ac7b8ec95cefccb06ab3701a55c624663acdeaf943894",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "a9ca6fccf19cc677a4a60b07f373eb533df9d502",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_section3",
+          "claim_ids": [
+            "C113"
+          ],
+          "paper_result_ids": [
+            "P026"
+          ],
+          "checked_sha": "a9ca6fccf19cc677a4a60b07f373eb533df9d502",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T02:30:07+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ddd9633ac6f66629e96b350ee1edec97d5dbe28a/governance/reviews/T097-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "a9ca6fccf19cc677a4a60b07f373eb533df9d502",
+        "checked_sha": "a9ca6fccf19cc677a4a60b07f373eb533df9d502",
+        "run_id": 39189752195,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3796,
+        "recursive_axiom_audit": 6188,
+        "new_explicit_declarations": 7,
+        "declaration_artifact_sha256": "0fdf3ee30ea9143b692ac7b8ec95cefccb06ab3701a55c624663acdeaf943894",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T098",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "实际Kuhn弱刚度的精确单元差分展开",
+      "goal_ids": [
+        "C114"
+      ],
+      "acceptance": [
+        "真实物理相邻顶点差与实际fderiv，未另设形式离散梯度",
+        "完整弱DerivativeFiber坐标及内积精确转换，真实Lp配对",
+        "原全部内部状态、真实H¹₀重构与原Dirichlet scalarForm身份",
+        "实际有限积分分割与真实体积，未假定未证单元体积相等",
+        "只完成单元刚度展开，尚不提升全局FD刚度或FD/P012，固定SHA验收"
+      ],
+      "dependencies": [
+        "C111",
+        "C101",
+        "C086"
+      ],
+      "branch": "main",
+      "base_commit": "a9ca6fccf19cc677a4a60b07f373eb533df9d502",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.cartesianKuhnNodalDerivative_basis",
+        "Carleman.derivativeOneFiber_inner",
+        "Carleman.cartesianKuhnNodalGradient_inner",
+        "Carleman.cartesianKuhnNodalGradientLp_inner",
+        "Carleman.cartesianKuhnCellDifference",
+        "Carleman.cartesianKuhnReconstructionJet_coordinate_on_cell",
+        "Carleman.cartesianKuhnReconstructionJet_cell_energy",
+        "Carleman.cartesianKuhnReconstruction_weakGradientPairing_cells",
+        "Carleman.cartesianKuhnReconstruction_scalarForm_cells"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "两模块9声明定向3400 jobs、全库3798 jobs通过，6198声明递归公理审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收实际Kuhn弱刚度单元展开9声明；继续坐标边重排与原差分分部求和。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3798,
+        "recursive_axiom_audit": 6198,
+        "new_explicit_declarations": 9,
+        "declaration_artifact_sha256": "b414f1573fbb4971ec929b68e89588a5863ce4fcae17d4075eee1b6bcd932cda",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

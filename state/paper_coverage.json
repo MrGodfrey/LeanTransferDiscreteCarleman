@@ -1020,12 +1020,34 @@
         "Carleman.allowed_weight_cartesianKuhn_h2_error",
         "Carleman.allowed_weight_cartesianKuhn_approximation"
       ],
-      "declaration_version": null,
-      "verification_status": "SPECIFIED",
+      "declaration_version": "a9ca6fccf19cc677a4a60b07f373eb533df9d502",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "extra_hypotheses": [],
-      "build_evidence": null,
-      "semantic_review": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "a9ca6fccf19cc677a4a60b07f373eb533df9d502",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39189752195/attempts/1",
+        "finished_at": "2026-10-19T02:26:43.612494+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "a9ca6fccf19cc677a4a60b07f373eb533df9d502"
+      },
+      "semantic_review": {
+        "checked_sha": "a9ca6fccf19cc677a4a60b07f373eb533df9d502",
+        "declarations": [
+          "Carleman.allowed_weight_cartesianKuhn_h2_error",
+          "Carleman.allowed_weight_cartesianKuhn_approximation"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ddd9633ac6f66629e96b350ee1edec97d5dbe28a/governance/reviews/T097-local-acceptance.md",
+        "reviewed_at": "2026-10-19T02:30:07+00:00",
+        "reviewer": "/root/accept_section3; independent paper acceptance"
+      },
       "blocker": null
     }
   ]

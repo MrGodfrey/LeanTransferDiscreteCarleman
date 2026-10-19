@@ -1095,4 +1095,8 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 
 ## T097：原 Lemma B.2 的全状态允许权逼近
 
-详见 [T097 分析](analysis/T097-kuhn-weighted-error.md)。四模块7声明中最终 `allowed_weight_cartesianKuhn_approximation` 直接给原实际Q_h的全域加权值差及完整弱梯度差≤Ch²乘原加权Hessian范数，对全部原H²∩H¹₀和允许权、两种符号、任意幂/时间/周期统一。固定原轮廓C¹正则性给实际裁剪块统一权比较，真实局部误差与实际有限重叠内部组装；常数先于全部网格、h、权参数和状态选择。固定环境S允许Ω_g⊆S，原Ω_g=S矩形是原文实例，未增加原假设。保留统一加宽裁剪块的等价证明路线。申请P026/PAPER独立固定SHA验收；验收前SPECIFIED且原文13/26。FD/P012及其余命题不自动提升。
+详见 [T097 分析](analysis/T097-kuhn-weighted-error.md)。四模块7声明中最终 `allowed_weight_cartesianKuhn_approximation` 直接给原实际Q_h的全域加权值差及完整弱梯度差≤Ch²乘原加权Hessian范数，对全部原H²∩H¹₀和允许权、两种符号、任意幂/时间/周期统一。固定原轮廓C¹正则性给实际裁剪块统一权比较，真实局部误差与实际有限重叠内部组装；常数先于全部网格、h、权参数和状态选择。固定环境S允许Ω_g⊆S，原Ω_g=S矩形是原文实例，未增加原假设。保留统一加宽裁剪块的等价证明路线。固定提交a9ca6fccf19cc677a4a60b07f373eb533df9d502已获独立PAPER验收，P026完整完成且无额外前提，原文14/26。FD/P012及其余命题不自动提升。
+
+## T098：实际 Kuhn 弱刚度的精确单元差分展开
+
+详见 [T098 分析](analysis/T098-kuhn-stiffness-cells.md)。两模块9声明从实际物理顶点差和真实仿射导数证明坐标差商公式，完整弱梯度的局部积分及全域原Dirichlet scalarForm严格等于真实单元体积加权相邻节点差商配对之和。输入为全部原内部节点状态，真实H¹₀重构、完整DerivativeFiber、闭单元零测边界及有限积分分割保持不变。AUXILIARY；全局坐标边重排、差分分部求和和完整FD刚度仍待，FD/P012不提升。

@@ -187,3 +187,5 @@
 - T095 / C111：实际弱梯度及统一逆界17声明独立验收PASS，同SHA三项CI、6146声明递归审计与逐字节一致远端产物。 固定证明 `116908340801d3f1cd9f7e940304807f70bdb1ba`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8f9f0df45769b9a0fd6d03279d55e92fa688201b/governance/reviews/T095-local-acceptance.md)。原文13/26，T096继续原全部Dirichlet H²状态的实际Q_h局部误差。
 
 - T096 / C112：原全状态实际Q_h局部误差13声明独立验收PASS，同SHA三项CI、6177声明递归审计及逐字节相同产物。 固定证明 `ab5f74bf708c3bb969ecca40fcee8b26edd16d96`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8354a9dd20c71cf97d86b1dbcfd7c387fbb70e98/governance/reviews/T096-local-acceptance.md)。原文13/26，T097继续原Lemma B.2的完整允许权全状态逼近。
+
+- T097 / C113：完整原Lemma B2独立PAPER验收PASS，7声明、同SHA三项CI、6188声明递归审计及逐字节一致远端产物；P026完整完成，无额外前提。 固定证明 `a9ca6fccf19cc677a4a60b07f373eb533df9d502`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ddd9633ac6f66629e96b350ee1edec97d5dbe28a/governance/reviews/T097-local-acceptance.md)。原文14/26，T098继续实际Kuhn弱刚度的精确单元差分展开。
