@@ -532,3 +532,7 @@ public import Carleman.Spatial.PhysicalBoxH2Affine
 public import Carleman.Spatial.AffineCornerKernel
 public import Carleman.Spatial.PhysicalBoxBoundaryAffine
 public import Carleman.Spatial.BoundaryAffineLemma
+public import Carleman.Spatial.SubdomainContinuity
+public import Carleman.Spatial.CoordinateBoxTraceContinuity
+public import Carleman.Spatial.DirichletBoxFace
+public import Carleman.Spatial.DirichletLocalAffine

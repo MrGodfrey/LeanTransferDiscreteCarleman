@@ -4349,6 +4349,39 @@ set_option pp.maxSteps 1000000
 #check @Carleman.OriginalForm.boundary_affine_lemma
 #print axioms Carleman.OriginalForm.boundary_affine_lemma
 
+#check @Carleman.subdomainLp_norm_le
+#print axioms Carleman.subdomainLp_norm_le
+#check @Carleman.subdomainLinearMap
+#print axioms Carleman.subdomainLinearMap
+#check @Carleman.subdomainCLM
+#print axioms Carleman.subdomainCLM
+#check @Carleman.WeakSobolevJet.restrictSubdomain_norm_le
+#print axioms Carleman.WeakSobolevJet.restrictSubdomain_norm_le
+#check @Carleman.WeakSobolevJet.restrictSubdomainLinearMap
+#print axioms Carleman.WeakSobolevJet.restrictSubdomainLinearMap
+#check @Carleman.WeakSobolevJet.restrictSubdomainCLM
+#print axioms Carleman.WeakSobolevJet.restrictSubdomainCLM
+#check @Carleman.WeakSobolevJet.restrictSubdomain_test_value_ae
+#print axioms Carleman.WeakSobolevJet.restrictSubdomain_test_value_ae
+#check @Carleman.weakJetBoxFace_bounded
+#print axioms Carleman.weakJetBoxFace_bounded
+#check @Carleman.weakJetBoxFaceCLM
+#print axioms Carleman.weakJetBoxFaceCLM
+#check @Carleman.weakJetBoxFaceCLM_apply
+#print axioms Carleman.weakJetBoxFaceCLM_apply
+#check @Carleman.subdomainBoxFaceCLM
+#print axioms Carleman.subdomainBoxFaceCLM
+#check @Carleman.subdomainBoxFaceCLM_apply
+#print axioms Carleman.subdomainBoxFaceCLM_apply
+#check @Carleman.subdomainBoxFace_test_zero
+#print axioms Carleman.subdomainBoxFace_test_zero
+#check @Carleman.dirichlet_subdomain_box_face_zero
+#print axioms Carleman.dirichlet_subdomain_box_face_zero
+#check @Carleman.WeakSobolevJet.restrictSubdomain_truncate
+#print axioms Carleman.WeakSobolevJet.restrictSubdomain_truncate
+#check @Carleman.dirichlet_h2_local_boundary_affine
+#print axioms Carleman.dirichlet_h2_local_boundary_affine
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
