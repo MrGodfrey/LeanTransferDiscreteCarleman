@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T168",
-    "supervisor_checked_at": "2026-10-19T13:11:13.261000+00:00",
-    "next_action": "独立验收物理有限Lp接口；继续真实Cartesian载荷CE、网格统一的物理观测和控制，并推进一般几何。",
+    "current_task_id": "T169",
+    "supervisor_checked_at": "2026-10-19T13:20:08.267938+00:00",
+    "next_action": "独立验收实际Cartesian物理载荷估计；继续网格统一物理观测、真实HUM控制和滤波后果，并推进一般几何。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T13:11:13.261000+00:00"
+    "last_activity_at": "2026-10-19T13:20:08.267938+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "d4b7f2d6d6894520fc5db06dc3a230be27518297",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39256167609/attempts/1",
-      "finished_at": "2026-10-19T13:00:15.498222+00:00",
+      "checked_sha": "30a03e32af45ef82baacbbfe6917cd7ceff234f3",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39258043795/attempts/1",
+      "finished_at": "2026-10-19T13:14:14.201431+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "d4b7f2d6d6894520fc5db06dc3a230be27518297"
+      "source_head_sha": "30a03e32af45ef82baacbbfe6917cd7ceff234f3"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "d4b7f2d6d6894520fc5db06dc3a230be27518297",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39256167609/attempts/1",
-      "finished_at": "2026-10-19T13:00:15.498222+00:00",
+      "checked_sha": "30a03e32af45ef82baacbbfe6917cd7ceff234f3",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39258043795/attempts/1",
+      "finished_at": "2026-10-19T13:14:14.201431+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "d4b7f2d6d6894520fc5db06dc3a230be27518297"
+      "source_head_sha": "30a03e32af45ef82baacbbfe6917cd7ceff234f3"
     }
   },
   "milestones": [
@@ -16100,7 +16100,7 @@
       "paper_ref": "Physical finite mass Hilbert norm, nodal potentials and original interval weight interface",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:fd",
@@ -16124,9 +16124,45 @@
         "Carleman.smooth_interval_derivatives",
         "Carleman.Physical.PhysicalQClass.toInterval"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "30a03e32af45ef82baacbbfe6917cd7ceff234f3",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "30a03e32af45ef82baacbbfe6917cd7ceff234f3",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39258043795/attempts/1",
+        "finished_at": "2026-10-19T13:14:14.201431+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "30a03e32af45ef82baacbbfe6917cd7ceff234f3"
+      },
+      "semantic_review": {
+        "checked_sha": "30a03e32af45ef82baacbbfe6917cd7ceff234f3",
+        "declarations": [
+          "Carleman.PhysicalFiniteSpace.finiteMemLp",
+          "Carleman.PhysicalFiniteSpace.toCountLp",
+          "Carleman.PhysicalFiniteSpace.toCountLp_apply",
+          "Carleman.PhysicalFiniteSpace.toCountLpLinear",
+          "Carleman.PhysicalFiniteSpace.toCountLp_norm",
+          "Carleman.PhysicalFiniteSpace.countLpEquiv",
+          "Carleman.PhysicalFiniteSpace.countLpEquiv_apply",
+          "Carleman.BoundedMultiplier.ofFinite",
+          "Carleman.SpatialProfile.ofFinite",
+          "Carleman.PhysicalFiniteSpace.countLpEquiv_multiplier",
+          "Carleman.PhysicalFiniteSpace.countLpEquiv_weighted_norm",
+          "Carleman.PhysicalFiniteSpace.countLpEquiv_symm_map",
+          "Carleman.PhysicalFiniteSpace.multiplier_symmetric",
+          "Carleman.PhysicalFiniteSpace.multiplier_opNorm_le",
+          "Carleman.smooth_interval_derivatives",
+          "Carleman.Physical.PhysicalQClass.toInterval"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/32dc5007beb63b90e5a21096b93a0be14d566225/governance/reviews/T168-local-acceptance.md",
+        "reviewed_at": "2026-10-19T13:16:43+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C183",
         "C182",
@@ -16134,7 +16170,47 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "原有限物理质量内积与真实计数L2线性等距满射；全部节点、乘子及加权范数身份，节点势自伴和同M算子界；PhysicalQClass的实际区间导数和端点条件。尚非最终观测/控制定理。"
+      "scope_notes": "原有限物理质量内积与真实计数L2线性等距满射；全部节点、乘子及加权范数身份，节点势自伴和同M算子界；PhysicalQClass的实际区间导数和端点条件。尚非最终观测/控制定理。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C185",
+      "title": "实际Cartesian控制范数与物理载荷Carleman估计",
+      "paper_ref": "Exact Cartesian control norm and full-state physical periodic load Carleman estimate",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:fd",
+        "prop:physicalO",
+        "eq:rawCE"
+      ],
+      "lean_declarations": [
+        "Carleman.cartesianPhysicalControl_adjoint_extension",
+        "Carleman.cartesianPhysicalControlExtension_norm",
+        "Carleman.cartesianPhysicalControlExtension_weight",
+        "Carleman.cartesianPhysicalControlExtension_seminorm",
+        "Carleman.cartesianCountLpEquiv",
+        "Carleman.cartesianCountObservation",
+        "Carleman.cartesianCountObservation_norm",
+        "Carleman.cartesianCountProfile",
+        "Carleman.cartesianCountProfile_seminorm",
+        "Carleman.cartesianCountProfile_observation",
+        "Carleman.cartesianInteriorCountProfile",
+        "Carleman.cartesianInteriorCountProfile_negative",
+        "Carleman.box_cartesian_physical_load_carleman"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C184",
+        "C183"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "原节点控制零延拓保范数，实际计数观察EBB*精确保留原控制Hilbert范数与全部权。真实高斯节点相位bound=2且≤−1。T167完整估计内部清偿物理载荷CE，全部状态/载荷、原热尺度和参数先于网格，仍盒Cartesian实例。"
     }
   ],
   "events": [
@@ -17059,6 +17135,11 @@
       "at": "2026-10-19T13:11:13.261000+00:00",
       "public_summary": "完整Cartesian盒差分估计已独立验收；原有限物理空间的计数L2等距接口已完成构建与审计。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/fd82c0c1388df766d0ef1fccc3b745652a381fc5/governance/reviews/T167-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T13:20:08.267938+00:00",
+      "public_summary": "原有限物理空间等距接口已独立验收；实际Cartesian物理载荷估计保留原控制范数并完成构建审计。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/32dc5007beb63b90e5a21096b93a0be14d566225/governance/reviews/T168-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -17446,7 +17527,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9c65a406c64173f92c8c45dd547022aa7b5a95e0/governance/reviews/T166-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39255115603/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/fd82c0c1388df766d0ef1fccc3b745652a381fc5/governance/reviews/T167-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39256167609/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39256167609/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/32dc5007beb63b90e5a21096b93a0be14d566225/governance/reviews/T168-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39258043795/attempts/1"
     ]
   },
   "schedules": [
@@ -38271,10 +38354,10 @@
       ],
       "branch": "main",
       "base_commit": "d4b7f2d6d6894520fc5db06dc3a230be27518297",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "30a03e32af45ef82baacbbfe6917cd7ceff234f3",
+      "merge_commit": "30a03e32af45ef82baacbbfe6917cd7ceff234f3",
       "lean_declarations": [
         "Carleman.PhysicalFiniteSpace.finiteMemLp",
         "Carleman.PhysicalFiniteSpace.toCountLp",
@@ -38293,12 +38376,23 @@
         "Carleman.smooth_interval_derivatives",
         "Carleman.Physical.PhysicalQClass.toInterval"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "30a03e32af45ef82baacbbfe6917cd7ceff234f3",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39258043795/attempts/1",
+        "finished_at": "2026-10-19T13:14:14.201431+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "30a03e32af45ef82baacbbfe6917cd7ceff234f3"
+      },
       "blocker": null,
       "attempts": [
         "三模块十六声明定向3182、3183、3054 jobs，根目标4091 jobs及8062声明审计通过。"
       ],
-      "next_action": "独立验收物理有限Lp接口；继续真实Cartesian载荷CE、网格统一的物理观测和控制，并推进一般几何。",
+      "next_action": "原有限物理空间等距接口已独立验收；继续实际Cartesian载荷CE与观测控制。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -38310,6 +38404,93 @@
         "recursive_axiom_audit": 8062,
         "new_explicit_declarations": 16,
         "declaration_artifact_sha256": "e863de2761a426968e2b4c1ba0180df999dad559409c347282927d0bb5e571f1",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "30a03e32af45ef82baacbbfe6917cd7ceff234f3",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C184"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "30a03e32af45ef82baacbbfe6917cd7ceff234f3",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T13:16:43+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/32dc5007beb63b90e5a21096b93a0be14d566225/governance/reviews/T168-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "30a03e32af45ef82baacbbfe6917cd7ceff234f3",
+        "checked_sha": "30a03e32af45ef82baacbbfe6917cd7ceff234f3",
+        "run_id": 39258043795,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 4091,
+        "recursive_axiom_audit": 8062,
+        "new_explicit_declarations": 16,
+        "declaration_artifact_sha256": "e863de2761a426968e2b4c1ba0180df999dad559409c347282927d0bb5e571f1",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T169",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "实际Cartesian控制范数与物理载荷Carleman估计",
+      "goal_ids": [
+        "C185"
+      ],
+      "acceptance": [
+        "由原Hilbert伴随证明B*B=id及真实控制零延拓保范数",
+        "实际权乘法与零延拓交换，EBB*观察精确保留原物理控制范数",
+        "节点相位来自原高斯逐点值，固定2界和负性不依赖网格",
+        "原完整CE内部供应物理负向载荷估计，所有周期状态和载荷，无CE或数值前提",
+        "热尺度与参数先于网格/时间数据，实际逆等距载荷不增加常数"
+      ],
+      "dependencies": [
+        "C184",
+        "C183"
+      ],
+      "branch": "main",
+      "base_commit": "30a03e32af45ef82baacbbfe6917cd7ceff234f3",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.cartesianPhysicalControl_adjoint_extension",
+        "Carleman.cartesianPhysicalControlExtension_norm",
+        "Carleman.cartesianPhysicalControlExtension_weight",
+        "Carleman.cartesianPhysicalControlExtension_seminorm",
+        "Carleman.cartesianCountLpEquiv",
+        "Carleman.cartesianCountObservation",
+        "Carleman.cartesianCountObservation_norm",
+        "Carleman.cartesianCountProfile",
+        "Carleman.cartesianCountProfile_seminorm",
+        "Carleman.cartesianCountProfile_observation",
+        "Carleman.cartesianInteriorCountProfile",
+        "Carleman.cartesianInteriorCountProfile_negative",
+        "Carleman.box_cartesian_physical_load_carleman"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "三模块十三声明，控制等距定向3514、载荷组合3982 jobs，根目标4094 jobs及8093声明审计通过。"
+      ],
+      "next_action": "独立验收实际Cartesian物理载荷估计；继续网格统一物理观测、真实HUM控制和滤波后果，并推进一般几何。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4094,
+        "recursive_axiom_audit": 8093,
+        "new_explicit_declarations": 13,
+        "declaration_artifact_sha256": "2163ab6209f04e62d9563574a6ef1df423c1705878b0ffeb049544cbb7307eb4",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

@@ -1434,3 +1434,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 真实 sqrt(mass)*f 计数 L² 类给原有限物理 Hilbert 空间的线性等距满射，保留全部节点及原质量内积。实际有限乘子在此对应下精确交换；加权范数、逆映射、原节点势自伴性和同一 M 算子范数界内部证明。实际全局光滑权的一二阶区间导数身份把原 PhysicalQClass 无损送入 IntervalQClass，保留全部端点条件及 β/qc/T。三模块十六声明。
 
 实际 Cartesian 物理观测接口与最终观测/控制后果继续；本批不声称观测定理完成。AUXILIARY、覆盖17/26。详见 `analysis/T168-physical-finite-lp.md`。
+
+## T169 / C185：实际 Cartesian 控制范数及物理载荷 CE（辅助实例）
+
+真实 Hilbert 伴随给 B*B=id，原节点零延拓保物理范数且与实际权乘法交换。计数 L² 观测 EBB* 精确保留原控制范数；节点相位与全部允许权范数通过真实等距映射识别。固定 bound=2、≤−1 的原高斯节点相位从逐点界构造。完整 T167 估计内部供应真实 PhysicalLoadCarleman，原 q³ 状态、逆等距载荷、原控制观察及热尺度全部保持。三模块十三声明，参数先于所有网格与时间数据，无额外 CE/正则/数值测试条件。
+
+实际网格统一物理观测及控制继续；本批仍为盒 Cartesian 辅助实例，覆盖17/26。详见 `analysis/T169-cartesian-physical-load.md`。

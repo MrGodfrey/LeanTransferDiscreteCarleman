@@ -329,3 +329,5 @@
 - T166 / C182：真实热转移几何及盒continuous接口十一声明独立 AUXILIARY PASS；同SHA三项CI与8020项审计raw逐字节一致。 固定证明 `28789e8973368055acc0c17d5b395332e6ee7364`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9c65a406c64173f92c8c45dd547022aa7b5a95e0/governance/reviews/T166-local-acceptance.md)。原文17/26，T167继续完整Cartesian盒热差分Carleman估计。
 
 - T167 / C183：完整Cartesian盒双向估计七声明独立 AUXILIARY PASS；同SHA三项CI及8035声明raw审计逐字节一致。 固定证明 `d4b7f2d6d6894520fc5db06dc3a230be27518297`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/fd82c0c1388df766d0ef1fccc3b745652a381fc5/governance/reviews/T167-local-acceptance.md)。原文17/26，T168继续实际有限物理空间与计数L2等距接口。
+
+- T168 / C184：真实有限质量等距接口十六声明独立 AUXILIARY PASS；同SHA三项CI及8062声明raw审计逐字节一致。 固定证明 `30a03e32af45ef82baacbbfe6917cd7ceff234f3`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/32dc5007beb63b90e5a21096b93a0be14d566225/governance/reviews/T168-local-acceptance.md)。原文17/26，T169继续实际Cartesian控制范数与物理载荷Carleman估计。
