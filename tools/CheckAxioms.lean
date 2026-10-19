@@ -6434,6 +6434,37 @@ set_option pp.maxSteps 1000000
 #check @Carleman.finite_halfspace_closed_face_gaussian_heat_flux
 #print axioms Carleman.finite_halfspace_closed_face_gaussian_heat_flux
 
+#check @Carleman.coordinateBoxFunctional
+#print axioms Carleman.coordinateBoxFunctional
+#check @Carleman.coordinateBoxThreshold
+#print axioms Carleman.coordinateBoxThreshold
+#check @Carleman.coordinateBoxFunctional_apply
+#print axioms Carleman.coordinateBoxFunctional_apply
+#check @Carleman.openCoordinateBox_halfspaces
+#print axioms Carleman.openCoordinateBox_halfspaces
+#check @Carleman.closedCoordinateBox_halfspaces
+#print axioms Carleman.closedCoordinateBox_halfspaces
+#check @Carleman.coordinateBoxFunctional_normal
+#print axioms Carleman.coordinateBoxFunctional_normal
+#check @Carleman.coordinateBox_face_witness
+#print axioms Carleman.coordinateBox_face_witness
+#check @Carleman.box_face_gaussian_heat_flux
+#print axioms Carleman.box_face_gaussian_heat_flux
+#check @Carleman.coordinateDivergence
+#print axioms Carleman.coordinateDivergence
+#check @Carleman.coordinateDivergence_contDiff
+#print axioms Carleman.coordinateDivergence_contDiff
+#check @Carleman.smooth_closed_box_divergence
+#print axioms Carleman.smooth_closed_box_divergence
+#check @Carleman.openCoordinateBox_ae_closed
+#print axioms Carleman.openCoordinateBox_ae_closed
+#check @Carleman.smooth_open_box_divergence
+#print axioms Carleman.smooth_open_box_divergence
+#check @Carleman.coordinateFacePoint_mem_closed
+#print axioms Carleman.coordinateFacePoint_mem_closed
+#check @Carleman.box_gaussian_heat_flux_integral
+#print axioms Carleman.box_gaussian_heat_flux_integral
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

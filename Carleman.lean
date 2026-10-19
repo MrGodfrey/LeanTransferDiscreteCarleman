@@ -807,3 +807,8 @@ public import Carleman.Spatial.PlaneHeatFlux
 public import Carleman.Geometry.FiniteHalfspaceFaces
 public import Carleman.Geometry.HalfspaceOutwardNormal
 public import Carleman.Spatial.HalfspaceHeatBoundary
+
+public import Carleman.Geometry.CoordinateBoxHalfspaces
+public import Carleman.Spatial.BoxHeatBoundary
+public import Carleman.Spatial.SmoothBoxDivergence
+public import Carleman.Spatial.BoxHeatFluxIntegral
