@@ -227,3 +227,5 @@
 - T115 / C131：原弱H²实际内部强光滑逼近10声明独立PASS；同SHA三项CI、6617声明递归审计和固定产物逐字节一致。 固定证明 `f134750df6b8ef03c639f50dd5084d4c42d49272`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a05b7637d45f1eaecb26f019fcdb18096bd9bd1c/governance/reviews/T115-local-acceptance.md)。原文14/26，T116继续低维原弱H²的真实内部连续代表。
 
 - T116 / C132：原低维弱H²内部连续代表14声明独立PASS；同SHA三项CI、6631声明递归审计和固定产物逐字节一致。 固定证明 `fa02c379c6ee0f59172dadc1401b9a535e6d3c9c`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7fc8569f3ae9edf83ffe6e5a1a8fdb58680f1ce4/governance/reviews/T116-local-acceptance.md)。原文14/26，T117继续真实向内收缩的全L²强连续性。
+
+- T117 / C133：真实向内收缩全L²强连续性17声明独立PASS；同SHA三项CI、6649声明递归审计和固定产物逐字节一致。 固定证明 `d533b7e90f5e8cecf266e09e8faa5afab3772ed7`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a08e9800e0d7894ee94e9b3367f42823b77e22fc/governance/reviews/T117-local-acceptance.md)。原文14/26，T118继续原弱H²的闭域强光滑逼近与连续代表。
