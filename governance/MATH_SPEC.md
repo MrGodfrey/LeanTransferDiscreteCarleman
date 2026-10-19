@@ -1156,3 +1156,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T112：低维光滑状态的真实L² Hessian节点值误差
 
 详见 [T112 分析](analysis/T112-p1-h2-nodal.md)。二阶Taylor积分余项、真实收缩Jacobian及可积r^(−1/2)核给d≤3的平均Taylor余项；同一实际仿射多项式及节点插值给闭单纯形上∫|f−I_Kf|²≤16D⁴∫‖D²f‖²，保留真实L² Hessian，自动证明体积正性。两模块15声明；当前只在光滑类证明，弱H²闭包、梯度及全局权估计仍待。AUXILIARY14/26，P011不提升。
+
+## T113：光滑状态的真实L² Hessian节点梯度误差
+
+详见 [T113 分析](analysis/T113-p1-h2-gradient.md)。同一平均Taylor多项式的实际平均梯度、逐坐标原均值Poincare及真实内球仿射逆界，给d≤3的完整梯度平方误差≤(2^d d+128κ²‖derivativeOneFiber‖²)D²乘实际二阶张量L²积分。单模块5声明；与T112结合完成光滑类局部值/梯度界，常数只依赖维数与形状。弱jet Hessian识别、弱H²闭包和全局权逼近仍待，AUXILIARY14/26。

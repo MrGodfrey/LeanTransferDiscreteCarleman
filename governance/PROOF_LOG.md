@@ -217,3 +217,5 @@
 - T110 / C126：原B.2逼近接口及真实FD统一数值数据4声明独立PASS；同SHA三项CI、6554声明递归审计和固定产物逐字节一致，原A1定义域正则性明确保留。 固定证明 `20523c258707a3864f45541d0eea83581360c86b`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c3f37bd0d4bd17500fb457e0f3da13450bcf4bd4/governance/reviews/T110-local-acceptance.md)。原文14/26，T111继续原全P1空间的完整加权测试接口。
 
 - T111 / C127：原全P1完整WeightedTest独立PASS；同SHA三项CI、6556声明递归审计和固定产物逐字节一致。 固定证明 `0d91a94335bd491366597b81f45de26b4559b7ad`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b572f6af6e25e7526f32a6124a5a94b10c1021be/governance/reviews/T111-local-acceptance.md)。原文14/26，T112继续低维光滑状态的真实L² Hessian节点值误差。
+
+- T112 / C128：低维光滑类真实L² Hessian节点值误差15声明独立PASS；同SHA三项CI、6577声明递归审计和固定产物逐字节一致。 固定证明 `c8377e5f743689641ab84d5049b4d0fb291d29f5`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2a8b330912c856e86ae747c744c9ac5db44de099/governance/reviews/T112-local-acceptance.md)。原文14/26，T113继续光滑状态的真实L² Hessian节点梯度误差。
