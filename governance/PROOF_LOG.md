@@ -395,3 +395,7 @@
 - T187 / C203：原状态方程内部给梯度预算，真实E_h与R_h同弱极限；七模块二十声明，4158 jobs/8453项审计通过。基线固定T186 `2f52ae6bafebec9c18313da458507026064a7542` 已本地验证及独立语义核对，推送与正式CI验收待定；未提前登记REVIEWED。原文17/26。
 
 - T185 / C201：七声明独立7/7 PASS；原势/测试乘法及完整弱强配对忠实。三项实际作业完整日志独立核验成功，API摘要迟滞如实单列；8411项raw逐字节核对。 固定证明 `fe308a7e6958dc8a2caa9f9dec3c331ae5678a03`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5b3612e6e77084ba69726720c748e54dc83fe796/governance/reviews/T185-local-acceptance.md)。原文17/26；当前执行任务不变。
+
+- T186 / C202：十声明独立10/10 PASS；原有限胞元E、实际Kuhn R及边界条带一致性忠实，维数常数在网格量词之前。三项实际作业完整日志独立核验成功，API摘要迟滞如实单列；8422项raw逐字节核对。 固定证明 `2f52ae6bafebec9c18313da458507026064a7542`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/28503a72422ab4837f8c8485f839956505ceddbc/governance/reviews/T186-local-acceptance.md)。原文17/26；当前执行任务不变。
+
+- T187 / C203：二十声明独立20/20 PASS；真实物理状态方程内部供应梯度预算，原E/R同弱极限结论忠实，仍显式保留R弱收敛、初值/控制预算及dt M≤1/2。三项实际作业完整日志独立核验成功，API摘要迟滞如实单列；8453项raw逐字节核对。 固定证明 `69cee61bd440c386c2ac20af6104f72e98b3563c`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/74280d45d211f473b5f4273caedc64ec1678606b/governance/reviews/T187-local-acceptance.md)。原文17/26；已完成阶段的验收队列清空，执行状态记录为IDLE检查点；后续原状态弱紧性与极限PDE仍待证明。
