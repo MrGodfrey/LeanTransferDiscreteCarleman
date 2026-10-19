@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T086",
-    "supervisor_checked_at": "2026-10-19T00:39:29.921880+00:00",
-    "next_action": "固定SHA独立验收真实有限Kuhn覆盖和分割34声明；继续实际节点帽函数、矩与Qh局部再现。",
+    "current_task_id": "T087",
+    "supervisor_checked_at": "2026-10-19T00:49:10.178480+00:00",
+    "next_action": "固定SHA独立验收实际公共面和连续Dirichlet帽函数43声明；继续完整内部节点星对称、零阶与一阶矩及真实Qh。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T00:39:29.921880+00:00"
+    "last_activity_at": "2026-10-19T00:49:10.178480+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "e52ffb4aed1df34fbcb1839e9472abafa927abfd",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39180881178/attempts/1",
-      "finished_at": "2026-10-19T00:29:51.393425+00:00",
+      "checked_sha": "e753eb065d87695d33e31c141cfe15c7cea4b5de",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39181779883/attempts/1",
+      "finished_at": "2026-10-19T00:41:36.685248+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "e52ffb4aed1df34fbcb1839e9472abafa927abfd"
+      "source_head_sha": "e753eb065d87695d33e31c141cfe15c7cea4b5de"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "e52ffb4aed1df34fbcb1839e9472abafa927abfd",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39180881178/attempts/1",
-      "finished_at": "2026-10-19T00:29:51.393425+00:00",
+      "checked_sha": "e753eb065d87695d33e31c141cfe15c7cea4b5de",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39181779883/attempts/1",
+      "finished_at": "2026-10-19T00:41:36.685248+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "e52ffb4aed1df34fbcb1839e9472abafa927abfd"
+      "source_head_sha": "e753eb065d87695d33e31c141cfe15c7cea4b5de"
     }
   },
   "milestones": [
@@ -9840,7 +9840,7 @@
       "paper_ref": "Auxiliary actual Cartesian Kuhn triangulation coverage, interior disjointness and a.e. partition for Section 6 and Appendix B",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:fd",
@@ -9882,15 +9882,138 @@
         "Carleman.cartesianFiniteSimplex_interiors_disjoint",
         "Carleman.cartesianFiniteSimplex_ae_partition"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "e753eb065d87695d33e31c141cfe15c7cea4b5de",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "e753eb065d87695d33e31c141cfe15c7cea4b5de",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39181779883/attempts/1",
+        "finished_at": "2026-10-19T00:41:36.685248+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "e753eb065d87695d33e31c141cfe15c7cea4b5de"
+      },
+      "semantic_review": {
+        "checked_sha": "e753eb065d87695d33e31c141cfe15c7cea4b5de",
+        "declarations": [
+          "Carleman.kuhnExtendedCoordinate",
+          "Carleman.kuhnExtendedCoordinate_zero",
+          "Carleman.kuhnExtendedCoordinate_last",
+          "Carleman.kuhnExtendedCoordinate_inner",
+          "Carleman.kuhnBarycentricWeight",
+          "Carleman.kuhnBarycentricWeight_sum",
+          "Carleman.kuhnBarycentricWeight_reconstruct",
+          "Carleman.kuhnBarycentricWeight_nonneg",
+          "Carleman.kuhnReferenceSimplex_mem_of_ordered",
+          "Carleman.kuhnOrderedCube",
+          "Carleman.kuhnOrderedCube_convex",
+          "Carleman.kuhnReferenceSimplex_cell_eq_ordered",
+          "Carleman.cartesianKuhnChart",
+          "Carleman.cartesianKuhnChart_apply",
+          "Carleman.cartesianKuhnChart_symm_apply",
+          "Carleman.cartesianKuhnSimplex_cell_eq_chart",
+          "Carleman.cartesianKuhnSimplex_mem_iff",
+          "Carleman.cartesianKuhnSimplex_cover_box",
+          "Carleman.CartesianCellIndex",
+          "Carleman.cartesianCellLatticeIndex",
+          "Carleman.cartesianCellLatticeIndex_injective",
+          "Carleman.cartesianCellIndex_card",
+          "Carleman.cartesianFiniteSimplex",
+          "Carleman.cartesianFiniteSimplex_cover",
+          "Carleman.cartesianFiniteSimplex_ae_cover",
+          "Carleman.cartesianFiniteStar_multiplicity_le",
+          "Carleman.linear_strict_of_mem_interior_le",
+          "Carleman.cartesianKuhnSimplex_interior_box",
+          "Carleman.cartesianKuhnSimplex_interior_strictAnti",
+          "Carleman.cartesianKuhnSimplex_common_interior_origin",
+          "Carleman.strictAnti_permutation_unique",
+          "Carleman.cartesianKuhnSimplex_interiors_disjoint",
+          "Carleman.cartesianFiniteSimplex_interiors_disjoint",
+          "Carleman.cartesianFiniteSimplex_ae_partition"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1424acb1dbb16fd4526de5c1f7b07dee1ac46cc4/governance/reviews/T086-local-acceptance.md",
+        "reviewed_at": "2026-10-19T00:44:32+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C101"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "实际相邻坐标差重构参考凸包，有序坐标与实际仿射图给物理单元精确刻画。真实排序和floor供应有限格点/排列，整个开域点态覆盖；内点严格坐标界及严格排序唯一性给全部不同单元内部不交，边界零测性给实际有限网格几乎处处唯一分割。真实有限索引注入内部供应星重数5^d d!。帽函数、矩与Qh仍待；AUXILIARY，原文13/26。"
+      "scope_notes": "实际相邻坐标差重构参考凸包，有序坐标与实际仿射图给物理单元精确刻画。真实排序和floor供应有限格点/排列，整个开域点态覆盖；内点严格坐标界及严格排序唯一性给全部不同单元内部不交，边界零测性给实际有限网格几乎处处唯一分割。真实有限索引注入内部供应星重数5^d d!。帽函数、矩与Qh仍待；AUXILIARY，原文13/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C103",
+      "title": "实际Kuhn公共面与连续Dirichlet节点帽函数",
+      "paper_ref": "Auxiliary actual Cartesian Kuhn face matching, boundary fitting and genuine H1_0 nodal hats and supports for Section 6 and Appendix B",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:fd",
+        "lem:fd-weighted-approximation"
+      ],
+      "lean_declarations": [
+        "Carleman.integer_weighted_le_of_pos",
+        "Carleman.simplexBarycentric_reconstruct",
+        "Carleman.simplex_mem_convexHull_positive_support",
+        "Carleman.simplex_integer_affine_le_of_pos",
+        "Carleman.cartesianGridPoint",
+        "Carleman.cartesianGridCoordinate",
+        "Carleman.cartesianGridCoordinate_apply",
+        "Carleman.cartesianGridCoordinate_point",
+        "Carleman.kuhnVertexIndex",
+        "Carleman.cartesianKuhnSimplex_points_eq_gridPoint",
+        "Carleman.cartesianGridCoordinate_vertex",
+        "Carleman.kuhnVertexIndex_width",
+        "Carleman.kuhnVertexIndex_difference_width",
+        "Carleman.cartesianKuhn_positive_vertex_upper",
+        "Carleman.cartesianKuhn_positive_vertex_lower",
+        "Carleman.cartesianKuhn_positive_vertex_difference",
+        "Carleman.cartesianKuhn_gridPoint_is_vertex",
+        "Carleman.cartesianKuhn_positive_vertex_mem_other",
+        "Carleman.cartesianKuhn_cells_common_face",
+        "Carleman.cartesianKuhnPartition",
+        "Carleman.cartesianKuhnPartition_faceMatching",
+        "Carleman.simplex_affine_min_eq_of_pos",
+        "Carleman.simplex_coordinateBox_boundary_support",
+        "Carleman.cartesianKuhnPartition_boundaryFitted",
+        "Carleman.cartesianKuhnHat",
+        "Carleman.cartesianKuhnHat_on_cell",
+        "Carleman.cartesianKuhnHat_vertex",
+        "Carleman.cartesianKuhnHat_data_boundary",
+        "Carleman.cartesianKuhnHat_continuous",
+        "Carleman.cartesianKuhnHat_zero_compl",
+        "Carleman.cartesianKuhnHat_compact",
+        "Carleman.cartesianKuhnHat_nonneg",
+        "Carleman.cartesianKuhnHat_le_one",
+        "Carleman.cartesianKuhnHatLp",
+        "Carleman.cartesianKuhnHatLp_ae",
+        "Carleman.cartesianKuhnHatLp_mem_dirichlet",
+        "Carleman.cartesianKuhnHat_on_incidentCell",
+        "Carleman.cartesianKuhnHat_zero_on_nonincidentCell",
+        "Carleman.cartesianFiniteNodeStar",
+        "Carleman.cartesianFiniteNodeStar_compact",
+        "Carleman.cartesianKuhnHat_support_subset",
+        "Carleman.cartesianKuhnHat_tsupport_subset",
+        "Carleman.cartesianKuhnHat_tsupport_subset_cellStar"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C102",
+        "C052"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实顶点坐标/坐标差整数宽度和正重心支撑推出全部Kuhn公共面匹配，边界坐标等式给真实BoundaryFitted；构造实际SimplicialPartition及Kronecker节点帽函数，内部节点零延拓连续，原H1_0图闭包成员资格内部供应，实际单元重心坐标、紧支撑、0到1范围、有限节点星及共享顶点星支撑均证明。节点矩、载荷、Qh与FD/B2仍待；AUXILIARY，原文13/26。"
     }
   ],
   "events": [
@@ -10401,6 +10524,11 @@
       "at": "2026-10-19T00:39:29.921880+00:00",
       "public_summary": "实际Kuhn单元及完整顶点星独立验收PASS；真实有限网格覆盖、内部不交和几乎处处唯一分割34声明构建通过，原文保持13/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f9af9dc6e6ca3bffd69d5b0967b2c329e4358c04/governance/reviews/T085-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T00:49:10.178480+00:00",
+      "public_summary": "真实有限Kuhn网格覆盖及分割独立验收PASS；实际公共面、边界贴合、连续H1_0帽函数与真实支撑43声明构建通过，原文保持13/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1424acb1dbb16fd4526de5c1f7b07dee1ac46cc4/governance/reviews/T086-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -10624,7 +10752,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/da372c08ba75ac2f4e6c393e5631fa2cb17dab97/governance/reviews/T084-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39180237642/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f9af9dc6e6ca3bffd69d5b0967b2c329e4358c04/governance/reviews/T085-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39180881178/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39180881178/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1424acb1dbb16fd4526de5c1f7b07dee1ac46cc4/governance/reviews/T086-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39181779883/attempts/1"
     ]
   },
   "schedules": [
@@ -23203,10 +23333,10 @@
       ],
       "branch": "main",
       "base_commit": "e52ffb4aed1df34fbcb1839e9472abafa927abfd",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "e753eb065d87695d33e31c141cfe15c7cea4b5de",
+      "merge_commit": "e753eb065d87695d33e31c141cfe15c7cea4b5de",
       "lean_declarations": [
         "Carleman.kuhnExtendedCoordinate",
         "Carleman.kuhnExtendedCoordinate_zero",
@@ -23243,12 +23373,23 @@
         "Carleman.cartesianFiniteSimplex_interiors_disjoint",
         "Carleman.cartesianFiniteSimplex_ae_partition"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "e753eb065d87695d33e31c141cfe15c7cea4b5de",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39181779883/attempts/1",
+        "finished_at": "2026-10-19T00:41:36.685248+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "e753eb065d87695d33e31c141cfe15c7cea4b5de"
+      },
       "blocker": null,
       "attempts": [
         "四模块34声明定向3258 jobs、全库3744 jobs通过，5896声明递归公理审计PASS。"
       ],
-      "next_action": "固定SHA独立验收真实有限Kuhn覆盖和分割34声明；继续实际节点帽函数、矩与Qh局部再现。",
+      "next_action": "真实有限Kuhn覆盖与几乎处处分割已独立验收；继续实际公共面、帽函数和节点矩。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -23260,6 +23401,123 @@
         "recursive_axiom_audit": 5896,
         "new_explicit_declarations": 34,
         "declaration_artifact_sha256": "825970205618c934210de9591f2b30921a426e9fd1ae4450cae7a45bb587f748",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "e753eb065d87695d33e31c141cfe15c7cea4b5de",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C102"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "e753eb065d87695d33e31c141cfe15c7cea4b5de",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T00:44:32+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1424acb1dbb16fd4526de5c1f7b07dee1ac46cc4/governance/reviews/T086-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "e753eb065d87695d33e31c141cfe15c7cea4b5de",
+        "checked_sha": "e753eb065d87695d33e31c141cfe15c7cea4b5de",
+        "run_id": 39181779883,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3744,
+        "recursive_axiom_audit": 5896,
+        "new_explicit_declarations": 34,
+        "declaration_artifact_sha256": "825970205618c934210de9591f2b30921a426e9fd1ae4450cae7a45bb587f748",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T087",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "实际Kuhn公共面与连续Dirichlet节点帽函数",
+      "goal_ids": [
+        "C103"
+      ],
+      "acceptance": [
+        "整数宽度和正系数平均引理真正用于实际Kuhn整数坐标及差，内部证明格点只能为单元顶点",
+        "闭单元交集包含公共顶点真实凸包，完整公共面匹配无需外加假设",
+        "正重心支撑落在实际物理边界坐标面，边界贴合内部供应",
+        "实际网格、节点Kronecker数据、连续帽函数与L2类一致；内部节点属于原H1_0图闭包，不以点态零替代",
+        "含节点单元帽函数精确为该重心坐标，非相邻单元恒零，真实拓扑支撑包含有限节点星和已证有限重叠星块"
+      ],
+      "dependencies": [
+        "C102",
+        "C052"
+      ],
+      "branch": "main",
+      "base_commit": "e753eb065d87695d33e31c141cfe15c7cea4b5de",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.integer_weighted_le_of_pos",
+        "Carleman.simplexBarycentric_reconstruct",
+        "Carleman.simplex_mem_convexHull_positive_support",
+        "Carleman.simplex_integer_affine_le_of_pos",
+        "Carleman.cartesianGridPoint",
+        "Carleman.cartesianGridCoordinate",
+        "Carleman.cartesianGridCoordinate_apply",
+        "Carleman.cartesianGridCoordinate_point",
+        "Carleman.kuhnVertexIndex",
+        "Carleman.cartesianKuhnSimplex_points_eq_gridPoint",
+        "Carleman.cartesianGridCoordinate_vertex",
+        "Carleman.kuhnVertexIndex_width",
+        "Carleman.kuhnVertexIndex_difference_width",
+        "Carleman.cartesianKuhn_positive_vertex_upper",
+        "Carleman.cartesianKuhn_positive_vertex_lower",
+        "Carleman.cartesianKuhn_positive_vertex_difference",
+        "Carleman.cartesianKuhn_gridPoint_is_vertex",
+        "Carleman.cartesianKuhn_positive_vertex_mem_other",
+        "Carleman.cartesianKuhn_cells_common_face",
+        "Carleman.cartesianKuhnPartition",
+        "Carleman.cartesianKuhnPartition_faceMatching",
+        "Carleman.simplex_affine_min_eq_of_pos",
+        "Carleman.simplex_coordinateBox_boundary_support",
+        "Carleman.cartesianKuhnPartition_boundaryFitted",
+        "Carleman.cartesianKuhnHat",
+        "Carleman.cartesianKuhnHat_on_cell",
+        "Carleman.cartesianKuhnHat_vertex",
+        "Carleman.cartesianKuhnHat_data_boundary",
+        "Carleman.cartesianKuhnHat_continuous",
+        "Carleman.cartesianKuhnHat_zero_compl",
+        "Carleman.cartesianKuhnHat_compact",
+        "Carleman.cartesianKuhnHat_nonneg",
+        "Carleman.cartesianKuhnHat_le_one",
+        "Carleman.cartesianKuhnHatLp",
+        "Carleman.cartesianKuhnHatLp_ae",
+        "Carleman.cartesianKuhnHatLp_mem_dirichlet",
+        "Carleman.cartesianKuhnHat_on_incidentCell",
+        "Carleman.cartesianKuhnHat_zero_on_nonincidentCell",
+        "Carleman.cartesianFiniteNodeStar",
+        "Carleman.cartesianFiniteNodeStar_compact",
+        "Carleman.cartesianKuhnHat_support_subset",
+        "Carleman.cartesianKuhnHat_tsupport_subset",
+        "Carleman.cartesianKuhnHat_tsupport_subset_cellStar"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "六模块43声明定向3310 jobs、全库3750 jobs通过，5951声明递归公理审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收实际公共面和连续Dirichlet帽函数43声明；继续完整内部节点星对称、零阶与一阶矩及真实Qh。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3750,
+        "recursive_axiom_audit": 5951,
+        "new_explicit_declarations": 43,
+        "declaration_artifact_sha256": "f61421119edd8f102da8a34bff7c326effc8cace06b0f19a27e7323e151bd0a8",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

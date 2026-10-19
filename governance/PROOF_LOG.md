@@ -165,3 +165,5 @@
 - T084 / C100：真实平方积分与笛卡尔有限重叠、全域加权组合16声明独立验收PASS，同SHA三项CI、5810声明递归审计及逐字节相同远端产物。 固定证明 `d8ccc85628961e226550d9fea095eac9710ed969`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/da372c08ba75ac2f4e6c393e5631fa2cb17dab97/governance/reviews/T084-local-acceptance.md)。原文13/26，T085继续实际Kuhn单纯形及顶点星的几何支撑。
 
 - T085 / C101：真实Kuhn单元与完整顶点星24声明独立验收PASS，同SHA三项CI、5856声明递归审计及逐字节相同远端产物。 固定证明 `e52ffb4aed1df34fbcb1839e9472abafa927abfd`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f9af9dc6e6ca3bffd69d5b0967b2c329e4358c04/governance/reviews/T085-local-acceptance.md)。原文13/26，T086继续真实有限Kuhn网格的覆盖与几乎处处分割。
+
+- T086 / C102：实际有限Kuhn覆盖、内部不交和几乎处处唯一分割34声明独立验收PASS，同SHA三项CI、5896声明递归审计及逐字节相同远端产物。 固定证明 `e753eb065d87695d33e31c141cfe15c7cea4b5de`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1424acb1dbb16fd4526de5c1f7b07dee1ac46cc4/governance/reviews/T086-local-acceptance.md)。原文13/26，T087继续实际Kuhn公共面与连续Dirichlet节点帽函数。
