@@ -4760,6 +4760,55 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianKuhnMoment_surjective
 #print axioms Carleman.cartesianKuhnMoment_surjective
 
+#check @Carleman.cartesianKuhnReconstruction
+#print axioms Carleman.cartesianKuhnReconstruction
+#check @Carleman.cartesianKuhnReconstruction_on_cell
+#print axioms Carleman.cartesianKuhnReconstruction_on_cell
+#check @Carleman.cartesianKuhnReconstruction_continuous
+#print axioms Carleman.cartesianKuhnReconstruction_continuous
+#check @Carleman.cartesianKuhnReconstruction_compact
+#print axioms Carleman.cartesianKuhnReconstruction_compact
+#check @Carleman.cartesianKuhnReconstruction_memLp
+#print axioms Carleman.cartesianKuhnReconstruction_memLp
+#check @Carleman.cartesianKuhnReconstruction_sq_integrable
+#print axioms Carleman.cartesianKuhnReconstruction_sq_integrable
+#check @Carleman.integral_simplexLoadPolynomial
+#print axioms Carleman.integral_simplexLoadPolynomial
+#check @Carleman.integral_simplexLoadPolynomial_sq
+#print axioms Carleman.integral_simplexLoadPolynomial_sq
+#check @Carleman.integral_simplexLoadPolynomial_sq_le
+#print axioms Carleman.integral_simplexLoadPolynomial_sq_le
+#check @Carleman.cartesianInteriorData_sq
+#print axioms Carleman.cartesianInteriorData_sq
+#check @Carleman.cartesianInteriorData_zero_compl
+#print axioms Carleman.cartesianInteriorData_zero_compl
+#check @Carleman.cartesianKuhnLoadCoefficients_interiorData
+#print axioms Carleman.cartesianKuhnLoadCoefficients_interiorData
+#check @Carleman.cartesianKuhn_vertex_mass
+#print axioms Carleman.cartesianKuhn_vertex_mass
+#check @Carleman.cartesianKuhn_vertex_mass_assembly
+#print axioms Carleman.cartesianKuhn_vertex_mass_assembly
+#check @Carleman.cartesianKuhn_vertex_mass_sq_assembly
+#print axioms Carleman.cartesianKuhn_vertex_mass_sq_assembly
+#check @Carleman.cartesianKuhnReconstruction_cell_sq_bounds
+#print axioms Carleman.cartesianKuhnReconstruction_cell_sq_bounds
+#check @Carleman.cartesianKuhnReconstruction_sq_bounds
+#print axioms Carleman.cartesianKuhnReconstruction_sq_bounds
+#check @Carleman.cartesianKuhnLoadLift_cell_sq_bound
+#print axioms Carleman.cartesianKuhnLoadLift_cell_sq_bound
+#check @Carleman.cartesianKuhnLoadLift_sq_bound
+#print axioms Carleman.cartesianKuhnLoadLift_sq_bound
+#check @Carleman.cartesianKuhnReconstructionLp
+#print axioms Carleman.cartesianKuhnReconstructionLp
+#check @Carleman.cartesianKuhnReconstructionLp_ae
+#print axioms Carleman.cartesianKuhnReconstructionLp_ae
+#check @Carleman.cartesianKuhnReconstructionLp_norm_sq
+#print axioms Carleman.cartesianKuhnReconstructionLp_norm_sq
+#check @Carleman.cartesianKuhnReconstructionLp_norm_sq_bounds
+#print axioms Carleman.cartesianKuhnReconstructionLp_norm_sq_bounds
+#check @Carleman.cartesianKuhnLoadLiftLp_norm_sq_bound
+#print axioms Carleman.cartesianKuhnLoadLiftLp_norm_sq_bound
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

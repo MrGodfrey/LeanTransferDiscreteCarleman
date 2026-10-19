@@ -569,3 +569,8 @@ public import Carleman.Spatial.CartesianKuhnLoad
 public import Carleman.Spatial.CartesianKuhnLoadMoment
 public import Carleman.Geometry.CartesianInteriorNodes
 public import Carleman.Spatial.CartesianKuhnLoadLift
+public import Carleman.Spatial.CartesianKuhnReconstruction
+public import Carleman.Spatial.SimplexLoadNorm
+public import Carleman.Spatial.CartesianKuhnMassAssembly
+public import Carleman.Spatial.CartesianKuhnNormBounds
+public import Carleman.Spatial.CartesianKuhnLpNorm
