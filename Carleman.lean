@@ -882,3 +882,9 @@ public import Carleman.Continuous.HarmonicGraphContinuity
 public import Carleman.Continuous.HarmonicStateDensity
 public import Carleman.Spatial.DirichletSmoothTimeCore
 public import Carleman.Spatial.BoxSmoothTimeDensity
+
+public import Carleman.Spatial.SmoothDifferentialLinearity
+public import Carleman.Continuous.HarmonicGraphFields
+public import Carleman.Spatial.ClassicalDirichletTimeCore
+public import Carleman.Spatial.ClassicalHarmonicTimeCore
+public import Carleman.Spatial.BoxClassicalTimeDensity

@@ -6888,6 +6888,33 @@ set_option pp.maxSteps 1000000
 #check @Carleman.exists_box_smooth_periodic_graph_approximation
 #print axioms Carleman.exists_box_smooth_periodic_graph_approximation
 
+#check @Carleman.directionalLap_add
+#print axioms Carleman.directionalLap_add
+#check @Carleman.directionalLap_const_mul
+#print axioms Carleman.directionalLap_const_mul
+#check @Carleman.directionalLap_zero
+#print axioms Carleman.directionalLap_zero
+#check @Carleman.spatialLaplacian_add
+#print axioms Carleman.spatialLaplacian_add
+#check @Carleman.spatialLaplacian_const_mul
+#print axioms Carleman.spatialLaplacian_const_mul
+#check @Carleman.smooth_harmonic_time_derivative
+#print axioms Carleman.smooth_harmonic_time_derivative
+#check @Carleman.smooth_harmonic_spatial_laplacian
+#print axioms Carleman.smooth_harmonic_spatial_laplacian
+#check @Carleman.CoerciveForm.harmonicGraph_derivative_ae
+#print axioms Carleman.CoerciveForm.harmonicGraph_derivative_ae
+#check @Carleman.CoerciveForm.harmonicGraph_operator_ae
+#print axioms Carleman.CoerciveForm.harmonicGraph_operator_ae
+#check @Carleman.classicalDirichletTimeCore
+#print axioms Carleman.classicalDirichletTimeCore
+#check @Carleman.harmonicGraph_mem_classicalDirichletTimeCore
+#print axioms Carleman.harmonicGraph_mem_classicalDirichletTimeCore
+#check @Carleman.box_classicalDirichletTimeCore_dense
+#print axioms Carleman.box_classicalDirichletTimeCore_dense
+#check @Carleman.exists_box_classical_periodic_graph_approximation
+#print axioms Carleman.exists_box_classical_periodic_graph_approximation
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
