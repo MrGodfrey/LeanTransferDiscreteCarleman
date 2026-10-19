@@ -5603,6 +5603,23 @@ set_option pp.maxSteps 1000000
 #check @Carleman.WeakSobolevJet.exists_dirichlet_closure_representative
 #print axioms Carleman.WeakSobolevJet.exists_dirichlet_closure_representative
 
+#check @Carleman.SimplicialPartition.nodalSobolevJet_mem_dirichlet
+#print axioms Carleman.SimplicialPartition.nodalSobolevJet_mem_dirichlet
+#check @Carleman.SimplicialPartition.nodalH2ErrorJet
+#print axioms Carleman.SimplicialPartition.nodalH2ErrorJet
+#check @Carleman.SimplicialPartition.nodalH2ErrorJet_value
+#print axioms Carleman.SimplicialPartition.nodalH2ErrorJet_value
+#check @Carleman.SimplicialPartition.nodalH2ErrorJet_mem_dirichlet
+#print axioms Carleman.SimplicialPartition.nodalH2ErrorJet_mem_dirichlet
+#check @Carleman.SimplicialPartition.nodalH2ErrorJet_value_on_cell
+#print axioms Carleman.SimplicialPartition.nodalH2ErrorJet_value_on_cell
+#check @Carleman.SimplicialPartition.nodalH2ErrorJet_gradient_on_cell
+#print axioms Carleman.SimplicialPartition.nodalH2ErrorJet_gradient_on_cell
+#check @Carleman.SimplicialPartition.nodalH2ErrorJet_cell_integral_bounds
+#print axioms Carleman.SimplicialPartition.nodalH2ErrorJet_cell_integral_bounds
+#check @Carleman.SimplicialPartition.exists_weak_h2_conforming_nodal_error
+#print axioms Carleman.SimplicialPartition.exists_weak_h2_conforming_nodal_error
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

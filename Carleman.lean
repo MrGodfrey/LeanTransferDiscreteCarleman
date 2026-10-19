@@ -702,3 +702,6 @@ public import Carleman.Spatial.SmoothGapCutoff
 public import Carleman.Spatial.WeakZeroGradientConstant
 public import Carleman.Spatial.WeakScalarGap
 public import Carleman.Spatial.DirichletContinuousBoundary
+public import Carleman.Spatial.H2NodalErrorJet
+public import Carleman.Spatial.H2NodalCellError
+public import Carleman.Spatial.WeakH2ConformingNodal
