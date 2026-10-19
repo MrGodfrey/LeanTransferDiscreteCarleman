@@ -6697,6 +6697,13 @@ set_option pp.maxSteps 1000000
 #check @Carleman.exists_periodic_C2_smooth_qclass_exact
 #print axioms Carleman.exists_periodic_C2_smooth_qclass_exact
 
+#check @Carleman.boxTimeIntegral_tendsto_parameter
+#print axioms Carleman.boxTimeIntegral_tendsto_parameter
+#check @Carleman.boxTimeIntegral_observation_tendsto_parameter
+#print axioms Carleman.boxTimeIntegral_observation_tendsto_parameter
+#check @Carleman.box_C2_gaussian_heat_both_signs
+#print axioms Carleman.box_C2_gaussian_heat_both_signs
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

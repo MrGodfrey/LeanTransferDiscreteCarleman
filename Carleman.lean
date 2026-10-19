@@ -847,3 +847,6 @@ public import Carleman.Weights.TemporalMollification
 public import Carleman.Weights.TemporalMollificationDerivative
 public import Carleman.Weights.TemporalMollificationBounds
 public import Carleman.Weights.PeriodicC2Mollification
+
+public import Carleman.Spatial.BoxTimeIntegralLimit
+public import Carleman.Spatial.BoxC2HeatEstimate
