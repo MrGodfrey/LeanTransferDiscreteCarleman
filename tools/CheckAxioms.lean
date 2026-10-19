@@ -6977,6 +6977,35 @@ set_option pp.maxSteps 1000000
 #check @Carleman.box_weak_C2_gaussian_heat_both_signs
 #print axioms Carleman.box_weak_C2_gaussian_heat_both_signs
 
+#check @Carleman.exists_timeWeight_eqOn_interval
+#print axioms Carleman.exists_timeWeight_eqOn_interval
+#check @Carleman.eqOn_interval_within_derivatives
+#print axioms Carleman.eqOn_interval_within_derivatives
+#check @Carleman.SpatialProfile.zero_multiplier_seminorm_eq_exp
+#print axioms Carleman.SpatialProfile.zero_multiplier_seminorm_eq_exp
+#check @Carleman.SpatialProfile.timeSq_eq_exp_of_eqOn
+#print axioms Carleman.SpatialProfile.timeSq_eq_exp_of_eqOn
+#check @Carleman.dirichletIntervalHeatLeft
+#print axioms Carleman.dirichletIntervalHeatLeft
+#check @Carleman.dirichletIntervalHeatRight
+#print axioms Carleman.dirichletIntervalHeatRight
+#check @Carleman.dirichletHeatLeft_eq_interval
+#print axioms Carleman.dirichletHeatLeft_eq_interval
+#check @Carleman.dirichletHeatRight_eq_interval
+#print axioms Carleman.dirichletHeatRight_eq_interval
+#check @Carleman.box_weak_interval_C2_gaussian_heat_both_signs
+#print axioms Carleman.box_weak_interval_C2_gaussian_heat_both_signs
+#check @Carleman.dirichletTrajectory_gradient_ae
+#print axioms Carleman.dirichletTrajectory_gradient_ae
+#check @Carleman.dirichletTrajectory_gradient_memLp
+#print axioms Carleman.dirichletTrajectory_gradient_memLp
+#check @Carleman.dirichletIntervalHeatLeft_trajectory
+#print axioms Carleman.dirichletIntervalHeatLeft_trajectory
+#check @Carleman.dirichletIntervalHeatRight_trajectory
+#print axioms Carleman.dirichletIntervalHeatRight_trajectory
+#check @Carleman.box_original_weak_C2_heat_both_signs
+#print axioms Carleman.box_original_weak_C2_heat_both_signs
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

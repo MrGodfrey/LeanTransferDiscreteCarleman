@@ -899,3 +899,9 @@ public import Carleman.Spatial.BochnerBoxIntegral
 public import Carleman.Spatial.PeriodicClassicalRepresentatives
 public import Carleman.Spatial.DirichletHeatIntegral
 public import Carleman.Spatial.BoxWeakHeatEstimate
+
+public import Carleman.Weights.IntervalTimeWeight
+public import Carleman.Spatial.IntervalHeatEnergies
+public import Carleman.Spatial.BoxIntervalWeakHeat
+public import Carleman.Spatial.WeakTrajectoryHeatEnergies
+public import Carleman.Spatial.BoxOriginalWeakHeat
