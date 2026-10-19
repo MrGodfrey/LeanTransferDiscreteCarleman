@@ -804,3 +804,6 @@ public import Carleman.Spatial.SpacetimeHeatIdentity
 public import Carleman.Spatial.PeriodicHeatFlux
 public import Carleman.Spatial.SmoothPlaneBoundary
 public import Carleman.Spatial.PlaneHeatFlux
+public import Carleman.Geometry.FiniteHalfspaceFaces
+public import Carleman.Geometry.HalfspaceOutwardNormal
+public import Carleman.Spatial.HalfspaceHeatBoundary

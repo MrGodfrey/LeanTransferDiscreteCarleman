@@ -6409,6 +6409,31 @@ set_option pp.maxSteps 1000000
 #check @Carleman.gaussian_plane_heat_flux_nonpos
 #print axioms Carleman.gaussian_plane_heat_flux_nonpos
 
+#check @Carleman.finite_halfspace_mem_closure
+#print axioms Carleman.finite_halfspace_mem_closure
+#check @Carleman.finite_halfspace_closure_iff
+#print axioms Carleman.finite_halfspace_closure_iff
+#check @Carleman.finite_halfspace_face_neighborhood
+#print axioms Carleman.finite_halfspace_face_neighborhood
+#check @Carleman.finite_halfspace_face_mem_closure
+#print axioms Carleman.finite_halfspace_face_mem_closure
+#check @Carleman.halfspaceOutwardNormal
+#print axioms Carleman.halfspaceOutwardNormal
+#check @Carleman.halfspaceOutwardNormal_norm
+#print axioms Carleman.halfspaceOutwardNormal_norm
+#check @Carleman.halfspaceOutwardNormal_eval
+#print axioms Carleman.halfspaceOutwardNormal_eval
+#check @Carleman.halfspaceOutwardNormal_plane
+#print axioms Carleman.halfspaceOutwardNormal_plane
+#check @Carleman.halfspaceOutwardNormal_support
+#print axioms Carleman.halfspaceOutwardNormal_support
+#check @Carleman.pointwiseHeatFlux_contDiff
+#print axioms Carleman.pointwiseHeatFlux_contDiff
+#check @Carleman.finite_halfspace_gaussian_heat_flux
+#print axioms Carleman.finite_halfspace_gaussian_heat_flux
+#check @Carleman.finite_halfspace_closed_face_gaussian_heat_flux
+#print axioms Carleman.finite_halfspace_closed_face_gaussian_heat_flux
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
