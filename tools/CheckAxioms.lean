@@ -4483,6 +4483,75 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianKuhnStarPatch_measurable
 #print axioms Carleman.cartesianKuhnStarPatch_measurable
 
+#check @Carleman.kuhnExtendedCoordinate
+#print axioms Carleman.kuhnExtendedCoordinate
+#check @Carleman.kuhnExtendedCoordinate_zero
+#print axioms Carleman.kuhnExtendedCoordinate_zero
+#check @Carleman.kuhnExtendedCoordinate_last
+#print axioms Carleman.kuhnExtendedCoordinate_last
+#check @Carleman.kuhnExtendedCoordinate_inner
+#print axioms Carleman.kuhnExtendedCoordinate_inner
+#check @Carleman.kuhnBarycentricWeight
+#print axioms Carleman.kuhnBarycentricWeight
+#check @Carleman.kuhnBarycentricWeight_sum
+#print axioms Carleman.kuhnBarycentricWeight_sum
+#check @Carleman.kuhnBarycentricWeight_reconstruct
+#print axioms Carleman.kuhnBarycentricWeight_reconstruct
+#check @Carleman.kuhnBarycentricWeight_nonneg
+#print axioms Carleman.kuhnBarycentricWeight_nonneg
+#check @Carleman.kuhnReferenceSimplex_mem_of_ordered
+#print axioms Carleman.kuhnReferenceSimplex_mem_of_ordered
+#check @Carleman.kuhnOrderedCube
+#print axioms Carleman.kuhnOrderedCube
+#check @Carleman.kuhnOrderedCube_convex
+#print axioms Carleman.kuhnOrderedCube_convex
+#check @Carleman.kuhnReferenceSimplex_cell_eq_ordered
+#print axioms Carleman.kuhnReferenceSimplex_cell_eq_ordered
+#check @Carleman.cartesianKuhnChart
+#print axioms Carleman.cartesianKuhnChart
+#check @Carleman.cartesianKuhnChart_apply
+#print axioms Carleman.cartesianKuhnChart_apply
+#check @Carleman.cartesianKuhnChart_symm_apply
+#print axioms Carleman.cartesianKuhnChart_symm_apply
+#check @Carleman.cartesianKuhnSimplex_cell_eq_chart
+#print axioms Carleman.cartesianKuhnSimplex_cell_eq_chart
+#check @Carleman.cartesianKuhnSimplex_mem_iff
+#print axioms Carleman.cartesianKuhnSimplex_mem_iff
+#check @Carleman.cartesianKuhnSimplex_cover_box
+#print axioms Carleman.cartesianKuhnSimplex_cover_box
+#check @Carleman.CartesianCellIndex
+#print axioms Carleman.CartesianCellIndex
+#check @Carleman.cartesianCellLatticeIndex
+#print axioms Carleman.cartesianCellLatticeIndex
+#check @Carleman.cartesianCellLatticeIndex_injective
+#print axioms Carleman.cartesianCellLatticeIndex_injective
+#check @Carleman.cartesianCellIndex_card
+#print axioms Carleman.cartesianCellIndex_card
+#check @Carleman.cartesianFiniteSimplex
+#print axioms Carleman.cartesianFiniteSimplex
+#check @Carleman.cartesianFiniteSimplex_cover
+#print axioms Carleman.cartesianFiniteSimplex_cover
+#check @Carleman.cartesianFiniteSimplex_ae_cover
+#print axioms Carleman.cartesianFiniteSimplex_ae_cover
+#check @Carleman.cartesianFiniteStar_multiplicity_le
+#print axioms Carleman.cartesianFiniteStar_multiplicity_le
+#check @Carleman.linear_strict_of_mem_interior_le
+#print axioms Carleman.linear_strict_of_mem_interior_le
+#check @Carleman.cartesianKuhnSimplex_interior_box
+#print axioms Carleman.cartesianKuhnSimplex_interior_box
+#check @Carleman.cartesianKuhnSimplex_interior_strictAnti
+#print axioms Carleman.cartesianKuhnSimplex_interior_strictAnti
+#check @Carleman.cartesianKuhnSimplex_common_interior_origin
+#print axioms Carleman.cartesianKuhnSimplex_common_interior_origin
+#check @Carleman.strictAnti_permutation_unique
+#print axioms Carleman.strictAnti_permutation_unique
+#check @Carleman.cartesianKuhnSimplex_interiors_disjoint
+#print axioms Carleman.cartesianKuhnSimplex_interiors_disjoint
+#check @Carleman.cartesianFiniteSimplex_interiors_disjoint
+#print axioms Carleman.cartesianFiniteSimplex_interiors_disjoint
+#check @Carleman.cartesianFiniteSimplex_ae_partition
+#print axioms Carleman.cartesianFiniteSimplex_ae_partition
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

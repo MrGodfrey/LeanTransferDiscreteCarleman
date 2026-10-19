@@ -546,3 +546,7 @@ public import Carleman.Spatial.FinitePatchAssembly
 public import Carleman.Geometry.KuhnReferenceSimplex
 public import Carleman.Geometry.CartesianKuhnSimplex
 public import Carleman.Geometry.KuhnVertexStars
+public import Carleman.Geometry.KuhnBarycentricCoordinates
+public import Carleman.Geometry.KuhnOrderedCell
+public import Carleman.Geometry.FiniteCartesianKuhnCover
+public import Carleman.Geometry.KuhnCellInterior
