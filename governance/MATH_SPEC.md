@@ -1344,3 +1344,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T153 / C169：真实时间反射与同常数光滑盒双方向估计
 
 实际R_T(t,x)=(T−t,x)的光滑、自反、周期拉回、时间限制测度和柱乘积测度保持，以及全部真实积分换元内部证明。实际q′反号、q″同号及反射区间保持恢复同一权界；反射u的正向热残差严格等于原−∂tu−Δu。最终同一ρ/λ/β/qc/C先于全部T/q/ε/u选择，原空间梯度与观察积分完整保留，覆盖ε=±1的光滑周期盒估计。两模块14声明，AUXILIARY；原C²权、完整弱轨道和一般凸多面体仍待，P024不提升。详见 `analysis/T153-smooth-heat-both-signs.md`。
+
+## T154 / C170：全局 C² 周期时间权的实际光滑逼近（辅助）
+
+`TemporalMollification`、`TemporalMollificationDerivative`、`TemporalMollificationBounds`、`PeriodicC2Mollification` 共十九声明。使用真实非负单位质量紧支光滑核卷积，保持周期和正下界，证明实际一二阶导数交换与逐点收敛。均值估计在足够小支持上给 q(t−s)≤3q_n(t)，从而导数阶数界为 9β q_n²、27β² q_n³；输入 β/9 的固定余量给目标 β 的同一 qclass。序列共享有限上界 B，实际逼近尺度可依赖 q/T，固定数值余量不依赖它们。
+
+此阶段输入全局 C² 周期 q，尚未包括原闭区间 C² 的周期扩展、权积分极限、完整弱轨道或一般凸多面体。范围 AUXILIARY，原 P024 不提升，覆盖保持 17/26；不把逼近定理当作完整连续 Carleman 估计。详见 `analysis/T154-periodic-c2-mollification.md`。

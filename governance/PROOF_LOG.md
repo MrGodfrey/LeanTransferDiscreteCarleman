@@ -299,3 +299,5 @@
 - T151 / C167：真实光滑盒heatcross15声明独立AUXILIARY PASS；同SHA三项CI与7550声明raw逐字节相同。 固定证明 `8e740040ffe3ce75cb89b5868d5998b5ad8cd74c`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/23427034f26387ec67e56d1b18fd98ddb6898819/governance/reviews/T151-local-acceptance.md)。原文17/26，T152继续光滑周期盒上的正向热Carleman观测估计。
 
 - T152 / C168：光滑周期盒正向热观测估计18声明独立AUXILIARY PASS；同SHA三项CI与7571声明raw逐字节相同。 固定证明 `86686ea4d106798727d898bf61abc238812a8cb8`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0c5ed16e4215a823746ee66b2d6c0bc9f1c39569/governance/reviews/T152-local-acceptance.md)。原文17/26，T153继续真实时间反射与同常数的光滑盒双方向估计。
+
+- T153 / C169：真实时间反射与同常数双方向估计14声明独立AUXILIARY PASS；同SHA三项CI与7588声明raw逐字节相同。 固定证明 `7a2da98bcead43801f48dc03ecffbc70adc7585e`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1cff393c966746c2a1917dcfb9b709fc6322ea08/governance/reviews/T153-local-acceptance.md)。原文17/26，T154继续实际C²周期时间权的光滑逼近及同阶导数界。
