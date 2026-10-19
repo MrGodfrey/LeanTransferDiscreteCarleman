@@ -783,3 +783,5 @@ public import Carleman.Spatial.PoissonExtensionComposition
 public import Carleman.Spatial.FiniteBoxPoissonExtension
 public import Carleman.Spatial.BoxPoissonRegularity
 public import Carleman.Spatial.BoxDirichletRegularity
+public import Carleman.Spatial.CartesianBoxNumericalData
+public import Carleman.Spatial.CartesianFullWeightInterface

@@ -6176,6 +6176,12 @@ set_option pp.maxSteps 1000000
 #check @Carleman.exists_box_dirichlet_H2_estimate
 #print axioms Carleman.exists_box_dirichlet_H2_estimate
 
+#check @Carleman.cartesian_numericalData_of_box
+#print axioms Carleman.cartesian_numericalData_of_box
+
+#check @Carleman.cartesian_full_weight_interface
+#print axioms Carleman.cartesian_full_weight_interface
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
