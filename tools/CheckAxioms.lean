@@ -6658,6 +6658,45 @@ set_option pp.maxSteps 1000000
 #check @Carleman.box_smooth_gaussian_heat_both_signs
 #print axioms Carleman.box_smooth_gaussian_heat_both_signs
 
+#check @Carleman.temporalBump
+#print axioms Carleman.temporalBump
+#check @Carleman.temporalMollification
+#print axioms Carleman.temporalMollification
+#check @Carleman.temporalMollification_smooth
+#print axioms Carleman.temporalMollification_smooth
+#check @Carleman.temporalMollification_periodic
+#print axioms Carleman.temporalMollification_periodic
+#check @Carleman.temporalMollification_bounds
+#print axioms Carleman.temporalMollification_bounds
+#check @Carleman.temporalBump_radius_tendsto
+#print axioms Carleman.temporalBump_radius_tendsto
+#check @Carleman.temporalMollification_tendsto
+#print axioms Carleman.temporalMollification_tendsto
+#check @Carleman.continuous_periodic_bounded
+#print axioms Carleman.continuous_periodic_bounded
+#check @Carleman.temporalMollification_hasDerivAt
+#print axioms Carleman.temporalMollification_hasDerivAt
+#check @Carleman.temporalMollification_deriv_periodic
+#print axioms Carleman.temporalMollification_deriv_periodic
+#check @Carleman.temporalMollification_second_deriv_periodic
+#print axioms Carleman.temporalMollification_second_deriv_periodic
+#check @Carleman.temporal_derivative_difference
+#print axioms Carleman.temporal_derivative_difference
+#check @Carleman.temporalMollification_uniform_error
+#print axioms Carleman.temporalMollification_uniform_error
+#check @Carleman.temporalMollification_local_norm_bound
+#print axioms Carleman.temporalMollification_local_norm_bound
+#check @Carleman.temporalMollification_support_comparison
+#print axioms Carleman.temporalMollification_support_comparison
+#check @Carleman.periodic_time_weight_bounds_global
+#print axioms Carleman.periodic_time_weight_bounds_global
+#check @Carleman.temporalMollification_qclass
+#print axioms Carleman.temporalMollification_qclass
+#check @Carleman.exists_periodic_C2_smooth_qclass
+#print axioms Carleman.exists_periodic_C2_smooth_qclass
+#check @Carleman.exists_periodic_C2_smooth_qclass_exact
+#print axioms Carleman.exists_periodic_C2_smooth_qclass_exact
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
