@@ -816,3 +816,8 @@ public import Carleman.Spatial.BoxHeatFluxIntegral
 public import Carleman.Spatial.SmoothBoxTimeIntegral
 public import Carleman.Spatial.HeatIdentityRegularity
 public import Carleman.Spatial.BoxIntegratedHeatIdentity
+
+public import Carleman.Weights.InteriorGaussianDifferential
+public import Carleman.Spatial.SeparableHeatPhase
+public import Carleman.Weights.InteriorHeatCoefficients
+public import Carleman.Weights.InteriorHeatB

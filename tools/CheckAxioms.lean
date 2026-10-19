@@ -6496,6 +6496,71 @@ set_option pp.maxSteps 1000000
 #check @Carleman.box_smooth_heat_carleman_inequality
 #print axioms Carleman.box_smooth_heat_carleman_inequality
 
+#check @Carleman.interiorCarlemanProfile_laplacian
+#print axioms Carleman.interiorCarlemanProfile_laplacian
+#check @Carleman.interiorCarlemanProfile_energy
+#print axioms Carleman.interiorCarlemanProfile_energy
+#check @Carleman.interiorCarlemanProfile_energy_fderiv
+#print axioms Carleman.interiorCarlemanProfile_energy_fderiv
+#check @Carleman.interiorCarlemanProfile_laplacian_fderiv
+#print axioms Carleman.interiorCarlemanProfile_laplacian_fderiv
+#check @Carleman.interiorCarlemanProfile_energy_pair
+#print axioms Carleman.interiorCarlemanProfile_energy_pair
+#check @Carleman.interiorCarlemanProfile_gaussian_pair
+#print axioms Carleman.interiorCarlemanProfile_gaussian_pair
+#check @Carleman.separableHeatPhase
+#print axioms Carleman.separableHeatPhase
+#check @Carleman.separableHeatPhase_contDiff
+#print axioms Carleman.separableHeatPhase_contDiff
+#check @Carleman.separableHeatPhase_timeD
+#print axioms Carleman.separableHeatPhase_timeD
+#check @Carleman.separableHeatPhase_spatialD
+#print axioms Carleman.separableHeatPhase_spatialD
+#check @Carleman.separableHeatPhase_lap
+#print axioms Carleman.separableHeatPhase_lap
+#check @Carleman.separableHeatPhase_energy
+#print axioms Carleman.separableHeatPhase_energy
+#check @Carleman.separableHeatPhase_pair
+#print axioms Carleman.separableHeatPhase_pair
+#check @Carleman.directionalPair_add_left
+#print axioms Carleman.directionalPair_add_left
+#check @Carleman.directionalPair_const_mul_left
+#print axioms Carleman.directionalPair_const_mul_left
+#check @Carleman.interiorGaussianHeatPhase
+#print axioms Carleman.interiorGaussianHeatPhase
+#check @Carleman.interiorGaussianHeatPsi
+#print axioms Carleman.interiorGaussianHeatPsi
+#check @Carleman.interiorGaussianHeatPhase_contDiff
+#print axioms Carleman.interiorGaussianHeatPhase_contDiff
+#check @Carleman.interiorGaussianHeatPsi_contDiff
+#print axioms Carleman.interiorGaussianHeatPsi_contDiff
+#check @Carleman.interiorGaussianHeatPhase_periodic
+#print axioms Carleman.interiorGaussianHeatPhase_periodic
+#check @Carleman.interiorGaussianHeatPsi_periodic
+#print axioms Carleman.interiorGaussianHeatPsi_periodic
+#check @Carleman.interiorGaussianHeatPsi_formula
+#print axioms Carleman.interiorGaussianHeatPsi_formula
+#check @Carleman.interiorGaussianHeatPsi_eq_spatial
+#print axioms Carleman.interiorGaussianHeatPsi_eq_spatial
+#check @Carleman.interiorGaussianHeatK_formula
+#print axioms Carleman.interiorGaussianHeatK_formula
+#check @Carleman.interiorGaussianHeatK_explicit
+#print axioms Carleman.interiorGaussianHeatK_explicit
+#check @Carleman.interiorGaussianHeatPsi_spatialD
+#print axioms Carleman.interiorGaussianHeatPsi_spatialD
+#check @Carleman.interiorGaussianHeatPsi_energy
+#print axioms Carleman.interiorGaussianHeatPsi_energy
+#check @Carleman.pointwiseHeatB_lap_cancel
+#print axioms Carleman.pointwiseHeatB_lap_cancel
+#check @Carleman.interiorGaussianHeatK_timeD
+#print axioms Carleman.interiorGaussianHeatK_timeD
+#check @Carleman.interiorGaussianHeatK_pair
+#print axioms Carleman.interiorGaussianHeatK_pair
+#check @Carleman.interiorGaussianHeatB_formula
+#print axioms Carleman.interiorGaussianHeatB_formula
+#check @Carleman.interiorGaussianHeatB_leading
+#print axioms Carleman.interiorGaussianHeatB_leading
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
