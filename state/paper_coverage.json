@@ -677,11 +677,15 @@
       "tex_line": 1672,
       "milestone": "M6a",
       "claim_ids": [
-        "C015"
+        "C015",
+        "C158"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.cartesian_numericalData_of_box",
+        "Carleman.cartesian_full_weight_interface"
+      ],
       "declaration_version": null,
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": null,
