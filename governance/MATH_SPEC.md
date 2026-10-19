@@ -1108,3 +1108,7 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 ## T100：原标准差分 Laplacian 的精确刚度恒等式
 
 详见 [T100 分析](analysis/T100-fd-stiffness.md)。三模块14声明证明真实有限格网的零边界分部求和，并由内部节点到半开盒的实际单射去除且仅去除零项。原2d+1点Laplacian与原物理节点配对接入真实坐标边能量，最终精确等于同一原H¹₀重构上的Dirichlet scalarForm，即eq:fdstiffness。全部正步长、原独立状态及完整边界项保留，无额外可比性条件。AUXILIARY，完整FD/P012仍待实际测试、观察和接口组装，原文14/26。
+
+## T101：原FD对角测试的精确结构与允许权质量等价
+
+详见 [T101 分析](analysis/T101-fd-diagonal-test.md)。两模块15声明直接实现原全节点空间的σ²线性乘子，证明相对原物理内积的自伴性、正定性、精确加权能量和逆权能量身份。真实零延拓乘法与原节点插值严格相容，点函数及Lp版本均为实际R_h(Tσf)=I_h(σ²R_hf)，实际残差精确对应已验收nodalProductResidual。组合真实允许权质量界得原eq:test-norm，全权族、周期、网格和状态统一。时间导数、周期性及超逼近和观察仍待；AUXILIARY，完整FD/P012不提升，原文14/26。
