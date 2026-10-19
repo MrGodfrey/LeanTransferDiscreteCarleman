@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T083",
-    "supervisor_checked_at": "2026-10-19T00:12:20.725705+00:00",
-    "next_action": "固定SHA独立验收原允许权局部边界逼近9声明，继续有限重叠平方积分及实际FD重构。",
+    "current_task_id": "T084",
+    "supervisor_checked_at": "2026-10-19T00:18:55.762097+00:00",
+    "next_action": "固定SHA独立验收真实平方积分、笛卡尔重叠及全域加权组合16声明；继续原Kuhn网格几何与实际矩重构。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T00:12:20.725705+00:00"
+    "last_activity_at": "2026-10-19T00:18:55.762097+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "59452751f05398e3446ed5305638a1e20dc89061",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39179213298/attempts/1",
-      "finished_at": "2026-10-19T00:07:56.458497+00:00",
+      "checked_sha": "4e697929d6afc9043f0a20caf093a0d62a33963d",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39179746249/attempts/1",
+      "finished_at": "2026-10-19T00:15:27.143281+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "59452751f05398e3446ed5305638a1e20dc89061"
+      "source_head_sha": "4e697929d6afc9043f0a20caf093a0d62a33963d"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "59452751f05398e3446ed5305638a1e20dc89061",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39179213298/attempts/1",
-      "finished_at": "2026-10-19T00:07:56.458497+00:00",
+      "checked_sha": "4e697929d6afc9043f0a20caf093a0d62a33963d",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39179746249/attempts/1",
+      "finished_at": "2026-10-19T00:15:27.143281+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "59452751f05398e3446ed5305638a1e20dc89061"
+      "source_head_sha": "4e697929d6afc9043f0a20caf093a0d62a33963d"
     }
   },
   "milestones": [
@@ -9607,7 +9607,7 @@
       "paper_ref": "Auxiliary actual allowed-weight local boundary affine approximation for Appendix B Lemma B.2",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "lem:fd-weighted-approximation"
@@ -9623,16 +9623,86 @@
         "Carleman.allowedWeight_box_comparison",
         "Carleman.allowed_weight_dirichlet_h2_local_boundary_affine"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "4e697929d6afc9043f0a20caf093a0d62a33963d",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "4e697929d6afc9043f0a20caf093a0d62a33963d",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39179746249/attempts/1",
+        "finished_at": "2026-10-19T00:15:27.143281+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "4e697929d6afc9043f0a20caf093a0d62a33963d"
+      },
+      "semantic_review": {
+        "checked_sha": "4e697929d6afc9043f0a20caf093a0d62a33963d",
+        "declarations": [
+          "Carleman.BoundedMultiplier.onSubdomain",
+          "Carleman.BoundedMultiplier.onSubdomain_map",
+          "Carleman.BoundedMultiplier.onSubdomain_seminorm",
+          "Carleman.BoundedMultiplier.seminorm_le_anchor",
+          "Carleman.BoundedMultiplier.norm_le_seminorm_anchor",
+          "Carleman.weighted_dirichlet_h2_local_boundary_affine",
+          "Carleman.coordinateBox_diameter_bound",
+          "Carleman.allowedWeight_box_comparison",
+          "Carleman.allowed_weight_dirichlet_h2_local_boundary_affine"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2341fc2fee95be45c8fb2281804fdce1567c2bfe/governance/reviews/T083-local-acceptance.md",
+        "reviewed_at": "2026-10-19T00:17:06Z",
+        "reviewer": "/root/accept_section3; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C098",
         "C097"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "实际乘权与Lp子域限制交换，双向锚点比较使锚点抵消。固定光滑轮廓内部供应Lipschitz界，hq≤1内部供应真实允许权的盒内比较，原全部H2交H01状态得到实际加权局部仿射逼近与原加权Hessian局部范数界；常数先于网格、时间权、周期、幂次与正负号及状态。实际FD矩重构与全域有限重叠组合仍待，AUXILIARY，原文13/26。"
+      "scope_notes": "实际乘权与Lp子域限制交换，双向锚点比较使锚点抵消。固定光滑轮廓内部供应Lipschitz界，hq≤1内部供应真实允许权的盒内比较，原全部H2交H01状态得到实际加权局部仿射逼近与原加权Hessian局部范数界；常数先于网格、时间权、周期、幂次与正负号及状态。实际FD矩重构与全域有限重叠组合仍待，AUXILIARY，原文13/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C100",
+      "title": "真实平方积分、笛卡尔有限重叠与全域加权组合",
+      "paper_ref": "Auxiliary actual square-integral finite overlap, Cartesian patch counting, and global weighted assembly for Appendix B Lemma B.2",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "lem:fd-weighted-approximation"
+      ],
+      "lean_declarations": [
+        "Carleman.finiteCoverMultiplicity",
+        "Carleman.sum_indicator_eq_multiplicity",
+        "Carleman.bochnerL2Norm_sq_finite_overlap",
+        "Carleman.bochnerL2Norm_sq_finite_cover",
+        "Carleman.subdomainLp_norm_eq_bochner",
+        "Carleman.subdomainLp_sq_finite_overlap",
+        "Carleman.subdomainLp_sq_finite_cover",
+        "Carleman.cartesianPatch",
+        "Carleman.cartesianPatch_isOpen",
+        "Carleman.cartesianPatch_index_bound",
+        "Carleman.cartesianPatch_window_card",
+        "Carleman.cartesianPatch_multiplicity_le",
+        "Carleman.cartesianPatch_permutation_multiplicity_le",
+        "Carleman.finite_patch_h2_assembly",
+        "Carleman.weighted_finite_patch_h2_assembly",
+        "Carleman.weighted_cartesian_patch_h2_assembly"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C099",
+        "C098"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "原L²真实局部平方积分按实际有限重数上下估计；正步长整数笛卡尔扩张盒的重数由floor窗口与真实有限基数得到(2r+1)^d d!上界。原加权字段的局部h²界通过平方求和得到sqrt(2M)全域损失，无总网格数因子。实际Kuhn网格索引、支撑进入这些盒及Qh局部再现/稳定性仍待，AUXILIARY，原文13/26。"
     }
   ],
   "events": [
@@ -10128,6 +10198,11 @@
       "at": "2026-10-19T00:12:20.725705+00:00",
       "public_summary": "全局H01真实局部零迹独立验收PASS；原允许权局部边界仿射逼近9声明全库通过，保持原文13/26并继续独立验收。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6a3e9dadb436f7e05d4eef590f0cf9babad92fe7/governance/reviews/T082-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T00:18:55.762097+00:00",
+      "public_summary": "原允许权局部逼近独立验收PASS；真实平方积分及笛卡尔有限重叠的全域组合16声明全库通过，原文保持13/26，继续独立验收。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2341fc2fee95be45c8fb2281804fdce1567c2bfe/governance/reviews/T083-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -10345,7 +10420,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/923bebdf208c2bcc6f517d9548d0f401a350bf49/governance/reviews/T081-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39178646933/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6a3e9dadb436f7e05d4eef590f0cf9babad92fe7/governance/reviews/T082-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39179213298/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39179213298/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2341fc2fee95be45c8fb2281804fdce1567c2bfe/governance/reviews/T083-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39179746249/attempts/1"
     ]
   },
   "schedules": [
@@ -22622,10 +22699,10 @@
       ],
       "branch": "main",
       "base_commit": "59452751f05398e3446ed5305638a1e20dc89061",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "4e697929d6afc9043f0a20caf093a0d62a33963d",
+      "merge_commit": "4e697929d6afc9043f0a20caf093a0d62a33963d",
       "lean_declarations": [
         "Carleman.BoundedMultiplier.onSubdomain",
         "Carleman.BoundedMultiplier.onSubdomain_map",
@@ -22637,12 +22714,23 @@
         "Carleman.allowedWeight_box_comparison",
         "Carleman.allowed_weight_dirichlet_h2_local_boundary_affine"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "4e697929d6afc9043f0a20caf093a0d62a33963d",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39179746249/attempts/1",
+        "finished_at": "2026-10-19T00:15:27.143281+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "4e697929d6afc9043f0a20caf093a0d62a33963d"
+      },
       "blocker": null,
       "attempts": [
         "四模块9声明定向3370 jobs、全库3734 jobs通过，5792声明递归公理审计PASS。"
       ],
-      "next_action": "固定SHA独立验收原允许权局部边界逼近9声明，继续有限重叠平方积分及实际FD重构。",
+      "next_action": "原允许权局部边界逼近已独立验收；继续实际有限重叠平方积分及FD网格、矩重构。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -22654,6 +22742,96 @@
         "recursive_axiom_audit": 5792,
         "new_explicit_declarations": 9,
         "declaration_artifact_sha256": "e7c65d179f629f08bbc06b031f393f4c58724eb5f7a7f0a168716f0804e329bd",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "4e697929d6afc9043f0a20caf093a0d62a33963d",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_section3",
+          "claim_ids": [
+            "C099"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "4e697929d6afc9043f0a20caf093a0d62a33963d",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T00:17:06Z",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2341fc2fee95be45c8fb2281804fdce1567c2bfe/governance/reviews/T083-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "4e697929d6afc9043f0a20caf093a0d62a33963d",
+        "checked_sha": "4e697929d6afc9043f0a20caf093a0d62a33963d",
+        "run_id": 39179746249,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3734,
+        "recursive_axiom_audit": 5792,
+        "new_explicit_declarations": 9,
+        "declaration_artifact_sha256": "e7c65d179f629f08bbc06b031f393f4c58724eb5f7a7f0a168716f0804e329bd",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T084",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "真实平方积分、笛卡尔有限重叠与全域加权组合",
+      "goal_ids": [
+        "C100"
+      ],
+      "acceptance": [
+        "真实MemLp保证所有范数平方可积，有限和/限制积分身份不掩盖无限能量",
+        "覆盖与重数条件分别给真实全局L²和局部平方总和上下界，限制版本为同一原Lp类",
+        "实际笛卡尔正步长盒成员关系推出精确floor整数窗口，基数不依赖网格数量或步长",
+        "有限标签及排列的实际注入计数给重数(2r+1)^d d!，任意子块含边界裁剪适用",
+        "实际乘权字段的h²局部界组合为sqrt(2M)全域界；保留实际Qh局部估计与网格索引/支撑接入义务，不提升B2"
+      ],
+      "dependencies": [
+        "C099",
+        "C098"
+      ],
+      "branch": "main",
+      "base_commit": "4e697929d6afc9043f0a20caf093a0d62a33963d",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.finiteCoverMultiplicity",
+        "Carleman.sum_indicator_eq_multiplicity",
+        "Carleman.bochnerL2Norm_sq_finite_overlap",
+        "Carleman.bochnerL2Norm_sq_finite_cover",
+        "Carleman.subdomainLp_norm_eq_bochner",
+        "Carleman.subdomainLp_sq_finite_overlap",
+        "Carleman.subdomainLp_sq_finite_cover",
+        "Carleman.cartesianPatch",
+        "Carleman.cartesianPatch_isOpen",
+        "Carleman.cartesianPatch_index_bound",
+        "Carleman.cartesianPatch_window_card",
+        "Carleman.cartesianPatch_multiplicity_le",
+        "Carleman.cartesianPatch_permutation_multiplicity_le",
+        "Carleman.finite_patch_h2_assembly",
+        "Carleman.weighted_finite_patch_h2_assembly",
+        "Carleman.weighted_cartesian_patch_h2_assembly"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "三模块16声明定向3236 jobs、全库3737 jobs通过，5810声明递归公理审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收真实平方积分、笛卡尔重叠及全域加权组合16声明；继续原Kuhn网格几何与实际矩重构。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3737,
+        "recursive_axiom_audit": 5810,
+        "new_explicit_declarations": 16,
+        "declaration_artifact_sha256": "d3ccc761cebaaf3ba6b2292484f8c4f9a2a21d3349fc21f2eaa5a76d6ec366a3",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
