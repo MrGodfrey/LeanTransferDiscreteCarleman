@@ -4982,6 +4982,21 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesianKuhn_h2_local_error
 #print axioms Carleman.cartesianKuhn_h2_local_error
 
+#check @Carleman.BoundedMultiplier.bochner_map_restrict
+#print axioms Carleman.BoundedMultiplier.bochner_map_restrict
+#check @Carleman.BoundedMultiplier.bochner_map_le_anchor
+#print axioms Carleman.BoundedMultiplier.bochner_map_le_anchor
+#check @Carleman.BoundedMultiplier.bochner_le_map_anchor
+#print axioms Carleman.BoundedMultiplier.bochner_le_map_anchor
+#check @Carleman.cartesianKuhn_h2_weighted_local_error
+#print axioms Carleman.cartesianKuhn_h2_weighted_local_error
+#check @Carleman.cartesianKuhn_error_assembly
+#print axioms Carleman.cartesianKuhn_error_assembly
+#check @Carleman.allowed_weight_cartesianKuhn_h2_error
+#print axioms Carleman.allowed_weight_cartesianKuhn_h2_error
+#check @Carleman.allowed_weight_cartesianKuhn_approximation
+#print axioms Carleman.allowed_weight_cartesianKuhn_approximation
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

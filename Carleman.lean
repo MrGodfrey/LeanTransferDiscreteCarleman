@@ -599,3 +599,8 @@ public import Carleman.Spatial.WeakJetLocality
 public import Carleman.Spatial.CartesianKuhnErrorLocality
 public import Carleman.Spatial.CartesianKuhnErrorStability
 public import Carleman.Spatial.CartesianKuhnLocalError
+
+public import Carleman.Spatial.WeightedMeasureAnchor
+public import Carleman.Spatial.CartesianKuhnWeightedLocalError
+public import Carleman.Spatial.CartesianKuhnErrorAssembly
+public import Carleman.Spatial.AllowedCartesianKuhnError
