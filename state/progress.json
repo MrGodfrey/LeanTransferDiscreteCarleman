@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T123",
-    "supervisor_checked_at": "2026-10-19T05:51:47.176152+00:00",
-    "next_action": "固定SHA独立验收全部弱H²∩H¹₀的真实conforming节点误差；继续全域允许权与原L²投影组合。",
+    "current_task_id": "T124",
+    "supervisor_checked_at": "2026-10-19T06:00:28.768126+00:00",
+    "next_action": "固定SHA独立验收全域允许权节点插值估计；继续真实L²投影h²/h误差与原N3接口。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T05:51:47.176152+00:00"
+    "last_activity_at": "2026-10-19T06:00:28.768126+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "b40c6b3a3e783529e21adc5a699f4d4d19c4edbe",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39206204127/attempts/1",
-      "finished_at": "2026-10-19T05:47:38.061314+00:00",
+      "checked_sha": "e56df9d1895554e8cdfacc7e52c86bac51a08e6c",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39206744043/attempts/1",
+      "finished_at": "2026-10-19T05:54:51.147742+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "b40c6b3a3e783529e21adc5a699f4d4d19c4edbe"
+      "source_head_sha": "e56df9d1895554e8cdfacc7e52c86bac51a08e6c"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "b40c6b3a3e783529e21adc5a699f4d4d19c4edbe",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39206204127/attempts/1",
-      "finished_at": "2026-10-19T05:47:38.061314+00:00",
+      "checked_sha": "e56df9d1895554e8cdfacc7e52c86bac51a08e6c",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39206744043/attempts/1",
+      "finished_at": "2026-10-19T05:54:51.147742+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "b40c6b3a3e783529e21adc5a699f4d4d19c4edbe"
+      "source_head_sha": "e56df9d1895554e8cdfacc7e52c86bac51a08e6c"
     }
   },
   "milestones": [
@@ -12677,7 +12677,7 @@
       "paper_ref": "Auxiliary analytic obligation for original P1 Step 2: one actual conforming nodal interpolant and genuine H¹₀ error jet for every original weak H² state, with both local estimates",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:p1"
@@ -12692,16 +12692,80 @@
         "Carleman.SimplicialPartition.nodalH2ErrorJet_cell_integral_bounds",
         "Carleman.SimplicialPartition.exists_weak_h2_conforming_nodal_error"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "e56df9d1895554e8cdfacc7e52c86bac51a08e6c",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "e56df9d1895554e8cdfacc7e52c86bac51a08e6c",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39206744043/attempts/1",
+        "finished_at": "2026-10-19T05:54:51.147742+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "e56df9d1895554e8cdfacc7e52c86bac51a08e6c"
+      },
+      "semantic_review": {
+        "checked_sha": "e56df9d1895554e8cdfacc7e52c86bac51a08e6c",
+        "declarations": [
+          "Carleman.SimplicialPartition.nodalSobolevJet_mem_dirichlet",
+          "Carleman.SimplicialPartition.nodalH2ErrorJet",
+          "Carleman.SimplicialPartition.nodalH2ErrorJet_value",
+          "Carleman.SimplicialPartition.nodalH2ErrorJet_mem_dirichlet",
+          "Carleman.SimplicialPartition.nodalH2ErrorJet_value_on_cell",
+          "Carleman.SimplicialPartition.nodalH2ErrorJet_gradient_on_cell",
+          "Carleman.SimplicialPartition.nodalH2ErrorJet_cell_integral_bounds",
+          "Carleman.SimplicialPartition.exists_weak_h2_conforming_nodal_error"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/03b4a391b6c4d32a3a4f2a2c30f501432b987c0c/governance/reviews/T123-local-acceptance.md",
+        "reviewed_at": "2026-10-19T05:57:16+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C138",
         "C136"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "全部原弱H²∩H¹₀内部供应同一闭包连续边界零代表，实际节点插值属于原conformingSpace，原一阶截断减节点jet定义真实H¹₀误差，逐单元值/全部梯度与原同单元Hessian能量界成立。AUXILIARY14/26。"
+      "scope_notes": "全部原弱H²∩H¹₀内部供应同一闭包连续边界零代表，实际节点插值属于原conformingSpace，原一阶截断减节点jet定义真实H¹₀误差，逐单元值/全部梯度与原同单元Hessian能量界成立。AUXILIARY14/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C140",
+      "title": "全部弱H²∩H¹₀的全域允许权节点插值估计",
+      "paper_ref": "Original P1 Step 2 eq:p1-interpolation and eq:p1-interpolation-energy: actual mesh-weighted global nodal estimates on every weak H² Dirichlet state",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:p1",
+        "eq:p1-interpolation",
+        "eq:p1-interpolation-energy"
+      ],
+      "lean_declarations": [
+        "Carleman.BoundedMultiplier.integral_transfer",
+        "Carleman.BoundedMultiplier.integral_transfer_memLp",
+        "Carleman.SimplicialPartition.cellWeight",
+        "Carleman.SimplicialPartition.cellWeight_on_cell",
+        "Carleman.SimplicialPartition.cellWeight_sq_sum",
+        "Carleman.SimplicialPartition.cellWeight_seminorm_le",
+        "Carleman.SimplicialPartition.weighted_cell_errors_sum",
+        "Carleman.SimplicialPartition.weighted_cell_inverse_errors_sum",
+        "Carleman.weak_h2_weighted_nodal_approximation",
+        "Carleman.weak_h2_allowed_nodal_approximation"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C139"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实局部权W⁴转移、全网格精确积分求和、实际ℓ²/ℓ乘子给原全部弱H²∩H¹₀两个节点误差界；同一f/e先于全部允许权，统一常数先于全部网格/状态/τ/t/符号。原P1投影及数值接口仍待；AUXILIARY14/26。"
     }
   ],
   "events": [
@@ -13401,6 +13465,11 @@
       "at": "2026-10-19T05:51:47.176152+00:00",
       "public_summary": "原H¹₀闭包连续代表全部边界零值已独立验收；真实conforming节点插值与H¹₀误差8声明构建审计通过，继续全域加权求和。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/893f36b8c744a64f9d5a3e6aad9a998a9024d8d6/governance/reviews/T122-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T06:00:28.768126+00:00",
+      "public_summary": "全部弱H²∩H¹₀的真实conforming节点误差已独立验收；原全域允许权节点插值两估计10声明构建审计通过，继续原投影误差和N3。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/03b4a391b6c4d32a3a4f2a2c30f501432b987c0c/governance/reviews/T123-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -13698,7 +13767,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/238926d59554057bc7cffae67f4ff41726eafb86/governance/reviews/T121-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39205342801/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/893f36b8c744a64f9d5a3e6aad9a998a9024d8d6/governance/reviews/T122-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39206204127/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39206204127/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/03b4a391b6c4d32a3a4f2a2c30f501432b987c0c/governance/reviews/T123-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39206744043/attempts/1"
     ]
   },
   "schedules": [
@@ -30003,10 +30074,10 @@
       ],
       "branch": "main",
       "base_commit": "b40c6b3a3e783529e21adc5a699f4d4d19c4edbe",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "e56df9d1895554e8cdfacc7e52c86bac51a08e6c",
+      "merge_commit": "e56df9d1895554e8cdfacc7e52c86bac51a08e6c",
       "lean_declarations": [
         "Carleman.SimplicialPartition.nodalSobolevJet_mem_dirichlet",
         "Carleman.SimplicialPartition.nodalH2ErrorJet",
@@ -30017,12 +30088,23 @@
         "Carleman.SimplicialPartition.nodalH2ErrorJet_cell_integral_bounds",
         "Carleman.SimplicialPartition.exists_weak_h2_conforming_nodal_error"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "e56df9d1895554e8cdfacc7e52c86bac51a08e6c",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39206744043/attempts/1",
+        "finished_at": "2026-10-19T05:54:51.147742+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "e56df9d1895554e8cdfacc7e52c86bac51a08e6c"
+      },
       "blocker": null,
       "attempts": [
         "三模块8声明定向3385 jobs、全库3879 jobs通过；6727声明递归审计PASS。"
       ],
-      "next_action": "固定SHA独立验收全部弱H²∩H¹₀的真实conforming节点误差；继续全域允许权与原L²投影组合。",
+      "next_action": "原全部弱H²∩H¹₀真实conforming插值和误差已独立验收；继续全域允许权节点估计。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -30034,6 +30116,89 @@
         "recursive_axiom_audit": 6727,
         "new_explicit_declarations": 8,
         "declaration_artifact_sha256": "96644cbd6bedaa524424eb33abbd3c3e8c73062b4515ea547d5382f9f7707a8b",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "e56df9d1895554e8cdfacc7e52c86bac51a08e6c",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C139"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "e56df9d1895554e8cdfacc7e52c86bac51a08e6c",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T05:57:16+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/03b4a391b6c4d32a3a4f2a2c30f501432b987c0c/governance/reviews/T123-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "e56df9d1895554e8cdfacc7e52c86bac51a08e6c",
+        "checked_sha": "e56df9d1895554e8cdfacc7e52c86bac51a08e6c",
+        "run_id": 39206744043,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3879,
+        "recursive_axiom_audit": 6727,
+        "new_explicit_declarations": 8,
+        "declaration_artifact_sha256": "96644cbd6bedaa524424eb33abbd3c3e8c73062b4515ea547d5382f9f7707a8b",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T124",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "全部弱H²∩H¹₀的全域允许权节点插值估计",
+      "goal_ids": [
+        "C140"
+      ],
+      "acceptance": [
+        "实际Lp与MemLp加权转移正锚消去，全部积分合法",
+        "实际单元乘子与向量平方积分精确求和无单元数量常数",
+        "真实ℓ²值及ℓ梯度/逆尺度误差，对全部原弱H²∩H¹₀",
+        "同一f/e先于全部w，统一C先于网格/状态/时间/实幂/两种符号",
+        "原允许权比较内部供应；形状和尺度条件来自原几何，P011不提前提升"
+      ],
+      "dependencies": [
+        "C139"
+      ],
+      "branch": "main",
+      "base_commit": "e56df9d1895554e8cdfacc7e52c86bac51a08e6c",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.BoundedMultiplier.integral_transfer",
+        "Carleman.BoundedMultiplier.integral_transfer_memLp",
+        "Carleman.SimplicialPartition.cellWeight",
+        "Carleman.SimplicialPartition.cellWeight_on_cell",
+        "Carleman.SimplicialPartition.cellWeight_sq_sum",
+        "Carleman.SimplicialPartition.cellWeight_seminorm_le",
+        "Carleman.SimplicialPartition.weighted_cell_errors_sum",
+        "Carleman.SimplicialPartition.weighted_cell_inverse_errors_sum",
+        "Carleman.weak_h2_weighted_nodal_approximation",
+        "Carleman.weak_h2_allowed_nodal_approximation"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "五模块10声明定向3400 jobs、全库3884 jobs通过；6740声明递归审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收全域允许权节点插值估计；继续真实L²投影h²/h误差与原N3接口。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3884,
+        "recursive_axiom_audit": 6740,
+        "new_explicit_declarations": 10,
+        "declaration_artifact_sha256": "96d63e0cd091e26aa0e452ab5323ef969447a8f055fbe6d03f6430bb400b5b4b",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

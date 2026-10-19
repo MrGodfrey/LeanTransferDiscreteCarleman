@@ -239,3 +239,5 @@
 - T121 / C137：真实弱C¹链式法则9声明独立PASS；同SHA三项CI、6697声明递归审计及固定产物逐字节一致。 固定证明 `4689b4942585bde7e96bc0ecfa1a360de012db2b`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/238926d59554057bc7cffae67f4ff41726eafb86/governance/reviews/T121-local-acceptance.md)。原文14/26，T122继续原H¹₀闭包连续代表的全部边界点零值。
 
 - T122 / C138：原H¹₀连续代表全部边界零值5声明独立PASS；同SHA三项CI、6702声明递归审计及固定产物逐字节一致。 固定证明 `b40c6b3a3e783529e21adc5a699f4d4d19c4edbe`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/893f36b8c744a64f9d5a3e6aad9a998a9024d8d6/governance/reviews/T122-local-acceptance.md)。原文14/26，T123继续全部弱H²∩H¹₀的真实conforming节点误差。
+
+- T123 / C139：真实conforming节点误差8声明独立PASS；同SHA三项CI、6727声明递归审计及固定产物逐字节一致。 固定证明 `e56df9d1895554e8cdfacc7e52c86bac51a08e6c`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/03b4a391b6c4d32a3a4f2a2c30f501432b987c0c/governance/reviews/T123-local-acceptance.md)。原文14/26，T124继续全部弱H²∩H¹₀的全域允许权节点插值估计。
