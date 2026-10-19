@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T102",
-    "supervisor_checked_at": "2026-10-19T02:59:49.511999+00:00",
-    "next_action": "固定SHA独立验收原测试算子的时间导数、周期及统一eq:testtime；继续真实Kuhn形状参数和原超逼近。",
+    "current_task_id": "T103",
+    "supervisor_checked_at": "2026-10-19T03:07:55.116685+00:00",
+    "next_action": "固定SHA独立验收真实Kuhn形状及节点代表唯一性；继续明确原对角测试、论文符号方向的完整弱超逼近。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T02:59:49.511999+00:00"
+    "last_activity_at": "2026-10-19T03:07:55.116685+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "88306d8177aee83bfc8c6011f9d964a273e042b9",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39192013906/attempts/1",
-      "finished_at": "2026-10-19T02:54:33.602854+00:00",
+      "checked_sha": "c749c4620eb0cba6f74a8a6ae58f6ce114645897",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39192583763/attempts/1",
+      "finished_at": "2026-10-19T03:02:02.471128+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "88306d8177aee83bfc8c6011f9d964a273e042b9"
+      "source_head_sha": "c749c4620eb0cba6f74a8a6ae58f6ce114645897"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "88306d8177aee83bfc8c6011f9d964a273e042b9",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39192013906/attempts/1",
-      "finished_at": "2026-10-19T02:54:33.602854+00:00",
+      "checked_sha": "c749c4620eb0cba6f74a8a6ae58f6ce114645897",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39192583763/attempts/1",
+      "finished_at": "2026-10-19T03:02:02.471128+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "88306d8177aee83bfc8c6011f9d964a273e042b9"
+      "source_head_sha": "c749c4620eb0cba6f74a8a6ae58f6ce114645897"
     }
   },
   "milestones": [
@@ -11195,7 +11195,7 @@
       "paper_ref": "Original diagonal finite-difference test operator time derivative, periodicity and eq:testtime, Appendix B Step 3",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "eq:testtime",
@@ -11216,9 +11216,41 @@
         "Carleman.cartesianAllowedTestOperator_periodic",
         "Carleman.allowed_weight_cartesian_test_time"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "c749c4620eb0cba6f74a8a6ae58f6ce114645897",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "c749c4620eb0cba6f74a8a6ae58f6ce114645897",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39192583763/attempts/1",
+        "finished_at": "2026-10-19T03:02:02.471128+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "c749c4620eb0cba6f74a8a6ae58f6ce114645897"
+      },
+      "semantic_review": {
+        "checked_sha": "c749c4620eb0cba6f74a8a6ae58f6ce114645897",
+        "declarations": [
+          "Carleman.finiteDiagonalOperatorFamily",
+          "Carleman.finiteDiagonalOperatorFamily_apply",
+          "Carleman.finiteDiagonalOperatorFamily_hasDerivWithinAt",
+          "Carleman.cartesianPhysicalInner_diagonal_bound",
+          "Carleman.cartesianAllowedTestOperator",
+          "Carleman.cartesianAllowedTestDerivative",
+          "Carleman.cartesianAllowedTestOperator_apply",
+          "Carleman.cartesianAllowedTestOperator_hasDerivWithinAt",
+          "Carleman.cartesianAllowedTestOperator_endpoint",
+          "Carleman.cartesianAllowedTestDerivative_pairing_bound",
+          "Carleman.cartesianAllowedTestOperator_periodic",
+          "Carleman.allowed_weight_cartesian_test_time"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a2e96249d2cf5aa17e1ac8fa54fb06884385d2cd/governance/reviews/T102-local-acceptance.md",
+        "reviewed_at": "2026-10-19T03:06:45+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C117",
         "C108",
@@ -11226,7 +11258,43 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "真实有限系数到连续算子的连续线性映射给原σ²测试的算子范数时间导数。原q端点/周期身份精确传递，原物理配对和对数导数界、实际紧闭包轮廓界、质量比较给eq:testtime；固定β、τStar后的C先于网格周期时间权幂符号和全状态。原时间权正则性保留，无额外节点界。超逼近和观察仍待，AUXILIARY14/26。"
+      "scope_notes": "真实有限系数到连续算子的连续线性映射给原σ²测试的算子范数时间导数。原q端点/周期身份精确传递，原物理配对和对数导数界、实际紧闭包轮廓界、质量比较给eq:testtime；固定β、τStar后的C先于网格周期时间权幂符号和全状态。原时间权正则性保留，无额外节点界。超逼近和观察仍待，AUXILIARY14/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C119",
+      "title": "原Kuhn测试的真实统一形状及节点代表唯一性",
+      "paper_ref": "Actual Cartesian Kuhn shape regularity and uniqueness of nodal multipliers needed for Appendix B Step 3 superapproximation",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "eq:testsuper",
+        "Ptest",
+        "prop:fd"
+      ],
+      "lean_declarations": [
+        "Carleman.simplex_exists_inball",
+        "Carleman.affineSimplex_contains_ball",
+        "Carleman.cartesianKuhn_cellDiameter_le",
+        "Carleman.cartesianKuhn_maxDiameter_le",
+        "Carleman.cartesianKuhn_uniform_inballs",
+        "Carleman.SimplicialPartition.nodalLp_vertex_eq",
+        "Carleman.SimplicialPartition.nodalLp_multiplier_congr",
+        "Carleman.cartesianKuhnReconstructionLp_mem_conforming"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C111",
+        "C108",
+        "C117"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "固定参考Kuhn真实内接球和实际仿射逆界供应全部物理单元统一内接球r₀h/κ及真实cell/maxDiameter≤(d+1)h，常数先于网格。实际nodalLp相等经单元多项式连续性推出顶点数据相等，故节点乘法与代表选择无关；原R_h完整conformingSpace资格内部证明。超逼近本身及观察仍待，AUXILIARY14/26。"
     }
   ],
   "events": [
@@ -11821,6 +11889,11 @@
       "at": "2026-10-19T02:59:49.511999+00:00",
       "public_summary": "原对角测试及eq:test-norm已独立验收；原测试算子真实时间导数和全参数统一eq:testtime已构建审计通过。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bba5170521376dac55d181b012f32d35ce9ca9e7/governance/reviews/T101-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T03:07:55.116685+00:00",
+      "public_summary": "真实测试时间导数及统一eq:testtime已独立验收；Kuhn实际统一形状与节点代表唯一性8声明构建审计通过。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a2e96249d2cf5aa17e1ac8fa54fb06884385d2cd/governance/reviews/T102-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -12076,7 +12149,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d8d3fa17c85dad804b2a4e8ece6d5e98b1d6f78e/governance/reviews/T100-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39191534685/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bba5170521376dac55d181b012f32d35ce9ca9e7/governance/reviews/T101-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39192013906/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39192013906/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a2e96249d2cf5aa17e1ac8fa54fb06884385d2cd/governance/reviews/T102-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39192583763/attempts/1"
     ]
   },
   "schedules": [
@@ -26337,10 +26412,10 @@
       ],
       "branch": "main",
       "base_commit": "88306d8177aee83bfc8c6011f9d964a273e042b9",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "c749c4620eb0cba6f74a8a6ae58f6ce114645897",
+      "merge_commit": "c749c4620eb0cba6f74a8a6ae58f6ce114645897",
       "lean_declarations": [
         "Carleman.finiteDiagonalOperatorFamily",
         "Carleman.finiteDiagonalOperatorFamily_apply",
@@ -26355,12 +26430,23 @@
         "Carleman.cartesianAllowedTestOperator_periodic",
         "Carleman.allowed_weight_cartesian_test_time"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "c749c4620eb0cba6f74a8a6ae58f6ce114645897",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39192583763/attempts/1",
+        "finished_at": "2026-10-19T03:02:02.471128+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "c749c4620eb0cba6f74a8a6ae58f6ce114645897"
+      },
       "blocker": null,
       "attempts": [
         "三模块12声明定向3501 jobs、全库3809 jobs通过，6285声明递归公理审计PASS。"
       ],
-      "next_action": "固定SHA独立验收原测试算子的时间导数、周期及统一eq:testtime；继续真实Kuhn形状参数和原超逼近。",
+      "next_action": "真实算子时间导数及原eq:testtime已独立验收；继续原Kuhn形状、明确节点测试的弱超逼近和观察。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -26372,6 +26458,89 @@
         "recursive_axiom_audit": 6285,
         "new_explicit_declarations": 12,
         "declaration_artifact_sha256": "46c448b59813bfd47159daee68fbe0b1afe4974393fc26c062469f82d5916e50",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "c749c4620eb0cba6f74a8a6ae58f6ce114645897",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C118"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "c749c4620eb0cba6f74a8a6ae58f6ce114645897",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T03:06:45+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a2e96249d2cf5aa17e1ac8fa54fb06884385d2cd/governance/reviews/T102-local-acceptance.md"
+        }
+      ],
+      "ci_relationship": {
+        "proof_head": "c749c4620eb0cba6f74a8a6ae58f6ce114645897",
+        "checked_sha": "c749c4620eb0cba6f74a8a6ae58f6ce114645897",
+        "run_id": 39192583763,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 3809,
+        "recursive_axiom_audit": 6285,
+        "new_explicit_declarations": 12,
+        "declaration_artifact_sha256": "46c448b59813bfd47159daee68fbe0b1afe4974393fc26c062469f82d5916e50",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T103",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原Kuhn测试的真实统一形状及节点代表唯一性",
+      "goal_ids": [
+        "C119"
+      ],
+      "acceptance": [
+        "真实满维单纯形内接球与实际仿射逆像距离，不以形式形状假设替代",
+        "全部实际Kuhn物理单元的统一半径和真实有限最大直径，含边界/空网格",
+        "常数仅依赖维数κ，先于全部正可比网格h及平移",
+        "真实nodalLp等价推出顶点一致，只对实际多项式使用连续性，无任意L²点值",
+        "原全状态R_h属于同一原conformingSpace，未缩减节点空间；完整超逼近/FD不提前提升"
+      ],
+      "dependencies": [
+        "C111",
+        "C108",
+        "C117"
+      ],
+      "branch": "main",
+      "base_commit": "c749c4620eb0cba6f74a8a6ae58f6ce114645897",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.simplex_exists_inball",
+        "Carleman.affineSimplex_contains_ball",
+        "Carleman.cartesianKuhn_cellDiameter_le",
+        "Carleman.cartesianKuhn_maxDiameter_le",
+        "Carleman.cartesianKuhn_uniform_inballs",
+        "Carleman.SimplicialPartition.nodalLp_vertex_eq",
+        "Carleman.SimplicialPartition.nodalLp_multiplier_congr",
+        "Carleman.cartesianKuhnReconstructionLp_mem_conforming"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "三模块8声明定向3438 jobs、全库3812 jobs通过，6293声明递归公理审计PASS。"
+      ],
+      "next_action": "固定SHA独立验收真实Kuhn形状及节点代表唯一性；继续明确原对角测试、论文符号方向的完整弱超逼近。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 3812,
+        "recursive_axiom_audit": 6293,
+        "new_explicit_declarations": 8,
+        "declaration_artifact_sha256": "6c45919c3ef1e6d299fc98344f93715dda699a91861e574d81ba5c2db40acb89",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"
