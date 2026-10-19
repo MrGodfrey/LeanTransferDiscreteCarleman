@@ -175,3 +175,5 @@
 - T089 / C105：实际内部节点零阶质量及原完整仿射矩再现15声明独立验收PASS，同SHA三项CI、5988声明递归审计及逐字节相同远端产物。 固定证明 `f2e5416279274e334edf8df2d2e43ce3a4d23c39`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e74013892fe7a9771dc021ada481042542376e42/governance/reviews/T089-local-acceptance.md)。原文13/26，T090继续原完整内部节点空间上的真实L²载荷右逆。
 
 - T090 / C106：原完整内部节点空间真实L²载荷右逆28声明独立验收PASS，同SHA三项CI、6026声明递归审计及逐字节相同远端产物。 固定证明 `340cab6232ac4c81515d19b523fec6e7a031df75`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/975ddce0bb16c1f7760caeae2178ed1b08cf6e2a/governance/reviews/T090-local-acceptance.md)。原文13/26，T091继续实际重构与载荷的网格一致无权L²界。
+
+- T091 / C107：真实重构和同一载荷右逆的网格一致无权L²界24声明独立验收PASS，同SHA三项CI、6057声明递归审计及逐字节相同远端产物。固定证明 `c5ac12749281c37710ade58c454fe9945273c7ec`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2278ec9211a32f37e3aaefb4fe5a84b0739c23a4/governance/reviews/T091-local-acceptance.md)。原文13/26，T092继续原允许权族加权稳定性。
