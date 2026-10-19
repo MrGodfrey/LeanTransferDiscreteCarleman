@@ -1350,3 +1350,9 @@ allowed_weight_full_projection对原完整空间的实际L²正交投影成立�
 `TemporalMollification`、`TemporalMollificationDerivative`、`TemporalMollificationBounds`、`PeriodicC2Mollification` 共十九声明。使用真实非负单位质量紧支光滑核卷积，保持周期和正下界，证明实际一二阶导数交换与逐点收敛。均值估计在足够小支持上给 q(t−s)≤3q_n(t)，从而导数阶数界为 9β q_n²、27β² q_n³；输入 β/9 的固定余量给目标 β 的同一 qclass。序列共享有限上界 B，实际逼近尺度可依赖 q/T，固定数值余量不依赖它们。
 
 此阶段输入全局 C² 周期 q，尚未包括原闭区间 C² 的周期扩展、权积分极限、完整弱轨道或一般凸多面体。范围 AUXILIARY，原 P024 不提升，覆盖保持 17/26；不把逼近定理当作完整连续 Carleman 估计。详见 `analysis/T154-periodic-c2-mollification.md`。
+
+## T155 / C171：C² 周期时间权下的盒双方向估计（辅助）
+
+`BoxTimeIntegralLimit` 的两项实际有限柱支配收敛定理（含真实观察示性函数），及 `BoxC2HeatEstimate.box_C2_gaussian_heat_both_signs`。先固定光滑估计参数并取 β=β₀/9，再对所有 T>0、全局 C² 周期 q 和光滑周期零边界 u，应用真实逼近及四项实际积分极限，得原指数(3,1;3)、原 ε∂t−Δ 残差的同常数双方向估计。支配常数可依赖本次数据但只用于极限，不进入最终估计常数。
+
+仍为坐标盒及光滑状态；原闭区间 C² 的匹配延拓、完整弱轨道与一般凸多面体待。AUXILIARY，P024 不提升，覆盖17/26。详见 `analysis/T155-c2-heat-estimate.md`。

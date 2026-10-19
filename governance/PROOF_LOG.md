@@ -301,3 +301,5 @@
 - T152 / C168：光滑周期盒正向热观测估计18声明独立AUXILIARY PASS；同SHA三项CI与7571声明raw逐字节相同。 固定证明 `86686ea4d106798727d898bf61abc238812a8cb8`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0c5ed16e4215a823746ee66b2d6c0bc9f1c39569/governance/reviews/T152-local-acceptance.md)。原文17/26，T153继续真实时间反射与同常数的光滑盒双方向估计。
 
 - T153 / C169：真实时间反射与同常数双方向估计14声明独立AUXILIARY PASS；同SHA三项CI与7588声明raw逐字节相同。 固定证明 `7a2da98bcead43801f48dc03ecffbc70adc7585e`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1cff393c966746c2a1917dcfb9b709fc6322ea08/governance/reviews/T153-local-acceptance.md)。原文17/26，T154继续实际C²周期时间权的光滑逼近及同阶导数界。
+
+- T154 / C170：真实C²周期卷积逼近19声明独立AUXILIARY PASS；同SHA三项CI与7613声明raw逐字节相同。 固定证明 `abadce407f55be6c99212cbf92654e8fa44a7c2d`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1de9a3b3d36fb75deee268ac2e585ed6f99a0902/governance/reviews/T154-local-acceptance.md)。原文17/26，T155继续全局C²周期权下的实际盒双方向Carleman估计。
