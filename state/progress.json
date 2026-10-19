@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T177",
-    "supervisor_checked_at": "2026-10-19T14:26:05.284266+00:00",
-    "next_action": "独立验收时间重构与实际配对；继续紧包含活动区给差分控制支持和弱极限支持，再推进一致性/PDE极限。",
+    "current_task_id": "T178",
+    "supervisor_checked_at": "2026-10-19T14:33:44.991381+00:00",
+    "next_action": "独立验收真实控制支撑/区域弱极限；继续原单元平均的强逼近与数据/势一致性，再推进连续PDE及终态极限。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T14:26:05.284266+00:00"
+    "last_activity_at": "2026-10-19T14:33:44.991381+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "ef4e3f83320e3a2d4cc7a074a1df996c13bd9d52",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39267989909/attempts/1",
-      "finished_at": "2026-10-19T14:22:07.653916+00:00",
+      "checked_sha": "d1134c0ccc8f343aef6223f304fe52f86a7aff1d",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39268926496/attempts/1",
+      "finished_at": "2026-10-19T14:28:18.488394+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "ef4e3f83320e3a2d4cc7a074a1df996c13bd9d52"
+      "source_head_sha": "d1134c0ccc8f343aef6223f304fe52f86a7aff1d"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "ef4e3f83320e3a2d4cc7a074a1df996c13bd9d52",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39267989909/attempts/1",
-      "finished_at": "2026-10-19T14:22:07.653916+00:00",
+      "checked_sha": "d1134c0ccc8f343aef6223f304fe52f86a7aff1d",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39268926496/attempts/1",
+      "finished_at": "2026-10-19T14:28:18.488394+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "ef4e3f83320e3a2d4cc7a074a1df996c13bd9d52"
+      "source_head_sha": "d1134c0ccc8f343aef6223f304fe52f86a7aff1d"
     }
   },
   "milestones": [
@@ -16635,7 +16635,7 @@
       "paper_ref": "Actual time and Cartesian space-time cell averages of the original L-infinity potential",
       "milestone": "M6b",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "eq:conv-data-fe",
@@ -16681,7 +16681,41 @@
         ],
         "source_head_sha": "ef4e3f83320e3a2d4cc7a074a1df996c13bd9d52"
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "ef4e3f83320e3a2d4cc7a074a1df996c13bd9d52",
+        "declarations": [
+          "Carleman.BoundedMultiplier.ofMeasureLE",
+          "Carleman.BoundedMultiplier.ofMeasureLE_bound",
+          "Carleman.BoundedMultiplier.integrable",
+          "Carleman.BoundedMultiplier.averageFirst",
+          "Carleman.BoundedMultiplier.averageFirst_bound",
+          "Carleman.BoundedMultiplier.averageFirst_congr",
+          "Carleman.BoundedMultiplier.setAverage_bound",
+          "Carleman.BoundedMultiplier.averageFirst_setIntegral",
+          "Carleman.TimeGrid.physicalTimeCell",
+          "Carleman.TimeGrid.physicalTimeCell_finite",
+          "Carleman.TimeGrid.physicalTimeCell_subset",
+          "Carleman.TimeGrid.physicalTimeCell_volume",
+          "Carleman.TimeGrid.physicalTimeCell_restrict_le",
+          "Carleman.timeCellPotential",
+          "Carleman.timeCellPotential_value",
+          "Carleman.timeCellPotential_bound",
+          "Carleman.timeCellPotential_congr",
+          "Carleman.timeCellPotential_setIntegral",
+          "Carleman.cartesianAveragedPotential",
+          "Carleman.cartesianAveragedPotential_formula",
+          "Carleman.cartesianAveragedPotential_bound",
+          "Carleman.cartesianAveragedPotentialMultiplier",
+          "Carleman.cartesianAveragedPotential_congr",
+          "Carleman.cartesianAveragedPotential_operator_norm",
+          "Carleman.cartesianAveragedPotential_operator_symmetric"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/47fcf88f7bc34bebea05f6ae285efc85aeaeef2b/governance/reviews/T176-local-acceptance.md",
+        "reviewed_at": "2026-10-19T14:24:10+00:00",
+        "reviewer": "/root/accept_section3; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C191",
         "C184"
@@ -16689,7 +16723,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "原时间单元真实长度，a.e.有界势的实际时间平均及原时空单元平均；Fubini原双积分公式，代表无关性，同一M界及原物理乘法算子的范数/对称性。未声称平均强收敛或完整控制收敛。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C193",
@@ -16697,7 +16731,7 @@
       "paper_ref": "Actual Bochner time reconstruction, physical pairings and bounded-control weak subsequences",
       "milestone": "M6b",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "eq:conv-pairings",
@@ -16721,8 +16755,19 @@
         "Carleman.cartesianTimeControl_norm",
         "Carleman.cartesianTimeControl_pairing"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "d1134c0ccc8f343aef6223f304fe52f86a7aff1d",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "d1134c0ccc8f343aef6223f304fe52f86a7aff1d",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39268926496/attempts/1",
+        "finished_at": "2026-10-19T14:28:18.488394+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "d1134c0ccc8f343aef6223f304fe52f86a7aff1d"
+      },
       "semantic_review": null,
       "dependencies": [
         "C192",
@@ -16731,7 +16776,52 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "真实后向Euler分片常数Bochner重构，精确保原dtΣ内积、控制范数及单元代表。实际有限元区域零延拓/差分E_hB_h均保时间积分配对。在显式保范数K及统一成本界下，原完备可分Hilbert空间上的实际序列有弱子列，极限保成本；未声称完整原控制收敛或极限PDE。"
+      "scope_notes": "真实后向Euler分片常数Bochner重构，精确保原dtΣ内积、控制范数及单元代表。实际有限元区域零延拓/差分E_hB_h均保时间积分配对。在显式保范数K及统一成本界下，原完备可分Hilbert空间上的实际序列有弱子列，极限保成本；未声称完整原控制收敛或极限PDE。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C194",
+      "title": "实际控制支撑与弱极限的区域控制恢复",
+      "paper_ref": "Actual compactly contained active-node support and supported weak limits as regional controls",
+      "milestone": "M6b",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:control-convergence",
+        "eq:conv-pairings"
+      ],
+      "lean_declarations": [
+        "Carleman.cartesianDualCell_dist_le",
+        "Carleman.cartesianDualCell_subset_region",
+        "Carleman.cartesianCellControl_zero_outside",
+        "Carleman.cartesianCellControl_support_small_mesh",
+        "Carleman.Physical.supportedRegionSpace",
+        "Carleman.Physical.supportedRegionSpace_closed",
+        "Carleman.Physical.mem_supportedRegionSpace_iff",
+        "Carleman.Physical.zeroExtend_restrict_of_supported",
+        "Carleman.bochnerKernelSpace",
+        "Carleman.bochnerKernelSpace_closed",
+        "Carleman.mem_bochnerKernelSpace_iff",
+        "Carleman.timeCellReconstruction_mem_bochnerKernel",
+        "Carleman.exists_bochnerKernel_weak_subsequence",
+        "Carleman.bochnerKernel_of_weak_tendsto",
+        "Carleman.cartesianTimeControl_supported",
+        "Carleman.cartesianTimeControl_supported_small_mesh",
+        "Carleman.supportedBochner_zeroExtension",
+        "Carleman.exists_regional_control_weak_subsequence"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C193",
+        "C191",
+        "C145"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "原紧包含活动区给实际对偶单元支持和统一小网格阈值；原空间/Bochner支撑为真实限制CLM的闭核。时间重构保支撑，任意完整弱极限保支撑；实际区域零延拓恢复Bochner控制且保范数，在显式成本/支撑下有区域控制弱子列。未声称完整PDE或终态零值。"
     }
   ],
   "events": [
@@ -17731,6 +17821,16 @@
       "at": "2026-10-19T14:26:05.284266+00:00",
       "public_summary": "原时空平均势同SHA三CI及raw审计通过、独立验收在途；真实时间重构、物理配对与有界控制弱子列已构建审计。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39267989909/attempts/1"
+    },
+    {
+      "at": "2026-10-19T14:27:51.084443+00:00",
+      "public_summary": "T176原时空平均势独立验收通过并销项，覆盖保持17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/47fcf88f7bc34bebea05f6ae285efc85aeaeef2b/governance/reviews/T176-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-19T14:33:44.991381+00:00",
+      "public_summary": "真实时间重构同SHA三CI及原始审计通过、独立验收在途；实际小网格控制支撑与区域弱极限恢复已构建审计。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39268926496/attempts/1"
     }
   ],
   "snapshot": {
@@ -18135,7 +18235,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39264879548/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39266504703/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8a921065b09fe7082c4ef5d1163e9925f3f98709/governance/reviews/T175-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39267989909/attempts/1"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39267989909/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/47fcf88f7bc34bebea05f6ae285efc85aeaeef2b/governance/reviews/T176-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39268926496/attempts/1"
     ]
   },
   "schedules": [
@@ -39720,10 +39822,10 @@
       ],
       "branch": "main",
       "base_commit": "7c2ceacf62d42b168879106b8c6d6fc246c45794",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "ef4e3f83320e3a2d4cc7a074a1df996c13bd9d52",
-      "merge_commit": null,
+      "merge_commit": "ef4e3f83320e3a2d4cc7a074a1df996c13bd9d52",
       "lean_declarations": [
         "Carleman.BoundedMultiplier.ofMeasureLE",
         "Carleman.BoundedMultiplier.ofMeasureLE_bound",
@@ -39767,7 +39869,7 @@
       "attempts": [
         "三模块二十五声明，定向3522 jobs；根目标4115及8229声明递归公理审计通过。"
       ],
-      "next_action": "固定提交已构建推送；等待正在运行的独立Agent语义验收，不把CI当作验收。",
+      "next_action": "原时空平均势已独立验收；继续真实时间重构和控制支持/收敛。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -39781,7 +39883,7 @@
         "declaration_artifact_sha256": "3b48978b3750e4d968d4e97de3ea4400558e92a2c7424cfd829a22d5d6d2b2ec",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING; fixed SHA required"
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
       },
       "declaration_version": "ef4e3f83320e3a2d4cc7a074a1df996c13bd9d52",
       "ci_relationship": {
@@ -39794,7 +39896,20 @@
         "new_explicit_declarations": 25,
         "declaration_artifact_sha256": "3b48978b3750e4d968d4e97de3ea4400558e92a2c7424cfd829a22d5d6d2b2ec",
         "local_remote_artifacts_identical": true
-      }
+      },
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_section3",
+          "claim_ids": [
+            "C192"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "ef4e3f83320e3a2d4cc7a074a1df996c13bd9d52",
+          "status": "PASS",
+          "reviewed_at": "2026-10-19T14:24:10+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/47fcf88f7bc34bebea05f6ae285efc85aeaeef2b/governance/reviews/T176-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T177",
@@ -39818,9 +39933,9 @@
       ],
       "branch": "main",
       "base_commit": "ef4e3f83320e3a2d4cc7a074a1df996c13bd9d52",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "d1134c0ccc8f343aef6223f304fe52f86a7aff1d",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.TimeGrid.physicalTimeCell_disjoint",
@@ -39840,12 +39955,23 @@
         "Carleman.cartesianTimeControl_norm",
         "Carleman.cartesianTimeControl_pairing"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "d1134c0ccc8f343aef6223f304fe52f86a7aff1d",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39268926496/attempts/1",
+        "finished_at": "2026-10-19T14:28:18.488394+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "d1134c0ccc8f343aef6223f304fe52f86a7aff1d"
+      },
       "blocker": null,
       "attempts": [
         "三模块十六声明，时间定向3009、实际配对3532 jobs；根目标4118及8254递归声明公理审计成功。"
       ],
-      "next_action": "独立验收时间重构与实际配对；继续紧包含活动区给差分控制支持和弱极限支持，再推进一致性/PDE极限。",
+      "next_action": "固定提交已构建推送；等待正在运行的独立Agent语义验收，不把CI当作验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -39857,6 +39983,86 @@
         "recursive_axiom_audit": 8254,
         "new_explicit_declarations": 16,
         "declaration_artifact_sha256": "8ba262e78f84145848ca33b497f1d8ccb63f25d2c83f784cd4f3d3fb95d729e6",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING; fixed SHA required"
+      },
+      "declaration_version": "d1134c0ccc8f343aef6223f304fe52f86a7aff1d",
+      "ci_relationship": {
+        "proof_head": "d1134c0ccc8f343aef6223f304fe52f86a7aff1d",
+        "checked_sha": "d1134c0ccc8f343aef6223f304fe52f86a7aff1d",
+        "run_id": 39268926496,
+        "all_jobs": "lean/state-check/dashboard all PASS",
+        "actual_build_jobs": 4118,
+        "recursive_axiom_audit": 8254,
+        "new_explicit_declarations": 16,
+        "declaration_artifact_sha256": "8ba262e78f84145848ca33b497f1d8ccb63f25d2c83f784cd4f3d3fb95d729e6",
+        "local_remote_artifacts_identical": true
+      }
+    },
+    {
+      "id": "T178",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "实际控制支撑与弱极限的区域控制恢复",
+      "goal_ids": [
+        "C194"
+      ],
+      "acceptance": [
+        "真实对偶单元距离和紧包含厚化给统一阈值，非仅节点中心支撑",
+        "实际K_h=E_hB_h及时间重构在ω外a.e.为零",
+        "真实限制CLM及compLpL的闭核等价于原空间/逐时支撑",
+        "任意完整弱极限保核，而不只选取一个支撑子列",
+        "真实区域控制零延拓恢复极限且范数相等，完整弱子列与原统一成本"
+      ],
+      "dependencies": [
+        "C193",
+        "C191",
+        "C145"
+      ],
+      "branch": "main",
+      "base_commit": "d1134c0ccc8f343aef6223f304fe52f86a7aff1d",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.cartesianDualCell_dist_le",
+        "Carleman.cartesianDualCell_subset_region",
+        "Carleman.cartesianCellControl_zero_outside",
+        "Carleman.cartesianCellControl_support_small_mesh",
+        "Carleman.Physical.supportedRegionSpace",
+        "Carleman.Physical.supportedRegionSpace_closed",
+        "Carleman.Physical.mem_supportedRegionSpace_iff",
+        "Carleman.Physical.zeroExtend_restrict_of_supported",
+        "Carleman.bochnerKernelSpace",
+        "Carleman.bochnerKernelSpace_closed",
+        "Carleman.mem_bochnerKernelSpace_iff",
+        "Carleman.timeCellReconstruction_mem_bochnerKernel",
+        "Carleman.exists_bochnerKernel_weak_subsequence",
+        "Carleman.bochnerKernel_of_weak_tendsto",
+        "Carleman.cartesianTimeControl_supported",
+        "Carleman.cartesianTimeControl_supported_small_mesh",
+        "Carleman.supportedBochner_zeroExtension",
+        "Carleman.exists_regional_control_weak_subsequence"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "四模块十八声明，支撑3518、闭空间3100及完整组合3534定向jobs；根目标4122及8284递归声明审计通过。"
+      ],
+      "next_action": "独立验收真实控制支撑/区域弱极限；继续原单元平均的强逼近与数据/势一致性，再推进连续PDE及终态极限。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4122,
+        "recursive_axiom_audit": 8284,
+        "new_explicit_declarations": 18,
+        "declaration_artifact_sha256": "dca985cdb86ef3ca473350c9e0f9c5f07591201fb546bc6ee9a2e1ae2cab33c4",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

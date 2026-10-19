@@ -359,3 +359,7 @@
 - T175 / C191：二十一声明独立21/21 PASS；真实Lebesgue重构与原物理范数/控制配对/平均伴随一致，三项CI及8190声明raw逐字节核对。 固定证明 `7c2ceacf62d42b168879106b8c6d6fc246c45794`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8a921065b09fe7082c4ef5d1163e9925f3f98709/governance/reviews/T175-local-acceptance.md)。原文17/26；当前执行任务不变。
 
 - T176 / C192：固定证明 `ef4e3f83320e3a2d4cc7a074a1df996c13bd9d52` 的三项实际CI与原始审计核对通过；独立Agent验收仍在运行，当前仅BUILT。T177继续真实时间重构的控制范数、配对与弱子列，原文覆盖17/26。
+
+- T176 / C192：二十五声明独立25/25PASS，原a.e.有界势的真实平均、Fubini公式和代表无关性忠实，三CI与8229声明raw逐字节核对。 固定证明 `ef4e3f83320e3a2d4cc7a074a1df996c13bd9d52`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/47fcf88f7bc34bebea05f6ae285efc85aeaeef2b/governance/reviews/T176-local-acceptance.md)。原文17/26；当前执行任务不变。
+
+- T177 / C193：固定证明 `d1134c0ccc8f343aef6223f304fe52f86a7aff1d` 的三项实际CI与原始审计核对通过；独立Agent验收仍在运行，当前仅BUILT。T178继续实际控制支撑与弱极限的区域控制恢复，原文覆盖17/26。
