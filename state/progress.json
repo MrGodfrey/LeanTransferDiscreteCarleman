@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T219",
-    "supervisor_checked_at": "2026-10-20T05:20:05.588829+00:00",
-    "next_action": "从原有界Lipschitz域插值推出任意小系数的低阶参数范数界，再控制全部低于2m阶的二次项。",
+    "current_task_id": "T220",
+    "supervisor_checked_at": "2026-10-20T05:21:16.860475+00:00",
+    "next_action": "剥离全部Leibniz展开中唯一无权导数主项，证明余项严格降低状态导数阶数，并据此控制原系数形式差。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "b41b6861b988e758d026fed32f5d5802e411b636",
-      "source_head_sha": "b41b6861b988e758d026fed32f5d5802e411b636",
+      "checked_sha": "1039ed66b829e865571f6ba6da574091bd785a80",
+      "source_head_sha": "1039ed66b829e865571f6ba6da574091bd785a80",
       "ci_url": null,
-      "finished_at": "2026-10-20T05:14:26.116750+00:00",
+      "finished_at": "2026-10-20T05:20:19.468322+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "75bb46a284321d0238e38ef792e6eefa8190af363caa256204741530f412b02c",
+      "source_manifest_sha256": "65fca91f8433002e73a0da67c18cd85da44fda6a75381e96300ba2fbf90b1690",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9241,
-        "sha256": "6cbdfd58a2ac8278bb9c49df088a5d60e4ba3b6fbdd09773eb04cefba6408914"
+        "declarations": 9261,
+        "sha256": "93b4a06fac6a4540ade877e4bb6acb4f188c50e7652343d4149217fac1428d96"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "b41b6861b988e758d026fed32f5d5802e411b636",
-      "source_head_sha": "b41b6861b988e758d026fed32f5d5802e411b636",
+      "checked_sha": "1039ed66b829e865571f6ba6da574091bd785a80",
+      "source_head_sha": "1039ed66b829e865571f6ba6da574091bd785a80",
       "ci_url": null,
-      "finished_at": "2026-10-20T05:14:26.116750+00:00",
+      "finished_at": "2026-10-20T05:20:19.468322+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "75bb46a284321d0238e38ef792e6eefa8190af363caa256204741530f412b02c",
+      "source_manifest_sha256": "65fca91f8433002e73a0da67c18cd85da44fda6a75381e96300ba2fbf90b1690",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9241,
-        "sha256": "6cbdfd58a2ac8278bb9c49df088a5d60e4ba3b6fbdd09773eb04cefba6408914"
+        "declarations": 9261,
+        "sha256": "93b4a06fac6a4540ade877e4bb6acb4f188c50e7652343d4149217fac1428d96"
       }
     }
   },
@@ -20128,7 +20128,7 @@
       "paper_ref": "paper/main.tex:2637–2650, Proposition A.1 的任意η插值步骤",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:spatial-operators"
@@ -20144,8 +20144,37 @@
         "Carleman.SobolevHilbert.toJet_norm_le",
         "Carleman.boundedLipschitz_hilbert_lowerOrderQuadratic_small"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "1039ed66b829e865571f6ba6da574091bd785a80",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "1039ed66b829e865571f6ba6da574091bd785a80",
+        "source_head_sha": "1039ed66b829e865571f6ba6da574091bd785a80",
+        "ci_url": null,
+        "finished_at": "2026-10-20T05:20:19.468322+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "65fca91f8433002e73a0da67c18cd85da44fda6a75381e96300ba2fbf90b1690",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9261,
+          "sha256": "93b4a06fac6a4540ade877e4bb6acb4f188c50e7652343d4149217fac1428d96"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C027",
@@ -20153,7 +20182,33 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "真实弱Sobolev射流的低阶项任意小常数估计；不输入目标插值，不提升完整Prop A.1；17/26。"
+      "scope_notes": "真实弱Sobolev射流的低阶项任意小常数估计；不输入目标插值，不提升完整Prop A.1；17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C236",
+      "title": "真实Leibniz非主项与一般系数共轭误差",
+      "paper_ref": "paper/main.tex:2637–2650, Proposition A.1 的真实共轭形式差",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:spatial-operators"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C027",
+        "C233",
+        "C234",
+        "C235"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "原全部系数形式的实际非主项控制，不假定系数光滑或目标误差界；17/26。"
     }
   ],
   "events": [
@@ -47896,9 +47951,9 @@
       ],
       "branch": "main",
       "base_commit": "b41b6861b988e758d026fed32f5d5802e411b636",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "1039ed66b829e865571f6ba6da574091bd785a80",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.WeakSobolevJet.lowerParameterNorm",
@@ -47911,13 +47966,42 @@
         "Carleman.SobolevHilbert.toJet_norm_le",
         "Carleman.boundedLipschitz_hilbert_lowerOrderQuadratic_small"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "1039ed66b829e865571f6ba6da574091bd785a80",
+        "source_head_sha": "1039ed66b829e865571f6ba6da574091bd785a80",
+        "ci_url": null,
+        "finished_at": "2026-10-20T05:20:19.468322+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "65fca91f8433002e73a0da67c18cd85da44fda6a75381e96300ba2fbf90b1690",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9261,
+          "sha256": "93b4a06fac6a4540ade877e4bb6acb4f188c50e7652343d4149217fac1428d96"
+        }
+      },
       "blocker": null,
       "attempts": [
         "已从真实参数插值用R*q缩放得到低阶增益；试编译正在处理乘法消去的库引理名称。",
         "完整9项声明通过；定向3239/full4244 jobs及9261项全命名空间递归公理审计actual exit0。原双和完整分解、任意η常数、真实Hᵐ范数均已核对。"
       ],
-      "next_action": "从原有界Lipschitz域插值推出任意小系数的低阶参数范数界，再控制全部低于2m阶的二次项。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -47933,7 +48017,42 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "review": "PENDING"
-      }
+      },
+      "declaration_version": "1039ed66b829e865571f6ba6da574091bd785a80"
+    },
+    {
+      "id": "T220",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "真实Leibniz非主项与一般系数共轭误差",
+      "goal_ids": [
+        "C236"
+      ],
+      "acceptance": [
+        "真实Leibniz主项唯一和完整余项，保留全部重数",
+        "每项至少一个权导数，状态严格低阶并保留原q幂",
+        "真实系数形式的共轭差估计及固定常数"
+      ],
+      "dependencies": [
+        "C027",
+        "C233",
+        "C234",
+        "C235"
+      ],
+      "branch": "main",
+      "base_commit": "1039ed66b829e865571f6ba6da574091bd785a80",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "开始从实际derivativeSplits过滤唯一空左词，严格降阶已通过试编译。"
+      ],
+      "next_action": "剥离全部Leibniz展开中唯一无权导数主项，证明余项严格降低状态导数阶数，并据此控制原系数形式差。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
