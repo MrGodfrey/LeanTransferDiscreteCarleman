@@ -9333,6 +9333,35 @@ set_option pp.maxSteps 1000000
 #check Carleman.exists_compact_fullspace_strong_h2_approximation
 #print axioms Carleman.exists_compact_fullspace_strong_h2_approximation
 
+#check Carleman.WeakSobolevJet.graphShearInverseH2_value_exists
+#print axioms Carleman.WeakSobolevJet.graphShearInverseH2_value_exists
+#check Carleman.WeakSobolevJet.graphShearInverseH2
+#print axioms Carleman.WeakSobolevJet.graphShearInverseH2
+#check Carleman.WeakSobolevJet.graphShearInverseH2_value
+#print axioms Carleman.WeakSobolevJet.graphShearInverseH2_value
+#check Carleman.WeakSobolevJet.graphShearInverseH2_dirichlet
+#print axioms Carleman.WeakSobolevJet.graphShearInverseH2_dirichlet
+#check Carleman.WeakSobolevJet.graphShearInverseH2_left_inverse
+#print axioms Carleman.WeakSobolevJet.graphShearInverseH2_left_inverse
+#check Carleman.WeakSobolevJet.graphShearInverseH2_right_inverse
+#print axioms Carleman.WeakSobolevJet.graphShearInverseH2_right_inverse
+#check Carleman.WeakSobolevJet.graphShearInverseH2_tendsto
+#print axioms Carleman.WeakSobolevJet.graphShearInverseH2_tendsto
+#check Carleman.WeakSobolevJet.graphShearH2Pullback_globalTest
+#print axioms Carleman.WeakSobolevJet.graphShearH2Pullback_globalTest
+#check Carleman.WeakSobolevJet.graphShearInverseH2_globalTest
+#print axioms Carleman.WeakSobolevJet.graphShearInverseH2_globalTest
+#check Carleman.exists_compact_graphShear_strong_h2_approximation
+#print axioms Carleman.exists_compact_graphShear_strong_h2_approximation
+#check Carleman.graphCoordinateSide
+#print axioms Carleman.graphCoordinateSide
+#check Carleman.graphCoordinateSide_isOpen
+#print axioms Carleman.graphCoordinateSide_isOpen
+#check Carleman.graphCoordinateSide_preimage
+#print axioms Carleman.graphCoordinateSide_preimage
+#check Carleman.exists_compact_graphSide_strong_h2_approximation
+#print axioms Carleman.exists_compact_graphSide_strong_h2_approximation
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
