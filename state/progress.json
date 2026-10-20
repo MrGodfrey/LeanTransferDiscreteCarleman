@@ -10,21 +10,21 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T205",
-    "supervisor_checked_at": "2026-10-20T03:47:29.755200+00:00",
-    "next_action": "保存固定证明与本地证据，独立验收原控制状态真实初终值。",
+    "current_task_id": "T206",
+    "supervisor_checked_at": "2026-10-20T03:48:46.107831+00:00",
+    "next_action": "将原完整对偶弱方程、H连续迹与两端点接到同一实际控制族的每个弱积聚点，保留原重构支撑和费用。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-20T03:43:55.732609+00:00"
+    "last_activity_at": "2026-10-20T03:48:46.107831+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "7afc739b6c8f95e208beeaefed4b955f0eebbdb5",
-      "source_head_sha": "7afc739b6c8f95e208beeaefed4b955f0eebbdb5",
+      "checked_sha": "bfa6e3a8b9af4367eca74101ad0473c42e8bdfa8",
+      "source_head_sha": "bfa6e3a8b9af4367eca74101ad0473c42e8bdfa8",
       "ci_url": null,
-      "finished_at": "2026-10-20T03:42:45.908348+00:00",
+      "finished_at": "2026-10-20T03:47:47.117199+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "20e315393582460ee96fe09e121ebcd8fe9204e54d98832f71aefc90c14387ef",
+      "source_manifest_sha256": "3dfbf00ec834220aa4a9e129b6cf238510e5f0133c0998fb73eeb60e7d962c1d",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8921,
-        "sha256": "1d8820b367cb04cdf3eb997ed259b4e8c5829731df708572beefa0b2c444084e"
+        "declarations": 8927,
+        "sha256": "e718f2be6d571068589b98d075cbe506f5c7583e2288d53ce10fd60b47250ed2"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "7afc739b6c8f95e208beeaefed4b955f0eebbdb5",
-      "source_head_sha": "7afc739b6c8f95e208beeaefed4b955f0eebbdb5",
+      "checked_sha": "bfa6e3a8b9af4367eca74101ad0473c42e8bdfa8",
+      "source_head_sha": "bfa6e3a8b9af4367eca74101ad0473c42e8bdfa8",
       "ci_url": null,
-      "finished_at": "2026-10-20T03:42:45.908348+00:00",
+      "finished_at": "2026-10-20T03:47:47.117199+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "20e315393582460ee96fe09e121ebcd8fe9204e54d98832f71aefc90c14387ef",
+      "source_manifest_sha256": "3dfbf00ec834220aa4a9e129b6cf238510e5f0133c0998fb73eeb60e7d962c1d",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8921,
-        "sha256": "1d8820b367cb04cdf3eb997ed259b4e8c5829731df708572beefa0b2c444084e"
+        "declarations": 8927,
+        "sha256": "e718f2be6d571068589b98d075cbe506f5c7583e2288d53ce10fd60b47250ed2"
       }
     }
   },
@@ -18981,7 +18981,7 @@
       "paper_ref": "paper/main.tex:2395–2415, prop:control-convergence 的初终值识别",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -18994,8 +18994,37 @@
         "Carleman.FiniteDirichletControlIdentity.continuous_H_endpoints",
         "Carleman.FiniteDirichletControlIdentity.continuous_H_trace"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "bfa6e3a8b9af4367eca74101ad0473c42e8bdfa8",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "bfa6e3a8b9af4367eca74101ad0473c42e8bdfa8",
+        "source_head_sha": "bfa6e3a8b9af4367eca74101ad0473c42e8bdfa8",
+        "ci_url": null,
+        "finished_at": "2026-10-20T03:47:47.117199+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "3dfbf00ec834220aa4a9e129b6cf238510e5f0133c0998fb73eeb60e7d962c1d",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8927,
+          "sha256": "e718f2be6d571068589b98d075cbe506f5c7583e2288d53ce10fd60b47250ed2"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C215",
@@ -19004,7 +19033,32 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "实际原H连续代表的q(0)=y0、q(T)=0；完整控制收敛组合及一般P1分支仍待，17/26。"
+      "scope_notes": "实际原H连续代表的q(0)=y0、q(T)=0；完整控制收敛组合及一般P1分支仍待，17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C222",
+      "title": "实际盒FD控制的每个弱积聚点产生连续零终态解",
+      "paper_ref": "paper/main.tex:2347–2415, prop:control-convergence 的实际盒FD分支",
+      "milestone": "M6c",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:control-convergence"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C214",
+        "C216",
+        "C221"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "同一实际盒FD控制族的每个弱积聚点给原能量方程与连续零终态解；一般P1及整体P021仍待，17/26。"
     }
   ],
   "events": [
@@ -45240,9 +45294,9 @@
       ],
       "branch": "main",
       "base_commit": "7afc739b6c8f95e208beeaefed4b955f0eebbdb5",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "bfa6e3a8b9af4367eca74101ad0473c42e8bdfa8",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.HasWeakTimeDerivative.scalar_affine_green",
@@ -45252,13 +45306,42 @@
         "Carleman.FiniteDirichletControlIdentity.continuous_H_endpoints",
         "Carleman.FiniteDirichletControlIdentity.continuous_H_trace"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "bfa6e3a8b9af4367eca74101ad0473c42e8bdfa8",
+        "source_head_sha": "bfa6e3a8b9af4367eca74101ad0473c42e8bdfa8",
+        "ci_url": null,
+        "finished_at": "2026-10-20T03:47:47.117199+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "3dfbf00ec834220aa4a9e129b6cf238510e5f0133c0998fb73eeb60e7d962c1d",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8927,
+          "sha256": "e718f2be6d571068589b98d075cbe506f5c7583e2288d53ce10fd60b47250ed2"
+        }
+      },
       "blocker": null,
       "attempts": [
         "T204原状态H连续代表4207全库jobs、8921公理审计PASS，独立验收进行中。",
         "真实标量弱FTC、仿射Green式、原端点自由测试及Dirichlet值域稠密性给同一H连续q的q(0)=y0、q(T)=0；6声明probe exit0，3630定向/4209全库jobs、8927递归公理审计PASS。"
       ],
-      "next_action": "保存固定证明与本地证据，独立验收原控制状态真实初终值。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -45273,7 +45356,41 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "bfa6e3a8b9af4367eca74101ad0473c42e8bdfa8"
+    },
+    {
+      "id": "T206",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "实际盒FD控制的每个弱积聚点产生连续零终态解",
+      "goal_ids": [
+        "C222"
+      ],
+      "acceptance": [
+        "保留同一实际盒FD控制族、独立网格细化、弱相对紧性和任意给定弱积聚U",
+        "每个U的同一能量状态满足原对偶弱方程、H连续迹、初值y0和终值0",
+        "保留原区域零延拓与控制费用；一般P1及完整P021范围不冒充完成"
+      ],
+      "dependencies": [
+        "C214",
+        "C216",
+        "C221"
+      ],
+      "branch": "main",
+      "base_commit": "bfa6e3a8b9af4367eca74101ad0473c42e8bdfa8",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "T205原连续状态初终值4209全库jobs、8927公理审计PASS，独立验收进行中。"
+      ],
+      "next_action": "将原完整对偶弱方程、H连续迹与两端点接到同一实际控制族的每个弱积聚点，保留原重构支撑和费用。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
