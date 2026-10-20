@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T210",
-    "supervisor_checked_at": "2026-10-20T04:14:01.302921+00:00",
+    "supervisor_checked_at": "2026-10-20T04:18:45.746349+00:00",
     "next_action": "将真实P1六项恒等式取极限，并对每个给定弱控制极限抽取同一能量状态、恢复原方程及连续初终值。",
     "blocker": null,
     "pause_reason": null,
@@ -19281,7 +19281,7 @@
       "paper_ref": "paper/main.tex:2389–2398, prop:control-convergence 的P1测试及原势极限",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -19330,7 +19330,27 @@
           "sha256": "f783fbb89a9316eccb5772b11579c0cd8c1a99519b511c5bb1a9935073629fb5"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "bf85c15d7a923ca6dce0a5d5fdf10f31c28e413b",
+        "declarations": [
+          "Carleman.time_average_product_potential",
+          "Carleman.fixedTimeCellPotential",
+          "Carleman.fixedTimeCellPotential_bound",
+          "Carleman.fixed_time_average_product_potential",
+          "Carleman.fixedTimeCellPotential_value",
+          "Carleman.time_average_reconstructed_weak_pairing",
+          "Carleman.p1FiniteTestSequence",
+          "Carleman.p1FiniteTestSequence_lift",
+          "Carleman.p1FiniteTestSequence_value",
+          "Carleman.full_p1_galerkin_finite_test_endpoint_consistency",
+          "Carleman.full_p1_galerkin_finite_time_test_consistency"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b7d5dcfc6b9efb49b61c2226df0ce257f344a4fa/governance/reviews/T209-local-acceptance.md",
+        "reviewed_at": "2026-10-20T04:15:54+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C224",
         "C200",
@@ -19341,7 +19361,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "真实时间平均势/产品身份与实际P1有限测试强一致性；完整P1控制极限尚待，17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C226",
@@ -20590,6 +20610,11 @@
       "at": "2026-10-20T04:13:58.923288+00:00",
       "public_summary": "原有限元状态弱紧性与完整重构测试恒等式已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/82c6303e2eb3b2fccb6c3896df149f98d10e8c65/governance/reviews/T208-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T04:18:45.746349+00:00",
+      "public_summary": "原时间平均势与P1有限测试强一致性已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b7d5dcfc6b9efb49b61c2226df0ce257f344a4fa/governance/reviews/T209-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -21043,7 +21068,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ac4d2338d0ccfec3dc8427b03a36d8bf6ed5d9a9/governance/reviews/T205-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bde2072a9e38de544618210ae8074113979b021f/governance/reviews/T206-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c0ac2d84fb45eda398af02ddd2525c65a1f1789b/governance/reviews/T207-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/82c6303e2eb3b2fccb6c3896df149f98d10e8c65/governance/reviews/T208-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/82c6303e2eb3b2fccb6c3896df149f98d10e8c65/governance/reviews/T208-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b7d5dcfc6b9efb49b61c2226df0ce257f344a4fa/governance/reviews/T209-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -46019,10 +46045,10 @@
       ],
       "branch": "main",
       "base_commit": "7d343224295439a2c5b91f1128facfc9b42feafd",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "bf85c15d7a923ca6dce0a5d5fdf10f31c28e413b",
-      "merge_commit": null,
+      "merge_commit": "bf85c15d7a923ca6dce0a5d5fdf10f31c28e413b",
       "lean_declarations": [
         "Carleman.time_average_product_potential",
         "Carleman.fixedTimeCellPotential",
@@ -46071,7 +46097,7 @@
         "T208原P1弱紧性和六项测试4216根构建、8979公理审计PASS。",
         "两模块十一声明目标3799 jobs、根4218 jobs及9003项递归公理审计均exit 0；平均势bound使用已证原平均定理避免展开其积分构造。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -46085,9 +46111,22 @@
         "declaration_artifact_sha256": "f783fbb89a9316eccb5772b11579c0cd8c1a99519b511c5bb1a9935073629fb5",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "bf85c15d7a923ca6dce0a5d5fdf10f31c28e413b"
+      "declaration_version": "bf85c15d7a923ca6dce0a5d5fdf10f31c28e413b",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C225"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "bf85c15d7a923ca6dce0a5d5fdf10f31c28e413b",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T04:15:54+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b7d5dcfc6b9efb49b61c2226df0ce257f344a4fa/governance/reviews/T209-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T210",
