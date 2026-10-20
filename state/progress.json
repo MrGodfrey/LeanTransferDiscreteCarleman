@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T199",
-    "supervisor_checked_at": "2026-10-20T02:52:35.486518+00:00",
+    "supervisor_checked_at": "2026-10-20T02:56:53.869928+00:00",
     "next_action": "证明真实测试能量稠密性和产品张量身份，再对全部 H¹₀ 测试取极限。",
     "blocker": null,
     "pause_reason": null,
@@ -18427,7 +18427,7 @@
       "paper_ref": "paper/main.tex:2365–2400, eq:conv-limit-identity",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -18470,7 +18470,21 @@
           "sha256": "0695c24f5a9f5e32ecd6b81b21e54e0d339840a9215ec97bbadd28f0617f69ce"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "714954acb8b017b09da56c71d4bd91b7d0ccffe2",
+        "declarations": [
+          "Carleman.hilbert_weak_limit_norm_le",
+          "Carleman.regional_control_of_weak_limit",
+          "Carleman.FiniteDirichletControlIdentity",
+          "Carleman.cartesian_weak_control_limit_finite_identity",
+          "Carleman.Physical.box_cartesian_controls_weak_accumulation"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c1734158e7981e99e96131efdac9d72f456696b8/governance/reviews/T198-local-acceptance.md",
+        "reviewed_at": "2026-10-20T02:54:36+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C213",
         "C212",
@@ -18480,7 +18494,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "任意原控制弱积点对应同一实际 H¹₀ 状态的有限弱恒等式；V′导数和连续时间迹待，17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C215",
@@ -19674,6 +19688,11 @@
       "at": "2026-10-20T02:48:48.623297+00:00",
       "public_summary": "独立网格细化下的原控制构造与终端趋零已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3a6bd348117c86d39b3f17b9b111f5a85ac3e7ea/governance/reviews/T197-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T02:56:53.869928+00:00",
+      "public_summary": "任意原控制弱积点的有限弱方程及区域费用已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c1734158e7981e99e96131efdac9d72f456696b8/governance/reviews/T198-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -20116,7 +20135,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ebc826644387d929f67677cd4c4afea62cd1d42a/governance/reviews/T194-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2eaf3a373f80f24d0d968f926bdf32244d55717f/governance/reviews/T195-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6f68fde07f02c1caff27d075291b55aadffd6434/governance/reviews/T196-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3a6bd348117c86d39b3f17b9b111f5a85ac3e7ea/governance/reviews/T197-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3a6bd348117c86d39b3f17b9b111f5a85ac3e7ea/governance/reviews/T197-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c1734158e7981e99e96131efdac9d72f456696b8/governance/reviews/T198-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -44004,10 +44024,10 @@
       ],
       "branch": "main",
       "base_commit": "3998fb3b4353576457a0773e69d587e5cf92e7e8",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "714954acb8b017b09da56c71d4bd91b7d0ccffe2",
-      "merge_commit": null,
+      "merge_commit": "714954acb8b017b09da56c71d4bd91b7d0ccffe2",
       "lean_declarations": [
         "Carleman.hilbert_weak_limit_norm_le",
         "Carleman.regional_control_of_weak_limit",
@@ -44050,7 +44070,7 @@
         "T197原控制选择4071定向/4189全库jobs、8726公理审计PASS，独立验收进行中。",
         "5项正式声明完整probe exit0；4075定向jobs、4192全库jobs及8780项递归公理审计PASS。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -44064,9 +44084,22 @@
         "declaration_artifact_sha256": "0695c24f5a9f5e32ecd6b81b21e54e0d339840a9215ec97bbadd28f0617f69ce",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "714954acb8b017b09da56c71d4bd91b7d0ccffe2"
+      "declaration_version": "714954acb8b017b09da56c71d4bd91b7d0ccffe2",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C214"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "714954acb8b017b09da56c71d4bd91b7d0ccffe2",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T02:54:36+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c1734158e7981e99e96131efdac9d72f456696b8/governance/reviews/T198-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T199",
