@@ -10,21 +10,21 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T203",
-    "supervisor_checked_at": "2026-10-20T03:34:45.995511+00:00",
-    "next_action": "保存固定证明及本地证据，独立验收真实质量正则化轨迹及同一原Y/D的强极限。",
+    "current_task_id": "T204",
+    "supervisor_checked_at": "2026-10-20T03:41:07.597854+00:00",
+    "next_action": "由质量加权迹估计证明正则化H路径一致Cauchy，构造并识别同一原状态的H连续代表。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-20T03:32:19.569537+00:00"
+    "last_activity_at": "2026-10-20T03:41:07.597854+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "1b8ccf90c8aeef46bf0f614e537c02a6494caa5a",
-      "source_head_sha": "1b8ccf90c8aeef46bf0f614e537c02a6494caa5a",
+      "checked_sha": "d6634423766eaa11b670fb643578e3a62ff1a71e",
+      "source_head_sha": "d6634423766eaa11b670fb643578e3a62ff1a71e",
       "ci_url": null,
-      "finished_at": "2026-10-20T03:27:02.702594+00:00",
+      "finished_at": "2026-10-20T03:40:12.377586+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "ddfb424adea94a7df143686c883d0f980a9dfa08b10659c5be675c300c891c6d",
+      "source_manifest_sha256": "7667b8d87340cb3cdfe446c6902881824252cd56a2a4734d1760751f0630e1e2",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8913,
-        "sha256": "a1fc23ca20badfc9b43a3953a21c148545e6f0c370225b4af024df8bb1cb0e86"
+        "declarations": 8917,
+        "sha256": "899fe722c25dd787605ebfd8d5e69ca9e2fc8df4a9f38a700a1a5ee19aca4e48"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "1b8ccf90c8aeef46bf0f614e537c02a6494caa5a",
-      "source_head_sha": "1b8ccf90c8aeef46bf0f614e537c02a6494caa5a",
+      "checked_sha": "d6634423766eaa11b670fb643578e3a62ff1a71e",
+      "source_head_sha": "d6634423766eaa11b670fb643578e3a62ff1a71e",
       "ci_url": null,
-      "finished_at": "2026-10-20T03:27:02.702594+00:00",
+      "finished_at": "2026-10-20T03:40:12.377586+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "ddfb424adea94a7df143686c883d0f980a9dfa08b10659c5be675c300c891c6d",
+      "source_manifest_sha256": "7667b8d87340cb3cdfe446c6902881824252cd56a2a4734d1760751f0630e1e2",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8913,
-        "sha256": "a1fc23ca20badfc9b43a3953a21c148545e6f0c370225b4af024df8bb1cb0e86"
+        "declarations": 8917,
+        "sha256": "899fe722c25dd787605ebfd8d5e69ca9e2fc8df4a9f38a700a1a5ee19aca4e48"
       }
     }
   },
@@ -18840,7 +18840,7 @@
       "paper_ref": "paper/main.tex:2415, prop:control-convergence 的 H 连续时间迹",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -18850,8 +18850,37 @@
         "Carleman.mass_regularized_time_paths",
         "Carleman.FiniteDirichletControlIdentity.regularized_time_paths"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "d6634423766eaa11b670fb643578e3a62ff1a71e",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "d6634423766eaa11b670fb643578e3a62ff1a71e",
+        "source_head_sha": "d6634423766eaa11b670fb643578e3a62ff1a71e",
+        "ci_url": null,
+        "finished_at": "2026-10-20T03:40:12.377586+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "7667b8d87340cb3cdfe446c6902881824252cd56a2a4734d1760751f0630e1e2",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8917,
+          "sha256": "899fe722c25dd787605ebfd8d5e69ca9e2fc8df4a9f38a700a1a5ee19aca4e48"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C216",
@@ -18860,7 +18889,31 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "实际连续V值质量正则化近似的构造及两项L²强收敛；H一致极限和端点仍待，17/26。"
+      "scope_notes": "实际连续V值质量正则化近似的构造及两项L²强收敛；H一致极限和端点仍待，17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C220",
+      "title": "原控制状态的真实H连续时间代表",
+      "paper_ref": "paper/main.tex:2415, prop:control-convergence 的 H 连续时间迹",
+      "milestone": "M6c",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:control-convergence"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C218",
+        "C219"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "由实际正则化路径一致极限证明原状态的闭区间H连续代表；初终值识别仍待，17/26。"
     }
   ],
   "events": [
@@ -44894,22 +44947,51 @@
       ],
       "branch": "main",
       "base_commit": "1b8ccf90c8aeef46bf0f614e537c02a6494caa5a",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "d6634423766eaa11b670fb643578e3a62ff1a71e",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.HasWeakTimeDerivative.linear_map",
         "Carleman.mass_regularized_time_paths",
         "Carleman.FiniteDirichletControlIdentity.regularized_time_paths"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "d6634423766eaa11b670fb643578e3a62ff1a71e",
+        "source_head_sha": "d6634423766eaa11b670fb643578e3a62ff1a71e",
+        "ci_url": null,
+        "finished_at": "2026-10-20T03:40:12.377586+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "7667b8d87340cb3cdfe446c6902881824252cd56a2a4734d1760751f0630e1e2",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8917,
+          "sha256": "899fe722c25dd787605ebfd8d5e69ca9e2fc8df4a9f38a700a1a5ee19aca4e48"
+        }
+      },
       "blocker": null,
       "attempts": [
         "T202质量加权H迹估计4203全库jobs、8913公理审计PASS，独立验收进行中。",
         "原质量弱导数给连续质量代表，再由实际逆构造同一Y/D的连续V近似和两项Bochner强极限；消除结论中的依赖测度传输后3声明probe exit0、3625定向/4205全库jobs、8917递归公理审计PASS。"
       ],
-      "next_action": "保存固定证明及本地证据，独立验收真实质量正则化轨迹及同一原Y/D的强极限。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -44924,7 +45006,40 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "d6634423766eaa11b670fb643578e3a62ff1a71e"
+    },
+    {
+      "id": "T204",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原控制状态的真实H连续时间代表",
+      "goal_ids": [
+        "C220"
+      ],
+      "acceptance": [
+        "实际C([0,T];H)一致Cauchy及完备性给连续极限",
+        "实际pathL2身份识别极限为同一原Y的值映射",
+        "闭区间含两个端点，不预设原Y连续或用质量场连续性替代"
+      ],
+      "dependencies": [
+        "C218",
+        "C219"
+      ],
+      "branch": "main",
+      "base_commit": "d6634423766eaa11b670fb643578e3a62ff1a71e",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "T203实际连续正则化路径4205全库jobs、8917公理审计PASS，独立验收进行中；通用H路径强极限试编译已通过。"
+      ],
+      "next_action": "由质量加权迹估计证明正则化H路径一致Cauchy，构造并识别同一原状态的H连续代表。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
