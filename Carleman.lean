@@ -1136,3 +1136,5 @@ public import Carleman.Geometry.SmoothGraphHeightExtension
 public import Carleman.Geometry.SublevelGraphRegularity
 
 public import Carleman.Spatial.FiniteLocalH2Gluing
+
+public import Carleman.Geometry.LevelBoundaryHessian

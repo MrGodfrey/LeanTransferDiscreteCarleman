@@ -9068,6 +9068,29 @@ set_option pp.maxSteps 1000000
 #check @Carleman.halfspaceSmoothInner_dirichlet_H2
 #print axioms Carleman.halfspaceSmoothInner_dirichlet_H2
 
+#check @Carleman.smooth_directional_fderiv_eq
+#print axioms Carleman.smooth_directional_fderiv_eq
+#check @Carleman.second_fderiv_comp_zero_of_tangent
+#print axioms Carleman.second_fderiv_comp_zero_of_tangent
+#check @Carleman.coordinateLevelMap_const_composition_derivative
+#print axioms Carleman.coordinateLevelMap_const_composition_derivative
+#check @Carleman.level_graph_gradient_multiple
+#print axioms Carleman.level_graph_gradient_multiple
+#check @Carleman.second_fderiv_sub_smul
+#print axioms Carleman.second_fderiv_sub_smul
+#check @Carleman.level_graph_tangent_hessian_multiple
+#print axioms Carleman.level_graph_tangent_hessian_multiple
+#check @Carleman.regular_level_zero_gradient_hessian
+#print axioms Carleman.regular_level_zero_gradient_hessian
+#check @Carleman.halfspaceSmoothInner_frontier_of_level
+#print axioms Carleman.halfspaceSmoothInner_frontier_of_level
+#check @Carleman.halfspaceSmoothInner_zero_gradient_hessian
+#print axioms Carleman.halfspaceSmoothInner_zero_gradient_hessian
+#check @Carleman.halfspaceExpSum_second_directional
+#print axioms Carleman.halfspaceExpSum_second_directional
+#check @Carleman.halfspaceExpSum_hessian_nonneg
+#print axioms Carleman.halfspaceExpSum_hessian_nonneg
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
