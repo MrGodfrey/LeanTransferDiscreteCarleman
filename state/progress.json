@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T259",
-    "supervisor_checked_at": "2026-10-20T10:40:53.044626+00:00",
-    "next_action": "用实际内域弱解与统一Hessian界完成原有限半空间域穷竭，恢复同一原弱解、完整H²估计和原算子域。",
+    "current_task_id": "T260",
+    "supervisor_checked_at": "2026-10-20T10:46:50.758910+00:00",
+    "next_action": "将真实H²域/图估计、全平方根和自伴图、原完整允许权族打包为原Corollary A.2，并由独立Agent核验全部原量词。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "41f754d3e85d22b62c6e6229f5629bee782b0bc6",
-      "source_head_sha": "41f754d3e85d22b62c6e6229f5629bee782b0bc6",
+      "checked_sha": "0a4c425a254d6bc108651a078b6c0adbcc02b9f5",
+      "source_head_sha": "0a4c425a254d6bc108651a078b6c0adbcc02b9f5",
       "ci_url": null,
-      "finished_at": "2026-10-20T10:37:58.072757+00:00",
+      "finished_at": "2026-10-20T10:46:15.207387+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "df47a6746f0100d283e694a5afba4116edc195da6969995691a7cd5b1f76e48a",
+      "source_manifest_sha256": "400fa13124e87061330a90fad8ba154e965c415cc04a845ec17919159fed2e24",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10281,
-        "sha256": "57dda6590b5f1a63a862fd694c25821a37da86eb52d35d07d8f62db98d3aad24"
+        "declarations": 10291,
+        "sha256": "52a50bd1a30a4c92aaf59e875c35baa78dd82558e89f32d0ad0acf531a2f09eb"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "41f754d3e85d22b62c6e6229f5629bee782b0bc6",
-      "source_head_sha": "41f754d3e85d22b62c6e6229f5629bee782b0bc6",
+      "checked_sha": "0a4c425a254d6bc108651a078b6c0adbcc02b9f5",
+      "source_head_sha": "0a4c425a254d6bc108651a078b6c0adbcc02b9f5",
       "ci_url": null,
-      "finished_at": "2026-10-20T10:37:58.072757+00:00",
+      "finished_at": "2026-10-20T10:46:15.207387+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "df47a6746f0100d283e694a5afba4116edc195da6969995691a7cd5b1f76e48a",
+      "source_manifest_sha256": "400fa13124e87061330a90fad8ba154e965c415cc04a845ec17919159fed2e24",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10281,
-        "sha256": "57dda6590b5f1a63a862fd694c25821a37da86eb52d35d07d8f62db98d3aad24"
+        "declarations": 10291,
+        "sha256": "52a50bd1a30a4c92aaf59e875c35baa78dd82558e89f32d0ad0acf531a2f09eb"
       }
     }
   },
@@ -23698,7 +23698,7 @@
       "pr_url": null,
       "id": "C275",
       "title": "原有界凸多面体Dirichlet完整H²正则性",
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "lean_declarations": [
         "Carleman.IsWeakNegativeLaplacian.unique_dirichlet",
         "Carleman.finite_halfspace_isOpen",
@@ -23717,6 +23717,59 @@
       ],
       "blocker": null,
       "scope_notes": "原非空有界有限半空间交的完整弱DirichletH²正则性；A1–A3整体打包仍待，AUXILIARY18/26。",
+      "independent_review_status": "PENDING",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "0a4c425a254d6bc108651a078b6c0adbcc02b9f5",
+        "source_head_sha": "0a4c425a254d6bc108651a078b6c0adbcc02b9f5",
+        "ci_url": null,
+        "finished_at": "2026-10-20T10:46:15.207387+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "400fa13124e87061330a90fad8ba154e965c415cc04a845ec17919159fed2e24",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10291,
+          "sha256": "52a50bd1a30a4c92aaf59e875c35baa78dd82558e89f32d0ad0acf531a2f09eb"
+        }
+      },
+      "semantic_review": null,
+      "declaration_version": "0a4c425a254d6bc108651a078b6c0adbcc02b9f5"
+    },
+    {
+      "paper_ref": "paper/main.tex:2659–2665 Corollary A.2",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "scope": "PAPER",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "pr_url": null,
+      "id": "C276",
+      "title": "Corollary A.2 原凸多面体与盒的完整空间解析实现",
+      "verification_status": "SPECIFIED",
+      "lean_declarations": [],
+      "dependencies": [
+        "C275",
+        "C245"
+      ],
+      "blocker": null,
+      "scope_notes": "原Corollary A.2完整A1–A3；待固定构建与独立论文级验收，暂不提升18/26。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -55789,8 +55842,8 @@
         "C246"
       ],
       "base_commit": "41f754d3e85d22b62c6e6229f5629bee782b0bc6",
-      "status": "RUNNING",
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "checkpoint_commit": "0a4c425a254d6bc108651a078b6c0adbcc02b9f5",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.IsWeakNegativeLaplacian.unique_dirichlet",
@@ -55805,8 +55858,37 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "用实际内域弱解与统一Hessian界完成原有限半空间域穷竭，恢复同一原弱解、完整H²估计和原算子域。",
-      "build_evidence": null,
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "0a4c425a254d6bc108651a078b6c0adbcc02b9f5",
+        "source_head_sha": "0a4c425a254d6bc108651a078b6c0adbcc02b9f5",
+        "ci_url": null,
+        "finished_at": "2026-10-20T10:46:15.207387+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "400fa13124e87061330a90fad8ba154e965c415cc04a845ec17919159fed2e24",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10291,
+          "sha256": "52a50bd1a30a4c92aaf59e875c35baa78dd82558e89f32d0ad0acf531a2f09eb"
+        }
+      },
       "local_validation": {
         "target": "Carleman.Spatial.FiniteHalfspaceRegularity",
         "target_jobs": 3511,
@@ -55817,7 +55899,38 @@
         "recursive_axiom_declarations": 10291,
         "axiom_exit_code": 0,
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "0a4c425a254d6bc108651a078b6c0adbcc02b9f5"
+    },
+    {
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "branch": "main",
+      "pr_url": null,
+      "integration_mode": "direct-main",
+      "id": "T260",
+      "title": "Corollary A.2 原凸多面体与盒的完整空间解析实现",
+      "goal_ids": [
+        "C276"
+      ],
+      "acceptance": [
+        "原凸多面体与盒不输入H²正则性",
+        "原平方根全定义域/自伴图/完整H²算子域和图估计",
+        "固定空间权下完整允许时间权族的所有A2–A3常数先行选择"
+      ],
+      "dependencies": [
+        "C275",
+        "C245"
+      ],
+      "base_commit": "0a4c425a254d6bc108651a078b6c0adbcc02b9f5",
+      "status": "RUNNING",
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "blocker": null,
+      "attempts": [],
+      "next_action": "将真实H²域/图估计、全平方根和自伴图、原完整允许权族打包为原Corollary A.2，并由独立Agent核验全部原量词。",
+      "build_evidence": null
     }
   ],
   "private_maintenance": {
