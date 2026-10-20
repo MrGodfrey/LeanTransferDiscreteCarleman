@@ -1001,7 +1001,7 @@
         "Carleman.Physical.box_cartesian_filtered_control"
       ],
       "declaration_version": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": {
@@ -1034,9 +1034,21 @@
           "sha256": "e0e3da2180909af0258d6fa929159430a54a2df9e82c3e6681f31a5752281ee4"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
+        "declarations": [
+          "Carleman.Physical.finite_halfspace_p1_filtered_observation_control",
+          "Carleman.Physical.box_cartesian_filtered_observability",
+          "Carleman.Physical.box_cartesian_filtered_control"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7097e500642997a9718add2322f558f65e45fcbf/governance/reviews/T269-local-acceptance.md",
+        "reviewed_at": "2026-10-20T12:31:45+00:00",
+        "reviewer": "/root/accept_section3; independent paper acceptance"
+      },
       "blocker": null,
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "P018",
@@ -1054,7 +1066,7 @@
         "Carleman.Physical.box_cartesian_filtered_control"
       ],
       "declaration_version": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": {
@@ -1087,9 +1099,21 @@
           "sha256": "e0e3da2180909af0258d6fa929159430a54a2df9e82c3e6681f31a5752281ee4"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
+        "declarations": [
+          "Carleman.Physical.finite_halfspace_p1_filtered_observation_control",
+          "Carleman.Physical.box_cartesian_filtered_observability",
+          "Carleman.Physical.box_cartesian_filtered_control"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7097e500642997a9718add2322f558f65e45fcbf/governance/reviews/T269-local-acceptance.md",
+        "reviewed_at": "2026-10-20T12:31:45+00:00",
+        "reviewer": "/root/accept_section3; independent paper acceptance"
+      },
       "blocker": null,
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "P019",

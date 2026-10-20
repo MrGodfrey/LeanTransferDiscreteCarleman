@@ -11,8 +11,8 @@
   "execution": {
     "state": "REVIEW",
     "current_task_id": "T270",
-    "supervisor_checked_at": "2026-10-20T12:31:41.472247+00:00",
-    "next_action": "全部26项已有完整证明入口；完成T269/T270独立原文验收与固定源码覆盖复核。",
+    "supervisor_checked_at": "2026-10-20T12:35:29.852065+00:00",
+    "next_action": "25/26原文结果已独立验收；等待最后Corollary7.9及全文固定版本复核。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T12:31:41.472247+00:00"
@@ -165,9 +165,10 @@
       "id": "M6b",
       "title": "观测与控制",
       "description": "Section 7 的对偶、观测与控制",
-      "status": "IN_PROGRESS",
-      "evidence_commit": null,
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence_commit": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
+      "blocker": null,
+      "acceptance_evidence": "原Section7观测、真实控制、任意终端滤波及两种具体滤波估计全部验收；最后T268/T269固定报告038447d47db3314106c903723fc9415646d96bad和7097e500642997a9718add2322f558f65e45fcbf覆盖完整P1与Cartesian实现。"
     },
     {
       "id": "M6c",
@@ -24581,7 +24582,7 @@
       "milestone": "M6b",
       "scope": "PAPER",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "lean_declarations": [
         "Carleman.Physical.finite_halfspace_p1_filtered_observation_control",
         "Carleman.Physical.box_cartesian_filtered_observability",
@@ -24593,7 +24594,7 @@
       "pr_url": null,
       "blocker": null,
       "scope_notes": "一般凸多面体P1和任意维Cartesian分支的完整过滤观测与控制。",
-      "independent_review_status": "PENDING",
+      "independent_review_status": "PASS",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -24624,7 +24625,19 @@
           "sha256": "e0e3da2180909af0258d6fa929159430a54a2df9e82c3e6681f31a5752281ee4"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
+        "declarations": [
+          "Carleman.Physical.finite_halfspace_p1_filtered_observation_control",
+          "Carleman.Physical.box_cartesian_filtered_observability",
+          "Carleman.Physical.box_cartesian_filtered_control"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7097e500642997a9718add2322f558f65e45fcbf/governance/reviews/T269-local-acceptance.md",
+        "reviewed_at": "2026-10-20T12:31:45+00:00",
+        "reviewer": "/root/accept_section3; independent paper acceptance"
+      },
       "declaration_version": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b"
     },
     {
@@ -26209,6 +26222,11 @@
       "at": "2026-10-20T12:31:26.990410+00:00",
       "public_summary": "一般凸多面体的物理观测与近似零控制已通过固定本地验证与独立数学验收；原文覆盖23/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/038447d47db3314106c903723fc9415646d96bad/governance/reviews/T268-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T12:35:29.852065+00:00",
+      "public_summary": "全原实现的过滤观测与精确低频消除控制已通过固定本地验证与独立数学验收；原文覆盖25/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7097e500642997a9718add2322f558f65e45fcbf/governance/reviews/T269-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -26722,7 +26740,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/eab02b1c24f9bce07a28db6e9a50c511368f3715/governance/reviews/T265-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4655a9d59448298a504143f523d2bf417c617aba/governance/reviews/T266-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f9c4dc5fb4770e0075bc857beae0900dc01c5edc/governance/reviews/T267-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/038447d47db3314106c903723fc9415646d96bad/governance/reviews/T268-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/038447d47db3314106c903723fc9415646d96bad/governance/reviews/T268-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7097e500642997a9718add2322f558f65e45fcbf/governance/reviews/T269-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -57806,9 +57825,9 @@
         "C284"
       ],
       "base_commit": "5458c11848a69d56199fb5e13d517b58eb38953b",
-      "status": "REVIEW",
+      "status": "MERGED",
       "checkpoint_commit": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
-      "merge_commit": null,
+      "merge_commit": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
       "lean_declarations": [
         "Carleman.Physical.finite_halfspace_p1_filtered_observation_control",
         "Carleman.Physical.box_cartesian_filtered_observability",
@@ -57846,7 +57865,7 @@
       },
       "blocker": null,
       "attempts": [],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "local_validation": {
         "target": "Carleman.Control.FiniteHalfspaceP1FilteredControl",
         "target_jobs": 3998,
@@ -57856,9 +57875,25 @@
         "root_exit_code": 0,
         "recursive_axiom_declarations": 10585,
         "axiom_exit_code": 0,
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b"
+      "declaration_version": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_section3",
+          "claim_ids": [
+            "C285"
+          ],
+          "paper_result_ids": [
+            "P017",
+            "P018"
+          ],
+          "checked_sha": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T12:31:45+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7097e500642997a9718add2322f558f65e45fcbf/governance/reviews/T269-local-acceptance.md"
+        }
+      ]
     },
     {
       "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
