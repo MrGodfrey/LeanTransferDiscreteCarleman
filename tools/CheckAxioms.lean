@@ -3284,8 +3284,6 @@ set_option pp.maxSteps 1000000
 #print axioms Carleman.SimplicialPartition.cell_restrict_domain
 #check @Carleman.SimplicialPartition.integral_eq_sum_cells
 #print axioms Carleman.SimplicialPartition.integral_eq_sum_cells
-#check @Carleman.BoundedMultiplier.restrictMeasure
-#print axioms Carleman.BoundedMultiplier.restrictMeasure
 #check @Carleman.SimplicialPartition.inverseScale
 #print axioms Carleman.SimplicialPartition.inverseScale
 #check @Carleman.SimplicialPartition.inverseScale_on_cell
@@ -8766,6 +8764,27 @@ set_option pp.maxSteps 1000000
 #print axioms Carleman.matrixGradientPairing_test_integral
 #check @Carleman.dirichlet_variable_tangential_test_bound
 #print axioms Carleman.dirichlet_variable_tangential_test_bound
+
+#check @Carleman.BoundedMultiplier.reciprocal
+#print axioms Carleman.BoundedMultiplier.reciprocal
+#check @Carleman.BoundedMultiplier.reciprocalDerivative
+#print axioms Carleman.BoundedMultiplier.reciprocalDerivative
+#check @Carleman.BoundedMultiplier.spatialDerivativeOn
+#print axioms Carleman.BoundedMultiplier.spatialDerivativeOn
+#check @Carleman.matrix_elliptic_diagonal
+#print axioms Carleman.matrix_elliptic_diagonal
+#check @Carleman.weak_derivative_divide_coefficient
+#print axioms Carleman.weak_derivative_divide_coefficient
+#check @Carleman.exists_normal_derivative_of_matrix_equation
+#print axioms Carleman.exists_normal_derivative_of_matrix_equation
+#check @Carleman.exists_variable_H2_of_tangential_test_bounds
+#print axioms Carleman.exists_variable_H2_of_tangential_test_bounds
+#check @Carleman.matrixGradientPairing_test_restricted
+#print axioms Carleman.matrixGradientPairing_test_restricted
+#check @Carleman.exists_variable_dirichlet_H2_of_tangential_invariance
+#print axioms Carleman.exists_variable_dirichlet_H2_of_tangential_invariance
+#check @Carleman.exists_variable_halfspace_dirichlet_H2
+#print axioms Carleman.exists_variable_halfspace_dirichlet_H2
 
 open Lean Elab Command in
 run_cmd do

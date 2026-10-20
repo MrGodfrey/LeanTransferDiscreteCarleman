@@ -1871,3 +1871,7 @@ T226独立报告F1要求的同一H上正自伴平方根、D(Ahalf)=V、Ahalf²=A
 ## T235 / C251 — 真实变系数切向能量与原梯度分布界
 
 真实有界 Lipschitz 系数的差商乘积公式与全部矩阵积分椭圆性，经合法 H¹₀ 二次差商测试给 κ⁻¹(‖f‖+ΣC_ij‖∇u‖) 的步长统一切向梯度界，并传到全部原分布测试。全/局域实际积分身份也已证明。当前要求真实全空间有界 Lipschitz 系数及全空间 AE 椭圆性；其曲边局部化构造和法向恢复仍待。详见 [T235 分析](analysis/T235-coefficient-difference.md)。AUXILIARY、18/26。
+
+### T236 / C252 — actual normal recovery for variable elliptic coefficients
+
+`VariableCoefficientNormalRecovery` derives D_r(a_rr D_r u) from the original divergence-form test equation and already proved tangential/mixed derivatives, then divides by the actual positive normal coefficient with its proved weak product rule. The final half-space theorem derives coefficient derivative bounds from Lipschitz constants and normal positivity from the original a.e. ellipticity; it constructs the same original u in H² with an explicit step-independent bound. Global bounded Lipschitz coefficients smooth on the half-space are explicit inputs. Nonlinear chart pullback, global chart-coefficient extension and uniform convex-domain regularity remain outstanding. AUXILIARY, coverage 18/26; see `analysis/T236-normal-recovery.md`.
