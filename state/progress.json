@@ -12,7 +12,7 @@
     "state": "RUNNING",
     "current_task_id": "T196",
     "supervisor_checked_at": "2026-10-20T02:26:46.401063+00:00",
-    "next_action": "连接原有限测试的梯度、差商、势项、控制及端点配对，推导原弱恒等式极限。",
+    "next_action": "本地完整构建和公理审计通过；固定证明提交后交独立Agent验收原弱恒等式及明确输入。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T02:20:58.303413+00:00"
@@ -18269,7 +18269,16 @@
       "paper_labels": [
         "prop:control-convergence"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.timeTensor_map",
+        "Carleman.cartesianFiniteTestSequence",
+        "Carleman.cartesianFiniteTestSequence_front",
+        "Carleman.cartesianFiniteTestSequence_endpoints",
+        "Carleman.cartesianGridPotential",
+        "Carleman.cartesian_fixed_time_product_potential",
+        "Carleman.cartesian_finite_test_gradient_strong_convergence",
+        "Carleman.cartesian_finite_test_weak_limit_identity"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -43571,14 +43580,38 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.timeTensor_map",
+        "Carleman.cartesianFiniteTestSequence",
+        "Carleman.cartesianFiniteTestSequence_front",
+        "Carleman.cartesianFiniteTestSequence_endpoints",
+        "Carleman.cartesianGridPotential",
+        "Carleman.cartesian_fixed_time_product_potential",
+        "Carleman.cartesian_finite_test_gradient_strong_convergence",
+        "Carleman.cartesian_finite_test_weak_limit_identity"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "T195原势乘积本地构建和8699项审计PASS，固定版本独立验收进行中。"
+        "T195原势乘积本地构建和8699项审计PASS，固定版本独立验收进行中。",
+        "8项正式声明完整probe exit0；3607定向jobs、4186全库jobs及8714项递归公理审计PASS。"
       ],
-      "next_action": "连接原有限测试的梯度、差商、势项、控制及端点配对，推导原弱恒等式极限。",
-      "integration_mode": "direct-main"
+      "next_action": "本地完整构建和公理审计通过；固定证明提交后交独立Agent验收原弱恒等式及明确输入。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4186,
+        "recursive_axiom_audit": 8714,
+        "new_explicit_declarations": 8,
+        "declaration_artifact_sha256": "b85814859d7b5254eb43b565ddeb587da467b6f8b7eb48c48207ab7741be77a5",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

@@ -1008,3 +1008,6 @@ public import Carleman.Control.TensorTestUniformConsistency
 
 public import Carleman.Control.FiniteTensorTestMultiplier
 public import Carleman.Control.FiniteTestPotentialConsistency
+
+public import Carleman.Control.CartesianWeakLimitTests
+public import Carleman.Control.CartesianWeakLimitIdentity
