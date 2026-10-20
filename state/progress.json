@@ -10,37 +10,73 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T193",
-    "supervisor_checked_at": "2026-10-20T01:50:03.278934+00:00",
-    "next_action": "待T192正式独立报告冻结销项后commit/push当前差分测试阶段，启动独立Agent验收固定SHA。",
+    "current_task_id": "T194",
+    "supervisor_checked_at": "2026-10-20T01:55:23.599218+00:00",
+    "next_action": "证明原P1与差分重构的真实a.e.一致误差，连接有限时间张量，不忽略边界条带。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-20T01:50:03.278934+00:00"
+    "last_activity_at": "2026-10-20T01:55:23.599218+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "560e3aa8d23c22943b51dd7744da8174944b27ef",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39354880337/attempts/1",
-      "finished_at": "2026-10-20T01:45:03.857724+00:00",
-      "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+      "source": "local",
+      "checked_sha": "3ac3635f878b0c1521032b396a2630acdcc4da46",
+      "source_head_sha": "3ac3635f878b0c1521032b396a2630acdcc4da46",
+      "ci_url": null,
+      "finished_at": "2026-10-20T01:47:47.662754+00:00",
+      "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
-        "Carleman"
+        "Carleman",
+        "tools/CheckAxioms.lean"
       ],
-      "source_head_sha": "560e3aa8d23c22943b51dd7744da8174944b27ef"
+      "commands": [
+        {
+          "command": "lake build Carleman",
+          "exit_code": 0
+        },
+        {
+          "command": "lake env lean tools/CheckAxioms.lean",
+          "exit_code": 0
+        }
+      ],
+      "source_manifest_sha256": "a2ea189a3ec98b1605f26fda7a7b8e85b72ba6da14c48759cec6d1044a509195",
+      "axiom_audit": {
+        "status": "PASS",
+        "declarations": 8656,
+        "sha256": "70fc5b59c3872591d07d063eec37df738f79c9461cebfbbc2542dbf859b8ea23"
+      }
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "560e3aa8d23c22943b51dd7744da8174944b27ef",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39354880337/attempts/1",
-      "finished_at": "2026-10-20T01:45:03.857724+00:00",
-      "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+      "source": "local",
+      "checked_sha": "3ac3635f878b0c1521032b396a2630acdcc4da46",
+      "source_head_sha": "3ac3635f878b0c1521032b396a2630acdcc4da46",
+      "ci_url": null,
+      "finished_at": "2026-10-20T01:47:47.662754+00:00",
+      "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
-        "Carleman"
+        "Carleman",
+        "tools/CheckAxioms.lean"
       ],
-      "source_head_sha": "560e3aa8d23c22943b51dd7744da8174944b27ef"
+      "commands": [
+        {
+          "command": "lake build Carleman",
+          "exit_code": 0
+        },
+        {
+          "command": "lake env lean tools/CheckAxioms.lean",
+          "exit_code": 0
+        }
+      ],
+      "source_manifest_sha256": "a2ea189a3ec98b1605f26fda7a7b8e85b72ba6da14c48759cec6d1044a509195",
+      "axiom_audit": {
+        "status": "PASS",
+        "declarations": 8656,
+        "sha256": "70fc5b59c3872591d07d063eec37df738f79c9461cebfbbc2542dbf859b8ea23"
+      }
     }
   },
   "milestones": [
@@ -17951,7 +17987,7 @@
       "paper_ref": "paper/main.tex:2926–2956, sec:control-consistency / prop:control-convergence",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -17976,8 +18012,37 @@
         "Carleman.cartesian_finite_time_test_cell_L2_consistency",
         "Carleman.cartesian_finite_test_endpoint_consistency"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "3ac3635f878b0c1521032b396a2630acdcc4da46",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "3ac3635f878b0c1521032b396a2630acdcc4da46",
+        "source_head_sha": "3ac3635f878b0c1521032b396a2630acdcc4da46",
+        "ci_url": null,
+        "finished_at": "2026-10-20T01:47:47.662754+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "a2ea189a3ec98b1605f26fda7a7b8e85b72ba6da14c48759cec6d1044a509195",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8656,
+          "sha256": "70fc5b59c3872591d07d063eec37df738f79c9461cebfbbc2542dbf859b8ea23"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C208",
@@ -17986,7 +18051,32 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "原盒差分测试H¹₀/L²强一致性及完整时空差商/端点。产品L∞误差、最终势项、极限PDE和状态端点仍待；17/26。"
+      "scope_notes": "原盒差分测试H¹₀/L²强一致性及完整时空差商/端点。产品L∞误差、最终势项、极限PDE和状态端点仍待；17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C210",
+      "title": "原有限张量测试的产品L∞一致性",
+      "paper_ref": "paper/main.tex:2926–2956, sec:control-consistency / prop:control-convergence",
+      "milestone": "M6c",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:control-convergence"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C209",
+        "C208",
+        "C207"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "原有限张量测试产品L∞一致性；完整极限方程、势项和状态端点仍待。17/26。"
     }
   ],
   "events": [
@@ -19127,6 +19217,10 @@
       "at": "2026-10-20T01:50:03.278934+00:00",
       "public_summary": "原P1节点测试强一致性已通过独立验收及同提交CI，差分测试继续；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/739f92b05f7169e03dc1c917630d89ba40e7511d/governance/reviews/T192-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T01:54:50.158995+00:00",
+      "public_summary": "按用户要求简化验收：本地Lean与公理审计、固定提交独立数学审核支撑推进；远端CI保留后台复现。"
     }
   ],
   "snapshot": {
@@ -42930,9 +43024,9 @@
       ],
       "branch": "main",
       "base_commit": "560e3aa8d23c22943b51dd7744da8174944b27ef",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "3ac3635f878b0c1521032b396a2630acdcc4da46",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.cartesianNodalSample",
@@ -42954,13 +43048,42 @@
         "Carleman.cartesian_finite_time_test_cell_L2_consistency",
         "Carleman.cartesian_finite_test_endpoint_consistency"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "3ac3635f878b0c1521032b396a2630acdcc4da46",
+        "source_head_sha": "3ac3635f878b0c1521032b396a2630acdcc4da46",
+        "ci_url": null,
+        "finished_at": "2026-10-20T01:47:47.662754+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "a2ea189a3ec98b1605f26fda7a7b8e85b72ba6da14c48759cec6d1044a509195",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8656,
+          "sha256": "70fc5b59c3872591d07d063eec37df738f79c9461cebfbbc2542dbf859b8ea23"
+        }
+      },
       "blocker": null,
       "attempts": [
         "基线T192已全库及公理审计PASS并独立语义核对无缺陷，正式三项CI与冻结报告仍在进行；新证明只依赖固定基线，不预登记验收。",
         "全部18声明完整probe exit0；三个正式模块定向3569/full4179 jobs及8656项递归公理审计PASS。真实节点值、弱导数唯一性和原几何内部供应R_h/E_h强一致性。"
       ],
-      "next_action": "待T192正式独立报告冻结销项后commit/push当前差分测试阶段，启动独立Agent验收固定SHA。",
+      "next_action": "本地固定SHA构建及审计已验证；独立Agent核对原文后即销项，不等待远端CI。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -42975,7 +43098,41 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed proof commit and remote CI follow"
-      }
+      },
+      "declaration_version": "3ac3635f878b0c1521032b396a2630acdcc4da46"
+    },
+    {
+      "id": "T194",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原有限张量测试的产品L∞一致性",
+      "goal_ids": [
+        "C210"
+      ],
+      "acceptance": [
+        "实际原I_h、E_h和前层时间取样的误差，完整保留边界零延拓",
+        "统一误差内部由固定光滑测试和原网格得到",
+        "同一产品时空域L∞收敛，不预设目标极限或增加h/dt耦合"
+      ],
+      "dependencies": [
+        "C209",
+        "C208",
+        "C207"
+      ],
+      "branch": "main",
+      "base_commit": "3ac3635f878b0c1521032b396a2630acdcc4da46",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "固定T193真实本地全库构建与8656项公理审计PASS；独立Agent语义核对进行中。采用用户简化后的本地证据流程。"
+      ],
+      "next_action": "证明原P1与差分重构的真实a.e.一致误差，连接有限时间张量，不忽略边界条带。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {

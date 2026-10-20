@@ -35,7 +35,7 @@
   function renderBuild(parent, b, title) {
     parent.appendChild(node('h3', title, 'miniheading'));
     if (!b) { parent.appendChild(node('p', '尚无成功构建记录', 'section-note')); return; }
-    parent.appendChild(node('p', `${buildLabel[b.status]} · ${short(b.checked_sha)} · ${date(b.finished_at)}`, 'evidence-text'));
+    parent.appendChild(node('p', `${b.source === 'local' ? '本地 Lean' : '远端 CI'} · ${buildLabel[b.status]} · ${short(b.checked_sha)} · ${date(b.finished_at)}`, 'evidence-text'));
     parent.appendChild(node('p', `Lean：${b.lean_version || '尚未配置'}；mathlib：${short(b.mathlib_commit)}；目标：${b.targets.join(', ') || '尚未配置'}`, 'evidence-text'));
     addLink(parent, b.ci_url, '打开 CI 证据 ↗');
   }

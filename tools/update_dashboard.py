@@ -56,16 +56,33 @@ def strings(values):
 
 def validate_build(b):
     require(b['status'] in BUILD_STATES, 'invalid build status')
+    source = b.get('source', 'github')
+    require(source in {'local', 'github'}, 'invalid build source')
     strings(b['targets'])
     timestamp(b['finished_at'])
     if b['status'] != 'NOT_RUN':
         require(sha(b['checked_sha']), 'build needs full checked_sha')
-        require(https_url(b['ci_url']), 'build needs actual HTTPS CI reference')
+        if source == 'local':
+            require(b.get('ci_url') is None, 'local build must not claim a CI run')
+        else:
+            require(https_url(b['ci_url']), 'build needs actual HTTPS CI reference')
         require(bool(b['targets']), 'build needs target names')
     if b['status'] in {'PASS', 'FAIL', 'CANCELLED'}:
         require(b['finished_at'], 'completed build needs time')
     if b['status'] == 'PASS':
         require(b['lean_version'] and sha(b['mathlib_commit']), 'PASS needs toolchain evidence')
+        if source == 'local':
+            digest = lambda value: isinstance(value, str) and re.fullmatch(r'[0-9a-f]{64}', value)
+            require(digest(b.get('source_manifest_sha256')), 'local PASS needs source manifest digest')
+            commands = b.get('commands')
+            require(isinstance(commands, list) and commands and all(
+                isinstance(c, dict) and isinstance(c.get('command'), str) and c['command'].strip()
+                and type(c.get('exit_code')) is int and c['exit_code'] == 0 for c in commands),
+                'local PASS needs actual successful commands')
+            audit = b.get('axiom_audit', {})
+            require(isinstance(audit, dict) and audit.get('status') == 'PASS'
+                    and type(audit.get('declarations')) is int and audit['declarations'] > 0
+                    and digest(audit.get('sha256')), 'local PASS needs axiom audit evidence')
 
 
 def validate_proof(c):
@@ -184,7 +201,7 @@ def public_status(x, coverage):
     def build(b):
         if not b:
             return None
-        return {**{k: text(b[k]) for k in ('status', 'checked_sha', 'finished_at', 'lean_version', 'mathlib_commit')}, 'targets': strings(b['targets']), 'ci_url': link(b['ci_url'])}
+        return {**{k: text(b[k]) for k in ('status', 'checked_sha', 'finished_at', 'lean_version', 'mathlib_commit')}, 'source': b.get('source', 'github'), 'targets': strings(b['targets']), 'ci_url': link(b['ci_url'])}
 
     def proof(c):
         review = c['semantic_review']
@@ -205,6 +222,7 @@ def public_status(x, coverage):
 
 
 def overlay_ci(x, result, expected_sha, expected_ci_url=None):
+    require(result.get('source', 'github') == 'github', 'CI overlay needs remote evidence')
     require(sha(expected_sha) and result['checked_sha'] == expected_sha, 'CI result does not match checked-out snapshot source')
     validate_build(result)
     require(result['status'] in {'PASS', 'FAIL', 'CANCELLED'}, 'CI overlay must be completed')

@@ -1,6 +1,6 @@
 # 状态和证据协议（schema 2）
 
-`progress.json.tasks` 是唯一任务台账；`paper_coverage.json` 单独登记原文结果。本机任务直接在 main 提交并推送有版本的结果，核实后整合总状态。CI 产出构建证据，生成器只做格式/关联检查，不查询 GitHub、重放 Lean 或判断数学忠实性。
+`progress.json.tasks` 是唯一任务台账；`paper_coverage.json` 单独登记原文结果。本机任务直接在 main 提交并推送有版本的结果。按用户 2026-10-20 的简化要求，固定提交的实际本地构建、公理审计与独立数学验收足以推进；远端 CI 是后台复现检查。生成器只做格式/关联检查，不执行证明或判断数学忠实性。
 
 ## 两个证明维度
 
@@ -32,7 +32,9 @@ BUILT/REVIEWED 必须记录 `lean_declarations`、完整 40 位 `declaration_ver
 
 ## 构建记录
 
-`verification.latest_build` 和 `last_successful_build` 分开。构建对象包含 status（NOT_RUN/PASS/FAIL/RUNNING/CANCELLED）、checked_sha、ci_url、finished_at、lean_version、mathlib_commit、targets。PASS 需要实际版本和目标；安装失败可记录版本为 null。CI 的 source_head_sha 额外记录 PR HEAD，checked_sha 是实际检出的测试提交（PR 可能是合并测试提交）。监督者核实它与待合并内容的关系，不把两者当成同一个 SHA。
+`verification.latest_build` 和 `last_successful_build` 分开。构建对象包含 status（NOT_RUN/PASS/FAIL/RUNNING/CANCELLED）、checked_sha、ci_url、finished_at、lean_version、mathlib_commit、targets。PASS 需要实际版本和目标；安装失败可记录版本为 null。`source=local` 使用 `ci_url=null`，记录真实执行的 `commands`（command、exit_code），`source_manifest_sha256`（受检 Lean 源文件及工具链配置的摘要）及 `axiom_audit`（status、declarations、sha256）。本地 PASS 要求命令全部 exit 0、公理审计 PASS，执行者核实受检文件与 checked_sha 一致。只在台账保存一次摘要，原始日志可留本地；独立 Agent 读取对应证据。无需远端工件或伪造 CI 链接。
+
+远端记录使用 `source=github`（历史省略时默认此值），保留真实 HTTPS `ci_url`。CI 的 source_head_sha 额外记录 PR HEAD，checked_sha 是实际检出的测试提交（PR 可能是合并测试提交）。本地与远端证据都必须关联同一声明版本；来源不同不改变独立数学审核或原文完成的标准。
 
 同次 CI 结果在生成快照时覆盖 latest_build，只有 PASS 才更新上次成功记录，不改写源 JSON。执行者后续将事实同步进台账；状态提交不需预知自身 SHA。生成器检查 SHA 形状不代表确认该提交存在，CI URL 非空也不代表该运行通过；必须访问真实证据。
 

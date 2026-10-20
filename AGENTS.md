@@ -1,6 +1,6 @@
 # Project agent instructions
 
-The user moved development to the local computer on 2026-10-18. Work directly on **main**: validate meaningful checkpoints, commit and push to GitHub. Routine progress does not need a PR or cloud handoff. GitHub stores durable results and CI evidence; preserve the existing mathematical review requirements.
+The user moved development to the local computer on 2026-10-18. Work directly on **main**: validate meaningful checkpoints, commit and push to GitHub. Routine progress does not need a PR or cloud handoff. On 2026-10-20 the user prioritized fast, correct formalization and simplified acceptance: local Lean build/axiom evidence at the exact proof commit plus independent mathematical review suffice. Remote CI is a background reproducibility check, not a per-stage gate; do not wait for every job or duplicate artifact downloads. See PROJECT_OPERATIONS and state/README for the evidence format.
 
 The first core delivery is the faithful Theorem 2.1 in `paper/main.tex`. Conditional Section 5 transfer is intermediate: expose every bridge assumption in `governance/MATH_SPEC.md`, then discharge Sections 3–4 dependencies. The long-term target includes downstream results and all named results in `state/paper_coverage.json`, not merely the 19 initial work items.
 

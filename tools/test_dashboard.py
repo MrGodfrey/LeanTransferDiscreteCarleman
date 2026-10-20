@@ -25,6 +25,14 @@ def reviewed(row):
     return row
 
 
+def local_build():
+    return {**build(), 'source': 'local', 'ci_url': None,
+            'source_manifest_sha256': 'd' * 64,
+            'commands': [{'command': 'lake build Carleman', 'exit_code': 0},
+                         {'command': 'lake env lean tools/CheckAxioms.lean', 'exit_code': 0}],
+            'axiom_audit': {'status': 'PASS', 'declarations': 12, 'sha256': 'e' * 64}}
+
+
 class StatusRegression(unittest.TestCase):
     def setUp(self):
         # Frozen inputs, never the live project ledger: progress is allowed.
@@ -116,6 +124,31 @@ class StatusRegression(unittest.TestCase):
     def test_missing_build_evidence_rejected(self):
         row = reviewed(self.x['claims'][3]); row['build_evidence'] = None
         with self.assertRaises(ValueError): dashboard.validate(self.x, self.cov)
+
+    def test_exact_local_build_can_support_independent_review_without_remote_ci(self):
+        row = reviewed(self.x['claims'][3])
+        row['build_evidence'] = local_build()
+        dashboard.validate(self.x, self.cov)
+        shown = dashboard.public_status(self.x, self.cov)['claims'][3]['build_evidence']
+        self.assertEqual(shown['source'], 'local')
+        self.assertIsNone(shown['ci_url'])
+        self.assertNotIn('commands', shown)
+        row['build_evidence']['checked_sha'] = OTHER
+        with self.assertRaises(ValueError): dashboard.validate(self.x, self.cov)
+
+    def test_local_pass_requires_successful_commands_source_and_axiom_evidence(self):
+        cases = [('commands', []), ('commands', [{'command': 'lake build', 'exit_code': 1}]),
+                 ('commands', [{'command': 'lake build', 'exit_code': False}]),
+                 ('source_manifest_sha256', None), ('axiom_audit', None),
+                 ('axiom_audit', {'status': 'FAIL', 'declarations': 12, 'sha256': 'e' * 64}),
+                 ('ci_url', URL)]
+        for field, value in cases:
+            with self.subTest(field=field, value=value):
+                b = local_build(); b[field] = value
+                with self.assertRaises(ValueError): dashboard.validate_build(b)
+
+    def test_local_evidence_cannot_masquerade_as_a_remote_snapshot(self):
+        with self.assertRaises(ValueError): dashboard.overlay_ci(self.x, local_build(), SHA)
 
     def test_projection_drops_nested_internal_metadata(self):
         marker = 'INTERNAL-NOTE-DO-NOT-PUBLISH'
