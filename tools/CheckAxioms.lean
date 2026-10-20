@@ -9450,6 +9450,41 @@ set_option pp.maxSteps 1000000
 #check Carleman.finite_halfspace_p1_realization
 #print axioms Carleman.finite_halfspace_p1_realization
 
+#check Carleman.pointwiseHeatFlux_unnormalized_eq
+#print axioms Carleman.pointwiseHeatFlux_unnormalized_eq
+#check Carleman.spacetime_level_zero_derivatives
+#print axioms Carleman.spacetime_level_zero_derivatives
+#check Carleman.gaussian_level_heat_flux_nonpos
+#print axioms Carleman.gaussian_level_heat_flux_nonpos
+#check Carleman.halfspaceSmoothInner_gaussian_heat_flux_nonpos
+#print axioms Carleman.halfspaceSmoothInner_gaussian_heat_flux_nonpos
+#check Carleman.weighted_level_divergence_identity
+#print axioms Carleman.weighted_level_divergence_identity
+#check Carleman.levelLayer_scalar_upper_bound
+#print axioms Carleman.levelLayer_scalar_upper_bound
+#check Carleman.levelCutoff_divergence_upper_bound
+#print axioms Carleman.levelCutoff_divergence_upper_bound
+#check Carleman.level_divergence_nonpos
+#print axioms Carleman.level_divergence_nonpos
+#check Carleman.domainTimeIntegral
+#print axioms Carleman.domainTimeIntegral
+#check Carleman.continuous_domain_time_integrable
+#print axioms Carleman.continuous_domain_time_integrable
+#check Carleman.domainTimeIntegral_eq_iterated
+#print axioms Carleman.domainTimeIntegral_eq_iterated
+#check Carleman.domainTimeIntegral_add
+#print axioms Carleman.domainTimeIntegral_add
+#check Carleman.domainTimeIntegral_mono
+#print axioms Carleman.domainTimeIntegral_mono
+#check Carleman.domainTimeIntegral_nonpos_of_spatial
+#print axioms Carleman.domainTimeIntegral_nonpos_of_spatial
+#check Carleman.domainTimeIntegral_periodic_derivative
+#print axioms Carleman.domainTimeIntegral_periodic_derivative
+#check Carleman.halfspaceSmoothInner_heat_flux_integral
+#print axioms Carleman.halfspaceSmoothInner_heat_flux_integral
+#check Carleman.halfspaceSmoothInner_smooth_heat_carleman_inequality
+#print axioms Carleman.halfspaceSmoothInner_smooth_heat_carleman_inequality
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

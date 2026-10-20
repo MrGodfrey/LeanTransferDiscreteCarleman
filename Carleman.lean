@@ -1161,3 +1161,7 @@ public import Carleman.Spatial.FiniteHalfspaceRegularity
 public import Carleman.Spatial.DirichletAnalyticRealization
 
 public import Carleman.Control.FullP1Realization
+
+public import Carleman.Spatial.LevelHeatBoundary
+public import Carleman.Spatial.LevelDivergence
+public import Carleman.Spatial.SublevelHeatIdentity

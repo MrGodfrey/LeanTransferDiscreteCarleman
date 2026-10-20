@@ -23916,7 +23916,7 @@
     },
     {
       "id": "C278",
-      "title": "光滑内域真实热通量与散度积分符号",
+      "title": "光滑内域热Carleman积分不等式",
       "paper_ref": "paper/main.tex:2672 Proposition A.3 的边界积分步骤",
       "paper_labels": [
         "prop:continuousCE"
@@ -23925,7 +23925,25 @@
       "scope": "AUXILIARY",
       "extra_hypotheses": [],
       "verification_status": "SPECIFIED",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.pointwiseHeatFlux_unnormalized_eq",
+        "Carleman.spacetime_level_zero_derivatives",
+        "Carleman.gaussian_level_heat_flux_nonpos",
+        "Carleman.halfspaceSmoothInner_gaussian_heat_flux_nonpos",
+        "Carleman.weighted_level_divergence_identity",
+        "Carleman.levelLayer_scalar_upper_bound",
+        "Carleman.levelCutoff_divergence_upper_bound",
+        "Carleman.level_divergence_nonpos",
+        "Carleman.domainTimeIntegral",
+        "Carleman.continuous_domain_time_integrable",
+        "Carleman.domainTimeIntegral_eq_iterated",
+        "Carleman.domainTimeIntegral_add",
+        "Carleman.domainTimeIntegral_mono",
+        "Carleman.domainTimeIntegral_nonpos_of_spatial",
+        "Carleman.domainTimeIntegral_periodic_derivative",
+        "Carleman.halfspaceSmoothInner_heat_flux_integral",
+        "Carleman.halfspaceSmoothInner_smooth_heat_carleman_inequality"
+      ],
       "dependencies": [
         "C267",
         "C264"
@@ -56281,7 +56299,7 @@
       "pr_url": null,
       "integration_mode": "direct-main",
       "id": "T262",
-      "title": "光滑内域真实热通量与散度积分符号",
+      "title": "光滑内域热Carleman积分不等式",
       "goal_ids": [
         "C278"
       ],
@@ -56298,11 +56316,40 @@
       "status": "RUNNING",
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.pointwiseHeatFlux_unnormalized_eq",
+        "Carleman.spacetime_level_zero_derivatives",
+        "Carleman.gaussian_level_heat_flux_nonpos",
+        "Carleman.halfspaceSmoothInner_gaussian_heat_flux_nonpos",
+        "Carleman.weighted_level_divergence_identity",
+        "Carleman.levelLayer_scalar_upper_bound",
+        "Carleman.levelCutoff_divergence_upper_bound",
+        "Carleman.level_divergence_nonpos",
+        "Carleman.domainTimeIntegral",
+        "Carleman.continuous_domain_time_integrable",
+        "Carleman.domainTimeIntegral_eq_iterated",
+        "Carleman.domainTimeIntegral_add",
+        "Carleman.domainTimeIntegral_mono",
+        "Carleman.domainTimeIntegral_nonpos_of_spatial",
+        "Carleman.domainTimeIntegral_periodic_derivative",
+        "Carleman.halfspaceSmoothInner_heat_flux_integral",
+        "Carleman.halfspaceSmoothInner_smooth_heat_carleman_inequality"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [],
-      "next_action": "证明真实光滑内域上的热通量和散度积分非正，为一般域连续Carleman估计提供边界积分步骤。"
+      "next_action": "证明真实光滑内域上的热通量和散度积分非正，为一般域连续Carleman估计提供边界积分步骤。",
+      "local_validation": {
+        "target": "Carleman.Spatial.SublevelHeatIdentity",
+        "target_jobs": 3451,
+        "target_exit_code": 0,
+        "root_target": "Carleman",
+        "root_jobs": 4303,
+        "root_exit_code": 0,
+        "recursive_axiom_declarations": 10340,
+        "axiom_exit_code": 0,
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {
