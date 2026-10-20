@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T239",
-    "supervisor_checked_at": "2026-10-20T08:04:47.996434+00:00",
-    "next_action": "组合真实弱链式与系数乘积，完成双向H²传输。",
+    "current_task_id": "T240",
+    "supervisor_checked_at": "2026-10-20T08:05:04.210005+00:00",
+    "next_action": "构造真实图梯度逆矩阵，证明一致椭圆性并转换原弱方程。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "8cf9572cab17a3474e176724f820509861b8bf09",
-      "source_head_sha": "8cf9572cab17a3474e176724f820509861b8bf09",
+      "checked_sha": "5f61d27fd056feaadbafcf3363d7c25f88036481",
+      "source_head_sha": "5f61d27fd056feaadbafcf3363d7c25f88036481",
       "ci_url": null,
-      "finished_at": "2026-10-20T07:54:00.483634+00:00",
+      "finished_at": "2026-10-20T07:59:37.719848+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "763c7440f87b88488ac26747ebc8222b2b030cb686a8595d48f3400929a9d3f9",
+      "source_manifest_sha256": "693b33295f7a4d7058c040d05aa1aa91740b7464727ec2d85286dd63388d276b",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9826,
-        "sha256": "36cf2de54faf0db4bd16dec06182cfe7227440e012b69c308e5b10c7aca0d987"
+        "declarations": 9834,
+        "sha256": "ea2fdfbf38e06b94d8018a740fdc027bd02f07c5815746b0259c416b6e1d3977"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "8cf9572cab17a3474e176724f820509861b8bf09",
-      "source_head_sha": "8cf9572cab17a3474e176724f820509861b8bf09",
+      "checked_sha": "5f61d27fd056feaadbafcf3363d7c25f88036481",
+      "source_head_sha": "5f61d27fd056feaadbafcf3363d7c25f88036481",
       "ci_url": null,
-      "finished_at": "2026-10-20T07:54:00.483634+00:00",
+      "finished_at": "2026-10-20T07:59:37.719848+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "763c7440f87b88488ac26747ebc8222b2b030cb686a8595d48f3400929a9d3f9",
+      "source_manifest_sha256": "693b33295f7a4d7058c040d05aa1aa91740b7464727ec2d85286dd63388d276b",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9826,
-        "sha256": "36cf2de54faf0db4bd16dec06182cfe7227440e012b69c308e5b10c7aca0d987"
+        "declarations": 9834,
+        "sha256": "ea2fdfbf38e06b94d8018a740fdc027bd02f07c5815746b0259c416b6e1d3977"
       }
     }
   },
@@ -21922,7 +21922,7 @@
       "pr_url": null,
       "id": "C255",
       "title": "实际图坐标的二阶弱导数传输与反向H²恢复",
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "lean_declarations": [
         "Carleman.exists_graphShearPullback_H2",
         "Carleman.exists_graphShearPullback_H2_ae",
@@ -21936,6 +21936,59 @@
       ],
       "blocker": null,
       "scope_notes": "原弱态H²的真实图坐标双向传输；尚无PDE椭圆矩阵转换或完整一般域，AUXILIARY，18/26。",
+      "independent_review_status": "PENDING",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "5f61d27fd056feaadbafcf3363d7c25f88036481",
+        "source_head_sha": "5f61d27fd056feaadbafcf3363d7c25f88036481",
+        "ci_url": null,
+        "finished_at": "2026-10-20T07:59:37.719848+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "693b33295f7a4d7058c040d05aa1aa91740b7464727ec2d85286dd63388d276b",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9834,
+          "sha256": "ea2fdfbf38e06b94d8018a740fdc027bd02f07c5815746b0259c416b6e1d3977"
+        }
+      },
+      "semantic_review": null,
+      "declaration_version": "5f61d27fd056feaadbafcf3363d7c25f88036481"
+    },
+    {
+      "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的边界H²正则性证明路线",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "pr_url": null,
+      "id": "C256",
+      "title": "实际图坐标椭圆矩阵及原弱方程转换",
+      "verification_status": "SPECIFIED",
+      "lean_declarations": [],
+      "dependencies": [
+        "C255",
+        "C252"
+      ],
+      "blocker": null,
+      "scope_notes": "实际图坐标的矩阵和弱方程转换；仍需原域图构造、局部化与统一凸域Hessian界，AUXILIARY，18/26。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -51940,8 +51993,8 @@
         "C254"
       ],
       "base_commit": "8cf9572cab17a3474e176724f820509861b8bf09",
-      "status": "RUNNING",
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "checkpoint_commit": "5f61d27fd056feaadbafcf3363d7c25f88036481",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.exists_graphShearPullback_H2",
@@ -51953,8 +52006,37 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "组合真实弱链式与系数乘积，完成双向H²传输。",
-      "build_evidence": null,
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "5f61d27fd056feaadbafcf3363d7c25f88036481",
+        "source_head_sha": "5f61d27fd056feaadbafcf3363d7c25f88036481",
+        "ci_url": null,
+        "finished_at": "2026-10-20T07:59:37.719848+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "693b33295f7a4d7058c040d05aa1aa91740b7464727ec2d85286dd63388d276b",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9834,
+          "sha256": "ea2fdfbf38e06b94d8018a740fdc027bd02f07c5815746b0259c416b6e1d3977"
+        }
+      },
       "local_validation": {
         "target": "Carleman.Spatial.GraphShearHessianTransport",
         "target_jobs": 3388,
@@ -51965,7 +52047,38 @@
         "recursive_axiom_declarations": 9834,
         "axiom_exit_code": 0,
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "5f61d27fd056feaadbafcf3363d7c25f88036481"
+    },
+    {
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "branch": "main",
+      "pr_url": null,
+      "integration_mode": "direct-main",
+      "id": "T240",
+      "title": "实际图坐标椭圆矩阵及原弱方程转换",
+      "goal_ids": [
+        "C256"
+      ],
+      "acceptance": [
+        "实际梯度逆矩阵和全二次型恒等式",
+        "从真实图斜率界推出一致椭圆性",
+        "原全部测试弱方程的真实坐标转换"
+      ],
+      "dependencies": [
+        "C255",
+        "C252"
+      ],
+      "base_commit": "5f61d27fd056feaadbafcf3363d7c25f88036481",
+      "status": "RUNNING",
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "blocker": null,
+      "attempts": [],
+      "next_action": "构造真实图梯度逆矩阵，证明一致椭圆性并转换原弱方程。",
+      "build_evidence": null
     }
   ],
   "private_maintenance": {
