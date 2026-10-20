@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T235",
-    "supervisor_checked_at": "2026-10-20T07:27:37.538844+00:00",
-    "next_action": "在实际系数乘子上证明差商Leibniz公式与椭圆能量估计。",
+    "current_task_id": "T236",
+    "supervisor_checked_at": "2026-10-20T07:27:51.938263+00:00",
+    "next_action": "构造实际系数倒数及法向通量的弱导数，恢复原解的全部二阶导数。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "528c5bf683ace24836aecdf64ddd73422a000473",
-      "source_head_sha": "528c5bf683ace24836aecdf64ddd73422a000473",
+      "checked_sha": "ceba934191acdb2f4dfda0882a67b80094f2e23d",
+      "source_head_sha": "ceba934191acdb2f4dfda0882a67b80094f2e23d",
       "ci_url": null,
-      "finished_at": "2026-10-20T07:12:21.548912+00:00",
+      "finished_at": "2026-10-20T07:22:45.664562+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "e6d23922ab6df0f1e3c337017ab3811d69e15ebdab039b3b1d4f27bd006a8853",
+      "source_manifest_sha256": "600972214a148d26690cc3a0d7c095f350120843fd59de9f83c358fc73248dbc",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9659,
-        "sha256": "69c84178bd08406404d49fb9b96ab521db21f2f2e181146ef59224c74d1896dc"
+        "declarations": 9710,
+        "sha256": "9a19797738c876accc5a145a3ddfdd587a02b2d9401270215cb0720dd07b14d5"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "528c5bf683ace24836aecdf64ddd73422a000473",
-      "source_head_sha": "528c5bf683ace24836aecdf64ddd73422a000473",
+      "checked_sha": "ceba934191acdb2f4dfda0882a67b80094f2e23d",
+      "source_head_sha": "ceba934191acdb2f4dfda0882a67b80094f2e23d",
       "ci_url": null,
-      "finished_at": "2026-10-20T07:12:21.548912+00:00",
+      "finished_at": "2026-10-20T07:22:45.664562+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "e6d23922ab6df0f1e3c337017ab3811d69e15ebdab039b3b1d4f27bd006a8853",
+      "source_manifest_sha256": "600972214a148d26690cc3a0d7c095f350120843fd59de9f83c358fc73248dbc",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9659,
-        "sha256": "69c84178bd08406404d49fb9b96ab521db21f2f2e181146ef59224c74d1896dc"
+        "declarations": 9710,
+        "sha256": "9a19797738c876accc5a145a3ddfdd587a02b2d9401270215cb0720dd07b14d5"
       }
     }
   },
@@ -21541,7 +21541,7 @@
       "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的边界H²正则性证明路线",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:analytic-realizations"
@@ -21573,6 +21573,58 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "真实变系数半空间边界H²的切向能量阶段；AUXILIARY，18/26。",
+      "independent_review_status": "PENDING",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "ceba934191acdb2f4dfda0882a67b80094f2e23d",
+        "source_head_sha": "ceba934191acdb2f4dfda0882a67b80094f2e23d",
+        "ci_url": null,
+        "finished_at": "2026-10-20T07:22:45.664562+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "600972214a148d26690cc3a0d7c095f350120843fd59de9f83c358fc73248dbc",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9710,
+          "sha256": "9a19797738c876accc5a145a3ddfdd587a02b2d9401270215cb0720dd07b14d5"
+        }
+      },
+      "semantic_review": null,
+      "declaration_version": "ceba934191acdb2f4dfda0882a67b80094f2e23d"
+    },
+    {
+      "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的边界H²正则性证明路线",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "pr_url": null,
+      "id": "C252",
+      "title": "真实变系数法向通量恢复与半空间H²正则性",
+      "verification_status": "SPECIFIED",
+      "lean_declarations": [],
+      "dependencies": [
+        "C251"
+      ],
+      "blocker": null,
+      "scope_notes": "真实光滑有界变系数半空间H²；尚不包含非线性边界拉回或一般多面体，AUXILIARY，18/26。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -51151,9 +51203,9 @@
       ],
       "branch": "main",
       "base_commit": "528c5bf683ace24836aecdf64ddd73422a000473",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "ceba934191acdb2f4dfda0882a67b80094f2e23d",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.BoundedMultiplier.spatialTranslate",
@@ -51178,9 +51230,38 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "在实际系数乘子上证明差商Leibniz公式与椭圆能量估计。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "ceba934191acdb2f4dfda0882a67b80094f2e23d",
+        "source_head_sha": "ceba934191acdb2f4dfda0882a67b80094f2e23d",
+        "ci_url": null,
+        "finished_at": "2026-10-20T07:22:45.664562+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "600972214a148d26690cc3a0d7c095f350120843fd59de9f83c358fc73248dbc",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9710,
+          "sha256": "9a19797738c876accc5a145a3ddfdd587a02b2d9401270215cb0720dd07b14d5"
+        }
+      },
       "local_validation": {
         "target": "Carleman.Spatial.VariableCoefficientDifference",
         "target_jobs": 3372,
@@ -51190,7 +51271,37 @@
         "root_exit_code": 0,
         "recursive_axiom_declarations": 9710,
         "axiom_exit_code": 0
-      }
+      },
+      "declaration_version": "ceba934191acdb2f4dfda0882a67b80094f2e23d"
+    },
+    {
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "branch": "main",
+      "pr_url": null,
+      "integration_mode": "direct-main",
+      "id": "T236",
+      "title": "真实变系数法向通量恢复与半空间H²正则性",
+      "goal_ids": [
+        "C252"
+      ],
+      "acceptance": [
+        "原方程导出真实法向通量弱导数",
+        "椭圆系数实际倒数乘积规则恢复法向二阶导数",
+        "同一原始弱解的半空间H²及显式能量界"
+      ],
+      "dependencies": [
+        "C251"
+      ],
+      "base_commit": "ceba934191acdb2f4dfda0882a67b80094f2e23d",
+      "status": "RUNNING",
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "blocker": null,
+      "attempts": [],
+      "next_action": "构造实际系数倒数及法向通量的弱导数，恢复原解的全部二阶导数。",
+      "build_evidence": null
     }
   ],
   "private_maintenance": {
