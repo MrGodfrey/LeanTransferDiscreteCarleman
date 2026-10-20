@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T238",
-    "supervisor_checked_at": "2026-10-20T07:55:04.180668+00:00",
-    "next_action": "用真实逆变换测试与斜率弱乘积建立原弱态的非线性链式。",
+    "current_task_id": "T239",
+    "supervisor_checked_at": "2026-10-20T07:55:45.182697+00:00",
+    "next_action": "组合真实弱链式与系数乘积，完成双向H²传输。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1",
-      "source_head_sha": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1",
+      "checked_sha": "8cf9572cab17a3474e176724f820509861b8bf09",
+      "source_head_sha": "8cf9572cab17a3474e176724f820509861b8bf09",
       "ci_url": null,
-      "finished_at": "2026-10-20T07:46:45.262935+00:00",
+      "finished_at": "2026-10-20T07:54:00.483634+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "9bd493507fe89659d4253a286b7727cebb6fc8ad233a653fd186db21c5bbcd51",
+      "source_manifest_sha256": "763c7440f87b88488ac26747ebc8222b2b030cb686a8595d48f3400929a9d3f9",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9775,
-        "sha256": "bc09916c45dae93bbd6d079f3d280098d6cce54ad42e0e33943954e83b695c8e"
+        "declarations": 9826,
+        "sha256": "36cf2de54faf0db4bd16dec06182cfe7227440e012b69c308e5b10c7aca0d987"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1",
-      "source_head_sha": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1",
+      "checked_sha": "8cf9572cab17a3474e176724f820509861b8bf09",
+      "source_head_sha": "8cf9572cab17a3474e176724f820509861b8bf09",
       "ci_url": null,
-      "finished_at": "2026-10-20T07:46:45.262935+00:00",
+      "finished_at": "2026-10-20T07:54:00.483634+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "9bd493507fe89659d4253a286b7727cebb6fc8ad233a653fd186db21c5bbcd51",
+      "source_manifest_sha256": "763c7440f87b88488ac26747ebc8222b2b030cb686a8595d48f3400929a9d3f9",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9775,
-        "sha256": "bc09916c45dae93bbd6d079f3d280098d6cce54ad42e0e33943954e83b695c8e"
+        "declarations": 9826,
+        "sha256": "36cf2de54faf0db4bd16dec06182cfe7227440e012b69c308e5b10c7aca0d987"
       }
     }
   },
@@ -21838,7 +21838,7 @@
       "pr_url": null,
       "id": "C254",
       "title": "实际边界图剪切下的弱梯度链式与Sobolev传输",
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "lean_declarations": [
         "Carleman.IsWeakSpatialDerivative.graphShear_normal_pullback",
         "Carleman.IsWeakSpatialDerivative.mul_of_derivative_zero",
@@ -21857,6 +21857,58 @@
       ],
       "blocker": null,
       "scope_notes": "实际图坐标下的弱梯度传输；尚不包含完整光滑域H²或一般多面体，AUXILIARY，18/26。",
+      "independent_review_status": "PENDING",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "8cf9572cab17a3474e176724f820509861b8bf09",
+        "source_head_sha": "8cf9572cab17a3474e176724f820509861b8bf09",
+        "ci_url": null,
+        "finished_at": "2026-10-20T07:54:00.483634+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "763c7440f87b88488ac26747ebc8222b2b030cb686a8595d48f3400929a9d3f9",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9826,
+          "sha256": "36cf2de54faf0db4bd16dec06182cfe7227440e012b69c308e5b10c7aca0d987"
+        }
+      },
+      "semantic_review": null,
+      "declaration_version": "8cf9572cab17a3474e176724f820509861b8bf09"
+    },
+    {
+      "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的边界H²正则性证明路线",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "pr_url": null,
+      "id": "C255",
+      "title": "实际图坐标的二阶弱导数传输与反向H²恢复",
+      "verification_status": "SPECIFIED",
+      "lean_declarations": [],
+      "dependencies": [
+        "C254"
+      ],
+      "blocker": null,
+      "scope_notes": "原弱态H²的真实图坐标双向传输；尚无PDE椭圆矩阵转换或完整一般域，AUXILIARY，18/26。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -51760,8 +51812,8 @@
         "C253"
       ],
       "base_commit": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1",
-      "status": "RUNNING",
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "checkpoint_commit": "8cf9572cab17a3474e176724f820509861b8bf09",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.IsWeakSpatialDerivative.graphShear_normal_pullback",
@@ -51778,8 +51830,37 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "用真实逆变换测试与斜率弱乘积建立原弱态的非线性链式。",
-      "build_evidence": null,
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "8cf9572cab17a3474e176724f820509861b8bf09",
+        "source_head_sha": "8cf9572cab17a3474e176724f820509861b8bf09",
+        "ci_url": null,
+        "finished_at": "2026-10-20T07:54:00.483634+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "763c7440f87b88488ac26747ebc8222b2b030cb686a8595d48f3400929a9d3f9",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9826,
+          "sha256": "36cf2de54faf0db4bd16dec06182cfe7227440e012b69c308e5b10c7aca0d987"
+        }
+      },
       "local_validation": {
         "target": "Carleman.Spatial.GraphShearWeakTransport",
         "target_jobs": 3387,
@@ -51789,7 +51870,37 @@
         "root_exit_code": 0,
         "recursive_axiom_declarations": 9826,
         "axiom_exit_code": 0
-      }
+      },
+      "declaration_version": "8cf9572cab17a3474e176724f820509861b8bf09"
+    },
+    {
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "branch": "main",
+      "pr_url": null,
+      "integration_mode": "direct-main",
+      "id": "T239",
+      "title": "实际图坐标的二阶弱导数传输与反向H²恢复",
+      "goal_ids": [
+        "C255"
+      ],
+      "acceptance": [
+        "实际二阶弱链式和乘积构造拉回H²",
+        "由原斜率Lipschitz界给显式Hessian界",
+        "逆图变换恢复同一原弱状态H²"
+      ],
+      "dependencies": [
+        "C254"
+      ],
+      "base_commit": "8cf9572cab17a3474e176724f820509861b8bf09",
+      "status": "RUNNING",
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "blocker": null,
+      "attempts": [],
+      "next_action": "组合真实弱链式与系数乘积，完成双向H²传输。",
+      "build_evidence": null
     }
   ],
   "private_maintenance": {
