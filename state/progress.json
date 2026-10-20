@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T246",
-    "supervisor_checked_at": "2026-10-20T08:52:38.666563+00:00",
+    "supervisor_checked_at": "2026-10-20T08:58:33.338419+00:00",
     "next_action": "构造紧闭包的有限光滑分割，将真实局部H²的全部测试界拼接为原状态全局H²。",
     "blocker": null,
     "pause_reason": null,
@@ -22454,7 +22454,7 @@
       "pr_url": null,
       "id": "C261",
       "title": "原子水平域的真实图侧及边界截断邻域",
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "lean_declarations": [
         "Carleman.coordinateLine",
         "Carleman.coordinateLine_self",
@@ -22475,7 +22475,7 @@
       ],
       "blocker": null,
       "scope_notes": "从原边界及实际导数内部供应图侧和截断；有限覆盖和凸域统一控制仍待，AUXILIARY，18/26。",
-      "independent_review_status": "PENDING",
+      "independent_review_status": "PASS",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -22506,7 +22506,28 @@
           "sha256": "60640617f835da4f833cfca70ed56359498ebdb1b0c40d2f42f3fd3d19db6bbd"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "108394721c27094589e1eea0c77c63083625340d",
+        "declarations": [
+          "Carleman.coordinateLine",
+          "Carleman.coordinateLine_self",
+          "Carleman.coordinateLine_hasDerivAt",
+          "Carleman.coordinateLine_convex_preimage",
+          "Carleman.coordinateLine_lt_iff_of_positive",
+          "Carleman.coordinateLine_lt_iff_of_negative",
+          "Carleman.exists_sublevel_hypograph_near_of_positive",
+          "Carleman.exists_sublevel_epigraph_near_of_negative",
+          "Carleman.exists_sublevel_graph_near_regular",
+          "Carleman.exists_spatial_cutoff_one_near",
+          "Carleman.exists_local_dirichlet_H2_of_regular_level",
+          "Carleman.halfspaceSmoothInner_local_boundary_H2"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/eadb9b67a43549dd5d75427b3e285869662fa83f/governance/reviews/T245-local-acceptance.md",
+        "reviewed_at": "2026-10-20T08:54:55+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "declaration_version": "108394721c27094589e1eea0c77c63083625340d"
     },
     {
@@ -22521,7 +22542,19 @@
       "id": "C262",
       "title": "有限光滑分割与同一原弱解的全局H²拼接",
       "verification_status": "SPECIFIED",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.exists_finite_smooth_partition",
+        "Carleman.SpatialTest.monoDomain_inner",
+        "Carleman.SpatialTest.monoDomain_derivative_inner",
+        "Carleman.SpatialTest.cutoffTransfer_toLp_norm_le",
+        "Carleman.SpatialTest.partition_jet",
+        "Carleman.exists_H2_of_finite_local_partition",
+        "Carleman.exists_H2_of_finite_local_cover",
+        "Carleman.exists_H2_of_compact_closure_local",
+        "Carleman.exists_local_interior_H2_ball",
+        "Carleman.exists_dirichlet_H2_of_regular_analytic_sublevel",
+        "Carleman.halfspaceSmoothInner_dirichlet_H2"
+      ],
       "dependencies": [
         "C261"
       ],
@@ -23935,6 +23968,11 @@
       "at": "2026-10-20T08:51:02.663200+00:00",
       "public_summary": "局部法向不变高度的全局光滑有界导数延拓已通过固定本地验证与独立数学验收；原文覆盖18/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/716031127e9645f4476e104ec26dd92d6c51f4bd/governance/reviews/T244-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T08:58:33.338419+00:00",
+      "public_summary": "原子水平域的真实图侧及边界截断邻域已通过固定本地验证与独立数学验收；原文覆盖18/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/eadb9b67a43549dd5d75427b3e285869662fa83f/governance/reviews/T245-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -24424,7 +24462,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ac2416736394ed41c57f349c96379bf4ae4a3718/governance/reviews/T241-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/faecb1d3d0dd83a2ec6ab2b7662181cf9d46ac07/governance/reviews/T242-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a8951af50a513ccfe529b27d1385920ff03c2ee8/governance/reviews/T243-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/716031127e9645f4476e104ec26dd92d6c51f4bd/governance/reviews/T244-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/716031127e9645f4476e104ec26dd92d6c51f4bd/governance/reviews/T244-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/eadb9b67a43549dd5d75427b3e285869662fa83f/governance/reviews/T245-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -53154,9 +53193,9 @@
         "C258"
       ],
       "base_commit": "31c84b810ce9f75a97bc2fc5a5cae481a9252183",
-      "status": "REVIEW",
+      "status": "MERGED",
       "checkpoint_commit": "108394721c27094589e1eea0c77c63083625340d",
-      "merge_commit": null,
+      "merge_commit": "108394721c27094589e1eea0c77c63083625340d",
       "lean_declarations": [
         "Carleman.coordinateLine",
         "Carleman.coordinateLine_self",
@@ -53173,7 +53212,7 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -53213,9 +53252,22 @@
         "root_exit_code": 0,
         "recursive_axiom_declarations": 9977,
         "axiom_exit_code": 0,
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "108394721c27094589e1eea0c77c63083625340d"
+      "declaration_version": "108394721c27094589e1eea0c77c63083625340d",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C261"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "108394721c27094589e1eea0c77c63083625340d",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T08:54:55+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/eadb9b67a43549dd5d75427b3e285869662fa83f/governance/reviews/T245-local-acceptance.md"
+        }
+      ]
     },
     {
       "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
@@ -53240,11 +53292,34 @@
       "status": "RUNNING",
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.exists_finite_smooth_partition",
+        "Carleman.SpatialTest.monoDomain_inner",
+        "Carleman.SpatialTest.monoDomain_derivative_inner",
+        "Carleman.SpatialTest.cutoffTransfer_toLp_norm_le",
+        "Carleman.SpatialTest.partition_jet",
+        "Carleman.exists_H2_of_finite_local_partition",
+        "Carleman.exists_H2_of_finite_local_cover",
+        "Carleman.exists_H2_of_compact_closure_local",
+        "Carleman.exists_local_interior_H2_ball",
+        "Carleman.exists_dirichlet_H2_of_regular_analytic_sublevel",
+        "Carleman.halfspaceSmoothInner_dirichlet_H2"
+      ],
       "blocker": null,
       "attempts": [],
-      "next_action": "构造紧闭包的有限光滑分割，将真实局部H²的全部测试界拼接为原状态全局H²。",
-      "build_evidence": null
+      "next_action": "真实有限分割及同一原弱解在光滑内域的全局H²已证明，准备固定证据及独立验收。",
+      "build_evidence": null,
+      "local_validation": {
+        "target": "Carleman.Spatial.FiniteLocalH2Gluing",
+        "target_jobs": 3434,
+        "target_exit_code": 0,
+        "root_target": "Carleman",
+        "root_jobs": 4285,
+        "root_exit_code": 0,
+        "recursive_axiom_declarations": 9989,
+        "axiom_exit_code": 0,
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

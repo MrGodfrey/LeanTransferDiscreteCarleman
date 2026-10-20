@@ -9045,6 +9045,29 @@ set_option pp.maxSteps 1000000
 #check @Carleman.halfspaceSmoothInner_local_boundary_H2
 #print axioms Carleman.halfspaceSmoothInner_local_boundary_H2
 
+#check @Carleman.exists_finite_smooth_partition
+#print axioms Carleman.exists_finite_smooth_partition
+#check @Carleman.SpatialTest.monoDomain_inner
+#print axioms Carleman.SpatialTest.monoDomain_inner
+#check @Carleman.SpatialTest.monoDomain_derivative_inner
+#print axioms Carleman.SpatialTest.monoDomain_derivative_inner
+#check @Carleman.SpatialTest.cutoffTransfer_toLp_norm_le
+#print axioms Carleman.SpatialTest.cutoffTransfer_toLp_norm_le
+#check @Carleman.SpatialTest.partition_jet
+#print axioms Carleman.SpatialTest.partition_jet
+#check @Carleman.exists_H2_of_finite_local_partition
+#print axioms Carleman.exists_H2_of_finite_local_partition
+#check @Carleman.exists_H2_of_finite_local_cover
+#print axioms Carleman.exists_H2_of_finite_local_cover
+#check @Carleman.exists_H2_of_compact_closure_local
+#print axioms Carleman.exists_H2_of_compact_closure_local
+#check @Carleman.exists_local_interior_H2_ball
+#print axioms Carleman.exists_local_interior_H2_ball
+#check @Carleman.exists_dirichlet_H2_of_regular_analytic_sublevel
+#print axioms Carleman.exists_dirichlet_H2_of_regular_analytic_sublevel
+#check @Carleman.halfspaceSmoothInner_dirichlet_H2
+#print axioms Carleman.halfspaceSmoothInner_dirichlet_H2
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
