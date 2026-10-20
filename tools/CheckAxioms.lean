@@ -8141,6 +8141,26 @@ set_option pp.maxSteps 1000000
 #check @Carleman.FiniteDirichletControlIdentity.continuous_H_energy_trace
 #print axioms Carleman.FiniteDirichletControlIdentity.continuous_H_energy_trace
 
+-- T213: original local control energy and actual bounded product-potential pairing.
+#check @Carleman.BoundedMultiplier.compLpL_map
+#print axioms Carleman.BoundedMultiplier.compLpL_map
+#check @Carleman.cutoff_map_idempotent
+#print axioms Carleman.cutoff_map_idempotent
+#check @Carleman.cutoff_inner_integral
+#print axioms Carleman.cutoff_inner_integral
+#check @Carleman.bochnerL2ProductIsometry_cutoff
+#print axioms Carleman.bochnerL2ProductIsometry_cutoff
+#check @Carleman.cutoff_inner_cutoff
+#print axioms Carleman.cutoff_inner_cutoff
+#check @Carleman.cutoff_multiplier_pairing
+#print axioms Carleman.cutoff_multiplier_pairing
+#check @Carleman.dirichletTimeLoad_cutoff_pairing
+#print axioms Carleman.dirichletTimeLoad_cutoff_pairing
+#check @Carleman.dirichletTimeLoad_cutoff_upper_bound
+#print axioms Carleman.dirichletTimeLoad_cutoff_upper_bound
+#check @Carleman.FiniteDirichletControlIdentity.local_energy_inequality
+#print axioms Carleman.FiniteDirichletControlIdentity.local_energy_inequality
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

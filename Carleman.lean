@@ -1054,3 +1054,7 @@ public import Carleman.Control.PivotIntervalEnergy
 public import Carleman.Control.PivotPathConvergence
 public import Carleman.Control.PivotWeakEnergyIdentity
 public import Carleman.Control.DirichletTimeEnergyIdentity
+
+public import Carleman.Control.TimeCutoffPairing
+public import Carleman.Control.BochnerProductCutoff
+public import Carleman.Control.DirichletLocalEnergy

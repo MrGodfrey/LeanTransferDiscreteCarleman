@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T213",
-    "supervisor_checked_at": "2026-10-20T04:37:05.877311+00:00",
+    "supervisor_checked_at": "2026-10-20T04:41:46.820132+00:00",
     "next_action": "证明真实Bochner产品映射与时间截断交换，将同一原势与梯度载荷配对局部化，得到原能量估计。",
     "blocker": null,
     "pause_reason": null,
@@ -19509,7 +19509,7 @@
       "paper_ref": "paper/main.tex:2415, prop:control-convergence 原连续弱解的能量与唯一性基础",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -19554,7 +19554,23 @@
           "sha256": "3f858ab89b94eb23a812597328bd126e1b3ead73bb2d7bd87e884b4aa3e9d649"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "9a2857abc4c61b3c6de1fa2d282bac81f14a3d16",
+        "declarations": [
+          "Carleman.HasWeakTimeDerivative.pivot_energy_identity_to",
+          "Carleman.time_restrict_inner_integral",
+          "Carleman.pivot_path_limit_strong",
+          "Carleman.exists_pivot_time_energy_representative",
+          "Carleman.pivot_time_energy_identity",
+          "Carleman.FiniteDirichletControlIdentity.energy_identity",
+          "Carleman.FiniteDirichletControlIdentity.continuous_H_energy_trace"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5ac0a17bf01823f61003428674b282403ea6443c/governance/reviews/T212-local-acceptance.md",
+        "reviewed_at": "2026-10-20T04:39:00+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C218",
         "C219",
@@ -19564,7 +19580,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "从真实pivot弱时间导数内部给连续H迹的逐时能量身份；辅助后续唯一性，17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C229",
@@ -19577,7 +19593,17 @@
       "paper_labels": [
         "prop:control-convergence"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.BoundedMultiplier.compLpL_map",
+        "Carleman.cutoff_map_idempotent",
+        "Carleman.cutoff_inner_integral",
+        "Carleman.bochnerL2ProductIsometry_cutoff",
+        "Carleman.cutoff_inner_cutoff",
+        "Carleman.cutoff_multiplier_pairing",
+        "Carleman.dirichletTimeLoad_cutoff_pairing",
+        "Carleman.dirichletTimeLoad_cutoff_upper_bound",
+        "Carleman.FiniteDirichletControlIdentity.local_energy_inequality"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -20828,6 +20854,11 @@
       "at": "2026-10-20T04:36:46.435896+00:00",
       "public_summary": "实际盒P1控制族及每个弱积聚点的零终态已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/170de6eae9adde411801ce1a1684841e7e9f9e50/governance/reviews/T211-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T04:41:46.820132+00:00",
+      "public_summary": "弱质量时间导数的真实连续能量恒等式已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5ac0a17bf01823f61003428674b282403ea6443c/governance/reviews/T212-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -21284,7 +21315,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/82c6303e2eb3b2fccb6c3896df149f98d10e8c65/governance/reviews/T208-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b7d5dcfc6b9efb49b61c2226df0ce257f344a4fa/governance/reviews/T209-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/df32e0ea1475520fba053f653a9b5ea06d83cb73/governance/reviews/T210-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/170de6eae9adde411801ce1a1684841e7e9f9e50/governance/reviews/T211-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/170de6eae9adde411801ce1a1684841e7e9f9e50/governance/reviews/T211-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5ac0a17bf01823f61003428674b282403ea6443c/governance/reviews/T212-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -46556,10 +46588,10 @@
       ],
       "branch": "main",
       "base_commit": "a98192d2b1dc2e5f7d7034d4a5be49d41c7b3bec",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "9a2857abc4c61b3c6de1fa2d282bac81f14a3d16",
-      "merge_commit": null,
+      "merge_commit": "9a2857abc4c61b3c6de1fa2d282bac81f14a3d16",
       "lean_declarations": [
         "Carleman.HasWeakTimeDerivative.pivot_energy_identity_to",
         "Carleman.time_restrict_inner_integral",
@@ -46604,7 +46636,7 @@
         "T211实际P1控制族4223根构建、9009递归公理审计PASS。",
         "七项真实连续能量声明定向3634 jobs、全库4227 jobs及9016项递归公理审计均exit 0。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -46618,9 +46650,22 @@
         "declaration_artifact_sha256": "3f858ab89b94eb23a812597328bd126e1b3ead73bb2d7bd87e884b4aa3e9d649",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "9a2857abc4c61b3c6de1fa2d282bac81f14a3d16"
+      "declaration_version": "9a2857abc4c61b3c6de1fa2d282bac81f14a3d16",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C228"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "9a2857abc4c61b3c6de1fa2d282bac81f14a3d16",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T04:39:00+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5ac0a17bf01823f61003428674b282403ea6443c/governance/reviews/T212-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T213",
@@ -46646,14 +46691,39 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.BoundedMultiplier.compLpL_map",
+        "Carleman.cutoff_map_idempotent",
+        "Carleman.cutoff_inner_integral",
+        "Carleman.bochnerL2ProductIsometry_cutoff",
+        "Carleman.cutoff_inner_cutoff",
+        "Carleman.cutoff_multiplier_pairing",
+        "Carleman.dirichletTimeLoad_cutoff_pairing",
+        "Carleman.dirichletTimeLoad_cutoff_upper_bound",
+        "Carleman.FiniteDirichletControlIdentity.local_energy_inequality"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "T212真实逐时能量身份4227根构建、9016公理审计PASS。"
+        "T212真实逐时能量身份4227根构建、9016公理审计PASS。",
+        "九项真实局部载荷/能量声明定向3637、全库4230 jobs及9025项递归公理审计均exit 0。"
       ],
       "next_action": "证明真实Bochner产品映射与时间截断交换，将同一原势与梯度载荷配对局部化，得到原能量估计。",
-      "integration_mode": "direct-main"
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4230,
+        "recursive_axiom_audit": 9025,
+        "new_explicit_declarations": 9,
+        "declaration_artifact_sha256": "c46bfc47e2d7efba57a63b356efa5f38615e76e638b6cad079df37919fcebe2c",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {
