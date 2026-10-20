@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T230",
-    "supervisor_checked_at": "2026-10-20T06:32:57.641820+00:00",
-    "next_action": "用有限指数和构造光滑凸内域并证明真实几何性质。",
+    "current_task_id": "T231",
+    "supervisor_checked_at": "2026-10-20T06:38:43.608897+00:00",
+    "next_action": "通过真实隐函数定理构造指数和内域的解析边界坐标。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "d1dabe5404212ce3dd399028a79233e3da4e324b",
-      "source_head_sha": "d1dabe5404212ce3dd399028a79233e3da4e324b",
+      "checked_sha": "721b761224ad1b6425466bc956417ddce7f41908",
+      "source_head_sha": "721b761224ad1b6425466bc956417ddce7f41908",
       "ci_url": null,
-      "finished_at": "2026-10-20T06:26:56.944598+00:00",
+      "finished_at": "2026-10-20T06:37:00.160791+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "0e5f9415da91599f3ce561c7ebfe577bf59ab1986860699e4133748c399c5aa2",
+      "source_manifest_sha256": "87aaabbd494a75650f84a0ddc802856fd374138082c9e840e790bcb4c02ad703",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9534,
-        "sha256": "084f506edea932843ddbddb454414167628f93307086e141e340e614f2f77a2a"
+        "declarations": 9554,
+        "sha256": "80f71dea6d886e077281017c10d507494b902f96bbe408c41b131bf5dea13a0a"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "d1dabe5404212ce3dd399028a79233e3da4e324b",
-      "source_head_sha": "d1dabe5404212ce3dd399028a79233e3da4e324b",
+      "checked_sha": "721b761224ad1b6425466bc956417ddce7f41908",
+      "source_head_sha": "721b761224ad1b6425466bc956417ddce7f41908",
       "ci_url": null,
-      "finished_at": "2026-10-20T06:26:56.944598+00:00",
+      "finished_at": "2026-10-20T06:37:00.160791+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "0e5f9415da91599f3ce561c7ebfe577bf59ab1986860699e4133748c399c5aa2",
+      "source_manifest_sha256": "87aaabbd494a75650f84a0ddc802856fd374138082c9e840e790bcb4c02ad703",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9534,
-        "sha256": "084f506edea932843ddbddb454414167628f93307086e141e340e614f2f77a2a"
+        "declarations": 9554,
+        "sha256": "80f71dea6d886e077281017c10d507494b902f96bbe408c41b131bf5dea13a0a"
       }
     }
   },
@@ -21089,7 +21089,7 @@
       "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的凸多面体正则性证明路线",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:analytic-realizations"
@@ -21113,13 +21113,65 @@
         "Carleman.halfspaceSmoothInner_boundary_regular",
         "Carleman.exists_halfspace_smooth_exhaustion"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "721b761224ad1b6425466bc956417ddce7f41908",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "721b761224ad1b6425466bc956417ddce7f41908",
+        "source_head_sha": "721b761224ad1b6425466bc956417ddce7f41908",
+        "ci_url": null,
+        "finished_at": "2026-10-20T06:37:00.160791+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "87aaabbd494a75650f84a0ddc802856fd374138082c9e840e790bcb4c02ad703",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9554,
+          "sha256": "80f71dea6d886e077281017c10d507494b902f96bbe408c41b131bf5dea13a0a"
+        }
+      },
       "semantic_review": null,
       "dependencies": [],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "真实光滑凸穷竭几何；内域H²正则与统一Hessian界仍须证明。"
+      "scope_notes": "真实光滑凸穷竭几何；内域H²正则与统一Hessian界仍须证明。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C247",
+      "title": "真实正则水平集的解析边界平坦化坐标",
+      "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 凸多面体正则性路线",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C246"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "光滑凸内域的实际边界坐标；分析H²正则性尚待。"
     }
   ],
   "events": [
@@ -50113,9 +50165,9 @@
       "dependencies": [],
       "branch": "main",
       "base_commit": "d1dabe5404212ce3dd399028a79233e3da4e324b",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "721b761224ad1b6425466bc956417ddce7f41908",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.halfspaceExpSum",
@@ -50136,12 +50188,41 @@
         "Carleman.halfspaceSmoothInner_boundary_regular",
         "Carleman.exists_halfspace_smooth_exhaustion"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "721b761224ad1b6425466bc956417ddce7f41908",
+        "source_head_sha": "721b761224ad1b6425466bc956417ddce7f41908",
+        "ci_url": null,
+        "finished_at": "2026-10-20T06:37:00.160791+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "87aaabbd494a75650f84a0ddc802856fd374138082c9e840e790bcb4c02ad703",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9554,
+          "sha256": "80f71dea6d886e077281017c10d507494b902f96bbe408c41b131bf5dea13a0a"
+        }
+      },
       "blocker": null,
       "attempts": [
         "实际指数和穷竭及正则边界完整实现；定向3054/root4264和递归9554审计均实际exit0。"
       ],
-      "next_action": "用有限指数和构造光滑凸内域并证明真实几何性质。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -50160,7 +50241,37 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "721b761224ad1b6425466bc956417ddce7f41908"
+    },
+    {
+      "id": "T231",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "真实正则水平集的解析边界平坦化坐标",
+      "goal_ids": [
+        "C247"
+      ],
+      "acceptance": [
+        "真实局部可逆坐标及正反两向解析性",
+        "原子水平域精确映为半空间、原边界精确映为水平面",
+        "由指数和及真实非零导数内部构造，不额外假设图册"
+      ],
+      "dependencies": [
+        "C246"
+      ],
+      "branch": "main",
+      "base_commit": "721b761224ad1b6425466bc956417ddce7f41908",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [],
+      "next_action": "通过真实隐函数定理构造指数和内域的解析边界坐标。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
