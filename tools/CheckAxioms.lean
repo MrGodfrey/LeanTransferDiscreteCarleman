@@ -7996,6 +7996,17 @@ set_option pp.maxSteps 1000000
 #check @Carleman.dirichletMassRegularizer_bochner_strong
 #print axioms Carleman.dirichletMassRegularizer_bochner_strong
 
+
+-- T202: actual pivot energy variation and weighted closed-interval trace.
+#check @Carleman.ac_time_norm_sub_bound
+#print axioms Carleman.ac_time_norm_sub_bound
+#check @Carleman.integral_norm_mul_le_l2
+#print axioms Carleman.integral_norm_mul_le_l2
+#check @Carleman.HasWeakTimeDerivative.pivot_energy_variation
+#print axioms Carleman.HasWeakTimeDerivative.pivot_energy_variation
+#check @Carleman.HasWeakTimeDerivative.pivot_trace_bound
+#print axioms Carleman.HasWeakTimeDerivative.pivot_trace_bound
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

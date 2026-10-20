@@ -1590,3 +1590,7 @@ T188 的状态弱极限位于真实 Bochner L²_tL²_x；T183–T185 的原势�
 ## T201 / C217 — 原质量的实际强正则化
 
 真实 Lax–Milgram 构造 (M+εI)⁻¹，证明质量正则化及残差收缩、交换和 range 误差；实际 E 注入清偿 M=E*E 的稠密值域，得到完整 H¹₀ 及 Bochner L² 强收敛。详见 [T201 分析](analysis/T201-mass-regularization.md)。只辅助后续 H 时间迹，尚未声称原状态 H 连续或端点识别；AUXILIARY、17/26。
+
+## T202 / C218 — 真实质量加权的 H 时间迹估计
+
+对实际 V 值弱 H¹ 近似轨迹，原 E*E 质量导数给闭区间每个 H 迹的估计 ‖Eu(t)‖²≤T⁻¹‖Eu‖²_{L²H}+2‖u‖_{L²V}‖E*E du‖_{L²V}，不出现正则化逆范数。详见 [T202 分析](analysis/T202-weighted-trace.md)。原状态 H 连续代表元仍待正则化一致极限构造；AUXILIARY、17/26。

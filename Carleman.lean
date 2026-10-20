@@ -1027,3 +1027,4 @@ public import Carleman.Control.DirichletDualTimeDerivative
 public import Carleman.Control.PositiveMassRegularization
 public import Carleman.Control.MassRegularizerStrong
 public import Carleman.Control.DirichletMassRegularization
+public import Carleman.Control.PivotTimeTrace
