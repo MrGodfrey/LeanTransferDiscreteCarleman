@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T262",
-    "supervisor_checked_at": "2026-10-20T11:04:26.528768+00:00",
-    "next_action": "证明真实光滑内域上的热通量和散度积分非正，为一般域连续Carleman估计提供边界积分步骤。",
+    "current_task_id": "T263",
+    "supervisor_checked_at": "2026-10-20T11:10:51.467119+00:00",
+    "next_action": "将实际内域积分不等式与原域上的统一Gaussian主项/观察吸收/梯度返回结合，所有常数先于内域索引。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "708eae70c82d9c0b1d60f6907f0202201d518a16",
-      "source_head_sha": "708eae70c82d9c0b1d60f6907f0202201d518a16",
+      "checked_sha": "49ca9a4344f0e015567fd8916e61a9a768358ba7",
+      "source_head_sha": "49ca9a4344f0e015567fd8916e61a9a768358ba7",
       "ci_url": null,
-      "finished_at": "2026-10-20T11:02:02.703346+00:00",
+      "finished_at": "2026-10-20T11:09:23.817190+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "79ec7173827df25a3430da2c6c721484d1fcee450a37e2aac649bbc81fb9867a",
+      "source_manifest_sha256": "8bdc62e84b741e5b981d87702fb5a14b6e1c9b78673e40c51aa84fedf4d3147e",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10321,
-        "sha256": "ec1372cf92dbebb01673ccd456d360e8564bf2e7ac657e2ed034c90f7d5d727e"
+        "declarations": 10340,
+        "sha256": "ce72c409e057e545b1f9995c236a310178ab2660a6babc31669b6bbb32be5ac1"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "708eae70c82d9c0b1d60f6907f0202201d518a16",
-      "source_head_sha": "708eae70c82d9c0b1d60f6907f0202201d518a16",
+      "checked_sha": "49ca9a4344f0e015567fd8916e61a9a768358ba7",
+      "source_head_sha": "49ca9a4344f0e015567fd8916e61a9a768358ba7",
       "ci_url": null,
-      "finished_at": "2026-10-20T11:02:02.703346+00:00",
+      "finished_at": "2026-10-20T11:09:23.817190+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "79ec7173827df25a3430da2c6c721484d1fcee450a37e2aac649bbc81fb9867a",
+      "source_manifest_sha256": "8bdc62e84b741e5b981d87702fb5a14b6e1c9b78673e40c51aa84fedf4d3147e",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10321,
-        "sha256": "ec1372cf92dbebb01673ccd456d360e8564bf2e7ac657e2ed034c90f7d5d727e"
+        "declarations": 10340,
+        "sha256": "ce72c409e057e545b1f9995c236a310178ab2660a6babc31669b6bbb32be5ac1"
       }
     }
   },
@@ -23924,7 +23924,7 @@
       "milestone": "M6a",
       "scope": "AUXILIARY",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "lean_declarations": [
         "Carleman.pointwiseHeatFlux_unnormalized_eq",
         "Carleman.spacetime_level_zero_derivatives",
@@ -23951,6 +23951,58 @@
       "pr_url": null,
       "blocker": null,
       "scope_notes": "真实光滑指数和内域的热通量及散度积分非正；尚非完整P024。",
+      "independent_review_status": "PENDING",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "49ca9a4344f0e015567fd8916e61a9a768358ba7",
+        "source_head_sha": "49ca9a4344f0e015567fd8916e61a9a768358ba7",
+        "ci_url": null,
+        "finished_at": "2026-10-20T11:09:23.817190+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "8bdc62e84b741e5b981d87702fb5a14b6e1c9b78673e40c51aa84fedf4d3147e",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10340,
+          "sha256": "ce72c409e057e545b1f9995c236a310178ab2660a6babc31669b6bbb32be5ac1"
+        }
+      },
+      "semantic_review": null,
+      "declaration_version": "49ca9a4344f0e015567fd8916e61a9a768358ba7"
+    },
+    {
+      "id": "C279",
+      "title": "原域统一常数下的内域光滑热Carleman估计",
+      "paper_ref": "paper/main.tex:2672 Proposition A.3 的统一内域逼近估计",
+      "paper_labels": [
+        "prop:continuousCE"
+      ],
+      "milestone": "M6a",
+      "scope": "AUXILIARY",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "lean_declarations": [],
+      "dependencies": [
+        "C278"
+      ],
+      "pr_url": null,
+      "blocker": null,
+      "scope_notes": "全部空间权、观察吸收和原梯度返回常数在内域索引前选择；尚待C²权及完整弱态/原域极限。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -56313,8 +56365,8 @@
         "C264"
       ],
       "base_commit": "708eae70c82d9c0b1d60f6907f0202201d518a16",
-      "status": "RUNNING",
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "checkpoint_commit": "49ca9a4344f0e015567fd8916e61a9a768358ba7",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.pointwiseHeatFlux_unnormalized_eq",
@@ -56335,10 +56387,39 @@
         "Carleman.halfspaceSmoothInner_heat_flux_integral",
         "Carleman.halfspaceSmoothInner_smooth_heat_carleman_inequality"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "49ca9a4344f0e015567fd8916e61a9a768358ba7",
+        "source_head_sha": "49ca9a4344f0e015567fd8916e61a9a768358ba7",
+        "ci_url": null,
+        "finished_at": "2026-10-20T11:09:23.817190+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "8bdc62e84b741e5b981d87702fb5a14b6e1c9b78673e40c51aa84fedf4d3147e",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10340,
+          "sha256": "ce72c409e057e545b1f9995c236a310178ab2660a6babc31669b6bbb32be5ac1"
+        }
+      },
       "blocker": null,
       "attempts": [],
-      "next_action": "证明真实光滑内域上的热通量和散度积分非正，为一般域连续Carleman估计提供边界积分步骤。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "local_validation": {
         "target": "Carleman.Spatial.SublevelHeatIdentity",
         "target_jobs": 3451,
@@ -56349,7 +56430,37 @@
         "recursive_axiom_declarations": 10340,
         "axiom_exit_code": 0,
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "49ca9a4344f0e015567fd8916e61a9a768358ba7"
+    },
+    {
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "branch": "main",
+      "pr_url": null,
+      "integration_mode": "direct-main",
+      "id": "T263",
+      "title": "原域统一常数下的内域光滑热Carleman估计",
+      "goal_ids": [
+        "C279"
+      ],
+      "acceptance": [
+        "所有权与参数/常数仅用固定原域选取",
+        "统一覆盖全部包含同一中心的真实光滑内域",
+        "真实观察指标、原状态及真实梯度、周期任意T"
+      ],
+      "dependencies": [
+        "C278"
+      ],
+      "base_commit": "49ca9a4344f0e015567fd8916e61a9a768358ba7",
+      "status": "RUNNING",
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [],
+      "next_action": "将实际内域积分不等式与原域上的统一Gaussian主项/观察吸收/梯度返回结合，所有常数先于内域索引。"
     }
   ],
   "private_maintenance": {
