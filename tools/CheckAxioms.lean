@@ -8395,6 +8395,26 @@ set_option pp.maxSteps 1000000
 #check @Carleman.IsWeakSpatialDerivative.mul_weakCoefficient
 #print axioms Carleman.IsWeakSpatialDerivative.mul_weakCoefficient
 
+-- T223: finite-order bounded weak coefficient Leibniz and actual product jets.
+#check @Carleman.BoundedWeakCoefficient
+#print axioms Carleman.BoundedWeakCoefficient
+#check @Carleman.BoundedWeakCoefficient.truncate
+#print axioms Carleman.BoundedWeakCoefficient.truncate
+#check @Carleman.WeakSobolevJet.weakCoefficient_leibnizField_weak
+#print axioms Carleman.WeakSobolevJet.weakCoefficient_leibnizField_weak
+#check @Carleman.WeakSobolevJet.weakCoefficient_wordField_mul
+#print axioms Carleman.WeakSobolevJet.weakCoefficient_wordField_mul
+#check @Carleman.WeakSobolevJet.weakCoefficient_leibnizField_perm
+#print axioms Carleman.WeakSobolevJet.weakCoefficient_leibnizField_perm
+#check @Carleman.WeakSobolevJet.weakCoefficientProductJet
+#print axioms Carleman.WeakSobolevJet.weakCoefficientProductJet
+#check @Carleman.WeakSobolevJet.weakCoefficientProductJet_value
+#print axioms Carleman.WeakSobolevJet.weakCoefficientProductJet_value
+#check @Carleman.WeakSobolevJet.weakCoefficientProductCLM
+#print axioms Carleman.WeakSobolevJet.weakCoefficientProductCLM
+#check @Carleman.WeakSobolevJet.weakCoefficientProductJet_word
+#print axioms Carleman.WeakSobolevJet.weakCoefficientProductJet_word
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

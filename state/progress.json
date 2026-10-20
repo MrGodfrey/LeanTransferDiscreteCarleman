@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T223",
-    "supervisor_checked_at": "2026-10-20T05:44:14.587322+00:00",
+    "supervisor_checked_at": "2026-10-20T05:45:28.109888+00:00",
     "next_action": "从真实有限阶分布系数链迭代乘积法则，保留全部分裂重数，构造实际Hⁿ乘后jet及连续映射。",
     "blocker": null,
     "pause_reason": null,
@@ -20304,7 +20304,7 @@
       "paper_ref": "paper/main.tex:2637–2652 与 eq:unshiftedcoercive",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:spatial-operators"
@@ -20346,7 +20346,20 @@
           "sha256": "63af521350768197fab1eb6426e2af8d7dc8f9c6e8e47e12166d60562992f5e3"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "e9e50330857e19ec60f3f65e664f9b240029fdcc",
+        "declarations": [
+          "Carleman.higherDirichlet_smoothProduct_exists",
+          "Carleman.allowedWeight_inverse_relative_uniform",
+          "Carleman.higherCoefficientForm_allowedWeight_lower",
+          "Carleman.higherCoefficientForm_closure_weighted_coercivity"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/26fd897b17671a06ad146b12f0187154c3c9e18e/governance/reviews/T221-local-acceptance.md",
+        "reviewed_at": "2026-10-20T05:42:40+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C030",
         "C036",
@@ -20358,7 +20371,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "原全H₀ᵐ状态、全部允许指数权、q与T统一的形式加权下界；完整A.1的算子交换子仍待，17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C238",
@@ -20438,7 +20451,17 @@
       "paper_labels": [
         "prop:spatial-operators"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.BoundedWeakCoefficient",
+        "Carleman.BoundedWeakCoefficient.truncate",
+        "Carleman.WeakSobolevJet.weakCoefficient_leibnizField_weak",
+        "Carleman.WeakSobolevJet.weakCoefficient_wordField_mul",
+        "Carleman.WeakSobolevJet.weakCoefficient_leibnizField_perm",
+        "Carleman.WeakSobolevJet.weakCoefficientProductJet",
+        "Carleman.WeakSobolevJet.weakCoefficientProductJet_value",
+        "Carleman.WeakSobolevJet.weakCoefficientProductCLM",
+        "Carleman.WeakSobolevJet.weakCoefficientProductJet_word"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -21735,6 +21758,11 @@
       "at": "2026-10-20T05:36:03.406576+00:00",
       "public_summary": "真实Leibniz非主项与一般系数共轭误差已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6b2e214345ec21a1553d0359485a1990607d6d13/governance/reviews/T220-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T05:45:28.109888+00:00",
+      "public_summary": "原一般系数形式的允许权统一加权下界已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/26fd897b17671a06ad146b12f0187154c3c9e18e/governance/reviews/T221-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -22200,7 +22228,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/88a654dd8d9df39e068402478c40caa6cd62f74c/governance/reviews/T217-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/523976572bfe70ad8a386ea3ad1ffb777271912f/governance/reviews/T218-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2dc8b09b757c041154c765d0d39d71ca67923c79/governance/reviews/T219-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6b2e214345ec21a1553d0359485a1990607d6d13/governance/reviews/T220-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6b2e214345ec21a1553d0359485a1990607d6d13/governance/reviews/T220-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/26fd897b17671a06ad146b12f0187154c3c9e18e/governance/reviews/T221-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -48422,10 +48451,10 @@
       ],
       "branch": "main",
       "base_commit": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "e9e50330857e19ec60f3f65e664f9b240029fdcc",
-      "merge_commit": null,
+      "merge_commit": "e9e50330857e19ec60f3f65e664f9b240029fdcc",
       "lean_declarations": [
         "Carleman.higherDirichlet_smoothProduct_exists",
         "Carleman.allowedWeight_inverse_relative_uniform",
@@ -48467,7 +48496,7 @@
         "已实现原H₀ᵐ乘后状态存在及指数权逆权/相对导数常数供应；接入实际误差和coercivity。",
         "原允许权逆权与统一相对导数、真实H₀ᵐ乘后状态、原coercivity吸收与N范数比较均已编译。目标3303、root4247 jobs实际exit 0；9289声明递归审计PASS。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -48485,9 +48514,23 @@
         "raw_sha256": "63af521350768197fab1eb6426e2af8d7dc8f9c6e8e47e12166d60562992f5e3",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "review": "PENDING"
+        "review": "PENDING",
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "e9e50330857e19ec60f3f65e664f9b240029fdcc"
+      "declaration_version": "e9e50330857e19ec60f3f65e664f9b240029fdcc",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C237"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "e9e50330857e19ec60f3f65e664f9b240029fdcc",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T05:42:40+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/26fd897b17671a06ad146b12f0187154c3c9e18e/governance/reviews/T221-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T222",
@@ -48610,14 +48653,43 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.BoundedWeakCoefficient",
+        "Carleman.BoundedWeakCoefficient.truncate",
+        "Carleman.WeakSobolevJet.weakCoefficient_leibnizField_weak",
+        "Carleman.WeakSobolevJet.weakCoefficient_wordField_mul",
+        "Carleman.WeakSobolevJet.weakCoefficient_leibnizField_perm",
+        "Carleman.WeakSobolevJet.weakCoefficientProductJet",
+        "Carleman.WeakSobolevJet.weakCoefficientProductJet_value",
+        "Carleman.WeakSobolevJet.weakCoefficientProductCLM",
+        "Carleman.WeakSobolevJet.weakCoefficientProductJet_word"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "有限阶弱链、完整Leibniz展开及实际Hⁿ乘法scratch已编译。"
+        "有限阶弱链、完整Leibniz展开及实际Hⁿ乘法scratch已编译。",
+        "有限阶真实弱系数链、Leibniz全展开及Hⁿ乘法CLM通过。目标3299/root4250 jobs实际exit0；9386声明递归审计PASS。"
       ],
       "next_action": "从真实有限阶分布系数链迭代乘积法则，保留全部分裂重数，构造实际Hⁿ乘后jet及连续映射。",
-      "integration_mode": "direct-main"
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman.Spatial.WeakCoefficientJet",
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": [
+          3299,
+          4250
+        ],
+        "recursive_axiom_audit": 9386,
+        "new_explicit_declarations": 9,
+        "raw_sha256": "56d962cde3ed16a954610290695bcc4918b591a5233cfed7ee8d4b0f5435ce04",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

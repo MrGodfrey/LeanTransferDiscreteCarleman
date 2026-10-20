@@ -1085,3 +1085,5 @@ public import Carleman.Spatial.HigherWeightedCoercivity
 
 public import Carleman.Spatial.MollifiedProductTests
 public import Carleman.Spatial.WeakCoefficientProduct
+
+public import Carleman.Spatial.WeakCoefficientJet
