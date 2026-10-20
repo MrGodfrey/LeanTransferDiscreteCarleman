@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T237",
-    "supervisor_checked_at": "2026-10-20T07:44:38.687359+00:00",
-    "next_action": "建立实际边界图剪切、体积保持及弱坐标传输所需换元身份。",
+    "current_task_id": "T238",
+    "supervisor_checked_at": "2026-10-20T07:47:36.030137+00:00",
+    "next_action": "用真实逆变换测试与斜率弱乘积建立原弱态的非线性链式。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "eeabe06b6b3e0e9a72852393be4e8f054a77ed1f",
-      "source_head_sha": "eeabe06b6b3e0e9a72852393be4e8f054a77ed1f",
+      "checked_sha": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1",
+      "source_head_sha": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1",
       "ci_url": null,
-      "finished_at": "2026-10-20T07:37:42.598441+00:00",
+      "finished_at": "2026-10-20T07:46:45.262935+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "8abdf49a048bb6286f4fced520b7e1a7714fc365ad9ee87de817ea6d7846bdbd",
+      "source_manifest_sha256": "9bd493507fe89659d4253a286b7727cebb6fc8ad233a653fd186db21c5bbcd51",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9734,
-        "sha256": "a52d2f521abe302d6dd536b0eaaa959dcb2a89ac6e7e36f13b4330988cc3866a"
+        "declarations": 9775,
+        "sha256": "bc09916c45dae93bbd6d079f3d280098d6cce54ad42e0e33943954e83b695c8e"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "eeabe06b6b3e0e9a72852393be4e8f054a77ed1f",
-      "source_head_sha": "eeabe06b6b3e0e9a72852393be4e8f054a77ed1f",
+      "checked_sha": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1",
+      "source_head_sha": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1",
       "ci_url": null,
-      "finished_at": "2026-10-20T07:37:42.598441+00:00",
+      "finished_at": "2026-10-20T07:46:45.262935+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "8abdf49a048bb6286f4fced520b7e1a7714fc365ad9ee87de817ea6d7846bdbd",
+      "source_manifest_sha256": "9bd493507fe89659d4253a286b7727cebb6fc8ad233a653fd186db21c5bbcd51",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9734,
-        "sha256": "a52d2f521abe302d6dd536b0eaaa959dcb2a89ac6e7e36f13b4330988cc3866a"
+        "declarations": 9775,
+        "sha256": "bc09916c45dae93bbd6d079f3d280098d6cce54ad42e0e33943954e83b695c8e"
       }
     }
   },
@@ -21728,7 +21728,7 @@
       "pr_url": null,
       "id": "C253",
       "title": "真实非线性边界图剪切与保体积坐标基础",
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "lean_declarations": [
         "Carleman.spatialGraphShear",
         "Carleman.spatialGraphShear_psi",
@@ -21760,6 +21760,58 @@
       ],
       "blocker": null,
       "scope_notes": "真实非线性边界图坐标基础；尚不包含完整光滑域H²或一般多面体，AUXILIARY，18/26。",
+      "independent_review_status": "PENDING",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1",
+        "source_head_sha": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1",
+        "ci_url": null,
+        "finished_at": "2026-10-20T07:46:45.262935+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "9bd493507fe89659d4253a286b7727cebb6fc8ad233a653fd186db21c5bbcd51",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9775,
+          "sha256": "bc09916c45dae93bbd6d079f3d280098d6cce54ad42e0e33943954e83b695c8e"
+        }
+      },
+      "semantic_review": null,
+      "declaration_version": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1"
+    },
+    {
+      "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的边界H²正则性证明路线",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "pr_url": null,
+      "id": "C254",
+      "title": "实际边界图剪切下的弱梯度链式与Sobolev传输",
+      "verification_status": "SPECIFIED",
+      "lean_declarations": [],
+      "dependencies": [
+        "C253"
+      ],
+      "blocker": null,
+      "scope_notes": "实际图坐标下的弱梯度传输；尚不包含完整光滑域H²或一般多面体，AUXILIARY，18/26。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -51549,8 +51601,8 @@
         "C252"
       ],
       "base_commit": "eeabe06b6b3e0e9a72852393be4e8f054a77ed1f",
-      "status": "RUNNING",
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "checkpoint_commit": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.spatialGraphShear",
@@ -51580,8 +51632,37 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "建立实际边界图剪切、体积保持及弱坐标传输所需换元身份。",
-      "build_evidence": null,
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1",
+        "source_head_sha": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1",
+        "ci_url": null,
+        "finished_at": "2026-10-20T07:46:45.262935+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "9bd493507fe89659d4253a286b7727cebb6fc8ad233a653fd186db21c5bbcd51",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9775,
+          "sha256": "bc09916c45dae93bbd6d079f3d280098d6cce54ad42e0e33943954e83b695c8e"
+        }
+      },
       "local_validation": {
         "target": "Carleman.Spatial.NonlinearGraphShear",
         "target_jobs": 3386,
@@ -51591,7 +51672,37 @@
         "root_exit_code": 0,
         "recursive_axiom_declarations": 9775,
         "axiom_exit_code": 0
-      }
+      },
+      "declaration_version": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1"
+    },
+    {
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "branch": "main",
+      "pr_url": null,
+      "integration_mode": "direct-main",
+      "id": "T238",
+      "title": "实际边界图剪切下的弱梯度链式与Sobolev传输",
+      "goal_ids": [
+        "C254"
+      ],
+      "acceptance": [
+        "原全部分布测试的真实弱梯度链式",
+        "实际L²复合与斜率项构造新弱梯度",
+        "同一状态H¹传输及后续方程转换基础"
+      ],
+      "dependencies": [
+        "C253"
+      ],
+      "base_commit": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1",
+      "status": "RUNNING",
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "blocker": null,
+      "attempts": [],
+      "next_action": "用真实逆变换测试与斜率弱乘积建立原弱态的非线性链式。",
+      "build_evidence": null
     }
   ],
   "private_maintenance": {
