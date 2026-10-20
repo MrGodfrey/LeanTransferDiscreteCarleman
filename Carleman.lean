@@ -1146,3 +1146,5 @@ public import Carleman.Spatial.WeightedHessianIdentity
 public import Carleman.Geometry.SmoothLevelCutoff
 
 public import Carleman.Spatial.ClassicalConvexHessian
+
+public import Carleman.Spatial.StrongH2GraphTransport

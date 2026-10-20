@@ -9203,6 +9203,35 @@ set_option pp.maxSteps 1000000
 #check Carleman.halfspaceSmoothInner_classical_hessian_bound
 #print axioms Carleman.halfspaceSmoothInner_classical_hessian_bound
 
+#check Carleman.WeakSobolevJet.valueLiftLinear
+#print axioms Carleman.WeakSobolevJet.valueLiftLinear
+#check Carleman.WeakSobolevJet.valueLiftLinear_value
+#print axioms Carleman.WeakSobolevJet.valueLiftLinear_value
+#check Carleman.WeakSobolevJet.valueLiftLinear_closedGraph
+#print axioms Carleman.WeakSobolevJet.valueLiftLinear_closedGraph
+#check Carleman.WeakSobolevJet.valueLiftCLM
+#print axioms Carleman.WeakSobolevJet.valueLiftCLM
+#check Carleman.WeakSobolevJet.valueLiftCLM_value
+#print axioms Carleman.WeakSobolevJet.valueLiftCLM_value
+#check Carleman.WeakSobolevJet.valueLiftCLM_unique
+#print axioms Carleman.WeakSobolevJet.valueLiftCLM_unique
+#check Carleman.WeakSobolevJet.graphShear_H2_value_exists
+#print axioms Carleman.WeakSobolevJet.graphShear_H2_value_exists
+#check Carleman.WeakSobolevJet.graphShearH2Pullback
+#print axioms Carleman.WeakSobolevJet.graphShearH2Pullback
+#check Carleman.WeakSobolevJet.graphShearH2Pullback_value
+#print axioms Carleman.WeakSobolevJet.graphShearH2Pullback_value
+#check Carleman.WeakSobolevJet.graphShearH2Pullback_ae
+#print axioms Carleman.WeakSobolevJet.graphShearH2Pullback_ae
+#check Carleman.WeakSobolevJet.graphShearH2Pullback_truncate
+#print axioms Carleman.WeakSobolevJet.graphShearH2Pullback_truncate
+#check Carleman.WeakSobolevJet.graphShearH2Pullback_dirichlet
+#print axioms Carleman.WeakSobolevJet.graphShearH2Pullback_dirichlet
+#check Carleman.WeakSobolevJet.graphShearH2Pullback_tendsto
+#print axioms Carleman.WeakSobolevJet.graphShearH2Pullback_tendsto
+#check Carleman.WeakSobolevJet.graphShearH2Pullback_test
+#print axioms Carleman.WeakSobolevJet.graphShearH2Pullback_test
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
