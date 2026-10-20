@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T218",
-    "supervisor_checked_at": "2026-10-20T05:10:54.666858+00:00",
-    "next_action": "在真实全部多重指标上构造原系数双线性形式，核对积分、对称、H₀ᵐ能量实现和原加权上界。",
+    "current_task_id": "T219",
+    "supervisor_checked_at": "2026-10-20T05:15:44.227550+00:00",
+    "next_action": "从原有界Lipschitz域插值推出任意小系数的低阶参数范数界，再控制全部低于2m阶的二次项。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "79151186853d57b5e937851b51ace47c05a4e7ff",
-      "source_head_sha": "79151186853d57b5e937851b51ace47c05a4e7ff",
+      "checked_sha": "b41b6861b988e758d026fed32f5d5802e411b636",
+      "source_head_sha": "b41b6861b988e758d026fed32f5d5802e411b636",
       "ci_url": null,
-      "finished_at": "2026-10-20T05:03:45.690033+00:00",
+      "finished_at": "2026-10-20T05:14:26.116750+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "63231f4bce3d280e96018310b9893af16bb87fac5a915d06db5d0a8034398ff4",
+      "source_manifest_sha256": "75bb46a284321d0238e38ef792e6eefa8190af363caa256204741530f412b02c",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9173,
-        "sha256": "eb96e122d444d248264fa65b14e0b6b121b3c65d9598a04117700b9caaa0f20e"
+        "declarations": 9241,
+        "sha256": "6cbdfd58a2ac8278bb9c49df088a5d60e4ba3b6fbdd09773eb04cefba6408914"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "79151186853d57b5e937851b51ace47c05a4e7ff",
-      "source_head_sha": "79151186853d57b5e937851b51ace47c05a4e7ff",
+      "checked_sha": "b41b6861b988e758d026fed32f5d5802e411b636",
+      "source_head_sha": "b41b6861b988e758d026fed32f5d5802e411b636",
       "ci_url": null,
-      "finished_at": "2026-10-20T05:03:45.690033+00:00",
+      "finished_at": "2026-10-20T05:14:26.116750+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "63231f4bce3d280e96018310b9893af16bb87fac5a915d06db5d0a8034398ff4",
+      "source_manifest_sha256": "75bb46a284321d0238e38ef792e6eefa8190af363caa256204741530f412b02c",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9173,
-        "sha256": "eb96e122d444d248264fa65b14e0b6b121b3c65d9598a04117700b9caaa0f20e"
+        "declarations": 9241,
+        "sha256": "6cbdfd58a2ac8278bb9c49df088a5d60e4ba3b6fbdd09773eb04cefba6408914"
       }
     }
   },
@@ -20029,7 +20029,7 @@
       "paper_ref": "paper/main.tex:2615–2652, eq:coefficientform 与原unshiftedformbound",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:spatial-operators"
@@ -20053,8 +20053,37 @@
         "Carleman.higherCoefficientForm_weighted_upper",
         "Carleman.higherCoefficientOriginalForm"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "b41b6861b988e758d026fed32f5d5802e411b636",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "b41b6861b988e758d026fed32f5d5802e411b636",
+        "source_head_sha": "b41b6861b988e758d026fed32f5d5802e411b636",
+        "ci_url": null,
+        "finished_at": "2026-10-20T05:14:26.116750+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "75bb46a284321d0238e38ef792e6eefa8190af363caa256204741530f412b02c",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9241,
+          "sha256": "6cbdfd58a2ac8278bb9c49df088a5d60e4ba3b6fbdd09773eb04cefba6408914"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C027",
@@ -20064,7 +20093,31 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "原有界可测系数形式的真实实现和加权上界；不假设系数光滑，不提升完整Prop A.1；17/26。"
+      "scope_notes": "原有界可测系数形式的真实实现和加权上界；不假设系数光滑，不提升完整Prop A.1；17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C235",
+      "title": "真实低阶Sobolev项的小常数插值与二次吸收",
+      "paper_ref": "paper/main.tex:2637–2650, Proposition A.1 的任意η插值步骤",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:spatial-operators"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C027",
+        "C234"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实弱Sobolev射流的低阶项任意小常数估计；不输入目标插值，不提升完整Prop A.1；17/26。"
     }
   ],
   "events": [
@@ -47690,9 +47743,9 @@
       ],
       "branch": "main",
       "base_commit": "79151186853d57b5e937851b51ace47c05a4e7ff",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "b41b6861b988e758d026fed32f5d5802e411b636",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.MultiDerivativeIndex",
@@ -47713,13 +47766,42 @@
         "Carleman.higherCoefficientForm_weighted_upper",
         "Carleman.higherCoefficientOriginalForm"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "b41b6861b988e758d026fed32f5d5802e411b636",
+        "source_head_sha": "b41b6861b988e758d026fed32f5d5802e411b636",
+        "ci_url": null,
+        "finished_at": "2026-10-20T05:14:26.116750+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "75bb46a284321d0238e38ef792e6eefa8190af363caa256204741530f412b02c",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9241,
+          "sha256": "6cbdfd58a2ac8278bb9c49df088a5d60e4ba3b6fbdd09773eb04cefba6408914"
+        }
+      },
       "blocker": null,
       "attempts": [
         "T217全库4241 jobs、9173公理审计PASS；系数形式试编译已定位CLM实例预算与现有seminorm上界。",
         "显式选择既有强对偶拓扑的ContinuousAdd投影解决推断；完整17项编译成功；定向3241/full4243 jobs和9241项递归公理审计实际exit0。"
       ],
-      "next_action": "在真实全部多重指标上构造原系数双线性形式，核对积分、对称、H₀ᵐ能量实现和原加权上界。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -47736,7 +47818,40 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "review": "PENDING"
-      }
+      },
+      "declaration_version": "b41b6861b988e758d026fed32f5d5802e411b636"
+    },
+    {
+      "id": "T219",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "真实低阶Sobolev项的小常数插值与二次吸收",
+      "goal_ids": [
+        "C235"
+      ],
+      "acceptance": [
+        "真实低阶弱导数与原q幂，常数固定于q与状态之前",
+        "任意η>0下高阶能量的小系数控制与q^(2m)质量余项",
+        "本地构建、公理审计和独立数学验收"
+      ],
+      "dependencies": [
+        "C027",
+        "C234"
+      ],
+      "branch": "main",
+      "base_commit": "b41b6861b988e758d026fed32f5d5802e411b636",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "已从真实参数插值用R*q缩放得到低阶增益；试编译正在处理乘法消去的库引理名称。"
+      ],
+      "next_action": "从原有界Lipschitz域插值推出任意小系数的低阶参数范数界，再控制全部低于2m阶的二次项。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
