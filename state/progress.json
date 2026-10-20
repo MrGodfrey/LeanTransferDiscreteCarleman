@@ -11,11 +11,11 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T194",
-    "supervisor_checked_at": "2026-10-20T01:55:23.599218+00:00",
+    "supervisor_checked_at": "2026-10-20T02:06:07.191884+00:00",
     "next_action": "证明原P1与差分重构的真实a.e.一致误差，连接有限时间张量，不忽略边界条带。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-20T01:55:23.599218+00:00"
+    "last_activity_at": "2026-10-20T02:06:07.191884+00:00"
   },
   "verification": {
     "latest_build": {
@@ -17987,7 +17987,7 @@
       "paper_ref": "paper/main.tex:2926–2956, sec:control-consistency / prop:control-convergence",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -18043,7 +18043,34 @@
           "sha256": "70fc5b59c3872591d07d063eec37df738f79c9461cebfbbc2542dbf859b8ea23"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "3ac3635f878b0c1521032b396a2630acdcc4da46",
+        "declarations": [
+          "Carleman.cartesianNodalSample",
+          "Carleman.cartesianNodalSample_apply",
+          "Carleman.cartesianInteriorData_test_vertex",
+          "Carleman.cartesianKuhnReconstructionLp_test_eq_nodal",
+          "Carleman.cartesianBoxKuhnPartition",
+          "Carleman.cartesianBoxKuhnPartition_faceMatching",
+          "Carleman.cartesianBoxKuhnPartition_boundaryFitted",
+          "Carleman.cartesianBoxDirichletState_test_eq_nodal",
+          "Carleman.cartesianBoxKuhnPartition_maxDiameter_le",
+          "Carleman.cartesianBoxKuhn_uniform_inballs",
+          "Carleman.cartesian_test_H1_strong_convergence",
+          "Carleman.cartesian_test_cell_L2_strong_convergence",
+          "Carleman.cartesianBoxDirichletLinearMap",
+          "Carleman.cartesianBoxDirichletLinearMap_apply",
+          "Carleman.cartesianNodalSample_finite",
+          "Carleman.cartesian_finite_time_test_H1_consistency",
+          "Carleman.cartesian_finite_time_test_cell_L2_consistency",
+          "Carleman.cartesian_finite_test_endpoint_consistency"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3fced984367859aa95ee5a6dc92d1daefbdcadfe/governance/reviews/T193-local-acceptance.md",
+        "reviewed_at": "2026-10-20T01:56:57+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C208",
         "C207",
@@ -18052,7 +18079,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "原盒差分测试H¹₀/L²强一致性及完整时空差商/端点。产品L∞误差、最终势项、极限PDE和状态端点仍待；17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C210",
@@ -19221,6 +19248,11 @@
     {
       "at": "2026-10-20T01:54:50.158995+00:00",
       "public_summary": "按用户要求简化验收：本地Lean与公理审计、固定提交独立数学审核支撑推进；远端CI保留后台复现。"
+    },
+    {
+      "at": "2026-10-20T02:06:07.191884+00:00",
+      "public_summary": "原差分取样测试的18项声明通过独立验收，待验收队列已清；本机实时看板已恢复，继续产品L∞测试一致性。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3fced984367859aa95ee5a6dc92d1daefbdcadfe/governance/reviews/T193-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -19658,7 +19690,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39353514491/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9ce5a486fc1b5d6645eb6555cbb28146f4a00c8e/governance/reviews/T191-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39354880337/attempts/1",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/739f92b05f7169e03dc1c917630d89ba40e7511d/governance/reviews/T192-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/739f92b05f7169e03dc1c917630d89ba40e7511d/governance/reviews/T192-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3fced984367859aa95ee5a6dc92d1daefbdcadfe/governance/reviews/T193-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -43024,10 +43057,10 @@
       ],
       "branch": "main",
       "base_commit": "560e3aa8d23c22943b51dd7744da8174944b27ef",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "3ac3635f878b0c1521032b396a2630acdcc4da46",
-      "merge_commit": null,
+      "merge_commit": "3ac3635f878b0c1521032b396a2630acdcc4da46",
       "lean_declarations": [
         "Carleman.cartesianNodalSample",
         "Carleman.cartesianNodalSample_apply",
@@ -43083,7 +43116,7 @@
         "基线T192已全库及公理审计PASS并独立语义核对无缺陷，正式三项CI与冻结报告仍在进行；新证明只依赖固定基线，不预登记验收。",
         "全部18声明完整probe exit0；三个正式模块定向3569/full4179 jobs及8656项递归公理审计PASS。真实节点值、弱导数唯一性和原几何内部供应R_h/E_h强一致性。"
       ],
-      "next_action": "本地固定SHA构建及审计已验证；独立Agent核对原文后即销项，不等待远端CI。",
+      "next_action": "已按固定提交的本地验证与独立数学验收销项；继续 T194 产品 L∞ 一致性。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -43097,9 +43130,22 @@
         "declaration_artifact_sha256": "70fc5b59c3872591d07d063eec37df738f79c9461cebfbbc2542dbf859b8ea23",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING; fixed proof commit and remote CI follow"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "3ac3635f878b0c1521032b396a2630acdcc4da46"
+      "declaration_version": "3ac3635f878b0c1521032b396a2630acdcc4da46",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C209"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "3ac3635f878b0c1521032b396a2630acdcc4da46",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T01:56:57+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3fced984367859aa95ee5a6dc92d1daefbdcadfe/governance/reviews/T193-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T194",

@@ -421,3 +421,5 @@
 - T193 / C209：[原差分测试分析](analysis/T193-fd-tests.md)，18项声明；原节点取样与真实R_h严格识别，内部供应H¹₀及E_h强极限、整个有限和差商和端点一致性。定向3569/full4179 jobs及8656项公理审计PASS；固定SHA独立验收随后进行。AUXILIARY、17/26。
 
 - T192 / C208：16/16独立PASS；实际I_h/H¹₀与完整弱梯度、统一形状常数及原有限张量差商忠实，目标空间强极限内部清偿。三项CI最终success，8631项raw逐字节核对。 固定证明 `560e3aa8d23c22943b51dd7744da8174944b27ef`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/739f92b05f7169e03dc1c917630d89ba40e7511d/governance/reviews/T192-local-acceptance.md)。原文17/26；当前执行任务不变。
+
+- T193 / C209：18 项原差分测试声明已按固定本地构建及公理证据独立验收；报告 `3fced98`，证明 `3ac3635`。完整证据见唯一台账与 `reviews/T193-local-acceptance.md`。覆盖仍为 17/26；继续 T194。
