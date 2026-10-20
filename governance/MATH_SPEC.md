@@ -1586,3 +1586,7 @@ T188 的状态弱极限位于真实 Bochner L²_tL²_x；T183–T185 的原势�
 ## T200 / C216 — 实际 V′ 时间弱导数
 
 从真实值/弱梯度/产品势算子的 Hilbert 伴随构造 L²(0,T;V) 右端，先证明 pivot mass 的真实 V 值时间弱导数，再经 Riesz 映射得到原状态在实际 StrongDual ℝ V 中的 L² 时间导数及其原 U−Ay−by 积分配对。详见 [T200 分析](analysis/T200-dual-time.md)。没有输入目标导数存在性或 J 满射；H 连续时间迹及原初终值仍待，AUXILIARY、17/26。
+
+## T201 / C217 — 原质量的实际强正则化
+
+真实 Lax–Milgram 构造 (M+εI)⁻¹，证明质量正则化及残差收缩、交换和 range 误差；实际 E 注入清偿 M=E*E 的稠密值域，得到完整 H¹₀ 及 Bochner L² 强收敛。详见 [T201 分析](analysis/T201-mass-regularization.md)。只辅助后续 H 时间迹，尚未声称原状态 H 连续或端点识别；AUXILIARY、17/26。

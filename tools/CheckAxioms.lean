@@ -7955,6 +7955,47 @@ set_option pp.maxSteps 1000000
 #check @Carleman.FiniteDirichletControlIdentity.dual_weak_time_derivative
 #print axioms Carleman.FiniteDirichletControlIdentity.dual_weak_time_derivative
 
+
+-- T201: actual mass regularization and energy/Bochner strong limits.
+#check @Carleman.positiveMassForm
+#print axioms Carleman.positiveMassForm
+#check @Carleman.positiveMassForm_coercive
+#print axioms Carleman.positiveMassForm_coercive
+#check @Carleman.positiveMassInverse
+#print axioms Carleman.positiveMassInverse
+#check @Carleman.positiveMassInverse_equation
+#print axioms Carleman.positiveMassInverse_equation
+#check @Carleman.positiveMassInverse_left
+#print axioms Carleman.positiveMassInverse_left
+#check @Carleman.positiveMassInverse_commute
+#print axioms Carleman.positiveMassInverse_commute
+#check @Carleman.positiveMassRegularizer
+#print axioms Carleman.positiveMassRegularizer
+#check @Carleman.positiveMassRegularizer_norm
+#print axioms Carleman.positiveMassRegularizer_norm
+#check @Carleman.positiveMassRegularizer_residual_norm
+#print axioms Carleman.positiveMassRegularizer_residual_norm
+#check @Carleman.positiveMassRegularizer_range_error
+#print axioms Carleman.positiveMassRegularizer_range_error
+#check @Carleman.positiveMassRegularizer_strong
+#print axioms Carleman.positiveMassRegularizer_strong
+#check @Carleman.adjoint_mass_denseRange
+#print axioms Carleman.adjoint_mass_denseRange
+#check @Carleman.compLpL_strong_of_contractions
+#print axioms Carleman.compLpL_strong_of_contractions
+#check @Carleman.dirichletTimeMass_nonneg
+#print axioms Carleman.dirichletTimeMass_nonneg
+#check @Carleman.dirichletTimeMass_dense
+#print axioms Carleman.dirichletTimeMass_dense
+#check @Carleman.dirichletMassRegularizer
+#print axioms Carleman.dirichletMassRegularizer
+#check @Carleman.dirichletMassRegularizer_norm
+#print axioms Carleman.dirichletMassRegularizer_norm
+#check @Carleman.dirichletMassRegularizer_strong
+#print axioms Carleman.dirichletMassRegularizer_strong
+#check @Carleman.dirichletMassRegularizer_bochner_strong
+#print axioms Carleman.dirichletMassRegularizer_bochner_strong
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

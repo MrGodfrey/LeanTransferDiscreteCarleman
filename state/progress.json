@@ -12,7 +12,7 @@
     "state": "RUNNING",
     "current_task_id": "T201",
     "supervisor_checked_at": "2026-10-20T03:22:03.495967+00:00",
-    "next_action": "用实际Lax–Milgram构造正移位质量逆，证明收缩、交换和强逼近。",
+    "next_action": "固定提交后交独立Agent核验原质量正则化及能量/Bochner强逼近；继续加权能量迹估计。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T03:16:10.617855+00:00"
@@ -18674,7 +18674,27 @@
       "paper_labels": [
         "prop:control-convergence"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.positiveMassForm",
+        "Carleman.positiveMassForm_coercive",
+        "Carleman.positiveMassInverse",
+        "Carleman.positiveMassInverse_equation",
+        "Carleman.positiveMassInverse_left",
+        "Carleman.positiveMassInverse_commute",
+        "Carleman.positiveMassRegularizer",
+        "Carleman.positiveMassRegularizer_norm",
+        "Carleman.positiveMassRegularizer_residual_norm",
+        "Carleman.positiveMassRegularizer_range_error",
+        "Carleman.positiveMassRegularizer_strong",
+        "Carleman.adjoint_mass_denseRange",
+        "Carleman.compLpL_strong_of_contractions",
+        "Carleman.dirichletTimeMass_nonneg",
+        "Carleman.dirichletTimeMass_dense",
+        "Carleman.dirichletMassRegularizer",
+        "Carleman.dirichletMassRegularizer_norm",
+        "Carleman.dirichletMassRegularizer_strong",
+        "Carleman.dirichletMassRegularizer_bochner_strong"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -44503,14 +44523,49 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.positiveMassForm",
+        "Carleman.positiveMassForm_coercive",
+        "Carleman.positiveMassInverse",
+        "Carleman.positiveMassInverse_equation",
+        "Carleman.positiveMassInverse_left",
+        "Carleman.positiveMassInverse_commute",
+        "Carleman.positiveMassRegularizer",
+        "Carleman.positiveMassRegularizer_norm",
+        "Carleman.positiveMassRegularizer_residual_norm",
+        "Carleman.positiveMassRegularizer_range_error",
+        "Carleman.positiveMassRegularizer_strong",
+        "Carleman.adjoint_mass_denseRange",
+        "Carleman.compLpL_strong_of_contractions",
+        "Carleman.dirichletTimeMass_nonneg",
+        "Carleman.dirichletTimeMass_dense",
+        "Carleman.dirichletMassRegularizer",
+        "Carleman.dirichletMassRegularizer_norm",
+        "Carleman.dirichletMassRegularizer_strong",
+        "Carleman.dirichletMassRegularizer_bochner_strong"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "T200实际对偶弱时间导数4199全库jobs、8873公理审计PASS，独立验收进行中。"
+        "T200实际对偶弱时间导数4199全库jobs、8873公理审计PASS，独立验收进行中。",
+        "实际Lax–Milgram逆、双侧恒等式、交换/收缩/range误差及稠密强逼近；DCT给实际Bochner L²强收敛；19项probe exit0、3611定向/4202全库jobs和8909递归公理审计PASS。"
       ],
-      "next_action": "用实际Lax–Milgram构造正移位质量逆，证明收缩、交换和强逼近。",
-      "integration_mode": "direct-main"
+      "next_action": "固定提交后交独立Agent核验原质量正则化及能量/Bochner强逼近；继续加权能量迹估计。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4202,
+        "recursive_axiom_audit": 8909,
+        "new_explicit_declarations": 19,
+        "declaration_artifact_sha256": "46e16af9bec0291d1465c207074a7ba2670c7c2a599128aeb0ae2312a3c746a1",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

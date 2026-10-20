@@ -1024,3 +1024,6 @@ public import Carleman.Control.TensorAdjointPairing
 public import Carleman.Control.DirichletTimeLoad
 public import Carleman.Control.DirichletMassWeakDerivative
 public import Carleman.Control.DirichletDualTimeDerivative
+public import Carleman.Control.PositiveMassRegularization
+public import Carleman.Control.MassRegularizerStrong
+public import Carleman.Control.DirichletMassRegularization
