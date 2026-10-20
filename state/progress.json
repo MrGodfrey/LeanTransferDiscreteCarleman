@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T222",
-    "supervisor_checked_at": "2026-10-20T05:40:38.750153+00:00",
-    "next_action": "以局部磨光的真实紧支测试和L²强极限证明W¹,∞系数乘积法则，保留一般W²ᵐ,∞系数路线。",
+    "current_task_id": "T223",
+    "supervisor_checked_at": "2026-10-20T05:44:14.587322+00:00",
+    "next_action": "从真实有限阶分布系数链迭代乘积法则，保留全部分裂重数，构造实际Hⁿ乘后jet及连续映射。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "e9e50330857e19ec60f3f65e664f9b240029fdcc",
-      "source_head_sha": "e9e50330857e19ec60f3f65e664f9b240029fdcc",
+      "checked_sha": "a3993a7a580ebab556f2a780ecb0ac3f81942390",
+      "source_head_sha": "a3993a7a580ebab556f2a780ecb0ac3f81942390",
       "ci_url": null,
-      "finished_at": "2026-10-20T05:39:20.960088+00:00",
+      "finished_at": "2026-10-20T05:43:33.667857+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "214fbd66e3a265bba559e8aee18424a3d32af06fc399bfacaf777ac513d7057f",
+      "source_manifest_sha256": "af8155178bdb798899dc6f27bc5549d25ab1d5bf419c4d1c1d1a2327b715110f",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9289,
-        "sha256": "63af521350768197fab1eb6426e2af8d7dc8f9c6e8e47e12166d60562992f5e3"
+        "declarations": 9323,
+        "sha256": "582b47b98a985203f3f98486df9c27fe3e3968ae2ea460a8294b54e7e27191a0"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "e9e50330857e19ec60f3f65e664f9b240029fdcc",
-      "source_head_sha": "e9e50330857e19ec60f3f65e664f9b240029fdcc",
+      "checked_sha": "a3993a7a580ebab556f2a780ecb0ac3f81942390",
+      "source_head_sha": "a3993a7a580ebab556f2a780ecb0ac3f81942390",
       "ci_url": null,
-      "finished_at": "2026-10-20T05:39:20.960088+00:00",
+      "finished_at": "2026-10-20T05:43:33.667857+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "214fbd66e3a265bba559e8aee18424a3d32af06fc399bfacaf777ac513d7057f",
+      "source_manifest_sha256": "af8155178bdb798899dc6f27bc5549d25ab1d5bf419c4d1c1d1a2327b715110f",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9289,
-        "sha256": "63af521350768197fab1eb6426e2af8d7dc8f9c6e8e47e12166d60562992f5e3"
+        "declarations": 9323,
+        "sha256": "582b47b98a985203f3f98486df9c27fe3e3968ae2ea460a8294b54e7e27191a0"
       }
     }
   },
@@ -20366,7 +20366,7 @@
       "paper_ref": "paper/main.tex:2624–2635，一般W²ᵐ,∞系数算子Leibniz步骤",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:spatial-operators"
@@ -20386,8 +20386,37 @@
         "Carleman.isWeakMultiplierDerivative_iff",
         "Carleman.IsWeakSpatialDerivative.mul_weakCoefficient"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "a3993a7a580ebab556f2a780ecb0ac3f81942390",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "a3993a7a580ebab556f2a780ecb0ac3f81942390",
+        "source_head_sha": "a3993a7a580ebab556f2a780ecb0ac3f81942390",
+        "ci_url": null,
+        "finished_at": "2026-10-20T05:43:33.667857+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "af8155178bdb798899dc6f27bc5549d25ab1d5bf419c4d1c1d1a2327b715110f",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9323,
+          "sha256": "582b47b98a985203f3f98486df9c27fe3e3968ae2ea460a8294b54e7e27191a0"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C027",
@@ -20395,7 +20424,33 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "真实弱有界系数的基础乘积规则；一般阶算子及完整A.1仍待，17/26。"
+      "scope_notes": "真实弱有界系数的基础乘积规则；一般阶算子及完整A.1仍待，17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C239",
+      "title": "有限阶弱有界系数的完整Leibniz与Sobolev乘法",
+      "paper_ref": "paper/main.tex:2624–2635，一般W²ᵐ,∞系数算子Leibniz步骤",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:spatial-operators"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C027",
+        "C030",
+        "C233",
+        "C238"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实有限阶弱有界系数乘积和Hⁿ成员构造；实际算子公式和完整A.1仍待，17/26。"
     }
   ],
   "events": [
@@ -48453,9 +48508,9 @@
       ],
       "branch": "main",
       "base_commit": "e9e50330857e19ec60f3f65e664f9b240029fdcc",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "a3993a7a580ebab556f2a780ecb0ac3f81942390",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.SpatialTest.valueMultiplier",
@@ -48472,13 +48527,42 @@
         "Carleman.isWeakMultiplierDerivative_iff",
         "Carleman.IsWeakSpatialDerivative.mul_weakCoefficient"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "a3993a7a580ebab556f2a780ecb0ac3f81942390",
+        "source_head_sha": "a3993a7a580ebab556f2a780ecb0ac3f81942390",
+        "ci_url": null,
+        "finished_at": "2026-10-20T05:43:33.667857+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "af8155178bdb798899dc6f27bc5549d25ab1d5bf419c4d1c1d1a2327b715110f",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9323,
+          "sha256": "582b47b98a985203f3f98486df9c27fe3e3968ae2ea460a8294b54e7e27191a0"
+        }
+      },
       "blocker": null,
       "attempts": [
         "局部磨光测试及其导数强收敛已实现，正在连接有界弱系数乘积公式。",
         "真实紧支局部磨光测试及导数L²强极限、真实有界弱系数分布乘积公式通过。目标3295/root4249 jobs实际exit0；9323声明递归审计PASS。"
       ],
-      "next_action": "以局部磨光的真实紧支测试和L²强极限证明W¹,∞系数乘积法则，保留一般W²ᵐ,∞系数路线。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -48498,7 +48582,42 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "review": "PENDING"
-      }
+      },
+      "declaration_version": "a3993a7a580ebab556f2a780ecb0ac3f81942390"
+    },
+    {
+      "id": "T223",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "有限阶弱有界系数的完整Leibniz与Sobolev乘法",
+      "goal_ids": [
+        "C239"
+      ],
+      "acceptance": [
+        "仅通过n阶的真实弱系数导数，不增加无限光滑假设",
+        "完整Leibniz列表重数、实际混合导数交换和对称场",
+        "构造真实Hⁿ乘后状态及完整图范数连续映射"
+      ],
+      "dependencies": [
+        "C027",
+        "C030",
+        "C233",
+        "C238"
+      ],
+      "branch": "main",
+      "base_commit": "a3993a7a580ebab556f2a780ecb0ac3f81942390",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "有限阶弱链、完整Leibniz展开及实际Hⁿ乘法scratch已编译。"
+      ],
+      "next_action": "从真实有限阶分布系数链迭代乘积法则，保留全部分裂重数，构造实际Hⁿ乘后jet及连续映射。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
