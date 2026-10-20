@@ -5,8 +5,12 @@
 及 `.github/workflows/` 均在这里。旧 `MarkdownNote/Carleman_Lean_Cloud_StartKit/`
 已迁入根目录，不再保留另一套状态。`MarkdownNote/云端意见/` 和论文原件保持不变。
 
-首个核心目标是原文 Theorem 2.1；条件性 Section 5 是中间目标，长期覆盖全部
-26 个具名结果。工程辅助引理不计为原文结果完成。协议见 [AGENTS.md](AGENTS.md)
+原稿的 **26 个具名结果已全部完成 Lean 证明及独立数学验收**，包括原始
+Theorem 2.1、一般凸多面体完整 P1 与 Cartesian FD 实现、观测与控制，以及
+Corollary 7.9 的连续零控制极限。原稿未修改，无新增未清偿前提；辅助及条件性
+中间结果不计入 26 项。完整证据见 [最终验收](governance/FINAL_ACCEPTANCE.md)
+和 [逐项原文映射](governance/PAPER_COVERAGE.md)。Section 8 实验复现是独立可选交付。
+协议见 [AGENTS.md](AGENTS.md)
 和 [运行约定](governance/PROJECT_OPERATIONS.md)。[原云端启动说明](README_首先阅读.md)保留作历史参考；当前工作流以本机运行约定为准。
 
 ## 固定工程与构建
@@ -20,10 +24,8 @@
 
 ```bash
 bash tools/setup_lean.sh
-bash tools/lean_ci.sh
-python3 -m unittest discover -s tools -p 'test_*.py'
-node --test tools/test_dashboard.js
-python3 tools/update_dashboard.py --check
+lake build Carleman
+lake env lean tools/CheckAxioms.lean
 ```
 
 setup 使用 `ELAN_HOME`（默认 `~/.elan`），不设置浮动默认工具链；它按已提交的
@@ -31,25 +33,25 @@ manifest 恢复 mathlib，并下载当前基础模块的缓存。新模块需要
 可传入缓存根，例如 `bash tools/setup_lean.sh Mathlib.Data.ZMod.Basic`；未缓存的依赖仍由
 Lake 正常构建。更改工具链或依赖版本需作为明确的代码变更提交。
 
-CI 构建 `lake build Carleman`，检查已解析的 mathlib SHA，并用
+本地验收执行 `lake build Carleman`，核对已解析的 mathlib SHA，并用
 `tools/CheckAxioms.lean` 检查 `Carleman` 命名空间全部声明的公理依赖；`sorryAx` 或新增数学公理会导致失败。
 正常基础公理 `propext`、`Classical.choice`、`Quot.sound` 允许使用。
-新增已完成模块须加入 `Carleman.lean`，重要成果输出对应声明类型和公理依赖。
+最终根目标覆盖全部 1,080 个数学模块，10,681 项声明的递归公理审计通过。
+远端 CI 保留作后台复现检查，不是每批验收门槛。新增模块仍须加入 `Carleman.lean`。
 
 历史云端激活和恢复步骤见 [governance/ENVIRONMENT.md](governance/ENVIRONMENT.md)。本机继续复用同一固定工具链与构建命令。
 
-## 基础成果与后续目标
+## 主要证明入口
 
-`Carleman.sum_sub_perm` 对任意有限索引类型、交换加法群、置换 `σ` 及函数 `f` 证明
-`∑ i, (f i - f (σ i)) = 0`。这是周期差分总和为零的代数基础，范围为 **AUXILIARY**；
-它被 C001 的周期分部求和复用。
+- 原 Theorem 2.1：[OriginalUniform.lean](Carleman/Transfer/OriginalUniform.lean)，`Carleman.OriginalForm.transfer_uniform`。
+- 原完整 P1 实现：[FullP1Realization.lean](Carleman/Control/FullP1Realization.lean)。
+- 一般凸多面体的连续热 Carleman 估计：[FiniteHalfspaceHeatContinuous.lean](Carleman/Transfer/FiniteHalfspaceHeatContinuous.lean)。
+- 原物理观测与控制：[FiniteHalfspaceP1PhysicalControl.lean](Carleman/Control/FiniteHalfspaceP1PhysicalControl.lean)。
+- 原过滤观测与控制：[FiniteHalfspaceP1FilteredControl.lean](Carleman/Control/FiniteHalfspaceP1FilteredControl.lean)。
+- 原 Corollary 7.9：[FiniteHalfspaceP1NullControlLimits.lean](Carleman/Control/FiniteHalfspaceP1NullControlLimits.lean) 及 [CartesianNullControlLimits.lean](Carleman/Control/CartesianNullControlLimits.lean)。
 
-T001/C001 建立共享 `TimeGrid`（`N > 0`、`δt > 0`、`T = N δt`）、全部 `Fin N → H`
-周期状态和论文符号的 `dPlus/dMinus`。`pairing_dPlus/pairing_dMinus` 在任意实内积空间的
-`δt * ∑ inner ℝ` 配对中证明双向伴随关系。后续已建立实际空间权、弱 Sobolev 范数、重构算子和 Section3 分析；当前接续 Section4 的空间误差与完整 transfer。
-验收状态及版本以台账为准，辅助成果不计为原 Theorem 2.1 完成。
-
-工程合并、CI 正/负/修复记录和剩余配置见 [启动交接记录](governance/BOOTSTRAP_ACCEPTANCE.md)。
+全部 26 项的声明、固定证明版本和独立报告以唯一台账及其生成的覆盖表为准。
+历史工程启动记录保留在 [BOOTSTRAP_ACCEPTANCE.md](governance/BOOTSTRAP_ACCEPTANCE.md)。
 
 ## 状态、网页与证据
 

@@ -9,13 +9,13 @@
     "started_at": "2026-10-17T09:43:34.927869+00:00"
   },
   "execution": {
-    "state": "REVIEW",
+    "state": "IDLE",
     "current_task_id": "T270",
-    "supervisor_checked_at": "2026-10-20T12:35:29.852065+00:00",
-    "next_action": "25/26原文结果已独立验收；等待最后Corollary7.9及全文固定版本复核。",
+    "supervisor_checked_at": "2026-10-20T12:49:04.967718+00:00",
+    "next_action": "原稿26/26具名结果全部证明并独立验收；无待证明或待验收任务。Section8实验复现为独立可选交付。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-20T12:31:41.472247+00:00"
+    "last_activity_at": "2026-10-20T12:49:04.967718+00:00"
   },
   "verification": {
     "latest_build": {
@@ -77,6 +77,15 @@
         "declarations": 10681,
         "sha256": "afc286b5b5428afa187e1b30e3b5dff3956af66304d01265ffc1d826bd419bd0"
       }
+    },
+    "final_acceptance": {
+      "status": "PASS",
+      "checked_sha": "99d519544e0eb8d42a955ca6bff3935c322d855f",
+      "paper_results": 26,
+      "total_paper_results": 26,
+      "completed_at": "2026-10-20T12:49:04.967718+00:00",
+      "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ad75f2876a46b2b4e0fc4d1a8f0fe906cf25bd1e/governance/reviews/T270-local-acceptance.md",
+      "summary_file": "governance/FINAL_ACCEPTANCE.md"
     }
   },
   "milestones": [
@@ -174,9 +183,10 @@
       "id": "M6c",
       "title": "收敛与全文验收",
       "description": "Corollary 7.9 与全部具名结果覆盖",
-      "status": "IN_PROGRESS",
-      "evidence_commit": null,
-      "blocker": null
+      "status": "VERIFIED",
+      "evidence_commit": "99d519544e0eb8d42a955ca6bff3935c322d855f",
+      "blocker": null,
+      "acceptance_evidence": "原Corollary7.9及26项原稿标签、固定版本、依赖和声明覆盖已独立验收；最终报告 https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ad75f2876a46b2b4e0fc4d1a8f0fe906cf25bd1e/governance/reviews/T270-local-acceptance.md"
     }
   ],
   "claims": [
@@ -668,18 +678,58 @@
       "paper_ref": "Lemma 3.1, pp.11–13",
       "milestone": "M3",
       "extra_hypotheses": [],
-      "verification_status": "PLANNED",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "paper_labels": [
         "lem:graph"
       ],
-      "lean_declarations": [],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "lean_declarations": [
+        "Carleman.OriginalForm.section3_original_operator",
+        "Carleman.OriginalForm.ofBilinear_scalarForm",
+        "Carleman.PeriodicWeakTrajectory.graph_equation_iff",
+        "Carleman.Section3.Conclusions.primitive_on_interval",
+        "Carleman.Section3.Conclusions.form_bound",
+        "Carleman.Section3.Conclusions.form_coercive"
+      ],
+      "declaration_version": "a315bdc449c58a705a982f0d009f1dde24d6af66",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39135593975/attempts/1",
+        "finished_at": "2026-10-18T14:23:13.156876+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66"
+      },
+      "semantic_review": {
+        "checked_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66",
+        "declarations": [
+          "Carleman.OriginalForm.section3_original_operator",
+          "Carleman.OriginalForm.ofBilinear_scalarForm",
+          "Carleman.PeriodicWeakTrajectory.graph_equation_iff",
+          "Carleman.Section3.Conclusions.primitive_on_interval",
+          "Carleman.Section3.Conclusions.form_bound",
+          "Carleman.Section3.Conclusions.form_coercive"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/415c8ca2e98df80d17ffec353335fa345b65eb55/governance/reviews/T019-local-acceptance.md",
+        "reviewed_at": "2026-10-18T14:31:08Z",
+        "reviewer": "/root/accept_section3; independent fixed-version paper/source/quantifier/dependency acceptance"
+      },
       "dependencies": [],
       "blocker": null,
-      "pr_url": null
+      "pr_url": null,
+      "independent_review_status": "PASS",
+      "resolved_by_paper_result": "P004",
+      "resolved_by_claim_ids": [
+        "C036",
+        "C037"
+      ],
+      "resolution_note": "原始规划占位由同一原文命题的后续完整证明及冻结验收清偿；复用精确证据，不新增原文结果计数。"
     },
     {
       "id": "C006",
@@ -687,20 +737,58 @@
       "paper_ref": "Lemma 3.3, pp.14–15",
       "milestone": "M3",
       "extra_hypotheses": [],
-      "verification_status": "PLANNED",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "paper_labels": [
         "lem:eulerMR"
       ],
-      "lean_declarations": [],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "lean_declarations": [
+        "Carleman.OriginalForm.section3_original_operator",
+        "Carleman.OriginalForm.ofBilinear_scalarForm",
+        "Carleman.PeriodicWeakTrajectory.graph_equation_iff",
+        "Carleman.Section3.Conclusions.euler",
+        "Carleman.Section3.EulerEstimate"
+      ],
+      "declaration_version": "a315bdc449c58a705a982f0d009f1dde24d6af66",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39135593975/attempts/1",
+        "finished_at": "2026-10-18T14:23:13.156876+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66"
+      },
+      "semantic_review": {
+        "checked_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66",
+        "declarations": [
+          "Carleman.OriginalForm.section3_original_operator",
+          "Carleman.OriginalForm.ofBilinear_scalarForm",
+          "Carleman.PeriodicWeakTrajectory.graph_equation_iff",
+          "Carleman.Section3.Conclusions.euler",
+          "Carleman.Section3.EulerEstimate"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/415c8ca2e98df80d17ffec353335fa345b65eb55/governance/reviews/T019-local-acceptance.md",
+        "reviewed_at": "2026-10-18T14:31:08Z",
+        "reviewer": "/root/accept_section3; independent fixed-version paper/source/quantifier/dependency acceptance"
+      },
       "dependencies": [
         "C005"
       ],
       "blocker": null,
-      "pr_url": null
+      "pr_url": null,
+      "independent_review_status": "PASS",
+      "resolved_by_paper_result": "P006",
+      "resolved_by_claim_ids": [
+        "C036",
+        "C037"
+      ],
+      "resolution_note": "原始规划占位由同一原文命题的后续完整证明及冻结验收清偿；复用精确证据，不新增原文结果计数。"
     },
     {
       "id": "C007",
@@ -708,20 +796,60 @@
       "paper_ref": "Theorem 3.5, p.16",
       "milestone": "M3",
       "extra_hypotheses": [],
-      "verification_status": "PLANNED",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "paper_labels": [
         "thm:timeerror"
       ],
-      "lean_declarations": [],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "lean_declarations": [
+        "Carleman.OriginalForm.section3_original_operator",
+        "Carleman.OriginalForm.ofBilinear_scalarForm",
+        "Carleman.PeriodicWeakTrajectory.graph_equation_iff",
+        "Carleman.Section3.Conclusions.temporal",
+        "Carleman.Section3.TemporalEstimate",
+        "Carleman.Section3.temporal_arbitrary_uniform"
+      ],
+      "declaration_version": "a315bdc449c58a705a982f0d009f1dde24d6af66",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39135593975/attempts/1",
+        "finished_at": "2026-10-18T14:23:13.156876+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66"
+      },
+      "semantic_review": {
+        "checked_sha": "a315bdc449c58a705a982f0d009f1dde24d6af66",
+        "declarations": [
+          "Carleman.OriginalForm.section3_original_operator",
+          "Carleman.OriginalForm.ofBilinear_scalarForm",
+          "Carleman.PeriodicWeakTrajectory.graph_equation_iff",
+          "Carleman.Section3.Conclusions.temporal",
+          "Carleman.Section3.TemporalEstimate",
+          "Carleman.Section3.temporal_arbitrary_uniform"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/415c8ca2e98df80d17ffec353335fa345b65eb55/governance/reviews/T019-local-acceptance.md",
+        "reviewed_at": "2026-10-18T14:31:08Z",
+        "reviewer": "/root/accept_section3; independent fixed-version paper/source/quantifier/dependency acceptance"
+      },
       "dependencies": [
         "C006"
       ],
       "blocker": null,
-      "pr_url": null
+      "pr_url": null,
+      "independent_review_status": "PASS",
+      "resolved_by_paper_result": "P008",
+      "resolved_by_claim_ids": [
+        "C036",
+        "C037"
+      ],
+      "resolution_note": "原始规划占位由同一原文命题的后续完整证明及冻结验收清偿；复用精确证据，不新增原文结果计数。"
     },
     {
       "id": "C008",
@@ -1160,18 +1288,95 @@
       "paper_ref": "Proposition A.3, p.37",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "PLANNED",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "paper_labels": [
         "prop:continuousCE"
       ],
-      "lean_declarations": [],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "lean_declarations": [
+        "Carleman.dirichletExhaustionApproximable",
+        "Carleman.dirichletExhaustionApproximable_dense",
+        "Carleman.heatFieldsLeft",
+        "Carleman.heatFieldsRight",
+        "Carleman.continuous_heatFieldsLeft",
+        "Carleman.continuous_heatFieldsRight",
+        "Carleman.heatFieldsLeft_dirichlet",
+        "Carleman.heatFieldsRight_dirichlet",
+        "Carleman.heatFieldsLeft_subdomain",
+        "Carleman.heatFieldsRight_subdomain",
+        "Carleman.dirichletHeat_le_of_exhaustion",
+        "Carleman.finite_halfspace_weak_C2_heat_both_signs",
+        "Carleman.finite_halfspace_weak_interval_C2_heat_both_signs",
+        "Carleman.finite_halfspace_original_weak_C2_heat_both_signs",
+        "Carleman.finite_halfspace_heat_continuous_data",
+        "Carleman.box_heat_continuous_data"
+      ],
+      "declaration_version": "0a1808091e23386fc8c06d4e2a3434d1fa9f2a34",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "0a1808091e23386fc8c06d4e2a3434d1fa9f2a34",
+        "source_head_sha": "0a1808091e23386fc8c06d4e2a3434d1fa9f2a34",
+        "ci_url": null,
+        "finished_at": "2026-10-20T12:05:35.902830+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "baf5c075a2fe49b454f7a112bfcced1f29608703e2df0b4ae9c5459810ec8817",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10579,
+          "sha256": "8f1b1005355c16dfbd3687853c090f6660b104c8b1cf223aa2a024640aa7a6f3"
+        }
+      },
+      "semantic_review": {
+        "checked_sha": "0a1808091e23386fc8c06d4e2a3434d1fa9f2a34",
+        "declarations": [
+          "Carleman.dirichletExhaustionApproximable",
+          "Carleman.dirichletExhaustionApproximable_dense",
+          "Carleman.heatFieldsLeft",
+          "Carleman.heatFieldsRight",
+          "Carleman.continuous_heatFieldsLeft",
+          "Carleman.continuous_heatFieldsRight",
+          "Carleman.heatFieldsLeft_dirichlet",
+          "Carleman.heatFieldsRight_dirichlet",
+          "Carleman.heatFieldsLeft_subdomain",
+          "Carleman.heatFieldsRight_subdomain",
+          "Carleman.dirichletHeat_le_of_exhaustion",
+          "Carleman.finite_halfspace_weak_C2_heat_both_signs",
+          "Carleman.finite_halfspace_weak_interval_C2_heat_both_signs",
+          "Carleman.finite_halfspace_original_weak_C2_heat_both_signs",
+          "Carleman.finite_halfspace_heat_continuous_data",
+          "Carleman.box_heat_continuous_data"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f9c4dc5fb4770e0075bc857beae0900dc01c5edc/governance/reviews/T267-local-acceptance.md",
+        "reviewed_at": "2026-10-20T12:15:19+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent paper acceptance"
+      },
       "dependencies": [],
       "blocker": null,
-      "pr_url": null
+      "pr_url": null,
+      "independent_review_status": "PASS",
+      "resolved_by_paper_result": "P024",
+      "resolved_by_claim_ids": [
+        "C283"
+      ],
+      "resolution_note": "原始规划占位由同一原文命题的后续完整证明及冻结验收清偿；复用精确证据，不新增原文结果计数。"
     },
     {
       "id": "C014",
@@ -1179,20 +1384,69 @@
       "paper_ref": "Proposition 6.1, pp.21–22",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "PLANNED",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "paper_labels": [
         "prop:p1"
       ],
-      "lean_declarations": [],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "lean_declarations": [
+        "Carleman.finite_halfspace_convex",
+        "Carleman.finite_halfspace_p1_realization"
+      ],
+      "declaration_version": "708eae70c82d9c0b1d60f6907f0202201d518a16",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "708eae70c82d9c0b1d60f6907f0202201d518a16",
+        "source_head_sha": "708eae70c82d9c0b1d60f6907f0202201d518a16",
+        "ci_url": null,
+        "finished_at": "2026-10-20T11:02:02.703346+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "79ec7173827df25a3430da2c6c721484d1fcee450a37e2aac649bbc81fb9867a",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10321,
+          "sha256": "ec1372cf92dbebb01673ccd456d360e8564bf2e7ac657e2ed034c90f7d5d727e"
+        }
+      },
+      "semantic_review": {
+        "checked_sha": "708eae70c82d9c0b1d60f6907f0202201d518a16",
+        "declarations": [
+          "Carleman.finite_halfspace_convex",
+          "Carleman.finite_halfspace_p1_realization"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3c78de9fd54df2acf67f1c2dbeca68c0be8eeed0/governance/reviews/T261-local-acceptance.md",
+        "reviewed_at": "2026-10-20T11:09:22+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent paper acceptance"
+      },
       "dependencies": [
         "C013"
       ],
       "blocker": null,
-      "pr_url": null
+      "pr_url": null,
+      "independent_review_status": "PASS",
+      "resolved_by_paper_result": "P011",
+      "resolved_by_claim_ids": [
+        "C277"
+      ],
+      "resolution_note": "原始规划占位由同一原文命题的后续完整证明及冻结验收清偿；复用精确证据，不新增原文结果计数。"
     },
     {
       "id": "C015",
@@ -1200,20 +1454,51 @@
       "paper_ref": "Proposition 6.2, p.23",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "PLANNED",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "paper_labels": [
         "prop:fd"
       ],
-      "lean_declarations": [],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "lean_declarations": [
+        "Carleman.cartesian_numericalData_of_box",
+        "Carleman.cartesian_full_weight_interface"
+      ],
+      "declaration_version": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39226924106/attempts/1",
+        "finished_at": "2026-10-19T09:03:16.065390+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f"
+      },
+      "semantic_review": {
+        "checked_sha": "13c8977bd4c50a11d6bed5fdab64b09aeee0203f",
+        "declarations": [
+          "Carleman.cartesian_numericalData_of_box",
+          "Carleman.cartesian_full_weight_interface"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1a2461ade27f9fc7327d3c03e1c6a09c952318a9/governance/reviews/T142-local-acceptance.md",
+        "reviewed_at": "2026-10-19T09:06:20+00:00",
+        "reviewer": "/root/accept_section3; independent paper acceptance"
+      },
       "dependencies": [
         "C013"
       ],
       "blocker": null,
-      "pr_url": null
+      "pr_url": null,
+      "independent_review_status": "PASS",
+      "resolved_by_paper_result": "P012",
+      "resolved_by_claim_ids": [
+        "C158"
+      ],
+      "resolution_note": "原始规划占位由同一原文命题的后续完整证明及冻结验收清偿；复用精确证据，不新增原文结果计数。"
     },
     {
       "id": "C016",
@@ -1221,22 +1506,75 @@
       "paper_ref": "Theorem 7.2, pp.25–27",
       "milestone": "M6b",
       "extra_hypotheses": [],
-      "verification_status": "PLANNED",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "paper_labels": [
         "prop:physicalO"
       ],
-      "lean_declarations": [],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "lean_declarations": [
+        "Carleman.Physical.finite_halfspace_p1_physical_load_carleman",
+        "Carleman.Physical.finite_halfspace_p1_physical_observation_control",
+        "Carleman.Physical.box_cartesian_physical_observability",
+        "Carleman.Physical.box_cartesian_physical_control"
+      ],
+      "declaration_version": "5458c11848a69d56199fb5e13d517b58eb38953b",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "5458c11848a69d56199fb5e13d517b58eb38953b",
+        "source_head_sha": "5458c11848a69d56199fb5e13d517b58eb38953b",
+        "ci_url": null,
+        "finished_at": "2026-10-20T12:15:58.535596+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "f19b2df8dd9cb5f7925db71c337b729681e272305aeee92c4bdf9711fdfffc94",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10583,
+          "sha256": "2ed5d8a79fb0aa867dd76676377473a80099bbba60d9dc68a1671ae0d9d6795d"
+        }
+      },
+      "semantic_review": {
+        "checked_sha": "5458c11848a69d56199fb5e13d517b58eb38953b",
+        "declarations": [
+          "Carleman.Physical.finite_halfspace_p1_physical_load_carleman",
+          "Carleman.Physical.finite_halfspace_p1_physical_observation_control",
+          "Carleman.Physical.box_cartesian_physical_observability",
+          "Carleman.Physical.box_cartesian_physical_control"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/038447d47db3314106c903723fc9415646d96bad/governance/reviews/T268-local-acceptance.md",
+        "reviewed_at": "2026-10-20T12:26:45+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent paper acceptance"
+      },
       "dependencies": [
         "C012",
         "C014",
         "C015"
       ],
       "blocker": null,
-      "pr_url": null
+      "pr_url": null,
+      "independent_review_status": "PASS",
+      "resolved_by_paper_result": "P014",
+      "resolved_by_claim_ids": [
+        "C284"
+      ],
+      "resolution_note": "原始规划占位由同一原文命题的后续完整证明及冻结验收清偿；复用精确证据，不新增原文结果计数。"
     },
     {
       "id": "C017",
@@ -1244,20 +1582,73 @@
       "paper_ref": "Theorem 7.3, pp.27–28",
       "milestone": "M6b",
       "extra_hypotheses": [],
-      "verification_status": "PLANNED",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "paper_labels": [
         "prop:physicalC"
       ],
-      "lean_declarations": [],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "lean_declarations": [
+        "Carleman.Physical.finite_halfspace_p1_physical_load_carleman",
+        "Carleman.Physical.finite_halfspace_p1_physical_observation_control",
+        "Carleman.Physical.box_cartesian_physical_observability",
+        "Carleman.Physical.box_cartesian_physical_control"
+      ],
+      "declaration_version": "5458c11848a69d56199fb5e13d517b58eb38953b",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "5458c11848a69d56199fb5e13d517b58eb38953b",
+        "source_head_sha": "5458c11848a69d56199fb5e13d517b58eb38953b",
+        "ci_url": null,
+        "finished_at": "2026-10-20T12:15:58.535596+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "f19b2df8dd9cb5f7925db71c337b729681e272305aeee92c4bdf9711fdfffc94",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10583,
+          "sha256": "2ed5d8a79fb0aa867dd76676377473a80099bbba60d9dc68a1671ae0d9d6795d"
+        }
+      },
+      "semantic_review": {
+        "checked_sha": "5458c11848a69d56199fb5e13d517b58eb38953b",
+        "declarations": [
+          "Carleman.Physical.finite_halfspace_p1_physical_load_carleman",
+          "Carleman.Physical.finite_halfspace_p1_physical_observation_control",
+          "Carleman.Physical.box_cartesian_physical_observability",
+          "Carleman.Physical.box_cartesian_physical_control"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/038447d47db3314106c903723fc9415646d96bad/governance/reviews/T268-local-acceptance.md",
+        "reviewed_at": "2026-10-20T12:26:45+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent paper acceptance"
+      },
       "dependencies": [
         "C016"
       ],
       "blocker": null,
-      "pr_url": null
+      "pr_url": null,
+      "independent_review_status": "PASS",
+      "resolved_by_paper_result": "P015",
+      "resolved_by_claim_ids": [
+        "C284"
+      ],
+      "resolution_note": "原始规划占位由同一原文命题的后续完整证明及冻结验收清偿；复用精确证据，不新增原文结果计数。"
     },
     {
       "id": "C018",
@@ -1265,20 +1656,71 @@
       "paper_ref": "Theorem 7.5, p.29",
       "milestone": "M6b",
       "extra_hypotheses": [],
-      "verification_status": "PLANNED",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "paper_labels": [
         "thm:filtered-observability"
       ],
-      "lean_declarations": [],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "lean_declarations": [
+        "Carleman.Physical.finite_halfspace_p1_filtered_observation_control",
+        "Carleman.Physical.box_cartesian_filtered_observability",
+        "Carleman.Physical.box_cartesian_filtered_control"
+      ],
+      "declaration_version": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
+        "source_head_sha": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
+        "ci_url": null,
+        "finished_at": "2026-10-20T12:19:09.920158+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "a67adda8d9e898933f57f489ce3ab685cc5957a66fcdcb5214a342f15eb11542",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10585,
+          "sha256": "e0e3da2180909af0258d6fa929159430a54a2df9e82c3e6681f31a5752281ee4"
+        }
+      },
+      "semantic_review": {
+        "checked_sha": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
+        "declarations": [
+          "Carleman.Physical.finite_halfspace_p1_filtered_observation_control",
+          "Carleman.Physical.box_cartesian_filtered_observability",
+          "Carleman.Physical.box_cartesian_filtered_control"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7097e500642997a9718add2322f558f65e45fcbf/governance/reviews/T269-local-acceptance.md",
+        "reviewed_at": "2026-10-20T12:31:45+00:00",
+        "reviewer": "/root/accept_section3; independent paper acceptance"
+      },
       "dependencies": [
         "C016"
       ],
       "blocker": null,
-      "pr_url": null
+      "pr_url": null,
+      "independent_review_status": "PASS",
+      "resolved_by_paper_result": "P017",
+      "resolved_by_claim_ids": [
+        "C285"
+      ],
+      "resolution_note": "原始规划占位由同一原文命题的后续完整证明及冻结验收清偿；复用精确证据，不新增原文结果计数。"
     },
     {
       "id": "C019",
@@ -1286,20 +1728,75 @@
       "paper_ref": "Corollary 7.9, pp.31–32",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "PLANNED",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "paper_labels": [
         "prop:control-convergence"
       ],
-      "lean_declarations": [],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "lean_declarations": [
+        "Carleman.Physical.FiniteHalfspaceP1Refinement",
+        "Carleman.Physical.finite_halfspace_p1_controls_independent_refinement",
+        "Carleman.Physical.FiniteHalfspaceP1NullLimits",
+        "Carleman.Physical.finite_halfspace_p1_controls_null_limits",
+        "Carleman.Physical.box_cartesian_controls_null_limits"
+      ],
+      "declaration_version": "99d519544e0eb8d42a955ca6bff3935c322d855f",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "99d519544e0eb8d42a955ca6bff3935c322d855f",
+        "source_head_sha": "99d519544e0eb8d42a955ca6bff3935c322d855f",
+        "ci_url": null,
+        "finished_at": "2026-10-20T12:27:10.790056+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "8eefad9a39e0979ca9fccae128ab8b49c23edde850b891dff1e4113cf56e139b",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10681,
+          "sha256": "afc286b5b5428afa187e1b30e3b5dff3956af66304d01265ffc1d826bd419bd0"
+        }
+      },
+      "semantic_review": {
+        "checked_sha": "99d519544e0eb8d42a955ca6bff3935c322d855f",
+        "declarations": [
+          "Carleman.Physical.FiniteHalfspaceP1Refinement",
+          "Carleman.Physical.finite_halfspace_p1_controls_independent_refinement",
+          "Carleman.Physical.FiniteHalfspaceP1NullLimits",
+          "Carleman.Physical.finite_halfspace_p1_controls_null_limits",
+          "Carleman.Physical.box_cartesian_controls_null_limits"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ad75f2876a46b2b4e0fc4d1a8f0fe906cf25bd1e/governance/reviews/T270-local-acceptance.md",
+        "reviewed_at": "2026-10-20T12:41:09+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent paper acceptance"
+      },
       "dependencies": [
         "C017"
       ],
       "blocker": null,
-      "pr_url": null
+      "pr_url": null,
+      "independent_review_status": "PASS",
+      "resolved_by_paper_result": "P021",
+      "resolved_by_claim_ids": [
+        "C286"
+      ],
+      "resolution_note": "原始规划占位由同一原文命题的后续完整证明及冻结验收清偿；复用精确证据，不新增原文结果计数。"
     },
     {
       "id": "AUX001",
@@ -24650,7 +25147,7 @@
       "milestone": "M6c",
       "scope": "PAPER",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "lean_declarations": [
         "Carleman.Physical.FiniteHalfspaceP1Refinement",
         "Carleman.Physical.finite_halfspace_p1_controls_independent_refinement",
@@ -24665,7 +25162,7 @@
       "pr_url": null,
       "blocker": null,
       "scope_notes": "一般凸多面体P1与原Cartesian分支的离散区域控制重构、相对弱紧和全部弱聚点的连续零控制身份。",
-      "independent_review_status": "PENDING",
+      "independent_review_status": "PASS",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -24696,7 +25193,21 @@
           "sha256": "afc286b5b5428afa187e1b30e3b5dff3956af66304d01265ffc1d826bd419bd0"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "99d519544e0eb8d42a955ca6bff3935c322d855f",
+        "declarations": [
+          "Carleman.Physical.FiniteHalfspaceP1Refinement",
+          "Carleman.Physical.finite_halfspace_p1_controls_independent_refinement",
+          "Carleman.Physical.FiniteHalfspaceP1NullLimits",
+          "Carleman.Physical.finite_halfspace_p1_controls_null_limits",
+          "Carleman.Physical.box_cartesian_controls_null_limits"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ad75f2876a46b2b4e0fc4d1a8f0fe906cf25bd1e/governance/reviews/T270-local-acceptance.md",
+        "reviewed_at": "2026-10-20T12:41:09+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent paper acceptance"
+      },
       "declaration_version": "99d519544e0eb8d42a955ca6bff3935c322d855f"
     }
   ],
@@ -26227,6 +26738,16 @@
       "at": "2026-10-20T12:35:29.852065+00:00",
       "public_summary": "全原实现的过滤观测与精确低频消除控制已通过固定本地验证与独立数学验收；原文覆盖25/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7097e500642997a9718add2322f558f65e45fcbf/governance/reviews/T269-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T12:49:04.333117+00:00",
+      "public_summary": "全原实现的离散控制到连续零控制收敛已通过固定本地验证与独立数学验收；原文覆盖26/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ad75f2876a46b2b4e0fc4d1a8f0fe906cf25bd1e/governance/reviews/T270-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T12:49:04.967718+00:00",
+      "public_summary": "原稿26/26具名结果全部完成；本地整库构建、10681项递归公理审计与独立数学验收通过，验收队列清空。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ad75f2876a46b2b4e0fc4d1a8f0fe906cf25bd1e/governance/reviews/T270-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -26741,7 +27262,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4655a9d59448298a504143f523d2bf417c617aba/governance/reviews/T266-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f9c4dc5fb4770e0075bc857beae0900dc01c5edc/governance/reviews/T267-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/038447d47db3314106c903723fc9415646d96bad/governance/reviews/T268-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7097e500642997a9718add2322f558f65e45fcbf/governance/reviews/T269-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7097e500642997a9718add2322f558f65e45fcbf/governance/reviews/T269-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ad75f2876a46b2b4e0fc4d1a8f0fe906cf25bd1e/governance/reviews/T270-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -57916,9 +58438,9 @@
         "C285"
       ],
       "base_commit": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
-      "status": "REVIEW",
+      "status": "MERGED",
       "checkpoint_commit": "99d519544e0eb8d42a955ca6bff3935c322d855f",
-      "merge_commit": null,
+      "merge_commit": "99d519544e0eb8d42a955ca6bff3935c322d855f",
       "lean_declarations": [
         "Carleman.Physical.FiniteHalfspaceP1Refinement",
         "Carleman.Physical.finite_halfspace_p1_controls_independent_refinement",
@@ -57958,7 +58480,7 @@
       },
       "blocker": null,
       "attempts": [],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "local_validation": {
         "target": "Carleman.Control.FiniteHalfspaceP1NullControlLimits",
         "target_jobs": 4170,
@@ -57968,9 +58490,24 @@
         "root_exit_code": 0,
         "recursive_axiom_declarations": 10681,
         "axiom_exit_code": 0,
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "99d519544e0eb8d42a955ca6bff3935c322d855f"
+      "declaration_version": "99d519544e0eb8d42a955ca6bff3935c322d855f",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C286"
+          ],
+          "paper_result_ids": [
+            "P021"
+          ],
+          "checked_sha": "99d519544e0eb8d42a955ca6bff3935c322d855f",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T12:41:09+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ad75f2876a46b2b4e0fc4d1a8f0fe906cf25bd1e/governance/reviews/T270-local-acceptance.md"
+        }
+      ]
     }
   ],
   "private_maintenance": {

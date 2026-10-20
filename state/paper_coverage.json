@@ -1285,7 +1285,7 @@
         "Carleman.Physical.box_cartesian_controls_null_limits"
       ],
       "declaration_version": "99d519544e0eb8d42a955ca6bff3935c322d855f",
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": {
@@ -1318,9 +1318,23 @@
           "sha256": "afc286b5b5428afa187e1b30e3b5dff3956af66304d01265ffc1d826bd419bd0"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "99d519544e0eb8d42a955ca6bff3935c322d855f",
+        "declarations": [
+          "Carleman.Physical.FiniteHalfspaceP1Refinement",
+          "Carleman.Physical.finite_halfspace_p1_controls_independent_refinement",
+          "Carleman.Physical.FiniteHalfspaceP1NullLimits",
+          "Carleman.Physical.finite_halfspace_p1_controls_null_limits",
+          "Carleman.Physical.box_cartesian_controls_null_limits"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ad75f2876a46b2b4e0fc4d1a8f0fe906cf25bd1e/governance/reviews/T270-local-acceptance.md",
+        "reviewed_at": "2026-10-20T12:41:09+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent paper acceptance"
+      },
       "blocker": null,
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "P022",
