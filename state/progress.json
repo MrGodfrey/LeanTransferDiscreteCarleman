@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T214",
-    "supervisor_checked_at": "2026-10-20T04:50:15.061666+00:00",
-    "next_action": "从真实局部能量不等式和连续Volterra估计证明零初值零控制解为零，再比较同一b/U/y0的任意原能量解。",
+    "current_task_id": "T215",
+    "supervisor_checked_at": "2026-10-20T04:50:29.869247+00:00",
+    "next_action": "证明原StrongDual弱方程与质量弱方程互换，并识别任意同数据原能量解及其真实零终迹。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "a7ffa08f871d033a1729d80f998b56c5e98d6218",
-      "source_head_sha": "a7ffa08f871d033a1729d80f998b56c5e98d6218",
+      "checked_sha": "9662adfb01356f17d6bdb85ea93c7e47046373b0",
+      "source_head_sha": "9662adfb01356f17d6bdb85ea93c7e47046373b0",
       "ci_url": null,
-      "finished_at": "2026-10-20T04:41:28.200604+00:00",
+      "finished_at": "2026-10-20T04:46:28.394407+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "454b09969e0011ca44de8b816a632cb6b43d544d01002613a07d40c23c8021b2",
+      "source_manifest_sha256": "ca837f21f6a2e0ad2d9dfaf436ef8625903795e71cab50a42a83b01019726ea7",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9025,
-        "sha256": "c46bfc47e2d7efba57a63b356efa5f38615e76e638b6cad079df37919fcebe2c"
+        "declarations": 9031,
+        "sha256": "8bd1fb3855c26c8959da18d0c629ec34d93bc2e885dd4053011898db902896d9"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "a7ffa08f871d033a1729d80f998b56c5e98d6218",
-      "source_head_sha": "a7ffa08f871d033a1729d80f998b56c5e98d6218",
+      "checked_sha": "9662adfb01356f17d6bdb85ea93c7e47046373b0",
+      "source_head_sha": "9662adfb01356f17d6bdb85ea93c7e47046373b0",
       "ci_url": null,
-      "finished_at": "2026-10-20T04:41:28.200604+00:00",
+      "finished_at": "2026-10-20T04:46:28.394407+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "454b09969e0011ca44de8b816a632cb6b43d544d01002613a07d40c23c8021b2",
+      "source_manifest_sha256": "ca837f21f6a2e0ad2d9dfaf436ef8625903795e71cab50a42a83b01019726ea7",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9025,
-        "sha256": "c46bfc47e2d7efba57a63b356efa5f38615e76e638b6cad079df37919fcebe2c"
+        "declarations": 9031,
+        "sha256": "8bd1fb3855c26c8959da18d0c629ec34d93bc2e885dd4053011898db902896d9"
       }
     }
   },
@@ -19670,7 +19670,7 @@
       "paper_ref": "paper/main.tex:2338–2415, prop:control-convergence 中原能量解的唯一性",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -19683,8 +19683,37 @@
         "Carleman.dirichlet_mass_energy_unique",
         "Carleman.FiniteDirichletControlIdentity.identifies_energy_solution"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "9662adfb01356f17d6bdb85ea93c7e47046373b0",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "9662adfb01356f17d6bdb85ea93c7e47046373b0",
+        "source_head_sha": "9662adfb01356f17d6bdb85ea93c7e47046373b0",
+        "ci_url": null,
+        "finished_at": "2026-10-20T04:46:28.394407+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "ca837f21f6a2e0ad2d9dfaf436ef8625903795e71cab50a42a83b01019726ea7",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9031,
+          "sha256": "8bd1fb3855c26c8959da18d0c629ec34d93bc2e885dd4053011898db902896d9"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C228",
@@ -19692,7 +19721,32 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "原质量弱导数、原b/Y/U载荷与真实连续初迹的解唯一性，不输入零终态；17/26。"
+      "scope_notes": "原质量弱导数、原b/Y/U载荷与真实连续初迹的解唯一性，不输入零终态；17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C231",
+      "title": "原强对偶能量方程与唯一连续解的识别",
+      "paper_ref": "paper/main.tex:2338–2415, prop:control-convergence 原能量解的强对偶表述与识别",
+      "milestone": "M6c",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:control-convergence"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C216",
+        "C222",
+        "C230"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "原V′值弱方程和连续初迹，不输入零终态或目标唯一性；17/26。"
     }
   ],
   "events": [
@@ -46871,9 +46925,9 @@
       ],
       "branch": "main",
       "base_commit": "a7ffa08f871d033a1729d80f998b56c5e98d6218",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "9662adfb01356f17d6bdb85ea93c7e47046373b0",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.continuous_volterra_nonneg_eq_zero",
@@ -46883,13 +46937,42 @@
         "Carleman.dirichlet_mass_energy_unique",
         "Carleman.FiniteDirichletControlIdentity.identifies_energy_solution"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "9662adfb01356f17d6bdb85ea93c7e47046373b0",
+        "source_head_sha": "9662adfb01356f17d6bdb85ea93c7e47046373b0",
+        "ci_url": null,
+        "finished_at": "2026-10-20T04:46:28.394407+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "ca837f21f6a2e0ad2d9dfaf436ef8625903795e71cab50a42a83b01019726ea7",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9031,
+          "sha256": "8bd1fb3855c26c8959da18d0c629ec34d93bc2e885dd4053011898db902896d9"
+        }
+      },
       "blocker": null,
       "attempts": [
         "T213实际局部能量界4230根构建、9025项公理审计PASS。",
         "六项原能量唯一性声明定向3641、全库4234 jobs与9031项递归公理审计均exit 0。"
       ],
-      "next_action": "从真实局部能量不等式和连续Volterra估计证明零初值零控制解为零，再比较同一b/U/y0的任意原能量解。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -46904,7 +46987,41 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "9662adfb01356f17d6bdb85ea93c7e47046373b0"
+    },
+    {
+      "id": "T215",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原强对偶能量方程与唯一连续解的识别",
+      "goal_ids": [
+        "C231"
+      ],
+      "acceptance": [
+        "实际Riesz映射与积分互换反推出原质量弱方程",
+        "原StrongDual弱方程和连续初迹定义一般能量解，无零终态前提",
+        "由已证原能量唯一性识别控制极限与任意同数据能量解"
+      ],
+      "dependencies": [
+        "C216",
+        "C222",
+        "C230"
+      ],
+      "branch": "main",
+      "base_commit": "9662adfb01356f17d6bdb85ea93c7e47046373b0",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "T214六项唯一性声明4234根构建、9031公理审计PASS。"
+      ],
+      "next_action": "证明原StrongDual弱方程与质量弱方程互换，并识别任意同数据原能量解及其真实零终迹。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
