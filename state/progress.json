@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T198",
-    "supervisor_checked_at": "2026-10-20T02:42:44.997590+00:00",
+    "supervisor_checked_at": "2026-10-20T02:48:48.623297+00:00",
     "next_action": "接入任意控制弱极限、同一状态子列和原有限测试弱恒等式。",
     "blocker": null,
     "pause_reason": null,
@@ -18345,7 +18345,7 @@
       "paper_ref": "paper/main.tex:2124–2133, 2363–2392; prop:control-convergence",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -18392,7 +18392,25 @@
           "sha256": "65a777f78bd2aabf23508bc8b1d8aad10a420402af8ac4e7fe55722bf2d425cd"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "3998fb3b4353576457a0773e69d587e5cf92e7e8",
+        "declarations": [
+          "Carleman.Physical.physicalMeshScale_tendsto_atTop",
+          "Carleman.Physical.physicalMeshScale_dt_bound",
+          "Carleman.Physical.physicalMeshScale_dt_tendsto_zero",
+          "Carleman.Physical.physical_conditions_eventually",
+          "Carleman.Physical.physical_terminal_norm_tendsto_zero",
+          "Carleman.cartesianGridPotential_bound",
+          "Carleman.cartesianBoxTimeControl_norm",
+          "Carleman.cartesianBoxTimeControl_supported",
+          "Carleman.Physical.box_cartesian_controls_independent_refinement"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3a6bd348117c86d39b3f17b9b111f5a85ac3e7ea/governance/reviews/T197-local-acceptance.md",
+        "reviewed_at": "2026-10-20T02:45:42+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C212",
         "C186",
@@ -18401,7 +18419,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "原差分控制序列的构造及端点强极限；完整弱极限PDE和连续状态时间迹仍待，17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C214",
@@ -19591,6 +19609,11 @@
       "at": "2026-10-20T02:38:45.732390+00:00",
       "public_summary": "原差分状态弱恒等式的有限测试极限已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6f68fde07f02c1caff27d075291b55aadffd6434/governance/reviews/T196-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T02:48:48.623297+00:00",
+      "public_summary": "独立网格细化下的原控制构造与终端趋零已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3a6bd348117c86d39b3f17b9b111f5a85ac3e7ea/governance/reviews/T197-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -20032,7 +20055,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3fced984367859aa95ee5a6dc92d1daefbdcadfe/governance/reviews/T193-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ebc826644387d929f67677cd4c4afea62cd1d42a/governance/reviews/T194-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2eaf3a373f80f24d0d968f926bdf32244d55717f/governance/reviews/T195-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6f68fde07f02c1caff27d075291b55aadffd6434/governance/reviews/T196-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6f68fde07f02c1caff27d075291b55aadffd6434/governance/reviews/T196-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3a6bd348117c86d39b3f17b9b111f5a85ac3e7ea/governance/reviews/T197-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -43818,10 +43842,10 @@
       ],
       "branch": "main",
       "base_commit": "9c62b704e83c3e25302aa14d665337a646beb8ee",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "3998fb3b4353576457a0773e69d587e5cf92e7e8",
-      "merge_commit": null,
+      "merge_commit": "3998fb3b4353576457a0773e69d587e5cf92e7e8",
       "lean_declarations": [
         "Carleman.Physical.physicalMeshScale_tendsto_atTop",
         "Carleman.Physical.physicalMeshScale_dt_bound",
@@ -43868,7 +43892,7 @@
         "T196有限测试弱极限的本地构建及8714项审计PASS，固定版本独立验收进行中。",
         "9项正式声明完整probe exit0；4071定向jobs、4189全库jobs及8726项递归公理审计PASS。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -43882,9 +43906,22 @@
         "declaration_artifact_sha256": "65a777f78bd2aabf23508bc8b1d8aad10a420402af8ac4e7fe55722bf2d425cd",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "3998fb3b4353576457a0773e69d587e5cf92e7e8"
+      "declaration_version": "3998fb3b4353576457a0773e69d587e5cf92e7e8",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C213"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "3998fb3b4353576457a0773e69d587e5cf92e7e8",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T02:45:42+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3a6bd348117c86d39b3f17b9b111f5a85ac3e7ea/governance/reviews/T197-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T198",
