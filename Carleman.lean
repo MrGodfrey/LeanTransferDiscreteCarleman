@@ -1001,3 +1001,7 @@ public import Carleman.Control.P1TensorTestConsistency
 public import Carleman.Control.CartesianTestInterpolation
 public import Carleman.Control.CartesianTestStrongConvergence
 public import Carleman.Control.CartesianTensorTestConsistency
+
+public import Carleman.Control.SpatialTestUniformError
+public import Carleman.Control.TensorTestUniformError
+public import Carleman.Control.TensorTestUniformConsistency

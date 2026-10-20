@@ -7809,6 +7809,35 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesian_finite_test_endpoint_consistency
 #print axioms Carleman.cartesian_finite_test_endpoint_consistency
 
+#check @Carleman.cartesian_test_cell_uniform_error
+#print axioms Carleman.cartesian_test_cell_uniform_error
+#check @Carleman.cartesian_box_test_cell_uniform_error
+#print axioms Carleman.cartesian_box_test_cell_uniform_error
+#check @Carleman.p1_test_uniform_error
+#print axioms Carleman.p1_test_uniform_error
+#check @Carleman.timeCell_ae_covered
+#print axioms Carleman.timeCell_ae_covered
+#check @Carleman.finite_time_tensor_uniform_error
+#print axioms Carleman.finite_time_tensor_uniform_error
+#check @Carleman.finite_tensor_test_bounds
+#print axioms Carleman.finite_tensor_test_bounds
+#check @Carleman.bochner_finite_time_tensor_ae
+#print axioms Carleman.bochner_finite_time_tensor_ae
+#check @Carleman.finite_tensor_test_aestronglyMeasurable
+#print axioms Carleman.finite_tensor_test_aestronglyMeasurable
+#check @Carleman.bochner_finite_time_tensor_uniform_error
+#print axioms Carleman.bochner_finite_time_tensor_uniform_error
+#check @Carleman.cartesian_finite_time_test_uniform_bound
+#print axioms Carleman.cartesian_finite_time_test_uniform_bound
+#check @Carleman.SimplicialPartition.nodalLp_finite
+#print axioms Carleman.SimplicialPartition.nodalLp_finite
+#check @Carleman.p1_finite_time_test_uniform_bound
+#print axioms Carleman.p1_finite_time_test_uniform_bound
+#check @Carleman.cartesian_finite_time_test_Linfty_consistency
+#print axioms Carleman.cartesian_finite_time_test_Linfty_consistency
+#check @Carleman.p1_finite_time_test_Linfty_consistency
+#print axioms Carleman.p1_finite_time_test_Linfty_consistency
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

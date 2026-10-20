@@ -11,11 +11,11 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T194",
-    "supervisor_checked_at": "2026-10-20T02:06:07.191884+00:00",
-    "next_action": "证明原P1与差分重构的真实a.e.一致误差，连接有限时间张量，不忽略边界条带。",
+    "supervisor_checked_at": "2026-10-20T02:13:25.074469+00:00",
+    "next_action": "保存固定数学提交，记录真实本地证据后进行独立验收。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-20T02:06:07.191884+00:00"
+    "last_activity_at": "2026-10-20T02:13:25.074469+00:00"
   },
   "verification": {
     "latest_build": {
@@ -18092,7 +18092,22 @@
       "paper_labels": [
         "prop:control-convergence"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.cartesian_test_cell_uniform_error",
+        "Carleman.cartesian_box_test_cell_uniform_error",
+        "Carleman.p1_test_uniform_error",
+        "Carleman.timeCell_ae_covered",
+        "Carleman.finite_time_tensor_uniform_error",
+        "Carleman.finite_tensor_test_bounds",
+        "Carleman.bochner_finite_time_tensor_ae",
+        "Carleman.finite_tensor_test_aestronglyMeasurable",
+        "Carleman.bochner_finite_time_tensor_uniform_error",
+        "Carleman.cartesian_finite_time_test_uniform_bound",
+        "Carleman.SimplicialPartition.nodalLp_finite",
+        "Carleman.p1_finite_time_test_uniform_bound",
+        "Carleman.cartesian_finite_time_test_Linfty_consistency",
+        "Carleman.p1_finite_time_test_Linfty_consistency"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -43171,14 +43186,44 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.cartesian_test_cell_uniform_error",
+        "Carleman.cartesian_box_test_cell_uniform_error",
+        "Carleman.p1_test_uniform_error",
+        "Carleman.timeCell_ae_covered",
+        "Carleman.finite_time_tensor_uniform_error",
+        "Carleman.finite_tensor_test_bounds",
+        "Carleman.bochner_finite_time_tensor_ae",
+        "Carleman.finite_tensor_test_aestronglyMeasurable",
+        "Carleman.bochner_finite_time_tensor_uniform_error",
+        "Carleman.cartesian_finite_time_test_uniform_bound",
+        "Carleman.SimplicialPartition.nodalLp_finite",
+        "Carleman.p1_finite_time_test_uniform_bound",
+        "Carleman.cartesian_finite_time_test_Linfty_consistency",
+        "Carleman.p1_finite_time_test_Linfty_consistency"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "固定T193真实本地全库构建与8656项公理审计PASS；独立Agent语义核对进行中。采用用户简化后的本地证据流程。"
+        "固定T193真实本地全库构建与8656项公理审计PASS；独立Agent语义核对进行中。采用用户简化后的本地证据流程。",
+        "14项正式声明：3576定向jobs、4182全库jobs及8670项递归公理审计PASS；原P1和差分重构产品L∞误差及独立双尺度极限。"
       ],
-      "next_action": "证明原P1与差分重构的真实a.e.一致误差，连接有限时间张量，不忽略边界条带。",
-      "integration_mode": "direct-main"
+      "next_action": "保存固定数学提交，记录真实本地证据后进行独立验收。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4182,
+        "recursive_axiom_audit": 8670,
+        "new_explicit_declarations": 14,
+        "declaration_artifact_sha256": "4b330ade154bb146d9c5ff2c51acedd59cd6788c599d057580545f5b6dab21b9",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING; exact local proof commit follows"
+      }
     }
   ],
   "private_maintenance": {
