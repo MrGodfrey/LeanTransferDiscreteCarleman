@@ -9572,6 +9572,54 @@ set_option pp.maxSteps 1000000
 #check Carleman.exists_halfspaceSmoothInner_graph_approximation
 #print axioms Carleman.exists_halfspaceSmoothInner_graph_approximation
 
+-- T266: actual common heat fields and harmonic domain limits.
+#check Carleman.subdomainZeroExtendCLM
+#print axioms Carleman.subdomainZeroExtendCLM
+#check Carleman.subdomainZeroExtendCLM_apply
+#print axioms Carleman.subdomainZeroExtendCLM_apply
+#check Carleman.subdomainZeroExtend_multiplier
+#print axioms Carleman.subdomainZeroExtend_multiplier
+#check Carleman.subdomainZeroExtend_seminorm
+#print axioms Carleman.subdomainZeroExtend_seminorm
+#check Carleman.subdomainZeroExtend_cutoff
+#print axioms Carleman.subdomainZeroExtend_cutoff
+#check Carleman.timeSq_subdomainZeroExtend
+#print axioms Carleman.timeSq_subdomainZeroExtend
+#check Carleman.subdomainTimeZeroExtend_cutoff
+#print axioms Carleman.subdomainTimeZeroExtend_cutoff
+#check Carleman.harmonicValue_norm_le
+#print axioms Carleman.harmonicValue_norm_le
+#check Carleman.TimeGrid.harmonicLpLinear
+#print axioms Carleman.TimeGrid.harmonicLpLinear
+#check Carleman.TimeGrid.harmonicLp_norm_le
+#print axioms Carleman.TimeGrid.harmonicLp_norm_le
+#check Carleman.TimeGrid.harmonicLpCLM
+#print axioms Carleman.TimeGrid.harmonicLpCLM
+#check Carleman.TimeGrid.harmonicLp_tendsto
+#print axioms Carleman.TimeGrid.harmonicLp_tendsto
+#check Carleman.TimeGrid.compLp_harmonic
+#print axioms Carleman.TimeGrid.compLp_harmonic
+#check Carleman.dirichlet_harmonic_value_Lp
+#print axioms Carleman.dirichlet_harmonic_value_Lp
+#check Carleman.dirichlet_harmonic_derivative_Lp
+#print axioms Carleman.dirichlet_harmonic_derivative_Lp
+#check Carleman.dirichlet_harmonic_operator_Lp
+#print axioms Carleman.dirichlet_harmonic_operator_Lp
+#check Carleman.dirichlet_harmonic_gradient_Lp
+#print axioms Carleman.dirichlet_harmonic_gradient_Lp
+#check Carleman.DirichletHeatFields
+#print axioms Carleman.DirichletHeatFields
+#check Carleman.dirichletHeatFields
+#print axioms Carleman.dirichletHeatFields
+#check Carleman.dirichletHeatFields_apply
+#print axioms Carleman.dirichletHeatFields_apply
+#check Carleman.subdomainHeatFields
+#print axioms Carleman.subdomainHeatFields
+#check Carleman.subdomainHeatFields_apply
+#print axioms Carleman.subdomainHeatFields_apply
+#check Carleman.exists_dirichlet_exhaustion_harmonic_field_approximation
+#print axioms Carleman.exists_dirichlet_exhaustion_harmonic_field_approximation
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T266",
-    "supervisor_checked_at": "2026-10-20T11:34:21.067492+00:00",
+    "supervisor_checked_at": "2026-10-20T11:40:12.952802+00:00",
     "next_action": "建立真实零延拓CLM、加权能量恒等式及谐波四字段收敛，连接内域估计与原周期图。",
     "blocker": null,
     "pause_reason": null,
@@ -24130,7 +24130,7 @@
       "milestone": "M6a",
       "scope": "AUXILIARY",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "lean_declarations": [
         "Carleman.exists_smooth_operator_graph_approximation_of_H2",
         "Carleman.exists_halfspaceSmoothInner_operator_graph_approximation",
@@ -24153,7 +24153,7 @@
       "pr_url": null,
       "blocker": null,
       "scope_notes": "实际内域H²强密度和harmonic时间核恢复全原周期图；固定外域常数。原域极限另待。",
-      "independent_review_status": "PENDING",
+      "independent_review_status": "PASS",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -24184,7 +24184,29 @@
           "sha256": "ac0e054e14982e3f5c56eb8bd5cf4f5a84abe06208ee4b00b2141a25dd9ea9db"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "a53469931caaf52a06accc38b94778d5e007a5b8",
+        "declarations": [
+          "Carleman.exists_smooth_operator_graph_approximation_of_H2",
+          "Carleman.exists_halfspaceSmoothInner_operator_graph_approximation",
+          "Carleman.halfspaceSmoothInner_classicalTimeCore_dense",
+          "Carleman.weighted_domain_density_integrable",
+          "Carleman.timeSq_eq_domainTimeIntegral_of_norm_sq",
+          "Carleman.timeSq_eq_domainTimeIntegral_of_continuous",
+          "Carleman.timeSq_eq_domainTimeIntegral_of_indicator",
+          "Carleman.dirichletHeatLeft_eq_domainIntegral",
+          "Carleman.dirichletHeatRight_eq_domainIntegral",
+          "Carleman.dirichletHeat_le_of_classical_of_dense",
+          "Carleman.halfspaceSmoothInner_uniform_weak_C2_heat_both_signs",
+          "Carleman.halfspaceSmoothInner_uniform_weak_interval_C2_heat_both_signs",
+          "Carleman.halfspaceSmoothInner_uniform_original_weak_C2_heat_both_signs"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/128807c3503e575763831f7e3a450ecf11db7c3f/governance/reviews/T264-local-acceptance.md",
+        "reviewed_at": "2026-10-20T11:33:57+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "declaration_version": "a53469931caaf52a06accc38b94778d5e007a5b8"
     },
     {
@@ -24197,7 +24219,7 @@
       "milestone": "M6a",
       "scope": "AUXILIARY",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "lean_declarations": [
         "Carleman.WeakSobolevJet.extendDirichlet_pairing_extend",
         "Carleman.IsWeakNegativeLaplacian.subdomain_orthogonal",
@@ -24217,7 +24239,7 @@
       "pr_url": null,
       "blocker": null,
       "scope_notes": "原Dirichlet弱解的强H¹穷竭，不把内域H²函数的零延拓当作原域H²函数；周期热估计极限后续。",
-      "independent_review_status": "PENDING",
+      "independent_review_status": "PASS",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -24248,7 +24270,26 @@
           "sha256": "73c5a6532823c37ef4131c1ed6ba2736fb47424ebf3860668dcf392f6d63ae03"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "307dfe985c233861eaa26acda1cc2f6ab30596d7",
+        "declarations": [
+          "Carleman.WeakSobolevJet.extendDirichlet_pairing_extend",
+          "Carleman.IsWeakNegativeLaplacian.subdomain_orthogonal",
+          "Carleman.dirichlet_subdomain_gradient_best_test",
+          "Carleman.dirichlet_subdomain_norm_best_test",
+          "Carleman.dirichlet_exhaustion_strong_H1",
+          "Carleman.subdomainZeroExtend_restrict_ae",
+          "Carleman.subdomainZeroExtend_restrict_tendsto",
+          "Carleman.subdomainZeroExtend_restrict_tendsto_of_exhaustion",
+          "Carleman.exists_dirichlet_exhaustion_graph_approximation",
+          "Carleman.exists_halfspaceSmoothInner_graph_approximation"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/eab02b1c24f9bce07a28db6e9a50c511368f3715/governance/reviews/T265-local-acceptance.md",
+        "reviewed_at": "2026-10-20T11:36:44+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "declaration_version": "307dfe985c233861eaa26acda1cc2f6ab30596d7"
     },
     {
@@ -24262,7 +24303,31 @@
       "scope": "AUXILIARY",
       "extra_hypotheses": [],
       "verification_status": "SPECIFIED",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.subdomainZeroExtendCLM",
+        "Carleman.subdomainZeroExtendCLM_apply",
+        "Carleman.subdomainZeroExtend_multiplier",
+        "Carleman.subdomainZeroExtend_seminorm",
+        "Carleman.subdomainZeroExtend_cutoff",
+        "Carleman.timeSq_subdomainZeroExtend",
+        "Carleman.subdomainTimeZeroExtend_cutoff",
+        "Carleman.harmonicValue_norm_le",
+        "Carleman.TimeGrid.harmonicLpLinear",
+        "Carleman.TimeGrid.harmonicLp_norm_le",
+        "Carleman.TimeGrid.harmonicLpCLM",
+        "Carleman.TimeGrid.harmonicLp_tendsto",
+        "Carleman.TimeGrid.compLp_harmonic",
+        "Carleman.dirichlet_harmonic_value_Lp",
+        "Carleman.dirichlet_harmonic_derivative_Lp",
+        "Carleman.dirichlet_harmonic_operator_Lp",
+        "Carleman.dirichlet_harmonic_gradient_Lp",
+        "Carleman.DirichletHeatFields",
+        "Carleman.dirichletHeatFields",
+        "Carleman.dirichletHeatFields_apply",
+        "Carleman.subdomainHeatFields",
+        "Carleman.subdomainHeatFields_apply",
+        "Carleman.exists_dirichlet_exhaustion_harmonic_field_approximation"
+      ],
       "dependencies": [
         "C281",
         "C280"
@@ -25773,6 +25838,16 @@
       "at": "2026-10-20T11:25:13.487508+00:00",
       "public_summary": "原域统一常数下内域双时间方向C²权热估计已通过固定本地验证与独立数学验收；原文覆盖20/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/37f8ca79e4c59de8d834defb1e17cf28521952ce/governance/reviews/T263-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T11:37:24.508557+00:00",
+      "public_summary": "内域完整弱周期图的统一双向热估计已通过固定本地验证与独立数学验收；原文覆盖20/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/128807c3503e575763831f7e3a450ecf11db7c3f/governance/reviews/T264-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T11:40:12.952802+00:00",
+      "public_summary": "原域内穷竭Dirichlet解的真实H¹强收敛已通过固定本地验证与独立数学验收；原文覆盖20/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/eab02b1c24f9bce07a28db6e9a50c511368f3715/governance/reviews/T265-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -26281,7 +26356,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/90003a32772cd54be6d442575e293c281516cecf/governance/reviews/T260-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3c78de9fd54df2acf67f1c2dbeca68c0be8eeed0/governance/reviews/T261-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/22c822ba948778b913bcd549884bff78d695083b/governance/reviews/T262-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/37f8ca79e4c59de8d834defb1e17cf28521952ce/governance/reviews/T263-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/37f8ca79e4c59de8d834defb1e17cf28521952ce/governance/reviews/T263-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/128807c3503e575763831f7e3a450ecf11db7c3f/governance/reviews/T264-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/eab02b1c24f9bce07a28db6e9a50c511368f3715/governance/reviews/T265-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -56869,9 +56946,9 @@
         "C273"
       ],
       "base_commit": "556cdaef8f161664657049e6fc2829b82fbb4404",
-      "status": "REVIEW",
+      "status": "MERGED",
       "checkpoint_commit": "a53469931caaf52a06accc38b94778d5e007a5b8",
-      "merge_commit": null,
+      "merge_commit": "a53469931caaf52a06accc38b94778d5e007a5b8",
       "lean_declarations": [
         "Carleman.exists_smooth_operator_graph_approximation_of_H2",
         "Carleman.exists_halfspaceSmoothInner_operator_graph_approximation",
@@ -56919,7 +56996,7 @@
       },
       "blocker": null,
       "attempts": [],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "local_validation": {
         "target": "Carleman.Spatial.UniformInnerWeakHeat",
         "target_jobs": 3645,
@@ -56929,9 +57006,22 @@
         "root_exit_code": 0,
         "recursive_axiom_declarations": 10371,
         "axiom_exit_code": 0,
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "a53469931caaf52a06accc38b94778d5e007a5b8"
+      "declaration_version": "a53469931caaf52a06accc38b94778d5e007a5b8",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C280"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "a53469931caaf52a06accc38b94778d5e007a5b8",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T11:33:57+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/128807c3503e575763831f7e3a450ecf11db7c3f/governance/reviews/T264-local-acceptance.md"
+        }
+      ]
     },
     {
       "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
@@ -56954,9 +57044,9 @@
         "C275"
       ],
       "base_commit": "a53469931caaf52a06accc38b94778d5e007a5b8",
-      "status": "REVIEW",
+      "status": "MERGED",
       "checkpoint_commit": "307dfe985c233861eaa26acda1cc2f6ab30596d7",
-      "merge_commit": null,
+      "merge_commit": "307dfe985c233861eaa26acda1cc2f6ab30596d7",
       "lean_declarations": [
         "Carleman.WeakSobolevJet.extendDirichlet_pairing_extend",
         "Carleman.IsWeakNegativeLaplacian.subdomain_orthogonal",
@@ -57001,7 +57091,7 @@
       },
       "blocker": null,
       "attempts": [],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "local_validation": {
         "target": "Carleman.Spatial.InnerGraphLimit",
         "target_jobs": 3544,
@@ -57011,9 +57101,22 @@
         "root_exit_code": 0,
         "recursive_axiom_declarations": 10382,
         "axiom_exit_code": 0,
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "307dfe985c233861eaa26acda1cc2f6ab30596d7"
+      "declaration_version": "307dfe985c233861eaa26acda1cc2f6ab30596d7",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C281"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "307dfe985c233861eaa26acda1cc2f6ab30596d7",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T11:36:44+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/eab02b1c24f9bce07a28db6e9a50c511368f3715/governance/reviews/T265-local-acceptance.md"
+        }
+      ]
     },
     {
       "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
@@ -57039,11 +57142,46 @@
       "status": "RUNNING",
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.subdomainZeroExtendCLM",
+        "Carleman.subdomainZeroExtendCLM_apply",
+        "Carleman.subdomainZeroExtend_multiplier",
+        "Carleman.subdomainZeroExtend_seminorm",
+        "Carleman.subdomainZeroExtend_cutoff",
+        "Carleman.timeSq_subdomainZeroExtend",
+        "Carleman.subdomainTimeZeroExtend_cutoff",
+        "Carleman.harmonicValue_norm_le",
+        "Carleman.TimeGrid.harmonicLpLinear",
+        "Carleman.TimeGrid.harmonicLp_norm_le",
+        "Carleman.TimeGrid.harmonicLpCLM",
+        "Carleman.TimeGrid.harmonicLp_tendsto",
+        "Carleman.TimeGrid.compLp_harmonic",
+        "Carleman.dirichlet_harmonic_value_Lp",
+        "Carleman.dirichlet_harmonic_derivative_Lp",
+        "Carleman.dirichlet_harmonic_operator_Lp",
+        "Carleman.dirichlet_harmonic_gradient_Lp",
+        "Carleman.DirichletHeatFields",
+        "Carleman.dirichletHeatFields",
+        "Carleman.dirichletHeatFields_apply",
+        "Carleman.subdomainHeatFields",
+        "Carleman.subdomainHeatFields_apply",
+        "Carleman.exists_dirichlet_exhaustion_harmonic_field_approximation"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [],
-      "next_action": "建立真实零延拓CLM、加权能量恒等式及谐波四字段收敛，连接内域估计与原周期图。"
+      "next_action": "建立真实零延拓CLM、加权能量恒等式及谐波四字段收敛，连接内域估计与原周期图。",
+      "local_validation": {
+        "target": "Carleman.Spatial.HarmonicDomainLimit",
+        "target_jobs": 3610,
+        "target_exit_code": 0,
+        "root_target": "Carleman",
+        "root_jobs": 4317,
+        "root_exit_code": 0,
+        "recursive_axiom_declarations": 10480,
+        "axiom_exit_code": 0,
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

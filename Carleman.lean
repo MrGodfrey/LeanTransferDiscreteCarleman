@@ -1177,3 +1177,9 @@ public import Carleman.Spatial.UniformInnerWeakHeat
 public import Carleman.Spatial.DirichletExhaustionStrong
 public import Carleman.Spatial.SubdomainLpLimit
 public import Carleman.Spatial.InnerGraphLimit
+
+public import Carleman.Spatial.SubdomainWeightedExtension
+public import Carleman.Continuous.HarmonicLpMap
+public import Carleman.Spatial.DirichletHarmonicFields
+public import Carleman.Spatial.DirichletHeatFields
+public import Carleman.Spatial.HarmonicDomainLimit
