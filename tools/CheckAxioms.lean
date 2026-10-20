@@ -9120,6 +9120,29 @@ set_option pp.maxSteps 1000000
 #check Carleman.halfspaceSmoothInner_boundaryFlux_nonneg
 #print axioms Carleman.halfspaceSmoothInner_boundaryFlux_nonneg
 
+#check Carleman.compact_smooth_product_integrable
+#print axioms Carleman.compact_smooth_product_integrable
+#check Carleman.integral_smoothD_compact
+#print axioms Carleman.integral_smoothD_compact
+#check Carleman.weighted_mixed_derivative_pair
+#print axioms Carleman.weighted_mixed_derivative_pair
+#check Carleman.weighted_hessian_pair
+#print axioms Carleman.weighted_hessian_pair
+#check Carleman.smoothHessianSq
+#print axioms Carleman.smoothHessianSq
+#check Carleman.smoothHessianSq_contDiff
+#print axioms Carleman.smoothHessianSq_contDiff
+#check Carleman.levelBoundaryFlux_eq_double_sum
+#print axioms Carleman.levelBoundaryFlux_eq_double_sum
+#check Carleman.weighted_hessian_identity
+#print axioms Carleman.weighted_hessian_identity
+#check Carleman.weighted_level_hessian_identity
+#print axioms Carleman.weighted_level_hessian_identity
+#check Carleman.weighted_laplacian_identity
+#print axioms Carleman.weighted_laplacian_identity
+#check Carleman.weighted_level_gradient_mass
+#print axioms Carleman.weighted_level_gradient_mass
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

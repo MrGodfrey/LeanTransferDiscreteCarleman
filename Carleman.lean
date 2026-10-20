@@ -1140,3 +1140,5 @@ public import Carleman.Spatial.FiniteLocalH2Gluing
 public import Carleman.Geometry.LevelBoundaryHessian
 
 public import Carleman.Geometry.ConvexBoundaryFlux
+
+public import Carleman.Spatial.WeightedHessianIdentity
