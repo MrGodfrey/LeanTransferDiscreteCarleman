@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T223",
-    "supervisor_checked_at": "2026-10-20T05:45:28.109888+00:00",
-    "next_action": "从真实有限阶分布系数链迭代乘积法则，保留全部分裂重数，构造实际Hⁿ乘后jet及连续映射。",
+    "current_task_id": "T224",
+    "supervisor_checked_at": "2026-10-20T05:48:10.606782+00:00",
+    "next_action": "逐次真实分部积分，证明完整系数微分表达式对应原形式及全部H₀ᵐ测试，并识别关联算子图。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "a3993a7a580ebab556f2a780ecb0ac3f81942390",
-      "source_head_sha": "a3993a7a580ebab556f2a780ecb0ac3f81942390",
+      "checked_sha": "7413b28a97681bcf834d35701a7ca878ebac1b99",
+      "source_head_sha": "7413b28a97681bcf834d35701a7ca878ebac1b99",
       "ci_url": null,
-      "finished_at": "2026-10-20T05:43:33.667857+00:00",
+      "finished_at": "2026-10-20T05:46:46.338198+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "af8155178bdb798899dc6f27bc5549d25ab1d5bf419c4d1c1d1a2327b715110f",
+      "source_manifest_sha256": "12397d60f029941d30e2ae05a04267119a1602c2ddd9686d0000738c4a9d9788",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9323,
-        "sha256": "582b47b98a985203f3f98486df9c27fe3e3968ae2ea460a8294b54e7e27191a0"
+        "declarations": 9386,
+        "sha256": "56d962cde3ed16a954610290695bcc4918b591a5233cfed7ee8d4b0f5435ce04"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "a3993a7a580ebab556f2a780ecb0ac3f81942390",
-      "source_head_sha": "a3993a7a580ebab556f2a780ecb0ac3f81942390",
+      "checked_sha": "7413b28a97681bcf834d35701a7ca878ebac1b99",
+      "source_head_sha": "7413b28a97681bcf834d35701a7ca878ebac1b99",
       "ci_url": null,
-      "finished_at": "2026-10-20T05:43:33.667857+00:00",
+      "finished_at": "2026-10-20T05:46:46.338198+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "af8155178bdb798899dc6f27bc5549d25ab1d5bf419c4d1c1d1a2327b715110f",
+      "source_manifest_sha256": "12397d60f029941d30e2ae05a04267119a1602c2ddd9686d0000738c4a9d9788",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9323,
-        "sha256": "582b47b98a985203f3f98486df9c27fe3e3968ae2ea460a8294b54e7e27191a0"
+        "declarations": 9386,
+        "sha256": "56d962cde3ed16a954610290695bcc4918b591a5233cfed7ee8d4b0f5435ce04"
       }
     }
   },
@@ -20446,7 +20446,7 @@
       "paper_ref": "paper/main.tex:2624–2635，一般W²ᵐ,∞系数算子Leibniz步骤",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:spatial-operators"
@@ -20462,8 +20462,37 @@
         "Carleman.WeakSobolevJet.weakCoefficientProductCLM",
         "Carleman.WeakSobolevJet.weakCoefficientProductJet_word"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "7413b28a97681bcf834d35701a7ca878ebac1b99",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "7413b28a97681bcf834d35701a7ca878ebac1b99",
+        "source_head_sha": "7413b28a97681bcf834d35701a7ca878ebac1b99",
+        "ci_url": null,
+        "finished_at": "2026-10-20T05:46:46.338198+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "12397d60f029941d30e2ae05a04267119a1602c2ddd9686d0000738c4a9d9788",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9386,
+          "sha256": "56d962cde3ed16a954610290695bcc4918b591a5233cfed7ee8d4b0f5435ce04"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C027",
@@ -20473,7 +20502,34 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "真实有限阶弱有界系数乘积和Hⁿ成员构造；实际算子公式和完整A.1仍待，17/26。"
+      "scope_notes": "真实有限阶弱有界系数乘积和Hⁿ成员构造；实际算子公式和完整A.1仍待，17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C240",
+      "title": "一般弱系数微分表达式与原关联算子的身份",
+      "paper_ref": "paper/main.tex:2618–2635，原系数形式与关联算子的Leibniz表达式",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:spatial-operators"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C027",
+        "C232",
+        "C234",
+        "C238",
+        "C239"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "实际一般阶系数微分表达式与原形式/关联图对齐；完整A.1交换子仍待，17/26。"
     }
   ],
   "events": [
@@ -48649,9 +48705,9 @@
       ],
       "branch": "main",
       "base_commit": "a3993a7a580ebab556f2a780ecb0ac3f81942390",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "7413b28a97681bcf834d35701a7ca878ebac1b99",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.BoundedWeakCoefficient",
@@ -48664,13 +48720,42 @@
         "Carleman.WeakSobolevJet.weakCoefficientProductCLM",
         "Carleman.WeakSobolevJet.weakCoefficientProductJet_word"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "7413b28a97681bcf834d35701a7ca878ebac1b99",
+        "source_head_sha": "7413b28a97681bcf834d35701a7ca878ebac1b99",
+        "ci_url": null,
+        "finished_at": "2026-10-20T05:46:46.338198+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "12397d60f029941d30e2ae05a04267119a1602c2ddd9686d0000738c4a9d9788",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9386,
+          "sha256": "56d962cde3ed16a954610290695bcc4918b591a5233cfed7ee8d4b0f5435ce04"
+        }
+      },
       "blocker": null,
       "attempts": [
         "有限阶弱链、完整Leibniz展开及实际Hⁿ乘法scratch已编译。",
         "有限阶真实弱系数链、Leibniz全展开及Hⁿ乘法CLM通过。目标3299/root4250 jobs实际exit0；9386声明递归审计PASS。"
       ],
-      "next_action": "从真实有限阶分布系数链迭代乘积法则，保留全部分裂重数，构造实际Hⁿ乘后jet及连续映射。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -48689,7 +48774,43 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "review": "PENDING"
-      }
+      },
+      "declaration_version": "7413b28a97681bcf834d35701a7ca878ebac1b99"
+    },
+    {
+      "id": "T224",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "一般弱系数微分表达式与原关联算子的身份",
+      "goal_ids": [
+        "C240"
+      ],
+      "acceptance": [
+        "真实系数导数与状态导数全展开，保持原符号和全部系数",
+        "所有原H₀ᵐ测试由真实闭包清偿",
+        "实际微分表达式识别原关联算子，不把目标身份作输入"
+      ],
+      "dependencies": [
+        "C027",
+        "C232",
+        "C234",
+        "C238",
+        "C239"
+      ],
+      "branch": "main",
+      "base_commit": "7413b28a97681bcf834d35701a7ca878ebac1b99",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "真实有限弱链逐次分部积分及带偏移状态导数的系数展开已编译。"
+      ],
+      "next_action": "逐次真实分部积分，证明完整系数微分表达式对应原形式及全部H₀ᵐ测试，并识别关联算子图。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
