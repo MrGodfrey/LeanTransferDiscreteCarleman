@@ -10,21 +10,21 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T208",
-    "supervisor_checked_at": "2026-10-20T04:07:53.392310+00:00",
-    "next_action": "固定原状态弱紧性、六项重构身份与P1节点提升，交独立验收；继续原时间平均势与测试强一致性。",
+    "current_task_id": "T209",
+    "supervisor_checked_at": "2026-10-20T04:07:54.922574+00:00",
+    "next_action": "识别同一原势的真实时间胞平均与产品重构乘法，并给实际P1有限测试的值、差分、梯度及端点强极限。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-20T04:03:58.603104+00:00"
+    "last_activity_at": "2026-10-20T04:08:11.035860+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "fefa061545a3eaad908531f9a9b322fbab55707c",
-      "source_head_sha": "fefa061545a3eaad908531f9a9b322fbab55707c",
+      "checked_sha": "7d343224295439a2c5b91f1128facfc9b42feafd",
+      "source_head_sha": "7d343224295439a2c5b91f1128facfc9b42feafd",
       "ci_url": null,
-      "finished_at": "2026-10-20T04:03:11.240824+00:00",
+      "finished_at": "2026-10-20T04:07:21.244838+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "20f7076c660eea8dd82c4187dea9772e40e09bd13def1e56bf93935046787c13",
+      "source_manifest_sha256": "52636e88b5d93a2c7c7e1f6fa6e202b4ed6007314ebf1fa833b940575f46009b",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8963,
-        "sha256": "1873b8038d10274721a8fd0f9f6fb60758bc7edfcb5aa9b533fb7b617db2d174"
+        "declarations": 8979,
+        "sha256": "d930712d0c91159de351723e623a9021d2cf021f810f7ce1a6ab702b41034353"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "fefa061545a3eaad908531f9a9b322fbab55707c",
-      "source_head_sha": "fefa061545a3eaad908531f9a9b322fbab55707c",
+      "checked_sha": "7d343224295439a2c5b91f1128facfc9b42feafd",
+      "source_head_sha": "7d343224295439a2c5b91f1128facfc9b42feafd",
       "ci_url": null,
-      "finished_at": "2026-10-20T04:03:11.240824+00:00",
+      "finished_at": "2026-10-20T04:07:21.244838+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "20f7076c660eea8dd82c4187dea9772e40e09bd13def1e56bf93935046787c13",
+      "source_manifest_sha256": "52636e88b5d93a2c7c7e1f6fa6e202b4ed6007314ebf1fa833b940575f46009b",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8963,
-        "sha256": "1873b8038d10274721a8fd0f9f6fb60758bc7edfcb5aa9b533fb7b617db2d174"
+        "declarations": 8979,
+        "sha256": "d930712d0c91159de351723e623a9021d2cf021f810f7ce1a6ab702b41034353"
       }
     }
   },
@@ -19203,7 +19203,7 @@
       "paper_ref": "paper/main.tex:2366–2398, prop:control-convergence 的P1弱紧性和离散测试步骤",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -19217,8 +19217,37 @@
         "Carleman.SimplicialPartition.testGalerkinState_lift",
         "Carleman.SimplicialPartition.testGalerkinState_finite_lift"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "7d343224295439a2c5b91f1128facfc9b42feafd",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "7d343224295439a2c5b91f1128facfc9b42feafd",
+        "source_head_sha": "7d343224295439a2c5b91f1128facfc9b42feafd",
+        "ci_url": null,
+        "finished_at": "2026-10-20T04:07:21.244838+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "52636e88b5d93a2c7c7e1f6fa6e202b4ed6007314ebf1fa833b940575f46009b",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8979,
+          "sha256": "d930712d0c91159de351723e623a9021d2cf021f810f7ce1a6ab702b41034353"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C223",
@@ -19227,7 +19256,34 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "实际conforming状态弱紧性和六项恒等式，接原full P1测试；尚不声称完整P1控制极限，17/26。"
+      "scope_notes": "实际conforming状态弱紧性和六项恒等式，接原full P1测试；尚不声称完整P1控制极限，17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C225",
+      "title": "原时间平均势与P1有限测试强一致性",
+      "paper_ref": "paper/main.tex:2389–2398, prop:control-convergence 的P1测试及原势极限",
+      "milestone": "M6c",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:control-convergence"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C224",
+        "C200",
+        "C201",
+        "C209",
+        "C215"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实时间平均势/产品身份与实际P1有限测试强一致性；完整P1控制极限尚待，17/26。"
     }
   ],
   "events": [
@@ -45773,9 +45829,9 @@
       ],
       "branch": "main",
       "base_commit": "fefa061545a3eaad908531f9a9b322fbab55707c",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "7d343224295439a2c5b91f1128facfc9b42feafd",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.conforming_controlled_states_weak_subsequence",
@@ -45786,13 +45842,42 @@
         "Carleman.SimplicialPartition.testGalerkinState_lift",
         "Carleman.SimplicialPartition.testGalerkinState_finite_lift"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "7d343224295439a2c5b91f1128facfc9b42feafd",
+        "source_head_sha": "7d343224295439a2c5b91f1128facfc9b42feafd",
+        "ci_url": null,
+        "finished_at": "2026-10-20T04:07:21.244838+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "52636e88b5d93a2c7c7e1f6fa6e202b4ed6007314ebf1fa833b940575f46009b",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8979,
+          "sha256": "d930712d0c91159de351723e623a9021d2cf021f810f7ce1a6ab702b41034353"
+        }
+      },
       "blocker": null,
       "attempts": [
         "T207实际完整时间能量界4213根构建、8963递归公理审计PASS。",
         "三模块七声明目标3769 jobs、根4216 jobs和8979项递归公理审计均exit 0；原P1全空间节点测试与实际Dirichlet提升精确相等。"
       ],
-      "next_action": "固定原状态弱紧性、六项重构身份与P1节点提升，交独立验收；继续原时间平均势与测试强一致性。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -45807,7 +45892,44 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "7d343224295439a2c5b91f1128facfc9b42feafd"
+    },
+    {
+      "id": "T209",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原时间平均势与P1有限测试强一致性",
+      "goal_ids": [
+        "C225"
+      ],
+      "acceptance": [
+        "原时间平均势经实际Bochner产品等距映射与产品乘法精确交换",
+        "保留原时间平均势界，不使用任意替代势族",
+        "实际full P1有限节点测试在值/差分/梯度及固定端点真实强收敛",
+        "原同一产品势的测试配对可传递到弱状态极限"
+      ],
+      "dependencies": [
+        "C224",
+        "C200",
+        "C201",
+        "C209",
+        "C215"
+      ],
+      "branch": "main",
+      "base_commit": "7d343224295439a2c5b91f1128facfc9b42feafd",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "T208原P1弱紧性和六项测试4216根构建、8979公理审计PASS。"
+      ],
+      "next_action": "识别同一原势的真实时间胞平均与产品重构乘法，并给实际P1有限测试的值、差分、梯度及端点强极限。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
