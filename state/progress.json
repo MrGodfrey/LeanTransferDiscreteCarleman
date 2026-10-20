@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T245",
-    "supervisor_checked_at": "2026-10-20T08:51:02.663200+00:00",
-    "next_action": "利用原法向导数的符号证明局部子水平集与图域精确相同，并构造边界截断。",
+    "current_task_id": "T246",
+    "supervisor_checked_at": "2026-10-20T08:52:38.666563+00:00",
+    "next_action": "构造紧闭包的有限光滑分割，将真实局部H²的全部测试界拼接为原状态全局H²。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "31c84b810ce9f75a97bc2fc5a5cae481a9252183",
-      "source_head_sha": "31c84b810ce9f75a97bc2fc5a5cae481a9252183",
+      "checked_sha": "108394721c27094589e1eea0c77c63083625340d",
+      "source_head_sha": "108394721c27094589e1eea0c77c63083625340d",
       "ci_url": null,
-      "finished_at": "2026-10-20T08:44:52.822417+00:00",
+      "finished_at": "2026-10-20T08:51:30.594016+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "45b00f27c80bcb9ea6656eb3fbe9acf0b80554ed18738a4e58a1d3babe962c35",
+      "source_manifest_sha256": "3f2829809d3e4fcb20765d622d07ccc18e842aaaca6475bb0944c4895b6a9440",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9963,
-        "sha256": "657e48a508f2e054f4588f44cd3c06f0324e48a5a871d7993f85470cbb5d360c"
+        "declarations": 9977,
+        "sha256": "60640617f835da4f833cfca70ed56359498ebdb1b0c40d2f42f3fd3d19db6bbd"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "31c84b810ce9f75a97bc2fc5a5cae481a9252183",
-      "source_head_sha": "31c84b810ce9f75a97bc2fc5a5cae481a9252183",
+      "checked_sha": "108394721c27094589e1eea0c77c63083625340d",
+      "source_head_sha": "108394721c27094589e1eea0c77c63083625340d",
       "ci_url": null,
-      "finished_at": "2026-10-20T08:44:52.822417+00:00",
+      "finished_at": "2026-10-20T08:51:30.594016+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "45b00f27c80bcb9ea6656eb3fbe9acf0b80554ed18738a4e58a1d3babe962c35",
+      "source_manifest_sha256": "3f2829809d3e4fcb20765d622d07ccc18e842aaaca6475bb0944c4895b6a9440",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9963,
-        "sha256": "657e48a508f2e054f4588f44cd3c06f0324e48a5a871d7993f85470cbb5d360c"
+        "declarations": 9977,
+        "sha256": "60640617f835da4f833cfca70ed56359498ebdb1b0c40d2f42f3fd3d19db6bbd"
       }
     }
   },
@@ -22454,7 +22454,7 @@
       "pr_url": null,
       "id": "C261",
       "title": "原子水平域的真实图侧及边界截断邻域",
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "lean_declarations": [
         "Carleman.coordinateLine",
         "Carleman.coordinateLine_self",
@@ -22475,6 +22475,58 @@
       ],
       "blocker": null,
       "scope_notes": "从原边界及实际导数内部供应图侧和截断；有限覆盖和凸域统一控制仍待，AUXILIARY，18/26。",
+      "independent_review_status": "PENDING",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "108394721c27094589e1eea0c77c63083625340d",
+        "source_head_sha": "108394721c27094589e1eea0c77c63083625340d",
+        "ci_url": null,
+        "finished_at": "2026-10-20T08:51:30.594016+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "3f2829809d3e4fcb20765d622d07ccc18e842aaaca6475bb0944c4895b6a9440",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9977,
+          "sha256": "60640617f835da4f833cfca70ed56359498ebdb1b0c40d2f42f3fd3d19db6bbd"
+        }
+      },
+      "semantic_review": null,
+      "declaration_version": "108394721c27094589e1eea0c77c63083625340d"
+    },
+    {
+      "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的边界H²正则性证明路线",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "pr_url": null,
+      "id": "C262",
+      "title": "有限光滑分割与同一原弱解的全局H²拼接",
+      "verification_status": "SPECIFIED",
+      "lean_declarations": [],
+      "dependencies": [
+        "C261"
+      ],
+      "blocker": null,
+      "scope_notes": "实际有限覆盖/光滑分割拼接同一原弱状态；凸域统一Hessian控制仍待，AUXILIARY，18/26。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -53102,8 +53154,8 @@
         "C258"
       ],
       "base_commit": "31c84b810ce9f75a97bc2fc5a5cae481a9252183",
-      "status": "RUNNING",
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "checkpoint_commit": "108394721c27094589e1eea0c77c63083625340d",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.coordinateLine",
@@ -53121,8 +53173,37 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "原子水平集的真实图侧、实际边界截断及同一原弱解的局部H²已证明，准备固定证据及独立验收。",
-      "build_evidence": null,
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "108394721c27094589e1eea0c77c63083625340d",
+        "source_head_sha": "108394721c27094589e1eea0c77c63083625340d",
+        "ci_url": null,
+        "finished_at": "2026-10-20T08:51:30.594016+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "3f2829809d3e4fcb20765d622d07ccc18e842aaaca6475bb0944c4895b6a9440",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9977,
+          "sha256": "60640617f835da4f833cfca70ed56359498ebdb1b0c40d2f42f3fd3d19db6bbd"
+        }
+      },
       "local_validation": {
         "target": "Carleman.Geometry.SublevelGraphRegularity",
         "target_jobs": 3419,
@@ -53133,7 +53214,37 @@
         "recursive_axiom_declarations": 9977,
         "axiom_exit_code": 0,
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "108394721c27094589e1eea0c77c63083625340d"
+    },
+    {
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "branch": "main",
+      "pr_url": null,
+      "integration_mode": "direct-main",
+      "id": "T246",
+      "title": "有限光滑分割与同一原弱解的全局H²拼接",
+      "goal_ids": [
+        "C262"
+      ],
+      "acceptance": [
+        "真实有限光滑分割和全部支撑资格",
+        "局部全测试身份拼接为全局分布界",
+        "同一原状态的实际完整H²恢复"
+      ],
+      "dependencies": [
+        "C261"
+      ],
+      "base_commit": "108394721c27094589e1eea0c77c63083625340d",
+      "status": "RUNNING",
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "blocker": null,
+      "attempts": [],
+      "next_action": "构造紧闭包的有限光滑分割，将真实局部H²的全部测试界拼接为原状态全局H²。",
+      "build_evidence": null
     }
   ],
   "private_maintenance": {
