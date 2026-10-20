@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T243",
-    "supervisor_checked_at": "2026-10-20T08:28:00.495786+00:00",
+    "supervisor_checked_at": "2026-10-20T08:34:01.524219+00:00",
     "next_action": "从原非零梯度选实际坐标方向，构造保持切向坐标的隐函数图。",
     "blocker": null,
     "pause_reason": null,
@@ -22193,7 +22193,7 @@
       "pr_url": null,
       "id": "C258",
       "title": "边界截断弱解在局部相同域之间的真实传输",
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "lean_declarations": [
         "Carleman.SpatialTest.retarget",
         "Carleman.SpatialTest.retarget_fullJet",
@@ -22217,7 +22217,7 @@
       ],
       "blocker": null,
       "scope_notes": "局部边界截断与换域；仍需原域图构造及凸域统一控制，AUXILIARY，18/26。",
-      "independent_review_status": "PENDING",
+      "independent_review_status": "PASS",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -22248,7 +22248,32 @@
           "sha256": "ea189e3d10e6d991b26c44928dfe24e9c1ab695a8983dc428429b6b432234f2c"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "4acd24f5158fda6688403c600ddbd9d2a131c379",
+        "declarations": [
+          "Carleman.SpatialTest.retarget",
+          "Carleman.SpatialTest.retarget_fullJet",
+          "Carleman.SpatialTest.extendDirichlet_pairing_of_support",
+          "Carleman.SpatialTest.subdomainZeroExtend_inner_of_support",
+          "Carleman.SpatialTest.cutoffWeakJet",
+          "Carleman.SpatialTest.cutoffWeakJet_value",
+          "Carleman.SpatialTest.cutoffWeakJet_gradient",
+          "Carleman.SpatialTest.cutoffTransfer",
+          "Carleman.SpatialTest.cutoff_extendDirichlet_test",
+          "Carleman.SpatialTest.cutoff_extendDirichlet_mem",
+          "Carleman.SpatialTest.cutoffTransferredLoad",
+          "Carleman.SpatialTest.cutoff_extendDirichlet_equation",
+          "Carleman.SpatialTest.cutoff_extendDirichlet_value_ae",
+          "Carleman.SpatialTest.exists_local_H2_of_cutoff_transfer",
+          "Carleman.SpatialTest.exists_local_H2_of_cutoff_graph_epigraph",
+          "Carleman.SpatialTest.exists_local_H2_of_cutoff_graph_hypograph"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/faecb1d3d0dd83a2ec6ab2b7662181cf9d46ac07/governance/reviews/T242-local-acceptance.md",
+        "reviewed_at": "2026-10-20T08:30:14+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "declaration_version": "4acd24f5158fda6688403c600ddbd9d2a131c379"
     },
     {
@@ -22263,7 +22288,20 @@
       "id": "C259",
       "title": "原非退化水平边界的坐标图和局部高度构造",
       "verification_status": "SPECIFIED",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.coordinateLevelMap",
+        "Carleman.coordinateLevelMap_normal",
+        "Carleman.coordinateLevelMap_tangent",
+        "Carleman.coordinateLevelMap_contDiff",
+        "Carleman.coordinateLevelMap_hasFDerivAt",
+        "Carleman.coordinateLevelMap_det",
+        "Carleman.exists_nonzero_coordinate_derivative",
+        "Carleman.exists_coordinate_level_chart",
+        "Carleman.coordinateLevelMap_constant_normal_invariant",
+        "Carleman.exists_local_coordinate_level_height",
+        "Carleman.exists_local_coordinate_level_height_of_regular",
+        "Carleman.halfspaceSmoothInner_coordinate_level_height"
+      ],
       "dependencies": [
         "C247",
         "C258"
@@ -23663,6 +23701,11 @@
       "at": "2026-10-20T08:27:11.625998+00:00",
       "public_summary": "实际曲边图区域上的原Dirichlet弱解H²恢复已通过固定本地验证与独立数学验收；原文覆盖18/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ac2416736394ed41c57f349c96379bf4ae4a3718/governance/reviews/T241-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T08:34:01.524219+00:00",
+      "public_summary": "边界截断弱解在局部相同域之间的真实传输已通过固定本地验证与独立数学验收；原文覆盖18/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/faecb1d3d0dd83a2ec6ab2b7662181cf9d46ac07/governance/reviews/T242-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -24149,7 +24192,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/acd021cd36f0378734f13e4b9ffc9b6ddcdb8907/governance/reviews/T238-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1ff2f759dc1ef22d08032d49f9312c17f22222a7/governance/reviews/T239-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d81a68b7cfd6153ad7b5d45a5be5f42c038ef519/governance/reviews/T240-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ac2416736394ed41c57f349c96379bf4ae4a3718/governance/reviews/T241-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ac2416736394ed41c57f349c96379bf4ae4a3718/governance/reviews/T241-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/faecb1d3d0dd83a2ec6ab2b7662181cf9d46ac07/governance/reviews/T242-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -52588,9 +52632,9 @@
         "C257"
       ],
       "base_commit": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc",
-      "status": "REVIEW",
+      "status": "MERGED",
       "checkpoint_commit": "4acd24f5158fda6688403c600ddbd9d2a131c379",
-      "merge_commit": null,
+      "merge_commit": "4acd24f5158fda6688403c600ddbd9d2a131c379",
       "lean_declarations": [
         "Carleman.SpatialTest.retarget",
         "Carleman.SpatialTest.retarget_fullJet",
@@ -52611,7 +52655,7 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -52651,9 +52695,22 @@
         "root_exit_code": 0,
         "recursive_axiom_declarations": 9937,
         "axiom_exit_code": 0,
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "4acd24f5158fda6688403c600ddbd9d2a131c379"
+      "declaration_version": "4acd24f5158fda6688403c600ddbd9d2a131c379",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C258"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "4acd24f5158fda6688403c600ddbd9d2a131c379",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T08:30:14+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/faecb1d3d0dd83a2ec6ab2b7662181cf9d46ac07/governance/reviews/T242-local-acceptance.md"
+        }
+      ]
     },
     {
       "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
@@ -52679,11 +52736,35 @@
       "status": "RUNNING",
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.coordinateLevelMap",
+        "Carleman.coordinateLevelMap_normal",
+        "Carleman.coordinateLevelMap_tangent",
+        "Carleman.coordinateLevelMap_contDiff",
+        "Carleman.coordinateLevelMap_hasFDerivAt",
+        "Carleman.coordinateLevelMap_det",
+        "Carleman.exists_nonzero_coordinate_derivative",
+        "Carleman.exists_coordinate_level_chart",
+        "Carleman.coordinateLevelMap_constant_normal_invariant",
+        "Carleman.exists_local_coordinate_level_height",
+        "Carleman.exists_local_coordinate_level_height_of_regular",
+        "Carleman.halfspaceSmoothInner_coordinate_level_height"
+      ],
       "blocker": null,
       "attempts": [],
       "next_action": "从原非零梯度选实际坐标方向，构造保持切向坐标的隐函数图。",
-      "build_evidence": null
+      "build_evidence": null,
+      "local_validation": {
+        "target": "Carleman.Geometry.CoordinateLevelGraph",
+        "target_jobs": 3398,
+        "target_exit_code": 0,
+        "root_target": "Carleman",
+        "root_jobs": 4282,
+        "root_exit_code": 0,
+        "recursive_axiom_declarations": 9950,
+        "axiom_exit_code": 0,
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

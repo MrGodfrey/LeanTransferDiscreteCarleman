@@ -8976,6 +8976,31 @@ set_option pp.maxSteps 1000000
 #check @Carleman.SpatialTest.exists_local_H2_of_cutoff_graph_hypograph
 #print axioms Carleman.SpatialTest.exists_local_H2_of_cutoff_graph_hypograph
 
+#check @Carleman.coordinateLevelMap
+#print axioms Carleman.coordinateLevelMap
+#check @Carleman.coordinateLevelMap_normal
+#print axioms Carleman.coordinateLevelMap_normal
+#check @Carleman.coordinateLevelMap_tangent
+#print axioms Carleman.coordinateLevelMap_tangent
+#check @Carleman.coordinateLevelMap_contDiff
+#print axioms Carleman.coordinateLevelMap_contDiff
+#check @Carleman.coordinateLevelMap_hasFDerivAt
+#print axioms Carleman.coordinateLevelMap_hasFDerivAt
+#check @Carleman.coordinateLevelMap_det
+#print axioms Carleman.coordinateLevelMap_det
+#check @Carleman.exists_nonzero_coordinate_derivative
+#print axioms Carleman.exists_nonzero_coordinate_derivative
+#check @Carleman.exists_coordinate_level_chart
+#print axioms Carleman.exists_coordinate_level_chart
+#check @Carleman.coordinateLevelMap_constant_normal_invariant
+#print axioms Carleman.coordinateLevelMap_constant_normal_invariant
+#check @Carleman.exists_local_coordinate_level_height
+#print axioms Carleman.exists_local_coordinate_level_height
+#check @Carleman.exists_local_coordinate_level_height_of_regular
+#print axioms Carleman.exists_local_coordinate_level_height_of_regular
+#check @Carleman.halfspaceSmoothInner_coordinate_level_height
+#print axioms Carleman.halfspaceSmoothInner_coordinate_level_height
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

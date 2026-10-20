@@ -1128,3 +1128,5 @@ public import Carleman.Spatial.GraphEllipticForm
 public import Carleman.Spatial.GraphDomainRegularity
 
 public import Carleman.Spatial.BoundaryCutoffTransfer
+
+public import Carleman.Geometry.CoordinateLevelGraph
