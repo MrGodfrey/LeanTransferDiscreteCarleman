@@ -10,21 +10,21 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T202",
-    "supervisor_checked_at": "2026-10-20T03:31:15.908124+00:00",
-    "next_action": "保存固定证明版本和本地证据，独立核验质量加权H迹估计。",
+    "current_task_id": "T203",
+    "supervisor_checked_at": "2026-10-20T03:32:19.569537+00:00",
+    "next_action": "从原质量场的弱导数构造真实连续V值正则化轨迹，证明其状态和质量导数的L²强收敛。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-20T03:22:56.131177+00:00"
+    "last_activity_at": "2026-10-20T03:32:19.569537+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "cf2701d48ac60007502c1ad44286c1d64b1303ce",
-      "source_head_sha": "cf2701d48ac60007502c1ad44286c1d64b1303ce",
+      "checked_sha": "1b8ccf90c8aeef46bf0f614e537c02a6494caa5a",
+      "source_head_sha": "1b8ccf90c8aeef46bf0f614e537c02a6494caa5a",
       "ci_url": null,
-      "finished_at": "2026-10-20T03:21:57.900009+00:00",
+      "finished_at": "2026-10-20T03:27:02.702594+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "b943167afc1d43715f7cab0561591efc9f76c1919dcb6e52c46316d135e2f355",
+      "source_manifest_sha256": "ddfb424adea94a7df143686c883d0f980a9dfa08b10659c5be675c300c891c6d",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8909,
-        "sha256": "46e16af9bec0291d1465c207074a7ba2670c7c2a599128aeb0ae2312a3c746a1"
+        "declarations": 8913,
+        "sha256": "a1fc23ca20badfc9b43a3953a21c148545e6f0c370225b4af024df8bb1cb0e86"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "cf2701d48ac60007502c1ad44286c1d64b1303ce",
-      "source_head_sha": "cf2701d48ac60007502c1ad44286c1d64b1303ce",
+      "checked_sha": "1b8ccf90c8aeef46bf0f614e537c02a6494caa5a",
+      "source_head_sha": "1b8ccf90c8aeef46bf0f614e537c02a6494caa5a",
       "ci_url": null,
-      "finished_at": "2026-10-20T03:21:57.900009+00:00",
+      "finished_at": "2026-10-20T03:27:02.702594+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "b943167afc1d43715f7cab0561591efc9f76c1919dcb6e52c46316d135e2f355",
+      "source_manifest_sha256": "ddfb424adea94a7df143686c883d0f980a9dfa08b10659c5be675c300c891c6d",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8909,
-        "sha256": "46e16af9bec0291d1465c207074a7ba2670c7c2a599128aeb0ae2312a3c746a1"
+        "declarations": 8913,
+        "sha256": "a1fc23ca20badfc9b43a3953a21c148545e6f0c370225b4af024df8bb1cb0e86"
       }
     }
   },
@@ -18769,7 +18769,7 @@
       "paper_ref": "paper/main.tex:2415, prop:control-convergence 的 H 连续时间迹",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -18780,8 +18780,37 @@
         "Carleman.HasWeakTimeDerivative.pivot_energy_variation",
         "Carleman.HasWeakTimeDerivative.pivot_trace_bound"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "1b8ccf90c8aeef46bf0f614e537c02a6494caa5a",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "1b8ccf90c8aeef46bf0f614e537c02a6494caa5a",
+        "source_head_sha": "1b8ccf90c8aeef46bf0f614e537c02a6494caa5a",
+        "ci_url": null,
+        "finished_at": "2026-10-20T03:27:02.702594+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "ddfb424adea94a7df143686c883d0f980a9dfa08b10659c5be675c300c891c6d",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8913,
+          "sha256": "a1fc23ca20badfc9b43a3953a21c148545e6f0c370225b4af024df8bb1cb0e86"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C216",
@@ -18789,7 +18818,32 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "真实弱H¹近似状态的质量加权H迹估计；原状态H连续代表元与端点尚待极限构造，17/26。"
+      "scope_notes": "真实弱H¹近似状态的质量加权H迹估计；原状态H连续代表元与端点尚待极限构造，17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C219",
+      "title": "实际质量正则化连续轨迹及Bochner强极限",
+      "paper_ref": "paper/main.tex:2415, prop:control-convergence 的 H 连续时间迹",
+      "milestone": "M6c",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:control-convergence"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C216",
+        "C217",
+        "C218"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "实际连续V值质量正则化近似的构造及两项L²强收敛；H一致极限和端点仍待，17/26。"
     }
   ],
   "events": [
@@ -44721,9 +44775,9 @@
       ],
       "branch": "main",
       "base_commit": "cf2701d48ac60007502c1ad44286c1d64b1303ce",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "1b8ccf90c8aeef46bf0f614e537c02a6494caa5a",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.ac_time_norm_sub_bound",
@@ -44731,13 +44785,42 @@
         "Carleman.HasWeakTimeDerivative.pivot_energy_variation",
         "Carleman.HasWeakTimeDerivative.pivot_trace_bound"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "1b8ccf90c8aeef46bf0f614e537c02a6494caa5a",
+        "source_head_sha": "1b8ccf90c8aeef46bf0f614e537c02a6494caa5a",
+        "ci_url": null,
+        "finished_at": "2026-10-20T03:27:02.702594+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "ddfb424adea94a7df143686c883d0f980a9dfa08b10659c5be675c300c891c6d",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8913,
+          "sha256": "a1fc23ca20badfc9b43a3953a21c148545e6f0c370225b4af024df8bb1cb0e86"
+        }
+      },
       "blocker": null,
       "attempts": [
         "T201真实质量正则化4202全库jobs、8909公理审计PASS，独立验收进行中。",
         "真实弱能量链式法则、区间FTC和L² Hölder给质量加权闭区间迹；4项声明试编译及3172定向/4203全库jobs、8913递归公理审计PASS。"
       ],
-      "next_action": "保存固定证明版本和本地证据，独立核验质量加权H迹估计。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -44752,7 +44835,41 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "1b8ccf90c8aeef46bf0f614e537c02a6494caa5a"
+    },
+    {
+      "id": "T203",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "实际质量正则化连续轨迹及Bochner强极限",
+      "goal_ids": [
+        "C219"
+      ],
+      "acceptance": [
+        "由原质量弱导数构造闭区间连续V值近似，不额外假设原状态连续",
+        "近似轨迹真实弱导数由质量逆作用于原导数给出",
+        "近似状态及其质量导数强收敛到同一原Y和D"
+      ],
+      "dependencies": [
+        "C216",
+        "C217",
+        "C218"
+      ],
+      "branch": "main",
+      "base_commit": "1b8ccf90c8aeef46bf0f614e537c02a6494caa5a",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "T202质量加权H迹估计4203全库jobs、8913公理审计PASS，独立验收进行中。"
+      ],
+      "next_action": "从原质量场的弱导数构造真实连续V值正则化轨迹，证明其状态和质量导数的L²强收敛。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
