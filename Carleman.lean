@@ -1126,3 +1126,5 @@ public import Carleman.Spatial.GraphShearHessianTransport
 public import Carleman.Spatial.GraphEllipticForm
 
 public import Carleman.Spatial.GraphDomainRegularity
+
+public import Carleman.Spatial.BoundaryCutoffTransfer

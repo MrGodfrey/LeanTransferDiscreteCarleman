@@ -8943,6 +8943,39 @@ set_option pp.maxSteps 1000000
 #check @Carleman.exists_graphHypograph_dirichlet_H2
 #print axioms Carleman.exists_graphHypograph_dirichlet_H2
 
+#check @Carleman.SpatialTest.retarget
+#print axioms Carleman.SpatialTest.retarget
+#check @Carleman.SpatialTest.retarget_fullJet
+#print axioms Carleman.SpatialTest.retarget_fullJet
+#check @Carleman.SpatialTest.extendDirichlet_pairing_of_support
+#print axioms Carleman.SpatialTest.extendDirichlet_pairing_of_support
+#check @Carleman.SpatialTest.subdomainZeroExtend_inner_of_support
+#print axioms Carleman.SpatialTest.subdomainZeroExtend_inner_of_support
+#check @Carleman.SpatialTest.cutoffWeakJet
+#print axioms Carleman.SpatialTest.cutoffWeakJet
+#check @Carleman.SpatialTest.cutoffWeakJet_value
+#print axioms Carleman.SpatialTest.cutoffWeakJet_value
+#check @Carleman.SpatialTest.cutoffWeakJet_gradient
+#print axioms Carleman.SpatialTest.cutoffWeakJet_gradient
+#check @Carleman.SpatialTest.cutoffTransfer
+#print axioms Carleman.SpatialTest.cutoffTransfer
+#check @Carleman.SpatialTest.cutoff_extendDirichlet_test
+#print axioms Carleman.SpatialTest.cutoff_extendDirichlet_test
+#check @Carleman.SpatialTest.cutoff_extendDirichlet_mem
+#print axioms Carleman.SpatialTest.cutoff_extendDirichlet_mem
+#check @Carleman.SpatialTest.cutoffTransferredLoad
+#print axioms Carleman.SpatialTest.cutoffTransferredLoad
+#check @Carleman.SpatialTest.cutoff_extendDirichlet_equation
+#print axioms Carleman.SpatialTest.cutoff_extendDirichlet_equation
+#check @Carleman.SpatialTest.cutoff_extendDirichlet_value_ae
+#print axioms Carleman.SpatialTest.cutoff_extendDirichlet_value_ae
+#check @Carleman.SpatialTest.exists_local_H2_of_cutoff_transfer
+#print axioms Carleman.SpatialTest.exists_local_H2_of_cutoff_transfer
+#check @Carleman.SpatialTest.exists_local_H2_of_cutoff_graph_epigraph
+#print axioms Carleman.SpatialTest.exists_local_H2_of_cutoff_graph_epigraph
+#check @Carleman.SpatialTest.exists_local_H2_of_cutoff_graph_hypograph
+#print axioms Carleman.SpatialTest.exists_local_H2_of_cutoff_graph_hypograph
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

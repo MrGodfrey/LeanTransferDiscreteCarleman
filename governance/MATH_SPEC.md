@@ -1895,3 +1895,7 @@ T226独立报告F1要求的同一H上正自伴平方根、D(Ahalf)=V、Ahalf²=A
 ### T241 / C257 — original weak Dirichlet H² on actual graph domains
 
 `GraphDomainRegularity` combines the actual matrix PDE, H¹₀ transport, half-space variable elliptic estimate and inverse H² transport. Concrete epigraph and hypograph theorems internally prove openness, exact upper/lower half-space preimages and tangential invariance; every original H¹₀ weak Poisson solution acquires a full H² jet with exact original H¹ truncation. Global smoothness and height/slope Lipschitz bounds remain explicit geometry inputs. No all-load existence on unbounded graphs or uniform convex-domain Hessian bound is claimed. Original local graph construction and localization remain pending. AUXILIARY, coverage 18/26; see `analysis/T241-graph-domain-regularity.md`.
+
+### T242 / C258 — actual boundary cutoff and local change of domain
+
+`BoundaryCutoffTransfer` constructs η times the true H¹ zero extension/restriction of the original H¹₀ state. Source/target agreement on the cutoff support supplies actual target H¹₀ closure and the full original-test weak equation with load ηE(f)−2Σ(D_iη)D_i v−Σ(D_i²η)v; no uncut zero-extension PDE or H² extension is assumed. On an open region where η=1, target H² restricts to the same original H¹ state. The final concrete epigraph/hypograph corollaries internally supply target regularity from T241. Actual boundary graph/cutoff construction, finite localization and convex-domain uniform control remain outstanding. AUXILIARY, coverage 18/26; see `analysis/T242-boundary-cutoff-transfer.md`.

@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T242",
-    "supervisor_checked_at": "2026-10-20T08:20:36.667929+00:00",
+    "supervisor_checked_at": "2026-10-20T08:27:11.625998+00:00",
     "next_action": "构造跨边界截断H¹₀状态，并从原全部测试推导局部换域后的弱方程。",
     "blocker": null,
     "pause_reason": null,
@@ -21996,7 +21996,7 @@
       "pr_url": null,
       "id": "C256",
       "title": "实际图坐标椭圆矩阵及原弱方程转换",
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "lean_declarations": [
         "Carleman.graphCovectorMap",
         "Carleman.graphCovectorMap_apply",
@@ -22036,7 +22036,7 @@
       ],
       "blocker": null,
       "scope_notes": "实际图坐标的矩阵和弱方程转换；仍需原域图构造、局部化与统一凸域Hessian界，AUXILIARY，18/26。",
-      "independent_review_status": "PENDING",
+      "independent_review_status": "PASS",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -22067,7 +22067,47 @@
           "sha256": "a8476608383ecf5c109ef6f42f7eed49101d33fc7d413d2e74865d88e6fdb71e"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "9160cd18d129e8d33ef644a71f5794f9df54a1c2",
+        "declarations": [
+          "Carleman.graphCovectorMap",
+          "Carleman.graphCovectorMap_apply",
+          "Carleman.graphCovectorMap_inverse",
+          "Carleman.graphCovectorMap_norm_bound",
+          "Carleman.graphCovectorMap_lower_bound",
+          "Carleman.graphMetricEntry",
+          "Carleman.graphMetricEntry_energy",
+          "Carleman.graphMetricEntry_symmetric",
+          "Carleman.graphMetricEntry_bilinear",
+          "Carleman.graphMetricEntry_elliptic",
+          "Carleman.graphSlopeVector",
+          "Carleman.graphSlopeVector_apply",
+          "Carleman.graphSlopeVector_contDiff",
+          "Carleman.graphSlopeVector_norm",
+          "Carleman.graphSlopeVector_lipschitz",
+          "Carleman.graphCovectorMap_basis_norm",
+          "Carleman.graphCovectorMap_basis_sub",
+          "Carleman.graphMetricEntry_norm",
+          "Carleman.graphMetricEntry_sub_bound",
+          "Carleman.graphMetricEntry_contDiff",
+          "Carleman.graphMetricEntry_lipschitz",
+          "Carleman.graphEllipticCoefficient",
+          "Carleman.graphEllipticCoefficient_contDiff",
+          "Carleman.graphEllipticCoefficient_lipschitz",
+          "Carleman.graphEllipticCoefficient_elliptic",
+          "Carleman.graphMetricEntry_bilinear_coordinates",
+          "Carleman.graphEllipticCoefficient_pairing",
+          "Carleman.WeakSobolevJet.graphShearPullback_inverse_gradient",
+          "Carleman.graphShearPullback_energy",
+          "Carleman.graphShearPullback_equation",
+          "Carleman.graphShearPullback_equation_integral"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d81a68b7cfd6153ad7b5d45a5be5f42c038ef519/governance/reviews/T240-local-acceptance.md",
+        "reviewed_at": "2026-10-20T08:20:41+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "declaration_version": "9160cd18d129e8d33ef644a71f5794f9df54a1c2"
     },
     {
@@ -22081,7 +22121,7 @@
       "pr_url": null,
       "id": "C257",
       "title": "实际曲边图区域上的原Dirichlet弱解H²恢复",
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "lean_declarations": [
         "Carleman.exists_dirichlet_H2_of_graph_tangential_invariance",
         "Carleman.exists_graphEpigraph_dirichlet_H2",
@@ -22095,7 +22135,7 @@
       ],
       "blocker": null,
       "scope_notes": "给定全局平滑有界斜率图的真实Dirichlet H²；仍需原域局部图与局部化、凸域统一控制，AUXILIARY，18/26。",
-      "independent_review_status": "PENDING",
+      "independent_review_status": "PASS",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -22126,7 +22166,20 @@
           "sha256": "a752259c3fa935218ce91a01e085b57ed01613e9e7b9afdcd95407549434c202"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc",
+        "declarations": [
+          "Carleman.exists_dirichlet_H2_of_graph_tangential_invariance",
+          "Carleman.exists_graphEpigraph_dirichlet_H2",
+          "Carleman.spatialGraphShear_hypograph",
+          "Carleman.exists_graphHypograph_dirichlet_H2"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ac2416736394ed41c57f349c96379bf4ae4a3718/governance/reviews/T241-local-acceptance.md",
+        "reviewed_at": "2026-10-20T08:23:52+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "declaration_version": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc"
     },
     {
@@ -22141,7 +22194,24 @@
       "id": "C258",
       "title": "边界截断弱解在局部相同域之间的真实传输",
       "verification_status": "SPECIFIED",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.SpatialTest.retarget",
+        "Carleman.SpatialTest.retarget_fullJet",
+        "Carleman.SpatialTest.extendDirichlet_pairing_of_support",
+        "Carleman.SpatialTest.subdomainZeroExtend_inner_of_support",
+        "Carleman.SpatialTest.cutoffWeakJet",
+        "Carleman.SpatialTest.cutoffWeakJet_value",
+        "Carleman.SpatialTest.cutoffWeakJet_gradient",
+        "Carleman.SpatialTest.cutoffTransfer",
+        "Carleman.SpatialTest.cutoff_extendDirichlet_test",
+        "Carleman.SpatialTest.cutoff_extendDirichlet_mem",
+        "Carleman.SpatialTest.cutoffTransferredLoad",
+        "Carleman.SpatialTest.cutoff_extendDirichlet_equation",
+        "Carleman.SpatialTest.cutoff_extendDirichlet_value_ae",
+        "Carleman.SpatialTest.exists_local_H2_of_cutoff_transfer",
+        "Carleman.SpatialTest.exists_local_H2_of_cutoff_graph_epigraph",
+        "Carleman.SpatialTest.exists_local_H2_of_cutoff_graph_hypograph"
+      ],
       "dependencies": [
         "C257"
       ],
@@ -23530,6 +23600,16 @@
       "at": "2026-10-20T08:11:01.024516+00:00",
       "public_summary": "实际图坐标的二阶弱导数传输与反向H²恢复已通过固定本地验证与独立数学验收；原文覆盖18/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1ff2f759dc1ef22d08032d49f9312c17f22222a7/governance/reviews/T239-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T08:24:20.688608+00:00",
+      "public_summary": "实际图坐标椭圆矩阵及原弱方程转换已通过固定本地验证与独立数学验收；原文覆盖18/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d81a68b7cfd6153ad7b5d45a5be5f42c038ef519/governance/reviews/T240-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T08:27:11.625998+00:00",
+      "public_summary": "实际曲边图区域上的原Dirichlet弱解H²恢复已通过固定本地验证与独立数学验收；原文覆盖18/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ac2416736394ed41c57f349c96379bf4ae4a3718/governance/reviews/T241-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -24014,7 +24094,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d366be4006b35fbcb93b93c01326fef1945c5b14/governance/reviews/T236-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6e96dffd9f2d128ff3d66d6b6d0e163e8cd0b4d6/governance/reviews/T237-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/acd021cd36f0378734f13e4b9ffc9b6ddcdb8907/governance/reviews/T238-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1ff2f759dc1ef22d08032d49f9312c17f22222a7/governance/reviews/T239-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1ff2f759dc1ef22d08032d49f9312c17f22222a7/governance/reviews/T239-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d81a68b7cfd6153ad7b5d45a5be5f42c038ef519/governance/reviews/T240-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ac2416736394ed41c57f349c96379bf4ae4a3718/governance/reviews/T241-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -52248,9 +52330,9 @@
         "C252"
       ],
       "base_commit": "5f61d27fd056feaadbafcf3363d7c25f88036481",
-      "status": "REVIEW",
+      "status": "MERGED",
       "checkpoint_commit": "9160cd18d129e8d33ef644a71f5794f9df54a1c2",
-      "merge_commit": null,
+      "merge_commit": "9160cd18d129e8d33ef644a71f5794f9df54a1c2",
       "lean_declarations": [
         "Carleman.graphCovectorMap",
         "Carleman.graphCovectorMap_apply",
@@ -52286,7 +52368,7 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -52326,9 +52408,22 @@
         "root_exit_code": 0,
         "recursive_axiom_declarations": 9878,
         "axiom_exit_code": 0,
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "9160cd18d129e8d33ef644a71f5794f9df54a1c2"
+      "declaration_version": "9160cd18d129e8d33ef644a71f5794f9df54a1c2",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C256"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "9160cd18d129e8d33ef644a71f5794f9df54a1c2",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T08:20:41+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d81a68b7cfd6153ad7b5d45a5be5f42c038ef519/governance/reviews/T240-local-acceptance.md"
+        }
+      ]
     },
     {
       "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
@@ -52352,9 +52447,9 @@
         "C252"
       ],
       "base_commit": "9160cd18d129e8d33ef644a71f5794f9df54a1c2",
-      "status": "REVIEW",
+      "status": "MERGED",
       "checkpoint_commit": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc",
-      "merge_commit": null,
+      "merge_commit": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc",
       "lean_declarations": [
         "Carleman.exists_dirichlet_H2_of_graph_tangential_invariance",
         "Carleman.exists_graphEpigraph_dirichlet_H2",
@@ -52363,7 +52458,7 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -52403,9 +52498,22 @@
         "root_exit_code": 0,
         "recursive_axiom_declarations": 9883,
         "axiom_exit_code": 0,
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc"
+      "declaration_version": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C257"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T08:23:52+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ac2416736394ed41c57f349c96379bf4ae4a3718/governance/reviews/T241-local-acceptance.md"
+        }
+      ]
     },
     {
       "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
@@ -52430,11 +52538,39 @@
       "status": "RUNNING",
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.SpatialTest.retarget",
+        "Carleman.SpatialTest.retarget_fullJet",
+        "Carleman.SpatialTest.extendDirichlet_pairing_of_support",
+        "Carleman.SpatialTest.subdomainZeroExtend_inner_of_support",
+        "Carleman.SpatialTest.cutoffWeakJet",
+        "Carleman.SpatialTest.cutoffWeakJet_value",
+        "Carleman.SpatialTest.cutoffWeakJet_gradient",
+        "Carleman.SpatialTest.cutoffTransfer",
+        "Carleman.SpatialTest.cutoff_extendDirichlet_test",
+        "Carleman.SpatialTest.cutoff_extendDirichlet_mem",
+        "Carleman.SpatialTest.cutoffTransferredLoad",
+        "Carleman.SpatialTest.cutoff_extendDirichlet_equation",
+        "Carleman.SpatialTest.cutoff_extendDirichlet_value_ae",
+        "Carleman.SpatialTest.exists_local_H2_of_cutoff_transfer",
+        "Carleman.SpatialTest.exists_local_H2_of_cutoff_graph_epigraph",
+        "Carleman.SpatialTest.exists_local_H2_of_cutoff_graph_hypograph"
+      ],
       "blocker": null,
       "attempts": [],
       "next_action": "构造跨边界截断H¹₀状态，并从原全部测试推导局部换域后的弱方程。",
-      "build_evidence": null
+      "build_evidence": null,
+      "local_validation": {
+        "target": "Carleman.Spatial.BoundaryCutoffTransfer",
+        "target_jobs": 3405,
+        "target_exit_code": 0,
+        "root_target": "Carleman",
+        "root_jobs": 4281,
+        "root_exit_code": 0,
+        "recursive_axiom_declarations": 9937,
+        "axiom_exit_code": 0,
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {
