@@ -409,3 +409,7 @@
 - T189 / C205：13/13独立PASS；任意完整测试、前一时间层与初终端点、真实E/K/梯度/平均势配对忠实。三项实际CI completed/success，8516项raw逐字节核对。 固定证明 `b92214e1ee49124122e54ed76dc7bb734792b157`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c99aad2047e9befa4a82b6aa3e90e2664f35ac3a/governance/reviews/T189-local-acceptance.md)。原文17/26；当前执行任务不变。
 
 - T190 / C206：真实Bochner到产品L²等距映射，原时间/胞元重构及平均势配对精确连接；三模块20声明，本地4170 jobs及8569项公理审计PASS，固定版本后独立验收；不声称满射或极限PDE，原文17/26。
+
+- T190 / C206：20/20独立PASS；真实简单函数代表、Fubini稠密等距延拓、全产品弱测试及原E/平均势交换忠实。三项实际CI completed/success，8569项raw逐字节核对。 固定证明 `f0ab18741c799cd2d821174cfce77ffbb454fa20`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1fa4fcec70aa9fb41e099d42f8812ed5a31c760a/governance/reviews/T190-local-acceptance.md)。原文17/26；当前执行任务不变。
+
+- T191 / C207：[原时间测试分析](analysis/T191-time-tests.md)，18项声明与一个私有连续双线性引理；原差商=真实导数胞元平均、前层取样误差、有限张量与固定端点强一致性。定向3221/full4173 jobs、8602项公理审计PASS；固定提交及独立验收待记录。保持AUXILIARY、17/26。

@@ -7702,6 +7702,43 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesian_time_product_potential_pairing
 #print axioms Carleman.cartesian_time_product_potential_pairing
 
+#check @Carleman.fixedTimeCellIsometry_eq_reconstruction
+#print axioms Carleman.fixedTimeCellIsometry_eq_reconstruction
+#check @Carleman.timeCell_derivative_average
+#print axioms Carleman.timeCell_derivative_average
+#check @Carleman.timeCell_test_difference_eq_projection
+#print axioms Carleman.timeCell_test_difference_eq_projection
+#check @Carleman.fixedTimeCell_test_difference_eq_projection
+#print axioms Carleman.fixedTimeCell_test_difference_eq_projection
+#check @Carleman.time_test_difference_strong_convergence
+#print axioms Carleman.time_test_difference_strong_convergence
+#check @Carleman.time_test_left_sample_error
+#print axioms Carleman.time_test_left_sample_error
+#check @Carleman.time_test_left_sample_strong_convergence
+#print axioms Carleman.time_test_left_sample_strong_convergence
+#check @Carleman.continuous_time_memLp
+#print axioms Carleman.continuous_time_memLp
+#check @Carleman.time_test_lipschitz
+#print axioms Carleman.time_test_lipschitz
+#check @Carleman.smooth_time_test_consistency
+#print axioms Carleman.smooth_time_test_consistency
+#check @Carleman.timeTensor
+#print axioms Carleman.timeTensor
+#check @Carleman.timeTensor_ae
+#print axioms Carleman.timeTensor_ae
+#check @Carleman.timeTensor_reconstruction
+#print axioms Carleman.timeTensor_reconstruction
+#check @Carleman.timeTensor_strong_convergence
+#print axioms Carleman.timeTensor_strong_convergence
+#check @Carleman.tensor_time_test_consistency
+#print axioms Carleman.tensor_time_test_consistency
+#check @Carleman.fixedTimeCellReconstruction_sum
+#print axioms Carleman.fixedTimeCellReconstruction_sum
+#check @Carleman.finite_tensor_time_test_consistency
+#print axioms Carleman.finite_tensor_time_test_consistency
+#check @Carleman.finite_tensor_test_endpoint_consistency
+#print axioms Carleman.finite_tensor_test_endpoint_consistency
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

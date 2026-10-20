@@ -992,3 +992,6 @@ public import Carleman.Control.TimePotentialPairing
 public import Carleman.Control.SimpleL2Product
 public import Carleman.Control.BochnerProductL2
 public import Carleman.Control.CartesianProductL2
+public import Carleman.Control.TimeTestDifference
+public import Carleman.Control.TimeTestSampling
+public import Carleman.Control.TensorTimeTests
