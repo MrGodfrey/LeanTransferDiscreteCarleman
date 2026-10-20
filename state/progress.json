@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T211",
-    "supervisor_checked_at": "2026-10-20T04:27:17.644393+00:00",
-    "next_action": "在独立细化的原full P1网格与时间步上构造实际控制族，保留费用/指数终态/支撑，并整合每个给定弱积聚控制的原连续零终态。",
+    "current_task_id": "T212",
+    "supervisor_checked_at": "2026-10-20T04:32:06.600569+00:00",
+    "next_action": "从实际质量正则化的强收敛和H连续迹证明每个时间端点的能量恒等式，为原控制弱解唯一性清偿能量链式法则。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "3725f002ad895342683989c46d052625da5f57ba",
-      "source_head_sha": "3725f002ad895342683989c46d052625da5f57ba",
+      "checked_sha": "a98192d2b1dc2e5f7d7034d4a5be49d41c7b3bec",
+      "source_head_sha": "a98192d2b1dc2e5f7d7034d4a5be49d41c7b3bec",
       "ci_url": null,
-      "finished_at": "2026-10-20T04:20:26.969524+00:00",
+      "finished_at": "2026-10-20T04:31:29.376250+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "6be38426243e6df82968eafc0eb6b7c6bb1ba3a4cf4286be4efd4e9a0aad5f22",
+      "source_manifest_sha256": "950dcd719fe60d5f58a6c4a0594325428acfa2f1c4209ff387e6bda1aad426f9",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9007,
-        "sha256": "56011f715e31b4603fc5cfeb20fcd0e475ad02c5e495f8637865dcf04552568e"
+        "declarations": 9009,
+        "sha256": "9ea6adf39d7ff98ab2fc205c40cb105f55a6171892976358de15568d67f4603d"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "3725f002ad895342683989c46d052625da5f57ba",
-      "source_head_sha": "3725f002ad895342683989c46d052625da5f57ba",
+      "checked_sha": "a98192d2b1dc2e5f7d7034d4a5be49d41c7b3bec",
+      "source_head_sha": "a98192d2b1dc2e5f7d7034d4a5be49d41c7b3bec",
       "ci_url": null,
-      "finished_at": "2026-10-20T04:20:26.969524+00:00",
+      "finished_at": "2026-10-20T04:31:29.376250+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "6be38426243e6df82968eafc0eb6b7c6bb1ba3a4cf4286be4efd4e9a0aad5f22",
+      "source_manifest_sha256": "950dcd719fe60d5f58a6c4a0594325428acfa2f1c4209ff387e6bda1aad426f9",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9007,
-        "sha256": "56011f715e31b4603fc5cfeb20fcd0e475ad02c5e495f8637865dcf04552568e"
+        "declarations": 9009,
+        "sha256": "9ea6adf39d7ff98ab2fc205c40cb105f55a6171892976358de15568d67f4603d"
       }
     }
   },
@@ -19441,7 +19441,7 @@
       "paper_ref": "paper/main.tex:2318–2415, prop:control-convergence 的实际盒P1控制族",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -19450,8 +19450,37 @@
         "Carleman.Physical.box_p1_controls_independent_refinement",
         "Carleman.Physical.box_p1_controls_null_limits"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "a98192d2b1dc2e5f7d7034d4a5be49d41c7b3bec",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "a98192d2b1dc2e5f7d7034d4a5be49d41c7b3bec",
+        "source_head_sha": "a98192d2b1dc2e5f7d7034d4a5be49d41c7b3bec",
+        "ci_url": null,
+        "finished_at": "2026-10-20T04:31:29.376250+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "950dcd719fe60d5f58a6c4a0594325428acfa2f1c4209ff387e6bda1aad426f9",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9009,
+          "sha256": "9ea6adf39d7ff98ab2fc205c40cb105f55a6171892976358de15568d67f4603d"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C190",
@@ -19460,7 +19489,32 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "实际盒域d≤3原分级P1控制族及每个弱积聚零终态；一般多面体尚待，17/26。"
+      "scope_notes": "实际盒域d≤3原分级P1控制族及每个弱积聚零终态；一般多面体尚待，17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C228",
+      "title": "弱质量时间导数的真实连续能量恒等式",
+      "paper_ref": "paper/main.tex:2415, prop:control-convergence 原连续弱解的能量与唯一性基础",
+      "milestone": "M6c",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:control-convergence"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C218",
+        "C219",
+        "C220"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "从真实pivot弱时间导数内部给连续H迹的逐时能量身份；辅助后续唯一性，17/26。"
     }
   ],
   "events": [
@@ -46327,21 +46381,50 @@
       ],
       "branch": "main",
       "base_commit": "3725f002ad895342683989c46d052625da5f57ba",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "a98192d2b1dc2e5f7d7034d4a5be49d41c7b3bec",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.Physical.box_p1_controls_independent_refinement",
         "Carleman.Physical.box_p1_controls_null_limits"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "a98192d2b1dc2e5f7d7034d4a5be49d41c7b3bec",
+        "source_head_sha": "a98192d2b1dc2e5f7d7034d4a5be49d41c7b3bec",
+        "ci_url": null,
+        "finished_at": "2026-10-20T04:31:29.376250+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "950dcd719fe60d5f58a6c4a0594325428acfa2f1c4209ff387e6bda1aad426f9",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9009,
+          "sha256": "9ea6adf39d7ff98ab2fc205c40cb105f55a6171892976358de15568d67f4603d"
+        }
+      },
       "blocker": null,
       "attempts": [
         "T210原P1弱控制极限4221根构建、9007递归公理审计PASS。",
         "实际两定理定向构建4112、全库4223 jobs与递归公理审计9009项全部exit 0；大型实际Galerkin陈述展开使用与上游一致的12000000 heartbeats。"
       ],
-      "next_action": "在独立细化的原full P1网格与时间步上构造实际控制族，保留费用/指数终态/支撑，并整合每个给定弱积聚控制的原连续零终态。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -46356,7 +46439,41 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "a98192d2b1dc2e5f7d7034d4a5be49d41c7b3bec"
+    },
+    {
+      "id": "T212",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "弱质量时间导数的真实连续能量恒等式",
+      "goal_ids": [
+        "C228"
+      ],
+      "acceptance": [
+        "从真实弱质量导数和L²状态/载荷内部构造连续H迹",
+        "保留同一Y/D、全部时间端点和实际原内积积分",
+        "不输入能量身份或额外状态时间正则性"
+      ],
+      "dependencies": [
+        "C218",
+        "C219",
+        "C220"
+      ],
+      "branch": "main",
+      "base_commit": "a98192d2b1dc2e5f7d7034d4a5be49d41c7b3bec",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "T211实际P1控制族4223根构建、9009递归公理审计PASS。"
+      ],
+      "next_action": "从实际质量正则化的强收敛和H连续迹证明每个时间端点的能量恒等式，为原控制弱解唯一性清偿能量链式法则。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
