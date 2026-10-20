@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T226",
-    "supervisor_checked_at": "2026-10-20T06:04:22.273572+00:00",
+    "supervisor_checked_at": "2026-10-20T06:09:55.526655+00:00",
     "next_action": "将真实原系数形式与域、允许权保持、上下界和交换子装配为全族；保留原图正则性输入，独立审核完整P022。",
     "blocker": null,
     "pause_reason": null,
@@ -20647,7 +20647,7 @@
       "paper_ref": "paper/main.tex:2633–2635 与原ass:localization",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:spatial-operators"
@@ -20696,7 +20696,27 @@
           "sha256": "171c1b62cfc9f36778feb61f28ca133eb89ebd37dd51bab63085660127ba49e5"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "f616d5d02bde9bd06cc719a33a727b40c5d44675",
+        "declarations": [
+          "Carleman.list_sum_map_sub",
+          "Carleman.WeakSobolevJet.coefficientTermBound",
+          "Carleman.WeakSobolevJet.coefficientTermBound_nonneg",
+          "Carleman.WeakSobolevJet.coefficientDifferentialTerm_error_of_words",
+          "Carleman.coefficientOperatorBound",
+          "Carleman.coefficientOperatorBound_nonneg",
+          "Carleman.coefficientDifferentialOperator_error_of_words",
+          "Carleman.coefficientDifferentialOperator_smooth_commutator",
+          "Carleman.coefficientDifferentialOperator_allowed_commutator",
+          "Carleman.higherCoefficient_operator_multiplier_preserves",
+          "Carleman.higherCoefficient_allowed_commutator"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/29169226b6046ca19fe2c259134f09f8eb883a35/governance/reviews/T225-local-acceptance.md",
+        "reviewed_at": "2026-10-20T06:07:01+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C233",
         "C236",
@@ -20707,7 +20727,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "一般弱系数原算子允许权交换子，须保留全域和统一常数；完整A.1最终接口整合仍待，17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C242",
@@ -20720,7 +20740,15 @@
       "paper_labels": [
         "prop:spatial-operators"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.CoerciveForm.operator_adjoint_graph_iff",
+        "Carleman.higherCoefficient_valueEquiv_jet",
+        "Carleman.higherCoefficient_scalarForm_canonical",
+        "Carleman.higherCoefficient_allowed_form_lower_uniform",
+        "Carleman.higherCoefficient_allowed_data_uniform",
+        "Carleman.higherCoefficient_allowed_family_uniform",
+        "Carleman.higherCoefficient_analytic_realization"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -22040,6 +22068,11 @@
       "at": "2026-10-20T05:57:05.921419+00:00",
       "public_summary": "一般弱系数微分表达式与原关联算子的身份已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/94223761edea20d3d77cb6eb4b62ee05be8868e7/governance/reviews/T224-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T06:09:55.526655+00:00",
+      "public_summary": "一般弱系数原算子的允许权统一交换子界已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/29169226b6046ca19fe2c259134f09f8eb883a35/governance/reviews/T225-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -22509,7 +22542,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/26fd897b17671a06ad146b12f0187154c3c9e18e/governance/reviews/T221-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/fcd4a0abd52632a49eb110f3b17491813a9839a9/governance/reviews/T222-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e7a58964e44140073a135d2004d2c4c762e73b54/governance/reviews/T223-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/94223761edea20d3d77cb6eb4b62ee05be8868e7/governance/reviews/T224-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/94223761edea20d3d77cb6eb4b62ee05be8868e7/governance/reviews/T224-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/29169226b6046ca19fe2c259134f09f8eb883a35/governance/reviews/T225-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -49166,10 +49200,10 @@
       ],
       "branch": "main",
       "base_commit": "03f8c203f00dc90f126a44f9200c5ac56f645752",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "f616d5d02bde9bd06cc719a33a727b40c5d44675",
-      "merge_commit": null,
+      "merge_commit": "f616d5d02bde9bd06cc719a33a727b40c5d44675",
       "lean_declarations": [
         "Carleman.list_sum_map_sub",
         "Carleman.WeakSobolevJet.coefficientTermBound",
@@ -49217,7 +49251,7 @@
       "attempts": [
         "实际系数逐项共轭差、严格降阶余项、全允许权统一常数及原域保持全部实现；本地目标、根导入及9446声明审计exit 0。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -49235,9 +49269,23 @@
         "raw_sha256": "171c1b62cfc9f36778feb61f28ca133eb89ebd37dd51bab63085660127ba49e5",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "review": "PENDING"
+        "review": "PENDING",
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "f616d5d02bde9bd06cc719a33a727b40c5d44675"
+      "declaration_version": "f616d5d02bde9bd06cc719a33a727b40c5d44675",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C241"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "f616d5d02bde9bd06cc719a33a727b40c5d44675",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T06:07:01+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/29169226b6046ca19fe2c259134f09f8eb883a35/governance/reviews/T225-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T226",
@@ -49267,14 +49315,43 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.CoerciveForm.operator_adjoint_graph_iff",
+        "Carleman.higherCoefficient_valueEquiv_jet",
+        "Carleman.higherCoefficient_scalarForm_canonical",
+        "Carleman.higherCoefficient_allowed_form_lower_uniform",
+        "Carleman.higherCoefficient_allowed_data_uniform",
+        "Carleman.higherCoefficient_allowed_family_uniform",
+        "Carleman.higherCoefficient_analytic_realization"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "正在编译一般原形式scalarForm与canonical jet身份及允许权下界接口。"
+        "三模块7定理实际实现：原scalarForm身份、完整A2/A3统一族、一般原域/图估计装配、正自伴算子的完整伴随图身份；3510/4256构建与9453公理审计exit0。",
+        "A1末句平方根的字面身份尚未单独构造；独立验收需明确当前闭形式/正自伴关联图是否足以认证P022完整接口，未自行提升覆盖。"
       ],
       "next_action": "将真实原系数形式与域、允许权保持、上下界和交换子装配为全族；保留原图正则性输入，独立审核完整P022。",
-      "integration_mode": "direct-main"
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman.Continuous.FormSelfAdjoint",
+          "Carleman.Spatial.HigherAllowedData",
+          "Carleman.Spatial.HigherAnalyticData",
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": [
+          3510,
+          4256
+        ],
+        "recursive_axiom_audit": 9453,
+        "new_explicit_declarations": 7,
+        "raw_sha256": "25a5b41285828a10165aa50b8437e1403559d307e86c0d9dd70b717a39fe4cc8",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

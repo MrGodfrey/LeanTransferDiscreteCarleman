@@ -8471,6 +8471,21 @@ set_option pp.maxSteps 1000000
 #check @Carleman.higherCoefficient_allowed_commutator
 #print axioms Carleman.higherCoefficient_allowed_commutator
 
+#check @Carleman.CoerciveForm.operator_adjoint_graph_iff
+#print axioms Carleman.CoerciveForm.operator_adjoint_graph_iff
+#check @Carleman.higherCoefficient_valueEquiv_jet
+#print axioms Carleman.higherCoefficient_valueEquiv_jet
+#check @Carleman.higherCoefficient_scalarForm_canonical
+#print axioms Carleman.higherCoefficient_scalarForm_canonical
+#check @Carleman.higherCoefficient_allowed_form_lower_uniform
+#print axioms Carleman.higherCoefficient_allowed_form_lower_uniform
+#check @Carleman.higherCoefficient_allowed_data_uniform
+#print axioms Carleman.higherCoefficient_allowed_data_uniform
+#check @Carleman.higherCoefficient_allowed_family_uniform
+#print axioms Carleman.higherCoefficient_allowed_family_uniform
+#check @Carleman.higherCoefficient_analytic_realization
+#print axioms Carleman.higherCoefficient_analytic_realization
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

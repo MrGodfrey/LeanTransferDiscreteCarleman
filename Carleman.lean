@@ -1092,3 +1092,7 @@ public import Carleman.Spatial.CoefficientDifferentialTerm
 public import Carleman.Spatial.CoefficientDifferentialOperator
 
 public import Carleman.Spatial.CoefficientCommutator
+
+public import Carleman.Continuous.FormSelfAdjoint
+public import Carleman.Spatial.HigherAllowedData
+public import Carleman.Spatial.HigherAnalyticData
