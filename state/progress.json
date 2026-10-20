@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T248",
-    "supervisor_checked_at": "2026-10-20T09:21:26.859867+00:00",
-    "next_action": "从实际梯度和二阶导数构造 Miranda–Talenti 边界通量，证明原凸内域的点态非负性。",
+    "current_task_id": "T249",
+    "supervisor_checked_at": "2026-10-20T09:21:50.044926+00:00",
+    "next_action": "从真实紧支权函数分部积分推导 Hessian–Laplacian 加权恒等式，与实际边界通量相接。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "e84f958461360997f4705a75d4eaa6d3c77d2b21",
-      "source_head_sha": "e84f958461360997f4705a75d4eaa6d3c77d2b21",
+      "checked_sha": "c8fb6d0a150570c2a62ab9cc761d0f482af5aa6a",
+      "source_head_sha": "c8fb6d0a150570c2a62ab9cc761d0f482af5aa6a",
       "ci_url": null,
-      "finished_at": "2026-10-20T09:10:51.917821+00:00",
+      "finished_at": "2026-10-20T09:21:07.895836+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "9ec62bcb915e2f8a1d5d6675e8df8b5d438aaad65c6ebf713deb3ef5322e448a",
+      "source_manifest_sha256": "2f2d9366cfb89764f1b1e57596239b7b631735458722b243dd6ec46610a472e5",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10000,
-        "sha256": "8f61b8b9c650097342af3bbc3bc35614c3a2d572b11a882b72d3bb4caeff4474"
+        "declarations": 10019,
+        "sha256": "759134cfcf5bd7fd1a664f4c01b2448f3166403631f39beac76dc685fb1d7102"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "e84f958461360997f4705a75d4eaa6d3c77d2b21",
-      "source_head_sha": "e84f958461360997f4705a75d4eaa6d3c77d2b21",
+      "checked_sha": "c8fb6d0a150570c2a62ab9cc761d0f482af5aa6a",
+      "source_head_sha": "c8fb6d0a150570c2a62ab9cc761d0f482af5aa6a",
       "ci_url": null,
-      "finished_at": "2026-10-20T09:10:51.917821+00:00",
+      "finished_at": "2026-10-20T09:21:07.895836+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "9ec62bcb915e2f8a1d5d6675e8df8b5d438aaad65c6ebf713deb3ef5322e448a",
+      "source_manifest_sha256": "2f2d9366cfb89764f1b1e57596239b7b631735458722b243dd6ec46610a472e5",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10000,
-        "sha256": "8f61b8b9c650097342af3bbc3bc35614c3a2d572b11a882b72d3bb4caeff4474"
+        "declarations": 10019,
+        "sha256": "759134cfcf5bd7fd1a664f4c01b2448f3166403631f39beac76dc685fb1d7102"
       }
     }
   },
@@ -22710,7 +22710,7 @@
       "pr_url": null,
       "id": "C264",
       "title": "原凸边界Miranda–Talenti通量非负性",
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "lean_declarations": [
         "Carleman.euclidean_coordinate_expansion",
         "Carleman.graphSlopeVector_inner",
@@ -22732,6 +22732,58 @@
       ],
       "blocker": null,
       "scope_notes": "实际经典边界通量符号；积分估计、强H²逼近和原多面体传递仍待，AUXILIARY，18/26。",
+      "independent_review_status": "PENDING",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "c8fb6d0a150570c2a62ab9cc761d0f482af5aa6a",
+        "source_head_sha": "c8fb6d0a150570c2a62ab9cc761d0f482af5aa6a",
+        "ci_url": null,
+        "finished_at": "2026-10-20T09:21:07.895836+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "2f2d9366cfb89764f1b1e57596239b7b631735458722b243dd6ec46610a472e5",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10019,
+          "sha256": "759134cfcf5bd7fd1a664f4c01b2448f3166403631f39beac76dc685fb1d7102"
+        }
+      },
+      "semantic_review": null,
+      "declaration_version": "c8fb6d0a150570c2a62ab9cc761d0f482af5aa6a"
+    },
+    {
+      "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的凸域统一Hessian证明路线",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "pr_url": null,
+      "id": "C265",
+      "title": "原Hessian与Laplacian的加权积分恒等式",
+      "verification_status": "SPECIFIED",
+      "lean_declarations": [],
+      "dependencies": [
+        "C264"
+      ],
+      "blocker": null,
+      "scope_notes": "原经典加权积分恒等式；边界层极限与强H²逼近仍待，AUXILIARY，18/26。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -53664,8 +53716,8 @@
         "C263"
       ],
       "base_commit": "e84f958461360997f4705a75d4eaa6d3c77d2b21",
-      "status": "RUNNING",
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "checkpoint_commit": "c8fb6d0a150570c2a62ab9cc761d0f482af5aa6a",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.euclidean_coordinate_expansion",
@@ -53685,8 +53737,37 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "从实际梯度和二阶导数构造 Miranda–Talenti 边界通量，证明原凸内域的点态非负性。",
-      "build_evidence": null,
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "c8fb6d0a150570c2a62ab9cc761d0f482af5aa6a",
+        "source_head_sha": "c8fb6d0a150570c2a62ab9cc761d0f482af5aa6a",
+        "ci_url": null,
+        "finished_at": "2026-10-20T09:21:07.895836+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "2f2d9366cfb89764f1b1e57596239b7b631735458722b243dd6ec46610a472e5",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10019,
+          "sha256": "759134cfcf5bd7fd1a664f4c01b2448f3166403631f39beac76dc685fb1d7102"
+        }
+      },
       "local_validation": {
         "target": "Carleman.Geometry.ConvexBoundaryFlux",
         "target_jobs": 3407,
@@ -53697,7 +53778,37 @@
         "recursive_axiom_declarations": 10019,
         "axiom_exit_code": 0,
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "c8fb6d0a150570c2a62ab9cc761d0f482af5aa6a"
+    },
+    {
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "branch": "main",
+      "pr_url": null,
+      "integration_mode": "direct-main",
+      "id": "T249",
+      "title": "原Hessian与Laplacian的加权积分恒等式",
+      "goal_ids": [
+        "C265"
+      ],
+      "acceptance": [
+        "真实紧支权函数分部积分",
+        "完整Hessian平方和及Laplacian平方",
+        "原水平权导数与实际通量完全相接"
+      ],
+      "dependencies": [
+        "C264"
+      ],
+      "base_commit": "c8fb6d0a150570c2a62ab9cc761d0f482af5aa6a",
+      "status": "RUNNING",
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "blocker": null,
+      "attempts": [],
+      "next_action": "从真实紧支权函数分部积分推导 Hessian–Laplacian 加权恒等式，与实际边界通量相接。",
+      "build_evidence": null
     }
   ],
   "private_maintenance": {
