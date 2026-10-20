@@ -1173,3 +1173,7 @@ public import Carleman.Spatial.UniformInnerC2Heat
 public import Carleman.Spatial.InnerGraphDensity
 public import Carleman.Spatial.DomainHeatIntegral
 public import Carleman.Spatial.UniformInnerWeakHeat
+
+public import Carleman.Spatial.DirichletExhaustionStrong
+public import Carleman.Spatial.SubdomainLpLimit
+public import Carleman.Spatial.InnerGraphLimit

@@ -24198,7 +24198,18 @@
       "scope": "AUXILIARY",
       "extra_hypotheses": [],
       "verification_status": "SPECIFIED",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.WeakSobolevJet.extendDirichlet_pairing_extend",
+        "Carleman.IsWeakNegativeLaplacian.subdomain_orthogonal",
+        "Carleman.dirichlet_subdomain_gradient_best_test",
+        "Carleman.dirichlet_subdomain_norm_best_test",
+        "Carleman.dirichlet_exhaustion_strong_H1",
+        "Carleman.subdomainZeroExtend_restrict_ae",
+        "Carleman.subdomainZeroExtend_restrict_tendsto",
+        "Carleman.subdomainZeroExtend_restrict_tendsto_of_exhaustion",
+        "Carleman.exists_dirichlet_exhaustion_graph_approximation",
+        "Carleman.exists_halfspaceSmoothInner_graph_approximation"
+      ],
       "dependencies": [
         "C280",
         "C275"
@@ -56893,11 +56904,33 @@
       "status": "RUNNING",
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.WeakSobolevJet.extendDirichlet_pairing_extend",
+        "Carleman.IsWeakNegativeLaplacian.subdomain_orthogonal",
+        "Carleman.dirichlet_subdomain_gradient_best_test",
+        "Carleman.dirichlet_subdomain_norm_best_test",
+        "Carleman.dirichlet_exhaustion_strong_H1",
+        "Carleman.subdomainZeroExtend_restrict_ae",
+        "Carleman.subdomainZeroExtend_restrict_tendsto",
+        "Carleman.subdomainZeroExtend_restrict_tendsto_of_exhaustion",
+        "Carleman.exists_dirichlet_exhaustion_graph_approximation",
+        "Carleman.exists_halfspaceSmoothInner_graph_approximation"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [],
-      "next_action": "用原弱方程的能量正交及真实紧支测试逼近，证明内域解零延拓在完整H¹强收敛到同一原域解。"
+      "next_action": "用原弱方程的能量正交及真实紧支测试逼近，证明内域解零延拓在完整H¹强收敛到同一原域解。",
+      "local_validation": {
+        "target": "Carleman.Spatial.InnerGraphLimit",
+        "target_jobs": 3544,
+        "target_exit_code": 0,
+        "root_target": "Carleman",
+        "root_jobs": 4312,
+        "root_exit_code": 0,
+        "recursive_axiom_declarations": 10382,
+        "axiom_exit_code": 0,
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

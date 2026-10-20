@@ -9550,6 +9550,28 @@ set_option pp.maxSteps 1000000
 #check Carleman.halfspaceSmoothInner_uniform_original_weak_C2_heat_both_signs
 #print axioms Carleman.halfspaceSmoothInner_uniform_original_weak_C2_heat_both_signs
 
+-- T265: actual strong exhaustion and graph coefficient limits.
+#check Carleman.WeakSobolevJet.extendDirichlet_pairing_extend
+#print axioms Carleman.WeakSobolevJet.extendDirichlet_pairing_extend
+#check Carleman.IsWeakNegativeLaplacian.subdomain_orthogonal
+#print axioms Carleman.IsWeakNegativeLaplacian.subdomain_orthogonal
+#check Carleman.dirichlet_subdomain_gradient_best_test
+#print axioms Carleman.dirichlet_subdomain_gradient_best_test
+#check Carleman.dirichlet_subdomain_norm_best_test
+#print axioms Carleman.dirichlet_subdomain_norm_best_test
+#check Carleman.dirichlet_exhaustion_strong_H1
+#print axioms Carleman.dirichlet_exhaustion_strong_H1
+#check Carleman.subdomainZeroExtend_restrict_ae
+#print axioms Carleman.subdomainZeroExtend_restrict_ae
+#check Carleman.subdomainZeroExtend_restrict_tendsto
+#print axioms Carleman.subdomainZeroExtend_restrict_tendsto
+#check Carleman.subdomainZeroExtend_restrict_tendsto_of_exhaustion
+#print axioms Carleman.subdomainZeroExtend_restrict_tendsto_of_exhaustion
+#check Carleman.exists_dirichlet_exhaustion_graph_approximation
+#print axioms Carleman.exists_dirichlet_exhaustion_graph_approximation
+#check Carleman.exists_halfspaceSmoothInner_graph_approximation
+#print axioms Carleman.exists_halfspaceSmoothInner_graph_approximation
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
