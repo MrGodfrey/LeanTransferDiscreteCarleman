@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T268",
-    "supervisor_checked_at": "2026-10-20T12:06:41.159413+00:00",
+    "supervisor_checked_at": "2026-10-20T12:08:24.821355+00:00",
     "next_action": "将完整原域连续Carleman接入实际P1离散传递与物理观测/控制，覆盖原文两种实现。",
     "blocker": null,
     "pause_reason": null,
@@ -24302,7 +24302,7 @@
       "milestone": "M6a",
       "scope": "AUXILIARY",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "lean_declarations": [
         "Carleman.subdomainZeroExtendCLM",
         "Carleman.subdomainZeroExtendCLM_apply",
@@ -24335,7 +24335,7 @@
       "pr_url": null,
       "blocker": null,
       "scope_notes": "用真实零延拓和同一高斯空间权连接内域与原域四个Bochner场。全周期态闭包后续。",
-      "independent_review_status": "PENDING",
+      "independent_review_status": "PASS",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -24366,7 +24366,39 @@
           "sha256": "e369589bd7fa47fcd461b303c16565fc8f36a7c5cff5b4e0b50b23a670465dc5"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "eb792343d4c1d275d0341ca5dc93e17b4bc89b7d",
+        "declarations": [
+          "Carleman.subdomainZeroExtendCLM",
+          "Carleman.subdomainZeroExtendCLM_apply",
+          "Carleman.subdomainZeroExtend_multiplier",
+          "Carleman.subdomainZeroExtend_seminorm",
+          "Carleman.subdomainZeroExtend_cutoff",
+          "Carleman.timeSq_subdomainZeroExtend",
+          "Carleman.subdomainTimeZeroExtend_cutoff",
+          "Carleman.harmonicValue_norm_le",
+          "Carleman.TimeGrid.harmonicLpLinear",
+          "Carleman.TimeGrid.harmonicLp_norm_le",
+          "Carleman.TimeGrid.harmonicLpCLM",
+          "Carleman.TimeGrid.harmonicLp_tendsto",
+          "Carleman.TimeGrid.compLp_harmonic",
+          "Carleman.dirichlet_harmonic_value_Lp",
+          "Carleman.dirichlet_harmonic_derivative_Lp",
+          "Carleman.dirichlet_harmonic_operator_Lp",
+          "Carleman.dirichlet_harmonic_gradient_Lp",
+          "Carleman.DirichletHeatFields",
+          "Carleman.dirichletHeatFields",
+          "Carleman.dirichletHeatFields_apply",
+          "Carleman.subdomainHeatFields",
+          "Carleman.subdomainHeatFields_apply",
+          "Carleman.exists_dirichlet_exhaustion_harmonic_field_approximation"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4655a9d59448298a504143f523d2bf417c617aba/governance/reviews/T266-local-acceptance.md",
+        "reviewed_at": "2026-10-20T12:04:34+00:00",
+        "reviewer": "/root/accept_section3; independent auxiliary acceptance"
+      },
       "declaration_version": "eb792343d4c1d275d0341ca5dc93e17b4bc89b7d"
     },
     {
@@ -24451,7 +24483,12 @@
       "scope": "PAPER",
       "extra_hypotheses": [],
       "verification_status": "SPECIFIED",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.finite_halfspace_p1_physical_load_carleman",
+        "Carleman.Physical.finite_halfspace_p1_physical_observation_control",
+        "Carleman.Physical.box_cartesian_physical_observability",
+        "Carleman.Physical.box_cartesian_physical_control"
+      ],
       "dependencies": [
         "C283",
         "C277",
@@ -25973,6 +26010,11 @@
       "at": "2026-10-20T11:40:12.952802+00:00",
       "public_summary": "原域内穷竭Dirichlet解的真实H¹强收敛已通过固定本地验证与独立数学验收；原文覆盖20/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/eab02b1c24f9bce07a28db6e9a50c511368f3715/governance/reviews/T265-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T12:08:24.821355+00:00",
+      "public_summary": "域零延拓下的加权周期能量与谐波极限已通过固定本地验证与独立数学验收；原文覆盖20/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4655a9d59448298a504143f523d2bf417c617aba/governance/reviews/T266-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -26483,7 +26525,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/22c822ba948778b913bcd549884bff78d695083b/governance/reviews/T262-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/37f8ca79e4c59de8d834defb1e17cf28521952ce/governance/reviews/T263-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/128807c3503e575763831f7e3a450ecf11db7c3f/governance/reviews/T264-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/eab02b1c24f9bce07a28db6e9a50c511368f3715/governance/reviews/T265-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/eab02b1c24f9bce07a28db6e9a50c511368f3715/governance/reviews/T265-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4655a9d59448298a504143f523d2bf417c617aba/governance/reviews/T266-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -57264,9 +57307,9 @@
         "C280"
       ],
       "base_commit": "307dfe985c233861eaa26acda1cc2f6ab30596d7",
-      "status": "REVIEW",
+      "status": "MERGED",
       "checkpoint_commit": "eb792343d4c1d275d0341ca5dc93e17b4bc89b7d",
-      "merge_commit": null,
+      "merge_commit": "eb792343d4c1d275d0341ca5dc93e17b4bc89b7d",
       "lean_declarations": [
         "Carleman.subdomainZeroExtendCLM",
         "Carleman.subdomainZeroExtendCLM_apply",
@@ -57324,7 +57367,7 @@
       },
       "blocker": null,
       "attempts": [],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "local_validation": {
         "target": "Carleman.Spatial.HarmonicDomainLimit",
         "target_jobs": 3610,
@@ -57334,9 +57377,22 @@
         "root_exit_code": 0,
         "recursive_axiom_declarations": 10480,
         "axiom_exit_code": 0,
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "eb792343d4c1d275d0341ca5dc93e17b4bc89b7d"
+      "declaration_version": "eb792343d4c1d275d0341ca5dc93e17b4bc89b7d",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_section3",
+          "claim_ids": [
+            "C282"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "eb792343d4c1d275d0341ca5dc93e17b4bc89b7d",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T12:04:34+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4655a9d59448298a504143f523d2bf417c617aba/governance/reviews/T266-local-acceptance.md"
+        }
+      ]
     },
     {
       "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
@@ -57451,11 +57507,27 @@
       "status": "RUNNING",
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.finite_halfspace_p1_physical_load_carleman",
+        "Carleman.Physical.finite_halfspace_p1_physical_observation_control",
+        "Carleman.Physical.box_cartesian_physical_observability",
+        "Carleman.Physical.box_cartesian_physical_control"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [],
-      "next_action": "将完整原域连续Carleman接入实际P1离散传递与物理观测/控制，覆盖原文两种实现。"
+      "next_action": "将完整原域连续Carleman接入实际P1离散传递与物理观测/控制，覆盖原文两种实现。",
+      "local_validation": {
+        "target": "Carleman.Control.FiniteHalfspaceP1PhysicalControl",
+        "target_jobs": 3987,
+        "target_exit_code": 0,
+        "root_target": "Carleman",
+        "root_jobs": 4324,
+        "root_exit_code": 0,
+        "recursive_axiom_declarations": 10583,
+        "axiom_exit_code": 0,
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

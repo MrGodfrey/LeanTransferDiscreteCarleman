@@ -813,11 +813,16 @@
       "tex_line": 1827,
       "milestone": "M6b",
       "claim_ids": [
-        "C016"
+        "C284"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.finite_halfspace_p1_physical_load_carleman",
+        "Carleman.Physical.finite_halfspace_p1_physical_observation_control",
+        "Carleman.Physical.box_cartesian_physical_observability",
+        "Carleman.Physical.box_cartesian_physical_control"
+      ],
       "declaration_version": null,
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": null,
@@ -832,11 +837,16 @@
       "tex_line": 2032,
       "milestone": "M6b",
       "claim_ids": [
-        "C017"
+        "C284"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.finite_halfspace_p1_physical_load_carleman",
+        "Carleman.Physical.finite_halfspace_p1_physical_observation_control",
+        "Carleman.Physical.box_cartesian_physical_observability",
+        "Carleman.Physical.box_cartesian_physical_control"
+      ],
       "declaration_version": null,
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": null,

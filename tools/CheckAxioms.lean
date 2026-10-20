@@ -9652,6 +9652,12 @@ set_option pp.maxSteps 1000000
 #check Carleman.finite_halfspace_heat_continuous_data
 #print axioms Carleman.finite_halfspace_heat_continuous_data
 
+-- T268: full polytope P1 physical observability and controls.
+#check Carleman.Physical.finite_halfspace_p1_physical_load_carleman
+#print axioms Carleman.Physical.finite_halfspace_p1_physical_load_carleman
+#check Carleman.Physical.finite_halfspace_p1_physical_observation_control
+#print axioms Carleman.Physical.finite_halfspace_p1_physical_observation_control
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

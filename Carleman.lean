@@ -1189,3 +1189,6 @@ public import Carleman.Spatial.HeatFieldEnergies
 public import Carleman.Spatial.ExhaustionHeatTransfer
 public import Carleman.Spatial.FiniteHalfspaceWeakHeat
 public import Carleman.Transfer.FiniteHalfspaceHeatContinuous
+
+public import Carleman.Control.FiniteHalfspaceP1LoadCarleman
+public import Carleman.Control.FiniteHalfspaceP1PhysicalControl
