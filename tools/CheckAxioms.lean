@@ -8515,6 +8515,67 @@ set_option pp.maxSteps 1000000
 #check @Carleman.positive_exists_sqrt
 #print axioms Carleman.positive_exists_sqrt
 
+#check @Carleman.CoerciveForm.inverseH
+#print axioms Carleman.CoerciveForm.inverseH
+#check @Carleman.CoerciveForm.inverseH_eq
+#print axioms Carleman.CoerciveForm.inverseH_eq
+#check @Carleman.CoerciveForm.inverseH_form
+#print axioms Carleman.CoerciveForm.inverseH_form
+#check @Carleman.CoerciveForm.inverseH_pair
+#print axioms Carleman.CoerciveForm.inverseH_pair
+#check @Carleman.CoerciveForm.inverseH_positive
+#print axioms Carleman.CoerciveForm.inverseH_positive
+#check @Carleman.CoerciveForm.inverseH_injective
+#print axioms Carleman.CoerciveForm.inverseH_injective
+#check @Carleman.CoerciveForm.inverseH_range
+#print axioms Carleman.CoerciveForm.inverseH_range
+#check @Carleman.CoerciveForm.inverseH_dense
+#print axioms Carleman.CoerciveForm.inverseH_dense
+#check @Carleman.CoerciveForm.inverseEnergy_dense
+#print axioms Carleman.CoerciveForm.inverseEnergy_dense
+#check @Carleman.CoerciveForm.inverseSqrt_injective
+#print axioms Carleman.CoerciveForm.inverseSqrt_injective
+#check @Carleman.CoerciveForm.inverseSqrt_dense
+#print axioms Carleman.CoerciveForm.inverseSqrt_dense
+#check @Carleman.CoerciveForm.inverseSqrt_energy_pair
+#print axioms Carleman.CoerciveForm.inverseSqrt_energy_pair
+#check @Carleman.CoerciveForm.inverseSqrt_energy_bound
+#print axioms Carleman.CoerciveForm.inverseSqrt_energy_bound
+#check @Carleman.CoerciveForm.inverseSqrtLift
+#print axioms Carleman.CoerciveForm.inverseSqrtLift
+#check @Carleman.CoerciveForm.inverseSqrtLift_apply
+#print axioms Carleman.CoerciveForm.inverseSqrtLift_apply
+#check @Carleman.CoerciveForm.inverseSqrtLift_pair
+#print axioms Carleman.CoerciveForm.inverseSqrtLift_pair
+#check @Carleman.CoerciveForm.inverseSqrtLift_embed
+#print axioms Carleman.CoerciveForm.inverseSqrtLift_embed
+#check @Carleman.CoerciveForm.inverseSqrtLift_lower_bound
+#print axioms Carleman.CoerciveForm.inverseSqrtLift_lower_bound
+#check @Carleman.CoerciveForm.inverseSqrtLift_surjective
+#print axioms Carleman.CoerciveForm.inverseSqrtLift_surjective
+#check @Carleman.CoerciveForm.inverseSqrt_range
+#print axioms Carleman.CoerciveForm.inverseSqrt_range
+#check @Carleman.CoerciveForm.formSqrtDomain
+#print axioms Carleman.CoerciveForm.formSqrtDomain
+#check @Carleman.CoerciveForm.formSqrt
+#print axioms Carleman.CoerciveForm.formSqrt
+#check @Carleman.CoerciveForm.formSqrt_inverse
+#print axioms Carleman.CoerciveForm.formSqrt_inverse
+#check @Carleman.CoerciveForm.formSqrt_graph
+#print axioms Carleman.CoerciveForm.formSqrt_graph
+#check @Carleman.CoerciveForm.formSqrt_energy
+#print axioms Carleman.CoerciveForm.formSqrt_energy
+#check @Carleman.CoerciveForm.formSqrt_nonneg
+#print axioms Carleman.CoerciveForm.formSqrt_nonneg
+#check @Carleman.CoerciveForm.formSqrt_adjoint_graph
+#print axioms Carleman.CoerciveForm.formSqrt_adjoint_graph
+#check @Carleman.CoerciveForm.inverseH_operator_graph
+#print axioms Carleman.CoerciveForm.inverseH_operator_graph
+#check @Carleman.CoerciveForm.formSqrt_square_graph
+#print axioms Carleman.CoerciveForm.formSqrt_square_graph
+#check @Carleman.CoerciveForm.exists_positive_form_square_root
+#print axioms Carleman.CoerciveForm.exists_positive_form_square_root
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

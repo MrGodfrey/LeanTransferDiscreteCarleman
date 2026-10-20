@@ -1098,3 +1098,7 @@ public import Carleman.Spatial.HigherAllowedData
 public import Carleman.Spatial.HigherAnalyticData
 
 public import Carleman.Continuous.RealOperatorSquareRoot
+
+public import Carleman.Continuous.FormInverse
+public import Carleman.Continuous.FormSquareRootLift
+public import Carleman.Continuous.FormSquareRoot
