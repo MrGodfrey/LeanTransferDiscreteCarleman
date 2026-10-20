@@ -1122,3 +1122,5 @@ public import Carleman.Spatial.NonlinearGraphShear
 public import Carleman.Spatial.GraphShearWeakTransport
 
 public import Carleman.Spatial.GraphShearHessianTransport
+
+public import Carleman.Spatial.GraphEllipticForm

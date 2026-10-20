@@ -8871,6 +8871,69 @@ set_option pp.maxSteps 1000000
 #check @Carleman.graphShearPullback_H2_iff
 #print axioms Carleman.graphShearPullback_H2_iff
 
+#check @Carleman.graphCovectorMap
+#print axioms Carleman.graphCovectorMap
+#check @Carleman.graphCovectorMap_apply
+#print axioms Carleman.graphCovectorMap_apply
+#check @Carleman.graphCovectorMap_inverse
+#print axioms Carleman.graphCovectorMap_inverse
+#check @Carleman.graphCovectorMap_norm_bound
+#print axioms Carleman.graphCovectorMap_norm_bound
+#check @Carleman.graphCovectorMap_lower_bound
+#print axioms Carleman.graphCovectorMap_lower_bound
+#check @Carleman.graphMetricEntry
+#print axioms Carleman.graphMetricEntry
+#check @Carleman.graphMetricEntry_energy
+#print axioms Carleman.graphMetricEntry_energy
+#check @Carleman.graphMetricEntry_symmetric
+#print axioms Carleman.graphMetricEntry_symmetric
+#check @Carleman.graphMetricEntry_bilinear
+#print axioms Carleman.graphMetricEntry_bilinear
+#check @Carleman.graphMetricEntry_elliptic
+#print axioms Carleman.graphMetricEntry_elliptic
+#check @Carleman.graphSlopeVector
+#print axioms Carleman.graphSlopeVector
+#check @Carleman.graphSlopeVector_apply
+#print axioms Carleman.graphSlopeVector_apply
+#check @Carleman.graphSlopeVector_contDiff
+#print axioms Carleman.graphSlopeVector_contDiff
+#check @Carleman.graphSlopeVector_norm
+#print axioms Carleman.graphSlopeVector_norm
+#check @Carleman.graphSlopeVector_lipschitz
+#print axioms Carleman.graphSlopeVector_lipschitz
+#check @Carleman.graphCovectorMap_basis_norm
+#print axioms Carleman.graphCovectorMap_basis_norm
+#check @Carleman.graphCovectorMap_basis_sub
+#print axioms Carleman.graphCovectorMap_basis_sub
+#check @Carleman.graphMetricEntry_norm
+#print axioms Carleman.graphMetricEntry_norm
+#check @Carleman.graphMetricEntry_sub_bound
+#print axioms Carleman.graphMetricEntry_sub_bound
+#check @Carleman.graphMetricEntry_contDiff
+#print axioms Carleman.graphMetricEntry_contDiff
+#check @Carleman.graphMetricEntry_lipschitz
+#print axioms Carleman.graphMetricEntry_lipschitz
+#check @Carleman.graphEllipticCoefficient
+#print axioms Carleman.graphEllipticCoefficient
+#check @Carleman.graphEllipticCoefficient_contDiff
+#print axioms Carleman.graphEllipticCoefficient_contDiff
+#check @Carleman.graphEllipticCoefficient_lipschitz
+#print axioms Carleman.graphEllipticCoefficient_lipschitz
+#check @Carleman.graphEllipticCoefficient_elliptic
+#print axioms Carleman.graphEllipticCoefficient_elliptic
+#check @Carleman.graphMetricEntry_bilinear_coordinates
+#print axioms Carleman.graphMetricEntry_bilinear_coordinates
+#check @Carleman.graphEllipticCoefficient_pairing
+#print axioms Carleman.graphEllipticCoefficient_pairing
+#check @Carleman.WeakSobolevJet.graphShearPullback_inverse_gradient
+#print axioms Carleman.WeakSobolevJet.graphShearPullback_inverse_gradient
+#check @Carleman.graphShearPullback_energy
+#print axioms Carleman.graphShearPullback_energy
+#check @Carleman.graphShearPullback_equation
+#print axioms Carleman.graphShearPullback_equation
+#check @Carleman.graphShearPullback_equation_integral
+#print axioms Carleman.graphShearPullback_equation_integral
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

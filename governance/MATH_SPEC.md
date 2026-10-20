@@ -1887,3 +1887,7 @@ T226独立报告F1要求的同一H上正自伴平方根、D(Ahalf)=V、Ahalf²=A
 ### T239 / C255 — full weak Hessian transport in both directions
 
 `GraphShearHessianTransport` constructs all second weak derivatives of the actual graph pullback using T238 and true slope-derivative multipliers, with explicit bound (1+C)²‖D²u‖+(ΣB_i)‖Du‖. The inverse shear is the actual −ψ map with the same coefficient bounds; AE transport and weak-jet uniqueness recover H² of the exact original H¹ state from H² of its pullback. Global Lipschitz bounds B_i on the actual slopes are explicit geometry inputs. The original PDE matrix transformation and graph construction remain pending. AUXILIARY, coverage 18/26; see `analysis/T239-graph-hessian-transport.md`.
+
+### T240 / C256 — actual graph elliptic coefficients and full weak equation
+
+`GraphEllipticForm` constructs B_b ξ=ξ−ξ_r b and the genuine matrix a_ij=⟨B_b e_i,B_b e_j⟩ from b=Dψ. Full bilinear identities and the genuine inverse yield ellipticity (1+dC)⁻²; actual global smoothness, bound (1+dC)² and Lipschitz constant 2(1+dC)ΣB_i are derived from the stated height/slope qualifications. Actual L² inverse-gradient identities preserve the full H¹ energy, and inverse smooth tests transform the original weak Poisson equation for every test on the exact preimage domain, with actual RHS Pf. No H² or transformed PDE is assumed. Global graph construction, localization and convex-domain uniform control remain outstanding. AUXILIARY, coverage 18/26; see `analysis/T240-graph-elliptic-form.md`.
