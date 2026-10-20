@@ -1875,3 +1875,7 @@ T226独立报告F1要求的同一H上正自伴平方根、D(Ahalf)=V、Ahalf²=A
 ### T236 / C252 — actual normal recovery for variable elliptic coefficients
 
 `VariableCoefficientNormalRecovery` derives D_r(a_rr D_r u) from the original divergence-form test equation and already proved tangential/mixed derivatives, then divides by the actual positive normal coefficient with its proved weak product rule. The final half-space theorem derives coefficient derivative bounds from Lipschitz constants and normal positivity from the original a.e. ellipticity; it constructs the same original u in H² with an explicit step-independent bound. Global bounded Lipschitz coefficients smooth on the half-space are explicit inputs. Nonlinear chart pullback, global chart-coefficient extension and uniform convex-domain regularity remain outstanding. AUXILIARY, coverage 18/26; see `analysis/T236-normal-recovery.md`.
+
+### T237 / C253 — actual nonlinear graph coordinates
+
+`NonlinearGraphShear` constructs the actual smooth graph shear and inverse from a smooth height invariant along the normal direction. It proves exact half-space/epigraph correspondence, actual unit Jacobian, full and restricted volume preservation, smooth test chain rules, normal-invariant actual slope multipliers, and actual L² quotient pullback/inverse/integral identities. Unit Jacobian and measure preservation are proved, not extra concrete-shear inputs. This does not yet construct original-boundary graphs or transport nonsmooth weak derivatives/PDEs. AUXILIARY, coverage 18/26; see `analysis/T237-graph-shear.md`.

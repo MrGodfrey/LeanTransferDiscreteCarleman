@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T237",
-    "supervisor_checked_at": "2026-10-20T07:38:22.104465+00:00",
+    "supervisor_checked_at": "2026-10-20T07:44:38.687359+00:00",
     "next_action": "建立实际边界图剪切、体积保持及弱坐标传输所需换元身份。",
     "blocker": null,
     "pause_reason": null,
@@ -21646,7 +21646,7 @@
       "pr_url": null,
       "id": "C252",
       "title": "真实变系数法向通量恢复与半空间H²正则性",
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "lean_declarations": [
         "Carleman.BoundedMultiplier.reciprocal",
         "Carleman.BoundedMultiplier.reciprocalDerivative",
@@ -21664,7 +21664,7 @@
       ],
       "blocker": null,
       "scope_notes": "真实光滑有界变系数半空间H²；尚不包含非线性边界拉回或一般多面体，AUXILIARY，18/26。",
-      "independent_review_status": "PENDING",
+      "independent_review_status": "PASS",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -21695,7 +21695,26 @@
           "sha256": "a52d2f521abe302d6dd536b0eaaa959dcb2a89ac6e7e36f13b4330988cc3866a"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "eeabe06b6b3e0e9a72852393be4e8f054a77ed1f",
+        "declarations": [
+          "Carleman.BoundedMultiplier.reciprocal",
+          "Carleman.BoundedMultiplier.reciprocalDerivative",
+          "Carleman.BoundedMultiplier.spatialDerivativeOn",
+          "Carleman.matrix_elliptic_diagonal",
+          "Carleman.weak_derivative_divide_coefficient",
+          "Carleman.exists_normal_derivative_of_matrix_equation",
+          "Carleman.exists_variable_H2_of_tangential_test_bounds",
+          "Carleman.matrixGradientPairing_test_restricted",
+          "Carleman.exists_variable_dirichlet_H2_of_tangential_invariance",
+          "Carleman.exists_variable_halfspace_dirichlet_H2"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d366be4006b35fbcb93b93c01326fef1945c5b14/governance/reviews/T236-local-acceptance.md",
+        "reviewed_at": "2026-10-20T07:40:49+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "declaration_version": "eeabe06b6b3e0e9a72852393be4e8f054a77ed1f"
     },
     {
@@ -21710,7 +21729,32 @@
       "id": "C253",
       "title": "真实非线性边界图剪切与保体积坐标基础",
       "verification_status": "SPECIFIED",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.spatialGraphShear",
+        "Carleman.spatialGraphShear_psi",
+        "Carleman.spatialGraphShear_halfspace",
+        "Carleman.spatialGraphShear_hasFDerivAt",
+        "Carleman.spatialGraphShear_normal_derivative",
+        "Carleman.spatialGraphShear_det",
+        "Carleman.spatialGraphShear_measurePreserving",
+        "Carleman.spatialGraphShear_measurePreserving_restrict",
+        "Carleman.spatialGraphShear_halfspace_measurePreserving",
+        "Carleman.spatialGraphShear_contDiff",
+        "Carleman.spatialGraphShear_symm_contDiff",
+        "Carleman.spatialGraphShear_fderiv_invariant",
+        "Carleman.SpatialTest.pullbackSmoothHomeomorph",
+        "Carleman.SpatialTest.pullbackSmoothHomeomorph_derivative",
+        "Carleman.SpatialTest.pullbackGraphShear_derivative",
+        "Carleman.SpatialTest.pullbackGraphShear_symm_derivative",
+        "Carleman.graphSlopeMultiplier",
+        "Carleman.graphSlopeMultiplier_contDiff",
+        "Carleman.graphSlopeMultiplier_normal_derivative",
+        "Carleman.homeomorphPullbackLp",
+        "Carleman.homeomorphPullbackLp_ae",
+        "Carleman.homeomorphPullbackLp_inverse",
+        "Carleman.integral_mul_homeomorphPullbackLp",
+        "Carleman.SpatialTest.pullbackSmoothHomeomorph_toLp"
+      ],
       "dependencies": [
         "C252"
       ],
@@ -23079,6 +23123,11 @@
       "at": "2026-10-20T07:38:20.944024+00:00",
       "public_summary": "真实变系数椭圆形式的切向差商能量估计已通过固定本地验证与独立数学验收；原文覆盖18/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0c492c06911ba58258a4ec75e82b37fa10470af4/governance/reviews/T235-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T07:44:38.687359+00:00",
+      "public_summary": "真实变系数法向通量恢复与半空间H²正则性已通过固定本地验证与独立数学验收；原文覆盖18/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d366be4006b35fbcb93b93c01326fef1945c5b14/governance/reviews/T236-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -23559,7 +23608,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7174f716fb09a02cc6ab4ffcac119ead1d4848bb/governance/reviews/T232-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6dda937ae23e61cf0f532545283de66594758343/governance/reviews/T233-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7083f5cee167f63308a5b133e4a9e3ab3c7bb921/governance/reviews/T234-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0c492c06911ba58258a4ec75e82b37fa10470af4/governance/reviews/T235-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0c492c06911ba58258a4ec75e82b37fa10470af4/governance/reviews/T235-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d366be4006b35fbcb93b93c01326fef1945c5b14/governance/reviews/T236-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -51405,9 +51455,9 @@
         "C251"
       ],
       "base_commit": "ceba934191acdb2f4dfda0882a67b80094f2e23d",
-      "status": "REVIEW",
+      "status": "MERGED",
       "checkpoint_commit": "eeabe06b6b3e0e9a72852393be4e8f054a77ed1f",
-      "merge_commit": null,
+      "merge_commit": "eeabe06b6b3e0e9a72852393be4e8f054a77ed1f",
       "lean_declarations": [
         "Carleman.BoundedMultiplier.reciprocal",
         "Carleman.BoundedMultiplier.reciprocalDerivative",
@@ -51422,7 +51472,7 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -51461,9 +51511,23 @@
         "root_jobs": 4275,
         "root_exit_code": 0,
         "recursive_axiom_declarations": 9734,
-        "axiom_exit_code": 0
+        "axiom_exit_code": 0,
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "eeabe06b6b3e0e9a72852393be4e8f054a77ed1f"
+      "declaration_version": "eeabe06b6b3e0e9a72852393be4e8f054a77ed1f",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C252"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "eeabe06b6b3e0e9a72852393be4e8f054a77ed1f",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T07:40:49+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d366be4006b35fbcb93b93c01326fef1945c5b14/governance/reviews/T236-local-acceptance.md"
+        }
+      ]
     },
     {
       "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
@@ -51488,11 +51552,46 @@
       "status": "RUNNING",
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.spatialGraphShear",
+        "Carleman.spatialGraphShear_psi",
+        "Carleman.spatialGraphShear_halfspace",
+        "Carleman.spatialGraphShear_hasFDerivAt",
+        "Carleman.spatialGraphShear_normal_derivative",
+        "Carleman.spatialGraphShear_det",
+        "Carleman.spatialGraphShear_measurePreserving",
+        "Carleman.spatialGraphShear_measurePreserving_restrict",
+        "Carleman.spatialGraphShear_halfspace_measurePreserving",
+        "Carleman.spatialGraphShear_contDiff",
+        "Carleman.spatialGraphShear_symm_contDiff",
+        "Carleman.spatialGraphShear_fderiv_invariant",
+        "Carleman.SpatialTest.pullbackSmoothHomeomorph",
+        "Carleman.SpatialTest.pullbackSmoothHomeomorph_derivative",
+        "Carleman.SpatialTest.pullbackGraphShear_derivative",
+        "Carleman.SpatialTest.pullbackGraphShear_symm_derivative",
+        "Carleman.graphSlopeMultiplier",
+        "Carleman.graphSlopeMultiplier_contDiff",
+        "Carleman.graphSlopeMultiplier_normal_derivative",
+        "Carleman.homeomorphPullbackLp",
+        "Carleman.homeomorphPullbackLp_ae",
+        "Carleman.homeomorphPullbackLp_inverse",
+        "Carleman.integral_mul_homeomorphPullbackLp",
+        "Carleman.SpatialTest.pullbackSmoothHomeomorph_toLp"
+      ],
       "blocker": null,
       "attempts": [],
       "next_action": "建立实际边界图剪切、体积保持及弱坐标传输所需换元身份。",
-      "build_evidence": null
+      "build_evidence": null,
+      "local_validation": {
+        "target": "Carleman.Spatial.NonlinearGraphShear",
+        "target_jobs": 3386,
+        "target_exit_code": 0,
+        "root_target": "Carleman",
+        "root_jobs": 4276,
+        "root_exit_code": 0,
+        "recursive_axiom_declarations": 9775,
+        "axiom_exit_code": 0
+      }
     }
   ],
   "private_maintenance": {

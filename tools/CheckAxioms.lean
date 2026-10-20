@@ -8786,6 +8786,55 @@ set_option pp.maxSteps 1000000
 #check @Carleman.exists_variable_halfspace_dirichlet_H2
 #print axioms Carleman.exists_variable_halfspace_dirichlet_H2
 
+#check @Carleman.spatialGraphShear
+#print axioms Carleman.spatialGraphShear
+#check @Carleman.spatialGraphShear_psi
+#print axioms Carleman.spatialGraphShear_psi
+#check @Carleman.spatialGraphShear_halfspace
+#print axioms Carleman.spatialGraphShear_halfspace
+#check @Carleman.spatialGraphShear_hasFDerivAt
+#print axioms Carleman.spatialGraphShear_hasFDerivAt
+#check @Carleman.spatialGraphShear_normal_derivative
+#print axioms Carleman.spatialGraphShear_normal_derivative
+#check @Carleman.spatialGraphShear_det
+#print axioms Carleman.spatialGraphShear_det
+#check @Carleman.spatialGraphShear_measurePreserving
+#print axioms Carleman.spatialGraphShear_measurePreserving
+#check @Carleman.spatialGraphShear_measurePreserving_restrict
+#print axioms Carleman.spatialGraphShear_measurePreserving_restrict
+#check @Carleman.spatialGraphShear_halfspace_measurePreserving
+#print axioms Carleman.spatialGraphShear_halfspace_measurePreserving
+#check @Carleman.spatialGraphShear_contDiff
+#print axioms Carleman.spatialGraphShear_contDiff
+#check @Carleman.spatialGraphShear_symm_contDiff
+#print axioms Carleman.spatialGraphShear_symm_contDiff
+#check @Carleman.spatialGraphShear_fderiv_invariant
+#print axioms Carleman.spatialGraphShear_fderiv_invariant
+#check @Carleman.SpatialTest.pullbackSmoothHomeomorph
+#print axioms Carleman.SpatialTest.pullbackSmoothHomeomorph
+#check @Carleman.SpatialTest.pullbackSmoothHomeomorph_derivative
+#print axioms Carleman.SpatialTest.pullbackSmoothHomeomorph_derivative
+#check @Carleman.SpatialTest.pullbackGraphShear_derivative
+#print axioms Carleman.SpatialTest.pullbackGraphShear_derivative
+#check @Carleman.SpatialTest.pullbackGraphShear_symm_derivative
+#print axioms Carleman.SpatialTest.pullbackGraphShear_symm_derivative
+#check @Carleman.graphSlopeMultiplier
+#print axioms Carleman.graphSlopeMultiplier
+#check @Carleman.graphSlopeMultiplier_contDiff
+#print axioms Carleman.graphSlopeMultiplier_contDiff
+#check @Carleman.graphSlopeMultiplier_normal_derivative
+#print axioms Carleman.graphSlopeMultiplier_normal_derivative
+#check @Carleman.homeomorphPullbackLp
+#print axioms Carleman.homeomorphPullbackLp
+#check @Carleman.homeomorphPullbackLp_ae
+#print axioms Carleman.homeomorphPullbackLp_ae
+#check @Carleman.homeomorphPullbackLp_inverse
+#print axioms Carleman.homeomorphPullbackLp_inverse
+#check @Carleman.integral_mul_homeomorphPullbackLp
+#print axioms Carleman.integral_mul_homeomorphPullbackLp
+#check @Carleman.SpatialTest.pullbackSmoothHomeomorph_toLp
+#print axioms Carleman.SpatialTest.pullbackSmoothHomeomorph_toLp
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

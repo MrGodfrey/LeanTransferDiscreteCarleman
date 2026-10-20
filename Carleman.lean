@@ -1116,3 +1116,5 @@ public import Carleman.Spatial.DirichletDifferenceQuotient
 public import Carleman.Spatial.VariableCoefficientDifference
 
 public import Carleman.Spatial.VariableCoefficientNormalRecovery
+
+public import Carleman.Spatial.NonlinearGraphShear
