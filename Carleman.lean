@@ -1075,3 +1075,5 @@ public import Carleman.Spatial.HigherDirichletProduct
 
 public import Carleman.Spatial.CoefficientJetForm
 public import Carleman.Spatial.HigherCoefficientForm
+
+public import Carleman.Spatial.SmallParameterInterpolation

@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T219",
-    "supervisor_checked_at": "2026-10-20T05:15:44.227550+00:00",
+    "supervisor_checked_at": "2026-10-20T05:20:05.588829+00:00",
     "next_action": "从原有界Lipschitz域插值推出任意小系数的低阶参数范数界，再控制全部低于2m阶的二次项。",
     "blocker": null,
     "pause_reason": null,
@@ -20029,7 +20029,7 @@
       "paper_ref": "paper/main.tex:2615–2652, eq:coefficientform 与原unshiftedformbound",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:spatial-operators"
@@ -20084,7 +20084,33 @@
           "sha256": "6cbdfd58a2ac8278bb9c49df088a5d60e4ba3b6fbdd09773eb04cefba6408914"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "b41b6861b988e758d026fed32f5d5802e411b636",
+        "declarations": [
+          "Carleman.MultiDerivativeIndex",
+          "Carleman.jetScalarComponent",
+          "Carleman.coefficientJetForm",
+          "Carleman.coefficientJetForm_apply",
+          "Carleman.coefficientJetForm_integral",
+          "Carleman.coefficientJetForm_symmetric",
+          "Carleman.jetScalarComponent_weighted_le",
+          "Carleman.coefficientJetForm_weighted_upper",
+          "Carleman.HigherDirichletEnergy",
+          "Carleman.higherDirichletToJet",
+          "Carleman.higherDirichletEnergy_norm_sq",
+          "Carleman.higherCoefficientForm",
+          "Carleman.higherCoefficientForm_apply",
+          "Carleman.higherCoefficientForm_symmetric",
+          "Carleman.higherCoefficientForm_integral",
+          "Carleman.higherCoefficientForm_weighted_upper",
+          "Carleman.higherCoefficientOriginalForm"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/523976572bfe70ad8a386ea3ad1ffb777271912f/governance/reviews/T218-local-acceptance.md",
+        "reviewed_at": "2026-10-20T05:17:34+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C027",
         "C030",
@@ -20094,7 +20120,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "原有界可测系数形式的真实实现和加权上界；不假设系数光滑，不提升完整Prop A.1；17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C235",
@@ -20107,13 +20133,23 @@
       "paper_labels": [
         "prop:spatial-operators"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.WeakSobolevJet.lowerParameterNorm",
+        "Carleman.WeakSobolevJet.lowerParameterNorm_nonneg",
+        "Carleman.WeakSobolevJet.lowerParameterNorm_rescale",
+        "Carleman.WeakSobolevJet.boundedLipschitz_lowerParameter_small",
+        "Carleman.WeakSobolevJet.boundedLipschitz_lowerParameter_product_small",
+        "Carleman.WeakSobolevJet.lowerOrderQuadratic_le",
+        "Carleman.WeakSobolevJet.boundedLipschitz_lowerOrderQuadratic_small",
+        "Carleman.SobolevHilbert.toJet_norm_le",
+        "Carleman.boundedLipschitz_hilbert_lowerOrderQuadratic_small"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
       "dependencies": [
         "C027",
-        "C234"
+        "C036"
       ],
       "blocker": null,
       "pr_url": null,
@@ -21387,6 +21423,11 @@
       "at": "2026-10-20T05:10:54.666858+00:00",
       "public_summary": "任意阶真实弱乘积与H₀ᵐ的光滑权保持已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/88a654dd8d9df39e068402478c40caa6cd62f74c/governance/reviews/T217-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T05:20:05.588829+00:00",
+      "public_summary": "任意阶原系数形式与统一加权上界已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/523976572bfe70ad8a386ea3ad1ffb777271912f/governance/reviews/T218-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -21849,7 +21890,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/85fc7f94d5211094b5c538ccbcc37f2361690111/governance/reviews/T214-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/acc193c0a9a79624439b8af36a929bfa3a47367b/governance/reviews/T215-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/061e2229186295742d29c00397e0b7a1ed480e2e/governance/reviews/T216-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/88a654dd8d9df39e068402478c40caa6cd62f74c/governance/reviews/T217-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/88a654dd8d9df39e068402478c40caa6cd62f74c/governance/reviews/T217-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/523976572bfe70ad8a386ea3ad1ffb777271912f/governance/reviews/T218-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -47743,10 +47785,10 @@
       ],
       "branch": "main",
       "base_commit": "79151186853d57b5e937851b51ace47c05a4e7ff",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "b41b6861b988e758d026fed32f5d5802e411b636",
-      "merge_commit": null,
+      "merge_commit": "b41b6861b988e758d026fed32f5d5802e411b636",
       "lean_declarations": [
         "Carleman.MultiDerivativeIndex",
         "Carleman.jetScalarComponent",
@@ -47801,7 +47843,7 @@
         "T217全库4241 jobs、9173公理审计PASS；系数形式试编译已定位CLM实例预算与现有seminorm上界。",
         "显式选择既有强对偶拓扑的ContinuousAdd投影解决推断；完整17项编译成功；定向3241/full4243 jobs和9241项递归公理审计实际exit0。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -47817,9 +47859,23 @@
         "raw_sha256": "6cbdfd58a2ac8278bb9c49df088a5d60e4ba3b6fbdd09773eb04cefba6408914",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "review": "PENDING"
+        "review": "PENDING",
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "b41b6861b988e758d026fed32f5d5802e411b636"
+      "declaration_version": "b41b6861b988e758d026fed32f5d5802e411b636",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C234"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "b41b6861b988e758d026fed32f5d5802e411b636",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T05:17:34+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/523976572bfe70ad8a386ea3ad1ffb777271912f/governance/reviews/T218-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T219",
@@ -47836,7 +47892,7 @@
       ],
       "dependencies": [
         "C027",
-        "C234"
+        "C036"
       ],
       "branch": "main",
       "base_commit": "b41b6861b988e758d026fed32f5d5802e411b636",
@@ -47844,14 +47900,40 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.WeakSobolevJet.lowerParameterNorm",
+        "Carleman.WeakSobolevJet.lowerParameterNorm_nonneg",
+        "Carleman.WeakSobolevJet.lowerParameterNorm_rescale",
+        "Carleman.WeakSobolevJet.boundedLipschitz_lowerParameter_small",
+        "Carleman.WeakSobolevJet.boundedLipschitz_lowerParameter_product_small",
+        "Carleman.WeakSobolevJet.lowerOrderQuadratic_le",
+        "Carleman.WeakSobolevJet.boundedLipschitz_lowerOrderQuadratic_small",
+        "Carleman.SobolevHilbert.toJet_norm_le",
+        "Carleman.boundedLipschitz_hilbert_lowerOrderQuadratic_small"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "已从真实参数插值用R*q缩放得到低阶增益；试编译正在处理乘法消去的库引理名称。"
+        "已从真实参数插值用R*q缩放得到低阶增益；试编译正在处理乘法消去的库引理名称。",
+        "完整9项声明通过；定向3239/full4244 jobs及9261项全命名空间递归公理审计actual exit0。原双和完整分解、任意η常数、真实Hᵐ范数均已核对。"
       ],
       "next_action": "从原有界Lipschitz域插值推出任意小系数的低阶参数范数界，再控制全部低于2m阶的二次项。",
-      "integration_mode": "direct-main"
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman.Spatial.SmallParameterInterpolation",
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4244,
+        "recursive_axiom_audit": 9261,
+        "new_explicit_declarations": 9,
+        "raw_sha256": "93b4a06fac6a4540ade877e4bb6acb4f188c50e7652343d4149217fac1428d96",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

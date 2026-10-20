@@ -8305,6 +8305,26 @@ set_option pp.maxSteps 1000000
 #check @Carleman.higherCoefficientOriginalForm
 #print axioms Carleman.higherCoefficientOriginalForm
 
+-- T219: arbitrary small high-order energy coefficient for actual lower-order terms.
+#check @Carleman.WeakSobolevJet.lowerParameterNorm
+#print axioms Carleman.WeakSobolevJet.lowerParameterNorm
+#check @Carleman.WeakSobolevJet.lowerParameterNorm_nonneg
+#print axioms Carleman.WeakSobolevJet.lowerParameterNorm_nonneg
+#check @Carleman.WeakSobolevJet.lowerParameterNorm_rescale
+#print axioms Carleman.WeakSobolevJet.lowerParameterNorm_rescale
+#check @Carleman.WeakSobolevJet.boundedLipschitz_lowerParameter_small
+#print axioms Carleman.WeakSobolevJet.boundedLipschitz_lowerParameter_small
+#check @Carleman.WeakSobolevJet.boundedLipschitz_lowerParameter_product_small
+#print axioms Carleman.WeakSobolevJet.boundedLipschitz_lowerParameter_product_small
+#check @Carleman.WeakSobolevJet.lowerOrderQuadratic_le
+#print axioms Carleman.WeakSobolevJet.lowerOrderQuadratic_le
+#check @Carleman.WeakSobolevJet.boundedLipschitz_lowerOrderQuadratic_small
+#print axioms Carleman.WeakSobolevJet.boundedLipschitz_lowerOrderQuadratic_small
+#check @Carleman.SobolevHilbert.toJet_norm_le
+#print axioms Carleman.SobolevHilbert.toJet_norm_le
+#check @Carleman.boundedLipschitz_hilbert_lowerOrderQuadratic_small
+#print axioms Carleman.boundedLipschitz_hilbert_lowerOrderQuadratic_small
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
