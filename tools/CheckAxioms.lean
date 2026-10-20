@@ -9255,6 +9255,63 @@ set_option pp.maxSteps 1000000
 #check Carleman.exists_box_dirichlet_strong_h2_approximation
 #print axioms Carleman.exists_box_dirichlet_strong_h2_approximation
 
+#check Carleman.WeakSobolevJet.truncateCLM
+#print axioms Carleman.WeakSobolevJet.truncateCLM
+#check Carleman.dirichletH2JetSpace
+#print axioms Carleman.dirichletH2JetSpace
+#check Carleman.dirichletH2JetSpace_isClosed
+#print axioms Carleman.dirichletH2JetSpace_isClosed
+#check Carleman.dirichletH2JetSpace_complete
+#print axioms Carleman.dirichletH2JetSpace_complete
+#check Carleman.dirichletH2ValueCLM
+#print axioms Carleman.dirichletH2ValueCLM
+#check Carleman.dirichletH2LiftLinear
+#print axioms Carleman.dirichletH2LiftLinear
+#check Carleman.dirichletH2LiftLinear_value
+#print axioms Carleman.dirichletH2LiftLinear_value
+#check Carleman.dirichletH2LiftLinear_closedGraph
+#print axioms Carleman.dirichletH2LiftLinear_closedGraph
+#check Carleman.dirichletH2LiftCLM
+#print axioms Carleman.dirichletH2LiftCLM
+#check Carleman.dirichletH2LiftCLM_value
+#print axioms Carleman.dirichletH2LiftCLM_value
+#check Carleman.DirichletH2Regular
+#print axioms Carleman.DirichletH2Regular
+#check Carleman.dirichletH2Regular_box
+#print axioms Carleman.dirichletH2Regular_box
+#check Carleman.dirichletH2Regular_graphEpigraph
+#print axioms Carleman.dirichletH2Regular_graphEpigraph
+#check Carleman.dirichletH2Regular_graphHypograph
+#print axioms Carleman.dirichletH2Regular_graphHypograph
+#check Carleman.dirichletH2Regular_smoothInner
+#print axioms Carleman.dirichletH2Regular_smoothInner
+#check Carleman.SpatialTest.cutoffValueTransfer
+#print axioms Carleman.SpatialTest.cutoffValueTransfer
+#check Carleman.SpatialTest.cutoffValueTransfer_apply
+#print axioms Carleman.SpatialTest.cutoffValueTransfer_apply
+#check Carleman.SpatialTest.cutoffH2_value_exists
+#print axioms Carleman.SpatialTest.cutoffH2_value_exists
+#check Carleman.SpatialTest.cutoffH2Transfer
+#print axioms Carleman.SpatialTest.cutoffH2Transfer
+#check Carleman.SpatialTest.cutoffH2Transfer_value
+#print axioms Carleman.SpatialTest.cutoffH2Transfer_value
+#check Carleman.SpatialTest.cutoffH2Transfer_truncate
+#print axioms Carleman.SpatialTest.cutoffH2Transfer_truncate
+#check Carleman.SpatialTest.cutoffH2Transfer_dirichlet
+#print axioms Carleman.SpatialTest.cutoffH2Transfer_dirichlet
+#check Carleman.SpatialTest.cutoffH2Transfer_tendsto
+#print axioms Carleman.SpatialTest.cutoffH2Transfer_tendsto
+#check Carleman.SpatialTest.cutoffH2Transfer_ae
+#print axioms Carleman.SpatialTest.cutoffH2Transfer_ae
+#check Carleman.SpatialTest.cutoffH2Transfer_of_smooth
+#print axioms Carleman.SpatialTest.cutoffH2Transfer_of_smooth
+#check Carleman.SpatialTest.frontier_mem_of_cutoff_agreement
+#print axioms Carleman.SpatialTest.frontier_mem_of_cutoff_agreement
+#check Carleman.SpatialTest.cutoffTransfer_boundary_zero
+#print axioms Carleman.SpatialTest.cutoffTransfer_boundary_zero
+#check Carleman.SpatialTest.exists_cutoff_box_strong_h2_approximation
+#print axioms Carleman.SpatialTest.exists_cutoff_box_strong_h2_approximation
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
