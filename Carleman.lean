@@ -1020,3 +1020,7 @@ public import Carleman.Control.CartesianControlWeakAccumulation
 public import Carleman.Control.FiniteTensorProductIdentity
 public import Carleman.Control.DirichletTestDensity
 public import Carleman.Control.AllEnergyControlTests
+public import Carleman.Control.TensorAdjointPairing
+public import Carleman.Control.DirichletTimeLoad
+public import Carleman.Control.DirichletMassWeakDerivative
+public import Carleman.Control.DirichletDualTimeDerivative

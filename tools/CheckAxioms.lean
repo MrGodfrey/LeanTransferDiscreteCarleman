@@ -7922,6 +7922,39 @@ set_option pp.maxSteps 1000000
 #check @Carleman.FiniteDirichletControlIdentity.all_energy_tests
 #print axioms Carleman.FiniteDirichletControlIdentity.all_energy_tests
 
+
+-- T200: the actual strong-dual weak time derivative.
+#check @Carleman.timeTensor_eq_scalarTensor
+#print axioms Carleman.timeTensor_eq_scalarTensor
+#check @Carleman.inner_timeTensor_integral
+#print axioms Carleman.inner_timeTensor_integral
+#check @Carleman.compLpL_adjoint
+#print axioms Carleman.compLpL_adjoint
+#check @Carleman.HasWeakTimeDerivative.map_integral
+#print axioms Carleman.HasWeakTimeDerivative.map_integral
+#check @Carleman.dirichletTimeMass
+#print axioms Carleman.dirichletTimeMass
+#check @Carleman.dirichletTimeLoad
+#print axioms Carleman.dirichletTimeLoad
+#check @Carleman.dirichletTimeMass_pairing
+#print axioms Carleman.dirichletTimeMass_pairing
+#check @Carleman.dirichletTimeLoad_pairing
+#print axioms Carleman.dirichletTimeLoad_pairing
+#check @Carleman.FiniteDirichletControlIdentity.mass_test_identity
+#print axioms Carleman.FiniteDirichletControlIdentity.mass_test_identity
+#check @Carleman.FiniteDirichletControlIdentity.mass_weak_time_derivative
+#print axioms Carleman.FiniteDirichletControlIdentity.mass_weak_time_derivative
+#check @Carleman.dirichletPivotDual
+#print axioms Carleman.dirichletPivotDual
+#check @Carleman.dirichletPivotDual_apply
+#print axioms Carleman.dirichletPivotDual_apply
+#check @Carleman.dirichletDualTimeLoad
+#print axioms Carleman.dirichletDualTimeLoad
+#check @Carleman.dirichletDualTimeLoad_pairing
+#print axioms Carleman.dirichletDualTimeLoad_pairing
+#check @Carleman.FiniteDirichletControlIdentity.dual_weak_time_derivative
+#print axioms Carleman.FiniteDirichletControlIdentity.dual_weak_time_derivative
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

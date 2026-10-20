@@ -12,7 +12,7 @@
     "state": "RUNNING",
     "current_task_id": "T200",
     "supervisor_checked_at": "2026-10-20T03:14:18.228267+00:00",
-    "next_action": "以实际Hilbert伴随构造对偶右端，并从内部时间测试证明原分布方程。",
+    "next_action": "固定证明提交后交独立Agent核验实际V′导数及原势/控制分布右端；后续构造H连续时间迹。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T03:06:48.763459+00:00"
@@ -18581,7 +18581,23 @@
       "paper_labels": [
         "prop:control-convergence"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.timeTensor_eq_scalarTensor",
+        "Carleman.inner_timeTensor_integral",
+        "Carleman.compLpL_adjoint",
+        "Carleman.HasWeakTimeDerivative.map_integral",
+        "Carleman.dirichletTimeMass",
+        "Carleman.dirichletTimeLoad",
+        "Carleman.dirichletTimeMass_pairing",
+        "Carleman.dirichletTimeLoad_pairing",
+        "Carleman.FiniteDirichletControlIdentity.mass_test_identity",
+        "Carleman.FiniteDirichletControlIdentity.mass_weak_time_derivative",
+        "Carleman.dirichletPivotDual",
+        "Carleman.dirichletPivotDual_apply",
+        "Carleman.dirichletDualTimeLoad",
+        "Carleman.dirichletDualTimeLoad_pairing",
+        "Carleman.FiniteDirichletControlIdentity.dual_weak_time_derivative"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -44300,14 +44316,45 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.timeTensor_eq_scalarTensor",
+        "Carleman.inner_timeTensor_integral",
+        "Carleman.compLpL_adjoint",
+        "Carleman.HasWeakTimeDerivative.map_integral",
+        "Carleman.dirichletTimeMass",
+        "Carleman.dirichletTimeLoad",
+        "Carleman.dirichletTimeMass_pairing",
+        "Carleman.dirichletTimeLoad_pairing",
+        "Carleman.FiniteDirichletControlIdentity.mass_test_identity",
+        "Carleman.FiniteDirichletControlIdentity.mass_weak_time_derivative",
+        "Carleman.dirichletPivotDual",
+        "Carleman.dirichletPivotDual_apply",
+        "Carleman.dirichletDualTimeLoad",
+        "Carleman.dirichletDualTimeLoad_pairing",
+        "Carleman.FiniteDirichletControlIdentity.dual_weak_time_derivative"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "T199全V测试4195全库jobs、8786公理审计PASS，独立验收进行中。"
+        "T199全V测试4195全库jobs、8786公理审计PASS，独立验收进行中。",
+        "实际Hilbert伴随构造质量与右端，原全V恒等式给真实质量弱导数，再用Riesz映射得StrongDual Bochner积分方程；15项完整probe exit0，3621定向/4199全库jobs及8873项递归公理审计PASS。"
       ],
-      "next_action": "以实际Hilbert伴随构造对偶右端，并从内部时间测试证明原分布方程。",
-      "integration_mode": "direct-main"
+      "next_action": "固定证明提交后交独立Agent核验实际V′导数及原势/控制分布右端；后续构造H连续时间迹。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4199,
+        "recursive_axiom_audit": 8873,
+        "new_explicit_declarations": 15,
+        "declaration_artifact_sha256": "70040ce6bf5174b7d5fae754e025f2f565d48e2cecd84baf7b1dcc4e84a6fbea",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {
