@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T256",
-    "supervisor_checked_at": "2026-10-20T10:25:58.196859+00:00",
-    "next_action": "完成真实逆图H²连续映射与全局光滑复合身份，将紧支半空间零边值强逼近传回两侧曲边域。",
+    "current_task_id": "T257",
+    "supervisor_checked_at": "2026-10-20T10:28:04.396932+00:00",
+    "next_action": "将实际图域与内部的紧支逼近经嵌套截断传回原域，用真实有限光滑分割恢复同一原H²状态。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "2b7dfa5b8dc39445682940c02d91c5bec5a747a0",
-      "source_head_sha": "2b7dfa5b8dc39445682940c02d91c5bec5a747a0",
+      "checked_sha": "10790206877d2b10b557b56430b8b0c4ec02b117",
+      "source_head_sha": "10790206877d2b10b557b56430b8b0c4ec02b117",
       "ci_url": null,
-      "finished_at": "2026-10-20T10:15:40.023409+00:00",
+      "finished_at": "2026-10-20T10:26:19.876656+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "48873b7c8a857bcccda9257b65f540ad4a43b7a9ed852a9a27497b3adae729d9",
+      "source_manifest_sha256": "7352540971bf9c1be8010a1de6d7b99bc12752ca1f98309758c22a4460aac040",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10200,
-        "sha256": "6806fe55bb8a07710529d3ecae4aefb44102075006a3e906cde6c0f822907e88"
+        "declarations": 10238,
+        "sha256": "38572815097163190eb16650ab982768e91d120c4f14efaf3accbb1a53643a3c"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "2b7dfa5b8dc39445682940c02d91c5bec5a747a0",
-      "source_head_sha": "2b7dfa5b8dc39445682940c02d91c5bec5a747a0",
+      "checked_sha": "10790206877d2b10b557b56430b8b0c4ec02b117",
+      "source_head_sha": "10790206877d2b10b557b56430b8b0c4ec02b117",
       "ci_url": null,
-      "finished_at": "2026-10-20T10:15:40.023409+00:00",
+      "finished_at": "2026-10-20T10:26:19.876656+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "48873b7c8a857bcccda9257b65f540ad4a43b7a9ed852a9a27497b3adae729d9",
+      "source_manifest_sha256": "7352540971bf9c1be8010a1de6d7b99bc12752ca1f98309758c22a4460aac040",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10200,
-        "sha256": "6806fe55bb8a07710529d3ecae4aefb44102075006a3e906cde6c0f822907e88"
+        "declarations": 10238,
+        "sha256": "38572815097163190eb16650ab982768e91d120c4f14efaf3accbb1a53643a3c"
       }
     }
   },
@@ -23446,7 +23446,7 @@
       "pr_url": null,
       "id": "C272",
       "title": "紧支曲边状态的完整H²零边值强逼近",
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "lean_declarations": [
         "Carleman.WeakSobolevJet.graphShearInverseH2_value_exists",
         "Carleman.WeakSobolevJet.graphShearInverseH2",
@@ -23469,6 +23469,60 @@
       ],
       "blocker": null,
       "scope_notes": "真实固定全局图域的紧支H²∩H¹₀强密度；原域有限局部化拼接仍待，AUXILIARY18/26。",
+      "independent_review_status": "PENDING",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "10790206877d2b10b557b56430b8b0c4ec02b117",
+        "source_head_sha": "10790206877d2b10b557b56430b8b0c4ec02b117",
+        "ci_url": null,
+        "finished_at": "2026-10-20T10:26:19.876656+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "7352540971bf9c1be8010a1de6d7b99bc12752ca1f98309758c22a4460aac040",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10238,
+          "sha256": "38572815097163190eb16650ab982768e91d120c4f14efaf3accbb1a53643a3c"
+        }
+      },
+      "semantic_review": null,
+      "declaration_version": "10790206877d2b10b557b56430b8b0c4ec02b117"
+    },
+    {
+      "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的凸域统一Hessian证明路线",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "pr_url": null,
+      "id": "C273",
+      "title": "原光滑内逼近域的完整H²零边值强密度",
+      "verification_status": "SPECIFIED",
+      "lean_declarations": [],
+      "dependencies": [
+        "C272",
+        "C270",
+        "C262"
+      ],
+      "blocker": null,
+      "scope_notes": "原光滑内域的全局H²∩H¹₀强密度；弱统一估计及穷竭仍待，AUXILIARY18/26。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -55245,8 +55299,8 @@
         "C268"
       ],
       "base_commit": "2b7dfa5b8dc39445682940c02d91c5bec5a747a0",
-      "status": "RUNNING",
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "checkpoint_commit": "10790206877d2b10b557b56430b8b0c4ec02b117",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.WeakSobolevJet.graphShearInverseH2_value_exists",
@@ -55266,8 +55320,37 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "完成真实逆图H²连续映射与全局光滑复合身份，将紧支半空间零边值强逼近传回两侧曲边域。",
-      "build_evidence": null,
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "10790206877d2b10b557b56430b8b0c4ec02b117",
+        "source_head_sha": "10790206877d2b10b557b56430b8b0c4ec02b117",
+        "ci_url": null,
+        "finished_at": "2026-10-20T10:26:19.876656+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "7352540971bf9c1be8010a1de6d7b99bc12752ca1f98309758c22a4460aac040",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10238,
+          "sha256": "38572815097163190eb16650ab982768e91d120c4f14efaf3accbb1a53643a3c"
+        }
+      },
       "local_validation": {
         "target": "Carleman.Spatial.CompactGraphDensity",
         "target_jobs": 3482,
@@ -55278,7 +55361,39 @@
         "recursive_axiom_declarations": 10238,
         "axiom_exit_code": 0,
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "10790206877d2b10b557b56430b8b0c4ec02b117"
+    },
+    {
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "branch": "main",
+      "pr_url": null,
+      "integration_mode": "direct-main",
+      "id": "T257",
+      "title": "原光滑内逼近域的完整H²零边值强密度",
+      "goal_ids": [
+        "C273"
+      ],
+      "acceptance": [
+        "嵌套截断传回精确原局部化状态",
+        "真实有限覆盖与光滑分割内部构造",
+        "原光滑内域完整H²强密度及真实frontier零值"
+      ],
+      "dependencies": [
+        "C272",
+        "C270",
+        "C262"
+      ],
+      "base_commit": "10790206877d2b10b557b56430b8b0c4ec02b117",
+      "status": "RUNNING",
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "blocker": null,
+      "attempts": [],
+      "next_action": "将实际图域与内部的紧支逼近经嵌套截断传回原域，用真实有限光滑分割恢复同一原H²状态。",
+      "build_evidence": null
     }
   ],
   "private_maintenance": {
