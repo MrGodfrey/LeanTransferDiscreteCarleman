@@ -8175,6 +8175,24 @@ set_option pp.maxSteps 1000000
 #check @Carleman.FiniteDirichletControlIdentity.identifies_energy_solution
 #print axioms Carleman.FiniteDirichletControlIdentity.identifies_energy_solution
 
+-- T215: the original strong-dual equation and its unique continuous energy solution.
+#check @Carleman.HasWeakTimeDerivative.of_injective_map_integral
+#print axioms Carleman.HasWeakTimeDerivative.of_injective_map_integral
+#check @Carleman.dirichlet_dual_mass_weak_iff
+#print axioms Carleman.dirichlet_dual_mass_weak_iff
+#check @Carleman.dirichlet_dual_energy_memLp
+#print axioms Carleman.dirichlet_dual_energy_memLp
+#check @Carleman.DirichletEnergySolution
+#print axioms Carleman.DirichletEnergySolution
+#check @Carleman.DirichletNullControlState.energy_solution
+#print axioms Carleman.DirichletNullControlState.energy_solution
+#check @Carleman.DirichletEnergySolution.mass_weak_time_derivative
+#print axioms Carleman.DirichletEnergySolution.mass_weak_time_derivative
+#check @Carleman.DirichletEnergySolution.unique
+#print axioms Carleman.DirichletEnergySolution.unique
+#check @Carleman.FiniteDirichletControlIdentity.unique_energy_solution
+#print axioms Carleman.FiniteDirichletControlIdentity.unique_energy_solution
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

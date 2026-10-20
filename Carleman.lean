@@ -1062,3 +1062,7 @@ public import Carleman.Control.DirichletLocalEnergy
 public import Carleman.Control.VolterraEnergyUniqueness
 public import Carleman.Control.TimeCutoffEnergyNorm
 public import Carleman.Control.DirichletEnergyUniqueness
+
+public import Carleman.Control.WeakDerivativeInjection
+public import Carleman.Control.DirichletDualMassEquivalence
+public import Carleman.Control.DirichletEnergySolution

@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T215",
-    "supervisor_checked_at": "2026-10-20T04:50:29.869247+00:00",
+    "supervisor_checked_at": "2026-10-20T04:54:28.465243+00:00",
     "next_action": "证明原StrongDual弱方程与质量弱方程互换，并识别任意同数据原能量解及其真实零终迹。",
     "blocker": null,
     "pause_reason": null,
@@ -19670,7 +19670,7 @@
       "paper_ref": "paper/main.tex:2338–2415, prop:control-convergence 中原能量解的唯一性",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -19714,7 +19714,22 @@
           "sha256": "8bd1fb3855c26c8959da18d0c629ec34d93bc2e885dd4053011898db902896d9"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "9662adfb01356f17d6bdb85ea93c7e47046373b0",
+        "declarations": [
+          "Carleman.continuous_volterra_nonneg_eq_zero",
+          "Carleman.time_cutoff_norm_sq_of_ae",
+          "Carleman.dirichlet_mass_energy_zero",
+          "Carleman.dirichletTimeLoad_sub",
+          "Carleman.dirichlet_mass_energy_unique",
+          "Carleman.FiniteDirichletControlIdentity.identifies_energy_solution"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/85fc7f94d5211094b5c538ccbcc37f2361690111/governance/reviews/T214-local-acceptance.md",
+        "reviewed_at": "2026-10-20T04:52:18+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C228",
         "C229"
@@ -19722,7 +19737,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "原质量弱导数、原b/Y/U载荷与真实连续初迹的解唯一性，不输入零终态；17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C231",
@@ -19735,7 +19750,16 @@
       "paper_labels": [
         "prop:control-convergence"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.HasWeakTimeDerivative.of_injective_map_integral",
+        "Carleman.dirichlet_dual_mass_weak_iff",
+        "Carleman.dirichlet_dual_energy_memLp",
+        "Carleman.DirichletEnergySolution",
+        "Carleman.DirichletNullControlState.energy_solution",
+        "Carleman.DirichletEnergySolution.mass_weak_time_derivative",
+        "Carleman.DirichletEnergySolution.unique",
+        "Carleman.FiniteDirichletControlIdentity.unique_energy_solution"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -20996,6 +21020,11 @@
       "at": "2026-10-20T04:50:15.061666+00:00",
       "public_summary": "原控制载荷的局部能量配对与势界已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3a869e6b41c8a21d3e60f08ef657ed58164dd63b/governance/reviews/T213-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T04:54:28.465243+00:00",
+      "public_summary": "原连续能量解的零数据与唯一性已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/85fc7f94d5211094b5c538ccbcc37f2361690111/governance/reviews/T214-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -21454,7 +21483,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/df32e0ea1475520fba053f653a9b5ea06d83cb73/governance/reviews/T210-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/170de6eae9adde411801ce1a1684841e7e9f9e50/governance/reviews/T211-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5ac0a17bf01823f61003428674b282403ea6443c/governance/reviews/T212-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3a869e6b41c8a21d3e60f08ef657ed58164dd63b/governance/reviews/T213-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3a869e6b41c8a21d3e60f08ef657ed58164dd63b/governance/reviews/T213-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/85fc7f94d5211094b5c538ccbcc37f2361690111/governance/reviews/T214-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -46925,10 +46955,10 @@
       ],
       "branch": "main",
       "base_commit": "a7ffa08f871d033a1729d80f998b56c5e98d6218",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "9662adfb01356f17d6bdb85ea93c7e47046373b0",
-      "merge_commit": null,
+      "merge_commit": "9662adfb01356f17d6bdb85ea93c7e47046373b0",
       "lean_declarations": [
         "Carleman.continuous_volterra_nonneg_eq_zero",
         "Carleman.time_cutoff_norm_sq_of_ae",
@@ -46972,7 +47002,7 @@
         "T213实际局部能量界4230根构建、9025项公理审计PASS。",
         "六项原能量唯一性声明定向3641、全库4234 jobs与9031项递归公理审计均exit 0。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -46986,9 +47016,22 @@
         "declaration_artifact_sha256": "8bd1fb3855c26c8959da18d0c629ec34d93bc2e885dd4053011898db902896d9",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "9662adfb01356f17d6bdb85ea93c7e47046373b0"
+      "declaration_version": "9662adfb01356f17d6bdb85ea93c7e47046373b0",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C230"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "9662adfb01356f17d6bdb85ea93c7e47046373b0",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T04:52:18+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/85fc7f94d5211094b5c538ccbcc37f2361690111/governance/reviews/T214-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T215",
@@ -47014,14 +47057,38 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.HasWeakTimeDerivative.of_injective_map_integral",
+        "Carleman.dirichlet_dual_mass_weak_iff",
+        "Carleman.dirichlet_dual_energy_memLp",
+        "Carleman.DirichletEnergySolution",
+        "Carleman.DirichletNullControlState.energy_solution",
+        "Carleman.DirichletEnergySolution.mass_weak_time_derivative",
+        "Carleman.DirichletEnergySolution.unique",
+        "Carleman.FiniteDirichletControlIdentity.unique_energy_solution"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "T214六项唯一性声明4234根构建、9031公理审计PASS。"
+        "T214六项唯一性声明4234根构建、9031公理审计PASS。",
+        "七项定理与一个一般原能量解定义定向3646、全库4237 jobs与9054项递归公理审计均exit 0。"
       ],
       "next_action": "证明原StrongDual弱方程与质量弱方程互换，并识别任意同数据原能量解及其真实零终迹。",
-      "integration_mode": "direct-main"
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4237,
+        "recursive_axiom_audit": 9054,
+        "new_explicit_declarations": 8,
+        "declaration_artifact_sha256": "abc0b30a79815079dd1a0bd41cc2818b1ad6fa91a597dceccda9539a4f63b39c",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {
