@@ -1112,3 +1112,5 @@ public import Carleman.Spatial.FullSpaceDifferenceQuotient
 public import Carleman.Spatial.DifferenceQuotientCriterion
 
 public import Carleman.Spatial.DirichletDifferenceQuotient
+
+public import Carleman.Spatial.VariableCoefficientDifference

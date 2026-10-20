@@ -8727,6 +8727,46 @@ set_option pp.maxSteps 1000000
 #check @Carleman.exists_halfspace_dirichlet_H2
 #print axioms Carleman.exists_halfspace_dirichlet_H2
 
+
+#check @Carleman.BoundedMultiplier.spatialTranslate
+#print axioms Carleman.BoundedMultiplier.spatialTranslate
+#check @Carleman.BoundedMultiplier.spatialTranslate_map
+#print axioms Carleman.BoundedMultiplier.spatialTranslate_map
+#check @Carleman.BoundedMultiplier.lipschitz_difference_bound
+#print axioms Carleman.BoundedMultiplier.lipschitz_difference_bound
+#check @Carleman.BoundedMultiplier.spatialDifference
+#print axioms Carleman.BoundedMultiplier.spatialDifference
+#check @Carleman.BoundedMultiplier.differenceQuotient_product
+#print axioms Carleman.BoundedMultiplier.differenceQuotient_product
+#check @Carleman.BoundedMultiplier.differenceQuotient_commutator_bound
+#print axioms Carleman.BoundedMultiplier.differenceQuotient_commutator_bound
+#check @Carleman.matrixL2Pairing
+#print axioms Carleman.matrixL2Pairing
+#check @Carleman.matrixL2Pairing_bound
+#print axioms Carleman.matrixL2Pairing_bound
+#check @Carleman.matrixL2Pairing_coercive
+#print axioms Carleman.matrixL2Pairing_coercive
+#check @Carleman.matrixGradientPairing
+#print axioms Carleman.matrixGradientPairing
+#check @Carleman.matrixGradientPairing_coercive
+#print axioms Carleman.matrixGradientPairing_coercive
+#check @Carleman.matrixGradientPairing_bound
+#print axioms Carleman.matrixGradientPairing_bound
+#check @Carleman.matrixGradientPairing_difference
+#print axioms Carleman.matrixGradientPairing_difference
+#check @Carleman.matrixGradientPairing_tendsto_right
+#print axioms Carleman.matrixGradientPairing_tendsto_right
+#check @Carleman.matrixGradient_equation_dirichlet
+#print axioms Carleman.matrixGradient_equation_dirichlet
+#check @Carleman.dirichlet_variable_tangential_difference_gradient_bound
+#print axioms Carleman.dirichlet_variable_tangential_difference_gradient_bound
+#check @Carleman.matrixGradientPairing_dirichlet_integral
+#print axioms Carleman.matrixGradientPairing_dirichlet_integral
+#check @Carleman.matrixGradientPairing_test_integral
+#print axioms Carleman.matrixGradientPairing_test_integral
+#check @Carleman.dirichlet_variable_tangential_test_bound
+#print axioms Carleman.dirichlet_variable_tangential_test_bound
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T235",
-    "supervisor_checked_at": "2026-10-20T07:13:40.435488+00:00",
+    "supervisor_checked_at": "2026-10-20T07:27:37.538844+00:00",
     "next_action": "在实际系数乘子上证明差商Leibniz公式与椭圆能量估计。",
     "blocker": null,
     "pause_reason": null,
@@ -21438,7 +21438,7 @@
       "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的边界H²正则性证明路线",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:analytic-realizations"
@@ -21472,7 +21472,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "一般光滑内域边界H²路线的真实半空间差商基础；AUXILIARY，18/26。",
-      "independent_review_status": "PENDING",
+      "independent_review_status": "PASS",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -21503,7 +21503,36 @@
           "sha256": "69c84178bd08406404d49fb9b96ab521db21f2f2e181146ef59224c74d1896dc"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "528c5bf683ace24836aecdf64ddd73422a000473",
+        "declarations": [
+          "Carleman.WeakSobolevJet.translateFirst",
+          "Carleman.WeakSobolevJet.translateFirst_value",
+          "Carleman.WeakSobolevJet.translateFirst_gradient",
+          "Carleman.WeakSobolevJet.translateFirst_tendsto",
+          "Carleman.WeakSobolevJet.differenceFirst",
+          "Carleman.WeakSobolevJet.differenceFirst_value",
+          "Carleman.WeakSobolevJet.differenceFirst_gradient",
+          "Carleman.WeakSobolevJet.differenceFirst_gradient_pairing",
+          "Carleman.WeakSobolevJet.differenceFirst_energy",
+          "Carleman.SpatialTest.translateInto",
+          "Carleman.SpatialTest.translateFirst_test",
+          "Carleman.WeakSobolevJet.translateFirst_dirichlet_mem",
+          "Carleman.WeakSobolevJet.differenceFirst_dirichlet_mem",
+          "Carleman.WeakSobolevJet.zeroExtend_restrict_of_ae_zero",
+          "Carleman.WeakSobolevJet.differenceFirst_dirichlet_extension",
+          "Carleman.dirichlet_tangential_difference_gradient_bound",
+          "Carleman.weakGradient_test_mixed_commute",
+          "Carleman.dirichlet_tangential_test_bound",
+          "Carleman.exists_dirichlet_H2_of_tangential_invariance",
+          "Carleman.exists_halfspace_dirichlet_H2"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7083f5cee167f63308a5b133e4a9e3ab3c7bb921/governance/reviews/T234-local-acceptance.md",
+        "reviewed_at": "2026-10-20T07:19:42+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "declaration_version": "528c5bf683ace24836aecdf64ddd73422a000473"
     },
     {
@@ -21517,7 +21546,27 @@
       "paper_labels": [
         "prop:analytic-realizations"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.BoundedMultiplier.spatialTranslate",
+        "Carleman.BoundedMultiplier.spatialTranslate_map",
+        "Carleman.BoundedMultiplier.lipschitz_difference_bound",
+        "Carleman.BoundedMultiplier.spatialDifference",
+        "Carleman.BoundedMultiplier.differenceQuotient_product",
+        "Carleman.BoundedMultiplier.differenceQuotient_commutator_bound",
+        "Carleman.matrixL2Pairing",
+        "Carleman.matrixL2Pairing_bound",
+        "Carleman.matrixL2Pairing_coercive",
+        "Carleman.matrixGradientPairing",
+        "Carleman.matrixGradientPairing_coercive",
+        "Carleman.matrixGradientPairing_bound",
+        "Carleman.matrixGradientPairing_difference",
+        "Carleman.matrixGradientPairing_tendsto_right",
+        "Carleman.matrixGradient_equation_dirichlet",
+        "Carleman.dirichlet_variable_tangential_difference_gradient_bound",
+        "Carleman.matrixGradientPairing_dirichlet_integral",
+        "Carleman.matrixGradientPairing_test_integral",
+        "Carleman.dirichlet_variable_tangential_test_bound"
+      ],
       "dependencies": [
         "C250"
       ],
@@ -22877,6 +22926,11 @@
       "at": "2026-10-20T07:08:52.800207+00:00",
       "public_summary": "差商有界判据与原测试函数的真实强极限已通过固定本地验证与独立数学验收；原文覆盖18/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6dda937ae23e61cf0f532545283de66594758343/governance/reviews/T233-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T07:27:37.538844+00:00",
+      "public_summary": "切向差商的真实Dirichlet测试与半空间二阶估计已通过固定本地验证与独立数学验收；原文覆盖18/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7083f5cee167f63308a5b133e4a9e3ab3c7bb921/governance/reviews/T234-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -23355,7 +23409,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6d3f546a94a5ca47a7a1f5aacf5f9d7b15821637/governance/reviews/T230-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/dae4b8b906f87b6192e194d1f827422f3021c92e/governance/reviews/T231-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7174f716fb09a02cc6ab4ffcac119ead1d4848bb/governance/reviews/T232-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6dda937ae23e61cf0f532545283de66594758343/governance/reviews/T233-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6dda937ae23e61cf0f532545283de66594758343/governance/reviews/T233-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7083f5cee167f63308a5b133e4a9e3ab3c7bb921/governance/reviews/T234-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -50983,10 +51038,10 @@
       ],
       "branch": "main",
       "base_commit": "27fcaabab245e49a01868aa211e5db053122cdb0",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "528c5bf683ace24836aecdf64ddd73422a000473",
-      "merge_commit": null,
+      "merge_commit": "528c5bf683ace24836aecdf64ddd73422a000473",
       "lean_declarations": [
         "Carleman.WeakSobolevJet.translateFirst",
         "Carleman.WeakSobolevJet.translateFirst_value",
@@ -51013,7 +51068,7 @@
       "attempts": [
         "原H¹₀切向差商/二次差商测试资格、实际弱PDE梯度差商界、法向恢复和半空间完整H²全部通过；目标3371、根4273及9659递归公理审计exit0。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "build_evidence": {
         "status": "PASS",
@@ -51061,9 +51116,22 @@
         "raw_sha256": "69c84178bd08406404d49fb9b96ab521db21f2f2e181146ef59224c74d1896dc",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "528c5bf683ace24836aecdf64ddd73422a000473"
+      "declaration_version": "528c5bf683ace24836aecdf64ddd73422a000473",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C250"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "528c5bf683ace24836aecdf64ddd73422a000473",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T07:19:42+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7083f5cee167f63308a5b133e4a9e3ab3c7bb921/governance/reviews/T234-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T235",
@@ -51087,12 +51155,42 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.BoundedMultiplier.spatialTranslate",
+        "Carleman.BoundedMultiplier.spatialTranslate_map",
+        "Carleman.BoundedMultiplier.lipschitz_difference_bound",
+        "Carleman.BoundedMultiplier.spatialDifference",
+        "Carleman.BoundedMultiplier.differenceQuotient_product",
+        "Carleman.BoundedMultiplier.differenceQuotient_commutator_bound",
+        "Carleman.matrixL2Pairing",
+        "Carleman.matrixL2Pairing_bound",
+        "Carleman.matrixL2Pairing_coercive",
+        "Carleman.matrixGradientPairing",
+        "Carleman.matrixGradientPairing_coercive",
+        "Carleman.matrixGradientPairing_bound",
+        "Carleman.matrixGradientPairing_difference",
+        "Carleman.matrixGradientPairing_tendsto_right",
+        "Carleman.matrixGradient_equation_dirichlet",
+        "Carleman.dirichlet_variable_tangential_difference_gradient_bound",
+        "Carleman.matrixGradientPairing_dirichlet_integral",
+        "Carleman.matrixGradientPairing_test_integral",
+        "Carleman.dirichlet_variable_tangential_test_bound"
+      ],
       "blocker": null,
       "attempts": [],
       "next_action": "在实际系数乘子上证明差商Leibniz公式与椭圆能量估计。",
       "integration_mode": "direct-main",
-      "build_evidence": null
+      "build_evidence": null,
+      "local_validation": {
+        "target": "Carleman.Spatial.VariableCoefficientDifference",
+        "target_jobs": 3372,
+        "target_exit_code": 0,
+        "root_target": "Carleman",
+        "root_jobs": 4274,
+        "root_exit_code": 0,
+        "recursive_axiom_declarations": 9710,
+        "axiom_exit_code": 0
+      }
     }
   ],
   "private_maintenance": {
