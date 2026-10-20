@@ -12,7 +12,7 @@
     "state": "RUNNING",
     "current_task_id": "T267",
     "supervisor_checked_at": "2026-10-20T11:56:01.920048+00:00",
-    "next_action": "证明可逼近周期状态稠密、实际加权四场连续，并取统一内域估计极限。",
+    "next_action": "完成原域全弱周期估计和实际连续接口，构建审计后独立整体验收原文Proposition A.3。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -24371,23 +24371,40 @@
     },
     {
       "id": "C283",
-      "title": "有限半空间原域的全弱周期热方程估计",
-      "paper_ref": "paper/main.tex:2672 Proposition A.3 的原域全弱周期估计",
+      "title": "Proposition A.3：原域全弱周期连续Carleman估计",
+      "paper_ref": "paper/main.tex:2672 Proposition A.3",
       "paper_labels": [
         "prop:continuousCE"
       ],
       "milestone": "M6a",
-      "scope": "AUXILIARY",
+      "scope": "PAPER",
       "extra_hypotheses": [],
       "verification_status": "SPECIFIED",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.dirichletExhaustionApproximable",
+        "Carleman.dirichletExhaustionApproximable_dense",
+        "Carleman.heatFieldsLeft",
+        "Carleman.heatFieldsRight",
+        "Carleman.continuous_heatFieldsLeft",
+        "Carleman.continuous_heatFieldsRight",
+        "Carleman.heatFieldsLeft_dirichlet",
+        "Carleman.heatFieldsRight_dirichlet",
+        "Carleman.heatFieldsLeft_subdomain",
+        "Carleman.heatFieldsRight_subdomain",
+        "Carleman.dirichletHeat_le_of_exhaustion",
+        "Carleman.finite_halfspace_weak_C2_heat_both_signs",
+        "Carleman.finite_halfspace_weak_interval_C2_heat_both_signs",
+        "Carleman.finite_halfspace_original_weak_C2_heat_both_signs",
+        "Carleman.finite_halfspace_heat_continuous_data",
+        "Carleman.box_heat_continuous_data"
+      ],
       "dependencies": [
         "C282",
         "C280"
       ],
       "pr_url": null,
       "blocker": null,
-      "scope_notes": "原域全弱周期估计；P024 的连续数据封装及整体原文验收后续。",
+      "scope_notes": "完整原文域范围：有限半空间凸多面体及已有任意维盒域；实际原Dirichlet弱轨道、原区间C²权、双时间方向，常数在T/q/状态之前。新声明15项，加已验收盒域连续接口共同覆盖原命题。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -57273,7 +57290,7 @@
       "pr_url": null,
       "integration_mode": "direct-main",
       "id": "T267",
-      "title": "有限半空间原域的全弱周期热方程估计",
+      "title": "Proposition A.3：原域全弱周期连续Carleman估计",
       "goal_ids": [
         "C283"
       ],
@@ -57290,11 +57307,39 @@
       "status": "RUNNING",
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.dirichletExhaustionApproximable",
+        "Carleman.dirichletExhaustionApproximable_dense",
+        "Carleman.heatFieldsLeft",
+        "Carleman.heatFieldsRight",
+        "Carleman.continuous_heatFieldsLeft",
+        "Carleman.continuous_heatFieldsRight",
+        "Carleman.heatFieldsLeft_dirichlet",
+        "Carleman.heatFieldsRight_dirichlet",
+        "Carleman.heatFieldsLeft_subdomain",
+        "Carleman.heatFieldsRight_subdomain",
+        "Carleman.dirichletHeat_le_of_exhaustion",
+        "Carleman.finite_halfspace_weak_C2_heat_both_signs",
+        "Carleman.finite_halfspace_weak_interval_C2_heat_both_signs",
+        "Carleman.finite_halfspace_original_weak_C2_heat_both_signs",
+        "Carleman.finite_halfspace_heat_continuous_data",
+        "Carleman.box_heat_continuous_data"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [],
-      "next_action": "证明可逼近周期状态稠密、实际加权四场连续，并取统一内域估计极限。"
+      "next_action": "完成原域全弱周期估计和实际连续接口，构建审计后独立整体验收原文Proposition A.3。",
+      "local_validation": {
+        "target": "Carleman.Transfer.FiniteHalfspaceHeatContinuous",
+        "target_jobs": 3688,
+        "target_exit_code": 0,
+        "root_target": "Carleman",
+        "root_jobs": 4322,
+        "root_exit_code": 0,
+        "recursive_axiom_declarations": 10579,
+        "axiom_exit_code": 0,
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

@@ -9620,6 +9620,38 @@ set_option pp.maxSteps 1000000
 #check Carleman.exists_dirichlet_exhaustion_harmonic_field_approximation
 #print axioms Carleman.exists_dirichlet_exhaustion_harmonic_field_approximation
 
+-- T267: original-domain full weak heat CE, Proposition A.3.
+#check Carleman.dirichletExhaustionApproximable
+#print axioms Carleman.dirichletExhaustionApproximable
+#check Carleman.dirichletExhaustionApproximable_dense
+#print axioms Carleman.dirichletExhaustionApproximable_dense
+#check Carleman.heatFieldsLeft
+#print axioms Carleman.heatFieldsLeft
+#check Carleman.heatFieldsRight
+#print axioms Carleman.heatFieldsRight
+#check Carleman.continuous_heatFieldsLeft
+#print axioms Carleman.continuous_heatFieldsLeft
+#check Carleman.continuous_heatFieldsRight
+#print axioms Carleman.continuous_heatFieldsRight
+#check Carleman.heatFieldsLeft_dirichlet
+#print axioms Carleman.heatFieldsLeft_dirichlet
+#check Carleman.heatFieldsRight_dirichlet
+#print axioms Carleman.heatFieldsRight_dirichlet
+#check Carleman.heatFieldsLeft_subdomain
+#print axioms Carleman.heatFieldsLeft_subdomain
+#check Carleman.heatFieldsRight_subdomain
+#print axioms Carleman.heatFieldsRight_subdomain
+#check Carleman.dirichletHeat_le_of_exhaustion
+#print axioms Carleman.dirichletHeat_le_of_exhaustion
+#check Carleman.finite_halfspace_weak_C2_heat_both_signs
+#print axioms Carleman.finite_halfspace_weak_C2_heat_both_signs
+#check Carleman.finite_halfspace_weak_interval_C2_heat_both_signs
+#print axioms Carleman.finite_halfspace_weak_interval_C2_heat_both_signs
+#check Carleman.finite_halfspace_original_weak_C2_heat_both_signs
+#print axioms Carleman.finite_halfspace_original_weak_C2_heat_both_signs
+#check Carleman.finite_halfspace_heat_continuous_data
+#print axioms Carleman.finite_halfspace_heat_continuous_data
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

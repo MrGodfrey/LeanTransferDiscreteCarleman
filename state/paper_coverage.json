@@ -1238,11 +1238,28 @@
       "tex_line": 2672,
       "milestone": "M6a",
       "claim_ids": [
-        "C013"
+        "C283"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.dirichletExhaustionApproximable",
+        "Carleman.dirichletExhaustionApproximable_dense",
+        "Carleman.heatFieldsLeft",
+        "Carleman.heatFieldsRight",
+        "Carleman.continuous_heatFieldsLeft",
+        "Carleman.continuous_heatFieldsRight",
+        "Carleman.heatFieldsLeft_dirichlet",
+        "Carleman.heatFieldsRight_dirichlet",
+        "Carleman.heatFieldsLeft_subdomain",
+        "Carleman.heatFieldsRight_subdomain",
+        "Carleman.dirichletHeat_le_of_exhaustion",
+        "Carleman.finite_halfspace_weak_C2_heat_both_signs",
+        "Carleman.finite_halfspace_weak_interval_C2_heat_both_signs",
+        "Carleman.finite_halfspace_original_weak_C2_heat_both_signs",
+        "Carleman.finite_halfspace_heat_continuous_data",
+        "Carleman.box_heat_continuous_data"
+      ],
       "declaration_version": null,
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": null,

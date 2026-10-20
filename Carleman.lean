@@ -1183,3 +1183,9 @@ public import Carleman.Continuous.HarmonicLpMap
 public import Carleman.Spatial.DirichletHarmonicFields
 public import Carleman.Spatial.DirichletHeatFields
 public import Carleman.Spatial.HarmonicDomainLimit
+
+public import Carleman.Spatial.ExhaustionPeriodicDensity
+public import Carleman.Spatial.HeatFieldEnergies
+public import Carleman.Spatial.ExhaustionHeatTransfer
+public import Carleman.Spatial.FiniteHalfspaceWeakHeat
+public import Carleman.Transfer.FiniteHalfspaceHeatContinuous
