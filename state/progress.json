@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T246",
-    "supervisor_checked_at": "2026-10-20T08:58:33.338419+00:00",
-    "next_action": "构造紧闭包的有限光滑分割，将真实局部H²的全部测试界拼接为原状态全局H²。",
+    "current_task_id": "T247",
+    "supervisor_checked_at": "2026-10-20T09:02:53.436926+00:00",
+    "next_action": "从原边界零值和真实水平图推导一阶法向及二阶切向身份，为凸性边界通量符号供给真实几何。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "108394721c27094589e1eea0c77c63083625340d",
-      "source_head_sha": "108394721c27094589e1eea0c77c63083625340d",
+      "checked_sha": "ebc85ddad04c9b4008fa5b3e89a05696eff19bfb",
+      "source_head_sha": "ebc85ddad04c9b4008fa5b3e89a05696eff19bfb",
       "ci_url": null,
-      "finished_at": "2026-10-20T08:51:30.594016+00:00",
+      "finished_at": "2026-10-20T09:01:59.956037+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "3f2829809d3e4fcb20765d622d07ccc18e842aaaca6475bb0944c4895b6a9440",
+      "source_manifest_sha256": "eb5fd852c34aa8c5b51d50567bf9e412b9cd32811e909148038a10996f32cf1d",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9977,
-        "sha256": "60640617f835da4f833cfca70ed56359498ebdb1b0c40d2f42f3fd3d19db6bbd"
+        "declarations": 9989,
+        "sha256": "b97ce3d7c1e180b0dc45b5b88e770793a8331e8adf267ad2bd96ef6bc8125734"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "108394721c27094589e1eea0c77c63083625340d",
-      "source_head_sha": "108394721c27094589e1eea0c77c63083625340d",
+      "checked_sha": "ebc85ddad04c9b4008fa5b3e89a05696eff19bfb",
+      "source_head_sha": "ebc85ddad04c9b4008fa5b3e89a05696eff19bfb",
       "ci_url": null,
-      "finished_at": "2026-10-20T08:51:30.594016+00:00",
+      "finished_at": "2026-10-20T09:01:59.956037+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "3f2829809d3e4fcb20765d622d07ccc18e842aaaca6475bb0944c4895b6a9440",
+      "source_manifest_sha256": "eb5fd852c34aa8c5b51d50567bf9e412b9cd32811e909148038a10996f32cf1d",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9977,
-        "sha256": "60640617f835da4f833cfca70ed56359498ebdb1b0c40d2f42f3fd3d19db6bbd"
+        "declarations": 9989,
+        "sha256": "b97ce3d7c1e180b0dc45b5b88e770793a8331e8adf267ad2bd96ef6bc8125734"
       }
     }
   },
@@ -22541,7 +22541,7 @@
       "pr_url": null,
       "id": "C262",
       "title": "有限光滑分割与同一原弱解的全局H²拼接",
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "lean_declarations": [
         "Carleman.exists_finite_smooth_partition",
         "Carleman.SpatialTest.monoDomain_inner",
@@ -22560,6 +22560,59 @@
       ],
       "blocker": null,
       "scope_notes": "实际有限覆盖/光滑分割拼接同一原弱状态；凸域统一Hessian控制仍待，AUXILIARY，18/26。",
+      "independent_review_status": "PENDING",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "ebc85ddad04c9b4008fa5b3e89a05696eff19bfb",
+        "source_head_sha": "ebc85ddad04c9b4008fa5b3e89a05696eff19bfb",
+        "ci_url": null,
+        "finished_at": "2026-10-20T09:01:59.956037+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "eb5fd852c34aa8c5b51d50567bf9e412b9cd32811e909148038a10996f32cf1d",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9989,
+          "sha256": "b97ce3d7c1e180b0dc45b5b88e770793a8331e8adf267ad2bd96ef6bc8125734"
+        }
+      },
+      "semantic_review": null,
+      "declaration_version": "ebc85ddad04c9b4008fa5b3e89a05696eff19bfb"
+    },
+    {
+      "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的凸域统一Hessian证明路线",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "pr_url": null,
+      "id": "C263",
+      "title": "原光滑水平边界的法向梯度与切向Hessian身份",
+      "verification_status": "SPECIFIED",
+      "lean_declarations": [],
+      "dependencies": [
+        "C260",
+        "C262"
+      ],
+      "blocker": null,
+      "scope_notes": "从原水平图和零边值推导真实导数边界身份；积分通量、强逼近及统一估计仍待，AUXILIARY，18/26。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -53289,8 +53342,8 @@
         "C261"
       ],
       "base_commit": "108394721c27094589e1eea0c77c63083625340d",
-      "status": "RUNNING",
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "checkpoint_commit": "ebc85ddad04c9b4008fa5b3e89a05696eff19bfb",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.exists_finite_smooth_partition",
@@ -53307,8 +53360,37 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "真实有限分割及同一原弱解在光滑内域的全局H²已证明，准备固定证据及独立验收。",
-      "build_evidence": null,
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "ebc85ddad04c9b4008fa5b3e89a05696eff19bfb",
+        "source_head_sha": "ebc85ddad04c9b4008fa5b3e89a05696eff19bfb",
+        "ci_url": null,
+        "finished_at": "2026-10-20T09:01:59.956037+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "eb5fd852c34aa8c5b51d50567bf9e412b9cd32811e909148038a10996f32cf1d",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9989,
+          "sha256": "b97ce3d7c1e180b0dc45b5b88e770793a8331e8adf267ad2bd96ef6bc8125734"
+        }
+      },
       "local_validation": {
         "target": "Carleman.Spatial.FiniteLocalH2Gluing",
         "target_jobs": 3434,
@@ -53319,7 +53401,38 @@
         "recursive_axiom_declarations": 9989,
         "axiom_exit_code": 0,
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "ebc85ddad04c9b4008fa5b3e89a05696eff19bfb"
+    },
+    {
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "branch": "main",
+      "pr_url": null,
+      "integration_mode": "direct-main",
+      "id": "T247",
+      "title": "原光滑水平边界的法向梯度与切向Hessian身份",
+      "goal_ids": [
+        "C263"
+      ],
+      "acceptance": [
+        "原零边值给实际梯度法向比例",
+        "原水平图链式法则给真实切向Hessian比例",
+        "原指数和的实际二阶非负性"
+      ],
+      "dependencies": [
+        "C260",
+        "C262"
+      ],
+      "base_commit": "ebc85ddad04c9b4008fa5b3e89a05696eff19bfb",
+      "status": "RUNNING",
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "blocker": null,
+      "attempts": [],
+      "next_action": "从原边界零值和真实水平图推导一阶法向及二阶切向身份，为凸性边界通量符号供给真实几何。",
+      "build_evidence": null
     }
   ],
   "private_maintenance": {
