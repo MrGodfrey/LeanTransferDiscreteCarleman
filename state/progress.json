@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T232",
-    "supervisor_checked_at": "2026-10-20T06:51:46.669877+00:00",
-    "next_action": "从已证卷积平移估计和强L²极限推出原弱状态差商界。",
+    "current_task_id": "T233",
+    "supervisor_checked_at": "2026-10-20T06:56:22.218357+00:00",
+    "next_action": "证明实际测试差商强收敛，再用真实Riesz表示构造原弱导数。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "e61081ad723542df4c8e33ab57a10f10f6db67d0",
-      "source_head_sha": "e61081ad723542df4c8e33ab57a10f10f6db67d0",
+      "checked_sha": "fb7cdb9855e940d9d275e726ce09f3beef9b20b0",
+      "source_head_sha": "fb7cdb9855e940d9d275e726ce09f3beef9b20b0",
       "ci_url": null,
-      "finished_at": "2026-10-20T06:46:42.327048+00:00",
+      "finished_at": "2026-10-20T06:51:51.464404+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "687b682ec2c37ea80d3d80e9177c53c087e0c3372a8c3eeb1c6c9e1d30ee683c",
+      "source_manifest_sha256": "d75a4cc652f1b2d6405b52ed60ecdf89648b13aebf0c1e7831cfac10ee7eccc0",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9560,
-        "sha256": "6ee28ebb2b8486c95d65fc6defe879dc4ca65cb7fc9ee1293ffd2d3f10c15546"
+        "declarations": 9587,
+        "sha256": "8cae0de36a4d298fb4a0646fb3a3b0442b422965bb618f6e749186b450a242f1"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "e61081ad723542df4c8e33ab57a10f10f6db67d0",
-      "source_head_sha": "e61081ad723542df4c8e33ab57a10f10f6db67d0",
+      "checked_sha": "fb7cdb9855e940d9d275e726ce09f3beef9b20b0",
+      "source_head_sha": "fb7cdb9855e940d9d275e726ce09f3beef9b20b0",
       "ci_url": null,
-      "finished_at": "2026-10-20T06:46:42.327048+00:00",
+      "finished_at": "2026-10-20T06:51:51.464404+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "687b682ec2c37ea80d3d80e9177c53c087e0c3372a8c3eeb1c6c9e1d30ee683c",
+      "source_manifest_sha256": "d75a4cc652f1b2d6405b52ed60ecdf89648b13aebf0c1e7831cfac10ee7eccc0",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9560,
-        "sha256": "6ee28ebb2b8486c95d65fc6defe879dc4ca65cb7fc9ee1293ffd2d3f10c15546"
+        "declarations": 9587,
+        "sha256": "8cae0de36a4d298fb4a0646fb3a3b0442b422965bb618f6e749186b450a242f1"
       }
     }
   },
@@ -21270,7 +21270,7 @@
       "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的边界H²正则性证明路线",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:analytic-realizations"
@@ -21292,13 +21292,66 @@
         "Carleman.IsWeakSpatialDerivative.translation",
         "Carleman.IsWeakSpatialDerivative.differenceQuotient"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "fb7cdb9855e940d9d275e726ce09f3beef9b20b0",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "fb7cdb9855e940d9d275e726ce09f3beef9b20b0",
+        "source_head_sha": "fb7cdb9855e940d9d275e726ce09f3beef9b20b0",
+        "ci_url": null,
+        "finished_at": "2026-10-20T06:51:51.464404+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "d75a4cc652f1b2d6405b52ed60ecdf89648b13aebf0c1e7831cfac10ee7eccc0",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9587,
+          "sha256": "8cae0de36a4d298fb4a0646fb3a3b0442b422965bb618f6e749186b450a242f1"
+        }
+      },
       "semantic_review": null,
       "dependencies": [],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "实际L²平移/差商；变量系数边界正则性和完整P023仍待。"
+      "scope_notes": "实际L²平移/差商；变量系数边界正则性和完整P023仍待。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C249",
+      "title": "差商有界判据与原测试函数的真实强极限",
+      "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的边界H²正则性证明路线",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "lean_declarations": [],
+      "dependencies": [
+        "C248"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "原文CorA.2一般凸多面体H²的差商判据基础；AUXILIARY，不提升18/26覆盖。",
+      "independent_review_status": "PENDING",
+      "build_evidence": null,
+      "semantic_review": null,
+      "declaration_version": null
     }
   ],
   "events": [
@@ -50532,9 +50585,9 @@
       "dependencies": [],
       "branch": "main",
       "base_commit": "e61081ad723542df4c8e33ab57a10f10f6db67d0",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "fb7cdb9855e940d9d275e726ce09f3beef9b20b0",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.spatialTranslationLp",
@@ -50553,12 +50606,41 @@
         "Carleman.IsWeakSpatialDerivative.translation",
         "Carleman.IsWeakSpatialDerivative.differenceQuotient"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "fb7cdb9855e940d9d275e726ce09f3beef9b20b0",
+        "source_head_sha": "fb7cdb9855e940d9d275e726ce09f3beef9b20b0",
+        "ci_url": null,
+        "finished_at": "2026-10-20T06:51:51.464404+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "d75a4cc652f1b2d6405b52ed60ecdf89648b13aebf0c1e7831cfac10ee7eccc0",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9587,
+          "sha256": "8cae0de36a4d298fb4a0646fb3a3b0442b422965bb618f6e749186b450a242f1"
+        }
+      },
       "blocker": null,
       "attempts": [
         "真实全空间平移、原弱导数差商界和分部求和/弱导数交换全部构建；目标3230、根4271及9587声明递归公理审计exit0。"
       ],
-      "next_action": "从已证卷积平移估计和强L²极限推出原弱状态差商界。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -50577,7 +50659,37 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "fb7cdb9855e940d9d275e726ce09f3beef9b20b0"
+    },
+    {
+      "id": "T233",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "差商有界判据与原测试函数的真实强极限",
+      "goal_ids": [
+        "C249"
+      ],
+      "acceptance": [
+        "真实紧支光滑测试的差商强L²极限",
+        "步长趋零且差商统一有界推出实际弱导数与原范数界",
+        "不假设目标弱导数存在或域外二阶零延拓"
+      ],
+      "dependencies": [
+        "C248"
+      ],
+      "branch": "main",
+      "base_commit": "fb7cdb9855e940d9d275e726ce09f3beef9b20b0",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "blocker": null,
+      "attempts": [],
+      "next_action": "证明实际测试差商强收敛，再用真实Riesz表示构造原弱导数。",
+      "integration_mode": "direct-main",
+      "build_evidence": null
     }
   ],
   "private_maintenance": {
