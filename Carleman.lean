@@ -1107,3 +1107,4 @@ public import Carleman.Section3.OriginalSquareRoot
 public import Carleman.Spatial.HigherSpatialOperators
 public import Carleman.Geometry.HalfspaceSmoothExhaustion
 public import Carleman.Geometry.AnalyticLevelCharts
+public import Carleman.Spatial.FullSpaceDifferenceQuotient

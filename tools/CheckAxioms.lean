@@ -8635,6 +8635,38 @@ set_option pp.maxSteps 1000000
 #check @Carleman.halfspaceSmoothInner_analytic_chart
 #print axioms Carleman.halfspaceSmoothInner_analytic_chart
 
+
+#check @Carleman.spatialTranslationLp
+#print axioms Carleman.spatialTranslationLp
+#check @Carleman.spatialTranslationLp_ae
+#print axioms Carleman.spatialTranslationLp_ae
+#check @Carleman.spatialTranslationLp_norm
+#print axioms Carleman.spatialTranslationLp_norm
+#check @Carleman.spatialTranslationLp_zero
+#print axioms Carleman.spatialTranslationLp_zero
+#check @Carleman.spatialTranslationLp_add
+#print axioms Carleman.spatialTranslationLp_add
+#check @Carleman.spatialTranslationLp_inner
+#print axioms Carleman.spatialTranslationLp_inner
+#check @Carleman.mollified_full_translation_bound
+#print axioms Carleman.mollified_full_translation_bound
+#check @Carleman.IsWeakSpatialDerivative.translation_bound_nonneg
+#print axioms Carleman.IsWeakSpatialDerivative.translation_bound_nonneg
+#check @Carleman.IsWeakSpatialDerivative.translation_bound
+#print axioms Carleman.IsWeakSpatialDerivative.translation_bound
+#check @Carleman.spatialDifferenceQuotient
+#print axioms Carleman.spatialDifferenceQuotient
+#check @Carleman.spatialDifferenceQuotient_apply
+#print axioms Carleman.spatialDifferenceQuotient_apply
+#check @Carleman.IsWeakSpatialDerivative.differenceQuotient_bound
+#print axioms Carleman.IsWeakSpatialDerivative.differenceQuotient_bound
+#check @Carleman.spatialDifferenceQuotient_inner
+#print axioms Carleman.spatialDifferenceQuotient_inner
+#check @Carleman.IsWeakSpatialDerivative.translation
+#print axioms Carleman.IsWeakSpatialDerivative.translation
+#check @Carleman.IsWeakSpatialDerivative.differenceQuotient
+#print axioms Carleman.IsWeakSpatialDerivative.differenceQuotient
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

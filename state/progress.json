@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T232",
-    "supervisor_checked_at": "2026-10-20T06:47:42.450397+00:00",
+    "supervisor_checked_at": "2026-10-20T06:51:46.669877+00:00",
     "next_action": "从已证卷积平移估计和强L²极限推出原弱状态差商界。",
     "blocker": null,
     "pause_reason": null,
@@ -21196,7 +21196,7 @@
       "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 凸多面体正则性路线",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:analytic-realizations"
@@ -21240,14 +21240,29 @@
           "sha256": "6ee28ebb2b8486c95d65fc6defe879dc4ca65cb7fc9ee1293ffd2d3f10c15546"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "e61081ad723542df4c8e33ab57a10f10f6db67d0",
+        "declarations": [
+          "Carleman.exists_analytic_level_chart",
+          "Carleman.analytic_chart_derivative_inverse",
+          "Carleman.level_chart_image_sublevel",
+          "Carleman.level_chart_frontier_iff",
+          "Carleman.halfspaceExpSum_analytic",
+          "Carleman.halfspaceSmoothInner_analytic_chart"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/dae4b8b906f87b6192e194d1f827422f3021c92e/governance/reviews/T231-local-acceptance.md",
+        "reviewed_at": "2026-10-20T06:49:03+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C246"
       ],
       "blocker": null,
       "pr_url": null,
       "scope_notes": "光滑凸内域的实际边界坐标；分析H²正则性尚待。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C248",
@@ -21260,7 +21275,23 @@
       "paper_labels": [
         "prop:analytic-realizations"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.spatialTranslationLp",
+        "Carleman.spatialTranslationLp_ae",
+        "Carleman.spatialTranslationLp_norm",
+        "Carleman.spatialTranslationLp_zero",
+        "Carleman.spatialTranslationLp_add",
+        "Carleman.spatialTranslationLp_inner",
+        "Carleman.mollified_full_translation_bound",
+        "Carleman.IsWeakSpatialDerivative.translation_bound_nonneg",
+        "Carleman.IsWeakSpatialDerivative.translation_bound",
+        "Carleman.spatialDifferenceQuotient",
+        "Carleman.spatialDifferenceQuotient_apply",
+        "Carleman.IsWeakSpatialDerivative.differenceQuotient_bound",
+        "Carleman.spatialDifferenceQuotient_inner",
+        "Carleman.IsWeakSpatialDerivative.translation",
+        "Carleman.IsWeakSpatialDerivative.differenceQuotient"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -22602,6 +22633,11 @@
       "at": "2026-10-20T06:41:34.753773+00:00",
       "public_summary": "一般有限半空间域的真实光滑凸内域穷竭已通过固定本地验证与独立数学验收；原文覆盖18/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6d3f546a94a5ca47a7a1f5aacf5f9d7b15821637/governance/reviews/T230-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T06:51:46.669877+00:00",
+      "public_summary": "真实正则水平集的解析边界平坦化坐标已通过固定本地验证与独立数学验收；原文覆盖18/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/dae4b8b906f87b6192e194d1f827422f3021c92e/governance/reviews/T231-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -23077,7 +23113,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/cf3b8b7e99df3b1548a86f172f01f6a4ca154fac/governance/reviews/T227-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/794655ea939bd5d711faa65a3c3cd50d74621e89/governance/reviews/T228-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7311b6e17169c4248895dd1150990145ffd7985d/governance/reviews/T229-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6d3f546a94a5ca47a7a1f5aacf5f9d7b15821637/governance/reviews/T230-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6d3f546a94a5ca47a7a1f5aacf5f9d7b15821637/governance/reviews/T230-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/dae4b8b906f87b6192e194d1f827422f3021c92e/governance/reviews/T231-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -50398,10 +50435,10 @@
       ],
       "branch": "main",
       "base_commit": "721b761224ad1b6425466bc956417ddce7f41908",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "e61081ad723542df4c8e33ab57a10f10f6db67d0",
-      "merge_commit": null,
+      "merge_commit": "e61081ad723542df4c8e33ab57a10f10f6db67d0",
       "lean_declarations": [
         "Carleman.exists_analytic_level_chart",
         "Carleman.analytic_chart_derivative_inverse",
@@ -50444,7 +50481,7 @@
       "attempts": [
         "通过真实隐函数定理构造解析图、精确半空间/边界身份及实际导数互逆；新module采用公开API避开mathlib未暴露实现。3060/4270构建与9560递归审计exit0。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -50462,9 +50499,22 @@
         "raw_sha256": "6ee28ebb2b8486c95d65fc6defe879dc4ca65cb7fc9ee1293ffd2d3f10c15546",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "e61081ad723542df4c8e33ab57a10f10f6db67d0"
+      "declaration_version": "e61081ad723542df4c8e33ab57a10f10f6db67d0",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C247"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "e61081ad723542df4c8e33ab57a10f10f6db67d0",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T06:49:03+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/dae4b8b906f87b6192e194d1f827422f3021c92e/governance/reviews/T231-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T232",
@@ -50486,12 +50536,48 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.spatialTranslationLp",
+        "Carleman.spatialTranslationLp_ae",
+        "Carleman.spatialTranslationLp_norm",
+        "Carleman.spatialTranslationLp_zero",
+        "Carleman.spatialTranslationLp_add",
+        "Carleman.spatialTranslationLp_inner",
+        "Carleman.mollified_full_translation_bound",
+        "Carleman.IsWeakSpatialDerivative.translation_bound_nonneg",
+        "Carleman.IsWeakSpatialDerivative.translation_bound",
+        "Carleman.spatialDifferenceQuotient",
+        "Carleman.spatialDifferenceQuotient_apply",
+        "Carleman.IsWeakSpatialDerivative.differenceQuotient_bound",
+        "Carleman.spatialDifferenceQuotient_inner",
+        "Carleman.IsWeakSpatialDerivative.translation",
+        "Carleman.IsWeakSpatialDerivative.differenceQuotient"
+      ],
       "build_evidence": null,
       "blocker": null,
-      "attempts": [],
+      "attempts": [
+        "真实全空间平移、原弱导数差商界和分部求和/弱导数交换全部构建；目标3230、根4271及9587声明递归公理审计exit0。"
+      ],
       "next_action": "从已证卷积平移估计和强L²极限推出原弱状态差商界。",
-      "integration_mode": "direct-main"
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman.Spatial.FullSpaceDifferenceQuotient",
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": [
+          3230,
+          4271
+        ],
+        "recursive_axiom_audit": 9587,
+        "new_explicit_declarations": 15,
+        "raw_sha256": "8cae0de36a4d298fb4a0646fb3a3b0442b422965bb618f6e749186b450a242f1",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {
