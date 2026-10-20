@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T265",
-    "supervisor_checked_at": "2026-10-20T11:26:38.853591+00:00",
-    "next_action": "用原弱方程的能量正交及真实紧支测试逼近，证明内域解零延拓在完整H¹强收敛到同一原域解。",
+    "current_task_id": "T266",
+    "supervisor_checked_at": "2026-10-20T11:34:21.067492+00:00",
+    "next_action": "建立真实零延拓CLM、加权能量恒等式及谐波四字段收敛，连接内域估计与原周期图。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "a53469931caaf52a06accc38b94778d5e007a5b8",
-      "source_head_sha": "a53469931caaf52a06accc38b94778d5e007a5b8",
+      "checked_sha": "307dfe985c233861eaa26acda1cc2f6ab30596d7",
+      "source_head_sha": "307dfe985c233861eaa26acda1cc2f6ab30596d7",
       "ci_url": null,
-      "finished_at": "2026-10-20T11:25:28.846056+00:00",
+      "finished_at": "2026-10-20T11:34:01.274493+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "9e8ba3d32ff095e3a58d3818a34f9f29bea44d6eb1dc4c7cff8ca5aef3746e94",
+      "source_manifest_sha256": "d49648ed32f81e99a5daa5397822c588a72b3e80c9962923287e125c30fb7f75",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10371,
-        "sha256": "ac0e054e14982e3f5c56eb8bd5cf4f5a84abe06208ee4b00b2141a25dd9ea9db"
+        "declarations": 10382,
+        "sha256": "73c5a6532823c37ef4131c1ed6ba2736fb47424ebf3860668dcf392f6d63ae03"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "a53469931caaf52a06accc38b94778d5e007a5b8",
-      "source_head_sha": "a53469931caaf52a06accc38b94778d5e007a5b8",
+      "checked_sha": "307dfe985c233861eaa26acda1cc2f6ab30596d7",
+      "source_head_sha": "307dfe985c233861eaa26acda1cc2f6ab30596d7",
       "ci_url": null,
-      "finished_at": "2026-10-20T11:25:28.846056+00:00",
+      "finished_at": "2026-10-20T11:34:01.274493+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "9e8ba3d32ff095e3a58d3818a34f9f29bea44d6eb1dc4c7cff8ca5aef3746e94",
+      "source_manifest_sha256": "d49648ed32f81e99a5daa5397822c588a72b3e80c9962923287e125c30fb7f75",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10371,
-        "sha256": "ac0e054e14982e3f5c56eb8bd5cf4f5a84abe06208ee4b00b2141a25dd9ea9db"
+        "declarations": 10382,
+        "sha256": "73c5a6532823c37ef4131c1ed6ba2736fb47424ebf3860668dcf392f6d63ae03"
       }
     }
   },
@@ -24197,7 +24197,7 @@
       "milestone": "M6a",
       "scope": "AUXILIARY",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "lean_declarations": [
         "Carleman.WeakSobolevJet.extendDirichlet_pairing_extend",
         "Carleman.IsWeakNegativeLaplacian.subdomain_orthogonal",
@@ -24217,6 +24217,59 @@
       "pr_url": null,
       "blocker": null,
       "scope_notes": "原Dirichlet弱解的强H¹穷竭，不把内域H²函数的零延拓当作原域H²函数；周期热估计极限后续。",
+      "independent_review_status": "PENDING",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "307dfe985c233861eaa26acda1cc2f6ab30596d7",
+        "source_head_sha": "307dfe985c233861eaa26acda1cc2f6ab30596d7",
+        "ci_url": null,
+        "finished_at": "2026-10-20T11:34:01.274493+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "d49648ed32f81e99a5daa5397822c588a72b3e80c9962923287e125c30fb7f75",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10382,
+          "sha256": "73c5a6532823c37ef4131c1ed6ba2736fb47424ebf3860668dcf392f6d63ae03"
+        }
+      },
+      "semantic_review": null,
+      "declaration_version": "307dfe985c233861eaa26acda1cc2f6ab30596d7"
+    },
+    {
+      "id": "C282",
+      "title": "域零延拓下的加权周期能量与谐波极限",
+      "paper_ref": "paper/main.tex:2672 Proposition A.3 的原域时间能量极限接口",
+      "paper_labels": [
+        "prop:continuousCE"
+      ],
+      "milestone": "M6a",
+      "scope": "AUXILIARY",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "lean_declarations": [],
+      "dependencies": [
+        "C281",
+        "C280"
+      ],
+      "pr_url": null,
+      "blocker": null,
+      "scope_notes": "用真实零延拓和同一高斯空间权连接内域与原域四个Bochner场。全周期态闭包后续。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -56901,8 +56954,8 @@
         "C275"
       ],
       "base_commit": "a53469931caaf52a06accc38b94778d5e007a5b8",
-      "status": "RUNNING",
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "checkpoint_commit": "307dfe985c233861eaa26acda1cc2f6ab30596d7",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.WeakSobolevJet.extendDirichlet_pairing_extend",
@@ -56916,10 +56969,39 @@
         "Carleman.exists_dirichlet_exhaustion_graph_approximation",
         "Carleman.exists_halfspaceSmoothInner_graph_approximation"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "307dfe985c233861eaa26acda1cc2f6ab30596d7",
+        "source_head_sha": "307dfe985c233861eaa26acda1cc2f6ab30596d7",
+        "ci_url": null,
+        "finished_at": "2026-10-20T11:34:01.274493+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "d49648ed32f81e99a5daa5397822c588a72b3e80c9962923287e125c30fb7f75",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10382,
+          "sha256": "73c5a6532823c37ef4131c1ed6ba2736fb47424ebf3860668dcf392f6d63ae03"
+        }
+      },
       "blocker": null,
       "attempts": [],
-      "next_action": "用原弱方程的能量正交及真实紧支测试逼近，证明内域解零延拓在完整H¹强收敛到同一原域解。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "local_validation": {
         "target": "Carleman.Spatial.InnerGraphLimit",
         "target_jobs": 3544,
@@ -56930,7 +57012,38 @@
         "recursive_axiom_declarations": 10382,
         "axiom_exit_code": 0,
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "307dfe985c233861eaa26acda1cc2f6ab30596d7"
+    },
+    {
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "branch": "main",
+      "pr_url": null,
+      "integration_mode": "direct-main",
+      "id": "T266",
+      "title": "域零延拓下的加权周期能量与谐波极限",
+      "goal_ids": [
+        "C282"
+      ],
+      "acceptance": [
+        "真实空间/时间零延拓保持实际权范数和观察指标",
+        "谐波弱梯度及时间/算子字段的精确代表",
+        "内域谐波的原空间四字段强收敛"
+      ],
+      "dependencies": [
+        "C281",
+        "C280"
+      ],
+      "base_commit": "307dfe985c233861eaa26acda1cc2f6ab30596d7",
+      "status": "RUNNING",
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [],
+      "next_action": "建立真实零延拓CLM、加权能量恒等式及谐波四字段收敛，连接内域估计与原周期图。"
     }
   ],
   "private_maintenance": {
