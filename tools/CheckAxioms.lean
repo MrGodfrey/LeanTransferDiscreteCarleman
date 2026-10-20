@@ -7838,6 +7838,27 @@ set_option pp.maxSteps 1000000
 #check @Carleman.p1_finite_time_test_Linfty_consistency
 #print axioms Carleman.p1_finite_time_test_Linfty_consistency
 
+#check @Carleman.finite_tensor_test_bounded
+#print axioms Carleman.finite_tensor_test_bounded
+#check @Carleman.finiteTensorTestMultiplier
+#print axioms Carleman.finiteTensorTestMultiplier
+#check @Carleman.finiteTensorTestMultiplier_value
+#print axioms Carleman.finiteTensorTestMultiplier_value
+#check @Carleman.L2_tendsto_of_Linfty_error
+#print axioms Carleman.L2_tendsto_of_Linfty_error
+#check @Carleman.cartesianFiniteTestProduct
+#print axioms Carleman.cartesianFiniteTestProduct
+#check @Carleman.p1FiniteTestProduct
+#print axioms Carleman.p1FiniteTestProduct
+#check @Carleman.cartesian_finite_test_product_strong_convergence
+#print axioms Carleman.cartesian_finite_test_product_strong_convergence
+#check @Carleman.p1_finite_test_product_strong_convergence
+#print axioms Carleman.p1_finite_test_product_strong_convergence
+#check @Carleman.cartesian_finite_test_potential_strong_convergence
+#print axioms Carleman.cartesian_finite_test_potential_strong_convergence
+#check @Carleman.p1_finite_test_potential_strong_convergence
+#print axioms Carleman.p1_finite_test_potential_strong_convergence
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

@@ -11,8 +11,8 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T195",
-    "supervisor_checked_at": "2026-10-20T02:14:39.069780+00:00",
-    "next_action": "将原有限测试的L∞误差转为实际产品L²强极限，连接真实原平均势。",
+    "supervisor_checked_at": "2026-10-20T02:19:40.662742+00:00",
+    "next_action": "固定完整原势乘积证明并进行独立数学验收，继续原弱方程的极限。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T02:14:39.069780+00:00"
@@ -18161,7 +18161,18 @@
       "paper_labels": [
         "prop:control-convergence"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.finite_tensor_test_bounded",
+        "Carleman.finiteTensorTestMultiplier",
+        "Carleman.finiteTensorTestMultiplier_value",
+        "Carleman.L2_tendsto_of_Linfty_error",
+        "Carleman.cartesianFiniteTestProduct",
+        "Carleman.p1FiniteTestProduct",
+        "Carleman.cartesian_finite_test_product_strong_convergence",
+        "Carleman.p1_finite_test_product_strong_convergence",
+        "Carleman.cartesian_finite_test_potential_strong_convergence",
+        "Carleman.p1_finite_test_potential_strong_convergence"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -43335,14 +43346,40 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.finite_tensor_test_bounded",
+        "Carleman.finiteTensorTestMultiplier",
+        "Carleman.finiteTensorTestMultiplier_value",
+        "Carleman.L2_tendsto_of_Linfty_error",
+        "Carleman.cartesianFiniteTestProduct",
+        "Carleman.p1FiniteTestProduct",
+        "Carleman.cartesian_finite_test_product_strong_convergence",
+        "Carleman.p1_finite_test_product_strong_convergence",
+        "Carleman.cartesian_finite_test_potential_strong_convergence",
+        "Carleman.p1_finite_test_potential_strong_convergence"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "T194本地3576定向/4182全库jobs、8670项公理审计PASS；固定版本独立验收进行中。"
+        "T194本地3576定向/4182全库jobs、8670项公理审计PASS；固定版本独立验收进行中。",
+        "10项正式声明完整probe exit0；3591定向jobs、4184全库jobs及8699项递归公理审计PASS。"
       ],
-      "next_action": "将原有限测试的L∞误差转为实际产品L²强极限，连接真实原平均势。",
-      "integration_mode": "direct-main"
+      "next_action": "固定完整原势乘积证明并进行独立数学验收，继续原弱方程的极限。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4184,
+        "recursive_axiom_audit": 8699,
+        "new_explicit_declarations": 10,
+        "declaration_artifact_sha256": "cad038574e32997e7a2a6a743d11c7850db109f295a561d59864f124f9026847",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING; fixed proof commit follows"
+      }
     }
   ],
   "private_maintenance": {

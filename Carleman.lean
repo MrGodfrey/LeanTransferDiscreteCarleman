@@ -1005,3 +1005,6 @@ public import Carleman.Control.CartesianTensorTestConsistency
 public import Carleman.Control.SpatialTestUniformError
 public import Carleman.Control.TensorTestUniformError
 public import Carleman.Control.TensorTestUniformConsistency
+
+public import Carleman.Control.FiniteTensorTestMultiplier
+public import Carleman.Control.FiniteTestPotentialConsistency
