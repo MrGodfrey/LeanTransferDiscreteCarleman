@@ -1927,3 +1927,7 @@ T226独立报告F1要求的同一H上正自伴平方根、D(Ahalf)=V、Ahalf²=A
 ### T249 / C265 — actual weighted Hessian integration
 
 `Spatial.WeightedHessianIdentity` proves two actual whole-space integration-by-parts identities for a genuine compactly supported C∞ weight η and arbitrary global C∞ u,g. The full ordered Hessian square sum satisfies ∫η[(Δu)²−Σij(DiDju)²]=∫κ F(u,g) whenever the true derivative identity Dη=−κDg holds; F is exactly T248's original flux. All product-rule weight terms, mixed derivative order, signs, finite sums and integrability are checked. The same weight identity gives ∫κ‖∇g‖²=∫ηΔg. The actual level cutoffs and their chain rule, layer limits, strong H² boundary approximation and uniform estimates remain pending. AUXILIARY18/26. See `analysis/T249-weighted-hessian-identity.md`.
+
+### T250 / C266 — actual smooth level cutoff and layer
+
+`Geometry.SmoothLevelCutoff` defines actual ηε=transition((a−g−ε)/ε), κε=transition'((a−g−ε)/ε)/ε. It proves global C∞, 0≤η≤1, κ≥0, exact Dη=−κDg, both closed plateau derivative zeros, full support inclusions tsuppη⊆{g≤a−ε} and tsuppκ⊆{a−2ε≤g≤a−ε}, genuine compactness when closure{g<a} is compact, and pointwise indicator convergence for every positive εn→0. Substitution into T249 internally supplies all weight/derivative qualifications for both exact integrals. ε>0 is explicit for all geometric and positivity uses; no boundary measure-zero hypothesis. Classical AUXILIARY18/26; layer bounds/limits, uniform Hessian estimate and strong H² approximation remain pending. See `analysis/T250-smooth-level-cutoff.md`.

@@ -9143,6 +9143,47 @@ set_option pp.maxSteps 1000000
 #check Carleman.weighted_level_gradient_mass
 #print axioms Carleman.weighted_level_gradient_mass
 
+#check Carleman.smoothTransition_deriv_zero_of_nonpos
+#print axioms Carleman.smoothTransition_deriv_zero_of_nonpos
+#check Carleman.smoothTransition_deriv_zero_of_one_le
+#print axioms Carleman.smoothTransition_deriv_zero_of_one_le
+#check Carleman.levelCutoff
+#print axioms Carleman.levelCutoff
+#check Carleman.levelLayerWeight
+#print axioms Carleman.levelLayerWeight
+#check Carleman.levelCutoff_contDiff
+#print axioms Carleman.levelCutoff_contDiff
+#check Carleman.levelLayerWeight_contDiff
+#print axioms Carleman.levelLayerWeight_contDiff
+#check Carleman.levelCutoff_bounds
+#print axioms Carleman.levelCutoff_bounds
+#check Carleman.levelLayerWeight_nonneg
+#print axioms Carleman.levelLayerWeight_nonneg
+#check Carleman.levelCutoff_zero
+#print axioms Carleman.levelCutoff_zero
+#check Carleman.levelCutoff_one
+#print axioms Carleman.levelCutoff_one
+#check Carleman.levelLayerWeight_zero_outer
+#print axioms Carleman.levelLayerWeight_zero_outer
+#check Carleman.levelLayerWeight_zero_inner
+#print axioms Carleman.levelLayerWeight_zero_inner
+#check Carleman.levelCutoff_fderiv
+#print axioms Carleman.levelCutoff_fderiv
+#check Carleman.levelCutoff_tsupport
+#print axioms Carleman.levelCutoff_tsupport
+#check Carleman.levelLayerWeight_tsupport
+#print axioms Carleman.levelLayerWeight_tsupport
+#check Carleman.levelCutoff_compact
+#print axioms Carleman.levelCutoff_compact
+#check Carleman.levelLayerWeight_compact
+#print axioms Carleman.levelLayerWeight_compact
+#check Carleman.levelCutoff_tendsto
+#print axioms Carleman.levelCutoff_tendsto
+#check Carleman.levelCutoff_hessian_identity
+#print axioms Carleman.levelCutoff_hessian_identity
+#check Carleman.levelCutoff_gradient_mass
+#print axioms Carleman.levelCutoff_gradient_mass
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
