@@ -1618,3 +1618,7 @@ T188 的状态弱极限位于真实 Bochner L²_tL²_x；T183–T185 的原势�
 ## T208 / C224 — 原 conforming 状态紧性、六项测试与 P1 节点身份
 
 实际方程的预算内部产生同一 H¹₀ 时间弱极限和同一子列的原值/梯度弱极限；原六项分部求和恒等式在真实重构空间精确成立，完整 P1 节点测试的 Galerkin 提升等于已证真实 Dirichlet 插值。详见 [T208 分析](analysis/T208-conforming-compactness.md)。尚待原时间平均势与全部 P1 控制极限整合，AUXILIARY、17/26。
+
+## T209 / C225 — 原平均势与 P1 实际有限测试强一致性
+
+真实时间胞平均势的 value/bound 与 Bochner 产品乘法交换精确成立，原平均势弱配对接真实强测试；完整 P1 原物理测试序列的值、真实差分、梯度与初终端点均强一致，无 h/dt 耦合或端点消失条件。详见 [T209 分析](analysis/T209-conforming-potential.md)。完整 P1 弱控制方程整合待续，AUXILIARY、17/26。

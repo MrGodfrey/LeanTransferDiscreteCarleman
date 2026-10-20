@@ -1041,3 +1041,5 @@ public import Carleman.Control.ConformingStateTimeEnergy
 public import Carleman.Control.ConformingStateWeakCompactness
 public import Carleman.Control.ConformingWeakTesting
 public import Carleman.Control.P1GalerkinTests
+public import Carleman.Control.TimeAveragedProductPotential
+public import Carleman.Control.P1FiniteTestConsistency

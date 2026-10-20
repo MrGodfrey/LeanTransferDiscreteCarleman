@@ -11,8 +11,8 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T209",
-    "supervisor_checked_at": "2026-10-20T04:07:54.922574+00:00",
-    "next_action": "识别同一原势的真实时间胞平均与产品重构乘法，并给实际P1有限测试的值、差分、梯度及端点强极限。",
+    "supervisor_checked_at": "2026-10-20T04:13:58.923288+00:00",
+    "next_action": "固定原时间平均势、真实乘法重构及P1值/差分/梯度/端点测试极限，交独立验收；继续六项完整原弱方程极限。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:08:11.035860+00:00"
@@ -19203,7 +19203,7 @@
       "paper_ref": "paper/main.tex:2366–2398, prop:control-convergence 的P1弱紧性和离散测试步骤",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -19248,7 +19248,23 @@
           "sha256": "d930712d0c91159de351723e623a9021d2cf021f810f7ce1a6ab702b41034353"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "7d343224295439a2c5b91f1128facfc9b42feafd",
+        "declarations": [
+          "Carleman.conforming_controlled_states_weak_subsequence",
+          "Carleman.conforming_forward_reconstructed_weak_identity",
+          "Carleman.conforming_fixed_forward_reconstructed_weak_identity",
+          "Carleman.SimplicialPartition.testGalerkinState",
+          "Carleman.SimplicialPartition.testGalerkinState_value",
+          "Carleman.SimplicialPartition.testGalerkinState_lift",
+          "Carleman.SimplicialPartition.testGalerkinState_finite_lift"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/82c6303e2eb3b2fccb6c3896df149f98d10e8c65/governance/reviews/T208-local-acceptance.md",
+        "reviewed_at": "2026-10-20T04:12:05+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C223",
         "C204",
@@ -19257,7 +19273,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "实际conforming状态弱紧性和六项恒等式，接原full P1测试；尚不声称完整P1控制极限，17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C225",
@@ -19270,7 +19286,19 @@
       "paper_labels": [
         "prop:control-convergence"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.time_average_product_potential",
+        "Carleman.fixedTimeCellPotential",
+        "Carleman.fixedTimeCellPotential_bound",
+        "Carleman.fixed_time_average_product_potential",
+        "Carleman.fixedTimeCellPotential_value",
+        "Carleman.time_average_reconstructed_weak_pairing",
+        "Carleman.p1FiniteTestSequence",
+        "Carleman.p1FiniteTestSequence_lift",
+        "Carleman.p1FiniteTestSequence_value",
+        "Carleman.full_p1_galerkin_finite_test_endpoint_consistency",
+        "Carleman.full_p1_galerkin_finite_time_test_consistency"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -20503,6 +20531,11 @@
       "at": "2026-10-20T04:07:53.392310+00:00",
       "public_summary": "实际有限元状态的H¹能量重构与统一预算已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c0ac2d84fb45eda398af02ddd2525c65a1f1789b/governance/reviews/T207-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T04:13:58.923288+00:00",
+      "public_summary": "原有限元状态弱紧性与完整重构测试恒等式已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/82c6303e2eb3b2fccb6c3896df149f98d10e8c65/governance/reviews/T208-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -20955,7 +20988,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9720d4b27b055716a613d8666a82fdb393f02d8e/governance/reviews/T204-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ac4d2338d0ccfec3dc8427b03a36d8bf6ed5d9a9/governance/reviews/T205-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bde2072a9e38de544618210ae8074113979b021f/governance/reviews/T206-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c0ac2d84fb45eda398af02ddd2525c65a1f1789b/governance/reviews/T207-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c0ac2d84fb45eda398af02ddd2525c65a1f1789b/governance/reviews/T207-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/82c6303e2eb3b2fccb6c3896df149f98d10e8c65/governance/reviews/T208-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -45829,10 +45863,10 @@
       ],
       "branch": "main",
       "base_commit": "fefa061545a3eaad908531f9a9b322fbab55707c",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "7d343224295439a2c5b91f1128facfc9b42feafd",
-      "merge_commit": null,
+      "merge_commit": "7d343224295439a2c5b91f1128facfc9b42feafd",
       "lean_declarations": [
         "Carleman.conforming_controlled_states_weak_subsequence",
         "Carleman.conforming_forward_reconstructed_weak_identity",
@@ -45877,7 +45911,7 @@
         "T207实际完整时间能量界4213根构建、8963递归公理审计PASS。",
         "三模块七声明目标3769 jobs、根4216 jobs和8979项递归公理审计均exit 0；原P1全空间节点测试与实际Dirichlet提升精确相等。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -45891,9 +45925,22 @@
         "declaration_artifact_sha256": "d930712d0c91159de351723e623a9021d2cf021f810f7ce1a6ab702b41034353",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "7d343224295439a2c5b91f1128facfc9b42feafd"
+      "declaration_version": "7d343224295439a2c5b91f1128facfc9b42feafd",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C224"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "7d343224295439a2c5b91f1128facfc9b42feafd",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T04:12:05+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/82c6303e2eb3b2fccb6c3896df149f98d10e8c65/governance/reviews/T208-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T209",
@@ -45922,14 +45969,41 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.time_average_product_potential",
+        "Carleman.fixedTimeCellPotential",
+        "Carleman.fixedTimeCellPotential_bound",
+        "Carleman.fixed_time_average_product_potential",
+        "Carleman.fixedTimeCellPotential_value",
+        "Carleman.time_average_reconstructed_weak_pairing",
+        "Carleman.p1FiniteTestSequence",
+        "Carleman.p1FiniteTestSequence_lift",
+        "Carleman.p1FiniteTestSequence_value",
+        "Carleman.full_p1_galerkin_finite_test_endpoint_consistency",
+        "Carleman.full_p1_galerkin_finite_time_test_consistency"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "T208原P1弱紧性和六项测试4216根构建、8979公理审计PASS。"
+        "T208原P1弱紧性和六项测试4216根构建、8979公理审计PASS。",
+        "两模块十一声明目标3799 jobs、根4218 jobs及9003项递归公理审计均exit 0；平均势bound使用已证原平均定理避免展开其积分构造。"
       ],
-      "next_action": "识别同一原势的真实时间胞平均与产品重构乘法，并给实际P1有限测试的值、差分、梯度及端点强极限。",
-      "integration_mode": "direct-main"
+      "next_action": "固定原时间平均势、真实乘法重构及P1值/差分/梯度/端点测试极限，交独立验收；继续六项完整原弱方程极限。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4218,
+        "recursive_axiom_audit": 9003,
+        "new_explicit_declarations": 11,
+        "declaration_artifact_sha256": "f783fbb89a9316eccb5772b11579c0cd8c1a99519b511c5bb1a9935073629fb5",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

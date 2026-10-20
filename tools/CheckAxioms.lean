@@ -8083,6 +8083,31 @@ set_option pp.maxSteps 1000000
 #check @Carleman.SimplicialPartition.testGalerkinState_finite_lift
 #print axioms Carleman.SimplicialPartition.testGalerkinState_finite_lift
 
+
+-- T209: original averaged potential and actual full P1 finite-test consistency.
+#check @Carleman.time_average_product_potential
+#print axioms Carleman.time_average_product_potential
+#check @Carleman.fixedTimeCellPotential
+#print axioms Carleman.fixedTimeCellPotential
+#check @Carleman.fixedTimeCellPotential_bound
+#print axioms Carleman.fixedTimeCellPotential_bound
+#check @Carleman.fixed_time_average_product_potential
+#print axioms Carleman.fixed_time_average_product_potential
+#check @Carleman.fixedTimeCellPotential_value
+#print axioms Carleman.fixedTimeCellPotential_value
+#check @Carleman.time_average_reconstructed_weak_pairing
+#print axioms Carleman.time_average_reconstructed_weak_pairing
+#check @Carleman.p1FiniteTestSequence
+#print axioms Carleman.p1FiniteTestSequence
+#check @Carleman.p1FiniteTestSequence_lift
+#print axioms Carleman.p1FiniteTestSequence_lift
+#check @Carleman.p1FiniteTestSequence_value
+#print axioms Carleman.p1FiniteTestSequence_value
+#check @Carleman.full_p1_galerkin_finite_test_endpoint_consistency
+#print axioms Carleman.full_p1_galerkin_finite_test_endpoint_consistency
+#check @Carleman.full_p1_galerkin_finite_time_test_consistency
+#print axioms Carleman.full_p1_galerkin_finite_time_test_consistency
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
