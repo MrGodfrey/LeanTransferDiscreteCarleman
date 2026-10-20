@@ -7634,6 +7634,33 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesian_controlled_states_weak_subsequence
 #print axioms Carleman.cartesian_controlled_states_weak_subsequence
 
+#check @Carleman.Physical.physical_summation_by_parts
+#print axioms Carleman.Physical.physical_summation_by_parts
+#check @Carleman.Physical.forward_equation_weak_identity
+#print axioms Carleman.Physical.forward_equation_weak_identity
+#check @Carleman.timeCellReconstruction_difference_inner
+#print axioms Carleman.timeCellReconstruction_difference_inner
+#check @Carleman.fixedTimeCellReconstruction_inner
+#print axioms Carleman.fixedTimeCellReconstruction_inner
+#check @Carleman.fixedTimeCellReconstruction_difference_inner
+#print axioms Carleman.fixedTimeCellReconstruction_difference_inner
+#check @Carleman.cartesianPhysicalLaplacian_gradient_pairing
+#print axioms Carleman.cartesianPhysicalLaplacian_gradient_pairing
+#check @Carleman.cartesian_forward_reconstructed_weak_identity
+#print axioms Carleman.cartesian_forward_reconstructed_weak_identity
+#check @Carleman.cartesianBoxCellControl
+#print axioms Carleman.cartesianBoxCellControl
+#check @Carleman.cartesianBoxReconstructedPotential
+#print axioms Carleman.cartesianBoxReconstructedPotential
+#check @Carleman.cartesianBoxReconstructedPotential_commute
+#print axioms Carleman.cartesianBoxReconstructedPotential_commute
+#check @Carleman.cartesian_fixed_forward_reconstructed_weak_identity
+#print axioms Carleman.cartesian_fixed_forward_reconstructed_weak_identity
+#check @Carleman.timeCellReconstruction_multiplier_inner
+#print axioms Carleman.timeCellReconstruction_multiplier_inner
+#check @Carleman.fixedTimeCellReconstruction_multiplier_inner
+#print axioms Carleman.fixedTimeCellReconstruction_multiplier_inner
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

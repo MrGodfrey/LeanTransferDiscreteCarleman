@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T188",
-    "supervisor_checked_at": "2026-10-20T00:44:23.021726+00:00",
-    "next_action": "T188实际状态H¹₀弱子列已通过本地构建和8496项审计；固定版本后进行独立验收。",
+    "current_task_id": "T189",
+    "supervisor_checked_at": "2026-10-20T00:56:24.386131+00:00",
+    "next_action": "T189原方程完整弱恒等式已本地构建审计通过，固定版本后独立验收。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-20T00:44:23.021726+00:00"
+    "last_activity_at": "2026-10-20T00:56:24.386131+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "69cee61bd440c386c2ac20af6104f72e98b3563c",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39283003361/attempts/1",
-      "finished_at": "2026-10-19T16:10:31.453779+00:00",
+      "checked_sha": "32711e6669f223eba5851b43e9ec886a40c45b6e",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39349472901/attempts/1",
+      "finished_at": "2026-10-20T00:47:43.690892+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "69cee61bd440c386c2ac20af6104f72e98b3563c"
+      "source_head_sha": "32711e6669f223eba5851b43e9ec886a40c45b6e"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "69cee61bd440c386c2ac20af6104f72e98b3563c",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39283003361/attempts/1",
-      "finished_at": "2026-10-19T16:10:31.453779+00:00",
+      "checked_sha": "32711e6669f223eba5851b43e9ec886a40c45b6e",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39349472901/attempts/1",
+      "finished_at": "2026-10-20T00:47:43.690892+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "69cee61bd440c386c2ac20af6104f72e98b3563c"
+      "source_head_sha": "32711e6669f223eba5851b43e9ec886a40c45b6e"
     }
   },
   "milestones": [
@@ -17542,7 +17542,7 @@
       "paper_ref": "Corollary 7.9: actual controlled states are weakly compact in L²(0,T;H¹₀)",
       "milestone": "M6b",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -17572,16 +17572,98 @@
         "Carleman.cartesian_state_dirichlet_time_uniform",
         "Carleman.cartesian_controlled_states_weak_subsequence"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "32711e6669f223eba5851b43e9ec886a40c45b6e",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "32711e6669f223eba5851b43e9ec886a40c45b6e",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39349472901/attempts/1",
+        "finished_at": "2026-10-20T00:47:43.690892+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "32711e6669f223eba5851b43e9ec886a40c45b6e"
+      },
+      "semantic_review": {
+        "checked_sha": "32711e6669f223eba5851b43e9ec886a40c45b6e",
+        "declarations": [
+          "Carleman.timeCellReconstruction_map",
+          "Carleman.fixedTimeCellReconstruction_map",
+          "Carleman.DirichletEnergyState",
+          "Carleman.dirichletEnergyStateNormedAddCommGroup",
+          "Carleman.dirichletEnergyStateInnerProductSpace",
+          "Carleman.dirichletEnergyStateEquiv",
+          "Carleman.dirichletStateValue",
+          "Carleman.dirichletStateGradient",
+          "Carleman.dirichletEnergyState_norm_sq",
+          "Carleman.dirichletEnergyState_complete",
+          "Carleman.dirichletEnergyStateSecondCountable",
+          "Carleman.dirichlet_time_norm_sq",
+          "Carleman.exists_dirichlet_time_weak_subsequence",
+          "Carleman.cartesianBoxDirichletState",
+          "Carleman.cartesianBoxDirichletState_value",
+          "Carleman.cartesianBoxDirichletState_gradient",
+          "Carleman.cartesianBoxDirichletState_value_norm_le",
+          "Carleman.timeCellReconstruction_norm_sq_le",
+          "Carleman.fixedTimeCellReconstruction_norm_sq_le",
+          "Carleman.cartesian_state_node_uniform",
+          "Carleman.stateTimeEnergyBound",
+          "Carleman.cartesian_state_dirichlet_time_uniform",
+          "Carleman.cartesian_controlled_states_weak_subsequence"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4e753a25217da7db59cbf5dc6e1c65bf33c966be/governance/reviews/T188-local-acceptance.md",
+        "reviewed_at": "2026-10-20T00:53:09+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C203",
         "C145"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "构造真实H¹₀值时间重构及其弱收敛子列；沿同一子列连接真实R_h值/梯度与E_h。极限方程与端点仍待。"
+      "scope_notes": "构造真实H¹₀值时间重构及其弱收敛子列；沿同一子列连接真实R_h值/梯度与E_h。极限方程与端点仍待。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C205",
+      "title": "原差分状态方程的完整时空弱恒等式",
+      "paper_ref": "Corollary 7.9: test the original forward equation with dt phi^(n-1) and sum by parts",
+      "milestone": "M6b",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:control-convergence",
+        "eq:conv-limit-identity"
+      ],
+      "lean_declarations": [
+        "Carleman.Physical.physical_summation_by_parts",
+        "Carleman.Physical.forward_equation_weak_identity",
+        "Carleman.timeCellReconstruction_difference_inner",
+        "Carleman.fixedTimeCellReconstruction_inner",
+        "Carleman.fixedTimeCellReconstruction_difference_inner",
+        "Carleman.cartesianPhysicalLaplacian_gradient_pairing",
+        "Carleman.cartesian_forward_reconstructed_weak_identity",
+        "Carleman.cartesianBoxCellControl",
+        "Carleman.cartesianBoxReconstructedPotential",
+        "Carleman.cartesianBoxReconstructedPotential_commute",
+        "Carleman.cartesian_fixed_forward_reconstructed_weak_identity",
+        "Carleman.timeCellReconstruction_multiplier_inner",
+        "Carleman.fixedTimeCellReconstruction_multiplier_inner"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C204",
+        "C198"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "原完整差分方程的精确时间分部求和及实际时空重构身份；保留任意测试、初终端点、真实平均势、梯度与控制；尚不声称极限PDE。"
     }
   ],
   "events": [
@@ -18684,6 +18766,20 @@
     {
       "at": "2026-10-20T00:44:23.021726+00:00",
       "public_summary": "T188原受控状态在实际L²(0,T;H¹₀)中的弱子列已通过本地验证；同一子列保留值、弱梯度与原E_h弱极限，独立验收待定。"
+    },
+    {
+      "at": "2026-10-20T00:52:46.688236+00:00",
+      "public_summary": "T188真实H¹₀时空弱子列同SHA三项CI通过，独立验收待最终签发；继续原状态方程的完整时空弱恒等式。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39349472901/attempts/1"
+    },
+    {
+      "at": "2026-10-20T00:54:37.585114+00:00",
+      "public_summary": "T188实际H¹₀时空状态弱紧性已独立验收销项；已完成阶段验收队列清空，T189继续完整弱恒等式。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4e753a25217da7db59cbf5dc6e1c65bf33c966be/governance/reviews/T188-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T00:56:24.386131+00:00",
+      "public_summary": "原方程完整时空弱恒等式已通过本地构建和公理审计；任意测试、实际重构及初终端点均保留，待独立验收。"
     }
   ],
   "snapshot": {
@@ -19111,7 +19207,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39282223997/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/28503a72422ab4837f8c8485f839956505ceddbc/governance/reviews/T186-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39283003361/attempts/1",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/74280d45d211f473b5f4273caedc64ec1678606b/governance/reviews/T187-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/74280d45d211f473b5f4273caedc64ec1678606b/governance/reviews/T187-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39349472901/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4e753a25217da7db59cbf5dc6e1c65bf33c966be/governance/reviews/T188-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -41965,10 +42063,10 @@
       ],
       "branch": "main",
       "base_commit": "69cee61bd440c386c2ac20af6104f72e98b3563c",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "32711e6669f223eba5851b43e9ec886a40c45b6e",
+      "merge_commit": "32711e6669f223eba5851b43e9ec886a40c45b6e",
       "lean_declarations": [
         "Carleman.timeCellReconstruction_map",
         "Carleman.fixedTimeCellReconstruction_map",
@@ -41994,12 +42092,23 @@
         "Carleman.cartesian_state_dirichlet_time_uniform",
         "Carleman.cartesian_controlled_states_weak_subsequence"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "32711e6669f223eba5851b43e9ec886a40c45b6e",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39349472901/attempts/1",
+        "finished_at": "2026-10-20T00:47:43.690892+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "32711e6669f223eba5851b43e9ec886a40c45b6e"
+      },
       "blocker": null,
       "attempts": [
         "四模块23声明；实际状态弱紧性定向3562 jobs、全库4162 jobs及8496项递归公理审计通过。显式载体与原H¹₀线性等距，解决嵌套子空间推断但不改变范数或边界。"
       ],
-      "next_action": "固定提交并推送main，交独立Agent逐声明对照原文及同SHA远端CI验收。",
+      "next_action": "实际H¹₀时空弱子列已独立验收；T189继续原状态方程的完整弱恒等式。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -42011,6 +42120,92 @@
         "recursive_axiom_audit": 8496,
         "new_explicit_declarations": 23,
         "declaration_artifact_sha256": "159923657328ca21cb77a705b82348ca66305ba1181a176556b3c97a09aafbb4",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "32711e6669f223eba5851b43e9ec886a40c45b6e",
+      "ci_relationship": {
+        "proof_head": "32711e6669f223eba5851b43e9ec886a40c45b6e",
+        "checked_sha": "32711e6669f223eba5851b43e9ec886a40c45b6e",
+        "run_id": 39349472901,
+        "all_jobs": "lean/state-check/dashboard completed/success; root independently read exact run and all three jobs",
+        "actual_build_jobs": 4162,
+        "recursive_axiom_audit": 8496,
+        "new_explicit_declarations": 23,
+        "declaration_artifact_sha256": "159923657328ca21cb77a705b82348ca66305ba1181a176556b3c97a09aafbb4",
+        "local_remote_artifacts_identical": true
+      },
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C204"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "32711e6669f223eba5851b43e9ec886a40c45b6e",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T00:53:09+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4e753a25217da7db59cbf5dc6e1c65bf33c966be/governance/reviews/T188-local-acceptance.md"
+        }
+      ]
+    },
+    {
+      "id": "T189",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原差分状态方程的完整时空弱恒等式",
+      "goal_ids": [
+        "C205"
+      ],
+      "acceptance": [
+        "前一时间层测试及初终端点符号和时间指标与原文一致",
+        "原完整状态空间任意测试，不要求测试满足伴随方程",
+        "实际E_h、Kuhn全梯度、平均势与控制的真实Bochner配对",
+        "固定物理域及时间区间，不能用假设替代方程或配对身份"
+      ],
+      "dependencies": [
+        "C204",
+        "C198"
+      ],
+      "branch": "main",
+      "base_commit": "32711e6669f223eba5851b43e9ec886a40c45b6e",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.Physical.physical_summation_by_parts",
+        "Carleman.Physical.forward_equation_weak_identity",
+        "Carleman.timeCellReconstruction_difference_inner",
+        "Carleman.fixedTimeCellReconstruction_inner",
+        "Carleman.fixedTimeCellReconstruction_difference_inner",
+        "Carleman.cartesianPhysicalLaplacian_gradient_pairing",
+        "Carleman.cartesian_forward_reconstructed_weak_identity",
+        "Carleman.cartesianBoxCellControl",
+        "Carleman.cartesianBoxReconstructedPotential",
+        "Carleman.cartesianBoxReconstructedPotential_commute",
+        "Carleman.cartesian_fixed_forward_reconstructed_weak_identity",
+        "Carleman.timeCellReconstruction_multiplier_inner",
+        "Carleman.fixedTimeCellReconstruction_multiplier_inner"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "五模块13声明，实际物理分部求和及固定域Bochner弱恒等式；定向3547 jobs、全库4167 jobs、8516项递归公理审计通过。"
+      ],
+      "next_action": "固定证明提交并推送main，独立Agent对照原文与同SHA正式CI验收；极限方程仍待后续证明。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4167,
+        "recursive_axiom_audit": 8516,
+        "new_explicit_declarations": 13,
+        "declaration_artifact_sha256": "d9688ed0af3f9583f3cfb615110597b1f7ce005f8971b39b301afa586becbb49",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed SHA required"

@@ -401,3 +401,7 @@
 - T187 / C203：二十声明独立20/20 PASS；真实物理状态方程内部供应梯度预算，原E/R同弱极限结论忠实，仍显式保留R弱收敛、初值/控制预算及dt M≤1/2。三项实际作业完整日志独立核验成功，API摘要迟滞如实单列；8453项raw逐字节核对。 固定证明 `69cee61bd440c386c2ac20af6104f72e98b3563c`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/74280d45d211f473b5f4273caedc64ec1678606b/governance/reviews/T187-local-acceptance.md)。原文17/26；已完成阶段的验收队列清空，执行状态记录为IDLE检查点；后续原状态弱紧性与极限PDE仍待证明。
 
 - T188 / C204：原受控状态的真实L²(0,T;H¹₀)弱子列，四模块23声明；3562定向jobs、4162全库jobs及8496项递归公理审计PASS。同一子列识别原R_h值、梯度与E_h；极限PDE/端点仍待。固定SHA独立验收和远端CI随后进行，范围AUXILIARY，原文17/26。
+
+- T188 / C204：23/23独立PASS；实际原H¹₀能量载体、原方程内部预算与同一严格子列的四组全测试极限忠实，无预设R_h弱极限。三项CI均completed/success，8496项raw逐字节核对。 固定证明 `32711e6669f223eba5851b43e9ec886a40c45b6e`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4e753a25217da7db59cbf5dc6e1c65bf33c966be/governance/reviews/T188-local-acceptance.md)。原文17/26；当前执行任务不变。
+
+- T189 / C205：原差分状态方程完整时空弱恒等式，五模块13声明；本地根构建4167 jobs、公理审计8516项PASS；固定版本后独立验收，极限PDE与端点识别仍待，原文17/26。

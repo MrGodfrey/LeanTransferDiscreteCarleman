@@ -984,3 +984,8 @@ public import Carleman.Control.DirichletTimeWeakCompactness
 public import Carleman.Control.CartesianDirichletReconstruction
 public import Carleman.Control.CartesianStateTimeEnergy
 public import Carleman.Control.CartesianStateWeakCompactness
+public import Carleman.Control.PhysicalWeakTesting
+public import Carleman.Control.TimeWeakTesting
+public import Carleman.Control.CartesianWeakTesting
+public import Carleman.Control.FixedBoxWeakTesting
+public import Carleman.Control.TimePotentialPairing
