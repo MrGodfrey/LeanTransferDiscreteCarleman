@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T216",
-    "supervisor_checked_at": "2026-10-20T04:54:48.707042+00:00",
+    "supervisor_checked_at": "2026-10-20T05:00:04.809319+00:00",
     "next_action": "从实际迭代坐标导数构造所有阶紧支光滑测试射流及原H₀ᵐ闭包、稠密值嵌入，为原高阶变系数算子建立边界空间。",
     "blocker": null,
     "pause_reason": null,
@@ -19745,7 +19745,7 @@
       "paper_ref": "paper/main.tex:2338–2415, prop:control-convergence 原能量解的强对偶表述与识别",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -19791,7 +19791,24 @@
           "sha256": "abc0b30a79815079dd1a0bd41cc2818b1ad6fa91a597dceccda9539a4f63b39c"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "2bbedbc1881148eb48d0280570a98d0234ef0813",
+        "declarations": [
+          "Carleman.HasWeakTimeDerivative.of_injective_map_integral",
+          "Carleman.dirichlet_dual_mass_weak_iff",
+          "Carleman.dirichlet_dual_energy_memLp",
+          "Carleman.DirichletEnergySolution",
+          "Carleman.DirichletNullControlState.energy_solution",
+          "Carleman.DirichletEnergySolution.mass_weak_time_derivative",
+          "Carleman.DirichletEnergySolution.unique",
+          "Carleman.FiniteDirichletControlIdentity.unique_energy_solution"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/acc193c0a9a79624439b8af36a929bfa3a47367b/governance/reviews/T215-local-acceptance.md",
+        "reviewed_at": "2026-10-20T04:56:20+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C216",
         "C222",
@@ -19800,7 +19817,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "原V′值弱方程和连续初迹，不输入零终态或目标唯一性；17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C232",
@@ -19813,11 +19830,43 @@
       "paper_labels": [
         "prop:spatial-operators"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.SpatialTest.eq_of_value_eq",
+        "Carleman.SpatialTest.wordTest",
+        "Carleman.SpatialTest.wordTest_perm",
+        "Carleman.SpatialTest.multiTest",
+        "Carleman.SpatialTest.multiTest_nil",
+        "Carleman.SpatialTest.multiTest_cons",
+        "Carleman.SpatialTest.allOrderJet",
+        "Carleman.SpatialTest.allOrderJet_value",
+        "Carleman.SpatialTest.allOrderJet_component",
+        "Carleman.SpatialTest.allOrderJet_truncate",
+        "Carleman.SpatialTest.allOrderJet_one",
+        "Carleman.SpatialTest.zeroTest_allOrderJet",
+        "Carleman.SpatialTest.addTest_allOrderJet",
+        "Carleman.SpatialTest.smulTest_allOrderJet",
+        "Carleman.higherDirichletJetSpace",
+        "Carleman.higherDirichletSubspace",
+        "Carleman.higherDirichletSubspace_sobolev",
+        "Carleman.test_mem_higherDirichletJetSpace",
+        "Carleman.test_mem_higherDirichletSubspace",
+        "Carleman.higherDirichletJetSpace_eq_closure",
+        "Carleman.mem_higherDirichletJetSpace_iff",
+        "Carleman.higherDirichletSubspace_closed",
+        "Carleman.higherDirichletSubspace_dense",
+        "Carleman.higherDirichletSubspace_one",
+        "Carleman.higherDirichletEnergy_complete"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
-      "dependencies": [],
+      "dependencies": [
+        "C024",
+        "C055",
+        "C056",
+        "C144",
+        "C161"
+      ],
       "blocker": null,
       "pr_url": null,
       "scope_notes": "任意阶原对称多重指标弱射流与紧支光滑闭包，不将m=1或光滑系数特例当一般算子；17/26。"
@@ -21075,6 +21124,11 @@
       "at": "2026-10-20T04:54:28.465243+00:00",
       "public_summary": "原连续能量解的零数据与唯一性已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/85fc7f94d5211094b5c538ccbcc37f2361690111/governance/reviews/T214-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T05:00:04.809319+00:00",
+      "public_summary": "原强对偶能量方程与唯一连续解的识别已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/acc193c0a9a79624439b8af36a929bfa3a47367b/governance/reviews/T215-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -21534,7 +21588,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/170de6eae9adde411801ce1a1684841e7e9f9e50/governance/reviews/T211-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5ac0a17bf01823f61003428674b282403ea6443c/governance/reviews/T212-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3a869e6b41c8a21d3e60f08ef657ed58164dd63b/governance/reviews/T213-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/85fc7f94d5211094b5c538ccbcc37f2361690111/governance/reviews/T214-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/85fc7f94d5211094b5c538ccbcc37f2361690111/governance/reviews/T214-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/acc193c0a9a79624439b8af36a929bfa3a47367b/governance/reviews/T215-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -47103,10 +47158,10 @@
       ],
       "branch": "main",
       "base_commit": "9662adfb01356f17d6bdb85ea93c7e47046373b0",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "2bbedbc1881148eb48d0280570a98d0234ef0813",
-      "merge_commit": null,
+      "merge_commit": "2bbedbc1881148eb48d0280570a98d0234ef0813",
       "lean_declarations": [
         "Carleman.HasWeakTimeDerivative.of_injective_map_integral",
         "Carleman.dirichlet_dual_mass_weak_iff",
@@ -47152,7 +47207,7 @@
         "T214六项唯一性声明4234根构建、9031公理审计PASS。",
         "七项定理与一个一般原能量解定义定向3646、全库4237 jobs与9054项递归公理审计均exit 0。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -47166,9 +47221,22 @@
         "declaration_artifact_sha256": "abc0b30a79815079dd1a0bd41cc2818b1ad6fa91a597dceccda9539a4f63b39c",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "2bbedbc1881148eb48d0280570a98d0234ef0813"
+      "declaration_version": "2bbedbc1881148eb48d0280570a98d0234ef0813",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C231"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "2bbedbc1881148eb48d0280570a98d0234ef0813",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T04:56:20+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/acc193c0a9a79624439b8af36a929bfa3a47367b/governance/reviews/T215-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T216",
@@ -47183,21 +47251,68 @@
         "原H₀ᵐ定义为紧支光滑测试在真实Hm中的闭包",
         "值嵌入、Hm闭性与L2稠密性，不额外假设测试射流存在"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "C024",
+        "C055",
+        "C056",
+        "C144",
+        "C161"
+      ],
       "branch": "main",
       "base_commit": "2bbedbc1881148eb48d0280570a98d0234ef0813",
       "status": "RUNNING",
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.SpatialTest.eq_of_value_eq",
+        "Carleman.SpatialTest.wordTest",
+        "Carleman.SpatialTest.wordTest_perm",
+        "Carleman.SpatialTest.multiTest",
+        "Carleman.SpatialTest.multiTest_nil",
+        "Carleman.SpatialTest.multiTest_cons",
+        "Carleman.SpatialTest.allOrderJet",
+        "Carleman.SpatialTest.allOrderJet_value",
+        "Carleman.SpatialTest.allOrderJet_component",
+        "Carleman.SpatialTest.allOrderJet_truncate",
+        "Carleman.SpatialTest.allOrderJet_one",
+        "Carleman.SpatialTest.zeroTest_allOrderJet",
+        "Carleman.SpatialTest.addTest_allOrderJet",
+        "Carleman.SpatialTest.smulTest_allOrderJet",
+        "Carleman.higherDirichletJetSpace",
+        "Carleman.higherDirichletSubspace",
+        "Carleman.higherDirichletSubspace_sobolev",
+        "Carleman.test_mem_higherDirichletJetSpace",
+        "Carleman.test_mem_higherDirichletSubspace",
+        "Carleman.higherDirichletJetSpace_eq_closure",
+        "Carleman.mem_higherDirichletJetSpace_iff",
+        "Carleman.higherDirichletSubspace_closed",
+        "Carleman.higherDirichletSubspace_dense",
+        "Carleman.higherDirichletSubspace_one",
+        "Carleman.higherDirichletEnergy_complete"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "已有一般弱射流Hilbert空间、坐标导数、测试弱导数和m=1闭包，可复用。"
+        "已有一般弱射流Hilbert空间、坐标导数、测试弱导数和m=1闭包，可复用。",
+        "两模块25项任意阶空间声明定向3221、全库4239 jobs与9130项递归公理审计均exit 0。"
       ],
       "next_action": "从实际迭代坐标导数构造所有阶紧支光滑测试射流及原H₀ᵐ闭包、稠密值嵌入，为原高阶变系数算子建立边界空间。",
-      "integration_mode": "direct-main"
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4239,
+        "recursive_axiom_audit": 9130,
+        "new_explicit_declarations": 25,
+        "declaration_artifact_sha256": "c917b89693ffedc332308f93df117eedddce1c4c6cc2f61b7a8a3aca413c2042",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

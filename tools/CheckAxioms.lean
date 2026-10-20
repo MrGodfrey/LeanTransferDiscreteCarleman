@@ -8193,6 +8193,58 @@ set_option pp.maxSteps 1000000
 #check @Carleman.FiniteDirichletControlIdentity.unique_energy_solution
 #print axioms Carleman.FiniteDirichletControlIdentity.unique_energy_solution
 
+-- T216: actual arbitrary-order compact tests and the original H0m closure.
+#check @Carleman.SpatialTest.eq_of_value_eq
+#print axioms Carleman.SpatialTest.eq_of_value_eq
+#check @Carleman.SpatialTest.wordTest
+#print axioms Carleman.SpatialTest.wordTest
+#check @Carleman.SpatialTest.wordTest_perm
+#print axioms Carleman.SpatialTest.wordTest_perm
+#check @Carleman.SpatialTest.multiTest
+#print axioms Carleman.SpatialTest.multiTest
+#check @Carleman.SpatialTest.multiTest_nil
+#print axioms Carleman.SpatialTest.multiTest_nil
+#check @Carleman.SpatialTest.multiTest_cons
+#print axioms Carleman.SpatialTest.multiTest_cons
+#check @Carleman.SpatialTest.allOrderJet
+#print axioms Carleman.SpatialTest.allOrderJet
+#check @Carleman.SpatialTest.allOrderJet_value
+#print axioms Carleman.SpatialTest.allOrderJet_value
+#check @Carleman.SpatialTest.allOrderJet_component
+#print axioms Carleman.SpatialTest.allOrderJet_component
+#check @Carleman.SpatialTest.allOrderJet_truncate
+#print axioms Carleman.SpatialTest.allOrderJet_truncate
+#check @Carleman.SpatialTest.allOrderJet_one
+#print axioms Carleman.SpatialTest.allOrderJet_one
+#check @Carleman.SpatialTest.zeroTest_allOrderJet
+#print axioms Carleman.SpatialTest.zeroTest_allOrderJet
+#check @Carleman.SpatialTest.addTest_allOrderJet
+#print axioms Carleman.SpatialTest.addTest_allOrderJet
+#check @Carleman.SpatialTest.smulTest_allOrderJet
+#print axioms Carleman.SpatialTest.smulTest_allOrderJet
+#check @Carleman.higherDirichletJetSpace
+#print axioms Carleman.higherDirichletJetSpace
+#check @Carleman.higherDirichletSubspace
+#print axioms Carleman.higherDirichletSubspace
+#check @Carleman.higherDirichletSubspace_sobolev
+#print axioms Carleman.higherDirichletSubspace_sobolev
+#check @Carleman.test_mem_higherDirichletJetSpace
+#print axioms Carleman.test_mem_higherDirichletJetSpace
+#check @Carleman.test_mem_higherDirichletSubspace
+#print axioms Carleman.test_mem_higherDirichletSubspace
+#check @Carleman.higherDirichletJetSpace_eq_closure
+#print axioms Carleman.higherDirichletJetSpace_eq_closure
+#check @Carleman.mem_higherDirichletJetSpace_iff
+#print axioms Carleman.mem_higherDirichletJetSpace_iff
+#check @Carleman.higherDirichletSubspace_closed
+#print axioms Carleman.higherDirichletSubspace_closed
+#check @Carleman.higherDirichletSubspace_dense
+#print axioms Carleman.higherDirichletSubspace_dense
+#check @Carleman.higherDirichletSubspace_one
+#print axioms Carleman.higherDirichletSubspace_one
+#check @Carleman.higherDirichletEnergy_complete
+#print axioms Carleman.higherDirichletEnergy_complete
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

@@ -1066,3 +1066,6 @@ public import Carleman.Control.DirichletEnergyUniqueness
 public import Carleman.Control.WeakDerivativeInjection
 public import Carleman.Control.DirichletDualMassEquivalence
 public import Carleman.Control.DirichletEnergySolution
+
+public import Carleman.Spatial.SpatialTestAllOrders
+public import Carleman.Spatial.HigherDirichletSpace
