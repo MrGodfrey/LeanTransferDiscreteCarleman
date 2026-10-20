@@ -1144,3 +1144,5 @@ public import Carleman.Geometry.ConvexBoundaryFlux
 public import Carleman.Spatial.WeightedHessianIdentity
 
 public import Carleman.Geometry.SmoothLevelCutoff
+
+public import Carleman.Spatial.ClassicalConvexHessian

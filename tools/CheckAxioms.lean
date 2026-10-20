@@ -9184,6 +9184,25 @@ set_option pp.maxSteps 1000000
 #check Carleman.levelCutoff_gradient_mass
 #print axioms Carleman.levelCutoff_gradient_mass
 
+#check Carleman.exists_positive_level_layer
+#print axioms Carleman.exists_positive_level_layer
+#check Carleman.levelLayer_flux_lower_bound
+#print axioms Carleman.levelLayer_flux_lower_bound
+#check Carleman.continuous_integrableOn_bounded_sublevel
+#print axioms Carleman.continuous_integrableOn_bounded_sublevel
+#check Carleman.levelCutoff_integral_tendsto
+#print axioms Carleman.levelCutoff_integral_tendsto
+#check Carleman.levelCutoff_mass_bound
+#print axioms Carleman.levelCutoff_mass_bound
+#check Carleman.levelCutoff_defect_lower_bound
+#print axioms Carleman.levelCutoff_defect_lower_bound
+#check Carleman.classical_level_hessian_defect_nonneg
+#print axioms Carleman.classical_level_hessian_defect_nonneg
+#check Carleman.classical_level_hessian_le_laplacian
+#print axioms Carleman.classical_level_hessian_le_laplacian
+#check Carleman.halfspaceSmoothInner_classical_hessian_bound
+#print axioms Carleman.halfspaceSmoothInner_classical_hessian_bound
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
