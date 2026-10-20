@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T234",
-    "supervisor_checked_at": "2026-10-20T07:08:52.800207+00:00",
-    "next_action": "构造原H¹₀的切向差商测试，应用弱方程证明真实二阶能量界。",
+    "current_task_id": "T235",
+    "supervisor_checked_at": "2026-10-20T07:13:40.435488+00:00",
+    "next_action": "在实际系数乘子上证明差商Leibniz公式与椭圆能量估计。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "27fcaabab245e49a01868aa211e5db053122cdb0",
-      "source_head_sha": "27fcaabab245e49a01868aa211e5db053122cdb0",
+      "checked_sha": "528c5bf683ace24836aecdf64ddd73422a000473",
+      "source_head_sha": "528c5bf683ace24836aecdf64ddd73422a000473",
       "ci_url": null,
-      "finished_at": "2026-10-20T07:02:41.274656+00:00",
+      "finished_at": "2026-10-20T07:12:21.548912+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "87d283362a6f5571e619c88320a612f48e4f22c342be01f17d99e4a3972278d4",
+      "source_manifest_sha256": "e6d23922ab6df0f1e3c337017ab3811d69e15ebdab039b3b1d4f27bd006a8853",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9596,
-        "sha256": "dc3f3eafe7b8fdc0c780f57a015a9a3a0006fe86b4842adafd8aac59163ce610"
+        "declarations": 9659,
+        "sha256": "69c84178bd08406404d49fb9b96ab521db21f2f2e181146ef59224c74d1896dc"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "27fcaabab245e49a01868aa211e5db053122cdb0",
-      "source_head_sha": "27fcaabab245e49a01868aa211e5db053122cdb0",
+      "checked_sha": "528c5bf683ace24836aecdf64ddd73422a000473",
+      "source_head_sha": "528c5bf683ace24836aecdf64ddd73422a000473",
       "ci_url": null,
-      "finished_at": "2026-10-20T07:02:41.274656+00:00",
+      "finished_at": "2026-10-20T07:12:21.548912+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "87d283362a6f5571e619c88320a612f48e4f22c342be01f17d99e4a3972278d4",
+      "source_manifest_sha256": "e6d23922ab6df0f1e3c337017ab3811d69e15ebdab039b3b1d4f27bd006a8853",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9596,
-        "sha256": "dc3f3eafe7b8fdc0c780f57a015a9a3a0006fe86b4842adafd8aac59163ce610"
+        "declarations": 9659,
+        "sha256": "69c84178bd08406404d49fb9b96ab521db21f2f2e181146ef59224c74d1896dc"
       }
     }
   },
@@ -21438,7 +21438,7 @@
       "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的边界H²正则性证明路线",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:analytic-realizations"
@@ -21472,6 +21472,58 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "一般光滑内域边界H²路线的真实半空间差商基础；AUXILIARY，18/26。",
+      "independent_review_status": "PENDING",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "528c5bf683ace24836aecdf64ddd73422a000473",
+        "source_head_sha": "528c5bf683ace24836aecdf64ddd73422a000473",
+        "ci_url": null,
+        "finished_at": "2026-10-20T07:12:21.548912+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "e6d23922ab6df0f1e3c337017ab3811d69e15ebdab039b3b1d4f27bd006a8853",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9659,
+          "sha256": "69c84178bd08406404d49fb9b96ab521db21f2f2e181146ef59224c74d1896dc"
+        }
+      },
+      "semantic_review": null,
+      "declaration_version": "528c5bf683ace24836aecdf64ddd73422a000473"
+    },
+    {
+      "id": "C251",
+      "title": "真实变系数椭圆形式的切向差商能量估计",
+      "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的边界H²正则性证明路线",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "lean_declarations": [],
+      "dependencies": [
+        "C250"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实变系数半空间边界H²的切向能量阶段；AUXILIARY，18/26。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -50931,9 +50983,9 @@
       ],
       "branch": "main",
       "base_commit": "27fcaabab245e49a01868aa211e5db053122cdb0",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "528c5bf683ace24836aecdf64ddd73422a000473",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.WeakSobolevJet.translateFirst",
@@ -50961,9 +51013,38 @@
       "attempts": [
         "原H¹₀切向差商/二次差商测试资格、实际弱PDE梯度差商界、法向恢复和半空间完整H²全部通过；目标3371、根4273及9659递归公理审计exit0。"
       ],
-      "next_action": "构造原H¹₀的切向差商测试，应用弱方程证明真实二阶能量界。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "528c5bf683ace24836aecdf64ddd73422a000473",
+        "source_head_sha": "528c5bf683ace24836aecdf64ddd73422a000473",
+        "ci_url": null,
+        "finished_at": "2026-10-20T07:12:21.548912+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "e6d23922ab6df0f1e3c337017ab3811d69e15ebdab039b3b1d4f27bd006a8853",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9659,
+          "sha256": "69c84178bd08406404d49fb9b96ab521db21f2f2e181146ef59224c74d1896dc"
+        }
+      },
       "local_validation": {
         "status": "PASS",
         "targets": [
@@ -50981,7 +51062,37 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "528c5bf683ace24836aecdf64ddd73422a000473"
+    },
+    {
+      "id": "T235",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "真实变系数椭圆形式的切向差商能量估计",
+      "goal_ids": [
+        "C251"
+      ],
+      "acceptance": [
+        "实际Lipschitz系数差商乘积公式与步长统一交换子界",
+        "真实矩阵积分形式的点态椭圆性传至L²能量",
+        "原弱方程及合法Dirichlet二次差商测试推出切向梯度界"
+      ],
+      "dependencies": [
+        "C250"
+      ],
+      "branch": "main",
+      "base_commit": "528c5bf683ace24836aecdf64ddd73422a000473",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "blocker": null,
+      "attempts": [],
+      "next_action": "在实际系数乘子上证明差商Leibniz公式与椭圆能量估计。",
+      "integration_mode": "direct-main",
+      "build_evidence": null
     }
   ],
   "private_maintenance": {
