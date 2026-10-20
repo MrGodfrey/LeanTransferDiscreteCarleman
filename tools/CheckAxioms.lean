@@ -7661,6 +7661,47 @@ set_option pp.maxSteps 1000000
 #check @Carleman.fixedTimeCellReconstruction_multiplier_inner
 #print axioms Carleman.fixedTimeCellReconstruction_multiplier_inner
 
+#check @Carleman.simpleL2_uncurry_memLp
+#print axioms Carleman.simpleL2_uncurry_memLp
+#check @Carleman.simpleL2_product
+#print axioms Carleman.simpleL2_product
+#check @Carleman.simpleL2_uncurry_add_ae
+#print axioms Carleman.simpleL2_uncurry_add_ae
+#check @Carleman.simpleL2_uncurry_smul_ae
+#print axioms Carleman.simpleL2_uncurry_smul_ae
+#check @Carleman.simpleL2_productLinear
+#print axioms Carleman.simpleL2_productLinear
+#check @Carleman.simpleL2_bochnerLinear
+#print axioms Carleman.simpleL2_bochnerLinear
+#check @Carleman.memLp_toLp_norm_sq
+#print axioms Carleman.memLp_toLp_norm_sq
+#check @Carleman.simpleL2_product_norm
+#print axioms Carleman.simpleL2_product_norm
+#check @Carleman.simpleL2_bochnerLinear_dense
+#print axioms Carleman.simpleL2_bochnerLinear_dense
+#check @Carleman.bochnerL2ProductIsometry
+#print axioms Carleman.bochnerL2ProductIsometry
+#check @Carleman.bochnerL2ProductIsometry_simple
+#print axioms Carleman.bochnerL2ProductIsometry_simple
+#check @Carleman.bochnerL2ProductIsometry_simple_ae
+#print axioms Carleman.bochnerL2ProductIsometry_simple_ae
+#check @Carleman.bochnerL2ProductIsometry_indicator_ae
+#print axioms Carleman.bochnerL2ProductIsometry_indicator_ae
+#check @Carleman.bochnerL2ProductIsometry_weak
+#print axioms Carleman.bochnerL2ProductIsometry_weak
+#check @Carleman.bochnerL2ProductIsometry_time_ae
+#print axioms Carleman.bochnerL2ProductIsometry_time_ae
+#check @Carleman.bochnerL2ProductIsometry_fixed_time_ae
+#print axioms Carleman.bochnerL2ProductIsometry_fixed_time_ae
+#check @Carleman.cartesian_time_product_reconstruction
+#print axioms Carleman.cartesian_time_product_reconstruction
+#check @Carleman.cartesian_time_product_potential
+#print axioms Carleman.cartesian_time_product_potential
+#check @Carleman.cartesian_fixed_time_product_reconstruction
+#print axioms Carleman.cartesian_fixed_time_product_reconstruction
+#check @Carleman.cartesian_time_product_potential_pairing
+#print axioms Carleman.cartesian_time_product_potential_pairing
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

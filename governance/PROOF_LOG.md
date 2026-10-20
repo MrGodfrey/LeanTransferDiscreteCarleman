@@ -405,3 +405,7 @@
 - T188 / C204：23/23独立PASS；实际原H¹₀能量载体、原方程内部预算与同一严格子列的四组全测试极限忠实，无预设R_h弱极限。三项CI均completed/success，8496项raw逐字节核对。 固定证明 `32711e6669f223eba5851b43e9ec886a40c45b6e`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4e753a25217da7db59cbf5dc6e1c65bf33c966be/governance/reviews/T188-local-acceptance.md)。原文17/26；当前执行任务不变。
 
 - T189 / C205：原差分状态方程完整时空弱恒等式，五模块13声明；本地根构建4167 jobs、公理审计8516项PASS；固定版本后独立验收，极限PDE与端点识别仍待，原文17/26。
+
+- T189 / C205：13/13独立PASS；任意完整测试、前一时间层与初终端点、真实E/K/梯度/平均势配对忠实。三项实际CI completed/success，8516项raw逐字节核对。 固定证明 `b92214e1ee49124122e54ed76dc7bb734792b157`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c99aad2047e9befa4a82b6aa3e90e2664f35ac3a/governance/reviews/T189-local-acceptance.md)。原文17/26；当前执行任务不变。
+
+- T190 / C206：真实Bochner到产品L²等距映射，原时间/胞元重构及平均势配对精确连接；三模块20声明，本地4170 jobs及8569项公理审计PASS，固定版本后独立验收；不声称满射或极限PDE，原文17/26。

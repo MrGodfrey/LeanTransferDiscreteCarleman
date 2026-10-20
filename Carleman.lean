@@ -989,3 +989,6 @@ public import Carleman.Control.TimeWeakTesting
 public import Carleman.Control.CartesianWeakTesting
 public import Carleman.Control.FixedBoxWeakTesting
 public import Carleman.Control.TimePotentialPairing
+public import Carleman.Control.SimpleL2Product
+public import Carleman.Control.BochnerProductL2
+public import Carleman.Control.CartesianProductL2
