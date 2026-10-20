@@ -9232,6 +9232,29 @@ set_option pp.maxSteps 1000000
 #check Carleman.WeakSobolevJet.graphShearH2Pullback_test
 #print axioms Carleman.WeakSobolevJet.graphShearH2Pullback_test
 
+#check Carleman.derivativeFieldAssembly_components
+#print axioms Carleman.derivativeFieldAssembly_components
+#check Carleman.derivativeField_tendsto_of_components
+#print axioms Carleman.derivativeField_tendsto_of_components
+#check Carleman.WeakSobolevJet.tendsto_of_components
+#print axioms Carleman.WeakSobolevJet.tendsto_of_components
+#check Carleman.SpatialTest.allOrderJetOn
+#print axioms Carleman.SpatialTest.allOrderJetOn
+#check Carleman.SpatialTest.allOrderJetOn_component
+#print axioms Carleman.SpatialTest.allOrderJetOn_component
+#check Carleman.SpatialTest.allOrderJetOn_value
+#print axioms Carleman.SpatialTest.allOrderJetOn_value
+#check Carleman.SpatialTest.allOrderJetOn_component_one_ae
+#print axioms Carleman.SpatialTest.allOrderJetOn_component_one_ae
+#check Carleman.SpatialTest.allOrderJetOn_component_two_ae
+#print axioms Carleman.SpatialTest.allOrderJetOn_component_two_ae
+#check Carleman.SpatialTest.allOrderJetOn_dirichlet
+#print axioms Carleman.SpatialTest.allOrderJetOn_dirichlet
+#check Carleman.SpatialTest.allOrderJetOn_two_tendsto_of_errors
+#print axioms Carleman.SpatialTest.allOrderJetOn_two_tendsto_of_errors
+#check Carleman.exists_box_dirichlet_strong_h2_approximation
+#print axioms Carleman.exists_box_dirichlet_strong_h2_approximation
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
