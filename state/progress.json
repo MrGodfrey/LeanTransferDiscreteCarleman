@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T261",
-    "supervisor_checked_at": "2026-10-20T10:55:18.511358+00:00",
-    "next_action": "实例化真实原凸多面体完整P1数值数据，核查原命题所有几何、网格与时间量词。",
+    "current_task_id": "T262",
+    "supervisor_checked_at": "2026-10-20T11:04:26.528768+00:00",
+    "next_action": "证明真实光滑内域上的热通量和散度积分非正，为一般域连续Carleman估计提供边界积分步骤。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "cbd25fdee3e670d39fce5a03cbf172c02a890544",
-      "source_head_sha": "cbd25fdee3e670d39fce5a03cbf172c02a890544",
+      "checked_sha": "708eae70c82d9c0b1d60f6907f0202201d518a16",
+      "source_head_sha": "708eae70c82d9c0b1d60f6907f0202201d518a16",
       "ci_url": null,
-      "finished_at": "2026-10-20T10:49:36.651533+00:00",
+      "finished_at": "2026-10-20T11:02:02.703346+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "a4dd3bc74b44e2ce8c10016e3b526dba6a09a63b06bfb2851e6ce7f92f6ae8fb",
+      "source_manifest_sha256": "79ec7173827df25a3430da2c6c721484d1fcee450a37e2aac649bbc81fb9867a",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10318,
-        "sha256": "def0534f4a57840edc30332bb0acbfaa0e5fdae20cd6f81e8d3db35cf209a395"
+        "declarations": 10321,
+        "sha256": "ec1372cf92dbebb01673ccd456d360e8564bf2e7ac657e2ed034c90f7d5d727e"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "cbd25fdee3e670d39fce5a03cbf172c02a890544",
-      "source_head_sha": "cbd25fdee3e670d39fce5a03cbf172c02a890544",
+      "checked_sha": "708eae70c82d9c0b1d60f6907f0202201d518a16",
+      "source_head_sha": "708eae70c82d9c0b1d60f6907f0202201d518a16",
       "ci_url": null,
-      "finished_at": "2026-10-20T10:49:36.651533+00:00",
+      "finished_at": "2026-10-20T11:02:02.703346+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "a4dd3bc74b44e2ce8c10016e3b526dba6a09a63b06bfb2851e6ce7f92f6ae8fb",
+      "source_manifest_sha256": "79ec7173827df25a3430da2c6c721484d1fcee450a37e2aac649bbc81fb9867a",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10318,
-        "sha256": "def0534f4a57840edc30332bb0acbfaa0e5fdae20cd6f81e8d3db35cf209a395"
+        "declarations": 10321,
+        "sha256": "ec1372cf92dbebb01673ccd456d360e8564bf2e7ac657e2ed034c90f7d5d727e"
       }
     }
   },
@@ -23798,7 +23798,7 @@
       "pr_url": null,
       "id": "C276",
       "title": "Corollary A.2 原凸多面体与盒的完整空间解析实现",
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "lean_declarations": [
         "Carleman.DirichletSpatialAnalyticData",
         "Carleman.dirichlet_spatial_analytic_of_regularity",
@@ -23811,7 +23811,7 @@
       ],
       "blocker": null,
       "scope_notes": "原Corollary A.2完整A1–A3已通过独立论文级验收；原凸多面体与盒无额外正则性前提，完整覆盖19/26。",
-      "independent_review_status": "PENDING",
+      "independent_review_status": "PASS",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -23842,7 +23842,20 @@
           "sha256": "def0534f4a57840edc30332bb0acbfaa0e5fdae20cd6f81e8d3db35cf209a395"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "cbd25fdee3e670d39fce5a03cbf172c02a890544",
+        "declarations": [
+          "Carleman.DirichletSpatialAnalyticData",
+          "Carleman.dirichlet_spatial_analytic_of_regularity",
+          "Carleman.finite_halfspace_analytic_realization",
+          "Carleman.box_full_spatial_analytic_realization"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/90003a32772cd54be6d442575e293c281516cecf/governance/reviews/T260-local-acceptance.md",
+        "reviewed_at": "2026-10-20T10:59:42+00:00",
+        "reviewer": "/root/accept_section3; independent paper acceptance"
+      },
       "declaration_version": "cbd25fdee3e670d39fce5a03cbf172c02a890544"
     },
     {
@@ -23855,7 +23868,7 @@
       "milestone": "M6a",
       "scope": "PAPER",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "lean_declarations": [
         "Carleman.finite_halfspace_convex",
         "Carleman.finite_halfspace_p1_realization"
@@ -23867,6 +23880,59 @@
       "pr_url": null,
       "blocker": null,
       "scope_notes": "由原凸多面体H²域包含清偿P1接口的最后解析输入；保持全部网格和时间权统一性。待独立论文级验收。",
+      "independent_review_status": "PENDING",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "708eae70c82d9c0b1d60f6907f0202201d518a16",
+        "source_head_sha": "708eae70c82d9c0b1d60f6907f0202201d518a16",
+        "ci_url": null,
+        "finished_at": "2026-10-20T11:02:02.703346+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "79ec7173827df25a3430da2c6c721484d1fcee450a37e2aac649bbc81fb9867a",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10321,
+          "sha256": "ec1372cf92dbebb01673ccd456d360e8564bf2e7ac657e2ed034c90f7d5d727e"
+        }
+      },
+      "semantic_review": null,
+      "declaration_version": "708eae70c82d9c0b1d60f6907f0202201d518a16"
+    },
+    {
+      "id": "C278",
+      "title": "光滑内域真实热通量与散度积分符号",
+      "paper_ref": "paper/main.tex:2672 Proposition A.3 的边界积分步骤",
+      "paper_labels": [
+        "prop:continuousCE"
+      ],
+      "milestone": "M6a",
+      "scope": "AUXILIARY",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "lean_declarations": [],
+      "dependencies": [
+        "C267",
+        "C264"
+      ],
+      "pr_url": null,
+      "blocker": null,
+      "scope_notes": "真实光滑指数和内域的热通量及散度积分非正；尚非完整P024。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -25350,6 +25416,11 @@
       "at": "2026-10-20T10:54:53.353825+00:00",
       "public_summary": "原有界凸多面体Dirichlet完整H²正则性已通过固定本地验证与独立数学验收；原文覆盖18/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8693fe2b3f59764bf3544d6c81abba6a3d29bcd1/governance/reviews/T259-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T11:04:25.564947+00:00",
+      "public_summary": "Corollary A.2 原凸多面体与盒的完整空间解析实现已通过固定本地验证与独立数学验收；原文覆盖19/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/90003a32772cd54be6d442575e293c281516cecf/governance/reviews/T260-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -25854,7 +25925,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d09fd4cf7b7ae62368365520070aa6b8b0fc7e8c/governance/reviews/T256-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ce10da05a21b2b2bcf4ef5f5661d3da7f64927ae/governance/reviews/T257-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8b4fa0e5f90c6d70abbc834880571d878e5184cd/governance/reviews/T258-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8693fe2b3f59764bf3544d6c81abba6a3d29bcd1/governance/reviews/T259-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8693fe2b3f59764bf3544d6c81abba6a3d29bcd1/governance/reviews/T259-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/90003a32772cd54be6d442575e293c281516cecf/governance/reviews/T260-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -56058,9 +56130,9 @@
         "C245"
       ],
       "base_commit": "0a4c425a254d6bc108651a078b6c0adbcc02b9f5",
-      "status": "REVIEW",
+      "status": "MERGED",
       "checkpoint_commit": "cbd25fdee3e670d39fce5a03cbf172c02a890544",
-      "merge_commit": null,
+      "merge_commit": "cbd25fdee3e670d39fce5a03cbf172c02a890544",
       "lean_declarations": [
         "Carleman.DirichletSpatialAnalyticData",
         "Carleman.dirichlet_spatial_analytic_of_regularity",
@@ -56069,7 +56141,7 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -56109,9 +56181,24 @@
         "root_exit_code": 0,
         "recursive_axiom_declarations": 10318,
         "axiom_exit_code": 0,
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "cbd25fdee3e670d39fce5a03cbf172c02a890544"
+      "declaration_version": "cbd25fdee3e670d39fce5a03cbf172c02a890544",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_section3",
+          "claim_ids": [
+            "C276"
+          ],
+          "paper_result_ids": [
+            "P023"
+          ],
+          "checked_sha": "cbd25fdee3e670d39fce5a03cbf172c02a890544",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T10:59:42+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/90003a32772cd54be6d442575e293c281516cecf/governance/reviews/T260-local-acceptance.md"
+        }
+      ]
     },
     {
       "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
@@ -56134,17 +56221,46 @@
         "C142"
       ],
       "base_commit": "cbd25fdee3e670d39fce5a03cbf172c02a890544",
-      "status": "RUNNING",
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "checkpoint_commit": "708eae70c82d9c0b1d60f6907f0202201d518a16",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.finite_halfspace_convex",
         "Carleman.finite_halfspace_p1_realization"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "708eae70c82d9c0b1d60f6907f0202201d518a16",
+        "source_head_sha": "708eae70c82d9c0b1d60f6907f0202201d518a16",
+        "ci_url": null,
+        "finished_at": "2026-10-20T11:02:02.703346+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "79ec7173827df25a3430da2c6c721484d1fcee450a37e2aac649bbc81fb9867a",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10321,
+          "sha256": "ec1372cf92dbebb01673ccd456d360e8564bf2e7ac657e2ed034c90f7d5d727e"
+        }
+      },
       "blocker": null,
       "attempts": [],
-      "next_action": "实例化真实原凸多面体完整P1数值数据，核查原命题所有几何、网格与时间量词。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "local_validation": {
         "target": "Carleman.Control.FullP1Realization",
         "target_jobs": 3855,
@@ -56155,7 +56271,38 @@
         "recursive_axiom_declarations": 10321,
         "axiom_exit_code": 0,
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "708eae70c82d9c0b1d60f6907f0202201d518a16"
+    },
+    {
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "branch": "main",
+      "pr_url": null,
+      "integration_mode": "direct-main",
+      "id": "T262",
+      "title": "光滑内域真实热通量与散度积分符号",
+      "goal_ids": [
+        "C278"
+      ],
+      "acceptance": [
+        "从实际曲面Dirichlet零数据推导原梯度法向身份",
+        "Gaussian原空间权下真实热通量非正",
+        "实际紧支截断/薄层极限给真实散度积分符号"
+      ],
+      "dependencies": [
+        "C267",
+        "C264"
+      ],
+      "base_commit": "708eae70c82d9c0b1d60f6907f0202201d518a16",
+      "status": "RUNNING",
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [],
+      "next_action": "证明真实光滑内域上的热通量和散度积分非正，为一般域连续Carleman估计提供边界积分步骤。"
     }
   ],
   "private_maintenance": {

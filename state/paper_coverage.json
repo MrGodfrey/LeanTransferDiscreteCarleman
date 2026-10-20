@@ -664,11 +664,40 @@
         "Carleman.finite_halfspace_convex",
         "Carleman.finite_halfspace_p1_realization"
       ],
-      "declaration_version": null,
-      "verification_status": "SPECIFIED",
+      "declaration_version": "708eae70c82d9c0b1d60f6907f0202201d518a16",
+      "verification_status": "BUILT",
       "scope": "PAPER",
       "extra_hypotheses": [],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "708eae70c82d9c0b1d60f6907f0202201d518a16",
+        "source_head_sha": "708eae70c82d9c0b1d60f6907f0202201d518a16",
+        "ci_url": null,
+        "finished_at": "2026-10-20T11:02:02.703346+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "79ec7173827df25a3430da2c6c721484d1fcee450a37e2aac649bbc81fb9867a",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10321,
+          "sha256": "ec1372cf92dbebb01673ccd456d360e8564bf2e7ac657e2ed034c90f7d5d727e"
+        }
+      },
       "semantic_review": null,
       "blocker": null,
       "independent_review_status": "PENDING"
@@ -1140,7 +1169,7 @@
         "Carleman.box_full_spatial_analytic_realization"
       ],
       "declaration_version": "cbd25fdee3e670d39fce5a03cbf172c02a890544",
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": {
@@ -1173,9 +1202,22 @@
           "sha256": "def0534f4a57840edc30332bb0acbfaa0e5fdae20cd6f81e8d3db35cf209a395"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "cbd25fdee3e670d39fce5a03cbf172c02a890544",
+        "declarations": [
+          "Carleman.DirichletSpatialAnalyticData",
+          "Carleman.dirichlet_spatial_analytic_of_regularity",
+          "Carleman.finite_halfspace_analytic_realization",
+          "Carleman.box_full_spatial_analytic_realization"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/90003a32772cd54be6d442575e293c281516cecf/governance/reviews/T260-local-acceptance.md",
+        "reviewed_at": "2026-10-20T10:59:42+00:00",
+        "reviewer": "/root/accept_section3; independent paper acceptance"
+      },
       "blocker": null,
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "P024",
