@@ -605,3 +605,5 @@
 - T255 / C271：10 项声明独立 PASS，固定证明 `2b7dfa5b8dc39445682940c02d91c5bec5a747a0`、冻结报告 `e3323d1266fafb02105b718427ecaa604aa8ca59`。主 Agent 完整读取报告并核验对应本地构建/公理摘要，证据见唯一台账。AUXILIARY、18/26。
 
 - T256 / C272：14 项声明独立 PASS，固定证明 `10790206877d2b10b557b56430b8b0c4ec02b117`、冻结报告 `d09fd4cf7b7ae62368365520070aa6b8b0fc7e8c`。主 Agent 完整读取报告并核验对应本地构建/公理摘要，证据见唯一台账。AUXILIARY、18/26。
+
+- T257 / C273：17 项声明独立 PASS，固定证明 `e90a9dc75ebc85da3ccb5dd1bb740fd3d255db1a`、冻结报告 `ce10da05a21b2b2bcf4ef5f5661d3da7f64927ae`。主 Agent 完整读取报告并核验对应本地构建/公理摘要，证据见唯一台账。AUXILIARY、18/26。

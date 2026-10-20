@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T259",
-    "supervisor_checked_at": "2026-10-20T10:39:31.555862+00:00",
+    "supervisor_checked_at": "2026-10-20T10:40:53.044626+00:00",
     "next_action": "用实际内域弱解与统一Hessian界完成原有限半空间域穷竭，恢复同一原弱解、完整H²估计和原算子域。",
     "blocker": null,
     "pause_reason": null,
@@ -23537,7 +23537,7 @@
       "pr_url": null,
       "id": "C273",
       "title": "原光滑内逼近域的完整H²零边值强密度",
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "lean_declarations": [
         "Carleman.HasSmoothDirichletH2Approximation",
         "Carleman.SpatialTest.cutoffH2Transfer_approximation",
@@ -23564,7 +23564,7 @@
       ],
       "blocker": null,
       "scope_notes": "原光滑内域的全局H²∩H¹₀强密度；弱统一估计及穷竭仍待，AUXILIARY18/26。",
-      "independent_review_status": "PENDING",
+      "independent_review_status": "PASS",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -23595,7 +23595,33 @@
           "sha256": "f37d2fbee22b5544ba4da395483e1bfe1ef9ad457a5ddfa9d45c6746250b84e4"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "e90a9dc75ebc85da3ccb5dd1bb740fd3d255db1a",
+        "declarations": [
+          "Carleman.HasSmoothDirichletH2Approximation",
+          "Carleman.SpatialTest.cutoffH2Transfer_approximation",
+          "Carleman.SpatialTest.cutoffH2Transfer_nested_roundtrip",
+          "Carleman.SpatialTest.cutoffH2Transfer_off_support",
+          "Carleman.exists_localized_strong_h2_approximation",
+          "Carleman.compact_fullspace_hasSmoothDirichletH2Approximation",
+          "Carleman.dirichletH2Regular_graphSide",
+          "Carleman.exists_interior_local_strong_h2_approximation",
+          "Carleman.exists_boundary_local_strong_h2_approximation",
+          "Carleman.SpatialTest.sumTest",
+          "Carleman.SpatialTest.sumTest_allOrderJetOn",
+          "Carleman.SpatialTest.cutoffH2Transfer_partition",
+          "Carleman.hasSmoothDirichletH2Approximation_sum",
+          "Carleman.hasSmoothDirichletH2Approximation_of_finite_cover",
+          "Carleman.hasSmoothDirichletH2Approximation_of_compact_closure_local",
+          "Carleman.regular_analytic_sublevel_strong_h2_approximation",
+          "Carleman.halfspaceSmoothInner_strong_h2_approximation"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ce10da05a21b2b2bcf4ef5f5661d3da7f64927ae/governance/reviews/T257-local-acceptance.md",
+        "reviewed_at": "2026-10-20T10:37:23+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "declaration_version": "e90a9dc75ebc85da3ccb5dd1bb740fd3d255db1a"
     },
     {
@@ -23673,7 +23699,17 @@
       "id": "C275",
       "title": "原有界凸多面体Dirichlet完整H²正则性",
       "verification_status": "SPECIFIED",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.IsWeakNegativeLaplacian.unique_dirichlet",
+        "Carleman.finite_halfspace_isOpen",
+        "Carleman.exists_finite_halfspace_dirichlet_H2_solution",
+        "Carleman.finite_halfspace_dirichlet_H2_regular",
+        "Carleman.exists_finite_halfspace_dirichlet_H2_estimate",
+        "Carleman.finite_halfspace_dirichlet_domain_le_h2",
+        "Carleman.finite_halfspace_dirichlet_domain_eq_h2",
+        "Carleman.dirichlet_graph_estimate_of_weak_estimate",
+        "Carleman.finite_halfspace_dirichlet_graph_estimate"
+      ],
       "dependencies": [
         "C274",
         "C262",
@@ -25149,6 +25185,11 @@
       "at": "2026-10-20T10:34:43.218908+00:00",
       "public_summary": "紧支曲边状态的完整H²零边值强逼近已通过固定本地验证与独立数学验收；原文覆盖18/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d09fd4cf7b7ae62368365520070aa6b8b0fc7e8c/governance/reviews/T256-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T10:40:53.044626+00:00",
+      "public_summary": "原光滑内逼近域的完整H²零边值强密度已通过固定本地验证与独立数学验收；原文覆盖18/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ce10da05a21b2b2bcf4ef5f5661d3da7f64927ae/governance/reviews/T257-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -25650,7 +25691,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0d96050d902550448364db4c804cb1ede5f952bf/governance/reviews/T253-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8bb726bb7a7ce8fa35f60288e135c3dc6976f988/governance/reviews/T254-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e3323d1266fafb02105b718427ecaa604aa8ca59/governance/reviews/T255-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d09fd4cf7b7ae62368365520070aa6b8b0fc7e8c/governance/reviews/T256-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d09fd4cf7b7ae62368365520070aa6b8b0fc7e8c/governance/reviews/T256-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ce10da05a21b2b2bcf4ef5f5661d3da7f64927ae/governance/reviews/T257-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -55563,9 +55605,9 @@
         "C262"
       ],
       "base_commit": "10790206877d2b10b557b56430b8b0c4ec02b117",
-      "status": "REVIEW",
+      "status": "MERGED",
       "checkpoint_commit": "e90a9dc75ebc85da3ccb5dd1bb740fd3d255db1a",
-      "merge_commit": null,
+      "merge_commit": "e90a9dc75ebc85da3ccb5dd1bb740fd3d255db1a",
       "lean_declarations": [
         "Carleman.HasSmoothDirichletH2Approximation",
         "Carleman.SpatialTest.cutoffH2Transfer_approximation",
@@ -55587,7 +55629,7 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -55627,9 +55669,22 @@
         "root_exit_code": 0,
         "recursive_axiom_declarations": 10272,
         "axiom_exit_code": 0,
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "e90a9dc75ebc85da3ccb5dd1bb740fd3d255db1a"
+      "declaration_version": "e90a9dc75ebc85da3ccb5dd1bb740fd3d255db1a",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C273"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "e90a9dc75ebc85da3ccb5dd1bb740fd3d255db1a",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T10:37:23+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ce10da05a21b2b2bcf4ef5f5661d3da7f64927ae/governance/reviews/T257-local-acceptance.md"
+        }
+      ]
     },
     {
       "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
@@ -55737,11 +55792,32 @@
       "status": "RUNNING",
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.IsWeakNegativeLaplacian.unique_dirichlet",
+        "Carleman.finite_halfspace_isOpen",
+        "Carleman.exists_finite_halfspace_dirichlet_H2_solution",
+        "Carleman.finite_halfspace_dirichlet_H2_regular",
+        "Carleman.exists_finite_halfspace_dirichlet_H2_estimate",
+        "Carleman.finite_halfspace_dirichlet_domain_le_h2",
+        "Carleman.finite_halfspace_dirichlet_domain_eq_h2",
+        "Carleman.dirichlet_graph_estimate_of_weak_estimate",
+        "Carleman.finite_halfspace_dirichlet_graph_estimate"
+      ],
       "blocker": null,
       "attempts": [],
       "next_action": "用实际内域弱解与统一Hessian界完成原有限半空间域穷竭，恢复同一原弱解、完整H²估计和原算子域。",
-      "build_evidence": null
+      "build_evidence": null,
+      "local_validation": {
+        "target": "Carleman.Spatial.FiniteHalfspaceRegularity",
+        "target_jobs": 3511,
+        "target_exit_code": 0,
+        "root_target": "Carleman",
+        "root_jobs": 4298,
+        "root_exit_code": 0,
+        "recursive_axiom_declarations": 10291,
+        "axiom_exit_code": 0,
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

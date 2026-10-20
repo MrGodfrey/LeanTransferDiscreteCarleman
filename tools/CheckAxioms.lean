@@ -9416,6 +9416,25 @@ set_option pp.maxSteps 1000000
 #check Carleman.halfspaceSmoothInner_weak_hessian_norm_bound
 #print axioms Carleman.halfspaceSmoothInner_weak_hessian_norm_bound
 
+#check Carleman.IsWeakNegativeLaplacian.unique_dirichlet
+#print axioms Carleman.IsWeakNegativeLaplacian.unique_dirichlet
+#check Carleman.finite_halfspace_isOpen
+#print axioms Carleman.finite_halfspace_isOpen
+#check Carleman.exists_finite_halfspace_dirichlet_H2_solution
+#print axioms Carleman.exists_finite_halfspace_dirichlet_H2_solution
+#check Carleman.finite_halfspace_dirichlet_H2_regular
+#print axioms Carleman.finite_halfspace_dirichlet_H2_regular
+#check Carleman.exists_finite_halfspace_dirichlet_H2_estimate
+#print axioms Carleman.exists_finite_halfspace_dirichlet_H2_estimate
+#check Carleman.finite_halfspace_dirichlet_domain_le_h2
+#print axioms Carleman.finite_halfspace_dirichlet_domain_le_h2
+#check Carleman.finite_halfspace_dirichlet_domain_eq_h2
+#print axioms Carleman.finite_halfspace_dirichlet_domain_eq_h2
+#check Carleman.dirichlet_graph_estimate_of_weak_estimate
+#print axioms Carleman.dirichlet_graph_estimate_of_weak_estimate
+#check Carleman.finite_halfspace_dirichlet_graph_estimate
+#print axioms Carleman.finite_halfspace_dirichlet_graph_estimate
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

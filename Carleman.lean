@@ -1157,3 +1157,4 @@ public import Carleman.Spatial.CompactHalfspaceDensity
 public import Carleman.Spatial.CompactGraphDensity
 public import Carleman.Spatial.FiniteStrongH2Density
 public import Carleman.Spatial.WeakConvexHessian
+public import Carleman.Spatial.FiniteHalfspaceRegularity
