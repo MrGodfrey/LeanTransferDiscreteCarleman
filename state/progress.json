@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T266",
-    "supervisor_checked_at": "2026-10-20T11:40:12.952802+00:00",
-    "next_action": "建立真实零延拓CLM、加权能量恒等式及谐波四字段收敛，连接内域估计与原周期图。",
+    "current_task_id": "T267",
+    "supervisor_checked_at": "2026-10-20T11:56:01.920048+00:00",
+    "next_action": "证明可逼近周期状态稠密、实际加权四场连续，并取统一内域估计极限。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "307dfe985c233861eaa26acda1cc2f6ab30596d7",
-      "source_head_sha": "307dfe985c233861eaa26acda1cc2f6ab30596d7",
+      "checked_sha": "eb792343d4c1d275d0341ca5dc93e17b4bc89b7d",
+      "source_head_sha": "eb792343d4c1d275d0341ca5dc93e17b4bc89b7d",
       "ci_url": null,
-      "finished_at": "2026-10-20T11:34:01.274493+00:00",
+      "finished_at": "2026-10-20T11:55:39.219022+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "d49648ed32f81e99a5daa5397822c588a72b3e80c9962923287e125c30fb7f75",
+      "source_manifest_sha256": "8afb1f19f7e2ea638f78500bf4db97442035a053b292076c8d2bc036ecbaacd2",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10382,
-        "sha256": "73c5a6532823c37ef4131c1ed6ba2736fb47424ebf3860668dcf392f6d63ae03"
+        "declarations": 10480,
+        "sha256": "e369589bd7fa47fcd461b303c16565fc8f36a7c5cff5b4e0b50b23a670465dc5"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "307dfe985c233861eaa26acda1cc2f6ab30596d7",
-      "source_head_sha": "307dfe985c233861eaa26acda1cc2f6ab30596d7",
+      "checked_sha": "eb792343d4c1d275d0341ca5dc93e17b4bc89b7d",
+      "source_head_sha": "eb792343d4c1d275d0341ca5dc93e17b4bc89b7d",
       "ci_url": null,
-      "finished_at": "2026-10-20T11:34:01.274493+00:00",
+      "finished_at": "2026-10-20T11:55:39.219022+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "d49648ed32f81e99a5daa5397822c588a72b3e80c9962923287e125c30fb7f75",
+      "source_manifest_sha256": "8afb1f19f7e2ea638f78500bf4db97442035a053b292076c8d2bc036ecbaacd2",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10382,
-        "sha256": "73c5a6532823c37ef4131c1ed6ba2736fb47424ebf3860668dcf392f6d63ae03"
+        "declarations": 10480,
+        "sha256": "e369589bd7fa47fcd461b303c16565fc8f36a7c5cff5b4e0b50b23a670465dc5"
       }
     }
   },
@@ -24302,7 +24302,7 @@
       "milestone": "M6a",
       "scope": "AUXILIARY",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "lean_declarations": [
         "Carleman.subdomainZeroExtendCLM",
         "Carleman.subdomainZeroExtendCLM_apply",
@@ -24335,6 +24335,59 @@
       "pr_url": null,
       "blocker": null,
       "scope_notes": "用真实零延拓和同一高斯空间权连接内域与原域四个Bochner场。全周期态闭包后续。",
+      "independent_review_status": "PENDING",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "eb792343d4c1d275d0341ca5dc93e17b4bc89b7d",
+        "source_head_sha": "eb792343d4c1d275d0341ca5dc93e17b4bc89b7d",
+        "ci_url": null,
+        "finished_at": "2026-10-20T11:55:39.219022+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "8afb1f19f7e2ea638f78500bf4db97442035a053b292076c8d2bc036ecbaacd2",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10480,
+          "sha256": "e369589bd7fa47fcd461b303c16565fc8f36a7c5cff5b4e0b50b23a670465dc5"
+        }
+      },
+      "semantic_review": null,
+      "declaration_version": "eb792343d4c1d275d0341ca5dc93e17b4bc89b7d"
+    },
+    {
+      "id": "C283",
+      "title": "有限半空间原域的全弱周期热方程估计",
+      "paper_ref": "paper/main.tex:2672 Proposition A.3 的原域全弱周期估计",
+      "paper_labels": [
+        "prop:continuousCE"
+      ],
+      "milestone": "M6a",
+      "scope": "AUXILIARY",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "lean_declarations": [],
+      "dependencies": [
+        "C282",
+        "C280"
+      ],
+      "pr_url": null,
+      "blocker": null,
+      "scope_notes": "原域全弱周期估计；P024 的连续数据封装及整体原文验收后续。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -57139,8 +57192,8 @@
         "C280"
       ],
       "base_commit": "307dfe985c233861eaa26acda1cc2f6ab30596d7",
-      "status": "RUNNING",
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "checkpoint_commit": "eb792343d4c1d275d0341ca5dc93e17b4bc89b7d",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.subdomainZeroExtendCLM",
@@ -57167,10 +57220,39 @@
         "Carleman.subdomainHeatFields_apply",
         "Carleman.exists_dirichlet_exhaustion_harmonic_field_approximation"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "eb792343d4c1d275d0341ca5dc93e17b4bc89b7d",
+        "source_head_sha": "eb792343d4c1d275d0341ca5dc93e17b4bc89b7d",
+        "ci_url": null,
+        "finished_at": "2026-10-20T11:55:39.219022+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "8afb1f19f7e2ea638f78500bf4db97442035a053b292076c8d2bc036ecbaacd2",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10480,
+          "sha256": "e369589bd7fa47fcd461b303c16565fc8f36a7c5cff5b4e0b50b23a670465dc5"
+        }
+      },
       "blocker": null,
       "attempts": [],
-      "next_action": "建立真实零延拓CLM、加权能量恒等式及谐波四字段收敛，连接内域估计与原周期图。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "local_validation": {
         "target": "Carleman.Spatial.HarmonicDomainLimit",
         "target_jobs": 3610,
@@ -57181,7 +57263,38 @@
         "recursive_axiom_declarations": 10480,
         "axiom_exit_code": 0,
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "eb792343d4c1d275d0341ca5dc93e17b4bc89b7d"
+    },
+    {
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "branch": "main",
+      "pr_url": null,
+      "integration_mode": "direct-main",
+      "id": "T267",
+      "title": "有限半空间原域的全弱周期热方程估计",
+      "goal_ids": [
+        "C283"
+      ],
+      "acceptance": [
+        "同一内域常数传给原域全部周期图状态",
+        "实际四场能量连续及零延拓恒等式",
+        "原区间C²权与双时间方向，无附加密度假设"
+      ],
+      "dependencies": [
+        "C282",
+        "C280"
+      ],
+      "base_commit": "eb792343d4c1d275d0341ca5dc93e17b4bc89b7d",
+      "status": "RUNNING",
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [],
+      "next_action": "证明可逼近周期状态稠密、实际加权四场连续，并取统一内域估计极限。"
     }
   ],
   "private_maintenance": {
