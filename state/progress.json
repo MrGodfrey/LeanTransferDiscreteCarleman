@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T220",
-    "supervisor_checked_at": "2026-10-20T05:28:11.409386+00:00",
-    "next_action": "剥离全部Leibniz展开中唯一无权导数主项，证明余项严格降低状态导数阶数，并据此控制原系数形式差。",
+    "current_task_id": "T221",
+    "supervisor_checked_at": "2026-10-20T05:29:22.702513+00:00",
+    "next_action": "从原固定光滑profile供应全部权导数常数，构造H₀ᵐ中的真实乘后状态，将共轭误差与任意小常数插值及原coercivity合并。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "1039ed66b829e865571f6ba6da574091bd785a80",
-      "source_head_sha": "1039ed66b829e865571f6ba6da574091bd785a80",
+      "checked_sha": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5",
+      "source_head_sha": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5",
       "ci_url": null,
-      "finished_at": "2026-10-20T05:20:19.468322+00:00",
+      "finished_at": "2026-10-20T05:27:48.841200+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "65fca91f8433002e73a0da67c18cd85da44fda6a75381e96300ba2fbf90b1690",
+      "source_manifest_sha256": "6f446fda53b8e86aa66e13ad2e37eb14fcc55c4835bd12fed2dcc99cd2c7ae51",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9261,
-        "sha256": "93b4a06fac6a4540ade877e4bb6acb4f188c50e7652343d4149217fac1428d96"
+        "declarations": 9285,
+        "sha256": "a9599c334d28d499f6a9b18871c5c7af140f17cd78ba37d1d0afe7c83a9cb8da"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "1039ed66b829e865571f6ba6da574091bd785a80",
-      "source_head_sha": "1039ed66b829e865571f6ba6da574091bd785a80",
+      "checked_sha": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5",
+      "source_head_sha": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5",
       "ci_url": null,
-      "finished_at": "2026-10-20T05:20:19.468322+00:00",
+      "finished_at": "2026-10-20T05:27:48.841200+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "65fca91f8433002e73a0da67c18cd85da44fda6a75381e96300ba2fbf90b1690",
+      "source_manifest_sha256": "6f446fda53b8e86aa66e13ad2e37eb14fcc55c4835bd12fed2dcc99cd2c7ae51",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9261,
-        "sha256": "93b4a06fac6a4540ade877e4bb6acb4f188c50e7652343d4149217fac1428d96"
+        "declarations": 9285,
+        "sha256": "a9599c334d28d499f6a9b18871c5c7af140f17cd78ba37d1d0afe7c83a9cb8da"
       }
     }
   },
@@ -20209,7 +20209,7 @@
       "paper_ref": "paper/main.tex:2637–2650, Proposition A.1 的真实共轭形式差",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:spatial-operators"
@@ -20231,8 +20231,37 @@
         "Carleman.intrinsic_conjugated_component_remainder_bound",
         "Carleman.coefficientJetForm_smooth_conjugation_error"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5",
+        "source_head_sha": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5",
+        "ci_url": null,
+        "finished_at": "2026-10-20T05:27:48.841200+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "6f446fda53b8e86aa66e13ad2e37eb14fcc55c4835bd12fed2dcc99cd2c7ae51",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9285,
+          "sha256": "a9599c334d28d499f6a9b18871c5c7af140f17cd78ba37d1d0afe7c83a9cb8da"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C027",
@@ -20242,7 +20271,35 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "原全部系数形式的实际非主项控制，不假定系数光滑或目标误差界；17/26。"
+      "scope_notes": "原全部系数形式的实际非主项控制，不假定系数光滑或目标误差界；17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C237",
+      "title": "原一般系数形式的允许权统一加权下界",
+      "paper_ref": "paper/main.tex:2637–2652 与 eq:unshiftedcoercive",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:spatial-operators"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C030",
+        "C036",
+        "C233",
+        "C234",
+        "C235",
+        "C236"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "原全H₀ᵐ状态、全部允许指数权、q与T统一的形式加权下界；完整A.1的算子交换子仍待，17/26。"
     }
   ],
   "events": [
@@ -48095,9 +48152,9 @@
       ],
       "branch": "main",
       "base_commit": "1039ed66b829e865571f6ba6da574091bd785a80",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.derivativeSplits_empty_left",
@@ -48116,13 +48173,42 @@
         "Carleman.intrinsic_conjugated_component_remainder_bound",
         "Carleman.coefficientJetForm_smooth_conjugation_error"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5",
+        "source_head_sha": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5",
+        "ci_url": null,
+        "finished_at": "2026-10-20T05:27:48.841200+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "6f446fda53b8e86aa66e13ad2e37eb14fcc55c4835bd12fed2dcc99cd2c7ae51",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9285,
+          "sha256": "a9599c334d28d499f6a9b18871c5c7af140f17cd78ba37d1d0afe7c83a9cb8da"
+        }
+      },
       "blocker": null,
       "attempts": [
         "开始从实际derivativeSplits过滤唯一空左词，严格降阶已通过试编译。",
         "真实完整Leibniz余项与原系数共轭差15声明通过；定向3284/full4246 jobs及9285项递归公理审计actual exit0。"
       ],
-      "next_action": "剥离全部Leibniz展开中唯一无权导数主项，证明余项严格降低状态导数阶数，并据此控制原系数形式差。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -48139,7 +48225,44 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "review": "PENDING"
-      }
+      },
+      "declaration_version": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5"
+    },
+    {
+      "id": "T221",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原一般系数形式的允许权统一加权下界",
+      "goal_ids": [
+        "C237"
+      ],
+      "acceptance": [
+        "原允许权相对导数常数内部供应且先于q、符号、τ、状态",
+        "真实H₀ᵐ乘后状态和原系数形式，不输入目标加权下界",
+        "正确吸收共轭误差并保留q^(2m)质量余项及原N范数"
+      ],
+      "dependencies": [
+        "C030",
+        "C036",
+        "C233",
+        "C234",
+        "C235",
+        "C236"
+      ],
+      "branch": "main",
+      "base_commit": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "已实现原H₀ᵐ乘后状态存在及指数权逆权/相对导数常数供应；接入实际误差和coercivity。"
+      ],
+      "next_action": "从原固定光滑profile供应全部权导数常数，构造H₀ᵐ中的真实乘后状态，将共轭误差与任意小常数插值及原coercivity合并。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
