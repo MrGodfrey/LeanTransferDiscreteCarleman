@@ -8934,6 +8934,15 @@ set_option pp.maxSteps 1000000
 #check @Carleman.graphShearPullback_equation_integral
 #print axioms Carleman.graphShearPullback_equation_integral
 
+#check @Carleman.exists_dirichlet_H2_of_graph_tangential_invariance
+#print axioms Carleman.exists_dirichlet_H2_of_graph_tangential_invariance
+#check @Carleman.exists_graphEpigraph_dirichlet_H2
+#print axioms Carleman.exists_graphEpigraph_dirichlet_H2
+#check @Carleman.spatialGraphShear_hypograph
+#print axioms Carleman.spatialGraphShear_hypograph
+#check @Carleman.exists_graphHypograph_dirichlet_H2
+#print axioms Carleman.exists_graphHypograph_dirichlet_H2
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

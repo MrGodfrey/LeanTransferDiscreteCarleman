@@ -22082,7 +22082,12 @@
       "id": "C257",
       "title": "实际曲边图区域上的原Dirichlet弱解H²恢复",
       "verification_status": "SPECIFIED",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.exists_dirichlet_H2_of_graph_tangential_invariance",
+        "Carleman.exists_graphEpigraph_dirichlet_H2",
+        "Carleman.spatialGraphShear_hypograph",
+        "Carleman.exists_graphHypograph_dirichlet_H2"
+      ],
       "dependencies": [
         "C256",
         "C255",
@@ -52298,11 +52303,27 @@
       "status": "RUNNING",
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.exists_dirichlet_H2_of_graph_tangential_invariance",
+        "Carleman.exists_graphEpigraph_dirichlet_H2",
+        "Carleman.spatialGraphShear_hypograph",
+        "Carleman.exists_graphHypograph_dirichlet_H2"
+      ],
       "blocker": null,
       "attempts": [],
       "next_action": "将真实图PDE接入半空间变系数估计，并通过逆图恢复原同一状态。",
-      "build_evidence": null
+      "build_evidence": null,
+      "local_validation": {
+        "target": "Carleman.Spatial.GraphDomainRegularity",
+        "target_jobs": 3390,
+        "target_exit_code": 0,
+        "root_target": "Carleman",
+        "root_jobs": 4280,
+        "root_exit_code": 0,
+        "recursive_axiom_declarations": 9883,
+        "axiom_exit_code": 0,
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {
