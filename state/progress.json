@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T196",
-    "supervisor_checked_at": "2026-10-20T02:21:46.277647+00:00",
+    "supervisor_checked_at": "2026-10-20T02:26:46.401063+00:00",
     "next_action": "连接原有限测试的梯度、差商、势项、控制及端点配对，推导原弱恒等式极限。",
     "blocker": null,
     "pause_reason": null,
@@ -18179,7 +18179,7 @@
       "paper_ref": "paper/main.tex:2926–2956, sec:control-consistency / prop:control-convergence",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -18227,7 +18227,26 @@
           "sha256": "cad038574e32997e7a2a6a743d11c7850db109f295a561d59864f124f9026847"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "403ad474b6cb780407160e9d009e514c03287882",
+        "declarations": [
+          "Carleman.finite_tensor_test_bounded",
+          "Carleman.finiteTensorTestMultiplier",
+          "Carleman.finiteTensorTestMultiplier_value",
+          "Carleman.L2_tendsto_of_Linfty_error",
+          "Carleman.cartesianFiniteTestProduct",
+          "Carleman.p1FiniteTestProduct",
+          "Carleman.cartesian_finite_test_product_strong_convergence",
+          "Carleman.p1_finite_test_product_strong_convergence",
+          "Carleman.cartesian_finite_test_potential_strong_convergence",
+          "Carleman.p1_finite_test_potential_strong_convergence"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2eaf3a373f80f24d0d968f926bdf32244d55717f/governance/reviews/T195-local-acceptance.md",
+        "reviewed_at": "2026-10-20T02:23:38+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C210",
         "C201",
@@ -18237,7 +18256,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "原实际平均势与原有限张量测试的产品强极限；完整极限方程和状态端点仍待。17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C212",
@@ -19417,6 +19436,11 @@
       "at": "2026-10-20T02:21:46.277647+00:00",
       "public_summary": "原有限张量测试的产品L∞一致性已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ebc826644387d929f67677cd4c4afea62cd1d42a/governance/reviews/T194-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T02:26:46.401063+00:00",
+      "public_summary": "原有限张量测试与实际平均势的强乘积极限已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2eaf3a373f80f24d0d968f926bdf32244d55717f/governance/reviews/T195-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -19856,7 +19880,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39354880337/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/739f92b05f7169e03dc1c917630d89ba40e7511d/governance/reviews/T192-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3fced984367859aa95ee5a6dc92d1daefbdcadfe/governance/reviews/T193-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ebc826644387d929f67677cd4c4afea62cd1d42a/governance/reviews/T194-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ebc826644387d929f67677cd4c4afea62cd1d42a/governance/reviews/T194-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2eaf3a373f80f24d0d968f926bdf32244d55717f/governance/reviews/T195-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -43439,10 +43464,10 @@
       ],
       "branch": "main",
       "base_commit": "6812f26347c088d1d8d489c8e22dd1e5bb92e778",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "403ad474b6cb780407160e9d009e514c03287882",
-      "merge_commit": null,
+      "merge_commit": "403ad474b6cb780407160e9d009e514c03287882",
       "lean_declarations": [
         "Carleman.finite_tensor_test_bounded",
         "Carleman.finiteTensorTestMultiplier",
@@ -43490,7 +43515,7 @@
         "T194本地3576定向/4182全库jobs、8670项公理审计PASS；固定版本独立验收进行中。",
         "10项正式声明完整probe exit0；3591定向jobs、4184全库jobs及8699项递归公理审计PASS。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -43504,9 +43529,22 @@
         "declaration_artifact_sha256": "cad038574e32997e7a2a6a743d11c7850db109f295a561d59864f124f9026847",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING; fixed proof commit follows"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "403ad474b6cb780407160e9d009e514c03287882"
+      "declaration_version": "403ad474b6cb780407160e9d009e514c03287882",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C211"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "403ad474b6cb780407160e9d009e514c03287882",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T02:23:38+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2eaf3a373f80f24d0d968f926bdf32244d55717f/governance/reviews/T195-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T196",
