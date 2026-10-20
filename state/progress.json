@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T215",
-    "supervisor_checked_at": "2026-10-20T04:54:28.465243+00:00",
-    "next_action": "证明原StrongDual弱方程与质量弱方程互换，并识别任意同数据原能量解及其真实零终迹。",
+    "current_task_id": "T216",
+    "supervisor_checked_at": "2026-10-20T04:54:48.707042+00:00",
+    "next_action": "从实际迭代坐标导数构造所有阶紧支光滑测试射流及原H₀ᵐ闭包、稠密值嵌入，为原高阶变系数算子建立边界空间。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "9662adfb01356f17d6bdb85ea93c7e47046373b0",
-      "source_head_sha": "9662adfb01356f17d6bdb85ea93c7e47046373b0",
+      "checked_sha": "2bbedbc1881148eb48d0280570a98d0234ef0813",
+      "source_head_sha": "2bbedbc1881148eb48d0280570a98d0234ef0813",
       "ci_url": null,
-      "finished_at": "2026-10-20T04:46:28.394407+00:00",
+      "finished_at": "2026-10-20T04:53:32.104586+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "ca837f21f6a2e0ad2d9dfaf436ef8625903795e71cab50a42a83b01019726ea7",
+      "source_manifest_sha256": "9796e108d3d1f647f82e559087aec304907be3b5ee68dd352137019dd0d0dd07",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9031,
-        "sha256": "8bd1fb3855c26c8959da18d0c629ec34d93bc2e885dd4053011898db902896d9"
+        "declarations": 9054,
+        "sha256": "abc0b30a79815079dd1a0bd41cc2818b1ad6fa91a597dceccda9539a4f63b39c"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "9662adfb01356f17d6bdb85ea93c7e47046373b0",
-      "source_head_sha": "9662adfb01356f17d6bdb85ea93c7e47046373b0",
+      "checked_sha": "2bbedbc1881148eb48d0280570a98d0234ef0813",
+      "source_head_sha": "2bbedbc1881148eb48d0280570a98d0234ef0813",
       "ci_url": null,
-      "finished_at": "2026-10-20T04:46:28.394407+00:00",
+      "finished_at": "2026-10-20T04:53:32.104586+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "ca837f21f6a2e0ad2d9dfaf436ef8625903795e71cab50a42a83b01019726ea7",
+      "source_manifest_sha256": "9796e108d3d1f647f82e559087aec304907be3b5ee68dd352137019dd0d0dd07",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9031,
-        "sha256": "8bd1fb3855c26c8959da18d0c629ec34d93bc2e885dd4053011898db902896d9"
+        "declarations": 9054,
+        "sha256": "abc0b30a79815079dd1a0bd41cc2818b1ad6fa91a597dceccda9539a4f63b39c"
       }
     }
   },
@@ -19745,7 +19745,7 @@
       "paper_ref": "paper/main.tex:2338–2415, prop:control-convergence 原能量解的强对偶表述与识别",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -19760,8 +19760,37 @@
         "Carleman.DirichletEnergySolution.unique",
         "Carleman.FiniteDirichletControlIdentity.unique_energy_solution"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "2bbedbc1881148eb48d0280570a98d0234ef0813",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "2bbedbc1881148eb48d0280570a98d0234ef0813",
+        "source_head_sha": "2bbedbc1881148eb48d0280570a98d0234ef0813",
+        "ci_url": null,
+        "finished_at": "2026-10-20T04:53:32.104586+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "9796e108d3d1f647f82e559087aec304907be3b5ee68dd352137019dd0d0dd07",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9054,
+          "sha256": "abc0b30a79815079dd1a0bd41cc2818b1ad6fa91a597dceccda9539a4f63b39c"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C216",
@@ -19770,7 +19799,28 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "原V′值弱方程和连续初迹，不输入零终态或目标唯一性；17/26。"
+      "scope_notes": "原V′值弱方程和连续初迹，不输入零终态或目标唯一性；17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C232",
+      "title": "一般阶紧支光滑测试的真实Sobolev射流与H₀ᵐ空间",
+      "paper_ref": "paper/main.tex:2615–2652, prop:spatial-operators 中一般m的原H₀ᵐ空间",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:spatial-operators"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "任意阶原对称多重指标弱射流与紧支光滑闭包，不将m=1或光滑系数特例当一般算子；17/26。"
     }
   ],
   "events": [
@@ -47053,9 +47103,9 @@
       ],
       "branch": "main",
       "base_commit": "9662adfb01356f17d6bdb85ea93c7e47046373b0",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "2bbedbc1881148eb48d0280570a98d0234ef0813",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.HasWeakTimeDerivative.of_injective_map_integral",
@@ -47067,13 +47117,42 @@
         "Carleman.DirichletEnergySolution.unique",
         "Carleman.FiniteDirichletControlIdentity.unique_energy_solution"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "2bbedbc1881148eb48d0280570a98d0234ef0813",
+        "source_head_sha": "2bbedbc1881148eb48d0280570a98d0234ef0813",
+        "ci_url": null,
+        "finished_at": "2026-10-20T04:53:32.104586+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "9796e108d3d1f647f82e559087aec304907be3b5ee68dd352137019dd0d0dd07",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9054,
+          "sha256": "abc0b30a79815079dd1a0bd41cc2818b1ad6fa91a597dceccda9539a4f63b39c"
+        }
+      },
       "blocker": null,
       "attempts": [
         "T214六项唯一性声明4234根构建、9031公理审计PASS。",
         "七项定理与一个一般原能量解定义定向3646、全库4237 jobs与9054项递归公理审计均exit 0。"
       ],
-      "next_action": "证明原StrongDual弱方程与质量弱方程互换，并识别任意同数据原能量解及其真实零终迹。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -47088,7 +47167,37 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "2bbedbc1881148eb48d0280570a98d0234ef0813"
+    },
+    {
+      "id": "T216",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "一般阶紧支光滑测试的真实Sobolev射流与H₀ᵐ空间",
+      "goal_ids": [
+        "C232"
+      ],
+      "acceptance": [
+        "任意阶测试射流包含全部对称多重指标的真实弱导数",
+        "原H₀ᵐ定义为紧支光滑测试在真实Hm中的闭包",
+        "值嵌入、Hm闭性与L2稠密性，不额外假设测试射流存在"
+      ],
+      "dependencies": [],
+      "branch": "main",
+      "base_commit": "2bbedbc1881148eb48d0280570a98d0234ef0813",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "已有一般弱射流Hilbert空间、坐标导数、测试弱导数和m=1闭包，可复用。"
+      ],
+      "next_action": "从实际迭代坐标导数构造所有阶紧支光滑测试射流及原H₀ᵐ闭包、稠密值嵌入，为原高阶变系数算子建立边界空间。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
