@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T217",
-    "supervisor_checked_at": "2026-10-20T05:00:25.334528+00:00",
-    "next_action": "从实际Leibniz场和弱混合导数交换构造Hm上的连续乘法，再由真实测试闭包证明光滑权保持H₀ᵐ。",
+    "current_task_id": "T218",
+    "supervisor_checked_at": "2026-10-20T05:05:03.637283+00:00",
+    "next_action": "在真实全部多重指标上构造原系数双线性形式，核对积分、对称、H₀ᵐ能量实现和原加权上界。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "17b0a22b45b9d314f90414b72d3c3198ef129f0d",
-      "source_head_sha": "17b0a22b45b9d314f90414b72d3c3198ef129f0d",
+      "checked_sha": "79151186853d57b5e937851b51ace47c05a4e7ff",
+      "source_head_sha": "79151186853d57b5e937851b51ace47c05a4e7ff",
       "ci_url": null,
-      "finished_at": "2026-10-20T04:59:33.750361+00:00",
+      "finished_at": "2026-10-20T05:03:45.690033+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "333fe1f4b227d3f50e0958e58d95d9a8393d94c793d8af0446559128e4992ad6",
+      "source_manifest_sha256": "63231f4bce3d280e96018310b9893af16bb87fac5a915d06db5d0a8034398ff4",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9130,
-        "sha256": "c917b89693ffedc332308f93df117eedddce1c4c6cc2f61b7a8a3aca413c2042"
+        "declarations": 9173,
+        "sha256": "eb96e122d444d248264fa65b14e0b6b121b3c65d9598a04117700b9caaa0f20e"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "17b0a22b45b9d314f90414b72d3c3198ef129f0d",
-      "source_head_sha": "17b0a22b45b9d314f90414b72d3c3198ef129f0d",
+      "checked_sha": "79151186853d57b5e937851b51ace47c05a4e7ff",
+      "source_head_sha": "79151186853d57b5e937851b51ace47c05a4e7ff",
       "ci_url": null,
-      "finished_at": "2026-10-20T04:59:33.750361+00:00",
+      "finished_at": "2026-10-20T05:03:45.690033+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "333fe1f4b227d3f50e0958e58d95d9a8393d94c793d8af0446559128e4992ad6",
+      "source_manifest_sha256": "63231f4bce3d280e96018310b9893af16bb87fac5a915d06db5d0a8034398ff4",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9130,
-        "sha256": "c917b89693ffedc332308f93df117eedddce1c4c6cc2f61b7a8a3aca413c2042"
+        "declarations": 9173,
+        "sha256": "eb96e122d444d248264fa65b14e0b6b121b3c65d9598a04117700b9caaa0f20e"
       }
     }
   },
@@ -19907,7 +19907,7 @@
       "paper_ref": "paper/main.tex:2615–2652, prop:spatial-operators 中光滑权保持V和Sobolev正则",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:spatial-operators"
@@ -19925,8 +19925,37 @@
         "Carleman.boundedSmooth_map_mem_higherDirichlet",
         "Carleman.boundedSmooth_map_mem_higherDirichlet_domain"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "79151186853d57b5e937851b51ace47c05a4e7ff",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "79151186853d57b5e937851b51ace47c05a4e7ff",
+        "source_head_sha": "79151186853d57b5e937851b51ace47c05a4e7ff",
+        "ci_url": null,
+        "finished_at": "2026-10-20T05:03:45.690033+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "63231f4bce3d280e96018310b9893af16bb87fac5a915d06db5d0a8034398ff4",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9173,
+          "sha256": "eb96e122d444d248264fa65b14e0b6b121b3c65d9598a04117700b9caaa0f20e"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C027",
@@ -19937,7 +19966,30 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "实际构造乘后弱射流，无目标乘积存在前提；一般阶光滑权，不提升到尚未处理的W2m∞算子系数；17/26。"
+      "scope_notes": "实际构造乘后弱射流，无目标乘积存在前提；一般阶光滑权，不提升到尚未处理的W2m∞算子系数；17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C234",
+      "title": "任意阶原系数形式与统一加权上界",
+      "paper_ref": "paper/main.tex:2615–2652, eq:coefficientform 与原unshiftedformbound",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:spatial-operators"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C232"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "原有界可测系数形式的真实实现和加权上界；不假设系数光滑，不提升完整Prop A.1；17/26。"
     }
   ],
   "events": [
@@ -47434,9 +47486,9 @@
       ],
       "branch": "main",
       "base_commit": "17b0a22b45b9d314f90414b72d3c3198ef129f0d",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "79151186853d57b5e937851b51ace47c05a4e7ff",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.WeakSobolevJet.leibnizField_perm",
@@ -47451,13 +47503,42 @@
         "Carleman.boundedSmooth_map_mem_higherDirichlet",
         "Carleman.boundedSmooth_map_mem_higherDirichlet_domain"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "79151186853d57b5e937851b51ace47c05a4e7ff",
+        "source_head_sha": "79151186853d57b5e937851b51ace47c05a4e7ff",
+        "ci_url": null,
+        "finished_at": "2026-10-20T05:03:45.690033+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "63231f4bce3d280e96018310b9893af16bb87fac5a915d06db5d0a8034398ff4",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9173,
+          "sha256": "eb96e122d444d248264fa65b14e0b6b121b3c65d9598a04117700b9caaa0f20e"
+        }
+      },
       "blocker": null,
       "attempts": [
         "T216两模块25声明4239根构建、9130公理审计PASS；已定位一般Leibniz弱场与弱混合交换。",
         "两模块11项实际高阶乘法声明定向3229、全库4241 jobs与9173项递归公理审计均exit 0。"
       ],
-      "next_action": "从实际Leibniz场和弱混合导数交换构造Hm上的连续乘法，再由真实测试闭包证明光滑权保持H₀ᵐ。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -47472,7 +47553,39 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "79151186853d57b5e937851b51ace47c05a4e7ff"
+    },
+    {
+      "id": "T218",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "任意阶原系数形式与统一加权上界",
+      "goal_ids": [
+        "C234"
+      ],
+      "acceptance": [
+        "原全部多重指标与真实弱导数的积分形式",
+        "真实有界可测系数和原对称性给连续双线性形式",
+        "加权上界常数仅依赖原系数和固定阶数，不输入目标估计"
+      ],
+      "dependencies": [
+        "C232"
+      ],
+      "branch": "main",
+      "base_commit": "79151186853d57b5e937851b51ace47c05a4e7ff",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "T217全库4241 jobs、9173公理审计PASS；系数形式试编译已定位CLM实例预算与现有seminorm上界。"
+      ],
+      "next_action": "在真实全部多重指标上构造原系数双线性形式，核对积分、对称、H₀ᵐ能量实现和原加权上界。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
