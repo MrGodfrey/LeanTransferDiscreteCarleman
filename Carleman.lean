@@ -1049,3 +1049,8 @@ public import Carleman.Control.P1WeakControlLimit
 
 public import Carleman.Control.P1ControlRefinement
 public import Carleman.Control.BoxP1NullControlLimits
+
+public import Carleman.Control.PivotIntervalEnergy
+public import Carleman.Control.PivotPathConvergence
+public import Carleman.Control.PivotWeakEnergyIdentity
+public import Carleman.Control.DirichletTimeEnergyIdentity

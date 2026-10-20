@@ -8125,6 +8125,22 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Physical.box_p1_controls_null_limits
 #print axioms Carleman.Physical.box_p1_controls_null_limits
 
+-- T212: exact energy at every time for the original weak pivot derivative.
+#check @Carleman.HasWeakTimeDerivative.pivot_energy_identity_to
+#print axioms Carleman.HasWeakTimeDerivative.pivot_energy_identity_to
+#check @Carleman.time_restrict_inner_integral
+#print axioms Carleman.time_restrict_inner_integral
+#check @Carleman.pivot_path_limit_strong
+#print axioms Carleman.pivot_path_limit_strong
+#check @Carleman.exists_pivot_time_energy_representative
+#print axioms Carleman.exists_pivot_time_energy_representative
+#check @Carleman.pivot_time_energy_identity
+#print axioms Carleman.pivot_time_energy_identity
+#check @Carleman.FiniteDirichletControlIdentity.energy_identity
+#print axioms Carleman.FiniteDirichletControlIdentity.energy_identity
+#check @Carleman.FiniteDirichletControlIdentity.continuous_H_energy_trace
+#print axioms Carleman.FiniteDirichletControlIdentity.continuous_H_energy_trace
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
