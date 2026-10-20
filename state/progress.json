@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T241",
-    "supervisor_checked_at": "2026-10-20T08:15:50.426521+00:00",
-    "next_action": "将真实图PDE接入半空间变系数估计，并通过逆图恢复原同一状态。",
+    "current_task_id": "T242",
+    "supervisor_checked_at": "2026-10-20T08:20:36.667929+00:00",
+    "next_action": "构造跨边界截断H¹₀状态，并从原全部测试推导局部换域后的弱方程。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "9160cd18d129e8d33ef644a71f5794f9df54a1c2",
-      "source_head_sha": "9160cd18d129e8d33ef644a71f5794f9df54a1c2",
+      "checked_sha": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc",
+      "source_head_sha": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc",
       "ci_url": null,
-      "finished_at": "2026-10-20T08:14:27.927798+00:00",
+      "finished_at": "2026-10-20T08:18:59.407565+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "e0dd12698569ce5a9b6bfb4bd8ac474234147e296423ec72e1fc08bc26e43a0c",
+      "source_manifest_sha256": "733624ff0a5fd3eaf8dc093ea67e632963e6296a18c947fbae43e1a2cd2dcdf0",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9878,
-        "sha256": "a8476608383ecf5c109ef6f42f7eed49101d33fc7d413d2e74865d88e6fdb71e"
+        "declarations": 9883,
+        "sha256": "a752259c3fa935218ce91a01e085b57ed01613e9e7b9afdcd95407549434c202"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "9160cd18d129e8d33ef644a71f5794f9df54a1c2",
-      "source_head_sha": "9160cd18d129e8d33ef644a71f5794f9df54a1c2",
+      "checked_sha": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc",
+      "source_head_sha": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc",
       "ci_url": null,
-      "finished_at": "2026-10-20T08:14:27.927798+00:00",
+      "finished_at": "2026-10-20T08:18:59.407565+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "e0dd12698569ce5a9b6bfb4bd8ac474234147e296423ec72e1fc08bc26e43a0c",
+      "source_manifest_sha256": "733624ff0a5fd3eaf8dc093ea67e632963e6296a18c947fbae43e1a2cd2dcdf0",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9878,
-        "sha256": "a8476608383ecf5c109ef6f42f7eed49101d33fc7d413d2e74865d88e6fdb71e"
+        "declarations": 9883,
+        "sha256": "a752259c3fa935218ce91a01e085b57ed01613e9e7b9afdcd95407549434c202"
       }
     }
   },
@@ -22081,7 +22081,7 @@
       "pr_url": null,
       "id": "C257",
       "title": "实际曲边图区域上的原Dirichlet弱解H²恢复",
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "lean_declarations": [
         "Carleman.exists_dirichlet_H2_of_graph_tangential_invariance",
         "Carleman.exists_graphEpigraph_dirichlet_H2",
@@ -22095,6 +22095,58 @@
       ],
       "blocker": null,
       "scope_notes": "给定全局平滑有界斜率图的真实Dirichlet H²；仍需原域局部图与局部化、凸域统一控制，AUXILIARY，18/26。",
+      "independent_review_status": "PENDING",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc",
+        "source_head_sha": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc",
+        "ci_url": null,
+        "finished_at": "2026-10-20T08:18:59.407565+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "733624ff0a5fd3eaf8dc093ea67e632963e6296a18c947fbae43e1a2cd2dcdf0",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9883,
+          "sha256": "a752259c3fa935218ce91a01e085b57ed01613e9e7b9afdcd95407549434c202"
+        }
+      },
+      "semantic_review": null,
+      "declaration_version": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc"
+    },
+    {
+      "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的边界H²正则性证明路线",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "pr_url": null,
+      "id": "C258",
+      "title": "边界截断弱解在局部相同域之间的真实传输",
+      "verification_status": "SPECIFIED",
+      "lean_declarations": [],
+      "dependencies": [
+        "C257"
+      ],
+      "blocker": null,
+      "scope_notes": "局部边界截断与换域；仍需原域图构造及凸域统一控制，AUXILIARY，18/26。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -52300,8 +52352,8 @@
         "C252"
       ],
       "base_commit": "9160cd18d129e8d33ef644a71f5794f9df54a1c2",
-      "status": "RUNNING",
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "checkpoint_commit": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.exists_dirichlet_H2_of_graph_tangential_invariance",
@@ -52311,8 +52363,37 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "将真实图PDE接入半空间变系数估计，并通过逆图恢复原同一状态。",
-      "build_evidence": null,
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc",
+        "source_head_sha": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc",
+        "ci_url": null,
+        "finished_at": "2026-10-20T08:18:59.407565+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "733624ff0a5fd3eaf8dc093ea67e632963e6296a18c947fbae43e1a2cd2dcdf0",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9883,
+          "sha256": "a752259c3fa935218ce91a01e085b57ed01613e9e7b9afdcd95407549434c202"
+        }
+      },
       "local_validation": {
         "target": "Carleman.Spatial.GraphDomainRegularity",
         "target_jobs": 3390,
@@ -52323,7 +52404,37 @@
         "recursive_axiom_declarations": 9883,
         "axiom_exit_code": 0,
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc"
+    },
+    {
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "branch": "main",
+      "pr_url": null,
+      "integration_mode": "direct-main",
+      "id": "T242",
+      "title": "边界截断弱解在局部相同域之间的真实传输",
+      "goal_ids": [
+        "C258"
+      ],
+      "acceptance": [
+        "截断后实际值和完整弱梯度",
+        "局部相同域之间真实H¹₀闭包保持",
+        "原弱方程截断项与域传输不丢边界项"
+      ],
+      "dependencies": [
+        "C257"
+      ],
+      "base_commit": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc",
+      "status": "RUNNING",
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "blocker": null,
+      "attempts": [],
+      "next_action": "构造跨边界截断H¹₀状态，并从原全部测试推导局部换域后的弱方程。",
+      "build_evidence": null
     }
   ],
   "private_maintenance": {
