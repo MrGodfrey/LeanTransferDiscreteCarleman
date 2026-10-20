@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T255",
-    "supervisor_checked_at": "2026-10-20T10:10:36.160999+00:00",
-    "next_action": "从真实紧支弱状态构造半空间贴边盒及截断，利用双向H²传递证明同一状态的零边值强逼近。",
+    "current_task_id": "T256",
+    "supervisor_checked_at": "2026-10-20T10:17:33.525667+00:00",
+    "next_action": "完成真实逆图H²连续映射与全局光滑复合身份，将紧支半空间零边值强逼近传回两侧曲边域。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "4a84f2b095e71ea776fa79ecf2d568f28270cbe1",
-      "source_head_sha": "4a84f2b095e71ea776fa79ecf2d568f28270cbe1",
+      "checked_sha": "2b7dfa5b8dc39445682940c02d91c5bec5a747a0",
+      "source_head_sha": "2b7dfa5b8dc39445682940c02d91c5bec5a747a0",
       "ci_url": null,
-      "finished_at": "2026-10-20T10:08:20.690032+00:00",
+      "finished_at": "2026-10-20T10:15:40.023409+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "40545139491559ee6b70f8a7bcf9f3363d82e76ab3a40fe82fb5185f042d1e2d",
+      "source_manifest_sha256": "48873b7c8a857bcccda9257b65f540ad4a43b7a9ed852a9a27497b3adae729d9",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10188,
-        "sha256": "b68ab1b0d77d88f39c473bfc9c66d384ad391c57e49d261a562558c764a021be"
+        "declarations": 10200,
+        "sha256": "6806fe55bb8a07710529d3ecae4aefb44102075006a3e906cde6c0f822907e88"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "4a84f2b095e71ea776fa79ecf2d568f28270cbe1",
-      "source_head_sha": "4a84f2b095e71ea776fa79ecf2d568f28270cbe1",
+      "checked_sha": "2b7dfa5b8dc39445682940c02d91c5bec5a747a0",
+      "source_head_sha": "2b7dfa5b8dc39445682940c02d91c5bec5a747a0",
       "ci_url": null,
-      "finished_at": "2026-10-20T10:08:20.690032+00:00",
+      "finished_at": "2026-10-20T10:15:40.023409+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "40545139491559ee6b70f8a7bcf9f3363d82e76ab3a40fe82fb5185f042d1e2d",
+      "source_manifest_sha256": "48873b7c8a857bcccda9257b65f540ad4a43b7a9ed852a9a27497b3adae729d9",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10188,
-        "sha256": "b68ab1b0d77d88f39c473bfc9c66d384ad391c57e49d261a562558c764a021be"
+        "declarations": 10200,
+        "sha256": "6806fe55bb8a07710529d3ecae4aefb44102075006a3e906cde6c0f822907e88"
       }
     }
   },
@@ -23325,7 +23325,7 @@
       "pr_url": null,
       "id": "C271",
       "title": "紧支半空间状态的零边值H²强逼近",
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "lean_declarations": [
         "Carleman.SpatialTest.cutoffH2Transfer_roundtrip",
         "Carleman.exists_compact_localbox_strong_h2_approximation",
@@ -23345,6 +23345,59 @@
       ],
       "blocker": null,
       "scope_notes": "任意紧支半空间原H²∩H¹₀状态的强逼近；曲边图与有限拼接仍待，AUXILIARY18/26。",
+      "independent_review_status": "PENDING",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "2b7dfa5b8dc39445682940c02d91c5bec5a747a0",
+        "source_head_sha": "2b7dfa5b8dc39445682940c02d91c5bec5a747a0",
+        "ci_url": null,
+        "finished_at": "2026-10-20T10:15:40.023409+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "48873b7c8a857bcccda9257b65f540ad4a43b7a9ed852a9a27497b3adae729d9",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10200,
+          "sha256": "6806fe55bb8a07710529d3ecae4aefb44102075006a3e906cde6c0f822907e88"
+        }
+      },
+      "semantic_review": null,
+      "declaration_version": "2b7dfa5b8dc39445682940c02d91c5bec5a747a0"
+    },
+    {
+      "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的凸域统一Hessian证明路线",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "pr_url": null,
+      "id": "C272",
+      "title": "紧支曲边状态的完整H²零边值强逼近",
+      "verification_status": "SPECIFIED",
+      "lean_declarations": [],
+      "dependencies": [
+        "C271",
+        "C268"
+      ],
+      "blocker": null,
+      "scope_notes": "真实固定全局图域的紧支H²∩H¹₀强密度；原域有限局部化拼接仍待，AUXILIARY18/26。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -55001,8 +55054,8 @@
         "C250"
       ],
       "base_commit": "4a84f2b095e71ea776fa79ecf2d568f28270cbe1",
-      "status": "RUNNING",
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "checkpoint_commit": "2b7dfa5b8dc39445682940c02d91c5bec5a747a0",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.SpatialTest.cutoffH2Transfer_roundtrip",
@@ -55018,8 +55071,37 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "从真实紧支弱状态构造半空间贴边盒及截断，利用双向H²传递证明同一状态的零边值强逼近。",
-      "build_evidence": null,
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "2b7dfa5b8dc39445682940c02d91c5bec5a747a0",
+        "source_head_sha": "2b7dfa5b8dc39445682940c02d91c5bec5a747a0",
+        "ci_url": null,
+        "finished_at": "2026-10-20T10:15:40.023409+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "48873b7c8a857bcccda9257b65f540ad4a43b7a9ed852a9a27497b3adae729d9",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10200,
+          "sha256": "6806fe55bb8a07710529d3ecae4aefb44102075006a3e906cde6c0f822907e88"
+        }
+      },
       "local_validation": {
         "target": "Carleman.Spatial.CompactHalfspaceDensity",
         "target_jobs": 3481,
@@ -55030,7 +55112,38 @@
         "recursive_axiom_declarations": 10200,
         "axiom_exit_code": 0,
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "2b7dfa5b8dc39445682940c02d91c5bec5a747a0"
+    },
+    {
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "branch": "main",
+      "pr_url": null,
+      "integration_mode": "direct-main",
+      "id": "T256",
+      "title": "紧支曲边状态的完整H²零边值强逼近",
+      "goal_ids": [
+        "C272"
+      ],
+      "acceptance": [
+        "实际逆图H²映射及完整双向逆身份",
+        "全局光滑测试复合与真实边界零值",
+        "两侧图域紧支原弱状态的完整H²强逼近"
+      ],
+      "dependencies": [
+        "C271",
+        "C268"
+      ],
+      "base_commit": "2b7dfa5b8dc39445682940c02d91c5bec5a747a0",
+      "status": "RUNNING",
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "blocker": null,
+      "attempts": [],
+      "next_action": "完成真实逆图H²连续映射与全局光滑复合身份，将紧支半空间零边值强逼近传回两侧曲边域。",
+      "build_evidence": null
     }
   ],
   "private_maintenance": {
