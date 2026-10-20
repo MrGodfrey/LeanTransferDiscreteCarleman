@@ -10,21 +10,21 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T210",
-    "supervisor_checked_at": "2026-10-20T04:18:45.746349+00:00",
-    "next_action": "固定每个给定P1弱控制极限的同一原弱方程和连续零终态，交独立验收；整合实际盒P1控制族。",
+    "current_task_id": "T211",
+    "supervisor_checked_at": "2026-10-20T04:21:25.737197+00:00",
+    "next_action": "在独立细化的原full P1网格与时间步上构造实际控制族，保留费用/指数终态/支撑，并整合每个给定弱积聚控制的原连续零终态。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-20T04:14:17.513592+00:00"
+    "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "bf85c15d7a923ca6dce0a5d5fdf10f31c28e413b",
-      "source_head_sha": "bf85c15d7a923ca6dce0a5d5fdf10f31c28e413b",
+      "checked_sha": "3725f002ad895342683989c46d052625da5f57ba",
+      "source_head_sha": "3725f002ad895342683989c46d052625da5f57ba",
       "ci_url": null,
-      "finished_at": "2026-10-20T04:12:07.261500+00:00",
+      "finished_at": "2026-10-20T04:20:26.969524+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "a01be326a1bf7fb37b5c3a3f50d9ede632a275f5631ae32ffa01c39b3cf64b88",
+      "source_manifest_sha256": "6be38426243e6df82968eafc0eb6b7c6bb1ba3a4cf4286be4efd4e9a0aad5f22",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9003,
-        "sha256": "f783fbb89a9316eccb5772b11579c0cd8c1a99519b511c5bb1a9935073629fb5"
+        "declarations": 9007,
+        "sha256": "56011f715e31b4603fc5cfeb20fcd0e475ad02c5e495f8637865dcf04552568e"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "bf85c15d7a923ca6dce0a5d5fdf10f31c28e413b",
-      "source_head_sha": "bf85c15d7a923ca6dce0a5d5fdf10f31c28e413b",
+      "checked_sha": "3725f002ad895342683989c46d052625da5f57ba",
+      "source_head_sha": "3725f002ad895342683989c46d052625da5f57ba",
       "ci_url": null,
-      "finished_at": "2026-10-20T04:12:07.261500+00:00",
+      "finished_at": "2026-10-20T04:20:26.969524+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "a01be326a1bf7fb37b5c3a3f50d9ede632a275f5631ae32ffa01c39b3cf64b88",
+      "source_manifest_sha256": "6be38426243e6df82968eafc0eb6b7c6bb1ba3a4cf4286be4efd4e9a0aad5f22",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9003,
-        "sha256": "f783fbb89a9316eccb5772b11579c0cd8c1a99519b511c5bb1a9935073629fb5"
+        "declarations": 9007,
+        "sha256": "56011f715e31b4603fc5cfeb20fcd0e475ad02c5e495f8637865dcf04552568e"
       }
     }
   },
@@ -19369,7 +19369,7 @@
       "paper_ref": "paper/main.tex:2389–2415, prop:control-convergence 的P1原弱方程及端点",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -19380,8 +19380,37 @@
         "Carleman.full_p1_finite_test_weak_limit_identity",
         "Carleman.full_p1_weak_control_limit_null_state"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "3725f002ad895342683989c46d052625da5f57ba",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "3725f002ad895342683989c46d052625da5f57ba",
+        "source_head_sha": "3725f002ad895342683989c46d052625da5f57ba",
+        "ci_url": null,
+        "finished_at": "2026-10-20T04:20:26.969524+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "6be38426243e6df82968eafc0eb6b7c6bb1ba3a4cf4286be4efd4e9a0aad5f22",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9007,
+          "sha256": "56011f715e31b4603fc5cfeb20fcd0e475ad02c5e495f8637865dcf04552568e"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C224",
@@ -19390,7 +19419,32 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "每个给定P1弱控制极限的原有限弱身份与连续零终态；实际控制族选择整合仍待，17/26。"
+      "scope_notes": "每个给定P1弱控制极限的原有限弱身份与连续零终态；实际控制族选择整合仍待，17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C227",
+      "title": "实际盒P1控制族及每个弱积聚点的零终态",
+      "paper_ref": "paper/main.tex:2318–2415, prop:control-convergence 的实际盒P1控制族",
+      "milestone": "M6c",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:control-convergence"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C190",
+        "C213",
+        "C226"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "实际盒域d≤3原分级P1控制族及每个弱积聚零终态；一般多面体尚待，17/26。"
     }
   ],
   "events": [
@@ -46154,9 +46208,9 @@
       ],
       "branch": "main",
       "base_commit": "bf85c15d7a923ca6dce0a5d5fdf10f31c28e413b",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "3725f002ad895342683989c46d052625da5f57ba",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.regional_time_control_norm",
@@ -46164,13 +46218,42 @@
         "Carleman.full_p1_finite_test_weak_limit_identity",
         "Carleman.full_p1_weak_control_limit_null_state"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "3725f002ad895342683989c46d052625da5f57ba",
+        "source_head_sha": "3725f002ad895342683989c46d052625da5f57ba",
+        "ci_url": null,
+        "finished_at": "2026-10-20T04:20:26.969524+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "6be38426243e6df82968eafc0eb6b7c6bb1ba3a4cf4286be4efd4e9a0aad5f22",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9007,
+          "sha256": "56011f715e31b4603fc5cfeb20fcd0e475ad02c5e495f8637865dcf04552568e"
+        }
+      },
       "blocker": null,
       "attempts": [
         "T209实际原势和P1测试4218根构建、9003公理审计PASS。",
         "三模块四定理目标3831 jobs、根4221 jobs、公理9007项均exit 0；区域时间支撑改用真实分片常数有限和，避免抽象核空间接口的类型展开。"
       ],
-      "next_action": "固定每个给定P1弱控制极限的同一原弱方程和连续零终态，交独立验收；整合实际盒P1控制族。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -46185,7 +46268,42 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "3725f002ad895342683989c46d052625da5f57ba"
+    },
+    {
+      "id": "T211",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "实际盒P1控制族及每个弱积聚点的零终态",
+      "goal_ids": [
+        "C227"
+      ],
+      "acceptance": [
+        "基础κ/d0先于T/M、费用常数先于网格/势/数据",
+        "实际原时间平均势、L²投影初值、区域控制和全部P1物理状态",
+        "原物理条件在h与dt独立细化下内部成立，保留控制费用和指数终态",
+        "同一族相对弱紧且每个给定弱积聚U产生原区域控制与同一Y的原连续零终态"
+      ],
+      "dependencies": [
+        "C190",
+        "C213",
+        "C226"
+      ],
+      "branch": "main",
+      "base_commit": "3725f002ad895342683989c46d052625da5f57ba",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "T210原P1弱控制极限4221根构建、9007递归公理审计PASS。"
+      ],
+      "next_action": "在独立细化的原full P1网格与时间步上构造实际控制族，保留费用/指数终态/支撑，并整合每个给定弱积聚控制的原连续零终态。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
