@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T205",
-    "supervisor_checked_at": "2026-10-20T03:45:17.449850+00:00",
+    "supervisor_checked_at": "2026-10-20T03:47:29.755200+00:00",
     "next_action": "对同一H连续代表使用原不限端点弱恒等式、真实标量弱FTC和空间稠密性，识别q(0)=y0及q(T)=0。",
     "blocker": null,
     "pause_reason": null,
@@ -18910,7 +18910,7 @@
       "paper_ref": "paper/main.tex:2415, prop:control-convergence 的 H 连续时间迹",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -18952,7 +18952,20 @@
           "sha256": "1d8820b367cb04cdf3eb997ed259b4e8c5829731df708572beefa0b2c444084e"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "7afc739b6c8f95e208beeaefed4b955f0eebbdb5",
+        "declarations": [
+          "Carleman.HasWeakTimeDerivative.sub_memLp",
+          "Carleman.pivot_path_limit",
+          "Carleman.exists_pivot_time_representative",
+          "Carleman.FiniteDirichletControlIdentity.continuous_H_representative"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9720d4b27b055716a613d8666a82fdb393f02d8e/governance/reviews/T204-local-acceptance.md",
+        "reviewed_at": "2026-10-20T03:45:17+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C218",
         "C219"
@@ -18960,7 +18973,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "由实际正则化路径一致极限证明原状态的闭区间H连续代表；初终值识别仍待，17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C221",
@@ -20184,6 +20197,11 @@
       "at": "2026-10-20T03:45:17.449850+00:00",
       "public_summary": "实际质量正则化连续轨迹及Bochner强极限已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/51434001118a81a4b437dbf48210ebdb18d01084/governance/reviews/T203-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T03:47:29.755200+00:00",
+      "public_summary": "原控制状态的真实H连续时间代表已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9720d4b27b055716a613d8666a82fdb393f02d8e/governance/reviews/T204-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -20632,7 +20650,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0c0f916331bfc3b9b8de33c6cea3c4c74eaade7c/governance/reviews/T200-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ead953059ca10ece442e495c14c134d23058d593/governance/reviews/T201-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/31a68eca148364486a25a736b6272ee0779b6f34/governance/reviews/T202-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/51434001118a81a4b437dbf48210ebdb18d01084/governance/reviews/T203-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/51434001118a81a4b437dbf48210ebdb18d01084/governance/reviews/T203-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9720d4b27b055716a613d8666a82fdb393f02d8e/governance/reviews/T204-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -45118,10 +45137,10 @@
       ],
       "branch": "main",
       "base_commit": "d6634423766eaa11b670fb643578e3a62ff1a71e",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "7afc739b6c8f95e208beeaefed4b955f0eebbdb5",
-      "merge_commit": null,
+      "merge_commit": "7afc739b6c8f95e208beeaefed4b955f0eebbdb5",
       "lean_declarations": [
         "Carleman.HasWeakTimeDerivative.sub_memLp",
         "Carleman.pivot_path_limit",
@@ -45163,7 +45182,7 @@
         "T203实际连续正则化路径4205全库jobs、8917公理审计PASS，独立验收进行中；通用H路径强极限试编译已通过。",
         "实际两索引Cauchy界与完整C([0,T];H)完备性给一致极限，通过真实pathL2映射识别原Y；4声明probe exit0，3628定向/4207全库jobs、8921递归公理审计PASS。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -45177,9 +45196,22 @@
         "declaration_artifact_sha256": "1d8820b367cb04cdf3eb997ed259b4e8c5829731df708572beefa0b2c444084e",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "7afc739b6c8f95e208beeaefed4b955f0eebbdb5"
+      "declaration_version": "7afc739b6c8f95e208beeaefed4b955f0eebbdb5",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C220"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "7afc739b6c8f95e208beeaefed4b955f0eebbdb5",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T03:45:17+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9720d4b27b055716a613d8666a82fdb393f02d8e/governance/reviews/T204-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T205",
