@@ -1043,3 +1043,6 @@ public import Carleman.Control.ConformingWeakTesting
 public import Carleman.Control.P1GalerkinTests
 public import Carleman.Control.TimeAveragedProductPotential
 public import Carleman.Control.P1FiniteTestConsistency
+public import Carleman.Control.RegionalTimeControl
+public import Carleman.Control.P1WeakLimitIdentity
+public import Carleman.Control.P1WeakControlLimit

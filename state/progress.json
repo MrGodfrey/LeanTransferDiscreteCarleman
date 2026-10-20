@@ -12,7 +12,7 @@
     "state": "RUNNING",
     "current_task_id": "T210",
     "supervisor_checked_at": "2026-10-20T04:18:45.746349+00:00",
-    "next_action": "将真实P1六项恒等式取极限，并对每个给定弱控制极限抽取同一能量状态、恢复原方程及连续初终值。",
+    "next_action": "固定每个给定P1弱控制极限的同一原弱方程和连续零终态，交独立验收；整合实际盒P1控制族。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:14:17.513592+00:00"
@@ -19374,7 +19374,12 @@
       "paper_labels": [
         "prop:control-convergence"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.regional_time_control_norm",
+        "Carleman.regional_time_control_supported",
+        "Carleman.full_p1_finite_test_weak_limit_identity",
+        "Carleman.full_p1_weak_control_limit_null_state"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -46153,14 +46158,34 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.regional_time_control_norm",
+        "Carleman.regional_time_control_supported",
+        "Carleman.full_p1_finite_test_weak_limit_identity",
+        "Carleman.full_p1_weak_control_limit_null_state"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "T209实际原势和P1测试4218根构建、9003公理审计PASS。"
+        "T209实际原势和P1测试4218根构建、9003公理审计PASS。",
+        "三模块四定理目标3831 jobs、根4221 jobs、公理9007项均exit 0；区域时间支撑改用真实分片常数有限和，避免抽象核空间接口的类型展开。"
       ],
-      "next_action": "将真实P1六项恒等式取极限，并对每个给定弱控制极限抽取同一能量状态、恢复原方程及连续初终值。",
-      "integration_mode": "direct-main"
+      "next_action": "固定每个给定P1弱控制极限的同一原弱方程和连续零终态，交独立验收；整合实际盒P1控制族。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4221,
+        "recursive_axiom_audit": 9007,
+        "new_explicit_declarations": 4,
+        "declaration_artifact_sha256": "56011f715e31b4603fc5cfeb20fcd0e475ad02c5e495f8637865dcf04552568e",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

@@ -8108,6 +8108,17 @@ set_option pp.maxSteps 1000000
 #check @Carleman.full_p1_galerkin_finite_time_test_consistency
 #print axioms Carleman.full_p1_galerkin_finite_time_test_consistency
 
+
+-- T210: each original P1 weak control limit has the full equation and continuous null state.
+#check @Carleman.regional_time_control_norm
+#print axioms Carleman.regional_time_control_norm
+#check @Carleman.regional_time_control_supported
+#print axioms Carleman.regional_time_control_supported
+#check @Carleman.full_p1_finite_test_weak_limit_identity
+#print axioms Carleman.full_p1_finite_test_weak_limit_identity
+#check @Carleman.full_p1_weak_control_limit_null_state
+#print axioms Carleman.full_p1_weak_control_limit_null_state
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
