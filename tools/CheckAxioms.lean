@@ -9485,6 +9485,43 @@ set_option pp.maxSteps 1000000
 #check Carleman.halfspaceSmoothInner_smooth_heat_carleman_inequality
 #print axioms Carleman.halfspaceSmoothInner_smooth_heat_carleman_inequality
 
+#check Carleman.domainTimeIntegral_const_mul
+#print axioms Carleman.domainTimeIntegral_const_mul
+#check Carleman.domainTimeIntegral_mono_on
+#print axioms Carleman.domainTimeIntegral_mono_on
+#check Carleman.continuous_domain_observation_integrable
+#print axioms Carleman.continuous_domain_observation_integrable
+#check Carleman.domainTimeIntegral_observation
+#print axioms Carleman.domainTimeIntegral_observation
+#check Carleman.domainTimeIntegral_mono_on_integrable
+#print axioms Carleman.domainTimeIntegral_mono_on_integrable
+#check Carleman.domainTimeIntegral_add_integrable
+#print axioms Carleman.domainTimeIntegral_add_integrable
+#check Carleman.domainTimeIntegral_nonneg_on
+#print axioms Carleman.domainTimeIntegral_nonneg_on
+#check Carleman.domainHeatTimeReflection_measurePreserving
+#print axioms Carleman.domainHeatTimeReflection_measurePreserving
+#check Carleman.domainTimeIntegral_reflection
+#print axioms Carleman.domainTimeIntegral_reflection
+#check Carleman.domainTimeIntegral_tendsto_parameter
+#print axioms Carleman.domainTimeIntegral_tendsto_parameter
+#check Carleman.domainTimeIntegral_observation_tendsto_parameter
+#print axioms Carleman.domainTimeIntegral_observation_tendsto_parameter
+#check Carleman.domainTimeIntegral_congr_on
+#print axioms Carleman.domainTimeIntegral_congr_on
+#check Carleman.halfspaceSmoothInner_uniform_heat_cross
+#print axioms Carleman.halfspaceSmoothInner_uniform_heat_cross
+#check Carleman.halfspaceSmoothInner_uniform_heat_observation
+#print axioms Carleman.halfspaceSmoothInner_uniform_heat_observation
+#check Carleman.halfspaceSmoothInner_uniform_heat_estimate
+#print axioms Carleman.halfspaceSmoothInner_uniform_heat_estimate
+#check Carleman.halfspaceSmoothInner_uniform_heat_both_signs
+#print axioms Carleman.halfspaceSmoothInner_uniform_heat_both_signs
+#check Carleman.halfspaceSmoothInner_uniform_C2_heat_both_signs
+#print axioms Carleman.halfspaceSmoothInner_uniform_C2_heat_both_signs
+#check Carleman.halfspaceSmoothInner_uniform_interval_C2_heat_both_signs
+#print axioms Carleman.halfspaceSmoothInner_uniform_interval_C2_heat_both_signs
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

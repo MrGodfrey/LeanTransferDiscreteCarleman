@@ -1165,3 +1165,7 @@ public import Carleman.Control.FullP1Realization
 public import Carleman.Spatial.LevelHeatBoundary
 public import Carleman.Spatial.LevelDivergence
 public import Carleman.Spatial.SublevelHeatIdentity
+
+public import Carleman.Spatial.DomainTimeIntegralTools
+public import Carleman.Spatial.UniformInnerHeat
+public import Carleman.Spatial.UniformInnerC2Heat

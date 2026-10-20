@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T263",
-    "supervisor_checked_at": "2026-10-20T11:10:51.467119+00:00",
+    "supervisor_checked_at": "2026-10-20T11:13:30.288753+00:00",
     "next_action": "将实际内域积分不等式与原域上的统一Gaussian主项/观察吸收/梯度返回结合，所有常数先于内域索引。",
     "blocker": null,
     "pause_reason": null,
@@ -23868,7 +23868,7 @@
       "milestone": "M6a",
       "scope": "PAPER",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "lean_declarations": [
         "Carleman.finite_halfspace_convex",
         "Carleman.finite_halfspace_p1_realization"
@@ -23879,8 +23879,8 @@
       ],
       "pr_url": null,
       "blocker": null,
-      "scope_notes": "由原凸多面体H²域包含清偿P1接口的最后解析输入；保持全部网格和时间权统一性。待独立论文级验收。",
-      "independent_review_status": "PENDING",
+      "scope_notes": "完整原Proposition 6.1已通过独立论文级验收，原凸多面体正则性内部清偿；覆盖20/26。",
+      "independent_review_status": "PASS",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -23911,7 +23911,18 @@
           "sha256": "ec1372cf92dbebb01673ccd456d360e8564bf2e7ac657e2ed034c90f7d5d727e"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "708eae70c82d9c0b1d60f6907f0202201d518a16",
+        "declarations": [
+          "Carleman.finite_halfspace_convex",
+          "Carleman.finite_halfspace_p1_realization"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3c78de9fd54df2acf67f1c2dbeca68c0be8eeed0/governance/reviews/T261-local-acceptance.md",
+        "reviewed_at": "2026-10-20T11:09:22+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent paper acceptance"
+      },
       "declaration_version": "708eae70c82d9c0b1d60f6907f0202201d518a16"
     },
     {
@@ -23987,7 +23998,7 @@
     },
     {
       "id": "C279",
-      "title": "原域统一常数下的内域光滑热Carleman估计",
+      "title": "原域统一常数下内域双时间方向C²权热估计",
       "paper_ref": "paper/main.tex:2672 Proposition A.3 的统一内域逼近估计",
       "paper_labels": [
         "prop:continuousCE"
@@ -23996,13 +24007,32 @@
       "scope": "AUXILIARY",
       "extra_hypotheses": [],
       "verification_status": "SPECIFIED",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.domainTimeIntegral_const_mul",
+        "Carleman.domainTimeIntegral_mono_on",
+        "Carleman.continuous_domain_observation_integrable",
+        "Carleman.domainTimeIntegral_observation",
+        "Carleman.domainTimeIntegral_mono_on_integrable",
+        "Carleman.domainTimeIntegral_add_integrable",
+        "Carleman.domainTimeIntegral_nonneg_on",
+        "Carleman.domainHeatTimeReflection_measurePreserving",
+        "Carleman.domainTimeIntegral_reflection",
+        "Carleman.domainTimeIntegral_tendsto_parameter",
+        "Carleman.domainTimeIntegral_observation_tendsto_parameter",
+        "Carleman.domainTimeIntegral_congr_on",
+        "Carleman.halfspaceSmoothInner_uniform_heat_cross",
+        "Carleman.halfspaceSmoothInner_uniform_heat_observation",
+        "Carleman.halfspaceSmoothInner_uniform_heat_estimate",
+        "Carleman.halfspaceSmoothInner_uniform_heat_both_signs",
+        "Carleman.halfspaceSmoothInner_uniform_C2_heat_both_signs",
+        "Carleman.halfspaceSmoothInner_uniform_interval_C2_heat_both_signs"
+      ],
       "dependencies": [
         "C278"
       ],
       "pr_url": null,
       "blocker": null,
-      "scope_notes": "全部空间权、观察吸收和原梯度返回常数在内域索引前选择；尚待C²权及完整弱态/原域极限。",
+      "scope_notes": "空间权、观察吸收和梯度返回常数在内域索引前选取；双时间方向、原闭区间C²权已覆盖，原完整弱态与原域极限仍待。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -25491,6 +25521,11 @@
       "at": "2026-10-20T11:04:25.564947+00:00",
       "public_summary": "Corollary A.2 原凸多面体与盒的完整空间解析实现已通过固定本地验证与独立数学验收；原文覆盖19/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/90003a32772cd54be6d442575e293c281516cecf/governance/reviews/T260-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T11:13:30.288753+00:00",
+      "public_summary": "Proposition 6.1 原凸多面体完整P1数值假设已通过固定本地验证与独立数学验收；原文覆盖20/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3c78de9fd54df2acf67f1c2dbeca68c0be8eeed0/governance/reviews/T261-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -25996,7 +26031,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ce10da05a21b2b2bcf4ef5f5661d3da7f64927ae/governance/reviews/T257-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8b4fa0e5f90c6d70abbc834880571d878e5184cd/governance/reviews/T258-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8693fe2b3f59764bf3544d6c81abba6a3d29bcd1/governance/reviews/T259-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/90003a32772cd54be6d442575e293c281516cecf/governance/reviews/T260-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/90003a32772cd54be6d442575e293c281516cecf/governance/reviews/T260-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3c78de9fd54df2acf67f1c2dbeca68c0be8eeed0/governance/reviews/T261-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -56291,9 +56327,9 @@
         "C142"
       ],
       "base_commit": "cbd25fdee3e670d39fce5a03cbf172c02a890544",
-      "status": "REVIEW",
+      "status": "MERGED",
       "checkpoint_commit": "708eae70c82d9c0b1d60f6907f0202201d518a16",
-      "merge_commit": null,
+      "merge_commit": "708eae70c82d9c0b1d60f6907f0202201d518a16",
       "lean_declarations": [
         "Carleman.finite_halfspace_convex",
         "Carleman.finite_halfspace_p1_realization"
@@ -56330,7 +56366,7 @@
       },
       "blocker": null,
       "attempts": [],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "local_validation": {
         "target": "Carleman.Control.FullP1Realization",
         "target_jobs": 3855,
@@ -56340,9 +56376,24 @@
         "root_exit_code": 0,
         "recursive_axiom_declarations": 10321,
         "axiom_exit_code": 0,
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "708eae70c82d9c0b1d60f6907f0202201d518a16"
+      "declaration_version": "708eae70c82d9c0b1d60f6907f0202201d518a16",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C277"
+          ],
+          "paper_result_ids": [
+            "P011"
+          ],
+          "checked_sha": "708eae70c82d9c0b1d60f6907f0202201d518a16",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T11:09:22+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3c78de9fd54df2acf67f1c2dbeca68c0be8eeed0/governance/reviews/T261-local-acceptance.md"
+        }
+      ]
     },
     {
       "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
@@ -56440,7 +56491,7 @@
       "pr_url": null,
       "integration_mode": "direct-main",
       "id": "T263",
-      "title": "原域统一常数下的内域光滑热Carleman估计",
+      "title": "原域统一常数下内域双时间方向C²权热估计",
       "goal_ids": [
         "C279"
       ],
@@ -56456,11 +56507,41 @@
       "status": "RUNNING",
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.domainTimeIntegral_const_mul",
+        "Carleman.domainTimeIntegral_mono_on",
+        "Carleman.continuous_domain_observation_integrable",
+        "Carleman.domainTimeIntegral_observation",
+        "Carleman.domainTimeIntegral_mono_on_integrable",
+        "Carleman.domainTimeIntegral_add_integrable",
+        "Carleman.domainTimeIntegral_nonneg_on",
+        "Carleman.domainHeatTimeReflection_measurePreserving",
+        "Carleman.domainTimeIntegral_reflection",
+        "Carleman.domainTimeIntegral_tendsto_parameter",
+        "Carleman.domainTimeIntegral_observation_tendsto_parameter",
+        "Carleman.domainTimeIntegral_congr_on",
+        "Carleman.halfspaceSmoothInner_uniform_heat_cross",
+        "Carleman.halfspaceSmoothInner_uniform_heat_observation",
+        "Carleman.halfspaceSmoothInner_uniform_heat_estimate",
+        "Carleman.halfspaceSmoothInner_uniform_heat_both_signs",
+        "Carleman.halfspaceSmoothInner_uniform_C2_heat_both_signs",
+        "Carleman.halfspaceSmoothInner_uniform_interval_C2_heat_both_signs"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [],
-      "next_action": "将实际内域积分不等式与原域上的统一Gaussian主项/观察吸收/梯度返回结合，所有常数先于内域索引。"
+      "next_action": "将实际内域积分不等式与原域上的统一Gaussian主项/观察吸收/梯度返回结合，所有常数先于内域索引。",
+      "local_validation": {
+        "target": "Carleman.Spatial.UniformInnerC2Heat",
+        "target_jobs": 3491,
+        "target_exit_code": 0,
+        "root_target": "Carleman",
+        "root_jobs": 4306,
+        "root_exit_code": 0,
+        "recursive_axiom_declarations": 10358,
+        "axiom_exit_code": 0,
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

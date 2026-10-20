@@ -665,7 +665,7 @@
         "Carleman.finite_halfspace_p1_realization"
       ],
       "declaration_version": "708eae70c82d9c0b1d60f6907f0202201d518a16",
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": {
@@ -698,9 +698,20 @@
           "sha256": "ec1372cf92dbebb01673ccd456d360e8564bf2e7ac657e2ed034c90f7d5d727e"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "708eae70c82d9c0b1d60f6907f0202201d518a16",
+        "declarations": [
+          "Carleman.finite_halfspace_convex",
+          "Carleman.finite_halfspace_p1_realization"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3c78de9fd54df2acf67f1c2dbeca68c0be8eeed0/governance/reviews/T261-local-acceptance.md",
+        "reviewed_at": "2026-10-20T11:09:22+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent paper acceptance"
+      },
       "blocker": null,
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "P012",
