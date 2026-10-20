@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T233",
-    "supervisor_checked_at": "2026-10-20T06:56:22.218357+00:00",
+    "supervisor_checked_at": "2026-10-20T07:00:18.081418+00:00",
     "next_action": "证明实际测试差商强收敛，再用真实Riesz表示构造原弱导数。",
     "blocker": null,
     "pause_reason": null,
@@ -21270,7 +21270,7 @@
       "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的边界H²正则性证明路线",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:analytic-realizations"
@@ -21323,12 +21323,36 @@
           "sha256": "8cae0de36a4d298fb4a0646fb3a3b0442b422965bb618f6e749186b450a242f1"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "fb7cdb9855e940d9d275e726ce09f3beef9b20b0",
+        "declarations": [
+          "Carleman.spatialTranslationLp",
+          "Carleman.spatialTranslationLp_ae",
+          "Carleman.spatialTranslationLp_norm",
+          "Carleman.spatialTranslationLp_zero",
+          "Carleman.spatialTranslationLp_add",
+          "Carleman.spatialTranslationLp_inner",
+          "Carleman.mollified_full_translation_bound",
+          "Carleman.IsWeakSpatialDerivative.translation_bound_nonneg",
+          "Carleman.IsWeakSpatialDerivative.translation_bound",
+          "Carleman.spatialDifferenceQuotient",
+          "Carleman.spatialDifferenceQuotient_apply",
+          "Carleman.IsWeakSpatialDerivative.differenceQuotient_bound",
+          "Carleman.spatialDifferenceQuotient_inner",
+          "Carleman.IsWeakSpatialDerivative.translation",
+          "Carleman.IsWeakSpatialDerivative.differenceQuotient"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7174f716fb09a02cc6ab4ffcac119ead1d4848bb/governance/reviews/T232-local-acceptance.md",
+        "reviewed_at": "2026-10-20T06:58:05+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [],
       "blocker": null,
       "pr_url": null,
       "scope_notes": "实际L²平移/差商；变量系数边界正则性和完整P023仍待。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C249",
@@ -21341,7 +21365,16 @@
       "paper_labels": [
         "prop:analytic-realizations"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.spatialDifferenceQuotient_ae",
+        "Carleman.spatialDifferenceQuotient_tendsto_of_contDiff",
+        "Carleman.SpatialTest.differenceQuotient_tendsto",
+        "Carleman.SpatialTest.full_toLp_inner",
+        "Carleman.SpatialTest.full_derivativeLp_inner",
+        "Carleman.differenceQuotient_test_bound",
+        "Carleman.exists_weakSpatialDerivative_of_differenceQuotient_bound",
+        "Carleman.exists_weakH2_of_differenceQuotient_bounds"
+      ],
       "dependencies": [
         "C248"
       ],
@@ -22691,6 +22724,11 @@
       "at": "2026-10-20T06:51:46.669877+00:00",
       "public_summary": "真实正则水平集的解析边界平坦化坐标已通过固定本地验证与独立数学验收；原文覆盖18/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/dae4b8b906f87b6192e194d1f827422f3021c92e/governance/reviews/T231-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T07:00:18.081418+00:00",
+      "public_summary": "实际弱方向导数的全空间平移与差商估计已通过固定本地验证与独立数学验收；原文覆盖18/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7174f716fb09a02cc6ab4ffcac119ead1d4848bb/governance/reviews/T232-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -23167,7 +23205,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/794655ea939bd5d711faa65a3c3cd50d74621e89/governance/reviews/T228-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7311b6e17169c4248895dd1150990145ffd7985d/governance/reviews/T229-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6d3f546a94a5ca47a7a1f5aacf5f9d7b15821637/governance/reviews/T230-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/dae4b8b906f87b6192e194d1f827422f3021c92e/governance/reviews/T231-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/dae4b8b906f87b6192e194d1f827422f3021c92e/governance/reviews/T231-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7174f716fb09a02cc6ab4ffcac119ead1d4848bb/governance/reviews/T232-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -50585,10 +50624,10 @@
       "dependencies": [],
       "branch": "main",
       "base_commit": "e61081ad723542df4c8e33ab57a10f10f6db67d0",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "fb7cdb9855e940d9d275e726ce09f3beef9b20b0",
-      "merge_commit": null,
+      "merge_commit": "fb7cdb9855e940d9d275e726ce09f3beef9b20b0",
       "lean_declarations": [
         "Carleman.spatialTranslationLp",
         "Carleman.spatialTranslationLp_ae",
@@ -50640,7 +50679,7 @@
       "attempts": [
         "真实全空间平移、原弱导数差商界和分部求和/弱导数交换全部构建；目标3230、根4271及9587声明递归公理审计exit0。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -50658,9 +50697,22 @@
         "raw_sha256": "8cae0de36a4d298fb4a0646fb3a3b0442b422965bb618f6e749186b450a242f1",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "fb7cdb9855e940d9d275e726ce09f3beef9b20b0"
+      "declaration_version": "fb7cdb9855e940d9d275e726ce09f3beef9b20b0",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C248"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "fb7cdb9855e940d9d275e726ce09f3beef9b20b0",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T06:58:05+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7174f716fb09a02cc6ab4ffcac119ead1d4848bb/governance/reviews/T232-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T233",
@@ -50684,12 +50736,41 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.spatialDifferenceQuotient_ae",
+        "Carleman.spatialDifferenceQuotient_tendsto_of_contDiff",
+        "Carleman.SpatialTest.differenceQuotient_tendsto",
+        "Carleman.SpatialTest.full_toLp_inner",
+        "Carleman.SpatialTest.full_derivativeLp_inner",
+        "Carleman.differenceQuotient_test_bound",
+        "Carleman.exists_weakSpatialDerivative_of_differenceQuotient_bound",
+        "Carleman.exists_weakH2_of_differenceQuotient_bounds"
+      ],
       "blocker": null,
-      "attempts": [],
+      "attempts": [
+        "实际C¹/L²差商强极限、任意开域的真实弱导数判据及完整H²装配全部构建；3369/4272 jobs与9596递归审计exit0。"
+      ],
       "next_action": "证明实际测试差商强收敛，再用真实Riesz表示构造原弱导数。",
       "integration_mode": "direct-main",
-      "build_evidence": null
+      "build_evidence": null,
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman.Spatial.DifferenceQuotientCriterion",
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": [
+          3369,
+          4272
+        ],
+        "recursive_axiom_audit": 9596,
+        "new_explicit_declarations": 8,
+        "raw_sha256": "dc3f3eafe7b8fdc0c780f57a015a9a3a0006fe86b4842adafd8aac59163ce610",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

@@ -8667,6 +8667,24 @@ set_option pp.maxSteps 1000000
 #check @Carleman.IsWeakSpatialDerivative.differenceQuotient
 #print axioms Carleman.IsWeakSpatialDerivative.differenceQuotient
 
+-- T233: actual test difference quotients and local weak derivative criterion
+#check @Carleman.spatialDifferenceQuotient_ae
+#print axioms Carleman.spatialDifferenceQuotient_ae
+#check @Carleman.spatialDifferenceQuotient_tendsto_of_contDiff
+#print axioms Carleman.spatialDifferenceQuotient_tendsto_of_contDiff
+#check @Carleman.SpatialTest.differenceQuotient_tendsto
+#print axioms Carleman.SpatialTest.differenceQuotient_tendsto
+#check @Carleman.SpatialTest.full_toLp_inner
+#print axioms Carleman.SpatialTest.full_toLp_inner
+#check @Carleman.SpatialTest.full_derivativeLp_inner
+#print axioms Carleman.SpatialTest.full_derivativeLp_inner
+#check @Carleman.differenceQuotient_test_bound
+#print axioms Carleman.differenceQuotient_test_bound
+#check @Carleman.exists_weakSpatialDerivative_of_differenceQuotient_bound
+#print axioms Carleman.exists_weakSpatialDerivative_of_differenceQuotient_bound
+#check @Carleman.exists_weakH2_of_differenceQuotient_bounds
+#print axioms Carleman.exists_weakH2_of_differenceQuotient_bounds
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
@@ -8678,3 +8696,4 @@ run_cmd do
           throwError "{name} depends on an unapproved axiom: {ax}"
       checked := checked + 1
   logInfo m!"Axiom audit passed for all {checked} Carleman declarations."
+
