@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T253",
-    "supervisor_checked_at": "2026-10-20T09:58:50.837491+00:00",
-    "next_action": "将盒子上实际零边值逼近提升为完整H²强收敛，供曲边图传递与局部拼接。",
+    "current_task_id": "T254",
+    "supervisor_checked_at": "2026-10-20T10:00:59.380699+00:00",
+    "next_action": "构造完整H²∩H¹₀闭子空间，并由实际截断弱方程证明一致支撑邻域之间的H²连续传递。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "51c2b03bbc06cc44d7d55e9bb12a91bbb7971285",
-      "source_head_sha": "51c2b03bbc06cc44d7d55e9bb12a91bbb7971285",
+      "checked_sha": "032d2ae56bb04dd52015641301e4f4903fc0a1ab",
+      "source_head_sha": "032d2ae56bb04dd52015641301e4f4903fc0a1ab",
       "ci_url": null,
-      "finished_at": "2026-10-20T09:52:00.771874+00:00",
+      "finished_at": "2026-10-20T09:58:53.549877+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "9358e4ebf337d55747ed434bdc55fd012baa0ea06850e8bdbcfc947c59de06a0",
+      "source_manifest_sha256": "88b9daaa4a113b6c736c11d40d2b304ee5ae834187706ffbc96a11d7a0dd340b",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10095,
-        "sha256": "621a0aa454600cb753ed837e00dbb4dcce980e4e333f7287e47789f70d24014f"
+        "declarations": 10108,
+        "sha256": "41f0b0fc17b5e17ef4b318e2d3b041d8d6e54eb7513c2b0f27ab90b8a44918c3"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "51c2b03bbc06cc44d7d55e9bb12a91bbb7971285",
-      "source_head_sha": "51c2b03bbc06cc44d7d55e9bb12a91bbb7971285",
+      "checked_sha": "032d2ae56bb04dd52015641301e4f4903fc0a1ab",
+      "source_head_sha": "032d2ae56bb04dd52015641301e4f4903fc0a1ab",
       "ci_url": null,
-      "finished_at": "2026-10-20T09:52:00.771874+00:00",
+      "finished_at": "2026-10-20T09:58:53.549877+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "9358e4ebf337d55747ed434bdc55fd012baa0ea06850e8bdbcfc947c59de06a0",
+      "source_manifest_sha256": "88b9daaa4a113b6c736c11d40d2b304ee5ae834187706ffbc96a11d7a0dd340b",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10095,
-        "sha256": "621a0aa454600cb753ed837e00dbb4dcce980e4e333f7287e47789f70d24014f"
+        "declarations": 10108,
+        "sha256": "41f0b0fc17b5e17ef4b318e2d3b041d8d6e54eb7513c2b0f27ab90b8a44918c3"
       }
     }
   },
@@ -23158,7 +23158,7 @@
       "pr_url": null,
       "id": "C269",
       "title": "盒子零边值逼近的完整H²强收敛",
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "lean_declarations": [
         "Carleman.derivativeFieldAssembly_components",
         "Carleman.derivativeField_tendsto_of_components",
@@ -23177,6 +23177,60 @@
       ],
       "blocker": null,
       "scope_notes": "原盒子的完整H²强密度；曲边局部拼接尚待，AUXILIARY18/26。",
+      "independent_review_status": "PENDING",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "032d2ae56bb04dd52015641301e4f4903fc0a1ab",
+        "source_head_sha": "032d2ae56bb04dd52015641301e4f4903fc0a1ab",
+        "ci_url": null,
+        "finished_at": "2026-10-20T09:58:53.549877+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "88b9daaa4a113b6c736c11d40d2b304ee5ae834187706ffbc96a11d7a0dd340b",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10108,
+          "sha256": "41f0b0fc17b5e17ef4b318e2d3b041d8d6e54eb7513c2b0f27ab90b8a44918c3"
+        }
+      },
+      "semantic_review": null,
+      "declaration_version": "032d2ae56bb04dd52015641301e4f4903fc0a1ab"
+    },
+    {
+      "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的凸域统一Hessian证明路线",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "pr_url": null,
+      "id": "C270",
+      "title": "边界截断换域的完整H²连续传递",
+      "verification_status": "SPECIFIED",
+      "lean_declarations": [],
+      "dependencies": [
+        "C268",
+        "C269",
+        "C258"
+      ],
+      "blocker": null,
+      "scope_notes": "固定域/截断的完整H²传递；泛型目标正则性明确，具体盒子/图域内部供应；一般强密度仍待，AUXILIARY18/26。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -54629,8 +54683,8 @@
         "C268"
       ],
       "base_commit": "51c2b03bbc06cc44d7d55e9bb12a91bbb7971285",
-      "status": "RUNNING",
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "checkpoint_commit": "032d2ae56bb04dd52015641301e4f4903fc0a1ab",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.derivativeFieldAssembly_components",
@@ -54647,8 +54701,37 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "将盒子上实际零边值逼近提升为完整H²强收敛，供曲边图传递与局部拼接。",
-      "build_evidence": null,
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "032d2ae56bb04dd52015641301e4f4903fc0a1ab",
+        "source_head_sha": "032d2ae56bb04dd52015641301e4f4903fc0a1ab",
+        "ci_url": null,
+        "finished_at": "2026-10-20T09:58:53.549877+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "88b9daaa4a113b6c736c11d40d2b304ee5ae834187706ffbc96a11d7a0dd340b",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10108,
+          "sha256": "41f0b0fc17b5e17ef4b318e2d3b041d8d6e54eb7513c2b0f27ab90b8a44918c3"
+        }
+      },
       "local_validation": {
         "target": "Carleman.Spatial.BoxStrongH2Density",
         "target_jobs": 3439,
@@ -54659,7 +54742,39 @@
         "recursive_axiom_declarations": 10108,
         "axiom_exit_code": 0,
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "032d2ae56bb04dd52015641301e4f4903fc0a1ab"
+    },
+    {
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "branch": "main",
+      "pr_url": null,
+      "integration_mode": "direct-main",
+      "id": "T254",
+      "title": "边界截断换域的完整H²连续传递",
+      "goal_ids": [
+        "C270"
+      ],
+      "acceptance": [
+        "完整H²∩H¹₀空间真实闭性与完备性",
+        "实际截断值、原弱方程与目标H²存在",
+        "固定换域映射强连续并保留H¹₀与真实光滑函数"
+      ],
+      "dependencies": [
+        "C268",
+        "C269",
+        "C258"
+      ],
+      "base_commit": "032d2ae56bb04dd52015641301e4f4903fc0a1ab",
+      "status": "RUNNING",
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "blocker": null,
+      "attempts": [],
+      "next_action": "构造完整H²∩H¹₀闭子空间，并由实际截断弱方程证明一致支撑邻域之间的H²连续传递。",
+      "build_evidence": null
     }
   ],
   "private_maintenance": {
