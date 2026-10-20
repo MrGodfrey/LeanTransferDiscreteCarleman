@@ -1,6 +1,6 @@
 # T199 — 原有限弱方程扩展到全部 H¹₀ 测试
 
-基线 `714954acb8b017b09da56c71d4bd91b7d0ccffe2`，原稿 `paper/main.tex:2395–2421`，`eq:conv-limit-identity` 到 `9.26-eq16` 的空间测试扩展。本批 3 模块 5 声明，AUXILIARY，17/26。
+基线 `714954acb8b017b09da56c71d4bd91b7d0ccffe2`，原稿 `paper/main.tex:2395–2415`，`eq:conv-limit-identity` 到 `9.26-eq16` 的空间测试扩展。本批 3 模块 5 声明，AUXILIARY，17/26。
 
 `exists_refining_time_grids` 实际构造 N=n+1、dt=T/(n+1) 的辅助时间网格。它只用于识别两个固定测试表示，没有替换原控制网格或给原 h/dt 增加关系。
 

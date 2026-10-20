@@ -1,6 +1,6 @@
 # T200 — 原控制极限的实际对偶时间弱导数
 
-基线 `c8020ad62e0ebb26a1c9144edc50d2ac2458a6d9`；原稿 `paper/main.tex:2403–2421`，`9.26-eq16`。4 模块 15 声明，AUXILIARY，17/26。
+基线 `c8020ad62e0ebb26a1c9144edc50d2ac2458a6d9`；原稿 `paper/main.tex:2403–2415`，`9.26-eq16`。4 模块 15 声明，AUXILIARY，17/26。
 
 记 V 为此前真实 H¹₀ 能量空间，H 为原空间 L²，E:V→H 为实际值映射，G 为真实弱梯度。`timeTensor_eq_scalarTensor` 和 `inner_timeTensor_integral` 将已使用张量与真实 Bochner 积分配对相接；`compLpL_adjoint` 通过实际代表元和 L² 积分证明有界算子伴随与逐时间 L² 映射交换。`HasWeakTimeDerivative.map_integral` 使用真实可积性将弱导数积分恒等式通过任意有界线性映射传到 Banach 空间。
 

@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T202",
-    "supervisor_checked_at": "2026-10-20T03:22:56.131177+00:00",
+    "supervisor_checked_at": "2026-10-20T03:31:15.908124+00:00",
     "next_action": "证明真实能量的区间变差界和质量加权H迹估计，供正则化状态一致收敛使用。",
     "blocker": null,
     "pause_reason": null,
@@ -18499,7 +18499,7 @@
     {
       "id": "C215",
       "title": "原有限弱方程扩展到全部 H¹₀ 测试",
-      "paper_ref": "paper/main.tex:2404–2425, 9.26-eq16",
+      "paper_ref": "paper/main.tex:2395–2415, eq:conv-limit-identity 与 9.26-eq16",
       "milestone": "M6c",
       "extra_hypotheses": [],
       "verification_status": "REVIEWED",
@@ -18573,7 +18573,7 @@
     {
       "id": "C216",
       "title": "原控制极限的实际对偶时间弱导数",
-      "paper_ref": "paper/main.tex:2403–2421, 9.26-eq16",
+      "paper_ref": "paper/main.tex:2403–2415, 9.26-eq16",
       "milestone": "M6c",
       "extra_hypotheses": [],
       "verification_status": "REVIEWED",
@@ -18666,10 +18666,10 @@
     {
       "id": "C217",
       "title": "能量空间质量算子的实际正则化",
-      "paper_ref": "paper/main.tex:2420–2421, prop:control-convergence 的 H 连续时间迹",
+      "paper_ref": "paper/main.tex:2415, prop:control-convergence 的 H 连续时间迹",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -18726,19 +18726,47 @@
           "sha256": "46e16af9bec0291d1465c207074a7ba2670c7c2a599128aeb0ae2312a3c746a1"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "cf2701d48ac60007502c1ad44286c1d64b1303ce",
+        "declarations": [
+          "Carleman.positiveMassForm",
+          "Carleman.positiveMassForm_coercive",
+          "Carleman.positiveMassInverse",
+          "Carleman.positiveMassInverse_equation",
+          "Carleman.positiveMassInverse_left",
+          "Carleman.positiveMassInverse_commute",
+          "Carleman.positiveMassRegularizer",
+          "Carleman.positiveMassRegularizer_norm",
+          "Carleman.positiveMassRegularizer_residual_norm",
+          "Carleman.positiveMassRegularizer_range_error",
+          "Carleman.positiveMassRegularizer_strong",
+          "Carleman.adjoint_mass_denseRange",
+          "Carleman.compLpL_strong_of_contractions",
+          "Carleman.dirichletTimeMass_nonneg",
+          "Carleman.dirichletTimeMass_dense",
+          "Carleman.dirichletMassRegularizer",
+          "Carleman.dirichletMassRegularizer_norm",
+          "Carleman.dirichletMassRegularizer_strong",
+          "Carleman.dirichletMassRegularizer_bochner_strong"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ead953059ca10ece442e495c14c134d23058d593/governance/reviews/T201-local-acceptance.md",
+        "reviewed_at": "2026-10-20T03:24:52+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C216"
       ],
       "blocker": null,
       "pr_url": null,
       "scope_notes": "由真实能量到对偶导数构造时间迹所需的质量正则化；完整H连续迹及端点待，17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C218",
       "title": "能量嵌入的加权时间迹估计",
-      "paper_ref": "paper/main.tex:2420–2421, prop:control-convergence 的 H 连续时间迹",
+      "paper_ref": "paper/main.tex:2415, prop:control-convergence 的 H 连续时间迹",
       "milestone": "M6c",
       "extra_hypotheses": [],
       "verification_status": "SPECIFIED",
@@ -19941,6 +19969,11 @@
       "at": "2026-10-20T03:22:03.495967+00:00",
       "public_summary": "原控制极限的实际对偶时间弱导数已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0c0f916331bfc3b9b8de33c6cea3c4c74eaade7c/governance/reviews/T200-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T03:31:15.908124+00:00",
+      "public_summary": "能量空间质量算子的实际正则化已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ead953059ca10ece442e495c14c134d23058d593/governance/reviews/T201-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -20386,7 +20419,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3a6bd348117c86d39b3f17b9b111f5a85ac3e7ea/governance/reviews/T197-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c1734158e7981e99e96131efdac9d72f456696b8/governance/reviews/T198-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b64539bd63c95a3808b4a2e3a5a0e8c4283c8542/governance/reviews/T199-C215-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0c0f916331bfc3b9b8de33c6cea3c4c74eaade7c/governance/reviews/T200-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0c0f916331bfc3b9b8de33c6cea3c4c74eaade7c/governance/reviews/T200-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ead953059ca10ece442e495c14c134d23058d593/governance/reviews/T201-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -44572,10 +44606,10 @@
       ],
       "branch": "main",
       "base_commit": "a081c61839658c2869ef6a01e7bcd387a81b9af4",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "cf2701d48ac60007502c1ad44286c1d64b1303ce",
-      "merge_commit": null,
+      "merge_commit": "cf2701d48ac60007502c1ad44286c1d64b1303ce",
       "lean_declarations": [
         "Carleman.positiveMassForm",
         "Carleman.positiveMassForm_coercive",
@@ -44632,7 +44666,7 @@
         "T200实际对偶弱时间导数4199全库jobs、8873公理审计PASS，独立验收进行中。",
         "实际Lax–Milgram逆、双侧恒等式、交换/收缩/range误差及稠密强逼近；DCT给实际Bochner L²强收敛；19项probe exit0、3611定向/4202全库jobs和8909递归公理审计PASS。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -44646,9 +44680,22 @@
         "declaration_artifact_sha256": "46e16af9bec0291d1465c207074a7ba2670c7c2a599128aeb0ae2312a3c746a1",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "cf2701d48ac60007502c1ad44286c1d64b1303ce"
+      "declaration_version": "cf2701d48ac60007502c1ad44286c1d64b1303ce",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C217"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "cf2701d48ac60007502c1ad44286c1d64b1303ce",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T03:24:52+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ead953059ca10ece442e495c14c134d23058d593/governance/reviews/T201-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T202",

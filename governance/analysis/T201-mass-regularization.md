@@ -1,6 +1,6 @@
 # T201 — 能量空间质量算子的实际正则化
 
-基线 `a081c61839658c2869ef6a01e7bcd387a81b9af4`；原稿 `paper/main.tex:2420–2421`，原控制极限 H 连续时间迹的辅助证明。3 模块 19 声明，AUXILIARY，17/26。
+基线 `a081c61839658c2869ef6a01e7bcd387a81b9af4`；原稿 `paper/main.tex:2415`，原控制极限 H 连续时间迹的辅助证明。3 模块 19 声明，AUXILIARY，17/26。
 
 本批选用质量正则化证明时间迹，属于原结论不变的证明路线。一般 Hilbert 空间 V 上，M 为实际有界线性算子，明确要求 (Mv,v)≥0。`positiveMassForm` 构造 Bε(v,w)=(Mv,w)+ε(v,w)，对每个 ε>0 的实际强制性由原非负性直接证明；`positiveMassInverse` 通过真实 Lax–Milgram/variationalSolve 构造 Rε=(M+εI)⁻¹，不将逆存在性作为输入。
 
