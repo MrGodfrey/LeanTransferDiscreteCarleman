@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T225",
-    "supervisor_checked_at": "2026-10-20T05:57:05.921419+00:00",
-    "next_action": "在已识别的原微分算子上消去无权导数主项，用严格降阶Leibniz余项给原q幂交换子界并接入真实域保持。",
+    "current_task_id": "T226",
+    "supervisor_checked_at": "2026-10-20T06:04:22.273572+00:00",
+    "next_action": "将真实原系数形式与域、允许权保持、上下界和交换子装配为全族；保留原图正则性输入，独立审核完整P022。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "03f8c203f00dc90f126a44f9200c5ac56f645752",
-      "source_head_sha": "03f8c203f00dc90f126a44f9200c5ac56f645752",
+      "checked_sha": "f616d5d02bde9bd06cc719a33a727b40c5d44675",
+      "source_head_sha": "f616d5d02bde9bd06cc719a33a727b40c5d44675",
       "ci_url": null,
-      "finished_at": "2026-10-20T05:51:12.531427+00:00",
+      "finished_at": "2026-10-20T06:03:46.451529+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "3dc084d94b359223eedeecd78c0c603465d0aba7a230b525f9fcf2658443f374",
+      "source_manifest_sha256": "0da5b02044f43571420e2ade234ff22258b32e584ac0d25212e18cdb4285fbdf",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9432,
-        "sha256": "26c1799a25bad8a13f722b049837a3ec78b3337088d690cef05679cd8492a682"
+        "declarations": 9446,
+        "sha256": "171c1b62cfc9f36778feb61f28ca133eb89ebd37dd51bab63085660127ba49e5"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "03f8c203f00dc90f126a44f9200c5ac56f645752",
-      "source_head_sha": "03f8c203f00dc90f126a44f9200c5ac56f645752",
+      "checked_sha": "f616d5d02bde9bd06cc719a33a727b40c5d44675",
+      "source_head_sha": "f616d5d02bde9bd06cc719a33a727b40c5d44675",
       "ci_url": null,
-      "finished_at": "2026-10-20T05:51:12.531427+00:00",
+      "finished_at": "2026-10-20T06:03:46.451529+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "3dc084d94b359223eedeecd78c0c603465d0aba7a230b525f9fcf2658443f374",
+      "source_manifest_sha256": "0da5b02044f43571420e2ade234ff22258b32e584ac0d25212e18cdb4285fbdf",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9432,
-        "sha256": "26c1799a25bad8a13f722b049837a3ec78b3337088d690cef05679cd8492a682"
+        "declarations": 9446,
+        "sha256": "171c1b62cfc9f36778feb61f28ca133eb89ebd37dd51bab63085660127ba49e5"
       }
     }
   },
@@ -20647,7 +20647,7 @@
       "paper_ref": "paper/main.tex:2633–2635 与原ass:localization",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:spatial-operators"
@@ -20665,8 +20665,37 @@
         "Carleman.higherCoefficient_operator_multiplier_preserves",
         "Carleman.higherCoefficient_allowed_commutator"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "f616d5d02bde9bd06cc719a33a727b40c5d44675",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "f616d5d02bde9bd06cc719a33a727b40c5d44675",
+        "source_head_sha": "f616d5d02bde9bd06cc719a33a727b40c5d44675",
+        "ci_url": null,
+        "finished_at": "2026-10-20T06:03:46.451529+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "0da5b02044f43571420e2ade234ff22258b32e584ac0d25212e18cdb4285fbdf",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9446,
+          "sha256": "171c1b62cfc9f36778feb61f28ca133eb89ebd37dd51bab63085660127ba49e5"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C233",
@@ -20677,7 +20706,36 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "一般弱系数原算子允许权交换子，须保留全域和统一常数；完整A.1最终接口整合仍待，17/26。"
+      "scope_notes": "一般弱系数原算子允许权交换子，须保留全域和统一常数；完整A.1最终接口整合仍待，17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C242",
+      "title": "一般阶系数 Proposition A.1 的完整原 A1–A3 统一实现",
+      "paper_ref": "paper/main.tex:2615–2654 Proposition A.1",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "PAPER",
+      "paper_labels": [
+        "prop:spatial-operators"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C232",
+        "C233",
+        "C234",
+        "C237",
+        "C239",
+        "C240",
+        "C241"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "目标完整P022，尚未完成独立验收，不计入原文覆盖。"
     }
   ],
   "events": [
@@ -49108,9 +49166,9 @@
       ],
       "branch": "main",
       "base_commit": "03f8c203f00dc90f126a44f9200c5ac56f645752",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "f616d5d02bde9bd06cc719a33a727b40c5d44675",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.list_sum_map_sub",
@@ -49125,12 +49183,41 @@
         "Carleman.higherCoefficient_operator_multiplier_preserves",
         "Carleman.higherCoefficient_allowed_commutator"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "f616d5d02bde9bd06cc719a33a727b40c5d44675",
+        "source_head_sha": "f616d5d02bde9bd06cc719a33a727b40c5d44675",
+        "ci_url": null,
+        "finished_at": "2026-10-20T06:03:46.451529+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "0da5b02044f43571420e2ade234ff22258b32e584ac0d25212e18cdb4285fbdf",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9446,
+          "sha256": "171c1b62cfc9f36778feb61f28ca133eb89ebd37dd51bab63085660127ba49e5"
+        }
+      },
       "blocker": null,
       "attempts": [
         "实际系数逐项共轭差、严格降阶余项、全允许权统一常数及原域保持全部实现；本地目标、根导入及9446声明审计exit 0。"
       ],
-      "next_action": "在已识别的原微分算子上消去无权导数主项，用严格降阶Leibniz余项给原q幂交换子界并接入真实域保持。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -49149,7 +49236,45 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "review": "PENDING"
-      }
+      },
+      "declaration_version": "f616d5d02bde9bd06cc719a33a727b40c5d44675"
+    },
+    {
+      "id": "T226",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "一般阶系数 Proposition A.1 的完整原 A1–A3 统一实现",
+      "goal_ids": [
+        "C242"
+      ],
+      "acceptance": [
+        "原完整H₀ᵐ和同一关联算子",
+        "原W²ᵐ∞全部系数与原graph假设",
+        "完整A1–A3，常数先于T/q/τStar/符号/全部状态"
+      ],
+      "dependencies": [
+        "C232",
+        "C233",
+        "C234",
+        "C237",
+        "C239",
+        "C240",
+        "C241"
+      ],
+      "branch": "main",
+      "base_commit": "f616d5d02bde9bd06cc719a33a727b40c5d44675",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "正在编译一般原形式scalarForm与canonical jet身份及允许权下界接口。"
+      ],
+      "next_action": "将真实原系数形式与域、允许权保持、上下界和交换子装配为全族；保留原图正则性输入，独立审核完整P022。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
