@@ -10,21 +10,21 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T198",
-    "supervisor_checked_at": "2026-10-20T02:48:48.623297+00:00",
-    "next_action": "本地完整构建和公理审计通过；固定证明提交后交独立Agent验收每个原控制弱积点、同一状态及量词。",
+    "current_task_id": "T199",
+    "supervisor_checked_at": "2026-10-20T02:52:35.486518+00:00",
+    "next_action": "证明真实测试能量稠密性和产品张量身份，再对全部 H¹₀ 测试取极限。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-20T02:42:44.997590+00:00"
+    "last_activity_at": "2026-10-20T02:52:35.486518+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "3998fb3b4353576457a0773e69d587e5cf92e7e8",
-      "source_head_sha": "3998fb3b4353576457a0773e69d587e5cf92e7e8",
+      "checked_sha": "714954acb8b017b09da56c71d4bd91b7d0ccffe2",
+      "source_head_sha": "714954acb8b017b09da56c71d4bd91b7d0ccffe2",
       "ci_url": null,
-      "finished_at": "2026-10-20T02:41:26.974440+00:00",
+      "finished_at": "2026-10-20T02:50:41.985017+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "c7aa2c7608c568198cc7e80c14c2e76ca78f5d2b33e848ff7138b56cfe28cc78",
+      "source_manifest_sha256": "915b08a491d418f50ee58f5fa3a64702656b1816347f3bf03038131671c0794f",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8726,
-        "sha256": "65a777f78bd2aabf23508bc8b1d8aad10a420402af8ac4e7fe55722bf2d425cd"
+        "declarations": 8780,
+        "sha256": "0695c24f5a9f5e32ecd6b81b21e54e0d339840a9215ec97bbadd28f0617f69ce"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "3998fb3b4353576457a0773e69d587e5cf92e7e8",
-      "source_head_sha": "3998fb3b4353576457a0773e69d587e5cf92e7e8",
+      "checked_sha": "714954acb8b017b09da56c71d4bd91b7d0ccffe2",
+      "source_head_sha": "714954acb8b017b09da56c71d4bd91b7d0ccffe2",
       "ci_url": null,
-      "finished_at": "2026-10-20T02:41:26.974440+00:00",
+      "finished_at": "2026-10-20T02:50:41.985017+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "c7aa2c7608c568198cc7e80c14c2e76ca78f5d2b33e848ff7138b56cfe28cc78",
+      "source_manifest_sha256": "915b08a491d418f50ee58f5fa3a64702656b1816347f3bf03038131671c0794f",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8726,
-        "sha256": "65a777f78bd2aabf23508bc8b1d8aad10a420402af8ac4e7fe55722bf2d425cd"
+        "declarations": 8780,
+        "sha256": "0695c24f5a9f5e32ecd6b81b21e54e0d339840a9215ec97bbadd28f0617f69ce"
       }
     }
   },
@@ -18427,7 +18427,7 @@
       "paper_ref": "paper/main.tex:2365–2400, eq:conv-limit-identity",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -18439,8 +18439,37 @@
         "Carleman.cartesian_weak_control_limit_finite_identity",
         "Carleman.Physical.box_cartesian_controls_weak_accumulation"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "714954acb8b017b09da56c71d4bd91b7d0ccffe2",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "714954acb8b017b09da56c71d4bd91b7d0ccffe2",
+        "source_head_sha": "714954acb8b017b09da56c71d4bd91b7d0ccffe2",
+        "ci_url": null,
+        "finished_at": "2026-10-20T02:50:41.985017+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "915b08a491d418f50ee58f5fa3a64702656b1816347f3bf03038131671c0794f",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8780,
+          "sha256": "0695c24f5a9f5e32ecd6b81b21e54e0d339840a9215ec97bbadd28f0617f69ce"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C213",
@@ -18450,7 +18479,32 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "任意原控制弱积点对应同一实际 H¹₀ 状态的有限弱恒等式；V′导数和连续时间迹待，17/26。"
+      "scope_notes": "任意原控制弱积点对应同一实际 H¹₀ 状态的有限弱恒等式；V′导数和连续时间迹待，17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C215",
+      "title": "原有限弱方程扩展到全部 H¹₀ 测试",
+      "paper_ref": "paper/main.tex:2404–2425, 9.26-eq16",
+      "milestone": "M6c",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:control-convergence"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C214",
+        "C212",
+        "C207"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "有限测试到全 H¹₀ 测试的原弱方程扩展；实际 V′ 导数及 H 连续时间迹待，17/26。"
     }
   ],
   "events": [
@@ -43950,9 +44004,9 @@
       ],
       "branch": "main",
       "base_commit": "3998fb3b4353576457a0773e69d587e5cf92e7e8",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "714954acb8b017b09da56c71d4bd91b7d0ccffe2",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.hilbert_weak_limit_norm_le",
@@ -43961,13 +44015,42 @@
         "Carleman.cartesian_weak_control_limit_finite_identity",
         "Carleman.Physical.box_cartesian_controls_weak_accumulation"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "714954acb8b017b09da56c71d4bd91b7d0ccffe2",
+        "source_head_sha": "714954acb8b017b09da56c71d4bd91b7d0ccffe2",
+        "ci_url": null,
+        "finished_at": "2026-10-20T02:50:41.985017+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "915b08a491d418f50ee58f5fa3a64702656b1816347f3bf03038131671c0794f",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8780,
+          "sha256": "0695c24f5a9f5e32ecd6b81b21e54e0d339840a9215ec97bbadd28f0617f69ce"
+        }
+      },
       "blocker": null,
       "attempts": [
         "T197原控制选择4071定向/4189全库jobs、8726公理审计PASS，独立验收进行中。",
         "5项正式声明完整probe exit0；4075定向jobs、4192全库jobs及8780项递归公理审计PASS。"
       ],
-      "next_action": "本地完整构建和公理审计通过；固定证明提交后交独立Agent验收每个原控制弱积点、同一状态及量词。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -43982,7 +44065,41 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "714954acb8b017b09da56c71d4bd91b7d0ccffe2"
+    },
+    {
+      "id": "T199",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原有限弱方程扩展到全部 H¹₀ 测试",
+      "goal_ids": [
+        "C215"
+      ],
+      "acceptance": [
+        "原光滑测试在真实 H¹₀ 能量空间稠密，不假设目标稠密性",
+        "原有限产品测试等于真实 Bochner 张量的产品映像",
+        "通过真实连续性扩展原弱恒等式到每个 H¹₀ 空间测试"
+      ],
+      "dependencies": [
+        "C214",
+        "C212",
+        "C207"
+      ],
+      "branch": "main",
+      "base_commit": "714954acb8b017b09da56c71d4bd91b7d0ccffe2",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "T198每个原控制弱积点的有限弱方程4075定向/4192全库jobs、8780公理审计PASS，独立验收进行中。"
+      ],
+      "next_action": "证明真实测试能量稠密性和产品张量身份，再对全部 H¹₀ 测试取极限。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
