@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T224",
-    "supervisor_checked_at": "2026-10-20T05:52:13.703606+00:00",
-    "next_action": "逐次真实分部积分，证明完整系数微分表达式对应原形式及全部H₀ᵐ测试，并识别关联算子图。",
+    "current_task_id": "T225",
+    "supervisor_checked_at": "2026-10-20T05:52:14.907375+00:00",
+    "next_action": "在已识别的原微分算子上消去无权导数主项，用严格降阶Leibniz余项给原q幂交换子界并接入真实域保持。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "7413b28a97681bcf834d35701a7ca878ebac1b99",
-      "source_head_sha": "7413b28a97681bcf834d35701a7ca878ebac1b99",
+      "checked_sha": "03f8c203f00dc90f126a44f9200c5ac56f645752",
+      "source_head_sha": "03f8c203f00dc90f126a44f9200c5ac56f645752",
       "ci_url": null,
-      "finished_at": "2026-10-20T05:46:46.338198+00:00",
+      "finished_at": "2026-10-20T05:51:12.531427+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "12397d60f029941d30e2ae05a04267119a1602c2ddd9686d0000738c4a9d9788",
+      "source_manifest_sha256": "3dc084d94b359223eedeecd78c0c603465d0aba7a230b525f9fcf2658443f374",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9386,
-        "sha256": "56d962cde3ed16a954610290695bcc4918b591a5233cfed7ee8d4b0f5435ce04"
+        "declarations": 9432,
+        "sha256": "26c1799a25bad8a13f722b049837a3ec78b3337088d690cef05679cd8492a682"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "7413b28a97681bcf834d35701a7ca878ebac1b99",
-      "source_head_sha": "7413b28a97681bcf834d35701a7ca878ebac1b99",
+      "checked_sha": "03f8c203f00dc90f126a44f9200c5ac56f645752",
+      "source_head_sha": "03f8c203f00dc90f126a44f9200c5ac56f645752",
       "ci_url": null,
-      "finished_at": "2026-10-20T05:46:46.338198+00:00",
+      "finished_at": "2026-10-20T05:51:12.531427+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "12397d60f029941d30e2ae05a04267119a1602c2ddd9686d0000738c4a9d9788",
+      "source_manifest_sha256": "3dc084d94b359223eedeecd78c0c603465d0aba7a230b525f9fcf2658443f374",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9386,
-        "sha256": "56d962cde3ed16a954610290695bcc4918b591a5233cfed7ee8d4b0f5435ce04"
+        "declarations": 9432,
+        "sha256": "26c1799a25bad8a13f722b049837a3ec78b3337088d690cef05679cd8492a682"
       }
     }
   },
@@ -20533,7 +20533,7 @@
       "paper_ref": "paper/main.tex:2618–2635，原系数形式与关联算子的Leibniz表达式",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:spatial-operators"
@@ -20555,8 +20555,37 @@
         "Carleman.higherCoefficient_operator_domain_eq",
         "Carleman.higherCoefficient_operator_canonical"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "03f8c203f00dc90f126a44f9200c5ac56f645752",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "03f8c203f00dc90f126a44f9200c5ac56f645752",
+        "source_head_sha": "03f8c203f00dc90f126a44f9200c5ac56f645752",
+        "ci_url": null,
+        "finished_at": "2026-10-20T05:51:12.531427+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "3dc084d94b359223eedeecd78c0c603465d0aba7a230b525f9fcf2658443f374",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9432,
+          "sha256": "26c1799a25bad8a13f722b049837a3ec78b3337088d690cef05679cd8492a682"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C027",
@@ -20567,7 +20596,34 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "实际一般阶系数微分表达式与原形式/关联图对齐；完整A.1交换子仍待，17/26。"
+      "scope_notes": "实际一般阶系数微分表达式与原形式/关联图对齐；完整A.1交换子仍待，17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C241",
+      "title": "一般弱系数原算子的允许权统一交换子界",
+      "paper_ref": "paper/main.tex:2633–2635 与原ass:localization",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:spatial-operators"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C233",
+        "C236",
+        "C237",
+        "C239",
+        "C240"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "一般弱系数原算子允许权交换子，须保留全域和统一常数；完整A.1最终接口整合仍待，17/26。"
     }
   ],
   "events": [
@@ -48857,9 +48913,9 @@
       ],
       "branch": "main",
       "base_commit": "7413b28a97681bcf834d35701a7ca878ebac1b99",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "03f8c203f00dc90f126a44f9200c5ac56f645752",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.SpatialTest.wordTest_append",
@@ -48878,13 +48934,42 @@
         "Carleman.higherCoefficient_operator_domain_eq",
         "Carleman.higherCoefficient_operator_canonical"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "03f8c203f00dc90f126a44f9200c5ac56f645752",
+        "source_head_sha": "03f8c203f00dc90f126a44f9200c5ac56f645752",
+        "ci_url": null,
+        "finished_at": "2026-10-20T05:51:12.531427+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "3dc084d94b359223eedeecd78c0c603465d0aba7a230b525f9fcf2658443f374",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9432,
+          "sha256": "26c1799a25bad8a13f722b049837a3ec78b3337088d690cef05679cd8492a682"
+        }
+      },
       "blocker": null,
       "attempts": [
         "真实有限弱链逐次分部积分及带偏移状态导数的系数展开已编译。",
         "真实完整系数微分表达式、全部H₀ᵐ测试身份及原关联算子图/域身份通过。目标3340/root4252 jobs实际exit0；9432声明递归审计PASS。"
       ],
-      "next_action": "逐次真实分部积分，证明完整系数微分表达式对应原形式及全部H₀ᵐ测试，并识别关联算子图。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -48904,7 +48989,43 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "review": "PENDING"
-      }
+      },
+      "declaration_version": "03f8c203f00dc90f126a44f9200c5ac56f645752"
+    },
+    {
+      "id": "T225",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "一般弱系数原算子的允许权统一交换子界",
+      "goal_ids": [
+        "C241"
+      ],
+      "acceptance": [
+        "原同一关联算子与完整H²ᵐ∩H₀ᵐ状态",
+        "主项严格相消且状态导数至多2m−1",
+        "允许权族常数先于q/τ/符号/状态，原q^(2m−j)幂"
+      ],
+      "dependencies": [
+        "C233",
+        "C236",
+        "C237",
+        "C239",
+        "C240"
+      ],
+      "branch": "main",
+      "base_commit": "03f8c203f00dc90f126a44f9200c5ac56f645752",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "已写一般系数微分项的真实共轭差和逐词范数估计，正在编译。"
+      ],
+      "next_action": "在已识别的原微分算子上消去无权导数主项，用严格降阶Leibniz余项给原q幂交换子界并接入真实域保持。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
