@@ -1135,11 +1135,40 @@
         "Carleman.finite_halfspace_analytic_realization",
         "Carleman.box_full_spatial_analytic_realization"
       ],
-      "declaration_version": null,
-      "verification_status": "SPECIFIED",
+      "declaration_version": "cbd25fdee3e670d39fce5a03cbf172c02a890544",
+      "verification_status": "BUILT",
       "scope": "PAPER",
       "extra_hypotheses": [],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "cbd25fdee3e670d39fce5a03cbf172c02a890544",
+        "source_head_sha": "cbd25fdee3e670d39fce5a03cbf172c02a890544",
+        "ci_url": null,
+        "finished_at": "2026-10-20T10:49:36.651533+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "a4dd3bc74b44e2ce8c10016e3b526dba6a09a63b06bfb2851e6ce7f92f6ae8fb",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10318,
+          "sha256": "def0534f4a57840edc30332bb0acbfaa0e5fdae20cd6f81e8d3db35cf209a395"
+        }
+      },
       "semantic_review": null,
       "blocker": null,
       "independent_review_status": "PENDING"
