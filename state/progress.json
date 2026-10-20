@@ -10,21 +10,21 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T197",
-    "supervisor_checked_at": "2026-10-20T02:38:45.732390+00:00",
-    "next_action": "本地完整构建和公理审计通过；固定证明提交后交独立Agent验收原控制选择、常数量词、真实支撑和端点。",
+    "current_task_id": "T198",
+    "supervisor_checked_at": "2026-10-20T02:42:44.997590+00:00",
+    "next_action": "接入任意控制弱极限、同一状态子列和原有限测试弱恒等式。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-20T02:35:14.275113+00:00"
+    "last_activity_at": "2026-10-20T02:42:44.997590+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "9c62b704e83c3e25302aa14d665337a646beb8ee",
-      "source_head_sha": "9c62b704e83c3e25302aa14d665337a646beb8ee",
+      "checked_sha": "3998fb3b4353576457a0773e69d587e5cf92e7e8",
+      "source_head_sha": "3998fb3b4353576457a0773e69d587e5cf92e7e8",
       "ci_url": null,
-      "finished_at": "2026-10-20T02:32:48.021015+00:00",
+      "finished_at": "2026-10-20T02:41:26.974440+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "196d35e3d85b008b5f055b60ec346de5c61ae675ee1126604c6ac59d5fd07cf7",
+      "source_manifest_sha256": "c7aa2c7608c568198cc7e80c14c2e76ca78f5d2b33e848ff7138b56cfe28cc78",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8714,
-        "sha256": "b85814859d7b5254eb43b565ddeb587da467b6f8b7eb48c48207ab7741be77a5"
+        "declarations": 8726,
+        "sha256": "65a777f78bd2aabf23508bc8b1d8aad10a420402af8ac4e7fe55722bf2d425cd"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "9c62b704e83c3e25302aa14d665337a646beb8ee",
-      "source_head_sha": "9c62b704e83c3e25302aa14d665337a646beb8ee",
+      "checked_sha": "3998fb3b4353576457a0773e69d587e5cf92e7e8",
+      "source_head_sha": "3998fb3b4353576457a0773e69d587e5cf92e7e8",
       "ci_url": null,
-      "finished_at": "2026-10-20T02:32:48.021015+00:00",
+      "finished_at": "2026-10-20T02:41:26.974440+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "196d35e3d85b008b5f055b60ec346de5c61ae675ee1126604c6ac59d5fd07cf7",
+      "source_manifest_sha256": "c7aa2c7608c568198cc7e80c14c2e76ca78f5d2b33e848ff7138b56cfe28cc78",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8714,
-        "sha256": "b85814859d7b5254eb43b565ddeb587da467b6f8b7eb48c48207ab7741be77a5"
+        "declarations": 8726,
+        "sha256": "65a777f78bd2aabf23508bc8b1d8aad10a420402af8ac4e7fe55722bf2d425cd"
       }
     }
   },
@@ -18345,7 +18345,7 @@
       "paper_ref": "paper/main.tex:2124–2133, 2363–2392; prop:control-convergence",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -18361,8 +18361,37 @@
         "Carleman.cartesianBoxTimeControl_supported",
         "Carleman.Physical.box_cartesian_controls_independent_refinement"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "3998fb3b4353576457a0773e69d587e5cf92e7e8",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "3998fb3b4353576457a0773e69d587e5cf92e7e8",
+        "source_head_sha": "3998fb3b4353576457a0773e69d587e5cf92e7e8",
+        "ci_url": null,
+        "finished_at": "2026-10-20T02:41:26.974440+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "c7aa2c7608c568198cc7e80c14c2e76ca78f5d2b33e848ff7138b56cfe28cc78",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8726,
+          "sha256": "65a777f78bd2aabf23508bc8b1d8aad10a420402af8ac4e7fe55722bf2d425cd"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C212",
@@ -18371,7 +18400,33 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "原差分控制序列的构造及端点强极限；完整弱极限PDE和连续状态时间迹仍待，17/26。"
+      "scope_notes": "原差分控制序列的构造及端点强极限；完整弱极限PDE和连续状态时间迹仍待，17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C214",
+      "title": "任意原控制弱积点的有限弱方程及区域费用",
+      "paper_ref": "paper/main.tex:2365–2400, eq:conv-limit-identity",
+      "milestone": "M6c",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:control-convergence"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C213",
+        "C212",
+        "C204",
+        "C194"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "任意原控制弱积点对应同一实际 H¹₀ 状态的有限弱恒等式；V′导数和连续时间迹待，17/26。"
     }
   ],
   "events": [
@@ -43763,9 +43818,9 @@
       ],
       "branch": "main",
       "base_commit": "9c62b704e83c3e25302aa14d665337a646beb8ee",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "3998fb3b4353576457a0773e69d587e5cf92e7e8",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.Physical.physicalMeshScale_tendsto_atTop",
@@ -43778,13 +43833,42 @@
         "Carleman.cartesianBoxTimeControl_supported",
         "Carleman.Physical.box_cartesian_controls_independent_refinement"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "3998fb3b4353576457a0773e69d587e5cf92e7e8",
+        "source_head_sha": "3998fb3b4353576457a0773e69d587e5cf92e7e8",
+        "ci_url": null,
+        "finished_at": "2026-10-20T02:41:26.974440+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "c7aa2c7608c568198cc7e80c14c2e76ca78f5d2b33e848ff7138b56cfe28cc78",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8726,
+          "sha256": "65a777f78bd2aabf23508bc8b1d8aad10a420402af8ac4e7fe55722bf2d425cd"
+        }
+      },
       "blocker": null,
       "attempts": [
         "T196有限测试弱极限的本地构建及8714项审计PASS，固定版本独立验收进行中。",
         "9项正式声明完整probe exit0；4071定向jobs、4189全库jobs及8726项递归公理审计PASS。"
       ],
-      "next_action": "本地完整构建和公理审计通过；固定证明提交后交独立Agent验收原控制选择、常数量词、真实支撑和端点。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -43799,7 +43883,42 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "3998fb3b4353576457a0773e69d587e5cf92e7e8"
+    },
+    {
+      "id": "T198",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "任意原控制弱积点的有限弱方程及区域费用",
+      "goal_ids": [
+        "C214"
+      ],
+      "acceptance": [
+        "任意已给定原控制弱极限保持不变，内部提取同一状态进一步子列",
+        "从原方程和实际控制预算内部导出全部状态范数界及有限弱恒等式",
+        "弱极限恢复原区域控制及不增费用，明确尚未完成连续时间迹"
+      ],
+      "dependencies": [
+        "C213",
+        "C212",
+        "C204",
+        "C194"
+      ],
+      "branch": "main",
+      "base_commit": "3998fb3b4353576457a0773e69d587e5cf92e7e8",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "T197原控制选择4071定向/4189全库jobs、8726公理审计PASS，独立验收进行中。"
+      ],
+      "next_action": "接入任意控制弱极限、同一状态子列和原有限测试弱恒等式。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
