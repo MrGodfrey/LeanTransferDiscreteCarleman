@@ -19446,7 +19446,10 @@
       "paper_labels": [
         "prop:control-convergence"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.box_p1_controls_independent_refinement",
+        "Carleman.Physical.box_p1_controls_null_limits"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -46328,14 +46331,32 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.box_p1_controls_independent_refinement",
+        "Carleman.Physical.box_p1_controls_null_limits"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "T210原P1弱控制极限4221根构建、9007递归公理审计PASS。"
+        "T210原P1弱控制极限4221根构建、9007递归公理审计PASS。",
+        "实际两定理定向构建4112、全库4223 jobs与递归公理审计9009项全部exit 0；大型实际Galerkin陈述展开使用与上游一致的12000000 heartbeats。"
       ],
       "next_action": "在独立细化的原full P1网格与时间步上构造实际控制族，保留费用/指数终态/支撑，并整合每个给定弱积聚控制的原连续零终态。",
-      "integration_mode": "direct-main"
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4223,
+        "recursive_axiom_audit": 9009,
+        "new_explicit_declarations": 2,
+        "declaration_artifact_sha256": "9ea6adf39d7ff98ab2fc205c40cb105f55a6171892976358de15568d67f4603d",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

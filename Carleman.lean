@@ -1046,3 +1046,6 @@ public import Carleman.Control.P1FiniteTestConsistency
 public import Carleman.Control.RegionalTimeControl
 public import Carleman.Control.P1WeakLimitIdentity
 public import Carleman.Control.P1WeakControlLimit
+
+public import Carleman.Control.P1ControlRefinement
+public import Carleman.Control.BoxP1NullControlLimits

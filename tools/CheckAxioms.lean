@@ -8119,6 +8119,12 @@ set_option pp.maxSteps 1000000
 #check @Carleman.full_p1_weak_control_limit_null_state
 #print axioms Carleman.full_p1_weak_control_limit_null_state
 
+-- T211: actual independently refining P1 control families and every weak null limit.
+#check @Carleman.Physical.box_p1_controls_independent_refinement
+#print axioms Carleman.Physical.box_p1_controls_independent_refinement
+#check @Carleman.Physical.box_p1_controls_null_limits
+#print axioms Carleman.Physical.box_p1_controls_null_limits
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
