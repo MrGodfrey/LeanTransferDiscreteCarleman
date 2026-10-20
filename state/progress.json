@@ -10,21 +10,21 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T206",
-    "supervisor_checked_at": "2026-10-20T03:48:46.107831+00:00",
-    "next_action": "保存固定证明及本地证据，独立核验实际盒FD每个弱积聚点的连续零终态解。",
+    "current_task_id": "T207",
+    "supervisor_checked_at": "2026-10-20T03:53:33.183047+00:00",
+    "next_action": "为P1分支将原有限维Galerkin状态接到完整Dirichlet能量空间，证明真实梯度身份和时间能量统一预算。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-20T03:48:46.107831+00:00"
+    "last_activity_at": "2026-10-20T03:53:33.183047+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "bfa6e3a8b9af4367eca74101ad0473c42e8bdfa8",
-      "source_head_sha": "bfa6e3a8b9af4367eca74101ad0473c42e8bdfa8",
+      "checked_sha": "7b47cb8efa47015a5e2e62f6e2573204bd5c7418",
+      "source_head_sha": "7b47cb8efa47015a5e2e62f6e2573204bd5c7418",
       "ci_url": null,
-      "finished_at": "2026-10-20T03:47:47.117199+00:00",
+      "finished_at": "2026-10-20T03:52:22.154717+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "3dfbf00ec834220aa4a9e129b6cf238510e5f0133c0998fb73eeb60e7d962c1d",
+      "source_manifest_sha256": "89b882d6758bf4c8aba36e8abe4ca166d45502ab840782fe25d34a779896f28c",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8927,
-        "sha256": "e718f2be6d571068589b98d075cbe506f5c7583e2288d53ce10fd60b47250ed2"
+        "declarations": 8945,
+        "sha256": "e26f6a9737b107713dc7e95e5a143ac2bde800f585ae70f14cb456fe1f330d8f"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "bfa6e3a8b9af4367eca74101ad0473c42e8bdfa8",
-      "source_head_sha": "bfa6e3a8b9af4367eca74101ad0473c42e8bdfa8",
+      "checked_sha": "7b47cb8efa47015a5e2e62f6e2573204bd5c7418",
+      "source_head_sha": "7b47cb8efa47015a5e2e62f6e2573204bd5c7418",
       "ci_url": null,
-      "finished_at": "2026-10-20T03:47:47.117199+00:00",
+      "finished_at": "2026-10-20T03:52:22.154717+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "3dfbf00ec834220aa4a9e129b6cf238510e5f0133c0998fb73eeb60e7d962c1d",
+      "source_manifest_sha256": "89b882d6758bf4c8aba36e8abe4ca166d45502ab840782fe25d34a779896f28c",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8927,
-        "sha256": "e718f2be6d571068589b98d075cbe506f5c7583e2288d53ce10fd60b47250ed2"
+        "declarations": 8945,
+        "sha256": "e26f6a9737b107713dc7e95e5a143ac2bde800f585ae70f14cb456fe1f330d8f"
       }
     }
   },
@@ -19042,7 +19042,7 @@
       "paper_ref": "paper/main.tex:2347–2415, prop:control-convergence 的实际盒FD分支",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -19052,8 +19052,37 @@
         "Carleman.FiniteDirichletControlIdentity.null_control_state",
         "Carleman.Physical.box_cartesian_controls_null_limits"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "7b47cb8efa47015a5e2e62f6e2573204bd5c7418",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "7b47cb8efa47015a5e2e62f6e2573204bd5c7418",
+        "source_head_sha": "7b47cb8efa47015a5e2e62f6e2573204bd5c7418",
+        "ci_url": null,
+        "finished_at": "2026-10-20T03:52:22.154717+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "89b882d6758bf4c8aba36e8abe4ca166d45502ab840782fe25d34a779896f28c",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8945,
+          "sha256": "e26f6a9737b107713dc7e95e5a143ac2bde800f585ae70f14cb456fe1f330d8f"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C214",
@@ -19062,7 +19091,32 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "同一实际盒FD控制族的每个弱积聚点给原能量方程与连续零终态解；一般P1及整体P021仍待，17/26。"
+      "scope_notes": "同一实际盒FD控制族的每个弱积聚点给原能量方程与连续零终态解；一般P1及整体P021仍待，17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C223",
+      "title": "实际有限元状态的H¹能量重构与统一预算",
+      "paper_ref": "paper/main.tex:2370–2385, prop:control-convergence 的P1状态能量紧性",
+      "milestone": "M6c",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:control-convergence"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C203",
+        "C204",
+        "C209"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "实际任意有限维conforming Galerkin状态的完整Dirichlet重构和统一时间能量界，供P1弱极限；17/26。"
     }
   ],
   "events": [
@@ -45383,22 +45437,51 @@
       ],
       "branch": "main",
       "base_commit": "bfa6e3a8b9af4367eca74101ad0473c42e8bdfa8",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "7b47cb8efa47015a5e2e62f6e2573204bd5c7418",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.DirichletNullControlState",
         "Carleman.FiniteDirichletControlIdentity.null_control_state",
         "Carleman.Physical.box_cartesian_controls_null_limits"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "7b47cb8efa47015a5e2e62f6e2573204bd5c7418",
+        "source_head_sha": "7b47cb8efa47015a5e2e62f6e2573204bd5c7418",
+        "ci_url": null,
+        "finished_at": "2026-10-20T03:52:22.154717+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "89b882d6758bf4c8aba36e8abe4ca166d45502ab840782fe25d34a779896f28c",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8945,
+          "sha256": "e26f6a9737b107713dc7e95e5a143ac2bde800f585ae70f14cb456fe1f330d8f"
+        }
+      },
       "blocker": null,
       "attempts": [
         "T205原连续状态初终值4209全库jobs、8927公理审计PASS，独立验收进行中。",
         "保留T198完整实际族和量词，将同一给定U的原Y接到真实V′方程/H连续初终迹；3声明probe exit0、4094定向/4211全库jobs、8945递归公理审计PASS。"
       ],
-      "next_action": "保存固定证明及本地证据，独立核验实际盒FD每个弱积聚点的连续零终态解。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -45413,7 +45496,41 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "7b47cb8efa47015a5e2e62f6e2573204bd5c7418"
+    },
+    {
+      "id": "T207",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "实际有限元状态的H¹能量重构与统一预算",
+      "goal_ids": [
+        "C223"
+      ],
+      "acceptance": [
+        "使用实际consistent-mass Galerkin状态及原conformingEnergyLift，值映射等于原有限元函数",
+        "真实梯度平方与原Galerkin刚度配对相等",
+        "原ForwardEquation和控制范数给完整L²_t H¹₀能量预算，不另假设状态预算"
+      ],
+      "dependencies": [
+        "C203",
+        "C204",
+        "C209"
+      ],
+      "branch": "main",
+      "base_commit": "7b47cb8efa47015a5e2e62f6e2573204bd5c7418",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "T206实际盒FD每个弱积聚点连续零终态4211全库jobs、8945公理审计PASS；转接原P1分支。"
+      ],
+      "next_action": "为P1分支将原有限维Galerkin状态接到完整Dirichlet能量空间，证明真实梯度身份和时间能量统一预算。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
