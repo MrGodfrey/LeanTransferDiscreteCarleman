@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T228",
-    "supervisor_checked_at": "2026-10-20T06:18:14.907358+00:00",
-    "next_action": "构造真实A⁻¹及其正根，以密度和有界延拓证明根的范围恰为原能量空间，再识别无界正自伴平方根及组合域。",
+    "current_task_id": "T229",
+    "supervisor_checked_at": "2026-10-20T06:24:33.363274+00:00",
+    "next_action": "将已证明的正自伴平方根完整域/能量身份送回原V，再与一般系数A1–A3总接口合并，复核并验收完整P022。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "4573638d5529914e0140c25f4dfe3689be92afaa",
-      "source_head_sha": "4573638d5529914e0140c25f4dfe3689be92afaa",
+      "checked_sha": "a914d2ede5d27b37e30708efaff64fdf1b783d2d",
+      "source_head_sha": "a914d2ede5d27b37e30708efaff64fdf1b783d2d",
       "ci_url": null,
-      "finished_at": "2026-10-20T06:17:44.690162+00:00",
+      "finished_at": "2026-10-20T06:23:40.139578+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "84c7271f0f0ec88b003e9e3e603dc7102f570c9de57af2f4bf4d8cfb180fbd6f",
+      "source_manifest_sha256": "d2aa90a215a294a26e86d714fa3a1d8d4574c1c90a8b2068d00e2e69f48ed4b7",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9484,
-        "sha256": "a6d0c24cad37d425fcfe164019f8f4be996a08a653941b11c4783d165942137b"
+        "declarations": 9521,
+        "sha256": "b5b3192a3991eb6977799471298bdb9e03d95d9b801b080c3b7ced17f3ae2e2d"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "4573638d5529914e0140c25f4dfe3689be92afaa",
-      "source_head_sha": "4573638d5529914e0140c25f4dfe3689be92afaa",
+      "checked_sha": "a914d2ede5d27b37e30708efaff64fdf1b783d2d",
+      "source_head_sha": "a914d2ede5d27b37e30708efaff64fdf1b783d2d",
       "ci_url": null,
-      "finished_at": "2026-10-20T06:17:44.690162+00:00",
+      "finished_at": "2026-10-20T06:23:40.139578+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "84c7271f0f0ec88b003e9e3e603dc7102f570c9de57af2f4bf4d8cfb180fbd6f",
+      "source_manifest_sha256": "d2aa90a215a294a26e86d714fa3a1d8d4574c1c90a8b2068d00e2e69f48ed4b7",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9484,
-        "sha256": "a6d0c24cad37d425fcfe164019f8f4be996a08a653941b11c4783d165942137b"
+        "declarations": 9521,
+        "sha256": "b5b3192a3991eb6977799471298bdb9e03d95d9b801b080c3b7ced17f3ae2e2d"
       }
     }
   },
@@ -20884,7 +20884,7 @@
       "paper_ref": "paper/main.tex:353 原A1平方根形式域身份，服务P022",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:spatial-operators"
@@ -20921,8 +20921,37 @@
         "Carleman.CoerciveForm.formSqrt_square_graph",
         "Carleman.CoerciveForm.exists_positive_form_square_root"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "a914d2ede5d27b37e30708efaff64fdf1b783d2d",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "a914d2ede5d27b37e30708efaff64fdf1b783d2d",
+        "source_head_sha": "a914d2ede5d27b37e30708efaff64fdf1b783d2d",
+        "ci_url": null,
+        "finished_at": "2026-10-20T06:23:40.139578+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "d2aa90a215a294a26e86d714fa3a1d8d4574c1c90a8b2068d00e2e69f48ed4b7",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9521,
+          "sha256": "b5b3192a3991eb6977799471298bdb9e03d95d9b801b080c3b7ced17f3ae2e2d"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C242",
@@ -20930,7 +20959,32 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "原A1平方根域与形式身份的实际构造；完成后再接入完整P022，当前17/26。"
+      "scope_notes": "原A1平方根域与形式身份的实际构造；完成后再接入完整P022，当前17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C245",
+      "title": "含原平方根身份的一般阶 Proposition A.1 完整实现",
+      "paper_ref": "paper/main.tex:2615–2654 Proposition A.1 与333–376 A1–A3",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "PAPER",
+      "paper_labels": [
+        "prop:spatial-operators"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C242",
+        "C243",
+        "C244"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "完整P022重新验收目标，尚未提升覆盖，当前17/26。"
     }
   ],
   "events": [
@@ -49685,9 +49739,9 @@
       ],
       "branch": "main",
       "base_commit": "4573638d5529914e0140c25f4dfe3689be92afaa",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "a914d2ede5d27b37e30708efaff64fdf1b783d2d",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.CoerciveForm.inverseH",
@@ -49721,13 +49775,42 @@
         "Carleman.CoerciveForm.formSqrt_square_graph",
         "Carleman.CoerciveForm.exists_positive_form_square_root"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "a914d2ede5d27b37e30708efaff64fdf1b783d2d",
+        "source_head_sha": "a914d2ede5d27b37e30708efaff64fdf1b783d2d",
+        "ci_url": null,
+        "finished_at": "2026-10-20T06:23:40.139578+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "d2aa90a215a294a26e86d714fa3a1d8d4574c1c90a8b2068d00e2e69f48ed4b7",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9521,
+          "sha256": "b5b3192a3991eb6977799471298bdb9e03d95d9b801b080c3b7ced17f3ae2e2d"
+        }
+      },
       "blocker": null,
       "attempts": [
         "使用已完成的真实正根构造；准备原A⁻¹的正性/单射/稠密性和原形式的能量等式。",
         "三模块30声明实现同一原A⁻¹、正根全范围=原V、完整无界自伴/平方组合图、全V能量身份；2760/4261本地构建及9521递归审计exit0。"
       ],
-      "next_action": "构造真实A⁻¹及其正根，以密度和有界延拓证明根的范围恰为原能量空间，再识别无界正自伴平方根及组合域。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -49748,7 +49831,41 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "review": "PENDING"
-      }
+      },
+      "declaration_version": "a914d2ede5d27b37e30708efaff64fdf1b783d2d"
+    },
+    {
+      "id": "T229",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "含原平方根身份的一般阶 Proposition A.1 完整实现",
+      "goal_ids": [
+        "C245"
+      ],
+      "acceptance": [
+        "完整原A1包括D(A^(1/2))=V及原范数平方身份",
+        "一般弱系数完整A2/A3与同一原算子",
+        "常数先于T/q/τStar/全部状态，原图估计假设保持"
+      ],
+      "dependencies": [
+        "C242",
+        "C243",
+        "C244"
+      ],
+      "branch": "main",
+      "base_commit": "a914d2ede5d27b37e30708efaff64fdf1b783d2d",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "原无界平方根全图/能量桥已编译审计，准备OriginalForm.V的无损身份转换。"
+      ],
+      "next_action": "将已证明的正自伴平方根完整域/能量身份送回原V，再与一般系数A1–A3总接口合并，复核并验收完整P022。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
