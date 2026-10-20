@@ -10,21 +10,21 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T196",
-    "supervisor_checked_at": "2026-10-20T02:26:46.401063+00:00",
-    "next_action": "本地完整构建和公理审计通过；固定证明提交后交独立Agent验收原弱恒等式及明确输入。",
+    "current_task_id": "T197",
+    "supervisor_checked_at": "2026-10-20T02:35:14.275113+00:00",
+    "next_action": "证明原网格尺度极限和最终物理条件，接入实际HUM控制及单元平均初值。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-20T02:20:58.303413+00:00"
+    "last_activity_at": "2026-10-20T02:35:14.275113+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "403ad474b6cb780407160e9d009e514c03287882",
-      "source_head_sha": "403ad474b6cb780407160e9d009e514c03287882",
+      "checked_sha": "9c62b704e83c3e25302aa14d665337a646beb8ee",
+      "source_head_sha": "9c62b704e83c3e25302aa14d665337a646beb8ee",
       "ci_url": null,
-      "finished_at": "2026-10-20T02:18:56.101348+00:00",
+      "finished_at": "2026-10-20T02:32:48.021015+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "a90459b28e14ce05dc72ec121afa4a45034cc0a8d6be4df8c5021e367f3325ac",
+      "source_manifest_sha256": "196d35e3d85b008b5f055b60ec346de5c61ae675ee1126604c6ac59d5fd07cf7",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8699,
-        "sha256": "cad038574e32997e7a2a6a743d11c7850db109f295a561d59864f124f9026847"
+        "declarations": 8714,
+        "sha256": "b85814859d7b5254eb43b565ddeb587da467b6f8b7eb48c48207ab7741be77a5"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "403ad474b6cb780407160e9d009e514c03287882",
-      "source_head_sha": "403ad474b6cb780407160e9d009e514c03287882",
+      "checked_sha": "9c62b704e83c3e25302aa14d665337a646beb8ee",
+      "source_head_sha": "9c62b704e83c3e25302aa14d665337a646beb8ee",
       "ci_url": null,
-      "finished_at": "2026-10-20T02:18:56.101348+00:00",
+      "finished_at": "2026-10-20T02:32:48.021015+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "a90459b28e14ce05dc72ec121afa4a45034cc0a8d6be4df8c5021e367f3325ac",
+      "source_manifest_sha256": "196d35e3d85b008b5f055b60ec346de5c61ae675ee1126604c6ac59d5fd07cf7",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8699,
-        "sha256": "cad038574e32997e7a2a6a743d11c7850db109f295a561d59864f124f9026847"
+        "declarations": 8714,
+        "sha256": "b85814859d7b5254eb43b565ddeb587da467b6f8b7eb48c48207ab7741be77a5"
       }
     }
   },
@@ -18264,7 +18264,7 @@
       "paper_ref": "paper/main.tex:2385–2400, eq:conv-limit-identity",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -18279,8 +18279,37 @@
         "Carleman.cartesian_finite_test_gradient_strong_convergence",
         "Carleman.cartesian_finite_test_weak_limit_identity"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "9c62b704e83c3e25302aa14d665337a646beb8ee",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "9c62b704e83c3e25302aa14d665337a646beb8ee",
+        "source_head_sha": "9c62b704e83c3e25302aa14d665337a646beb8ee",
+        "ci_url": null,
+        "finished_at": "2026-10-20T02:32:48.021015+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "196d35e3d85b008b5f055b60ec346de5c61ae675ee1126604c6ac59d5fd07cf7",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8714,
+          "sha256": "b85814859d7b5254eb43b565ddeb587da467b6f8b7eb48c48207ab7741be77a5"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C211",
@@ -18290,7 +18319,32 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "原差分方程有限测试极限；真实状态时间迹和完整控制定理仍待。17/26。"
+      "scope_notes": "原差分方程有限测试极限；真实状态时间迹和完整控制定理仍待。17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C213",
+      "title": "独立网格细化下的原控制构造与终端趋零",
+      "paper_ref": "paper/main.tex:2124–2133, 2363–2392; prop:control-convergence",
+      "milestone": "M6c",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:control-convergence"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C212",
+        "C186",
+        "C196"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "原差分控制序列的构造及端点强极限；完整弱极限PDE和连续状态时间迹仍待，17/26。"
     }
   ],
   "events": [
@@ -43576,9 +43630,9 @@
       ],
       "branch": "main",
       "base_commit": "403ad474b6cb780407160e9d009e514c03287882",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "9c62b704e83c3e25302aa14d665337a646beb8ee",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.timeTensor_map",
@@ -43590,13 +43644,42 @@
         "Carleman.cartesian_finite_test_gradient_strong_convergence",
         "Carleman.cartesian_finite_test_weak_limit_identity"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "9c62b704e83c3e25302aa14d665337a646beb8ee",
+        "source_head_sha": "9c62b704e83c3e25302aa14d665337a646beb8ee",
+        "ci_url": null,
+        "finished_at": "2026-10-20T02:32:48.021015+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "196d35e3d85b008b5f055b60ec346de5c61ae675ee1126604c6ac59d5fd07cf7",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8714,
+          "sha256": "b85814859d7b5254eb43b565ddeb587da467b6f8b7eb48c48207ab7741be77a5"
+        }
+      },
       "blocker": null,
       "attempts": [
         "T195原势乘积本地构建和8699项审计PASS，固定版本独立验收进行中。",
         "8项正式声明完整probe exit0；3607定向jobs、4186全库jobs及8714项递归公理审计PASS。"
       ],
-      "next_action": "本地完整构建和公理审计通过；固定证明提交后交独立Agent验收原弱恒等式及明确输入。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -43611,7 +43694,41 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "9c62b704e83c3e25302aa14d665337a646beb8ee"
+    },
+    {
+      "id": "T197",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "独立网格细化下的原控制构造与终端趋零",
+      "goal_ids": [
+        "C213"
+      ],
+      "acceptance": [
+        "从原 h、dt 独立趋零内部推出全部物理控制小量条件",
+        "实际原单元平均初值及原平均势驱动全部物理状态",
+        "控制常数先于全部网格，真实终端范数和重构趋零"
+      ],
+      "dependencies": [
+        "C212",
+        "C186",
+        "C196"
+      ],
+      "branch": "main",
+      "base_commit": "9c62b704e83c3e25302aa14d665337a646beb8ee",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "T196有限测试弱极限的本地构建及8714项审计PASS，固定版本独立验收进行中。"
+      ],
+      "next_action": "证明原网格尺度极限和最终物理条件，接入实际HUM控制及单元平均初值。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
