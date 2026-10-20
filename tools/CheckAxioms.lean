@@ -8367,6 +8367,34 @@ set_option pp.maxSteps 1000000
 #check @Carleman.higherCoefficientForm_closure_weighted_coercivity
 #print axioms Carleman.higherCoefficientForm_closure_weighted_coercivity
 
+-- T222: actual distributional bounded weak coefficient product.
+#check @Carleman.SpatialTest.valueMultiplier
+#print axioms Carleman.SpatialTest.valueMultiplier
+#check @Carleman.SpatialTest.mollifiedProduct
+#print axioms Carleman.SpatialTest.mollifiedProduct
+#check @Carleman.SpatialTest.mollifiedProduct_toLp
+#print axioms Carleman.SpatialTest.mollifiedProduct_toLp
+#check @Carleman.SpatialTest.mollifiedProduct_derivativeLp_eventually
+#print axioms Carleman.SpatialTest.mollifiedProduct_derivativeLp_eventually
+#check @Carleman.SpatialTest.mollifiedProduct_toLp_tendsto
+#print axioms Carleman.SpatialTest.mollifiedProduct_toLp_tendsto
+#check @Carleman.SpatialTest.mollifiedProduct_derivativeLp_tendsto
+#print axioms Carleman.SpatialTest.mollifiedProduct_derivativeLp_tendsto
+#check @Carleman.SpatialTest.inner_valueMultiplier
+#print axioms Carleman.SpatialTest.inner_valueMultiplier
+#check @Carleman.IsWeakSpatialDerivative.mul_bounded_of_weakLp
+#print axioms Carleman.IsWeakSpatialDerivative.mul_bounded_of_weakLp
+#check @Carleman.BoundedMultiplier.toLp
+#print axioms Carleman.BoundedMultiplier.toLp
+#check @Carleman.BoundedMultiplier.toLp_ae
+#print axioms Carleman.BoundedMultiplier.toLp_ae
+#check @Carleman.IsWeakMultiplierDerivative
+#print axioms Carleman.IsWeakMultiplierDerivative
+#check @Carleman.isWeakMultiplierDerivative_iff
+#print axioms Carleman.isWeakMultiplierDerivative_iff
+#check @Carleman.IsWeakSpatialDerivative.mul_weakCoefficient
+#print axioms Carleman.IsWeakSpatialDerivative.mul_weakCoefficient
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

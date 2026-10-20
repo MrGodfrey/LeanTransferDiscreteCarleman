@@ -20371,7 +20371,21 @@
       "paper_labels": [
         "prop:spatial-operators"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.SpatialTest.valueMultiplier",
+        "Carleman.SpatialTest.mollifiedProduct",
+        "Carleman.SpatialTest.mollifiedProduct_toLp",
+        "Carleman.SpatialTest.mollifiedProduct_derivativeLp_eventually",
+        "Carleman.SpatialTest.mollifiedProduct_toLp_tendsto",
+        "Carleman.SpatialTest.mollifiedProduct_derivativeLp_tendsto",
+        "Carleman.SpatialTest.inner_valueMultiplier",
+        "Carleman.IsWeakSpatialDerivative.mul_bounded_of_weakLp",
+        "Carleman.BoundedMultiplier.toLp",
+        "Carleman.BoundedMultiplier.toLp_ae",
+        "Carleman.IsWeakMultiplierDerivative",
+        "Carleman.isWeakMultiplierDerivative_iff",
+        "Carleman.IsWeakSpatialDerivative.mul_weakCoefficient"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -48443,14 +48457,48 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.SpatialTest.valueMultiplier",
+        "Carleman.SpatialTest.mollifiedProduct",
+        "Carleman.SpatialTest.mollifiedProduct_toLp",
+        "Carleman.SpatialTest.mollifiedProduct_derivativeLp_eventually",
+        "Carleman.SpatialTest.mollifiedProduct_toLp_tendsto",
+        "Carleman.SpatialTest.mollifiedProduct_derivativeLp_tendsto",
+        "Carleman.SpatialTest.inner_valueMultiplier",
+        "Carleman.IsWeakSpatialDerivative.mul_bounded_of_weakLp",
+        "Carleman.BoundedMultiplier.toLp",
+        "Carleman.BoundedMultiplier.toLp_ae",
+        "Carleman.IsWeakMultiplierDerivative",
+        "Carleman.isWeakMultiplierDerivative_iff",
+        "Carleman.IsWeakSpatialDerivative.mul_weakCoefficient"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "局部磨光测试及其导数强收敛已实现，正在连接有界弱系数乘积公式。"
+        "局部磨光测试及其导数强收敛已实现，正在连接有界弱系数乘积公式。",
+        "真实紧支局部磨光测试及导数L²强极限、真实有界弱系数分布乘积公式通过。目标3295/root4249 jobs实际exit0；9323声明递归审计PASS。"
       ],
       "next_action": "以局部磨光的真实紧支测试和L²强极限证明W¹,∞系数乘积法则，保留一般W²ᵐ,∞系数路线。",
-      "integration_mode": "direct-main"
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman.Spatial.MollifiedProductTests",
+          "Carleman.Spatial.WeakCoefficientProduct",
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": [
+          3295,
+          4249
+        ],
+        "recursive_axiom_audit": 9323,
+        "new_explicit_declarations": 13,
+        "raw_sha256": "582b47b98a985203f3f98486df9c27fe3e3968ae2ea460a8294b54e7e27191a0",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {
