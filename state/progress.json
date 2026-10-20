@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T263",
-    "supervisor_checked_at": "2026-10-20T11:13:30.288753+00:00",
-    "next_action": "将实际内域积分不等式与原域上的统一Gaussian主项/观察吸收/梯度返回结合，所有常数先于内域索引。",
+    "current_task_id": "T264",
+    "supervisor_checked_at": "2026-10-20T11:15:49.229070+00:00",
+    "next_action": "用真实内域H²强密度构造全算子图及周期图密度，将统一双向C²权热估计传给全部原弱态。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "49ca9a4344f0e015567fd8916e61a9a768358ba7",
-      "source_head_sha": "49ca9a4344f0e015567fd8916e61a9a768358ba7",
+      "checked_sha": "556cdaef8f161664657049e6fc2829b82fbb4404",
+      "source_head_sha": "556cdaef8f161664657049e6fc2829b82fbb4404",
       "ci_url": null,
-      "finished_at": "2026-10-20T11:09:23.817190+00:00",
+      "finished_at": "2026-10-20T11:15:05.111861+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "8bdc62e84b741e5b981d87702fb5a14b6e1c9b78673e40c51aa84fedf4d3147e",
+      "source_manifest_sha256": "e0151e5c7c9813ae9e7019b049aeb8e27647486b85ce573ddc50a626b0658ab1",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10340,
-        "sha256": "ce72c409e057e545b1f9995c236a310178ab2660a6babc31669b6bbb32be5ac1"
+        "declarations": 10358,
+        "sha256": "7b675d14a16377e90f2a759dc798ddb0c96a45d1f42a470073d1f35efc5006ee"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "49ca9a4344f0e015567fd8916e61a9a768358ba7",
-      "source_head_sha": "49ca9a4344f0e015567fd8916e61a9a768358ba7",
+      "checked_sha": "556cdaef8f161664657049e6fc2829b82fbb4404",
+      "source_head_sha": "556cdaef8f161664657049e6fc2829b82fbb4404",
       "ci_url": null,
-      "finished_at": "2026-10-20T11:09:23.817190+00:00",
+      "finished_at": "2026-10-20T11:15:05.111861+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "8bdc62e84b741e5b981d87702fb5a14b6e1c9b78673e40c51aa84fedf4d3147e",
+      "source_manifest_sha256": "e0151e5c7c9813ae9e7019b049aeb8e27647486b85ce573ddc50a626b0658ab1",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10340,
-        "sha256": "ce72c409e057e545b1f9995c236a310178ab2660a6babc31669b6bbb32be5ac1"
+        "declarations": 10358,
+        "sha256": "7b675d14a16377e90f2a759dc798ddb0c96a45d1f42a470073d1f35efc5006ee"
       }
     }
   },
@@ -24006,7 +24006,7 @@
       "milestone": "M6a",
       "scope": "AUXILIARY",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "lean_declarations": [
         "Carleman.domainTimeIntegral_const_mul",
         "Carleman.domainTimeIntegral_mono_on",
@@ -24033,6 +24033,59 @@
       "pr_url": null,
       "blocker": null,
       "scope_notes": "空间权、观察吸收和梯度返回常数在内域索引前选取；双时间方向、原闭区间C²权已覆盖，原完整弱态与原域极限仍待。",
+      "independent_review_status": "PENDING",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "556cdaef8f161664657049e6fc2829b82fbb4404",
+        "source_head_sha": "556cdaef8f161664657049e6fc2829b82fbb4404",
+        "ci_url": null,
+        "finished_at": "2026-10-20T11:15:05.111861+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "e0151e5c7c9813ae9e7019b049aeb8e27647486b85ce573ddc50a626b0658ab1",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10358,
+          "sha256": "7b675d14a16377e90f2a759dc798ddb0c96a45d1f42a470073d1f35efc5006ee"
+        }
+      },
+      "semantic_review": null,
+      "declaration_version": "556cdaef8f161664657049e6fc2829b82fbb4404"
+    },
+    {
+      "id": "C280",
+      "title": "内域完整弱周期图的统一双向热估计",
+      "paper_ref": "paper/main.tex:2672 Proposition A.3 的全弱态内域估计",
+      "paper_labels": [
+        "prop:continuousCE"
+      ],
+      "milestone": "M6a",
+      "scope": "AUXILIARY",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "lean_declarations": [],
+      "dependencies": [
+        "C279",
+        "C273"
+      ],
+      "pr_url": null,
+      "blocker": null,
+      "scope_notes": "实际内域H²强密度和harmonic时间核恢复全原周期图；固定外域常数。原域极限另待。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -56504,8 +56557,8 @@
         "C278"
       ],
       "base_commit": "49ca9a4344f0e015567fd8916e61a9a768358ba7",
-      "status": "RUNNING",
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "checkpoint_commit": "556cdaef8f161664657049e6fc2829b82fbb4404",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.domainTimeIntegral_const_mul",
@@ -56527,10 +56580,39 @@
         "Carleman.halfspaceSmoothInner_uniform_C2_heat_both_signs",
         "Carleman.halfspaceSmoothInner_uniform_interval_C2_heat_both_signs"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "556cdaef8f161664657049e6fc2829b82fbb4404",
+        "source_head_sha": "556cdaef8f161664657049e6fc2829b82fbb4404",
+        "ci_url": null,
+        "finished_at": "2026-10-20T11:15:05.111861+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "e0151e5c7c9813ae9e7019b049aeb8e27647486b85ce573ddc50a626b0658ab1",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10358,
+          "sha256": "7b675d14a16377e90f2a759dc798ddb0c96a45d1f42a470073d1f35efc5006ee"
+        }
+      },
       "blocker": null,
       "attempts": [],
-      "next_action": "将实际内域积分不等式与原域上的统一Gaussian主项/观察吸收/梯度返回结合，所有常数先于内域索引。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "local_validation": {
         "target": "Carleman.Spatial.UniformInnerC2Heat",
         "target_jobs": 3491,
@@ -56541,7 +56623,38 @@
         "recursive_axiom_declarations": 10358,
         "axiom_exit_code": 0,
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "556cdaef8f161664657049e6fc2829b82fbb4404"
+    },
+    {
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "branch": "main",
+      "pr_url": null,
+      "integration_mode": "direct-main",
+      "id": "T264",
+      "title": "内域完整弱周期图的统一双向热估计",
+      "goal_ids": [
+        "C280"
+      ],
+      "acceptance": [
+        "同一实际Dirichlet算子图的全光滑密度",
+        "全原周期弱图及真实值/时间导数/算子代表",
+        "原Bochner热能量精确等于实际域积分，统一C²双时间方向估计"
+      ],
+      "dependencies": [
+        "C279",
+        "C273"
+      ],
+      "base_commit": "556cdaef8f161664657049e6fc2829b82fbb4404",
+      "status": "RUNNING",
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [],
+      "next_action": "用真实内域H²强密度构造全算子图及周期图密度，将统一双向C²权热估计传给全部原弱态。"
     }
   ],
   "private_maintenance": {
