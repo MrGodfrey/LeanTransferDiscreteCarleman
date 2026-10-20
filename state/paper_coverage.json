@@ -974,13 +974,43 @@
         "Carleman.Physical.box_cartesian_filtered_observability",
         "Carleman.Physical.box_cartesian_filtered_control"
       ],
-      "declaration_version": null,
-      "verification_status": "SPECIFIED",
+      "declaration_version": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
+      "verification_status": "BUILT",
       "scope": "PAPER",
       "extra_hypotheses": [],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
+        "source_head_sha": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
+        "ci_url": null,
+        "finished_at": "2026-10-20T12:19:09.920158+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "a67adda8d9e898933f57f489ce3ab685cc5957a66fcdcb5214a342f15eb11542",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10585,
+          "sha256": "e0e3da2180909af0258d6fa929159430a54a2df9e82c3e6681f31a5752281ee4"
+        }
+      },
       "semantic_review": null,
-      "blocker": null
+      "blocker": null,
+      "independent_review_status": "PENDING"
     },
     {
       "id": "P018",
@@ -997,13 +1027,43 @@
         "Carleman.Physical.box_cartesian_filtered_observability",
         "Carleman.Physical.box_cartesian_filtered_control"
       ],
-      "declaration_version": null,
-      "verification_status": "SPECIFIED",
+      "declaration_version": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
+      "verification_status": "BUILT",
       "scope": "PAPER",
       "extra_hypotheses": [],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
+        "source_head_sha": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
+        "ci_url": null,
+        "finished_at": "2026-10-20T12:19:09.920158+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "a67adda8d9e898933f57f489ce3ab685cc5957a66fcdcb5214a342f15eb11542",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10585,
+          "sha256": "e0e3da2180909af0258d6fa929159430a54a2df9e82c3e6681f31a5752281ee4"
+        }
+      },
       "semantic_review": null,
-      "blocker": null
+      "blocker": null,
+      "independent_review_status": "PENDING"
     },
     {
       "id": "P019",
