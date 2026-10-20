@@ -413,3 +413,7 @@
 - T190 / C206：20/20独立PASS；真实简单函数代表、Fubini稠密等距延拓、全产品弱测试及原E/平均势交换忠实。三项实际CI completed/success，8569项raw逐字节核对。 固定证明 `f0ab18741c799cd2d821174cfce77ffbb454fa20`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1fa4fcec70aa9fb41e099d42f8812ed5a31c760a/governance/reviews/T190-local-acceptance.md)。原文17/26；当前执行任务不变。
 
 - T191 / C207：[原时间测试分析](analysis/T191-time-tests.md)，18项声明与一个私有连续双线性引理；原差商=真实导数胞元平均、前层取样误差、有限张量与固定端点强一致性。定向3221/full4173 jobs、8602项公理审计PASS；固定提交及独立验收待记录。保持AUXILIARY、17/26。
+
+- T191 / C207：18/18及private辅助独立PASS；区间内FTC、原胞元差商、C dt sqrt T取样误差、有限张量强一致性忠实，空间输入明确。三项实际CI success，8602项raw逐字节核对。 固定证明 `ec7ddbfba0b338f3ba97039442ed5c2108ac99aa`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9ce5a486fc1b5d6645eb6555cbb28146f4a00c8e/governance/reviews/T191-local-acceptance.md)。原文17/26；当前执行任务不变。
+
+- T192 / C208：[原P1测试分析](analysis/T192-p1-tests.md)，16项声明；真实节点值/导数误差给H¹₀强一致性，同一原有限张量测试、整和差商与固定端点强收敛。定向3340/full4176 jobs及8631项公理审计PASS；固定SHA独立验收随后进行。AUXILIARY、17/26。

@@ -7739,6 +7739,39 @@ set_option pp.maxSteps 1000000
 #check @Carleman.finite_tensor_test_endpoint_consistency
 #print axioms Carleman.finite_tensor_test_endpoint_consistency
 
+#check @Carleman.SimplicialPartition.nodal_lipschitz_derivative_error
+#print axioms Carleman.SimplicialPartition.nodal_lipschitz_derivative_error
+#check @Carleman.SimplicialPartition.test_nodal_derivative_L2_error
+#print axioms Carleman.SimplicialPartition.test_nodal_derivative_L2_error
+#check @Carleman.SimplicialPartition.test_nodal_zero_boundary
+#print axioms Carleman.SimplicialPartition.test_nodal_zero_boundary
+#check @Carleman.SimplicialPartition.testDirichletState
+#print axioms Carleman.SimplicialPartition.testDirichletState
+#check @Carleman.SimplicialPartition.testDirichletState_value
+#print axioms Carleman.SimplicialPartition.testDirichletState_value
+#check @Carleman.SimplicialPartition.testDirichletState_gradient
+#print axioms Carleman.SimplicialPartition.testDirichletState_gradient
+#check @Carleman.SpatialTest.dirichletState
+#print axioms Carleman.SpatialTest.dirichletState
+#check @Carleman.SpatialTest.dirichletState_value
+#print axioms Carleman.SpatialTest.dirichletState_value
+#check @Carleman.SpatialTest.dirichletState_gradient
+#print axioms Carleman.SpatialTest.dirichletState_gradient
+#check @Carleman.test_nodal_value_strong_convergence
+#print axioms Carleman.test_nodal_value_strong_convergence
+#check @Carleman.test_nodal_derivative_strong_convergence
+#print axioms Carleman.test_nodal_derivative_strong_convergence
+#check @Carleman.dirichletEnergyState_tendsto_of_fields
+#print axioms Carleman.dirichletEnergyState_tendsto_of_fields
+#check @Carleman.full_p1_test_H1_strong_convergence
+#print axioms Carleman.full_p1_test_H1_strong_convergence
+#check @Carleman.SimplicialPartition.testDirichletState_finite_value
+#print axioms Carleman.SimplicialPartition.testDirichletState_finite_value
+#check @Carleman.full_p1_finite_time_test_consistency
+#print axioms Carleman.full_p1_finite_time_test_consistency
+#check @Carleman.full_p1_finite_test_endpoint_consistency
+#print axioms Carleman.full_p1_finite_test_endpoint_consistency
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

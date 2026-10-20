@@ -995,3 +995,6 @@ public import Carleman.Control.CartesianProductL2
 public import Carleman.Control.TimeTestDifference
 public import Carleman.Control.TimeTestSampling
 public import Carleman.Control.TensorTimeTests
+public import Carleman.Control.P1TestInterpolation
+public import Carleman.Control.P1TestStrongConvergence
+public import Carleman.Control.P1TensorTestConsistency
