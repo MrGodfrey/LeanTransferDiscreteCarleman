@@ -12,7 +12,7 @@
     "state": "RUNNING",
     "current_task_id": "T204",
     "supervisor_checked_at": "2026-10-20T03:41:07.597854+00:00",
-    "next_action": "由质量加权迹估计证明正则化H路径一致Cauchy，构造并识别同一原状态的H连续代表。",
+    "next_action": "保存固定证明与本地证据，独立验收原控制状态真实H连续代表。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T03:41:07.597854+00:00"
@@ -18903,7 +18903,12 @@
       "paper_labels": [
         "prop:control-convergence"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.HasWeakTimeDerivative.sub_memLp",
+        "Carleman.pivot_path_limit",
+        "Carleman.exists_pivot_time_representative",
+        "Carleman.FiniteDirichletControlIdentity.continuous_H_representative"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -45032,14 +45037,34 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.HasWeakTimeDerivative.sub_memLp",
+        "Carleman.pivot_path_limit",
+        "Carleman.exists_pivot_time_representative",
+        "Carleman.FiniteDirichletControlIdentity.continuous_H_representative"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "T203实际连续正则化路径4205全库jobs、8917公理审计PASS，独立验收进行中；通用H路径强极限试编译已通过。"
+        "T203实际连续正则化路径4205全库jobs、8917公理审计PASS，独立验收进行中；通用H路径强极限试编译已通过。",
+        "实际两索引Cauchy界与完整C([0,T];H)完备性给一致极限，通过真实pathL2映射识别原Y；4声明probe exit0，3628定向/4207全库jobs、8921递归公理审计PASS。"
       ],
-      "next_action": "由质量加权迹估计证明正则化H路径一致Cauchy，构造并识别同一原状态的H连续代表。",
-      "integration_mode": "direct-main"
+      "next_action": "保存固定证明与本地证据，独立验收原控制状态真实H连续代表。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4207,
+        "recursive_axiom_audit": 8921,
+        "new_explicit_declarations": 4,
+        "declaration_artifact_sha256": "1d8820b367cb04cdf3eb997ed259b4e8c5829731df708572beefa0b2c444084e",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

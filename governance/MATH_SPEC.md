@@ -1598,3 +1598,7 @@ T188 的状态弱极限位于真实 Bochner L²_tL²_x；T183–T185 的原势�
 ## T203 / C219 — 实际连续质量正则化轨迹
 
 从同一原 Y、载荷 D 的真实质量弱导数，内部构造闭区间 V 连续 u_n、实际弱导数 du_n；u_n=Q_nY、Mdu_n=Q_nD 几乎处处，两项 L² 强收敛到原 Y、D。详见 [T203 分析](analysis/T203-regularized-paths.md)。不假设 Y 连续；H 一致极限与原端点仍待。AUXILIARY、17/26。
+
+## T204 / C220 — 原状态的 H 连续时间代表
+
+以实际质量正则化的两项 L² 强极限和加权迹界，证明 H 路径在 C([0,T];H) 一致 Cauchy，完备性及真实 pathL2 极限识别给原 EY 的闭区间连续代表。接到同一原 Dirichlet 控制状态；详见 [T204 分析](analysis/T204-pivot-continuity.md)。原初终值尚待识别，P021 不提升；AUXILIARY、17/26。

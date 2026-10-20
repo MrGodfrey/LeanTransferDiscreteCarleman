@@ -8016,6 +8016,17 @@ set_option pp.maxSteps 1000000
 #check @Carleman.FiniteDirichletControlIdentity.regularized_time_paths
 #print axioms Carleman.FiniteDirichletControlIdentity.regularized_time_paths
 
+
+-- T204: actual uniform path convergence and the original H-continuous representative.
+#check @Carleman.HasWeakTimeDerivative.sub_memLp
+#print axioms Carleman.HasWeakTimeDerivative.sub_memLp
+#check @Carleman.pivot_path_limit
+#print axioms Carleman.pivot_path_limit
+#check @Carleman.exists_pivot_time_representative
+#print axioms Carleman.exists_pivot_time_representative
+#check @Carleman.FiniteDirichletControlIdentity.continuous_H_representative
+#print axioms Carleman.FiniteDirichletControlIdentity.continuous_H_representative
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
