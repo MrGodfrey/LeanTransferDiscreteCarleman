@@ -10,21 +10,21 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T200",
-    "supervisor_checked_at": "2026-10-20T03:14:18.228267+00:00",
-    "next_action": "固定证明提交后交独立Agent核验实际V′导数及原势/控制分布右端；后续构造H连续时间迹。",
+    "current_task_id": "T201",
+    "supervisor_checked_at": "2026-10-20T03:16:10.617855+00:00",
+    "next_action": "用实际Lax–Milgram构造正移位质量逆，证明收缩、交换和强逼近。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-20T03:06:48.763459+00:00"
+    "last_activity_at": "2026-10-20T03:16:10.617855+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "c8020ad62e0ebb26a1c9144edc50d2ac2458a6d9",
-      "source_head_sha": "c8020ad62e0ebb26a1c9144edc50d2ac2458a6d9",
+      "checked_sha": "a081c61839658c2869ef6a01e7bcd387a81b9af4",
+      "source_head_sha": "a081c61839658c2869ef6a01e7bcd387a81b9af4",
       "ci_url": null,
-      "finished_at": "2026-10-20T03:05:23.526383+00:00",
+      "finished_at": "2026-10-20T03:15:08.509426+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "3d5f6dce8a261f11af1e9e5ff8a8d8732595bd539657c1e8f7d1772ed2463102",
+      "source_manifest_sha256": "9737441b7e2ba61bc5b591e128da8d37db594a6be01946ec13eebc2023d570b3",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8786,
-        "sha256": "6e4c965a734bca2256f70f93a4c836b6f737f618355f2d73e6797486990667d8"
+        "declarations": 8873,
+        "sha256": "70040ce6bf5174b7d5fae754e025f2f565d48e2cecd84baf7b1dcc4e84a6fbea"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "c8020ad62e0ebb26a1c9144edc50d2ac2458a6d9",
-      "source_head_sha": "c8020ad62e0ebb26a1c9144edc50d2ac2458a6d9",
+      "checked_sha": "a081c61839658c2869ef6a01e7bcd387a81b9af4",
+      "source_head_sha": "a081c61839658c2869ef6a01e7bcd387a81b9af4",
       "ci_url": null,
-      "finished_at": "2026-10-20T03:05:23.526383+00:00",
+      "finished_at": "2026-10-20T03:15:08.509426+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "3d5f6dce8a261f11af1e9e5ff8a8d8732595bd539657c1e8f7d1772ed2463102",
+      "source_manifest_sha256": "9737441b7e2ba61bc5b591e128da8d37db594a6be01946ec13eebc2023d570b3",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8786,
-        "sha256": "6e4c965a734bca2256f70f93a4c836b6f737f618355f2d73e6797486990667d8"
+        "declarations": 8873,
+        "sha256": "70040ce6bf5174b7d5fae754e025f2f565d48e2cecd84baf7b1dcc4e84a6fbea"
       }
     }
   },
@@ -18576,7 +18576,7 @@
       "paper_ref": "paper/main.tex:2403–2421, 9.26-eq16",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -18598,8 +18598,37 @@
         "Carleman.dirichletDualTimeLoad_pairing",
         "Carleman.FiniteDirichletControlIdentity.dual_weak_time_derivative"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "a081c61839658c2869ef6a01e7bcd387a81b9af4",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "a081c61839658c2869ef6a01e7bcd387a81b9af4",
+        "source_head_sha": "a081c61839658c2869ef6a01e7bcd387a81b9af4",
+        "ci_url": null,
+        "finished_at": "2026-10-20T03:15:08.509426+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "9737441b7e2ba61bc5b591e128da8d37db594a6be01946ec13eebc2023d570b3",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8873,
+          "sha256": "70040ce6bf5174b7d5fae754e025f2f565d48e2cecd84baf7b1dcc4e84a6fbea"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C215",
@@ -18607,7 +18636,30 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "全V弱恒等式导出实际V′时间弱导数；H连续时间迹及端点仍待，17/26。"
+      "scope_notes": "全V弱恒等式导出实际V′时间弱导数；H连续时间迹及端点仍待，17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C217",
+      "title": "能量空间质量算子的实际正则化",
+      "paper_ref": "paper/main.tex:2420–2421, prop:control-convergence 的 H 连续时间迹",
+      "milestone": "M6c",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:control-convergence"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C216"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "由真实能量到对偶导数构造时间迹所需的质量正则化；完整H连续迹及端点待，17/26。"
     }
   ],
   "events": [
@@ -44312,9 +44364,9 @@
       ],
       "branch": "main",
       "base_commit": "c8020ad62e0ebb26a1c9144edc50d2ac2458a6d9",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "a081c61839658c2869ef6a01e7bcd387a81b9af4",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.timeTensor_eq_scalarTensor",
@@ -44333,13 +44385,42 @@
         "Carleman.dirichletDualTimeLoad_pairing",
         "Carleman.FiniteDirichletControlIdentity.dual_weak_time_derivative"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "a081c61839658c2869ef6a01e7bcd387a81b9af4",
+        "source_head_sha": "a081c61839658c2869ef6a01e7bcd387a81b9af4",
+        "ci_url": null,
+        "finished_at": "2026-10-20T03:15:08.509426+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "9737441b7e2ba61bc5b591e128da8d37db594a6be01946ec13eebc2023d570b3",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8873,
+          "sha256": "70040ce6bf5174b7d5fae754e025f2f565d48e2cecd84baf7b1dcc4e84a6fbea"
+        }
+      },
       "blocker": null,
       "attempts": [
         "T199全V测试4195全库jobs、8786公理审计PASS，独立验收进行中。",
         "实际Hilbert伴随构造质量与右端，原全V恒等式给真实质量弱导数，再用Riesz映射得StrongDual Bochner积分方程；15项完整probe exit0，3621定向/4199全库jobs及8873项递归公理审计PASS。"
       ],
-      "next_action": "固定证明提交后交独立Agent核验实际V′导数及原势/控制分布右端；后续构造H连续时间迹。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -44354,7 +44435,39 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "a081c61839658c2869ef6a01e7bcd387a81b9af4"
+    },
+    {
+      "id": "T201",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "能量空间质量算子的实际正则化",
+      "goal_ids": [
+        "C217"
+      ],
+      "acceptance": [
+        "实际构造正质量移位的有界逆，不假设正则化存在性",
+        "证明正则化收缩性、交换关系和强逼近原能量状态",
+        "用于后续H连续时间迹，不能以质量场的V连续性代替原状态H连续性"
+      ],
+      "dependencies": [
+        "C216"
+      ],
+      "branch": "main",
+      "base_commit": "a081c61839658c2869ef6a01e7bcd387a81b9af4",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "T200实际对偶弱时间导数4199全库jobs、8873公理审计PASS，独立验收进行中。"
+      ],
+      "next_action": "用实际Lax–Milgram构造正移位质量逆，证明收缩、交换和强逼近。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
