@@ -1096,3 +1096,5 @@ public import Carleman.Spatial.CoefficientCommutator
 public import Carleman.Continuous.FormSelfAdjoint
 public import Carleman.Spatial.HigherAllowedData
 public import Carleman.Spatial.HigherAnalyticData
+
+public import Carleman.Continuous.RealOperatorSquareRoot

@@ -8486,6 +8486,35 @@ set_option pp.maxSteps 1000000
 #check @Carleman.higherCoefficient_analytic_realization
 #print axioms Carleman.higherCoefficient_analytic_realization
 
+#check @Carleman.sqrtScalarIter
+#print axioms Carleman.sqrtScalarIter
+#check @Carleman.sqrtScalarIter_bounds
+#print axioms Carleman.sqrtScalarIter_bounds
+#check @Carleman.sqrtScalarIter_monotone
+#print axioms Carleman.sqrtScalarIter_monotone
+#check @Carleman.sqrtScalarIter_tendsto
+#print axioms Carleman.sqrtScalarIter_tendsto
+#check @Carleman.sqrtComplementIter
+#print axioms Carleman.sqrtComplementIter
+#check @Carleman.sqrtComplementIter_norm
+#print axioms Carleman.sqrtComplementIter_norm
+#check @Carleman.sqrtComplementIter_dist
+#print axioms Carleman.sqrtComplementIter_dist
+#check @Carleman.sqrtComplementIter_cauchy
+#print axioms Carleman.sqrtComplementIter_cauchy
+#check @Carleman.sqrtComplementIter_exists_limit
+#print axioms Carleman.sqrtComplementIter_exists_limit
+#check @Carleman.sqrtComplementIter_limit_square
+#print axioms Carleman.sqrtComplementIter_limit_square
+#check @Carleman.sqrtComplementIter_selfAdjoint
+#print axioms Carleman.sqrtComplementIter_selfAdjoint
+#check @Carleman.positive_contraction_complement_norm
+#print axioms Carleman.positive_contraction_complement_norm
+#check @Carleman.positive_contraction_exists_sqrt
+#print axioms Carleman.positive_contraction_exists_sqrt
+#check @Carleman.positive_exists_sqrt
+#print axioms Carleman.positive_exists_sqrt
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
