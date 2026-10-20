@@ -1090,3 +1090,5 @@ public import Carleman.Spatial.WeakCoefficientJet
 
 public import Carleman.Spatial.CoefficientDifferentialTerm
 public import Carleman.Spatial.CoefficientDifferentialOperator
+
+public import Carleman.Spatial.CoefficientCommutator

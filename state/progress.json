@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T225",
-    "supervisor_checked_at": "2026-10-20T05:52:14.907375+00:00",
+    "supervisor_checked_at": "2026-10-20T05:57:05.921419+00:00",
     "next_action": "在已识别的原微分算子上消去无权导数主项，用严格降阶Leibniz余项给原q幂交换子界并接入真实域保持。",
     "blocker": null,
     "pause_reason": null,
@@ -20468,7 +20468,7 @@
       "paper_ref": "paper/main.tex:2624–2635，一般W²ᵐ,∞系数算子Leibniz步骤",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:spatial-operators"
@@ -20515,7 +20515,25 @@
           "sha256": "56d962cde3ed16a954610290695bcc4918b591a5233cfed7ee8d4b0f5435ce04"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "7413b28a97681bcf834d35701a7ca878ebac1b99",
+        "declarations": [
+          "Carleman.BoundedWeakCoefficient",
+          "Carleman.BoundedWeakCoefficient.truncate",
+          "Carleman.WeakSobolevJet.weakCoefficient_leibnizField_weak",
+          "Carleman.WeakSobolevJet.weakCoefficient_wordField_mul",
+          "Carleman.WeakSobolevJet.weakCoefficient_leibnizField_perm",
+          "Carleman.WeakSobolevJet.weakCoefficientProductJet",
+          "Carleman.WeakSobolevJet.weakCoefficientProductJet_value",
+          "Carleman.WeakSobolevJet.weakCoefficientProductCLM",
+          "Carleman.WeakSobolevJet.weakCoefficientProductJet_word"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e7a58964e44140073a135d2004d2c4c762e73b54/governance/reviews/T223-local-acceptance.md",
+        "reviewed_at": "2026-10-20T05:51:29+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C027",
         "C030",
@@ -20525,7 +20543,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "真实有限阶弱有界系数乘积和Hⁿ成员构造；实际算子公式和完整A.1仍待，17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C240",
@@ -20533,7 +20551,7 @@
       "paper_ref": "paper/main.tex:2618–2635，原系数形式与关联算子的Leibniz表达式",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:spatial-operators"
@@ -20586,7 +20604,31 @@
           "sha256": "26c1799a25bad8a13f722b049837a3ec78b3337088d690cef05679cd8492a682"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "03f8c203f00dc90f126a44f9200c5ac56f645752",
+        "declarations": [
+          "Carleman.SpatialTest.wordTest_append",
+          "Carleman.SpatialTest.wordTest_derivativeTest",
+          "Carleman.weakWordChain_test",
+          "Carleman.WeakSobolevJet.coefficientDifferentialTerm",
+          "Carleman.WeakSobolevJet.coefficientDifferentialTerm_nil",
+          "Carleman.WeakSobolevJet.coefficientDifferentialTerm_weak",
+          "Carleman.WeakSobolevJet.coefficientDifferentialTerm_test",
+          "Carleman.WeakSobolevJet.wordField_multiIndex_truncate",
+          "Carleman.coefficientDifferentialOperator",
+          "Carleman.coefficientDifferentialOperator_test",
+          "Carleman.coefficientDifferentialOperator_form",
+          "Carleman.higherCoefficient_operator_graph_of_sobolev",
+          "Carleman.higherCoefficient_operator_eq_differential",
+          "Carleman.higherCoefficient_operator_domain_eq",
+          "Carleman.higherCoefficient_operator_canonical"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/94223761edea20d3d77cb6eb4b62ee05be8868e7/governance/reviews/T224-local-acceptance.md",
+        "reviewed_at": "2026-10-20T05:54:29+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C027",
         "C232",
@@ -20597,7 +20639,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "实际一般阶系数微分表达式与原形式/关联图对齐；完整A.1交换子仍待，17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C241",
@@ -20610,7 +20652,19 @@
       "paper_labels": [
         "prop:spatial-operators"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.list_sum_map_sub",
+        "Carleman.WeakSobolevJet.coefficientTermBound",
+        "Carleman.WeakSobolevJet.coefficientTermBound_nonneg",
+        "Carleman.WeakSobolevJet.coefficientDifferentialTerm_error_of_words",
+        "Carleman.coefficientOperatorBound",
+        "Carleman.coefficientOperatorBound_nonneg",
+        "Carleman.coefficientDifferentialOperator_error_of_words",
+        "Carleman.coefficientDifferentialOperator_smooth_commutator",
+        "Carleman.coefficientDifferentialOperator_allowed_commutator",
+        "Carleman.higherCoefficient_operator_multiplier_preserves",
+        "Carleman.higherCoefficient_allowed_commutator"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -21918,6 +21972,16 @@
       "at": "2026-10-20T05:52:13.703606+00:00",
       "public_summary": "真实弱有界系数的分布乘积法则已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/fcd4a0abd52632a49eb110f3b17491813a9839a9/governance/reviews/T222-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T05:53:33.560441+00:00",
+      "public_summary": "有限阶弱有界系数的完整Leibniz与Sobolev乘法已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e7a58964e44140073a135d2004d2c4c762e73b54/governance/reviews/T223-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T05:57:05.921419+00:00",
+      "public_summary": "一般弱系数微分表达式与原关联算子的身份已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/94223761edea20d3d77cb6eb4b62ee05be8868e7/governance/reviews/T224-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -22385,7 +22449,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2dc8b09b757c041154c765d0d39d71ca67923c79/governance/reviews/T219-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6b2e214345ec21a1553d0359485a1990607d6d13/governance/reviews/T220-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/26fd897b17671a06ad146b12f0187154c3c9e18e/governance/reviews/T221-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/fcd4a0abd52632a49eb110f3b17491813a9839a9/governance/reviews/T222-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/fcd4a0abd52632a49eb110f3b17491813a9839a9/governance/reviews/T222-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e7a58964e44140073a135d2004d2c4c762e73b54/governance/reviews/T223-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/94223761edea20d3d77cb6eb4b62ee05be8868e7/governance/reviews/T224-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -48819,10 +48885,10 @@
       ],
       "branch": "main",
       "base_commit": "a3993a7a580ebab556f2a780ecb0ac3f81942390",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "7413b28a97681bcf834d35701a7ca878ebac1b99",
-      "merge_commit": null,
+      "merge_commit": "7413b28a97681bcf834d35701a7ca878ebac1b99",
       "lean_declarations": [
         "Carleman.BoundedWeakCoefficient",
         "Carleman.BoundedWeakCoefficient.truncate",
@@ -48869,7 +48935,7 @@
         "有限阶弱链、完整Leibniz展开及实际Hⁿ乘法scratch已编译。",
         "有限阶真实弱系数链、Leibniz全展开及Hⁿ乘法CLM通过。目标3299/root4250 jobs实际exit0；9386声明递归审计PASS。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -48887,9 +48953,23 @@
         "raw_sha256": "56d962cde3ed16a954610290695bcc4918b591a5233cfed7ee8d4b0f5435ce04",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "review": "PENDING"
+        "review": "PENDING",
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "7413b28a97681bcf834d35701a7ca878ebac1b99"
+      "declaration_version": "7413b28a97681bcf834d35701a7ca878ebac1b99",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C239"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "7413b28a97681bcf834d35701a7ca878ebac1b99",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T05:51:29+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e7a58964e44140073a135d2004d2c4c762e73b54/governance/reviews/T223-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T224",
@@ -48913,10 +48993,10 @@
       ],
       "branch": "main",
       "base_commit": "7413b28a97681bcf834d35701a7ca878ebac1b99",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "03f8c203f00dc90f126a44f9200c5ac56f645752",
-      "merge_commit": null,
+      "merge_commit": "03f8c203f00dc90f126a44f9200c5ac56f645752",
       "lean_declarations": [
         "Carleman.SpatialTest.wordTest_append",
         "Carleman.SpatialTest.wordTest_derivativeTest",
@@ -48969,7 +49049,7 @@
         "真实有限弱链逐次分部积分及带偏移状态导数的系数展开已编译。",
         "真实完整系数微分表达式、全部H₀ᵐ测试身份及原关联算子图/域身份通过。目标3340/root4252 jobs实际exit0；9432声明递归审计PASS。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -48988,9 +49068,23 @@
         "raw_sha256": "26c1799a25bad8a13f722b049837a3ec78b3337088d690cef05679cd8492a682",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "review": "PENDING"
+        "review": "PENDING",
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "03f8c203f00dc90f126a44f9200c5ac56f645752"
+      "declaration_version": "03f8c203f00dc90f126a44f9200c5ac56f645752",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C240"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "03f8c203f00dc90f126a44f9200c5ac56f645752",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T05:54:29+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/94223761edea20d3d77cb6eb4b62ee05be8868e7/governance/reviews/T224-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T225",
@@ -49018,14 +49112,44 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.list_sum_map_sub",
+        "Carleman.WeakSobolevJet.coefficientTermBound",
+        "Carleman.WeakSobolevJet.coefficientTermBound_nonneg",
+        "Carleman.WeakSobolevJet.coefficientDifferentialTerm_error_of_words",
+        "Carleman.coefficientOperatorBound",
+        "Carleman.coefficientOperatorBound_nonneg",
+        "Carleman.coefficientDifferentialOperator_error_of_words",
+        "Carleman.coefficientDifferentialOperator_smooth_commutator",
+        "Carleman.coefficientDifferentialOperator_allowed_commutator",
+        "Carleman.higherCoefficient_operator_multiplier_preserves",
+        "Carleman.higherCoefficient_allowed_commutator"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "已写一般系数微分项的真实共轭差和逐词范数估计，正在编译。"
+        "实际系数逐项共轭差、严格降阶余项、全允许权统一常数及原域保持全部实现；本地目标、根导入及9446声明审计exit 0。"
       ],
       "next_action": "在已识别的原微分算子上消去无权导数主项，用严格降阶Leibniz余项给原q幂交换子界并接入真实域保持。",
-      "integration_mode": "direct-main"
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman.Spatial.CoefficientCommutator",
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": [
+          3366,
+          4253
+        ],
+        "recursive_axiom_audit": 9446,
+        "new_explicit_declarations": 11,
+        "raw_sha256": "171c1b62cfc9f36778feb61f28ca133eb89ebd37dd51bab63085660127ba49e5",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

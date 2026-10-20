@@ -8447,6 +8447,30 @@ set_option pp.maxSteps 1000000
 #check @Carleman.higherCoefficient_operator_canonical
 #print axioms Carleman.higherCoefficient_operator_canonical
 
+-- T225: actual original general coefficient operator uniform commutator.
+#check @Carleman.list_sum_map_sub
+#print axioms Carleman.list_sum_map_sub
+#check @Carleman.WeakSobolevJet.coefficientTermBound
+#print axioms Carleman.WeakSobolevJet.coefficientTermBound
+#check @Carleman.WeakSobolevJet.coefficientTermBound_nonneg
+#print axioms Carleman.WeakSobolevJet.coefficientTermBound_nonneg
+#check @Carleman.WeakSobolevJet.coefficientDifferentialTerm_error_of_words
+#print axioms Carleman.WeakSobolevJet.coefficientDifferentialTerm_error_of_words
+#check @Carleman.coefficientOperatorBound
+#print axioms Carleman.coefficientOperatorBound
+#check @Carleman.coefficientOperatorBound_nonneg
+#print axioms Carleman.coefficientOperatorBound_nonneg
+#check @Carleman.coefficientDifferentialOperator_error_of_words
+#print axioms Carleman.coefficientDifferentialOperator_error_of_words
+#check @Carleman.coefficientDifferentialOperator_smooth_commutator
+#print axioms Carleman.coefficientDifferentialOperator_smooth_commutator
+#check @Carleman.coefficientDifferentialOperator_allowed_commutator
+#print axioms Carleman.coefficientDifferentialOperator_allowed_commutator
+#check @Carleman.higherCoefficient_operator_multiplier_preserves
+#print axioms Carleman.higherCoefficient_operator_multiplier_preserves
+#check @Carleman.higherCoefficient_allowed_commutator
+#print axioms Carleman.higherCoefficient_allowed_commutator
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
