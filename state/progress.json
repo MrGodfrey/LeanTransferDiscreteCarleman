@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T212",
-    "supervisor_checked_at": "2026-10-20T04:36:46.435896+00:00",
-    "next_action": "从实际质量正则化的强收敛和H连续迹证明每个时间端点的能量恒等式，为原控制弱解唯一性清偿能量链式法则。",
+    "current_task_id": "T213",
+    "supervisor_checked_at": "2026-10-20T04:37:05.877311+00:00",
+    "next_action": "证明真实Bochner产品映射与时间截断交换，将同一原势与梯度载荷配对局部化，得到原能量估计。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "a98192d2b1dc2e5f7d7034d4a5be49d41c7b3bec",
-      "source_head_sha": "a98192d2b1dc2e5f7d7034d4a5be49d41c7b3bec",
+      "checked_sha": "9a2857abc4c61b3c6de1fa2d282bac81f14a3d16",
+      "source_head_sha": "9a2857abc4c61b3c6de1fa2d282bac81f14a3d16",
       "ci_url": null,
-      "finished_at": "2026-10-20T04:31:29.376250+00:00",
+      "finished_at": "2026-10-20T04:36:18.706361+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "950dcd719fe60d5f58a6c4a0594325428acfa2f1c4209ff387e6bda1aad426f9",
+      "source_manifest_sha256": "322f962b0d226a7f92d62a63c2cc6cb13a481a36b128b2499903aacc4a319a56",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9009,
-        "sha256": "9ea6adf39d7ff98ab2fc205c40cb105f55a6171892976358de15568d67f4603d"
+        "declarations": 9016,
+        "sha256": "3f858ab89b94eb23a812597328bd126e1b3ead73bb2d7bd87e884b4aa3e9d649"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "a98192d2b1dc2e5f7d7034d4a5be49d41c7b3bec",
-      "source_head_sha": "a98192d2b1dc2e5f7d7034d4a5be49d41c7b3bec",
+      "checked_sha": "9a2857abc4c61b3c6de1fa2d282bac81f14a3d16",
+      "source_head_sha": "9a2857abc4c61b3c6de1fa2d282bac81f14a3d16",
       "ci_url": null,
-      "finished_at": "2026-10-20T04:31:29.376250+00:00",
+      "finished_at": "2026-10-20T04:36:18.706361+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "950dcd719fe60d5f58a6c4a0594325428acfa2f1c4209ff387e6bda1aad426f9",
+      "source_manifest_sha256": "322f962b0d226a7f92d62a63c2cc6cb13a481a36b128b2499903aacc4a319a56",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9009,
-        "sha256": "9ea6adf39d7ff98ab2fc205c40cb105f55a6171892976358de15568d67f4603d"
+        "declarations": 9016,
+        "sha256": "3f858ab89b94eb23a812597328bd126e1b3ead73bb2d7bd87e884b4aa3e9d649"
       }
     }
   },
@@ -19509,7 +19509,7 @@
       "paper_ref": "paper/main.tex:2415, prop:control-convergence 原连续弱解的能量与唯一性基础",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -19523,8 +19523,37 @@
         "Carleman.FiniteDirichletControlIdentity.energy_identity",
         "Carleman.FiniteDirichletControlIdentity.continuous_H_energy_trace"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "9a2857abc4c61b3c6de1fa2d282bac81f14a3d16",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "9a2857abc4c61b3c6de1fa2d282bac81f14a3d16",
+        "source_head_sha": "9a2857abc4c61b3c6de1fa2d282bac81f14a3d16",
+        "ci_url": null,
+        "finished_at": "2026-10-20T04:36:18.706361+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "322f962b0d226a7f92d62a63c2cc6cb13a481a36b128b2499903aacc4a319a56",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9016,
+          "sha256": "3f858ab89b94eb23a812597328bd126e1b3ead73bb2d7bd87e884b4aa3e9d649"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C218",
@@ -19534,7 +19563,32 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "从真实pivot弱时间导数内部给连续H迹的逐时能量身份；辅助后续唯一性，17/26。"
+      "scope_notes": "从真实pivot弱时间导数内部给连续H迹的逐时能量身份；辅助后续唯一性，17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C229",
+      "title": "原控制载荷的局部能量配对与势界",
+      "paper_ref": "paper/main.tex:2338–2415, prop:control-convergence 原能量解的局部能量基础",
+      "milestone": "M6c",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:control-convergence"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C206",
+        "C216",
+        "C228"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "原时空势及真实值/梯度载荷的局部能量配对；辅助原弱解唯一性，17/26。"
     }
   ],
   "events": [
@@ -46502,9 +46556,9 @@
       ],
       "branch": "main",
       "base_commit": "a98192d2b1dc2e5f7d7034d4a5be49d41c7b3bec",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "9a2857abc4c61b3c6de1fa2d282bac81f14a3d16",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.HasWeakTimeDerivative.pivot_energy_identity_to",
@@ -46515,13 +46569,42 @@
         "Carleman.FiniteDirichletControlIdentity.energy_identity",
         "Carleman.FiniteDirichletControlIdentity.continuous_H_energy_trace"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "9a2857abc4c61b3c6de1fa2d282bac81f14a3d16",
+        "source_head_sha": "9a2857abc4c61b3c6de1fa2d282bac81f14a3d16",
+        "ci_url": null,
+        "finished_at": "2026-10-20T04:36:18.706361+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "322f962b0d226a7f92d62a63c2cc6cb13a481a36b128b2499903aacc4a319a56",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9016,
+          "sha256": "3f858ab89b94eb23a812597328bd126e1b3ead73bb2d7bd87e884b4aa3e9d649"
+        }
+      },
       "blocker": null,
       "attempts": [
         "T211实际P1控制族4223根构建、9009递归公理审计PASS。",
         "七项真实连续能量声明定向3634 jobs、全库4227 jobs及9016项递归公理审计均exit 0。"
       ],
-      "next_action": "从实际质量正则化的强收敛和H连续迹证明每个时间端点的能量恒等式，为原控制弱解唯一性清偿能量链式法则。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -46536,7 +46619,41 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "9a2857abc4c61b3c6de1fa2d282bac81f14a3d16"
+    },
+    {
+      "id": "T213",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原控制载荷的局部能量配对与势界",
+      "goal_ids": [
+        "C229"
+      ],
+      "acceptance": [
+        "真实时间截断和实际Bochner产品映射交换",
+        "原载荷配对局部化保留同一b/Y/U及原梯度项",
+        "势项费用仅用原b.bound，不输入目标局部估计"
+      ],
+      "dependencies": [
+        "C206",
+        "C216",
+        "C228"
+      ],
+      "branch": "main",
+      "base_commit": "9a2857abc4c61b3c6de1fa2d282bac81f14a3d16",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "T212真实逐时能量身份4227根构建、9016公理审计PASS。"
+      ],
+      "next_action": "证明真实Bochner产品映射与时间截断交换，将同一原势与梯度载荷配对局部化，得到原能量估计。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
