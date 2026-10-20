@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T242",
-    "supervisor_checked_at": "2026-10-20T08:27:11.625998+00:00",
-    "next_action": "构造跨边界截断H¹₀状态，并从原全部测试推导局部换域后的弱方程。",
+    "current_task_id": "T243",
+    "supervisor_checked_at": "2026-10-20T08:28:00.495786+00:00",
+    "next_action": "从原非零梯度选实际坐标方向，构造保持切向坐标的隐函数图。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc",
-      "source_head_sha": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc",
+      "checked_sha": "4acd24f5158fda6688403c600ddbd9d2a131c379",
+      "source_head_sha": "4acd24f5158fda6688403c600ddbd9d2a131c379",
       "ci_url": null,
-      "finished_at": "2026-10-20T08:18:59.407565+00:00",
+      "finished_at": "2026-10-20T08:27:31.051936+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "733624ff0a5fd3eaf8dc093ea67e632963e6296a18c947fbae43e1a2cd2dcdf0",
+      "source_manifest_sha256": "370ec7632fbee07e5da5db771bead8e58311531ed850725804d6d797627514ac",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9883,
-        "sha256": "a752259c3fa935218ce91a01e085b57ed01613e9e7b9afdcd95407549434c202"
+        "declarations": 9937,
+        "sha256": "ea189e3d10e6d991b26c44928dfe24e9c1ab695a8983dc428429b6b432234f2c"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc",
-      "source_head_sha": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc",
+      "checked_sha": "4acd24f5158fda6688403c600ddbd9d2a131c379",
+      "source_head_sha": "4acd24f5158fda6688403c600ddbd9d2a131c379",
       "ci_url": null,
-      "finished_at": "2026-10-20T08:18:59.407565+00:00",
+      "finished_at": "2026-10-20T08:27:31.051936+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "733624ff0a5fd3eaf8dc093ea67e632963e6296a18c947fbae43e1a2cd2dcdf0",
+      "source_manifest_sha256": "370ec7632fbee07e5da5db771bead8e58311531ed850725804d6d797627514ac",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9883,
-        "sha256": "a752259c3fa935218ce91a01e085b57ed01613e9e7b9afdcd95407549434c202"
+        "declarations": 9937,
+        "sha256": "ea189e3d10e6d991b26c44928dfe24e9c1ab695a8983dc428429b6b432234f2c"
       }
     }
   },
@@ -22193,7 +22193,7 @@
       "pr_url": null,
       "id": "C258",
       "title": "边界截断弱解在局部相同域之间的真实传输",
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "lean_declarations": [
         "Carleman.SpatialTest.retarget",
         "Carleman.SpatialTest.retarget_fullJet",
@@ -22217,6 +22217,59 @@
       ],
       "blocker": null,
       "scope_notes": "局部边界截断与换域；仍需原域图构造及凸域统一控制，AUXILIARY，18/26。",
+      "independent_review_status": "PENDING",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "4acd24f5158fda6688403c600ddbd9d2a131c379",
+        "source_head_sha": "4acd24f5158fda6688403c600ddbd9d2a131c379",
+        "ci_url": null,
+        "finished_at": "2026-10-20T08:27:31.051936+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "370ec7632fbee07e5da5db771bead8e58311531ed850725804d6d797627514ac",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9937,
+          "sha256": "ea189e3d10e6d991b26c44928dfe24e9c1ab695a8983dc428429b6b432234f2c"
+        }
+      },
+      "semantic_review": null,
+      "declaration_version": "4acd24f5158fda6688403c600ddbd9d2a131c379"
+    },
+    {
+      "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的边界H²正则性证明路线",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "pr_url": null,
+      "id": "C259",
+      "title": "原非退化水平边界的坐标图和局部高度构造",
+      "verification_status": "SPECIFIED",
+      "lean_declarations": [],
+      "dependencies": [
+        "C247",
+        "C258"
+      ],
+      "blocker": null,
+      "scope_notes": "从原非零梯度构造坐标图；仍需全局有界斜率扩展、有限拼接和凸域统一控制，AUXILIARY，18/26。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -52535,8 +52588,8 @@
         "C257"
       ],
       "base_commit": "e445f7d9d5e46db8b7a68a46769ac05442ee75bc",
-      "status": "RUNNING",
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "checkpoint_commit": "4acd24f5158fda6688403c600ddbd9d2a131c379",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.SpatialTest.retarget",
@@ -52558,8 +52611,37 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "构造跨边界截断H¹₀状态，并从原全部测试推导局部换域后的弱方程。",
-      "build_evidence": null,
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "4acd24f5158fda6688403c600ddbd9d2a131c379",
+        "source_head_sha": "4acd24f5158fda6688403c600ddbd9d2a131c379",
+        "ci_url": null,
+        "finished_at": "2026-10-20T08:27:31.051936+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "370ec7632fbee07e5da5db771bead8e58311531ed850725804d6d797627514ac",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9937,
+          "sha256": "ea189e3d10e6d991b26c44928dfe24e9c1ab695a8983dc428429b6b432234f2c"
+        }
+      },
       "local_validation": {
         "target": "Carleman.Spatial.BoundaryCutoffTransfer",
         "target_jobs": 3405,
@@ -52570,7 +52652,38 @@
         "recursive_axiom_declarations": 9937,
         "axiom_exit_code": 0,
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "4acd24f5158fda6688403c600ddbd9d2a131c379"
+    },
+    {
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "branch": "main",
+      "pr_url": null,
+      "integration_mode": "direct-main",
+      "id": "T243",
+      "title": "原非退化水平边界的坐标图和局部高度构造",
+      "goal_ids": [
+        "C259"
+      ],
+      "acceptance": [
+        "真实坐标切向投影与可逆水平图导数",
+        "非退化原水平边界的实际隐函数坐标",
+        "局部高度光滑性和准确原水平身份"
+      ],
+      "dependencies": [
+        "C247",
+        "C258"
+      ],
+      "base_commit": "4acd24f5158fda6688403c600ddbd9d2a131c379",
+      "status": "RUNNING",
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "blocker": null,
+      "attempts": [],
+      "next_action": "从原非零梯度选实际坐标方向，构造保持切向坐标的隐函数图。",
+      "build_evidence": null
     }
   ],
   "private_maintenance": {
