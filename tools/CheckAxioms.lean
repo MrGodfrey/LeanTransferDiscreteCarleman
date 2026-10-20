@@ -9658,6 +9658,10 @@ set_option pp.maxSteps 1000000
 #check Carleman.Physical.finite_halfspace_p1_physical_observation_control
 #print axioms Carleman.Physical.finite_halfspace_p1_physical_observation_control
 
+-- T269: original filtered observation and control.
+#check Carleman.Physical.finite_halfspace_p1_filtered_observation_control
+#print axioms Carleman.Physical.finite_halfspace_p1_filtered_observation_control
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

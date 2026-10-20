@@ -1192,3 +1192,5 @@ public import Carleman.Transfer.FiniteHalfspaceHeatContinuous
 
 public import Carleman.Control.FiniteHalfspaceP1LoadCarleman
 public import Carleman.Control.FiniteHalfspaceP1PhysicalControl
+
+public import Carleman.Control.FiniteHalfspaceP1FilteredControl
