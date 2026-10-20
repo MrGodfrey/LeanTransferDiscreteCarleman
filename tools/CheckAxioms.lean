@@ -8042,6 +8042,15 @@ set_option pp.maxSteps 1000000
 #check @Carleman.FiniteDirichletControlIdentity.continuous_H_trace
 #print axioms Carleman.FiniteDirichletControlIdentity.continuous_H_trace
 
+
+-- T206: every actual Cartesian weak control limit gives the original null-control state.
+#check @Carleman.DirichletNullControlState
+#print axioms Carleman.DirichletNullControlState
+#check @Carleman.FiniteDirichletControlIdentity.null_control_state
+#print axioms Carleman.FiniteDirichletControlIdentity.null_control_state
+#check @Carleman.Physical.box_cartesian_controls_null_limits
+#print axioms Carleman.Physical.box_cartesian_controls_null_limits
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
