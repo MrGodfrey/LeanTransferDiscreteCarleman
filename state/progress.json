@@ -10,21 +10,21 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T204",
-    "supervisor_checked_at": "2026-10-20T03:41:07.597854+00:00",
-    "next_action": "保存固定证明与本地证据，独立验收原控制状态真实H连续代表。",
+    "current_task_id": "T205",
+    "supervisor_checked_at": "2026-10-20T03:43:55.732609+00:00",
+    "next_action": "对同一H连续代表使用原不限端点弱恒等式、真实标量弱FTC和空间稠密性，识别q(0)=y0及q(T)=0。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-20T03:41:07.597854+00:00"
+    "last_activity_at": "2026-10-20T03:43:55.732609+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "d6634423766eaa11b670fb643578e3a62ff1a71e",
-      "source_head_sha": "d6634423766eaa11b670fb643578e3a62ff1a71e",
+      "checked_sha": "7afc739b6c8f95e208beeaefed4b955f0eebbdb5",
+      "source_head_sha": "7afc739b6c8f95e208beeaefed4b955f0eebbdb5",
       "ci_url": null,
-      "finished_at": "2026-10-20T03:40:12.377586+00:00",
+      "finished_at": "2026-10-20T03:42:45.908348+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "7667b8d87340cb3cdfe446c6902881824252cd56a2a4734d1760751f0630e1e2",
+      "source_manifest_sha256": "20e315393582460ee96fe09e121ebcd8fe9204e54d98832f71aefc90c14387ef",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8917,
-        "sha256": "899fe722c25dd787605ebfd8d5e69ca9e2fc8df4a9f38a700a1a5ee19aca4e48"
+        "declarations": 8921,
+        "sha256": "1d8820b367cb04cdf3eb997ed259b4e8c5829731df708572beefa0b2c444084e"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "d6634423766eaa11b670fb643578e3a62ff1a71e",
-      "source_head_sha": "d6634423766eaa11b670fb643578e3a62ff1a71e",
+      "checked_sha": "7afc739b6c8f95e208beeaefed4b955f0eebbdb5",
+      "source_head_sha": "7afc739b6c8f95e208beeaefed4b955f0eebbdb5",
       "ci_url": null,
-      "finished_at": "2026-10-20T03:40:12.377586+00:00",
+      "finished_at": "2026-10-20T03:42:45.908348+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "7667b8d87340cb3cdfe446c6902881824252cd56a2a4734d1760751f0630e1e2",
+      "source_manifest_sha256": "20e315393582460ee96fe09e121ebcd8fe9204e54d98832f71aefc90c14387ef",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8917,
-        "sha256": "899fe722c25dd787605ebfd8d5e69ca9e2fc8df4a9f38a700a1a5ee19aca4e48"
+        "declarations": 8921,
+        "sha256": "1d8820b367cb04cdf3eb997ed259b4e8c5829731df708572beefa0b2c444084e"
       }
     }
   },
@@ -18898,7 +18898,7 @@
       "paper_ref": "paper/main.tex:2415, prop:control-convergence 的 H 连续时间迹",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -18909,8 +18909,37 @@
         "Carleman.exists_pivot_time_representative",
         "Carleman.FiniteDirichletControlIdentity.continuous_H_representative"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "7afc739b6c8f95e208beeaefed4b955f0eebbdb5",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "7afc739b6c8f95e208beeaefed4b955f0eebbdb5",
+        "source_head_sha": "7afc739b6c8f95e208beeaefed4b955f0eebbdb5",
+        "ci_url": null,
+        "finished_at": "2026-10-20T03:42:45.908348+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "20e315393582460ee96fe09e121ebcd8fe9204e54d98832f71aefc90c14387ef",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8921,
+          "sha256": "1d8820b367cb04cdf3eb997ed259b4e8c5829731df708572beefa0b2c444084e"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C218",
@@ -18918,7 +18947,32 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "由实际正则化路径一致极限证明原状态的闭区间H连续代表；初终值识别仍待，17/26。"
+      "scope_notes": "由实际正则化路径一致极限证明原状态的闭区间H连续代表；初终值识别仍待，17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C221",
+      "title": "原控制极限的真实初终值识别",
+      "paper_ref": "paper/main.tex:2395–2415, prop:control-convergence 的初终值识别",
+      "milestone": "M6c",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:control-convergence"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C215",
+        "C216",
+        "C220"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "实际原H连续代表的q(0)=y0、q(T)=0；完整控制收敛组合及一般P1分支仍待，17/26。"
     }
   ],
   "events": [
@@ -45033,9 +45087,9 @@
       ],
       "branch": "main",
       "base_commit": "d6634423766eaa11b670fb643578e3a62ff1a71e",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "7afc739b6c8f95e208beeaefed4b955f0eebbdb5",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.HasWeakTimeDerivative.sub_memLp",
@@ -45043,13 +45097,42 @@
         "Carleman.exists_pivot_time_representative",
         "Carleman.FiniteDirichletControlIdentity.continuous_H_representative"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "7afc739b6c8f95e208beeaefed4b955f0eebbdb5",
+        "source_head_sha": "7afc739b6c8f95e208beeaefed4b955f0eebbdb5",
+        "ci_url": null,
+        "finished_at": "2026-10-20T03:42:45.908348+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "20e315393582460ee96fe09e121ebcd8fe9204e54d98832f71aefc90c14387ef",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8921,
+          "sha256": "1d8820b367cb04cdf3eb997ed259b4e8c5829731df708572beefa0b2c444084e"
+        }
+      },
       "blocker": null,
       "attempts": [
         "T203实际连续正则化路径4205全库jobs、8917公理审计PASS，独立验收进行中；通用H路径强极限试编译已通过。",
         "实际两索引Cauchy界与完整C([0,T];H)完备性给一致极限，通过真实pathL2映射识别原Y；4声明probe exit0，3628定向/4207全库jobs、8921递归公理审计PASS。"
       ],
-      "next_action": "保存固定证明与本地证据，独立验收原控制状态真实H连续代表。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -45064,7 +45147,41 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "7afc739b6c8f95e208beeaefed4b955f0eebbdb5"
+    },
+    {
+      "id": "T205",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原控制极限的真实初终值识别",
+      "goal_ids": [
+        "C221"
+      ],
+      "acceptance": [
+        "使用实际H连续代表与原弱恒等式识别两个真实端点",
+        "保留同一原Y/U/b/y0，不用Lp代表的任意端点值",
+        "空间分离性来自实际Dirichlet值域稠密性"
+      ],
+      "dependencies": [
+        "C215",
+        "C216",
+        "C220"
+      ],
+      "branch": "main",
+      "base_commit": "7afc739b6c8f95e208beeaefed4b955f0eebbdb5",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "T204原状态H连续代表4207全库jobs、8921公理审计PASS，独立验收进行中。"
+      ],
+      "next_action": "对同一H连续代表使用原不限端点弱恒等式、真实标量弱FTC和空间稠密性，识别q(0)=y0及q(T)=0。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
