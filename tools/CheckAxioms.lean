@@ -8415,6 +8415,38 @@ set_option pp.maxSteps 1000000
 #check @Carleman.WeakSobolevJet.weakCoefficientProductJet_word
 #print axioms Carleman.WeakSobolevJet.weakCoefficientProductJet_word
 
+-- T224: true general coefficient differential expression and associated operator graph.
+#check @Carleman.SpatialTest.wordTest_append
+#print axioms Carleman.SpatialTest.wordTest_append
+#check @Carleman.SpatialTest.wordTest_derivativeTest
+#print axioms Carleman.SpatialTest.wordTest_derivativeTest
+#check @Carleman.weakWordChain_test
+#print axioms Carleman.weakWordChain_test
+#check @Carleman.WeakSobolevJet.coefficientDifferentialTerm
+#print axioms Carleman.WeakSobolevJet.coefficientDifferentialTerm
+#check @Carleman.WeakSobolevJet.coefficientDifferentialTerm_nil
+#print axioms Carleman.WeakSobolevJet.coefficientDifferentialTerm_nil
+#check @Carleman.WeakSobolevJet.coefficientDifferentialTerm_weak
+#print axioms Carleman.WeakSobolevJet.coefficientDifferentialTerm_weak
+#check @Carleman.WeakSobolevJet.coefficientDifferentialTerm_test
+#print axioms Carleman.WeakSobolevJet.coefficientDifferentialTerm_test
+#check @Carleman.WeakSobolevJet.wordField_multiIndex_truncate
+#print axioms Carleman.WeakSobolevJet.wordField_multiIndex_truncate
+#check @Carleman.coefficientDifferentialOperator
+#print axioms Carleman.coefficientDifferentialOperator
+#check @Carleman.coefficientDifferentialOperator_test
+#print axioms Carleman.coefficientDifferentialOperator_test
+#check @Carleman.coefficientDifferentialOperator_form
+#print axioms Carleman.coefficientDifferentialOperator_form
+#check @Carleman.higherCoefficient_operator_graph_of_sobolev
+#print axioms Carleman.higherCoefficient_operator_graph_of_sobolev
+#check @Carleman.higherCoefficient_operator_eq_differential
+#print axioms Carleman.higherCoefficient_operator_eq_differential
+#check @Carleman.higherCoefficient_operator_domain_eq
+#print axioms Carleman.higherCoefficient_operator_domain_eq
+#check @Carleman.higherCoefficient_operator_canonical
+#print axioms Carleman.higherCoefficient_operator_canonical
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

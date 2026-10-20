@@ -1087,3 +1087,6 @@ public import Carleman.Spatial.MollifiedProductTests
 public import Carleman.Spatial.WeakCoefficientProduct
 
 public import Carleman.Spatial.WeakCoefficientJet
+
+public import Carleman.Spatial.CoefficientDifferentialTerm
+public import Carleman.Spatial.CoefficientDifferentialOperator
