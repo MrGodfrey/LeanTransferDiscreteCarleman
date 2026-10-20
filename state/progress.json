@@ -23610,7 +23610,17 @@
       "id": "C274",
       "title": "原光滑内域弱解的统一Hessian估计",
       "verification_status": "SPECIFIED",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.realLp_norm_sq_of_ae",
+        "Carleman.SpatialTest.allOrderJetOn_component_two_smoothD_ae",
+        "Carleman.SpatialTest.allOrderJetOn_negativeLaplacian",
+        "Carleman.SpatialTest.allOrderJetOn_negativeLaplacian_norm_sq",
+        "Carleman.SpatialTest.allOrderJetOn_component_sq_le_hessian",
+        "Carleman.SpatialTest.allOrderJetOn_hessian_bound_of_classical",
+        "Carleman.weak_hessian_bound_of_strong_density",
+        "Carleman.halfspaceSmoothInner_weak_hessian_bound",
+        "Carleman.halfspaceSmoothInner_weak_hessian_norm_bound"
+      ],
       "dependencies": [
         "C273",
         "C267"
@@ -55591,11 +55601,32 @@
       "status": "RUNNING",
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.realLp_norm_sq_of_ae",
+        "Carleman.SpatialTest.allOrderJetOn_component_two_smoothD_ae",
+        "Carleman.SpatialTest.allOrderJetOn_negativeLaplacian",
+        "Carleman.SpatialTest.allOrderJetOn_negativeLaplacian_norm_sq",
+        "Carleman.SpatialTest.allOrderJetOn_component_sq_le_hessian",
+        "Carleman.SpatialTest.allOrderJetOn_hessian_bound_of_classical",
+        "Carleman.weak_hessian_bound_of_strong_density",
+        "Carleman.halfspaceSmoothInner_weak_hessian_bound",
+        "Carleman.halfspaceSmoothInner_weak_hessian_norm_bound"
+      ],
       "blocker": null,
       "attempts": [],
       "next_action": "将真实零边值H²强逼近代入经典凸域估计，证明对原弱状态及内域序号统一的Hessian界。",
-      "build_evidence": null
+      "build_evidence": null,
+      "local_validation": {
+        "target": "Carleman.Spatial.WeakConvexHessian",
+        "target_jobs": 3489,
+        "target_exit_code": 0,
+        "root_target": "Carleman",
+        "root_jobs": 4297,
+        "root_exit_code": 0,
+        "recursive_axiom_declarations": 10281,
+        "axiom_exit_code": 0,
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

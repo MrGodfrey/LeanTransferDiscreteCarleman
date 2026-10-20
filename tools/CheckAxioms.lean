@@ -9397,6 +9397,25 @@ set_option pp.maxSteps 1000000
 #check Carleman.halfspaceSmoothInner_strong_h2_approximation
 #print axioms Carleman.halfspaceSmoothInner_strong_h2_approximation
 
+#check Carleman.realLp_norm_sq_of_ae
+#print axioms Carleman.realLp_norm_sq_of_ae
+#check Carleman.SpatialTest.allOrderJetOn_component_two_smoothD_ae
+#print axioms Carleman.SpatialTest.allOrderJetOn_component_two_smoothD_ae
+#check Carleman.SpatialTest.allOrderJetOn_negativeLaplacian
+#print axioms Carleman.SpatialTest.allOrderJetOn_negativeLaplacian
+#check Carleman.SpatialTest.allOrderJetOn_negativeLaplacian_norm_sq
+#print axioms Carleman.SpatialTest.allOrderJetOn_negativeLaplacian_norm_sq
+#check Carleman.SpatialTest.allOrderJetOn_component_sq_le_hessian
+#print axioms Carleman.SpatialTest.allOrderJetOn_component_sq_le_hessian
+#check Carleman.SpatialTest.allOrderJetOn_hessian_bound_of_classical
+#print axioms Carleman.SpatialTest.allOrderJetOn_hessian_bound_of_classical
+#check Carleman.weak_hessian_bound_of_strong_density
+#print axioms Carleman.weak_hessian_bound_of_strong_density
+#check Carleman.halfspaceSmoothInner_weak_hessian_bound
+#print axioms Carleman.halfspaceSmoothInner_weak_hessian_bound
+#check Carleman.halfspaceSmoothInner_weak_hessian_norm_bound
+#print axioms Carleman.halfspaceSmoothInner_weak_hessian_norm_bound
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
