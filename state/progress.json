@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T196",
-    "supervisor_checked_at": "2026-10-20T02:20:58.303413+00:00",
+    "supervisor_checked_at": "2026-10-20T02:21:46.277647+00:00",
     "next_action": "连接原有限测试的梯度、差商、势项、控制及端点配对，推导原弱恒等式极限。",
     "blocker": null,
     "pause_reason": null,
@@ -18087,7 +18087,7 @@
       "paper_ref": "paper/main.tex:2926–2956, sec:control-consistency / prop:control-convergence",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -18139,7 +18139,30 @@
           "sha256": "4b330ade154bb146d9c5ff2c51acedd59cd6788c599d057580545f5b6dab21b9"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "6812f26347c088d1d8d489c8e22dd1e5bb92e778",
+        "declarations": [
+          "Carleman.cartesian_test_cell_uniform_error",
+          "Carleman.cartesian_box_test_cell_uniform_error",
+          "Carleman.p1_test_uniform_error",
+          "Carleman.timeCell_ae_covered",
+          "Carleman.finite_time_tensor_uniform_error",
+          "Carleman.finite_tensor_test_bounds",
+          "Carleman.bochner_finite_time_tensor_ae",
+          "Carleman.finite_tensor_test_aestronglyMeasurable",
+          "Carleman.bochner_finite_time_tensor_uniform_error",
+          "Carleman.cartesian_finite_time_test_uniform_bound",
+          "Carleman.SimplicialPartition.nodalLp_finite",
+          "Carleman.p1_finite_time_test_uniform_bound",
+          "Carleman.cartesian_finite_time_test_Linfty_consistency",
+          "Carleman.p1_finite_time_test_Linfty_consistency"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ebc826644387d929f67677cd4c4afea62cd1d42a/governance/reviews/T194-local-acceptance.md",
+        "reviewed_at": "2026-10-20T02:19:05+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C209",
         "C208",
@@ -18148,7 +18171,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "原有限张量测试产品L∞一致性；完整极限方程、势项和状态端点仍待。17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C211",
@@ -19389,6 +19412,11 @@
       "at": "2026-10-20T02:06:07.191884+00:00",
       "public_summary": "原差分取样测试的18项声明通过独立验收，待验收队列已清；本机实时看板已恢复，继续产品L∞测试一致性。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3fced984367859aa95ee5a6dc92d1daefbdcadfe/governance/reviews/T193-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T02:21:46.277647+00:00",
+      "public_summary": "原有限张量测试的产品L∞一致性已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ebc826644387d929f67677cd4c4afea62cd1d42a/governance/reviews/T194-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -19827,7 +19855,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9ce5a486fc1b5d6645eb6555cbb28146f4a00c8e/governance/reviews/T191-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39354880337/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/739f92b05f7169e03dc1c917630d89ba40e7511d/governance/reviews/T192-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3fced984367859aa95ee5a6dc92d1daefbdcadfe/governance/reviews/T193-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3fced984367859aa95ee5a6dc92d1daefbdcadfe/governance/reviews/T193-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ebc826644387d929f67677cd4c4afea62cd1d42a/governance/reviews/T194-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -43303,10 +43332,10 @@
       ],
       "branch": "main",
       "base_commit": "3ac3635f878b0c1521032b396a2630acdcc4da46",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "6812f26347c088d1d8d489c8e22dd1e5bb92e778",
-      "merge_commit": null,
+      "merge_commit": "6812f26347c088d1d8d489c8e22dd1e5bb92e778",
       "lean_declarations": [
         "Carleman.cartesian_test_cell_uniform_error",
         "Carleman.cartesian_box_test_cell_uniform_error",
@@ -43358,7 +43387,7 @@
         "固定T193真实本地全库构建与8656项公理审计PASS；独立Agent语义核对进行中。采用用户简化后的本地证据流程。",
         "14项正式声明：3576定向jobs、4182全库jobs及8670项递归公理审计PASS；原P1和差分重构产品L∞误差及独立双尺度极限。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -43372,9 +43401,22 @@
         "declaration_artifact_sha256": "4b330ade154bb146d9c5ff2c51acedd59cd6788c599d057580545f5b6dab21b9",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING; exact local proof commit follows"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "6812f26347c088d1d8d489c8e22dd1e5bb92e778"
+      "declaration_version": "6812f26347c088d1d8d489c8e22dd1e5bb92e778",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C210"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "6812f26347c088d1d8d489c8e22dd1e5bb92e778",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T02:19:05+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ebc826644387d929f67677cd4c4afea62cd1d42a/governance/reviews/T194-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T195",
