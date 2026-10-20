@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T264",
-    "supervisor_checked_at": "2026-10-20T11:25:13.487508+00:00",
-    "next_action": "用真实内域H²强密度构造全算子图及周期图密度，将统一双向C²权热估计传给全部原弱态。",
+    "current_task_id": "T265",
+    "supervisor_checked_at": "2026-10-20T11:26:38.853591+00:00",
+    "next_action": "用原弱方程的能量正交及真实紧支测试逼近，证明内域解零延拓在完整H¹强收敛到同一原域解。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "556cdaef8f161664657049e6fc2829b82fbb4404",
-      "source_head_sha": "556cdaef8f161664657049e6fc2829b82fbb4404",
+      "checked_sha": "a53469931caaf52a06accc38b94778d5e007a5b8",
+      "source_head_sha": "a53469931caaf52a06accc38b94778d5e007a5b8",
       "ci_url": null,
-      "finished_at": "2026-10-20T11:15:05.111861+00:00",
+      "finished_at": "2026-10-20T11:25:28.846056+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "e0151e5c7c9813ae9e7019b049aeb8e27647486b85ce573ddc50a626b0658ab1",
+      "source_manifest_sha256": "9e8ba3d32ff095e3a58d3818a34f9f29bea44d6eb1dc4c7cff8ca5aef3746e94",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10358,
-        "sha256": "7b675d14a16377e90f2a759dc798ddb0c96a45d1f42a470073d1f35efc5006ee"
+        "declarations": 10371,
+        "sha256": "ac0e054e14982e3f5c56eb8bd5cf4f5a84abe06208ee4b00b2141a25dd9ea9db"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "556cdaef8f161664657049e6fc2829b82fbb4404",
-      "source_head_sha": "556cdaef8f161664657049e6fc2829b82fbb4404",
+      "checked_sha": "a53469931caaf52a06accc38b94778d5e007a5b8",
+      "source_head_sha": "a53469931caaf52a06accc38b94778d5e007a5b8",
       "ci_url": null,
-      "finished_at": "2026-10-20T11:15:05.111861+00:00",
+      "finished_at": "2026-10-20T11:25:28.846056+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "e0151e5c7c9813ae9e7019b049aeb8e27647486b85ce573ddc50a626b0658ab1",
+      "source_manifest_sha256": "9e8ba3d32ff095e3a58d3818a34f9f29bea44d6eb1dc4c7cff8ca5aef3746e94",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10358,
-        "sha256": "7b675d14a16377e90f2a759dc798ddb0c96a45d1f42a470073d1f35efc5006ee"
+        "declarations": 10371,
+        "sha256": "ac0e054e14982e3f5c56eb8bd5cf4f5a84abe06208ee4b00b2141a25dd9ea9db"
       }
     }
   },
@@ -24130,7 +24130,7 @@
       "milestone": "M6a",
       "scope": "AUXILIARY",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "lean_declarations": [
         "Carleman.exists_smooth_operator_graph_approximation_of_H2",
         "Carleman.exists_halfspaceSmoothInner_operator_graph_approximation",
@@ -24153,6 +24153,59 @@
       "pr_url": null,
       "blocker": null,
       "scope_notes": "实际内域H²强密度和harmonic时间核恢复全原周期图；固定外域常数。原域极限另待。",
+      "independent_review_status": "PENDING",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "a53469931caaf52a06accc38b94778d5e007a5b8",
+        "source_head_sha": "a53469931caaf52a06accc38b94778d5e007a5b8",
+        "ci_url": null,
+        "finished_at": "2026-10-20T11:25:28.846056+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "9e8ba3d32ff095e3a58d3818a34f9f29bea44d6eb1dc4c7cff8ca5aef3746e94",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10371,
+          "sha256": "ac0e054e14982e3f5c56eb8bd5cf4f5a84abe06208ee4b00b2141a25dd9ea9db"
+        }
+      },
+      "semantic_review": null,
+      "declaration_version": "a53469931caaf52a06accc38b94778d5e007a5b8"
+    },
+    {
+      "id": "C281",
+      "title": "原域内穷竭Dirichlet解的真实H¹强收敛",
+      "paper_ref": "paper/main.tex:2672 Proposition A.3 的原域穷竭极限",
+      "paper_labels": [
+        "prop:continuousCE"
+      ],
+      "milestone": "M6a",
+      "scope": "AUXILIARY",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "lean_declarations": [],
+      "dependencies": [
+        "C280",
+        "C275"
+      ],
+      "pr_url": null,
+      "blocker": null,
+      "scope_notes": "原Dirichlet弱解的强H¹穷竭，不把内域H²函数的零延拓当作原域H²函数；周期热估计极限后续。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -56752,8 +56805,8 @@
         "C273"
       ],
       "base_commit": "556cdaef8f161664657049e6fc2829b82fbb4404",
-      "status": "RUNNING",
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "checkpoint_commit": "a53469931caaf52a06accc38b94778d5e007a5b8",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.exists_smooth_operator_graph_approximation_of_H2",
@@ -56770,10 +56823,39 @@
         "Carleman.halfspaceSmoothInner_uniform_weak_interval_C2_heat_both_signs",
         "Carleman.halfspaceSmoothInner_uniform_original_weak_C2_heat_both_signs"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "a53469931caaf52a06accc38b94778d5e007a5b8",
+        "source_head_sha": "a53469931caaf52a06accc38b94778d5e007a5b8",
+        "ci_url": null,
+        "finished_at": "2026-10-20T11:25:28.846056+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "9e8ba3d32ff095e3a58d3818a34f9f29bea44d6eb1dc4c7cff8ca5aef3746e94",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10371,
+          "sha256": "ac0e054e14982e3f5c56eb8bd5cf4f5a84abe06208ee4b00b2141a25dd9ea9db"
+        }
+      },
       "blocker": null,
       "attempts": [],
-      "next_action": "用真实内域H²强密度构造全算子图及周期图密度，将统一双向C²权热估计传给全部原弱态。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "local_validation": {
         "target": "Carleman.Spatial.UniformInnerWeakHeat",
         "target_jobs": 3645,
@@ -56784,7 +56866,38 @@
         "recursive_axiom_declarations": 10371,
         "axiom_exit_code": 0,
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "a53469931caaf52a06accc38b94778d5e007a5b8"
+    },
+    {
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "branch": "main",
+      "pr_url": null,
+      "integration_mode": "direct-main",
+      "id": "T265",
+      "title": "原域内穷竭Dirichlet解的真实H¹强收敛",
+      "goal_ids": [
+        "C281"
+      ],
+      "acceptance": [
+        "同一原负Laplacian负载真实限制",
+        "零延拓只在H¹，不伪称H²",
+        "真实全序列强收敛及载荷零延拓收敛"
+      ],
+      "dependencies": [
+        "C280",
+        "C275"
+      ],
+      "base_commit": "a53469931caaf52a06accc38b94778d5e007a5b8",
+      "status": "RUNNING",
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [],
+      "next_action": "用原弱方程的能量正交及真实紧支测试逼近，证明内域解零延拓在完整H¹强收敛到同一原域解。"
     }
   ],
   "private_maintenance": {
