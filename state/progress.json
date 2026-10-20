@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T244",
-    "supervisor_checked_at": "2026-10-20T08:44:30.626683+00:00",
-    "next_action": "在切向超平面构造紧支光滑延拓，并证明实际全局高度和斜率Lipschitz界。",
+    "current_task_id": "T245",
+    "supervisor_checked_at": "2026-10-20T08:45:28.708385+00:00",
+    "next_action": "利用原法向导数的符号证明局部子水平集与图域精确相同，并构造边界截断。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "e7240abc0fb7acb6a0e456cd916f1845a114b72a",
-      "source_head_sha": "e7240abc0fb7acb6a0e456cd916f1845a114b72a",
+      "checked_sha": "31c84b810ce9f75a97bc2fc5a5cae481a9252183",
+      "source_head_sha": "31c84b810ce9f75a97bc2fc5a5cae481a9252183",
       "ci_url": null,
-      "finished_at": "2026-10-20T08:34:01.815622+00:00",
+      "finished_at": "2026-10-20T08:44:52.822417+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "f6446fbde89e163b62341e674c7a608b59dfd604bb185571b475c131fe9f200d",
+      "source_manifest_sha256": "45b00f27c80bcb9ea6656eb3fbe9acf0b80554ed18738a4e58a1d3babe962c35",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9950,
-        "sha256": "0d72330679cad359c266c17f4620255bad9680e2f47d4c1c772fdeaa7ad801be"
+        "declarations": 9963,
+        "sha256": "657e48a508f2e054f4588f44cd3c06f0324e48a5a871d7993f85470cbb5d360c"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "e7240abc0fb7acb6a0e456cd916f1845a114b72a",
-      "source_head_sha": "e7240abc0fb7acb6a0e456cd916f1845a114b72a",
+      "checked_sha": "31c84b810ce9f75a97bc2fc5a5cae481a9252183",
+      "source_head_sha": "31c84b810ce9f75a97bc2fc5a5cae481a9252183",
       "ci_url": null,
-      "finished_at": "2026-10-20T08:34:01.815622+00:00",
+      "finished_at": "2026-10-20T08:44:52.822417+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "f6446fbde89e163b62341e674c7a608b59dfd604bb185571b475c131fe9f200d",
+      "source_manifest_sha256": "45b00f27c80bcb9ea6656eb3fbe9acf0b80554ed18738a4e58a1d3babe962c35",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9950,
-        "sha256": "0d72330679cad359c266c17f4620255bad9680e2f47d4c1c772fdeaa7ad801be"
+        "declarations": 9963,
+        "sha256": "657e48a508f2e054f4588f44cd3c06f0324e48a5a871d7993f85470cbb5d360c"
       }
     }
   },
@@ -22374,7 +22374,7 @@
       "pr_url": null,
       "id": "C260",
       "title": "局部法向不变高度的全局光滑有界导数延拓",
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "lean_declarations": [
         "Carleman.exists_compact_smooth_extension_near",
         "Carleman.exists_lipschitzWith_of_smooth_compact",
@@ -22391,6 +22391,59 @@
       ],
       "blocker": null,
       "scope_notes": "局部高度延拓并内部给全局C/B资格；仍需子水平侧身份、覆盖及凸域统一控制，AUXILIARY，18/26。",
+      "independent_review_status": "PENDING",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "31c84b810ce9f75a97bc2fc5a5cae481a9252183",
+        "source_head_sha": "31c84b810ce9f75a97bc2fc5a5cae481a9252183",
+        "ci_url": null,
+        "finished_at": "2026-10-20T08:44:52.822417+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "45b00f27c80bcb9ea6656eb3fbe9acf0b80554ed18738a4e58a1d3babe962c35",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9963,
+          "sha256": "657e48a508f2e054f4588f44cd3c06f0324e48a5a871d7993f85470cbb5d360c"
+        }
+      },
+      "semantic_review": null,
+      "declaration_version": "31c84b810ce9f75a97bc2fc5a5cae481a9252183"
+    },
+    {
+      "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的边界H²正则性证明路线",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "pr_url": null,
+      "id": "C261",
+      "title": "原子水平域的真实图侧及边界截断邻域",
+      "verification_status": "SPECIFIED",
+      "lean_declarations": [],
+      "dependencies": [
+        "C260",
+        "C258"
+      ],
+      "blocker": null,
+      "scope_notes": "从原边界及实际导数内部供应图侧和截断；有限覆盖和凸域统一控制仍待，AUXILIARY，18/26。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -52918,8 +52971,8 @@
         "C259"
       ],
       "base_commit": "e7240abc0fb7acb6a0e456cd916f1845a114b72a",
-      "status": "RUNNING",
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "checkpoint_commit": "31c84b810ce9f75a97bc2fc5a5cae481a9252183",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.exists_compact_smooth_extension_near",
@@ -52934,8 +52987,37 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "实际全局高度及全部斜率Lipschitz资格已证明，准备固定证据及独立验收。",
-      "build_evidence": null,
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "31c84b810ce9f75a97bc2fc5a5cae481a9252183",
+        "source_head_sha": "31c84b810ce9f75a97bc2fc5a5cae481a9252183",
+        "ci_url": null,
+        "finished_at": "2026-10-20T08:44:52.822417+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "45b00f27c80bcb9ea6656eb3fbe9acf0b80554ed18738a4e58a1d3babe962c35",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9963,
+          "sha256": "657e48a508f2e054f4588f44cd3c06f0324e48a5a871d7993f85470cbb5d360c"
+        }
+      },
       "local_validation": {
         "target": "Carleman.Geometry.SmoothGraphHeightExtension",
         "target_jobs": 3399,
@@ -52946,7 +53028,38 @@
         "recursive_axiom_declarations": 9963,
         "axiom_exit_code": 0,
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "31c84b810ce9f75a97bc2fc5a5cae481a9252183"
+    },
+    {
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "branch": "main",
+      "pr_url": null,
+      "integration_mode": "direct-main",
+      "id": "T245",
+      "title": "原子水平域的真实图侧及边界截断邻域",
+      "goal_ids": [
+        "C261"
+      ],
+      "acceptance": [
+        "原法向导数符号与真实子水平域侧",
+        "实际开邻域的精确图域身份",
+        "原边界截断与局部H²资格内部供应"
+      ],
+      "dependencies": [
+        "C260",
+        "C258"
+      ],
+      "base_commit": "31c84b810ce9f75a97bc2fc5a5cae481a9252183",
+      "status": "RUNNING",
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "blocker": null,
+      "attempts": [],
+      "next_action": "利用原法向导数的符号证明局部子水平集与图域精确相同，并构造边界截断。",
+      "build_evidence": null
     }
   ],
   "private_maintenance": {
