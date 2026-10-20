@@ -1602,3 +1602,7 @@ T188 的状态弱极限位于真实 Bochner L²_tL²_x；T183–T185 的原势�
 ## T204 / C220 — 原状态的 H 连续时间代表
 
 以实际质量正则化的两项 L² 强极限和加权迹界，证明 H 路径在 C([0,T];H) 一致 Cauchy，完备性及真实 pathL2 极限识别给原 EY 的闭区间连续代表。接到同一原 Dirichlet 控制状态；详见 [T204 分析](analysis/T204-pivot-continuity.md)。原初终值尚待识别，P021 不提升；AUXILIARY、17/26。
+
+## T205 / C221 — 原控制极限的初终值
+
+将原不限端点的弱测试与真实 H 连续代表结合，标量弱 FTC、线性时间 Green 身份及 Dirichlet 值域稠密性给同一 q 的 q(0)=y0、q(T)=0。完整闭区间连续迹及其原 EY 的 a.e. 身份同时返回；详见 [T205 分析](analysis/T205-endpoints.md)。实际控制族整合与一般空间分支仍待，AUXILIARY、17/26。

@@ -1032,3 +1032,5 @@ public import Carleman.Control.MassRegularizedPaths
 public import Carleman.Control.DirichletRegularizedPaths
 public import Carleman.Control.PivotTimeContinuity
 public import Carleman.Control.DirichletTimeContinuity
+public import Carleman.Control.ScalarTimeEndpoints
+public import Carleman.Control.DirichletTimeEndpoints

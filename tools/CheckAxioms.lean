@@ -8027,6 +8027,21 @@ set_option pp.maxSteps 1000000
 #check @Carleman.FiniteDirichletControlIdentity.continuous_H_representative
 #print axioms Carleman.FiniteDirichletControlIdentity.continuous_H_representative
 
+
+-- T205: actual original initial and terminal traces from unrestricted tests.
+#check @Carleman.HasWeakTimeDerivative.scalar_affine_green
+#print axioms Carleman.HasWeakTimeDerivative.scalar_affine_green
+#check @Carleman.HasWeakTimeDerivative.scalar_endpoints
+#print axioms Carleman.HasWeakTimeDerivative.scalar_endpoints
+#check @Carleman.FiniteDirichletControlIdentity.continuous_pairing_weak
+#print axioms Carleman.FiniteDirichletControlIdentity.continuous_pairing_weak
+#check @Carleman.FiniteDirichletControlIdentity.continuous_pairing_test
+#print axioms Carleman.FiniteDirichletControlIdentity.continuous_pairing_test
+#check @Carleman.FiniteDirichletControlIdentity.continuous_H_endpoints
+#print axioms Carleman.FiniteDirichletControlIdentity.continuous_H_endpoints
+#check @Carleman.FiniteDirichletControlIdentity.continuous_H_trace
+#print axioms Carleman.FiniteDirichletControlIdentity.continuous_H_trace
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

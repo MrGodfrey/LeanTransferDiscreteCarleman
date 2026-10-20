@@ -12,7 +12,7 @@
     "state": "RUNNING",
     "current_task_id": "T205",
     "supervisor_checked_at": "2026-10-20T03:47:29.755200+00:00",
-    "next_action": "对同一H连续代表使用原不限端点弱恒等式、真实标量弱FTC和空间稠密性，识别q(0)=y0及q(T)=0。",
+    "next_action": "保存固定证明与本地证据，独立验收原控制状态真实初终值。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T03:43:55.732609+00:00"
@@ -18986,7 +18986,14 @@
       "paper_labels": [
         "prop:control-convergence"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.HasWeakTimeDerivative.scalar_affine_green",
+        "Carleman.HasWeakTimeDerivative.scalar_endpoints",
+        "Carleman.FiniteDirichletControlIdentity.continuous_pairing_weak",
+        "Carleman.FiniteDirichletControlIdentity.continuous_pairing_test",
+        "Carleman.FiniteDirichletControlIdentity.continuous_H_endpoints",
+        "Carleman.FiniteDirichletControlIdentity.continuous_H_trace"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -45237,14 +45244,36 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.HasWeakTimeDerivative.scalar_affine_green",
+        "Carleman.HasWeakTimeDerivative.scalar_endpoints",
+        "Carleman.FiniteDirichletControlIdentity.continuous_pairing_weak",
+        "Carleman.FiniteDirichletControlIdentity.continuous_pairing_test",
+        "Carleman.FiniteDirichletControlIdentity.continuous_H_endpoints",
+        "Carleman.FiniteDirichletControlIdentity.continuous_H_trace"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "T204原状态H连续代表4207全库jobs、8921公理审计PASS，独立验收进行中。"
+        "T204原状态H连续代表4207全库jobs、8921公理审计PASS，独立验收进行中。",
+        "真实标量弱FTC、仿射Green式、原端点自由测试及Dirichlet值域稠密性给同一H连续q的q(0)=y0、q(T)=0；6声明probe exit0，3630定向/4209全库jobs、8927递归公理审计PASS。"
       ],
-      "next_action": "对同一H连续代表使用原不限端点弱恒等式、真实标量弱FTC和空间稠密性，识别q(0)=y0及q(T)=0。",
-      "integration_mode": "direct-main"
+      "next_action": "保存固定证明与本地证据，独立验收原控制状态真实初终值。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4209,
+        "recursive_axiom_audit": 8927,
+        "new_explicit_declarations": 6,
+        "declaration_artifact_sha256": "e718f2be6d571068589b98d075cbe506f5c7583e2288d53ce10fd60b47250ed2",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {
