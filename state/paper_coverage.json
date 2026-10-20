@@ -822,7 +822,7 @@
         "Carleman.Physical.box_cartesian_physical_control"
       ],
       "declaration_version": "5458c11848a69d56199fb5e13d517b58eb38953b",
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": {
@@ -855,9 +855,22 @@
           "sha256": "2ed5d8a79fb0aa867dd76676377473a80099bbba60d9dc68a1671ae0d9d6795d"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "5458c11848a69d56199fb5e13d517b58eb38953b",
+        "declarations": [
+          "Carleman.Physical.finite_halfspace_p1_physical_load_carleman",
+          "Carleman.Physical.finite_halfspace_p1_physical_observation_control",
+          "Carleman.Physical.box_cartesian_physical_observability",
+          "Carleman.Physical.box_cartesian_physical_control"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/038447d47db3314106c903723fc9415646d96bad/governance/reviews/T268-local-acceptance.md",
+        "reviewed_at": "2026-10-20T12:26:45+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent paper acceptance"
+      },
       "blocker": null,
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "P015",
@@ -876,7 +889,7 @@
         "Carleman.Physical.box_cartesian_physical_control"
       ],
       "declaration_version": "5458c11848a69d56199fb5e13d517b58eb38953b",
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": {
@@ -909,9 +922,22 @@
           "sha256": "2ed5d8a79fb0aa867dd76676377473a80099bbba60d9dc68a1671ae0d9d6795d"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "5458c11848a69d56199fb5e13d517b58eb38953b",
+        "declarations": [
+          "Carleman.Physical.finite_halfspace_p1_physical_load_carleman",
+          "Carleman.Physical.finite_halfspace_p1_physical_observation_control",
+          "Carleman.Physical.box_cartesian_physical_observability",
+          "Carleman.Physical.box_cartesian_physical_control"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/038447d47db3314106c903723fc9415646d96bad/governance/reviews/T268-local-acceptance.md",
+        "reviewed_at": "2026-10-20T12:26:45+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent paper acceptance"
+      },
       "blocker": null,
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "P016",
@@ -1225,11 +1251,17 @@
       "tex_line": 2344,
       "milestone": "M6c",
       "claim_ids": [
-        "C019"
+        "C286"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.FiniteHalfspaceP1Refinement",
+        "Carleman.Physical.finite_halfspace_p1_controls_independent_refinement",
+        "Carleman.Physical.FiniteHalfspaceP1NullLimits",
+        "Carleman.Physical.finite_halfspace_p1_controls_null_limits",
+        "Carleman.Physical.box_cartesian_controls_null_limits"
+      ],
       "declaration_version": null,
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": null,

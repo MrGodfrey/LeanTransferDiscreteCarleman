@@ -9662,6 +9662,16 @@ set_option pp.maxSteps 1000000
 #check Carleman.Physical.finite_halfspace_p1_filtered_observation_control
 #print axioms Carleman.Physical.finite_halfspace_p1_filtered_observation_control
 
+-- T270: full original control convergence.
+#check Carleman.Physical.FiniteHalfspaceP1Refinement
+#print axioms Carleman.Physical.FiniteHalfspaceP1Refinement
+#check Carleman.Physical.finite_halfspace_p1_controls_independent_refinement
+#print axioms Carleman.Physical.finite_halfspace_p1_controls_independent_refinement
+#check Carleman.Physical.FiniteHalfspaceP1NullLimits
+#print axioms Carleman.Physical.FiniteHalfspaceP1NullLimits
+#check Carleman.Physical.finite_halfspace_p1_controls_null_limits
+#print axioms Carleman.Physical.finite_halfspace_p1_controls_null_limits
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

@@ -1194,3 +1194,6 @@ public import Carleman.Control.FiniteHalfspaceP1LoadCarleman
 public import Carleman.Control.FiniteHalfspaceP1PhysicalControl
 
 public import Carleman.Control.FiniteHalfspaceP1FilteredControl
+
+public import Carleman.Control.FiniteHalfspaceP1Refinement
+public import Carleman.Control.FiniteHalfspaceP1NullControlLimits

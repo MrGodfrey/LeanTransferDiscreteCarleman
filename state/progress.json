@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T270",
-    "supervisor_checked_at": "2026-10-20T12:19:56.760292+00:00",
+    "supervisor_checked_at": "2026-10-20T12:31:26.990410+00:00",
     "next_action": "把一般凸多面体真实控制接入已证弱状态/控制极限，完成Corollary7.9及全文验收。",
     "blocker": null,
     "pause_reason": null,
@@ -24508,7 +24508,7 @@
       "milestone": "M6b",
       "scope": "PAPER",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "lean_declarations": [
         "Carleman.Physical.finite_halfspace_p1_physical_load_carleman",
         "Carleman.Physical.finite_halfspace_p1_physical_observation_control",
@@ -24523,7 +24523,7 @@
       "pr_url": null,
       "blocker": null,
       "scope_notes": "补齐一般凸多面体P1分支，与已有Cartesian分支共同覆盖原文物理观测与近似零控制。",
-      "independent_review_status": "PENDING",
+      "independent_review_status": "PASS",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -24554,7 +24554,20 @@
           "sha256": "2ed5d8a79fb0aa867dd76676377473a80099bbba60d9dc68a1671ae0d9d6795d"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "5458c11848a69d56199fb5e13d517b58eb38953b",
+        "declarations": [
+          "Carleman.Physical.finite_halfspace_p1_physical_load_carleman",
+          "Carleman.Physical.finite_halfspace_p1_physical_observation_control",
+          "Carleman.Physical.box_cartesian_physical_observability",
+          "Carleman.Physical.box_cartesian_physical_control"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/038447d47db3314106c903723fc9415646d96bad/governance/reviews/T268-local-acceptance.md",
+        "reviewed_at": "2026-10-20T12:26:45+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent paper acceptance"
+      },
       "declaration_version": "5458c11848a69d56199fb5e13d517b58eb38953b"
     },
     {
@@ -24625,7 +24638,13 @@
       "scope": "PAPER",
       "extra_hypotheses": [],
       "verification_status": "SPECIFIED",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.FiniteHalfspaceP1Refinement",
+        "Carleman.Physical.finite_halfspace_p1_controls_independent_refinement",
+        "Carleman.Physical.FiniteHalfspaceP1NullLimits",
+        "Carleman.Physical.finite_halfspace_p1_controls_null_limits",
+        "Carleman.Physical.box_cartesian_controls_null_limits"
+      ],
       "dependencies": [
         "C284",
         "C285"
@@ -26156,6 +26175,11 @@
       "at": "2026-10-20T12:19:14.470564+00:00",
       "public_summary": "Proposition A.3：原域全弱周期连续Carleman估计已通过固定本地验证与独立数学验收；原文覆盖21/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f9c4dc5fb4770e0075bc857beae0900dc01c5edc/governance/reviews/T267-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T12:31:26.990410+00:00",
+      "public_summary": "一般凸多面体的物理观测与近似零控制已通过固定本地验证与独立数学验收；原文覆盖23/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/038447d47db3314106c903723fc9415646d96bad/governance/reviews/T268-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -26668,7 +26692,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/128807c3503e575763831f7e3a450ecf11db7c3f/governance/reviews/T264-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/eab02b1c24f9bce07a28db6e9a50c511368f3715/governance/reviews/T265-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/4655a9d59448298a504143f523d2bf417c617aba/governance/reviews/T266-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f9c4dc5fb4770e0075bc857beae0900dc01c5edc/governance/reviews/T267-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/f9c4dc5fb4770e0075bc857beae0900dc01c5edc/governance/reviews/T267-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/038447d47db3314106c903723fc9415646d96bad/governance/reviews/T268-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -57661,9 +57686,9 @@
         "C276"
       ],
       "base_commit": "0a1808091e23386fc8c06d4e2a3434d1fa9f2a34",
-      "status": "REVIEW",
+      "status": "MERGED",
       "checkpoint_commit": "5458c11848a69d56199fb5e13d517b58eb38953b",
-      "merge_commit": null,
+      "merge_commit": "5458c11848a69d56199fb5e13d517b58eb38953b",
       "lean_declarations": [
         "Carleman.Physical.finite_halfspace_p1_physical_load_carleman",
         "Carleman.Physical.finite_halfspace_p1_physical_observation_control",
@@ -57702,7 +57727,7 @@
       },
       "blocker": null,
       "attempts": [],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "local_validation": {
         "target": "Carleman.Control.FiniteHalfspaceP1PhysicalControl",
         "target_jobs": 3987,
@@ -57712,9 +57737,25 @@
         "root_exit_code": 0,
         "recursive_axiom_declarations": 10583,
         "axiom_exit_code": 0,
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "5458c11848a69d56199fb5e13d517b58eb38953b"
+      "declaration_version": "5458c11848a69d56199fb5e13d517b58eb38953b",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C284"
+          ],
+          "paper_result_ids": [
+            "P014",
+            "P015"
+          ],
+          "checked_sha": "5458c11848a69d56199fb5e13d517b58eb38953b",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T12:26:45+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/038447d47db3314106c903723fc9415646d96bad/governance/reviews/T268-local-acceptance.md"
+        }
+      ]
     },
     {
       "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
@@ -57814,11 +57855,28 @@
       "status": "RUNNING",
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.FiniteHalfspaceP1Refinement",
+        "Carleman.Physical.finite_halfspace_p1_controls_independent_refinement",
+        "Carleman.Physical.FiniteHalfspaceP1NullLimits",
+        "Carleman.Physical.finite_halfspace_p1_controls_null_limits",
+        "Carleman.Physical.box_cartesian_controls_null_limits"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [],
-      "next_action": "把一般凸多面体真实控制接入已证弱状态/控制极限，完成Corollary7.9及全文验收。"
+      "next_action": "把一般凸多面体真实控制接入已证弱状态/控制极限，完成Corollary7.9及全文验收。",
+      "local_validation": {
+        "target": "Carleman.Control.FiniteHalfspaceP1NullControlLimits",
+        "target_jobs": 4170,
+        "target_exit_code": 0,
+        "root_target": "Carleman",
+        "root_jobs": 4327,
+        "root_exit_code": 0,
+        "recursive_axiom_declarations": 10681,
+        "axiom_exit_code": 0,
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {
