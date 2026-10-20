@@ -7909,6 +7909,19 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Physical.box_cartesian_controls_weak_accumulation
 #print axioms Carleman.Physical.box_cartesian_controls_weak_accumulation
 
+
+-- T199: the original weak equation on all Dirichlet energy tests.
+#check @Carleman.exists_refining_time_grids
+#print axioms Carleman.exists_refining_time_grids
+#check @Carleman.finiteTensorTestMultiplier_eq_product
+#print axioms Carleman.finiteTensorTestMultiplier_eq_product
+#check @Carleman.exists_dirichlet_test_sequence
+#print axioms Carleman.exists_dirichlet_test_sequence
+#check @Carleman.FiniteDirichletControlIdentity.spatial_test
+#print axioms Carleman.FiniteDirichletControlIdentity.spatial_test
+#check @Carleman.FiniteDirichletControlIdentity.all_energy_tests
+#print axioms Carleman.FiniteDirichletControlIdentity.all_energy_tests
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

@@ -12,7 +12,7 @@
     "state": "RUNNING",
     "current_task_id": "T199",
     "supervisor_checked_at": "2026-10-20T02:56:53.869928+00:00",
-    "next_action": "证明真实测试能量稠密性和产品张量身份，再对全部 H¹₀ 测试取极限。",
+    "next_action": "本地构建及公理审计通过，固定提交后交独立Agent验收实际能量稠密性、产品表示与全V弱恒等式。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T02:52:35.486518+00:00"
@@ -18507,7 +18507,13 @@
       "paper_labels": [
         "prop:control-convergence"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.exists_refining_time_grids",
+        "Carleman.finiteTensorTestMultiplier_eq_product",
+        "Carleman.exists_dirichlet_test_sequence",
+        "Carleman.FiniteDirichletControlIdentity.spatial_test",
+        "Carleman.FiniteDirichletControlIdentity.all_energy_tests"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -44125,14 +44131,35 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.exists_refining_time_grids",
+        "Carleman.finiteTensorTestMultiplier_eq_product",
+        "Carleman.exists_dirichlet_test_sequence",
+        "Carleman.FiniteDirichletControlIdentity.spatial_test",
+        "Carleman.FiniteDirichletControlIdentity.all_energy_tests"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "T198每个原控制弱积点的有限弱方程4075定向/4192全库jobs、8780公理审计PASS，独立验收进行中。"
+        "T198每个原控制弱积点的有限弱方程4075定向/4192全库jobs、8780公理审计PASS，独立验收进行中。",
+        "固定维度/区域稠密命题后消去存在量词，显式指定张量空间和实内积，解决过量展开；5项完整probe exit0、3617定向jobs、4195全库jobs、8786项递归公理审计PASS。"
       ],
-      "next_action": "证明真实测试能量稠密性和产品张量身份，再对全部 H¹₀ 测试取极限。",
-      "integration_mode": "direct-main"
+      "next_action": "本地构建及公理审计通过，固定提交后交独立Agent验收实际能量稠密性、产品表示与全V弱恒等式。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4195,
+        "recursive_axiom_audit": 8786,
+        "new_explicit_declarations": 5,
+        "declaration_artifact_sha256": "6e4c965a734bca2256f70f93a4c836b6f737f618355f2d73e6797486990667d8",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

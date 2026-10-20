@@ -1017,3 +1017,6 @@ public import Carleman.Control.CartesianControlRefinement
 public import Carleman.Control.RegionalWeakControlLimit
 public import Carleman.Control.FiniteWeakControlIdentity
 public import Carleman.Control.CartesianControlWeakAccumulation
+public import Carleman.Control.FiniteTensorProductIdentity
+public import Carleman.Control.DirichletTestDensity
+public import Carleman.Control.AllEnergyControlTests
