@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T231",
-    "supervisor_checked_at": "2026-10-20T06:41:34.753773+00:00",
-    "next_action": "通过真实隐函数定理构造指数和内域的解析边界坐标。",
+    "current_task_id": "T232",
+    "supervisor_checked_at": "2026-10-20T06:47:42.450397+00:00",
+    "next_action": "从已证卷积平移估计和强L²极限推出原弱状态差商界。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "721b761224ad1b6425466bc956417ddce7f41908",
-      "source_head_sha": "721b761224ad1b6425466bc956417ddce7f41908",
+      "checked_sha": "e61081ad723542df4c8e33ab57a10f10f6db67d0",
+      "source_head_sha": "e61081ad723542df4c8e33ab57a10f10f6db67d0",
       "ci_url": null,
-      "finished_at": "2026-10-20T06:37:00.160791+00:00",
+      "finished_at": "2026-10-20T06:46:42.327048+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "87aaabbd494a75650f84a0ddc802856fd374138082c9e840e790bcb4c02ad703",
+      "source_manifest_sha256": "687b682ec2c37ea80d3d80e9177c53c087e0c3372a8c3eeb1c6c9e1d30ee683c",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9554,
-        "sha256": "80f71dea6d886e077281017c10d507494b902f96bbe408c41b131bf5dea13a0a"
+        "declarations": 9560,
+        "sha256": "6ee28ebb2b8486c95d65fc6defe879dc4ca65cb7fc9ee1293ffd2d3f10c15546"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "721b761224ad1b6425466bc956417ddce7f41908",
-      "source_head_sha": "721b761224ad1b6425466bc956417ddce7f41908",
+      "checked_sha": "e61081ad723542df4c8e33ab57a10f10f6db67d0",
+      "source_head_sha": "e61081ad723542df4c8e33ab57a10f10f6db67d0",
       "ci_url": null,
-      "finished_at": "2026-10-20T06:37:00.160791+00:00",
+      "finished_at": "2026-10-20T06:46:42.327048+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "87aaabbd494a75650f84a0ddc802856fd374138082c9e840e790bcb4c02ad703",
+      "source_manifest_sha256": "687b682ec2c37ea80d3d80e9177c53c087e0c3372a8c3eeb1c6c9e1d30ee683c",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9554,
-        "sha256": "80f71dea6d886e077281017c10d507494b902f96bbe408c41b131bf5dea13a0a"
+        "declarations": 9560,
+        "sha256": "6ee28ebb2b8486c95d65fc6defe879dc4ca65cb7fc9ee1293ffd2d3f10c15546"
       }
     }
   },
@@ -21196,7 +21196,7 @@
       "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 凸多面体正则性路线",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:analytic-realizations"
@@ -21209,15 +21209,65 @@
         "Carleman.halfspaceExpSum_analytic",
         "Carleman.halfspaceSmoothInner_analytic_chart"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "e61081ad723542df4c8e33ab57a10f10f6db67d0",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "e61081ad723542df4c8e33ab57a10f10f6db67d0",
+        "source_head_sha": "e61081ad723542df4c8e33ab57a10f10f6db67d0",
+        "ci_url": null,
+        "finished_at": "2026-10-20T06:46:42.327048+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "687b682ec2c37ea80d3d80e9177c53c087e0c3372a8c3eeb1c6c9e1d30ee683c",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9560,
+          "sha256": "6ee28ebb2b8486c95d65fc6defe879dc4ca65cb7fc9ee1293ffd2d3f10c15546"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C246"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "光滑凸内域的实际边界坐标；分析H²正则性尚待。"
+      "scope_notes": "光滑凸内域的实际边界坐标；分析H²正则性尚待。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C248",
+      "title": "实际弱方向导数的全空间平移与差商估计",
+      "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的边界H²正则性证明路线",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "实际L²平移/差商；变量系数边界正则性和完整P023仍待。"
     }
   ],
   "events": [
@@ -50348,9 +50398,9 @@
       ],
       "branch": "main",
       "base_commit": "721b761224ad1b6425466bc956417ddce7f41908",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "e61081ad723542df4c8e33ab57a10f10f6db67d0",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.exists_analytic_level_chart",
@@ -50360,12 +50410,41 @@
         "Carleman.halfspaceExpSum_analytic",
         "Carleman.halfspaceSmoothInner_analytic_chart"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "e61081ad723542df4c8e33ab57a10f10f6db67d0",
+        "source_head_sha": "e61081ad723542df4c8e33ab57a10f10f6db67d0",
+        "ci_url": null,
+        "finished_at": "2026-10-20T06:46:42.327048+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "687b682ec2c37ea80d3d80e9177c53c087e0c3372a8c3eeb1c6c9e1d30ee683c",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9560,
+          "sha256": "6ee28ebb2b8486c95d65fc6defe879dc4ca65cb7fc9ee1293ffd2d3f10c15546"
+        }
+      },
       "blocker": null,
       "attempts": [
         "通过真实隐函数定理构造解析图、精确半空间/边界身份及实际导数互逆；新module采用公开API避开mathlib未暴露实现。3060/4270构建与9560递归审计exit0。"
       ],
-      "next_action": "通过真实隐函数定理构造指数和内域的解析边界坐标。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -50384,7 +50463,35 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "e61081ad723542df4c8e33ab57a10f10f6db67d0"
+    },
+    {
+      "id": "T232",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "实际弱方向导数的全空间平移与差商估计",
+      "goal_ids": [
+        "C248"
+      ],
+      "acceptance": [
+        "原L²等价类真实平移及测度保持范数",
+        "全弱方向导数给步长一致差商界",
+        "真实差商分部求和，为边界差商能量法供应工具"
+      ],
+      "dependencies": [],
+      "branch": "main",
+      "base_commit": "e61081ad723542df4c8e33ab57a10f10f6db67d0",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [],
+      "next_action": "从已证卷积平移估计和强L²极限推出原弱状态差商界。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
