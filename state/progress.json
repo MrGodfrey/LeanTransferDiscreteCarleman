@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T268",
-    "supervisor_checked_at": "2026-10-20T12:08:24.821355+00:00",
-    "next_action": "将完整原域连续Carleman接入实际P1离散传递与物理观测/控制，覆盖原文两种实现。",
+    "current_task_id": "T269",
+    "supervisor_checked_at": "2026-10-20T12:16:23.188652+00:00",
+    "next_action": "由完整原域物理观测接入真实有限元过滤观测及控制，并核对Cartesian分支。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "0a1808091e23386fc8c06d4e2a3434d1fa9f2a34",
-      "source_head_sha": "0a1808091e23386fc8c06d4e2a3434d1fa9f2a34",
+      "checked_sha": "5458c11848a69d56199fb5e13d517b58eb38953b",
+      "source_head_sha": "5458c11848a69d56199fb5e13d517b58eb38953b",
       "ci_url": null,
-      "finished_at": "2026-10-20T12:05:35.902830+00:00",
+      "finished_at": "2026-10-20T12:15:58.535596+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "baf5c075a2fe49b454f7a112bfcced1f29608703e2df0b4ae9c5459810ec8817",
+      "source_manifest_sha256": "f19b2df8dd9cb5f7925db71c337b729681e272305aeee92c4bdf9711fdfffc94",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10579,
-        "sha256": "8f1b1005355c16dfbd3687853c090f6660b104c8b1cf223aa2a024640aa7a6f3"
+        "declarations": 10583,
+        "sha256": "2ed5d8a79fb0aa867dd76676377473a80099bbba60d9dc68a1671ae0d9d6795d"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "0a1808091e23386fc8c06d4e2a3434d1fa9f2a34",
-      "source_head_sha": "0a1808091e23386fc8c06d4e2a3434d1fa9f2a34",
+      "checked_sha": "5458c11848a69d56199fb5e13d517b58eb38953b",
+      "source_head_sha": "5458c11848a69d56199fb5e13d517b58eb38953b",
       "ci_url": null,
-      "finished_at": "2026-10-20T12:05:35.902830+00:00",
+      "finished_at": "2026-10-20T12:15:58.535596+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "baf5c075a2fe49b454f7a112bfcced1f29608703e2df0b4ae9c5459810ec8817",
+      "source_manifest_sha256": "f19b2df8dd9cb5f7925db71c337b729681e272305aeee92c4bdf9711fdfffc94",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10579,
-        "sha256": "8f1b1005355c16dfbd3687853c090f6660b104c8b1cf223aa2a024640aa7a6f3"
+        "declarations": 10583,
+        "sha256": "2ed5d8a79fb0aa867dd76676377473a80099bbba60d9dc68a1671ae0d9d6795d"
       }
     }
   },
@@ -24482,7 +24482,7 @@
       "milestone": "M6b",
       "scope": "PAPER",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "lean_declarations": [
         "Carleman.Physical.finite_halfspace_p1_physical_load_carleman",
         "Carleman.Physical.finite_halfspace_p1_physical_observation_control",
@@ -24497,6 +24497,59 @@
       "pr_url": null,
       "blocker": null,
       "scope_notes": "补齐一般凸多面体P1分支，与已有Cartesian分支共同覆盖原文物理观测与近似零控制。",
+      "independent_review_status": "PENDING",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "5458c11848a69d56199fb5e13d517b58eb38953b",
+        "source_head_sha": "5458c11848a69d56199fb5e13d517b58eb38953b",
+        "ci_url": null,
+        "finished_at": "2026-10-20T12:15:58.535596+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "f19b2df8dd9cb5f7925db71c337b729681e272305aeee92c4bdf9711fdfffc94",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10583,
+          "sha256": "2ed5d8a79fb0aa867dd76676377473a80099bbba60d9dc68a1671ae0d9d6795d"
+        }
+      },
+      "semantic_review": null,
+      "declaration_version": "5458c11848a69d56199fb5e13d517b58eb38953b"
+    },
+    {
+      "id": "C285",
+      "title": "全原实现的过滤观测与精确低频消除控制",
+      "paper_ref": "paper/main.tex:2177,2201 Theorem 7.5 and Corollary 7.6",
+      "paper_labels": [
+        "thm:filtered-observability",
+        "cor:filtered-control"
+      ],
+      "milestone": "M6b",
+      "scope": "PAPER",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "lean_declarations": [],
+      "dependencies": [
+        "C284"
+      ],
+      "pr_url": null,
+      "blocker": null,
+      "scope_notes": "一般凸多面体P1和任意维Cartesian分支的完整过滤观测与控制。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -57504,8 +57557,8 @@
         "C276"
       ],
       "base_commit": "0a1808091e23386fc8c06d4e2a3434d1fa9f2a34",
-      "status": "RUNNING",
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "checkpoint_commit": "5458c11848a69d56199fb5e13d517b58eb38953b",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.Physical.finite_halfspace_p1_physical_load_carleman",
@@ -57513,10 +57566,39 @@
         "Carleman.Physical.box_cartesian_physical_observability",
         "Carleman.Physical.box_cartesian_physical_control"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "5458c11848a69d56199fb5e13d517b58eb38953b",
+        "source_head_sha": "5458c11848a69d56199fb5e13d517b58eb38953b",
+        "ci_url": null,
+        "finished_at": "2026-10-20T12:15:58.535596+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "f19b2df8dd9cb5f7925db71c337b729681e272305aeee92c4bdf9711fdfffc94",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10583,
+          "sha256": "2ed5d8a79fb0aa867dd76676377473a80099bbba60d9dc68a1671ae0d9d6795d"
+        }
+      },
       "blocker": null,
       "attempts": [],
-      "next_action": "将完整原域连续Carleman接入实际P1离散传递与物理观测/控制，覆盖原文两种实现。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "local_validation": {
         "target": "Carleman.Control.FiniteHalfspaceP1PhysicalControl",
         "target_jobs": 3987,
@@ -57527,7 +57609,37 @@
         "recursive_axiom_declarations": 10583,
         "axiom_exit_code": 0,
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "5458c11848a69d56199fb5e13d517b58eb38953b"
+    },
+    {
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "branch": "main",
+      "pr_url": null,
+      "integration_mode": "direct-main",
+      "id": "T269",
+      "title": "全原实现的过滤观测与精确低频消除控制",
+      "goal_ids": [
+        "C285"
+      ],
+      "acceptance": [
+        "原filterRayleigh与统一谱隙条件",
+        "实际区域控制精确消除F投影",
+        "完整终端状态指数界，常数独立网格和F"
+      ],
+      "dependencies": [
+        "C284"
+      ],
+      "base_commit": "5458c11848a69d56199fb5e13d517b58eb38953b",
+      "status": "RUNNING",
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [],
+      "next_action": "由完整原域物理观测接入真实有限元过滤观测及控制，并核对Cartesian分支。"
     }
   ],
   "private_maintenance": {

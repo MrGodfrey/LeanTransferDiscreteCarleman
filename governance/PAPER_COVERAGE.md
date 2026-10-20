@@ -19,8 +19,8 @@
 | P011 | Proposition 6.1 | `prop:p1` | 21 / 1499 | M6a | C277 | Carleman.finite_halfspace_convex, Carleman.finite_halfspace_p1_realization |
 | P012 | Proposition 6.2 | `prop:fd` | 23 / 1672 | M6a | C015, C158 | Carleman.cartesian_numericalData_of_box, Carleman.cartesian_full_weight_interface |
 | P013 | Lemma 7.1 | `lem:physicalduality` | 24 / 1753 | M6b | C040 | Carleman.Physical.ForwardEquation, Carleman.Physical.AdjointEquation, Carleman.Physical.physical_duality_lemma |
-| P014 | Theorem 7.2 | `prop:physicalO` | 25 / 1827 | M6b | C016 | 待建立 |
-| P015 | Theorem 7.3 | `prop:physicalC` | 27 / 2032 | M6b | C017 | 待建立 |
+| P014 | Theorem 7.2 | `prop:physicalO` | 25 / 1827 | M6b | C284 | Carleman.Physical.finite_halfspace_p1_physical_load_carleman, Carleman.Physical.finite_halfspace_p1_physical_observation_control, Carleman.Physical.box_cartesian_physical_observability, Carleman.Physical.box_cartesian_physical_control |
+| P015 | Theorem 7.3 | `prop:physicalC` | 27 / 2032 | M6b | C284 | Carleman.Physical.finite_halfspace_p1_physical_load_carleman, Carleman.Physical.finite_halfspace_p1_physical_observation_control, Carleman.Physical.box_cartesian_physical_observability, Carleman.Physical.box_cartesian_physical_control |
 | P016 | Lemma 7.4 | `lem:filter-reverse` | 29 / 2164 | M6b | C041 | Carleman.Physical.filterRayleigh, Carleman.Physical.filterConstant, Carleman.Physical.filter_reverse |
 | P017 | Theorem 7.5 | `thm:filtered-observability` | 29 / 2177 | M6b | C018 | 待建立 |
 | P018 | Corollary 7.6 | `cor:filtered-control` | 29 / 2201 | M6b | 待分解 | 待建立 |
