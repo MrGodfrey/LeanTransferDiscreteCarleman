@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T257",
-    "supervisor_checked_at": "2026-10-20T10:28:04.396932+00:00",
+    "supervisor_checked_at": "2026-10-20T10:34:43.218908+00:00",
     "next_action": "将实际图域与内部的紧支逼近经嵌套截断传回原域，用真实有限光滑分割恢复同一原H²状态。",
     "blocker": null,
     "pause_reason": null,
@@ -23446,7 +23446,7 @@
       "pr_url": null,
       "id": "C272",
       "title": "紧支曲边状态的完整H²零边值强逼近",
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "lean_declarations": [
         "Carleman.WeakSobolevJet.graphShearInverseH2_value_exists",
         "Carleman.WeakSobolevJet.graphShearInverseH2",
@@ -23469,7 +23469,7 @@
       ],
       "blocker": null,
       "scope_notes": "真实固定全局图域的紧支H²∩H¹₀强密度；原域有限局部化拼接仍待，AUXILIARY18/26。",
-      "independent_review_status": "PENDING",
+      "independent_review_status": "PASS",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -23500,7 +23500,30 @@
           "sha256": "38572815097163190eb16650ab982768e91d120c4f14efaf3accbb1a53643a3c"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "10790206877d2b10b557b56430b8b0c4ec02b117",
+        "declarations": [
+          "Carleman.WeakSobolevJet.graphShearInverseH2_value_exists",
+          "Carleman.WeakSobolevJet.graphShearInverseH2",
+          "Carleman.WeakSobolevJet.graphShearInverseH2_value",
+          "Carleman.WeakSobolevJet.graphShearInverseH2_dirichlet",
+          "Carleman.WeakSobolevJet.graphShearInverseH2_left_inverse",
+          "Carleman.WeakSobolevJet.graphShearInverseH2_right_inverse",
+          "Carleman.WeakSobolevJet.graphShearInverseH2_tendsto",
+          "Carleman.WeakSobolevJet.graphShearH2Pullback_globalTest",
+          "Carleman.WeakSobolevJet.graphShearInverseH2_globalTest",
+          "Carleman.exists_compact_graphShear_strong_h2_approximation",
+          "Carleman.graphCoordinateSide",
+          "Carleman.graphCoordinateSide_isOpen",
+          "Carleman.graphCoordinateSide_preimage",
+          "Carleman.exists_compact_graphSide_strong_h2_approximation"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d09fd4cf7b7ae62368365520070aa6b8b0fc7e8c/governance/reviews/T256-local-acceptance.md",
+        "reviewed_at": "2026-10-20T10:31:03+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "declaration_version": "10790206877d2b10b557b56430b8b0c4ec02b117"
     },
     {
@@ -23515,7 +23538,25 @@
       "id": "C273",
       "title": "原光滑内逼近域的完整H²零边值强密度",
       "verification_status": "SPECIFIED",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.HasSmoothDirichletH2Approximation",
+        "Carleman.SpatialTest.cutoffH2Transfer_approximation",
+        "Carleman.SpatialTest.cutoffH2Transfer_nested_roundtrip",
+        "Carleman.SpatialTest.cutoffH2Transfer_off_support",
+        "Carleman.exists_localized_strong_h2_approximation",
+        "Carleman.compact_fullspace_hasSmoothDirichletH2Approximation",
+        "Carleman.dirichletH2Regular_graphSide",
+        "Carleman.exists_interior_local_strong_h2_approximation",
+        "Carleman.exists_boundary_local_strong_h2_approximation",
+        "Carleman.SpatialTest.sumTest",
+        "Carleman.SpatialTest.sumTest_allOrderJetOn",
+        "Carleman.SpatialTest.cutoffH2Transfer_partition",
+        "Carleman.hasSmoothDirichletH2Approximation_sum",
+        "Carleman.hasSmoothDirichletH2Approximation_of_finite_cover",
+        "Carleman.hasSmoothDirichletH2Approximation_of_compact_closure_local",
+        "Carleman.regular_analytic_sublevel_strong_h2_approximation",
+        "Carleman.halfspaceSmoothInner_strong_h2_approximation"
+      ],
       "dependencies": [
         "C272",
         "C270",
@@ -24986,6 +25027,11 @@
       "at": "2026-10-20T10:25:58.196859+00:00",
       "public_summary": "紧支半空间状态的零边值H²强逼近已通过固定本地验证与独立数学验收；原文覆盖18/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e3323d1266fafb02105b718427ecaa604aa8ca59/governance/reviews/T255-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T10:34:43.218908+00:00",
+      "public_summary": "紧支曲边状态的完整H²零边值强逼近已通过固定本地验证与独立数学验收；原文覆盖18/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d09fd4cf7b7ae62368365520070aa6b8b0fc7e8c/governance/reviews/T256-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -25486,7 +25532,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/313d9a74553d37d3f013422560a21efe5279e569/governance/reviews/T252-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0d96050d902550448364db4c804cb1ede5f952bf/governance/reviews/T253-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8bb726bb7a7ce8fa35f60288e135c3dc6976f988/governance/reviews/T254-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e3323d1266fafb02105b718427ecaa604aa8ca59/governance/reviews/T255-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e3323d1266fafb02105b718427ecaa604aa8ca59/governance/reviews/T255-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d09fd4cf7b7ae62368365520070aa6b8b0fc7e8c/governance/reviews/T256-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -55299,9 +55346,9 @@
         "C268"
       ],
       "base_commit": "2b7dfa5b8dc39445682940c02d91c5bec5a747a0",
-      "status": "REVIEW",
+      "status": "MERGED",
       "checkpoint_commit": "10790206877d2b10b557b56430b8b0c4ec02b117",
-      "merge_commit": null,
+      "merge_commit": "10790206877d2b10b557b56430b8b0c4ec02b117",
       "lean_declarations": [
         "Carleman.WeakSobolevJet.graphShearInverseH2_value_exists",
         "Carleman.WeakSobolevJet.graphShearInverseH2",
@@ -55320,7 +55367,7 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -55360,9 +55407,22 @@
         "root_exit_code": 0,
         "recursive_axiom_declarations": 10238,
         "axiom_exit_code": 0,
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "10790206877d2b10b557b56430b8b0c4ec02b117"
+      "declaration_version": "10790206877d2b10b557b56430b8b0c4ec02b117",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C272"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "10790206877d2b10b557b56430b8b0c4ec02b117",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T10:31:03+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d09fd4cf7b7ae62368365520070aa6b8b0fc7e8c/governance/reviews/T256-local-acceptance.md"
+        }
+      ]
     },
     {
       "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
@@ -55389,11 +55449,40 @@
       "status": "RUNNING",
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.HasSmoothDirichletH2Approximation",
+        "Carleman.SpatialTest.cutoffH2Transfer_approximation",
+        "Carleman.SpatialTest.cutoffH2Transfer_nested_roundtrip",
+        "Carleman.SpatialTest.cutoffH2Transfer_off_support",
+        "Carleman.exists_localized_strong_h2_approximation",
+        "Carleman.compact_fullspace_hasSmoothDirichletH2Approximation",
+        "Carleman.dirichletH2Regular_graphSide",
+        "Carleman.exists_interior_local_strong_h2_approximation",
+        "Carleman.exists_boundary_local_strong_h2_approximation",
+        "Carleman.SpatialTest.sumTest",
+        "Carleman.SpatialTest.sumTest_allOrderJetOn",
+        "Carleman.SpatialTest.cutoffH2Transfer_partition",
+        "Carleman.hasSmoothDirichletH2Approximation_sum",
+        "Carleman.hasSmoothDirichletH2Approximation_of_finite_cover",
+        "Carleman.hasSmoothDirichletH2Approximation_of_compact_closure_local",
+        "Carleman.regular_analytic_sublevel_strong_h2_approximation",
+        "Carleman.halfspaceSmoothInner_strong_h2_approximation"
+      ],
       "blocker": null,
       "attempts": [],
       "next_action": "将实际图域与内部的紧支逼近经嵌套截断传回原域，用真实有限光滑分割恢复同一原H²状态。",
-      "build_evidence": null
+      "build_evidence": null,
+      "local_validation": {
+        "target": "Carleman.Spatial.FiniteStrongH2Density",
+        "target_jobs": 3483,
+        "target_exit_code": 0,
+        "root_target": "Carleman",
+        "root_jobs": 4296,
+        "root_exit_code": 0,
+        "recursive_axiom_declarations": 10272,
+        "axiom_exit_code": 0,
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

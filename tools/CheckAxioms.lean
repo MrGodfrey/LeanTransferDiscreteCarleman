@@ -9362,6 +9362,41 @@ set_option pp.maxSteps 1000000
 #check Carleman.exists_compact_graphSide_strong_h2_approximation
 #print axioms Carleman.exists_compact_graphSide_strong_h2_approximation
 
+#check Carleman.HasSmoothDirichletH2Approximation
+#print axioms Carleman.HasSmoothDirichletH2Approximation
+#check Carleman.SpatialTest.cutoffH2Transfer_approximation
+#print axioms Carleman.SpatialTest.cutoffH2Transfer_approximation
+#check Carleman.SpatialTest.cutoffH2Transfer_nested_roundtrip
+#print axioms Carleman.SpatialTest.cutoffH2Transfer_nested_roundtrip
+#check Carleman.SpatialTest.cutoffH2Transfer_off_support
+#print axioms Carleman.SpatialTest.cutoffH2Transfer_off_support
+#check Carleman.exists_localized_strong_h2_approximation
+#print axioms Carleman.exists_localized_strong_h2_approximation
+#check Carleman.compact_fullspace_hasSmoothDirichletH2Approximation
+#print axioms Carleman.compact_fullspace_hasSmoothDirichletH2Approximation
+#check Carleman.dirichletH2Regular_graphSide
+#print axioms Carleman.dirichletH2Regular_graphSide
+#check Carleman.exists_interior_local_strong_h2_approximation
+#print axioms Carleman.exists_interior_local_strong_h2_approximation
+#check Carleman.exists_boundary_local_strong_h2_approximation
+#print axioms Carleman.exists_boundary_local_strong_h2_approximation
+#check Carleman.SpatialTest.sumTest
+#print axioms Carleman.SpatialTest.sumTest
+#check Carleman.SpatialTest.sumTest_allOrderJetOn
+#print axioms Carleman.SpatialTest.sumTest_allOrderJetOn
+#check Carleman.SpatialTest.cutoffH2Transfer_partition
+#print axioms Carleman.SpatialTest.cutoffH2Transfer_partition
+#check Carleman.hasSmoothDirichletH2Approximation_sum
+#print axioms Carleman.hasSmoothDirichletH2Approximation_sum
+#check Carleman.hasSmoothDirichletH2Approximation_of_finite_cover
+#print axioms Carleman.hasSmoothDirichletH2Approximation_of_finite_cover
+#check Carleman.hasSmoothDirichletH2Approximation_of_compact_closure_local
+#print axioms Carleman.hasSmoothDirichletH2Approximation_of_compact_closure_local
+#check Carleman.regular_analytic_sublevel_strong_h2_approximation
+#print axioms Carleman.regular_analytic_sublevel_strong_h2_approximation
+#check Carleman.halfspaceSmoothInner_strong_h2_approximation
+#print axioms Carleman.halfspaceSmoothInner_strong_h2_approximation
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
