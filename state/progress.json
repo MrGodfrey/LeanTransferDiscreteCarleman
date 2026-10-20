@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T260",
-    "supervisor_checked_at": "2026-10-20T10:46:50.758910+00:00",
+    "supervisor_checked_at": "2026-10-20T10:54:53.353825+00:00",
     "next_action": "将真实H²域/图估计、全平方根和自伴图、原完整允许权族打包为原Corollary A.2，并由独立Agent核验全部原量词。",
     "blocker": null,
     "pause_reason": null,
@@ -23635,7 +23635,7 @@
       "pr_url": null,
       "id": "C274",
       "title": "原光滑内域弱解的统一Hessian估计",
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "lean_declarations": [
         "Carleman.realLp_norm_sq_of_ae",
         "Carleman.SpatialTest.allOrderJetOn_component_two_smoothD_ae",
@@ -23653,7 +23653,7 @@
       ],
       "blocker": null,
       "scope_notes": "原光滑内域的真正弱Hessian统一控制；一般多面体穷竭仍待，AUXILIARY18/26。",
-      "independent_review_status": "PENDING",
+      "independent_review_status": "PASS",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -23684,7 +23684,25 @@
           "sha256": "57dda6590b5f1a63a862fd694c25821a37da86eb52d35d07d8f62db98d3aad24"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "41f754d3e85d22b62c6e6229f5629bee782b0bc6",
+        "declarations": [
+          "Carleman.realLp_norm_sq_of_ae",
+          "Carleman.SpatialTest.allOrderJetOn_component_two_smoothD_ae",
+          "Carleman.SpatialTest.allOrderJetOn_negativeLaplacian",
+          "Carleman.SpatialTest.allOrderJetOn_negativeLaplacian_norm_sq",
+          "Carleman.SpatialTest.allOrderJetOn_component_sq_le_hessian",
+          "Carleman.SpatialTest.allOrderJetOn_hessian_bound_of_classical",
+          "Carleman.weak_hessian_bound_of_strong_density",
+          "Carleman.halfspaceSmoothInner_weak_hessian_bound",
+          "Carleman.halfspaceSmoothInner_weak_hessian_norm_bound"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8b4fa0e5f90c6d70abbc834880571d878e5184cd/governance/reviews/T258-local-acceptance.md",
+        "reviewed_at": "2026-10-20T10:44:39+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "declaration_version": "41f754d3e85d22b62c6e6229f5629bee782b0bc6"
     },
     {
@@ -23698,7 +23716,7 @@
       "pr_url": null,
       "id": "C275",
       "title": "原有界凸多面体Dirichlet完整H²正则性",
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "lean_declarations": [
         "Carleman.IsWeakNegativeLaplacian.unique_dirichlet",
         "Carleman.finite_halfspace_isOpen",
@@ -23717,7 +23735,7 @@
       ],
       "blocker": null,
       "scope_notes": "原非空有界有限半空间交的完整弱DirichletH²正则性；A1–A3整体打包仍待，AUXILIARY18/26。",
-      "independent_review_status": "PENDING",
+      "independent_review_status": "PASS",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -23748,7 +23766,25 @@
           "sha256": "52a50bd1a30a4c92aaf59e875c35baa78dd82558e89f32d0ad0acf531a2f09eb"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "0a4c425a254d6bc108651a078b6c0adbcc02b9f5",
+        "declarations": [
+          "Carleman.IsWeakNegativeLaplacian.unique_dirichlet",
+          "Carleman.finite_halfspace_isOpen",
+          "Carleman.exists_finite_halfspace_dirichlet_H2_solution",
+          "Carleman.finite_halfspace_dirichlet_H2_regular",
+          "Carleman.exists_finite_halfspace_dirichlet_H2_estimate",
+          "Carleman.finite_halfspace_dirichlet_domain_le_h2",
+          "Carleman.finite_halfspace_dirichlet_domain_eq_h2",
+          "Carleman.dirichlet_graph_estimate_of_weak_estimate",
+          "Carleman.finite_halfspace_dirichlet_graph_estimate"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8693fe2b3f59764bf3544d6c81abba6a3d29bcd1/governance/reviews/T259-local-acceptance.md",
+        "reviewed_at": "2026-10-20T10:49:20+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "declaration_version": "0a4c425a254d6bc108651a078b6c0adbcc02b9f5"
     },
     {
@@ -23763,7 +23799,12 @@
       "id": "C276",
       "title": "Corollary A.2 原凸多面体与盒的完整空间解析实现",
       "verification_status": "SPECIFIED",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.DirichletSpatialAnalyticData",
+        "Carleman.dirichlet_spatial_analytic_of_regularity",
+        "Carleman.finite_halfspace_analytic_realization",
+        "Carleman.box_full_spatial_analytic_realization"
+      ],
       "dependencies": [
         "C275",
         "C245"
@@ -25243,6 +25284,16 @@
       "at": "2026-10-20T10:40:53.044626+00:00",
       "public_summary": "原光滑内逼近域的完整H²零边值强密度已通过固定本地验证与独立数学验收；原文覆盖18/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ce10da05a21b2b2bcf4ef5f5661d3da7f64927ae/governance/reviews/T257-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T10:48:35.960707+00:00",
+      "public_summary": "原光滑内域弱解的统一Hessian估计已通过固定本地验证与独立数学验收；原文覆盖18/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8b4fa0e5f90c6d70abbc834880571d878e5184cd/governance/reviews/T258-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T10:54:53.353825+00:00",
+      "public_summary": "原有界凸多面体Dirichlet完整H²正则性已通过固定本地验证与独立数学验收；原文覆盖18/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8693fe2b3f59764bf3544d6c81abba6a3d29bcd1/governance/reviews/T259-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -25745,7 +25796,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8bb726bb7a7ce8fa35f60288e135c3dc6976f988/governance/reviews/T254-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e3323d1266fafb02105b718427ecaa604aa8ca59/governance/reviews/T255-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d09fd4cf7b7ae62368365520070aa6b8b0fc7e8c/governance/reviews/T256-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ce10da05a21b2b2bcf4ef5f5661d3da7f64927ae/governance/reviews/T257-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ce10da05a21b2b2bcf4ef5f5661d3da7f64927ae/governance/reviews/T257-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8b4fa0e5f90c6d70abbc834880571d878e5184cd/governance/reviews/T258-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8693fe2b3f59764bf3544d6c81abba6a3d29bcd1/governance/reviews/T259-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -55760,9 +55813,9 @@
         "C267"
       ],
       "base_commit": "e90a9dc75ebc85da3ccb5dd1bb740fd3d255db1a",
-      "status": "REVIEW",
+      "status": "MERGED",
       "checkpoint_commit": "41f754d3e85d22b62c6e6229f5629bee782b0bc6",
-      "merge_commit": null,
+      "merge_commit": "41f754d3e85d22b62c6e6229f5629bee782b0bc6",
       "lean_declarations": [
         "Carleman.realLp_norm_sq_of_ae",
         "Carleman.SpatialTest.allOrderJetOn_component_two_smoothD_ae",
@@ -55776,7 +55829,7 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -55816,9 +55869,22 @@
         "root_exit_code": 0,
         "recursive_axiom_declarations": 10281,
         "axiom_exit_code": 0,
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "41f754d3e85d22b62c6e6229f5629bee782b0bc6"
+      "declaration_version": "41f754d3e85d22b62c6e6229f5629bee782b0bc6",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C274"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "41f754d3e85d22b62c6e6229f5629bee782b0bc6",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T10:44:39+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8b4fa0e5f90c6d70abbc834880571d878e5184cd/governance/reviews/T258-local-acceptance.md"
+        }
+      ]
     },
     {
       "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
@@ -55842,9 +55908,9 @@
         "C246"
       ],
       "base_commit": "41f754d3e85d22b62c6e6229f5629bee782b0bc6",
-      "status": "REVIEW",
+      "status": "MERGED",
       "checkpoint_commit": "0a4c425a254d6bc108651a078b6c0adbcc02b9f5",
-      "merge_commit": null,
+      "merge_commit": "0a4c425a254d6bc108651a078b6c0adbcc02b9f5",
       "lean_declarations": [
         "Carleman.IsWeakNegativeLaplacian.unique_dirichlet",
         "Carleman.finite_halfspace_isOpen",
@@ -55858,7 +55924,7 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -55898,9 +55964,22 @@
         "root_exit_code": 0,
         "recursive_axiom_declarations": 10291,
         "axiom_exit_code": 0,
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "0a4c425a254d6bc108651a078b6c0adbcc02b9f5"
+      "declaration_version": "0a4c425a254d6bc108651a078b6c0adbcc02b9f5",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C275"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "0a4c425a254d6bc108651a078b6c0adbcc02b9f5",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T10:49:20+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8693fe2b3f59764bf3544d6c81abba6a3d29bcd1/governance/reviews/T259-local-acceptance.md"
+        }
+      ]
     },
     {
       "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
@@ -55926,11 +56005,27 @@
       "status": "RUNNING",
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.DirichletSpatialAnalyticData",
+        "Carleman.dirichlet_spatial_analytic_of_regularity",
+        "Carleman.finite_halfspace_analytic_realization",
+        "Carleman.box_full_spatial_analytic_realization"
+      ],
       "blocker": null,
       "attempts": [],
       "next_action": "将真实H²域/图估计、全平方根和自伴图、原完整允许权族打包为原Corollary A.2，并由独立Agent核验全部原量词。",
-      "build_evidence": null
+      "build_evidence": null,
+      "local_validation": {
+        "target": "Carleman.Spatial.DirichletAnalyticRealization",
+        "target_jobs": 3675,
+        "target_exit_code": 0,
+        "root_target": "Carleman",
+        "root_jobs": 4299,
+        "root_exit_code": 0,
+        "recursive_axiom_declarations": 10318,
+        "axiom_exit_code": 0,
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

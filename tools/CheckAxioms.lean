@@ -9435,6 +9435,16 @@ set_option pp.maxSteps 1000000
 #check Carleman.finite_halfspace_dirichlet_graph_estimate
 #print axioms Carleman.finite_halfspace_dirichlet_graph_estimate
 
+#print Carleman.DirichletSpatialAnalyticData
+#check Carleman.DirichletSpatialAnalyticData
+#print axioms Carleman.DirichletSpatialAnalyticData
+#check Carleman.dirichlet_spatial_analytic_of_regularity
+#print axioms Carleman.dirichlet_spatial_analytic_of_regularity
+#check Carleman.finite_halfspace_analytic_realization
+#print axioms Carleman.finite_halfspace_analytic_realization
+#check Carleman.box_full_spatial_analytic_realization
+#print axioms Carleman.box_full_spatial_analytic_realization
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

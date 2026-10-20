@@ -1126,15 +1126,23 @@
       "pdf_page": 37,
       "tex_line": 2659,
       "milestone": "M6a",
-      "claim_ids": [],
-      "lean_declarations": [],
+      "claim_ids": [
+        "C276"
+      ],
+      "lean_declarations": [
+        "Carleman.DirichletSpatialAnalyticData",
+        "Carleman.dirichlet_spatial_analytic_of_regularity",
+        "Carleman.finite_halfspace_analytic_realization",
+        "Carleman.box_full_spatial_analytic_realization"
+      ],
       "declaration_version": null,
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": null,
       "semantic_review": null,
-      "blocker": null
+      "blocker": null,
+      "independent_review_status": "PENDING"
     },
     {
       "id": "P024",
