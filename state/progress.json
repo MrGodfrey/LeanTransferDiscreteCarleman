@@ -9,13 +9,13 @@
     "started_at": "2026-10-17T09:43:34.927869+00:00"
   },
   "execution": {
-    "state": "IDLE",
-    "current_task_id": null,
-    "supervisor_checked_at": "2026-10-19T16:15:09.883226+00:00",
-    "next_action": "已完成阶段的独立验收队列已清空。下一数学阶段：构造原受控状态在L²(0,T;H¹₀)中的弱收敛子列，再连接测试逼近、极限PDE与初末端条件；P021尚未完成。",
+    "state": "RUNNING",
+    "current_task_id": "T188",
+    "supervisor_checked_at": "2026-10-20T00:44:23.021726+00:00",
+    "next_action": "T188实际状态H¹₀弱子列已通过本地构建和8496项审计；固定版本后进行独立验收。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-19T16:15:09.883226+00:00"
+    "last_activity_at": "2026-10-20T00:44:23.021726+00:00"
   },
   "verification": {
     "latest_build": {
@@ -17535,6 +17535,53 @@
       "pr_url": null,
       "scope_notes": "真实时间重构提升原E_h−R_h误差；原完整隐式方程内部证明实际梯度统一预算，并识别两个重构的相同弱极限。保留初值/控制预算、R_h弱极限及dt M≤1/2；尚未构造弱子列/完整PDE/端点。",
       "independent_review_status": "PASS"
+    },
+    {
+      "id": "C204",
+      "title": "原受控状态的时空H¹₀弱紧性",
+      "paper_ref": "Corollary 7.9: actual controlled states are weakly compact in L²(0,T;H¹₀)",
+      "milestone": "M6b",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:control-convergence"
+      ],
+      "lean_declarations": [
+        "Carleman.timeCellReconstruction_map",
+        "Carleman.fixedTimeCellReconstruction_map",
+        "Carleman.DirichletEnergyState",
+        "Carleman.dirichletEnergyStateNormedAddCommGroup",
+        "Carleman.dirichletEnergyStateInnerProductSpace",
+        "Carleman.dirichletEnergyStateEquiv",
+        "Carleman.dirichletStateValue",
+        "Carleman.dirichletStateGradient",
+        "Carleman.dirichletEnergyState_norm_sq",
+        "Carleman.dirichletEnergyState_complete",
+        "Carleman.dirichletEnergyStateSecondCountable",
+        "Carleman.dirichlet_time_norm_sq",
+        "Carleman.exists_dirichlet_time_weak_subsequence",
+        "Carleman.cartesianBoxDirichletState",
+        "Carleman.cartesianBoxDirichletState_value",
+        "Carleman.cartesianBoxDirichletState_gradient",
+        "Carleman.cartesianBoxDirichletState_value_norm_le",
+        "Carleman.timeCellReconstruction_norm_sq_le",
+        "Carleman.fixedTimeCellReconstruction_norm_sq_le",
+        "Carleman.cartesian_state_node_uniform",
+        "Carleman.stateTimeEnergyBound",
+        "Carleman.cartesian_state_dirichlet_time_uniform",
+        "Carleman.cartesian_controlled_states_weak_subsequence"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C203",
+        "C145"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "构造真实H¹₀值时间重构及其弱收敛子列；沿同一子列连接真实R_h值/梯度与E_h。极限方程与端点仍待。"
     }
   ],
   "events": [
@@ -18633,6 +18680,10 @@
       "at": "2026-10-19T16:15:09.847282+00:00",
       "public_summary": "T187原状态能量及重构弱极限一致性独立验收销项；当前已完成阶段的验收队列清空，完整控制极限仍待后续证明。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/74280d45d211f473b5f4273caedc64ec1678606b/governance/reviews/T187-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T00:44:23.021726+00:00",
+      "public_summary": "T188原受控状态在实际L²(0,T;H¹₀)中的弱子列已通过本地验证；同一子列保留值、弱梯度与原E_h弱极限，独立验收待定。"
     }
   ],
   "snapshot": {
@@ -41893,6 +41944,77 @@
           "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/74280d45d211f473b5f4273caedc64ec1678606b/governance/reviews/T187-local-acceptance.md"
         }
       ]
+    },
+    {
+      "id": "T188",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原受控状态的时空H¹₀弱紧性",
+      "goal_ids": [
+        "C204"
+      ],
+      "acceptance": [
+        "实际H¹₀值Bochner空间，不以抽象或任意梯度代替",
+        "原状态方程内部供应统一时间能量界，常数不含网格",
+        "提取同一严格递增子列，完整H¹₀弱收敛及实际值/梯度弱收敛",
+        "原E_h沿同一子列收敛到实际H¹₀极限的值"
+      ],
+      "dependencies": [
+        "C203",
+        "C145"
+      ],
+      "branch": "main",
+      "base_commit": "69cee61bd440c386c2ac20af6104f72e98b3563c",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.timeCellReconstruction_map",
+        "Carleman.fixedTimeCellReconstruction_map",
+        "Carleman.DirichletEnergyState",
+        "Carleman.dirichletEnergyStateNormedAddCommGroup",
+        "Carleman.dirichletEnergyStateInnerProductSpace",
+        "Carleman.dirichletEnergyStateEquiv",
+        "Carleman.dirichletStateValue",
+        "Carleman.dirichletStateGradient",
+        "Carleman.dirichletEnergyState_norm_sq",
+        "Carleman.dirichletEnergyState_complete",
+        "Carleman.dirichletEnergyStateSecondCountable",
+        "Carleman.dirichlet_time_norm_sq",
+        "Carleman.exists_dirichlet_time_weak_subsequence",
+        "Carleman.cartesianBoxDirichletState",
+        "Carleman.cartesianBoxDirichletState_value",
+        "Carleman.cartesianBoxDirichletState_gradient",
+        "Carleman.cartesianBoxDirichletState_value_norm_le",
+        "Carleman.timeCellReconstruction_norm_sq_le",
+        "Carleman.fixedTimeCellReconstruction_norm_sq_le",
+        "Carleman.cartesian_state_node_uniform",
+        "Carleman.stateTimeEnergyBound",
+        "Carleman.cartesian_state_dirichlet_time_uniform",
+        "Carleman.cartesian_controlled_states_weak_subsequence"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "四模块23声明；实际状态弱紧性定向3562 jobs、全库4162 jobs及8496项递归公理审计通过。显式载体与原H¹₀线性等距，解决嵌套子空间推断但不改变范数或边界。"
+      ],
+      "next_action": "固定提交并推送main，交独立Agent逐声明对照原文及同SHA远端CI验收。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4162,
+        "recursive_axiom_audit": 8496,
+        "new_explicit_declarations": 23,
+        "declaration_artifact_sha256": "159923657328ca21cb77a705b82348ca66305ba1181a176556b3c97a09aafbb4",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING; fixed SHA required"
+      }
     }
   ],
   "private_maintenance": {

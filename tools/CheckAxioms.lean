@@ -7585,6 +7585,55 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesian_controlled_states_same_weak_limit
 #print axioms Carleman.cartesian_controlled_states_same_weak_limit
 
+
+-- T188: actual H¹₀-valued state weak subsequences.
+#check @Carleman.timeCellReconstruction_map
+#print axioms Carleman.timeCellReconstruction_map
+#check @Carleman.fixedTimeCellReconstruction_map
+#print axioms Carleman.fixedTimeCellReconstruction_map
+#check @Carleman.DirichletEnergyState
+#print axioms Carleman.DirichletEnergyState
+#check @Carleman.dirichletEnergyStateNormedAddCommGroup
+#print axioms Carleman.dirichletEnergyStateNormedAddCommGroup
+#check @Carleman.dirichletEnergyStateInnerProductSpace
+#print axioms Carleman.dirichletEnergyStateInnerProductSpace
+#check @Carleman.dirichletEnergyStateEquiv
+#print axioms Carleman.dirichletEnergyStateEquiv
+#check @Carleman.dirichletStateValue
+#print axioms Carleman.dirichletStateValue
+#check @Carleman.dirichletStateGradient
+#print axioms Carleman.dirichletStateGradient
+#check @Carleman.dirichletEnergyState_norm_sq
+#print axioms Carleman.dirichletEnergyState_norm_sq
+#check @Carleman.dirichletEnergyState_complete
+#print axioms Carleman.dirichletEnergyState_complete
+#check @Carleman.dirichletEnergyStateSecondCountable
+#print axioms Carleman.dirichletEnergyStateSecondCountable
+#check @Carleman.dirichlet_time_norm_sq
+#print axioms Carleman.dirichlet_time_norm_sq
+#check @Carleman.exists_dirichlet_time_weak_subsequence
+#print axioms Carleman.exists_dirichlet_time_weak_subsequence
+#check @Carleman.cartesianBoxDirichletState
+#print axioms Carleman.cartesianBoxDirichletState
+#check @Carleman.cartesianBoxDirichletState_value
+#print axioms Carleman.cartesianBoxDirichletState_value
+#check @Carleman.cartesianBoxDirichletState_gradient
+#print axioms Carleman.cartesianBoxDirichletState_gradient
+#check @Carleman.cartesianBoxDirichletState_value_norm_le
+#print axioms Carleman.cartesianBoxDirichletState_value_norm_le
+#check @Carleman.timeCellReconstruction_norm_sq_le
+#print axioms Carleman.timeCellReconstruction_norm_sq_le
+#check @Carleman.fixedTimeCellReconstruction_norm_sq_le
+#print axioms Carleman.fixedTimeCellReconstruction_norm_sq_le
+#check @Carleman.cartesian_state_node_uniform
+#print axioms Carleman.cartesian_state_node_uniform
+#check @Carleman.stateTimeEnergyBound
+#print axioms Carleman.stateTimeEnergyBound
+#check @Carleman.cartesian_state_dirichlet_time_uniform
+#print axioms Carleman.cartesian_state_dirichlet_time_uniform
+#check @Carleman.cartesian_controlled_states_weak_subsequence
+#print axioms Carleman.cartesian_controlled_states_weak_subsequence
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

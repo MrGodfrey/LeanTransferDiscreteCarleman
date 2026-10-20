@@ -980,3 +980,7 @@ public import Carleman.Control.CartesianStateWeakConsistency
 public import Carleman.Control.PhysicalStiffnessEnergy
 public import Carleman.Control.CartesianStateEnergy
 public import Carleman.Control.CartesianEquationWeakConsistency
+public import Carleman.Control.DirichletTimeWeakCompactness
+public import Carleman.Control.CartesianDirichletReconstruction
+public import Carleman.Control.CartesianStateTimeEnergy
+public import Carleman.Control.CartesianStateWeakCompactness
