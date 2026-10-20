@@ -8051,6 +8051,21 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Physical.box_cartesian_controls_null_limits
 #print axioms Carleman.Physical.box_cartesian_controls_null_limits
 
+
+-- T207: actual conforming states in the full original time-energy space.
+#check @Carleman.dirichletGalerkinState
+#print axioms Carleman.dirichletGalerkinState
+#check @Carleman.dirichletGalerkinState_value
+#print axioms Carleman.dirichletGalerkinState_value
+#check @Carleman.dirichletGalerkinState_stiffness
+#print axioms Carleman.dirichletGalerkinState_stiffness
+#check @Carleman.dirichletGalerkinState_norm_sq
+#print axioms Carleman.dirichletGalerkinState_norm_sq
+#check @Carleman.conforming_state_node_uniform
+#print axioms Carleman.conforming_state_node_uniform
+#check @Carleman.conforming_state_dirichlet_time_uniform
+#print axioms Carleman.conforming_state_dirichlet_time_uniform
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

@@ -1036,3 +1036,5 @@ public import Carleman.Control.ScalarTimeEndpoints
 public import Carleman.Control.DirichletTimeEndpoints
 public import Carleman.Control.DirichletNullControlState
 public import Carleman.Control.CartesianNullControlLimits
+public import Carleman.Control.ConformingDirichletState
+public import Carleman.Control.ConformingStateTimeEnergy

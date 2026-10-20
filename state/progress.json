@@ -12,7 +12,7 @@
     "state": "RUNNING",
     "current_task_id": "T207",
     "supervisor_checked_at": "2026-10-20T03:59:39.831041+00:00",
-    "next_action": "为P1分支将原有限维Galerkin状态接到完整Dirichlet能量空间，证明真实梯度身份和时间能量统一预算。",
+    "next_action": "固定六项真实conforming重构与完整时间能量预算，交独立数学验收；继续实际P1弱紧性与六项测试恒等式。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T03:53:33.183047+00:00"
@@ -19132,7 +19132,14 @@
       "paper_labels": [
         "prop:control-convergence"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.dirichletGalerkinState",
+        "Carleman.dirichletGalerkinState_value",
+        "Carleman.dirichletGalerkinState_stiffness",
+        "Carleman.dirichletGalerkinState_norm_sq",
+        "Carleman.conforming_state_node_uniform",
+        "Carleman.conforming_state_dirichlet_time_uniform"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -45588,14 +45595,36 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.dirichletGalerkinState",
+        "Carleman.dirichletGalerkinState_value",
+        "Carleman.dirichletGalerkinState_stiffness",
+        "Carleman.dirichletGalerkinState_norm_sq",
+        "Carleman.conforming_state_node_uniform",
+        "Carleman.conforming_state_dirichlet_time_uniform"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "T206实际盒FD每个弱积聚点连续零终态4211全库jobs、8945公理审计PASS；转接原P1分支。"
+        "T206实际盒FD每个弱积聚点连续零终态4211全库jobs、8945公理审计PASS；转接原P1分支。",
+        "两模块六声明实际目标构建3753 jobs、根构建4213 jobs与8963项递归公理审计均exit 0。显式Forward算子消除刚度展开导致的推断耗时；最终声明不增加数学前提。"
       ],
-      "next_action": "为P1分支将原有限维Galerkin状态接到完整Dirichlet能量空间，证明真实梯度身份和时间能量统一预算。",
-      "integration_mode": "direct-main"
+      "next_action": "固定六项真实conforming重构与完整时间能量预算，交独立数学验收；继续实际P1弱紧性与六项测试恒等式。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4213,
+        "recursive_axiom_audit": 8963,
+        "new_explicit_declarations": 6,
+        "declaration_artifact_sha256": "1873b8038d10274721a8fd0f9f6fb60758bc7edfcb5aa9b533fb7b617db2d174",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {
