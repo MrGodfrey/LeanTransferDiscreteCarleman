@@ -1102,3 +1102,6 @@ public import Carleman.Continuous.RealOperatorSquareRoot
 public import Carleman.Continuous.FormInverse
 public import Carleman.Continuous.FormSquareRootLift
 public import Carleman.Continuous.FormSquareRoot
+
+public import Carleman.Section3.OriginalSquareRoot
+public import Carleman.Spatial.HigherSpatialOperators

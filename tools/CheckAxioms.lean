@@ -8576,6 +8576,15 @@ set_option pp.maxSteps 1000000
 #check @Carleman.CoerciveForm.exists_positive_form_square_root
 #print axioms Carleman.CoerciveForm.exists_positive_form_square_root
 
+#check @Carleman.OriginalForm.formSqrtDomain_eq
+#print axioms Carleman.OriginalForm.formSqrtDomain_eq
+#check @Carleman.OriginalForm.SquareRootData
+#print axioms Carleman.OriginalForm.SquareRootData
+#check @Carleman.OriginalForm.exists_squareRootData
+#print axioms Carleman.OriginalForm.exists_squareRootData
+#check @Carleman.higherCoefficient_spatial_operators
+#print axioms Carleman.higherCoefficient_spatial_operators
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

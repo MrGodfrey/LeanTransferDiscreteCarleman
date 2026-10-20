@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T229",
-    "supervisor_checked_at": "2026-10-20T06:24:33.363274+00:00",
+    "supervisor_checked_at": "2026-10-20T06:26:06.837826+00:00",
     "next_action": "将已证明的正自伴平方根完整域/能量身份送回原V，再与一般系数A1–A3总接口合并，复核并验收完整P022。",
     "blocker": null,
     "pause_reason": null,
@@ -20817,7 +20817,7 @@
       "paper_ref": "paper/main.tex:353 原A1平方根形式域身份，服务P022",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:spatial-operators"
@@ -20869,14 +20869,37 @@
           "sha256": "a6d0c24cad37d425fcfe164019f8f4be996a08a653941b11c4783d165942137b"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "4573638d5529914e0140c25f4dfe3689be92afaa",
+        "declarations": [
+          "Carleman.sqrtScalarIter",
+          "Carleman.sqrtScalarIter_bounds",
+          "Carleman.sqrtScalarIter_monotone",
+          "Carleman.sqrtScalarIter_tendsto",
+          "Carleman.sqrtComplementIter",
+          "Carleman.sqrtComplementIter_norm",
+          "Carleman.sqrtComplementIter_dist",
+          "Carleman.sqrtComplementIter_cauchy",
+          "Carleman.sqrtComplementIter_exists_limit",
+          "Carleman.sqrtComplementIter_limit_square",
+          "Carleman.sqrtComplementIter_selfAdjoint",
+          "Carleman.positive_contraction_complement_norm",
+          "Carleman.positive_contraction_exists_sqrt",
+          "Carleman.positive_exists_sqrt"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/cf3b8b7e99df3b1548a86f172f01f6a4ca154fac/governance/reviews/T227-local-acceptance.md",
+        "reviewed_at": "2026-10-20T06:23:47+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C242"
       ],
       "blocker": null,
       "pr_url": null,
       "scope_notes": "平方根收敛构造及后续原形式域身份尚待；原文覆盖17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C244",
@@ -20973,7 +20996,12 @@
       "paper_labels": [
         "prop:spatial-operators"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.OriginalForm.formSqrtDomain_eq",
+        "Carleman.OriginalForm.SquareRootData",
+        "Carleman.OriginalForm.exists_squareRootData",
+        "Carleman.higherCoefficient_spatial_operators"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -22299,6 +22327,11 @@
       "at": "2026-10-20T06:18:01.868598+00:00",
       "public_summary": "一般阶系数 Proposition A.1 的完整原 A1–A3 统一实现已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/63c553825231ccf22f1efb72dc2f10ed4e666fde/governance/reviews/T226-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T06:26:06.837826+00:00",
+      "public_summary": "实 Hilbert 正算子平方根的收敛迭代已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/cf3b8b7e99df3b1548a86f172f01f6a4ca154fac/governance/reviews/T227-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -22770,7 +22803,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/e7a58964e44140073a135d2004d2c4c762e73b54/governance/reviews/T223-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/94223761edea20d3d77cb6eb4b62ee05be8868e7/governance/reviews/T224-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/29169226b6046ca19fe2c259134f09f8eb883a35/governance/reviews/T225-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/63c553825231ccf22f1efb72dc2f10ed4e666fde/governance/reviews/T226-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/63c553825231ccf22f1efb72dc2f10ed4e666fde/governance/reviews/T226-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/cf3b8b7e99df3b1548a86f172f01f6a4ca154fac/governance/reviews/T227-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -49643,10 +49677,10 @@
       ],
       "branch": "main",
       "base_commit": "4728609fbece53cc6afcc9013b94592eb23ee87d",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "4573638d5529914e0140c25f4dfe3689be92afaa",
-      "merge_commit": null,
+      "merge_commit": "4573638d5529914e0140c25f4dfe3689be92afaa",
       "lean_declarations": [
         "Carleman.sqrtScalarIter",
         "Carleman.sqrtScalarIter_bounds",
@@ -49698,7 +49732,7 @@
         "已核实mathlib实Hilbert连续算子无可直接使用的CFC实例；改用P(n+1)=(X+P(n)^2)/2和同一标量递推的范数比较构造真实平方根。",
         "真实标量与非交换Banach迭代、范数Cauchy极限、正收缩根及任意实Hilbert正有界算子根已完成；2751/4258构建及9484公理审计exit0。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -49716,9 +49750,23 @@
         "raw_sha256": "a6d0c24cad37d425fcfe164019f8f4be996a08a653941b11c4783d165942137b",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "review": "PENDING"
+        "review": "PENDING",
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "4573638d5529914e0140c25f4dfe3689be92afaa"
+      "declaration_version": "4573638d5529914e0140c25f4dfe3689be92afaa",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C243"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "4573638d5529914e0140c25f4dfe3689be92afaa",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T06:23:47+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/cf3b8b7e99df3b1548a86f172f01f6a4ca154fac/governance/reviews/T227-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T228",
@@ -49858,14 +49906,39 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.OriginalForm.formSqrtDomain_eq",
+        "Carleman.OriginalForm.SquareRootData",
+        "Carleman.OriginalForm.exists_squareRootData",
+        "Carleman.higherCoefficient_spatial_operators"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "原无界平方根全图/能量桥已编译审计，准备OriginalForm.V的无损身份转换。"
+        "原无界平方根全图/能量桥已编译审计，准备OriginalForm.V的无损身份转换。",
+        "包含同一原A平方根完整域/能量身份的最终入口已实现；两模块4声明，3517/4263构建及9534公理审计exit0，等待完整P022独立验收。"
       ],
       "next_action": "将已证明的正自伴平方根完整域/能量身份送回原V，再与一般系数A1–A3总接口合并，复核并验收完整P022。",
-      "integration_mode": "direct-main"
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman.Section3.OriginalSquareRoot",
+          "Carleman.Spatial.HigherSpatialOperators",
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": [
+          3517,
+          4263
+        ],
+        "recursive_axiom_audit": 9534,
+        "new_explicit_declarations": 4,
+        "raw_sha256": "084f506edea932843ddbddb454414167628f93307086e141e340e614f2f77a2a",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {
