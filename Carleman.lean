@@ -1118,3 +1118,5 @@ public import Carleman.Spatial.VariableCoefficientDifference
 public import Carleman.Spatial.VariableCoefficientNormalRecovery
 
 public import Carleman.Spatial.NonlinearGraphShear
+
+public import Carleman.Spatial.GraphShearWeakTransport

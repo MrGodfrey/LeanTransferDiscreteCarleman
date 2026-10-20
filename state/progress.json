@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T238",
-    "supervisor_checked_at": "2026-10-20T07:47:36.030137+00:00",
+    "supervisor_checked_at": "2026-10-20T07:55:04.180668+00:00",
     "next_action": "用真实逆变换测试与斜率弱乘积建立原弱态的非线性链式。",
     "blocker": null,
     "pause_reason": null,
@@ -21728,7 +21728,7 @@
       "pr_url": null,
       "id": "C253",
       "title": "真实非线性边界图剪切与保体积坐标基础",
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "lean_declarations": [
         "Carleman.spatialGraphShear",
         "Carleman.spatialGraphShear_psi",
@@ -21760,7 +21760,7 @@
       ],
       "blocker": null,
       "scope_notes": "真实非线性边界图坐标基础；尚不包含完整光滑域H²或一般多面体，AUXILIARY，18/26。",
-      "independent_review_status": "PENDING",
+      "independent_review_status": "PASS",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -21791,7 +21791,40 @@
           "sha256": "bc09916c45dae93bbd6d079f3d280098d6cce54ad42e0e33943954e83b695c8e"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1",
+        "declarations": [
+          "Carleman.spatialGraphShear",
+          "Carleman.spatialGraphShear_psi",
+          "Carleman.spatialGraphShear_halfspace",
+          "Carleman.spatialGraphShear_hasFDerivAt",
+          "Carleman.spatialGraphShear_normal_derivative",
+          "Carleman.spatialGraphShear_det",
+          "Carleman.spatialGraphShear_measurePreserving",
+          "Carleman.spatialGraphShear_measurePreserving_restrict",
+          "Carleman.spatialGraphShear_halfspace_measurePreserving",
+          "Carleman.spatialGraphShear_contDiff",
+          "Carleman.spatialGraphShear_symm_contDiff",
+          "Carleman.spatialGraphShear_fderiv_invariant",
+          "Carleman.SpatialTest.pullbackSmoothHomeomorph",
+          "Carleman.SpatialTest.pullbackSmoothHomeomorph_derivative",
+          "Carleman.SpatialTest.pullbackGraphShear_derivative",
+          "Carleman.SpatialTest.pullbackGraphShear_symm_derivative",
+          "Carleman.graphSlopeMultiplier",
+          "Carleman.graphSlopeMultiplier_contDiff",
+          "Carleman.graphSlopeMultiplier_normal_derivative",
+          "Carleman.homeomorphPullbackLp",
+          "Carleman.homeomorphPullbackLp_ae",
+          "Carleman.homeomorphPullbackLp_inverse",
+          "Carleman.integral_mul_homeomorphPullbackLp",
+          "Carleman.SpatialTest.pullbackSmoothHomeomorph_toLp"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6e96dffd9f2d128ff3d66d6b6d0e163e8cd0b4d6/governance/reviews/T237-local-acceptance.md",
+        "reviewed_at": "2026-10-20T07:50:54+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "declaration_version": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1"
     },
     {
@@ -21806,7 +21839,19 @@
       "id": "C254",
       "title": "实际边界图剪切下的弱梯度链式与Sobolev传输",
       "verification_status": "SPECIFIED",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.IsWeakSpatialDerivative.graphShear_normal_pullback",
+        "Carleman.IsWeakSpatialDerivative.mul_of_derivative_zero",
+        "Carleman.IsWeakSpatialDerivative.graphShear_pullback",
+        "Carleman.WeakSobolevJet.graphShearPullback",
+        "Carleman.WeakSobolevJet.graphShearPullback_value",
+        "Carleman.WeakSobolevJet.graphShearPullback_gradient",
+        "Carleman.WeakSobolevJet.graphShearPullback_tendsto",
+        "Carleman.WeakSobolevJet.graphShearPullback_test",
+        "Carleman.WeakSobolevJet.graphShearPullback_dirichlet",
+        "Carleman.WeakSobolevJet.graphShearPullback_value_norm",
+        "Carleman.WeakSobolevJet.graphShearPullback_gradient_bound"
+      ],
       "dependencies": [
         "C253"
       ],
@@ -23180,6 +23225,11 @@
       "at": "2026-10-20T07:44:38.687359+00:00",
       "public_summary": "真实变系数法向通量恢复与半空间H²正则性已通过固定本地验证与独立数学验收；原文覆盖18/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d366be4006b35fbcb93b93c01326fef1945c5b14/governance/reviews/T236-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T07:55:04.180668+00:00",
+      "public_summary": "真实非线性边界图剪切与保体积坐标基础已通过固定本地验证与独立数学验收；原文覆盖18/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6e96dffd9f2d128ff3d66d6b6d0e163e8cd0b4d6/governance/reviews/T237-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -23661,7 +23711,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6dda937ae23e61cf0f532545283de66594758343/governance/reviews/T233-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7083f5cee167f63308a5b133e4a9e3ab3c7bb921/governance/reviews/T234-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0c492c06911ba58258a4ec75e82b37fa10470af4/governance/reviews/T235-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d366be4006b35fbcb93b93c01326fef1945c5b14/governance/reviews/T236-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d366be4006b35fbcb93b93c01326fef1945c5b14/governance/reviews/T236-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6e96dffd9f2d128ff3d66d6b6d0e163e8cd0b4d6/governance/reviews/T237-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -51601,9 +51652,9 @@
         "C252"
       ],
       "base_commit": "eeabe06b6b3e0e9a72852393be4e8f054a77ed1f",
-      "status": "REVIEW",
+      "status": "MERGED",
       "checkpoint_commit": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1",
-      "merge_commit": null,
+      "merge_commit": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1",
       "lean_declarations": [
         "Carleman.spatialGraphShear",
         "Carleman.spatialGraphShear_psi",
@@ -51632,7 +51683,7 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -51671,9 +51722,23 @@
         "root_jobs": 4276,
         "root_exit_code": 0,
         "recursive_axiom_declarations": 9775,
-        "axiom_exit_code": 0
+        "axiom_exit_code": 0,
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1"
+      "declaration_version": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C253"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "77a0dc79f9a1d256ecae73c15a7e8eebe10ce6c1",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T07:50:54+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6e96dffd9f2d128ff3d66d6b6d0e163e8cd0b4d6/governance/reviews/T237-local-acceptance.md"
+        }
+      ]
     },
     {
       "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
@@ -51698,11 +51763,33 @@
       "status": "RUNNING",
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.IsWeakSpatialDerivative.graphShear_normal_pullback",
+        "Carleman.IsWeakSpatialDerivative.mul_of_derivative_zero",
+        "Carleman.IsWeakSpatialDerivative.graphShear_pullback",
+        "Carleman.WeakSobolevJet.graphShearPullback",
+        "Carleman.WeakSobolevJet.graphShearPullback_value",
+        "Carleman.WeakSobolevJet.graphShearPullback_gradient",
+        "Carleman.WeakSobolevJet.graphShearPullback_tendsto",
+        "Carleman.WeakSobolevJet.graphShearPullback_test",
+        "Carleman.WeakSobolevJet.graphShearPullback_dirichlet",
+        "Carleman.WeakSobolevJet.graphShearPullback_value_norm",
+        "Carleman.WeakSobolevJet.graphShearPullback_gradient_bound"
+      ],
       "blocker": null,
       "attempts": [],
       "next_action": "用真实逆变换测试与斜率弱乘积建立原弱态的非线性链式。",
-      "build_evidence": null
+      "build_evidence": null,
+      "local_validation": {
+        "target": "Carleman.Spatial.GraphShearWeakTransport",
+        "target_jobs": 3387,
+        "target_exit_code": 0,
+        "root_target": "Carleman",
+        "root_jobs": 4277,
+        "root_exit_code": 0,
+        "recursive_axiom_declarations": 9826,
+        "axiom_exit_code": 0
+      }
     }
   ],
   "private_maintenance": {

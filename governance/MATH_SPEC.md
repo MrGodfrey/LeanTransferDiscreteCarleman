@@ -1879,3 +1879,7 @@ T226独立报告F1要求的同一H上正自伴平方根、D(Ahalf)=V、Ahalf²=A
 ### T237 / C253 — actual nonlinear graph coordinates
 
 `NonlinearGraphShear` constructs the actual smooth graph shear and inverse from a smooth height invariant along the normal direction. It proves exact half-space/epigraph correspondence, actual unit Jacobian, full and restricted volume preservation, smooth test chain rules, normal-invariant actual slope multipliers, and actual L² quotient pullback/inverse/integral identities. Unit Jacobian and measure preservation are proved, not extra concrete-shear inputs. This does not yet construct original-boundary graphs or transport nonsmooth weak derivatives/PDEs. AUXILIARY, coverage 18/26; see `analysis/T237-graph-shear.md`.
+
+### T238 / C254 — actual weak graph-coordinate chain rule
+
+`GraphShearWeakTransport` derives the complete weak chain rule for the original nonsmooth state using all original distributional tests, the actual inverse test pullback and the bounded slope product with zero normal derivative. The full H¹ jet is constructed with exact value/gradient identities, complete graph-topology continuity, genuine H¹₀ closure preservation and explicit norm bounds. The domain is the actual preimage under the T237 measure-preserving nonlinear shear. H² transport and transformation of the original PDE/matrix remain pending; no conditional chain rule is counted as established. AUXILIARY, coverage 18/26; see `analysis/T238-graph-weak-transport.md`.

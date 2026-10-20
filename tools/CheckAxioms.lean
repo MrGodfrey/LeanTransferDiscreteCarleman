@@ -8835,6 +8835,29 @@ set_option pp.maxSteps 1000000
 #check @Carleman.SpatialTest.pullbackSmoothHomeomorph_toLp
 #print axioms Carleman.SpatialTest.pullbackSmoothHomeomorph_toLp
 
+#check @Carleman.IsWeakSpatialDerivative.graphShear_normal_pullback
+#print axioms Carleman.IsWeakSpatialDerivative.graphShear_normal_pullback
+#check @Carleman.IsWeakSpatialDerivative.mul_of_derivative_zero
+#print axioms Carleman.IsWeakSpatialDerivative.mul_of_derivative_zero
+#check @Carleman.IsWeakSpatialDerivative.graphShear_pullback
+#print axioms Carleman.IsWeakSpatialDerivative.graphShear_pullback
+#check @Carleman.WeakSobolevJet.graphShearPullback
+#print axioms Carleman.WeakSobolevJet.graphShearPullback
+#check @Carleman.WeakSobolevJet.graphShearPullback_value
+#print axioms Carleman.WeakSobolevJet.graphShearPullback_value
+#check @Carleman.WeakSobolevJet.graphShearPullback_gradient
+#print axioms Carleman.WeakSobolevJet.graphShearPullback_gradient
+#check @Carleman.WeakSobolevJet.graphShearPullback_tendsto
+#print axioms Carleman.WeakSobolevJet.graphShearPullback_tendsto
+#check @Carleman.WeakSobolevJet.graphShearPullback_test
+#print axioms Carleman.WeakSobolevJet.graphShearPullback_test
+#check @Carleman.WeakSobolevJet.graphShearPullback_dirichlet
+#print axioms Carleman.WeakSobolevJet.graphShearPullback_dirichlet
+#check @Carleman.WeakSobolevJet.graphShearPullback_value_norm
+#print axioms Carleman.WeakSobolevJet.graphShearPullback_value_norm
+#check @Carleman.WeakSobolevJet.graphShearPullback_gradient_bound
+#print axioms Carleman.WeakSobolevJet.graphShearPullback_gradient_bound
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
