@@ -10,21 +10,21 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T201",
-    "supervisor_checked_at": "2026-10-20T03:22:03.495967+00:00",
-    "next_action": "固定提交后交独立Agent核验原质量正则化及能量/Bochner强逼近；继续加权能量迹估计。",
+    "current_task_id": "T202",
+    "supervisor_checked_at": "2026-10-20T03:22:56.131177+00:00",
+    "next_action": "证明真实能量的区间变差界和质量加权H迹估计，供正则化状态一致收敛使用。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-20T03:16:10.617855+00:00"
+    "last_activity_at": "2026-10-20T03:22:56.131177+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "a081c61839658c2869ef6a01e7bcd387a81b9af4",
-      "source_head_sha": "a081c61839658c2869ef6a01e7bcd387a81b9af4",
+      "checked_sha": "cf2701d48ac60007502c1ad44286c1d64b1303ce",
+      "source_head_sha": "cf2701d48ac60007502c1ad44286c1d64b1303ce",
       "ci_url": null,
-      "finished_at": "2026-10-20T03:15:08.509426+00:00",
+      "finished_at": "2026-10-20T03:21:57.900009+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "9737441b7e2ba61bc5b591e128da8d37db594a6be01946ec13eebc2023d570b3",
+      "source_manifest_sha256": "b943167afc1d43715f7cab0561591efc9f76c1919dcb6e52c46316d135e2f355",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8873,
-        "sha256": "70040ce6bf5174b7d5fae754e025f2f565d48e2cecd84baf7b1dcc4e84a6fbea"
+        "declarations": 8909,
+        "sha256": "46e16af9bec0291d1465c207074a7ba2670c7c2a599128aeb0ae2312a3c746a1"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "a081c61839658c2869ef6a01e7bcd387a81b9af4",
-      "source_head_sha": "a081c61839658c2869ef6a01e7bcd387a81b9af4",
+      "checked_sha": "cf2701d48ac60007502c1ad44286c1d64b1303ce",
+      "source_head_sha": "cf2701d48ac60007502c1ad44286c1d64b1303ce",
       "ci_url": null,
-      "finished_at": "2026-10-20T03:15:08.509426+00:00",
+      "finished_at": "2026-10-20T03:21:57.900009+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "9737441b7e2ba61bc5b591e128da8d37db594a6be01946ec13eebc2023d570b3",
+      "source_manifest_sha256": "b943167afc1d43715f7cab0561591efc9f76c1919dcb6e52c46316d135e2f355",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8873,
-        "sha256": "70040ce6bf5174b7d5fae754e025f2f565d48e2cecd84baf7b1dcc4e84a6fbea"
+        "declarations": 8909,
+        "sha256": "46e16af9bec0291d1465c207074a7ba2670c7c2a599128aeb0ae2312a3c746a1"
       }
     }
   },
@@ -18669,7 +18669,7 @@
       "paper_ref": "paper/main.tex:2420–2421, prop:control-convergence 的 H 连续时间迹",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -18695,15 +18695,68 @@
         "Carleman.dirichletMassRegularizer_strong",
         "Carleman.dirichletMassRegularizer_bochner_strong"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "cf2701d48ac60007502c1ad44286c1d64b1303ce",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "cf2701d48ac60007502c1ad44286c1d64b1303ce",
+        "source_head_sha": "cf2701d48ac60007502c1ad44286c1d64b1303ce",
+        "ci_url": null,
+        "finished_at": "2026-10-20T03:21:57.900009+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "b943167afc1d43715f7cab0561591efc9f76c1919dcb6e52c46316d135e2f355",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8909,
+          "sha256": "46e16af9bec0291d1465c207074a7ba2670c7c2a599128aeb0ae2312a3c746a1"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C216"
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "由真实能量到对偶导数构造时间迹所需的质量正则化；完整H连续迹及端点待，17/26。"
+      "scope_notes": "由真实能量到对偶导数构造时间迹所需的质量正则化；完整H连续迹及端点待，17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C218",
+      "title": "能量嵌入的加权时间迹估计",
+      "paper_ref": "paper/main.tex:2420–2421, prop:control-convergence 的 H 连续时间迹",
+      "milestone": "M6c",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:control-convergence"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C216",
+        "C217"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实弱H¹近似状态的质量加权H迹估计；原状态H连续代表元与端点尚待极限构造，17/26。"
     }
   ],
   "events": [
@@ -44519,9 +44572,9 @@
       ],
       "branch": "main",
       "base_commit": "a081c61839658c2869ef6a01e7bcd387a81b9af4",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "cf2701d48ac60007502c1ad44286c1d64b1303ce",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.positiveMassForm",
@@ -44544,13 +44597,42 @@
         "Carleman.dirichletMassRegularizer_strong",
         "Carleman.dirichletMassRegularizer_bochner_strong"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "cf2701d48ac60007502c1ad44286c1d64b1303ce",
+        "source_head_sha": "cf2701d48ac60007502c1ad44286c1d64b1303ce",
+        "ci_url": null,
+        "finished_at": "2026-10-20T03:21:57.900009+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "b943167afc1d43715f7cab0561591efc9f76c1919dcb6e52c46316d135e2f355",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8909,
+          "sha256": "46e16af9bec0291d1465c207074a7ba2670c7c2a599128aeb0ae2312a3c746a1"
+        }
+      },
       "blocker": null,
       "attempts": [
         "T200实际对偶弱时间导数4199全库jobs、8873公理审计PASS，独立验收进行中。",
         "实际Lax–Milgram逆、双侧恒等式、交换/收缩/range误差及稠密强逼近；DCT给实际Bochner L²强收敛；19项probe exit0、3611定向/4202全库jobs和8909递归公理审计PASS。"
       ],
-      "next_action": "固定提交后交独立Agent核验原质量正则化及能量/Bochner强逼近；继续加权能量迹估计。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -44565,7 +44647,40 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "cf2701d48ac60007502c1ad44286c1d64b1303ce"
+    },
+    {
+      "id": "T202",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "能量嵌入的加权时间迹估计",
+      "goal_ids": [
+        "C218"
+      ],
+      "acceptance": [
+        "由实际弱时间导数和真实能量链式法则证明闭区间H迹估计",
+        "估计使用V值与质量加权导数L²范数，避免逆正则化常数发散",
+        "为原状态H连续代表元的极限构造提供可用的统一估计"
+      ],
+      "dependencies": [
+        "C216",
+        "C217"
+      ],
+      "branch": "main",
+      "base_commit": "cf2701d48ac60007502c1ad44286c1d64b1303ce",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "T201真实质量正则化4202全库jobs、8909公理审计PASS，独立验收进行中。"
+      ],
+      "next_action": "证明真实能量的区间变差界和质量加权H迹估计，供正则化状态一致收敛使用。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
