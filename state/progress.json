@@ -9,10 +9,10 @@
     "started_at": "2026-10-17T09:43:34.927869+00:00"
   },
   "execution": {
-    "state": "REVIEW",
-    "current_task_id": "T229",
-    "supervisor_checked_at": "2026-10-20T06:31:06.495849+00:00",
-    "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+    "state": "RUNNING",
+    "current_task_id": "T230",
+    "supervisor_checked_at": "2026-10-20T06:32:57.641820+00:00",
+    "next_action": "用有限指数和构造光滑凸内域并证明真实几何性质。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21082,6 +21082,44 @@
       "pr_url": null,
       "scope_notes": "完整P022重新验收目标，尚未提升覆盖，当前17/26。",
       "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C246",
+      "title": "一般有限半空间域的真实光滑凸内域穷竭",
+      "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的凸多面体正则性证明路线",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "lean_declarations": [
+        "Carleman.halfspaceExpSum",
+        "Carleman.halfspaceSmoothInner",
+        "Carleman.halfspaceExpSum_contDiff",
+        "Carleman.halfspaceExpSum_convex",
+        "Carleman.halfspaceSmoothInner_open",
+        "Carleman.halfspaceSmoothInner_convex",
+        "Carleman.halfspaceExpSum_le_half_mem",
+        "Carleman.halfspaceSmoothInner_closure_subset",
+        "Carleman.halfspaceSmoothInner_mono",
+        "Carleman.halfspaceExpSum_tendsto_zero",
+        "Carleman.halfspaceSmoothInner_eventually_mem",
+        "Carleman.halfspaceSmoothInner_exhaustion",
+        "Carleman.halfspaceSmoothInner_compact",
+        "Carleman.halfspaceExpSum_hasFDerivAt",
+        "Carleman.halfspaceExpSum_support",
+        "Carleman.halfspaceSmoothInner_boundary_regular",
+        "Carleman.exists_halfspace_smooth_exhaustion"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实光滑凸穷竭几何；内域H²正则与统一Hessian界仍须证明。"
     }
   ],
   "events": [
@@ -50058,6 +50096,71 @@
         "review": "PENDING"
       },
       "declaration_version": "d1dabe5404212ce3dd399028a79233e3da4e324b"
+    },
+    {
+      "id": "T230",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "一般有限半空间域的真实光滑凸内域穷竭",
+      "goal_ids": [
+        "C246"
+      ],
+      "acceptance": [
+        "真实C∞定义函数、开凸内域、紧闭包严格位于原域",
+        "单调穷竭和最终非空；边界定义函数导数非零",
+        "不假定或宣称原全局H²正则性已经完成"
+      ],
+      "dependencies": [],
+      "branch": "main",
+      "base_commit": "d1dabe5404212ce3dd399028a79233e3da4e324b",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.halfspaceExpSum",
+        "Carleman.halfspaceSmoothInner",
+        "Carleman.halfspaceExpSum_contDiff",
+        "Carleman.halfspaceExpSum_convex",
+        "Carleman.halfspaceSmoothInner_open",
+        "Carleman.halfspaceSmoothInner_convex",
+        "Carleman.halfspaceExpSum_le_half_mem",
+        "Carleman.halfspaceSmoothInner_closure_subset",
+        "Carleman.halfspaceSmoothInner_mono",
+        "Carleman.halfspaceExpSum_tendsto_zero",
+        "Carleman.halfspaceSmoothInner_eventually_mem",
+        "Carleman.halfspaceSmoothInner_exhaustion",
+        "Carleman.halfspaceSmoothInner_compact",
+        "Carleman.halfspaceExpSum_hasFDerivAt",
+        "Carleman.halfspaceExpSum_support",
+        "Carleman.halfspaceSmoothInner_boundary_regular",
+        "Carleman.exists_halfspace_smooth_exhaustion"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "实际指数和穷竭及正则边界完整实现；定向3054/root4264和递归9554审计均实际exit0。"
+      ],
+      "next_action": "用有限指数和构造光滑凸内域并证明真实几何性质。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman.Geometry.HalfspaceSmoothExhaustion",
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": [
+          3054,
+          4264
+        ],
+        "recursive_axiom_audit": 9554,
+        "new_explicit_declarations": 17,
+        "raw_sha256": "80f71dea6d886e077281017c10d507494b902f96bbe408c41b131bf5dea13a0a",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

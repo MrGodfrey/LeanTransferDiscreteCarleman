@@ -8585,6 +8585,42 @@ set_option pp.maxSteps 1000000
 #check @Carleman.higherCoefficient_spatial_operators
 #print axioms Carleman.higherCoefficient_spatial_operators
 
+
+#check @Carleman.halfspaceExpSum
+#print axioms Carleman.halfspaceExpSum
+#check @Carleman.halfspaceSmoothInner
+#print axioms Carleman.halfspaceSmoothInner
+#check @Carleman.halfspaceExpSum_contDiff
+#print axioms Carleman.halfspaceExpSum_contDiff
+#check @Carleman.halfspaceExpSum_convex
+#print axioms Carleman.halfspaceExpSum_convex
+#check @Carleman.halfspaceSmoothInner_open
+#print axioms Carleman.halfspaceSmoothInner_open
+#check @Carleman.halfspaceSmoothInner_convex
+#print axioms Carleman.halfspaceSmoothInner_convex
+#check @Carleman.halfspaceExpSum_le_half_mem
+#print axioms Carleman.halfspaceExpSum_le_half_mem
+#check @Carleman.halfspaceSmoothInner_closure_subset
+#print axioms Carleman.halfspaceSmoothInner_closure_subset
+#check @Carleman.halfspaceSmoothInner_mono
+#print axioms Carleman.halfspaceSmoothInner_mono
+#check @Carleman.halfspaceExpSum_tendsto_zero
+#print axioms Carleman.halfspaceExpSum_tendsto_zero
+#check @Carleman.halfspaceSmoothInner_eventually_mem
+#print axioms Carleman.halfspaceSmoothInner_eventually_mem
+#check @Carleman.halfspaceSmoothInner_exhaustion
+#print axioms Carleman.halfspaceSmoothInner_exhaustion
+#check @Carleman.halfspaceSmoothInner_compact
+#print axioms Carleman.halfspaceSmoothInner_compact
+#check @Carleman.halfspaceExpSum_hasFDerivAt
+#print axioms Carleman.halfspaceExpSum_hasFDerivAt
+#check @Carleman.halfspaceExpSum_support
+#print axioms Carleman.halfspaceExpSum_support
+#check @Carleman.halfspaceSmoothInner_boundary_regular
+#print axioms Carleman.halfspaceSmoothInner_boundary_regular
+#check @Carleman.exists_halfspace_smooth_exhaustion
+#print axioms Carleman.exists_halfspace_smooth_exhaustion
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
