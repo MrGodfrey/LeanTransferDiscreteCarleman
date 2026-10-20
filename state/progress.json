@@ -9,10 +9,10 @@
     "started_at": "2026-10-17T09:43:34.927869+00:00"
   },
   "execution": {
-    "state": "RUNNING",
+    "state": "REVIEW",
     "current_task_id": "T229",
-    "supervisor_checked_at": "2026-10-20T06:26:06.837826+00:00",
-    "next_action": "将已证明的正自伴平方根完整域/能量身份送回原V，再与一般系数A1–A3总接口合并，复核并验收完整P022。",
+    "supervisor_checked_at": "2026-10-20T06:31:06.495849+00:00",
+    "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "a914d2ede5d27b37e30708efaff64fdf1b783d2d",
-      "source_head_sha": "a914d2ede5d27b37e30708efaff64fdf1b783d2d",
+      "checked_sha": "d1dabe5404212ce3dd399028a79233e3da4e324b",
+      "source_head_sha": "d1dabe5404212ce3dd399028a79233e3da4e324b",
       "ci_url": null,
-      "finished_at": "2026-10-20T06:23:40.139578+00:00",
+      "finished_at": "2026-10-20T06:26:56.944598+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "d2aa90a215a294a26e86d714fa3a1d8d4574c1c90a8b2068d00e2e69f48ed4b7",
+      "source_manifest_sha256": "0e5f9415da91599f3ce561c7ebfe577bf59ab1986860699e4133748c399c5aa2",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9521,
-        "sha256": "b5b3192a3991eb6977799471298bdb9e03d95d9b801b080c3b7ced17f3ae2e2d"
+        "declarations": 9534,
+        "sha256": "084f506edea932843ddbddb454414167628f93307086e141e340e614f2f77a2a"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "a914d2ede5d27b37e30708efaff64fdf1b783d2d",
-      "source_head_sha": "a914d2ede5d27b37e30708efaff64fdf1b783d2d",
+      "checked_sha": "d1dabe5404212ce3dd399028a79233e3da4e324b",
+      "source_head_sha": "d1dabe5404212ce3dd399028a79233e3da4e324b",
       "ci_url": null,
-      "finished_at": "2026-10-20T06:23:40.139578+00:00",
+      "finished_at": "2026-10-20T06:26:56.944598+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "d2aa90a215a294a26e86d714fa3a1d8d4574c1c90a8b2068d00e2e69f48ed4b7",
+      "source_manifest_sha256": "0e5f9415da91599f3ce561c7ebfe577bf59ab1986860699e4133748c399c5aa2",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9521,
-        "sha256": "b5b3192a3991eb6977799471298bdb9e03d95d9b801b080c3b7ced17f3ae2e2d"
+        "declarations": 9534,
+        "sha256": "084f506edea932843ddbddb454414167628f93307086e141e340e614f2f77a2a"
       }
     }
   },
@@ -20907,7 +20907,7 @@
       "paper_ref": "paper/main.tex:353 原A1平方根形式域身份，服务P022",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:spatial-operators"
@@ -20975,7 +20975,46 @@
           "sha256": "b5b3192a3991eb6977799471298bdb9e03d95d9b801b080c3b7ced17f3ae2e2d"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "a914d2ede5d27b37e30708efaff64fdf1b783d2d",
+        "declarations": [
+          "Carleman.CoerciveForm.inverseH",
+          "Carleman.CoerciveForm.inverseH_eq",
+          "Carleman.CoerciveForm.inverseH_form",
+          "Carleman.CoerciveForm.inverseH_pair",
+          "Carleman.CoerciveForm.inverseH_positive",
+          "Carleman.CoerciveForm.inverseH_injective",
+          "Carleman.CoerciveForm.inverseH_range",
+          "Carleman.CoerciveForm.inverseH_dense",
+          "Carleman.CoerciveForm.inverseEnergy_dense",
+          "Carleman.CoerciveForm.inverseSqrt_injective",
+          "Carleman.CoerciveForm.inverseSqrt_dense",
+          "Carleman.CoerciveForm.inverseSqrt_energy_pair",
+          "Carleman.CoerciveForm.inverseSqrt_energy_bound",
+          "Carleman.CoerciveForm.inverseSqrtLift",
+          "Carleman.CoerciveForm.inverseSqrtLift_apply",
+          "Carleman.CoerciveForm.inverseSqrtLift_pair",
+          "Carleman.CoerciveForm.inverseSqrtLift_embed",
+          "Carleman.CoerciveForm.inverseSqrtLift_lower_bound",
+          "Carleman.CoerciveForm.inverseSqrtLift_surjective",
+          "Carleman.CoerciveForm.inverseSqrt_range",
+          "Carleman.CoerciveForm.formSqrtDomain",
+          "Carleman.CoerciveForm.formSqrt",
+          "Carleman.CoerciveForm.formSqrt_inverse",
+          "Carleman.CoerciveForm.formSqrt_graph",
+          "Carleman.CoerciveForm.formSqrt_energy",
+          "Carleman.CoerciveForm.formSqrt_nonneg",
+          "Carleman.CoerciveForm.formSqrt_adjoint_graph",
+          "Carleman.CoerciveForm.inverseH_operator_graph",
+          "Carleman.CoerciveForm.formSqrt_square_graph",
+          "Carleman.CoerciveForm.exists_positive_form_square_root"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/794655ea939bd5d711faa65a3c3cd50d74621e89/governance/reviews/T228-local-acceptance.md",
+        "reviewed_at": "2026-10-20T06:26:53+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C242",
         "C243"
@@ -20983,7 +21022,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "原A1平方根域与形式身份的实际构造；完成后再接入完整P022，当前17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C245",
@@ -20991,7 +21030,7 @@
       "paper_ref": "paper/main.tex:2615–2654 Proposition A.1 与333–376 A1–A3",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "PAPER",
       "paper_labels": [
         "prop:spatial-operators"
@@ -21002,8 +21041,37 @@
         "Carleman.OriginalForm.exists_squareRootData",
         "Carleman.higherCoefficient_spatial_operators"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "d1dabe5404212ce3dd399028a79233e3da4e324b",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "d1dabe5404212ce3dd399028a79233e3da4e324b",
+        "source_head_sha": "d1dabe5404212ce3dd399028a79233e3da4e324b",
+        "ci_url": null,
+        "finished_at": "2026-10-20T06:26:56.944598+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "0e5f9415da91599f3ce561c7ebfe577bf59ab1986860699e4133748c399c5aa2",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9534,
+          "sha256": "084f506edea932843ddbddb454414167628f93307086e141e340e614f2f77a2a"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C242",
@@ -21012,7 +21080,8 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "完整P022重新验收目标，尚未提升覆盖，当前17/26。"
+      "scope_notes": "完整P022重新验收目标，尚未提升覆盖，当前17/26。",
+      "independent_review_status": "PENDING"
     }
   ],
   "events": [
@@ -22332,6 +22401,11 @@
       "at": "2026-10-20T06:26:06.837826+00:00",
       "public_summary": "实 Hilbert 正算子平方根的收敛迭代已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/cf3b8b7e99df3b1548a86f172f01f6a4ca154fac/governance/reviews/T227-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T06:31:06.495849+00:00",
+      "public_summary": "原闭形式平方根的范围与能量身份已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/794655ea939bd5d711faa65a3c3cd50d74621e89/governance/reviews/T228-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -22804,7 +22878,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/94223761edea20d3d77cb6eb4b62ee05be8868e7/governance/reviews/T224-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/29169226b6046ca19fe2c259134f09f8eb883a35/governance/reviews/T225-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/63c553825231ccf22f1efb72dc2f10ed4e666fde/governance/reviews/T226-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/cf3b8b7e99df3b1548a86f172f01f6a4ca154fac/governance/reviews/T227-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/cf3b8b7e99df3b1548a86f172f01f6a4ca154fac/governance/reviews/T227-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/794655ea939bd5d711faa65a3c3cd50d74621e89/governance/reviews/T228-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -49787,10 +49862,10 @@
       ],
       "branch": "main",
       "base_commit": "4573638d5529914e0140c25f4dfe3689be92afaa",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "a914d2ede5d27b37e30708efaff64fdf1b783d2d",
-      "merge_commit": null,
+      "merge_commit": "a914d2ede5d27b37e30708efaff64fdf1b783d2d",
       "lean_declarations": [
         "Carleman.CoerciveForm.inverseH",
         "Carleman.CoerciveForm.inverseH_eq",
@@ -49858,7 +49933,7 @@
         "使用已完成的真实正根构造；准备原A⁻¹的正性/单射/稠密性和原形式的能量等式。",
         "三模块30声明实现同一原A⁻¹、正根全范围=原V、完整无界自伴/平方组合图、全V能量身份；2760/4261本地构建及9521递归审计exit0。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -49878,9 +49953,23 @@
         "raw_sha256": "b5b3192a3991eb6977799471298bdb9e03d95d9b801b080c3b7ced17f3ae2e2d",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "review": "PENDING"
+        "review": "PENDING",
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "a914d2ede5d27b37e30708efaff64fdf1b783d2d"
+      "declaration_version": "a914d2ede5d27b37e30708efaff64fdf1b783d2d",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C244"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "a914d2ede5d27b37e30708efaff64fdf1b783d2d",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T06:26:53+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/794655ea939bd5d711faa65a3c3cd50d74621e89/governance/reviews/T228-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T229",
@@ -49902,9 +49991,9 @@
       ],
       "branch": "main",
       "base_commit": "a914d2ede5d27b37e30708efaff64fdf1b783d2d",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "d1dabe5404212ce3dd399028a79233e3da4e324b",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.OriginalForm.formSqrtDomain_eq",
@@ -49912,13 +50001,42 @@
         "Carleman.OriginalForm.exists_squareRootData",
         "Carleman.higherCoefficient_spatial_operators"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "d1dabe5404212ce3dd399028a79233e3da4e324b",
+        "source_head_sha": "d1dabe5404212ce3dd399028a79233e3da4e324b",
+        "ci_url": null,
+        "finished_at": "2026-10-20T06:26:56.944598+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "0e5f9415da91599f3ce561c7ebfe577bf59ab1986860699e4133748c399c5aa2",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9534,
+          "sha256": "084f506edea932843ddbddb454414167628f93307086e141e340e614f2f77a2a"
+        }
+      },
       "blocker": null,
       "attempts": [
         "原无界平方根全图/能量桥已编译审计，准备OriginalForm.V的无损身份转换。",
         "包含同一原A平方根完整域/能量身份的最终入口已实现；两模块4声明，3517/4263构建及9534公理审计exit0，等待完整P022独立验收。"
       ],
-      "next_action": "将已证明的正自伴平方根完整域/能量身份送回原V，再与一般系数A1–A3总接口合并，复核并验收完整P022。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -49938,7 +50056,8 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "review": "PENDING"
-      }
+      },
+      "declaration_version": "d1dabe5404212ce3dd399028a79233e3da4e324b"
     }
   ],
   "private_maintenance": {
