@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T218",
-    "supervisor_checked_at": "2026-10-20T05:05:03.637283+00:00",
+    "supervisor_checked_at": "2026-10-20T05:10:54.666858+00:00",
     "next_action": "在真实全部多重指标上构造原系数双线性形式，核对积分、对称、H₀ᵐ能量实现和原加权上界。",
     "blocker": null,
     "pause_reason": null,
@@ -19825,7 +19825,7 @@
       "paper_ref": "paper/main.tex:2615–2652, prop:spatial-operators 中一般m的原H₀ᵐ空间",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:spatial-operators"
@@ -19888,7 +19888,41 @@
           "sha256": "c917b89693ffedc332308f93df117eedddce1c4c6cc2f61b7a8a3aca413c2042"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "17b0a22b45b9d314f90414b72d3c3198ef129f0d",
+        "declarations": [
+          "Carleman.SpatialTest.eq_of_value_eq",
+          "Carleman.SpatialTest.wordTest",
+          "Carleman.SpatialTest.wordTest_perm",
+          "Carleman.SpatialTest.multiTest",
+          "Carleman.SpatialTest.multiTest_nil",
+          "Carleman.SpatialTest.multiTest_cons",
+          "Carleman.SpatialTest.allOrderJet",
+          "Carleman.SpatialTest.allOrderJet_value",
+          "Carleman.SpatialTest.allOrderJet_component",
+          "Carleman.SpatialTest.allOrderJet_truncate",
+          "Carleman.SpatialTest.allOrderJet_one",
+          "Carleman.SpatialTest.zeroTest_allOrderJet",
+          "Carleman.SpatialTest.addTest_allOrderJet",
+          "Carleman.SpatialTest.smulTest_allOrderJet",
+          "Carleman.higherDirichletJetSpace",
+          "Carleman.higherDirichletSubspace",
+          "Carleman.higherDirichletSubspace_sobolev",
+          "Carleman.test_mem_higherDirichletJetSpace",
+          "Carleman.test_mem_higherDirichletSubspace",
+          "Carleman.higherDirichletJetSpace_eq_closure",
+          "Carleman.mem_higherDirichletJetSpace_iff",
+          "Carleman.higherDirichletSubspace_closed",
+          "Carleman.higherDirichletSubspace_dense",
+          "Carleman.higherDirichletSubspace_one",
+          "Carleman.higherDirichletEnergy_complete"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/061e2229186295742d29c00397e0b7a1ed480e2e/governance/reviews/T216-local-acceptance.md",
+        "reviewed_at": "2026-10-20T05:04:58+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C024",
         "C055",
@@ -19899,7 +19933,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "任意阶原对称多重指标弱射流与紧支光滑闭包，不将m=1或光滑系数特例当一般算子；17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C233",
@@ -19907,7 +19941,7 @@
       "paper_ref": "paper/main.tex:2615–2652, prop:spatial-operators 中光滑权保持V和Sobolev正则",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:spatial-operators"
@@ -19956,7 +19990,27 @@
           "sha256": "eb96e122d444d248264fa65b14e0b6b121b3c65d9598a04117700b9caaa0f20e"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "79151186853d57b5e937851b51ace47c05a4e7ff",
+        "declarations": [
+          "Carleman.WeakSobolevJet.leibnizField_perm",
+          "Carleman.WeakSobolevJet.smoothProductJet",
+          "Carleman.WeakSobolevJet.smoothProductJet_value",
+          "Carleman.WeakSobolevJet.continuous_wordField",
+          "Carleman.WeakSobolevJet.continuous_leibnizField",
+          "Carleman.WeakSobolevJet.smoothProductCLM",
+          "Carleman.smoothProductCLM_test",
+          "Carleman.smoothProductCLM_mem_higherDirichlet",
+          "Carleman.boundedSmooth_map_mem_sobolev",
+          "Carleman.boundedSmooth_map_mem_higherDirichlet",
+          "Carleman.boundedSmooth_map_mem_higherDirichlet_domain"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/88a654dd8d9df39e068402478c40caa6cd62f74c/governance/reviews/T217-local-acceptance.md",
+        "reviewed_at": "2026-10-20T05:07:09+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C027",
         "C030",
@@ -19967,7 +20021,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "实际构造乘后弱射流，无目标乘积存在前提；一般阶光滑权，不提升到尚未处理的W2m∞算子系数；17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C234",
@@ -19980,11 +20034,32 @@
       "paper_labels": [
         "prop:spatial-operators"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.MultiDerivativeIndex",
+        "Carleman.jetScalarComponent",
+        "Carleman.coefficientJetForm",
+        "Carleman.coefficientJetForm_apply",
+        "Carleman.coefficientJetForm_integral",
+        "Carleman.coefficientJetForm_symmetric",
+        "Carleman.jetScalarComponent_weighted_le",
+        "Carleman.coefficientJetForm_weighted_upper",
+        "Carleman.HigherDirichletEnergy",
+        "Carleman.higherDirichletToJet",
+        "Carleman.higherDirichletEnergy_norm_sq",
+        "Carleman.higherCoefficientForm",
+        "Carleman.higherCoefficientForm_apply",
+        "Carleman.higherCoefficientForm_symmetric",
+        "Carleman.higherCoefficientForm_integral",
+        "Carleman.higherCoefficientForm_weighted_upper",
+        "Carleman.higherCoefficientOriginalForm"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
       "dependencies": [
+        "C027",
+        "C030",
+        "C055",
         "C232"
       ],
       "blocker": null,
@@ -21249,6 +21324,16 @@
       "at": "2026-10-20T05:00:04.809319+00:00",
       "public_summary": "原强对偶能量方程与唯一连续解的识别已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/acc193c0a9a79624439b8af36a929bfa3a47367b/governance/reviews/T215-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T05:10:54.531420+00:00",
+      "public_summary": "一般阶紧支光滑测试的真实Sobolev射流与H₀ᵐ空间已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/061e2229186295742d29c00397e0b7a1ed480e2e/governance/reviews/T216-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T05:10:54.666858+00:00",
+      "public_summary": "任意阶真实弱乘积与H₀ᵐ的光滑权保持已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/88a654dd8d9df39e068402478c40caa6cd62f74c/governance/reviews/T217-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -21709,7 +21794,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5ac0a17bf01823f61003428674b282403ea6443c/governance/reviews/T212-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3a869e6b41c8a21d3e60f08ef657ed58164dd63b/governance/reviews/T213-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/85fc7f94d5211094b5c538ccbcc37f2361690111/governance/reviews/T214-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/acc193c0a9a79624439b8af36a929bfa3a47367b/governance/reviews/T215-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/acc193c0a9a79624439b8af36a929bfa3a47367b/governance/reviews/T215-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/061e2229186295742d29c00397e0b7a1ed480e2e/governance/reviews/T216-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/88a654dd8d9df39e068402478c40caa6cd62f74c/governance/reviews/T217-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -47380,10 +47467,10 @@
       ],
       "branch": "main",
       "base_commit": "2bbedbc1881148eb48d0280570a98d0234ef0813",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "17b0a22b45b9d314f90414b72d3c3198ef129f0d",
-      "merge_commit": null,
+      "merge_commit": "17b0a22b45b9d314f90414b72d3c3198ef129f0d",
       "lean_declarations": [
         "Carleman.SpatialTest.eq_of_value_eq",
         "Carleman.SpatialTest.wordTest",
@@ -47446,7 +47533,7 @@
         "已有一般弱射流Hilbert空间、坐标导数、测试弱导数和m=1闭包，可复用。",
         "两模块25项任意阶空间声明定向3221、全库4239 jobs与9130项递归公理审计均exit 0。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -47460,9 +47547,22 @@
         "declaration_artifact_sha256": "c917b89693ffedc332308f93df117eedddce1c4c6cc2f61b7a8a3aca413c2042",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "17b0a22b45b9d314f90414b72d3c3198ef129f0d"
+      "declaration_version": "17b0a22b45b9d314f90414b72d3c3198ef129f0d",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C232"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "17b0a22b45b9d314f90414b72d3c3198ef129f0d",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T05:04:58+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/061e2229186295742d29c00397e0b7a1ed480e2e/governance/reviews/T216-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T217",
@@ -47486,10 +47586,10 @@
       ],
       "branch": "main",
       "base_commit": "17b0a22b45b9d314f90414b72d3c3198ef129f0d",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "79151186853d57b5e937851b51ace47c05a4e7ff",
-      "merge_commit": null,
+      "merge_commit": "79151186853d57b5e937851b51ace47c05a4e7ff",
       "lean_declarations": [
         "Carleman.WeakSobolevJet.leibnizField_perm",
         "Carleman.WeakSobolevJet.smoothProductJet",
@@ -47538,7 +47638,7 @@
         "T216两模块25声明4239根构建、9130公理审计PASS；已定位一般Leibniz弱场与弱混合交换。",
         "两模块11项实际高阶乘法声明定向3229、全库4241 jobs与9173项递归公理审计均exit 0。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -47552,9 +47652,22 @@
         "declaration_artifact_sha256": "eb96e122d444d248264fa65b14e0b6b121b3c65d9598a04117700b9caaa0f20e",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "79151186853d57b5e937851b51ace47c05a4e7ff"
+      "declaration_version": "79151186853d57b5e937851b51ace47c05a4e7ff",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C233"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "79151186853d57b5e937851b51ace47c05a4e7ff",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T05:07:09+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/88a654dd8d9df39e068402478c40caa6cd62f74c/governance/reviews/T217-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T218",
@@ -47570,6 +47683,9 @@
         "加权上界常数仅依赖原系数和固定阶数，不输入目标估计"
       ],
       "dependencies": [
+        "C027",
+        "C030",
+        "C055",
         "C232"
       ],
       "branch": "main",
@@ -47578,14 +47694,49 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.MultiDerivativeIndex",
+        "Carleman.jetScalarComponent",
+        "Carleman.coefficientJetForm",
+        "Carleman.coefficientJetForm_apply",
+        "Carleman.coefficientJetForm_integral",
+        "Carleman.coefficientJetForm_symmetric",
+        "Carleman.jetScalarComponent_weighted_le",
+        "Carleman.coefficientJetForm_weighted_upper",
+        "Carleman.HigherDirichletEnergy",
+        "Carleman.higherDirichletToJet",
+        "Carleman.higherDirichletEnergy_norm_sq",
+        "Carleman.higherCoefficientForm",
+        "Carleman.higherCoefficientForm_apply",
+        "Carleman.higherCoefficientForm_symmetric",
+        "Carleman.higherCoefficientForm_integral",
+        "Carleman.higherCoefficientForm_weighted_upper",
+        "Carleman.higherCoefficientOriginalForm"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "T217全库4241 jobs、9173公理审计PASS；系数形式试编译已定位CLM实例预算与现有seminorm上界。"
+        "T217全库4241 jobs、9173公理审计PASS；系数形式试编译已定位CLM实例预算与现有seminorm上界。",
+        "显式选择既有强对偶拓扑的ContinuousAdd投影解决推断；完整17项编译成功；定向3241/full4243 jobs和9241项递归公理审计实际exit0。"
       ],
       "next_action": "在真实全部多重指标上构造原系数双线性形式，核对积分、对称、H₀ᵐ能量实现和原加权上界。",
-      "integration_mode": "direct-main"
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman.Spatial.CoefficientJetForm",
+          "Carleman.Spatial.HigherCoefficientForm",
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4243,
+        "recursive_axiom_audit": 9241,
+        "new_explicit_declarations": 17,
+        "raw_sha256": "6cbdfd58a2ac8278bb9c49df088a5d60e4ba3b6fbdd09773eb04cefba6408914",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

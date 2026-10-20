@@ -8269,6 +8269,42 @@ set_option pp.maxSteps 1000000
 #check @Carleman.boundedSmooth_map_mem_higherDirichlet_domain
 #print axioms Carleman.boundedSmooth_map_mem_higherDirichlet_domain
 
+-- T218: actual arbitrary-order coefficient form and uniform weighted upper bound.
+#check @Carleman.MultiDerivativeIndex
+#print axioms Carleman.MultiDerivativeIndex
+#check @Carleman.jetScalarComponent
+#print axioms Carleman.jetScalarComponent
+#check @Carleman.coefficientJetForm
+#print axioms Carleman.coefficientJetForm
+#check @Carleman.coefficientJetForm_apply
+#print axioms Carleman.coefficientJetForm_apply
+#check @Carleman.coefficientJetForm_integral
+#print axioms Carleman.coefficientJetForm_integral
+#check @Carleman.coefficientJetForm_symmetric
+#print axioms Carleman.coefficientJetForm_symmetric
+#check @Carleman.jetScalarComponent_weighted_le
+#print axioms Carleman.jetScalarComponent_weighted_le
+#check @Carleman.coefficientJetForm_weighted_upper
+#print axioms Carleman.coefficientJetForm_weighted_upper
+#check @Carleman.HigherDirichletEnergy
+#print axioms Carleman.HigherDirichletEnergy
+#check @Carleman.higherDirichletToJet
+#print axioms Carleman.higherDirichletToJet
+#check @Carleman.higherDirichletEnergy_norm_sq
+#print axioms Carleman.higherDirichletEnergy_norm_sq
+#check @Carleman.higherCoefficientForm
+#print axioms Carleman.higherCoefficientForm
+#check @Carleman.higherCoefficientForm_apply
+#print axioms Carleman.higherCoefficientForm_apply
+#check @Carleman.higherCoefficientForm_symmetric
+#print axioms Carleman.higherCoefficientForm_symmetric
+#check @Carleman.higherCoefficientForm_integral
+#print axioms Carleman.higherCoefficientForm_integral
+#check @Carleman.higherCoefficientForm_weighted_upper
+#print axioms Carleman.higherCoefficientForm_weighted_upper
+#check @Carleman.higherCoefficientOriginalForm
+#print axioms Carleman.higherCoefficientOriginalForm
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

@@ -1072,3 +1072,6 @@ public import Carleman.Spatial.HigherDirichletSpace
 
 public import Carleman.Spatial.HigherWeakProduct
 public import Carleman.Spatial.HigherDirichletProduct
+
+public import Carleman.Spatial.CoefficientJetForm
+public import Carleman.Spatial.HigherCoefficientForm
