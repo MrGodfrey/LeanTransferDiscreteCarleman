@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T231",
-    "supervisor_checked_at": "2026-10-20T06:38:43.608897+00:00",
+    "supervisor_checked_at": "2026-10-20T06:41:34.753773+00:00",
     "next_action": "通过真实隐函数定理构造指数和内域的解析边界坐标。",
     "blocker": null,
     "pause_reason": null,
@@ -21030,7 +21030,7 @@
       "paper_ref": "paper/main.tex:2615–2654 Proposition A.1 与333–376 A1–A3",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "paper_labels": [
         "prop:spatial-operators"
@@ -21072,7 +21072,20 @@
           "sha256": "084f506edea932843ddbddb454414167628f93307086e141e340e614f2f77a2a"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "d1dabe5404212ce3dd399028a79233e3da4e324b",
+        "declarations": [
+          "Carleman.OriginalForm.formSqrtDomain_eq",
+          "Carleman.OriginalForm.SquareRootData",
+          "Carleman.OriginalForm.exists_squareRootData",
+          "Carleman.higherCoefficient_spatial_operators"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7311b6e17169c4248895dd1150990145ffd7985d/governance/reviews/T229-local-acceptance.md",
+        "reviewed_at": "2026-10-20T06:38:00+00:00",
+        "reviewer": "/root/accept_section3; independent paper acceptance"
+      },
       "dependencies": [
         "C242",
         "C243",
@@ -21080,8 +21093,8 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "完整P022重新验收目标，尚未提升覆盖，当前17/26。",
-      "independent_review_status": "PENDING"
+      "scope_notes": "完整 Proposition A.1 已验收；保留原图正则假设，完整平方根与A1–A3均无新增前提。",
+      "independent_review_status": "PASS"
     },
     {
       "id": "C246",
@@ -21089,7 +21102,7 @@
       "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的凸多面体正则性证明路线",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:analytic-realizations"
@@ -21144,12 +21157,38 @@
           "sha256": "80f71dea6d886e077281017c10d507494b902f96bbe408c41b131bf5dea13a0a"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "721b761224ad1b6425466bc956417ddce7f41908",
+        "declarations": [
+          "Carleman.halfspaceExpSum",
+          "Carleman.halfspaceSmoothInner",
+          "Carleman.halfspaceExpSum_contDiff",
+          "Carleman.halfspaceExpSum_convex",
+          "Carleman.halfspaceSmoothInner_open",
+          "Carleman.halfspaceSmoothInner_convex",
+          "Carleman.halfspaceExpSum_le_half_mem",
+          "Carleman.halfspaceSmoothInner_closure_subset",
+          "Carleman.halfspaceSmoothInner_mono",
+          "Carleman.halfspaceExpSum_tendsto_zero",
+          "Carleman.halfspaceSmoothInner_eventually_mem",
+          "Carleman.halfspaceSmoothInner_exhaustion",
+          "Carleman.halfspaceSmoothInner_compact",
+          "Carleman.halfspaceExpSum_hasFDerivAt",
+          "Carleman.halfspaceExpSum_support",
+          "Carleman.halfspaceSmoothInner_boundary_regular",
+          "Carleman.exists_halfspace_smooth_exhaustion"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6d3f546a94a5ca47a7a1f5aacf5f9d7b15821637/governance/reviews/T230-local-acceptance.md",
+        "reviewed_at": "2026-10-20T06:39:08+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [],
       "blocker": null,
       "pr_url": null,
       "scope_notes": "真实光滑凸穷竭几何；内域H²正则与统一Hessian界仍须证明。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C247",
@@ -22496,6 +22535,16 @@
       "at": "2026-10-20T06:31:06.495849+00:00",
       "public_summary": "原闭形式平方根的范围与能量身份已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/794655ea939bd5d711faa65a3c3cd50d74621e89/governance/reviews/T228-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T06:41:34.685460+00:00",
+      "public_summary": "一般阶 Proposition A.1 已完整通过独立论文级验收，包含原平方根域及能量身份；原文覆盖18/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7311b6e17169c4248895dd1150990145ffd7985d/governance/reviews/T229-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T06:41:34.753773+00:00",
+      "public_summary": "一般有限半空间域的真实光滑凸内域穷竭已通过固定本地验证与独立数学验收；原文覆盖18/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6d3f546a94a5ca47a7a1f5aacf5f9d7b15821637/governance/reviews/T230-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -22969,7 +23018,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/29169226b6046ca19fe2c259134f09f8eb883a35/governance/reviews/T225-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/63c553825231ccf22f1efb72dc2f10ed4e666fde/governance/reviews/T226-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/cf3b8b7e99df3b1548a86f172f01f6a4ca154fac/governance/reviews/T227-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/794655ea939bd5d711faa65a3c3cd50d74621e89/governance/reviews/T228-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/794655ea939bd5d711faa65a3c3cd50d74621e89/governance/reviews/T228-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7311b6e17169c4248895dd1150990145ffd7985d/governance/reviews/T229-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6d3f546a94a5ca47a7a1f5aacf5f9d7b15821637/governance/reviews/T230-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -50081,10 +50132,10 @@
       ],
       "branch": "main",
       "base_commit": "a914d2ede5d27b37e30708efaff64fdf1b783d2d",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "d1dabe5404212ce3dd399028a79233e3da4e324b",
-      "merge_commit": null,
+      "merge_commit": "d1dabe5404212ce3dd399028a79233e3da4e324b",
       "lean_declarations": [
         "Carleman.OriginalForm.formSqrtDomain_eq",
         "Carleman.OriginalForm.SquareRootData",
@@ -50126,7 +50177,7 @@
         "原无界平方根全图/能量桥已编译审计，准备OriginalForm.V的无损身份转换。",
         "包含同一原A平方根完整域/能量身份的最终入口已实现；两模块4声明，3517/4263构建及9534公理审计exit0，等待完整P022独立验收。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "完整原 Proposition A.1 已通过固定本地验证及独立论文级验收；推进一般凸多面体正则性。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -50145,9 +50196,24 @@
         "raw_sha256": "084f506edea932843ddbddb454414167628f93307086e141e340e614f2f77a2a",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "review": "PENDING"
+        "review": "PASS; whole P022, fixed-SHA report fully read and local evidence verified"
       },
-      "declaration_version": "d1dabe5404212ce3dd399028a79233e3da4e324b"
+      "declaration_version": "d1dabe5404212ce3dd399028a79233e3da4e324b",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_section3",
+          "claim_ids": [
+            "C245"
+          ],
+          "paper_result_ids": [
+            "P022"
+          ],
+          "checked_sha": "d1dabe5404212ce3dd399028a79233e3da4e324b",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T06:38:00+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7311b6e17169c4248895dd1150990145ffd7985d/governance/reviews/T229-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T230",
@@ -50165,10 +50231,10 @@
       "dependencies": [],
       "branch": "main",
       "base_commit": "d1dabe5404212ce3dd399028a79233e3da4e324b",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "721b761224ad1b6425466bc956417ddce7f41908",
-      "merge_commit": null,
+      "merge_commit": "721b761224ad1b6425466bc956417ddce7f41908",
       "lean_declarations": [
         "Carleman.halfspaceExpSum",
         "Carleman.halfspaceSmoothInner",
@@ -50222,7 +50288,7 @@
       "attempts": [
         "实际指数和穷竭及正则边界完整实现；定向3054/root4264和递归9554审计均实际exit0。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -50240,9 +50306,22 @@
         "raw_sha256": "80f71dea6d886e077281017c10d507494b902f96bbe408c41b131bf5dea13a0a",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "721b761224ad1b6425466bc956417ddce7f41908"
+      "declaration_version": "721b761224ad1b6425466bc956417ddce7f41908",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C246"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "721b761224ad1b6425466bc956417ddce7f41908",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T06:39:08+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6d3f546a94a5ca47a7a1f5aacf5f9d7b15821637/governance/reviews/T230-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T231",

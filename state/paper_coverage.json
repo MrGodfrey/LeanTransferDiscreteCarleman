@@ -1059,15 +1059,65 @@
       "pdf_page": 36,
       "tex_line": 2615,
       "milestone": "M6a",
-      "claim_ids": [],
-      "lean_declarations": [],
-      "declaration_version": null,
-      "verification_status": "PLANNED",
+      "claim_ids": [
+        "C245"
+      ],
+      "lean_declarations": [
+        "Carleman.OriginalForm.formSqrtDomain_eq",
+        "Carleman.OriginalForm.SquareRootData",
+        "Carleman.OriginalForm.exists_squareRootData",
+        "Carleman.higherCoefficient_spatial_operators"
+      ],
+      "declaration_version": "d1dabe5404212ce3dd399028a79233e3da4e324b",
+      "verification_status": "REVIEWED",
       "scope": "PAPER",
       "extra_hypotheses": [],
-      "build_evidence": null,
-      "semantic_review": null,
-      "blocker": null
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "d1dabe5404212ce3dd399028a79233e3da4e324b",
+        "source_head_sha": "d1dabe5404212ce3dd399028a79233e3da4e324b",
+        "ci_url": null,
+        "finished_at": "2026-10-20T06:26:56.944598+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "0e5f9415da91599f3ce561c7ebfe577bf59ab1986860699e4133748c399c5aa2",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9534,
+          "sha256": "084f506edea932843ddbddb454414167628f93307086e141e340e614f2f77a2a"
+        }
+      },
+      "semantic_review": {
+        "checked_sha": "d1dabe5404212ce3dd399028a79233e3da4e324b",
+        "declarations": [
+          "Carleman.OriginalForm.formSqrtDomain_eq",
+          "Carleman.OriginalForm.SquareRootData",
+          "Carleman.OriginalForm.exists_squareRootData",
+          "Carleman.higherCoefficient_spatial_operators"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/7311b6e17169c4248895dd1150990145ffd7985d/governance/reviews/T229-local-acceptance.md",
+        "reviewed_at": "2026-10-20T06:38:00+00:00",
+        "reviewer": "/root/accept_section3; independent paper acceptance"
+      },
+      "blocker": null,
+      "independent_review_status": "PASS"
     },
     {
       "id": "P023",
