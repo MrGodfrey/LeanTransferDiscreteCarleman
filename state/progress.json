@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T216",
-    "supervisor_checked_at": "2026-10-20T05:00:04.809319+00:00",
-    "next_action": "从实际迭代坐标导数构造所有阶紧支光滑测试射流及原H₀ᵐ闭包、稠密值嵌入，为原高阶变系数算子建立边界空间。",
+    "current_task_id": "T217",
+    "supervisor_checked_at": "2026-10-20T05:00:25.334528+00:00",
+    "next_action": "从实际Leibniz场和弱混合导数交换构造Hm上的连续乘法，再由真实测试闭包证明光滑权保持H₀ᵐ。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "2bbedbc1881148eb48d0280570a98d0234ef0813",
-      "source_head_sha": "2bbedbc1881148eb48d0280570a98d0234ef0813",
+      "checked_sha": "17b0a22b45b9d314f90414b72d3c3198ef129f0d",
+      "source_head_sha": "17b0a22b45b9d314f90414b72d3c3198ef129f0d",
       "ci_url": null,
-      "finished_at": "2026-10-20T04:53:32.104586+00:00",
+      "finished_at": "2026-10-20T04:59:33.750361+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "9796e108d3d1f647f82e559087aec304907be3b5ee68dd352137019dd0d0dd07",
+      "source_manifest_sha256": "333fe1f4b227d3f50e0958e58d95d9a8393d94c793d8af0446559128e4992ad6",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9054,
-        "sha256": "abc0b30a79815079dd1a0bd41cc2818b1ad6fa91a597dceccda9539a4f63b39c"
+        "declarations": 9130,
+        "sha256": "c917b89693ffedc332308f93df117eedddce1c4c6cc2f61b7a8a3aca413c2042"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "2bbedbc1881148eb48d0280570a98d0234ef0813",
-      "source_head_sha": "2bbedbc1881148eb48d0280570a98d0234ef0813",
+      "checked_sha": "17b0a22b45b9d314f90414b72d3c3198ef129f0d",
+      "source_head_sha": "17b0a22b45b9d314f90414b72d3c3198ef129f0d",
       "ci_url": null,
-      "finished_at": "2026-10-20T04:53:32.104586+00:00",
+      "finished_at": "2026-10-20T04:59:33.750361+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "9796e108d3d1f647f82e559087aec304907be3b5ee68dd352137019dd0d0dd07",
+      "source_manifest_sha256": "333fe1f4b227d3f50e0958e58d95d9a8393d94c793d8af0446559128e4992ad6",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9054,
-        "sha256": "abc0b30a79815079dd1a0bd41cc2818b1ad6fa91a597dceccda9539a4f63b39c"
+        "declarations": 9130,
+        "sha256": "c917b89693ffedc332308f93df117eedddce1c4c6cc2f61b7a8a3aca413c2042"
       }
     }
   },
@@ -19825,7 +19825,7 @@
       "paper_ref": "paper/main.tex:2615–2652, prop:spatial-operators 中一般m的原H₀ᵐ空间",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:spatial-operators"
@@ -19857,8 +19857,37 @@
         "Carleman.higherDirichletSubspace_one",
         "Carleman.higherDirichletEnergy_complete"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "17b0a22b45b9d314f90414b72d3c3198ef129f0d",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "17b0a22b45b9d314f90414b72d3c3198ef129f0d",
+        "source_head_sha": "17b0a22b45b9d314f90414b72d3c3198ef129f0d",
+        "ci_url": null,
+        "finished_at": "2026-10-20T04:59:33.750361+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "333fe1f4b227d3f50e0958e58d95d9a8393d94c793d8af0446559128e4992ad6",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9130,
+          "sha256": "c917b89693ffedc332308f93df117eedddce1c4c6cc2f61b7a8a3aca413c2042"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C024",
@@ -19869,7 +19898,30 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "任意阶原对称多重指标弱射流与紧支光滑闭包，不将m=1或光滑系数特例当一般算子；17/26。"
+      "scope_notes": "任意阶原对称多重指标弱射流与紧支光滑闭包，不将m=1或光滑系数特例当一般算子；17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C233",
+      "title": "任意阶真实弱乘积与H₀ᵐ的光滑权保持",
+      "paper_ref": "paper/main.tex:2615–2652, prop:spatial-operators 中光滑权保持V和Sobolev正则",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:spatial-operators"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C232"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "实际构造乘后弱射流，无目标乘积存在前提；一般阶光滑权，不提升到尚未处理的W2m∞算子系数；17/26。"
     }
   ],
   "events": [
@@ -47260,9 +47312,9 @@
       ],
       "branch": "main",
       "base_commit": "2bbedbc1881148eb48d0280570a98d0234ef0813",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "17b0a22b45b9d314f90414b72d3c3198ef129f0d",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.SpatialTest.eq_of_value_eq",
@@ -47291,13 +47343,42 @@
         "Carleman.higherDirichletSubspace_one",
         "Carleman.higherDirichletEnergy_complete"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "17b0a22b45b9d314f90414b72d3c3198ef129f0d",
+        "source_head_sha": "17b0a22b45b9d314f90414b72d3c3198ef129f0d",
+        "ci_url": null,
+        "finished_at": "2026-10-20T04:59:33.750361+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "333fe1f4b227d3f50e0958e58d95d9a8393d94c793d8af0446559128e4992ad6",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9130,
+          "sha256": "c917b89693ffedc332308f93df117eedddce1c4c6cc2f61b7a8a3aca413c2042"
+        }
+      },
       "blocker": null,
       "attempts": [
         "已有一般弱射流Hilbert空间、坐标导数、测试弱导数和m=1闭包，可复用。",
         "两模块25项任意阶空间声明定向3221、全库4239 jobs与9130项递归公理审计均exit 0。"
       ],
-      "next_action": "从实际迭代坐标导数构造所有阶紧支光滑测试射流及原H₀ᵐ闭包、稠密值嵌入，为原高阶变系数算子建立边界空间。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -47312,7 +47393,39 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "17b0a22b45b9d314f90414b72d3c3198ef129f0d"
+    },
+    {
+      "id": "T217",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "任意阶真实弱乘积与H₀ᵐ的光滑权保持",
+      "goal_ids": [
+        "C233"
+      ],
+      "acceptance": [
+        "通过实际Leibniz场、弱导数唯一性和混合交换构造所有对称阶分量",
+        "乘法在真实Hm图范数连续，不输入乘积射流存在",
+        "原紧支光滑测试在乘法下保持，从闭包得真实H₀ᵐ保持"
+      ],
+      "dependencies": [
+        "C232"
+      ],
+      "branch": "main",
+      "base_commit": "17b0a22b45b9d314f90414b72d3c3198ef129f0d",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "T216两模块25声明4239根构建、9130公理审计PASS；已定位一般Leibniz弱场与弱混合交换。"
+      ],
+      "next_action": "从实际Leibniz场和弱混合导数交换构造Hm上的连续乘法，再由真实测试闭包证明光滑权保持H₀ᵐ。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
