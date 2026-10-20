@@ -1014,3 +1014,6 @@ public import Carleman.Control.CartesianWeakLimitIdentity
 public import Carleman.Control.PhysicalRefinement
 public import Carleman.Control.FixedBoxControlData
 public import Carleman.Control.CartesianControlRefinement
+public import Carleman.Control.RegionalWeakControlLimit
+public import Carleman.Control.FiniteWeakControlIdentity
+public import Carleman.Control.CartesianControlWeakAccumulation

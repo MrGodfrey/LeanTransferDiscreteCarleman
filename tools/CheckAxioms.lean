@@ -7896,6 +7896,19 @@ set_option pp.maxSteps 1000000
 #check @Carleman.Physical.box_cartesian_controls_independent_refinement
 #print axioms Carleman.Physical.box_cartesian_controls_independent_refinement
 
+
+-- T198: every original weak control accumulation point.
+#check @Carleman.hilbert_weak_limit_norm_le
+#print axioms Carleman.hilbert_weak_limit_norm_le
+#check @Carleman.regional_control_of_weak_limit
+#print axioms Carleman.regional_control_of_weak_limit
+#check @Carleman.FiniteDirichletControlIdentity
+#print axioms Carleman.FiniteDirichletControlIdentity
+#check @Carleman.cartesian_weak_control_limit_finite_identity
+#print axioms Carleman.cartesian_weak_control_limit_finite_identity
+#check @Carleman.Physical.box_cartesian_controls_weak_accumulation
+#print axioms Carleman.Physical.box_cartesian_controls_weak_accumulation
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

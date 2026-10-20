@@ -12,7 +12,7 @@
     "state": "RUNNING",
     "current_task_id": "T198",
     "supervisor_checked_at": "2026-10-20T02:48:48.623297+00:00",
-    "next_action": "接入任意控制弱极限、同一状态子列和原有限测试弱恒等式。",
+    "next_action": "本地完整构建和公理审计通过；固定证明提交后交独立Agent验收每个原控制弱积点、同一状态及量词。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T02:42:44.997590+00:00"
@@ -18432,7 +18432,13 @@
       "paper_labels": [
         "prop:control-convergence"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.hilbert_weak_limit_norm_le",
+        "Carleman.regional_control_of_weak_limit",
+        "Carleman.FiniteDirichletControlIdentity",
+        "Carleman.cartesian_weak_control_limit_finite_identity",
+        "Carleman.Physical.box_cartesian_controls_weak_accumulation"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -43948,14 +43954,35 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.hilbert_weak_limit_norm_le",
+        "Carleman.regional_control_of_weak_limit",
+        "Carleman.FiniteDirichletControlIdentity",
+        "Carleman.cartesian_weak_control_limit_finite_identity",
+        "Carleman.Physical.box_cartesian_controls_weak_accumulation"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "T197原控制选择4071定向/4189全库jobs、8726公理审计PASS，独立验收进行中。"
+        "T197原控制选择4071定向/4189全库jobs、8726公理审计PASS，独立验收进行中。",
+        "5项正式声明完整probe exit0；4075定向jobs、4192全库jobs及8780项递归公理审计PASS。"
       ],
-      "next_action": "接入任意控制弱极限、同一状态子列和原有限测试弱恒等式。",
-      "integration_mode": "direct-main"
+      "next_action": "本地完整构建和公理审计通过；固定证明提交后交独立Agent验收每个原控制弱积点、同一状态及量词。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4192,
+        "recursive_axiom_audit": 8780,
+        "new_explicit_declarations": 5,
+        "declaration_artifact_sha256": "0695c24f5a9f5e32ecd6b81b21e54e0d339840a9215ec97bbadd28f0617f69ce",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {
