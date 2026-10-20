@@ -9,22 +9,22 @@
     "started_at": "2026-10-17T09:43:34.927869+00:00"
   },
   "execution": {
-    "state": "RUNNING",
+    "state": "REVIEW",
     "current_task_id": "T270",
-    "supervisor_checked_at": "2026-10-20T12:31:26.990410+00:00",
-    "next_action": "把一般凸多面体真实控制接入已证弱状态/控制极限，完成Corollary7.9及全文验收。",
+    "supervisor_checked_at": "2026-10-20T12:31:41.472247+00:00",
+    "next_action": "全部26项已有完整证明入口；完成T269/T270独立原文验收与固定源码覆盖复核。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
+    "last_activity_at": "2026-10-20T12:31:41.472247+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
-      "source_head_sha": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
+      "checked_sha": "99d519544e0eb8d42a955ca6bff3935c322d855f",
+      "source_head_sha": "99d519544e0eb8d42a955ca6bff3935c322d855f",
       "ci_url": null,
-      "finished_at": "2026-10-20T12:19:09.920158+00:00",
+      "finished_at": "2026-10-20T12:27:10.790056+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "a67adda8d9e898933f57f489ce3ab685cc5957a66fcdcb5214a342f15eb11542",
+      "source_manifest_sha256": "8eefad9a39e0979ca9fccae128ab8b49c23edde850b891dff1e4113cf56e139b",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10585,
-        "sha256": "e0e3da2180909af0258d6fa929159430a54a2df9e82c3e6681f31a5752281ee4"
+        "declarations": 10681,
+        "sha256": "afc286b5b5428afa187e1b30e3b5dff3956af66304d01265ffc1d826bd419bd0"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
-      "source_head_sha": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
+      "checked_sha": "99d519544e0eb8d42a955ca6bff3935c322d855f",
+      "source_head_sha": "99d519544e0eb8d42a955ca6bff3935c322d855f",
       "ci_url": null,
-      "finished_at": "2026-10-20T12:19:09.920158+00:00",
+      "finished_at": "2026-10-20T12:27:10.790056+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "a67adda8d9e898933f57f489ce3ab685cc5957a66fcdcb5214a342f15eb11542",
+      "source_manifest_sha256": "8eefad9a39e0979ca9fccae128ab8b49c23edde850b891dff1e4113cf56e139b",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10585,
-        "sha256": "e0e3da2180909af0258d6fa929159430a54a2df9e82c3e6681f31a5752281ee4"
+        "declarations": 10681,
+        "sha256": "afc286b5b5428afa187e1b30e3b5dff3956af66304d01265ffc1d826bd419bd0"
       }
     }
   },
@@ -24637,7 +24637,7 @@
       "milestone": "M6c",
       "scope": "PAPER",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "lean_declarations": [
         "Carleman.Physical.FiniteHalfspaceP1Refinement",
         "Carleman.Physical.finite_halfspace_p1_controls_independent_refinement",
@@ -24653,9 +24653,38 @@
       "blocker": null,
       "scope_notes": "一般凸多面体P1与原Cartesian分支的离散区域控制重构、相对弱紧和全部弱聚点的连续零控制身份。",
       "independent_review_status": "PENDING",
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "99d519544e0eb8d42a955ca6bff3935c322d855f",
+        "source_head_sha": "99d519544e0eb8d42a955ca6bff3935c322d855f",
+        "ci_url": null,
+        "finished_at": "2026-10-20T12:27:10.790056+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "8eefad9a39e0979ca9fccae128ab8b49c23edde850b891dff1e4113cf56e139b",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10681,
+          "sha256": "afc286b5b5428afa187e1b30e3b5dff3956af66304d01265ffc1d826bd419bd0"
+        }
+      },
       "semantic_review": null,
-      "declaration_version": null
+      "declaration_version": "99d519544e0eb8d42a955ca6bff3935c322d855f"
     }
   ],
   "events": [
@@ -57852,8 +57881,8 @@
         "C285"
       ],
       "base_commit": "b04fcf4526dac2c76c92f4d3155fc4e5763e947b",
-      "status": "RUNNING",
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "checkpoint_commit": "99d519544e0eb8d42a955ca6bff3935c322d855f",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.Physical.FiniteHalfspaceP1Refinement",
@@ -57862,10 +57891,39 @@
         "Carleman.Physical.finite_halfspace_p1_controls_null_limits",
         "Carleman.Physical.box_cartesian_controls_null_limits"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "99d519544e0eb8d42a955ca6bff3935c322d855f",
+        "source_head_sha": "99d519544e0eb8d42a955ca6bff3935c322d855f",
+        "ci_url": null,
+        "finished_at": "2026-10-20T12:27:10.790056+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "8eefad9a39e0979ca9fccae128ab8b49c23edde850b891dff1e4113cf56e139b",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10681,
+          "sha256": "afc286b5b5428afa187e1b30e3b5dff3956af66304d01265ffc1d826bd419bd0"
+        }
+      },
       "blocker": null,
       "attempts": [],
-      "next_action": "把一般凸多面体真实控制接入已证弱状态/控制极限，完成Corollary7.9及全文验收。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "local_validation": {
         "target": "Carleman.Control.FiniteHalfspaceP1NullControlLimits",
         "target_jobs": 4170,
@@ -57876,7 +57934,8 @@
         "recursive_axiom_declarations": 10681,
         "axiom_exit_code": 0,
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "99d519544e0eb8d42a955ca6bff3935c322d855f"
     }
   ],
   "private_maintenance": {
