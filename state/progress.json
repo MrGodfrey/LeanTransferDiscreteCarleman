@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T221",
-    "supervisor_checked_at": "2026-10-20T05:36:03.406576+00:00",
-    "next_action": "从原固定光滑profile供应全部权导数常数，构造H₀ᵐ中的真实乘后状态，将共轭误差与任意小常数插值及原coercivity合并。",
+    "current_task_id": "T222",
+    "supervisor_checked_at": "2026-10-20T05:40:38.750153+00:00",
+    "next_action": "以局部磨光的真实紧支测试和L²强极限证明W¹,∞系数乘积法则，保留一般W²ᵐ,∞系数路线。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5",
-      "source_head_sha": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5",
+      "checked_sha": "e9e50330857e19ec60f3f65e664f9b240029fdcc",
+      "source_head_sha": "e9e50330857e19ec60f3f65e664f9b240029fdcc",
       "ci_url": null,
-      "finished_at": "2026-10-20T05:27:48.841200+00:00",
+      "finished_at": "2026-10-20T05:39:20.960088+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "6f446fda53b8e86aa66e13ad2e37eb14fcc55c4835bd12fed2dcc99cd2c7ae51",
+      "source_manifest_sha256": "214fbd66e3a265bba559e8aee18424a3d32af06fc399bfacaf777ac513d7057f",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9285,
-        "sha256": "a9599c334d28d499f6a9b18871c5c7af140f17cd78ba37d1d0afe7c83a9cb8da"
+        "declarations": 9289,
+        "sha256": "63af521350768197fab1eb6426e2af8d7dc8f9c6e8e47e12166d60562992f5e3"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5",
-      "source_head_sha": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5",
+      "checked_sha": "e9e50330857e19ec60f3f65e664f9b240029fdcc",
+      "source_head_sha": "e9e50330857e19ec60f3f65e664f9b240029fdcc",
       "ci_url": null,
-      "finished_at": "2026-10-20T05:27:48.841200+00:00",
+      "finished_at": "2026-10-20T05:39:20.960088+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "6f446fda53b8e86aa66e13ad2e37eb14fcc55c4835bd12fed2dcc99cd2c7ae51",
+      "source_manifest_sha256": "214fbd66e3a265bba559e8aee18424a3d32af06fc399bfacaf777ac513d7057f",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9285,
-        "sha256": "a9599c334d28d499f6a9b18871c5c7af140f17cd78ba37d1d0afe7c83a9cb8da"
+        "declarations": 9289,
+        "sha256": "63af521350768197fab1eb6426e2af8d7dc8f9c6e8e47e12166d60562992f5e3"
       }
     }
   },
@@ -20304,7 +20304,7 @@
       "paper_ref": "paper/main.tex:2637–2652 与 eq:unshiftedcoercive",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:spatial-operators"
@@ -20315,8 +20315,37 @@
         "Carleman.higherCoefficientForm_allowedWeight_lower",
         "Carleman.higherCoefficientForm_closure_weighted_coercivity"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "e9e50330857e19ec60f3f65e664f9b240029fdcc",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "e9e50330857e19ec60f3f65e664f9b240029fdcc",
+        "source_head_sha": "e9e50330857e19ec60f3f65e664f9b240029fdcc",
+        "ci_url": null,
+        "finished_at": "2026-10-20T05:39:20.960088+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "214fbd66e3a265bba559e8aee18424a3d32af06fc399bfacaf777ac513d7057f",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9289,
+          "sha256": "63af521350768197fab1eb6426e2af8d7dc8f9c6e8e47e12166d60562992f5e3"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C030",
@@ -20328,7 +20357,31 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "原全H₀ᵐ状态、全部允许指数权、q与T统一的形式加权下界；完整A.1的算子交换子仍待，17/26。"
+      "scope_notes": "原全H₀ᵐ状态、全部允许指数权、q与T统一的形式加权下界；完整A.1的算子交换子仍待，17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C238",
+      "title": "真实弱有界系数的分布乘积法则",
+      "paper_ref": "paper/main.tex:2624–2635，一般W²ᵐ,∞系数算子Leibniz步骤",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:spatial-operators"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C027",
+        "C030"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "真实弱有界系数的基础乘积规则；一般阶算子及完整A.1仍待，17/26。"
     }
   ],
   "events": [
@@ -48300,9 +48353,9 @@
       ],
       "branch": "main",
       "base_commit": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "e9e50330857e19ec60f3f65e664f9b240029fdcc",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.higherDirichlet_smoothProduct_exists",
@@ -48310,13 +48363,42 @@
         "Carleman.higherCoefficientForm_allowedWeight_lower",
         "Carleman.higherCoefficientForm_closure_weighted_coercivity"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "e9e50330857e19ec60f3f65e664f9b240029fdcc",
+        "source_head_sha": "e9e50330857e19ec60f3f65e664f9b240029fdcc",
+        "ci_url": null,
+        "finished_at": "2026-10-20T05:39:20.960088+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "214fbd66e3a265bba559e8aee18424a3d32af06fc399bfacaf777ac513d7057f",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9289,
+          "sha256": "63af521350768197fab1eb6426e2af8d7dc8f9c6e8e47e12166d60562992f5e3"
+        }
+      },
       "blocker": null,
       "attempts": [
         "已实现原H₀ᵐ乘后状态存在及指数权逆权/相对导数常数供应；接入实际误差和coercivity。",
         "原允许权逆权与统一相对导数、真实H₀ᵐ乘后状态、原coercivity吸收与N范数比较均已编译。目标3303、root4247 jobs实际exit 0；9289声明递归审计PASS。"
       ],
-      "next_action": "从原固定光滑profile供应全部权导数常数，构造H₀ᵐ中的真实乘后状态，将共轭误差与任意小常数插值及原coercivity合并。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -48335,7 +48417,40 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "review": "PENDING"
-      }
+      },
+      "declaration_version": "e9e50330857e19ec60f3f65e664f9b240029fdcc"
+    },
+    {
+      "id": "T222",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "真实弱有界系数的分布乘积法则",
+      "goal_ids": [
+        "C238"
+      ],
+      "acceptance": [
+        "所有原紧支光滑测试上的真实分布乘积公式",
+        "系数仅有界可测及真实弱导数，不增加光滑代表假设",
+        "零延拓仅作L²延拓，不冒称边界外全局弱导数"
+      ],
+      "dependencies": [
+        "C027",
+        "C030"
+      ],
+      "branch": "main",
+      "base_commit": "e9e50330857e19ec60f3f65e664f9b240029fdcc",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "局部磨光测试及其导数强收敛已实现，正在连接有界弱系数乘积公式。"
+      ],
+      "next_action": "以局部磨光的真实紧支测试和L²强极限证明W¹,∞系数乘积法则，保留一般W²ᵐ,∞系数路线。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
