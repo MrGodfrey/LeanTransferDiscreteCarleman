@@ -1132,3 +1132,5 @@ public import Carleman.Spatial.BoundaryCutoffTransfer
 public import Carleman.Geometry.CoordinateLevelGraph
 
 public import Carleman.Geometry.SmoothGraphHeightExtension
+
+public import Carleman.Geometry.SublevelGraphRegularity

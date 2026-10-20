@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T245",
-    "supervisor_checked_at": "2026-10-20T08:45:28.708385+00:00",
+    "supervisor_checked_at": "2026-10-20T08:51:02.663200+00:00",
     "next_action": "利用原法向导数的符号证明局部子水平集与图域精确相同，并构造边界截断。",
     "blocker": null,
     "pause_reason": null,
@@ -22374,7 +22374,7 @@
       "pr_url": null,
       "id": "C260",
       "title": "局部法向不变高度的全局光滑有界导数延拓",
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "lean_declarations": [
         "Carleman.exists_compact_smooth_extension_near",
         "Carleman.exists_lipschitzWith_of_smooth_compact",
@@ -22391,7 +22391,7 @@
       ],
       "blocker": null,
       "scope_notes": "局部高度延拓并内部给全局C/B资格；仍需子水平侧身份、覆盖及凸域统一控制，AUXILIARY，18/26。",
-      "independent_review_status": "PENDING",
+      "independent_review_status": "PASS",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -22422,7 +22422,25 @@
           "sha256": "657e48a508f2e054f4588f44cd3c06f0324e48a5a871d7993f85470cbb5d360c"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "31c84b810ce9f75a97bc2fc5a5cae481a9252183",
+        "declarations": [
+          "Carleman.exists_compact_smooth_extension_near",
+          "Carleman.exists_lipschitzWith_of_smooth_compact",
+          "Carleman.coordinateTangentProjection",
+          "Carleman.coordinateLevelMap_constant_affine",
+          "Carleman.coordinateLevelMap_constant_lipschitz",
+          "Carleman.coordinateLevelMap_constant_hasFDerivAt",
+          "Carleman.exists_smooth_normal_invariant_extension",
+          "Carleman.exists_bounded_smooth_coordinate_level_height",
+          "Carleman.halfspaceSmoothInner_bounded_coordinate_level_height"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/716031127e9645f4476e104ec26dd92d6c51f4bd/governance/reviews/T244-local-acceptance.md",
+        "reviewed_at": "2026-10-20T08:48:04+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "declaration_version": "31c84b810ce9f75a97bc2fc5a5cae481a9252183"
     },
     {
@@ -22437,7 +22455,20 @@
       "id": "C261",
       "title": "原子水平域的真实图侧及边界截断邻域",
       "verification_status": "SPECIFIED",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.coordinateLine",
+        "Carleman.coordinateLine_self",
+        "Carleman.coordinateLine_hasDerivAt",
+        "Carleman.coordinateLine_convex_preimage",
+        "Carleman.coordinateLine_lt_iff_of_positive",
+        "Carleman.coordinateLine_lt_iff_of_negative",
+        "Carleman.exists_sublevel_hypograph_near_of_positive",
+        "Carleman.exists_sublevel_epigraph_near_of_negative",
+        "Carleman.exists_sublevel_graph_near_regular",
+        "Carleman.exists_spatial_cutoff_one_near",
+        "Carleman.exists_local_dirichlet_H2_of_regular_level",
+        "Carleman.halfspaceSmoothInner_local_boundary_H2"
+      ],
       "dependencies": [
         "C260",
         "C258"
@@ -23847,6 +23878,11 @@
       "at": "2026-10-20T08:44:30.626683+00:00",
       "public_summary": "原非退化水平边界的坐标图和局部高度构造已通过固定本地验证与独立数学验收；原文覆盖18/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a8951af50a513ccfe529b27d1385920ff03c2ee8/governance/reviews/T243-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T08:51:02.663200+00:00",
+      "public_summary": "局部法向不变高度的全局光滑有界导数延拓已通过固定本地验证与独立数学验收；原文覆盖18/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/716031127e9645f4476e104ec26dd92d6c51f4bd/governance/reviews/T244-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -24335,7 +24371,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d81a68b7cfd6153ad7b5d45a5be5f42c038ef519/governance/reviews/T240-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ac2416736394ed41c57f349c96379bf4ae4a3718/governance/reviews/T241-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/faecb1d3d0dd83a2ec6ab2b7662181cf9d46ac07/governance/reviews/T242-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a8951af50a513ccfe529b27d1385920ff03c2ee8/governance/reviews/T243-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a8951af50a513ccfe529b27d1385920ff03c2ee8/governance/reviews/T243-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/716031127e9645f4476e104ec26dd92d6c51f4bd/governance/reviews/T244-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -52971,9 +53008,9 @@
         "C259"
       ],
       "base_commit": "e7240abc0fb7acb6a0e456cd916f1845a114b72a",
-      "status": "REVIEW",
+      "status": "MERGED",
       "checkpoint_commit": "31c84b810ce9f75a97bc2fc5a5cae481a9252183",
-      "merge_commit": null,
+      "merge_commit": "31c84b810ce9f75a97bc2fc5a5cae481a9252183",
       "lean_declarations": [
         "Carleman.exists_compact_smooth_extension_near",
         "Carleman.exists_lipschitzWith_of_smooth_compact",
@@ -52987,7 +53024,7 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -53027,9 +53064,22 @@
         "root_exit_code": 0,
         "recursive_axiom_declarations": 9963,
         "axiom_exit_code": 0,
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "31c84b810ce9f75a97bc2fc5a5cae481a9252183"
+      "declaration_version": "31c84b810ce9f75a97bc2fc5a5cae481a9252183",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C260"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "31c84b810ce9f75a97bc2fc5a5cae481a9252183",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T08:48:04+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/716031127e9645f4476e104ec26dd92d6c51f4bd/governance/reviews/T244-local-acceptance.md"
+        }
+      ]
     },
     {
       "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
@@ -53055,11 +53105,35 @@
       "status": "RUNNING",
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.coordinateLine",
+        "Carleman.coordinateLine_self",
+        "Carleman.coordinateLine_hasDerivAt",
+        "Carleman.coordinateLine_convex_preimage",
+        "Carleman.coordinateLine_lt_iff_of_positive",
+        "Carleman.coordinateLine_lt_iff_of_negative",
+        "Carleman.exists_sublevel_hypograph_near_of_positive",
+        "Carleman.exists_sublevel_epigraph_near_of_negative",
+        "Carleman.exists_sublevel_graph_near_regular",
+        "Carleman.exists_spatial_cutoff_one_near",
+        "Carleman.exists_local_dirichlet_H2_of_regular_level",
+        "Carleman.halfspaceSmoothInner_local_boundary_H2"
+      ],
       "blocker": null,
       "attempts": [],
-      "next_action": "利用原法向导数的符号证明局部子水平集与图域精确相同，并构造边界截断。",
-      "build_evidence": null
+      "next_action": "原子水平集的真实图侧、实际边界截断及同一原弱解的局部H²已证明，准备固定证据及独立验收。",
+      "build_evidence": null,
+      "local_validation": {
+        "target": "Carleman.Geometry.SublevelGraphRegularity",
+        "target_jobs": 3419,
+        "target_exit_code": 0,
+        "root_target": "Carleman",
+        "root_jobs": 4284,
+        "root_exit_code": 0,
+        "recursive_axiom_declarations": 9977,
+        "axiom_exit_code": 0,
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

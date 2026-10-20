@@ -9020,6 +9020,31 @@ set_option pp.maxSteps 1000000
 #check @Carleman.halfspaceSmoothInner_bounded_coordinate_level_height
 #print axioms Carleman.halfspaceSmoothInner_bounded_coordinate_level_height
 
+#check @Carleman.coordinateLine
+#print axioms Carleman.coordinateLine
+#check @Carleman.coordinateLine_self
+#print axioms Carleman.coordinateLine_self
+#check @Carleman.coordinateLine_hasDerivAt
+#print axioms Carleman.coordinateLine_hasDerivAt
+#check @Carleman.coordinateLine_convex_preimage
+#print axioms Carleman.coordinateLine_convex_preimage
+#check @Carleman.coordinateLine_lt_iff_of_positive
+#print axioms Carleman.coordinateLine_lt_iff_of_positive
+#check @Carleman.coordinateLine_lt_iff_of_negative
+#print axioms Carleman.coordinateLine_lt_iff_of_negative
+#check @Carleman.exists_sublevel_hypograph_near_of_positive
+#print axioms Carleman.exists_sublevel_hypograph_near_of_positive
+#check @Carleman.exists_sublevel_epigraph_near_of_negative
+#print axioms Carleman.exists_sublevel_epigraph_near_of_negative
+#check @Carleman.exists_sublevel_graph_near_regular
+#print axioms Carleman.exists_sublevel_graph_near_regular
+#check @Carleman.exists_spatial_cutoff_one_near
+#print axioms Carleman.exists_spatial_cutoff_one_near
+#check @Carleman.exists_local_dirichlet_H2_of_regular_level
+#print axioms Carleman.exists_local_dirichlet_H2_of_regular_level
+#check @Carleman.halfspaceSmoothInner_local_boundary_H2
+#print axioms Carleman.halfspaceSmoothInner_local_boundary_H2
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
