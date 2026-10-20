@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T220",
-    "supervisor_checked_at": "2026-10-20T05:21:16.860475+00:00",
+    "supervisor_checked_at": "2026-10-20T05:28:11.409386+00:00",
     "next_action": "剥离全部Leibniz展开中唯一无权导数主项，证明余项严格降低状态导数阶数，并据此控制原系数形式差。",
     "blocker": null,
     "pause_reason": null,
@@ -20128,7 +20128,7 @@
       "paper_ref": "paper/main.tex:2637–2650, Proposition A.1 的任意η插值步骤",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:spatial-operators"
@@ -20175,7 +20175,25 @@
           "sha256": "93b4a06fac6a4540ade877e4bb6acb4f188c50e7652343d4149217fac1428d96"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "1039ed66b829e865571f6ba6da574091bd785a80",
+        "declarations": [
+          "Carleman.WeakSobolevJet.lowerParameterNorm",
+          "Carleman.WeakSobolevJet.lowerParameterNorm_nonneg",
+          "Carleman.WeakSobolevJet.lowerParameterNorm_rescale",
+          "Carleman.WeakSobolevJet.boundedLipschitz_lowerParameter_small",
+          "Carleman.WeakSobolevJet.boundedLipschitz_lowerParameter_product_small",
+          "Carleman.WeakSobolevJet.lowerOrderQuadratic_le",
+          "Carleman.WeakSobolevJet.boundedLipschitz_lowerOrderQuadratic_small",
+          "Carleman.SobolevHilbert.toJet_norm_le",
+          "Carleman.boundedLipschitz_hilbert_lowerOrderQuadratic_small"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2dc8b09b757c041154c765d0d39d71ca67923c79/governance/reviews/T219-local-acceptance.md",
+        "reviewed_at": "2026-10-20T05:25:52+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C027",
         "C036"
@@ -20183,7 +20201,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "真实弱Sobolev射流的低阶项任意小常数估计；不输入目标插值，不提升完整Prop A.1；17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C236",
@@ -20196,13 +20214,29 @@
       "paper_labels": [
         "prop:spatial-operators"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.derivativeSplits_empty_left",
+        "Carleman.derivativeRemainderSplits",
+        "Carleman.derivativeRemainderSplits_lt",
+        "Carleman.WeakSobolevJet.leibnizRemainder",
+        "Carleman.WeakSobolevJet.leibnizField_eq_principal_add",
+        "Carleman.WeakSobolevJet.lowerParameterNorm_component",
+        "Carleman.WeakSobolevJet.lowerParameterNorm_le_parameterNorm",
+        "Carleman.WeakSobolevJet.leibnizRemainder_term_bound",
+        "Carleman.WeakSobolevJet.leibnizRemainder_weighted_bound",
+        "Carleman.WeakSobolevJet.conjugated_word_remainder_bound",
+        "Carleman.jetScalarComponent_parameter_le",
+        "Carleman.coefficientJetForm_inverse_pairing",
+        "Carleman.coefficientJetForm_error_of_components",
+        "Carleman.intrinsic_conjugated_component_remainder_bound",
+        "Carleman.coefficientJetForm_smooth_conjugation_error"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
       "dependencies": [
         "C027",
-        "C233",
+        "C030",
         "C234",
         "C235"
       ],
@@ -21483,6 +21517,11 @@
       "at": "2026-10-20T05:20:05.588829+00:00",
       "public_summary": "任意阶原系数形式与统一加权上界已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/523976572bfe70ad8a386ea3ad1ffb777271912f/governance/reviews/T218-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T05:28:11.409386+00:00",
+      "public_summary": "真实低阶Sobolev项的小常数插值与二次吸收已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2dc8b09b757c041154c765d0d39d71ca67923c79/governance/reviews/T219-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -21946,7 +21985,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/acc193c0a9a79624439b8af36a929bfa3a47367b/governance/reviews/T215-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/061e2229186295742d29c00397e0b7a1ed480e2e/governance/reviews/T216-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/88a654dd8d9df39e068402478c40caa6cd62f74c/governance/reviews/T217-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/523976572bfe70ad8a386ea3ad1ffb777271912f/governance/reviews/T218-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/523976572bfe70ad8a386ea3ad1ffb777271912f/governance/reviews/T218-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2dc8b09b757c041154c765d0d39d71ca67923c79/governance/reviews/T219-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -47951,10 +47991,10 @@
       ],
       "branch": "main",
       "base_commit": "b41b6861b988e758d026fed32f5d5802e411b636",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "1039ed66b829e865571f6ba6da574091bd785a80",
-      "merge_commit": null,
+      "merge_commit": "1039ed66b829e865571f6ba6da574091bd785a80",
       "lean_declarations": [
         "Carleman.WeakSobolevJet.lowerParameterNorm",
         "Carleman.WeakSobolevJet.lowerParameterNorm_nonneg",
@@ -48001,7 +48041,7 @@
         "已从真实参数插值用R*q缩放得到低阶增益；试编译正在处理乘法消去的库引理名称。",
         "完整9项声明通过；定向3239/full4244 jobs及9261项全命名空间递归公理审计actual exit0。原双和完整分解、任意η常数、真实Hᵐ范数均已核对。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -48016,9 +48056,23 @@
         "raw_sha256": "93b4a06fac6a4540ade877e4bb6acb4f188c50e7652343d4149217fac1428d96",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "review": "PENDING"
+        "review": "PENDING",
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "1039ed66b829e865571f6ba6da574091bd785a80"
+      "declaration_version": "1039ed66b829e865571f6ba6da574091bd785a80",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C235"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "1039ed66b829e865571f6ba6da574091bd785a80",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T05:25:52+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2dc8b09b757c041154c765d0d39d71ca67923c79/governance/reviews/T219-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T220",
@@ -48035,7 +48089,7 @@
       ],
       "dependencies": [
         "C027",
-        "C233",
+        "C030",
         "C234",
         "C235"
       ],
@@ -48045,14 +48099,47 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.derivativeSplits_empty_left",
+        "Carleman.derivativeRemainderSplits",
+        "Carleman.derivativeRemainderSplits_lt",
+        "Carleman.WeakSobolevJet.leibnizRemainder",
+        "Carleman.WeakSobolevJet.leibnizField_eq_principal_add",
+        "Carleman.WeakSobolevJet.lowerParameterNorm_component",
+        "Carleman.WeakSobolevJet.lowerParameterNorm_le_parameterNorm",
+        "Carleman.WeakSobolevJet.leibnizRemainder_term_bound",
+        "Carleman.WeakSobolevJet.leibnizRemainder_weighted_bound",
+        "Carleman.WeakSobolevJet.conjugated_word_remainder_bound",
+        "Carleman.jetScalarComponent_parameter_le",
+        "Carleman.coefficientJetForm_inverse_pairing",
+        "Carleman.coefficientJetForm_error_of_components",
+        "Carleman.intrinsic_conjugated_component_remainder_bound",
+        "Carleman.coefficientJetForm_smooth_conjugation_error"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "开始从实际derivativeSplits过滤唯一空左词，严格降阶已通过试编译。"
+        "开始从实际derivativeSplits过滤唯一空左词，严格降阶已通过试编译。",
+        "真实完整Leibniz余项与原系数共轭差15声明通过；定向3284/full4246 jobs及9285项递归公理审计actual exit0。"
       ],
       "next_action": "剥离全部Leibniz展开中唯一无权导数主项，证明余项严格降低状态导数阶数，并据此控制原系数形式差。",
-      "integration_mode": "direct-main"
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman.Spatial.LeibnizRemainder",
+          "Carleman.Spatial.CoefficientConjugationError",
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4246,
+        "recursive_axiom_audit": 9285,
+        "new_explicit_declarations": 15,
+        "raw_sha256": "a9599c334d28d499f6a9b18871c5c7af140f17cd78ba37d1d0afe7c83a9cb8da",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

@@ -1077,3 +1077,6 @@ public import Carleman.Spatial.CoefficientJetForm
 public import Carleman.Spatial.HigherCoefficientForm
 
 public import Carleman.Spatial.SmallParameterInterpolation
+
+public import Carleman.Spatial.LeibnizRemainder
+public import Carleman.Spatial.CoefficientConjugationError

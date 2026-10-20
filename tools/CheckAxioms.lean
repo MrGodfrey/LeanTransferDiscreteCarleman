@@ -8325,6 +8325,38 @@ set_option pp.maxSteps 1000000
 #check @Carleman.boundedLipschitz_hilbert_lowerOrderQuadratic_small
 #print axioms Carleman.boundedLipschitz_hilbert_lowerOrderQuadratic_small
 
+-- T220: actual strictly lower-order Leibniz remainder and coefficient-form error.
+#check @Carleman.derivativeSplits_empty_left
+#print axioms Carleman.derivativeSplits_empty_left
+#check @Carleman.derivativeRemainderSplits
+#print axioms Carleman.derivativeRemainderSplits
+#check @Carleman.derivativeRemainderSplits_lt
+#print axioms Carleman.derivativeRemainderSplits_lt
+#check @Carleman.WeakSobolevJet.leibnizRemainder
+#print axioms Carleman.WeakSobolevJet.leibnizRemainder
+#check @Carleman.WeakSobolevJet.leibnizField_eq_principal_add
+#print axioms Carleman.WeakSobolevJet.leibnizField_eq_principal_add
+#check @Carleman.WeakSobolevJet.lowerParameterNorm_component
+#print axioms Carleman.WeakSobolevJet.lowerParameterNorm_component
+#check @Carleman.WeakSobolevJet.lowerParameterNorm_le_parameterNorm
+#print axioms Carleman.WeakSobolevJet.lowerParameterNorm_le_parameterNorm
+#check @Carleman.WeakSobolevJet.leibnizRemainder_term_bound
+#print axioms Carleman.WeakSobolevJet.leibnizRemainder_term_bound
+#check @Carleman.WeakSobolevJet.leibnizRemainder_weighted_bound
+#print axioms Carleman.WeakSobolevJet.leibnizRemainder_weighted_bound
+#check @Carleman.WeakSobolevJet.conjugated_word_remainder_bound
+#print axioms Carleman.WeakSobolevJet.conjugated_word_remainder_bound
+#check @Carleman.jetScalarComponent_parameter_le
+#print axioms Carleman.jetScalarComponent_parameter_le
+#check @Carleman.coefficientJetForm_inverse_pairing
+#print axioms Carleman.coefficientJetForm_inverse_pairing
+#check @Carleman.coefficientJetForm_error_of_components
+#print axioms Carleman.coefficientJetForm_error_of_components
+#check @Carleman.intrinsic_conjugated_component_remainder_bound
+#print axioms Carleman.intrinsic_conjugated_component_remainder_bound
+#check @Carleman.coefficientJetForm_smooth_conjugation_error
+#print axioms Carleman.coefficientJetForm_smooth_conjugation_error
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
