@@ -19912,11 +19912,27 @@
       "paper_labels": [
         "prop:spatial-operators"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.WeakSobolevJet.leibnizField_perm",
+        "Carleman.WeakSobolevJet.smoothProductJet",
+        "Carleman.WeakSobolevJet.smoothProductJet_value",
+        "Carleman.WeakSobolevJet.continuous_wordField",
+        "Carleman.WeakSobolevJet.continuous_leibnizField",
+        "Carleman.WeakSobolevJet.smoothProductCLM",
+        "Carleman.smoothProductCLM_test",
+        "Carleman.smoothProductCLM_mem_higherDirichlet",
+        "Carleman.boundedSmooth_map_mem_sobolev",
+        "Carleman.boundedSmooth_map_mem_higherDirichlet",
+        "Carleman.boundedSmooth_map_mem_higherDirichlet_domain"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
       "dependencies": [
+        "C027",
+        "C030",
+        "C083",
+        "C144",
         "C232"
       ],
       "blocker": null,
@@ -47410,6 +47426,10 @@
         "原紧支光滑测试在乘法下保持，从闭包得真实H₀ᵐ保持"
       ],
       "dependencies": [
+        "C027",
+        "C030",
+        "C083",
+        "C144",
         "C232"
       ],
       "branch": "main",
@@ -47418,14 +47438,41 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.WeakSobolevJet.leibnizField_perm",
+        "Carleman.WeakSobolevJet.smoothProductJet",
+        "Carleman.WeakSobolevJet.smoothProductJet_value",
+        "Carleman.WeakSobolevJet.continuous_wordField",
+        "Carleman.WeakSobolevJet.continuous_leibnizField",
+        "Carleman.WeakSobolevJet.smoothProductCLM",
+        "Carleman.smoothProductCLM_test",
+        "Carleman.smoothProductCLM_mem_higherDirichlet",
+        "Carleman.boundedSmooth_map_mem_sobolev",
+        "Carleman.boundedSmooth_map_mem_higherDirichlet",
+        "Carleman.boundedSmooth_map_mem_higherDirichlet_domain"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "T216两模块25声明4239根构建、9130公理审计PASS；已定位一般Leibniz弱场与弱混合交换。"
+        "T216两模块25声明4239根构建、9130公理审计PASS；已定位一般Leibniz弱场与弱混合交换。",
+        "两模块11项实际高阶乘法声明定向3229、全库4241 jobs与9173项递归公理审计均exit 0。"
       ],
       "next_action": "从实际Leibniz场和弱混合导数交换构造Hm上的连续乘法，再由真实测试闭包证明光滑权保持H₀ᵐ。",
-      "integration_mode": "direct-main"
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4241,
+        "recursive_axiom_audit": 9173,
+        "new_explicit_declarations": 11,
+        "declaration_artifact_sha256": "eb96e122d444d248264fa65b14e0b6b121b3c65d9598a04117700b9caaa0f20e",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

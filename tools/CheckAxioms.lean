@@ -8245,6 +8245,30 @@ set_option pp.maxSteps 1000000
 #check @Carleman.higherDirichletEnergy_complete
 #print axioms Carleman.higherDirichletEnergy_complete
 
+-- T217: constructed smooth multiplication on actual Hm and H0m.
+#check @Carleman.WeakSobolevJet.leibnizField_perm
+#print axioms Carleman.WeakSobolevJet.leibnizField_perm
+#check @Carleman.WeakSobolevJet.smoothProductJet
+#print axioms Carleman.WeakSobolevJet.smoothProductJet
+#check @Carleman.WeakSobolevJet.smoothProductJet_value
+#print axioms Carleman.WeakSobolevJet.smoothProductJet_value
+#check @Carleman.WeakSobolevJet.continuous_wordField
+#print axioms Carleman.WeakSobolevJet.continuous_wordField
+#check @Carleman.WeakSobolevJet.continuous_leibnizField
+#print axioms Carleman.WeakSobolevJet.continuous_leibnizField
+#check @Carleman.WeakSobolevJet.smoothProductCLM
+#print axioms Carleman.WeakSobolevJet.smoothProductCLM
+#check @Carleman.smoothProductCLM_test
+#print axioms Carleman.smoothProductCLM_test
+#check @Carleman.smoothProductCLM_mem_higherDirichlet
+#print axioms Carleman.smoothProductCLM_mem_higherDirichlet
+#check @Carleman.boundedSmooth_map_mem_sobolev
+#print axioms Carleman.boundedSmooth_map_mem_sobolev
+#check @Carleman.boundedSmooth_map_mem_higherDirichlet
+#print axioms Carleman.boundedSmooth_map_mem_higherDirichlet
+#check @Carleman.boundedSmooth_map_mem_higherDirichlet_domain
+#print axioms Carleman.boundedSmooth_map_mem_higherDirichlet_domain
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

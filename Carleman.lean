@@ -1069,3 +1069,6 @@ public import Carleman.Control.DirichletEnergySolution
 
 public import Carleman.Spatial.SpatialTestAllOrders
 public import Carleman.Spatial.HigherDirichletSpace
+
+public import Carleman.Spatial.HigherWeakProduct
+public import Carleman.Spatial.HigherDirichletProduct
