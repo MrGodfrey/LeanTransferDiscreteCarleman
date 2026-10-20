@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T221",
-    "supervisor_checked_at": "2026-10-20T05:29:22.702513+00:00",
+    "supervisor_checked_at": "2026-10-20T05:36:03.406576+00:00",
     "next_action": "从原固定光滑profile供应全部权导数常数，构造H₀ᵐ中的真实乘后状态，将共轭误差与任意小常数插值及原coercivity合并。",
     "blocker": null,
     "pause_reason": null,
@@ -20209,7 +20209,7 @@
       "paper_ref": "paper/main.tex:2637–2650, Proposition A.1 的真实共轭形式差",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:spatial-operators"
@@ -20262,7 +20262,31 @@
           "sha256": "a9599c334d28d499f6a9b18871c5c7af140f17cd78ba37d1d0afe7c83a9cb8da"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5",
+        "declarations": [
+          "Carleman.derivativeSplits_empty_left",
+          "Carleman.derivativeRemainderSplits",
+          "Carleman.derivativeRemainderSplits_lt",
+          "Carleman.WeakSobolevJet.leibnizRemainder",
+          "Carleman.WeakSobolevJet.leibnizField_eq_principal_add",
+          "Carleman.WeakSobolevJet.lowerParameterNorm_component",
+          "Carleman.WeakSobolevJet.lowerParameterNorm_le_parameterNorm",
+          "Carleman.WeakSobolevJet.leibnizRemainder_term_bound",
+          "Carleman.WeakSobolevJet.leibnizRemainder_weighted_bound",
+          "Carleman.WeakSobolevJet.conjugated_word_remainder_bound",
+          "Carleman.jetScalarComponent_parameter_le",
+          "Carleman.coefficientJetForm_inverse_pairing",
+          "Carleman.coefficientJetForm_error_of_components",
+          "Carleman.intrinsic_conjugated_component_remainder_bound",
+          "Carleman.coefficientJetForm_smooth_conjugation_error"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6b2e214345ec21a1553d0359485a1990607d6d13/governance/reviews/T220-local-acceptance.md",
+        "reviewed_at": "2026-10-20T05:31:08+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C027",
         "C030",
@@ -20272,7 +20296,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "原全部系数形式的实际非主项控制，不假定系数光滑或目标误差界；17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C237",
@@ -20285,7 +20309,12 @@
       "paper_labels": [
         "prop:spatial-operators"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.higherDirichlet_smoothProduct_exists",
+        "Carleman.allowedWeight_inverse_relative_uniform",
+        "Carleman.higherCoefficientForm_allowedWeight_lower",
+        "Carleman.higherCoefficientForm_closure_weighted_coercivity"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -21579,6 +21608,11 @@
       "at": "2026-10-20T05:28:11.409386+00:00",
       "public_summary": "真实低阶Sobolev项的小常数插值与二次吸收已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2dc8b09b757c041154c765d0d39d71ca67923c79/governance/reviews/T219-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T05:36:03.406576+00:00",
+      "public_summary": "真实Leibniz非主项与一般系数共轭误差已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6b2e214345ec21a1553d0359485a1990607d6d13/governance/reviews/T220-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -22043,7 +22077,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/061e2229186295742d29c00397e0b7a1ed480e2e/governance/reviews/T216-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/88a654dd8d9df39e068402478c40caa6cd62f74c/governance/reviews/T217-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/523976572bfe70ad8a386ea3ad1ffb777271912f/governance/reviews/T218-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2dc8b09b757c041154c765d0d39d71ca67923c79/governance/reviews/T219-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2dc8b09b757c041154c765d0d39d71ca67923c79/governance/reviews/T219-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6b2e214345ec21a1553d0359485a1990607d6d13/governance/reviews/T220-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -48152,10 +48187,10 @@
       ],
       "branch": "main",
       "base_commit": "1039ed66b829e865571f6ba6da574091bd785a80",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5",
-      "merge_commit": null,
+      "merge_commit": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5",
       "lean_declarations": [
         "Carleman.derivativeSplits_empty_left",
         "Carleman.derivativeRemainderSplits",
@@ -48208,7 +48243,7 @@
         "开始从实际derivativeSplits过滤唯一空左词，严格降阶已通过试编译。",
         "真实完整Leibniz余项与原系数共轭差15声明通过；定向3284/full4246 jobs及9285项递归公理审计actual exit0。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -48224,9 +48259,23 @@
         "raw_sha256": "a9599c334d28d499f6a9b18871c5c7af140f17cd78ba37d1d0afe7c83a9cb8da",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "review": "PENDING"
+        "review": "PENDING",
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5"
+      "declaration_version": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C236"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "1d10859fce3c68f87f9f5e7e166f41e3c90d60c5",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T05:31:08+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6b2e214345ec21a1553d0359485a1990607d6d13/governance/reviews/T220-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T221",
@@ -48255,14 +48304,38 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.higherDirichlet_smoothProduct_exists",
+        "Carleman.allowedWeight_inverse_relative_uniform",
+        "Carleman.higherCoefficientForm_allowedWeight_lower",
+        "Carleman.higherCoefficientForm_closure_weighted_coercivity"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "已实现原H₀ᵐ乘后状态存在及指数权逆权/相对导数常数供应；接入实际误差和coercivity。"
+        "已实现原H₀ᵐ乘后状态存在及指数权逆权/相对导数常数供应；接入实际误差和coercivity。",
+        "原允许权逆权与统一相对导数、真实H₀ᵐ乘后状态、原coercivity吸收与N范数比较均已编译。目标3303、root4247 jobs实际exit 0；9289声明递归审计PASS。"
       ],
       "next_action": "从原固定光滑profile供应全部权导数常数，构造H₀ᵐ中的真实乘后状态，将共轭误差与任意小常数插值及原coercivity合并。",
-      "integration_mode": "direct-main"
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman.Spatial.HigherWeightedCoercivity",
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": [
+          3303,
+          4247
+        ],
+        "recursive_axiom_audit": 9289,
+        "new_explicit_declarations": 4,
+        "raw_sha256": "63af521350768197fab1eb6426e2af8d7dc8f9c6e8e47e12166d60562992f5e3",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

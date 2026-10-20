@@ -8357,6 +8357,16 @@ set_option pp.maxSteps 1000000
 #check @Carleman.coefficientJetForm_smooth_conjugation_error
 #print axioms Carleman.coefficientJetForm_smooth_conjugation_error
 
+-- T221: original allowed-weight lower bound on the full H₀ᵐ space.
+#check @Carleman.higherDirichlet_smoothProduct_exists
+#print axioms Carleman.higherDirichlet_smoothProduct_exists
+#check @Carleman.allowedWeight_inverse_relative_uniform
+#print axioms Carleman.allowedWeight_inverse_relative_uniform
+#check @Carleman.higherCoefficientForm_allowedWeight_lower
+#print axioms Carleman.higherCoefficientForm_allowedWeight_lower
+#check @Carleman.higherCoefficientForm_closure_weighted_coercivity
+#print axioms Carleman.higherCoefficientForm_closure_weighted_coercivity
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

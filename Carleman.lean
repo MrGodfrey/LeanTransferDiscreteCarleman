@@ -1080,3 +1080,5 @@ public import Carleman.Spatial.SmallParameterInterpolation
 
 public import Carleman.Spatial.LeibnizRemainder
 public import Carleman.Spatial.CoefficientConjugationError
+
+public import Carleman.Spatial.HigherWeightedCoercivity
