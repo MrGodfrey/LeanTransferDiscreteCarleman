@@ -7876,6 +7876,26 @@ set_option pp.maxSteps 1000000
 #check @Carleman.cartesian_finite_test_weak_limit_identity
 #print axioms Carleman.cartesian_finite_test_weak_limit_identity
 
+-- T197: original independent refinement and actual control endpoints.
+#check @Carleman.Physical.physicalMeshScale_tendsto_atTop
+#print axioms Carleman.Physical.physicalMeshScale_tendsto_atTop
+#check @Carleman.Physical.physicalMeshScale_dt_bound
+#print axioms Carleman.Physical.physicalMeshScale_dt_bound
+#check @Carleman.Physical.physicalMeshScale_dt_tendsto_zero
+#print axioms Carleman.Physical.physicalMeshScale_dt_tendsto_zero
+#check @Carleman.Physical.physical_conditions_eventually
+#print axioms Carleman.Physical.physical_conditions_eventually
+#check @Carleman.Physical.physical_terminal_norm_tendsto_zero
+#print axioms Carleman.Physical.physical_terminal_norm_tendsto_zero
+#check @Carleman.cartesianGridPotential_bound
+#print axioms Carleman.cartesianGridPotential_bound
+#check @Carleman.cartesianBoxTimeControl_norm
+#print axioms Carleman.cartesianBoxTimeControl_norm
+#check @Carleman.cartesianBoxTimeControl_supported
+#print axioms Carleman.cartesianBoxTimeControl_supported
+#check @Carleman.Physical.box_cartesian_controls_independent_refinement
+#print axioms Carleman.Physical.box_cartesian_controls_independent_refinement
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

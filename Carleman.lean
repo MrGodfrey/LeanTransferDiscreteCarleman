@@ -1011,3 +1011,6 @@ public import Carleman.Control.FiniteTestPotentialConsistency
 
 public import Carleman.Control.CartesianWeakLimitTests
 public import Carleman.Control.CartesianWeakLimitIdentity
+public import Carleman.Control.PhysicalRefinement
+public import Carleman.Control.FixedBoxControlData
+public import Carleman.Control.CartesianControlRefinement

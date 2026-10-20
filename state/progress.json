@@ -12,7 +12,7 @@
     "state": "RUNNING",
     "current_task_id": "T197",
     "supervisor_checked_at": "2026-10-20T02:38:45.732390+00:00",
-    "next_action": "证明原网格尺度极限和最终物理条件，接入实际HUM控制及单元平均初值。",
+    "next_action": "本地完整构建和公理审计通过；固定证明提交后交独立Agent验收原控制选择、常数量词、真实支撑和端点。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T02:35:14.275113+00:00"
@@ -18350,7 +18350,17 @@
       "paper_labels": [
         "prop:control-convergence"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.physicalMeshScale_tendsto_atTop",
+        "Carleman.Physical.physicalMeshScale_dt_bound",
+        "Carleman.Physical.physicalMeshScale_dt_tendsto_zero",
+        "Carleman.Physical.physical_conditions_eventually",
+        "Carleman.Physical.physical_terminal_norm_tendsto_zero",
+        "Carleman.cartesianGridPotential_bound",
+        "Carleman.cartesianBoxTimeControl_norm",
+        "Carleman.cartesianBoxTimeControl_supported",
+        "Carleman.Physical.box_cartesian_controls_independent_refinement"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -43757,14 +43767,39 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.Physical.physicalMeshScale_tendsto_atTop",
+        "Carleman.Physical.physicalMeshScale_dt_bound",
+        "Carleman.Physical.physicalMeshScale_dt_tendsto_zero",
+        "Carleman.Physical.physical_conditions_eventually",
+        "Carleman.Physical.physical_terminal_norm_tendsto_zero",
+        "Carleman.cartesianGridPotential_bound",
+        "Carleman.cartesianBoxTimeControl_norm",
+        "Carleman.cartesianBoxTimeControl_supported",
+        "Carleman.Physical.box_cartesian_controls_independent_refinement"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "T196有限测试弱极限的本地构建及8714项审计PASS，固定版本独立验收进行中。"
+        "T196有限测试弱极限的本地构建及8714项审计PASS，固定版本独立验收进行中。",
+        "9项正式声明完整probe exit0；4071定向jobs、4189全库jobs及8726项递归公理审计PASS。"
       ],
-      "next_action": "证明原网格尺度极限和最终物理条件，接入实际HUM控制及单元平均初值。",
-      "integration_mode": "direct-main"
+      "next_action": "本地完整构建和公理审计通过；固定证明提交后交独立Agent验收原控制选择、常数量词、真实支撑和端点。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4189,
+        "recursive_axiom_audit": 8726,
+        "new_explicit_declarations": 9,
+        "declaration_artifact_sha256": "65a777f78bd2aabf23508bc8b1d8aad10a420402af8ac4e7fe55722bf2d425cd",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {
