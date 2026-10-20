@@ -8621,6 +8621,20 @@ set_option pp.maxSteps 1000000
 #check @Carleman.exists_halfspace_smooth_exhaustion
 #print axioms Carleman.exists_halfspace_smooth_exhaustion
 
+
+#check @Carleman.exists_analytic_level_chart
+#print axioms Carleman.exists_analytic_level_chart
+#check @Carleman.analytic_chart_derivative_inverse
+#print axioms Carleman.analytic_chart_derivative_inverse
+#check @Carleman.level_chart_image_sublevel
+#print axioms Carleman.level_chart_image_sublevel
+#check @Carleman.level_chart_frontier_iff
+#print axioms Carleman.level_chart_frontier_iff
+#check @Carleman.halfspaceExpSum_analytic
+#print axioms Carleman.halfspaceExpSum_analytic
+#check @Carleman.halfspaceSmoothInner_analytic_chart
+#print axioms Carleman.halfspaceSmoothInner_analytic_chart
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

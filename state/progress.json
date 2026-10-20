@@ -21201,7 +21201,14 @@
       "paper_labels": [
         "prop:analytic-realizations"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.exists_analytic_level_chart",
+        "Carleman.analytic_chart_derivative_inverse",
+        "Carleman.level_chart_image_sublevel",
+        "Carleman.level_chart_frontier_iff",
+        "Carleman.halfspaceExpSum_analytic",
+        "Carleman.halfspaceSmoothInner_analytic_chart"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -50345,12 +50352,39 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.exists_analytic_level_chart",
+        "Carleman.analytic_chart_derivative_inverse",
+        "Carleman.level_chart_image_sublevel",
+        "Carleman.level_chart_frontier_iff",
+        "Carleman.halfspaceExpSum_analytic",
+        "Carleman.halfspaceSmoothInner_analytic_chart"
+      ],
       "build_evidence": null,
       "blocker": null,
-      "attempts": [],
+      "attempts": [
+        "通过真实隐函数定理构造解析图、精确半空间/边界身份及实际导数互逆；新module采用公开API避开mathlib未暴露实现。3060/4270构建与9560递归审计exit0。"
+      ],
       "next_action": "通过真实隐函数定理构造指数和内域的解析边界坐标。",
-      "integration_mode": "direct-main"
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman.Geometry.AnalyticLevelCharts",
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": [
+          3060,
+          4270
+        ],
+        "recursive_axiom_audit": 9560,
+        "new_explicit_declarations": 6,
+        "raw_sha256": "6ee28ebb2b8486c95d65fc6defe879dc4ca65cb7fc9ee1293ffd2d3f10c15546",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {
