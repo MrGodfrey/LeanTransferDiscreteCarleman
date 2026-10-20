@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: >-
+  If you use this formalization, please cite the software and record the full
+  commit SHA used. For the mathematical results, also cite the paper listed
+  under references. BibTeX entries are available in CITATION.bib.
+type: software
+title: >-
+  LeanTransferDiscreteCarleman: A Lean 4 Formalization of
+  Continuous-to-Fully-Discrete Carleman Estimates
+authors:
+  - family-names: Wang
+    given-names: Yu
+date-released: "2026-10-20"
+repository-code: "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman"
+url: "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman"
+license: Apache-2.0
+abstract: >-
+  Lean 4 and mathlib formalization of a transfer principle from continuous
+  to fully discrete parabolic Carleman estimates, its P1 finite element and
+  Cartesian finite difference realizations, and observability, control, and
+  continuous null-control limits. The exact manuscript snapshot and proof
+  coverage are documented in the repository. The bundled manuscript is
+  excluded from the software license.
+keywords:
+  - Lean 4
+  - formal verification
+  - Carleman estimates
+  - parabolic equations
+  - finite elements
+  - finite differences
+  - observability
+  - controllability
+references:
+  - type: unpublished
+    title: >-
+      From Continuous to Fully Discrete Carleman Estimates:
+      A Transfer Principle for Parabolic Schemes
+    authors:
+      - family-names: Lü
+        given-names: Qi
+      - family-names: Wang
+        given-names: Yu
+    year: 2026
+    url: "https://arxiv.org/abs/2610.02983"
+    notes: >-
+      arXiv:2610.02983 [math.NA]. The formalization follows the manuscript
+      snapshot bundled in paper/; see paper/SOURCE_MANIFEST.md.

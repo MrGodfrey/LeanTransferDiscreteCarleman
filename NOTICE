@@ -1,0 +1,14 @@
+LeanTransferDiscreteCarleman
+Copyright 2026 Yu Wang
+
+The original Lean source code, scripts, configuration, and project
+documentation in this repository are licensed under the Apache License,
+Version 2.0. See LICENSE for the full terms.
+
+The manuscript "From Continuous to Fully Discrete Carleman Estimates:
+A Transfer Principle for Parabolic Schemes" by Qi Lü and Yu Wang,
+bundled as paper/main.tex and paper/paper.pdf, is excluded from this
+software license. It retains its existing rights and licensing terms.
+
+Third-party dependencies and material carrying a separate copyright or
+license notice retain their respective notices and licenses.
