@@ -8685,6 +8685,48 @@ set_option pp.maxSteps 1000000
 #check @Carleman.exists_weakH2_of_differenceQuotient_bounds
 #print axioms Carleman.exists_weakH2_of_differenceQuotient_bounds
 
+
+#check @Carleman.WeakSobolevJet.translateFirst
+#print axioms Carleman.WeakSobolevJet.translateFirst
+#check @Carleman.WeakSobolevJet.translateFirst_value
+#print axioms Carleman.WeakSobolevJet.translateFirst_value
+#check @Carleman.WeakSobolevJet.translateFirst_gradient
+#print axioms Carleman.WeakSobolevJet.translateFirst_gradient
+#check @Carleman.WeakSobolevJet.translateFirst_tendsto
+#print axioms Carleman.WeakSobolevJet.translateFirst_tendsto
+#check @Carleman.WeakSobolevJet.differenceFirst
+#print axioms Carleman.WeakSobolevJet.differenceFirst
+#check @Carleman.WeakSobolevJet.differenceFirst_value
+#print axioms Carleman.WeakSobolevJet.differenceFirst_value
+#check @Carleman.WeakSobolevJet.differenceFirst_gradient
+#print axioms Carleman.WeakSobolevJet.differenceFirst_gradient
+#check @Carleman.WeakSobolevJet.differenceFirst_gradient_pairing
+#print axioms Carleman.WeakSobolevJet.differenceFirst_gradient_pairing
+#check @Carleman.WeakSobolevJet.differenceFirst_energy
+#print axioms Carleman.WeakSobolevJet.differenceFirst_energy
+#check @Carleman.SpatialTest.translateInto
+#print axioms Carleman.SpatialTest.translateInto
+#check @Carleman.SpatialTest.translateFirst_test
+#print axioms Carleman.SpatialTest.translateFirst_test
+#check @Carleman.WeakSobolevJet.translateFirst_dirichlet_mem
+#print axioms Carleman.WeakSobolevJet.translateFirst_dirichlet_mem
+#check @Carleman.WeakSobolevJet.differenceFirst_dirichlet_mem
+#print axioms Carleman.WeakSobolevJet.differenceFirst_dirichlet_mem
+#check @Carleman.WeakSobolevJet.zeroExtend_restrict_of_ae_zero
+#print axioms Carleman.WeakSobolevJet.zeroExtend_restrict_of_ae_zero
+#check @Carleman.WeakSobolevJet.differenceFirst_dirichlet_extension
+#print axioms Carleman.WeakSobolevJet.differenceFirst_dirichlet_extension
+#check @Carleman.dirichlet_tangential_difference_gradient_bound
+#print axioms Carleman.dirichlet_tangential_difference_gradient_bound
+#check @Carleman.weakGradient_test_mixed_commute
+#print axioms Carleman.weakGradient_test_mixed_commute
+#check @Carleman.dirichlet_tangential_test_bound
+#print axioms Carleman.dirichlet_tangential_test_bound
+#check @Carleman.exists_dirichlet_H2_of_tangential_invariance
+#print axioms Carleman.exists_dirichlet_H2_of_tangential_invariance
+#check @Carleman.exists_halfspace_dirichlet_H2
+#print axioms Carleman.exists_halfspace_dirichlet_H2
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
