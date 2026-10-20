@@ -998,3 +998,6 @@ public import Carleman.Control.TensorTimeTests
 public import Carleman.Control.P1TestInterpolation
 public import Carleman.Control.P1TestStrongConvergence
 public import Carleman.Control.P1TensorTestConsistency
+public import Carleman.Control.CartesianTestInterpolation
+public import Carleman.Control.CartesianTestStrongConvergence
+public import Carleman.Control.CartesianTensorTestConsistency

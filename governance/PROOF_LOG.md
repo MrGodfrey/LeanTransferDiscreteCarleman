@@ -417,3 +417,7 @@
 - T191 / C207：18/18及private辅助独立PASS；区间内FTC、原胞元差商、C dt sqrt T取样误差、有限张量强一致性忠实，空间输入明确。三项实际CI success，8602项raw逐字节核对。 固定证明 `ec7ddbfba0b338f3ba97039442ed5c2108ac99aa`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9ce5a486fc1b5d6645eb6555cbb28146f4a00c8e/governance/reviews/T191-local-acceptance.md)。原文17/26；当前执行任务不变。
 
 - T192 / C208：[原P1测试分析](analysis/T192-p1-tests.md)，16项声明；真实节点值/导数误差给H¹₀强一致性，同一原有限张量测试、整和差商与固定端点强收敛。定向3340/full4176 jobs及8631项公理审计PASS；固定SHA独立验收随后进行。AUXILIARY、17/26。
+
+- T193 / C209：[原差分测试分析](analysis/T193-fd-tests.md)，18项声明；原节点取样与真实R_h严格识别，内部供应H¹₀及E_h强极限、整个有限和差商和端点一致性。定向3569/full4179 jobs及8656项公理审计PASS；固定SHA独立验收随后进行。AUXILIARY、17/26。
+
+- T192 / C208：16/16独立PASS；实际I_h/H¹₀与完整弱梯度、统一形状常数及原有限张量差商忠实，目标空间强极限内部清偿。三项CI最终success，8631项raw逐字节核对。 固定证明 `560e3aa8d23c22943b51dd7744da8174944b27ef`；[独立报告](https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/739f92b05f7169e03dc1c917630d89ba40e7511d/governance/reviews/T192-local-acceptance.md)。原文17/26；当前执行任务不变。

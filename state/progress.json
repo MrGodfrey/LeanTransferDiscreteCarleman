@@ -10,37 +10,37 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T192",
-    "supervisor_checked_at": "2026-10-20T01:36:31.037225+00:00",
-    "next_action": "固定证明提交并push main，由独立Agent核对原文、完整声明与同SHA三项远端CI。",
+    "current_task_id": "T193",
+    "supervisor_checked_at": "2026-10-20T01:50:03.278934+00:00",
+    "next_action": "待T192正式独立报告冻结销项后commit/push当前差分测试阶段，启动独立Agent验收固定SHA。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-20T01:41:38.088080+00:00"
+    "last_activity_at": "2026-10-20T01:50:03.278934+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
-      "checked_sha": "ec7ddbfba0b338f3ba97039442ed5c2108ac99aa",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39353514491/attempts/1",
-      "finished_at": "2026-10-20T01:30:20.769658+00:00",
+      "checked_sha": "560e3aa8d23c22943b51dd7744da8174944b27ef",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39354880337/attempts/1",
+      "finished_at": "2026-10-20T01:45:03.857724+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "ec7ddbfba0b338f3ba97039442ed5c2108ac99aa"
+      "source_head_sha": "560e3aa8d23c22943b51dd7744da8174944b27ef"
     },
     "last_successful_build": {
       "status": "PASS",
-      "checked_sha": "ec7ddbfba0b338f3ba97039442ed5c2108ac99aa",
-      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39353514491/attempts/1",
-      "finished_at": "2026-10-20T01:30:20.769658+00:00",
+      "checked_sha": "560e3aa8d23c22943b51dd7744da8174944b27ef",
+      "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39354880337/attempts/1",
+      "finished_at": "2026-10-20T01:45:03.857724+00:00",
       "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
         "Carleman"
       ],
-      "source_head_sha": "ec7ddbfba0b338f3ba97039442ed5c2108ac99aa"
+      "source_head_sha": "560e3aa8d23c22943b51dd7744da8174944b27ef"
     }
   },
   "milestones": [
@@ -17873,7 +17873,7 @@
       "paper_ref": "paper/main.tex:2926–2956, sec:control-consistency / prop:control-convergence",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -17896,9 +17896,45 @@
         "Carleman.full_p1_finite_time_test_consistency",
         "Carleman.full_p1_finite_test_endpoint_consistency"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
-      "semantic_review": null,
+      "declaration_version": "560e3aa8d23c22943b51dd7744da8174944b27ef",
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "560e3aa8d23c22943b51dd7744da8174944b27ef",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39354880337/attempts/1",
+        "finished_at": "2026-10-20T01:45:03.857724+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "560e3aa8d23c22943b51dd7744da8174944b27ef"
+      },
+      "semantic_review": {
+        "checked_sha": "560e3aa8d23c22943b51dd7744da8174944b27ef",
+        "declarations": [
+          "Carleman.SimplicialPartition.nodal_lipschitz_derivative_error",
+          "Carleman.SimplicialPartition.test_nodal_derivative_L2_error",
+          "Carleman.SimplicialPartition.test_nodal_zero_boundary",
+          "Carleman.SimplicialPartition.testDirichletState",
+          "Carleman.SimplicialPartition.testDirichletState_value",
+          "Carleman.SimplicialPartition.testDirichletState_gradient",
+          "Carleman.SpatialTest.dirichletState",
+          "Carleman.SpatialTest.dirichletState_value",
+          "Carleman.SpatialTest.dirichletState_gradient",
+          "Carleman.test_nodal_value_strong_convergence",
+          "Carleman.test_nodal_derivative_strong_convergence",
+          "Carleman.dirichletEnergyState_tendsto_of_fields",
+          "Carleman.full_p1_test_H1_strong_convergence",
+          "Carleman.SimplicialPartition.testDirichletState_finite_value",
+          "Carleman.full_p1_finite_time_test_consistency",
+          "Carleman.full_p1_finite_test_endpoint_consistency"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/739f92b05f7169e03dc1c917630d89ba40e7511d/governance/reviews/T192-local-acceptance.md",
+        "reviewed_at": "2026-10-20T01:48:19+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C207",
         "C197",
@@ -17906,7 +17942,51 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "原完整P1测试空间与时间部分，原统一形状正则性；差分测试、产品L∞误差、极限PDE及状态端点仍待。17/26。"
+      "scope_notes": "原完整P1测试空间与时间部分，原统一形状正则性；差分测试、产品L∞误差、极限PDE及状态端点仍待。17/26。",
+      "independent_review_status": "PASS"
+    },
+    {
+      "id": "C209",
+      "title": "原差分节点取样及实际重构的完整测试一致性",
+      "paper_ref": "paper/main.tex:2926–2956, sec:control-consistency / prop:control-convergence",
+      "milestone": "M6c",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:control-convergence"
+      ],
+      "lean_declarations": [
+        "Carleman.cartesianNodalSample",
+        "Carleman.cartesianNodalSample_apply",
+        "Carleman.cartesianInteriorData_test_vertex",
+        "Carleman.cartesianKuhnReconstructionLp_test_eq_nodal",
+        "Carleman.cartesianBoxKuhnPartition",
+        "Carleman.cartesianBoxKuhnPartition_faceMatching",
+        "Carleman.cartesianBoxKuhnPartition_boundaryFitted",
+        "Carleman.cartesianBoxDirichletState_test_eq_nodal",
+        "Carleman.cartesianBoxKuhnPartition_maxDiameter_le",
+        "Carleman.cartesianBoxKuhn_uniform_inballs",
+        "Carleman.cartesian_test_H1_strong_convergence",
+        "Carleman.cartesian_test_cell_L2_strong_convergence",
+        "Carleman.cartesianBoxDirichletLinearMap",
+        "Carleman.cartesianBoxDirichletLinearMap_apply",
+        "Carleman.cartesianNodalSample_finite",
+        "Carleman.cartesian_finite_time_test_H1_consistency",
+        "Carleman.cartesian_finite_time_test_cell_L2_consistency",
+        "Carleman.cartesian_finite_test_endpoint_consistency"
+      ],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C208",
+        "C207",
+        "C202"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "原盒差分测试H¹₀/L²强一致性及完整时空差商/端点。产品L∞误差、最终势项、极限PDE和状态端点仍待；17/26。"
     }
   ],
   "events": [
@@ -19042,6 +19122,11 @@
       "at": "2026-10-20T01:36:31.037225+00:00",
       "public_summary": "T191原时间测试已独立验收销项；已完成阶段队列清空，T192继续原P1空间插值强一致性。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9ce5a486fc1b5d6645eb6555cbb28146f4a00c8e/governance/reviews/T191-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T01:50:03.278934+00:00",
+      "public_summary": "原P1节点测试强一致性已通过独立验收及同提交CI，差分测试继续；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/739f92b05f7169e03dc1c917630d89ba40e7511d/governance/reviews/T192-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -19477,7 +19562,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39351691345/attempts/1",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1fa4fcec70aa9fb41e099d42f8812ed5a31c760a/governance/reviews/T190-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39353514491/attempts/1",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9ce5a486fc1b5d6645eb6555cbb28146f4a00c8e/governance/reviews/T191-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9ce5a486fc1b5d6645eb6555cbb28146f4a00c8e/governance/reviews/T191-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39354880337/attempts/1",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/739f92b05f7169e03dc1c917630d89ba40e7511d/governance/reviews/T192-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -42742,10 +42829,10 @@
       ],
       "branch": "main",
       "base_commit": "ec7ddbfba0b338f3ba97039442ed5c2108ac99aa",
-      "status": "RUNNING",
+      "status": "MERGED",
       "pr_url": null,
-      "checkpoint_commit": null,
-      "merge_commit": null,
+      "checkpoint_commit": "560e3aa8d23c22943b51dd7744da8174944b27ef",
+      "merge_commit": "560e3aa8d23c22943b51dd7744da8174944b27ef",
       "lean_declarations": [
         "Carleman.SimplicialPartition.nodal_lipschitz_derivative_error",
         "Carleman.SimplicialPartition.test_nodal_derivative_L2_error",
@@ -42764,13 +42851,24 @@
         "Carleman.full_p1_finite_time_test_consistency",
         "Carleman.full_p1_finite_test_endpoint_consistency"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "checked_sha": "560e3aa8d23c22943b51dd7744da8174944b27ef",
+        "ci_url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/actions/runs/39354880337/attempts/1",
+        "finished_at": "2026-10-20T01:45:03.857724+00:00",
+        "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman"
+        ],
+        "source_head_sha": "560e3aa8d23c22943b51dd7744da8174944b27ef"
+      },
       "blocker": null,
       "attempts": [
         "16项空间与时空接口的本地Lean探针完整exit0；继续正式模块构建和审计。",
         "原P1值及实际导数误差内部证明H¹₀强极限，原有限张量前层与整和差商强一致；三模块16声明，定向3340/full4176 jobs及8631项递归公理审计PASS。"
       ],
-      "next_action": "固定证明提交并push main，由独立Agent核对原文、完整声明与同SHA三项远端CI。",
+      "next_action": "原P1节点测试强一致性已独立验收；T193已完成原差分测试本地验证并继续提交验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -42782,6 +42880,98 @@
         "recursive_axiom_audit": 8631,
         "new_explicit_declarations": 16,
         "declaration_artifact_sha256": "0c0e6ba3b612b60ca008710a1c3ef30d896ac308ea7df7d8e862d4186a288938",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PASS; fixed-SHA report and remote CI recorded"
+      },
+      "declaration_version": "560e3aa8d23c22943b51dd7744da8174944b27ef",
+      "ci_relationship": {
+        "proof_head": "560e3aa8d23c22943b51dd7744da8174944b27ef",
+        "checked_sha": "560e3aa8d23c22943b51dd7744da8174944b27ef",
+        "run_id": 39354880337,
+        "all_jobs": "lean 118407281387/state 118407281518/dashboard 118408609223 completed/success; root independently read exact run and all three final jobs",
+        "actual_build_jobs": 4176,
+        "recursive_axiom_audit": 8631,
+        "new_explicit_declarations": 16,
+        "declaration_artifact_sha256": "0c0e6ba3b612b60ca008710a1c3ef30d896ac308ea7df7d8e862d4186a288938",
+        "local_remote_artifacts_identical": true
+      },
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C208"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "560e3aa8d23c22943b51dd7744da8174944b27ef",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T01:48:19+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/739f92b05f7169e03dc1c917630d89ba40e7511d/governance/reviews/T192-local-acceptance.md"
+        }
+      ]
+    },
+    {
+      "id": "T193",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原差分节点取样及实际重构的完整测试一致性",
+      "goal_ids": [
+        "C209"
+      ],
+      "acceptance": [
+        "实际内点取样及边界零值严格等于完整Kuhn节点插值",
+        "统一网格形状由原步长比条件内部供应，真实H¹₀及E_h强收敛不输入一致性",
+        "原有限张量取样、整和物理差商、端点保同一R_h/E_h与独立时空细化"
+      ],
+      "dependencies": [
+        "C208",
+        "C207",
+        "C202"
+      ],
+      "branch": "main",
+      "base_commit": "560e3aa8d23c22943b51dd7744da8174944b27ef",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [
+        "Carleman.cartesianNodalSample",
+        "Carleman.cartesianNodalSample_apply",
+        "Carleman.cartesianInteriorData_test_vertex",
+        "Carleman.cartesianKuhnReconstructionLp_test_eq_nodal",
+        "Carleman.cartesianBoxKuhnPartition",
+        "Carleman.cartesianBoxKuhnPartition_faceMatching",
+        "Carleman.cartesianBoxKuhnPartition_boundaryFitted",
+        "Carleman.cartesianBoxDirichletState_test_eq_nodal",
+        "Carleman.cartesianBoxKuhnPartition_maxDiameter_le",
+        "Carleman.cartesianBoxKuhn_uniform_inballs",
+        "Carleman.cartesian_test_H1_strong_convergence",
+        "Carleman.cartesian_test_cell_L2_strong_convergence",
+        "Carleman.cartesianBoxDirichletLinearMap",
+        "Carleman.cartesianBoxDirichletLinearMap_apply",
+        "Carleman.cartesianNodalSample_finite",
+        "Carleman.cartesian_finite_time_test_H1_consistency",
+        "Carleman.cartesian_finite_time_test_cell_L2_consistency",
+        "Carleman.cartesian_finite_test_endpoint_consistency"
+      ],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "基线T192已全库及公理审计PASS并独立语义核对无缺陷，正式三项CI与冻结报告仍在进行；新证明只依赖固定基线，不预登记验收。",
+        "全部18声明完整probe exit0；三个正式模块定向3569/full4179 jobs及8656项递归公理审计PASS。真实节点值、弱导数唯一性和原几何内部供应R_h/E_h强一致性。"
+      ],
+      "next_action": "待T192正式独立报告冻结销项后commit/push当前差分测试阶段，启动独立Agent验收固定SHA。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4179,
+        "recursive_axiom_audit": 8656,
+        "new_explicit_declarations": 18,
+        "declaration_artifact_sha256": "70fc5b59c3872591d07d063eec37df738f79c9461cebfbbc2542dbf859b8ea23",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed proof commit and remote CI follow"

@@ -7772,6 +7772,43 @@ set_option pp.maxSteps 1000000
 #check @Carleman.full_p1_finite_test_endpoint_consistency
 #print axioms Carleman.full_p1_finite_test_endpoint_consistency
 
+#check @Carleman.cartesianNodalSample
+#print axioms Carleman.cartesianNodalSample
+#check @Carleman.cartesianNodalSample_apply
+#print axioms Carleman.cartesianNodalSample_apply
+#check @Carleman.cartesianInteriorData_test_vertex
+#print axioms Carleman.cartesianInteriorData_test_vertex
+#check @Carleman.cartesianKuhnReconstructionLp_test_eq_nodal
+#print axioms Carleman.cartesianKuhnReconstructionLp_test_eq_nodal
+#check @Carleman.cartesianBoxKuhnPartition
+#print axioms Carleman.cartesianBoxKuhnPartition
+#check @Carleman.cartesianBoxKuhnPartition_faceMatching
+#print axioms Carleman.cartesianBoxKuhnPartition_faceMatching
+#check @Carleman.cartesianBoxKuhnPartition_boundaryFitted
+#print axioms Carleman.cartesianBoxKuhnPartition_boundaryFitted
+#check @Carleman.cartesianBoxDirichletState_test_eq_nodal
+#print axioms Carleman.cartesianBoxDirichletState_test_eq_nodal
+#check @Carleman.cartesianBoxKuhnPartition_maxDiameter_le
+#print axioms Carleman.cartesianBoxKuhnPartition_maxDiameter_le
+#check @Carleman.cartesianBoxKuhn_uniform_inballs
+#print axioms Carleman.cartesianBoxKuhn_uniform_inballs
+#check @Carleman.cartesian_test_H1_strong_convergence
+#print axioms Carleman.cartesian_test_H1_strong_convergence
+#check @Carleman.cartesian_test_cell_L2_strong_convergence
+#print axioms Carleman.cartesian_test_cell_L2_strong_convergence
+#check @Carleman.cartesianBoxDirichletLinearMap
+#print axioms Carleman.cartesianBoxDirichletLinearMap
+#check @Carleman.cartesianBoxDirichletLinearMap_apply
+#print axioms Carleman.cartesianBoxDirichletLinearMap_apply
+#check @Carleman.cartesianNodalSample_finite
+#print axioms Carleman.cartesianNodalSample_finite
+#check @Carleman.cartesian_finite_time_test_H1_consistency
+#print axioms Carleman.cartesian_finite_time_test_H1_consistency
+#check @Carleman.cartesian_finite_time_test_cell_L2_consistency
+#print axioms Carleman.cartesian_finite_time_test_cell_L2_consistency
+#check @Carleman.cartesian_finite_test_endpoint_consistency
+#print axioms Carleman.cartesian_finite_test_endpoint_consistency
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
