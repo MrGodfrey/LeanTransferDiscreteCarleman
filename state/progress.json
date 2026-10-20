@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T244",
-    "supervisor_checked_at": "2026-10-20T08:34:14.858586+00:00",
+    "supervisor_checked_at": "2026-10-20T08:44:30.626683+00:00",
     "next_action": "在切向超平面构造紧支光滑延拓，并证明实际全局高度和斜率Lipschitz界。",
     "blocker": null,
     "pause_reason": null,
@@ -22287,7 +22287,7 @@
       "pr_url": null,
       "id": "C259",
       "title": "原非退化水平边界的坐标图和局部高度构造",
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "lean_declarations": [
         "Carleman.coordinateLevelMap",
         "Carleman.coordinateLevelMap_normal",
@@ -22308,7 +22308,7 @@
       ],
       "blocker": null,
       "scope_notes": "从原非零梯度构造坐标图；仍需全局有界斜率扩展、有限拼接和凸域统一控制，AUXILIARY，18/26。",
-      "independent_review_status": "PENDING",
+      "independent_review_status": "PASS",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -22339,7 +22339,28 @@
           "sha256": "0d72330679cad359c266c17f4620255bad9680e2f47d4c1c772fdeaa7ad801be"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "e7240abc0fb7acb6a0e456cd916f1845a114b72a",
+        "declarations": [
+          "Carleman.coordinateLevelMap",
+          "Carleman.coordinateLevelMap_normal",
+          "Carleman.coordinateLevelMap_tangent",
+          "Carleman.coordinateLevelMap_contDiff",
+          "Carleman.coordinateLevelMap_hasFDerivAt",
+          "Carleman.coordinateLevelMap_det",
+          "Carleman.exists_nonzero_coordinate_derivative",
+          "Carleman.exists_coordinate_level_chart",
+          "Carleman.coordinateLevelMap_constant_normal_invariant",
+          "Carleman.exists_local_coordinate_level_height",
+          "Carleman.exists_local_coordinate_level_height_of_regular",
+          "Carleman.halfspaceSmoothInner_coordinate_level_height"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a8951af50a513ccfe529b27d1385920ff03c2ee8/governance/reviews/T243-local-acceptance.md",
+        "reviewed_at": "2026-10-20T08:41:49+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "declaration_version": "e7240abc0fb7acb6a0e456cd916f1845a114b72a"
     },
     {
@@ -22354,7 +22375,17 @@
       "id": "C260",
       "title": "局部法向不变高度的全局光滑有界导数延拓",
       "verification_status": "SPECIFIED",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.exists_compact_smooth_extension_near",
+        "Carleman.exists_lipschitzWith_of_smooth_compact",
+        "Carleman.coordinateTangentProjection",
+        "Carleman.coordinateLevelMap_constant_affine",
+        "Carleman.coordinateLevelMap_constant_lipschitz",
+        "Carleman.coordinateLevelMap_constant_hasFDerivAt",
+        "Carleman.exists_smooth_normal_invariant_extension",
+        "Carleman.exists_bounded_smooth_coordinate_level_height",
+        "Carleman.halfspaceSmoothInner_bounded_coordinate_level_height"
+      ],
       "dependencies": [
         "C259"
       ],
@@ -23758,6 +23789,11 @@
       "at": "2026-10-20T08:34:01.524219+00:00",
       "public_summary": "边界截断弱解在局部相同域之间的真实传输已通过固定本地验证与独立数学验收；原文覆盖18/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/faecb1d3d0dd83a2ec6ab2b7662181cf9d46ac07/governance/reviews/T242-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T08:44:30.626683+00:00",
+      "public_summary": "原非退化水平边界的坐标图和局部高度构造已通过固定本地验证与独立数学验收；原文覆盖18/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a8951af50a513ccfe529b27d1385920ff03c2ee8/governance/reviews/T243-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -24245,7 +24281,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/1ff2f759dc1ef22d08032d49f9312c17f22222a7/governance/reviews/T239-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/d81a68b7cfd6153ad7b5d45a5be5f42c038ef519/governance/reviews/T240-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ac2416736394ed41c57f349c96379bf4ae4a3718/governance/reviews/T241-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/faecb1d3d0dd83a2ec6ab2b7662181cf9d46ac07/governance/reviews/T242-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/faecb1d3d0dd83a2ec6ab2b7662181cf9d46ac07/governance/reviews/T242-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a8951af50a513ccfe529b27d1385920ff03c2ee8/governance/reviews/T243-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -52785,9 +52822,9 @@
         "C258"
       ],
       "base_commit": "4acd24f5158fda6688403c600ddbd9d2a131c379",
-      "status": "REVIEW",
+      "status": "MERGED",
       "checkpoint_commit": "e7240abc0fb7acb6a0e456cd916f1845a114b72a",
-      "merge_commit": null,
+      "merge_commit": "e7240abc0fb7acb6a0e456cd916f1845a114b72a",
       "lean_declarations": [
         "Carleman.coordinateLevelMap",
         "Carleman.coordinateLevelMap_normal",
@@ -52804,7 +52841,7 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -52844,9 +52881,22 @@
         "root_exit_code": 0,
         "recursive_axiom_declarations": 9950,
         "axiom_exit_code": 0,
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "e7240abc0fb7acb6a0e456cd916f1845a114b72a"
+      "declaration_version": "e7240abc0fb7acb6a0e456cd916f1845a114b72a",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C259"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "e7240abc0fb7acb6a0e456cd916f1845a114b72a",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T08:41:49+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/a8951af50a513ccfe529b27d1385920ff03c2ee8/governance/reviews/T243-local-acceptance.md"
+        }
+      ]
     },
     {
       "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
@@ -52860,7 +52910,7 @@
         "C260"
       ],
       "acceptance": [
-        "真实局部高度的切向紧支延拓",
+        "真实局部高度的紧支光滑延拓及实际切向投影",
         "全局法向不变与原局部高度相同",
         "实际高度和全部斜率的全局Lipschitz资格"
       ],
@@ -52871,11 +52921,32 @@
       "status": "RUNNING",
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.exists_compact_smooth_extension_near",
+        "Carleman.exists_lipschitzWith_of_smooth_compact",
+        "Carleman.coordinateTangentProjection",
+        "Carleman.coordinateLevelMap_constant_affine",
+        "Carleman.coordinateLevelMap_constant_lipschitz",
+        "Carleman.coordinateLevelMap_constant_hasFDerivAt",
+        "Carleman.exists_smooth_normal_invariant_extension",
+        "Carleman.exists_bounded_smooth_coordinate_level_height",
+        "Carleman.halfspaceSmoothInner_bounded_coordinate_level_height"
+      ],
       "blocker": null,
       "attempts": [],
-      "next_action": "在切向超平面构造紧支光滑延拓，并证明实际全局高度和斜率Lipschitz界。",
-      "build_evidence": null
+      "next_action": "实际全局高度及全部斜率Lipschitz资格已证明，准备固定证据及独立验收。",
+      "build_evidence": null,
+      "local_validation": {
+        "target": "Carleman.Geometry.SmoothGraphHeightExtension",
+        "target_jobs": 3399,
+        "target_exit_code": 0,
+        "root_target": "Carleman",
+        "root_jobs": 4283,
+        "root_exit_code": 0,
+        "recursive_axiom_declarations": 9963,
+        "axiom_exit_code": 0,
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

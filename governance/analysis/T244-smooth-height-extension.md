@@ -1,0 +1,15 @@
+# T244 / C260: global smooth normal-invariant graph height
+
+This stage supplies the actual global height and slope qualifications needed by the graph-domain H² route toward Corollary A.2 (`paper/main.tex:2659–2665`). It remains AUXILIARY, coverage 18/26.
+
+An arbitrary locally C∞ scalar function near c first receives an actual ambient compactly supported C∞ extension h agreeing with it on a neighborhood of c. A smooth bump has its entire closed support inside the original open set and equals one on a smaller ball. The product is smooth inside that set by the given local regularity, and outside it is locally zero. No behavior of the original function away from its regular neighborhood is assumed.
+
+Every globally smooth compactly supported map has a globally bounded actual Fréchet derivative, by compact support of that derivative and continuity. The mean-value inequality therefore supplies an actual nonnegative Lipschitz constant. Applying the same argument to each actual directional derivative gives its own Lipschitz constant, so these bounds are conclusions rather than new graph assumptions.
+
+The actual linear projection P=I−e_r⊗e_r* deletes the normal coordinate. The affine map Q(x)=P x+c_r e_r is precisely the previously proved coordinate reset. Its actual derivative is P and its Lipschitz constant is ‖P‖. Define Ψ=h∘Q. This is globally C∞ and invariant under every real normal translation. Its actual slope in direction e_i is Dh(Qx)(P e_i); compact support and smoothness of this directional derivative of h, followed by composition with Q, supply all global slope Lipschitz constants. The height itself is Lipschitz by the same composition argument. The constants may depend on the chosen neighborhood and height; no exhaustion-uniform bound is asserted.
+
+Since Q(c)=c and Q is continuous, the local equality h=ψ pulls back to a neighborhood of c. Original normal invariance gives ψ(Qx)=ψ(x), hence Ψ agrees with the actual original local height there. Compact support is claimed only for h, not for the final normal-invariant Ψ. This avoids an impossible nonzero compactly supported function that is constant along every normal line.
+
+The regular analytic original level function supplies r, ψ and the local graph through T243. Restricting to a genuine open neighborhood where both original graph identities and Ψ=ψ hold produces the global Ψ, constants C and B_i, normal invariance, Ψ(c)=c_r, the original nonzero D_rg(c), and the exact graph/level identities. The final concrete theorem supplies all of these from the original exponential-sum inner domain, a real inner point and a boundary point, with level exactly 1/2. It does not assume an extension, derivative bounds or a graph chart.
+
+The sublevel-side equivalence is still outstanding: equality of level sets alone does not determine whether the original domain is an epigraph or a hypograph. Actual cutoff neighborhoods, finite localization, and the convex-domain uniform Hessian estimate remain to be proved. No paper-level status is promoted.

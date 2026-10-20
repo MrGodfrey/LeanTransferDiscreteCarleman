@@ -9001,6 +9001,25 @@ set_option pp.maxSteps 1000000
 #check @Carleman.halfspaceSmoothInner_coordinate_level_height
 #print axioms Carleman.halfspaceSmoothInner_coordinate_level_height
 
+#check @Carleman.exists_compact_smooth_extension_near
+#print axioms Carleman.exists_compact_smooth_extension_near
+#check @Carleman.exists_lipschitzWith_of_smooth_compact
+#print axioms Carleman.exists_lipschitzWith_of_smooth_compact
+#check @Carleman.coordinateTangentProjection
+#print axioms Carleman.coordinateTangentProjection
+#check @Carleman.coordinateLevelMap_constant_affine
+#print axioms Carleman.coordinateLevelMap_constant_affine
+#check @Carleman.coordinateLevelMap_constant_lipschitz
+#print axioms Carleman.coordinateLevelMap_constant_lipschitz
+#check @Carleman.coordinateLevelMap_constant_hasFDerivAt
+#print axioms Carleman.coordinateLevelMap_constant_hasFDerivAt
+#check @Carleman.exists_smooth_normal_invariant_extension
+#print axioms Carleman.exists_smooth_normal_invariant_extension
+#check @Carleman.exists_bounded_smooth_coordinate_level_height
+#print axioms Carleman.exists_bounded_smooth_coordinate_level_height
+#check @Carleman.halfspaceSmoothInner_bounded_coordinate_level_height
+#print axioms Carleman.halfspaceSmoothInner_bounded_coordinate_level_height
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
