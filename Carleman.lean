@@ -1028,3 +1028,5 @@ public import Carleman.Control.PositiveMassRegularization
 public import Carleman.Control.MassRegularizerStrong
 public import Carleman.Control.DirichletMassRegularization
 public import Carleman.Control.PivotTimeTrace
+public import Carleman.Control.MassRegularizedPaths
+public import Carleman.Control.DirichletRegularizedPaths

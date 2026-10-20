@@ -1594,3 +1594,7 @@ T188 的状态弱极限位于真实 Bochner L²_tL²_x；T183–T185 的原势�
 ## T202 / C218 — 真实质量加权的 H 时间迹估计
 
 对实际 V 值弱 H¹ 近似轨迹，原 E*E 质量导数给闭区间每个 H 迹的估计 ‖Eu(t)‖²≤T⁻¹‖Eu‖²_{L²H}+2‖u‖_{L²V}‖E*E du‖_{L²V}，不出现正则化逆范数。详见 [T202 分析](analysis/T202-weighted-trace.md)。原状态 H 连续代表元仍待正则化一致极限构造；AUXILIARY、17/26。
+
+## T203 / C219 — 实际连续质量正则化轨迹
+
+从同一原 Y、载荷 D 的真实质量弱导数，内部构造闭区间 V 连续 u_n、实际弱导数 du_n；u_n=Q_nY、Mdu_n=Q_nD 几乎处处，两项 L² 强收敛到原 Y、D。详见 [T203 分析](analysis/T203-regularized-paths.md)。不假设 Y 连续；H 一致极限与原端点仍待。AUXILIARY、17/26。

@@ -8007,6 +8007,15 @@ set_option pp.maxSteps 1000000
 #check @Carleman.HasWeakTimeDerivative.pivot_trace_bound
 #print axioms Carleman.HasWeakTimeDerivative.pivot_trace_bound
 
+
+-- T203: actual continuous mass regularization paths and strong graph convergence.
+#check @Carleman.HasWeakTimeDerivative.linear_map
+#print axioms Carleman.HasWeakTimeDerivative.linear_map
+#check @Carleman.mass_regularized_time_paths
+#print axioms Carleman.mass_regularized_time_paths
+#check @Carleman.FiniteDirichletControlIdentity.regularized_time_paths
+#print axioms Carleman.FiniteDirichletControlIdentity.regularized_time_paths
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

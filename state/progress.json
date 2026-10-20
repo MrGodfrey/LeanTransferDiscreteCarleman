@@ -12,7 +12,7 @@
     "state": "RUNNING",
     "current_task_id": "T203",
     "supervisor_checked_at": "2026-10-20T03:34:45.995511+00:00",
-    "next_action": "从原质量场的弱导数构造真实连续V值正则化轨迹，证明其状态和质量导数的L²强收敛。",
+    "next_action": "保存固定证明及本地证据，独立验收真实质量正则化轨迹及同一原Y/D的强极限。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T03:32:19.569537+00:00"
@@ -18845,7 +18845,11 @@
       "paper_labels": [
         "prop:control-convergence"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.HasWeakTimeDerivative.linear_map",
+        "Carleman.mass_regularized_time_paths",
+        "Carleman.FiniteDirichletControlIdentity.regularized_time_paths"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -44894,14 +44898,33 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.HasWeakTimeDerivative.linear_map",
+        "Carleman.mass_regularized_time_paths",
+        "Carleman.FiniteDirichletControlIdentity.regularized_time_paths"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "T202质量加权H迹估计4203全库jobs、8913公理审计PASS，独立验收进行中。"
+        "T202质量加权H迹估计4203全库jobs、8913公理审计PASS，独立验收进行中。",
+        "原质量弱导数给连续质量代表，再由实际逆构造同一Y/D的连续V近似和两项Bochner强极限；消除结论中的依赖测度传输后3声明probe exit0、3625定向/4205全库jobs、8917递归公理审计PASS。"
       ],
-      "next_action": "从原质量场的弱导数构造真实连续V值正则化轨迹，证明其状态和质量导数的L²强收敛。",
-      "integration_mode": "direct-main"
+      "next_action": "保存固定证明及本地证据，独立验收真实质量正则化轨迹及同一原Y/D的强极限。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4205,
+        "recursive_axiom_audit": 8917,
+        "new_explicit_declarations": 3,
+        "declaration_artifact_sha256": "899fe722c25dd787605ebfd8d5e69ca9e2fc8df4a9f38a700a1a5ee19aca4e48",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {
