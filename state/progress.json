@@ -9,10 +9,10 @@
     "started_at": "2026-10-17T09:43:34.927869+00:00"
   },
   "execution": {
-    "state": "RUNNING",
+    "state": "REVIEW",
     "current_task_id": "T226",
-    "supervisor_checked_at": "2026-10-20T06:09:55.526655+00:00",
-    "next_action": "将真实原系数形式与域、允许权保持、上下界和交换子装配为全族；保留原图正则性输入，独立审核完整P022。",
+    "supervisor_checked_at": "2026-10-20T06:10:09.866557+00:00",
+    "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "f616d5d02bde9bd06cc719a33a727b40c5d44675",
-      "source_head_sha": "f616d5d02bde9bd06cc719a33a727b40c5d44675",
+      "checked_sha": "4728609fbece53cc6afcc9013b94592eb23ee87d",
+      "source_head_sha": "4728609fbece53cc6afcc9013b94592eb23ee87d",
       "ci_url": null,
-      "finished_at": "2026-10-20T06:03:46.451529+00:00",
+      "finished_at": "2026-10-20T06:09:23.821388+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "0da5b02044f43571420e2ade234ff22258b32e584ac0d25212e18cdb4285fbdf",
+      "source_manifest_sha256": "b6205e152fbe645d8ca5ed6b4436c8b89c1289982593903c7b0bd0da8681eb55",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9446,
-        "sha256": "171c1b62cfc9f36778feb61f28ca133eb89ebd37dd51bab63085660127ba49e5"
+        "declarations": 9453,
+        "sha256": "25a5b41285828a10165aa50b8437e1403559d307e86c0d9dd70b717a39fe4cc8"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "f616d5d02bde9bd06cc719a33a727b40c5d44675",
-      "source_head_sha": "f616d5d02bde9bd06cc719a33a727b40c5d44675",
+      "checked_sha": "4728609fbece53cc6afcc9013b94592eb23ee87d",
+      "source_head_sha": "4728609fbece53cc6afcc9013b94592eb23ee87d",
       "ci_url": null,
-      "finished_at": "2026-10-20T06:03:46.451529+00:00",
+      "finished_at": "2026-10-20T06:09:23.821388+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "0da5b02044f43571420e2ade234ff22258b32e584ac0d25212e18cdb4285fbdf",
+      "source_manifest_sha256": "b6205e152fbe645d8ca5ed6b4436c8b89c1289982593903c7b0bd0da8681eb55",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 9446,
-        "sha256": "171c1b62cfc9f36778feb61f28ca133eb89ebd37dd51bab63085660127ba49e5"
+        "declarations": 9453,
+        "sha256": "25a5b41285828a10165aa50b8437e1403559d307e86c0d9dd70b717a39fe4cc8"
       }
     }
   },
@@ -20735,7 +20735,7 @@
       "paper_ref": "paper/main.tex:2615–2654 Proposition A.1",
       "milestone": "M6a",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "PAPER",
       "paper_labels": [
         "prop:spatial-operators"
@@ -20749,8 +20749,37 @@
         "Carleman.higherCoefficient_allowed_family_uniform",
         "Carleman.higherCoefficient_analytic_realization"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "4728609fbece53cc6afcc9013b94592eb23ee87d",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "4728609fbece53cc6afcc9013b94592eb23ee87d",
+        "source_head_sha": "4728609fbece53cc6afcc9013b94592eb23ee87d",
+        "ci_url": null,
+        "finished_at": "2026-10-20T06:09:23.821388+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "b6205e152fbe645d8ca5ed6b4436c8b89c1289982593903c7b0bd0da8681eb55",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9453,
+          "sha256": "25a5b41285828a10165aa50b8437e1403559d307e86c0d9dd70b717a39fe4cc8"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C232",
@@ -20763,7 +20792,8 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "目标完整P022，尚未完成独立验收，不计入原文覆盖。"
+      "scope_notes": "目标完整P022，尚未完成独立验收，不计入原文覆盖。",
+      "independent_review_status": "PENDING"
     }
   ],
   "events": [
@@ -49311,9 +49341,9 @@
       ],
       "branch": "main",
       "base_commit": "f616d5d02bde9bd06cc719a33a727b40c5d44675",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "4728609fbece53cc6afcc9013b94592eb23ee87d",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.CoerciveForm.operator_adjoint_graph_iff",
@@ -49324,13 +49354,42 @@
         "Carleman.higherCoefficient_allowed_family_uniform",
         "Carleman.higherCoefficient_analytic_realization"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "4728609fbece53cc6afcc9013b94592eb23ee87d",
+        "source_head_sha": "4728609fbece53cc6afcc9013b94592eb23ee87d",
+        "ci_url": null,
+        "finished_at": "2026-10-20T06:09:23.821388+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "b6205e152fbe645d8ca5ed6b4436c8b89c1289982593903c7b0bd0da8681eb55",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 9453,
+          "sha256": "25a5b41285828a10165aa50b8437e1403559d307e86c0d9dd70b717a39fe4cc8"
+        }
+      },
       "blocker": null,
       "attempts": [
         "三模块7定理实际实现：原scalarForm身份、完整A2/A3统一族、一般原域/图估计装配、正自伴算子的完整伴随图身份；3510/4256构建与9453公理审计exit0。",
         "A1末句平方根的字面身份尚未单独构造；独立验收需明确当前闭形式/正自伴关联图是否足以认证P022完整接口，未自行提升覆盖。"
       ],
-      "next_action": "将真实原系数形式与域、允许权保持、上下界和交换子装配为全族；保留原图正则性输入，独立审核完整P022。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -49351,7 +49410,8 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "review": "PENDING"
-      }
+      },
+      "declaration_version": "4728609fbece53cc6afcc9013b94592eb23ee87d"
     }
   ],
   "private_maintenance": {
