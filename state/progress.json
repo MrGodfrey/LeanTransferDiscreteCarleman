@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T201",
-    "supervisor_checked_at": "2026-10-20T03:16:10.617855+00:00",
+    "supervisor_checked_at": "2026-10-20T03:22:03.495967+00:00",
     "next_action": "用实际Lax–Milgram构造正移位质量逆，证明收缩、交换和强逼近。",
     "blocker": null,
     "pause_reason": null,
@@ -18576,7 +18576,7 @@
       "paper_ref": "paper/main.tex:2403–2421, 9.26-eq16",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -18629,7 +18629,31 @@
           "sha256": "70040ce6bf5174b7d5fae754e025f2f565d48e2cecd84baf7b1dcc4e84a6fbea"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "a081c61839658c2869ef6a01e7bcd387a81b9af4",
+        "declarations": [
+          "Carleman.timeTensor_eq_scalarTensor",
+          "Carleman.inner_timeTensor_integral",
+          "Carleman.compLpL_adjoint",
+          "Carleman.HasWeakTimeDerivative.map_integral",
+          "Carleman.dirichletTimeMass",
+          "Carleman.dirichletTimeLoad",
+          "Carleman.dirichletTimeMass_pairing",
+          "Carleman.dirichletTimeLoad_pairing",
+          "Carleman.FiniteDirichletControlIdentity.mass_test_identity",
+          "Carleman.FiniteDirichletControlIdentity.mass_weak_time_derivative",
+          "Carleman.dirichletPivotDual",
+          "Carleman.dirichletPivotDual_apply",
+          "Carleman.dirichletDualTimeLoad",
+          "Carleman.dirichletDualTimeLoad_pairing",
+          "Carleman.FiniteDirichletControlIdentity.dual_weak_time_derivative"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0c0f916331bfc3b9b8de33c6cea3c4c74eaade7c/governance/reviews/T200-local-acceptance.md",
+        "reviewed_at": "2026-10-20T03:20:08+00:00",
+        "reviewer": "/root/accept_spatial_foundations; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C215",
         "C214"
@@ -18637,7 +18661,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "全V弱恒等式导出实际V′时间弱导数；H连续时间迹及端点仍待，17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C217",
@@ -19839,6 +19863,11 @@
       "at": "2026-10-20T03:14:18.228267+00:00",
       "public_summary": "原有限弱方程扩展到全部 H¹₀ 测试已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b64539bd63c95a3808b4a2e3a5a0e8c4283c8542/governance/reviews/T199-C215-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T03:22:03.495967+00:00",
+      "public_summary": "原控制极限的实际对偶时间弱导数已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0c0f916331bfc3b9b8de33c6cea3c4c74eaade7c/governance/reviews/T200-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -20283,7 +20312,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6f68fde07f02c1caff27d075291b55aadffd6434/governance/reviews/T196-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3a6bd348117c86d39b3f17b9b111f5a85ac3e7ea/governance/reviews/T197-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c1734158e7981e99e96131efdac9d72f456696b8/governance/reviews/T198-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b64539bd63c95a3808b4a2e3a5a0e8c4283c8542/governance/reviews/T199-C215-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b64539bd63c95a3808b4a2e3a5a0e8c4283c8542/governance/reviews/T199-C215-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0c0f916331bfc3b9b8de33c6cea3c4c74eaade7c/governance/reviews/T200-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -44364,10 +44394,10 @@
       ],
       "branch": "main",
       "base_commit": "c8020ad62e0ebb26a1c9144edc50d2ac2458a6d9",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "a081c61839658c2869ef6a01e7bcd387a81b9af4",
-      "merge_commit": null,
+      "merge_commit": "a081c61839658c2869ef6a01e7bcd387a81b9af4",
       "lean_declarations": [
         "Carleman.timeTensor_eq_scalarTensor",
         "Carleman.inner_timeTensor_integral",
@@ -44420,7 +44450,7 @@
         "T199全V测试4195全库jobs、8786公理审计PASS，独立验收进行中。",
         "实际Hilbert伴随构造质量与右端，原全V恒等式给真实质量弱导数，再用Riesz映射得StrongDual Bochner积分方程；15项完整probe exit0，3621定向/4199全库jobs及8873项递归公理审计PASS。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -44434,9 +44464,22 @@
         "declaration_artifact_sha256": "70040ce6bf5174b7d5fae754e025f2f565d48e2cecd84baf7b1dcc4e84a6fbea",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "a081c61839658c2869ef6a01e7bcd387a81b9af4"
+      "declaration_version": "a081c61839658c2869ef6a01e7bcd387a81b9af4",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_foundations",
+          "claim_ids": [
+            "C216"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "a081c61839658c2869ef6a01e7bcd387a81b9af4",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T03:20:08+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/0c0f916331bfc3b9b8de33c6cea3c4c74eaade7c/governance/reviews/T200-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T201",
