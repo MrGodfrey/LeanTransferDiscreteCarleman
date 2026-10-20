@@ -1,0 +1,13 @@
+# T264 / C280: actual full weak inner-domain heat estimate
+
+This auxiliary stage extends the T263 estimate to every original periodic operator graph and every original `PeriodicWeakTrajectory`, on each actual smooth exponential inner domain. It does not yet assert Proposition A.3 on the outer polytope.
+
+`InnerGraphDensity` uses actual full H² strong approximation (T257) and actual weak Dirichlet H² regularity (T246) to approximate every original operator graph coefficient by global compact smooth functions that vanish on the true frontier. Value and negative Laplacian converge through their actual continuous linear maps. Both coefficients of each harmonic periodic graph are approximated, and the existing genuine harmonic density theorem gives density in the full original periodic graph. No graph density or regularity premise remains in the concrete inner-domain theorem.
+
+`DomainHeatIntegral` identifies the four actual weighted Bochner squares with actual restricted product integrals, using compact closure integrability and Fubini. It handles any bounded open domain, the original weak gradient, exact residual `ε ∂t−Δ`, and the actual observation cutoff on W. In particular, W need not be contained in the inner domain; the restricted measure supplies its actual intersection.
+
+`UniformInnerWeakHeat` closes the same inequality on the dense smooth core by continuity of all four original energies. The constants and common Gaussian center/profile are selected on the fixed outer domain and W before every inner index, time grid, original C² interval weight, time sign, and state. The actual condition c∈inner is explicit and can later be supplied by a shifted exhaustion. The closure step introduces no new constants. The interval version uses an actual TimeWeight extension agreeing on the closed interval, proves the actual within-derivative identities, and removes that auxiliary extension from the final result. The trajectory version uses the original full weak trajectory-to-periodic-graph correspondence and actual energy identities.
+
+The final theorem has no extra density, smooth-state, H² approximation, global q extension, or assumed heat estimate input. It retains only the actual inner geometry and original q-class conditions; both signs and uniformity in n and T are preserved. The remaining outer-domain exhaustion passage is separate. P024 stays incomplete and paper coverage stays 20/26.
+
+Validation: targeted module build, `lake build Carleman`, and full recursive `tools/CheckAxioms.lean` audit at the fixed proof source, followed by independent local mathematical acceptance. Exact evidence and 13 declarations are recorded once in the canonical ledger.

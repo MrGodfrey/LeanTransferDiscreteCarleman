@@ -9522,6 +9522,34 @@ set_option pp.maxSteps 1000000
 #check Carleman.halfspaceSmoothInner_uniform_interval_C2_heat_both_signs
 #print axioms Carleman.halfspaceSmoothInner_uniform_interval_C2_heat_both_signs
 
+-- T264: full weak inner-domain estimate.
+#check Carleman.exists_smooth_operator_graph_approximation_of_H2
+#print axioms Carleman.exists_smooth_operator_graph_approximation_of_H2
+#check Carleman.exists_halfspaceSmoothInner_operator_graph_approximation
+#print axioms Carleman.exists_halfspaceSmoothInner_operator_graph_approximation
+#check Carleman.halfspaceSmoothInner_classicalTimeCore_dense
+#print axioms Carleman.halfspaceSmoothInner_classicalTimeCore_dense
+#check Carleman.weighted_domain_density_integrable
+#print axioms Carleman.weighted_domain_density_integrable
+#check Carleman.timeSq_eq_domainTimeIntegral_of_norm_sq
+#print axioms Carleman.timeSq_eq_domainTimeIntegral_of_norm_sq
+#check Carleman.timeSq_eq_domainTimeIntegral_of_continuous
+#print axioms Carleman.timeSq_eq_domainTimeIntegral_of_continuous
+#check Carleman.timeSq_eq_domainTimeIntegral_of_indicator
+#print axioms Carleman.timeSq_eq_domainTimeIntegral_of_indicator
+#check Carleman.dirichletHeatLeft_eq_domainIntegral
+#print axioms Carleman.dirichletHeatLeft_eq_domainIntegral
+#check Carleman.dirichletHeatRight_eq_domainIntegral
+#print axioms Carleman.dirichletHeatRight_eq_domainIntegral
+#check Carleman.dirichletHeat_le_of_classical_of_dense
+#print axioms Carleman.dirichletHeat_le_of_classical_of_dense
+#check Carleman.halfspaceSmoothInner_uniform_weak_C2_heat_both_signs
+#print axioms Carleman.halfspaceSmoothInner_uniform_weak_C2_heat_both_signs
+#check Carleman.halfspaceSmoothInner_uniform_weak_interval_C2_heat_both_signs
+#print axioms Carleman.halfspaceSmoothInner_uniform_weak_interval_C2_heat_both_signs
+#check Carleman.halfspaceSmoothInner_uniform_original_weak_C2_heat_both_signs
+#print axioms Carleman.halfspaceSmoothInner_uniform_original_weak_C2_heat_both_signs
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

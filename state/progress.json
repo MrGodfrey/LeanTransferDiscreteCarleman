@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T264",
-    "supervisor_checked_at": "2026-10-20T11:15:49.229070+00:00",
+    "supervisor_checked_at": "2026-10-20T11:25:13.487508+00:00",
     "next_action": "用真实内域H²强密度构造全算子图及周期图密度，将统一双向C²权热估计传给全部原弱态。",
     "blocker": null,
     "pause_reason": null,
@@ -23935,7 +23935,7 @@
       "milestone": "M6a",
       "scope": "AUXILIARY",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "lean_declarations": [
         "Carleman.pointwiseHeatFlux_unnormalized_eq",
         "Carleman.spacetime_level_zero_derivatives",
@@ -23962,7 +23962,7 @@
       "pr_url": null,
       "blocker": null,
       "scope_notes": "真实光滑指数和内域的热通量及散度积分非正；尚非完整P024。",
-      "independent_review_status": "PENDING",
+      "independent_review_status": "PASS",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -23993,7 +23993,33 @@
           "sha256": "ce72c409e057e545b1f9995c236a310178ab2660a6babc31669b6bbb32be5ac1"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "49ca9a4344f0e015567fd8916e61a9a768358ba7",
+        "declarations": [
+          "Carleman.pointwiseHeatFlux_unnormalized_eq",
+          "Carleman.spacetime_level_zero_derivatives",
+          "Carleman.gaussian_level_heat_flux_nonpos",
+          "Carleman.halfspaceSmoothInner_gaussian_heat_flux_nonpos",
+          "Carleman.weighted_level_divergence_identity",
+          "Carleman.levelLayer_scalar_upper_bound",
+          "Carleman.levelCutoff_divergence_upper_bound",
+          "Carleman.level_divergence_nonpos",
+          "Carleman.domainTimeIntegral",
+          "Carleman.continuous_domain_time_integrable",
+          "Carleman.domainTimeIntegral_eq_iterated",
+          "Carleman.domainTimeIntegral_add",
+          "Carleman.domainTimeIntegral_mono",
+          "Carleman.domainTimeIntegral_nonpos_of_spatial",
+          "Carleman.domainTimeIntegral_periodic_derivative",
+          "Carleman.halfspaceSmoothInner_heat_flux_integral",
+          "Carleman.halfspaceSmoothInner_smooth_heat_carleman_inequality"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/22c822ba948778b913bcd549884bff78d695083b/governance/reviews/T262-local-acceptance.md",
+        "reviewed_at": "2026-10-20T11:17:46+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "declaration_version": "49ca9a4344f0e015567fd8916e61a9a768358ba7"
     },
     {
@@ -24006,7 +24032,7 @@
       "milestone": "M6a",
       "scope": "AUXILIARY",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "lean_declarations": [
         "Carleman.domainTimeIntegral_const_mul",
         "Carleman.domainTimeIntegral_mono_on",
@@ -24033,7 +24059,7 @@
       "pr_url": null,
       "blocker": null,
       "scope_notes": "空间权、观察吸收和梯度返回常数在内域索引前选取；双时间方向、原闭区间C²权已覆盖，原完整弱态与原域极限仍待。",
-      "independent_review_status": "PENDING",
+      "independent_review_status": "PASS",
       "build_evidence": {
         "status": "PASS",
         "source": "local",
@@ -24064,7 +24090,34 @@
           "sha256": "7b675d14a16377e90f2a759dc798ddb0c96a45d1f42a470073d1f35efc5006ee"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "556cdaef8f161664657049e6fc2829b82fbb4404",
+        "declarations": [
+          "Carleman.domainTimeIntegral_const_mul",
+          "Carleman.domainTimeIntegral_mono_on",
+          "Carleman.continuous_domain_observation_integrable",
+          "Carleman.domainTimeIntegral_observation",
+          "Carleman.domainTimeIntegral_mono_on_integrable",
+          "Carleman.domainTimeIntegral_add_integrable",
+          "Carleman.domainTimeIntegral_nonneg_on",
+          "Carleman.domainHeatTimeReflection_measurePreserving",
+          "Carleman.domainTimeIntegral_reflection",
+          "Carleman.domainTimeIntegral_tendsto_parameter",
+          "Carleman.domainTimeIntegral_observation_tendsto_parameter",
+          "Carleman.domainTimeIntegral_congr_on",
+          "Carleman.halfspaceSmoothInner_uniform_heat_cross",
+          "Carleman.halfspaceSmoothInner_uniform_heat_observation",
+          "Carleman.halfspaceSmoothInner_uniform_heat_estimate",
+          "Carleman.halfspaceSmoothInner_uniform_heat_both_signs",
+          "Carleman.halfspaceSmoothInner_uniform_C2_heat_both_signs",
+          "Carleman.halfspaceSmoothInner_uniform_interval_C2_heat_both_signs"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/37f8ca79e4c59de8d834defb1e17cf28521952ce/governance/reviews/T263-local-acceptance.md",
+        "reviewed_at": "2026-10-20T11:21:48+00:00",
+        "reviewer": "/root/accept_section3; independent auxiliary acceptance"
+      },
       "declaration_version": "556cdaef8f161664657049e6fc2829b82fbb4404"
     },
     {
@@ -24078,7 +24131,21 @@
       "scope": "AUXILIARY",
       "extra_hypotheses": [],
       "verification_status": "SPECIFIED",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.exists_smooth_operator_graph_approximation_of_H2",
+        "Carleman.exists_halfspaceSmoothInner_operator_graph_approximation",
+        "Carleman.halfspaceSmoothInner_classicalTimeCore_dense",
+        "Carleman.weighted_domain_density_integrable",
+        "Carleman.timeSq_eq_domainTimeIntegral_of_norm_sq",
+        "Carleman.timeSq_eq_domainTimeIntegral_of_continuous",
+        "Carleman.timeSq_eq_domainTimeIntegral_of_indicator",
+        "Carleman.dirichletHeatLeft_eq_domainIntegral",
+        "Carleman.dirichletHeatRight_eq_domainIntegral",
+        "Carleman.dirichletHeat_le_of_classical_of_dense",
+        "Carleman.halfspaceSmoothInner_uniform_weak_C2_heat_both_signs",
+        "Carleman.halfspaceSmoothInner_uniform_weak_interval_C2_heat_both_signs",
+        "Carleman.halfspaceSmoothInner_uniform_original_weak_C2_heat_both_signs"
+      ],
       "dependencies": [
         "C279",
         "C273"
@@ -25579,6 +25646,16 @@
       "at": "2026-10-20T11:13:30.288753+00:00",
       "public_summary": "Proposition 6.1 原凸多面体完整P1数值假设已通过固定本地验证与独立数学验收；原文覆盖20/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3c78de9fd54df2acf67f1c2dbeca68c0be8eeed0/governance/reviews/T261-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T11:22:37.965352+00:00",
+      "public_summary": "光滑内域热Carleman积分不等式已通过固定本地验证与独立数学验收；原文覆盖20/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/22c822ba948778b913bcd549884bff78d695083b/governance/reviews/T262-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T11:25:13.487508+00:00",
+      "public_summary": "原域统一常数下内域双时间方向C²权热估计已通过固定本地验证与独立数学验收；原文覆盖20/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/37f8ca79e4c59de8d834defb1e17cf28521952ce/governance/reviews/T263-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -26085,7 +26162,9 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8b4fa0e5f90c6d70abbc834880571d878e5184cd/governance/reviews/T258-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/8693fe2b3f59764bf3544d6c81abba6a3d29bcd1/governance/reviews/T259-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/90003a32772cd54be6d442575e293c281516cecf/governance/reviews/T260-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3c78de9fd54df2acf67f1c2dbeca68c0be8eeed0/governance/reviews/T261-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3c78de9fd54df2acf67f1c2dbeca68c0be8eeed0/governance/reviews/T261-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/22c822ba948778b913bcd549884bff78d695083b/governance/reviews/T262-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/37f8ca79e4c59de8d834defb1e17cf28521952ce/governance/reviews/T263-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -56469,9 +56548,9 @@
         "C264"
       ],
       "base_commit": "708eae70c82d9c0b1d60f6907f0202201d518a16",
-      "status": "REVIEW",
+      "status": "MERGED",
       "checkpoint_commit": "49ca9a4344f0e015567fd8916e61a9a768358ba7",
-      "merge_commit": null,
+      "merge_commit": "49ca9a4344f0e015567fd8916e61a9a768358ba7",
       "lean_declarations": [
         "Carleman.pointwiseHeatFlux_unnormalized_eq",
         "Carleman.spacetime_level_zero_derivatives",
@@ -56523,7 +56602,7 @@
       },
       "blocker": null,
       "attempts": [],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "local_validation": {
         "target": "Carleman.Spatial.SublevelHeatIdentity",
         "target_jobs": 3451,
@@ -56533,9 +56612,22 @@
         "root_exit_code": 0,
         "recursive_axiom_declarations": 10340,
         "axiom_exit_code": 0,
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "49ca9a4344f0e015567fd8916e61a9a768358ba7"
+      "declaration_version": "49ca9a4344f0e015567fd8916e61a9a768358ba7",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C278"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "49ca9a4344f0e015567fd8916e61a9a768358ba7",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T11:17:46+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/22c822ba948778b913bcd549884bff78d695083b/governance/reviews/T262-local-acceptance.md"
+        }
+      ]
     },
     {
       "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
@@ -56557,9 +56649,9 @@
         "C278"
       ],
       "base_commit": "49ca9a4344f0e015567fd8916e61a9a768358ba7",
-      "status": "REVIEW",
+      "status": "MERGED",
       "checkpoint_commit": "556cdaef8f161664657049e6fc2829b82fbb4404",
-      "merge_commit": null,
+      "merge_commit": "556cdaef8f161664657049e6fc2829b82fbb4404",
       "lean_declarations": [
         "Carleman.domainTimeIntegral_const_mul",
         "Carleman.domainTimeIntegral_mono_on",
@@ -56612,7 +56704,7 @@
       },
       "blocker": null,
       "attempts": [],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "local_validation": {
         "target": "Carleman.Spatial.UniformInnerC2Heat",
         "target_jobs": 3491,
@@ -56622,9 +56714,22 @@
         "root_exit_code": 0,
         "recursive_axiom_declarations": 10358,
         "axiom_exit_code": 0,
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "556cdaef8f161664657049e6fc2829b82fbb4404"
+      "declaration_version": "556cdaef8f161664657049e6fc2829b82fbb4404",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_section3",
+          "claim_ids": [
+            "C279"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "556cdaef8f161664657049e6fc2829b82fbb4404",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T11:21:48+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/37f8ca79e4c59de8d834defb1e17cf28521952ce/governance/reviews/T263-local-acceptance.md"
+        }
+      ]
     },
     {
       "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
@@ -56650,11 +56755,36 @@
       "status": "RUNNING",
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.exists_smooth_operator_graph_approximation_of_H2",
+        "Carleman.exists_halfspaceSmoothInner_operator_graph_approximation",
+        "Carleman.halfspaceSmoothInner_classicalTimeCore_dense",
+        "Carleman.weighted_domain_density_integrable",
+        "Carleman.timeSq_eq_domainTimeIntegral_of_norm_sq",
+        "Carleman.timeSq_eq_domainTimeIntegral_of_continuous",
+        "Carleman.timeSq_eq_domainTimeIntegral_of_indicator",
+        "Carleman.dirichletHeatLeft_eq_domainIntegral",
+        "Carleman.dirichletHeatRight_eq_domainIntegral",
+        "Carleman.dirichletHeat_le_of_classical_of_dense",
+        "Carleman.halfspaceSmoothInner_uniform_weak_C2_heat_both_signs",
+        "Carleman.halfspaceSmoothInner_uniform_weak_interval_C2_heat_both_signs",
+        "Carleman.halfspaceSmoothInner_uniform_original_weak_C2_heat_both_signs"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [],
-      "next_action": "用真实内域H²强密度构造全算子图及周期图密度，将统一双向C²权热估计传给全部原弱态。"
+      "next_action": "用真实内域H²强密度构造全算子图及周期图密度，将统一双向C²权热估计传给全部原弱态。",
+      "local_validation": {
+        "target": "Carleman.Spatial.UniformInnerWeakHeat",
+        "target_jobs": 3645,
+        "target_exit_code": 0,
+        "root_target": "Carleman",
+        "root_jobs": 4309,
+        "root_exit_code": 0,
+        "recursive_axiom_declarations": 10371,
+        "axiom_exit_code": 0,
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

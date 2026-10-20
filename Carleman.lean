@@ -1169,3 +1169,7 @@ public import Carleman.Spatial.SublevelHeatIdentity
 public import Carleman.Spatial.DomainTimeIntegralTools
 public import Carleman.Spatial.UniformInnerHeat
 public import Carleman.Spatial.UniformInnerC2Heat
+
+public import Carleman.Spatial.InnerGraphDensity
+public import Carleman.Spatial.DomainHeatIntegral
+public import Carleman.Spatial.UniformInnerWeakHeat
