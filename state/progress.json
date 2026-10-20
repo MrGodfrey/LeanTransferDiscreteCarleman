@@ -10,21 +10,21 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T195",
-    "supervisor_checked_at": "2026-10-20T02:19:40.662742+00:00",
-    "next_action": "固定完整原势乘积证明并进行独立数学验收，继续原弱方程的极限。",
+    "current_task_id": "T196",
+    "supervisor_checked_at": "2026-10-20T02:20:58.303413+00:00",
+    "next_action": "连接原有限测试的梯度、差商、势项、控制及端点配对，推导原弱恒等式极限。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-20T02:14:39.069780+00:00"
+    "last_activity_at": "2026-10-20T02:20:58.303413+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "6812f26347c088d1d8d489c8e22dd1e5bb92e778",
-      "source_head_sha": "6812f26347c088d1d8d489c8e22dd1e5bb92e778",
+      "checked_sha": "403ad474b6cb780407160e9d009e514c03287882",
+      "source_head_sha": "403ad474b6cb780407160e9d009e514c03287882",
       "ci_url": null,
-      "finished_at": "2026-10-20T02:12:52.672454+00:00",
+      "finished_at": "2026-10-20T02:18:56.101348+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "abaa225479ea2e86297d2a396b8bcb3391f27e568435afbe6fa0334772e5181a",
+      "source_manifest_sha256": "a90459b28e14ce05dc72ec121afa4a45034cc0a8d6be4df8c5021e367f3325ac",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8670,
-        "sha256": "4b330ade154bb146d9c5ff2c51acedd59cd6788c599d057580545f5b6dab21b9"
+        "declarations": 8699,
+        "sha256": "cad038574e32997e7a2a6a743d11c7850db109f295a561d59864f124f9026847"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "6812f26347c088d1d8d489c8e22dd1e5bb92e778",
-      "source_head_sha": "6812f26347c088d1d8d489c8e22dd1e5bb92e778",
+      "checked_sha": "403ad474b6cb780407160e9d009e514c03287882",
+      "source_head_sha": "403ad474b6cb780407160e9d009e514c03287882",
       "ci_url": null,
-      "finished_at": "2026-10-20T02:12:52.672454+00:00",
+      "finished_at": "2026-10-20T02:18:56.101348+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "abaa225479ea2e86297d2a396b8bcb3391f27e568435afbe6fa0334772e5181a",
+      "source_manifest_sha256": "a90459b28e14ce05dc72ec121afa4a45034cc0a8d6be4df8c5021e367f3325ac",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8670,
-        "sha256": "4b330ade154bb146d9c5ff2c51acedd59cd6788c599d057580545f5b6dab21b9"
+        "declarations": 8699,
+        "sha256": "cad038574e32997e7a2a6a743d11c7850db109f295a561d59864f124f9026847"
       }
     }
   },
@@ -18156,7 +18156,7 @@
       "paper_ref": "paper/main.tex:2926–2956, sec:control-consistency / prop:control-convergence",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -18173,8 +18173,37 @@
         "Carleman.cartesian_finite_test_potential_strong_convergence",
         "Carleman.p1_finite_test_potential_strong_convergence"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "403ad474b6cb780407160e9d009e514c03287882",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "403ad474b6cb780407160e9d009e514c03287882",
+        "source_head_sha": "403ad474b6cb780407160e9d009e514c03287882",
+        "ci_url": null,
+        "finished_at": "2026-10-20T02:18:56.101348+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "a90459b28e14ce05dc72ec121afa4a45034cc0a8d6be4df8c5021e367f3325ac",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8699,
+          "sha256": "cad038574e32997e7a2a6a743d11c7850db109f295a561d59864f124f9026847"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C210",
@@ -18184,7 +18213,33 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "原实际平均势与原有限张量测试的产品强极限；完整极限方程和状态端点仍待。17/26。"
+      "scope_notes": "原实际平均势与原有限张量测试的产品强极限；完整极限方程和状态端点仍待。17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C212",
+      "title": "原差分状态弱恒等式的有限测试极限",
+      "paper_ref": "paper/main.tex:2385–2400, eq:conv-limit-identity",
+      "milestone": "M6c",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:control-convergence"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C211",
+        "C209",
+        "C205",
+        "C204"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "原差分方程有限测试极限；真实状态时间迹和完整控制定理仍待。17/26。"
     }
   ],
   "events": [
@@ -43342,9 +43397,9 @@
       ],
       "branch": "main",
       "base_commit": "6812f26347c088d1d8d489c8e22dd1e5bb92e778",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "403ad474b6cb780407160e9d009e514c03287882",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.finite_tensor_test_bounded",
@@ -43358,13 +43413,42 @@
         "Carleman.cartesian_finite_test_potential_strong_convergence",
         "Carleman.p1_finite_test_potential_strong_convergence"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "403ad474b6cb780407160e9d009e514c03287882",
+        "source_head_sha": "403ad474b6cb780407160e9d009e514c03287882",
+        "ci_url": null,
+        "finished_at": "2026-10-20T02:18:56.101348+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "a90459b28e14ce05dc72ec121afa4a45034cc0a8d6be4df8c5021e367f3325ac",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8699,
+          "sha256": "cad038574e32997e7a2a6a743d11c7850db109f295a561d59864f124f9026847"
+        }
+      },
       "blocker": null,
       "attempts": [
         "T194本地3576定向/4182全库jobs、8670项公理审计PASS；固定版本独立验收进行中。",
         "10项正式声明完整probe exit0；3591定向jobs、4184全库jobs及8699项递归公理审计PASS。"
       ],
-      "next_action": "固定完整原势乘积证明并进行独立数学验收，继续原弱方程的极限。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -43379,7 +43463,42 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; fixed proof commit follows"
-      }
+      },
+      "declaration_version": "403ad474b6cb780407160e9d009e514c03287882"
+    },
+    {
+      "id": "T196",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原差分状态弱恒等式的有限测试极限",
+      "goal_ids": [
+        "C212"
+      ],
+      "acceptance": [
+        "使用原全部节点取样和原六项弱恒等式",
+        "在实际状态/控制弱子列上内部清偿有限测试各项强极限",
+        "保留真实初终端配对，明确尚未推导的状态端点条件，不预设极限PDE"
+      ],
+      "dependencies": [
+        "C211",
+        "C209",
+        "C205",
+        "C204"
+      ],
+      "branch": "main",
+      "base_commit": "403ad474b6cb780407160e9d009e514c03287882",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "T195原势乘积本地构建和8699项审计PASS，固定版本独立验收进行中。"
+      ],
+      "next_action": "连接原有限测试的梯度、差商、势项、控制及端点配对，推导原弱恒等式极限。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
