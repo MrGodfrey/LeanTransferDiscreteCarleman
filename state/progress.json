@@ -10,9 +10,9 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T258",
-    "supervisor_checked_at": "2026-10-20T10:35:20.099486+00:00",
-    "next_action": "将真实零边值H²强逼近代入经典凸域估计，证明对原弱状态及内域序号统一的Hessian界。",
+    "current_task_id": "T259",
+    "supervisor_checked_at": "2026-10-20T10:39:31.555862+00:00",
+    "next_action": "用实际内域弱解与统一Hessian界完成原有限半空间域穷竭，恢复同一原弱解、完整H²估计和原算子域。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:21:45.143240+00:00"
@@ -21,10 +21,10 @@
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "e90a9dc75ebc85da3ccb5dd1bb740fd3d255db1a",
-      "source_head_sha": "e90a9dc75ebc85da3ccb5dd1bb740fd3d255db1a",
+      "checked_sha": "41f754d3e85d22b62c6e6229f5629bee782b0bc6",
+      "source_head_sha": "41f754d3e85d22b62c6e6229f5629bee782b0bc6",
       "ci_url": null,
-      "finished_at": "2026-10-20T10:34:35.011290+00:00",
+      "finished_at": "2026-10-20T10:37:58.072757+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "5d02cc9040ebf158a900e4721869c0a44fbaba003d0078fca8b7e9b437bf286a",
+      "source_manifest_sha256": "df47a6746f0100d283e694a5afba4116edc195da6969995691a7cd5b1f76e48a",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10272,
-        "sha256": "f37d2fbee22b5544ba4da395483e1bfe1ef9ad457a5ddfa9d45c6746250b84e4"
+        "declarations": 10281,
+        "sha256": "57dda6590b5f1a63a862fd694c25821a37da86eb52d35d07d8f62db98d3aad24"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "e90a9dc75ebc85da3ccb5dd1bb740fd3d255db1a",
-      "source_head_sha": "e90a9dc75ebc85da3ccb5dd1bb740fd3d255db1a",
+      "checked_sha": "41f754d3e85d22b62c6e6229f5629bee782b0bc6",
+      "source_head_sha": "41f754d3e85d22b62c6e6229f5629bee782b0bc6",
       "ci_url": null,
-      "finished_at": "2026-10-20T10:34:35.011290+00:00",
+      "finished_at": "2026-10-20T10:37:58.072757+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "5d02cc9040ebf158a900e4721869c0a44fbaba003d0078fca8b7e9b437bf286a",
+      "source_manifest_sha256": "df47a6746f0100d283e694a5afba4116edc195da6969995691a7cd5b1f76e48a",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 10272,
-        "sha256": "f37d2fbee22b5544ba4da395483e1bfe1ef9ad457a5ddfa9d45c6746250b84e4"
+        "declarations": 10281,
+        "sha256": "57dda6590b5f1a63a862fd694c25821a37da86eb52d35d07d8f62db98d3aad24"
       }
     }
   },
@@ -23609,7 +23609,7 @@
       "pr_url": null,
       "id": "C274",
       "title": "原光滑内域弱解的统一Hessian估计",
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "lean_declarations": [
         "Carleman.realLp_norm_sq_of_ae",
         "Carleman.SpatialTest.allOrderJetOn_component_two_smoothD_ae",
@@ -23627,6 +23627,60 @@
       ],
       "blocker": null,
       "scope_notes": "原光滑内域的真正弱Hessian统一控制；一般多面体穷竭仍待，AUXILIARY18/26。",
+      "independent_review_status": "PENDING",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "41f754d3e85d22b62c6e6229f5629bee782b0bc6",
+        "source_head_sha": "41f754d3e85d22b62c6e6229f5629bee782b0bc6",
+        "ci_url": null,
+        "finished_at": "2026-10-20T10:37:58.072757+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "df47a6746f0100d283e694a5afba4116edc195da6969995691a7cd5b1f76e48a",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10281,
+          "sha256": "57dda6590b5f1a63a862fd694c25821a37da86eb52d35d07d8f62db98d3aad24"
+        }
+      },
+      "semantic_review": null,
+      "declaration_version": "41f754d3e85d22b62c6e6229f5629bee782b0bc6"
+    },
+    {
+      "paper_ref": "paper/main.tex:2659–2665 Corollary A.2 的凸多面体正则性",
+      "milestone": "M6a",
+      "extra_hypotheses": [],
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:analytic-realizations"
+      ],
+      "pr_url": null,
+      "id": "C275",
+      "title": "原有界凸多面体Dirichlet完整H²正则性",
+      "verification_status": "SPECIFIED",
+      "lean_declarations": [],
+      "dependencies": [
+        "C274",
+        "C262",
+        "C246"
+      ],
+      "blocker": null,
+      "scope_notes": "原非空有界有限半空间交的完整弱DirichletH²正则性；A1–A3整体打包仍待，AUXILIARY18/26。",
       "independent_review_status": "PENDING",
       "build_evidence": null,
       "semantic_review": null,
@@ -55598,8 +55652,8 @@
         "C267"
       ],
       "base_commit": "e90a9dc75ebc85da3ccb5dd1bb740fd3d255db1a",
-      "status": "RUNNING",
-      "checkpoint_commit": null,
+      "status": "REVIEW",
+      "checkpoint_commit": "41f754d3e85d22b62c6e6229f5629bee782b0bc6",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.realLp_norm_sq_of_ae",
@@ -55614,8 +55668,37 @@
       ],
       "blocker": null,
       "attempts": [],
-      "next_action": "将真实零边值H²强逼近代入经典凸域估计，证明对原弱状态及内域序号统一的Hessian界。",
-      "build_evidence": null,
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "41f754d3e85d22b62c6e6229f5629bee782b0bc6",
+        "source_head_sha": "41f754d3e85d22b62c6e6229f5629bee782b0bc6",
+        "ci_url": null,
+        "finished_at": "2026-10-20T10:37:58.072757+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "df47a6746f0100d283e694a5afba4116edc195da6969995691a7cd5b1f76e48a",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 10281,
+          "sha256": "57dda6590b5f1a63a862fd694c25821a37da86eb52d35d07d8f62db98d3aad24"
+        }
+      },
       "local_validation": {
         "target": "Carleman.Spatial.WeakConvexHessian",
         "target_jobs": 3489,
@@ -55626,7 +55709,39 @@
         "recursive_axiom_declarations": 10281,
         "axiom_exit_code": 0,
         "independent_review": "PENDING"
-      }
+      },
+      "declaration_version": "41f754d3e85d22b62c6e6229f5629bee782b0bc6"
+    },
+    {
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "branch": "main",
+      "pr_url": null,
+      "integration_mode": "direct-main",
+      "id": "T259",
+      "title": "原有界凸多面体Dirichlet完整H²正则性",
+      "goal_ids": [
+        "C275"
+      ],
+      "acceptance": [
+        "所有内域解/单调穷竭/统一界内部构造",
+        "恢复同一原弱Dirichlet解",
+        "完整H²图估计与原算子域恰等H²交H¹₀"
+      ],
+      "dependencies": [
+        "C274",
+        "C262",
+        "C246"
+      ],
+      "base_commit": "41f754d3e85d22b62c6e6229f5629bee782b0bc6",
+      "status": "RUNNING",
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "blocker": null,
+      "attempts": [],
+      "next_action": "用实际内域弱解与统一Hessian界完成原有限半空间域穷竭，恢复同一原弱解、完整H²估计和原算子域。",
+      "build_evidence": null
     }
   ],
   "private_maintenance": {
