@@ -9091,6 +9091,35 @@ set_option pp.maxSteps 1000000
 #check @Carleman.halfspaceExpSum_hessian_nonneg
 #print axioms Carleman.halfspaceExpSum_hessian_nonneg
 
+#check Carleman.euclidean_coordinate_expansion
+#print axioms Carleman.euclidean_coordinate_expansion
+#check Carleman.graphSlopeVector_inner
+#print axioms Carleman.graphSlopeVector_inner
+#check Carleman.graphSlopeVector_ne_zero
+#print axioms Carleman.graphSlopeVector_ne_zero
+#check Carleman.graphSlopeVector_multiple
+#print axioms Carleman.graphSlopeVector_multiple
+#check Carleman.scaledLevelTangent
+#print axioms Carleman.scaledLevelTangent
+#check Carleman.scaledLevelTangent_inner
+#print axioms Carleman.scaledLevelTangent_inner
+#check Carleman.bilinear_scaled_tangent_sum
+#print axioms Carleman.bilinear_scaled_tangent_sum
+#check Carleman.spatialLaplacian_eq_hessian_trace
+#print axioms Carleman.spatialLaplacian_eq_hessian_trace
+#check Carleman.levelBoundaryFlux
+#print axioms Carleman.levelBoundaryFlux
+#check Carleman.spatialLaplacian_contDiff
+#print axioms Carleman.spatialLaplacian_contDiff
+#check Carleman.levelBoundaryFlux_contDiff
+#print axioms Carleman.levelBoundaryFlux_contDiff
+#check Carleman.levelBoundaryFlux_scaled_identity
+#print axioms Carleman.levelBoundaryFlux_scaled_identity
+#check Carleman.levelBoundaryFlux_nonneg
+#print axioms Carleman.levelBoundaryFlux_nonneg
+#check Carleman.halfspaceSmoothInner_boundaryFlux_nonneg
+#print axioms Carleman.halfspaceSmoothInner_boundaryFlux_nonneg
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

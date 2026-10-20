@@ -1138,3 +1138,5 @@ public import Carleman.Geometry.SublevelGraphRegularity
 public import Carleman.Spatial.FiniteLocalH2Gluing
 
 public import Carleman.Geometry.LevelBoundaryHessian
+
+public import Carleman.Geometry.ConvexBoundaryFlux
