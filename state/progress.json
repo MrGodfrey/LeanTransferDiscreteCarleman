@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T200",
-    "supervisor_checked_at": "2026-10-20T03:06:48.763459+00:00",
+    "supervisor_checked_at": "2026-10-20T03:14:18.228267+00:00",
     "next_action": "以实际Hilbert伴随构造对偶右端，并从内部时间测试证明原分布方程。",
     "blocker": null,
     "pause_reason": null,
@@ -18502,7 +18502,7 @@
       "paper_ref": "paper/main.tex:2404–2425, 9.26-eq16",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -18545,7 +18545,21 @@
           "sha256": "6e4c965a734bca2256f70f93a4c836b6f737f618355f2d73e6797486990667d8"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "c8020ad62e0ebb26a1c9144edc50d2ac2458a6d9",
+        "declarations": [
+          "Carleman.exists_refining_time_grids",
+          "Carleman.finiteTensorTestMultiplier_eq_product",
+          "Carleman.exists_dirichlet_test_sequence",
+          "Carleman.FiniteDirichletControlIdentity.spatial_test",
+          "Carleman.FiniteDirichletControlIdentity.all_energy_tests"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b64539bd63c95a3808b4a2e3a5a0e8c4283c8542/governance/reviews/T199-C215-local-acceptance.md",
+        "reviewed_at": "2026-10-20T03:12:04+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C214",
         "C212",
@@ -18554,7 +18568,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "有限测试到全 H¹₀ 测试的原弱方程扩展；实际 V′ 导数及 H 连续时间迹待，17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C216",
@@ -19752,6 +19766,11 @@
       "at": "2026-10-20T02:56:53.869928+00:00",
       "public_summary": "任意原控制弱积点的有限弱方程及区域费用已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c1734158e7981e99e96131efdac9d72f456696b8/governance/reviews/T198-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T03:14:18.228267+00:00",
+      "public_summary": "原有限弱方程扩展到全部 H¹₀ 测试已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b64539bd63c95a3808b4a2e3a5a0e8c4283c8542/governance/reviews/T199-C215-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -20195,7 +20214,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/2eaf3a373f80f24d0d968f926bdf32244d55717f/governance/reviews/T195-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/6f68fde07f02c1caff27d075291b55aadffd6434/governance/reviews/T196-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3a6bd348117c86d39b3f17b9b111f5a85ac3e7ea/governance/reviews/T197-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c1734158e7981e99e96131efdac9d72f456696b8/governance/reviews/T198-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c1734158e7981e99e96131efdac9d72f456696b8/governance/reviews/T198-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b64539bd63c95a3808b4a2e3a5a0e8c4283c8542/governance/reviews/T199-C215-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -44180,10 +44200,10 @@
       ],
       "branch": "main",
       "base_commit": "714954acb8b017b09da56c71d4bd91b7d0ccffe2",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "c8020ad62e0ebb26a1c9144edc50d2ac2458a6d9",
-      "merge_commit": null,
+      "merge_commit": "c8020ad62e0ebb26a1c9144edc50d2ac2458a6d9",
       "lean_declarations": [
         "Carleman.exists_refining_time_grids",
         "Carleman.finiteTensorTestMultiplier_eq_product",
@@ -44226,7 +44246,7 @@
         "T198每个原控制弱积点的有限弱方程4075定向/4192全库jobs、8780公理审计PASS，独立验收进行中。",
         "固定维度/区域稠密命题后消去存在量词，显式指定张量空间和实内积，解决过量展开；5项完整probe exit0、3617定向jobs、4195全库jobs、8786项递归公理审计PASS。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -44240,9 +44260,22 @@
         "declaration_artifact_sha256": "6e4c965a734bca2256f70f93a4c836b6f737f618355f2d73e6797486990667d8",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "c8020ad62e0ebb26a1c9144edc50d2ac2458a6d9"
+      "declaration_version": "c8020ad62e0ebb26a1c9144edc50d2ac2458a6d9",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C215"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "c8020ad62e0ebb26a1c9144edc50d2ac2458a6d9",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T03:12:04+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b64539bd63c95a3808b4a2e3a5a0e8c4283c8542/governance/reviews/T199-C215-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T200",

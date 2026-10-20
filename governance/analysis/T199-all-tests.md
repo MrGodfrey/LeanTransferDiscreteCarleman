@@ -6,7 +6,7 @@
 
 `finiteTensorTestMultiplier_eq_product` 对任意有限项原 C¹ 时间函数和光滑空间测试，证明 J(Σ η⊗ψ) 等于原有限产品测试乘子的实际 L² 类。沿辅助时间网格，一边用真实 Bochner 张量强收敛及 J 连续性，另一边用原产品测试的时间一致误差、有限测度 L∞→L² 和极限唯一性。J 是之前构造的真实等距嵌入；没有假设其满射，也没有假设待证产品恒等式。
 
-`exists_dirichlet_test_sequence` 对任意开 S 的真实 DirichletEnergyState，使用其真实 Sobolev jet 在原光滑测试 span 闭包中的定义、每个 span 元素仍为一个真实光滑测试，以及实际 jet 等距等价，将闭包序列还原成 H¹₀ 能量范数收敛的原测试序列。没有输入稠密性前提或改用 L² 范数。
+`exists_dirichlet_test_sequence` 对任意开 S 的真实 DirichletEnergyState，使用其真实 Sobolev jet 在原光滑测试 span 闭包中的定义、每个 span 元素仍为一个真实光滑测试，以及实际 jet 连续线性等价，将闭包序列还原成 H¹₀ 能量范数收敛的原测试序列。没有输入稠密性前提或改用 L² 范数。
 
 `FiniteDirichletControlIdentity.spatial_test` 从原全部有限恒等式取一项，结合上述产品身份得到原单张量弱恒等式。`all_energy_tests` 再利用实际值映射、真实弱梯度映射、张量映射和 J 的连续性，把该恒等式沿能量稠密序列推广到任意 w∈H¹₀。Y、U、原 b 和 y0 均保持不变；势项是原 b.map(J Yv) 与 J(η⊗w) 的实际产品 L² 配对。η 在两个端点都不受限，保留原 η(0)y0 初值项以及终端项消失后的原形式。T>0、S 开且测度有限是明确的当前接口前提，原有界盒自动满足。
 
