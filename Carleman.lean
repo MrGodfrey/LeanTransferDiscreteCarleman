@@ -1058,3 +1058,7 @@ public import Carleman.Control.DirichletTimeEnergyIdentity
 public import Carleman.Control.TimeCutoffPairing
 public import Carleman.Control.BochnerProductCutoff
 public import Carleman.Control.DirichletLocalEnergy
+
+public import Carleman.Control.VolterraEnergyUniqueness
+public import Carleman.Control.TimeCutoffEnergyNorm
+public import Carleman.Control.DirichletEnergyUniqueness

@@ -8161,6 +8161,20 @@ set_option pp.maxSteps 1000000
 #check @Carleman.FiniteDirichletControlIdentity.local_energy_inequality
 #print axioms Carleman.FiniteDirichletControlIdentity.local_energy_inequality
 
+-- T214: actual energy solutions with the same original data are unique.
+#check @Carleman.continuous_volterra_nonneg_eq_zero
+#print axioms Carleman.continuous_volterra_nonneg_eq_zero
+#check @Carleman.time_cutoff_norm_sq_of_ae
+#print axioms Carleman.time_cutoff_norm_sq_of_ae
+#check @Carleman.dirichlet_mass_energy_zero
+#print axioms Carleman.dirichlet_mass_energy_zero
+#check @Carleman.dirichletTimeLoad_sub
+#print axioms Carleman.dirichletTimeLoad_sub
+#check @Carleman.dirichlet_mass_energy_unique
+#print axioms Carleman.dirichlet_mass_energy_unique
+#check @Carleman.FiniteDirichletControlIdentity.identifies_energy_solution
+#print axioms Carleman.FiniteDirichletControlIdentity.identifies_energy_solution
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

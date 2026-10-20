@@ -11,7 +11,7 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T214",
-    "supervisor_checked_at": "2026-10-20T04:42:26.345133+00:00",
+    "supervisor_checked_at": "2026-10-20T04:50:15.061666+00:00",
     "next_action": "从真实局部能量不等式和连续Volterra估计证明零初值零控制解为零，再比较同一b/U/y0的任意原能量解。",
     "blocker": null,
     "pause_reason": null,
@@ -19588,7 +19588,7 @@
       "paper_ref": "paper/main.tex:2338–2415, prop:control-convergence 原能量解的局部能量基础",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -19635,7 +19635,25 @@
           "sha256": "c46bfc47e2d7efba57a63b356efa5f38615e76e638b6cad079df37919fcebe2c"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "a7ffa08f871d033a1729d80f998b56c5e98d6218",
+        "declarations": [
+          "Carleman.BoundedMultiplier.compLpL_map",
+          "Carleman.cutoff_map_idempotent",
+          "Carleman.cutoff_inner_integral",
+          "Carleman.bochnerL2ProductIsometry_cutoff",
+          "Carleman.cutoff_inner_cutoff",
+          "Carleman.cutoff_multiplier_pairing",
+          "Carleman.dirichletTimeLoad_cutoff_pairing",
+          "Carleman.dirichletTimeLoad_cutoff_upper_bound",
+          "Carleman.FiniteDirichletControlIdentity.local_energy_inequality"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3a869e6b41c8a21d3e60f08ef657ed58164dd63b/governance/reviews/T213-local-acceptance.md",
+        "reviewed_at": "2026-10-20T04:46:32+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C206",
         "C216",
@@ -19644,7 +19662,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "原时空势及真实值/梯度载荷的局部能量配对；辅助原弱解唯一性，17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C230",
@@ -19657,7 +19675,14 @@
       "paper_labels": [
         "prop:control-convergence"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.continuous_volterra_nonneg_eq_zero",
+        "Carleman.time_cutoff_norm_sq_of_ae",
+        "Carleman.dirichlet_mass_energy_zero",
+        "Carleman.dirichletTimeLoad_sub",
+        "Carleman.dirichlet_mass_energy_unique",
+        "Carleman.FiniteDirichletControlIdentity.identifies_energy_solution"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -20912,6 +20937,11 @@
       "at": "2026-10-20T04:41:46.820132+00:00",
       "public_summary": "弱质量时间导数的真实连续能量恒等式已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5ac0a17bf01823f61003428674b282403ea6443c/governance/reviews/T212-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T04:50:15.061666+00:00",
+      "public_summary": "原控制载荷的局部能量配对与势界已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3a869e6b41c8a21d3e60f08ef657ed58164dd63b/governance/reviews/T213-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -21369,7 +21399,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/b7d5dcfc6b9efb49b61c2226df0ce257f344a4fa/governance/reviews/T209-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/df32e0ea1475520fba053f653a9b5ea06d83cb73/governance/reviews/T210-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/170de6eae9adde411801ce1a1684841e7e9f9e50/governance/reviews/T211-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5ac0a17bf01823f61003428674b282403ea6443c/governance/reviews/T212-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/5ac0a17bf01823f61003428674b282403ea6443c/governance/reviews/T212-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3a869e6b41c8a21d3e60f08ef657ed58164dd63b/governance/reviews/T213-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -46740,10 +46771,10 @@
       ],
       "branch": "main",
       "base_commit": "9a2857abc4c61b3c6de1fa2d282bac81f14a3d16",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "a7ffa08f871d033a1729d80f998b56c5e98d6218",
-      "merge_commit": null,
+      "merge_commit": "a7ffa08f871d033a1729d80f998b56c5e98d6218",
       "lean_declarations": [
         "Carleman.BoundedMultiplier.compLpL_map",
         "Carleman.cutoff_map_idempotent",
@@ -46790,7 +46821,7 @@
         "T212真实逐时能量身份4227根构建、9016公理审计PASS。",
         "九项真实局部载荷/能量声明定向3637、全库4230 jobs及9025项递归公理审计均exit 0。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -46804,9 +46835,22 @@
         "declaration_artifact_sha256": "c46bfc47e2d7efba57a63b356efa5f38615e76e638b6cad079df37919fcebe2c",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "a7ffa08f871d033a1729d80f998b56c5e98d6218"
+      "declaration_version": "a7ffa08f871d033a1729d80f998b56c5e98d6218",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C229"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "a7ffa08f871d033a1729d80f998b56c5e98d6218",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T04:46:32+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/3a869e6b41c8a21d3e60f08ef657ed58164dd63b/governance/reviews/T213-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T214",
@@ -46831,14 +46875,36 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.continuous_volterra_nonneg_eq_zero",
+        "Carleman.time_cutoff_norm_sq_of_ae",
+        "Carleman.dirichlet_mass_energy_zero",
+        "Carleman.dirichletTimeLoad_sub",
+        "Carleman.dirichlet_mass_energy_unique",
+        "Carleman.FiniteDirichletControlIdentity.identifies_energy_solution"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "T213实际局部能量界4230根构建、9025项公理审计PASS。"
+        "T213实际局部能量界4230根构建、9025项公理审计PASS。",
+        "六项原能量唯一性声明定向3641、全库4234 jobs与9031项递归公理审计均exit 0。"
       ],
       "next_action": "从真实局部能量不等式和连续Volterra估计证明零初值零控制解为零，再比较同一b/U/y0的任意原能量解。",
-      "integration_mode": "direct-main"
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4234,
+        "recursive_axiom_audit": 9031,
+        "new_explicit_declarations": 6,
+        "declaration_artifact_sha256": "8bd1fb3855c26c8959da18d0c629ec34d93bc2e885dd4053011898db902896d9",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {
