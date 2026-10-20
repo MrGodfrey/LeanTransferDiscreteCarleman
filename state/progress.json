@@ -23326,7 +23326,18 @@
       "id": "C271",
       "title": "紧支半空间状态的零边值H²强逼近",
       "verification_status": "SPECIFIED",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.SpatialTest.cutoffH2Transfer_roundtrip",
+        "Carleman.exists_compact_localbox_strong_h2_approximation",
+        "Carleman.signedCoordinateHalfspace",
+        "Carleman.signedCoordinateHalfspace_isOpen",
+        "Carleman.dirichletH2Regular_signedHalfspace",
+        "Carleman.exists_signedHalfspace_box_cutoff",
+        "Carleman.exists_compact_halfspace_strong_h2_approximation",
+        "Carleman.dirichletH2Regular_univ",
+        "Carleman.exists_fullspace_box_cutoff",
+        "Carleman.exists_compact_fullspace_strong_h2_approximation"
+      ],
       "dependencies": [
         "C270",
         "C269",
@@ -54993,11 +55004,33 @@
       "status": "RUNNING",
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.SpatialTest.cutoffH2Transfer_roundtrip",
+        "Carleman.exists_compact_localbox_strong_h2_approximation",
+        "Carleman.signedCoordinateHalfspace",
+        "Carleman.signedCoordinateHalfspace_isOpen",
+        "Carleman.dirichletH2Regular_signedHalfspace",
+        "Carleman.exists_signedHalfspace_box_cutoff",
+        "Carleman.exists_compact_halfspace_strong_h2_approximation",
+        "Carleman.dirichletH2Regular_univ",
+        "Carleman.exists_fullspace_box_cutoff",
+        "Carleman.exists_compact_fullspace_strong_h2_approximation"
+      ],
       "blocker": null,
       "attempts": [],
       "next_action": "从真实紧支弱状态构造半空间贴边盒及截断，利用双向H²传递证明同一状态的零边值强逼近。",
-      "build_evidence": null
+      "build_evidence": null,
+      "local_validation": {
+        "target": "Carleman.Spatial.CompactHalfspaceDensity",
+        "target_jobs": 3481,
+        "target_exit_code": 0,
+        "root_target": "Carleman",
+        "root_jobs": 4294,
+        "root_exit_code": 0,
+        "recursive_axiom_declarations": 10200,
+        "axiom_exit_code": 0,
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

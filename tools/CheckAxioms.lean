@@ -9312,6 +9312,27 @@ set_option pp.maxSteps 1000000
 #check Carleman.SpatialTest.exists_cutoff_box_strong_h2_approximation
 #print axioms Carleman.SpatialTest.exists_cutoff_box_strong_h2_approximation
 
+#check Carleman.SpatialTest.cutoffH2Transfer_roundtrip
+#print axioms Carleman.SpatialTest.cutoffH2Transfer_roundtrip
+#check Carleman.exists_compact_localbox_strong_h2_approximation
+#print axioms Carleman.exists_compact_localbox_strong_h2_approximation
+#check Carleman.signedCoordinateHalfspace
+#print axioms Carleman.signedCoordinateHalfspace
+#check Carleman.signedCoordinateHalfspace_isOpen
+#print axioms Carleman.signedCoordinateHalfspace_isOpen
+#check Carleman.dirichletH2Regular_signedHalfspace
+#print axioms Carleman.dirichletH2Regular_signedHalfspace
+#check Carleman.exists_signedHalfspace_box_cutoff
+#print axioms Carleman.exists_signedHalfspace_box_cutoff
+#check Carleman.exists_compact_halfspace_strong_h2_approximation
+#print axioms Carleman.exists_compact_halfspace_strong_h2_approximation
+#check Carleman.dirichletH2Regular_univ
+#print axioms Carleman.dirichletH2Regular_univ
+#check Carleman.exists_fullspace_box_cutoff
+#print axioms Carleman.exists_fullspace_box_cutoff
+#check Carleman.exists_compact_fullspace_strong_h2_approximation
+#print axioms Carleman.exists_compact_fullspace_strong_h2_approximation
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

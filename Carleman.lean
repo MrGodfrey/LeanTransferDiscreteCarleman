@@ -1152,3 +1152,5 @@ public import Carleman.Spatial.StrongH2GraphTransport
 public import Carleman.Spatial.BoxStrongH2Density
 
 public import Carleman.Spatial.StrongH2CutoffTransfer
+
+public import Carleman.Spatial.CompactHalfspaceDensity
