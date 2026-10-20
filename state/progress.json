@@ -11,8 +11,8 @@
   "execution": {
     "state": "RUNNING",
     "current_task_id": "T208",
-    "supervisor_checked_at": "2026-10-20T04:03:40.243226+00:00",
-    "next_action": "从实际控制方程的能量界抽取同一H¹₀状态及值/梯度弱极限，建立原Galerkin六项测试恒等式并识别P1节点测试。",
+    "supervisor_checked_at": "2026-10-20T04:07:53.392310+00:00",
+    "next_action": "固定原状态弱紧性、六项重构身份与P1节点提升，交独立验收；继续原时间平均势与测试强一致性。",
     "blocker": null,
     "pause_reason": null,
     "last_activity_at": "2026-10-20T04:03:58.603104+00:00"
@@ -19127,7 +19127,7 @@
       "paper_ref": "paper/main.tex:2370–2385, prop:control-convergence 的P1状态能量紧性",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "BUILT",
+      "verification_status": "REVIEWED",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -19171,7 +19171,22 @@
           "sha256": "1873b8038d10274721a8fd0f9f6fb60758bc7edfcb5aa9b533fb7b617db2d174"
         }
       },
-      "semantic_review": null,
+      "semantic_review": {
+        "checked_sha": "fefa061545a3eaad908531f9a9b322fbab55707c",
+        "declarations": [
+          "Carleman.dirichletGalerkinState",
+          "Carleman.dirichletGalerkinState_value",
+          "Carleman.dirichletGalerkinState_stiffness",
+          "Carleman.dirichletGalerkinState_norm_sq",
+          "Carleman.conforming_state_node_uniform",
+          "Carleman.conforming_state_dirichlet_time_uniform"
+        ],
+        "result": "PASS",
+        "axiom_check": "PASS",
+        "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c0ac2d84fb45eda398af02ddd2525c65a1f1789b/governance/reviews/T207-local-acceptance.md",
+        "reviewed_at": "2026-10-20T04:05:55+00:00",
+        "reviewer": "/root/accept_spatial_lemma; independent auxiliary acceptance"
+      },
       "dependencies": [
         "C203",
         "C204",
@@ -19180,7 +19195,7 @@
       "blocker": null,
       "pr_url": null,
       "scope_notes": "实际任意有限维conforming Galerkin状态的完整Dirichlet重构和统一时间能量界，供P1弱极限；17/26。",
-      "independent_review_status": "PENDING"
+      "independent_review_status": "PASS"
     },
     {
       "id": "C224",
@@ -19193,7 +19208,15 @@
       "paper_labels": [
         "prop:control-convergence"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.conforming_controlled_states_weak_subsequence",
+        "Carleman.conforming_forward_reconstructed_weak_identity",
+        "Carleman.conforming_fixed_forward_reconstructed_weak_identity",
+        "Carleman.SimplicialPartition.testGalerkinState",
+        "Carleman.SimplicialPartition.testGalerkinState_value",
+        "Carleman.SimplicialPartition.testGalerkinState_lift",
+        "Carleman.SimplicialPartition.testGalerkinState_finite_lift"
+      ],
       "declaration_version": null,
       "build_evidence": null,
       "semantic_review": null,
@@ -20419,6 +20442,11 @@
       "at": "2026-10-20T03:59:39.831041+00:00",
       "public_summary": "实际盒FD控制的每个弱积聚点产生连续零终态解已通过固定本地验证与独立数学验收；原文覆盖17/26。",
       "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bde2072a9e38de544618210ae8074113979b021f/governance/reviews/T206-local-acceptance.md"
+    },
+    {
+      "at": "2026-10-20T04:07:53.392310+00:00",
+      "public_summary": "实际有限元状态的H¹能量重构与统一预算已通过固定本地验证与独立数学验收；原文覆盖17/26。",
+      "url": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c0ac2d84fb45eda398af02ddd2525c65a1f1789b/governance/reviews/T207-local-acceptance.md"
     }
   ],
   "snapshot": {
@@ -20870,7 +20898,8 @@
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/51434001118a81a4b437dbf48210ebdb18d01084/governance/reviews/T203-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/9720d4b27b055716a613d8666a82fdb393f02d8e/governance/reviews/T204-local-acceptance.md",
       "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/ac4d2338d0ccfec3dc8427b03a36d8bf6ed5d9a9/governance/reviews/T205-local-acceptance.md",
-      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bde2072a9e38de544618210ae8074113979b021f/governance/reviews/T206-local-acceptance.md"
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/bde2072a9e38de544618210ae8074113979b021f/governance/reviews/T206-local-acceptance.md",
+      "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c0ac2d84fb45eda398af02ddd2525c65a1f1789b/governance/reviews/T207-local-acceptance.md"
     ]
   },
   "schedules": [
@@ -45645,10 +45674,10 @@
       ],
       "branch": "main",
       "base_commit": "7b47cb8efa47015a5e2e62f6e2573204bd5c7418",
-      "status": "REVIEW",
+      "status": "MERGED",
       "pr_url": null,
       "checkpoint_commit": "fefa061545a3eaad908531f9a9b322fbab55707c",
-      "merge_commit": null,
+      "merge_commit": "fefa061545a3eaad908531f9a9b322fbab55707c",
       "lean_declarations": [
         "Carleman.dirichletGalerkinState",
         "Carleman.dirichletGalerkinState_value",
@@ -45692,7 +45721,7 @@
         "T206实际盒FD每个弱积聚点连续零终态4211全库jobs、8945公理审计PASS；转接原P1分支。",
         "两模块六声明实际目标构建3753 jobs、根构建4213 jobs与8963项递归公理审计均exit 0。显式Forward算子消除刚度展开导致的推断耗时；最终声明不增加数学前提。"
       ],
-      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
+      "next_action": "固定提交的本地验证与独立数学验收已通过；后续工作见当前执行任务。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -45706,9 +45735,22 @@
         "declaration_artifact_sha256": "1873b8038d10274721a8fd0f9f6fb60758bc7edfcb5aa9b533fb7b617db2d174",
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-        "independent_review": "PENDING"
+        "independent_review": "PASS; fixed-SHA report and exact local build/axiom evidence verified"
       },
-      "declaration_version": "fefa061545a3eaad908531f9a9b322fbab55707c"
+      "declaration_version": "fefa061545a3eaad908531f9a9b322fbab55707c",
+      "independent_acceptance": [
+        {
+          "agent": "/root/accept_spatial_lemma",
+          "claim_ids": [
+            "C223"
+          ],
+          "paper_result_ids": [],
+          "checked_sha": "fefa061545a3eaad908531f9a9b322fbab55707c",
+          "status": "PASS",
+          "reviewed_at": "2026-10-20T04:05:55+00:00",
+          "review_ref": "https://github.com/MrGodfrey/LeanTransferDiscreteCarleman/blob/c0ac2d84fb45eda398af02ddd2525c65a1f1789b/governance/reviews/T207-local-acceptance.md"
+        }
+      ]
     },
     {
       "id": "T208",
@@ -45735,14 +45777,37 @@
       "pr_url": null,
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.conforming_controlled_states_weak_subsequence",
+        "Carleman.conforming_forward_reconstructed_weak_identity",
+        "Carleman.conforming_fixed_forward_reconstructed_weak_identity",
+        "Carleman.SimplicialPartition.testGalerkinState",
+        "Carleman.SimplicialPartition.testGalerkinState_value",
+        "Carleman.SimplicialPartition.testGalerkinState_lift",
+        "Carleman.SimplicialPartition.testGalerkinState_finite_lift"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [
-        "T207实际完整时间能量界4213根构建、8963递归公理审计PASS。"
+        "T207实际完整时间能量界4213根构建、8963递归公理审计PASS。",
+        "三模块七声明目标3769 jobs、根4216 jobs和8979项递归公理审计均exit 0；原P1全空间节点测试与实际Dirichlet提升精确相等。"
       ],
-      "next_action": "从实际控制方程的能量界抽取同一H¹₀状态及值/梯度弱极限，建立原Galerkin六项测试恒等式并识别P1节点测试。",
-      "integration_mode": "direct-main"
+      "next_action": "固定原状态弱紧性、六项重构身份与P1节点提升，交独立验收；继续原时间平均势与测试强一致性。",
+      "integration_mode": "direct-main",
+      "local_validation": {
+        "status": "PASS",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "actual_build_jobs": 4216,
+        "recursive_axiom_audit": 8979,
+        "new_explicit_declarations": 7,
+        "declaration_artifact_sha256": "d930712d0c91159de351723e623a9021d2cf021f810f7ce1a6ab702b41034353",
+        "lean_version": "4.35.0",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

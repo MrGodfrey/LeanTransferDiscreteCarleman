@@ -8066,6 +8066,23 @@ set_option pp.maxSteps 1000000
 #check @Carleman.conforming_state_dirichlet_time_uniform
 #print axioms Carleman.conforming_state_dirichlet_time_uniform
 
+
+-- T208: actual conforming weak compactness, six-term identity and full P1 tests.
+#check @Carleman.conforming_controlled_states_weak_subsequence
+#print axioms Carleman.conforming_controlled_states_weak_subsequence
+#check @Carleman.conforming_forward_reconstructed_weak_identity
+#print axioms Carleman.conforming_forward_reconstructed_weak_identity
+#check @Carleman.conforming_fixed_forward_reconstructed_weak_identity
+#print axioms Carleman.conforming_fixed_forward_reconstructed_weak_identity
+#check @Carleman.SimplicialPartition.testGalerkinState
+#print axioms Carleman.SimplicialPartition.testGalerkinState
+#check @Carleman.SimplicialPartition.testGalerkinState_value
+#print axioms Carleman.SimplicialPartition.testGalerkinState_value
+#check @Carleman.SimplicialPartition.testGalerkinState_lift
+#print axioms Carleman.SimplicialPartition.testGalerkinState_lift
+#check @Carleman.SimplicialPartition.testGalerkinState_finite_lift
+#print axioms Carleman.SimplicialPartition.testGalerkinState_finite_lift
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

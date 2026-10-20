@@ -1038,3 +1038,6 @@ public import Carleman.Control.DirichletNullControlState
 public import Carleman.Control.CartesianNullControlLimits
 public import Carleman.Control.ConformingDirichletState
 public import Carleman.Control.ConformingStateTimeEnergy
+public import Carleman.Control.ConformingStateWeakCompactness
+public import Carleman.Control.ConformingWeakTesting
+public import Carleman.Control.P1GalerkinTests

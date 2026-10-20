@@ -1614,3 +1614,7 @@ T188 的状态弱极限位于真实 Bochner L²_tL²_x；T183–T185 的原势�
 ## T207 / C223 — 实际有限元完整时间能量预算
 
 真实有限维 conforming Galerkin 状态提升到原 H¹₀，值与原函数相同、梯度配对等于原刚度。原 ForwardEquation、势界、dt M≤1/2 与初值/控制预算内部给所有节点与完整 L²_t H¹₀ 预算，无状态界前提或额外网格限制。详见 [T207 分析](analysis/T207-conforming-energy.md)。AUXILIARY、17/26。
+
+## T208 / C224 — 原 conforming 状态紧性、六项测试与 P1 节点身份
+
+实际方程的预算内部产生同一 H¹₀ 时间弱极限和同一子列的原值/梯度弱极限；原六项分部求和恒等式在真实重构空间精确成立，完整 P1 节点测试的 Galerkin 提升等于已证真实 Dirichlet 插值。详见 [T208 分析](analysis/T208-conforming-compactness.md)。尚待原时间平均势与全部 P1 控制极限整合，AUXILIARY、17/26。
