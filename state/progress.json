@@ -23810,7 +23810,7 @@
         "C245"
       ],
       "blocker": null,
-      "scope_notes": "原Corollary A.2完整A1–A3；待固定构建与独立论文级验收，暂不提升18/26。",
+      "scope_notes": "原Corollary A.2完整A1–A3已通过独立论文级验收；原凸多面体与盒无额外正则性前提，完整覆盖19/26。",
       "independent_review_status": "PENDING",
       "build_evidence": {
         "status": "PASS",
@@ -23856,7 +23856,10 @@
       "scope": "PAPER",
       "extra_hypotheses": [],
       "verification_status": "SPECIFIED",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.finite_halfspace_convex",
+        "Carleman.finite_halfspace_p1_realization"
+      ],
       "dependencies": [
         "C275",
         "C142"
@@ -56134,11 +56137,25 @@
       "status": "RUNNING",
       "checkpoint_commit": null,
       "merge_commit": null,
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.finite_halfspace_convex",
+        "Carleman.finite_halfspace_p1_realization"
+      ],
       "build_evidence": null,
       "blocker": null,
       "attempts": [],
-      "next_action": "实例化真实原凸多面体完整P1数值数据，核查原命题所有几何、网格与时间量词。"
+      "next_action": "实例化真实原凸多面体完整P1数值数据，核查原命题所有几何、网格与时间量词。",
+      "local_validation": {
+        "target": "Carleman.Control.FullP1Realization",
+        "target_jobs": 3855,
+        "target_exit_code": 0,
+        "root_target": "Carleman",
+        "root_jobs": 4300,
+        "root_exit_code": 0,
+        "recursive_axiom_declarations": 10321,
+        "axiom_exit_code": 0,
+        "independent_review": "PENDING"
+      }
     }
   ],
   "private_maintenance": {

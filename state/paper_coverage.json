@@ -658,16 +658,20 @@
       "tex_line": 1499,
       "milestone": "M6a",
       "claim_ids": [
-        "C014"
+        "C277"
       ],
-      "lean_declarations": [],
+      "lean_declarations": [
+        "Carleman.finite_halfspace_convex",
+        "Carleman.finite_halfspace_p1_realization"
+      ],
       "declaration_version": null,
-      "verification_status": "PLANNED",
+      "verification_status": "SPECIFIED",
       "scope": "PAPER",
       "extra_hypotheses": [],
       "build_evidence": null,
       "semantic_review": null,
-      "blocker": null
+      "blocker": null,
+      "independent_review_status": "PENDING"
     },
     {
       "id": "P012",

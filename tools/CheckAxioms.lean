@@ -9445,6 +9445,11 @@ set_option pp.maxSteps 1000000
 #check Carleman.box_full_spatial_analytic_realization
 #print axioms Carleman.box_full_spatial_analytic_realization
 
+#check Carleman.finite_halfspace_convex
+#print axioms Carleman.finite_halfspace_convex
+#check Carleman.finite_halfspace_p1_realization
+#print axioms Carleman.finite_halfspace_p1_realization
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]

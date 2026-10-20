@@ -16,7 +16,7 @@
 | P008 | Theorem 3.5 | `thm:timeerror` | 16 / 1023 | M3 | C007, C036, C037 | Carleman.OriginalForm.section3_original_operator, Carleman.OriginalForm.ofBilinear_scalarForm, Carleman.PeriodicWeakTrajectory.graph_equation_iff, Carleman.Section3.Conclusions.temporal, Carleman.Section3.TemporalEstimate, Carleman.Section3.temporal_arbitrary_uniform |
 | P009 | Lemma 4.1 | `lem:spatialEuler` | 17 / 1148 | M4 | C008 | Carleman.Section4.EnergyEstimate, Carleman.Section4.L2Estimate, Carleman.Section4.SpatialUniform, Carleman.OriginalForm.spatial_uniform |
 | P010 | Theorem 4.2 | `thm:combined` | 19 / 1287 | M4 | C009 | Carleman.Section4.reconstructedError_value_ae, Carleman.Section4.CombinedEstimate, Carleman.Section4.CombinedUniform, Carleman.OriginalForm.combined_uniform |
-| P011 | Proposition 6.1 | `prop:p1` | 21 / 1499 | M6a | C014 | 待建立 |
+| P011 | Proposition 6.1 | `prop:p1` | 21 / 1499 | M6a | C277 | Carleman.finite_halfspace_convex, Carleman.finite_halfspace_p1_realization |
 | P012 | Proposition 6.2 | `prop:fd` | 23 / 1672 | M6a | C015, C158 | Carleman.cartesian_numericalData_of_box, Carleman.cartesian_full_weight_interface |
 | P013 | Lemma 7.1 | `lem:physicalduality` | 24 / 1753 | M6b | C040 | Carleman.Physical.ForwardEquation, Carleman.Physical.AdjointEquation, Carleman.Physical.physical_duality_lemma |
 | P014 | Theorem 7.2 | `prop:physicalO` | 25 / 1827 | M6b | C016 | 待建立 |
