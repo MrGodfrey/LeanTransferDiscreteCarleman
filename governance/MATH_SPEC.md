@@ -1883,3 +1883,7 @@ T226独立报告F1要求的同一H上正自伴平方根、D(Ahalf)=V、Ahalf²=A
 ### T238 / C254 — actual weak graph-coordinate chain rule
 
 `GraphShearWeakTransport` derives the complete weak chain rule for the original nonsmooth state using all original distributional tests, the actual inverse test pullback and the bounded slope product with zero normal derivative. The full H¹ jet is constructed with exact value/gradient identities, complete graph-topology continuity, genuine H¹₀ closure preservation and explicit norm bounds. The domain is the actual preimage under the T237 measure-preserving nonlinear shear. H² transport and transformation of the original PDE/matrix remain pending; no conditional chain rule is counted as established. AUXILIARY, coverage 18/26; see `analysis/T238-graph-weak-transport.md`.
+
+### T239 / C255 — full weak Hessian transport in both directions
+
+`GraphShearHessianTransport` constructs all second weak derivatives of the actual graph pullback using T238 and true slope-derivative multipliers, with explicit bound (1+C)²‖D²u‖+(ΣB_i)‖Du‖. The inverse shear is the actual −ψ map with the same coefficient bounds; AE transport and weak-jet uniqueness recover H² of the exact original H¹ state from H² of its pullback. Global Lipschitz bounds B_i on the actual slopes are explicit geometry inputs. The original PDE matrix transformation and graph construction remain pending. AUXILIARY, coverage 18/26; see `analysis/T239-graph-hessian-transport.md`.

@@ -1120,3 +1120,5 @@ public import Carleman.Spatial.VariableCoefficientNormalRecovery
 public import Carleman.Spatial.NonlinearGraphShear
 
 public import Carleman.Spatial.GraphShearWeakTransport
+
+public import Carleman.Spatial.GraphShearHessianTransport

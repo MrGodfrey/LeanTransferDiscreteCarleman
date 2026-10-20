@@ -8858,6 +8858,19 @@ set_option pp.maxSteps 1000000
 #check @Carleman.WeakSobolevJet.graphShearPullback_gradient_bound
 #print axioms Carleman.WeakSobolevJet.graphShearPullback_gradient_bound
 
+#check @Carleman.exists_graphShearPullback_H2
+#print axioms Carleman.exists_graphShearPullback_H2
+#check @Carleman.exists_graphShearPullback_H2_ae
+#print axioms Carleman.exists_graphShearPullback_H2_ae
+#check @Carleman.spatialGraphShear_neg_eq_symm
+#print axioms Carleman.spatialGraphShear_neg_eq_symm
+#check @Carleman.graphSlopeMultiplier_neg
+#print axioms Carleman.graphSlopeMultiplier_neg
+#check @Carleman.exists_H2_of_graphShearPullback_H2
+#print axioms Carleman.exists_H2_of_graphShearPullback_H2
+#check @Carleman.graphShearPullback_H2_iff
+#print axioms Carleman.graphShearPullback_H2_iff
+
 open Lean Elab Command in
 run_cmd do
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
