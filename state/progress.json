@@ -10,21 +10,21 @@
   },
   "execution": {
     "state": "RUNNING",
-    "current_task_id": "T194",
-    "supervisor_checked_at": "2026-10-20T02:13:25.074469+00:00",
-    "next_action": "保存固定数学提交，记录真实本地证据后进行独立验收。",
+    "current_task_id": "T195",
+    "supervisor_checked_at": "2026-10-20T02:14:39.069780+00:00",
+    "next_action": "将原有限测试的L∞误差转为实际产品L²强极限，连接真实原平均势。",
     "blocker": null,
     "pause_reason": null,
-    "last_activity_at": "2026-10-20T02:13:25.074469+00:00"
+    "last_activity_at": "2026-10-20T02:14:39.069780+00:00"
   },
   "verification": {
     "latest_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "3ac3635f878b0c1521032b396a2630acdcc4da46",
-      "source_head_sha": "3ac3635f878b0c1521032b396a2630acdcc4da46",
+      "checked_sha": "6812f26347c088d1d8d489c8e22dd1e5bb92e778",
+      "source_head_sha": "6812f26347c088d1d8d489c8e22dd1e5bb92e778",
       "ci_url": null,
-      "finished_at": "2026-10-20T01:47:47.662754+00:00",
+      "finished_at": "2026-10-20T02:12:52.672454+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -41,20 +41,20 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "a2ea189a3ec98b1605f26fda7a7b8e85b72ba6da14c48759cec6d1044a509195",
+      "source_manifest_sha256": "abaa225479ea2e86297d2a396b8bcb3391f27e568435afbe6fa0334772e5181a",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8656,
-        "sha256": "70fc5b59c3872591d07d063eec37df738f79c9461cebfbbc2542dbf859b8ea23"
+        "declarations": 8670,
+        "sha256": "4b330ade154bb146d9c5ff2c51acedd59cd6788c599d057580545f5b6dab21b9"
       }
     },
     "last_successful_build": {
       "status": "PASS",
       "source": "local",
-      "checked_sha": "3ac3635f878b0c1521032b396a2630acdcc4da46",
-      "source_head_sha": "3ac3635f878b0c1521032b396a2630acdcc4da46",
+      "checked_sha": "6812f26347c088d1d8d489c8e22dd1e5bb92e778",
+      "source_head_sha": "6812f26347c088d1d8d489c8e22dd1e5bb92e778",
       "ci_url": null,
-      "finished_at": "2026-10-20T01:47:47.662754+00:00",
+      "finished_at": "2026-10-20T02:12:52.672454+00:00",
       "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
       "targets": [
@@ -71,11 +71,11 @@
           "exit_code": 0
         }
       ],
-      "source_manifest_sha256": "a2ea189a3ec98b1605f26fda7a7b8e85b72ba6da14c48759cec6d1044a509195",
+      "source_manifest_sha256": "abaa225479ea2e86297d2a396b8bcb3391f27e568435afbe6fa0334772e5181a",
       "axiom_audit": {
         "status": "PASS",
-        "declarations": 8656,
-        "sha256": "70fc5b59c3872591d07d063eec37df738f79c9461cebfbbc2542dbf859b8ea23"
+        "declarations": 8670,
+        "sha256": "4b330ade154bb146d9c5ff2c51acedd59cd6788c599d057580545f5b6dab21b9"
       }
     }
   },
@@ -18087,7 +18087,7 @@
       "paper_ref": "paper/main.tex:2926–2956, sec:control-consistency / prop:control-convergence",
       "milestone": "M6c",
       "extra_hypotheses": [],
-      "verification_status": "SPECIFIED",
+      "verification_status": "BUILT",
       "scope": "AUXILIARY",
       "paper_labels": [
         "prop:control-convergence"
@@ -18108,8 +18108,37 @@
         "Carleman.cartesian_finite_time_test_Linfty_consistency",
         "Carleman.p1_finite_time_test_Linfty_consistency"
       ],
-      "declaration_version": null,
-      "build_evidence": null,
+      "declaration_version": "6812f26347c088d1d8d489c8e22dd1e5bb92e778",
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "6812f26347c088d1d8d489c8e22dd1e5bb92e778",
+        "source_head_sha": "6812f26347c088d1d8d489c8e22dd1e5bb92e778",
+        "ci_url": null,
+        "finished_at": "2026-10-20T02:12:52.672454+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "abaa225479ea2e86297d2a396b8bcb3391f27e568435afbe6fa0334772e5181a",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8670,
+          "sha256": "4b330ade154bb146d9c5ff2c51acedd59cd6788c599d057580545f5b6dab21b9"
+        }
+      },
       "semantic_review": null,
       "dependencies": [
         "C209",
@@ -18118,7 +18147,33 @@
       ],
       "blocker": null,
       "pr_url": null,
-      "scope_notes": "原有限张量测试产品L∞一致性；完整极限方程、势项和状态端点仍待。17/26。"
+      "scope_notes": "原有限张量测试产品L∞一致性；完整极限方程、势项和状态端点仍待。17/26。",
+      "independent_review_status": "PENDING"
+    },
+    {
+      "id": "C211",
+      "title": "原有限张量测试与实际平均势的强乘积极限",
+      "paper_ref": "paper/main.tex:2926–2956, sec:control-consistency / prop:control-convergence",
+      "milestone": "M6c",
+      "extra_hypotheses": [],
+      "verification_status": "SPECIFIED",
+      "scope": "AUXILIARY",
+      "paper_labels": [
+        "prop:control-convergence"
+      ],
+      "lean_declarations": [],
+      "declaration_version": null,
+      "build_evidence": null,
+      "semantic_review": null,
+      "dependencies": [
+        "C210",
+        "C201",
+        "C199",
+        "C200"
+      ],
+      "blocker": null,
+      "pr_url": null,
+      "scope_notes": "原实际平均势与原有限张量测试的产品强极限；完整极限方程和状态端点仍待。17/26。"
     }
   ],
   "events": [
@@ -43182,9 +43237,9 @@
       ],
       "branch": "main",
       "base_commit": "3ac3635f878b0c1521032b396a2630acdcc4da46",
-      "status": "RUNNING",
+      "status": "REVIEW",
       "pr_url": null,
-      "checkpoint_commit": null,
+      "checkpoint_commit": "6812f26347c088d1d8d489c8e22dd1e5bb92e778",
       "merge_commit": null,
       "lean_declarations": [
         "Carleman.cartesian_test_cell_uniform_error",
@@ -43202,13 +43257,42 @@
         "Carleman.cartesian_finite_time_test_Linfty_consistency",
         "Carleman.p1_finite_time_test_Linfty_consistency"
       ],
-      "build_evidence": null,
+      "build_evidence": {
+        "status": "PASS",
+        "source": "local",
+        "checked_sha": "6812f26347c088d1d8d489c8e22dd1e5bb92e778",
+        "source_head_sha": "6812f26347c088d1d8d489c8e22dd1e5bb92e778",
+        "ci_url": null,
+        "finished_at": "2026-10-20T02:12:52.672454+00:00",
+        "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "targets": [
+          "Carleman",
+          "tools/CheckAxioms.lean"
+        ],
+        "commands": [
+          {
+            "command": "lake build Carleman",
+            "exit_code": 0
+          },
+          {
+            "command": "lake env lean tools/CheckAxioms.lean",
+            "exit_code": 0
+          }
+        ],
+        "source_manifest_sha256": "abaa225479ea2e86297d2a396b8bcb3391f27e568435afbe6fa0334772e5181a",
+        "axiom_audit": {
+          "status": "PASS",
+          "declarations": 8670,
+          "sha256": "4b330ade154bb146d9c5ff2c51acedd59cd6788c599d057580545f5b6dab21b9"
+        }
+      },
       "blocker": null,
       "attempts": [
         "固定T193真实本地全库构建与8656项公理审计PASS；独立Agent语义核对进行中。采用用户简化后的本地证据流程。",
         "14项正式声明：3576定向jobs、4182全库jobs及8670项递归公理审计PASS；原P1和差分重构产品L∞误差及独立双尺度极限。"
       ],
-      "next_action": "保存固定数学提交，记录真实本地证据后进行独立验收。",
+      "next_action": "固定本地构建与公理证据已核实，等待独立数学验收。",
       "integration_mode": "direct-main",
       "local_validation": {
         "status": "PASS",
@@ -43223,7 +43307,42 @@
         "lean_version": "4.35.0",
         "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
         "independent_review": "PENDING; exact local proof commit follows"
-      }
+      },
+      "declaration_version": "6812f26347c088d1d8d489c8e22dd1e5bb92e778"
+    },
+    {
+      "id": "T195",
+      "platform_task_id": "01a14e51-402f-7683-9939-d4f2456f91e4",
+      "task_url": null,
+      "title": "原有限张量测试与实际平均势的强乘积极限",
+      "goal_ids": [
+        "C211"
+      ],
+      "acceptance": [
+        "构造原有限光滑张量测试的真实有界乘子及同一产品L²类",
+        "原P1和差分实际测试的产品L²强一致性在内部清偿",
+        "原平均势乘以整个实际测试强收敛，无抽象测试一致性输入或时空耦合"
+      ],
+      "dependencies": [
+        "C210",
+        "C201",
+        "C199",
+        "C200"
+      ],
+      "branch": "main",
+      "base_commit": "6812f26347c088d1d8d489c8e22dd1e5bb92e778",
+      "status": "RUNNING",
+      "pr_url": null,
+      "checkpoint_commit": null,
+      "merge_commit": null,
+      "lean_declarations": [],
+      "build_evidence": null,
+      "blocker": null,
+      "attempts": [
+        "T194本地3576定向/4182全库jobs、8670项公理审计PASS；固定版本独立验收进行中。"
+      ],
+      "next_action": "将原有限测试的L∞误差转为实际产品L²强极限，连接真实原平均势。",
+      "integration_mode": "direct-main"
     }
   ],
   "private_maintenance": {
